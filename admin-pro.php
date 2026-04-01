@@ -106,6 +106,10 @@ class AdminProPlugin extends Plugin
         $html = str_replace('="/_app/', '="' . $appBaseUrl . '/_app/', $html);
         $html = str_replace('("/_app/', '("' . $appBaseUrl . '/_app/', $html);
 
+        // Set SvelteKit's client-side base path so router uses /admin-pro prefix
+        $spaBase = $siteBase . $this->base;
+        $html = preg_replace('/base:\s*""/', 'base: "' . $spaBase . '"', $html);
+
         // Inject config script right after <head>
         $html = str_replace('<head>', '<head>' . "\n    " . $configScript, $html);
 
