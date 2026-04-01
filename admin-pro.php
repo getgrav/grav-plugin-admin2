@@ -99,8 +99,10 @@ class AdminProPlugin extends Plugin
         // Read the SvelteKit index.html and rewrite asset paths
         $html = file_get_contents($indexFile);
 
-        // Rewrite asset paths: /_app/ → /user/plugins/admin-pro/app/_app/
-        $appBaseUrl = '/' . ltrim($this->grav['locator']->findResource('plugin://admin-pro/app', false), '/');
+        // Rewrite asset paths: /_app/ → /grav-api/user/plugins/admin-pro/app/_app/
+        $siteBase = rtrim($uri->rootUrl(false), '/');
+        $appRelative = '/' . ltrim($this->grav['locator']->findResource('plugin://admin-pro/app', false), '/');
+        $appBaseUrl = $siteBase . $appRelative;
         $html = str_replace('="/_app/', '="' . $appBaseUrl . '/_app/', $html);
         $html = str_replace('("/_app/', '("' . $appBaseUrl . '/_app/', $html);
 
