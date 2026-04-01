@@ -7,7 +7,6 @@ namespace Grav\Plugin;
 use Grav\Common\Plugin;
 use Grav\Common\Page\Page;
 use Grav\Common\Page\Pages;
-use RocketTheme\Toolbox\Event\Event;
 
 /**
  * Admin Pro — Modern administration panel for Grav CMS.
@@ -17,8 +16,8 @@ use RocketTheme\Toolbox\Event\Event;
  */
 class AdminProPlugin extends Plugin
 {
-    /** @var bool Whether the current request is for Admin Pro */
-    protected bool $active = false;
+    /** @var bool Whether the current request is for the Admin Pro route */
+    protected bool $isAdminProRoute = false;
 
     /** @var string The base route (e.g. /admin-pro) */
     protected string $base = '';
@@ -47,24 +46,22 @@ class AdminProPlugin extends Plugin
 
         /** @var \Grav\Common\Uri $uri */
         $uri = $this->grav['uri'];
-        $path = $uri->path();
+        $currentRoute = $uri->route();
 
-        // Activate if the path matches or starts with our base route
-        if ($path === $this->base || str_starts_with($path, $this->base . '/')) {
-            $this->active = true;
+        if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
+            $this->isAdminProRoute = true;
         }
     }
 
     /**
-     * Initialize if active — register the hooks needed to serve the SPA.
+     * Initialize if on our route — register the hooks needed to serve the SPA.
      */
     public function onPluginsInitialized(): void
     {
-        if (!$this->active) {
+        if (!$this->isAdminProRoute) {
             return;
         }
 
-        // Check the API plugin is available
         if (!$this->config->get('plugins.api.enabled')) {
             return;
         }
@@ -83,17 +80,13 @@ class AdminProPlugin extends Plugin
     {
         /** @var Pages $pages */
         $pages = $this->grav['pages'];
-
-        // Prevent normal page processing
         $pages->enablePages();
 
-        // Create a virtual page for the SPA shell
         $page = new Page();
         $page->init(new \SplFileInfo(__DIR__ . '/pages/admin-pro.md'));
         $page->slug('admin-pro');
         $page->template('admin-pro');
 
-        // Set it as the current page
         unset($this->grav['page']);
         $this->grav['page'] = $page;
     }
@@ -113,7 +106,6 @@ class AdminProPlugin extends Plugin
     {
         $twig = $this->grav['twig'];
 
-        // Build the config object the SPA needs
         $apiRoute = $this->config->get('plugins.api.route', '/api');
         $apiVersion = $this->config->get('plugins.api.version_prefix', 'v1');
 
@@ -125,7 +117,7 @@ class AdminProPlugin extends Plugin
             'server_url' => $serverUrl,
             'api_prefix' => '/' . trim($apiRoute, '/') . '/' . trim($apiVersion, '/'),
             'base_path' => $this->base,
-            'environment' => $this->grav['uri']->environment(),
+            'environment' => $uri->environment(),
             'app_url' => $this->grav['locator']->findResource('plugin://admin-pro/app', false),
         ];
     }
