@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Grav\Plugin;
 
 use Grav\Common\Plugin;
-use Grav\Common\Page\Page;
-use Grav\Common\Page\Pages;
 
 /**
  * Admin Pro — Modern administration panel for Grav CMS.
@@ -54,7 +52,7 @@ class AdminProPlugin extends Plugin
     }
 
     /**
-     * Initialize if on our route — register the hooks needed to serve the SPA.
+     * If on our route, register the hook to serve the SPA.
      */
     public function onPluginsInitialized(): void
     {
@@ -62,50 +60,26 @@ class AdminProPlugin extends Plugin
             return;
         }
 
-        if (!$this->config->get('plugins.api.enabled')) {
-            return;
-        }
-
         $this->enable([
             'onPagesInitialized' => ['onPagesInitialized', 1000],
-            'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
-            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
         ]);
     }
 
     /**
-     * Create a virtual page to render our SPA template.
+     * Serve the SPA index.html with injected Grav config.
      */
     public function onPagesInitialized(): void
     {
-        /** @var Pages $pages */
-        $pages = $this->grav['pages'];
-        $pages->enablePages();
+        $appDir = __DIR__ . '/app';
+        $indexFile = $appDir . '/index.html';
 
-        $page = new Page();
-        $page->init(new \SplFileInfo(__DIR__ . '/pages/admin-pro.md'));
-        $page->slug('admin-pro');
-        $page->template('admin-pro');
+        if (!file_exists($indexFile)) {
+            header('HTTP/1.1 500 Internal Server Error');
+            echo 'Admin Pro: app not built. Run bin/build.sh first.';
+            exit;
+        }
 
-        unset($this->grav['page']);
-        $this->grav['page'] = $page;
-    }
-
-    /**
-     * Add our template directory so Twig can find admin-pro.html.twig.
-     */
-    public function onTwigTemplatePaths(): void
-    {
-        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
-    }
-
-    /**
-     * Inject configuration variables for the SPA.
-     */
-    public function onTwigSiteVariables(): void
-    {
-        $twig = $this->grav['twig'];
-
+        // Build the config to inject
         $apiRoute = $this->config->get('plugins.api.route', '/api');
         $apiVersion = $this->config->get('plugins.api.version_prefix', 'v1');
 
@@ -113,12 +87,29 @@ class AdminProPlugin extends Plugin
         $uri = $this->grav['uri'];
         $serverUrl = rtrim($uri->rootUrl(true), '/');
 
-        $twig->twig_vars['admin_pro'] = [
-            'server_url' => $serverUrl,
-            'api_prefix' => '/' . trim($apiRoute, '/') . '/' . trim($apiVersion, '/'),
-            'base_path' => $this->base,
+        $config = json_encode([
+            'serverUrl' => $serverUrl,
+            'apiPrefix' => '/' . trim($apiRoute, '/') . '/' . trim($apiVersion, '/'),
+            'basePath' => $this->base,
             'environment' => $uri->environment(),
-            'app_url' => $this->grav['locator']->findResource('plugin://admin-pro/app', false),
-        ];
+        ], JSON_UNESCAPED_SLASHES);
+
+        $configScript = "<script>window.__GRAV_CONFIG__ = {$config};</script>";
+
+        // Read the SvelteKit index.html and rewrite asset paths
+        $html = file_get_contents($indexFile);
+
+        // Rewrite asset paths: /_app/ → /user/plugins/admin-pro/app/_app/
+        $appBaseUrl = '/' . ltrim($this->grav['locator']->findResource('plugin://admin-pro/app', false), '/');
+        $html = str_replace('="/_app/', '="' . $appBaseUrl . '/_app/', $html);
+        $html = str_replace('("/_app/', '("' . $appBaseUrl . '/_app/', $html);
+
+        // Inject config script right after <head>
+        $html = str_replace('<head>', '<head>' . "\n    " . $configScript, $html);
+
+        // Send it
+        header('Content-Type: text/html; charset=UTF-8');
+        echo $html;
+        exit;
     }
 }
