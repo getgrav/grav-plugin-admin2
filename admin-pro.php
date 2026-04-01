@@ -32,6 +32,8 @@ class AdminProPlugin extends Plugin
 
     /**
      * Early setup — detect if the current request is for our route.
+     * Static assets are served immediately here, before Grav does any
+     * heavy lifting (pages, twig, etc.).
      */
     public function setup(): void
     {
@@ -48,11 +50,18 @@ class AdminProPlugin extends Plugin
 
         if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
             $this->isAdminProRoute = true;
+
+            // Serve static assets immediately — exit before Grav loads anything else
+            $subPath = substr($currentRoute, strlen($this->base));
+            if (str_starts_with($subPath, '/_app/')) {
+                $this->serveStaticAsset($subPath);
+                // serveStaticAsset calls exit, so we never reach here
+            }
         }
     }
 
     /**
-     * If on our route, register the hook to serve the SPA.
+     * If on our route (and not a static asset), register the hook to serve the SPA shell.
      */
     public function onPluginsInitialized(): void
     {
@@ -66,37 +75,23 @@ class AdminProPlugin extends Plugin
     }
 
     /**
-     * Serve the SPA — either a static asset from app/ or the index.html shell.
+     * Serve the SPA shell for all non-asset routes.
      */
     public function onPagesInitialized(): void
     {
-        /** @var \Grav\Common\Uri $uri */
-        $uri = $this->grav['uri'];
-        $route = $uri->route();
-
-        // Strip the base to get the sub-path (e.g. /admin-pro/_app/foo.js → /_app/foo.js)
-        $subPath = substr($route, strlen($this->base));
-
-        // Serve static assets from app/ directory
-        if (str_starts_with($subPath, '/_app/')) {
-            $this->serveStaticAsset($subPath);
-            return;
-        }
-
-        // Otherwise serve the SPA shell
         $this->serveSpaShell();
     }
 
     /**
-     * Serve a static file from the app/ directory.
+     * Serve a static file from the app/ directory and exit immediately.
+     * Called during setup() to bypass all Grav processing.
      */
     private function serveStaticAsset(string $subPath): void
     {
         $filePath = __DIR__ . '/app' . $subPath;
 
         if (!file_exists($filePath) || !is_file($filePath)) {
-            header('HTTP/1.1 404 Not Found');
-            echo 'Not found';
+            http_response_code(404);
             exit;
         }
 
@@ -104,12 +99,13 @@ class AdminProPlugin extends Plugin
         $realPath = realpath($filePath);
         $appRealPath = realpath(__DIR__ . '/app');
         if (!$realPath || !$appRealPath || !str_starts_with($realPath, $appRealPath)) {
-            header('HTTP/1.1 403 Forbidden');
+            http_response_code(403);
             exit;
         }
 
         $mime = match (pathinfo($filePath, PATHINFO_EXTENSION)) {
             'js' => 'text/javascript',
+            'mjs' => 'text/javascript',
             'css' => 'text/css',
             'svg' => 'image/svg+xml',
             'woff2' => 'font/woff2',
@@ -118,10 +114,12 @@ class AdminProPlugin extends Plugin
             'png' => 'image/png',
             'jpg', 'jpeg' => 'image/jpeg',
             'webp' => 'image/webp',
+            'avif' => 'image/avif',
+            'ico' => 'image/x-icon',
             default => mime_content_type($filePath) ?: 'application/octet-stream',
         };
 
-        // Immutable assets get long cache
+        // Immutable assets (hashed filenames) get aggressive caching
         $cache = str_contains($subPath, '/immutable/')
             ? 'public, max-age=31536000, immutable'
             : 'public, max-age=3600';
