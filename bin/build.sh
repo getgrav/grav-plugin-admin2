@@ -25,9 +25,15 @@ fi
 echo "Building SvelteKit app from: $SVELTE_PROJECT"
 echo "Output directory: $APP_DIR"
 
+# Base path for the SPA (must match the Grav site base + plugin route)
+# Override with: ADMIN_PRO_BASE=/my-site/admin-pro ./bin/build.sh
+ADMIN_PRO_BASE="${ADMIN_PRO_BASE:-/grav-api/admin-pro}"
+
+echo "SvelteKit base path: $ADMIN_PRO_BASE"
+
 # Build the SvelteKit app with adapter-static
 cd "$SVELTE_PROJECT"
-npm run build
+ADMIN_PRO_BASE="$ADMIN_PRO_BASE" npm run build
 
 # Find the build output (adapter-static outputs to build/)
 BUILD_DIR="$SVELTE_PROJECT/build"
