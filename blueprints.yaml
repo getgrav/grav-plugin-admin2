@@ -3,7 +3,7 @@ slug: admin-pro
 type: plugin
 version: 2.0.0-alpha.1
 description: Modern administration panel for Grav CMS. A premium, redesigned admin experience.
-icon: shield-check
+icon: black-tie
 author:
   name: Trilby Media
   email: hello@trilby.media
