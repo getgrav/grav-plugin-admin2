@@ -1,0 +1,1 @@
+import{h as a,i as g,l as s,j as r}from"./CmFoKOCo.js";let e=a(g({}));const l={get types(){return r(e)},register(t,i){for(const o of Object.keys(i))r(e)[o]=t;s(e,{...r(e)},!0)},has(t){return t in r(e)},getPluginSlug(t){return r(e)[t]},clear(){s(e,{},!0)}};export{l as c};

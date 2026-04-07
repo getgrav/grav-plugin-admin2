@@ -1,0 +1,1 @@
+import{Y as y,x as u,a1 as _,a2 as o,v as t,a3 as g,a4 as i,B as l,A as d,C as p,a5 as v}from"./CmFoKOCo.js";function C(n,r){let a=null,E=t;var s;if(t){a=p;for(var e=v(document.head);e!==null&&(e.nodeType!==g||e.data!==n);)e=i(e);if(e===null)l(!1);else{var f=i(e);e.remove(),d(f)}}t||(s=document.head.appendChild(y()));try{u(()=>r(s),_|o)}finally{E&&(l(!0),d(a))}}export{C as h};
