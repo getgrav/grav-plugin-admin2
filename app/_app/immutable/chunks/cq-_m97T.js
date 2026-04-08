@@ -1,0 +1,1 @@
+import{g as s,h as l,i as a,k as t}from"./u3_LX4Pc.js";import{a as m}from"./C4lbM5x_.js";async function c(){return m.get("/sidebar/items")}let e=s(l([])),r=s(!1);const u={get items(){return a(e)},get loaded(){return a(r)},async load(){try{const i=await c();t(e,i.sort((o,n)=>(n.priority??0)-(o.priority??0)),!0),t(r,!0)}catch{}},clear(){t(e,[],!0),t(r,!1)}};export{u as s};

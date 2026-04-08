@@ -1,0 +1,1 @@
+import{g as o,h as a,k as s,i as r}from"./u3_LX4Pc.js";let e=o(a({}));const n={get types(){return r(e)},register(t,g){for(const i of Object.keys(g))r(e)[i]=t;s(e,{...r(e)},!0)},has(t){return t in r(e)},getPluginSlug(t){return r(e)[t]},clear(){s(e,{},!0)}};export{n as c};
