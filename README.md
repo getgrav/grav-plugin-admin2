@@ -45,7 +45,7 @@ Override the route to anything you like (e.g. `/manager`) — the PHP wrapper an
 
 ## Accessing Admin2
 
-Point your browser at `http://yoursite.com/admin2` and log in with a user account that has `admin.login` and `admin.super` permissions (same permission model as the classic admin).
+Point your browser at `http://yoursite.com/admin2` and log in with a user account that has `api.login` and `api.super` permissions. Note that Admin2 uses the `api.*` permission namespace (provided by the Grav API plugin), **not** the classic admin's `admin.*` namespace — accounts intended for Admin2 need explicit `api:` access.
 
 If you do not yet have an admin user, create one via the `login` plugin CLI:
 
@@ -61,7 +61,7 @@ email: 'you@example.com'
 fullname: 'Your Name'
 title: 'Site Administrator'
 access:
-  admin:
+  api:
     login: true
     super: true
   site:
