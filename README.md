@@ -16,7 +16,7 @@ This means the PHP footprint here is small and the UI ships as a pre-built stati
 
 ## Requirements
 
-- Grav `>= 1.8.0`
+- Grav `>= 2.0.0`
 - [API plugin](https://github.com/getgrav/grav-plugin-api) `>= 1.0.0`
 - A user account with admin privileges (the `login` plugin handles authentication as with the classic admin)
 
