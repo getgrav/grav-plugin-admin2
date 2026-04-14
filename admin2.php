@@ -14,6 +14,14 @@ use Grav\Common\Plugin;
  */
 class Admin2Plugin extends Plugin
 {
+    /**
+     * Token that the SvelteKit build uses as its `kit.paths.base`. The plugin
+     * substitutes this for the configured route in the built assets the first
+     * time a request comes in (and whenever the route changes). Defined in
+     * svelte.config.js — keep these in sync.
+     */
+    private const BASE_PLACEHOLDER = '/__GRAV_ADMIN2_BASE__';
+
     /** @var bool Whether the current request is for the Admin2 route */
     protected bool $isAdmin2Route = false;
 
@@ -51,12 +59,104 @@ class Admin2Plugin extends Plugin
         if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
             $this->isAdmin2Route = true;
 
+            // Ensure the built assets have the configured route baked in.
+            // Fast path when already applied — one small file read.
+            $this->ensureBaseApplied();
+
             // Serve static assets immediately — exit before Grav loads anything else
             $subPath = substr($currentRoute, strlen($this->base));
             if (str_starts_with($subPath, '/_app/')) {
                 $this->serveStaticAsset($subPath);
                 // serveStaticAsset calls exit, so we never reach here
             }
+        }
+    }
+
+    /**
+     * Make sure the SvelteKit build in app/ has the currently-configured
+     * route substituted in for the placeholder token. This is how the plugin
+     * supports runtime-configurable routes without a rebuild.
+     *
+     * Called early in every admin2 request; steady-state cost is one file
+     * read of index.html. When the route changes (or a fresh build is
+     * dropped in by GPM) it walks the app/ tree and str_replaces the token
+     * for the configured route.
+     */
+    private function ensureBaseApplied(): void
+    {
+        $appDir = __DIR__ . '/app';
+        $indexPath = $appDir . '/index.html';
+        $markerPath = $appDir . '/.base-applied';
+
+        if (!is_file($indexPath)) {
+            // App not built; serveSpaShell() handles the error path.
+            return;
+        }
+
+        // Detect what's currently in the built assets by inspecting one
+        // known file. This avoids trusting only the marker, which can be
+        // stale after a plugin update overwrites app/ with fresh tokens.
+        $indexContent = file_get_contents($indexPath);
+
+        $needle = $this->base . '/_app/';
+        if (str_contains($indexContent, $needle)) {
+            // Already applied for this route.
+            return;
+        }
+
+        // Work out what to substitute FROM. If the placeholder is still in
+        // the file, the build is fresh; otherwise a previous route was
+        // applied and the marker tells us which one.
+        if (str_contains($indexContent, self::BASE_PLACEHOLDER . '/_app/')) {
+            $from = self::BASE_PLACEHOLDER;
+        } elseif (is_file($markerPath)) {
+            $from = trim((string) file_get_contents($markerPath));
+            if ($from === '' || !str_contains($indexContent, $from . '/_app/')) {
+                // Marker is stale; bail rather than corrupt the bundle.
+                return;
+            }
+        } else {
+            // No placeholder and no marker — can't determine source state.
+            return;
+        }
+
+        $this->substituteBase($appDir, $from, $this->base);
+        file_put_contents($markerPath, $this->base);
+    }
+
+    /**
+     * Recursively rewrite the base token across text-bearing files in app/.
+     * Binary assets (fonts, images) are left alone.
+     */
+    private function substituteBase(string $dir, string $from, string $to): void
+    {
+        if ($from === $to) {
+            return;
+        }
+
+        $textExtensions = ['js', 'mjs', 'css', 'html', 'json', 'svg', 'map'];
+
+        $iterator = new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator($dir, \RecursiveDirectoryIterator::SKIP_DOTS)
+        );
+
+        foreach ($iterator as $file) {
+            /** @var \SplFileInfo $file */
+            if (!$file->isFile()) {
+                continue;
+            }
+            $ext = strtolower($file->getExtension());
+            if (!in_array($ext, $textExtensions, true)) {
+                continue;
+            }
+
+            $path = $file->getPathname();
+            $content = file_get_contents($path);
+            if ($content === false || !str_contains($content, $from)) {
+                continue;
+            }
+
+            file_put_contents($path, str_replace($from, $to, $content));
         }
     }
 
