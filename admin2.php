@@ -7,17 +7,17 @@ namespace Grav\Plugin;
 use Grav\Common\Plugin;
 
 /**
- * Admin Pro — Modern administration panel for Grav CMS.
+ * Admin2 — Modern administration panel for Grav CMS.
  *
  * Serves a pre-built SvelteKit SPA from the plugin's app/ directory.
  * The SPA communicates with the Grav API plugin for all data operations.
  */
-class AdminProPlugin extends Plugin
+class Admin2Plugin extends Plugin
 {
-    /** @var bool Whether the current request is for the Admin Pro route */
-    protected bool $isAdminProRoute = false;
+    /** @var bool Whether the current request is for the Admin2 route */
+    protected bool $isAdmin2Route = false;
 
-    /** @var string The base route (e.g. /admin-pro) */
+    /** @var string The base route (e.g. /admin2) */
     protected string $base = '';
 
     public static function getSubscribedEvents(): array
@@ -37,7 +37,7 @@ class AdminProPlugin extends Plugin
      */
     public function setup(): void
     {
-        $route = $this->config->get('plugins.admin-pro.route');
+        $route = $this->config->get('plugins.admin2.route');
         if (!$route) {
             return;
         }
@@ -49,7 +49,7 @@ class AdminProPlugin extends Plugin
         $currentRoute = $uri->route();
 
         if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
-            $this->isAdminProRoute = true;
+            $this->isAdmin2Route = true;
 
             // Serve static assets immediately — exit before Grav loads anything else
             $subPath = substr($currentRoute, strlen($this->base));
@@ -65,7 +65,7 @@ class AdminProPlugin extends Plugin
      */
     public function onPluginsInitialized(): void
     {
-        if (!$this->isAdminProRoute) {
+        if (!$this->isAdmin2Route) {
             return;
         }
 
@@ -140,7 +140,7 @@ class AdminProPlugin extends Plugin
 
         if (!file_exists($indexFile)) {
             header('HTTP/1.1 500 Internal Server Error');
-            echo 'Admin Pro: app not built. Run bin/build.sh first.';
+            echo 'Admin2: app not built. Run bin/build.sh first.';
             exit;
         }
 

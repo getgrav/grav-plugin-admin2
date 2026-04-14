@@ -1,19 +1,18 @@
-name: Admin Pro
-slug: admin-pro
+name: Admin2
+slug: admin2
 type: plugin
 version: 2.0.0-alpha.1
-description: Modern administration panel for Grav CMS. A premium, redesigned admin experience.
+description: Modern administration panel for Grav CMS. A redesigned admin experience.
 icon: black-tie
 author:
   name: Trilby Media
   email: hello@trilby.media
   url: https://trilby.media
-homepage: https://getgrav.org/premium/admin-pro
-keywords: admin, panel, dashboard, management, pro, premium
-bugs: https://github.com/getgrav/grav-plugin-admin-pro/issues
-docs: https://learn.getgrav.org/admin-pro
-license: proprietary
-premium: true
+homepage: https://github.com/getgrav/grav-plugin-admin2
+keywords: admin, panel, dashboard, management
+bugs: https://github.com/getgrav/grav-plugin-admin2/issues
+docs: https://github.com/getgrav/grav-plugin-admin2/blob/main/README.md
+license: MIT
 
 dependencies:
   - { name: grav, version: '>=1.8.0' }
@@ -36,6 +35,6 @@ form:
     route:
       type: text
       label: Admin Route
-      description: The route to access Admin Pro (relative to site root).
-      default: /admin-pro
-      placeholder: /admin-pro
+      description: The route to access Admin2 (relative to site root).
+      default: /admin2
+      placeholder: /admin2
