@@ -25,8 +25,20 @@ class Admin2Plugin extends Plugin
     /** @var bool Whether the current request is for the Admin2 route */
     protected bool $isAdmin2Route = false;
 
-    /** @var string The base route (e.g. /admin2) */
+    /**
+     * The configured route, route-local (matches $uri->route() output).
+     * Example: '/admin2' or '/admin'.
+     */
     protected string $base = '';
+
+    /**
+     * The full URL path from the webserver root — the Grav site's rootUrl
+     * plus $base. This is what gets baked into SvelteKit's paths.base and
+     * therefore into every asset/link URL in the built bundle.
+     * Example: '/admin2' on a root-hosted site, '/grav-api/admin2' when
+     * Grav is mounted at /grav-api/.
+     */
+    protected string $assetsBase = '';
 
     public static function getSubscribedEvents(): array
     {
@@ -54,6 +66,12 @@ class Admin2Plugin extends Plugin
 
         /** @var \Grav\Common\Uri $uri */
         $uri = $this->grav['uri'];
+
+        // Full path from webserver root. rootUrl(false) returns the path-only
+        // portion of the Grav root (e.g. '/grav-api' or ''), never the host.
+        $rootPath = rtrim($uri->rootUrl(false), '/');
+        $this->assetsBase = $rootPath . $this->base;
+
         $currentRoute = $uri->route();
 
         if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
@@ -98,7 +116,7 @@ class Admin2Plugin extends Plugin
         // stale after a plugin update overwrites app/ with fresh tokens.
         $indexContent = file_get_contents($indexPath);
 
-        $needle = $this->base . '/_app/';
+        $needle = $this->assetsBase . '/_app/';
         if (str_contains($indexContent, $needle)) {
             // Already applied for this route.
             return;
@@ -120,8 +138,8 @@ class Admin2Plugin extends Plugin
             return;
         }
 
-        $this->substituteBase($appDir, $from, $this->base);
-        file_put_contents($markerPath, $this->base);
+        $this->substituteBase($appDir, $from, $this->assetsBase);
+        file_put_contents($markerPath, $this->assetsBase);
     }
 
     /**
@@ -255,7 +273,7 @@ class Admin2Plugin extends Plugin
         $config = json_encode([
             'serverUrl' => $serverUrl,
             'apiPrefix' => '/' . trim($apiRoute, '/') . '/' . trim($apiVersion, '/'),
-            'basePath' => $this->base,
+            'basePath' => $this->assetsBase,
             'environment' => $uri->environment(),
         ], JSON_UNESCAPED_SLASHES);
 
