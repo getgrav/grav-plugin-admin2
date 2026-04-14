@@ -14,7 +14,7 @@ PLUGIN_DIR="$(dirname "$SCRIPT_DIR")"
 APP_DIR="${PLUGIN_DIR}/app"
 
 # Default SvelteKit project location (sibling repo)
-SVELTE_PROJECT="${1:-$(dirname "$PLUGIN_DIR")/../../workspace/grav-admin-next}"
+SVELTE_PROJECT="${1:-$(dirname "$PLUGIN_DIR")/grav-admin-next}"
 
 if [ ! -d "$SVELTE_PROJECT" ]; then
     echo "Error: SvelteKit project not found at: $SVELTE_PROJECT"
