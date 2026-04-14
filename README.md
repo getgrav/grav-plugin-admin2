@@ -99,9 +99,11 @@ During SvelteKit development you can run `npm run dev:plugin` in `grav-admin-nex
 
 ## Relationship to the classic admin
 
-Admin2 does **not** replace `grav-plugin-admin`. Both can be installed side by side — Admin2 on `/admin2` and the classic admin on `/admin` — which is the expected setup during the alpha.
+**Admin2 is the successor to `grav-plugin-admin` in Grav 2.0.** The classic admin plugin will not be supported on Grav 2.0 — Admin2 replaces it.
 
-The two admins do not share UI code, events, or templates. Admin2 does not fire the `onAdmin*` event family that the classic admin exposes, because it does not run Grav's admin lifecycle — all data operations go through the API plugin instead. Plugins that integrate with the classic admin via Twig templates or admin-specific events will not automatically work in Admin2.
+During the alpha, Admin2 and the classic admin can be installed side by side (Admin2 on `/admin2`, classic admin on `/admin`) **for testing and comparison purposes only**. This is not a supported long-term configuration.
+
+The two admins do not share UI code, events, or templates. Admin2 does not fire the `onAdmin*` event family that the classic admin exposes, because it does not run Grav's admin lifecycle — all data operations go through the API plugin instead. Plugins that integrate with the classic admin via Twig templates or admin-specific events will need to be updated to work with Admin2 and the API plugin.
 
 ## Contributing
 
