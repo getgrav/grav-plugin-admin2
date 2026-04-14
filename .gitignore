@@ -1,7 +1,3 @@
 .DS_Store
 node_modules/
 vendor/
-
-# Runtime marker file written by the plugin when the base-path token has
-# been substituted in app/ for the configured route. Not a build artifact.
-app/.base-applied

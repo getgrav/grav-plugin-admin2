@@ -11,14 +11,19 @@ use Grav\Common\Plugin;
  *
  * Serves a pre-built SvelteKit SPA from the plugin's app/ directory.
  * The SPA communicates with the Grav API plugin for all data operations.
+ *
+ * The SvelteKit build bakes a placeholder base path into its assets; on
+ * first request per-site, the plugin materializes a site-local copy of
+ * the bundle into cache/ with the real base path substituted in. The
+ * source app/ directory is never mutated, which lets the same plugin be
+ * symlinked into many sites (each with its own rootUrl + route) without
+ * them trampling each other.
  */
 class Admin2Plugin extends Plugin
 {
     /**
-     * Token that the SvelteKit build uses as its `kit.paths.base`. The plugin
-     * substitutes this for the configured route in the built assets the first
-     * time a request comes in (and whenever the route changes). Defined in
-     * svelte.config.js — keep these in sync.
+     * Token that the SvelteKit build uses as its `kit.paths.base`. Defined
+     * in svelte.config.js — keep these in sync.
      */
     private const BASE_PLACEHOLDER = '/__GRAV_ADMIN2_BASE__';
 
@@ -34,11 +39,14 @@ class Admin2Plugin extends Plugin
     /**
      * The full URL path from the webserver root — the Grav site's rootUrl
      * plus $base. This is what gets baked into SvelteKit's paths.base and
-     * therefore into every asset/link URL in the built bundle.
+     * therefore into every asset/link URL in the materialized bundle.
      * Example: '/admin2' on a root-hosted site, '/grav-api/admin2' when
      * Grav is mounted at /grav-api/.
      */
     protected string $assetsBase = '';
+
+    /** @var string Absolute path to the materialized app/ inside this site's cache */
+    protected string $servedAppDir = '';
 
     public static function getSubscribedEvents(): array
     {
@@ -77,9 +85,10 @@ class Admin2Plugin extends Plugin
         if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
             $this->isAdmin2Route = true;
 
-            // Ensure the built assets have the configured route baked in.
-            // Fast path when already applied — one small file read.
-            $this->ensureBaseApplied();
+            // Ensure this site has an up-to-date materialized copy of the
+            // SPA with its own base path substituted in. Cheap on the hot
+            // path (one small JSON read + mtime compare).
+            $this->ensureMaterialized();
 
             // Serve static assets immediately — exit before Grav loads anything else
             $subPath = substr($currentRoute, strlen($this->base));
@@ -91,91 +100,154 @@ class Admin2Plugin extends Plugin
     }
 
     /**
-     * Make sure the SvelteKit build in app/ has the currently-configured
-     * route substituted in for the placeholder token. This is how the plugin
-     * supports runtime-configurable routes without a rebuild.
+     * Build (or refresh) this site's materialized copy of the SPA bundle
+     * in cache://admin2/app/. The source at __DIR__/app/ is never modified,
+     * so the same plugin directory can be symlinked into many sites.
      *
-     * Called early in every admin2 request; steady-state cost is one file
-     * read of index.html. When the route changes (or a fresh build is
-     * dropped in by GPM) it walks the app/ tree and str_replaces the token
-     * for the configured route.
+     * Re-materialization happens when:
+     *   - No manifest exists yet
+     *   - The configured assetsBase has changed (route or site root moved)
+     *   - The source bundle is newer than the materialized copy
      */
-    private function ensureBaseApplied(): void
+    private function ensureMaterialized(): void
     {
-        $appDir = __DIR__ . '/app';
-        $indexPath = $appDir . '/index.html';
-        $markerPath = $appDir . '/.base-applied';
+        $sourceDir = __DIR__ . '/app';
+        $sourceIndex = $sourceDir . '/index.html';
 
-        if (!is_file($indexPath)) {
+        if (!is_file($sourceIndex)) {
             // App not built; serveSpaShell() handles the error path.
             return;
         }
 
-        // Detect what's currently in the built assets by inspecting one
-        // known file. This avoids trusting only the marker, which can be
-        // stale after a plugin update overwrites app/ with fresh tokens.
-        $indexContent = file_get_contents($indexPath);
-
-        $needle = $this->assetsBase . '/_app/';
-        if (str_contains($indexContent, $needle)) {
-            // Already applied for this route.
+        /** @var \RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator $locator */
+        $locator = $this->grav['locator'];
+        $cacheRoot = $locator->findResource('cache://', true);
+        if (!$cacheRoot) {
+            // Nowhere safe to materialize; leave $servedAppDir empty so
+            // serveStaticAsset / serveSpaShell return errors.
             return;
         }
 
-        // Work out what to substitute FROM. If the placeholder is still in
-        // the file, the build is fresh; otherwise a previous route was
-        // applied and the marker tells us which one.
-        if (str_contains($indexContent, self::BASE_PLACEHOLDER . '/_app/')) {
-            $from = self::BASE_PLACEHOLDER;
-        } elseif (is_file($markerPath)) {
-            $from = trim((string) file_get_contents($markerPath));
-            if ($from === '' || !str_contains($indexContent, $from . '/_app/')) {
-                // Marker is stale; bail rather than corrupt the bundle.
-                return;
+        $cacheDir = $cacheRoot . '/admin2';
+        $this->servedAppDir = $cacheDir . '/app';
+        $manifestPath = $cacheDir . '/manifest.json';
+
+        $sourceMtime = filemtime($sourceIndex) ?: 0;
+
+        $manifest = null;
+        if (is_file($manifestPath)) {
+            $decoded = json_decode((string) file_get_contents($manifestPath), true);
+            if (is_array($decoded)) {
+                $manifest = $decoded;
             }
-        } else {
-            // No placeholder and no marker — can't determine source state.
+        }
+
+        $upToDate = $manifest
+            && is_dir($this->servedAppDir)
+            && ($manifest['assetsBase'] ?? null) === $this->assetsBase
+            && ($manifest['sourceMtime'] ?? null) === $sourceMtime;
+
+        if ($upToDate) {
             return;
         }
 
-        $this->substituteBase($appDir, $from, $this->assetsBase);
-        file_put_contents($markerPath, $this->assetsBase);
+        if (!is_dir($cacheDir) && !@mkdir($cacheDir, 0775, true) && !is_dir($cacheDir)) {
+            return;
+        }
+
+        // Materialize into a temp dir, then atomically swap in. This
+        // avoids half-written files being served during the copy.
+        $stagingDir = $cacheDir . '/app.staging.' . bin2hex(random_bytes(4));
+
+        try {
+            $this->materializeApp($sourceDir, $stagingDir, self::BASE_PLACEHOLDER, $this->assetsBase);
+        } catch (\Throwable $e) {
+            $this->rrmdir($stagingDir);
+            return;
+        }
+
+        // Swap: remove the old materialized dir, rename staging into place.
+        // Not fully atomic (two operations), but the window is narrow and
+        // the worst case is a transient 404 on one asset.
+        if (is_dir($this->servedAppDir)) {
+            $this->rrmdir($this->servedAppDir);
+        }
+        if (!@rename($stagingDir, $this->servedAppDir)) {
+            $this->rrmdir($stagingDir);
+            return;
+        }
+
+        file_put_contents($manifestPath, json_encode([
+            'assetsBase' => $this->assetsBase,
+            'sourceMtime' => $sourceMtime,
+        ], JSON_UNESCAPED_SLASHES));
     }
 
     /**
-     * Recursively rewrite the base token across text-bearing files in app/.
-     * Binary assets (fonts, images) are left alone.
+     * Copy $sourceDir to $targetDir, substituting $from for $to in every
+     * text-bearing file. Binary assets (fonts, images) are copied verbatim.
      */
-    private function substituteBase(string $dir, string $from, string $to): void
+    private function materializeApp(string $sourceDir, string $targetDir, string $from, string $to): void
     {
-        if ($from === $to) {
-            return;
+        if (!is_dir($targetDir) && !@mkdir($targetDir, 0775, true) && !is_dir($targetDir)) {
+            throw new \RuntimeException("Could not create {$targetDir}");
         }
 
         $textExtensions = ['js', 'mjs', 'css', 'html', 'json', 'svg', 'map'];
 
         $iterator = new \RecursiveIteratorIterator(
-            new \RecursiveDirectoryIterator($dir, \RecursiveDirectoryIterator::SKIP_DOTS)
+            new \RecursiveDirectoryIterator($sourceDir, \RecursiveDirectoryIterator::SKIP_DOTS),
+            \RecursiveIteratorIterator::SELF_FIRST
         );
 
         foreach ($iterator as $file) {
             /** @var \SplFileInfo $file */
-            if (!$file->isFile()) {
+            $relative = substr($file->getPathname(), strlen($sourceDir));
+            $target = $targetDir . $relative;
+
+            if ($file->isDir()) {
+                if (!is_dir($target) && !@mkdir($target, 0775, true) && !is_dir($target)) {
+                    throw new \RuntimeException("Could not create {$target}");
+                }
                 continue;
             }
+
             $ext = strtolower($file->getExtension());
-            if (!in_array($ext, $textExtensions, true)) {
-                continue;
+            if (in_array($ext, $textExtensions, true)) {
+                $content = file_get_contents($file->getPathname());
+                if ($content === false) {
+                    throw new \RuntimeException("Could not read {$file->getPathname()}");
+                }
+                if ($from !== $to && str_contains($content, $from)) {
+                    $content = str_replace($from, $to, $content);
+                }
+                file_put_contents($target, $content);
+            } else {
+                if (!@copy($file->getPathname(), $target)) {
+                    throw new \RuntimeException("Could not copy {$file->getPathname()}");
+                }
             }
-
-            $path = $file->getPathname();
-            $content = file_get_contents($path);
-            if ($content === false || !str_contains($content, $from)) {
-                continue;
-            }
-
-            file_put_contents($path, str_replace($from, $to, $content));
         }
+    }
+
+    private function rrmdir(string $dir): void
+    {
+        if (!is_dir($dir)) {
+            return;
+        }
+        $it = new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator($dir, \RecursiveDirectoryIterator::SKIP_DOTS),
+            \RecursiveIteratorIterator::CHILD_FIRST
+        );
+        foreach ($it as $f) {
+            /** @var \SplFileInfo $f */
+            if ($f->isDir()) {
+                @rmdir($f->getPathname());
+            } else {
+                @unlink($f->getPathname());
+            }
+        }
+        @rmdir($dir);
     }
 
     /**
@@ -201,21 +273,26 @@ class Admin2Plugin extends Plugin
     }
 
     /**
-     * Serve a static file from the app/ directory and exit immediately.
-     * Called during setup() to bypass all Grav processing.
+     * Serve a static file from the materialized app/ directory and exit
+     * immediately. Called during setup() to bypass all Grav processing.
      */
     private function serveStaticAsset(string $subPath): void
     {
-        $filePath = __DIR__ . '/app' . $subPath;
+        if ($this->servedAppDir === '') {
+            http_response_code(500);
+            exit;
+        }
+
+        $filePath = $this->servedAppDir . $subPath;
 
         if (!file_exists($filePath) || !is_file($filePath)) {
             http_response_code(404);
             exit;
         }
 
-        // Security: ensure resolved path is within app/
+        // Security: ensure resolved path is within the materialized app dir
         $realPath = realpath($filePath);
-        $appRealPath = realpath(__DIR__ . '/app');
+        $appRealPath = realpath($this->servedAppDir);
         if (!$realPath || !$appRealPath || !str_starts_with($realPath, $appRealPath)) {
             http_response_code(403);
             exit;
@@ -250,15 +327,16 @@ class Admin2Plugin extends Plugin
     }
 
     /**
-     * Serve the SPA index.html with injected Grav config.
+     * Serve the SPA index.html (from the materialized copy) with injected
+     * Grav config.
      */
     private function serveSpaShell(): void
     {
-        $indexFile = __DIR__ . '/app/index.html';
+        $indexFile = $this->servedAppDir !== '' ? $this->servedAppDir . '/index.html' : '';
 
-        if (!file_exists($indexFile)) {
+        if ($indexFile === '' || !file_exists($indexFile)) {
             header('HTTP/1.1 500 Internal Server Error');
-            echo 'Admin2: app not built. Run bin/build.sh first.';
+            echo 'Admin2: app not available. Ensure the plugin is built (bin/build.sh) and cache/ is writable.';
             exit;
         }
 
