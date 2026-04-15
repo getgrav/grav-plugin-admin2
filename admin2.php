@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Grav\Plugin;
 
 use Grav\Common\Plugin;
+use Grav\Events\PermissionsRegisterEvent;
+use Grav\Framework\Acl\PermissionsReader;
 
 /**
  * Admin2 — Modern administration panel for Grav CMS.
@@ -55,7 +57,14 @@ class Admin2Plugin extends Plugin
                 ['setup', 100000],
                 ['onPluginsInitialized', 1001],
             ],
+            PermissionsRegisterEvent::class => ['onRegisterPermissions', 1000],
         ];
+    }
+
+    public function onRegisterPermissions(PermissionsRegisterEvent $event): void
+    {
+        $actions = PermissionsReader::fromYaml("plugin://{$this->name}/permissions.yaml");
+        $event->permissions->addActions($actions);
     }
 
     /**

@@ -1,0 +1,12 @@
+actions:
+  site.login:
+    type: access
+    label: Login to Site
+
+  admin.login:
+    type: access
+    label: Login to Admin
+
+  admin.super:
+    type: access
+    label: Super User
