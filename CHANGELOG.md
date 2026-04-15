@@ -1,3 +1,9 @@
+# v2.0.0-beta.3
+## 04/15/2026
+
+1. [](#new)
+    * Support for first user creation
+
 # v2.0.0-beta.2
 ## 04/15/2026
 
