@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 #
-# Build the Admin2 SPA and copy the output into the plugin's app/ directory.
+# Build the Admin2 SPA directly into the plugin's app/ directory.
+#
+# The SvelteKit build emits a token placeholder as its base path; the PHP
+# plugin substitutes the token for the configured route at serve time, so
+# the build is route-agnostic and does not need rebuilding when the route
+# changes.
 #
 # Usage:
 #   ./bin/build.sh                          # Build from default location
@@ -25,30 +30,21 @@ fi
 echo "Building SvelteKit app from: $SVELTE_PROJECT"
 echo "Output directory: $APP_DIR"
 
-# Base path for the SPA (must match the Grav site base + plugin route)
-# Override with: ADMIN2_BASE=/my-site/admin2 ./bin/build.sh
-ADMIN2_BASE="${ADMIN2_BASE:-/grav-api/admin2}"
+# Clean the previous output so stale chunks do not linger.
+rm -rf "$APP_DIR"
 
-echo "SvelteKit base path: $ADMIN2_BASE"
-
-# Build the SvelteKit app with adapter-static
+# Build: ADMIN2_PLUGIN_BUILD=1 tells svelte.config.js to write adapter-static
+# output directly into this plugin's app/ directory.
 cd "$SVELTE_PROJECT"
-ADMIN2_BASE="$ADMIN2_BASE" npm run build
+ADMIN2_PLUGIN_BUILD=1 npm run build
 
-# Find the build output (adapter-static outputs to build/)
-BUILD_DIR="$SVELTE_PROJECT/build"
-
-if [ ! -d "$BUILD_DIR" ]; then
-    echo "Error: Build output not found at $BUILD_DIR"
-    echo "Make sure @sveltejs/adapter-static is configured."
+if [ ! -d "$APP_DIR" ]; then
+    echo "Error: Build output not found at $APP_DIR"
+    echo "Make sure svelte.config.js routes output into the plugin when ADMIN2_PLUGIN_BUILD is set."
     exit 1
 fi
 
-# Clean and copy
-rm -rf "$APP_DIR"
-cp -r "$BUILD_DIR" "$APP_DIR"
-
 echo ""
-echo "Build complete. Files copied to: $APP_DIR"
+echo "Build complete. Files written to: $APP_DIR"
 echo "Contents:"
 ls -la "$APP_DIR"

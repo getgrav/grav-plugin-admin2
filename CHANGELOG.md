@@ -1,3 +1,9 @@
+# v2.0.0-beta.2
+## 04/15/2026
+
+1. [](#bugfix)
+    * Fixed dynamic path issue
+
 # v2.0.0-beta.1
 ## 04/14/2026
 
