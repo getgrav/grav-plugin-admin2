@@ -264,6 +264,23 @@ class Admin2Plugin extends Plugin
      */
     public function onPluginsInitialized(): void
     {
+        // Bootstrap hijack — parity with admin-classic. If there are no user
+        // accounts, send any frontend page request to the admin2 route so the
+        // SPA's /auth/setup probe can take over and walk the visitor through
+        // first-user creation. Without this, a site with admin2 installed but
+        // no accounts would let the first random visitor who discovers the
+        // admin route create the super user.
+        //
+        // Skip the API plugin's own route prefix — otherwise we'd intercept the
+        // SPA's own /auth/setup probe and redirect it away.
+        //
+        // Pass the route-local base (e.g. '/admin') — Grav's redirect() prepends
+        // the site root itself. $this->assetsBase already includes the root, so
+        // using it here would double-prefix on sites mounted in a subpath.
+        if (!$this->isAdmin2Route && $this->base && !$this->isApiRoute() && !$this->anyUsersExist()) {
+            $this->grav->redirect($this->base);
+        }
+
         if (!$this->isAdmin2Route) {
             return;
         }
@@ -271,6 +288,45 @@ class Admin2Plugin extends Plugin
         $this->enable([
             'onPagesInitialized' => ['onPagesInitialized', 1000],
         ]);
+    }
+
+    /**
+     * Whether the current request targets the API plugin's route prefix.
+     * The bootstrap hijack must not intercept these, or the SPA's own
+     * /auth/setup probe would be redirected away from the API it needs.
+     */
+    private function isApiRoute(): bool
+    {
+        $apiRoute = rtrim((string) $this->config->get('plugins.api.route', '/api'), '/');
+        if ($apiRoute === '') {
+            return false;
+        }
+        /** @var \Grav\Common\Uri $uri */
+        $uri = $this->grav['uri'];
+        $current = $uri->route();
+        return $current === $apiRoute || str_starts_with($current, $apiRoute . '/');
+    }
+
+    /**
+     * Check whether any user accounts exist. Mirrors Admin::doAnyUsersExist()
+     * from admin-classic but is self-contained so admin2 does not depend on
+     * admin-classic being installed.
+     */
+    private function anyUsersExist(): bool
+    {
+        $locator = $this->grav['locator'];
+        $accountsDir = $locator->findResource('account://', true);
+        if (!$accountsDir || !is_dir($accountsDir)) {
+            return false;
+        }
+
+        foreach (glob($accountsDir . '/*.yaml') ?: [] as $file) {
+            if (is_file($file)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**

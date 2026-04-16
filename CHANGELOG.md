@@ -1,3 +1,15 @@
+# v2.0.0-beta.5
+## 04/16/2026
+
+1. [](#new)
+    * Server-side bootstrap hijack — frontend requests on sites with zero user accounts are now redirected to the admin route (parity with admin-classic), closing the window where a stranger could reach the admin before the site owner did
+2. [](#improved)
+    * All admin-next SPA `localStorage` keys (auth tokens, preferences, theme, content language, i18n cache) are now scoped by `__GRAV_CONFIG__.basePath` so multiple Grav installs on the same browser origin (e.g. `localhost/site-a`, `localhost/site-b`) no longer share or clobber each other's session and settings
+    * Self-contained `anyUsersExist()` helper so the hijack does not require admin-classic to be installed
+3. [](#bugfix)
+    * No-user redirect now passes a route-local path to `Grav::redirect()` (the framework prepends the site root itself); previously double-prefixed on installs mounted under a subpath
+    * No-user hijack excludes the API plugin's own route prefix so the SPA's `/auth/setup` probe can reach the API
+
 # v2.0.0-beta.4
 ## 04/15/2026
 
