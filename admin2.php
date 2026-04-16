@@ -268,10 +268,14 @@ class Admin2Plugin extends Plugin
         // accounts, send any frontend request to the admin2 route so the SPA's
         // /auth/setup probe can take over and walk the visitor through first-user
         // creation. Without this, a site with admin2 installed but no accounts
-        // would let the first random visitor to discover /admin2 create the
-        // super user.
+        // would let the first random visitor who discovers the admin route
+        // create the super user.
+        //
+        // Pass the route-local base (e.g. '/admin') — Grav's redirect() prepends
+        // the site root itself. $this->assetsBase already includes the root, so
+        // using it here would double-prefix on sites mounted in a subpath.
         if (!$this->isAdmin2Route && $this->base && !$this->anyUsersExist()) {
-            $this->grav->redirect($this->assetsBase ?: $this->base);
+            $this->grav->redirect($this->base);
         }
 
         if (!$this->isAdmin2Route) {
