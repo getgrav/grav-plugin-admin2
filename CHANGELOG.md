@@ -1,3 +1,18 @@
+# v2.0.0-beta.6
+## 04/16/2026
+
+1. [](#new)
+    * Updates control surface across the SPA: Dashboard "Updates" card gains an "Update All (N)" button and a prominent amber/orange "Upgrade Grav to vX" button (disabled + tooltip when Grav is installed as a symlink)
+    * Plugins page: "Update All (N)" header action plus a per-row "Update to vX.Y" button in the detail panel
+    * Plugin config page: amber "Update available" pill next to the version and an "Update to vX.Y" button in the action bar
+    * Themes page + theme config page: mirrors the plugin update surface
+    * Sidebar footer now shows the running `Grav vX` / `AdminN vX` versions next to the collapse chevron (admin2 injects both into `window.__GRAV_CONFIG__`)
+2. [](#improved)
+    * Confirmation prompts for updates route through the shared `ConfirmModal` (via `dialogs.confirm`), matching the rest of the SPA
+    * Dashboard, Plugins, and Themes polling now reflects the refreshed updatable state immediately after any update / upgrade call
+3. [](#bugfix)
+    * `GET /gpm/updates` now counts Grav itself in `total`; the dashboard previously said "1 update available" when both a plugin and Grav core had pending releases
+
 # v2.0.0-beta.5
 ## 04/16/2026
 
