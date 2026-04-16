@@ -264,6 +264,16 @@ class Admin2Plugin extends Plugin
      */
     public function onPluginsInitialized(): void
     {
+        // Bootstrap hijack — parity with admin-classic. If there are no user
+        // accounts, send any frontend request to the admin2 route so the SPA's
+        // /auth/setup probe can take over and walk the visitor through first-user
+        // creation. Without this, a site with admin2 installed but no accounts
+        // would let the first random visitor to discover /admin2 create the
+        // super user.
+        if (!$this->isAdmin2Route && $this->base && !$this->anyUsersExist()) {
+            $this->grav->redirect($this->assetsBase ?: $this->base);
+        }
+
         if (!$this->isAdmin2Route) {
             return;
         }
@@ -271,6 +281,28 @@ class Admin2Plugin extends Plugin
         $this->enable([
             'onPagesInitialized' => ['onPagesInitialized', 1000],
         ]);
+    }
+
+    /**
+     * Check whether any user accounts exist. Mirrors Admin::doAnyUsersExist()
+     * from admin-classic but is self-contained so admin2 does not depend on
+     * admin-classic being installed.
+     */
+    private function anyUsersExist(): bool
+    {
+        $locator = $this->grav['locator'];
+        $accountsDir = $locator->findResource('account://', true);
+        if (!$accountsDir || !is_dir($accountsDir)) {
+            return false;
+        }
+
+        foreach (glob($accountsDir . '/*.yaml') ?: [] as $file) {
+            if (is_file($file)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
