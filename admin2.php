@@ -418,6 +418,13 @@ class Admin2Plugin extends Plugin
             'apiPrefix' => '/' . trim($apiRoute, '/') . '/' . trim($apiVersion, '/'),
             'basePath' => $this->assetsBase,
             'environment' => $uri->environment(),
+            'grav' => [
+                'version' => GRAV_VERSION,
+            ],
+            'admin' => [
+                'name' => $this->getBlueprint()->get('name'),
+                'version' => $this->getBlueprint()->get('version'),
+            ],
         ], JSON_UNESCAPED_SLASHES);
 
         $configScript = "<script>window.__GRAV_CONFIG__ = {$config};</script>";
