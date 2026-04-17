@@ -1,3 +1,20 @@
+# v2.0.0-beta.7
+## 04/17/2026
+
+1. [](#new)
+    * Symlink indicator in the Plugins and Themes listings — a small VS Code-style corner arrow (↳) renders to the right of each row (next to the Enabled / Disabled / Active pill) for any package installed via symlink, with a native `Symlinked` hover tooltip. Reads the new `is_symlink` field from grav-plugin-api beta.7.
+    * Dashboard Updates card redesigned for hierarchy: prominent purple Grav-core callout (version arrow `v{current} → v{available}`, filled-purple **Upgrade Grav** button) sits above an amber package panel (per-row version chips, filled-amber **Update All** button). Distinct button colors differentiate core upgrades from routine package updates at a glance.
+    * Grav core card degrades to an explanatory message ("installed via symlink — upgrade manually") and hides the upgrade button when `is_symlink` is reported by the API.
+    * **View site** button restored in the top menubar (globe icon + "View site" + external-link glyph) — opens the Grav frontend (`auth.serverUrl`) in a new tab. Had been dropped during the auth transport refactor.
+    * **Unsaved-changes indicator** restored and now uniform across every edit surface — a pulsing amber dot in a bordered pill sits in the toolbar whenever there are pending changes. Adopts the shared `UnsavedIndicator` tri-state (saving spinner / green "saved" check / amber pulsing dot) when auto-save is enabled. Wired up on: Pages edit, Config (system / site / media / security), Plugins config, Themes config, Users edit, Flex-objects edit, and the blueprint-mode Plugin page.
+    * Pages listing now distinguishes "implicit default" pages (those stored as a bare `default.md` with no language-suffixed variant) from genuinely untranslated pages. Implicit defaults render in normal text with a muted default-language badge; only pages that have explicit translations but lack one for the active language are shown italic + muted. Badge highlighting uses the new `explicit_language_files` signal, so the active-lang badge stays muted when it's served by the `default.md` fallback and highlights only when there's a real `default.<lang>.md` on disk.
+    * Miller / columns view reached feature parity with Tree and List: route paths now render below each page title, and translation badges render inline beside the title (same styling + highlighting rules).
+    * Page editor Save-as-{lang} dropdown: when the page is a bare `default.md` and the chosen target matches the site's default language, the action now routes through the new `POST /pages/{route}/adopt-language` API — renaming the file in place instead of creating a duplicate `default.<lang>.md` alongside the original. The dropdown correctly surfaces "Save as {defaultLang}" even when Grav reports the default lang in `translated_languages` (it always does when `default.md` exists), using `explicit_language_files` to tell whether the real file exists.
+    * Tree and List page views now perform **full-site search** against the server (`GET /pages?search=`) instead of only filtering the currently-visible rows. Previously both views were paginated / lazy-loaded and the search box could only match pages that had already been fetched, which made the search feel broken on large sites. When the search input is empty both views revert to their normal paginated / tree behavior; searches are debounced at 250ms and capped at 500 results.
+2. [](#improved)
+    * All package update and Grav upgrade actions (single-package update, Update All, Upgrade Grav) now require explicit confirmation through the shared `ConfirmModal`. Previously these fired immediately on button press, which is risky for destructive / long-running writes on a live site.
+    * X-API-Token header is now the default JWT transport for all API calls, aligning with grav-plugin-api beta.7. Fixes login / reauth on FastCGI hosts (e.g. MAMP) that strip the `Authorization` header.
+
 # v2.0.0-beta.6
 ## 04/16/2026
 
