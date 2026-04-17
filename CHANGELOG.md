@@ -5,6 +5,8 @@
     * **Copy page** restored in the Pages edit toolbar (parity with admin-classic). Duplicates the current page into the same parent — picks the next free `slug-N`, increments the trailing number in the title (or appends ` 2` if none), then navigates to the new page's edit screen.
 2. [](#improved)
     * Pages edit toolbar is now responsive. Below `lg` (1024px) the Normal/Expert toggle, Save and Undo collapse to icon-only; Preview, Copy and Delete are always icon-only and sit to the left of the Normal/Expert toggle. Below `sm` (640px) the toolbar wraps onto its own row beneath the title so it stops crowding the page title on narrow viewports.
+3. [](#bugfix)
+    * Home page now works correctly in the Pages UI. All page list / tree / columns views, the page-navigator D-pad, and the edit screen address the home page by its structural `raw_route` (typically `/home`) instead of the public `/` alias that the API router doesn't match — fixes the empty preview in columns view and the "Failed to load page" error when editing Home. Direct navigation to `/pages/edit/` also resolves to the home page automatically.
 
 # v2.0.0-beta.7
 ## 04/17/2026
