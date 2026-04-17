@@ -1,3 +1,9 @@
+# v2.0.0-beta.9
+## 04/17/2026
+
+1. [](#improved)
+    * Dashboard **Refresh** button now flushes the GPM remote-manifest cache (equivalent to `bin/gpm index -f`), so clicking it picks up newly released plugin / theme / Grav versions instead of returning the stale local cache. The 60-second auto-poll and invalidation-triggered reloads still use the cached path.
+
 # v2.0.0-beta.8
 ## 04/17/2026
 
