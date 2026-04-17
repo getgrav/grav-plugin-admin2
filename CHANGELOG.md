@@ -8,6 +8,7 @@
 3. [](#bugfix)
     * Home page now works correctly in the Pages UI. All page list / tree / columns views, the page-navigator D-pad, and the edit screen address the home page by its structural `raw_route` (typically `/home`) instead of the public `/` alias that the API router doesn't match — fixes the empty preview in columns view and the "Failed to load page" error when editing Home. Direct navigation to `/pages/edit/` also resolves to the home page automatically.
     * Plugin and theme descriptions render inline markdown (links, bold, emphasis) in detail panels instead of showing raw `[text](url)` / `**bold**` syntax. Truncated list-card descriptions strip the markdown to plain text so the one-line summary stays readable. Uses the new `description_html` field from grav-plugin-api beta.8.
+    * Pages with template-dependent shortcodes in their body (e.g. `[poll]`) no longer fail to load a preview in the Miller columns view. The page-summary API endpoint now falls back to plain-text when shortcode rendering throws (requires grav-plugin-api beta.8).
 
 # v2.0.0-beta.7
 ## 04/17/2026
