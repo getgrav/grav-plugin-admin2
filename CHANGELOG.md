@@ -7,6 +7,7 @@
     * Pages edit toolbar is now responsive. Below `lg` (1024px) the Normal/Expert toggle, Save and Undo collapse to icon-only; Preview, Copy and Delete are always icon-only and sit to the left of the Normal/Expert toggle. Below `sm` (640px) the toolbar wraps onto its own row beneath the title so it stops crowding the page title on narrow viewports.
 3. [](#bugfix)
     * Home page now works correctly in the Pages UI. All page list / tree / columns views, the page-navigator D-pad, and the edit screen address the home page by its structural `raw_route` (typically `/home`) instead of the public `/` alias that the API router doesn't match — fixes the empty preview in columns view and the "Failed to load page" error when editing Home. Direct navigation to `/pages/edit/` also resolves to the home page automatically.
+    * Plugin and theme descriptions render inline markdown (links, bold, emphasis) in detail panels instead of showing raw `[text](url)` / `**bold**` syntax. Truncated list-card descriptions strip the markdown to plain text so the one-line summary stays readable. Uses the new `description_html` field from grav-plugin-api beta.8.
 
 # v2.0.0-beta.7
 ## 04/17/2026
