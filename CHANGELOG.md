@@ -1,3 +1,9 @@
+# v2.0.0-beta.10
+## 04/19/2026
+
+1. [](#improved)
+    * Page visibility signal in Tree, List, and Columns views switched from a 60% opacity dim on the title to a two-tone page/folder icon: **visible** pages use the accent color (matches the rest of the admin chrome), **non-visible** pages drop to the muted grey used for secondary text. Keeps titles at full contrast — the previous dim was hard to read against the dark background — while still giving an at-a-glance signal in the same spot readers already look. Miller's active-row white-on-accent treatment still wins when a row is selected.
+
 # v2.0.0-beta.9
 ## 04/19/2026
 
