@@ -4,6 +4,8 @@
 1. [](#new)
     * Accent color **Custom** picker in Settings → Appearance — hue (0–360°) and saturation (0–100%) sliders let you dial in any brand color while the theme's lightness clamp keeps contrast consistent across light and dark modes. The gradient-filled sliders preview the result live; the panel auto-expands for users whose stored color doesn't match a preset.
     * Added **Grav** accent preset (hue 271 / sat 91 — the purple used on the new getgrav.org design) and promoted it to the default accent color for new installs.
+2. [](#improved)
+    * Dark-mode primary color is now rendered at Tailwind-500 lightness (L=65) instead of L=70 with a +8 saturation boost. Toggles, primary buttons, focus rings and every other `--primary`-driven element now match the canonical 500 shade of the chosen hue (e.g. Grav purple → ~#B166F8) instead of a slightly washed-out neon 400.
 
 
 1. [](#improved)
