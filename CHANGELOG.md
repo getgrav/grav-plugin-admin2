@@ -6,6 +6,10 @@
     * Added **Grav** accent preset (hue 271 / sat 91 — the purple used on the new getgrav.org design) and promoted it to the default accent color for new installs.
 2. [](#improved)
     * Dark-mode primary color is now rendered at Tailwind-500 lightness (L=65) instead of L=70 with a +8 saturation boost. Toggles, primary buttons, focus rings and every other `--primary`-driven element now match the canonical 500 shade of the chosen hue (e.g. Grav purple → ~#B166F8) instead of a slightly washed-out neon 400.
+    * Pages **columns (Miller) view** now surfaces per-page publish/visibility state at a glance: an inline amber **Draft** pill renders next to the title for unpublished pages, invisible pages dim to 60% opacity (consistent with Tree and List views), and the preview panel shows a **Visible** badge for pages that appear in nav alongside the existing Published/Draft and Has-children badges.
+    * Tree and List views also dim invisible pages (those with `visible: false` in frontmatter or missing an order prefix) to 60% opacity on the title + route block. Composes naturally with the existing italic-muted styling for untranslated pages so the two signals remain distinct.
+    * Page Info sidebar on the edit screen now updates immediately after saving a Published or Visible change — previously required a page reload to pick up the new value. Requires grav-plugin-api ≥ beta.10.
+    * Draft / hidden pages in Tree, List, and Columns views now correctly report their published / visible state in the API response. Previously the flex-indexed listing endpoint returned stale "true" values so every draft looked published and every hidden page looked visible. Requires grav-plugin-api ≥ beta.10.
 
 
 1. [](#improved)
