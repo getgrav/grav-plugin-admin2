@@ -9,6 +9,8 @@
         * List view: `loadPages(silent)` — invalidations and focus events refetch the current page of results silently; no skeleton flip.
         * Miller (Columns) view: `silentRefreshColumn(parentRoute)` — refetches only the column(s) containing the affected page, preserving the user's selection trail and downstream columns. Previously, any mutation reset the view back to the root column.
         * Result: the dashboard no longer "re-animates" every minute, and the pages browser no longer flashes a skeleton when a page is saved elsewhere on the site.
+2. [](#bugfix)
+    * Self-hosted font files (`/fonts/*.ttf`) are now served correctly from the admin2 route. The static-asset gate in `admin2.php` previously only intercepted `/_app/` — anything under `/fonts/` fell through to the SPA router and returned the HTML shell, so browsers reported `OTS parsing error: invalid sfntVersion` and the Google Sans option in Settings → Appearance silently fell back to Inter. The gate now also matches `/fonts/`, `/robots.txt`, and `/favicon.ico`, and the MIME map adds explicit `font/ttf` and `font/otf` handlers. The SPA shell declares an inline `<link rel="icon" href="data:,">` to silence the default browser favicon request.
 
 # v2.0.0-beta.9
 ## 04/19/2026

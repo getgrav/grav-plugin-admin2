@@ -101,7 +101,12 @@ class Admin2Plugin extends Plugin
 
             // Serve static assets immediately — exit before Grav loads anything else
             $subPath = substr($currentRoute, strlen($this->base));
-            if (str_starts_with($subPath, '/_app/')) {
+            if (
+                str_starts_with($subPath, '/_app/')
+                || str_starts_with($subPath, '/fonts/')
+                || $subPath === '/robots.txt'
+                || $subPath === '/favicon.ico'
+            ) {
                 $this->serveStaticAsset($subPath);
                 // serveStaticAsset calls exit, so we never reach here
             }
@@ -370,6 +375,8 @@ class Admin2Plugin extends Plugin
             'svg' => 'image/svg+xml',
             'woff2' => 'font/woff2',
             'woff' => 'font/woff',
+            'ttf' => 'font/ttf',
+            'otf' => 'font/otf',
             'json' => 'application/json',
             'png' => 'image/png',
             'jpg', 'jpeg' => 'image/jpeg',
