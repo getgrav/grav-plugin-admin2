@@ -1,18 +1,17 @@
-# v2.0.0-beta.10
+# v2.0.0-beta.9
 ## 04/19/2026
 
 1. [](#new)
     * Accent color **Custom** picker in Settings → Appearance — hue (0–360°) and saturation (0–100%) sliders let you dial in any brand color while the theme's lightness clamp keeps contrast consistent across light and dark modes. The gradient-filled sliders preview the result live; the panel auto-expands for users whose stored color doesn't match a preset.
     * Added **Grav** accent preset (hue 271 / sat 91 — the purple used on the new getgrav.org design) and promoted it to the default accent color for new installs.
+    * **Font picker** in Settings → Appearance with five built-in variable typefaces: **Google Sans** (self-hosted, new default, matches the marketing site), Inter, Public Sans, Nunito Sans, Jost. Each option renders its label in its own typeface for live preview; the chosen font persists per-install alongside the other appearance preferences and applies globally via a `--font-sans` CSS variable.
 2. [](#improved)
     * Dark-mode primary color is now rendered at Tailwind-500 lightness (L=65) instead of L=70 with a +8 saturation boost. Toggles, primary buttons, focus rings and every other `--primary`-driven element now match the canonical 500 shade of the chosen hue (e.g. Grav purple → ~#B166F8) instead of a slightly washed-out neon 400.
+    * Dark-mode `--popover` token raised from `hsl(240 10% 3.9%)` (~#09090B, near-black) to `hsl(240 4.5% 14.5%)` so floating surfaces sit in the same grey family as cards and inputs. Fixes the visible inconsistency where custom dropdowns (Selectize, Pages picker, File picker, Icon picker, DateTime calendar, language switcher, cache-clear menu, floating widgets) rendered much darker than native `<select>` controls that used `bg-muted`.
     * Pages **columns (Miller) view** now surfaces per-page publish/visibility state at a glance: an inline amber **Draft** pill renders next to the title for unpublished pages, invisible pages dim to 60% opacity (consistent with Tree and List views), and the preview panel shows a **Visible** badge for pages that appear in nav alongside the existing Published/Draft and Has-children badges.
     * Tree and List views also dim invisible pages (those with `visible: false` in frontmatter or missing an order prefix) to 60% opacity on the title + route block. Composes naturally with the existing italic-muted styling for untranslated pages so the two signals remain distinct.
-    * Page Info sidebar on the edit screen now updates immediately after saving a Published or Visible change — previously required a page reload to pick up the new value. Requires grav-plugin-api ≥ beta.10.
-    * Draft / hidden pages in Tree, List, and Columns views now correctly report their published / visible state in the API response. Previously the flex-indexed listing endpoint returned stale "true" values so every draft looked published and every hidden page looked visible. Requires grav-plugin-api ≥ beta.10.
-
-
-1. [](#improved)
+    * Page Info sidebar on the edit screen now updates immediately after saving a Published or Visible change — previously required a page reload to pick up the new value. Requires grav-plugin-api ≥ beta.9.
+    * Draft / hidden pages in Tree, List, and Columns views now correctly report their published / visible state in the API response. Previously the flex-indexed listing endpoint returned stale "true" values so every draft looked published and every hidden page looked visible. Requires grav-plugin-api ≥ beta.9.
     * Dashboard **Refresh** button now flushes the GPM remote-manifest cache (equivalent to `bin/gpm index -f`), so clicking it picks up newly released plugin / theme / Grav versions instead of returning the stale local cache. The 60-second auto-poll and invalidation-triggered reloads still use the cached path.
 
 # v2.0.0-beta.8
