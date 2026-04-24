@@ -1,5 +1,11 @@
-# v2.0.0-beta.12
+# v2.0.0-beta.13
 ## 04/24/2026
+
+1. [](#new)
+    * **Password strength meter + requirements modal** on every password entry surface — first-run setup, password reset, new-user creation, and the user profile edit form. Reads the configured `system.pwd_regex` (or the new optional `system.pwd_rules` list of labeled rules) via `GET /auth/password-policy` and renders a live rule checklist plus a single horizontal meter. Color flips to green only when every required rule passes (so the user knows "this will submit"); fill percentage keeps climbing with a lightweight entropy score, so a barely-passing password sits mid-green and a long, diverse one pushes to full. A small `Requirements` hint button next to the field opens a modal listing each rule with live met/unmet indicators. The setup-status endpoint piggybacks the policy so `/setup` gets it in one round-trip; all three legacy flows cache the policy via a shared Svelte store. Includes a reveal (eye-icon) toggle on every password field. Requires grav-plugin-api ≥ beta.13.
+2. [](#bugfix)
+    * User listing no longer surfaces phantom entries for stray files in `user/accounts/`. Grav's Flex `FileStorage::buildIndex()` indexes every file in the accounts folder without filtering by extension, so backup/snapshot files dropped by other plugins (e.g. revisions-pro's `.rev` snapshots) showed up as clickable "users" in the Users list. `UsersController::indexViaFlex` now constrains the collection to keys matching the username pattern `[a-z0-9_-]+` before search/sort/pagination run.
+    * Blueprint password fields in the user profile edit form now render with the strength meter + requirements hint (previously rendered as a plain password input via `TextField`). Size prop is honored so the password input matches the width of neighbouring text inputs.
 
 1. [](#improved)
     * Require Login version `3.8.2` for security fixes
