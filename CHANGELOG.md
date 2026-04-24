@@ -1,3 +1,9 @@
+# v2.0.0-beta.12
+## 04/24/2026
+
+1. [](#improved)
+    * Require Login version `3.8.2` for security fixes
+
 # v2.0.0-beta.11
 ## 04/22/2026
 
