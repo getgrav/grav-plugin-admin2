@@ -1,3 +1,9 @@
+# v2.0.0-beta.14
+## 04/25/2026
+
+1. [](#improved)
+    * **"Update All" toasts now expand failure reasons inline** instead of just listing slugs. Bulk update on the dashboard, the plugins page, and the themes page used to render `"Updated 3, failed 2: foo, bar"` — leaving the actual constraint (Grav too old, PHP too old, conflicting plugin version) buried in the network panel. Each failed package's reason now appears on its own line under the count: `"foo: One of the packages require Grav >=2.0.0-beta.2. Please update Grav to the latest release."` `UpdateAllResult` also gains `skipped[]` (packages brought current as a cascade dep of an earlier iteration in the same batch) and `cascaded_dependencies[]` (slugs installed/updated as deps of others), surfaced from the new bulk-update dependency resolution. Requires grav-plugin-api ≥ beta.14.
+
 # v2.0.0-beta.13
 ## 04/25/2026
 
