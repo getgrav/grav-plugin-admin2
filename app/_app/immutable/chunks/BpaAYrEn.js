@@ -1,0 +1,1 @@
+import{f as i}from"./BFWR4Sz-.js";function r(e){return i.isSuperAdmin?!0:i.access[e]===!0}function s(e){return r({config:"api.config.write",pages:"api.pages.write",users:"api.users.write",media:"api.media.write",gpm:"api.gpm.write",system:"api.system.write"}[e])}export{r as a,s as c};
