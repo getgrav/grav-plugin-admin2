@@ -1,0 +1,178 @@
+# Admin2 (admin-next) UI translations.
+#
+# All admin-next-only keys live under the ICU root block. Values may use
+# ICU MessageFormat syntax for placeholders, plurals, and select cases —
+# admin-next pipes ICU.* values through @formatjs/intl-messageformat.
+#
+# Plain (non-ICU) keys without a leading ICU prefix are looked up by
+# admin-next as a fallback for legacy strings (and continue to be the
+# only thing legacy admin / Grav 1 sees).
+#
+# Convention: keep keys grouped by section and alphabetised within a
+# section where reasonable. Use ADMIN_NEXT.* for keys specific to the
+# new UI.
+
+ICU:
+  ADMIN_NEXT:
+    # -- General --
+    ADD_PAGE: "Add Page"
+    CANCEL: "Cancel"
+    CLEAR_SEARCH: "Clear search"
+    CLOSE: "Close"
+    COLLAPSE_SIDEBAR: "Collapse sidebar"
+    CONFIRM_DELETE: "Delete \"{title}\" at {route}?"
+    DELETE: "Delete"
+    DONE: "Done"
+    LOADING: "Loading..."
+    NO_CHANGES: "No changes to save"
+    SAVE: "Save"
+    SAVING: "Saving..."
+    SEARCH: "Search"
+    SIGN_OUT: "Sign out"
+    TOGGLE_DARK_MODE: "Toggle dark mode"
+    TOGGLE_MENU: "Toggle menu"
+    UNSAVED_CHANGES: "Unsaved changes"
+
+    # -- Dashboard --
+    DASHBOARD:
+      TITLE: "Dashboard"
+      CUSTOMIZE: "Customize"
+      CUSTOMIZE_TITLE: "Customize dashboard"
+      EDIT_HINT: "Customize mode — drag, resize, hide widgets, then save."
+      PRESETS: "Presets"
+      SAVE_SITE_DEFAULT: "Save as site default"
+      RESET_LAYOUT: "Reset my layout"
+      ADD_WIDGET: "Add a widget"
+      HIDE_WIDGET: "Hide widget"
+      PICKER_TITLE: "Add a widget"
+      PICKER_SUBTITLE: "Pick a widget to add back to your dashboard."
+      PICKER_EMPTY: "All available widgets are already on your dashboard."
+      EMPTY: "Your dashboard is empty"
+      EMPTY_HINT: "Click the pencil icon above to add widgets"
+      LAYOUT_SAVED: "Dashboard layout saved"
+      SITE_LAYOUT_SAVED: "Site default saved"
+      LAYOUT_RESET: "Layout reset to default"
+      WIDGETS:
+        STATS: "Site Stats"
+        POPULARITY: "Page Views"
+        SYSTEM_HEALTH: "System Health"
+        RECENT_PAGES: "Recent Pages"
+        TOP_PAGES: "Top Pages"
+        BACKUPS: "Backups"
+        NOTIFICATIONS: "Notifications"
+        NEWS_FEED: "News Feed"
+      PRESET_DEFAULT: "Default"
+      PRESET_DEFAULT_DESC: "Server-recommended layout — clears your customizations."
+      PRESET_MINIMAL: "Minimal"
+      PRESET_MINIMAL_DESC: "Stats and recent pages only."
+      PRESET_COMPACT: "Compact"
+      PRESET_COMPACT_DESC: "All widgets at the smallest size each supports."
+
+    # -- Pages --
+    PAGES:
+      TITLE: "Pages"
+      SEARCH_PLACEHOLDER: "Search pages..."
+      NO_PAGES: "No pages found"
+      NO_SEARCH_RESULTS: "No pages match your search"
+      LOADING: "Loading pages..."
+      REORDER_MOVE: "Reorder / Move"
+      REORDER_SAME_PARENT: "Can only reorder pages under the same parent. Use Tree view for cross-parent moves."
+      MOVED: "Moved \"{title}\""
+      REORDERED: "Reordered \"{title}\""
+      MOVE_FAILED: "Failed to move page"
+      REORDER_FAILED: "Failed to reorder"
+      DELETED: "Deleted \"{title}\""
+      DELETE_FAILED: "Failed to delete page"
+      SAVED: "Page saved successfully"
+      SAVE_FAILED: "Failed to save page"
+
+      # View modes
+      VIEW_TREE: "Tree"
+      VIEW_LIST: "List"
+      VIEW_COLUMNS: "Columns"
+
+      # Table headers
+      HEADER_TITLE: "Title"
+      HEADER_TEMPLATE: "Template"
+      HEADER_STATUS: "Status"
+      HEADER_MODIFIED: "Modified"
+      HEADER_PARENT: "Parent"
+
+      # Statuses
+      PUBLISHED: "Published"
+      DRAFT: "Draft"
+
+      # Sort options (Miller)
+      SORT_ORDER: "Order"
+      SORT_TITLE_AZ: "Title A-Z"
+      SORT_TITLE_ZA: "Title Z-A"
+      SORT_NEWEST: "Newest"
+      SORT_OLDEST: "Oldest"
+      SORT_DATE_NEWEST: "Date (newest)"
+
+      # Editor
+      RAW_HEADER: "Raw Page Header (JSON)"
+      PAGE_INFO: "Page Info"
+      EDIT_PAGE: "Edit Page"
+      MODE_NORMAL: "Normal"
+      MODE_EXPERT: "Expert"
+      FRONTMATTER: "Frontmatter"
+
+      # Sidebar info
+      INFO_PUBLISHED: "Published"
+      INFO_VISIBLE: "Visible in nav"
+      INFO_ROUTABLE: "Routable"
+      INFO_ROUTE: "Route"
+      INFO_SLUG: "Slug"
+      INFO_TEMPLATE: "Template"
+      INFO_LANGUAGE: "Language"
+      INFO_ORDER: "Order"
+      INFO_DATE: "Date"
+      INFO_MODIFIED: "Modified"
+      INFO_PUBLISH_ON: "Publish on"
+      INFO_UNPUBLISH_ON: "Unpublish on"
+
+    # -- Blueprint fields --
+    FIELDS:
+      CLEAR_DATE: "Clear date"
+      REGENERATE_SLUG: "Auto-regenerate from page title"
+      ADD_ENTRY: "Add entry"
+      NO_TAXONOMY_TYPES: "No taxonomy types configured"
+      FILE_PICKER_SOON: "File picker — coming soon"
+
+    # -- Navigation --
+    NAV:
+      DASHBOARD: "Dashboard"
+      CONFIGURATION: "Configuration"
+      PAGES: "Pages"
+      MEDIA: "Media"
+      USERS: "Users"
+      PLUGINS: "Plugins"
+      THEMES: "Themes"
+      TOOLS: "Tools"
+      SYSTEM: "System"
+      SETTINGS: "Settings"
+
+    # -- Languages / Multilang --
+    LANG:
+      SWITCH_LANGUAGE: "Switch content language"
+      TRANSLATIONS: "Translations"
+      TRANSLATED: "Translated"
+      NOT_TRANSLATED: "Not translated"
+      SAVE_AS: "Save as {language}"
+      CREATE_TRANSLATION: "Create {language} translation"
+      FALLBACK_NOTICE: "No {language} translation. Showing default content."
+      SYNC_FROM: "Reset from {language}"
+      TRANSLATION_CREATED: "{language} translation created"
+      DELETE_TRANSLATION: "Delete {language} translation"
+      CURRENT: "current"
+      DEFAULT: "default"
+
+    # -- Time --
+    # Compact relative-time forms used in widgets where space is tight.
+    # Verbose plural-aware forms can be added alongside if needed.
+    TIME:
+      JUST_NOW: "just now"
+      MINUTES_AGO: "{n}m ago"
+      HOURS_AGO: "{n}h ago"
+      DAYS_AGO: "{n}d ago"
