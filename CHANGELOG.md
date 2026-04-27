@@ -1,3 +1,12 @@
+# v2.0.0-beta.16
+## 04/27/2026
+
+1. [](#new)
+    * **ICU MessageFormat translations via dual-namespace lookup.** Admin2 now looks up every translation key in two places, in order: `ICU.<key>` (passed through ICU MessageFormat — placeholders, plurals, select cases, number/date formatting), then `<key>` (returned raw, as a fallback for legacy strings). The contract is namespace-based, not content-based: a value is reformatted only when its key sits under `ICU.`, so plugins can ship a single language file that works on both Grav 1 / classic admin (which reads only the legacy block) and Grav 2 / Admin2 (which prefers the `ICU:` block when present). CLDR plural categories are applied per-locale automatically, so Polish, Czech, Russian, Arabic etc. get the right form without per-language code. Resolves [getgrav/grav#4064](https://github.com/getgrav/grav/issues/4064). See the [Admin2 Translations docs](https://learn.getgrav.org/2.0/plugins/admin-translations) for the full plugin-author guide.
+    * **`languages/en.yaml` shipped with Admin2 plugin.** All `ADMIN_NEXT.*` strings now live in the Admin2 plugin under a root `ICU:` block (~125 keys), merged into Grav's standard language pipeline and served via `GET /api/v1/translations/{lang}`. The admin-next runtime keeps only a 4-key boot fallback (loading / sign-out / boot-failed / offline) for the brief window before the API responds. Plugins can contribute their own `ICU.PLUGIN_FOO.*` keys with no special build step or registration.
+    * **`window.__GRAV_I18N` global bridge** — read-only frozen surface (`t`, `has`, `locale`, `subscribe`) for plugin web-component bundles (e.g. `editor-pro`, `ai-pro`) that aren't built against the admin-next runtime. Lets external bundles call into Admin2's translation cache and react to locale changes without their own i18n stack.
+    * **Runtime humanize tracker** — `__GRAV_I18N_DEBUG.enable()` from the browser console (or `?i18n-debug=1` on the URL) logs every translation-key miss to a tracker readable via `__GRAV_I18N_DEBUG.report()` / `.misses()` / `.yaml()`. While debug is on, any humanize fallback is wrapped in `⟦…⟧` brackets so untranslated keys are visible directly in the rendered UI. Persists across reloads via `localStorage`.
+
 # v2.0.0-beta.15
 ## 04/26/2026
 
