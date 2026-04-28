@@ -1,1 +1,0 @@
-import{j as t,g as r,i as o}from"./fEKDDnKt.js";let s=o(null),g=o(null);const n={get presence(){return r(s)},get modeToggle(){return r(g)},setPresence(e){t(s,e,!0)},setModeToggle(e){t(g,e,!0)}};export{n as p};

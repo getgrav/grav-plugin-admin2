@@ -1,7 +1,7 @@
 name: Admin2
 slug: admin2
 type: plugin
-version: 2.0.0-beta.15
+version: 2.0.0-beta.16
 testing: true
 description: Modern administration panel for Grav CMS. A redesigned admin experience.
 icon: black-tie
@@ -19,7 +19,7 @@ compatibility:
 
 dependencies:
   - { name: grav, version: '>=2.0.0-beta.2' }
-  - { name: api, version: '>=1.0.0-beta.14' }
+  - { name: api, version: '>=1.0.0-beta.15' }
   - { name: login, version: '>=3.8.2' }
 
 form:
