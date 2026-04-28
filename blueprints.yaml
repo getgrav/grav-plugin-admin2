@@ -19,7 +19,7 @@ compatibility:
 
 dependencies:
   - { name: grav, version: '>=2.0.0-beta.2' }
-  - { name: api, version: '>=1.0.0-beta.14' }
+  - { name: api, version: '>=1.0.0-beta.15' }
   - { name: login, version: '>=3.8.2' }
 
 form:

@@ -576,6 +576,7 @@ ICU:
       LOADING_CONFIGURATION: Loading configuration...
       FILTER_FIELDS: Filter fields...
       CLEAR_FILTER: Clear filter
+      NO_MATCHES_FOUND: No matches found
       CONFIGURATION_SAVED_SUCCESSFULLY: Configuration saved successfully
       CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Reload to see the latest changes.
       FAILED_TO_SAVE_CONFIGURATION: Failed to save configuration
