@@ -57,6 +57,7 @@ class Admin2Plugin extends Plugin
                 ['setup', 100000],
                 ['onPluginsInitialized', 1001],
             ],
+            'onApiBlueprintResolved' => ['onApiBlueprintResolved', 0],
             PermissionsRegisterEvent::class => ['onRegisterPermissions', 1000],
         ];
     }
@@ -65,6 +66,84 @@ class Admin2Plugin extends Plugin
     {
         $actions = PermissionsReader::fromYaml("plugin://{$this->name}/permissions.yaml");
         $event->permissions->addActions($actions);
+    }
+
+    /**
+     * Inject admin-next-only fields into resolved blueprints.
+     *
+     * Currently used to add a `state` (account-enabled) toggle to the user
+     * account blueprint, which Grav core's `account.yaml` doesn't carry —
+     * admin-classic has no UI for the field either, so previously the only
+     * way to disable a user was to hand-edit YAML. The toggle is gated on
+     * `api.users.write`, since the underlying PATCH /users/{name} also
+     * rejects non-managers writing to `state` (see grav-plugin-api
+     * v1.0.0-beta.15).
+     */
+    public function onApiBlueprintResolved(\RocketTheme\Toolbox\Event\Event $event): void
+    {
+        if (($event['template'] ?? null) !== 'account') {
+            return;
+        }
+
+        $user = $event['user'] ?? null;
+        if (!$user) {
+            return;
+        }
+        $isManager = (bool) (
+            $user->get('access.api.super')
+            ?? $user->get('access.admin.super')
+            ?? $user->get('access.api.users.write')
+        );
+        if (!$isManager) {
+            return;
+        }
+
+        // Note: injected fields bypass BlueprintController::serializeFields(),
+        // so emit the post-serialization shape — `options` as an ordered
+        // array of `{value, label}` objects rather than the YAML-blueprint
+        // map form. Client-side i18n picks up `ADMIN_NEXT.*` labels via the
+        // ICU.* dual-namespace lookup.
+        $stateField = [
+            'name'    => 'state',
+            'type'    => 'select',
+            'size'    => 'medium',
+            'classes' => 'fancy',
+            'label'   => 'ADMIN_NEXT.USERS.STATUS',
+            'help'    => 'ADMIN_NEXT.USERS.STATUS_HELP',
+            'default' => 'enabled',
+            'options' => [
+                ['value' => 'enabled',  'label' => 'ADMIN_NEXT.ENABLED'],
+                ['value' => 'disabled', 'label' => 'ADMIN_NEXT.DISABLED'],
+            ],
+        ];
+
+        $fields = $event['fields'];
+        $event['fields'] = $this->insertFieldAfter($fields, 'title', $stateField);
+    }
+
+    /**
+     * Insert a field directly after a named sibling. Recurses into
+     * container fields (`fields:` children) so the target is found
+     * regardless of nesting depth. Returns the original list unchanged
+     * if the anchor isn't present.
+     *
+     * @param array<int, array<string, mixed>> $fields
+     * @param array<string, mixed> $newField
+     * @return array<int, array<string, mixed>>
+     */
+    private function insertFieldAfter(array $fields, string $afterName, array $newField): array
+    {
+        $out = [];
+        foreach ($fields as $field) {
+            if (isset($field['fields']) && is_array($field['fields'])) {
+                $field['fields'] = $this->insertFieldAfter($field['fields'], $afterName, $newField);
+            }
+            $out[] = $field;
+            if (($field['name'] ?? '') === $afterName) {
+                $out[] = $newField;
+            }
+        }
+        return $out;
     }
 
     /**

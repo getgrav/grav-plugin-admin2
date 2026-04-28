@@ -14,165 +14,810 @@
 
 ICU:
   ADMIN_NEXT:
-    # -- General --
-    ADD_PAGE: "Add Page"
-    CANCEL: "Cancel"
-    CLEAR_SEARCH: "Clear search"
-    CLOSE: "Close"
-    COLLAPSE_SIDEBAR: "Collapse sidebar"
-    CONFIRM_DELETE: "Delete \"{title}\" at {route}?"
-    DELETE: "Delete"
-    DONE: "Done"
-    LOADING: "Loading..."
-    NO_CHANGES: "No changes to save"
-    SAVE: "Save"
-    SAVING: "Saving..."
-    SEARCH: "Search"
-    SIGN_OUT: "Sign out"
-    TOGGLE_DARK_MODE: "Toggle dark mode"
-    TOGGLE_MENU: "Toggle menu"
-    UNSAVED_CHANGES: "Unsaved changes"
-
-    # -- Dashboard --
+    ADD_PAGE: Add Page
+    CANCEL: Cancel
+    CLEAR_SEARCH: Clear search
+    CLOSE: Close
+    COLLAPSE_SIDEBAR: Collapse sidebar
+    CONFIRM_DELETE: Delete "{title}" at {route}?
+    DELETE: Delete
+    DONE: Done
+    LOADING: Loading...
+    NO_CHANGES: No changes to save
+    SAVE: Save
+    SAVING: Saving...
+    SEARCH: Search
+    SIGN_OUT: Sign out
+    TOGGLE_DARK_MODE: Toggle dark mode
+    TOGGLE_MENU: Toggle menu
+    UNSAVED_CHANGES: Unsaved changes
     DASHBOARD:
-      TITLE: "Dashboard"
-      CUSTOMIZE: "Customize"
-      CUSTOMIZE_TITLE: "Customize dashboard"
-      EDIT_HINT: "Customize mode — drag, resize, hide widgets, then save."
-      PRESETS: "Presets"
-      SAVE_SITE_DEFAULT: "Save as site default"
-      RESET_LAYOUT: "Reset my layout"
-      ADD_WIDGET: "Add a widget"
-      HIDE_WIDGET: "Hide widget"
-      PICKER_TITLE: "Add a widget"
-      PICKER_SUBTITLE: "Pick a widget to add back to your dashboard."
-      PICKER_EMPTY: "All available widgets are already on your dashboard."
-      EMPTY: "Your dashboard is empty"
-      EMPTY_HINT: "Click the pencil icon above to add widgets"
-      LAYOUT_SAVED: "Dashboard layout saved"
-      SITE_LAYOUT_SAVED: "Site default saved"
-      LAYOUT_RESET: "Layout reset to default"
+      TITLE: Dashboard
+      CUSTOMIZE: Customize
+      CUSTOMIZE_TITLE: Customize dashboard
+      EDIT_HINT: Customize mode — drag, resize, hide widgets, then save.
+      PRESETS: Presets
+      SAVE_SITE_DEFAULT: Save as site default
+      RESET_LAYOUT: Reset my layout
+      ADD_WIDGET: Add a widget
+      HIDE_WIDGET: Hide widget
+      PICKER_TITLE: Add a widget
+      PICKER_SUBTITLE: Pick a widget to add back to your dashboard.
+      PICKER_EMPTY: All available widgets are already on your dashboard.
+      EMPTY: Your dashboard is empty
+      EMPTY_HINT: Click the pencil icon above to add widgets
+      LAYOUT_SAVED: Dashboard layout saved
+      SITE_LAYOUT_SAVED: Site default saved
+      LAYOUT_RESET: Layout reset to default
       WIDGETS:
-        STATS: "Site Stats"
-        POPULARITY: "Page Views"
-        SYSTEM_HEALTH: "System Health"
-        RECENT_PAGES: "Recent Pages"
-        TOP_PAGES: "Top Pages"
-        BACKUPS: "Backups"
-        NOTIFICATIONS: "Notifications"
-        NEWS_FEED: "News Feed"
-      PRESET_DEFAULT: "Default"
-      PRESET_DEFAULT_DESC: "Server-recommended layout — clears your customizations."
-      PRESET_MINIMAL: "Minimal"
-      PRESET_MINIMAL_DESC: "Stats and recent pages only."
-      PRESET_COMPACT: "Compact"
-      PRESET_COMPACT_DESC: "All widgets at the smallest size each supports."
-
-    # -- Pages --
+        STATS: Site Stats
+        POPULARITY: Page Views
+        SYSTEM_HEALTH: System Health
+        RECENT_PAGES: Recent Pages
+        TOP_PAGES: Top Pages
+        BACKUPS: Backups
+        NOTIFICATIONS: Notifications
+        NEWS_FEED: News Feed
+      PRESET_DEFAULT: Default
+      PRESET_DEFAULT_DESC: Server-recommended layout — clears your customizations.
+      PRESET_MINIMAL: Minimal
+      PRESET_MINIMAL_DESC: Stats and recent pages only.
+      PRESET_COMPACT: Compact
+      PRESET_COMPACT_DESC: All widgets at the smallest size each supports.
     PAGES:
-      TITLE: "Pages"
-      SEARCH_PLACEHOLDER: "Search pages..."
-      NO_PAGES: "No pages found"
-      NO_SEARCH_RESULTS: "No pages match your search"
-      LOADING: "Loading pages..."
-      REORDER_MOVE: "Reorder / Move"
-      REORDER_SAME_PARENT: "Can only reorder pages under the same parent. Use Tree view for cross-parent moves."
-      MOVED: "Moved \"{title}\""
-      REORDERED: "Reordered \"{title}\""
-      MOVE_FAILED: "Failed to move page"
-      REORDER_FAILED: "Failed to reorder"
-      DELETED: "Deleted \"{title}\""
-      DELETE_FAILED: "Failed to delete page"
-      SAVED: "Page saved successfully"
-      SAVE_FAILED: "Failed to save page"
-
-      # View modes
-      VIEW_TREE: "Tree"
-      VIEW_LIST: "List"
-      VIEW_COLUMNS: "Columns"
-
-      # Table headers
-      HEADER_TITLE: "Title"
-      HEADER_TEMPLATE: "Template"
-      HEADER_STATUS: "Status"
-      HEADER_MODIFIED: "Modified"
-      HEADER_PARENT: "Parent"
-
-      # Statuses
-      PUBLISHED: "Published"
-      DRAFT: "Draft"
-
-      # Sort options (Miller)
-      SORT_ORDER: "Order"
-      SORT_TITLE_AZ: "Title A-Z"
-      SORT_TITLE_ZA: "Title Z-A"
-      SORT_NEWEST: "Newest"
-      SORT_OLDEST: "Oldest"
-      SORT_DATE_NEWEST: "Date (newest)"
-
-      # Editor
-      RAW_HEADER: "Raw Page Header (JSON)"
-      PAGE_INFO: "Page Info"
-      EDIT_PAGE: "Edit Page"
-      MODE_NORMAL: "Normal"
-      MODE_EXPERT: "Expert"
-      FRONTMATTER: "Frontmatter"
-
-      # Sidebar info
-      INFO_PUBLISHED: "Published"
-      INFO_VISIBLE: "Visible in nav"
-      INFO_ROUTABLE: "Routable"
-      INFO_ROUTE: "Route"
-      INFO_SLUG: "Slug"
-      INFO_TEMPLATE: "Template"
-      INFO_LANGUAGE: "Language"
-      INFO_ORDER: "Order"
-      INFO_DATE: "Date"
-      INFO_MODIFIED: "Modified"
-      INFO_PUBLISH_ON: "Publish on"
-      INFO_UNPUBLISH_ON: "Unpublish on"
-
-    # -- Blueprint fields --
+      TITLE: Pages
+      SEARCH_PLACEHOLDER: Search pages...
+      NO_PAGES: No pages found
+      NO_SEARCH_RESULTS: No pages match your search
+      LOADING: Loading pages...
+      REORDER_MOVE: Reorder / Move
+      REORDER_SAME_PARENT: Can only reorder pages under the same parent. Use Tree view for cross-parent moves.
+      MOVED: Moved "{title}"
+      REORDERED: Reordered "{title}"
+      MOVE_FAILED: Failed to move page
+      REORDER_FAILED: Failed to reorder
+      DELETED: Deleted "{title}"
+      DELETE_FAILED: Failed to delete page
+      SAVED: Page saved successfully
+      SAVE_FAILED: Failed to save page
+      VIEW_TREE: Tree
+      VIEW_LIST: List
+      VIEW_COLUMNS: Columns
+      HEADER_TITLE: Title
+      HEADER_TEMPLATE: Template
+      HEADER_STATUS: Status
+      HEADER_MODIFIED: Modified
+      HEADER_PARENT: Parent
+      PUBLISHED: Published
+      DRAFT: Draft
+      SORT_ORDER: Order
+      SORT_TITLE_AZ: Title A-Z
+      SORT_TITLE_ZA: Title Z-A
+      SORT_NEWEST: Newest
+      SORT_OLDEST: Oldest
+      SORT_DATE_NEWEST: Date (newest)
+      RAW_HEADER: Raw Page Header (JSON)
+      PAGE_INFO: Page Info
+      EDIT_PAGE: Edit Page
+      MODE_NORMAL: Normal
+      MODE_EXPERT: Expert
+      FRONTMATTER: Frontmatter
+      INFO_PUBLISHED: Published
+      INFO_VISIBLE: Visible in nav
+      INFO_ROUTABLE: Routable
+      INFO_ROUTE: Route
+      INFO_SLUG: Slug
+      INFO_TEMPLATE: Template
+      INFO_LANGUAGE: Language
+      INFO_ORDER: Order
+      INFO_DATE: Date
+      INFO_MODIFIED: Modified
+      INFO_PUBLISH_ON: Publish on
+      INFO_UNPUBLISH_ON: Unpublish on
+      PAGES_MILLER_VIEW:
+        DRAFT_UNPUBLISHED: Draft (unpublished)
+        FOLDER_ORDER: Folder Order
+        VISIBLE: Visible
+        HAS_CHILDREN: Has children
+        SUMMARY: Summary
+      PAGES_TREE_VIEW:
+        FAILED_TO_REORGANIZE_PAGES: Failed to reorganize pages
+        SEARCHING: Searching…
+        NO_PAGES_MATCH: No pages match "{query}"
+      DELETE_PAGE: Delete Page
+      PAGES_GRAV_ADMIN: Pages — Grav Admin
+      EDIT:
+        TOGGLE_PAGE_NAVIGATOR: Toggle page navigator
+        PREVIEW_PAGE: Preview page
+        COPY_PAGE: Copy page
+        DELETE_PAGE: Delete Page
+        WRITE_YOUR_MARKDOWN_CONTENT_HERE: Write your markdown content here...
+        RESET_TRANSLATION: Reset Translation
+        PAGE_PREVIEW: Page Preview
+        INVALID_YAML_FRONTMATTER: Invalid YAML frontmatter
+        INVALID_YAML_FRONTMATTER_FIX_SYNTAX: Invalid YAML frontmatter — fix syntax before saving
+        PAGE_SAVED_AND_MOVED: Page saved and moved
+        FAILED_TO_CREATE_TRANSLATION: Failed to create translation
+        FAILED_TO_SYNC_TRANSLATION: Failed to sync translation
+        PAGE_DELETED: Page deleted
+        PAGE_COPIED: Page copied
+        PAGE_CHANGED_ELSEWHERE_SAVE_TO: Page changed elsewhere — save to overwrite or reload
+        LOADING_PAGE: Loading page...
+        FOLDER_NAME: Folder Name
+        THE_FOLDER_NAME_ON_DISK_URL_SLUG: The folder name on disk (URL slug)
+        FALLBACK: (fallback)
+        NOT_TRANSLATED: "Not translated:"
+        RESET_CONTENT_FROM: "Reset content from:"
+        OPEN_IN_NEW_TAB: Open in New Tab
+        SAVE_AS_LANGUAGE: Save as {language}
+        CREATE_LANGUAGE: Create {language}
+        EDIT_PAGE: Edit Page
+        FALLBACK_NOTICE: No {active} translation exists. Viewing {effective} fallback. Use "Save as {active}" to create a translation you can edit.
+        PUBLISH_ON: Publish on
+        UNPUBLISH_ON: Unpublish on
+        RESET_FROM: Reset from {language}
+      NEW:
+        MY_NEW_PAGE: My New Page
+        FILTER_PAGES: Filter pages...
+        FAILED_TO_LOAD_PAGE_TEMPLATES: Failed to load page templates
+        ADD_PAGE_GRAV_ADMIN: Add Page — Grav Admin
+        PAGE_DETAILS: Page Details
+        PAGE_TITLE: Page Title
+        FOLDER_NAME: Folder Name
+        URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: URL-safe folder name for this page
+        PARENT_PAGE: Parent Page
+        ROOT: <root> /
+        PAGE_TEMPLATE: Page Template
+        LOADING_TEMPLATES: Loading templates...
+        VISIBLE: Visible
+        CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: Controls whether this page appears in navigation menus
+        CONTINUE: Continue
+      PAGE_COUNT: "{n, plural, one{# page} other{# pages}}"
+      SUBTITLE: Manage your site content and structure
     FIELDS:
-      CLEAR_DATE: "Clear date"
-      REGENERATE_SLUG: "Auto-regenerate from page title"
-      ADD_ENTRY: "Add entry"
-      NO_TAXONOMY_TYPES: "No taxonomy types configured"
-      FILE_PICKER_SOON: "File picker — coming soon"
-
-    # -- Navigation --
+      CLEAR_DATE: Clear date
+      REGENERATE_SLUG: Auto-regenerate from page title
+      ADD_ENTRY: Add entry
+      NO_TAXONOMY_TYPES: No taxonomy types configured
+      FILE_PICKER_SOON: File picker — coming soon
+      CRON:
+        AT_MINUTE: At minute
+        ON_DAY: On day
+        CRON: "Cron:"
+        MIN_HR_DOM_MON_DOW: min hr dom mon dow
+      CRON_STATUS:
+        FAILED_TO_LOAD_SCHEDULER_STATUS: Failed to load scheduler status
+        SCHEDULER_RUN_COMPLETED: Scheduler run completed
+        FAILED_TO_RUN_SCHEDULER: Failed to run scheduler
+        LOADING_SCHEDULER_STATUS: Loading scheduler status...
+        SCHEDULER_STATUS: Scheduler Status
+        NO_SCHEDULED_JOBS_REGISTERED: No scheduled jobs registered.
+        JOB_ID: Job ID
+        HEALTH_STATUS: Health Status
+        STATUS: "Status:"
+        LAST_RUN: Last Run
+        SCHEDULED_JOBS: Scheduled Jobs
+        QUEUE_SIZE: "Queue Size:"
+        ACTIVE_TRIGGERS: Active Triggers
+        CRON: "Cron:"
+        NOT_CONFIGURED: NOT CONFIGURED
+        WEBHOOK: "Webhook:"
+        NOT_INSTALLED: NOT INSTALLED
+        NOT_ENABLED: NOT ENABLED
+        NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: No triggers active! Enable webhooks or configure cron.
+        RUNNING: Running...
+        RUN_ALL: Run All
+      CUSTOM_FIELD_WRAPPER:
+        LOADING_CUSTOM_FIELD: Loading custom field...
+      DATE_FORMAT:
+        SELECT_FORMAT: — Select format —
+        FORMAT_STRING: "Format string:"
+      ICON_PICKER:
+        SEARCH_ICONS: Search icons...
+        NO_ICONS_FOUND: No icons found
+        SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: Showing first 200 results — type to narrow
+      PAGE_EXISTS:
+        CHECKING_PAGE: Checking page...
+      PAGE_MEDIA:
+        PAGE_MEDIA_UNAVAILABLE: Page media unavailable
+      PAGES:
+        FILTER_PAGES: Filter pages...
+        ROOT: / (root)
+      PERMISSIONS:
+        NO_PERMISSIONS_CONFIGURED: No permissions configured
+        NOT_SET: Not Set
+      TABS:
+        NO_FIELDS_MATCH_YOUR_FILTER: No fields match your filter
+      THEME_SELECT:
+        LOADING_THEMES: Loading themes...
+        SELECT_THEME: — Select theme —
+      WEBHOOK_EXAMPLES:
+        HOW_TO_USE_WEBHOOKS: "How to use webhooks:"
+        TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: "Trigger all due jobs (respects schedule):"
+        FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: "Force-run specific job (ignores schedule):"
+        CHECK_HEALTH_STATUS: "Check health status:"
+        GITHUB_ACTIONS_EXAMPLE: "GitHub Actions example:"
+      WEBHOOK_STATUS:
+        CHECKING_WEBHOOK_PLUGIN_STATUS: Checking webhook plugin status...
+        PLUGIN_IS_INSTALLED_AND_ENABLED: plugin is installed and enabled.
+        PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: plugin is installed. Enable Webhook Triggers below to activate.
+        WEBHOOK_PLUGIN_REQUIRED: Webhook Plugin Required
+        PLUGIN_IS_REQUIRED_FOR_WEBHOOK: plugin is required for webhook functionality.
+        INSTALL_PLUGIN_NOW: Install Plugin Now
+        OR_RUN: "or run:"
+        BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: bin/gpm install scheduler-webhook
+      FILE_PICKER:
+        NO_MEDIA_UPLOADED: No media files uploaded yet
+        NO_MATCHING_FILES: No matching files
     NAV:
-      DASHBOARD: "Dashboard"
-      CONFIGURATION: "Configuration"
-      PAGES: "Pages"
-      MEDIA: "Media"
-      USERS: "Users"
-      PLUGINS: "Plugins"
-      THEMES: "Themes"
-      TOOLS: "Tools"
-      SYSTEM: "System"
-      SETTINGS: "Settings"
-
-    # -- Languages / Multilang --
+      DASHBOARD: Dashboard
+      CONFIGURATION: Configuration
+      PAGES: Pages
+      MEDIA: Media
+      USERS: Users
+      PLUGINS: Plugins
+      THEMES: Themes
+      TOOLS: Tools
+      SYSTEM: System
+      SETTINGS: Settings
     LANG:
-      SWITCH_LANGUAGE: "Switch content language"
-      TRANSLATIONS: "Translations"
-      TRANSLATED: "Translated"
-      NOT_TRANSLATED: "Not translated"
-      SAVE_AS: "Save as {language}"
-      CREATE_TRANSLATION: "Create {language} translation"
-      FALLBACK_NOTICE: "No {language} translation. Showing default content."
-      SYNC_FROM: "Reset from {language}"
+      SWITCH_LANGUAGE: Switch content language
+      TRANSLATIONS: Translations
+      TRANSLATED: Translated
+      NOT_TRANSLATED: Not translated
+      SAVE_AS: Save as {language}
+      CREATE_TRANSLATION: Create {language} translation
+      FALLBACK_NOTICE: No {language} translation. Showing default content.
+      SYNC_FROM: Reset from {language}
       TRANSLATION_CREATED: "{language} translation created"
-      DELETE_TRANSLATION: "Delete {language} translation"
-      CURRENT: "current"
-      DEFAULT: "default"
-
-    # -- Time --
-    # Compact relative-time forms used in widgets where space is tight.
-    # Verbose plural-aware forms can be added alongside if needed.
+      DELETE_TRANSLATION: Delete {language} translation
+      CURRENT: current
+      DEFAULT: default
     TIME:
-      JUST_NOW: "just now"
+      JUST_NOW: just now
       MINUTES_AGO: "{n}m ago"
       HOURS_AGO: "{n}h ago"
       DAYS_AGO: "{n}d ago"
+    ADD_PLUGIN_MODAL:
+      FILTER_PLUGINS: Filter plugins...
+      FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: Failed to load available plugins from GPM
+      ADD_PLUGIN: Add Plugin
+      SELECT_A_PLUGIN_TO_VIEW_DETAILS: Select a plugin to view details
+    PREMIUM: Premium
+    AUTHOR: Author
+    HOMEPAGE: Homepage
+    VERSION: Version
+    KEYWORDS: Keywords
+    DEPENDENCIES: Dependencies
+    ADD_THEME_MODAL:
+      FILTER_THEMES: Filter themes...
+      FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: Failed to load available themes from GPM
+      ADD_THEME: Add Theme
+      SELECT_A_THEME_TO_VIEW_DETAILS: Select a theme to view details
+    API_KEYS_FIELD:
+      REVOKE_KEY: Revoke key
+      E_G_MY_CLI_TOOL: e.g. My CLI Tool
+      REVOKE_API_KEY: Revoke API Key
+      FAILED_TO_LOAD_API_KEYS: Failed to load API keys
+      PLEASE_ENTER_A_KEY_NAME: Please enter a key name
+      API_KEY_GENERATED: API key generated
+      FAILED_TO_GENERATE_API_KEY: Failed to generate API key
+      FAILED_TO_REVOKE_API_KEY: Failed to revoke API key
+      FAILED_TO_COPY_TO_CLIPBOARD: Failed to copy to clipboard
+      API_KEYS: API Keys
+      NO_API_KEYS_HAVE_BEEN_GENERATED_YET: No API keys have been generated yet.
+      KEY_PREFIX: Key Prefix
+      CREATED: Created
+      EXPIRES: Expires
+      LAST_USED: Last Used
+      COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: Copy this key now — it will not be shown again.
+      KEY_NAME: Key Name
+      EXPIRY: Expiry
+      BLANK_NEVER: (blank = never)
+      GENERATING: Generating...
+      GENERATE_KEY: Generate Key
+    APP_SHELL:
+      CLOSE_MENU: Close menu
+      GRAV_VERSION: Grav v{version}
+      ADMIN_VERSION: Admin v{version}
+    NORMAL_MODE: Normal mode
+    EXPERT_MODE: Expert mode
+    ALLOWED: Allowed
+    DENIED: Denied
+    PERMISSIONS_FIELD:
+      NOT_SET: Not set
+      FAILED_TO_LOAD_PERMISSIONS: Failed to load permissions
+    TWO_FACTOR_FIELD:
+      2FA_QR_CODE: 2FA QR Code
+      SCAN_THE_QR_CODE_WITH_YOUR: Scan the QR code with your authenticator app
+      FAILED_TO_GENERATE_2FA_SECRET: Failed to generate 2FA secret
+      ENTER_THE_6_DIGIT_CODE_FROM_YOUR: Enter the 6-digit code from your authenticator
+      2FA_ENABLED: 2FA enabled
+      2FA_DISABLED: 2FA disabled
+      TWO_FACTOR_AUTHENTICATION_IS_OFF: Two-factor authentication is off
+      ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: Add an extra layer of security by requiring a one-time code on sign-in.
+      FINISH_ENABLING_2FA: Finish enabling 2FA
+      SCAN_THE_QR_CODE_WITH_YOUR_2: Scan the QR code with your authenticator app, then enter the 6-digit code to verify and activate.
+      SECRET_FOR_MANUAL_ENTRY: "Secret (for manual entry):"
+      A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: A secret is already generated but not shown for security reasons.
+      REGENERATE_AND_SHOW_QR: Regenerate and show QR
+      VERIFICATION_CODE: Verification code
+      2FA_IS_ENABLED: 2FA is enabled
+      A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: A one-time code is required whenever this account signs in.
+      ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: Enter your current 6-digit code to confirm
+      ENABLE_2FA: Enable 2FA
+      VERIFY_ENABLE: Verify & Enable
+      FORCE_DISABLE: Force disable
+      CONFIRM_DISABLE: Confirm disable
+      FORCE_DISABLE_PROMPT: Force-disable 2FA for **{username}**? Use this only for lost-device recovery.
+    DISABLE: Disable
+    USER_AVATAR_CARD:
+      AVATAR_UPDATED: Avatar updated
+      FAILED_TO_UPLOAD_AVATAR: Failed to upload avatar
+      AVATAR_REMOVED: Avatar removed
+      FAILED_TO_REMOVE_AVATAR: Failed to remove avatar
+      UPLOAD_AVATAR: Upload Avatar
+    REAUTH_MODAL:
+      SESSION_EXPIRED: Session expired
+      PLEASE_RE_ENTER_YOUR_PASSWORD_TO: Please re-enter your password to continue. Your work has been preserved.
+    USERNAME: Username
+    PASSWORD: Password
+    REMOVE: Remove
+    ENABLED: Enabled
+    DISABLED: Disabled
+    EXPAND_ALL: Expand all
+    COLLAPSE_ALL: Collapse all
+    CONFIG_INFO_PAGE:
+      LOADING_SYSTEM_INFORMATION: Loading system information...
+      EXPORT_YAML: Export YAML
+      SERVER: Server
+      GRAV_VERSION: Grav Version
+      PHP_VERSION: PHP Version
+      SERVER_SOFTWARE: Server Software
+      ENVIRONMENT: Environment
+      PHP_EXTENSIONS: PHP Extensions
+      PHP_CONFIGURATION: PHP Configuration
+    DASHBOARD_GRID:
+      DRAG_TO_REORDER: Drag to reorder
+    EDIT_MODE_TOOLBAR:
+      SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: Save as site default for all users
+      LAYOUT_PRESETS: Layout presets
+    PLUGIN_WIDGET_LOADER:
+      WIDGET_FAILED_TO_LOAD: Widget failed to load
+    TOP_BANNER:
+      SITE_NOTIFICATION: Site notification
+      PREVIOUS: Previous
+    DISMISS: Dismiss
+    BACKUPS_WIDGET:
+      CREATE_A_NEW_BACKUP_NOW: Create a new backup now
+      NO_BACKUPS_FOUND: No backups found
+      BACKING_UP: Backing up…
+      BACKUP_NOW: Backup Now
+      DOWNLOAD_FILE: Download {filename}
+    NEWS_FEED_WIDGET:
+      NO_FEED_ITEMS: No feed items
+    NOTIFICATIONS_WIDGET:
+      NO_NOTIFICATIONS: No notifications
+    POPULARITY_WIDGET:
+      LAST_14_DAYS: Last 14 days
+      THIS_WEEK: This Week
+      THIS_MONTH: This Month
+    RECENT_PAGES_WIDGET:
+      VIEW_ALL: View all
+    STATS_WIDGET:
+      ACTIVE_THEME: Active Theme
+    SYSTEM_HEALTH_WIDGET:
+      UPDATES: Updates
+      EVERYTHING_UP_TO_DATE: Everything up to date
+      GRAV_UPDATE_AVAILABLE: Grav Update Available
+      GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: Grav is installed via symlink — upgrade manually.
+      SERVER: Server
+      UPGRADE_GRAV: Upgrade Grav
+      UPDATE_ALL: Update All
+      PERCENT_USED: "{percent}% used"
+    TOP_PAGES_WIDGET:
+      NO_VIEW_DATA_YET: No view data yet
+    MARKDOWN_EDITOR:
+      NOTHING_TO_PREVIEW: Nothing to preview
+    FLOATING_WIDGET_LOADER:
+      CLOSE_WIDGETS_MENU: Close widgets menu
+    MEDIA:
+      MEDIA_INSPECTOR:
+        PREVIOUS_FILE: Previous file
+        NEXT_FILE: Next file
+        RENAME: Rename
+        FAILED_TO_COPY: Failed to copy
+        FILE_RENAMED: File renamed
+        DIMENSIONS: Dimensions
+      MEDIA_MANAGER:
+        FOLDER_NAME: Folder name
+        FILES_DELETED: Files deleted
+        UPLOAD_FILES: Upload Files
+        NEW_FOLDER: New Folder
+        CREATE: Create
+      MEDIA_TOOLBAR:
+        SEARCH_MEDIA: Search media...
+        GRID_VIEW: Grid view
+        LIST_VIEW: List view
+        NEW_FOLDER: New folder
+        FOLDER: Folder
+      MEDIA_GRAV_ADMIN: Media — Grav Admin
+      MANAGE_SITE_WIDE_MEDIA_FILES: Manage site-wide media files
+      PAGE_MEDIA:
+        PAGE_MEDIA: Page Media
+        DRAG_INTO_EDITOR: Drag into editor
+    UPLOAD: Upload
+    CACHE_CLEAR_BUTTON:
+      CLEAR_CACHE: Clear cache
+      CACHE_OPTIONS: Cache options
+      FAILED_TO_CLEAR_CACHE: Failed to clear cache
+    CONFIRM_ACTION: Confirm Action
+    VIEW_SITE_BUTTON:
+      OPEN_SITE_FRONTEND_IN_A_NEW_TAB: Open site frontend in a new tab
+      VIEW_SITE: View site
+    PLUGIN_PAGE_COMPONENT:
+      LOADING_PLUGIN_PAGE: Loading plugin page...
+    SYNC:
+      EDITOR_LOCK_NOTICE:
+        SWITCH_YOUR_EDITOR_PREFERENCE: switch your editor preference
+        TO_COLLABORATE_LIVE: to collaborate live.
+        LOCKED: Read-only — {owner} is editing with **{editor}**. Mixed editor types can't co-edit; [switch your editor preference]({href}) to collaborate live.
+        BUILTIN_MARKDOWN_EDITOR: the built-in markdown editor
+    DOWNLOAD: Download
+    TOOLS:
+      BACKUPS:
+        DELETE_BACKUP: Delete Backup
+        FAILED_TO_LOAD_BACKUPS: Failed to load backups
+        BACKUP_CREATED_SUCCESSFULLY: Backup created successfully
+        FAILED_TO_CREATE_BACKUP: Failed to create backup
+        BACKUP_DELETED: Backup deleted
+        FAILED_TO_DELETE_BACKUP: Failed to delete backup
+        BACKUP_STATISTICS: Backup Statistics
+        NUMBER_OF_BACKUPS: Number of Backups
+        NUMBER_OF_PROFILES: Number of Profiles
+        NEWEST_BACKUP: Newest Backup
+        OLDEST_BACKUP: Oldest Backup
+        BACKUP_HISTORY: Backup History
+        LOADING_BACKUPS: Loading backups...
+        NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: No backups found. Create one to get started.
+        BACKUP_DATE: Backup Date
+        ACTION: Action
+        CREATING: Creating...
+        BACKUP_NOW: Backup Now
+      DIRECT_INSTALL:
+        PACKAGE_INSTALLED_SUCCESSFULLY: Package installed successfully
+        ONLY_ZIP_FILES_ARE_SUPPORTED: Only .zip files are supported
+        INSTALL_FROM_FILE: Install from File
+        DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: Drop a .zip file here or click to browse
+        SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: Supports Grav plugin and theme packages
+        INSTALL_FROM_URL: Install from URL
+      LOGS:
+        SEARCH_MESSAGES: Search messages...
+        FAILED_TO_LOAD_LOGS: Failed to load logs
+        ALL_LEVELS: All Levels
+        EMERGENCY: Emergency
+        CRITICAL: Critical
+        WARNING: Warning
+        NOTICE: Notice
+        25_LINES: 25 lines
+        50_LINES: 50 lines
+        100_LINES: 100 lines
+        200_LINES: 200 lines
+        REFRESH: Refresh
+        LOADING_LOGS: Loading logs...
+        MESSAGE: Message
+      REPORT_COMPONENT_WRAPPER:
+        LOADING_REPORT_COMPONENT: Loading report component...
+      REPORTS:
+        FAILED_TO_LOAD_REPORTS: Failed to load reports
+        LOADING_REPORTS: Loading reports...
+        NO_REPORTS_AVAILABLE: No reports available.
+        CONTENT_FIELD: "content: {field}"
+      SCHEDULER:
+        FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
+        SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
+        FAILED_TO_SAVE: Failed to save
+        LOADING_SCHEDULER: Loading scheduler...
+        NOT_ENABLED_FOR_USER: "Not Enabled for user:"
+        GRAV_SCHEDULER: Grav Scheduler
+        INFO_BANNER: The scheduler can use either system crontab or webhook triggers to execute commands. Webhooks are recommended for cloud environments. Only advanced users should configure custom jobs. Misconfiguration or abuse can lead to security vulnerabilities.
+        CRONTAB_INSTRUCTIONS: To enable the Scheduler's functionality, you must add the **Grav Scheduler** to your system's crontab file for the **{user}** user. Run the command above from the terminal to add it automatically. Once saved, refresh this page to see the status.
+        WEBHOOK_ALTERNATIVE: Alternatively, install the **scheduler-webhook** plugin to use webhook-based cron firing, which is recommended for cloud environments where system crontab access is not available.
+        SECURITY_WARNING: Only advanced users should configure custom scheduler jobs. Incorrect configuration can cause performance issues or security vulnerabilities.
+      SYSTEM_INFO:
+        FAILED_TO_LOAD_SYSTEM_INFO: Failed to load system info
+        LOADING_SYSTEM_INFO: Loading system info...
+        GRAV_VERSION: Grav Version
+        PHP_VERSION: PHP Version
+        PHP_SAPI: PHP SAPI
+        MEMORY_LIMIT: Memory Limit
+        MAX_EXECUTION: Max Execution
+        MAX_UPLOAD: Max Upload
+        MAX_POST: Max POST
+        DISK_USAGE: Disk Usage
+        DRIVER: Driver
+        DISK_FREE_OF: "{free} free of {total}"
+      TOOLS_GRAV_ADMIN: Tools — Grav Admin
+      BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: Backups, scheduler, logs, and diagnostics
+    INSTALLING: Installing...
+    ACCESS_DENIED:
+      ACCESS_DENIED: Access Denied
+    ARE_YOU_SURE: Are you sure?
+    ENVIRONMENT_SWITCHER:
+      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: Select where config writes are saved
+      HAS_OVERRIDES: has overrides
+      SELECTED_ENV: Selected env
+      NO_LONGER_EXISTS_PICK_ANOTHER: no longer exists. Pick another.
+      SAVE_CONFIG_TO: Save config to
+      CREATES_PATH: Creates user/env/{name}/config/
+    INLINE_ICON_PICKER:
+      SEARCH_ICONS: Search icons...
+      NO_ICONS_FOUND: No icons found
+      TYPE_TO_NARROW_RESULTS: Type to narrow results
+    PASSWORD_FIELD:
+      PASSWORD_REQUIREMENTS: Password requirements
+      PASSWORD_STRENGTH: Password strength
+      REQUIREMENTS: Requirements
+    TOP_PROGRESS_BAR:
+      WORKING: Working
+    UNSAVED_INDICATOR:
+      SAVING_CHANGES: Saving changes…
+      SAVING_CHANGES_2: Saving changes
+      UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: Unsaved changes — click Save to persist them
+      YOU_HAVE_UNSAVED_CHANGES: You have unsaved changes
+    ALL_CHANGES_SAVED: All changes saved
+    APP:
+      CREATING_BACKUP: Creating backup…
+      DASHBOARD_GRAV_ADMIN: Dashboard — Grav Admin
+      REFRESH: Refresh
+      WELCOME_BACK: Welcome back, {name}
+      PAGE_TITLE: "{name} — Grav Admin"
+    CONFIG:
+      LOADING_CONFIGURATION: Loading configuration...
+      FILTER_FIELDS: Filter fields...
+      CLEAR_FILTER: Clear filter
+      CONFIGURATION_SAVED_SUCCESSFULLY: Configuration saved successfully
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Reload to see the latest changes.
+      FAILED_TO_SAVE_CONFIGURATION: Failed to save configuration
+      CONFIGURATION_RELOADED: Configuration reloaded
+      CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: Configuration changed elsewhere — save to overwrite or reload
+      RELOAD: Reload
+      NO_CONFIGURATION_BLUEPRINT_AVAILABLE: No configuration blueprint available for this scope.
+      PAGE_TITLE: "Configuration: {scope} — Grav Admin"
+    FLEX_OBJECTS:
+      SEARCH: Search...
+      PREVIOUS: Previous
+      DELETE_OBJECT: Delete Object
+      FAILED_TO_LOAD_DIRECTORY: Failed to load directory
+      FAILED_TO_LOAD_OBJECTS: Failed to load objects
+      OBJECT_DELETED: Object deleted
+      FAILED_TO_DELETE_OBJECT: Failed to delete object
+      EXPORT_FAILED: Export failed
+      EXPORT: Export
+      ACTIONS: Actions
+      OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: Object was modified elsewhere. Please reload.
+      FAILED_TO_SAVE: Failed to save.
+      OBJECT_CHANGED_ELSEWHERE_SAVE_TO: Object changed elsewhere — save to overwrite or reload
+      BACK_TO_LIST: Back to List
+      NEW:
+        OBJECT_CREATED: Object created
+        BACK_TO_LIST: Back to List
+        CREATE: Create
+    FORGOT:
+      UNABLE_TO_CONNECT_TO_SERVER: Unable to connect to server.
+      FORGOT_PASSWORD_GRAV_ADMIN: Forgot password — Grav Admin
+      FORGOT_PASSWORD: Forgot password
+      EMAIL_ADDRESS: Email address
+      ENTER_A_VALID_EMAIL_ADDRESS: Enter a valid email address
+      IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: If an account exists for that email, a reset link has been sent.
+      BACK_TO_SIGN_IN: Back to sign in
+      SENDING: Sending...
+      SEND_RESET_LINK: Send reset link
+      CHECK_INBOX: Check your inbox for a reset link.
+      SUBTITLE: Enter your email and we'll send you a reset link.
+    LOGIN:
+      SIGNED_IN_SUCCESSFULLY: Signed in successfully
+      PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: Please fill in all required fields
+      INVALID_USERNAME_OR_PASSWORD: Invalid username or password
+      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: Unable to connect to server. Check your server URL and try again.
+      UNABLE_TO_VERIFY_CODE_CHECK_YOUR: Unable to verify code. Check your connection and try again.
+      LOGIN_GRAV_ADMIN: Login — Grav Admin
+      GRAV_ADMIN: Grav Admin
+      SERVER_CONFIGURATION: Server Configuration
+      SERVER_URL: Server URL
+      ENVIRONMENT: Environment
+      USERNAME_IS_REQUIRED: Username is required
+      PASSWORD_IS_REQUIRED: Password is required
+      FORGOT_PASSWORD: Forgot password?
+      AUTHENTICATION_CODE: Authentication code
+      ENTER_A_VALID_6_DIGIT_CODE: Enter a valid 6-digit code
+      BACK_TO_SIGN_IN: Back to sign in
+      POWERED_BY_GRAV_CMS: Powered by Grav CMS
+      SIGNING_IN: Signing in...
+      SIGN_IN: Sign In
+      VERIFYING: Verifying...
+      VERIFY: Verify
+      TWOFA_SUBTITLE: Enter your authenticator code to continue
+      SUBTITLE: Sign in to manage your site
+      AUTH_CODE_PROMPT: Open your authenticator app and enter the 6-digit code for **{username}**.
+    PLUGIN:
+      BACK_TO_DASHBOARD: Back to Dashboard
+      NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: No content available for this plugin page.
+    PLUGINS:
+      SEARCH_PLUGINS: Search plugins...
+      SYMLINKED: Symlinked
+      FAILED_TO_LOAD_PLUGINS: Failed to load plugins
+      FAILED_TO_CHECK_FOR_UPDATES: Failed to check for updates
+      PLUGINS_GRAV_ADMIN: Plugins — Grav Admin
+      CHECK_UPDATES: Check Updates
+      CONFIGURE: Configure
+      SELECT_A_PLUGIN_TO_VIEW_DETAILS: Select a plugin to view details
+      REMOVE_PLUGIN: Remove Plugin
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Please reload.
+      FAILED_TO_SAVE_CONFIGURATION: Failed to save configuration.
+      PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: Plugin changed elsewhere — save to overwrite or reload
+      BACK_TO_PLUGINS: Back to Plugins
+      CHANGELOG: Changelog
+      PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: Plugin must be enabled to configure.
+      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: No configuration options available for this plugin.
+      ENABLE_PLUGIN: Enable Plugin
+      PAGE_TITLE: "{name} — Plugins — Grav Admin"
+    RESET:
+      PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: Password reset successfully. Please sign in.
+      UNABLE_TO_CONNECT_TO_SERVER: Unable to connect to server.
+      RESET_PASSWORD_GRAV_ADMIN: Reset password — Grav Admin
+      RESET_PASSWORD: Reset password
+      THIS_RESET_LINK_IS_MISSING_REQUIRED: This reset link is missing required parameters. Request a new one from the forgot password page.
+      CONFIRM_PASSWORD: Confirm password
+      PASSWORDS_DO_NOT_MATCH: Passwords do not match
+      BACK_TO_SIGN_IN: Back to sign in
+      RESETTING: Resetting...
+      INVALID_LINK: Invalid reset link.
+      NEW_PASSWORD_FOR: Choose a new password for **{username}**.
+    SETTINGS:
+      LIGHT_LOGO: Light logo
+      DARK_LOGO: Dark logo
+      REMOVE_LINK: Remove link
+      RESET_PREFERENCES: Reset Preferences
+      PREFERENCES_RESET_RELOAD_TO_APPLY: Preferences reset. Reload to apply.
+      SETTINGS_GRAV_ADMIN: Settings — Grav Admin
+      ADMIN_PREFERENCES_AND_APPEARANCE: Admin preferences and appearance
+      CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: Customize the logo shown in the sidebar and login page
+      LOGO_TYPE: Logo Type
+      CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: Choose how the logo is displayed
+      GRAV_LOGO: Grav Logo
+      CUSTOM_TEXT: Custom Text
+      CUSTOM_IMAGE: Custom Image
+      LOGO_TEXT: Logo Text
+      THE_FIRST_LETTER_BECOMES_THE_ICON: The first letter becomes the icon
+      LIGHT_MODE_LOGO: Light Mode Logo
+      USED_ON_LIGHT_BACKGROUNDS: Used on light backgrounds
+      DARK_MODE_LOGO: Dark Mode Logo
+      USED_ON_DARK_BACKGROUNDS: Used on dark backgrounds
+      APPEARANCE: Appearance
+      CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: Customize the look and feel of the admin
+      COLOR_MODE: Color Mode
+      CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: Choose between light and dark appearance
+      ACCENT_COLOR: Accent Color
+      PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: Primary color used for buttons, links, and highlights
+      SATURATION: Saturation
+      TYPEFACE_USED_THROUGHOUT_THE_ADMIN: Typeface used throughout the admin
+      DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: Default settings for the page browser
+      DEFAULT_VIEW: Default View
+      HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: How pages are displayed by default
+      ITEMS_PER_PAGE: Items per Page
+      NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: Number of pages shown in list view
+      EDITING: Editing
+      AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: Auto-save and undo behavior for form editors
+      AUTO_SAVE: Auto-Save
+      AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: Automatically save when you leave a field
+      TOOLBAR_UNDO_BUTTON: Toolbar Undo Button
+      SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: Show an undo button in the editor toolbar
+      UNDO_BATCH_WINDOW: Undo Batch Window
+      GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: Group rapid field changes into a single undo step
+      NONE_1_FIELD_1_UNDO: None (1 field = 1 undo)
+      1_SECOND: 1 second
+      2_SECONDS: 2 seconds
+      REAL_TIME_COLLABORATION: Real-time Collaboration
+      PLUGIN_ON_THE_SERVER_EXPERIMENTAL: plugin on the server. Experimental.
+      ADMIN_INTERFACE_LANGUAGE: Admin interface language
+      ADMIN_LANGUAGE: Admin Language
+      ENGLISH: English
+      FRAN_AIS: Français
+      DEUTSCH: Deutsch
+      ESPA_OL: Español
+      ITALIANO: Italiano
+      PORTUGU_S: Português
+      NEDERLANDS: Nederlands
+      MENUBAR_LINKS: Menubar Links
+      CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: Custom shortcuts shown in the top menubar
+      EXTERNAL: External
+      ADD_LINK: Add Link
+      CONNECTION: Connection
+      SERVER_CONNECTION_DETAILS: Server connection details
+      SERVER_URL: Server URL
+      ENVIRONMENT: Environment
+      AUTHENTICATED_AS: Authenticated As
+      RESET_ALL_PREFERENCES: Reset All Preferences
+      COLLAB_DESCRIPTION: Live multi-user editing with presence. Requires the `sync` plugin on the server. Experimental.
+      ADMIN_LANGUAGE_DESC: Language for labels, menus, and messages ({count} strings loaded)
+    CUSTOM: Custom
+    PREVIEW: Preview
+    SETUP:
+      PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: Please fix the errors above and try again
+      ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: Administrator account created — welcome to Grav
+      SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: Setup has already been completed. Please sign in.
+      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: Unable to connect to server. Check your server URL and try again.
+      SETUP_GRAV_ADMIN: Setup — Grav Admin
+      WELCOME_TO_GRAV: Welcome to Grav
+      CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: Create your administrator account to get started
+      CHECKING_SERVER: Checking server…
+      SERVER_CONFIGURATION: Server Configuration
+      SERVER_URL: Server URL
+      ENVIRONMENT: Environment
+      3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: "3-64 characters: letters, numbers, hyphens, underscores"
+      FULL_NAME: Full name
+      OPTIONAL: (optional)
+      ENTER_A_VALID_EMAIL_ADDRESS: Enter a valid email address
+      CONFIRM_PASSWORD: Confirm password
+      PASSWORDS_DO_NOT_MATCH: Passwords do not match
+      POWERED_BY_GRAV_CMS: Powered by Grav CMS
+      CREATING_ACCOUNT: Creating account...
+      CREATE_ADMINISTRATOR: Create administrator
+    SYSTEM:
+      SYSTEM_GRAV_ADMIN: System — Grav Admin
+      COMING_SOON: Coming soon
+    THEMES:
+      SEARCH_THEMES: Search themes...
+      SYMLINKED: Symlinked
+      FAILED_TO_LOAD_THEMES: Failed to load themes
+      FAILED_TO_CHECK_FOR_UPDATES: Failed to check for updates
+      THEMES_GRAV_ADMIN: Themes — Grav Admin
+      CHECK_UPDATES: Check Updates
+      CONFIGURE: Configure
+      SELECT_A_THEME_TO_VIEW_DETAILS: Select a theme to view details
+      ACTIVE_THEME: Active Theme
+      CLICK_TO_VIEW_FULL_SIZE: Click to view full size
+      REMOVE_THEME: Remove Theme
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Please reload.
+      FAILED_TO_SAVE_CONFIGURATION: Failed to save configuration.
+      BACK_TO_THEMES: Back to Themes
+      CHANGELOG: Changelog
+      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: No configuration options available for this theme.
+      PAGE_TITLE: "{name} — Themes — Grav Admin"
+    ACTIVE: Active
+    ACTIVATE: Activate
+    USERS:
+      STATUS: Status
+      STATUS_HELP: Disabled accounts cannot sign in or use the API.
+      SEARCH_USERS: Search users...
+      FAILED_TO_LOAD_USERS: Failed to load users
+      USERS_GRAV_ADMIN: Users — Grav Admin
+      ADD_USER: Add User
+      SUPER_ADMIN: Super Admin
+      CREATED: Created
+      PERMISSIONS: Permissions
+      SELECT_A_USER_TO_VIEW_DETAILS: Select a user to view details
+      DELETE_USER: Delete User
+      USER_WAS_MODIFIED_ELSEWHERE_PLEASE: User was modified elsewhere. Please reload.
+      FAILED_TO_SAVE_USER: Failed to save user.
+      YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: You cannot delete your own account.
+      USER_CHANGED_ELSEWHERE_SAVE_TO: User changed elsewhere — save to overwrite or reload
+      BACK_TO_USERS: Back to Users
+      2_FACTOR_AUTHENTICATION: 2-Factor Authentication
+      NEW:
+        LOWERCASE_3_64_CHARS: lowercase, 3-64 chars
+        NEW_USER_GRAV_ADMIN: New User — Grav Admin
+        NEW_USER: New User
+        ACCOUNT: Account
+        FULL_NAME: Full Name
+        PERMISSIONS: Permissions
+        CREATE: Create
+      PAGE_TITLE: "{name} — Users — Grav Admin"
+    INSTALL: Install
+    COPY_BUTTON:
+      COPIED: Copied!
+    WIDGET_HOST:
+      UNKNOWN_WIDGET: "Unknown widget: {id}"
+    UPDATE_AVAILABLE_VERSION: "Update available: v{version}"
+    UPDATE_TO_VERSION: Update to v{version}
