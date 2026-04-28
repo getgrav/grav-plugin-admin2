@@ -1,3 +1,9 @@
+# v2.0.0-beta.17
+## 04/28/2026
+
+1. [](#bugfix)
+    * **Fix: 500 errors when navigating after an Admin2 self-update.** Updating Admin2 used to leave the running tab pointing at bundle chunks that had just been overwritten on disk; clicking another page would surface a 500 in the toast until a manual browser reload. The admin now polls for new builds, converts the next navigation into a full page load when the bundle has changed, and hard-reloads immediately after Admin2 is updated so users don't have to wait.
+
 # v2.0.0-beta.16
 ## 04/28/2026
 
