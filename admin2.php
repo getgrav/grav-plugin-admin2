@@ -168,7 +168,17 @@ class Admin2Plugin extends Plugin
         $rootPath = rtrim($uri->rootUrl(false), '/');
         $this->assetsBase = $rootPath . $this->base;
 
+        // Grav core strips known "page" extensions (html, json, xml, rss…)
+        // from $uri->route(), per system.pages.types. SvelteKit polls
+        // /_app/version.json and other plugins may host static .json/.xml
+        // assets — reattach the extension *only* when it was actually
+        // stripped (route doesn't already end with it), so URLs like
+        // /_app/immutable/entry/start.BJRXMfvo.js stay intact.
         $currentRoute = $uri->route();
+        $stripped = $uri->extension();
+        if ($stripped && !str_ends_with($currentRoute, '.' . $stripped)) {
+            $currentRoute .= '.' . $stripped;
+        }
 
         if ($currentRoute === $this->base || str_starts_with($currentRoute, $this->base . '/')) {
             $this->isAdmin2Route = true;

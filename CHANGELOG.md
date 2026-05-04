@@ -1,3 +1,10 @@
+# v2.0.0-rc.1
+## 05/03/2026
+
+1. [](#bugfix)
+    * **Static `.json` / `.xml` / `.rss` assets under the admin route now serve correctly.** SvelteKit polls `_app/version.json` every minute for hot-reload detection, and any plugin asset using one of those extensions ran into the same wall — Grav core strips known page extensions from the parsed route, so admin2's static-asset matcher was looking for a file with no extension and returning 404. Admin2 now reattaches the original extension before matching, leaving hashed `.js` chunks (and other already-extension-bearing paths) untouched.
+    * Minor UI fixes
+
 # v2.0.0-beta.17
 ## 04/28/2026
 
