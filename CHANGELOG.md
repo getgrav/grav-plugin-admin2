@@ -1,3 +1,11 @@
+# v2.0.0-rc.3
+## 05/05/2026
+
+1. [](#new)
+    * **Color picker overhaul.** Replaced the bare HTML5 color input with a composable picker: saturation pad, hue + alpha sliders, hex input with arrow-key bumping, screen eyedropper, and a preset palette — themed to match admin-next light/dark. Set `alpha: false` on a `colorpicker` field in your blueprint to hide the alpha slider and emit strict 6-digit `#RRGGBB` (the Grav classic colorpicker convention).
+1. [](#bugfix)
+    * **Stand-alone `column` blueprint fields render their children.** Blueprints that use `type: column` outside a `columns` parent (e.g. the delivernext theme's `_ContentOptions`) used to drop through to the unknown-type debug renderer — field key, `column` type badge, empty textarea. They now render as a transparent group, matching admin-classic.
+
 # v2.0.0-rc.2
 ## 05/05/2026
 
