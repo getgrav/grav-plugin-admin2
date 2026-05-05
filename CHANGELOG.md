@@ -1,3 +1,13 @@
+# v2.0.0-rc.3
+## 05/05/2026
+
+1. [](#new)
+    * **Color picker overhaul.** Replaced the bare HTML5 color input with a composable picker: saturation pad, hue + alpha sliders, hex input with arrow-key bumping, screen eyedropper, and a preset palette — themed to match admin-next light/dark. Set `alpha: false` on a `colorpicker` field in your blueprint to hide the alpha slider and emit strict 6-digit `#RRGGBB` (the Grav classic colorpicker convention).
+1. [](#bugfix)
+    * **Stand-alone `column` blueprint fields render their children.** Blueprints that use `type: column` outside a `columns` parent (e.g. the delivernext theme's `_ContentOptions`) used to drop through to the unknown-type debug renderer — field key, `column` type badge, empty textarea. They now render as a transparent group, matching admin-classic.
+    * **Sidebar and top bar now stay pinned while editing long pages.** A destructive overflow rewrite in the editor was collapsing the admin shell so the whole layout scrolled with the content; the editor side has been fixed and the admin's flex shell is back to behaving as a fixed frame around a single scrolling content area (requires editor-pro ≥ 2.0.3).
+    * **Segmented Yes/No toggles inside blueprint forms no longer punch through the sticky tab strip while scrolling.** The toggle now isolates its own stacking context so its `z-10` button labels can't bleed through pinned bars above them.
+
 # v2.0.0-rc.2
 ## 05/05/2026
 
