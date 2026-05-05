@@ -1,3 +1,11 @@
+# v2.0.0-rc.2
+## 05/05/2026
+
+1. [](#bugfix)
+    * **Blueprint `display` fields now render their HTML content.** A `type: display` field with HTML in `content:` (e.g. `<p>...</p><code>...</code>`) was being printed as escaped text in admin-next, while admin-classic has always rendered it as parsed HTML ([grav-plugin-admin2#4](https://github.com/getgrav/grav-plugin-admin2/issues/4)). The non-markdown branch of the renderer now uses `{@html}` to match classic behavior.
+    * **No more solo→collab flash on the page editor.** When collab was enabled the content editor used to mount in solo mode, then tear down and remount once the room connected — flashing whatever the empty Yjs fragment showed in the meantime (often stale content from a prior session). The page editor now defers just the content field until the room is ready, leaving the rest of the form (title, header, taxonomy, etc.) interactive throughout. A short "Connecting…" placeholder shows in the content area while the room negotiates.
+    * Requires grav-plugin-api ≥ 1.0.0-rc.2 for the related blueprint-resolver and page-tree-sort fixes (issues [#1](https://github.com/getgrav/grav-plugin-admin2/issues/1), [#3](https://github.com/getgrav/grav-plugin-admin2/issues/3), [#5](https://github.com/getgrav/grav-plugin-admin2/issues/5)). Requires grav-plugin-sync ≥ 1.0.1 for the storage-layout fix that keeps sync data out of `user/pages/`.
+
 # v2.0.0-rc.1
 ## 05/03/2026
 
