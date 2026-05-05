@@ -132,6 +132,7 @@ ICU:
         COPY_PAGE: Copy page
         DELETE_PAGE: Delete Page
         WRITE_YOUR_MARKDOWN_CONTENT_HERE: Write your markdown content here...
+        CONNECTING_TO_COLLAB: Connecting to collaboration session…
         RESET_TRANSLATION: Reset Translation
         PAGE_PREVIEW: Page Preview
         INVALID_YAML_FRONTMATTER: Invalid YAML frontmatter
