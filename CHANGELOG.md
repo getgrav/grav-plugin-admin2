@@ -1,3 +1,9 @@
+# v2.0.0-rc.4
+## 05/06/2026
+
+1. [](#bugfix)
+    * **Sidebar version label refreshes after a Grav core upgrade.** Updating Grav from the GPM page used to leave the `Grav v…` line in the sidebar stuck at the previous version until the next full reload — only admin/admin2/api self-updates were re-fetching the user profile. The shell now also re-fetches when Grav itself is upgraded. Requires grav-plugin-api ≥ 1.0.0-rc.4.
+
 # v2.0.0-rc.3
 ## 05/05/2026
 
