@@ -823,3 +823,666 @@ ICU:
       UNKNOWN_WIDGET: "Unknown widget: {id}"
     UPDATE_AVAILABLE_VERSION: "Update available: v{version}"
     UPDATE_TO_VERSION: Update to v{version}
+  PLUGIN_ADMIN:
+    2FA_ENABLED: 2FA Enabled
+    2FA_SECRET: 2FA Secret
+    2FA_SECRET_HELP: "Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it's a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information "
+    2FA_TITLE: 2-Factor Authentication
+    ABSOLUTE_URLS: Absolute URLs
+    ABSOLUTE_URLS_HELP: Absolute or relative URLs for `base_url`
+    ACCESS: Access
+    ACCESS_LEVELS: Access Levels
+    ACCOUNT: Account
+    ACCOUNTS: Accounts
+    ACCOUNTS_STORAGE: Account Storage
+    ACCOUNTS_STORAGE_HELP: The storage mechanism to be used for Flex Object Account type.  Files is the traditional approach where account are stored in a YAML file in a single folder, while Folder creates a new folder for each account
+    ACCOUNTS_TYPE: Accounts Type
+    ACCOUNTS_TYPE_HELP: Flex Object system to store user accounts
+    ACTIVE_LANGUAGE_IN_SESSION: Active language in session
+    ACTIVE_LANGUAGE_IN_SESSION_HELP: Store the active language in the session
+    ADD: Add
+    ADD_ACCOUNT: Add Account
+    ADMIN_CHILDREN_DISPLAY_ORDER: Children Display Order
+    ADMIN_CHILDREN_DISPLAY_ORDER_HELP: The order that children of this page should be displayed in the 'Pages' view of Admin plugin
+    ADMIN_SPECIFIC_OVERRIDES: Admin Specific Overrides
+    ADVANCED: Advanced
+    ALLOW_URL_TAXONOMY_FILTERS: URL Taxonomy Filters
+    ALLOW_URL_TAXONOMY_FILTERS_HELP: Page-based collections allow you to filter via `/taxonomy:value`.
+    ALLOW_WEBSERVER_GZIP: Allow WebServer Gzip
+    ALLOW_WEBSERVER_GZIP_HELP: Off by default. When enabled, WebServer-configured Gzip/Deflate compression will work, but http connection will not be closed before onShutDown() event causing slower page loading
+    APPEND_URL_EXT: Append URL extension
+    APPEND_URL_EXT_HELP: Will add a custom extension to the Page's URL. Note, this will mean Grav will look for `<template>.<extension>.twig` template
+    ASCENDING: Ascending
+    ASSETS: Assets
+    AUTO: Auto
+    AUTO_LINE_BREAKS: Auto line breaks
+    AUTO_LINE_BREAKS_HELP: Enable support for automatic line breaks in markdown
+    AUTO_URL_LINKS: Auto URL links
+    AUTO_URL_LINKS_HELP: Enable automatic conversion of URLs into HTML hyperlinks
+    AUTOESCAPE_VARIABLES: Autoescape variables
+    AUTOESCAPE_VARIABLES_HELP: Autoescapes all variables.  This will break your site most likely
+    AVATAR: Avatar Generator
+    AVATAR_HASH: "NOTE: Optional Avatar custom 'hash' string"
+    AVATAR_HELP: Multiavatar is a locally generated avatar.  Gravatar is an external service that uses your email address to pull a preconfigured Avatar remotely
+    BACK: Back
+    BACKUPS: Backups
+    BACKUPS_HISTORY: Backup History
+    BACKUPS_MAX_COUNT: Maximum Number of Backups
+    BACKUPS_MAX_RETENTION_TIME: Maximum Retention Time
+    BACKUPS_MAX_RETENTION_TIME_APPEND: in Days
+    BACKUPS_MAX_SPACE: Maximum Backups Space
+    BACKUPS_PROFILE_ENVIRONMENT: Environment
+    BACKUPS_PROFILE_ENVIRONMENT_HELP: Grav environment context the scheduled backup runs as.
+    BACKUPS_PROFILE_EXCLUDE_FILES: Exclude Files
+    BACKUPS_PROFILE_EXCLUDE_FILES_HELP: Specific Files or Folders to exclude, one per line
+    BACKUPS_PROFILE_EXCLUDE_PATHS: Exclude Paths
+    BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: Absolute paths to exclude, one per line
+    BACKUPS_PROFILE_NAME: Backup Name
+    BACKUPS_PROFILE_ROOT_FOLDER: Root Folder
+    BACKUPS_PROFILE_ROOT_FOLDER_HELP: Can be an absolute path or a stream
+    BACKUPS_PROFILE_SCHEDULE: Enable Scheduled Job
+    BACKUPS_PROFILE_SCHEDULE_AT: Run Scheduled Job
+    BACKUPS_PROFILES: Backup Profiles
+    BACKUPS_PURGE_CONFIG: Backup Purge Configuration
+    BACKUPS_STORAGE_PURGE_TRIGGER: Backup Storage Purge Trigger
+    BODY_CLASSES: Body classes
+    CACHE_ALL: Cache all images
+    CACHE_ALL_HELP: Run all images through Grav's cache system even if they have no media manipulations
+    CACHE_CHECK_METHOD: Cache check method
+    CACHE_CHECK_METHOD_HELP: Select the method that Grav uses to check if page files have been modified.
+    CACHE_CLEAR_JOB: Run Scheduled Clear Job
+    CACHE_CLEAR_JOB_HELP: With the scheduler you can periodically clear the Grav Cache
+    CACHE_CONTROL: HTTP Cache-Control
+    CACHE_CONTROL_HELP: Set to a valid cache-control value such as `no-cache, no-store, must-revalidate`
+    CACHE_DRIVER: Cache driver
+    CACHE_DRIVER_HELP: Choose which cache driver Grav should use. 'Auto Detect' attempts to find the best for you
+    CACHE_JOB_TYPE: Cache Job Type
+    CACHE_JOB_TYPE_HELP: Either clear with the 'standard' folders cache clear, or with 'all' folders
+    CACHE_PERMS: Cache Permissions
+    CACHE_PERMS_HELP: Default cache folder perms. Usually 0755 or 0775 depending on setup
+    CACHE_PREFIX: Cache prefix
+    CACHE_PREFIX_HELP: An identifier for part of the Grav key.  Don't change unless you know what your doing.
+    CACHE_PREFIX_PLACEHOLDER: Derived from base URL (override by entering random string)
+    CACHE_PURGE_AGE: Cache Purge Age
+    CACHE_PURGE_AGE_HELP: Purge all cache items older than this age (in seconds)
+    CACHE_PURGE_JOB: Run Scheduled Purge Job
+    CACHE_PURGE_JOB_HELP: With the scheduler you can periodically clear out old Doctrine file cache folders with this job
+    CACHING: Caching
+    CACHING_HELP: Global ON/OFF switch to enable/disable Grav caching
+    CHARACTERS: characters
+    CLEAR_IMAGES_BY_DEFAULT: Clear image cache by default
+    CLEAR_IMAGES_BY_DEFAULT_HELP: By default processed images are cleared for all cache clears, this can be disabled
+    CLI_COMPATIBILITY: CLI Compatibility
+    CLI_COMPATIBILITY_HELP: Ensures that only non-volatile Cache drivers are used (file, redis, memcache, etc.)
+    COLLECTIONS: Collections
+    COMMAND: Command
+    CONFIGURATION: Configuration
+    CONTENT: Content
+    CONTENT_EDITOR: Content Editor
+    CONTENT_EDITOR_HELP: Custom editors can be preferred for content editing
+    CONTENT_FALLBACK_LANGUAGE_HELP: Specify language code which you want to customize.
+    CONTENT_LANGUAGE_FALLBACK: Fallback Languages
+    CONTENT_LANGUAGE_FALLBACK_HELP: Please enter a list of language codes. Note that if you omit default language code, it will not be used.
+    CONTENT_LANGUAGE_FALLBACKS: Content Language Fallback
+    CONTENT_LANGUAGE_FALLBACKS_HELP: By default if the content isn't translated, Grav will display content in the default language. Use this setting to override that behavior per language basis.
+    COPY: Copy
+    CREATE: Create
+    CSS_ASSETS: CSS Assets
+    CSS_MINIFY: CSS minify
+    CSS_MINIFY_HELP: Minify the CSS during pipelining
+    CSS_MINIFY_WINDOWS_OVERRIDE: CSS minify Windows override
+    CSS_MINIFY_WINDOWS_OVERRIDE_HELP: Minify Override for Windows platforms. False by default due to ThreadStackSize
+    CSS_PIPELINE: CSS pipeline
+    CSS_PIPELINE_BEFORE_EXCLUDES: CSS pipeline render first
+    CSS_PIPELINE_BEFORE_EXCLUDES_HELP: Render the CSS pipeline before any other CSS references that are not included
+    CSS_PIPELINE_HELP: The CSS pipeline is the unification of multiple CSS resources into one file
+    CSS_PIPELINE_INCLUDE_EXTERNALS: Include externals in CSS pipeline
+    CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: External URLs sometimes have relative file references and shouldn't be pipelined
+    CSS_REWRITE: CSS rewrite
+    CSS_REWRITE_HELP: Rewrite any CSS relative URLs during pipelining
+    CURL: cURL
+    CUSTOM_BASE_URL: Custom base URL
+    CUSTOM_BASE_URL_HELP: "Use if you want to rewrite the site domain or use a different subfolder than the one used by Grav. Example: http://localhost"
+    CUSTOM_REDIRECTS: Custom Redirects
+    CUSTOM_REDIRECTS_HELP: routes to redirect to other pages. Standard Regex replacement is valid
+    CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
+    CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+    CUSTOM_ROUTES: Custom Routes
+    CUSTOM_ROUTES_HELP: routes to alias to other pages. Standard Regex replacement is valid
+    CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+    CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+    DATE: Date
+    DATE_BASED_PUBLISHING: Date-based publishing
+    DATE_BASED_PUBLISHING_HELP: Automatically (un)publish posts based on their date
+    DATE_HELP: The date variable allows you to specifically set a date associated with this page.
+    DEBUGGER: Debugger
+    DEBUGGER_CENSORED: Censor Sensitive Data
+    DEBUGGER_CENSORED_HELP: "Clockwork Provider ONLY: If Yes, censor potentially sensitive information (POST parameters, cookies, files, configuration and most array/object data in log messages)"
+    DEBUGGER_CLOCKWORK: Clockwork Browser Extension
+    DEBUGGER_DEBUGBAR: PHP Debug Bar
+    DEBUGGER_HELP: Enable Grav debugger and following settings
+    DEBUGGER_PROVIDER: Debugger Provider
+    DEBUGGER_PROVIDER_HELP: Default is PHP Debug Bar, but Clockwork browser extension provides for a less intrusive approach
+    DEFAULT: Default
+    DEFAULT_AUTHOR: Default Author
+    DEFAULT_AUTHOR_HELP: A default author name, often used in themes or page content
+    DEFAULT_CHILD_TYPE: Default Child Type
+    DEFAULT_DATE_FORMAT: Page date format
+    DEFAULT_DATE_FORMAT_HELP: "Page date format used by Grav. By default, Grav attempts to guess your date format, however you can specifiy a format using PHP's date syntax (e.g.: Y-m-d H:i)"
+    DEFAULT_DATE_FORMAT_PLACEHOLDER: Guess automatically
+    DEFAULT_EMAIL: Default Email
+    DEFAULT_EMAIL_HELP: A default email to reference in themes or pages
+    DEFAULT_IMAGE_QUALITY: Default image quality
+    DEFAULT_IMAGE_QUALITY_HELP: Default image quality to use when resampling or caching images (85%)
+    DEFAULT_LANG: Override Default Language
+    DEFAULT_LANG_HELP: Default is the first supported language. This can be overridden by setting this option but it must be one of the supported languages
+    DEFAULT_ORDER_DIRECTION: Default order direction
+    DEFAULT_ORDER_DIRECTION_HELP: The direction of pages in a list
+    DEFAULT_ORDERING: Default ordering
+    DEFAULT_ORDERING_DATE: Date - based on date field in header
+    DEFAULT_ORDERING_DEFAULT: Default - based on folder name
+    DEFAULT_ORDERING_FOLDER: Folder - based on prefix-less folder name
+    DEFAULT_ORDERING_HELP: Pages in a list will render using this order unless it is overridden
+    DEFAULT_ORDERING_TITLE: Title - based on title field in header
+    DEFAULT_PAGE_COUNT: Default page count
+    DEFAULT_PAGE_COUNT_HELP: Default maximum pages count in a list
+    DEFAULT_THEME: Default theme
+    DEFAULT_THEME_HELP: Set the default theme for Grav to use (default is Antimatter)
+    DEFAULTS: Defaults
+    DELETE: Delete
+    DELIMITER: Delimiter
+    DELIMITER_HELP: The summary delimiter (default '===')
+    DESCENDING: Descending
+    DESCRIPTION: Description
+    DETAILS: Details
+    DETECT_CHANGES: Detect changes
+    DETECT_CHANGES_HELP: Twig will automatically recompile the Twig cache if it detects any changes in Twig templates
+    DISABLED: Disabled
+    DISPLAY_ERRORS: Display errors
+    DISPLAY_ERRORS_HELP: Display full backtrace-style error page
+    DISPLAY_NAME: Display Name
+    DISPLAY_TEMPLATE: Display Template
+    EMAIL: Email
+    EMAIL_VALIDATION_MESSAGE: Must be a valid email address
+    ENABLE_AUTO_METADATA: Auto metadata from Exif
+    ENABLE_AUTO_METADATA_HELP: Automatically generate metadata files for images with exif information
+    ENABLE_MEDIA_TIMESTAMP: Enable timestamps on media
+    ENABLE_MEDIA_TIMESTAMP_HELP: Appends a timestamp based on last modified date to each media item
+    ENABLED: Enabled
+    ENABLED_HELP: Enable page summary (the summary returns the same as the page content)
+    ENABLED_SRI_ON_ASSETS: Enable SRI on assets
+    ENABLED_SRI_ON_ASSETS_HELP: Enable asset SRI
+    ENABLED_TIMESTAMPS_ON_ASSETS: Enable timestamps on assets
+    ENABLED_TIMESTAMPS_ON_ASSETS_HELP: Enable asset timestamps
+    ERROR_FULL_BACKTRACE: Full Backtrace Error
+    ERROR_HANDLER: Error handler
+    ERROR_SIMPLE: Simple Error
+    ERROR_SYSTEM: System Error
+    ESCAPE_MARKUP: Escape markup
+    ESCAPE_MARKUP_HELP: Escape markup tags into HTML entities
+    ETAG: ETag
+    ETAG_HELP: Sets the etag header to help identify when a page has been modified
+    EVENTS: Events
+    EVENTS_HELP: Enable or Disable specific events.  Disabling these can break plugins
+    EXPERIMENTAL: Experimental
+    EXPIRES: Expires
+    EXPIRES_HELP: Sets the expires header. The value is in seconds.
+    EXTERNAL: External Page
+    EXTERNAL_URL: External URL
+    EXTRA_ARGUMENTS: Extra Arguments
+    FALLBACK_TYPES: Allowed fallback types
+    FALLBACK_TYPES_HELP: Allowed file types that can be found if accessed via Page route. Defaults to any supported media type.
+    FILE: File
+    FILE_EXTENSION: File Extension
+    FILE_STREAMS: File Streams
+    FLEX: Flex Object (EXPERIMENTAL)
+    FLEX_CACHING: Flex Caching
+    FLEX_INDEX_CACHE_ENABLED: Enable Index Caching
+    FLEX_INDEX_CACHE_LIFETIME: Index Cache Lifetime (seconds)
+    FLEX_OBJECT_CACHE_ENABLED: Enable Object Caching
+    FLEX_OBJECT_CACHE_LIFETIME: Object Cache Lifetime (seconds)
+    FLEX_RENDER_CACHE_ENABLED: Enable Render Caching
+    FLEX_RENDER_CACHE_LIFETIME: Render Cache Lifetime (seconds)
+    FOLDER: Folder
+    FOLDER_NAME: Folder Name
+    FOLDER_NUMERIC_PREFIX: Folder Numeric Prefix
+    FOLDER_NUMERIC_PREFIX_HELP: Numeric prefix that provides manual ordering and implies visibility
+    FOPEN: fopen
+    FORCE_LOWERCASE_URLS: Force lowercase URLs
+    FORCE_LOWERCASE_URLS_HELP: By default Grav will set all slugs and routes to be lowercase. With this set to false, Uppercase slugs and routes can be used
+    FORCE_SSL: Force SSL
+    FORCE_SSL_HELP: Globally force SSL, if enabled when the site is reached through HTTP, Grav sends a redirect to the HTTPS page
+    FORMAT: Format
+    FORMAT_HELP: short = use the first occurrence of delimiter or size; long = summary delimiter will be ignored
+    FRONTMATTER_IGNORE_FIELDS: Ignore frontmatter fields
+    FRONTMATTER_IGNORE_FIELDS_HELP: Certain frontmatter fields may contain Twig but should not be processed, such as 'forms'
+    FRONTMATTER_PROCESS_TWIG: Process frontmatter Twig
+    FRONTMATTER_PROCESS_TWIG_HELP: When enabled you can use Twig config variables in page front matter
+    FULL_NAME: Full name
+    GENERAL_CONFIG: General Asset Configuration
+    GPM_METHOD: Remote Fetch Method
+    GPM_METHOD_HELP: When set to Auto, Grav will determine if fopen is available and use it, otherwise fall back to cURL. To force the use of one or the other switch the setting.
+    GPM_OFFICIAL_ONLY: Official GPM Only
+    GPM_OFFICIAL_ONLY_HELP: Only allow direct installs from the official GPM repository only.
+    GPM_RELEASES: GPM Releases
+    GPM_RELEASES_HELP: Choose 'Testing' to install beta or testing versions
+    GPM_SECTION: GPM Section
+    GROUP_NAME: Group Name
+    GROUPS: Groups
+    GROUPS_HELP: List of groups the user is part of
+    GZIP_COMPRESSION: Gzip compression
+    GZIP_COMPRESSION_HELP: Enable GZip compression of the Grav page for increased performance.
+    HIDE_EMPTY_FOLDERS: Hide empty folders
+    HIDE_EMPTY_FOLDERS_HELP: If folder has no .md file, should it be hidden in navigation as well as being unroutable
+    HIDE_HOME_IN_URLS: Hide home route in URLs
+    HIDE_HOME_IN_URLS_HELP: Will ensure the default routes for any pages under home do not reference home's regular route
+    HOME_PAGE: Home page
+    HOME_PAGE_HELP: The page that Grav will use as the default landing page
+    HTTP_ACCEPT_LANGUAGE: Set language from browser
+    HTTP_ACCEPT_LANGUAGE_HELP: You can opt to try to set the language based on `http_accept_language` header tag in the browser
+    HTTP_CONNECTIONS: HTTP Connections
+    HTTP_CONNECTIONS_HELP: The number of concurrent HTTP connections during multiplexed requests
+    HTTP_HEADERS: HTTP Headers
+    HTTP_SECTION: HTTP Section
+    ICON: Icon
+    IGNORE_FILES: Ignore files
+    IGNORE_FILES_HELP: Specific files to ignore when processing pages
+    IGNORE_FOLDERS: Ignore folders
+    IGNORE_FOLDERS_HELP: Specific folders to ignore when processing pages
+    IGNORE_HIDDEN: Ignore hidden
+    IGNORE_HIDDEN_HELP: Ignore all files and folders that begin with a DOT
+    IMAGE_ADAPTER: Image Adapter
+    IMAGE_ADAPTER_HELP: The image adapter to use for image manipulation. 'GD' is the default, 'Imagick' is an alternative
+    IMAGE_OPTIONS: Image options
+    IMAGES_AUTO_FIX_ORIENTATION: Fix orientation automatically
+    IMAGES_AUTO_FIX_ORIENTATION_HELP: Automatically fix the image orientation based on the Exif data
+    IMAGES_CLS_ASPECT_RATIO: Enable Aspect Ratio
+    IMAGES_CLS_ASPECT_RATIO_HELP: Optional CSS variable that gets applied via a 'style' attribute which can be used in CSS for custom styling
+    IMAGES_CLS_AUTO_SIZES: Enable Auto Sizes
+    IMAGES_CLS_AUTO_SIZES_HELP: Automatically add 'width' and 'height' attributes to images to address CLS
+    IMAGES_CLS_RETINA_SCALE: Retina Scale Factor
+    IMAGES_CLS_RETINA_SCALE_HELP: Will take the calculated size and divide by scale factor to display a higher resolution image at a smaller pixel size for better handling of HiDPI resolutions
+    IMAGES_CLS_TITLE: Cumulative Layout Shift (CLS)
+    IMAGES_DEBUG: Image debug watermark
+    IMAGES_DEBUG_HELP: Show an overlay over images indicating the pixel depth of the image when working with retina for example
+    IMAGES_DECODING: Image decoding behavior
+    IMAGES_DECODING_HELP: "The decoding attribute allows a browser to defer decoding offscreen images until users scroll near them. decoding supports three values: auto, sync, async"
+    IMAGES_FETCHPRIORITY: Image Fetchpriority Property
+    IMAGES_FETCHPRIORITY_HELP: The fetchpriority property in HTML is an attribute that specifies the priority for loading certain resources, such as images or iframes, to optimize performance. Possible values are high, low, or auto.
+    IMAGES_LOADING: Image loading behavior
+    IMAGES_LOADING_HELP: "The loading attribute allows a browser to defer loading offscreen images and iframes until users scroll near them. loading supports three values: auto, lazy, eager"
+    IMAGES_SEOFRIENDLY: SEO-Friendly Image names
+    IMAGES_SEOFRIENDLY_HELP: When enabled, the image name is displayed first, then a smaller hash to reflect processed operations
+    INCLUDE_DEFAULT_LANG: Include default language
+    INCLUDE_DEFAULT_LANG_FILE_EXTENSION: Include default language in file extension
+    INCLUDE_DEFAULT_LANG_HELP: This will prepend all URLs in the default language with the default language.  e.g. `/en/blog/my-post`
+    INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: If enabled, it will prepend the default language to the file extension (e.g. `.en.md`). Disable it to keep the default language using `.md` file extension.
+    INLINE_TYPES: Inline fallback types
+    INLINE_TYPES_HELP: A list of file types that should be displayed inline rather than downloaded
+    INTL_ENABLED: Intl module integration
+    INTL_ENABLED_HELP: Use Intl PHP module and collate to sort UTF8 based collections
+    ITEMS: Items
+    JAVASCRIPT_MINIFY: JavaScript minify
+    JAVASCRIPT_MINIFY_HELP: Minify the JS during pipelining
+    JAVASCRIPT_MODULE_PIPELINE: JavaScript Module pipeline
+    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: JS Module pipeline render first
+    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: Render the JS pipeline before any other JS references that are not included
+    JAVASCRIPT_MODULE_PIPELINE_HELP: The JS Module pipeline is the unification of multiple JS resources into one file
+    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: Include externals in JS Module pipeline
+    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: External URLs sometimes have relative file references and shouldn't be pipelined
+    JAVASCRIPT_PIPELINE: JavaScript pipeline
+    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: JS pipeline render first
+    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: Render the JS pipeline before any other JS references that are not included
+    JAVASCRIPT_PIPELINE_HELP: The JS pipeline is the unification of multiple JS resources into one file
+    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: Include externals in JS pipeline
+    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: External URLs sometimes have relative file references and shouldn't be pipelined
+    JS_ASSETS: JavaScript Assets
+    JS_MODULE_ASSETS: JavaScript Module Assets
+    LANGUAGE: Language
+    LANGUAGE_DEBUG: Debug language
+    LANGUAGE_DEBUG_HELP: Enable the debug of languages which are using the |t twig filter by adding a span around them that can be styled to help diagnose issues
+    LANGUAGE_HELP: Set the favorite language
+    LANGUAGE_TRANSLATIONS: Translations
+    LANGUAGE_TRANSLATIONS_HELP: If false, translation keys are used instead of translated strings. This feature can be used to help to fix bad translations or to find hardcoded English strings.
+    LANGUAGES: Languages
+    LAST_MODIFIED: Last modified
+    LAST_MODIFIED_HELP: Sets the last modified header that can help optimize proxy and browser caching
+    LIFETIME: Lifetime
+    LIFETIME_HELP: Sets the cache lifetime in seconds. 0 = infinite
+    LIST: List
+    LOG_ERRORS: Log errors
+    LOG_ERRORS_HELP: Log errors to /logs folder
+    LOG_HANDLER: Log handler
+    LOG_HANDLER_HELP: Where to output the logs
+    LONG: Long
+    LONG_DATE_FORMAT: Long display date format
+    LONG_DATE_FORMAT_HELP: Set the long date format that can be used by themes
+    MARKDOWN: Markdown
+    MARKDOWN_EXTRA_HELP: Enable default support for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/
+    MEDIA: Media
+    MEDIA_TYPES: Media Types
+    MEMCACHED_PORT: Memcached port
+    MEMCACHED_PORT_HELP: The Memcached server port
+    MEMCACHED_SERVER: Memcached server
+    MEMCACHED_SERVER_HELP: The Memcached server address
+    MENU: Menu
+    MENU_HELP: The string to be used in a menu.  If not set, Title will be used.
+    METADATA: Metadata
+    METADATA_HELP: Default metadata values that will be displayed on every page unless overridden by the page
+    METADATA_KEY: Key (e.g. 'Keywords')
+    METADATA_VALUE: Value (e.g. 'Blog, Grav')
+    MIME_TYPE: Mime Type
+    MISC_SECTION: Miscellaneous Section
+    MODULE: Module
+    MODULE_SETUP: Module Setup
+    MOVE: Move
+    NAME: Name
+    NEVER_CACHE_TWIG: Never Cache Twig
+    NEVER_CACHE_TWIG_HELP: Only cache content and process Twig every time for pages. Ignores twig_first setting.
+    "NO": "No"
+    OPTIONS: Options
+    ORDER: Order
+    ORDER_BY: Order By
+    ORDER_DIGITS: Order digits
+    ORDER_DIGITS_HELP: Number of digits used to prefix folder names for ordering (e.g. `01.about`, `001.about`).
+    ORDERING: Ordering
+    OVERRIDE_LOCALE: Override locale
+    OVERRIDE_LOCALE_HELP: Override the locale setting in PHP based on the current language
+    OVERRIDES: Overrides
+    PAGE: Page
+    PAGE_ACCESS: Page Access
+    PAGE_ACCESS_HELP: User with following access permissions can access the page.
+    PAGE_AUTHORS: Page Authors
+    PAGE_AUTHORS_HELP: Members of Page Authors have owner level access to this page defined in special 'Authors' page group.
+    PAGE_FILE: Page Template
+    PAGE_FILE_HELP: Page template file name, and by default the display template for this page
+    PAGE_GROUPS: Page Groups
+    PAGE_GROUPS_HELP: Members of Page Groups have special access to this page.
+    PAGE_INHERIT_PERMISSIONS: Inherit Permissions
+    PAGE_INHERIT_PERMISSIONS_HELP: Inherit ACL from parent page.
+    PAGE_MEDIA: Page Media
+    PAGE_SUMMARY: Page Summary
+    PAGE_TYPES: Page Types
+    PAGE_TYPES_HELP: Determines the page types that Grav supports and the order determines which type to fall back to if the request is ambiguous
+    PAGE_VISIBILITY_REQUIRES_ACCESS: Menu Visibility Requires Access
+    PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: Set to Yes if page should be shown in menus only if user can access them.
+    PAGES: Pages
+    PAGES_FALLBACK_ONLY: Pages fallback only
+    PAGES_FALLBACK_ONLY_HELP: Only 'fallback' to find page content through supported languages, default behavior is to display any language found if active language is missing
+    PAGES_TYPE: Frontend Page Type
+    PAGES_TYPE_HELP: This option enables Flex Object pages on the front-end. Admin Flex Pages requires Flex Objects plugin
+    PARAMETER_SEPARATOR: Parameter separator
+    PARAMETER_SEPARATOR_HELP: Separator for passed parameters that can be changed for Apache on Windows
+    PARENT: Parent
+    PASSWORD: Password
+    PASSWORD_VALIDATION_MESSAGE: Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
+    PERMISSIONS: Permissions
+    PLUGIN_STATUS: Plugin status
+    PREVIEW: Preview
+    PROCESS: Process
+    PROCESS_HELP: Control how pages are processed. Can be set per-page rather than globally
+    PROXY_CERT: Proxy Certificate Path
+    PROXY_CERT_HELP: Local path to folder containing proxy certificate pem file
+    PROXY_URL: Proxy URL
+    PROXY_URL_HELP: Enter the proxy HOST or IP and PORT
+    PUBLISH: Publish
+    PUBLISHED: Published
+    PUBLISHED_DATE: Published Date
+    PUBLISHED_DATE_HELP: Can provide a date to automatically trigger publication.
+    PUBLISHED_HELP: "By default, a page is published unless you explicitly set published: false or via a publish_date being in the future, or unpublish_date in the past"
+    PUBLISHING: Publishing
+    PWD_REGEX: Password Regex
+    PWD_REGEX_HELP: "By default: Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+    PWD_RULES: Password rules
+    PWD_RULES_HELP: Custom password validation rules. Each rule has an ID, a human label, and a regex the password must match.
+    PWD_RULES_ID: ID
+    PWD_RULES_LABEL: Label
+    PWD_RULES_PATTERN: Regex pattern
+    READ: Read
+    READ_FILE_ALLOWED_EXTENSIONS: Allowed file extensions
+    READ_FILE_ALLOWED_EXTENSIONS_HELP: File extensions <code>read_file()</code> will read (case-insensitive, no leading dot). Defaults are text/content formats only. Adding executable or config formats (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) is a foot-gun and not recommended.
+    READ_FILE_ALLOWED_STREAMS: Allowed streams
+    READ_FILE_ALLOWED_STREAMS_HELP: "Stream schemes that <code>read_file()</code> may resolve. Defaults: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. Adding broad streams like <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> or <code>cache</code> exposes sensitive files and is strongly discouraged."
+    READ_FILE_MAX_SIZE: Max file size (bytes)
+    READ_FILE_MAX_SIZE_HELP: Files larger than this return <code>false</code> rather than being slurped into memory. Default is <code>1048576</code> (1 MB). Set to <code>0</code> to disable the size cap.
+    READ_FILE_SECTION_HELP: Constraints on the Twig <code>read_file()</code> function. Reads are forced through Grav stream URIs and verified by a canonical-realpath containment check against the resolved stream roots, so encoded or symlinked traversal is blocked at the filesystem layer regardless of how the path is written.
+    READ_FILE_SECTION_TITLE: Twig read_file()
+    REDIRECT: Page redirect
+    REDIRECT_DEFAULT_CODE: Default redirect code
+    REDIRECT_DEFAULT_CODE_HELP: The HTTP status code to use for redirects
+    REDIRECT_DEFAULT_ROUTE: Redirect default route
+    REDIRECT_DEFAULT_ROUTE_HELP: Automatically redirect to a page's default route
+    REDIRECT_HELP: Enter a page route or external URL for this page to redirect to. e.g. `/some/route` or `http://somesite.com`
+    REDIRECT_OPTION_301: 301 - Moved permanently
+    REDIRECT_OPTION_302: 302 - Moved temporarily
+    REDIRECT_OPTION_303: 303 - See Other
+    REDIRECT_OPTION_DEFAULT_REDIRECT: Use default redirect code
+    REDIRECT_OPTION_NO_REDIRECT: No redirect
+    REDIRECT_TRAILING_SLASH: Redirect trailing slash
+    REDIRECT_TRAILING_SLASH_HELP: Perform a 301 redirect rather than transparently handling trailing slash URIs.
+    REDIRECTS_AND_ROUTES: Redirects & Routes
+    REDIS_DATABASE: Redis Database ID
+    REDIS_DATABASE_HELP: The Redis instance database ID
+    REDIS_PASSWORD: Redis password/secret
+    REDIS_PORT: Redis port
+    REDIS_PORT_HELP: The Redis server port
+    REDIS_SERVER: Redis server
+    REDIS_SERVER_HELP: The Redis server address
+    REDIS_SOCKET: Redis socket
+    REDIS_SOCKET_HELP: The Redis socket
+    REGULAR: Regular
+    REVERSE_PROXY: Reverse Proxy
+    REVERSE_PROXY_HELP: Enable this if you are behind a reverse proxy and you are having trouble with URLs containing incorrect ports
+    ROOT: Root
+    ROUTABLE: Routable
+    ROUTABLE_HELP: If this page is reachable by a URL
+    ROUTE_ALIASES: Route Aliases
+    ROUTE_CANONICAL: Canonical Route
+    ROUTE_DEFAULT: Default Route
+    ROUTE_OVERRIDES: Route Overrides
+    SANITIZE_SVG: Sanitize SVG
+    SANITIZE_SVG_HELP: Removes any XSS code from SVG
+    SAVE: Save
+    SCHEDULER: Scheduler
+    SCHEDULER_EMAIL: Email
+    SCHEDULER_EMAIL_HELP: "Email to send output to. NOTE: requires output file to be set"
+    SCHEDULER_JOBS: Custom Scheduler Jobs
+    SCHEDULER_OUTPUT: Output File
+    SCHEDULER_OUTPUT_HELP: The path/filename of the output file (from the root of the Grav installation)
+    SCHEDULER_OUTPUT_TYPE: Output Type
+    SCHEDULER_OUTPUT_TYPE_HELP: Either append to the same file each run, or overwrite the file with each run
+    SCHEDULER_RUNAT: Run At
+    SCHEDULER_RUNAT_HELP: "Cron formatted 'at' syntax. NOTE: All times are UTC!"
+    SCHEDULER_STATUS: Scheduler Status
+    SECURITY: Security
+    SESSION: Session
+    SESSION_DOMAIN: Session domain
+    SESSION_DOMAIN_HELP: Use only if you you rewrite the site domain for example in a Docker Container.
+    SESSION_ENABLED_HELP: Enable session support within Grav
+    SESSION_HTTPONLY: HTTP Only
+    SESSION_HTTPONLY_HELP: If true, indicates that cookies should be used only over HTTP, and JavaScript modification is not allowed
+    SESSION_INITIALIZE: Initialize Session
+    SESSION_INITIALIZE_HELP: Makes Grav to start a session. This feature is needed to make any user interaction to work, such as login, forms etc. Admin plugin isn't affected by this setting.
+    SESSION_NAME_HELP: An identifier used to form the name of the session cookie
+    SESSION_PATH: Session path
+    SESSION_PATH_HELP: Use only if you you rewrite the site path for example in a Docker Container.
+    SESSION_SAMESITE: The session SameSite attribute
+    SESSION_SAMESITE_HELP: Lax|Strict|None. See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite for more info
+    SESSION_SECURE: Secure
+    SESSION_SECURE_HELP: "If true, indicates that communication for this cookie must be over an encrypted transmission. WARNING: Enable this only on sites that run exclusively on HTTPS"
+    SESSION_SECURE_HTTPS: Secure (HTTPS)
+    SESSION_SECURE_HTTPS_HELP: Set session secure on HTTPS but not on HTTP. Has no effect if you have above Secure setting set to true. Set to false if your site jumps between HTTP and HTTPS.
+    SESSION_SPLIT: Session Split
+    SESSION_SPLIT_HELP: Independent split sessions between site and other plugins (such as admin)
+    SESSION_UNIQUENESS: Unique string
+    SESSION_UNIQUENESS_HELP: MD5 hash of Grav's root path, ie `GRAV_ROOT` (default) or a based on the random `security.salt` string.
+    SETTINGS: Settings
+    SHORT: Short
+    SHORT_DATE_FORMAT: Short display date format
+    SHORT_DATE_FORMAT_HELP: Set the short date format that can be used by themes
+    SHUTDOWN_CLOSE_CONNECTION: Shutdown close connection
+    SHUTDOWN_CLOSE_CONNECTION_HELP: Close the connection before calling onShutdown(). false for debugging
+    SITE: Site
+    SITE_ACCESS: Site Access
+    SITE_DEFAULT_LANG: Default language
+    SITE_DEFAULT_LANG_HELP: Default language to be used by theme's <HTML> tag
+    SITE_DEFAULT_LANG_PLACEHOLDER: Default language to be used by theme's <HTML> tag
+    SITE_TITLE: Site Title
+    SITE_TITLE_HELP: Default title for your site, often used in themes
+    SITE_TITLE_PLACEHOLDER: Site wide title
+    SLUG: Slug
+    SLUG_HELP: The slug variable allows you to specifically set the page's portion of the URL
+    SLUG_VALIDATE_MESSAGE: A slug must contain only lowercase alphanumeric characters and dashes
+    SORTABLE_PAGES: "Sortable Pages:"
+    SSL_ENABLE_PROXY: Enable Proxy Server
+    SSL_VERIFY_HOST: Remote Verify Host
+    SSL_VERIFY_HOST_HELP: Some may fail verifying SSL certificates
+    SSL_VERIFY_PEER: Remote Verify Peer
+    SSL_VERIFY_PEER_HELP: Some may fail verifying SSL certificates
+    STABLE: Stable
+    STRICT_BLUEPRINT_COMPAT: Blueprint Compatibility
+    STRICT_BLUEPRINT_COMPAT_HELP: Enables backward compatible strict support for blueprints. If turned off, the new behavior makes the form validation to fail if there is extra data which is not defined in the blueprint.
+    STRICT_TWIG_COMPAT: Twig Compatibility
+    STRICT_TWIG_COMPAT_HELP: Enables deprecated Twig autoescape setting.  When disabled, |raw filter is required to output HTML as Twig will autoescape output
+    STRICT_YAML_COMPAT: YAML Compatibility
+    STRICT_YAML_COMPAT_HELP: Falls back to Symfony 2.4 YAML parser if Native or 3.4 parser fails
+    SUMMARY_SIZE: Summary Size
+    SUMMARY_SIZE_HELP: The amount of characters of a page to use as a content summary
+    SUPPORTED: Supported
+    SUPPORTED_HELP: Comma separated list of 2 letter language codes (for example 'en,fr,de')
+    SYSLOG_FACILITY: Syslog facility
+    SYSLOG_FACILITY_HELP: Syslog facility for output
+    SYSLOG_TAG: Syslog tag
+    SYSLOG_TAG_HELP: Syslog tag for output
+    SYSTEM: System
+    TAXONOMIES: Taxonomies
+    TAXONOMY: Taxonomy
+    TAXONOMY_TYPES: Taxonomy Types
+    TAXONOMY_TYPES_HELP: Taxonomy types must be defined here if you wish to use them in pages
+    TESTING: Testing
+    THUMB: Thumb
+    TIMEOUT: Timeout
+    TIMEOUT_HELP: Sets the session timeout in seconds
+    TIMEZONE: Timezone
+    TIMEZONE_HELP: Override the default timezone the server
+    TITLE: Title
+    TRANSLATIONS_FALLBACK: Translations fallback
+    TRANSLATIONS_FALLBACK_HELP: Fallback through supported translations if active language doesn't exist
+    TWIG_CACHING: Twig caching
+    TWIG_CACHING_HELP: Control the Twig caching mechanism. Leave this enabled for best performance.
+    TWIG_DEBUG: Twig debug
+    TWIG_DEBUG_HELP: Allows the option of not loading the Twig Debugger extension
+    TWIG_FIRST: Process Twig First
+    TWIG_FIRST_HELP: If you enabled Twig page processing, then you can configure Twig to process before or after markdown
+    TWIG_SANDBOX: Twig Sandbox
+    TWIG_SANDBOX_ADMIN_HINT: Admin hint comment
+    TWIG_SANDBOX_ALLOWED_FILTERS: Allowed filters
+    TWIG_SANDBOX_ALLOWED_FILTERS_HELP: Twig filters that page content may apply.
+    TWIG_SANDBOX_ALLOWED_FUNCTIONS: Allowed functions
+    TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: Twig functions that page content may call.
+    TWIG_SANDBOX_ALLOWED_METHODS: Allowed methods
+    TWIG_SANDBOX_ALLOWED_METHODS_HELP: Per-class lists of object methods that page content may invoke.
+    TWIG_SANDBOX_ALLOWED_PROPERTIES: Allowed properties
+    TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: Per-class lists of object properties that page content may read.
+    TWIG_SANDBOX_ALLOWED_TAGS: Allowed tags
+    TWIG_SANDBOX_ALLOWED_TAGS_HELP: Twig tags that page content may use. Add only tags whose effects you want exposed to authors.
+    TWIG_SANDBOX_CLASS: Class
+    TWIG_SANDBOX_ENABLED: Enable Twig sandbox
+    TWIG_SANDBOX_HELP: Allowlist of Twig tags, filters, functions, methods, and properties that page-content templates may use. Editor-authored content is rendered through this sandbox so a compromised author or template-injection bug cannot reach into the wider container.
+    TWIG_SANDBOX_LOGGING: Log violations
+    TWIG_SANDBOX_LOGGING_HELP: Write every blocked expression to <code>logs/twig-sandbox.log</code>. Useful while tuning the allowlist; turn off in production to keep logs quiet.
+    TWIG_SANDBOX_METHODS: Methods
+    TWIG_SANDBOX_PROPERTIES: Properties
+    TWIG_TEMPLATING: Twig Templating
+    TYPE: Type
+    UNPUBLISHED_DATE: Unpublished Date
+    UNPUBLISHED_DATE_HELP: Can provide a date to automatically trigger un-publication.
+    UPDATE: Update
+    UPLOADS_DANGEROUS_EXTENSIONS: Dangerous Extensions
+    UPLOADS_DANGEROUS_EXTENSIONS_HELP: Block these extensions from being uploaded no matter the accepted MIME types
+    UPLOADS_SECURITY: Uploads Security
+    USE_GLOBAL: Use Global
+    USERNAME: Username
+    USERNAME_HELP: Username should be between 3 and 16 characters, including lowercase letters, numbers, underscores, and hyphens. Uppercase letters, spaces, and special characters are not allowed
+    USERNAME_REGEX: Username Regex
+    USERNAME_REGEX_HELP: "By default: Only lowercase chars, digits, dashes, and underscores. 3 - 16 chars"
+    VALID_LINK_ATTRIBUTES: Valid Link Attributes
+    VALID_LINK_ATTRIBUTES_HELP: Attributes that will be automatically added to the media HTML element
+    VARY_ACCEPT_ENCODING: Vary accept encoding
+    VARY_ACCEPT_ENCODING_HELP: "Sets the `Vary: Accept Encoding` header to help with proxy and CDN caching"
+    VERSION: Version
+    VISIBLE: Visible
+    VISIBLE_HELP: Determines if a page is visible in the navigation.
+    WRAPPED_SITE: Wrapped site
+    WRAPPED_SITE_HELP: For themes/plugins to know if Grav is wrapped by another platform
+    XSS_DANGEROUS_TAGS: Filter Dangerous HTML tags
+    XSS_DANGEROUS_TAGS_LIST: Dangerous HTML tags list
+    XSS_HTML_INLINE_STYLES: Filter HTML inline styles
+    XSS_INVALID_PROTOCOLS: Filter Invalid protocols
+    XSS_INVALID_PROTOCOLS_LIST: Invalid protocols list
+    XSS_MOZ_BINDINGS: Filter Moz bindings
+    XSS_ON_EVENTS: Filter On-events
+    XSS_SECURITY: XSS Security for Content
+    XSS_WHITELIST_PERMISSIONS: Whitelist Permissions
+    XSS_WHITELIST_PERMISSIONS_HELP: Users with these permissions will skip the XSS rules when saving content
+    "YES": "Yes"
+    YUBIKEY_HELP: Insert your YubiKey into your computer and click the button to generate an OTP. The first 12 chars are your client ID and will be saved.
+    YUBIKEY_ID: YubiKey ID
+    CACHE_CHECK_INTERVAL: Cache Check Interval
+    CACHE_CHECK_INTERVAL_HELP: Seconds to reuse the previously computed filesystem hash before checking again. Zero keeps existing per-request checks.
+    HTTP_X_FORWARDED_HOST_ENABLED: HTTP_X_FORWARDED_HOST Enabled
+    HTTP_X_FORWARDED_IP_ENABLED: HTTP_X_FORWARDED IP Enabled
+    HTTP_X_FORWARDED_PORT_ENABLED: HTTP_X_FORWARDED_PORT Enabled
+    HTTP_X_FORWARDED_PROTO_ENABLED: HTTP_X_FORWARDED_PROTO Enabled
+    MARKDOWN_EXTRA: Markdown extra
+    ORDER_DIR_HELP: '"desc" or "asc" are valid values'
+    TWIG_3_COMPATIBILITY: Twig 3 Compatibility
+    TWIG_3_COMPATIBILITY_HELP: "Enable automatic rewrites for legacy Twig 1/2 syntax that breaks on Twig 3 (e.g. <code>for ... if ...</code> guards)."
+    TWIG_SANDBOX_ADMIN_HINT_HELP: "When the sandbox blocks an expression, append a one-line HTML comment to the rendered page so super-admins viewing the source see that something was filtered. Visitors and non-admins see nothing."
+    TWIG_SANDBOX_ENABLED_HELP: "Renders editor-authored page content inside an allowlist-based Twig SecurityPolicy. <strong>Disabling removes the only protection against template-injection attacks via page content</strong>: any account with editor-level access (or anyone who compromises the file system) can execute arbitrary PHP via Twig. Only turn off if a site genuinely needs container access from page content and you fully trust every author."
+    ACCOUNTS_CONFIGURATION: Accounts Configuration
+    COMPATIBILITY: Compatibility
+    FLEX_ADMIN_EVENT_COMPAT: Admin event compatibility
+    FLEX_ADMIN_EVENT_COMPAT_HELP: Enables onAdminSave and onAdminAfterSave events for plugins.
+    ID: ID
+    PAGE_PERMISSIONS: Page Permissions
+    PAGES_CONFIGURATION: Pages Configuration
+    ROUTE: Route
+    SCHEDULER_ACTIVE_TRIGGERS: Active Triggers
+    SCHEDULER_ADVANCED_FEATURES: Advanced Features
+    SCHEDULER_CONCURRENT_WORKERS: Concurrent Workers
+    SCHEDULER_CONCURRENT_WORKERS_HELP: Number of jobs that can run simultaneously (1 = sequential).
+    SCHEDULER_HEALTH_CHECK_CONFIG: Health Check Configuration
+    SCHEDULER_HEALTH_CHECK_ENABLED: Enable Health Check
+    SCHEDULER_HEALTH_CHECK_ENABLED_HELP: Provide a health-status endpoint for monitoring.
+    SCHEDULER_HEALTH_CHECK_PATH: Health Check Path
+    SCHEDULER_HEALTH_CHECK_PATH_HELP: URL path for the health-check endpoint.
+    SCHEDULER_HEALTH_STATUS: Health Status
+    SCHEDULER_HISTORY: Job History
+    SCHEDULER_HISTORY_ENABLED: Enable Job History
+    SCHEDULER_HISTORY_ENABLED_HELP: Track execution history for all jobs.
+    SCHEDULER_HISTORY_RETENTION: History Retention (days)
+    SCHEDULER_HISTORY_RETENTION_HELP: How long to keep job history.
+    SCHEDULER_QUEUE_CONFIG: Queue Configuration
+    SCHEDULER_QUEUE_MAX_SIZE: Maximum Queue Size
+    SCHEDULER_QUEUE_MAX_SIZE_HELP: Maximum number of jobs that can be queued.
+    SCHEDULER_QUEUE_PATH: Queue Storage Path
+    SCHEDULER_QUEUE_PATH_HELP: Where to store queued jobs.
+    SCHEDULER_RETRY_BACKOFF: Retry Backoff Strategy
+    SCHEDULER_RETRY_BACKOFF_HELP: How to calculate the delay between retries.
+    SCHEDULER_RETRY_CONFIG: Retry Configuration
+    SCHEDULER_RETRY_ENABLED: Enable Job Retry
+    SCHEDULER_RETRY_ENABLED_HELP: Automatically retry failed jobs.
+    SCHEDULER_RETRY_MAX_ATTEMPTS: Maximum Retry Attempts
+    SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: Maximum number of times to retry a failed job.
+    SCHEDULER_USAGE_EXAMPLES: Usage Examples
+    SCHEDULER_WEBHOOK_CONFIG: Webhook Configuration
+    SCHEDULER_WEBHOOK_ENABLED: Enable Webhook Triggers
+    SCHEDULER_WEBHOOK_ENABLED_HELP: Allow triggering the scheduler via HTTP webhook.
+    SCHEDULER_WEBHOOK_PATH: Webhook Path
+    SCHEDULER_WEBHOOK_PATH_HELP: URL path for the webhook endpoint.
+    SCHEDULER_WEBHOOK_TOKEN: Webhook Security Token
+    SCHEDULER_WEBHOOK_TOKEN_HELP: Secret token for authenticating webhook requests. Keep this secret!
+    SCHEDULER_WORKER_CONFIG: Worker Configuration
+    TRANSLATIONS: Translations
+    USER_ACCOUNTS: User Accounts

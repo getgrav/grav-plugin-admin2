@@ -1,3 +1,14 @@
+# v2.0.0-rc.5
+## 05/08/2026
+
+1. [](#new)
+    * **Canonical `ICU.PLUGIN_ADMIN.*` vocabulary.** Ported every `PLUGIN_ADMIN.*` key referenced by core + 3rd-party blueprints into `languages/en.yaml` under the ICU namespace — 662 keys, covering ~600 admin-classic strings (verbatim port for term continuity) plus 60+ keys authored for net-new Grav 2 sections (Twig sandbox, `read_file()` constraints, scheduler advanced features, flex pages/users config). Admin2 is now self-sufficient for blueprint translation; admin classic no longer needs to be installed for blueprint labels and helps to render correctly. Requires grav-plugin-api ≥ 1.0.0-rc.5 for the matching ICU-first server-side resolver.
+1. [](#improved)
+    * **Blueprint help, section bodies, and `display` content render HTML.** Field `help:` text and section `text:`/`description:` blueprints now pass through `{@html}` so inline `<code>`, `<strong>`, etc. render as HTML instead of escaped text — matching admin classic. Same trust model as admin classic (blueprint YAML is server-controlled; not user-submitted). 28 field components updated.
+    * **`SectionField` now renders `field.text` in addition to `field.description`.** Grav core blueprints use `text:` for section bodies (e.g. the `READ_FILE_SECTION_HELP` paragraph in `system/blueprints/config/security.yaml`), but the renderer was only checking `description`, so those bodies never appeared.
+1. [](#tools)
+    * **New `scripts/i18n-blueprint-audit.mjs`.** Two modes: the default mode lists every `PLUGIN_ADMIN.*` key referenced by blueprints and reports which are missing from admin2's lang file (with a paste-ready ICU emit option); `--hardcoded` finds blueprint props (`label/help/title/text/description/*_msg`) that hold a literal string instead of a translation key reference. Exits non-zero on missing/hardcoded hits — usable as a CI gate.
+
 # v2.0.0-rc.4
 ## 05/06/2026
 
