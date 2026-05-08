@@ -1,7 +1,7 @@
 name: Admin2
 slug: admin2
 type: plugin
-version: 2.0.0-rc.4
+version: 2.0.0-rc.5
 testing: true
 description: Modern administration panel for Grav CMS. A redesigned admin experience.
 icon: black-tie
