@@ -85,40 +85,119 @@ class Admin2Plugin extends Plugin
             return;
         }
 
+        $fields = $event['fields'];
+
+        // Core's account.yaml references admin-classic callables
+        // (\Grav\Plugin\Admin\Admin::adminLanguages and ::contentEditor)
+        // for the `language` and `content_editor` fields. On admin-next
+        // sites where admin-classic isn't installed, the API can't resolve
+        // these and emits `data_options` for the client, which then 404s
+        // against /data/resolve. Substitute admin-next-friendly options
+        // here so the form is usable without admin-classic present.
+        $fields = $this->rewriteAdminClassicDataOptions($fields);
+
         $user = $event['user'] ?? null;
-        if (!$user) {
-            return;
-        }
-        $isManager = (bool) (
+        $isManager = $user ? (bool) (
             $user->get('access.api.super')
             ?? $user->get('access.admin.super')
             ?? $user->get('access.api.users.write')
-        );
-        if (!$isManager) {
-            return;
+        ) : false;
+
+        if ($isManager) {
+            // Note: injected fields bypass BlueprintController::serializeFields(),
+            // so emit the post-serialization shape — `options` as an ordered
+            // array of `{value, label}` objects rather than the YAML-blueprint
+            // map form. Client-side i18n picks up `ADMIN_NEXT.*` labels via the
+            // ICU.* dual-namespace lookup.
+            $stateField = [
+                'name'    => 'state',
+                'type'    => 'select',
+                'size'    => 'medium',
+                'classes' => 'fancy',
+                'label'   => 'ADMIN_NEXT.USERS.STATUS',
+                'help'    => 'ADMIN_NEXT.USERS.STATUS_HELP',
+                'default' => 'enabled',
+                'options' => [
+                    ['value' => 'enabled',  'label' => 'ADMIN_NEXT.ENABLED'],
+                    ['value' => 'disabled', 'label' => 'ADMIN_NEXT.DISABLED'],
+                ],
+            ];
+            $fields = $this->insertFieldAfter($fields, 'title', $stateField);
         }
 
-        // Note: injected fields bypass BlueprintController::serializeFields(),
-        // so emit the post-serialization shape — `options` as an ordered
-        // array of `{value, label}` objects rather than the YAML-blueprint
-        // map form. Client-side i18n picks up `ADMIN_NEXT.*` labels via the
-        // ICU.* dual-namespace lookup.
-        $stateField = [
-            'name'    => 'state',
-            'type'    => 'select',
-            'size'    => 'medium',
-            'classes' => 'fancy',
-            'label'   => 'ADMIN_NEXT.USERS.STATUS',
-            'help'    => 'ADMIN_NEXT.USERS.STATUS_HELP',
-            'default' => 'enabled',
-            'options' => [
-                ['value' => 'enabled',  'label' => 'ADMIN_NEXT.ENABLED'],
-                ['value' => 'disabled', 'label' => 'ADMIN_NEXT.DISABLED'],
-            ],
-        ];
+        $event['fields'] = $fields;
+    }
 
-        $fields = $event['fields'];
-        $event['fields'] = $this->insertFieldAfter($fields, 'title', $stateField);
+    /**
+     * Recursively replace the legacy admin-classic data-options@ stand-ins
+     * (which the API serializer left as `data_options` references because
+     * the Admin class isn't loadable here) with concrete option lists.
+     *
+     * @param array<int, array<string, mixed>> $fields
+     * @return array<int, array<string, mixed>>
+     */
+    private function rewriteAdminClassicDataOptions(array $fields): array
+    {
+        $out = [];
+        foreach ($fields as $field) {
+            if (isset($field['fields']) && is_array($field['fields'])) {
+                $field['fields'] = $this->rewriteAdminClassicDataOptions($field['fields']);
+            }
+            $directive = $field['data_options'] ?? null;
+            if (is_string($directive) && $directive !== '') {
+                $normalized = ltrim($directive, '\\');
+                if ($normalized === 'Grav\\Plugin\\Admin\\Admin::adminLanguages') {
+                    $field['options'] = $this->adminLanguageOptions();
+                    unset($field['data_options']);
+                } elseif ($normalized === 'Grav\\Plugin\\Admin\\Admin::contentEditor') {
+                    $field['options'] = $this->contentEditorOptions();
+                    unset($field['data_options']);
+                }
+            }
+            $out[] = $field;
+        }
+        return $out;
+    }
+
+    /**
+     * Stand-in for \Grav\Plugin\Admin\Admin::adminLanguages when
+     * admin-classic isn't installed. Admin-next currently only ships
+     * English UI strings, so that's the only honest choice we can offer.
+     *
+     * @return array<int, array{value: string, label: string}>
+     */
+    private function adminLanguageOptions(): array
+    {
+        return [
+            ['value' => 'en', 'label' => 'English'],
+        ];
+    }
+
+    /**
+     * Stand-in for \Grav\Plugin\Admin\Admin::contentEditor when
+     * admin-classic isn't installed. Mirrors the legacy default list and
+     * fires the same `onAdminListContentEditors` event so editor plugins
+     * (editor-pro etc.) can register themselves the way they always have.
+     *
+     * @return array<int, array{value: string, label: string}>
+     */
+    private function contentEditorOptions(): array
+    {
+        $options = [
+            'default'    => 'Default',
+            'codemirror' => 'CodeMirror',
+        ];
+        $event = new \RocketTheme\Toolbox\Event\Event(['options' => &$options]);
+        $this->grav->fireEvent('onAdminListContentEditors', $event);
+
+        $out = [];
+        foreach ($options as $value => $label) {
+            $out[] = [
+                'value' => (string) $value,
+                'label' => is_string($label) ? $label : (string) $value,
+            ];
+        }
+        return $out;
     }
 
     /**

@@ -1,3 +1,16 @@
+# v2.0.0-rc.6
+## 05/10/2026
+
+1. [](#improved)
+    * Markdown editor now shows peer name labels next to cursors during collaborative editing, matching the labeled cursors editor-pro already renders.
+    * **Users list and detail pages are usable without `api.users.read`.** Callers without the read permission used to 403 on `GET /users` and `GET /users/{me}`; the list now auto-filters to just the caller's own row and the self-edit path lets you save your own profile with only `api.access`. Sensitive fields (`access`, `state`) are stripped from the PATCH body and the Permissions section is hidden for non-managers, matching what the API has always enforced for self-edits. Requires grav-plugin-api ≥ 1.0.0-rc.6.
+    * **User account form works on sites without admin-classic installed.** Grav core's `account.yaml` references `\Grav\Plugin\Admin\Admin::adminLanguages` and `::contentEditor` for the language and content-editor selects. Admin2 now substitutes those references when the class isn't loadable — English-only for the language picker, and the legacy `onAdminListContentEditors` event for the content-editor picker so editor-pro and other editor plugins still register themselves the way they always have.
+1. [](#bugfix)
+    * **Permission tri-state toggles on nested rows respond on first click.** Children of crudl permission groups (e.g. `User Accounts` → `Read`/`Update`/`Delete`/`List`) needed the parent row's toggle to be clicked once before any of the children would respond — initial-render handlers weren't binding through the recursive snippet. Rebuilt as a recursive component that takes the access tree as a prop, so each row's events bind on first mount.
+    * **Changing a page's template no longer locks the editor in a sync-room reconnect loop.** The Expert-mode template select reseeded the new Y.Doc room with a stale `headerData.name`, which round-tripped through the snapshot applier and flipped the template back — restarting the cycle for thousands of API requests until the rate limiter kicked in. The seed now reflects the destination template, and the field keeps `headerData.name` in lockstep with `template`.
+    * **Page editor mounts in solo mode when the collab handshake fails.** If `init` / `pull` return 403 (e.g. the user lacks `api.collab.read`), the content area used to hang on "Connecting to collaboration session…" forever. It now falls through to a single-user mount so the form is at least usable; the collab error still surfaces via the connection-status indicator.
+    * **Mercure SSE reconnects after the subscriber JWT expires.** The hub closes the EventSource with 401 once the token baked into the URL expires, and the browser's built-in retry just replayed the dead token. The provider now re-mints the JWT proactively at ~80% of its TTL and reactively on a hard close, then re-opens both streams.
+
 # v2.0.0-rc.5
 ## 05/08/2026
 
