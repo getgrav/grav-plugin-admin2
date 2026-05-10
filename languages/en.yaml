@@ -495,6 +495,8 @@ ICU:
       LOGS:
         SEARCH_MESSAGES: Search messages...
         FAILED_TO_LOAD_LOGS: Failed to load logs
+        FAILED_TO_LOAD_LOG_FILES: Failed to load log files
+        LOG_FILE: Log file
         ALL_LEVELS: All Levels
         EMERGENCY: Emergency
         CRITICAL: Critical

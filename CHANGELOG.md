@@ -1,8 +1,11 @@
 # v2.0.0-rc.6
 ## 05/10/2026
 
+1. [](#new)
+    * **Tools → Logs viewer can now switch between log files.** Plugins that subscribe to the new `onApiLogFiles` event in the API plugin (rsync, etc.) get their log file listed in a selector alongside `grav.log`, `email.log`, and `scheduler.log`. The selector is hidden on default installs where only the core logs exist. Requires grav-plugin-api ≥ 1.0.0-rc.6.
 1. [](#improved)
     * Markdown editor now shows peer name labels next to cursors during collaborative editing, matching the labeled cursors editor-pro already renders.
+    * **Collaborative editing is on by default.** Installing the sync plugin should mean live multi-peer editing "just works"; you no longer have to flip a hidden preference to enable it. Existing users who explicitly turned it off keep their setting. The page editor still degrades cleanly to solo mode when sync isn't installed or the handshake fails, so the default is safe everywhere.
     * **Users list and detail pages are usable without `api.users.read`.** Callers without the read permission used to 403 on `GET /users` and `GET /users/{me}`; the list now auto-filters to just the caller's own row and the self-edit path lets you save your own profile with only `api.access`. Sensitive fields (`access`, `state`) are stripped from the PATCH body and the Permissions section is hidden for non-managers, matching what the API has always enforced for self-edits. Requires grav-plugin-api ≥ 1.0.0-rc.6.
     * **User account form works on sites without admin-classic installed.** Grav core's `account.yaml` references `\Grav\Plugin\Admin\Admin::adminLanguages` and `::contentEditor` for the language and content-editor selects. Admin2 now substitutes those references when the class isn't loadable — English-only for the language picker, and the legacy `onAdminListContentEditors` event for the content-editor picker so editor-pro and other editor plugins still register themselves the way they always have.
 1. [](#bugfix)
