@@ -1,8 +1,10 @@
 # v2.0.0-rc.6
-## 05/10/2026
+## 05/11/2026
 
 1. [](#new)
     * **Tools → Logs viewer can now switch between log files.** Plugins that subscribe to the new `onApiLogFiles` event in the API plugin (rsync, etc.) get their log file listed in a selector alongside `grav.log`, `email.log`, and `scheduler.log`. The selector is hidden on default installs where only the core logs exist. Requires grav-plugin-api ≥ 1.0.0-rc.6.
+1. [](#bugfix)
+    * **Add Page form picks the right numeric prefix for new pages.** The form always sent `order: 1`, so creating a child under a folder whose siblings were unprefixed still produced `01.foo/`, and adding to an already-ordered group (`01..03`) would collide on `01` instead of becoming `04`. The form now asks the API for `order: "auto"` and the server scans the parent's siblings to pick the next free number (or omit the prefix when no sibling uses one), matching admin-classic's add-page behavior. Requires grav-plugin-api ≥ 1.0.0-rc.6.
 1. [](#improved)
     * Markdown editor now shows peer name labels next to cursors during collaborative editing, matching the labeled cursors editor-pro already renders.
     * **Collaborative editing is on by default.** Installing the sync plugin should mean live multi-peer editing "just works"; you no longer have to flip a hidden preference to enable it. Existing users who explicitly turned it off keep their setting. The page editor still degrades cleanly to solo mode when sync isn't installed or the handshake fails, so the default is safe everywhere.
