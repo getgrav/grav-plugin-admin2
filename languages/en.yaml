@@ -1433,9 +1433,17 @@ ICU:
     CACHE_CHECK_INTERVAL: Cache Check Interval
     CACHE_CHECK_INTERVAL_HELP: Seconds to reuse the previously computed filesystem hash before checking again. Zero keeps existing per-request checks.
     HTTP_X_FORWARDED_HOST_ENABLED: HTTP_X_FORWARDED_HOST Enabled
+    HTTP_X_FORWARDED_HOST_HELP: "Trust the <code>X-Forwarded-Host</code> request header. Only enable when the site is genuinely behind a reverse proxy that sets and overwrites this header; otherwise clients can spoof the host Grav sees."
     HTTP_X_FORWARDED_IP_ENABLED: HTTP_X_FORWARDED IP Enabled
+    HTTP_X_FORWARDED_IP_HELP: "Trust <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> headers when resolving the client IP. Only enable when the site is genuinely behind a reverse proxy that sets and overwrites these headers; otherwise clients can spoof their IP and bypass rate limiting, IP bans, and audit logging."
     HTTP_X_FORWARDED_PORT_ENABLED: HTTP_X_FORWARDED_PORT Enabled
+    HTTP_X_FORWARDED_PORT_HELP: "Trust the <code>X-Forwarded-Port</code> request header. Only enable when the site is genuinely behind a reverse proxy that sets and overwrites this header."
     HTTP_X_FORWARDED_PROTO_ENABLED: HTTP_X_FORWARDED_PROTO Enabled
+    HTTP_X_FORWARDED_PROTO_HELP: "Trust the <code>X-Forwarded-Proto</code> request header (typically used to detect HTTPS behind a TLS-terminating proxy). Only enable when the site is genuinely behind a reverse proxy that sets and overwrites this header."
+    HTTP_CLIENT_IP_ENABLED: HTTP_CLIENT_IP Enabled
+    HTTP_CLIENT_IP_HELP: "Trust the <code>Client-IP</code> request header when resolving the client IP. Rare; usually only set by specific load balancers. Leave off unless you know your proxy sets and overwrites this header."
+    HTTP_CF_CONNECTING_IP_ENABLED: HTTP_CF_CONNECTING_IP Enabled
+    HTTP_CF_CONNECTING_IP_HELP: "Trust the <code>CF-Connecting-IP</code> request header when resolving the client IP. Enable when the site is genuinely behind Cloudflare; otherwise clients can spoof their IP. For full safety, also restrict origin access to Cloudflare IP ranges at the web server."
     MARKDOWN_EXTRA: Markdown extra
     ORDER_DIR_HELP: '"desc" or "asc" are valid values'
     TWIG_3_COMPATIBILITY: Twig 3 Compatibility
