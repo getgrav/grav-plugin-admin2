@@ -290,6 +290,7 @@ ICU:
     VERSION: Version
     KEYWORDS: Keywords
     DEPENDENCIES: Dependencies
+    COMPATIBILITY: Compatibility
     ADD_THEME_MODAL:
       FILTER_THEMES: Filter themes...
       FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: Failed to load available themes from GPM
