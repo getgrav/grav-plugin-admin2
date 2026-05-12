@@ -707,6 +707,12 @@ ICU:
       PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: Primary color used for buttons, links, and highlights
       SATURATION: Saturation
       TYPEFACE_USED_THROUGHOUT_THE_ADMIN: Typeface used throughout the admin
+      FONT_SIZE: Font Size
+      TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: Text size used throughout the admin
+      FONT_SIZE_SMALL: Small
+      FONT_SIZE_NORMAL: Normal
+      FONT_SIZE_LARGE: Large
+      FONT_SIZE_XLARGE: X-Large
       DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: Default settings for the page browser
       DEFAULT_VIEW: Default View
       HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: How pages are displayed by default
