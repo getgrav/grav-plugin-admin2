@@ -1,5 +1,5 @@
 # v2.0.0-rc.6
-## 05/11/2026
+## 05/13/2026
 
 1. [](#new)
     * **Array fields can now constrain rows to a fixed list of options.** Set `create: false` on an array field with `data-options@` and each row renders as a dropdown instead of a free-form input. The "Add item" button hides once every option is already in the list.
