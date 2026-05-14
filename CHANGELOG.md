@@ -1,3 +1,9 @@
+# v2.0.0-rc.8
+## 05/14/2026
+
+1. [](#bugfix)
+    * **Font Size preference now actually scales every part of the admin.** rc.6 added the preference but the sidebar, top toolbar, pages views, dashboard widgets, and many other components used hardcoded pixel sizes that ignored it. All admin text now scales together as designed ([grav-plugin-admin2#11](https://github.com/getgrav/grav-plugin-admin2/issues/11)).
+
 # v2.0.0-rc.7
 ## 05/14/2026
 
