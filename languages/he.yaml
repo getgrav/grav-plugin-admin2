@@ -1578,3 +1578,53 @@ ICU:
     SCHEDULER_WORKER_CONFIG: הגדרות עובד
     TRANSLATIONS: תרגומים
     USER_ACCOUNTS: חשבונות משתמש
+    TOASTS:
+      CONFIG_SAVED: "הגדרות {name} נשמרו"
+      CONFIG_MODIFIED_ELSEWHERE: ההגדרות שונו במקום אחר — טען מחדש כדי לראות את הגרסה העדכנית
+      SAVE_FAILED: השמירה נכשלה
+      DEPENDENCY_INSTALLED: "התוסף '{slug}' הותקן (תלות)"
+      PACKAGE_UPDATED: "{name} עודכן"
+      PACKAGE_UPDATE_FAILED: "עדכון {name} נכשל: {detail}"
+      PACKAGE_REMOVED: "{name} הוסר"
+      PACKAGE_REMOVE_FAILED: "הסרת {name} נכשלה"
+      PACKAGES_UPDATED: "{n, plural, one{חבילה אחת עודכנה} two{# חבילות עודכנו} many{# חבילות עודכנו} other{# חבילות עודכנו}}"
+      UPDATE_FAILED: "העדכון נכשל: {detail}"
+      PLUGIN_ENABLED: "{name} הופעל"
+      PLUGIN_DISABLED: "{name} הושבת"
+      PLUGIN_ENABLE_FAILED: "הפעלת {name} נכשלה: {detail}"
+      PLUGIN_DISABLE_FAILED: "השבתת {name} נכשלה: {detail}"
+      PLUGIN_LOCKOUT_BLOCK: "לא ניתן להשבית את {name} מ-admin-next — הדבר ינעל אותך בחוץ."
+      PLUGIN_REQUIRED_BLOCK: "לא ניתן להסיר את {name} — הוא נדרש על ידי admin-next."
+      THEME_ACTIVATED: "{name} הוא כעת ערכת העיצוב הפעילה"
+      THEME_ACTIVATE_FAILED: "הפעלת {name} נכשלה"
+      THEME_REMOVE_BLOCK: "לא ניתן להסיר את {name}."
+      ACTIVE_THEME_REMOVE_BLOCK: "לא ניתן להסיר את ערכת העיצוב הפעילה. עבור לערכה אחרת קודם."
+      GPM_REFRESHED: "{n, plural, =0{GPM רוענן — אין עדכונים זמינים} one{GPM רוענן — עדכון אחד זמין} two{GPM רוענן — # עדכונים זמינים} many{GPM רוענן — # עדכונים זמינים} other{GPM רוענן — # עדכונים זמינים}}"
+      GRAV_UPGRADED: "Grav שודרג ל-v{version}"
+      BACKUP_CREATED: "גיבוי נוצר ({size})"
+      CACHE_CLEARED: "המטמון נוקה ({scope})"
+      FILES_UPLOADED: "{n, plural, one{קובץ אחד הועלה} two{# קבצים הועלו} many{# קבצים הועלו} other{# קבצים הועלו}}"
+      FOLDER_CREATED: 'התיקייה "{name}" נוצרה'
+      FILE_DELETED: "{name} נמחק"
+      FILE_DELETE_FAILED: "מחיקת {name} נכשלה"
+      FILES_DELETE_FAILED: "{n, plural, one{מחיקת קובץ אחד נכשלה} two{מחיקת # קבצים נכשלה} many{מחיקת # קבצים נכשלה} other{מחיקת # קבצים נכשלה}}"
+      COPIED: "{label} הועתק"
+      COPY_FAILED: "ההעתקה נכשלה: {detail}"
+      SAVED_AS_LANGUAGE: "נשמר כ-{language}"
+      TRANSLATION_CREATED: "התרגום ל-{language} נוצר"
+      TRANSLATION_RESET: "{target} אופס מ-{source}"
+      SAVED: נשמר
+      ITEM_SAVED: "{name} נשמר"
+      ITEM_DELETED: '"{name}" נמחק'
+      ITEM_DELETE_FAILED: 'מחיקת "{name}" נכשלה'
+      ITEM_MOVED: '"{name}" הועבר'
+      ITEM_REORDERED: '"{name}" סודר מחדש'
+      USER_CREATED: "המשתמש '{username}' נוצר"
+      USER_SAVED: "המשתמש '{username}' נשמר"
+      USER_DELETED: "המשתמש '{username}' נמחק"
+      USER_DELETE_FAILED: "מחיקת המשתמש '{username}' נכשלה"
+      API_KEY_REVOKED: 'מפתח API "{name}" בוטל'
+      PLUGIN_INSTALLED: "התוסף '{name}' הותקן"
+      THEME_INSTALLED: "ערכת העיצוב '{name}' הותקנה"
+      INSTALL_FAILED: "התקנת '{slug}' נכשלה: {detail}"
+      TOTP_CODE_REQUIRED: הזן את הקוד בן 6 הספרות מהאפליקציה שלך

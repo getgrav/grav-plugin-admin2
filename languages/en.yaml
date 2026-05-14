@@ -1578,3 +1578,53 @@ ICU:
     SCHEDULER_WORKER_CONFIG: Worker Configuration
     TRANSLATIONS: Translations
     USER_ACCOUNTS: User Accounts
+    TOASTS:
+      CONFIG_SAVED: "{name} configuration saved"
+      CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
+      SAVE_FAILED: Failed to save
+      DEPENDENCY_INSTALLED: "Plugin '{slug}' installed (dependency)"
+      PACKAGE_UPDATED: "{name} updated"
+      PACKAGE_UPDATE_FAILED: "Failed to update {name}: {detail}"
+      PACKAGE_REMOVED: "{name} removed"
+      PACKAGE_REMOVE_FAILED: "Failed to remove {name}"
+      PACKAGES_UPDATED: "{n, plural, one{Updated # package} other{Updated # packages}}"
+      UPDATE_FAILED: "Update failed: {detail}"
+      PLUGIN_ENABLED: "{name} enabled"
+      PLUGIN_DISABLED: "{name} disabled"
+      PLUGIN_ENABLE_FAILED: "Failed to enable {name}: {detail}"
+      PLUGIN_DISABLE_FAILED: "Failed to disable {name}: {detail}"
+      PLUGIN_LOCKOUT_BLOCK: "{name} cannot be disabled from admin-next — it would lock you out."
+      PLUGIN_REQUIRED_BLOCK: "{name} cannot be removed — it is required by admin-next."
+      THEME_ACTIVATED: "{name} is now the active theme"
+      THEME_ACTIVATE_FAILED: "Failed to activate {name}"
+      THEME_REMOVE_BLOCK: "{name} cannot be removed."
+      ACTIVE_THEME_REMOVE_BLOCK: "Cannot remove the active theme. Switch to another theme first."
+      GPM_REFRESHED: "{n, plural, =0{GPM refreshed — no updates available} one{GPM refreshed — # update available} other{GPM refreshed — # updates available}}"
+      GRAV_UPGRADED: "Grav upgraded to v{version}"
+      BACKUP_CREATED: "Backup created ({size})"
+      CACHE_CLEARED: "Cache cleared ({scope})"
+      FILES_UPLOADED: "{n, plural, one{Uploaded # file} other{Uploaded # files}}"
+      FOLDER_CREATED: 'Folder "{name}" created'
+      FILE_DELETED: "Deleted {name}"
+      FILE_DELETE_FAILED: "Failed to delete {name}"
+      FILES_DELETE_FAILED: "{n, plural, one{Failed to delete # file} other{Failed to delete # files}}"
+      COPIED: "{label} copied"
+      COPY_FAILED: "Copy failed: {detail}"
+      SAVED_AS_LANGUAGE: "Saved as {language}"
+      TRANSLATION_CREATED: "{language} translation created"
+      TRANSLATION_RESET: "{target} reset from {source}"
+      SAVED: Saved
+      ITEM_SAVED: "{name} saved"
+      ITEM_DELETED: 'Deleted "{name}"'
+      ITEM_DELETE_FAILED: 'Failed to delete "{name}"'
+      ITEM_MOVED: 'Moved "{name}"'
+      ITEM_REORDERED: 'Reordered "{name}"'
+      USER_CREATED: "User '{username}' created"
+      USER_SAVED: "User '{username}' saved"
+      USER_DELETED: "User '{username}' deleted"
+      USER_DELETE_FAILED: "Failed to delete user '{username}'"
+      API_KEY_REVOKED: 'API key "{name}" revoked'
+      PLUGIN_INSTALLED: "Plugin '{name}' installed"
+      THEME_INSTALLED: "Theme '{name}' installed"
+      INSTALL_FAILED: "Failed to install '{slug}': {detail}"
+      TOTP_CODE_REQUIRED: Enter the 6-digit code from your authenticator

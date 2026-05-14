@@ -1577,3 +1577,53 @@ ICU:
     SCHEDULER_WORKER_CONFIG: إعدادات العمّال
     TRANSLATIONS: الترجمات
     USER_ACCOUNTS: حسابات المستخدمين
+    TOASTS:
+      CONFIG_SAVED: "تم حفظ إعدادات {name}"
+      CONFIG_MODIFIED_ELSEWHERE: تم تعديل الإعدادات من مكان آخر — أعد التحميل لرؤية أحدث نسخة
+      SAVE_FAILED: فشل الحفظ
+      DEPENDENCY_INSTALLED: "تم تثبيت الإضافة '{slug}' (تبعية)"
+      PACKAGE_UPDATED: "تم تحديث {name}"
+      PACKAGE_UPDATE_FAILED: "فشل تحديث {name}: {detail}"
+      PACKAGE_REMOVED: "تم إزالة {name}"
+      PACKAGE_REMOVE_FAILED: "فشلت إزالة {name}"
+      PACKAGES_UPDATED: "{n, plural, zero{لم يتم تحديث أي حزمة} one{تم تحديث حزمة واحدة} two{تم تحديث حزمتين} few{تم تحديث # حزم} many{تم تحديث # حزمة} other{تم تحديث # حزمة}}"
+      UPDATE_FAILED: "فشل التحديث: {detail}"
+      PLUGIN_ENABLED: "تم تفعيل {name}"
+      PLUGIN_DISABLED: "تم تعطيل {name}"
+      PLUGIN_ENABLE_FAILED: "فشل تفعيل {name}: {detail}"
+      PLUGIN_DISABLE_FAILED: "فشل تعطيل {name}: {detail}"
+      PLUGIN_LOCKOUT_BLOCK: "لا يمكن تعطيل {name} من admin-next — سيؤدي ذلك إلى إقفال حسابك."
+      PLUGIN_REQUIRED_BLOCK: "لا يمكن إزالة {name} — فهو مطلوب من قِبل admin-next."
+      THEME_ACTIVATED: "{name} هو الآن السمة المفعّلة"
+      THEME_ACTIVATE_FAILED: "فشل تفعيل {name}"
+      THEME_REMOVE_BLOCK: "لا يمكن إزالة {name}."
+      ACTIVE_THEME_REMOVE_BLOCK: "لا يمكن إزالة السمة المفعّلة. بدّل إلى سمة أخرى أولاً."
+      GPM_REFRESHED: "{n, plural, =0{تم تحديث GPM — لا توجد تحديثات} one{تم تحديث GPM — يتوفر تحديث واحد} two{تم تحديث GPM — يتوفر تحديثان} few{تم تحديث GPM — يتوفر # تحديثات} many{تم تحديث GPM — يتوفر # تحديثًا} other{تم تحديث GPM — يتوفر # تحديث}}"
+      GRAV_UPGRADED: "تمت ترقية Grav إلى v{version}"
+      BACKUP_CREATED: "تم إنشاء النسخة الاحتياطية ({size})"
+      CACHE_CLEARED: "تم مسح الذاكرة المؤقتة ({scope})"
+      FILES_UPLOADED: "{n, plural, zero{لم يتم رفع أي ملف} one{تم رفع ملف واحد} two{تم رفع ملفين} few{تم رفع # ملفات} many{تم رفع # ملفًا} other{تم رفع # ملف}}"
+      FOLDER_CREATED: 'تم إنشاء المجلد "{name}"'
+      FILE_DELETED: "تم حذف {name}"
+      FILE_DELETE_FAILED: "فشل حذف {name}"
+      FILES_DELETE_FAILED: "{n, plural, zero{لم يفشل حذف أي ملف} one{فشل حذف ملف واحد} two{فشل حذف ملفين} few{فشل حذف # ملفات} many{فشل حذف # ملفًا} other{فشل حذف # ملف}}"
+      COPIED: "تم نسخ {label}"
+      COPY_FAILED: "فشل النسخ: {detail}"
+      SAVED_AS_LANGUAGE: "تم الحفظ كـ {language}"
+      TRANSLATION_CREATED: "تم إنشاء ترجمة {language}"
+      TRANSLATION_RESET: "تمت إعادة تعيين {target} من {source}"
+      SAVED: تم الحفظ
+      ITEM_SAVED: "تم حفظ {name}"
+      ITEM_DELETED: 'تم حذف "{name}"'
+      ITEM_DELETE_FAILED: 'فشل حذف "{name}"'
+      ITEM_MOVED: 'تم نقل "{name}"'
+      ITEM_REORDERED: 'تمت إعادة ترتيب "{name}"'
+      USER_CREATED: "تم إنشاء المستخدم '{username}'"
+      USER_SAVED: "تم حفظ المستخدم '{username}'"
+      USER_DELETED: "تم حذف المستخدم '{username}'"
+      USER_DELETE_FAILED: "فشل حذف المستخدم '{username}'"
+      API_KEY_REVOKED: 'تم إبطال مفتاح API "{name}"'
+      PLUGIN_INSTALLED: "تم تثبيت الإضافة '{name}'"
+      THEME_INSTALLED: "تم تثبيت السمة '{name}'"
+      INSTALL_FAILED: "فشل تثبيت '{slug}': {detail}"
+      TOTP_CODE_REQUIRED: أدخل الرمز المكوّن من 6 أرقام من تطبيق المصادقة
