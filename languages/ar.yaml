@@ -607,6 +607,8 @@ ICU:
       WELCOME_BACK: مرحبًا بعودتك، {name}
       PAGE_TITLE: "{name} — Grav Admin"
     CONFIG:
+      TITLE: الإعدادات
+      TITLE_SCROLLED: "الإعدادات: {scope}"
       LOADING_CONFIGURATION: جارٍ تحميل الإعدادات...
       FILTER_FIELDS: تصفية الحقول...
       CLEAR_FILTER: مسح المرشّح
@@ -899,6 +901,7 @@ ICU:
         PERMISSIONS: الأذونات
         CREATE: إنشاء
       PAGE_TITLE: "{name} — المستخدمون — Grav Admin"
+    INFO: معلومات
     INSTALL: تثبيت
     COPY_BUTTON:
       COPIED: تم النسخ!
@@ -1627,3 +1630,13 @@ ICU:
       THEME_INSTALLED: "تم تثبيت السمة '{name}'"
       INSTALL_FAILED: "فشل تثبيت '{slug}': {detail}"
       TOTP_CODE_REQUIRED: أدخل الرمز المكوّن من 6 أرقام من تطبيق المصادقة
+      SAVE_FORM_FAILED: "فشل حفظ {form}"
+      FORM_LABEL:
+        FORM: النموذج
+        CONFIGURATION: الإعدادات
+        PLUGIN: الإضافة
+        PLUGIN_PAGE: صفحة الإضافة
+        FLEX_OBJECT: كائن Flex
+        USER: المستخدم
+        THEME: السمة
+        PAGE: الصفحة

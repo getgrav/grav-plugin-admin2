@@ -608,6 +608,8 @@ ICU:
       WELCOME_BACK: ברוך שובך, {name}
       PAGE_TITLE: "{name} — Grav Admin"
     CONFIG:
+      TITLE: הגדרות
+      TITLE_SCROLLED: "הגדרות: {scope}"
       LOADING_CONFIGURATION: טוען הגדרות...
       FILTER_FIELDS: סנן שדות...
       CLEAR_FILTER: נקה סינון
@@ -900,6 +902,7 @@ ICU:
         PERMISSIONS: הרשאות
         CREATE: צור
       PAGE_TITLE: "{name} — משתמשים — Grav Admin"
+    INFO: מידע
     INSTALL: התקן
     COPY_BUTTON:
       COPIED: הועתק!
@@ -1628,3 +1631,13 @@ ICU:
       THEME_INSTALLED: "ערכת העיצוב '{name}' הותקנה"
       INSTALL_FAILED: "התקנת '{slug}' נכשלה: {detail}"
       TOTP_CODE_REQUIRED: הזן את הקוד בן 6 הספרות מהאפליקציה שלך
+      SAVE_FORM_FAILED: "שמירת {form} נכשלה"
+      FORM_LABEL:
+        FORM: טופס
+        CONFIGURATION: הגדרות
+        PLUGIN: תוסף
+        PLUGIN_PAGE: עמוד תוסף
+        FLEX_OBJECT: אובייקט Flex
+        USER: משתמש
+        THEME: ערכת עיצוב
+        PAGE: עמוד

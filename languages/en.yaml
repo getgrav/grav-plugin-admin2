@@ -608,6 +608,8 @@ ICU:
       WELCOME_BACK: Welcome back, {name}
       PAGE_TITLE: "{name} — Grav Admin"
     CONFIG:
+      TITLE: Configuration
+      TITLE_SCROLLED: "Configuration: {scope}"
       LOADING_CONFIGURATION: Loading configuration...
       FILTER_FIELDS: Filter fields...
       CLEAR_FILTER: Clear filter
@@ -900,6 +902,7 @@ ICU:
         PERMISSIONS: Permissions
         CREATE: Create
       PAGE_TITLE: "{name} — Users — Grav Admin"
+    INFO: Info
     INSTALL: Install
     COPY_BUTTON:
       COPIED: Copied!
@@ -1628,3 +1631,13 @@ ICU:
       THEME_INSTALLED: "Theme '{name}' installed"
       INSTALL_FAILED: "Failed to install '{slug}': {detail}"
       TOTP_CODE_REQUIRED: Enter the 6-digit code from your authenticator
+      SAVE_FORM_FAILED: "Failed to save {form}"
+      FORM_LABEL:
+        FORM: Form
+        CONFIGURATION: Configuration
+        PLUGIN: Plugin
+        PLUGIN_PAGE: Plugin Page
+        FLEX_OBJECT: Flex Object
+        USER: User
+        THEME: Theme
+        PAGE: Page
