@@ -1,3 +1,16 @@
+# v2.0.0-rc.7
+## 05/14/2026
+
+1. [](#new)
+    * **UI preferences now sync across browsers and devices.** Appearance (color mode, accent, font, font size), pages defaults (view mode, items per page), language, and editor mode are saved to the user's account via the new `/admin-next/preferences/user` endpoint instead of localStorage-only. Logging in on another browser picks up your customizations automatically. localStorage is still used as a render-cache so the first paint matches your last-known accent without flashing the Grav default. Legacy localStorage preferences are auto-migrated on first boot after upgrade. Requires grav-plugin-api ≥ 1.0.0-rc.7.
+    * **New "Site Defaults" section in Settings for super-admins.** Branding (logo type, text, custom light/dark images), default appearance/pages/language/editor preferences, site-wide editing behavior (auto-save, real-time collab), and menubar links — all editable from one place. Defaults apply to every user as the baseline; users can override the appearance/pages/language/editor pieces in their own preferences above, while the editing and menubar settings are site-wide only.
+    * **Site-wide branding replaces per-client logo.** Custom logo (light + dark) and brand text now live in site config and apply to every admin user. Logo files upload through the API to `user://media/admin-next/`, cacheable as real assets, instead of being stored as base64 data URIs in localStorage. Falls back to the built-in Grav logo when nothing is configured.
+1. [](#improved)
+    * **Cross-instance preference updates without a hard refresh.** Settings changed in one browser propagate to other open windows on the next tab-focus, or via a 30-second background poll while a tab is visible. The poll skips refetches while the user has unsent changes pending so an in-flight slider drag isn't clobbered by a stale server snapshot. The same poll doubles as a session keep-alive — every fetch runs through the JWT freshness check, so idle tabs no longer drift into a logged-out state.
+    * **Auto-save toggle, real-time collaboration toggle, and menubar links moved to site-wide configuration.** These were per-user preferences in the previous build; experience showed they make more sense as one decision the admin makes for the whole site. Existing per-user values from before this release are no longer applied — the super-admin sets the site value once for everyone.
+    * **Pages default view (Tree/List/Columns) now follows you across devices.** Was a device-local preference; now stored on your user account alongside items-per-page.
+    * **Preferences are saved even if you close the tab mid-edit.** Debounced PATCHes that hadn't flushed yet are sent via `fetch(keepalive: true)` on `pagehide`/`visibilitychange`, so changing a font and immediately closing the window no longer loses the change.
+
 # v2.0.0-rc.6
 ## 05/13/2026
 
