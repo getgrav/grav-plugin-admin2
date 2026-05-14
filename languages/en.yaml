@@ -19,6 +19,7 @@ ICU:
     CLEAR_SEARCH: Clear search
     CLOSE: Close
     COLLAPSE_SIDEBAR: Collapse sidebar
+    EXPAND_SIDEBAR: Expand sidebar
     CONFIRM_DELETE: Delete "{title}" at {route}?
     DELETE: Delete
     DONE: Done
@@ -126,6 +127,10 @@ ICU:
         NO_PAGES_MATCH: No pages match "{query}"
       DELETE_PAGE: Delete Page
       PAGES_GRAV_ADMIN: Pages — Grav Admin
+      ADD_PAGE: Add Page
+      ADD_FOLDER: Add Folder
+      ADD_MODULE: Add Module
+      ADD_MENU: Add menu
       EDIT:
         TOGGLE_PAGE_NAVIGATOR: Toggle page navigator
         PREVIEW_PAGE: Preview page
@@ -173,6 +178,15 @@ ICU:
         VISIBLE: Visible
         CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: Controls whether this page appears in navigation menus
         CONTINUE: Continue
+        PAGE_CREATED: 'Page "{title}" created'
+        FOLDER_CREATED: 'Folder "{title}" created'
+        MODULE_CREATED: 'Module "{title}" created'
+        FAILED_TO_CREATE: Failed to create page
+        ORDERING: Ordering
+        ORDERING_HELP_MODULE: Adds a numeric prefix that sets this module's position inside its modular parent.
+        ORDERING_HELP_FOLDER: Adds a numeric prefix that sets this folder's position among its siblings.
+        ORDERING_NONE: None
+        FOLDER_DETAILS: Folder Details
       PAGE_COUNT: "{n, plural, one{# page} other{# pages}}"
       SUBTITLE: Manage your site content and structure
     FIELDS:
@@ -408,6 +422,8 @@ ICU:
       VIEW_ALL: View all
     STATS_WIDGET:
       ACTIVE_THEME: Active Theme
+      UPDATE_COUNT: "{n, plural, one{# update} other{# updates}}"
+      ACTIVE_COUNT: "({n} active)"
     SYSTEM_HEALTH_WIDGET:
       UPDATES: Updates
       EVERYTHING_UP_TO_DATE: Everything up to date
@@ -417,6 +433,13 @@ ICU:
       UPGRADE_GRAV: Upgrade Grav
       UPDATE_ALL: Update All
       PERCENT_USED: "{percent}% used"
+      UPDATES_AVAILABLE_COUNT: "{n} available"
+      PACKAGES_OUTDATED: "{n, plural, one{# package outdated} other{# packages outdated}}"
+      MORE_COUNT: "+ {n} more…"
+      CACHE: Cache
+      DISK: Disk
+      BYTES_USED: "{size} used"
+      BYTES_FREE: "{size} free"
     TOP_PAGES_WIDGET:
       NO_VIEW_DATA_YET: No view data yet
     MARKDOWN_EDITOR:
@@ -554,6 +577,14 @@ ICU:
       NO_LONGER_EXISTS_PICK_ANOTHER: no longer exists. Pick another.
       SAVE_CONFIG_TO: Save config to
       CREATES_PATH: Creates user/env/{name}/config/
+      DEFAULT: Default
+      SAVING_TO_DEFAULT: Saving to default (user/config)
+      SAVING_TO_ENV: "Saving to env: {name}"
+      ENV_CREATED: "Environment '{name}' created and selected"
+      FAILED_TO_CREATE: Failed to create environment
+      CREATE_ENVIRONMENT: "Create environment…"
+      CREATE_ENV_NAMED: "Create env \"{name}\"…"
+      CREATE: Create
     INLINE_ICON_PICKER:
       SEARCH_ICONS: Search icons...
       NO_ICONS_FOUND: No icons found
@@ -752,6 +783,50 @@ ICU:
       RESET_ALL_PREFERENCES: Reset All Preferences
       COLLAB_DESCRIPTION: Live multi-user editing with presence. Requires the `sync` plugin on the server. Experimental.
       ADMIN_LANGUAGE_DESC: Language for labels, menus, and messages ({count} strings loaded)
+      LANGUAGE_CHANGED: Language changed to {language}
+      HUE: Hue
+      FONT: Font
+      LIGHT: Light
+      DARK: Dark
+      FOLLOW_OS: Follow OS
+      "ON": "On"
+      "OFF": "Off"
+      RESET_TO_SITE_DEFAULTS: Reset my preferences to site defaults
+      SITE_DEFAULTS: Site Defaults
+      SITE_DEFAULTS_DESCRIPTION: Settings below apply to every admin user as the baseline. Tier B items (appearance, pages, language, editor) can be overridden in each user's own preferences above. Tier A items (editing, menubar) are site-wide and not overridable.
+      BRANDING: Branding
+      BRANDING_DESC: Logo and brand text shown everywhere in the admin.
+      SAVED_AUTOMATICALLY: Saved automatically
+      SITE_SETTINGS_HEADING: Site Settings
+      SITE_SETTINGS_DESC: Default preferences for new users plus site-wide behavior. Changes apply on next reload for affected users.
+      DEFAULT_APPEARANCE: Default Appearance
+      DEFAULT_COLOR_APPEARANCE_DESC: Default color appearance for new users.
+      DEFAULT_PRIMARY_COLOR_DESC: Default primary color for buttons, links, and highlights.
+      DEFAULT_TYPEFACE_DESC: Default typeface for the admin UI.
+      DEFAULT_TEXT_SIZE_DESC: Default text size for the admin UI.
+      DEFAULT_PAGES: Default Pages
+      DEFAULT_LANGUAGE: Default Language
+      DEFAULT_INTERFACE_LANGUAGE_DESC: Default interface language for new users.
+      EDITOR_HEADING: Editor
+      EDITOR_MODE: Editor mode
+      DEFAULT_FORM_EDITOR_DENSITY: Default form editor density.
+      USERS_MAY_OVERRIDE: Users may override
+      SITE_WIDE_ONLY: Site-wide only
+      REVERT_CHANGES: Revert changes
+      SAVE_SITE_DEFAULTS: Save site defaults
+      RESET_PREFERENCES_MSG: Remove all your personal overrides and revert to the site defaults?
+      RESET: Reset
+      FAILED_TO_SAVE_LOGO_MODE: Failed to save logo mode.
+      FAILED_TO_SAVE_LOGO_TEXT: Failed to save logo text.
+      LIGHT_LOGO_UPLOADED: Light logo uploaded.
+      DARK_LOGO_UPLOADED: Dark logo uploaded.
+      LOGO_UPLOAD_FAILED: Logo upload failed.
+      LIGHT_LOGO_REMOVED: Light logo removed.
+      DARK_LOGO_REMOVED: Dark logo removed.
+      FAILED_TO_REMOVE_LOGO: Failed to remove logo.
+      SITE_DEFAULTS_SAVED: Site defaults saved. All users will see these on next reload.
+      FAILED_TO_SAVE_SITE_DEFAULTS: Failed to save site defaults.
+      FAILED_TO_RESET_PREFERENCES: Failed to reset preferences.
     CUSTOM: Custom
     PREVIEW: Preview
     SETUP:
