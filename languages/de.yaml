@@ -14,3 +14,63 @@ ICU:
             ADD_THEME: 'Theme hinzufügen'
             FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Verfügbare Themes konnten nicht von GPM geladen werden'
             FILTER_THEMES: 'Themes filtern...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Wählen Sie ein Theme, um Details anzuzeigen'
+        ALLOWED: Zulässig
+        ALL_CHANGES_SAVED: 'Alle Änderungen gespeichert'
+        API_KEYS_FIELD:
+            API_KEYS: API-Schlüssel
+            API_KEY_GENERATED: 'API-Schlüssel generiert'
+            BLANK_NEVER: '(leer = nie)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Kopieren Sie diesen Schlüssel jetzt — er wird nicht erneut angezeigt.'
+            CREATED: Erstellt
+            EXPIRES: Verfällt
+            EXPIRY: Ablauf
+            E_G_MY_CLI_TOOL: 'z. B. Mein CLI-Tool'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Fehler beim Kopieren in die Zwischenablage'
+            FAILED_TO_GENERATE_API_KEY: 'Fehler beim Generieren des API-Schlüssels'
+            FAILED_TO_LOAD_API_KEYS: 'Fehler beim Laden der API-Schlüssel'
+            FAILED_TO_REVOKE_API_KEY: 'Fehler beim Widerrufen des API-Schlüssels'
+            GENERATE_KEY: 'Schlüssel generieren'
+            GENERATING: 'Wird generiert…'
+            KEY_NAME: Schlüsselname
+            KEY_PREFIX: Schlüsselpräfix
+            LAST_USED: 'Zuletzt verwendet'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Noch keine API-Schlüssel generiert.'
+            PLEASE_ENTER_A_KEY_NAME: 'Bitte geben Sie einen Schlüsselnamen ein'
+            REVOKE_API_KEY: 'API-Schlüssel widerrufen'
+            REVOKE_KEY: 'Schlüssel widerrufen'
+        APP:
+            CREATING_BACKUP: 'Sicherung wird erstellt…'
+            DASHBOARD_GRAV_ADMIN: 'Dashboard — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Aktualisieren
+            WELCOME_BACK: 'Willkommen zurück, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Menü schließen'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Sind Sie sicher?'
+        AUTHOR: Autor
+        BACKUPS_WIDGET:
+            BACKING_UP: 'Wird gesichert…'
+            BACKUP_NOW: 'Jetzt sichern'
+            DOWNLOAD_FILE: '{filename} herunterladen'
+            NO_BACKUPS_FOUND: 'Keine Sicherungen gefunden'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: Cache-Optionen
+            CLEAR_CACHE: 'Cache löschen'
+            FAILED_TO_CLEAR_CACHE: 'Cache konnte nicht geleert werden'
+        CANCEL: Abbrechen
+        CLEAR_SEARCH: 'Suche löschen'
+        CLOSE: Schließen
+        COLLAPSE_ALL: 'Alle einklappen'
+        COLLAPSE_SIDEBAR: 'Seitenleiste einklappen'
+        COMPATIBILITY: Kompatibilität
+        CONFIG:
+            CLEAR_FILTER: 'Filter löschen'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Konfiguration wurde anderswo geändert — speichern zum Überschreiben oder neu laden'
+            CONFIGURATION_RELOADED: 'Konfiguration neu geladen'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Konfiguration erfolgreich gespeichert'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfiguration wurde anderswo geändert. Neu laden, um die neuesten Änderungen zu sehen.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Konfiguration konnte nicht gespeichert werden'
+            FILTER_FIELDS: 'Felder filtern…'
