@@ -8,3 +8,9 @@ ICU:
         ADD_PLUGIN_MODAL:
             ADD_PLUGIN: 'Plugin hinzufügen'
             FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Verfügbare Plugins konnten nicht von GPM geladen werden'
+            FILTER_PLUGINS: 'Plugins filtern...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Wählen Sie ein Plugin aus, um Details anzuzeigen'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Theme hinzufügen'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Verfügbare Themes konnten nicht von GPM geladen werden'
+            FILTER_THEMES: 'Themes filtern...'
