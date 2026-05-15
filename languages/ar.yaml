@@ -1,898 +1,1642 @@
+# ترجمات واجهة Admin2 (admin-next).
+#
+# جميع المفاتيح الخاصة بـ admin-next تعيش تحت كتلة ICU الجذرية. قد تستخدم القيم
+# صياغة ICU MessageFormat للعناصر النائبة والجموع وحالات select — حيث يمرر
+# admin-next قيم ICU.* عبر @formatjs/intl-messageformat.
+#
+# المفاتيح العادية (غير ICU) التي لا تحتوي على بادئة ICU في البداية يتم البحث
+# عنها بواسطة admin-next كحل احتياطي للسلاسل القديمة (وتبقى الشيء الوحيد
+# الذي تراه واجهة admin القديمة / Grav 1).
+#
+# الاصطلاح: ابقِ المفاتيح مجمّعة حسب القسم ومرتّبة أبجدياً داخل القسم
+# حيثما كان ذلك مناسباً. استخدم ADMIN_NEXT.* للمفاتيح الخاصة بالواجهة الجديدة.
+
 ICU:
-    ADMIN_NEXT:
-        ACCESS_DENIED:
-            ACCESS_DENIED: 'الوصول مرفوض'
-        ACTIVATE: تنشيط
-        ACTIVE: نشط
-        ADD_PAGE: 'إضافة صفحة'
-        ADD_PLUGIN_MODAL:
-            ADD_PLUGIN: 'إضافة إضافة'
-            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'فشل تحميل الإضافات المتاحة من GPM'
-            FILTER_PLUGINS: 'تصفية الإضافات...'
-            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'اختر إضافة لعرض التفاصيل'
-        ADD_THEME_MODAL:
-            ADD_THEME: 'إضافة سمة'
-            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'فشل تحميل السمات المتاحة من GPM'
-            FILTER_THEMES: 'تصفية السمات...'
-            SELECT_A_THEME_TO_VIEW_DETAILS: 'اختر سمة لعرض التفاصيل'
-        ALLOWED: مسموح
-        ALL_CHANGES_SAVED: 'تم حفظ جميع التغييرات'
-        API_KEYS_FIELD:
-            API_KEYS: 'مفاتيح API'
-            API_KEY_GENERATED: 'تم توليد مفتاح API'
-            BLANK_NEVER: '(فارغ = أبداً)'
-            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'انسخ هذا المفتاح الآن — لن يُعرض مرة أخرى.'
-            CREATED: 'تاريخ الإنشاء'
-            EXPIRES: 'تاريخ الانتهاء'
-            EXPIRY: 'انتهاء الصلاحية'
-            E_G_MY_CLI_TOOL: 'مثال، أداة CLI الخاصة بي'
-            FAILED_TO_COPY_TO_CLIPBOARD: 'فشل النسخ إلى الحافظة'
-            FAILED_TO_GENERATE_API_KEY: 'فشل توليد مفتاح API'
-            FAILED_TO_LOAD_API_KEYS: 'فشل تحميل مفاتيح API'
-            FAILED_TO_REVOKE_API_KEY: 'فشل إبطال مفتاح API'
-            GENERATE_KEY: 'توليد مفتاح'
-            GENERATING: 'جارٍ التوليد...'
-            KEY_NAME: 'اسم المفتاح'
-            KEY_PREFIX: 'بادئة المفتاح'
-            LAST_USED: 'آخر استخدام'
-            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'لم يتم توليد أي مفاتيح API بعد.'
-            PLEASE_ENTER_A_KEY_NAME: 'يُرجى إدخال اسم للمفتاح'
-            REVOKE_API_KEY: 'إبطال مفتاح API'
-            REVOKE_KEY: 'إبطال المفتاح'
-        APP:
-            CREATING_BACKUP: 'جارٍ إنشاء نسخة احتياطية…'
-            DASHBOARD_GRAV_ADMIN: 'لوحة التحكم — Grav Admin'
-            PAGE_TITLE: '{name} — Grav Admin'
-            REFRESH: تحديث
-            WELCOME_BACK: 'مرحبًا بعودتك، {name}'
-        APP_SHELL:
-            ADMIN_VERSION: 'لوحة الإدارة الإصدار {version}'
-            CLOSE_MENU: 'إغلاق القائمة'
-            GRAV_VERSION: 'Grav الإصدار {version}'
-        ARE_YOU_SURE: 'هل أنت متأكد؟'
-        AUTHOR: المؤلف
-        BACKUPS_WIDGET:
-            BACKING_UP: 'جارٍ النسخ الاحتياطي…'
-            BACKUP_NOW: 'نسخ احتياطي الآن'
-            CREATE_A_NEW_BACKUP_NOW: 'إنشاء نسخة احتياطية جديدة الآن'
-            DOWNLOAD_FILE: 'تنزيل {filename}'
-            NO_BACKUPS_FOUND: 'لم يُعثر على نسخ احتياطية'
-        CACHE_CLEAR_BUTTON:
-            CACHE_OPTIONS: 'خيارات الذاكرة المؤقتة'
-            CLEAR_CACHE: 'مسح الذاكرة المؤقتة'
-            FAILED_TO_CLEAR_CACHE: 'فشل مسح الذاكرة المؤقتة'
-        CANCEL: إلغاء
-        CLEAR_SEARCH: 'مسح البحث'
-        CLOSE: إغلاق
-        COLLAPSE_ALL: 'طي الكل'
-        COLLAPSE_SIDEBAR: 'طي الشريط الجانبي'
-        COMPATIBILITY: التوافق
-        CONFIG:
-            CLEAR_FILTER: 'مسح المرشّح'
-            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'تم تعديل الإعدادات في مكان آخر — احفظ للكتابة فوقها أو أعد التحميل'
-            CONFIGURATION_RELOADED: 'تمت إعادة تحميل الإعدادات'
-            CONFIGURATION_SAVED_SUCCESSFULLY: 'تم حفظ الإعدادات بنجاح'
-            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'تم تعديل الإعدادات في مكان آخر. أعد التحميل لرؤية أحدث التغييرات.'
-            FAILED_TO_SAVE_CONFIGURATION: 'فشل حفظ الإعدادات'
-            FILTER_FIELDS: 'تصفية الحقول...'
-            LOADING_CONFIGURATION: 'جارٍ تحميل الإعدادات...'
-            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'لا يوجد blueprint إعدادات متاح لهذا النطاق.'
-            NO_MATCHES_FOUND: 'لم يُعثر على نتائج'
-            PAGE_TITLE: 'الإعدادات: {scope} — Grav Admin'
-            RELOAD: 'إعادة تحميل'
-            TITLE: الإعدادات
-            TITLE_SCROLLED: 'الإعدادات: {scope}'
-        CONFIG_INFO_PAGE:
-            ENVIRONMENT: البيئة
-            EXPORT_YAML: 'تصدير YAML'
-            GRAV_VERSION: 'إصدار Grav'
-            LOADING_SYSTEM_INFORMATION: 'جارٍ تحميل معلومات النظام...'
-            PHP_CONFIGURATION: 'إعدادات PHP'
-            PHP_EXTENSIONS: 'امتدادات PHP'
-            PHP_VERSION: 'إصدار PHP'
-            SERVER: الخادم
-            SERVER_SOFTWARE: 'برنامج الخادم'
-        CONFIRM_ACTION: 'تأكيد الإجراء'
-        CONFIRM_DELETE: 'حذف "{title}" في {route}؟'
-        COPY_BUTTON:
-            COPIED: 'تم النسخ!'
-        CUSTOM: مخصص
-        DASHBOARD:
-            ADD_WIDGET: 'إضافة عنصر'
-            CUSTOMIZE: تخصيص
-            CUSTOMIZE_TITLE: 'تخصيص لوحة التحكم'
-            EDIT_HINT: 'وضع التخصيص — اسحب وغيّر الحجم وأخفِ العناصر، ثم احفظ.'
-            EMPTY: 'لوحة التحكم فارغة'
-            EMPTY_HINT: 'انقر على أيقونة القلم أعلاه لإضافة عناصر'
-            HIDE_WIDGET: 'إخفاء العنصر'
-            LAYOUT_RESET: 'تمت إعادة تعيين التخطيط إلى الافتراضي'
-            LAYOUT_SAVED: 'تم حفظ تخطيط لوحة التحكم'
-            PICKER_EMPTY: 'جميع العناصر المتاحة موجودة بالفعل في لوحة التحكم.'
-            PICKER_SUBTITLE: 'اختر عنصراً لإضافته إلى لوحة التحكم.'
-            PICKER_TITLE: 'إضافة عنصر'
-            PRESETS: 'الإعدادات الجاهزة'
-            PRESET_COMPACT: مدمج
-            PRESET_COMPACT_DESC: 'جميع العناصر بأصغر حجم يدعمه كل منها.'
-            PRESET_DEFAULT: افتراضي
-            PRESET_DEFAULT_DESC: 'التخطيط الموصى به من الخادم — يمسح تخصيصاتك.'
-            PRESET_MINIMAL: مبسّط
-            PRESET_MINIMAL_DESC: 'الإحصائيات والصفحات الحديثة فقط.'
-            RESET_LAYOUT: 'إعادة تعيين تخطيطي'
-            SAVE_SITE_DEFAULT: 'حفظ كافتراضي للموقع'
-            SITE_LAYOUT_SAVED: 'تم حفظ افتراضي الموقع'
-            TITLE: 'لوحة التحكم'
-            WIDGETS:
-                BACKUPS: 'النسخ الاحتياطية'
-                NEWS_FEED: 'موجز الأخبار'
-                NOTIFICATIONS: الإشعارات
-                POPULARITY: 'مشاهدات الصفحات'
-                RECENT_PAGES: 'الصفحات الحديثة'
-                STATS: 'إحصائيات الموقع'
-                SYSTEM_HEALTH: 'صحة النظام'
-                TOP_PAGES: 'أفضل الصفحات'
-        DASHBOARD_GRID:
-            DRAG_TO_REORDER: 'اسحب لإعادة الترتيب'
-        DELETE: حذف
-        DENIED: مرفوض
-        DEPENDENCIES: التبعيات
-        DISABLE: تعطيل
-        DISABLED: مُعطَّل
-        DISMISS: إغلاق
-        DONE: تم
-        DOWNLOAD: تنزيل
-        EDIT_MODE_TOOLBAR:
-            LAYOUT_PRESETS: 'إعدادات تخطيط جاهزة'
-            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'حفظ كافتراضي للموقع لجميع المستخدمين'
-        ENABLED: مُفعَّل
-        ENVIRONMENT_SWITCHER:
-            CREATE: إنشاء
-            CREATES_PATH: 'ينشئ user/env/{name}/config/'
-            CREATE_ENVIRONMENT: 'إنشاء بيئة…'
-            CREATE_ENV_NAMED: 'إنشاء البيئة "{name}"…'
-            DEFAULT: افتراضي
-            ENV_CREATED: "تم إنشاء البيئة '{name}' وتحديدها"
-            FAILED_TO_CREATE: 'فشل في إنشاء البيئة'
-            HAS_OVERRIDES: 'يحتوي على تجاوزات'
-            NO_LONGER_EXISTS_PICK_ANOTHER: 'لم تعد موجودة. اختر أخرى.'
-            SAVE_CONFIG_TO: 'حفظ الإعداد في'
-            SAVING_TO_DEFAULT: 'الحفظ إلى الافتراضي (user/config)'
-            SAVING_TO_ENV: 'الحفظ إلى البيئة: {name}'
-            SELECTED_ENV: 'البيئة المحددة'
-            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'حدّد المكان الذي يتم فيه حفظ كتابات الإعداد'
-        EXPAND_ALL: 'توسيع الكل'
-        EXPAND_SIDEBAR: 'توسيع الشريط الجانبي'
-        EXPERT_MODE: 'الوضع المتقدم'
-        FIELDS:
-            ADD_ENTRY: 'إضافة إدخال'
-            CLEAR_DATE: 'مسح التاريخ'
-            CRON:
-                AT_MINUTE: 'عند الدقيقة'
-                CRON: 'Cron:'
-                MIN_HR_DOM_MON_DOW: 'min hr dom mon dow'
-                ON_DAY: 'في اليوم'
-            CRON_STATUS:
-                ACTIVE_TRIGGERS: 'المُحفِّزات النشطة'
-                CRON: 'Cron:'
-                FAILED_TO_LOAD_SCHEDULER_STATUS: 'فشل تحميل حالة المُجدوِل'
-                FAILED_TO_RUN_SCHEDULER: 'فشل تشغيل المُجدوِل'
-                HEALTH_STATUS: 'حالة الصحة'
-                JOB_ID: 'معرّف المهمة'
-                LAST_RUN: 'آخر تشغيل'
-                LOADING_SCHEDULER_STATUS: 'جارٍ تحميل حالة المُجدوِل...'
-                NOT_CONFIGURED: 'غير مُعَدّ'
-                NOT_ENABLED: 'غير مُفعَّل'
-                NOT_INSTALLED: 'غير مُثبَّت'
-                NO_SCHEDULED_JOBS_REGISTERED: 'لا توجد مهام مجدوَلة مسجّلة.'
-                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'لا توجد مُحفِّزات نشطة! فعِّل webhooks أو اضبط cron.'
-                QUEUE_SIZE: 'حجم الطابور:'
-                RUNNING: 'جارٍ التشغيل...'
-                RUN_ALL: 'تشغيل الكل'
-                SCHEDULED_JOBS: 'المهام المجدوَلة'
-                SCHEDULER_RUN_COMPLETED: 'اكتمل تشغيل المُجدوِل'
-                SCHEDULER_STATUS: 'حالة المُجدوِل'
-                STATUS: 'الحالة:'
-                WEBHOOK: 'Webhook:'
-            CUSTOM_FIELD_WRAPPER:
-                LOADING_CUSTOM_FIELD: 'جارٍ تحميل الحقل المخصص...'
-            DATE_FORMAT:
-                FORMAT_STRING: 'نص الصيغة:'
-                SELECT_FORMAT: '— اختر الصيغة —'
-            FILE_PICKER:
-                NO_MATCHING_FILES: 'لا توجد ملفات مطابقة'
-                NO_MEDIA_UPLOADED: 'لم يتم رفع أي ملفات وسائط بعد'
-            FILE_PICKER_SOON: 'منتقي الملفات — قريباً'
-            ICON_PICKER:
-                NO_ICONS_FOUND: 'لم يُعثر على أيقونات'
-                SEARCH_ICONS: 'ابحث عن أيقونات...'
-                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'عرض أول 200 نتيجة — اكتب لتضييق النتائج'
-            NO_TAXONOMY_TYPES: 'لم يتم إعداد أنواع التصنيف'
-            PAGES:
-                FILTER_PAGES: 'تصفية الصفحات...'
-                ROOT: '/ (الجذر)'
-            PAGE_EXISTS:
-                CHECKING_PAGE: 'جارٍ فحص الصفحة...'
-            PAGE_MEDIA:
-                PAGE_MEDIA_UNAVAILABLE: 'وسائط الصفحة غير متاحة'
-            PERMISSIONS:
-                NOT_SET: 'غير مُعيَّن'
-                NO_PERMISSIONS_CONFIGURED: 'لم يتم إعداد أذونات'
-            REGENERATE_SLUG: 'إعادة التوليد التلقائي من عنوان الصفحة'
-            TABS:
-                NO_FIELDS_MATCH_YOUR_FILTER: 'لا توجد حقول تطابق مرشّحك'
-            THEME_SELECT:
-                LOADING_THEMES: 'جارٍ تحميل السمات...'
-                SELECT_THEME: '— اختر سمة —'
-            WEBHOOK_EXAMPLES:
-                CHECK_HEALTH_STATUS: 'فحص حالة الصحة:'
-                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'إجبار تشغيل مهمة معيّنة (يتجاهل الجدول):'
-                GITHUB_ACTIONS_EXAMPLE: 'مثال GitHub Actions:'
-                HOW_TO_USE_WEBHOOKS: 'كيفية استخدام webhooks:'
-                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'تشغيل كل المهام المستحقة (يحترم الجدول):'
-            WEBHOOK_STATUS:
-                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
-                CHECKING_WEBHOOK_PLUGIN_STATUS: 'جارٍ فحص حالة إضافة webhook...'
-                INSTALL_PLUGIN_NOW: 'تثبيت الإضافة الآن'
-                OR_RUN: 'أو شغّل:'
-                PLUGIN_IS_INSTALLED_AND_ENABLED: 'الإضافة مثبّتة ومُفعَّلة.'
-                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'الإضافة مثبّتة. فعِّل مُحفِّزات Webhook أدناه للتنشيط.'
-                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'الإضافة مطلوبة لوظيفة webhook.'
-                WEBHOOK_PLUGIN_REQUIRED: 'إضافة Webhook مطلوبة'
-        FLEX_OBJECTS:
-            ACTIONS: إجراءات
-            BACK_TO_LIST: 'العودة إلى القائمة'
-            DELETE_OBJECT: 'حذف الكائن'
-            EXPORT: تصدير
-            EXPORT_FAILED: 'فشل التصدير'
-            FAILED_TO_DELETE_OBJECT: 'فشل حذف الكائن'
-            FAILED_TO_LOAD_DIRECTORY: 'فشل تحميل الدليل'
-            FAILED_TO_LOAD_OBJECTS: 'فشل تحميل الكائنات'
-            FAILED_TO_SAVE: 'فشل الحفظ.'
-            NEW:
-                BACK_TO_LIST: 'العودة إلى القائمة'
-                CREATE: إنشاء
-                OBJECT_CREATED: 'تم إنشاء الكائن'
-            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'تم تعديل الكائن في مكان آخر — احفظ للكتابة فوقه أو أعد التحميل'
-            OBJECT_DELETED: 'تم حذف الكائن'
-            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'تم تعديل الكائن في مكان آخر. يُرجى إعادة التحميل.'
-            PREVIOUS: السابق
-            SEARCH: بحث...
-        FLOATING_WIDGET_LOADER:
-            CLOSE_WIDGETS_MENU: 'إغلاق قائمة العناصر'
-        FORGOT:
-            BACK_TO_SIGN_IN: 'العودة إلى تسجيل الدخول'
-            CHECK_INBOX: 'تحقق من صندوق الوارد لديك بحثاً عن رابط إعادة التعيين.'
-            EMAIL_ADDRESS: 'عنوان البريد الإلكتروني'
-            ENTER_A_VALID_EMAIL_ADDRESS: 'أدخل عنوان بريد إلكتروني صالح'
-            FORGOT_PASSWORD: 'نسيت كلمة المرور'
-            FORGOT_PASSWORD_GRAV_ADMIN: 'نسيت كلمة المرور — Grav Admin'
-            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'إذا كان هناك حساب موجود لهذا البريد، فقد تم إرسال رابط إعادة التعيين.'
-            SENDING: 'جارٍ الإرسال...'
-            SEND_RESET_LINK: 'إرسال رابط إعادة التعيين'
-            SUBTITLE: 'أدخل بريدك الإلكتروني وسنرسل لك رابط إعادة التعيين.'
-            UNABLE_TO_CONNECT_TO_SERVER: 'تعذّر الاتصال بالخادم.'
-        HOMEPAGE: 'الصفحة الرئيسية'
-        INFO: معلومات
-        INLINE_ICON_PICKER:
-            NO_ICONS_FOUND: 'لم يُعثر على أيقونات'
-            SEARCH_ICONS: 'ابحث عن أيقونات...'
-            TYPE_TO_NARROW_RESULTS: 'اكتب لتضييق النتائج'
-        INSTALL: تثبيت
-        INSTALLING: 'جارٍ التثبيت...'
-        KEYWORDS: 'الكلمات المفتاحية'
-        LANG:
-            CREATE_TRANSLATION: 'إنشاء ترجمة {language}'
-            CURRENT: الحالية
-            DEFAULT: الافتراضية
-            DELETE_TRANSLATION: 'حذف ترجمة {language}'
-            FALLBACK_NOTICE: 'لا توجد ترجمة لـ {language}. يتم عرض المحتوى الافتراضي.'
-            NOT_TRANSLATED: 'غير مترجَم'
-            SAVE_AS: 'حفظ كـ {language}'
-            SWITCH_LANGUAGE: 'تبديل لغة المحتوى'
-            SYNC_FROM: 'إعادة تعيين من {language}'
-            TRANSLATED: مترجَم
-            TRANSLATIONS: الترجمات
-            TRANSLATION_CREATED: 'تم إنشاء ترجمة {language}'
-        LOADING: 'جارٍ التحميل...'
-        LOGIN:
-            AUTHENTICATION_CODE: 'رمز المصادقة'
-            AUTH_CODE_PROMPT: 'افتح تطبيق المُصادِق وأدخل الرمز المؤلف من 6 أرقام للمستخدم **{username}**.'
-            BACK_TO_SIGN_IN: 'العودة إلى تسجيل الدخول'
-            ENTER_A_VALID_6_DIGIT_CODE: 'أدخل رمزاً صالحاً مؤلفاً من 6 أرقام'
-            ENVIRONMENT: البيئة
-            FORGOT_PASSWORD: 'نسيت كلمة المرور؟'
-            GRAV_ADMIN: 'Grav Admin'
-            INVALID_USERNAME_OR_PASSWORD: 'اسم مستخدم أو كلمة مرور غير صالحة'
-            LOGIN_GRAV_ADMIN: 'تسجيل الدخول — Grav Admin'
-            PASSWORD_IS_REQUIRED: 'كلمة المرور مطلوبة'
-            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'يُرجى تعبئة جميع الحقول المطلوبة'
-            POWERED_BY_GRAV_CMS: 'مدعوم من Grav CMS'
-            SERVER_CONFIGURATION: 'إعدادات الخادم'
-            SERVER_URL: 'URL الخادم'
-            SIGNED_IN_SUCCESSFULLY: 'تم تسجيل الدخول بنجاح'
-            SIGNING_IN: 'جارٍ تسجيل الدخول...'
-            SIGN_IN: 'تسجيل الدخول'
-            SUBTITLE: 'سجّل الدخول لإدارة موقعك'
-            TWOFA_SUBTITLE: 'أدخل رمز المُصادِق للمتابعة'
-            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'تعذّر الاتصال بالخادم. تحقق من URL الخادم وحاول مرة أخرى.'
-            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'تعذّر التحقق من الرمز. تحقق من اتصالك وحاول مرة أخرى.'
-            USERNAME_IS_REQUIRED: 'اسم المستخدم مطلوب'
-            VERIFY: تحقق
-            VERIFYING: 'جارٍ التحقق...'
-        MARKDOWN_EDITOR:
-            NOTHING_TO_PREVIEW: 'لا شيء للمعاينة'
-        MEDIA:
-            MANAGE_SITE_WIDE_MEDIA_FILES: 'إدارة ملفات الوسائط على مستوى الموقع'
-            MEDIA_GRAV_ADMIN: 'الوسائط — Grav Admin'
-            MEDIA_INSPECTOR:
-                DIMENSIONS: الأبعاد
-                FAILED_TO_COPY: 'فشل النسخ'
-                FILE_RENAMED: 'تمت إعادة تسمية الملف'
-                NEXT_FILE: 'الملف التالي'
-                PREVIOUS_FILE: 'الملف السابق'
-                RENAME: 'إعادة تسمية'
-            MEDIA_MANAGER:
-                CREATE: إنشاء
-                FILES_DELETED: 'تم حذف الملفات'
-                FOLDER_NAME: 'اسم المجلد'
-                NEW_FOLDER: 'مجلد جديد'
-                UPLOAD_FILES: 'رفع ملفات'
-            MEDIA_TOOLBAR:
-                FOLDER: مجلد
-                GRID_VIEW: 'عرض الشبكة'
-                LIST_VIEW: 'عرض القائمة'
-                NEW_FOLDER: 'مجلد جديد'
-                SEARCH_MEDIA: 'ابحث في الوسائط...'
-            PAGE_MEDIA:
-                DRAG_INTO_EDITOR: 'اسحب إلى المحرر'
-                PAGE_MEDIA: 'وسائط الصفحة'
-        NAV:
-            CONFIGURATION: الإعدادات
-            DASHBOARD: 'لوحة التحكم'
-            MEDIA: الوسائط
-            PAGES: الصفحات
-            PLUGINS: الإضافات
-            SETTINGS: الإعدادات
-            SYSTEM: النظام
-            THEMES: السمات
-            TOOLS: الأدوات
-            USERS: المستخدمون
-        NEWS_FEED_WIDGET:
-            NO_FEED_ITEMS: 'لا توجد عناصر في الموجز'
-        NORMAL_MODE: 'الوضع العادي'
-        NOTIFICATIONS_WIDGET:
-            NO_NOTIFICATIONS: 'لا توجد إشعارات'
-        NO_CHANGES: 'لا توجد تغييرات للحفظ'
-        PAGES:
-            ADD_FOLDER: 'إضافة مجلد'
-            ADD_MENU: 'قائمة الإضافة'
-            ADD_MODULE: 'إضافة وحدة'
-            ADD_PAGE: 'إضافة صفحة'
-            DELETED: 'تم حذف "{title}"'
-            DELETE_FAILED: 'فشل حذف الصفحة'
-            DELETE_PAGE: 'حذف الصفحة'
-            DRAFT: مسودة
-            EDIT:
-                CONNECTING_TO_COLLAB: 'جارٍ الاتصال بجلسة التعاون…'
-                COPY_PAGE: 'نسخ الصفحة'
-                CREATE_LANGUAGE: 'إنشاء {language}'
-                DELETE_PAGE: 'حذف الصفحة'
-                EDIT_PAGE: 'تعديل الصفحة'
-                FAILED_TO_CREATE_TRANSLATION: 'فشل إنشاء الترجمة'
-                FAILED_TO_SYNC_TRANSLATION: 'فشلت مزامنة الترجمة'
-                FALLBACK: (احتياطي)
-                FALLBACK_NOTICE: 'لا توجد ترجمة لـ {active}. يتم عرض الاحتياطي {effective}. استخدم "حفظ كـ {active}" لإنشاء ترجمة يمكنك تعديلها.'
-                FOLDER_NAME: 'اسم المجلد'
-                INVALID_YAML_FRONTMATTER: 'frontmatter بصيغة YAML غير صالحة'
-                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'frontmatter بصيغة YAML غير صالحة — أصلح الصياغة قبل الحفظ'
-                LOADING_PAGE: 'جارٍ تحميل الصفحة...'
-                NOT_TRANSLATED: 'غير مترجم:'
-                OPEN_IN_NEW_TAB: 'فتح في علامة تبويب جديدة'
-                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'تم تعديل الصفحة في مكان آخر — احفظ للكتابة فوقها أو أعد التحميل'
-                PAGE_COPIED: 'تم نسخ الصفحة'
-                PAGE_DELETED: 'تم حذف الصفحة'
-                PAGE_PREVIEW: 'معاينة الصفحة'
-                PAGE_SAVED_AND_MOVED: 'تم حفظ الصفحة ونقلها'
-                PREVIEW_PAGE: 'معاينة الصفحة'
-                PUBLISH_ON: 'تاريخ النشر'
-                RESET_CONTENT_FROM: 'إعادة تعيين المحتوى من:'
-                RESET_FROM: 'إعادة تعيين من {language}'
-                RESET_TRANSLATION: 'إعادة تعيين الترجمة'
-                SAVE_AS_LANGUAGE: 'حفظ كـ {language}'
-                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'اسم المجلد على القرص (slug في URL)'
-                TOGGLE_PAGE_NAVIGATOR: 'تبديل متصفّح الصفحات'
-                UNPUBLISH_ON: 'تاريخ إلغاء النشر'
-                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'اكتب محتوى Markdown هنا...'
-            EDIT_PAGE: 'تعديل الصفحة'
-            FRONTMATTER: Frontmatter
-            HEADER_MODIFIED: 'تاريخ التعديل'
-            HEADER_PARENT: الأب
-            HEADER_STATUS: الحالة
-            HEADER_TEMPLATE: القالب
-            HEADER_TITLE: العنوان
-            INFO_DATE: التاريخ
-            INFO_LANGUAGE: اللغة
-            INFO_MODIFIED: 'تاريخ التعديل'
-            INFO_ORDER: الترتيب
-            INFO_PUBLISHED: منشور
-            INFO_PUBLISH_ON: 'تاريخ النشر'
-            INFO_ROUTABLE: 'قابل للتوجيه'
-            INFO_ROUTE: المسار
-            INFO_SLUG: Slug
-            INFO_TEMPLATE: القالب
-            INFO_UNPUBLISH_ON: 'تاريخ إلغاء النشر'
-            INFO_VISIBLE: 'ظاهر في التنقل'
-            LOADING: 'جارٍ تحميل الصفحات...'
-            MODE_EXPERT: متقدم
-            MODE_NORMAL: عادي
-            MOVED: 'تم نقل "{title}"'
-            MOVE_FAILED: 'فشل نقل الصفحة'
-            NEW:
-                ADD_PAGE_GRAV_ADMIN: 'إضافة صفحة — Grav Admin'
-                CONTINUE: متابعة
-                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'يتحكم في ما إذا كانت هذه الصفحة تظهر في قوائم التنقل'
-                FAILED_TO_CREATE: 'فشل في إنشاء الصفحة'
-                FAILED_TO_LOAD_PAGE_TEMPLATES: 'فشل تحميل قوالب الصفحة'
-                FILTER_PAGES: 'تصفية الصفحات...'
-                FOLDER_CREATED: 'تم إنشاء المجلد "{title}"'
-                FOLDER_DETAILS: 'تفاصيل المجلد'
-                FOLDER_NAME: 'اسم المجلد'
-                LOADING_TEMPLATES: 'جارٍ تحميل القوالب...'
-                MODULE_CREATED: 'تم إنشاء الوحدة "{title}"'
-                MY_NEW_PAGE: 'صفحتي الجديدة'
-                ORDERING: الترتيب
-                ORDERING_HELP_FOLDER: 'يضيف بادئة رقمية تحدد موضع هذا المجلد بين الأخوة.'
-                ORDERING_HELP_MODULE: 'يضيف بادئة رقمية تحدد موضع هذه الوحدة داخل الصفحة النمطية الأصل.'
-                ORDERING_NONE: بدون
-                PAGE_CREATED: 'تم إنشاء الصفحة "{title}"'
-                PAGE_DETAILS: 'تفاصيل الصفحة'
-                PAGE_TEMPLATE: 'قالب الصفحة'
-                PAGE_TITLE: 'عنوان الصفحة'
-                PARENT_PAGE: 'الصفحة الأب'
-                ROOT: '<root> /'
-                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'اسم مجلد آمن للـ URL لهذه الصفحة'
-                VISIBLE: ظاهر
-            NO_PAGES: 'لم يُعثر على صفحات'
-            NO_SEARCH_RESULTS: 'لا توجد صفحات تطابق بحثك'
-            PAGES_GRAV_ADMIN: 'الصفحات — Grav Admin'
-            PAGES_MILLER_VIEW:
-                DRAFT_UNPUBLISHED: 'مسودة (غير منشورة)'
-                FOLDER_ORDER: 'ترتيب المجلد'
-                HAS_CHILDREN: 'يحتوي على أبناء'
-                SUMMARY: ملخّص
-                VISIBLE: ظاهر
-            PAGES_TREE_VIEW:
-                FAILED_TO_REORGANIZE_PAGES: 'فشلت إعادة تنظيم الصفحات'
-                NO_PAGES_MATCH: 'لا توجد صفحات تطابق "{query}"'
-                SEARCHING: 'جارٍ البحث…'
-            PAGE_COUNT: '{n, plural, zero{لا صفحات} one{صفحة واحدة} two{صفحتان} few{# صفحات} many{# صفحة} other{# صفحة}}'
-            PAGE_INFO: 'معلومات الصفحة'
-            PUBLISHED: منشور
-            RAW_HEADER: 'ترويسة الصفحة الخام (JSON)'
-            REORDERED: 'تمت إعادة ترتيب "{title}"'
-            REORDER_FAILED: 'فشلت إعادة الترتيب'
-            REORDER_MOVE: 'إعادة الترتيب / النقل'
-            REORDER_SAME_PARENT: 'يمكن إعادة ترتيب الصفحات تحت نفس الأب فقط. استخدم عرض الشجرة للنقل بين الآباء.'
-            SAVED: 'تم حفظ الصفحة بنجاح'
-            SAVE_FAILED: 'فشل حفظ الصفحة'
-            SEARCH_PLACEHOLDER: 'ابحث في الصفحات...'
-            SORT_DATE_NEWEST: 'التاريخ (الأحدث)'
-            SORT_NEWEST: الأحدث
-            SORT_OLDEST: الأقدم
-            SORT_ORDER: الترتيب
-            SORT_TITLE_AZ: 'العنوان أ-ي'
-            SORT_TITLE_ZA: 'العنوان ي-أ'
-            SUBTITLE: 'إدارة محتوى موقعك وبنيته'
-            TITLE: الصفحات
-            VIEW_COLUMNS: أعمدة
-            VIEW_LIST: قائمة
-            VIEW_TREE: شجرة
-        PASSWORD: 'كلمة المرور'
-        PASSWORD_FIELD:
-            PASSWORD_REQUIREMENTS: 'متطلبات كلمة المرور'
-            PASSWORD_STRENGTH: 'قوة كلمة المرور'
-            REQUIREMENTS: المتطلبات
-        PERMISSIONS_FIELD:
-            FAILED_TO_LOAD_PERMISSIONS: 'فشل تحميل الأذونات'
-            NOT_SET: 'غير مُعيَّن'
-        PLUGIN:
-            BACK_TO_DASHBOARD: 'العودة إلى لوحة التحكم'
-            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'لا يوجد محتوى متاح لصفحة هذه الإضافة.'
-        PLUGINS:
-            BACK_TO_PLUGINS: 'العودة إلى الإضافات'
-            CHANGELOG: 'سجل التغييرات'
-            CHECK_UPDATES: 'البحث عن تحديثات'
-            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'تم تعديل الإعدادات في مكان آخر. يُرجى إعادة التحميل.'
-            CONFIGURE: إعداد
-            ENABLE_PLUGIN: 'تفعيل الإضافة'
-            FAILED_TO_CHECK_FOR_UPDATES: 'فشل البحث عن تحديثات'
-            FAILED_TO_LOAD_PLUGINS: 'فشل تحميل الإضافات'
-            FAILED_TO_SAVE_CONFIGURATION: 'فشل حفظ الإعدادات.'
-            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'لا توجد خيارات إعداد متاحة لهذه الإضافة.'
-            PAGE_TITLE: '{name} — الإضافات — Grav Admin'
-            PLUGINS_GRAV_ADMIN: 'الإضافات — Grav Admin'
-            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'تم تعديل الإضافة في مكان آخر — احفظ للكتابة فوقها أو أعد التحميل'
-            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'يجب تفعيل الإضافة قبل إعدادها.'
-            REMOVE_PLUGIN: 'إزالة الإضافة'
-            SEARCH_PLUGINS: 'ابحث في الإضافات...'
-            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'اختر إضافة لعرض التفاصيل'
-            SYMLINKED: 'مربوط بـ symlink'
-        PLUGIN_PAGE_COMPONENT:
-            LOADING_PLUGIN_PAGE: 'جارٍ تحميل صفحة الإضافة...'
-        PLUGIN_WIDGET_LOADER:
-            WIDGET_FAILED_TO_LOAD: 'فشل تحميل العنصر'
-        POPULARITY_WIDGET:
-            LAST_14_DAYS: 'آخر 14 يوماً'
-            THIS_MONTH: 'هذا الشهر'
-            THIS_WEEK: 'هذا الأسبوع'
-        PREMIUM: مميَّز
-        PREVIEW: معاينة
-        REAUTH_MODAL:
-            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'يُرجى إعادة إدخال كلمة المرور للمتابعة. تم الاحتفاظ بعملك.'
-            SESSION_EXPIRED: 'انتهت صلاحية الجلسة'
-        RECENT_PAGES_WIDGET:
-            VIEW_ALL: 'عرض الكل'
-        REMOVE: إزالة
-        RESET:
-            BACK_TO_SIGN_IN: 'العودة إلى تسجيل الدخول'
-            CONFIRM_PASSWORD: 'تأكيد كلمة المرور'
-            INVALID_LINK: 'رابط إعادة تعيين غير صالح.'
-            NEW_PASSWORD_FOR: 'اختر كلمة مرور جديدة للمستخدم **{username}**.'
-            PASSWORDS_DO_NOT_MATCH: 'كلمتا المرور غير متطابقتين'
-            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'تمت إعادة تعيين كلمة المرور بنجاح. يُرجى تسجيل الدخول.'
-            RESETTING: 'جارٍ إعادة التعيين...'
-            RESET_PASSWORD: 'إعادة تعيين كلمة المرور'
-            RESET_PASSWORD_GRAV_ADMIN: 'إعادة تعيين كلمة المرور — Grav Admin'
-            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'هذا الرابط ينقصه المعاملات المطلوبة. اطلب رابطاً جديداً من صفحة "نسيت كلمة المرور".'
-            UNABLE_TO_CONNECT_TO_SERVER: 'تعذّر الاتصال بالخادم.'
-        SAVE: حفظ
-        SAVING: 'جارٍ الحفظ...'
-        SEARCH: بحث
-        SETTINGS:
-            1_SECOND: 'ثانية واحدة'
-            2_SECONDS: ثانيتان
-            ACCENT_COLOR: 'اللون المميِّز'
-            ADD_LINK: 'إضافة رابط'
-            ADMIN_INTERFACE_LANGUAGE: 'لغة واجهة الإدارة'
-            ADMIN_LANGUAGE: 'لغة الإدارة'
-            ADMIN_LANGUAGE_DESC: 'لغة التسميات والقوائم والرسائل ({count} سلسلة مُحمَّلة)'
-            ADMIN_PREFERENCES_AND_APPEARANCE: 'تفضيلات الإدارة والمظهر'
-            APPEARANCE: المظهر
-            AUTHENTICATED_AS: 'مُصادَق عليه كـ'
-            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'حفظ تلقائياً عند مغادرة حقل'
-            AUTO_SAVE: 'حفظ تلقائي'
-            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'سلوك الحفظ التلقائي والتراجع لمحرري النماذج'
-            BRANDING: 'الهوية البصرية'
-            BRANDING_DESC: 'الشعار ونص العلامة التجارية المعروضان في كل أنحاء لوحة الإدارة.'
-            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'اختر بين المظهر الفاتح والداكن'
-            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'اختر كيف يتم عرض الشعار'
-            COLLAB_DESCRIPTION: 'التحرير المباشر متعدد المستخدمين مع الحضور. يتطلب إضافة `sync` على الخادم. تجريبي.'
-            COLOR_MODE: 'وضع اللون'
-            CONNECTION: الاتصال
-            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'خصّص الشعار المعروض في الشريط الجانبي وصفحة تسجيل الدخول'
-            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'خصّص شكل وأسلوب الإدارة'
-            CUSTOM_IMAGE: 'صورة مخصصة'
-            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'اختصارات مخصصة معروضة في شريط القوائم العلوي'
-            CUSTOM_TEXT: 'نص مخصص'
-            DARK: داكن
-            DARK_LOGO: 'شعار داكن'
-            DARK_LOGO_REMOVED: 'تمت إزالة الشعار الداكن.'
-            DARK_LOGO_UPLOADED: 'تم رفع الشعار الداكن.'
-            DARK_MODE_LOGO: 'شعار الوضع الداكن'
-            DEFAULT_APPEARANCE: 'المظهر الافتراضي'
-            DEFAULT_COLOR_APPEARANCE_DESC: 'المظهر اللوني الافتراضي للمستخدمين الجدد.'
-            DEFAULT_FORM_EDITOR_DENSITY: 'كثافة محرر النماذج الافتراضية.'
-            DEFAULT_INTERFACE_LANGUAGE_DESC: 'لغة الواجهة الافتراضية للمستخدمين الجدد.'
-            DEFAULT_LANGUAGE: 'اللغة الافتراضية'
-            DEFAULT_PAGES: 'الصفحات الافتراضية'
-            DEFAULT_PRIMARY_COLOR_DESC: 'اللون الأساسي الافتراضي للأزرار والروابط والإبرازات.'
-            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'الإعدادات الافتراضية لمتصفّح الصفحات'
-            DEFAULT_TEXT_SIZE_DESC: 'حجم النص الافتراضي لواجهة لوحة الإدارة.'
-            DEFAULT_TYPEFACE_DESC: 'الخط الافتراضي لواجهة لوحة الإدارة.'
-            DEFAULT_VIEW: 'العرض الافتراضي'
-            DEUTSCH: Deutsch
-            EDITING: التحرير
-            EDITOR_HEADING: المحرر
-            EDITOR_MODE: 'وضع المحرر'
-            ENGLISH: English
-            ENVIRONMENT: البيئة
-            ESPA_OL: Español
-            EXTERNAL: خارجي
-            FAILED_TO_REMOVE_LOGO: 'فشل في إزالة الشعار.'
-            FAILED_TO_RESET_PREFERENCES: 'فشل في إعادة تعيين التفضيلات.'
-            FAILED_TO_SAVE_LOGO_MODE: 'فشل في حفظ وضع الشعار.'
-            FAILED_TO_SAVE_LOGO_TEXT: 'فشل في حفظ نص الشعار.'
-            FAILED_TO_SAVE_SITE_DEFAULTS: 'فشل في حفظ الإعدادات الافتراضية للموقع.'
-            FOLLOW_OS: 'حسب النظام'
-            FONT: الخط
-            FONT_SIZE: 'حجم الخط'
-            FONT_SIZE_LARGE: كبير
-            FONT_SIZE_NORMAL: عادي
-            FONT_SIZE_SMALL: صغير
-            FONT_SIZE_XLARGE: 'كبير جداً'
-            FRAN_AIS: Français
-            GRAV_LOGO: 'شعار Grav'
-            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'تجميع تغييرات الحقول السريعة في خطوة تراجع واحدة'
-            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'كيف تُعرض الصفحات افتراضياً'
-            HUE: 'درجة اللون'
-            ITALIANO: Italiano
-            ITEMS_PER_PAGE: 'عناصر لكل صفحة'
-            LANGUAGE_CHANGED: 'تم تغيير اللغة إلى {language}'
-            LIGHT: فاتح
-            LIGHT_LOGO: 'شعار فاتح'
-            LIGHT_LOGO_REMOVED: 'تمت إزالة الشعار الفاتح.'
-            LIGHT_LOGO_UPLOADED: 'تم رفع الشعار الفاتح.'
-            LIGHT_MODE_LOGO: 'شعار الوضع الفاتح'
-            LOGO_TEXT: 'نص الشعار'
-            LOGO_TYPE: 'نوع الشعار'
-            LOGO_UPLOAD_FAILED: 'فشل رفع الشعار.'
-            MENUBAR_LINKS: 'روابط شريط القوائم'
-            NEDERLANDS: Nederlands
-            NONE_1_FIELD_1_UNDO: 'لا شيء (حقل واحد = تراجع واحد)'
-            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'عدد الصفحات المعروضة في عرض القائمة'
-            'OFF': إيقاف
-            'ON': تشغيل
-            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'الإضافة على الخادم. تجريبي.'
-            PORTUGU_S: Português
-            PREFERENCES_RESET_RELOAD_TO_APPLY: 'تمت إعادة تعيين التفضيلات. أعد التحميل للتطبيق.'
-            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'اللون الأساسي المستخدم للأزرار والروابط والإبرازات'
-            REAL_TIME_COLLABORATION: 'التعاون الفوري'
-            REMOVE_LINK: 'إزالة الرابط'
-            RESET: 'إعادة تعيين'
-            RESET_ALL_PREFERENCES: 'إعادة تعيين جميع التفضيلات'
-            RESET_PREFERENCES: 'إعادة تعيين التفضيلات'
-            RESET_PREFERENCES_MSG: 'هل تريد إزالة جميع تجاوزاتك الشخصية والعودة إلى الإعدادات الافتراضية للموقع؟'
-            RESET_TO_SITE_DEFAULTS: 'إعادة تعيين تفضيلاتي إلى الإعدادات الافتراضية للموقع'
-            REVERT_CHANGES: 'التراجع عن التغييرات'
-            SATURATION: التشبّع
-            SAVED_AUTOMATICALLY: 'حُفظ تلقائيًا'
-            SAVE_SITE_DEFAULTS: 'حفظ الإعدادات الافتراضية للموقع'
-            SERVER_CONNECTION_DETAILS: 'تفاصيل اتصال الخادم'
-            SERVER_URL: 'URL الخادم'
-            SETTINGS_GRAV_ADMIN: 'الإعدادات — Grav Admin'
-            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'اعرض زر تراجع في شريط أدوات المحرر'
-            SITE_DEFAULTS: 'الإعدادات الافتراضية للموقع'
-            SITE_DEFAULTS_DESCRIPTION: 'تنطبق الإعدادات أدناه على كل مستخدم في لوحة الإدارة كأساس. عناصر الفئة B (المظهر، الصفحات، اللغة، المحرر) يمكن لكل مستخدم تجاوزها في تفضيلاته الشخصية أعلاه. عناصر الفئة A (التحرير، شريط القوائم) شاملة للموقع وغير قابلة للتجاوز.'
-            SITE_DEFAULTS_SAVED: 'تم حفظ الإعدادات الافتراضية للموقع. سيراها جميع المستخدمين عند إعادة التحميل التالية.'
-            SITE_SETTINGS_DESC: 'التفضيلات الافتراضية للمستخدمين الجدد إضافةً إلى السلوك الشامل للموقع. تُطبَّق التغييرات عند إعادة التحميل التالية للمستخدمين المعنيين.'
-            SITE_SETTINGS_HEADING: 'إعدادات الموقع'
-            SITE_WIDE_ONLY: 'شامل للموقع فقط'
-            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'حجم النص المستخدم في جميع أنحاء الإدارة'
-            THE_FIRST_LETTER_BECOMES_THE_ICON: 'يصبح الحرف الأول هو الأيقونة'
-            TOOLBAR_UNDO_BUTTON: 'زر التراجع في شريط الأدوات'
-            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'نوع الخط المستخدم في جميع أنحاء الإدارة'
-            UNDO_BATCH_WINDOW: 'نافذة دفعات التراجع'
-            USED_ON_DARK_BACKGROUNDS: 'يُستخدم على الخلفيات الداكنة'
-            USED_ON_LIGHT_BACKGROUNDS: 'يُستخدم على الخلفيات الفاتحة'
-            USERS_MAY_OVERRIDE: 'يمكن للمستخدمين تجاوزها'
-        SETUP:
-            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: 'من 3 إلى 64 حرفاً: أحرف وأرقام وشرطات وشرطات سفلية'
-            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'تم إنشاء حساب المسؤول — مرحباً بك في Grav'
-            CHECKING_SERVER: 'جارٍ فحص الخادم…'
-            CONFIRM_PASSWORD: 'تأكيد كلمة المرور'
-            CREATE_ADMINISTRATOR: 'إنشاء مسؤول'
-            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'أنشئ حساب المسؤول للبدء'
-            CREATING_ACCOUNT: 'جارٍ إنشاء الحساب...'
-            ENTER_A_VALID_EMAIL_ADDRESS: 'أدخل عنوان بريد إلكتروني صالح'
-            ENVIRONMENT: البيئة
-            FULL_NAME: 'الاسم الكامل'
-            OPTIONAL: (اختياري)
-            PASSWORDS_DO_NOT_MATCH: 'كلمتا المرور غير متطابقتين'
-            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'يُرجى إصلاح الأخطاء أعلاه وحاول مرة أخرى'
-            POWERED_BY_GRAV_CMS: 'مدعوم من Grav CMS'
-            SERVER_CONFIGURATION: 'إعدادات الخادم'
-            SERVER_URL: 'URL الخادم'
-            SETUP_GRAV_ADMIN: 'الإعداد — Grav Admin'
-            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'تم إكمال الإعداد بالفعل. يُرجى تسجيل الدخول.'
-            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'تعذّر الاتصال بالخادم. تحقق من URL الخادم وحاول مرة أخرى.'
-            WELCOME_TO_GRAV: 'مرحباً بك في Grav'
-        SIGN_OUT: 'تسجيل الخروج'
-        STATS_WIDGET:
-            ACTIVE_COUNT: '({n} نشط)'
-            ACTIVE_THEME: 'السمة النشطة'
-            UPDATE_COUNT: '{n, plural, zero{لا تحديثات} one{تحديث واحد} two{تحديثان} few{# تحديثات} many{# تحديثًا} other{# تحديث}}'
-        SYNC:
-            EDITOR_LOCK_NOTICE:
-                BUILTIN_MARKDOWN_EDITOR: 'محرر Markdown المدمج'
-                LOCKED: 'للقراءة فقط — {owner} يحرر باستخدام **{editor}**. لا يمكن التحرير المشترك بين أنواع محررات مختلطة؛ [بدّل تفضيل المحرر]({href}) للتعاون المباشر.'
-                SWITCH_YOUR_EDITOR_PREFERENCE: 'بدّل تفضيل المحرر'
-                TO_COLLABORATE_LIVE: 'للتعاون المباشر.'
-        SYSTEM:
-            COMING_SOON: قريباً
-            SYSTEM_GRAV_ADMIN: 'النظام — Grav Admin'
-        SYSTEM_HEALTH_WIDGET:
-            BYTES_FREE: '{size} متاح'
-            BYTES_USED: '{size} مستخدَم'
-            CACHE: 'الذاكرة المؤقتة'
-            DISK: القرص
-            EVERYTHING_UP_TO_DATE: 'كل شيء محدّث'
-            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'تم تثبيت Grav عبر symlink — قم بالترقية يدوياً.'
-            GRAV_UPDATE_AVAILABLE: 'يتوفر تحديث لـ Grav'
-            MORE_COUNT: '+ {n} المزيد…'
-            PACKAGES_OUTDATED: '{n, plural, zero{لا حزم قديمة} one{حزمة واحدة قديمة} two{حزمتان قديمتان} few{# حزم قديمة} many{# حزمة قديمة} other{# حزمة قديمة}}'
-            PERCENT_USED: '{percent}% مستخدَم'
-            SERVER: الخادم
-            UPDATES: التحديثات
-            UPDATES_AVAILABLE_COUNT: '{n} متاح'
-            UPDATE_ALL: 'تحديث الكل'
-            UPGRADE_GRAV: 'ترقية Grav'
-        THEMES:
-            ACTIVE_THEME: 'السمة النشطة'
-            BACK_TO_THEMES: 'العودة إلى السمات'
-            CHANGELOG: 'سجل التغييرات'
-            CHECK_UPDATES: 'البحث عن تحديثات'
-            CLICK_TO_VIEW_FULL_SIZE: 'انقر لعرض الحجم الكامل'
-            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'تم تعديل الإعدادات في مكان آخر. يُرجى إعادة التحميل.'
-            CONFIGURE: إعداد
-            FAILED_TO_CHECK_FOR_UPDATES: 'فشل البحث عن تحديثات'
-            FAILED_TO_LOAD_THEMES: 'فشل تحميل السمات'
-            FAILED_TO_SAVE_CONFIGURATION: 'فشل حفظ الإعدادات.'
-            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'لا توجد خيارات إعداد متاحة لهذه السمة.'
-            PAGE_TITLE: '{name} — السمات — Grav Admin'
-            REMOVE_THEME: 'إزالة السمة'
-            SEARCH_THEMES: 'ابحث في السمات...'
-            SELECT_A_THEME_TO_VIEW_DETAILS: 'اختر سمة لعرض التفاصيل'
-            SYMLINKED: 'مربوط بـ symlink'
-            THEMES_GRAV_ADMIN: 'السمات — Grav Admin'
-        TIME:
-            DAYS_AGO: 'منذ {n} يوم'
-            HOURS_AGO: 'منذ {n} ساعة'
-            JUST_NOW: الآن
-            MINUTES_AGO: 'منذ {n} دقيقة'
-        TOGGLE_DARK_MODE: 'تبديل الوضع الداكن'
-        TOGGLE_MENU: 'تبديل القائمة'
-        TOOLS:
-            BACKUPS:
-                ACTION: الإجراء
-                BACKUP_CREATED_SUCCESSFULLY: 'تم إنشاء النسخة الاحتياطية بنجاح'
-                BACKUP_DATE: 'تاريخ النسخة الاحتياطية'
-                BACKUP_DELETED: 'تم حذف النسخة الاحتياطية'
-                BACKUP_HISTORY: 'سجل النسخ الاحتياطية'
-                BACKUP_NOW: 'نسخ احتياطي الآن'
-                BACKUP_STATISTICS: 'إحصائيات النسخ الاحتياطي'
-                CREATING: 'جارٍ الإنشاء...'
-                DELETE_BACKUP: 'حذف النسخة الاحتياطية'
-                FAILED_TO_CREATE_BACKUP: 'فشل إنشاء النسخة الاحتياطية'
-                FAILED_TO_DELETE_BACKUP: 'فشل حذف النسخة الاحتياطية'
-                FAILED_TO_LOAD_BACKUPS: 'فشل تحميل النسخ الاحتياطية'
-                LOADING_BACKUPS: 'جارٍ تحميل النسخ الاحتياطية...'
-                NEWEST_BACKUP: 'أحدث نسخة احتياطية'
-                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'لم يُعثر على نسخ احتياطية. أنشئ واحدة للبدء.'
-                NUMBER_OF_BACKUPS: 'عدد النسخ الاحتياطية'
-                NUMBER_OF_PROFILES: 'عدد الملفات الشخصية'
-                OLDEST_BACKUP: 'أقدم نسخة احتياطية'
-            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'النسخ الاحتياطية والمُجدوِل والسجلات والتشخيصات'
-            DIRECT_INSTALL:
-                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'أسقط ملف .zip هنا أو انقر للتصفح'
-                INSTALL_FROM_FILE: 'التثبيت من ملف'
-                INSTALL_FROM_URL: 'التثبيت من URL'
-                ONLY_ZIP_FILES_ARE_SUPPORTED: 'ملفات .zip فقط مدعومة'
-                PACKAGE_INSTALLED_SUCCESSFULLY: 'تم تثبيت الحزمة بنجاح'
-                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'يدعم حزم إضافات وسمات Grav'
-            LOGS:
-                100_LINES: '100 سطر'
-                200_LINES: '200 سطر'
-                25_LINES: '25 سطراً'
-                50_LINES: '50 سطراً'
-                ALL_LEVELS: 'جميع المستويات'
-                CRITICAL: حرج
-                EMERGENCY: طوارئ
-                FAILED_TO_LOAD_LOGS: 'فشل تحميل السجلات'
-                FAILED_TO_LOAD_LOG_FILES: 'فشل تحميل ملفات السجل'
-                LOADING_LOGS: 'جارٍ تحميل السجلات...'
-                LOG_FILE: 'ملف السجل'
-                MESSAGE: الرسالة
-                NOTICE: إشعار
-                REFRESH: تحديث
-                SEARCH_MESSAGES: 'ابحث في الرسائل...'
-                WARNING: تحذير
-            REPORTS:
-                CONTENT_FIELD: 'content: {field}'
-                FAILED_TO_LOAD_REPORTS: 'فشل تحميل التقارير'
-                LOADING_REPORTS: 'جارٍ تحميل التقارير...'
-                NO_REPORTS_AVAILABLE: 'لا توجد تقارير متاحة.'
-            REPORT_COMPONENT_WRAPPER:
-                LOADING_REPORT_COMPONENT: 'جارٍ تحميل مكوّن التقرير...'
-            SCHEDULER:
-                CRONTAB_INSTRUCTIONS: 'لتفعيل وظيفة المُجدوِل، يجب إضافة **مُجدوِل Grav** إلى ملف crontab الخاص بنظامك للمستخدم **{user}**. شغّل الأمر أعلاه من الطرفية لإضافته تلقائياً. بعد الحفظ، حدّث هذه الصفحة لرؤية الحالة.'
-                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'فشل تحميل إعدادات المُجدوِل.'
-                FAILED_TO_SAVE: 'فشل الحفظ'
-                GRAV_SCHEDULER: 'مُجدوِل Grav'
-                INFO_BANNER: 'يمكن للمُجدوِل استخدام إما crontab النظام أو مُحفِّزات webhook لتنفيذ الأوامر. ينصح بـ webhooks للبيئات السحابية. لا يجب على المستخدمين سوى المتقدمين منهم إعداد مهام مخصصة. الإعداد الخاطئ أو إساءة الاستخدام قد يؤدي إلى ثغرات أمنية.'
-                LOADING_SCHEDULER: 'جارٍ تحميل المُجدوِل...'
-                NOT_ENABLED_FOR_USER: 'غير مُفعَّل للمستخدم:'
-                SCHEDULER_CONFIGURATION_SAVED: 'تم حفظ إعدادات المُجدوِل'
-                SECURITY_WARNING: 'لا يجب على المستخدمين سوى المتقدمين منهم إعداد مهام مُجدوِل مخصصة. الإعداد الخاطئ قد يسبب مشاكل في الأداء أو ثغرات أمنية.'
-                WEBHOOK_ALTERNATIVE: 'بدلاً من ذلك، ثبّت إضافة **scheduler-webhook** لاستخدام تشغيل cron عبر webhook، وهو موصى به للبيئات السحابية حيث لا يتوفر الوصول إلى crontab النظام.'
-            SYSTEM_INFO:
-                DISK_FREE_OF: '{free} متاح من أصل {total}'
-                DISK_USAGE: 'استخدام القرص'
-                DRIVER: المُشغِّل
-                FAILED_TO_LOAD_SYSTEM_INFO: 'فشل تحميل معلومات النظام'
-                GRAV_VERSION: 'إصدار Grav'
-                LOADING_SYSTEM_INFO: 'جارٍ تحميل معلومات النظام...'
-                MAX_EXECUTION: 'أقصى تنفيذ'
-                MAX_POST: 'أقصى POST'
-                MAX_UPLOAD: 'أقصى رفع'
-                MEMORY_LIMIT: 'حد الذاكرة'
-                PHP_SAPI: 'PHP SAPI'
-                PHP_VERSION: 'إصدار PHP'
-            TOOLS_GRAV_ADMIN: 'الأدوات — Grav Admin'
-        TOP_BANNER:
-            PREVIOUS: السابق
-            SITE_NOTIFICATION: 'إشعار الموقع'
-        TOP_PAGES_WIDGET:
-            NO_VIEW_DATA_YET: 'لا توجد بيانات مشاهدات بعد'
-        TOP_PROGRESS_BAR:
-            WORKING: 'جارٍ العمل'
-        TWO_FACTOR_FIELD:
-            2FA_DISABLED: 'تم تعطيل 2FA'
-            2FA_ENABLED: 'تم تفعيل 2FA'
-            2FA_IS_ENABLED: '2FA مُفعَّل'
-            2FA_QR_CODE: 'رمز QR لـ 2FA'
-            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'أضف طبقة أمان إضافية بطلب رمز لمرة واحدة عند تسجيل الدخول.'
-            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'مطلوب رمز لمرة واحدة عند تسجيل دخول هذا الحساب.'
-            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'سرّ مولَّد بالفعل ولكن لا يُعرض لأسباب أمنية.'
-            CONFIRM_DISABLE: 'تأكيد التعطيل'
-            ENABLE_2FA: 'تفعيل 2FA'
-            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'أدخل الرمز المؤلف من 6 أرقام من تطبيق المُصادِق'
-            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'أدخل رمزك الحالي المؤلف من 6 أرقام للتأكيد'
-            FAILED_TO_GENERATE_2FA_SECRET: 'فشل توليد سرّ 2FA'
-            FINISH_ENABLING_2FA: 'إنهاء تفعيل 2FA'
-            FORCE_DISABLE: 'إجبار التعطيل'
-            FORCE_DISABLE_PROMPT: 'إجبار تعطيل 2FA للمستخدم **{username}**؟ استخدم هذا فقط لاسترداد جهاز مفقود.'
-            REGENERATE_AND_SHOW_QR: 'إعادة التوليد وعرض QR'
-            SCAN_THE_QR_CODE_WITH_YOUR: 'امسح رمز QR بتطبيق المُصادِق الخاص بك'
-            SCAN_THE_QR_CODE_WITH_YOUR_2: 'امسح رمز QR بتطبيق المُصادِق، ثم أدخل الرمز المؤلف من 6 أرقام للتحقق والتفعيل.'
-            SECRET_FOR_MANUAL_ENTRY: 'السرّ (للإدخال اليدوي):'
-            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'المصادقة الثنائية معطّلة'
-            VERIFICATION_CODE: 'رمز التحقق'
-            VERIFY_ENABLE: 'التحقق والتفعيل'
-        UNSAVED_CHANGES: 'تغييرات غير محفوظة'
-        UNSAVED_INDICATOR:
-            SAVING_CHANGES: 'جارٍ حفظ التغييرات…'
-            SAVING_CHANGES_2: 'جارٍ حفظ التغييرات'
-            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'تغييرات غير محفوظة — انقر على حفظ لتثبيتها'
-            YOU_HAVE_UNSAVED_CHANGES: 'لديك تغييرات غير محفوظة'
-        UPDATE_AVAILABLE_VERSION: 'تحديث متاح: الإصدار {version}'
-        UPDATE_TO_VERSION: 'تحديث إلى الإصدار {version}'
-        UPLOAD: رفع
-        USERNAME: 'اسم المستخدم'
-        USERS:
-            2_FACTOR_AUTHENTICATION: 'المصادقة الثنائية'
-            ADD_USER: 'إضافة مستخدم'
-            BACK_TO_USERS: 'العودة إلى المستخدمين'
-            CREATED: 'تاريخ الإنشاء'
-            DELETE_USER: 'حذف المستخدم'
-            FAILED_TO_LOAD_USERS: 'فشل تحميل المستخدمين'
-            FAILED_TO_SAVE_USER: 'فشل حفظ المستخدم.'
-            NEW:
-                ACCOUNT: الحساب
-                CREATE: إنشاء
-                FULL_NAME: 'الاسم الكامل'
-                LOWERCASE_3_64_CHARS: 'أحرف صغيرة، من 3 إلى 64 حرفاً'
-                NEW_USER: 'مستخدم جديد'
-                NEW_USER_GRAV_ADMIN: 'مستخدم جديد — Grav Admin'
-                PERMISSIONS: الأذونات
-            PAGE_TITLE: '{name} — المستخدمون — Grav Admin'
-            PERMISSIONS: الأذونات
-            SEARCH_USERS: 'ابحث في المستخدمين...'
-            SELECT_A_USER_TO_VIEW_DETAILS: 'اختر مستخدماً لعرض التفاصيل'
-            STATUS: الحالة
-            STATUS_HELP: 'الحسابات المعطّلة لا يمكنها تسجيل الدخول أو استخدام API.'
-            SUPER_ADMIN: 'مسؤول أعلى'
-            USERS_GRAV_ADMIN: 'المستخدمون — Grav Admin'
-            USER_CHANGED_ELSEWHERE_SAVE_TO: 'تم تعديل المستخدم في مكان آخر — احفظ للكتابة فوقه أو أعد التحميل'
-            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'تم تعديل المستخدم في مكان آخر. يُرجى إعادة التحميل.'
-            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'لا يمكنك حذف حسابك الخاص.'
-        USER_AVATAR_CARD:
-            AVATAR_REMOVED: 'تمت إزالة الصورة الرمزية'
-            AVATAR_UPDATED: 'تم تحديث الصورة الرمزية'
-            FAILED_TO_REMOVE_AVATAR: 'فشلت إزالة الصورة الرمزية'
-            FAILED_TO_UPLOAD_AVATAR: 'فشل رفع الصورة الرمزية'
-            UPLOAD_AVATAR: 'رفع صورة رمزية'
-        VERSION: الإصدار
-        VIEW_SITE_BUTTON:
-            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'فتح واجهة الموقع في علامة تبويب جديدة'
-            VIEW_SITE: 'عرض الموقع'
-        WIDGET_HOST:
-            UNKNOWN_WIDGET: 'عنصر غير معروف: {id}'
+  ADMIN_NEXT:
+    ADD_PAGE: إضافة صفحة
+    CANCEL: إلغاء
+    CLEAR_SEARCH: مسح البحث
+    CLOSE: إغلاق
+    COLLAPSE_SIDEBAR: طي الشريط الجانبي
+    EXPAND_SIDEBAR: توسيع الشريط الجانبي
+    CONFIRM_DELETE: حذف "{title}" في {route}؟
+    DELETE: حذف
+    DONE: تم
+    LOADING: جارٍ التحميل...
+    NO_CHANGES: لا توجد تغييرات للحفظ
+    SAVE: حفظ
+    SAVING: جارٍ الحفظ...
+    SEARCH: بحث
+    SIGN_OUT: تسجيل الخروج
+    TOGGLE_DARK_MODE: تبديل الوضع الداكن
+    TOGGLE_MENU: تبديل القائمة
+    UNSAVED_CHANGES: تغييرات غير محفوظة
+    DASHBOARD:
+      TITLE: لوحة التحكم
+      CUSTOMIZE: تخصيص
+      CUSTOMIZE_TITLE: تخصيص لوحة التحكم
+      EDIT_HINT: وضع التخصيص — اسحب وغيّر الحجم وأخفِ العناصر، ثم احفظ.
+      PRESETS: الإعدادات الجاهزة
+      SAVE_SITE_DEFAULT: حفظ كافتراضي للموقع
+      RESET_LAYOUT: إعادة تعيين تخطيطي
+      ADD_WIDGET: إضافة عنصر
+      HIDE_WIDGET: إخفاء العنصر
+      PICKER_TITLE: إضافة عنصر
+      PICKER_SUBTITLE: اختر عنصراً لإضافته إلى لوحة التحكم.
+      PICKER_EMPTY: جميع العناصر المتاحة موجودة بالفعل في لوحة التحكم.
+      EMPTY: لوحة التحكم فارغة
+      EMPTY_HINT: انقر على أيقونة القلم أعلاه لإضافة عناصر
+      LAYOUT_SAVED: تم حفظ تخطيط لوحة التحكم
+      SITE_LAYOUT_SAVED: تم حفظ افتراضي الموقع
+      LAYOUT_RESET: تمت إعادة تعيين التخطيط إلى الافتراضي
+      WIDGETS:
+        STATS: إحصائيات الموقع
+        POPULARITY: مشاهدات الصفحات
+        SYSTEM_HEALTH: صحة النظام
+        RECENT_PAGES: الصفحات الحديثة
+        TOP_PAGES: أفضل الصفحات
+        BACKUPS: النسخ الاحتياطية
+        NOTIFICATIONS: الإشعارات
+        NEWS_FEED: موجز الأخبار
+      PRESET_DEFAULT: افتراضي
+      PRESET_DEFAULT_DESC: التخطيط الموصى به من الخادم — يمسح تخصيصاتك.
+      PRESET_MINIMAL: مبسّط
+      PRESET_MINIMAL_DESC: الإحصائيات والصفحات الحديثة فقط.
+      PRESET_COMPACT: مدمج
+      PRESET_COMPACT_DESC: جميع العناصر بأصغر حجم يدعمه كل منها.
+    PAGES:
+      TITLE: الصفحات
+      SEARCH_PLACEHOLDER: ابحث في الصفحات...
+      NO_PAGES: لم يُعثر على صفحات
+      NO_SEARCH_RESULTS: لا توجد صفحات تطابق بحثك
+      LOADING: جارٍ تحميل الصفحات...
+      REORDER_MOVE: إعادة الترتيب / النقل
+      REORDER_SAME_PARENT: يمكن إعادة ترتيب الصفحات تحت نفس الأب فقط. استخدم عرض الشجرة للنقل بين الآباء.
+      MOVED: تم نقل "{title}"
+      REORDERED: تمت إعادة ترتيب "{title}"
+      MOVE_FAILED: فشل نقل الصفحة
+      REORDER_FAILED: فشلت إعادة الترتيب
+      DELETED: تم حذف "{title}"
+      DELETE_FAILED: فشل حذف الصفحة
+      SAVED: تم حفظ الصفحة بنجاح
+      SAVE_FAILED: فشل حفظ الصفحة
+      VIEW_TREE: شجرة
+      VIEW_LIST: قائمة
+      VIEW_COLUMNS: أعمدة
+      HEADER_TITLE: العنوان
+      HEADER_TEMPLATE: القالب
+      HEADER_STATUS: الحالة
+      HEADER_MODIFIED: تاريخ التعديل
+      HEADER_PARENT: الأب
+      PUBLISHED: منشور
+      DRAFT: مسودة
+      SORT_ORDER: الترتيب
+      SORT_TITLE_AZ: العنوان أ-ي
+      SORT_TITLE_ZA: العنوان ي-أ
+      SORT_NEWEST: الأحدث
+      SORT_OLDEST: الأقدم
+      SORT_DATE_NEWEST: التاريخ (الأحدث)
+      RAW_HEADER: ترويسة الصفحة الخام (JSON)
+      PAGE_INFO: معلومات الصفحة
+      EDIT_PAGE: تعديل الصفحة
+      MODE_NORMAL: عادي
+      MODE_EXPERT: متقدم
+      FRONTMATTER: Frontmatter
+      INFO_PUBLISHED: منشور
+      INFO_VISIBLE: ظاهر في التنقل
+      INFO_ROUTABLE: قابل للتوجيه
+      INFO_ROUTE: المسار
+      INFO_SLUG: Slug
+      INFO_TEMPLATE: القالب
+      INFO_LANGUAGE: اللغة
+      INFO_ORDER: الترتيب
+      INFO_DATE: التاريخ
+      INFO_MODIFIED: تاريخ التعديل
+      INFO_PUBLISH_ON: تاريخ النشر
+      INFO_UNPUBLISH_ON: تاريخ إلغاء النشر
+      PAGES_MILLER_VIEW:
+        DRAFT_UNPUBLISHED: مسودة (غير منشورة)
+        FOLDER_ORDER: ترتيب المجلد
+        VISIBLE: ظاهر
+        HAS_CHILDREN: يحتوي على أبناء
+        SUMMARY: ملخّص
+      PAGES_TREE_VIEW:
+        FAILED_TO_REORGANIZE_PAGES: فشلت إعادة تنظيم الصفحات
+        SEARCHING: جارٍ البحث…
+        NO_PAGES_MATCH: لا توجد صفحات تطابق "{query}"
+      DELETE_PAGE: حذف الصفحة
+      PAGES_GRAV_ADMIN: الصفحات — Grav Admin
+      ADD_PAGE: إضافة صفحة
+      ADD_FOLDER: إضافة مجلد
+      ADD_MODULE: إضافة وحدة
+      ADD_MENU: قائمة الإضافة
+      EDIT:
+        TOGGLE_PAGE_NAVIGATOR: تبديل متصفّح الصفحات
+        PREVIEW_PAGE: معاينة الصفحة
+        COPY_PAGE: نسخ الصفحة
+        DELETE_PAGE: حذف الصفحة
+        WRITE_YOUR_MARKDOWN_CONTENT_HERE: اكتب محتوى Markdown هنا...
+        CONNECTING_TO_COLLAB: جارٍ الاتصال بجلسة التعاون…
+        RESET_TRANSLATION: إعادة تعيين الترجمة
+        PAGE_PREVIEW: معاينة الصفحة
+        INVALID_YAML_FRONTMATTER: frontmatter بصيغة YAML غير صالحة
+        INVALID_YAML_FRONTMATTER_FIX_SYNTAX: frontmatter بصيغة YAML غير صالحة — أصلح الصياغة قبل الحفظ
+        PAGE_SAVED_AND_MOVED: تم حفظ الصفحة ونقلها
+        FAILED_TO_CREATE_TRANSLATION: فشل إنشاء الترجمة
+        FAILED_TO_SYNC_TRANSLATION: فشلت مزامنة الترجمة
+        PAGE_DELETED: تم حذف الصفحة
+        PAGE_COPIED: تم نسخ الصفحة
+        PAGE_CHANGED_ELSEWHERE_SAVE_TO: تم تعديل الصفحة في مكان آخر — احفظ للكتابة فوقها أو أعد التحميل
+        LOADING_PAGE: جارٍ تحميل الصفحة...
+        FOLDER_NAME: اسم المجلد
+        THE_FOLDER_NAME_ON_DISK_URL_SLUG: اسم المجلد على القرص (slug في URL)
+        FALLBACK: (احتياطي)
+        NOT_TRANSLATED: "غير مترجم:"
+        RESET_CONTENT_FROM: "إعادة تعيين المحتوى من:"
+        OPEN_IN_NEW_TAB: فتح في علامة تبويب جديدة
+        SAVE_AS_LANGUAGE: حفظ كـ {language}
+        CREATE_LANGUAGE: إنشاء {language}
+        EDIT_PAGE: تعديل الصفحة
+        FALLBACK_NOTICE: لا توجد ترجمة لـ {active}. يتم عرض الاحتياطي {effective}. استخدم "حفظ كـ {active}" لإنشاء ترجمة يمكنك تعديلها.
+        PUBLISH_ON: تاريخ النشر
+        UNPUBLISH_ON: تاريخ إلغاء النشر
+        RESET_FROM: إعادة تعيين من {language}
+      NEW:
+        MY_NEW_PAGE: صفحتي الجديدة
+        FILTER_PAGES: تصفية الصفحات...
+        FAILED_TO_LOAD_PAGE_TEMPLATES: فشل تحميل قوالب الصفحة
+        ADD_PAGE_GRAV_ADMIN: إضافة صفحة — Grav Admin
+        PAGE_DETAILS: تفاصيل الصفحة
+        PAGE_TITLE: عنوان الصفحة
+        FOLDER_NAME: اسم المجلد
+        URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: اسم مجلد آمن للـ URL لهذه الصفحة
+        PARENT_PAGE: الصفحة الأب
+        ROOT: "<root> /"
+        PAGE_TEMPLATE: قالب الصفحة
+        LOADING_TEMPLATES: جارٍ تحميل القوالب...
+        VISIBLE: ظاهر
+        CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: يتحكم في ما إذا كانت هذه الصفحة تظهر في قوائم التنقل
+        CONTINUE: متابعة
+        PAGE_CREATED: 'تم إنشاء الصفحة "{title}"'
+        FOLDER_CREATED: 'تم إنشاء المجلد "{title}"'
+        MODULE_CREATED: 'تم إنشاء الوحدة "{title}"'
+        FAILED_TO_CREATE: فشل في إنشاء الصفحة
+        ORDERING: الترتيب
+        ORDERING_HELP_MODULE: يضيف بادئة رقمية تحدد موضع هذه الوحدة داخل الصفحة النمطية الأصل.
+        ORDERING_HELP_FOLDER: يضيف بادئة رقمية تحدد موضع هذا المجلد بين الأخوة.
+        ORDERING_NONE: بدون
+        FOLDER_DETAILS: تفاصيل المجلد
+      PAGE_COUNT: "{n, plural, zero{لا صفحات} one{صفحة واحدة} two{صفحتان} few{# صفحات} many{# صفحة} other{# صفحة}}"
+      SUBTITLE: إدارة محتوى موقعك وبنيته
+    FIELDS:
+      CLEAR_DATE: مسح التاريخ
+      REGENERATE_SLUG: إعادة التوليد التلقائي من عنوان الصفحة
+      ADD_ENTRY: إضافة إدخال
+      NO_TAXONOMY_TYPES: لم يتم إعداد أنواع التصنيف
+      FILE_PICKER_SOON: منتقي الملفات — قريباً
+      CRON:
+        AT_MINUTE: عند الدقيقة
+        ON_DAY: في اليوم
+        CRON: "Cron:"
+        MIN_HR_DOM_MON_DOW: min hr dom mon dow
+      CRON_STATUS:
+        FAILED_TO_LOAD_SCHEDULER_STATUS: فشل تحميل حالة المُجدوِل
+        SCHEDULER_RUN_COMPLETED: اكتمل تشغيل المُجدوِل
+        FAILED_TO_RUN_SCHEDULER: فشل تشغيل المُجدوِل
+        LOADING_SCHEDULER_STATUS: جارٍ تحميل حالة المُجدوِل...
+        SCHEDULER_STATUS: حالة المُجدوِل
+        NO_SCHEDULED_JOBS_REGISTERED: لا توجد مهام مجدوَلة مسجّلة.
+        JOB_ID: معرّف المهمة
+        HEALTH_STATUS: حالة الصحة
+        STATUS: "الحالة:"
+        LAST_RUN: آخر تشغيل
+        SCHEDULED_JOBS: المهام المجدوَلة
+        QUEUE_SIZE: "حجم الطابور:"
+        ACTIVE_TRIGGERS: المُحفِّزات النشطة
+        CRON: "Cron:"
+        NOT_CONFIGURED: غير مُعَدّ
+        WEBHOOK: "Webhook:"
+        NOT_INSTALLED: غير مُثبَّت
+        NOT_ENABLED: غير مُفعَّل
+        NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: لا توجد مُحفِّزات نشطة! فعِّل webhooks أو اضبط cron.
+        RUNNING: جارٍ التشغيل...
+        RUN_ALL: تشغيل الكل
+      CUSTOM_FIELD_WRAPPER:
+        LOADING_CUSTOM_FIELD: جارٍ تحميل الحقل المخصص...
+      DATE_FORMAT:
+        SELECT_FORMAT: — اختر الصيغة —
+        FORMAT_STRING: "نص الصيغة:"
+      ICON_PICKER:
+        SEARCH_ICONS: ابحث عن أيقونات...
+        NO_ICONS_FOUND: لم يُعثر على أيقونات
+        SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: عرض أول 200 نتيجة — اكتب لتضييق النتائج
+      PAGE_EXISTS:
+        CHECKING_PAGE: جارٍ فحص الصفحة...
+      PAGE_MEDIA:
+        PAGE_MEDIA_UNAVAILABLE: وسائط الصفحة غير متاحة
+      PAGES:
+        FILTER_PAGES: تصفية الصفحات...
+        ROOT: / (الجذر)
+      PERMISSIONS:
+        NO_PERMISSIONS_CONFIGURED: لم يتم إعداد أذونات
+        NOT_SET: غير مُعيَّن
+      TABS:
+        NO_FIELDS_MATCH_YOUR_FILTER: لا توجد حقول تطابق مرشّحك
+      THEME_SELECT:
+        LOADING_THEMES: جارٍ تحميل السمات...
+        SELECT_THEME: — اختر سمة —
+      WEBHOOK_EXAMPLES:
+        HOW_TO_USE_WEBHOOKS: "كيفية استخدام webhooks:"
+        TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: "تشغيل كل المهام المستحقة (يحترم الجدول):"
+        FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: "إجبار تشغيل مهمة معيّنة (يتجاهل الجدول):"
+        CHECK_HEALTH_STATUS: "فحص حالة الصحة:"
+        GITHUB_ACTIONS_EXAMPLE: "مثال GitHub Actions:"
+      WEBHOOK_STATUS:
+        CHECKING_WEBHOOK_PLUGIN_STATUS: جارٍ فحص حالة إضافة webhook...
+        PLUGIN_IS_INSTALLED_AND_ENABLED: الإضافة مثبّتة ومُفعَّلة.
+        PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: الإضافة مثبّتة. فعِّل مُحفِّزات Webhook أدناه للتنشيط.
+        WEBHOOK_PLUGIN_REQUIRED: إضافة Webhook مطلوبة
+        PLUGIN_IS_REQUIRED_FOR_WEBHOOK: الإضافة مطلوبة لوظيفة webhook.
+        INSTALL_PLUGIN_NOW: تثبيت الإضافة الآن
+        OR_RUN: "أو شغّل:"
+        BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: bin/gpm install scheduler-webhook
+      FILE_PICKER:
+        NO_MEDIA_UPLOADED: لم يتم رفع أي ملفات وسائط بعد
+        NO_MATCHING_FILES: لا توجد ملفات مطابقة
+    NAV:
+      DASHBOARD: لوحة التحكم
+      CONFIGURATION: الإعدادات
+      PAGES: الصفحات
+      MEDIA: الوسائط
+      USERS: المستخدمون
+      PLUGINS: الإضافات
+      THEMES: السمات
+      TOOLS: الأدوات
+      SYSTEM: النظام
+      SETTINGS: الإعدادات
+    LANG:
+      SWITCH_LANGUAGE: تبديل لغة المحتوى
+      TRANSLATIONS: الترجمات
+      TRANSLATED: مترجَم
+      NOT_TRANSLATED: غير مترجَم
+      SAVE_AS: حفظ كـ {language}
+      CREATE_TRANSLATION: إنشاء ترجمة {language}
+      FALLBACK_NOTICE: لا توجد ترجمة لـ {language}. يتم عرض المحتوى الافتراضي.
+      SYNC_FROM: إعادة تعيين من {language}
+      TRANSLATION_CREATED: "تم إنشاء ترجمة {language}"
+      DELETE_TRANSLATION: حذف ترجمة {language}
+      CURRENT: الحالية
+      DEFAULT: الافتراضية
+    TIME:
+      JUST_NOW: الآن
+      MINUTES_AGO: "منذ {n} دقيقة"
+      HOURS_AGO: "منذ {n} ساعة"
+      DAYS_AGO: "منذ {n} يوم"
+    ADD_PLUGIN_MODAL:
+      FILTER_PLUGINS: تصفية الإضافات...
+      FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: فشل تحميل الإضافات المتاحة من GPM
+      ADD_PLUGIN: إضافة إضافة
+      SELECT_A_PLUGIN_TO_VIEW_DETAILS: اختر إضافة لعرض التفاصيل
+    PREMIUM: مميَّز
+    AUTHOR: المؤلف
+    HOMEPAGE: الصفحة الرئيسية
+    VERSION: الإصدار
+    KEYWORDS: الكلمات المفتاحية
+    DEPENDENCIES: التبعيات
+    COMPATIBILITY: التوافق
+    ADD_THEME_MODAL:
+      FILTER_THEMES: تصفية السمات...
+      FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: فشل تحميل السمات المتاحة من GPM
+      ADD_THEME: إضافة سمة
+      SELECT_A_THEME_TO_VIEW_DETAILS: اختر سمة لعرض التفاصيل
+    API_KEYS_FIELD:
+      REVOKE_KEY: إبطال المفتاح
+      E_G_MY_CLI_TOOL: مثال، أداة CLI الخاصة بي
+      REVOKE_API_KEY: إبطال مفتاح API
+      FAILED_TO_LOAD_API_KEYS: فشل تحميل مفاتيح API
+      PLEASE_ENTER_A_KEY_NAME: يُرجى إدخال اسم للمفتاح
+      API_KEY_GENERATED: تم توليد مفتاح API
+      FAILED_TO_GENERATE_API_KEY: فشل توليد مفتاح API
+      FAILED_TO_REVOKE_API_KEY: فشل إبطال مفتاح API
+      FAILED_TO_COPY_TO_CLIPBOARD: فشل النسخ إلى الحافظة
+      API_KEYS: مفاتيح API
+      NO_API_KEYS_HAVE_BEEN_GENERATED_YET: لم يتم توليد أي مفاتيح API بعد.
+      KEY_PREFIX: بادئة المفتاح
+      CREATED: تاريخ الإنشاء
+      EXPIRES: تاريخ الانتهاء
+      LAST_USED: آخر استخدام
+      COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: انسخ هذا المفتاح الآن — لن يُعرض مرة أخرى.
+      KEY_NAME: اسم المفتاح
+      EXPIRY: انتهاء الصلاحية
+      BLANK_NEVER: (فارغ = أبداً)
+      GENERATING: جارٍ التوليد...
+      GENERATE_KEY: توليد مفتاح
+    APP_SHELL:
+      CLOSE_MENU: إغلاق القائمة
+      GRAV_VERSION: Grav الإصدار {version}
+      ADMIN_VERSION: لوحة الإدارة الإصدار {version}
+    NORMAL_MODE: الوضع العادي
+    EXPERT_MODE: الوضع المتقدم
+    ALLOWED: مسموح
+    DENIED: مرفوض
+    PERMISSIONS_FIELD:
+      NOT_SET: غير مُعيَّن
+      FAILED_TO_LOAD_PERMISSIONS: فشل تحميل الأذونات
+    TWO_FACTOR_FIELD:
+      2FA_QR_CODE: رمز QR لـ 2FA
+      SCAN_THE_QR_CODE_WITH_YOUR: امسح رمز QR بتطبيق المُصادِق الخاص بك
+      FAILED_TO_GENERATE_2FA_SECRET: فشل توليد سرّ 2FA
+      ENTER_THE_6_DIGIT_CODE_FROM_YOUR: أدخل الرمز المؤلف من 6 أرقام من تطبيق المُصادِق
+      2FA_ENABLED: تم تفعيل 2FA
+      2FA_DISABLED: تم تعطيل 2FA
+      TWO_FACTOR_AUTHENTICATION_IS_OFF: المصادقة الثنائية معطّلة
+      ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: أضف طبقة أمان إضافية بطلب رمز لمرة واحدة عند تسجيل الدخول.
+      FINISH_ENABLING_2FA: إنهاء تفعيل 2FA
+      SCAN_THE_QR_CODE_WITH_YOUR_2: امسح رمز QR بتطبيق المُصادِق، ثم أدخل الرمز المؤلف من 6 أرقام للتحقق والتفعيل.
+      SECRET_FOR_MANUAL_ENTRY: "السرّ (للإدخال اليدوي):"
+      A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: سرّ مولَّد بالفعل ولكن لا يُعرض لأسباب أمنية.
+      REGENERATE_AND_SHOW_QR: إعادة التوليد وعرض QR
+      VERIFICATION_CODE: رمز التحقق
+      2FA_IS_ENABLED: 2FA مُفعَّل
+      A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: مطلوب رمز لمرة واحدة عند تسجيل دخول هذا الحساب.
+      ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: أدخل رمزك الحالي المؤلف من 6 أرقام للتأكيد
+      ENABLE_2FA: تفعيل 2FA
+      VERIFY_ENABLE: التحقق والتفعيل
+      FORCE_DISABLE: إجبار التعطيل
+      CONFIRM_DISABLE: تأكيد التعطيل
+      FORCE_DISABLE_PROMPT: إجبار تعطيل 2FA للمستخدم **{username}**؟ استخدم هذا فقط لاسترداد جهاز مفقود.
+    DISABLE: تعطيل
+    USER_AVATAR_CARD:
+      AVATAR_UPDATED: تم تحديث الصورة الرمزية
+      FAILED_TO_UPLOAD_AVATAR: فشل رفع الصورة الرمزية
+      AVATAR_REMOVED: تمت إزالة الصورة الرمزية
+      FAILED_TO_REMOVE_AVATAR: فشلت إزالة الصورة الرمزية
+      UPLOAD_AVATAR: رفع صورة رمزية
+    REAUTH_MODAL:
+      SESSION_EXPIRED: انتهت صلاحية الجلسة
+      PLEASE_RE_ENTER_YOUR_PASSWORD_TO: يُرجى إعادة إدخال كلمة المرور للمتابعة. تم الاحتفاظ بعملك.
+    USERNAME: اسم المستخدم
+    PASSWORD: كلمة المرور
+    REMOVE: إزالة
+    ENABLED: مُفعَّل
+    DISABLED: مُعطَّل
+    EXPAND_ALL: توسيع الكل
+    COLLAPSE_ALL: طي الكل
+    CONFIG_INFO_PAGE:
+      LOADING_SYSTEM_INFORMATION: جارٍ تحميل معلومات النظام...
+      EXPORT_YAML: تصدير YAML
+      SERVER: الخادم
+      GRAV_VERSION: إصدار Grav
+      PHP_VERSION: إصدار PHP
+      SERVER_SOFTWARE: برنامج الخادم
+      ENVIRONMENT: البيئة
+      PHP_EXTENSIONS: امتدادات PHP
+      PHP_CONFIGURATION: إعدادات PHP
+    DASHBOARD_GRID:
+      DRAG_TO_REORDER: اسحب لإعادة الترتيب
+    EDIT_MODE_TOOLBAR:
+      SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: حفظ كافتراضي للموقع لجميع المستخدمين
+      LAYOUT_PRESETS: إعدادات تخطيط جاهزة
+    PLUGIN_WIDGET_LOADER:
+      WIDGET_FAILED_TO_LOAD: فشل تحميل العنصر
+    TOP_BANNER:
+      SITE_NOTIFICATION: إشعار الموقع
+      PREVIOUS: السابق
+    DISMISS: إغلاق
+    BACKUPS_WIDGET:
+      CREATE_A_NEW_BACKUP_NOW: إنشاء نسخة احتياطية جديدة الآن
+      NO_BACKUPS_FOUND: لم يُعثر على نسخ احتياطية
+      BACKING_UP: جارٍ النسخ الاحتياطي…
+      BACKUP_NOW: نسخ احتياطي الآن
+      DOWNLOAD_FILE: تنزيل {filename}
+    NEWS_FEED_WIDGET:
+      NO_FEED_ITEMS: لا توجد عناصر في الموجز
+    NOTIFICATIONS_WIDGET:
+      NO_NOTIFICATIONS: لا توجد إشعارات
+    POPULARITY_WIDGET:
+      LAST_14_DAYS: آخر 14 يوماً
+      THIS_WEEK: هذا الأسبوع
+      THIS_MONTH: هذا الشهر
+    RECENT_PAGES_WIDGET:
+      VIEW_ALL: عرض الكل
+    STATS_WIDGET:
+      ACTIVE_THEME: السمة النشطة
+      UPDATE_COUNT: "{n, plural, zero{لا تحديثات} one{تحديث واحد} two{تحديثان} few{# تحديثات} many{# تحديثًا} other{# تحديث}}"
+      ACTIVE_COUNT: "({n} نشط)"
+    SYSTEM_HEALTH_WIDGET:
+      UPDATES: التحديثات
+      EVERYTHING_UP_TO_DATE: كل شيء محدّث
+      GRAV_UPDATE_AVAILABLE: يتوفر تحديث لـ Grav
+      GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: تم تثبيت Grav عبر symlink — قم بالترقية يدوياً.
+      SERVER: الخادم
+      UPGRADE_GRAV: ترقية Grav
+      UPDATE_ALL: تحديث الكل
+      PERCENT_USED: "{percent}% مستخدَم"
+      UPDATES_AVAILABLE_COUNT: "{n} متاح"
+      PACKAGES_OUTDATED: "{n, plural, zero{لا حزم قديمة} one{حزمة واحدة قديمة} two{حزمتان قديمتان} few{# حزم قديمة} many{# حزمة قديمة} other{# حزمة قديمة}}"
+      MORE_COUNT: "+ {n} المزيد…"
+      CACHE: الذاكرة المؤقتة
+      DISK: القرص
+      BYTES_USED: "{size} مستخدَم"
+      BYTES_FREE: "{size} متاح"
+    TOP_PAGES_WIDGET:
+      NO_VIEW_DATA_YET: لا توجد بيانات مشاهدات بعد
+    MARKDOWN_EDITOR:
+      NOTHING_TO_PREVIEW: لا شيء للمعاينة
+    FLOATING_WIDGET_LOADER:
+      CLOSE_WIDGETS_MENU: إغلاق قائمة العناصر
+    MEDIA:
+      MEDIA_INSPECTOR:
+        PREVIOUS_FILE: الملف السابق
+        NEXT_FILE: الملف التالي
+        RENAME: إعادة تسمية
+        FAILED_TO_COPY: فشل النسخ
+        FILE_RENAMED: تمت إعادة تسمية الملف
+        DIMENSIONS: الأبعاد
+      MEDIA_MANAGER:
+        FOLDER_NAME: اسم المجلد
+        FILES_DELETED: تم حذف الملفات
+        UPLOAD_FILES: رفع ملفات
+        NEW_FOLDER: مجلد جديد
+        CREATE: إنشاء
+      MEDIA_TOOLBAR:
+        SEARCH_MEDIA: ابحث في الوسائط...
+        GRID_VIEW: عرض الشبكة
+        LIST_VIEW: عرض القائمة
+        NEW_FOLDER: مجلد جديد
+        FOLDER: مجلد
+      MEDIA_GRAV_ADMIN: الوسائط — Grav Admin
+      MANAGE_SITE_WIDE_MEDIA_FILES: إدارة ملفات الوسائط على مستوى الموقع
+      PAGE_MEDIA:
+        PAGE_MEDIA: وسائط الصفحة
+        DRAG_INTO_EDITOR: اسحب إلى المحرر
+    UPLOAD: رفع
+    CACHE_CLEAR_BUTTON:
+      CLEAR_CACHE: مسح الذاكرة المؤقتة
+      CACHE_OPTIONS: خيارات الذاكرة المؤقتة
+      FAILED_TO_CLEAR_CACHE: فشل مسح الذاكرة المؤقتة
+    CONFIRM_ACTION: تأكيد الإجراء
+    VIEW_SITE_BUTTON:
+      OPEN_SITE_FRONTEND_IN_A_NEW_TAB: فتح واجهة الموقع في علامة تبويب جديدة
+      VIEW_SITE: عرض الموقع
+    PLUGIN_PAGE_COMPONENT:
+      LOADING_PLUGIN_PAGE: جارٍ تحميل صفحة الإضافة...
+    SYNC:
+      EDITOR_LOCK_NOTICE:
+        SWITCH_YOUR_EDITOR_PREFERENCE: بدّل تفضيل المحرر
+        TO_COLLABORATE_LIVE: للتعاون المباشر.
+        LOCKED: للقراءة فقط — {owner} يحرر باستخدام **{editor}**. لا يمكن التحرير المشترك بين أنواع محررات مختلطة؛ [بدّل تفضيل المحرر]({href}) للتعاون المباشر.
+        BUILTIN_MARKDOWN_EDITOR: محرر Markdown المدمج
+    DOWNLOAD: تنزيل
+    TOOLS:
+      BACKUPS:
+        DELETE_BACKUP: حذف النسخة الاحتياطية
+        FAILED_TO_LOAD_BACKUPS: فشل تحميل النسخ الاحتياطية
+        BACKUP_CREATED_SUCCESSFULLY: تم إنشاء النسخة الاحتياطية بنجاح
+        FAILED_TO_CREATE_BACKUP: فشل إنشاء النسخة الاحتياطية
+        BACKUP_DELETED: تم حذف النسخة الاحتياطية
+        FAILED_TO_DELETE_BACKUP: فشل حذف النسخة الاحتياطية
+        BACKUP_STATISTICS: إحصائيات النسخ الاحتياطي
+        NUMBER_OF_BACKUPS: عدد النسخ الاحتياطية
+        NUMBER_OF_PROFILES: عدد الملفات الشخصية
+        NEWEST_BACKUP: أحدث نسخة احتياطية
+        OLDEST_BACKUP: أقدم نسخة احتياطية
+        BACKUP_HISTORY: سجل النسخ الاحتياطية
+        LOADING_BACKUPS: جارٍ تحميل النسخ الاحتياطية...
+        NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: لم يُعثر على نسخ احتياطية. أنشئ واحدة للبدء.
+        BACKUP_DATE: تاريخ النسخة الاحتياطية
+        ACTION: الإجراء
+        CREATING: جارٍ الإنشاء...
+        BACKUP_NOW: نسخ احتياطي الآن
+      DIRECT_INSTALL:
+        PACKAGE_INSTALLED_SUCCESSFULLY: تم تثبيت الحزمة بنجاح
+        ONLY_ZIP_FILES_ARE_SUPPORTED: ملفات .zip فقط مدعومة
+        INSTALL_FROM_FILE: التثبيت من ملف
+        DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: أسقط ملف .zip هنا أو انقر للتصفح
+        SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: يدعم حزم إضافات وسمات Grav
+        INSTALL_FROM_URL: التثبيت من URL
+      LOGS:
+        SEARCH_MESSAGES: ابحث في الرسائل...
+        FAILED_TO_LOAD_LOGS: فشل تحميل السجلات
+        FAILED_TO_LOAD_LOG_FILES: فشل تحميل ملفات السجل
+        LOG_FILE: ملف السجل
+        ALL_LEVELS: جميع المستويات
+        EMERGENCY: طوارئ
+        CRITICAL: حرج
+        WARNING: تحذير
+        NOTICE: إشعار
+        25_LINES: 25 سطراً
+        50_LINES: 50 سطراً
+        100_LINES: 100 سطر
+        200_LINES: 200 سطر
+        REFRESH: تحديث
+        LOADING_LOGS: جارٍ تحميل السجلات...
+        MESSAGE: الرسالة
+      REPORT_COMPONENT_WRAPPER:
+        LOADING_REPORT_COMPONENT: جارٍ تحميل مكوّن التقرير...
+      REPORTS:
+        FAILED_TO_LOAD_REPORTS: فشل تحميل التقارير
+        LOADING_REPORTS: جارٍ تحميل التقارير...
+        NO_REPORTS_AVAILABLE: لا توجد تقارير متاحة.
+        CONTENT_FIELD: "content: {field}"
+      SCHEDULER:
+        FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: فشل تحميل إعدادات المُجدوِل.
+        SCHEDULER_CONFIGURATION_SAVED: تم حفظ إعدادات المُجدوِل
+        FAILED_TO_SAVE: فشل الحفظ
+        LOADING_SCHEDULER: جارٍ تحميل المُجدوِل...
+        NOT_ENABLED_FOR_USER: "غير مُفعَّل للمستخدم:"
+        GRAV_SCHEDULER: مُجدوِل Grav
+        INFO_BANNER: يمكن للمُجدوِل استخدام إما crontab النظام أو مُحفِّزات webhook لتنفيذ الأوامر. ينصح بـ webhooks للبيئات السحابية. لا يجب على المستخدمين سوى المتقدمين منهم إعداد مهام مخصصة. الإعداد الخاطئ أو إساءة الاستخدام قد يؤدي إلى ثغرات أمنية.
+        CRONTAB_INSTRUCTIONS: لتفعيل وظيفة المُجدوِل، يجب إضافة **مُجدوِل Grav** إلى ملف crontab الخاص بنظامك للمستخدم **{user}**. شغّل الأمر أعلاه من الطرفية لإضافته تلقائياً. بعد الحفظ، حدّث هذه الصفحة لرؤية الحالة.
+        WEBHOOK_ALTERNATIVE: بدلاً من ذلك، ثبّت إضافة **scheduler-webhook** لاستخدام تشغيل cron عبر webhook، وهو موصى به للبيئات السحابية حيث لا يتوفر الوصول إلى crontab النظام.
+        SECURITY_WARNING: لا يجب على المستخدمين سوى المتقدمين منهم إعداد مهام مُجدوِل مخصصة. الإعداد الخاطئ قد يسبب مشاكل في الأداء أو ثغرات أمنية.
+      SYSTEM_INFO:
+        FAILED_TO_LOAD_SYSTEM_INFO: فشل تحميل معلومات النظام
+        LOADING_SYSTEM_INFO: جارٍ تحميل معلومات النظام...
+        GRAV_VERSION: إصدار Grav
+        PHP_VERSION: إصدار PHP
+        PHP_SAPI: PHP SAPI
+        MEMORY_LIMIT: حد الذاكرة
+        MAX_EXECUTION: أقصى تنفيذ
+        MAX_UPLOAD: أقصى رفع
+        MAX_POST: أقصى POST
+        DISK_USAGE: استخدام القرص
+        DRIVER: المُشغِّل
+        DISK_FREE_OF: "{free} متاح من أصل {total}"
+      TOOLS_GRAV_ADMIN: الأدوات — Grav Admin
+      BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: النسخ الاحتياطية والمُجدوِل والسجلات والتشخيصات
+    INSTALLING: جارٍ التثبيت...
+    ACCESS_DENIED:
+      ACCESS_DENIED: الوصول مرفوض
+    ARE_YOU_SURE: هل أنت متأكد؟
+    ENVIRONMENT_SWITCHER:
+      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: حدّد المكان الذي يتم فيه حفظ كتابات الإعداد
+      HAS_OVERRIDES: يحتوي على تجاوزات
+      SELECTED_ENV: البيئة المحددة
+      NO_LONGER_EXISTS_PICK_ANOTHER: لم تعد موجودة. اختر أخرى.
+      SAVE_CONFIG_TO: حفظ الإعداد في
+      CREATES_PATH: ينشئ user/env/{name}/config/
+      DEFAULT: افتراضي
+      SAVING_TO_DEFAULT: الحفظ إلى الافتراضي (user/config)
+      SAVING_TO_ENV: "الحفظ إلى البيئة: {name}"
+      ENV_CREATED: "تم إنشاء البيئة '{name}' وتحديدها"
+      FAILED_TO_CREATE: فشل في إنشاء البيئة
+      CREATE_ENVIRONMENT: "إنشاء بيئة…"
+      CREATE_ENV_NAMED: "إنشاء البيئة \"{name}\"…"
+      CREATE: إنشاء
+    INLINE_ICON_PICKER:
+      SEARCH_ICONS: ابحث عن أيقونات...
+      NO_ICONS_FOUND: لم يُعثر على أيقونات
+      TYPE_TO_NARROW_RESULTS: اكتب لتضييق النتائج
+    PASSWORD_FIELD:
+      PASSWORD_REQUIREMENTS: متطلبات كلمة المرور
+      PASSWORD_STRENGTH: قوة كلمة المرور
+      REQUIREMENTS: المتطلبات
+    TOP_PROGRESS_BAR:
+      WORKING: جارٍ العمل
+    UNSAVED_INDICATOR:
+      SAVING_CHANGES: جارٍ حفظ التغييرات…
+      SAVING_CHANGES_2: جارٍ حفظ التغييرات
+      UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: تغييرات غير محفوظة — انقر على حفظ لتثبيتها
+      YOU_HAVE_UNSAVED_CHANGES: لديك تغييرات غير محفوظة
+    ALL_CHANGES_SAVED: تم حفظ جميع التغييرات
+    APP:
+      CREATING_BACKUP: جارٍ إنشاء نسخة احتياطية…
+      DASHBOARD_GRAV_ADMIN: لوحة التحكم — Grav Admin
+      REFRESH: تحديث
+      WELCOME_BACK: مرحبًا بعودتك، {name}
+      PAGE_TITLE: "{name} — Grav Admin"
+    CONFIG:
+      TITLE: الإعدادات
+      TITLE_SCROLLED: "الإعدادات: {scope}"
+      LOADING_CONFIGURATION: جارٍ تحميل الإعدادات...
+      FILTER_FIELDS: تصفية الحقول...
+      CLEAR_FILTER: مسح المرشّح
+      NO_MATCHES_FOUND: لم يُعثر على نتائج
+      CONFIGURATION_SAVED_SUCCESSFULLY: تم حفظ الإعدادات بنجاح
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: تم تعديل الإعدادات في مكان آخر. أعد التحميل لرؤية أحدث التغييرات.
+      FAILED_TO_SAVE_CONFIGURATION: فشل حفظ الإعدادات
+      CONFIGURATION_RELOADED: تمت إعادة تحميل الإعدادات
+      CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: تم تعديل الإعدادات في مكان آخر — احفظ للكتابة فوقها أو أعد التحميل
+      RELOAD: إعادة تحميل
+      NO_CONFIGURATION_BLUEPRINT_AVAILABLE: لا يوجد blueprint إعدادات متاح لهذا النطاق.
+      PAGE_TITLE: "الإعدادات: {scope} — Grav Admin"
+    FLEX_OBJECTS:
+      SEARCH: بحث...
+      PREVIOUS: السابق
+      DELETE_OBJECT: حذف الكائن
+      FAILED_TO_LOAD_DIRECTORY: فشل تحميل الدليل
+      FAILED_TO_LOAD_OBJECTS: فشل تحميل الكائنات
+      OBJECT_DELETED: تم حذف الكائن
+      FAILED_TO_DELETE_OBJECT: فشل حذف الكائن
+      EXPORT_FAILED: فشل التصدير
+      EXPORT: تصدير
+      ACTIONS: إجراءات
+      OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: تم تعديل الكائن في مكان آخر. يُرجى إعادة التحميل.
+      FAILED_TO_SAVE: فشل الحفظ.
+      OBJECT_CHANGED_ELSEWHERE_SAVE_TO: تم تعديل الكائن في مكان آخر — احفظ للكتابة فوقه أو أعد التحميل
+      BACK_TO_LIST: العودة إلى القائمة
+      NEW:
+        OBJECT_CREATED: تم إنشاء الكائن
+        BACK_TO_LIST: العودة إلى القائمة
+        CREATE: إنشاء
+    FORGOT:
+      UNABLE_TO_CONNECT_TO_SERVER: تعذّر الاتصال بالخادم.
+      FORGOT_PASSWORD_GRAV_ADMIN: نسيت كلمة المرور — Grav Admin
+      FORGOT_PASSWORD: نسيت كلمة المرور
+      EMAIL_ADDRESS: عنوان البريد الإلكتروني
+      ENTER_A_VALID_EMAIL_ADDRESS: أدخل عنوان بريد إلكتروني صالح
+      IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: إذا كان هناك حساب موجود لهذا البريد، فقد تم إرسال رابط إعادة التعيين.
+      BACK_TO_SIGN_IN: العودة إلى تسجيل الدخول
+      SENDING: جارٍ الإرسال...
+      SEND_RESET_LINK: إرسال رابط إعادة التعيين
+      CHECK_INBOX: تحقق من صندوق الوارد لديك بحثاً عن رابط إعادة التعيين.
+      SUBTITLE: أدخل بريدك الإلكتروني وسنرسل لك رابط إعادة التعيين.
+    LOGIN:
+      SIGNED_IN_SUCCESSFULLY: تم تسجيل الدخول بنجاح
+      PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: يُرجى تعبئة جميع الحقول المطلوبة
+      INVALID_USERNAME_OR_PASSWORD: اسم مستخدم أو كلمة مرور غير صالحة
+      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: تعذّر الاتصال بالخادم. تحقق من URL الخادم وحاول مرة أخرى.
+      UNABLE_TO_VERIFY_CODE_CHECK_YOUR: تعذّر التحقق من الرمز. تحقق من اتصالك وحاول مرة أخرى.
+      LOGIN_GRAV_ADMIN: تسجيل الدخول — Grav Admin
+      GRAV_ADMIN: Grav Admin
+      SERVER_CONFIGURATION: إعدادات الخادم
+      SERVER_URL: URL الخادم
+      ENVIRONMENT: البيئة
+      USERNAME_IS_REQUIRED: اسم المستخدم مطلوب
+      PASSWORD_IS_REQUIRED: كلمة المرور مطلوبة
+      FORGOT_PASSWORD: نسيت كلمة المرور؟
+      AUTHENTICATION_CODE: رمز المصادقة
+      ENTER_A_VALID_6_DIGIT_CODE: أدخل رمزاً صالحاً مؤلفاً من 6 أرقام
+      BACK_TO_SIGN_IN: العودة إلى تسجيل الدخول
+      POWERED_BY_GRAV_CMS: مدعوم من Grav CMS
+      SIGNING_IN: جارٍ تسجيل الدخول...
+      SIGN_IN: تسجيل الدخول
+      VERIFYING: جارٍ التحقق...
+      VERIFY: تحقق
+      TWOFA_SUBTITLE: أدخل رمز المُصادِق للمتابعة
+      SUBTITLE: سجّل الدخول لإدارة موقعك
+      AUTH_CODE_PROMPT: افتح تطبيق المُصادِق وأدخل الرمز المؤلف من 6 أرقام للمستخدم **{username}**.
+    PLUGIN:
+      BACK_TO_DASHBOARD: العودة إلى لوحة التحكم
+      NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: لا يوجد محتوى متاح لصفحة هذه الإضافة.
+    PLUGINS:
+      SEARCH_PLUGINS: ابحث في الإضافات...
+      SYMLINKED: مربوط بـ symlink
+      FAILED_TO_LOAD_PLUGINS: فشل تحميل الإضافات
+      FAILED_TO_CHECK_FOR_UPDATES: فشل البحث عن تحديثات
+      PLUGINS_GRAV_ADMIN: الإضافات — Grav Admin
+      CHECK_UPDATES: البحث عن تحديثات
+      CONFIGURE: إعداد
+      SELECT_A_PLUGIN_TO_VIEW_DETAILS: اختر إضافة لعرض التفاصيل
+      REMOVE_PLUGIN: إزالة الإضافة
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: تم تعديل الإعدادات في مكان آخر. يُرجى إعادة التحميل.
+      FAILED_TO_SAVE_CONFIGURATION: فشل حفظ الإعدادات.
+      PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: تم تعديل الإضافة في مكان آخر — احفظ للكتابة فوقها أو أعد التحميل
+      BACK_TO_PLUGINS: العودة إلى الإضافات
+      CHANGELOG: سجل التغييرات
+      PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: يجب تفعيل الإضافة قبل إعدادها.
+      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: لا توجد خيارات إعداد متاحة لهذه الإضافة.
+      ENABLE_PLUGIN: تفعيل الإضافة
+      PAGE_TITLE: "{name} — الإضافات — Grav Admin"
+    RESET:
+      PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: تمت إعادة تعيين كلمة المرور بنجاح. يُرجى تسجيل الدخول.
+      UNABLE_TO_CONNECT_TO_SERVER: تعذّر الاتصال بالخادم.
+      RESET_PASSWORD_GRAV_ADMIN: إعادة تعيين كلمة المرور — Grav Admin
+      RESET_PASSWORD: إعادة تعيين كلمة المرور
+      THIS_RESET_LINK_IS_MISSING_REQUIRED: هذا الرابط ينقصه المعاملات المطلوبة. اطلب رابطاً جديداً من صفحة "نسيت كلمة المرور".
+      CONFIRM_PASSWORD: تأكيد كلمة المرور
+      PASSWORDS_DO_NOT_MATCH: كلمتا المرور غير متطابقتين
+      BACK_TO_SIGN_IN: العودة إلى تسجيل الدخول
+      RESETTING: جارٍ إعادة التعيين...
+      INVALID_LINK: رابط إعادة تعيين غير صالح.
+      NEW_PASSWORD_FOR: اختر كلمة مرور جديدة للمستخدم **{username}**.
+    SETTINGS:
+      LIGHT_LOGO: شعار فاتح
+      DARK_LOGO: شعار داكن
+      REMOVE_LINK: إزالة الرابط
+      RESET_PREFERENCES: إعادة تعيين التفضيلات
+      PREFERENCES_RESET_RELOAD_TO_APPLY: تمت إعادة تعيين التفضيلات. أعد التحميل للتطبيق.
+      SETTINGS_GRAV_ADMIN: الإعدادات — Grav Admin
+      ADMIN_PREFERENCES_AND_APPEARANCE: تفضيلات الإدارة والمظهر
+      CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: خصّص الشعار المعروض في الشريط الجانبي وصفحة تسجيل الدخول
+      LOGO_TYPE: نوع الشعار
+      CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: اختر كيف يتم عرض الشعار
+      GRAV_LOGO: شعار Grav
+      CUSTOM_TEXT: نص مخصص
+      CUSTOM_IMAGE: صورة مخصصة
+      LOGO_TEXT: نص الشعار
+      THE_FIRST_LETTER_BECOMES_THE_ICON: يصبح الحرف الأول هو الأيقونة
+      LIGHT_MODE_LOGO: شعار الوضع الفاتح
+      USED_ON_LIGHT_BACKGROUNDS: يُستخدم على الخلفيات الفاتحة
+      DARK_MODE_LOGO: شعار الوضع الداكن
+      USED_ON_DARK_BACKGROUNDS: يُستخدم على الخلفيات الداكنة
+      APPEARANCE: المظهر
+      CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: خصّص شكل وأسلوب الإدارة
+      COLOR_MODE: وضع اللون
+      CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: اختر بين المظهر الفاتح والداكن
+      ACCENT_COLOR: اللون المميِّز
+      PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: اللون الأساسي المستخدم للأزرار والروابط والإبرازات
+      SATURATION: التشبّع
+      TYPEFACE_USED_THROUGHOUT_THE_ADMIN: نوع الخط المستخدم في جميع أنحاء الإدارة
+      FONT_SIZE: حجم الخط
+      TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: حجم النص المستخدم في جميع أنحاء الإدارة
+      FONT_SIZE_SMALL: صغير
+      FONT_SIZE_NORMAL: عادي
+      FONT_SIZE_LARGE: كبير
+      FONT_SIZE_XLARGE: كبير جداً
+      DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: الإعدادات الافتراضية لمتصفّح الصفحات
+      DEFAULT_VIEW: العرض الافتراضي
+      HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: كيف تُعرض الصفحات افتراضياً
+      ITEMS_PER_PAGE: عناصر لكل صفحة
+      NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: عدد الصفحات المعروضة في عرض القائمة
+      EDITING: التحرير
+      AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: سلوك الحفظ التلقائي والتراجع لمحرري النماذج
+      AUTO_SAVE: حفظ تلقائي
+      AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: حفظ تلقائياً عند مغادرة حقل
+      TOOLBAR_UNDO_BUTTON: زر التراجع في شريط الأدوات
+      SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: اعرض زر تراجع في شريط أدوات المحرر
+      UNDO_BATCH_WINDOW: نافذة دفعات التراجع
+      GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: تجميع تغييرات الحقول السريعة في خطوة تراجع واحدة
+      NONE_1_FIELD_1_UNDO: لا شيء (حقل واحد = تراجع واحد)
+      1_SECOND: ثانية واحدة
+      2_SECONDS: ثانيتان
+      REAL_TIME_COLLABORATION: التعاون الفوري
+      PLUGIN_ON_THE_SERVER_EXPERIMENTAL: الإضافة على الخادم. تجريبي.
+      ADMIN_INTERFACE_LANGUAGE: لغة واجهة الإدارة
+      ADMIN_LANGUAGE: لغة الإدارة
+      ENGLISH: English
+      FRAN_AIS: Français
+      DEUTSCH: Deutsch
+      ESPA_OL: Español
+      ITALIANO: Italiano
+      PORTUGU_S: Português
+      NEDERLANDS: Nederlands
+      MENUBAR_LINKS: روابط شريط القوائم
+      CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: اختصارات مخصصة معروضة في شريط القوائم العلوي
+      EXTERNAL: خارجي
+      ADD_LINK: إضافة رابط
+      CONNECTION: الاتصال
+      SERVER_CONNECTION_DETAILS: تفاصيل اتصال الخادم
+      SERVER_URL: URL الخادم
+      ENVIRONMENT: البيئة
+      AUTHENTICATED_AS: مُصادَق عليه كـ
+      RESET_ALL_PREFERENCES: إعادة تعيين جميع التفضيلات
+      COLLAB_DESCRIPTION: التحرير المباشر متعدد المستخدمين مع الحضور. يتطلب إضافة `sync` على الخادم. تجريبي.
+      ADMIN_LANGUAGE_DESC: لغة التسميات والقوائم والرسائل ({count} سلسلة مُحمَّلة)
+      LANGUAGE_CHANGED: تم تغيير اللغة إلى {language}
+      HUE: درجة اللون
+      FONT: الخط
+      LIGHT: فاتح
+      DARK: داكن
+      FOLLOW_OS: حسب النظام
+      "ON": تشغيل
+      "OFF": إيقاف
+      RESET_TO_SITE_DEFAULTS: إعادة تعيين تفضيلاتي إلى الإعدادات الافتراضية للموقع
+      SITE_DEFAULTS: الإعدادات الافتراضية للموقع
+      SITE_DEFAULTS_DESCRIPTION: تنطبق الإعدادات أدناه على كل مستخدم في لوحة الإدارة كأساس. عناصر الفئة B (المظهر، الصفحات، اللغة، المحرر) يمكن لكل مستخدم تجاوزها في تفضيلاته الشخصية أعلاه. عناصر الفئة A (التحرير، شريط القوائم) شاملة للموقع وغير قابلة للتجاوز.
+      BRANDING: الهوية البصرية
+      BRANDING_DESC: الشعار ونص العلامة التجارية المعروضان في كل أنحاء لوحة الإدارة.
+      SAVED_AUTOMATICALLY: حُفظ تلقائيًا
+      SITE_SETTINGS_HEADING: إعدادات الموقع
+      SITE_SETTINGS_DESC: التفضيلات الافتراضية للمستخدمين الجدد إضافةً إلى السلوك الشامل للموقع. تُطبَّق التغييرات عند إعادة التحميل التالية للمستخدمين المعنيين.
+      DEFAULT_APPEARANCE: المظهر الافتراضي
+      DEFAULT_COLOR_APPEARANCE_DESC: المظهر اللوني الافتراضي للمستخدمين الجدد.
+      DEFAULT_PRIMARY_COLOR_DESC: اللون الأساسي الافتراضي للأزرار والروابط والإبرازات.
+      DEFAULT_TYPEFACE_DESC: الخط الافتراضي لواجهة لوحة الإدارة.
+      DEFAULT_TEXT_SIZE_DESC: حجم النص الافتراضي لواجهة لوحة الإدارة.
+      DEFAULT_PAGES: الصفحات الافتراضية
+      DEFAULT_LANGUAGE: اللغة الافتراضية
+      DEFAULT_INTERFACE_LANGUAGE_DESC: لغة الواجهة الافتراضية للمستخدمين الجدد.
+      EDITOR_HEADING: المحرر
+      EDITOR_MODE: وضع المحرر
+      DEFAULT_FORM_EDITOR_DENSITY: كثافة محرر النماذج الافتراضية.
+      USERS_MAY_OVERRIDE: يمكن للمستخدمين تجاوزها
+      SITE_WIDE_ONLY: شامل للموقع فقط
+      REVERT_CHANGES: التراجع عن التغييرات
+      SAVE_SITE_DEFAULTS: حفظ الإعدادات الافتراضية للموقع
+      RESET_PREFERENCES_MSG: هل تريد إزالة جميع تجاوزاتك الشخصية والعودة إلى الإعدادات الافتراضية للموقع؟
+      RESET: إعادة تعيين
+      FAILED_TO_SAVE_LOGO_MODE: فشل في حفظ وضع الشعار.
+      FAILED_TO_SAVE_LOGO_TEXT: فشل في حفظ نص الشعار.
+      LIGHT_LOGO_UPLOADED: تم رفع الشعار الفاتح.
+      DARK_LOGO_UPLOADED: تم رفع الشعار الداكن.
+      LOGO_UPLOAD_FAILED: فشل رفع الشعار.
+      LIGHT_LOGO_REMOVED: تمت إزالة الشعار الفاتح.
+      DARK_LOGO_REMOVED: تمت إزالة الشعار الداكن.
+      FAILED_TO_REMOVE_LOGO: فشل في إزالة الشعار.
+      SITE_DEFAULTS_SAVED: تم حفظ الإعدادات الافتراضية للموقع. سيراها جميع المستخدمين عند إعادة التحميل التالية.
+      FAILED_TO_SAVE_SITE_DEFAULTS: فشل في حفظ الإعدادات الافتراضية للموقع.
+      FAILED_TO_RESET_PREFERENCES: فشل في إعادة تعيين التفضيلات.
+    CUSTOM: مخصص
+    PREVIEW: معاينة
+    SETUP:
+      PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: يُرجى إصلاح الأخطاء أعلاه وحاول مرة أخرى
+      ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: تم إنشاء حساب المسؤول — مرحباً بك في Grav
+      SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: تم إكمال الإعداد بالفعل. يُرجى تسجيل الدخول.
+      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: تعذّر الاتصال بالخادم. تحقق من URL الخادم وحاول مرة أخرى.
+      SETUP_GRAV_ADMIN: الإعداد — Grav Admin
+      WELCOME_TO_GRAV: مرحباً بك في Grav
+      CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: أنشئ حساب المسؤول للبدء
+      CHECKING_SERVER: جارٍ فحص الخادم…
+      SERVER_CONFIGURATION: إعدادات الخادم
+      SERVER_URL: URL الخادم
+      ENVIRONMENT: البيئة
+      3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: "من 3 إلى 64 حرفاً: أحرف وأرقام وشرطات وشرطات سفلية"
+      FULL_NAME: الاسم الكامل
+      OPTIONAL: (اختياري)
+      ENTER_A_VALID_EMAIL_ADDRESS: أدخل عنوان بريد إلكتروني صالح
+      CONFIRM_PASSWORD: تأكيد كلمة المرور
+      PASSWORDS_DO_NOT_MATCH: كلمتا المرور غير متطابقتين
+      POWERED_BY_GRAV_CMS: مدعوم من Grav CMS
+      CREATING_ACCOUNT: جارٍ إنشاء الحساب...
+      CREATE_ADMINISTRATOR: إنشاء مسؤول
+    SYSTEM:
+      SYSTEM_GRAV_ADMIN: النظام — Grav Admin
+      COMING_SOON: قريباً
+    THEMES:
+      SEARCH_THEMES: ابحث في السمات...
+      SYMLINKED: مربوط بـ symlink
+      FAILED_TO_LOAD_THEMES: فشل تحميل السمات
+      FAILED_TO_CHECK_FOR_UPDATES: فشل البحث عن تحديثات
+      THEMES_GRAV_ADMIN: السمات — Grav Admin
+      CHECK_UPDATES: البحث عن تحديثات
+      CONFIGURE: إعداد
+      SELECT_A_THEME_TO_VIEW_DETAILS: اختر سمة لعرض التفاصيل
+      ACTIVE_THEME: السمة النشطة
+      CLICK_TO_VIEW_FULL_SIZE: انقر لعرض الحجم الكامل
+      REMOVE_THEME: إزالة السمة
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: تم تعديل الإعدادات في مكان آخر. يُرجى إعادة التحميل.
+      FAILED_TO_SAVE_CONFIGURATION: فشل حفظ الإعدادات.
+      BACK_TO_THEMES: العودة إلى السمات
+      CHANGELOG: سجل التغييرات
+      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: لا توجد خيارات إعداد متاحة لهذه السمة.
+      PAGE_TITLE: "{name} — السمات — Grav Admin"
+    ACTIVE: نشط
+    ACTIVATE: تنشيط
+    USERS:
+      STATUS: الحالة
+      STATUS_HELP: الحسابات المعطّلة لا يمكنها تسجيل الدخول أو استخدام API.
+      SEARCH_USERS: ابحث في المستخدمين...
+      FAILED_TO_LOAD_USERS: فشل تحميل المستخدمين
+      USERS_GRAV_ADMIN: المستخدمون — Grav Admin
+      ADD_USER: إضافة مستخدم
+      SUPER_ADMIN: مسؤول أعلى
+      CREATED: تاريخ الإنشاء
+      PERMISSIONS: الأذونات
+      SELECT_A_USER_TO_VIEW_DETAILS: اختر مستخدماً لعرض التفاصيل
+      DELETE_USER: حذف المستخدم
+      USER_WAS_MODIFIED_ELSEWHERE_PLEASE: تم تعديل المستخدم في مكان آخر. يُرجى إعادة التحميل.
+      FAILED_TO_SAVE_USER: فشل حفظ المستخدم.
+      YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: لا يمكنك حذف حسابك الخاص.
+      USER_CHANGED_ELSEWHERE_SAVE_TO: تم تعديل المستخدم في مكان آخر — احفظ للكتابة فوقه أو أعد التحميل
+      BACK_TO_USERS: العودة إلى المستخدمين
+      2_FACTOR_AUTHENTICATION: المصادقة الثنائية
+      NEW:
+        LOWERCASE_3_64_CHARS: أحرف صغيرة، من 3 إلى 64 حرفاً
+        NEW_USER_GRAV_ADMIN: مستخدم جديد — Grav Admin
+        NEW_USER: مستخدم جديد
+        ACCOUNT: الحساب
+        FULL_NAME: الاسم الكامل
+        PERMISSIONS: الأذونات
+        CREATE: إنشاء
+      PAGE_TITLE: "{name} — المستخدمون — Grav Admin"
+    INFO: معلومات
+    INSTALL: تثبيت
+    COPY_BUTTON:
+      COPIED: تم النسخ!
+    WIDGET_HOST:
+      UNKNOWN_WIDGET: "عنصر غير معروف: {id}"
+    UPDATE_AVAILABLE_VERSION: "تحديث متاح: الإصدار {version}"
+    UPDATE_TO_VERSION: تحديث إلى الإصدار {version}
+  PLUGIN_ADMIN:
+    2FA_ENABLED: 2FA مُفعَّل
+    2FA_SECRET: سرّ 2FA
+    2FA_SECRET_HELP: "امسح رمز QR هذا داخل [تطبيق المُصادِق](https://learn.getgrav.org/admin-panel/2fa#apps). كما أنّ من الجيد أخذ نسخة احتياطية للسرّ في مكان آمن، في حال احتجت إلى إعادة تثبيت تطبيقك. راجع [وثائق Grav](https://learn.getgrav.org/admin-panel/2fa) للمزيد من المعلومات "
+    2FA_TITLE: المصادقة الثنائية
+    ABSOLUTE_URLS: روابط URL مطلقة
+    ABSOLUTE_URLS_HELP: روابط URL مطلقة أو نسبية لـ `base_url`
+    ACCESS: الوصول
+    ACCESS_LEVELS: مستويات الوصول
+    ACCOUNT: الحساب
+    ACCOUNTS: الحسابات
+    ACCOUNTS_STORAGE: تخزين الحسابات
+    ACCOUNTS_STORAGE_HELP: آلية التخزين المستخدمة لنوع حساب Flex Object. الملفات هي النهج التقليدي حيث يتم تخزين الحسابات في ملف YAML في مجلد واحد، بينما يُنشئ المجلد مجلداً جديداً لكل حساب
+    ACCOUNTS_TYPE: نوع الحسابات
+    ACCOUNTS_TYPE_HELP: نظام Flex Object لتخزين حسابات المستخدمين
+    ACTIVE_LANGUAGE_IN_SESSION: اللغة النشطة في الجلسة
+    ACTIVE_LANGUAGE_IN_SESSION_HELP: تخزين اللغة النشطة في الجلسة
+    ADD: إضافة
+    ADD_ACCOUNT: إضافة حساب
+    ADMIN_CHILDREN_DISPLAY_ORDER: ترتيب عرض الأبناء
+    ADMIN_CHILDREN_DISPLAY_ORDER_HELP: الترتيب الذي يجب أن تُعرض به أبناء هذه الصفحة في عرض "الصفحات" لإضافة الإدارة
+    ADMIN_SPECIFIC_OVERRIDES: تجاوزات خاصة بالإدارة
+    ADVANCED: متقدم
+    ALLOW_URL_TAXONOMY_FILTERS: مرشّحات تصنيف URL
+    ALLOW_URL_TAXONOMY_FILTERS_HELP: المجموعات المعتمدة على الصفحات تسمح لك بالتصفية عبر `/taxonomy:value`.
+    ALLOW_WEBSERVER_GZIP: السماح بـ Gzip لخادم الويب
+    ALLOW_WEBSERVER_GZIP_HELP: مُعطَّل افتراضياً. عند التفعيل، يعمل ضغط Gzip/Deflate المُعَدّ في خادم الويب، لكن لن يُغلق اتصال http قبل حدث onShutDown() مما يسبب تحميلاً أبطأ للصفحات
+    APPEND_URL_EXT: إضافة امتداد URL
+    APPEND_URL_EXT_HELP: سيضيف امتداداً مخصصاً إلى URL الصفحة. لاحظ أن هذا يعني أن Grav سيبحث عن قالب `<template>.<extension>.twig`
+    ASCENDING: تصاعدي
+    ASSETS: الأصول
+    AUTO: تلقائي
+    AUTO_LINE_BREAKS: فواصل أسطر تلقائية
+    AUTO_LINE_BREAKS_HELP: تفعيل دعم فواصل الأسطر التلقائية في Markdown
+    AUTO_URL_LINKS: روابط URL تلقائية
+    AUTO_URL_LINKS_HELP: تفعيل التحويل التلقائي لروابط URL إلى روابط HTML تشعّبية
+    AUTOESCAPE_VARIABLES: الإفلات التلقائي للمتغيرات
+    AUTOESCAPE_VARIABLES_HELP: يُفلت جميع المتغيرات تلقائياً. هذا سيُعطّل موقعك على الأرجح
+    AVATAR: مولّد الصور الرمزية
+    AVATAR_HASH: "ملاحظة: سلسلة 'hash' مخصصة اختيارية للصورة الرمزية"
+    AVATAR_HELP: Multiavatar هو صورة رمزية تُولَّد محلياً. Gravatar هو خدمة خارجية تستخدم عنوان بريدك الإلكتروني لجلب صورة رمزية مُعدَّة مسبقاً عن بُعد
+    BACK: عودة
+    BACKUPS: النسخ الاحتياطية
+    BACKUPS_HISTORY: سجل النسخ الاحتياطية
+    BACKUPS_MAX_COUNT: الحد الأقصى لعدد النسخ الاحتياطية
+    BACKUPS_MAX_RETENTION_TIME: الحد الأقصى لمدة الاحتفاظ
+    BACKUPS_MAX_RETENTION_TIME_APPEND: بالأيام
+    BACKUPS_MAX_SPACE: الحد الأقصى لمساحة النسخ الاحتياطية
+    BACKUPS_PROFILE_ENVIRONMENT: البيئة
+    BACKUPS_PROFILE_ENVIRONMENT_HELP: سياق بيئة Grav الذي تعمل فيه النسخة الاحتياطية المجدوَلة.
+    BACKUPS_PROFILE_EXCLUDE_FILES: استبعاد ملفات
+    BACKUPS_PROFILE_EXCLUDE_FILES_HELP: ملفات أو مجلدات محددة للاستبعاد، واحد في كل سطر
+    BACKUPS_PROFILE_EXCLUDE_PATHS: استبعاد مسارات
+    BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: مسارات مطلقة للاستبعاد، واحد في كل سطر
+    BACKUPS_PROFILE_NAME: اسم النسخة الاحتياطية
+    BACKUPS_PROFILE_ROOT_FOLDER: المجلد الجذر
+    BACKUPS_PROFILE_ROOT_FOLDER_HELP: يمكن أن يكون مساراً مطلقاً أو تدفقاً
+    BACKUPS_PROFILE_SCHEDULE: تفعيل المهمة المجدوَلة
+    BACKUPS_PROFILE_SCHEDULE_AT: تشغيل المهمة المجدوَلة
+    BACKUPS_PROFILES: ملفات النسخ الاحتياطية
+    BACKUPS_PURGE_CONFIG: إعدادات تطهير النسخ الاحتياطية
+    BACKUPS_STORAGE_PURGE_TRIGGER: مُحفِّز تطهير تخزين النسخ الاحتياطية
+    BODY_CLASSES: فئات الجسم
+    CACHE_ALL: تخزين جميع الصور مؤقتاً
+    CACHE_ALL_HELP: تمرير جميع الصور عبر نظام الذاكرة المؤقتة في Grav حتى لو لم يكن لها معالجات وسائط
+    CACHE_CHECK_METHOD: طريقة فحص الذاكرة المؤقتة
+    CACHE_CHECK_METHOD_HELP: حدّد الطريقة التي يستخدمها Grav للتحقق مما إذا كانت ملفات الصفحة قد عُدِّلت.
+    CACHE_CLEAR_JOB: تشغيل مهمة المسح المجدوَلة
+    CACHE_CLEAR_JOB_HELP: مع المُجدوِل يمكنك مسح ذاكرة Grav المؤقتة دورياً
+    CACHE_CONTROL: HTTP Cache-Control
+    CACHE_CONTROL_HELP: عيّن قيمة cache-control صالحة مثل `no-cache, no-store, must-revalidate`
+    CACHE_DRIVER: مُشغِّل الذاكرة المؤقتة
+    CACHE_DRIVER_HELP: اختر أي مُشغِّل ذاكرة مؤقتة يجب أن يستخدمه Grav. 'الكشف التلقائي' يحاول العثور على الأفضل لك
+    CACHE_JOB_TYPE: نوع مهمة الذاكرة المؤقتة
+    CACHE_JOB_TYPE_HELP: إما المسح بمجلدات الذاكرة المؤقتة 'القياسية'، أو بـ 'جميع' المجلدات
+    CACHE_PERMS: أذونات الذاكرة المؤقتة
+    CACHE_PERMS_HELP: أذونات مجلد الذاكرة المؤقتة الافتراضية. عادةً 0755 أو 0775 حسب الإعداد
+    CACHE_PREFIX: بادئة الذاكرة المؤقتة
+    CACHE_PREFIX_HELP: معرّف لجزء من مفتاح Grav. لا تغيّره ما لم تعرف ما تفعله.
+    CACHE_PREFIX_PLACEHOLDER: مشتقّ من URL الأساسي (يمكن تجاوزه بإدخال سلسلة عشوائية)
+    CACHE_PURGE_AGE: عمر تطهير الذاكرة المؤقتة
+    CACHE_PURGE_AGE_HELP: تطهير جميع عناصر الذاكرة المؤقتة الأقدم من هذا العمر (بالثواني)
+    CACHE_PURGE_JOB: تشغيل مهمة التطهير المجدوَلة
+    CACHE_PURGE_JOB_HELP: مع المُجدوِل يمكنك مسح مجلدات ذاكرة Doctrine المؤقتة القديمة دورياً عبر هذه المهمة
+    CACHING: التخزين المؤقت
+    CACHING_HELP: مفتاح تشغيل/إيقاف عام لتفعيل/تعطيل التخزين المؤقت في Grav
+    CHARACTERS: حروف
+    CLEAR_IMAGES_BY_DEFAULT: مسح ذاكرة الصور المؤقتة افتراضياً
+    CLEAR_IMAGES_BY_DEFAULT_HELP: افتراضياً، تُمسح الصور المعالَجة لكل مسح للذاكرة المؤقتة، ويمكن تعطيل ذلك
+    CLI_COMPATIBILITY: توافق CLI
+    CLI_COMPATIBILITY_HELP: يضمن استخدام مُشغِّلات الذاكرة المؤقتة غير المتطايرة فقط (file وRedis وMemcache وغيرها)
+    COLLECTIONS: المجموعات
+    COMMAND: الأمر
+    CONFIGURATION: الإعدادات
+    CONTENT: المحتوى
+    CONTENT_EDITOR: محرر المحتوى
+    CONTENT_EDITOR_HELP: يمكن تفضيل محررات مخصصة لتحرير المحتوى
+    CONTENT_FALLBACK_LANGUAGE_HELP: حدّد رمز اللغة الذي تريد تخصيصه.
+    CONTENT_LANGUAGE_FALLBACK: لغات احتياطية
+    CONTENT_LANGUAGE_FALLBACK_HELP: يُرجى إدخال قائمة برموز اللغات. لاحظ أنه إذا حذفت رمز اللغة الافتراضية، فلن يُستخدم.
+    CONTENT_LANGUAGE_FALLBACKS: احتياطي لغة المحتوى
+    CONTENT_LANGUAGE_FALLBACKS_HELP: افتراضياً إذا لم يُترجم المحتوى، سيعرض Grav المحتوى باللغة الافتراضية. استخدم هذا الإعداد لتجاوز ذلك السلوك لكل لغة على حدة.
+    COPY: نسخ
+    CREATE: إنشاء
+    CSS_ASSETS: أصول CSS
+    CSS_MINIFY: تصغير CSS
+    CSS_MINIFY_HELP: تصغير CSS أثناء توصيل خط الأنابيب
+    CSS_MINIFY_WINDOWS_OVERRIDE: تجاوز تصغير CSS لـ Windows
+    CSS_MINIFY_WINDOWS_OVERRIDE_HELP: تجاوز التصغير لمنصات Windows. خطأ افتراضياً بسبب ThreadStackSize
+    CSS_PIPELINE: خط أنابيب CSS
+    CSS_PIPELINE_BEFORE_EXCLUDES: عرض خط أنابيب CSS أولاً
+    CSS_PIPELINE_BEFORE_EXCLUDES_HELP: عرض خط أنابيب CSS قبل أي مراجع CSS أخرى غير مضمَّنة
+    CSS_PIPELINE_HELP: خط أنابيب CSS هو توحيد عدة موارد CSS في ملف واحد
+    CSS_PIPELINE_INCLUDE_EXTERNALS: تضمين الموارد الخارجية في خط أنابيب CSS
+    CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: روابط URL الخارجية أحياناً تحتوي على مراجع ملفات نسبية ولا ينبغي تضمينها في خط الأنابيب
+    CSS_REWRITE: إعادة كتابة CSS
+    CSS_REWRITE_HELP: إعادة كتابة أي روابط URL نسبية في CSS أثناء توصيل خط الأنابيب
+    CURL: cURL
+    CUSTOM_BASE_URL: URL أساسي مخصص
+    CUSTOM_BASE_URL_HELP: "استخدمه إذا أردت إعادة كتابة نطاق الموقع أو استخدام مجلد فرعي مختلف عن الذي يستخدمه Grav. مثال: http://localhost"
+    CUSTOM_REDIRECTS: تحويلات مخصصة
+    CUSTOM_REDIRECTS_HELP: مسارات لإعادة التوجيه إلى صفحات أخرى. استبدال Regex قياسي صالح
+    CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
+    CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+    CUSTOM_ROUTES: مسارات مخصصة
+    CUSTOM_ROUTES_HELP: مسارات لإعداد أسماء بديلة لصفحات أخرى. استبدال Regex قياسي صالح
+    CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+    CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+    DATE: التاريخ
+    DATE_BASED_PUBLISHING: النشر المعتمد على التاريخ
+    DATE_BASED_PUBLISHING_HELP: نشر/إلغاء نشر المنشورات تلقائياً بناءً على تاريخها
+    DATE_HELP: متغير التاريخ يسمح لك بتحديد تاريخ مرتبط بهذه الصفحة.
+    DEBUGGER: المُصحِّح
+    DEBUGGER_CENSORED: حجب البيانات الحساسة
+    DEBUGGER_CENSORED_HELP: "موفّر Clockwork فقط: إذا اخترت نعم، سيتم حجب المعلومات الحساسة المحتملة (معاملات POST وملفات تعريف الارتباط والملفات والإعدادات ومعظم بيانات المصفوفات/الكائنات في رسائل السجل)"
+    DEBUGGER_CLOCKWORK: امتداد متصفح Clockwork
+    DEBUGGER_DEBUGBAR: PHP Debug Bar
+    DEBUGGER_HELP: تفعيل مُصحِّح Grav والإعدادات التالية
+    DEBUGGER_PROVIDER: موفّر المُصحِّح
+    DEBUGGER_PROVIDER_HELP: الافتراضي هو PHP Debug Bar، لكن امتداد متصفح Clockwork يوفر نهجاً أقل تطفّلاً
+    DEFAULT: افتراضي
+    DEFAULT_AUTHOR: المؤلف الافتراضي
+    DEFAULT_AUTHOR_HELP: اسم مؤلف افتراضي، يُستخدم غالباً في السمات أو محتوى الصفحات
+    DEFAULT_CHILD_TYPE: نوع الابن الافتراضي
+    DEFAULT_DATE_FORMAT: صيغة تاريخ الصفحة
+    DEFAULT_DATE_FORMAT_HELP: "صيغة تاريخ الصفحة المستخدمة في Grav. افتراضياً يحاول Grav تخمين صيغة تاريخك، لكن يمكنك تحديد صيغة باستخدام صياغة تاريخ PHP (مثلاً: Y-m-d H:i)"
+    DEFAULT_DATE_FORMAT_PLACEHOLDER: تخمين تلقائي
+    DEFAULT_EMAIL: البريد الإلكتروني الافتراضي
+    DEFAULT_EMAIL_HELP: بريد إلكتروني افتراضي للإشارة إليه في السمات أو الصفحات
+    DEFAULT_IMAGE_QUALITY: جودة الصورة الافتراضية
+    DEFAULT_IMAGE_QUALITY_HELP: جودة الصورة الافتراضية المستخدمة عند إعادة التشكيل أو التخزين المؤقت للصور (85%)
+    DEFAULT_LANG: تجاوز اللغة الافتراضية
+    DEFAULT_LANG_HELP: الافتراضي هو أول لغة مدعومة. يمكن تجاوز هذا بضبط هذا الخيار لكن يجب أن يكون إحدى اللغات المدعومة
+    DEFAULT_ORDER_DIRECTION: اتجاه الترتيب الافتراضي
+    DEFAULT_ORDER_DIRECTION_HELP: اتجاه الصفحات في القائمة
+    DEFAULT_ORDERING: الترتيب الافتراضي
+    DEFAULT_ORDERING_DATE: التاريخ - بناءً على حقل التاريخ في الترويسة
+    DEFAULT_ORDERING_DEFAULT: الافتراضي - بناءً على اسم المجلد
+    DEFAULT_ORDERING_FOLDER: المجلد - بناءً على اسم المجلد بدون البادئة
+    DEFAULT_ORDERING_HELP: ستُعرض الصفحات في القائمة باستخدام هذا الترتيب ما لم يتم تجاوزه
+    DEFAULT_ORDERING_TITLE: العنوان - بناءً على حقل العنوان في الترويسة
+    DEFAULT_PAGE_COUNT: عدد الصفحات الافتراضي
+    DEFAULT_PAGE_COUNT_HELP: الحد الأقصى الافتراضي لعدد الصفحات في القائمة
+    DEFAULT_THEME: السمة الافتراضية
+    DEFAULT_THEME_HELP: حدّد السمة الافتراضية ليستخدمها Grav (الافتراضي هو Antimatter)
+    DEFAULTS: الافتراضيات
+    DELETE: حذف
+    DELIMITER: الفاصل
+    DELIMITER_HELP: فاصل الملخص (الافتراضي '===')
+    DESCENDING: تنازلي
+    DESCRIPTION: الوصف
+    DETAILS: التفاصيل
+    DETECT_CHANGES: اكتشاف التغييرات
+    DETECT_CHANGES_HELP: سيُعيد Twig تجميع ذاكرة Twig المؤقتة تلقائياً إذا اكتشف أي تغييرات في قوالب Twig
+    DISABLED: مُعطَّل
+    DISPLAY_ERRORS: عرض الأخطاء
+    DISPLAY_ERRORS_HELP: عرض صفحة خطأ بأسلوب backtrace كامل
+    DISPLAY_NAME: الاسم المعروض
+    DISPLAY_TEMPLATE: قالب العرض
+    EMAIL: البريد الإلكتروني
+    EMAIL_VALIDATION_MESSAGE: يجب أن يكون عنوان بريد إلكتروني صالحاً
+    ENABLE_AUTO_METADATA: بيانات وصفية تلقائية من Exif
+    ENABLE_AUTO_METADATA_HELP: توليد ملفات بيانات وصفية تلقائياً للصور بمعلومات Exif
+    ENABLE_MEDIA_TIMESTAMP: تفعيل الطوابع الزمنية على الوسائط
+    ENABLE_MEDIA_TIMESTAMP_HELP: يُلحق طابعاً زمنياً بناءً على آخر تاريخ تعديل لكل عنصر وسائط
+    ENABLED: مُفعَّل
+    ENABLED_HELP: تفعيل ملخص الصفحة (يُعيد الملخص نفس محتوى الصفحة)
+    ENABLED_SRI_ON_ASSETS: تفعيل SRI على الأصول
+    ENABLED_SRI_ON_ASSETS_HELP: تفعيل SRI للأصول
+    ENABLED_TIMESTAMPS_ON_ASSETS: تفعيل الطوابع الزمنية على الأصول
+    ENABLED_TIMESTAMPS_ON_ASSETS_HELP: تفعيل الطوابع الزمنية للأصول
+    ERROR_FULL_BACKTRACE: خطأ Backtrace كامل
+    ERROR_HANDLER: معالج الأخطاء
+    ERROR_SIMPLE: خطأ بسيط
+    ERROR_SYSTEM: خطأ النظام
+    ESCAPE_MARKUP: إفلات العلامات
+    ESCAPE_MARKUP_HELP: إفلات علامات العلامات إلى كيانات HTML
+    ETAG: ETag
+    ETAG_HELP: يضبط ترويسة etag للمساعدة في تحديد متى تم تعديل صفحة
+    EVENTS: الأحداث
+    EVENTS_HELP: تفعيل أو تعطيل أحداث معيّنة. تعطيلها يمكن أن يُعطّل الإضافات
+    EXPERIMENTAL: تجريبي
+    EXPIRES: ينتهي في
+    EXPIRES_HELP: يضبط ترويسة expires. القيمة بالثواني.
+    EXTERNAL: صفحة خارجية
+    EXTERNAL_URL: URL خارجي
+    EXTRA_ARGUMENTS: وسائط إضافية
+    FALLBACK_TYPES: أنواع احتياطية مسموحة
+    FALLBACK_TYPES_HELP: أنواع الملفات المسموحة التي يمكن العثور عليها إذا تم الوصول إليها عبر مسار الصفحة. الافتراضي هو أي نوع وسائط مدعوم.
+    FILE: ملف
+    FILE_EXTENSION: امتداد الملف
+    FILE_STREAMS: تدفقات الملفات
+    FLEX: Flex Object (تجريبي)
+    FLEX_CACHING: التخزين المؤقت لـ Flex
+    FLEX_INDEX_CACHE_ENABLED: تفعيل تخزين الفهرس مؤقتاً
+    FLEX_INDEX_CACHE_LIFETIME: عمر ذاكرة الفهرس المؤقتة (ثواني)
+    FLEX_OBJECT_CACHE_ENABLED: تفعيل التخزين المؤقت للكائنات
+    FLEX_OBJECT_CACHE_LIFETIME: عمر ذاكرة الكائنات المؤقتة (ثواني)
+    FLEX_RENDER_CACHE_ENABLED: تفعيل التخزين المؤقت للعرض
+    FLEX_RENDER_CACHE_LIFETIME: عمر ذاكرة العرض المؤقتة (ثواني)
+    FOLDER: مجلد
+    FOLDER_NAME: اسم المجلد
+    FOLDER_NUMERIC_PREFIX: بادئة رقمية للمجلد
+    FOLDER_NUMERIC_PREFIX_HELP: بادئة رقمية توفر ترتيباً يدوياً وتُضمر الظهور
+    FOPEN: fopen
+    FORCE_LOWERCASE_URLS: إجبار روابط URL بأحرف صغيرة
+    FORCE_LOWERCASE_URLS_HELP: افتراضياً يضبط Grav جميع الـ slugs والمسارات لتكون بأحرف صغيرة. بضبط هذا على false، يمكن استخدام slugs ومسارات بأحرف كبيرة
+    FORCE_SSL: إجبار SSL
+    FORCE_SSL_HELP: إجبار SSL عالمياً، إذا كان مُفعَّلاً وتم الوصول إلى الموقع عبر HTTP، يرسل Grav تحويلاً إلى صفحة HTTPS
+    FORMAT: الصيغة
+    FORMAT_HELP: short = استخدام أول ظهور للفاصل أو الحجم؛ long = سيتم تجاهل فاصل الملخص
+    FRONTMATTER_IGNORE_FIELDS: تجاهل حقول frontmatter
+    FRONTMATTER_IGNORE_FIELDS_HELP: قد تحتوي بعض حقول frontmatter على Twig لكن لا ينبغي معالجتها، مثل 'forms'
+    FRONTMATTER_PROCESS_TWIG: معالجة Twig في frontmatter
+    FRONTMATTER_PROCESS_TWIG_HELP: عند التفعيل يمكنك استخدام متغيرات إعداد Twig في frontmatter الصفحة
+    FULL_NAME: الاسم الكامل
+    GENERAL_CONFIG: إعدادات الأصول العامة
+    GPM_METHOD: طريقة الجلب عن بُعد
+    GPM_METHOD_HELP: عند ضبطها على تلقائي، يحدد Grav ما إذا كان fopen متاحاً ويستخدمه، وإلا يرجع إلى cURL. لإجبار استخدام أحدهما بدّل الإعداد.
+    GPM_OFFICIAL_ONLY: GPM الرسمي فقط
+    GPM_OFFICIAL_ONLY_HELP: السماح بالتثبيتات المباشرة من مستودع GPM الرسمي فقط.
+    GPM_RELEASES: إصدارات GPM
+    GPM_RELEASES_HELP: اختر 'Testing' لتثبيت إصدارات تجريبية أو اختبارية
+    GPM_SECTION: قسم GPM
+    GROUP_NAME: اسم المجموعة
+    GROUPS: المجموعات
+    GROUPS_HELP: قائمة المجموعات التي ينتمي إليها المستخدم
+    GZIP_COMPRESSION: ضغط Gzip
+    GZIP_COMPRESSION_HELP: تفعيل ضغط Gzip لصفحة Grav لتحسين الأداء.
+    HIDE_EMPTY_FOLDERS: إخفاء المجلدات الفارغة
+    HIDE_EMPTY_FOLDERS_HELP: إذا لم يحتوِ المجلد على ملف .md، هل يجب إخفاؤه في التنقل وأيضاً جعله غير قابل للتوجيه
+    HIDE_HOME_IN_URLS: إخفاء مسار الرئيسية في روابط URL
+    HIDE_HOME_IN_URLS_HELP: سيضمن أن المسارات الافتراضية لأي صفحات تحت الرئيسية لا تشير إلى المسار العادي للرئيسية
+    HOME_PAGE: الصفحة الرئيسية
+    HOME_PAGE_HELP: الصفحة التي سيستخدمها Grav كصفحة الوصول الافتراضية
+    HTTP_ACCEPT_LANGUAGE: تعيين اللغة من المتصفح
+    HTTP_ACCEPT_LANGUAGE_HELP: يمكنك اختيار محاولة تعيين اللغة بناءً على بطاقة ترويسة `http_accept_language` في المتصفح
+    HTTP_CONNECTIONS: اتصالات HTTP
+    HTTP_CONNECTIONS_HELP: عدد اتصالات HTTP المتزامنة أثناء الطلبات متعددة الإرسال
+    HTTP_HEADERS: ترويسات HTTP
+    HTTP_SECTION: قسم HTTP
+    ICON: أيقونة
+    IGNORE_FILES: تجاهل الملفات
+    IGNORE_FILES_HELP: ملفات محددة لتجاهلها عند معالجة الصفحات
+    IGNORE_FOLDERS: تجاهل المجلدات
+    IGNORE_FOLDERS_HELP: مجلدات محددة لتجاهلها عند معالجة الصفحات
+    IGNORE_HIDDEN: تجاهل المخفي
+    IGNORE_HIDDEN_HELP: تجاهل جميع الملفات والمجلدات التي تبدأ بنقطة
+    IMAGE_ADAPTER: مُحوِّل الصور
+    IMAGE_ADAPTER_HELP: مُحوِّل الصور المستخدم لمعالجة الصور. 'GD' هو الافتراضي، 'Imagick' بديل
+    IMAGE_OPTIONS: خيارات الصورة
+    IMAGES_AUTO_FIX_ORIENTATION: إصلاح الاتجاه تلقائياً
+    IMAGES_AUTO_FIX_ORIENTATION_HELP: إصلاح اتجاه الصورة تلقائياً بناءً على بيانات Exif
+    IMAGES_CLS_ASPECT_RATIO: تفعيل نسبة العرض إلى الارتفاع
+    IMAGES_CLS_ASPECT_RATIO_HELP: متغير CSS اختياري يُطبَّق عبر سمة 'style' يمكن استخدامه في CSS للتصميم المخصص
+    IMAGES_CLS_AUTO_SIZES: تفعيل الأحجام التلقائية
+    IMAGES_CLS_AUTO_SIZES_HELP: إضافة سمات 'width' و'height' تلقائياً إلى الصور لمعالجة CLS
+    IMAGES_CLS_RETINA_SCALE: عامل مقياس Retina
+    IMAGES_CLS_RETINA_SCALE_HELP: سيأخذ الحجم المحسوب ويقسمه على عامل المقياس لعرض صورة بدقة أعلى بحجم بكسل أصغر لمعالجة أفضل لدقات HiDPI
+    IMAGES_CLS_TITLE: تغيّر تخطيط تراكمي (CLS)
+    IMAGES_DEBUG: علامة مائية لتصحيح الصور
+    IMAGES_DEBUG_HELP: عرض تراكب فوق الصور يُظهر عمق بكسل الصورة عند العمل مع Retina مثلاً
+    IMAGES_DECODING: سلوك فك ترميز الصور
+    IMAGES_DECODING_HELP: "تسمح سمة decoding للمتصفح بتأجيل فك ترميز الصور خارج الشاشة حتى يقترب المستخدمون منها بالتمرير. تدعم decoding ثلاث قيم: auto، sync، async"
+    IMAGES_FETCHPRIORITY: خاصية Fetchpriority للصور
+    IMAGES_FETCHPRIORITY_HELP: خاصية fetchpriority في HTML هي سمة تحدد الأولوية لتحميل موارد معيّنة، مثل الصور أو iframes، لتحسين الأداء. القيم الممكنة هي high أو low أو auto.
+    IMAGES_LOADING: سلوك تحميل الصور
+    IMAGES_LOADING_HELP: "تسمح سمة loading للمتصفح بتأجيل تحميل الصور وiframes خارج الشاشة حتى يقترب المستخدمون منها بالتمرير. تدعم loading ثلاث قيم: auto، lazy، eager"
+    IMAGES_SEOFRIENDLY: أسماء صور صديقة لـ SEO
+    IMAGES_SEOFRIENDLY_HELP: عند التفعيل، يُعرض اسم الصورة أولاً، ثم تجزئة أصغر لتعكس العمليات المعالَجة
+    INCLUDE_DEFAULT_LANG: تضمين اللغة الافتراضية
+    INCLUDE_DEFAULT_LANG_FILE_EXTENSION: تضمين اللغة الافتراضية في امتداد الملف
+    INCLUDE_DEFAULT_LANG_HELP: سيُضيف بادئة لجميع روابط URL باللغة الافتراضية باللغة الافتراضية. مثلاً `/en/blog/my-post`
+    INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: عند التفعيل، سيُضيف بادئة اللغة الافتراضية إلى امتداد الملف (مثل `.en.md`). عطّله للحفاظ على استخدام اللغة الافتراضية لامتداد الملف `.md`.
+    INLINE_TYPES: أنواع احتياطية مضمّنة
+    INLINE_TYPES_HELP: قائمة بأنواع الملفات التي يجب عرضها مضمّنة بدلاً من تنزيلها
+    INTL_ENABLED: تكامل وحدة Intl
+    INTL_ENABLED_HELP: استخدام وحدة Intl في PHP وcollate لفرز المجموعات المعتمدة على UTF8
+    ITEMS: العناصر
+    JAVASCRIPT_MINIFY: تصغير JavaScript
+    JAVASCRIPT_MINIFY_HELP: تصغير JS أثناء توصيل خط الأنابيب
+    JAVASCRIPT_MODULE_PIPELINE: خط أنابيب وحدات JavaScript
+    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: عرض خط أنابيب وحدات JS أولاً
+    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: عرض خط أنابيب JS قبل أي مراجع JS أخرى غير مضمَّنة
+    JAVASCRIPT_MODULE_PIPELINE_HELP: خط أنابيب وحدات JS هو توحيد عدة موارد JS في ملف واحد
+    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: تضمين الموارد الخارجية في خط أنابيب وحدات JS
+    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: روابط URL الخارجية أحياناً تحتوي على مراجع ملفات نسبية ولا ينبغي تضمينها في خط الأنابيب
+    JAVASCRIPT_PIPELINE: خط أنابيب JavaScript
+    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: عرض خط أنابيب JS أولاً
+    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: عرض خط أنابيب JS قبل أي مراجع JS أخرى غير مضمَّنة
+    JAVASCRIPT_PIPELINE_HELP: خط أنابيب JS هو توحيد عدة موارد JS في ملف واحد
+    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: تضمين الموارد الخارجية في خط أنابيب JS
+    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: روابط URL الخارجية أحياناً تحتوي على مراجع ملفات نسبية ولا ينبغي تضمينها في خط الأنابيب
+    JS_ASSETS: أصول JavaScript
+    JS_MODULE_ASSETS: أصول وحدات JavaScript
+    LANGUAGE: اللغة
+    LANGUAGE_DEBUG: تصحيح اللغة
+    LANGUAGE_DEBUG_HELP: تفعيل تصحيح اللغات التي تستخدم مرشّح twig ‏|t بإضافة span حولها يمكن تنسيقه للمساعدة في تشخيص المشاكل
+    LANGUAGE_HELP: عيّن اللغة المفضّلة
+    LANGUAGE_TRANSLATIONS: الترجمات
+    LANGUAGE_TRANSLATIONS_HELP: إذا كانت false، تُستخدم مفاتيح الترجمة بدلاً من السلاسل المترجمة. يمكن استخدام هذه الميزة للمساعدة في إصلاح الترجمات السيئة أو العثور على سلاسل إنجليزية مضمّنة.
+    LANGUAGES: اللغات
+    LAST_MODIFIED: آخر تعديل
+    LAST_MODIFIED_HELP: يضبط ترويسة last modified التي يمكن أن تساعد في تحسين التخزين المؤقت للوكلاء والمتصفح
+    LIFETIME: العمر
+    LIFETIME_HELP: يضبط عمر الذاكرة المؤقتة بالثواني. 0 = لانهائي
+    LIST: قائمة
+    LOG_ERRORS: تسجيل الأخطاء
+    LOG_ERRORS_HELP: تسجيل الأخطاء في مجلد /logs
+    LOG_HANDLER: معالج السجلات
+    LOG_HANDLER_HELP: مكان إخراج السجلات
+    LONG: طويل
+    LONG_DATE_FORMAT: صيغة تاريخ عرض طويلة
+    LONG_DATE_FORMAT_HELP: عيّن صيغة التاريخ الطويلة التي يمكن أن تستخدمها السمات
+    MARKDOWN: Markdown
+    MARKDOWN_EXTRA_HELP: تفعيل الدعم الافتراضي لـ Markdown Extra - https://michelf.ca/projects/php-markdown/extra/
+    MEDIA: الوسائط
+    MEDIA_TYPES: أنواع الوسائط
+    MEMCACHED_PORT: منفذ Memcached
+    MEMCACHED_PORT_HELP: منفذ خادم Memcached
+    MEMCACHED_SERVER: خادم Memcached
+    MEMCACHED_SERVER_HELP: عنوان خادم Memcached
+    MENU: قائمة
+    MENU_HELP: السلسلة التي تُستخدم في القائمة. إذا لم تُعيَّن، سيُستخدم العنوان.
+    METADATA: البيانات الوصفية
+    METADATA_HELP: قيم البيانات الوصفية الافتراضية التي ستُعرض على كل صفحة ما لم يتم تجاوزها بواسطة الصفحة
+    METADATA_KEY: المفتاح (مثلاً 'Keywords')
+    METADATA_VALUE: القيمة (مثلاً 'Blog, Grav')
+    MIME_TYPE: نوع MIME
+    MISC_SECTION: قسم متفرقات
+    MODULE: وحدة
+    MODULE_SETUP: إعداد الوحدة
+    MOVE: نقل
+    NAME: الاسم
+    NEVER_CACHE_TWIG: عدم تخزين Twig مؤقتاً أبداً
+    NEVER_CACHE_TWIG_HELP: تخزين المحتوى فقط مؤقتاً ومعالجة Twig في كل مرة للصفحات. يتجاهل إعداد twig_first.
+    "NO": لا
+    OPTIONS: الخيارات
+    ORDER: الترتيب
+    ORDER_BY: الترتيب حسب
+    ORDER_DIGITS: أرقام الترتيب
+    ORDER_DIGITS_HELP: عدد الأرقام المستخدمة كبادئة لأسماء المجلدات للترتيب (مثل `01.about`، `001.about`).
+    ORDERING: الترتيب
+    OVERRIDE_LOCALE: تجاوز اللغة المحلية
+    OVERRIDE_LOCALE_HELP: تجاوز إعداد اللغة المحلية في PHP بناءً على اللغة الحالية
+    OVERRIDES: التجاوزات
+    PAGE: صفحة
+    PAGE_ACCESS: وصول الصفحة
+    PAGE_ACCESS_HELP: المستخدمون الذين لديهم أذونات الوصول التالية يمكنهم الوصول إلى الصفحة.
+    PAGE_AUTHORS: مؤلفو الصفحة
+    PAGE_AUTHORS_HELP: أعضاء مؤلفي الصفحة لديهم وصول بمستوى المالك إلى هذه الصفحة المُعرَّفة في مجموعة صفحة 'Authors' الخاصة.
+    PAGE_FILE: قالب الصفحة
+    PAGE_FILE_HELP: اسم ملف قالب الصفحة، وافتراضياً قالب العرض لهذه الصفحة
+    PAGE_GROUPS: مجموعات الصفحة
+    PAGE_GROUPS_HELP: أعضاء مجموعات الصفحة لديهم وصول خاص إلى هذه الصفحة.
+    PAGE_INHERIT_PERMISSIONS: توارث الأذونات
+    PAGE_INHERIT_PERMISSIONS_HELP: توارث ACL من الصفحة الأب.
+    PAGE_MEDIA: وسائط الصفحة
+    PAGE_SUMMARY: ملخص الصفحة
+    PAGE_TYPES: أنواع الصفحات
+    PAGE_TYPES_HELP: يحدد أنواع الصفحات التي يدعمها Grav والترتيب الذي يحدد أي نوع للاحتياط إليه إذا كان الطلب غامضاً
+    PAGE_VISIBILITY_REQUIRES_ACCESS: ظهور القائمة يتطلب الوصول
+    PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: عيّن على نعم إذا كان يجب عرض الصفحة في القوائم فقط إذا كان المستخدم يستطيع الوصول إليها.
+    PAGES: الصفحات
+    PAGES_FALLBACK_ONLY: الاحتياطي للصفحات فقط
+    PAGES_FALLBACK_ONLY_HELP: فقط 'الاحتياط' للعثور على محتوى الصفحة عبر اللغات المدعومة، السلوك الافتراضي هو عرض أي لغة موجودة إذا كانت اللغة النشطة مفقودة
+    PAGES_TYPE: نوع صفحة الواجهة الأمامية
+    PAGES_TYPE_HELP: هذا الخيار يُفعِّل صفحات Flex Object على الواجهة الأمامية. صفحات Admin Flex تتطلب إضافة Flex Objects
+    PARAMETER_SEPARATOR: فاصل المعاملات
+    PARAMETER_SEPARATOR_HELP: فاصل للمعاملات المرسلة يمكن تغييره لـ Apache على Windows
+    PARENT: الأب
+    PASSWORD: كلمة المرور
+    PASSWORD_VALIDATION_MESSAGE: يجب أن تحتوي كلمة المرور على رقم واحد على الأقل وحرف كبير وحرف صغير، و8 أحرف أو أكثر على الأقل
+    PERMISSIONS: الأذونات
+    PLUGIN_STATUS: حالة الإضافة
+    PREVIEW: معاينة
+    PROCESS: المعالجة
+    PROCESS_HELP: تحكّم في كيفية معالجة الصفحات. يمكن ضبطه لكل صفحة بدلاً من عالمياً
+    PROXY_CERT: مسار شهادة الوكيل
+    PROXY_CERT_HELP: مسار محلي لمجلد يحتوي على ملف pem لشهادة الوكيل
+    PROXY_URL: URL الوكيل
+    PROXY_URL_HELP: أدخل HOST أو IP والمنفذ للوكيل
+    PUBLISH: نشر
+    PUBLISHED: منشور
+    PUBLISHED_DATE: تاريخ النشر
+    PUBLISHED_DATE_HELP: يمكن توفير تاريخ لتشغيل النشر تلقائياً.
+    PUBLISHED_HELP: "افتراضياً، تُنشر الصفحة ما لم تضبط صراحةً published: false أو عبر publish_date في المستقبل، أو unpublish_date في الماضي"
+    PUBLISHING: النشر
+    PWD_REGEX: Regex كلمة المرور
+    PWD_REGEX_HELP: "افتراضياً: يجب أن تحتوي كلمة المرور على رقم واحد على الأقل وحرف كبير وحرف صغير، و8 أحرف أو أكثر على الأقل"
+    PWD_RULES: قواعد كلمة المرور
+    PWD_RULES_HELP: قواعد تحقق مخصصة لكلمة المرور. كل قاعدة لها معرّف وتسمية بشرية وregex يجب أن تطابقه كلمة المرور.
+    PWD_RULES_ID: المعرّف
+    PWD_RULES_LABEL: التسمية
+    PWD_RULES_PATTERN: نمط Regex
+    READ: قراءة
+    READ_FILE_ALLOWED_EXTENSIONS: امتدادات الملفات المسموحة
+    READ_FILE_ALLOWED_EXTENSIONS_HELP: امتدادات الملفات التي ستقرأها <code>read_file()</code> (غير حساسة لحالة الأحرف، بدون نقطة في البداية). الافتراضيات هي تنسيقات النص/المحتوى فقط. إضافة تنسيقات قابلة للتنفيذ أو الإعداد (<code>php</code>، <code>yaml</code>، <code>env</code>، <code>htaccess</code>، …) هو فخ ولا يُنصح به.
+    READ_FILE_ALLOWED_STREAMS: التدفقات المسموحة
+    READ_FILE_ALLOWED_STREAMS_HELP: "مخططات التدفق التي قد تحلّها <code>read_file()</code>. الافتراضيات: <code>theme</code>، <code>themes</code>، <code>page</code>، <code>user-data</code>. إضافة تدفقات واسعة مثل <code>user</code>، <code>system</code>، <code>config</code>، <code>account</code>، <code>log</code> أو <code>cache</code> يكشف الملفات الحساسة ويُثبَّط بشدة."
+    READ_FILE_MAX_SIZE: الحد الأقصى لحجم الملف (بايت)
+    READ_FILE_MAX_SIZE_HELP: الملفات الأكبر من هذا تُرجع <code>false</code> بدلاً من تحميلها في الذاكرة. الافتراضي <code>1048576</code> (1 ميغابايت). عيّن على <code>0</code> لتعطيل حد الحجم.
+    READ_FILE_SECTION_HELP: قيود على دالة Twig ‏<code>read_file()</code>. تُجبر القراءات على المرور عبر روابط URI لتدفقات Grav ويتم التحقق منها بفحص احتواء realpath canonical مقابل جذور التدفقات المحلولة، لذا فإن الاجتياز المُرمَّز أو المربوط بـ symlink يُمنع في طبقة نظام الملفات بغض النظر عن كيفية كتابة المسار.
+    READ_FILE_SECTION_TITLE: Twig read_file()
+    REDIRECT: تحويل الصفحة
+    REDIRECT_DEFAULT_CODE: رمز التحويل الافتراضي
+    REDIRECT_DEFAULT_CODE_HELP: رمز حالة HTTP المستخدم للتحويلات
+    REDIRECT_DEFAULT_ROUTE: تحويل المسار الافتراضي
+    REDIRECT_DEFAULT_ROUTE_HELP: التحويل التلقائي إلى المسار الافتراضي للصفحة
+    REDIRECT_HELP: أدخل مسار صفحة أو URL خارجي ليتم تحويل هذه الصفحة إليه. مثلاً `/some/route` أو `http://somesite.com`
+    REDIRECT_OPTION_301: 301 - نُقل بشكل دائم
+    REDIRECT_OPTION_302: 302 - نُقل بشكل مؤقت
+    REDIRECT_OPTION_303: 303 - انظر آخر
+    REDIRECT_OPTION_DEFAULT_REDIRECT: استخدام رمز التحويل الافتراضي
+    REDIRECT_OPTION_NO_REDIRECT: بلا تحويل
+    REDIRECT_TRAILING_SLASH: تحويل الشرطة المائلة الأخيرة
+    REDIRECT_TRAILING_SLASH_HELP: إجراء تحويل 301 بدلاً من المعالجة الشفافة لروابط URI ذات الشرطة المائلة الأخيرة.
+    REDIRECTS_AND_ROUTES: التحويلات والمسارات
+    REDIS_DATABASE: معرّف قاعدة بيانات Redis
+    REDIS_DATABASE_HELP: معرّف قاعدة بيانات مثيل Redis
+    REDIS_PASSWORD: كلمة مرور/سرّ Redis
+    REDIS_PORT: منفذ Redis
+    REDIS_PORT_HELP: منفذ خادم Redis
+    REDIS_SERVER: خادم Redis
+    REDIS_SERVER_HELP: عنوان خادم Redis
+    REDIS_SOCKET: مقبس Redis
+    REDIS_SOCKET_HELP: مقبس Redis
+    REGULAR: عادي
+    REVERSE_PROXY: وكيل عكسي
+    REVERSE_PROXY_HELP: فعّل هذا إذا كنت خلف وكيل عكسي وتواجه مشاكل مع روابط URL التي تحتوي على منافذ غير صحيحة
+    ROOT: الجذر
+    ROUTABLE: قابل للتوجيه
+    ROUTABLE_HELP: ما إذا كانت هذه الصفحة قابلة للوصول عبر URL
+    ROUTE_ALIASES: أسماء بديلة للمسار
+    ROUTE_CANONICAL: المسار الأساسي
+    ROUTE_DEFAULT: المسار الافتراضي
+    ROUTE_OVERRIDES: تجاوزات المسار
+    SANITIZE_SVG: تعقيم SVG
+    SANITIZE_SVG_HELP: يزيل أي كود XSS من SVG
+    SAVE: حفظ
+    SCHEDULER: المُجدوِل
+    SCHEDULER_EMAIL: البريد الإلكتروني
+    SCHEDULER_EMAIL_HELP: "البريد الإلكتروني لإرسال المخرجات إليه. ملاحظة: يتطلب ضبط ملف المخرجات"
+    SCHEDULER_JOBS: مهام مُجدوِل مخصصة
+    SCHEDULER_OUTPUT: ملف المخرجات
+    SCHEDULER_OUTPUT_HELP: المسار/اسم ملف المخرجات (من جذر تثبيت Grav)
+    SCHEDULER_OUTPUT_TYPE: نوع المخرجات
+    SCHEDULER_OUTPUT_TYPE_HELP: إما الإلحاق بنفس الملف في كل تشغيل، أو الكتابة فوق الملف في كل تشغيل
+    SCHEDULER_RUNAT: تشغيل في
+    SCHEDULER_RUNAT_HELP: "صيغة 'at' المنسّقة بـ Cron. ملاحظة: جميع الأوقات بتوقيت UTC!"
+    SCHEDULER_STATUS: حالة المُجدوِل
+    SECURITY: الأمان
+    SESSION: الجلسة
+    SESSION_DOMAIN: نطاق الجلسة
+    SESSION_DOMAIN_HELP: استخدمه فقط إذا أعدت كتابة نطاق الموقع مثلاً في حاوية Docker.
+    SESSION_ENABLED_HELP: تفعيل دعم الجلسات داخل Grav
+    SESSION_HTTPONLY: HTTP فقط
+    SESSION_HTTPONLY_HELP: إذا true، فهذا يعني أن ملفات تعريف الارتباط يجب أن تُستخدم فقط عبر HTTP، وأن تعديل JavaScript غير مسموح
+    SESSION_INITIALIZE: تهيئة الجلسة
+    SESSION_INITIALIZE_HELP: يجعل Grav يبدأ جلسة. هذه الميزة مطلوبة لجعل أي تفاعل للمستخدم يعمل، مثل تسجيل الدخول والنماذج وغيرها. لا تتأثر إضافة Admin بهذا الإعداد.
+    SESSION_NAME_HELP: معرّف يُستخدم لتكوين اسم ملف تعريف ارتباط الجلسة
+    SESSION_PATH: مسار الجلسة
+    SESSION_PATH_HELP: استخدمه فقط إذا أعدت كتابة مسار الموقع مثلاً في حاوية Docker.
+    SESSION_SAMESITE: سمة SameSite للجلسة
+    SESSION_SAMESITE_HELP: Lax|Strict|None. انظر https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite لمزيد من المعلومات
+    SESSION_SECURE: آمن
+    SESSION_SECURE_HELP: "إذا true، فهذا يعني أن الاتصال لملف تعريف الارتباط هذا يجب أن يكون عبر نقل مشفّر. تحذير: فعّل هذا فقط على المواقع التي تعمل حصرياً على HTTPS"
+    SESSION_SECURE_HTTPS: آمن (HTTPS)
+    SESSION_SECURE_HTTPS_HELP: ضبط جلسة آمنة على HTTPS وليس على HTTP. لا تأثير له إذا كان لديك إعداد آمن أعلاه مضبوطاً على true. عيّن على false إذا كان موقعك يتنقل بين HTTP وHTTPS.
+    SESSION_SPLIT: تقسيم الجلسة
+    SESSION_SPLIT_HELP: جلسات مقسّمة مستقلة بين الموقع والإضافات الأخرى (مثل admin)
+    SESSION_UNIQUENESS: سلسلة فريدة
+    SESSION_UNIQUENESS_HELP: تجزئة MD5 لمسار جذر Grav، أي `GRAV_ROOT` (الافتراضي) أو معتمدة على سلسلة `security.salt` العشوائية.
+    SETTINGS: الإعدادات
+    SHORT: قصير
+    SHORT_DATE_FORMAT: صيغة تاريخ عرض قصيرة
+    SHORT_DATE_FORMAT_HELP: عيّن صيغة التاريخ القصيرة التي يمكن أن تستخدمها السمات
+    SHUTDOWN_CLOSE_CONNECTION: إغلاق الاتصال عند الإيقاف
+    SHUTDOWN_CLOSE_CONNECTION_HELP: إغلاق الاتصال قبل استدعاء onShutdown(). false للتصحيح
+    SITE: الموقع
+    SITE_ACCESS: وصول الموقع
+    SITE_DEFAULT_LANG: اللغة الافتراضية
+    SITE_DEFAULT_LANG_HELP: اللغة الافتراضية التي ستستخدمها بطاقة <HTML> في السمة
+    SITE_DEFAULT_LANG_PLACEHOLDER: اللغة الافتراضية التي ستستخدمها بطاقة <HTML> في السمة
+    SITE_TITLE: عنوان الموقع
+    SITE_TITLE_HELP: العنوان الافتراضي لموقعك، يُستخدم غالباً في السمات
+    SITE_TITLE_PLACEHOLDER: عنوان للموقع بأكمله
+    SLUG: Slug
+    SLUG_HELP: متغير slug يسمح لك بضبط جزء URL الخاص بالصفحة تحديداً
+    SLUG_VALIDATE_MESSAGE: يجب أن يحتوي الـ slug فقط على أحرف وأرقام صغيرة وشرطات
+    SORTABLE_PAGES: "صفحات قابلة للفرز:"
+    SSL_ENABLE_PROXY: تفعيل خادم الوكيل
+    SSL_VERIFY_HOST: التحقق من المضيف عن بُعد
+    SSL_VERIFY_HOST_HELP: قد يفشل البعض في التحقق من شهادات SSL
+    SSL_VERIFY_PEER: التحقق من النظير عن بُعد
+    SSL_VERIFY_PEER_HELP: قد يفشل البعض في التحقق من شهادات SSL
+    STABLE: مستقر
+    STRICT_BLUEPRINT_COMPAT: توافق Blueprint
+    STRICT_BLUEPRINT_COMPAT_HELP: يُفعِّل الدعم الصارم المتوافق مع الإصدارات السابقة لـ blueprints. إذا تم تعطيله، يجعل السلوك الجديد التحقق من النموذج يفشل إذا كانت هناك بيانات إضافية غير محددة في الـ blueprint.
+    STRICT_TWIG_COMPAT: توافق Twig
+    STRICT_TWIG_COMPAT_HELP: يُفعِّل إعداد autoescape المُهمَل في Twig. عند التعطيل، يكون مرشّح |raw مطلوباً لإخراج HTML لأن Twig سيُفلت الإخراج تلقائياً
+    STRICT_YAML_COMPAT: توافق YAML
+    STRICT_YAML_COMPAT_HELP: يرجع إلى محلل YAML في Symfony 2.4 إذا فشل المحلل الأصلي أو محلل 3.4
+    SUMMARY_SIZE: حجم الملخص
+    SUMMARY_SIZE_HELP: عدد أحرف الصفحة لاستخدامها كملخص للمحتوى
+    SUPPORTED: مدعوم
+    SUPPORTED_HELP: قائمة مفصولة بفواصل من رموز اللغات المؤلفة من حرفين (مثلاً 'en,fr,de')
+    SYSLOG_FACILITY: مرفق Syslog
+    SYSLOG_FACILITY_HELP: مرفق Syslog للمخرجات
+    SYSLOG_TAG: بطاقة Syslog
+    SYSLOG_TAG_HELP: بطاقة Syslog للمخرجات
+    SYSTEM: النظام
+    TAXONOMIES: التصنيفات
+    TAXONOMY: التصنيف
+    TAXONOMY_TYPES: أنواع التصنيف
+    TAXONOMY_TYPES_HELP: يجب تعريف أنواع التصنيف هنا إذا كنت تريد استخدامها في الصفحات
+    TESTING: اختباري
+    THUMB: مصغّر
+    TIMEOUT: المهلة
+    TIMEOUT_HELP: يضبط مهلة الجلسة بالثواني
+    TIMEZONE: المنطقة الزمنية
+    TIMEZONE_HELP: تجاوز المنطقة الزمنية الافتراضية للخادم
+    TITLE: العنوان
+    TRANSLATIONS_FALLBACK: احتياطي الترجمات
+    TRANSLATIONS_FALLBACK_HELP: الاحتياط عبر الترجمات المدعومة إذا لم تكن اللغة النشطة موجودة
+    TWIG_CACHING: التخزين المؤقت لـ Twig
+    TWIG_CACHING_HELP: تحكّم في آلية التخزين المؤقت لـ Twig. اتركه مُفعَّلاً للحصول على أفضل أداء.
+    TWIG_DEBUG: تصحيح Twig
+    TWIG_DEBUG_HELP: يسمح بخيار عدم تحميل امتداد مُصحِّح Twig
+    TWIG_FIRST: معالجة Twig أولاً
+    TWIG_FIRST_HELP: إذا فعّلت معالجة صفحة Twig، يمكنك إعداد Twig للمعالجة قبل أو بعد Markdown
+    TWIG_SANDBOX: صندوق رمل Twig
+    TWIG_SANDBOX_ADMIN_HINT: تعليق تلميح للمسؤول
+    TWIG_SANDBOX_ALLOWED_FILTERS: مرشّحات مسموحة
+    TWIG_SANDBOX_ALLOWED_FILTERS_HELP: مرشّحات Twig التي يمكن لمحتوى الصفحة تطبيقها.
+    TWIG_SANDBOX_ALLOWED_FUNCTIONS: دوال مسموحة
+    TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: دوال Twig التي يمكن لمحتوى الصفحة استدعاؤها.
+    TWIG_SANDBOX_ALLOWED_METHODS: أساليب مسموحة
+    TWIG_SANDBOX_ALLOWED_METHODS_HELP: قوائم بأساليب الكائنات لكل فئة التي يمكن لمحتوى الصفحة استدعاؤها.
+    TWIG_SANDBOX_ALLOWED_PROPERTIES: خصائص مسموحة
+    TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: قوائم بخصائص الكائنات لكل فئة التي يمكن لمحتوى الصفحة قراءتها.
+    TWIG_SANDBOX_ALLOWED_TAGS: علامات مسموحة
+    TWIG_SANDBOX_ALLOWED_TAGS_HELP: علامات Twig التي يمكن لمحتوى الصفحة استخدامها. أضف فقط العلامات التي تريد كشف تأثيراتها للمؤلفين.
+    TWIG_SANDBOX_CLASS: الفئة
+    TWIG_SANDBOX_ENABLED: تفعيل صندوق رمل Twig
+    TWIG_SANDBOX_HELP: قائمة سماح بعلامات Twig والمرشّحات والدوال والأساليب والخصائص التي يمكن لقوالب محتوى الصفحة استخدامها. يُعرَض المحتوى الذي يكتبه المحرر عبر هذا الصندوق الرملي حتى لا يستطيع مؤلف مخترَق أو خطأ حقن قالب الوصول إلى الحاوية الأوسع.
+    TWIG_SANDBOX_LOGGING: تسجيل الانتهاكات
+    TWIG_SANDBOX_LOGGING_HELP: كتابة كل تعبير محظور إلى <code>logs/twig-sandbox.log</code>. مفيد أثناء ضبط قائمة السماح؛ عطّله في الإنتاج للحفاظ على هدوء السجلات.
+    TWIG_SANDBOX_METHODS: الأساليب
+    TWIG_SANDBOX_PROPERTIES: الخصائص
+    TWIG_TEMPLATING: قوالب Twig
+    TYPE: النوع
+    UNPUBLISHED_DATE: تاريخ إلغاء النشر
+    UNPUBLISHED_DATE_HELP: يمكن توفير تاريخ لتشغيل إلغاء النشر تلقائياً.
+    UPDATE: تحديث
+    UPLOADS_DANGEROUS_EXTENSIONS: امتدادات خطيرة
+    UPLOADS_DANGEROUS_EXTENSIONS_HELP: منع هذه الامتدادات من الرفع بغض النظر عن أنواع MIME المقبولة
+    UPLOADS_SECURITY: أمان الرفع
+    USE_GLOBAL: استخدام عام
+    USERNAME: اسم المستخدم
+    USERNAME_HELP: يجب أن يكون اسم المستخدم بين 3 و16 حرفاً، يتضمن أحرفاً صغيرة وأرقاماً وشرطات سفلية وشرطات. الأحرف الكبيرة والمسافات والأحرف الخاصة غير مسموحة
+    USERNAME_REGEX: Regex اسم المستخدم
+    USERNAME_REGEX_HELP: "افتراضياً: فقط أحرف صغيرة وأرقام وشرطات وشرطات سفلية. من 3 إلى 16 حرفاً"
+    VALID_LINK_ATTRIBUTES: سمات روابط صالحة
+    VALID_LINK_ATTRIBUTES_HELP: السمات التي ستُضاف تلقائياً إلى عنصر HTML للوسائط
+    VARY_ACCEPT_ENCODING: ‏Vary accept encoding
+    VARY_ACCEPT_ENCODING_HELP: "يضبط ترويسة `Vary: Accept Encoding` للمساعدة في التخزين المؤقت للوكيل وCDN"
+    VERSION: الإصدار
+    VISIBLE: ظاهر
+    VISIBLE_HELP: يحدد ما إذا كانت الصفحة ظاهرة في التنقل.
+    WRAPPED_SITE: موقع مغلَّف
+    WRAPPED_SITE_HELP: للسمات/الإضافات لمعرفة ما إذا كان Grav مغلَّفاً بواسطة منصة أخرى
+    XSS_DANGEROUS_TAGS: تصفية علامات HTML الخطيرة
+    XSS_DANGEROUS_TAGS_LIST: قائمة علامات HTML الخطيرة
+    XSS_HTML_INLINE_STYLES: تصفية أنماط HTML المضمّنة
+    XSS_INVALID_PROTOCOLS: تصفية البروتوكولات غير الصالحة
+    XSS_INVALID_PROTOCOLS_LIST: قائمة البروتوكولات غير الصالحة
+    XSS_MOZ_BINDINGS: تصفية Moz bindings
+    XSS_ON_EVENTS: تصفية On-events
+    XSS_SECURITY: أمان XSS للمحتوى
+    XSS_WHITELIST_PERMISSIONS: أذونات قائمة السماح
+    XSS_WHITELIST_PERMISSIONS_HELP: المستخدمون الذين لديهم هذه الأذونات سيتخطّون قواعد XSS عند حفظ المحتوى
+    "YES": نعم
+    YUBIKEY_HELP: أدخل YubiKey في حاسوبك وانقر على الزر لتوليد OTP. أول 12 حرفاً هي معرّف العميل وستُحفظ.
+    YUBIKEY_ID: معرّف YubiKey
+    CACHE_CHECK_INTERVAL: فترة فحص الذاكرة المؤقتة
+    CACHE_CHECK_INTERVAL_HELP: عدد الثواني لإعادة استخدام تجزئة نظام الملفات المحسوبة سابقاً قبل الفحص مرة أخرى. صفر يُبقي الفحوص الحالية لكل طلب.
+    HTTP_X_FORWARDED_HOST_ENABLED: HTTP_X_FORWARDED_HOST مُفعَّل
+    HTTP_X_FORWARDED_HOST_HELP: "الثقة في ترويسة الطلب <code>X-Forwarded-Host</code>. فعّل فقط عندما يكون الموقع فعلياً خلف وكيل عكسي يضبط ويستبدل هذه الترويسة؛ وإلا يمكن للعملاء تزييف المضيف الذي يراه Grav."
+    HTTP_X_FORWARDED_IP_ENABLED: HTTP_X_FORWARDED IP مُفعَّل
+    HTTP_X_FORWARDED_IP_HELP: "الثقة في ترويسات <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> عند حلّ IP العميل. فعّل فقط عندما يكون الموقع فعلياً خلف وكيل عكسي يضبط ويستبدل هذه الترويسات؛ وإلا يمكن للعملاء تزييف IP الخاص بهم وتجاوز تحديد المعدل وحظر IP وتسجيل التدقيق."
+    HTTP_X_FORWARDED_PORT_ENABLED: HTTP_X_FORWARDED_PORT مُفعَّل
+    HTTP_X_FORWARDED_PORT_HELP: "الثقة في ترويسة الطلب <code>X-Forwarded-Port</code>. فعّل فقط عندما يكون الموقع فعلياً خلف وكيل عكسي يضبط ويستبدل هذه الترويسة."
+    HTTP_X_FORWARDED_PROTO_ENABLED: HTTP_X_FORWARDED_PROTO مُفعَّل
+    HTTP_X_FORWARDED_PROTO_HELP: "الثقة في ترويسة الطلب <code>X-Forwarded-Proto</code> (تُستخدم عادةً للكشف عن HTTPS خلف وكيل ينهي TLS). فعّل فقط عندما يكون الموقع فعلياً خلف وكيل عكسي يضبط ويستبدل هذه الترويسة."
+    HTTP_CLIENT_IP_ENABLED: HTTP_CLIENT_IP مُفعَّل
+    HTTP_CLIENT_IP_HELP: "الثقة في ترويسة الطلب <code>Client-IP</code> عند حلّ IP العميل. نادر؛ يُضبط عادةً فقط بواسطة موازنات تحميل معيّنة. اتركه معطّلاً ما لم تعرف أن وكيلك يضبط ويستبدل هذه الترويسة."
+    HTTP_CF_CONNECTING_IP_ENABLED: HTTP_CF_CONNECTING_IP مُفعَّل
+    HTTP_CF_CONNECTING_IP_HELP: "الثقة في ترويسة الطلب <code>CF-Connecting-IP</code> عند حلّ IP العميل. فعّل عندما يكون الموقع فعلياً خلف Cloudflare؛ وإلا يمكن للعملاء تزييف IP الخاص بهم. للأمان الكامل، قيّد أيضاً وصول الأصل إلى نطاقات IP الخاصة بـ Cloudflare في خادم الويب."
+    MARKDOWN_EXTRA: Markdown extra
+    ORDER_DIR_HELP: '"desc" أو "asc" قيم صالحة'
+    TWIG_3_COMPATIBILITY: توافق Twig 3
+    TWIG_3_COMPATIBILITY_HELP: "تفعيل إعادة الكتابة التلقائية لصياغة Twig 1/2 القديمة التي تتعطّل في Twig 3 (مثل حُرّاس <code>for ... if ...</code>)."
+    TWIG_SANDBOX_ADMIN_HINT_HELP: "عندما يحجب الصندوق الرملي تعبيراً، أضف تعليق HTML من سطر واحد إلى الصفحة المعروضة حتى يرى المسؤولون الأعلى الذين يعرضون المصدر أن شيئاً ما تمت تصفيته. الزوار وغير المسؤولين لا يرون شيئاً."
+    TWIG_SANDBOX_ENABLED_HELP: "يعرض محتوى الصفحة الذي كتبه المحرر داخل SecurityPolicy لـ Twig معتمدة على قائمة سماح. <strong>التعطيل يزيل الحماية الوحيدة ضد هجمات حقن القوالب عبر محتوى الصفحة</strong>: أي حساب لديه وصول بمستوى محرر (أو أي شخص يخترق نظام الملفات) يمكنه تنفيذ PHP عشوائي عبر Twig. عطّله فقط إذا احتاج الموقع فعلاً إلى وصول الحاوية من محتوى الصفحة وكنت تثق تماماً في كل مؤلف."
+    ACCOUNTS_CONFIGURATION: إعدادات الحسابات
+    COMPATIBILITY: التوافق
+    FLEX_ADMIN_EVENT_COMPAT: توافق أحداث الإدارة
+    FLEX_ADMIN_EVENT_COMPAT_HELP: يُفعِّل أحداث onAdminSave وonAdminAfterSave للإضافات.
+    ID: المعرّف
+    PAGE_PERMISSIONS: أذونات الصفحة
+    PAGES_CONFIGURATION: إعدادات الصفحات
+    ROUTE: المسار
+    SCHEDULER_ACTIVE_TRIGGERS: المُحفِّزات النشطة
+    SCHEDULER_ADVANCED_FEATURES: ميزات متقدمة
+    SCHEDULER_CONCURRENT_WORKERS: العمّال المتزامنون
+    SCHEDULER_CONCURRENT_WORKERS_HELP: عدد المهام التي يمكن تشغيلها في وقت واحد (1 = تسلسلي).
+    SCHEDULER_HEALTH_CHECK_CONFIG: إعدادات فحص الصحة
+    SCHEDULER_HEALTH_CHECK_ENABLED: تفعيل فحص الصحة
+    SCHEDULER_HEALTH_CHECK_ENABLED_HELP: توفير نقطة نهاية لحالة الصحة للمراقبة.
+    SCHEDULER_HEALTH_CHECK_PATH: مسار فحص الصحة
+    SCHEDULER_HEALTH_CHECK_PATH_HELP: مسار URL لنقطة نهاية فحص الصحة.
+    SCHEDULER_HEALTH_STATUS: حالة الصحة
+    SCHEDULER_HISTORY: سجل المهام
+    SCHEDULER_HISTORY_ENABLED: تفعيل سجل المهام
+    SCHEDULER_HISTORY_ENABLED_HELP: تتبّع سجل التنفيذ لجميع المهام.
+    SCHEDULER_HISTORY_RETENTION: الاحتفاظ بالسجل (أيام)
+    SCHEDULER_HISTORY_RETENTION_HELP: مدة الاحتفاظ بسجل المهام.
+    SCHEDULER_QUEUE_CONFIG: إعدادات الطابور
+    SCHEDULER_QUEUE_MAX_SIZE: الحد الأقصى لحجم الطابور
+    SCHEDULER_QUEUE_MAX_SIZE_HELP: الحد الأقصى لعدد المهام التي يمكن وضعها في الطابور.
+    SCHEDULER_QUEUE_PATH: مسار تخزين الطابور
+    SCHEDULER_QUEUE_PATH_HELP: مكان تخزين المهام الموضوعة في الطابور.
+    SCHEDULER_RETRY_BACKOFF: استراتيجية تأجيل إعادة المحاولة
+    SCHEDULER_RETRY_BACKOFF_HELP: كيفية حساب التأخير بين المحاولات.
+    SCHEDULER_RETRY_CONFIG: إعدادات إعادة المحاولة
+    SCHEDULER_RETRY_ENABLED: تفعيل إعادة محاولة المهام
+    SCHEDULER_RETRY_ENABLED_HELP: إعادة محاولة المهام الفاشلة تلقائياً.
+    SCHEDULER_RETRY_MAX_ATTEMPTS: الحد الأقصى لمحاولات الإعادة
+    SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: الحد الأقصى لعدد مرات إعادة محاولة مهمة فاشلة.
+    SCHEDULER_USAGE_EXAMPLES: أمثلة الاستخدام
+    SCHEDULER_WEBHOOK_CONFIG: إعدادات Webhook
+    SCHEDULER_WEBHOOK_ENABLED: تفعيل مُحفِّزات Webhook
+    SCHEDULER_WEBHOOK_ENABLED_HELP: السماح بتشغيل المُجدوِل عبر webhook عبر HTTP.
+    SCHEDULER_WEBHOOK_PATH: مسار Webhook
+    SCHEDULER_WEBHOOK_PATH_HELP: مسار URL لنقطة نهاية webhook.
+    SCHEDULER_WEBHOOK_TOKEN: رمز أمان Webhook
+    SCHEDULER_WEBHOOK_TOKEN_HELP: رمز سرّي لمصادقة طلبات webhook. احفظ هذا السرّ!
+    SCHEDULER_WORKER_CONFIG: إعدادات العمّال
+    TRANSLATIONS: الترجمات
+    USER_ACCOUNTS: حسابات المستخدمين
+    TOASTS:
+      CONFIG_SAVED: "تم حفظ إعدادات {name}"
+      CONFIG_MODIFIED_ELSEWHERE: تم تعديل الإعدادات من مكان آخر — أعد التحميل لرؤية أحدث نسخة
+      SAVE_FAILED: فشل الحفظ
+      DEPENDENCY_INSTALLED: "تم تثبيت الإضافة '{slug}' (تبعية)"
+      PACKAGE_UPDATED: "تم تحديث {name}"
+      PACKAGE_UPDATE_FAILED: "فشل تحديث {name}: {detail}"
+      PACKAGE_REMOVED: "تم إزالة {name}"
+      PACKAGE_REMOVE_FAILED: "فشلت إزالة {name}"
+      PACKAGES_UPDATED: "{n, plural, zero{لم يتم تحديث أي حزمة} one{تم تحديث حزمة واحدة} two{تم تحديث حزمتين} few{تم تحديث # حزم} many{تم تحديث # حزمة} other{تم تحديث # حزمة}}"
+      UPDATE_FAILED: "فشل التحديث: {detail}"
+      PLUGIN_ENABLED: "تم تفعيل {name}"
+      PLUGIN_DISABLED: "تم تعطيل {name}"
+      PLUGIN_ENABLE_FAILED: "فشل تفعيل {name}: {detail}"
+      PLUGIN_DISABLE_FAILED: "فشل تعطيل {name}: {detail}"
+      PLUGIN_LOCKOUT_BLOCK: "لا يمكن تعطيل {name} من admin-next — سيؤدي ذلك إلى إقفال حسابك."
+      PLUGIN_REQUIRED_BLOCK: "لا يمكن إزالة {name} — فهو مطلوب من قِبل admin-next."
+      THEME_ACTIVATED: "{name} هو الآن السمة المفعّلة"
+      THEME_ACTIVATE_FAILED: "فشل تفعيل {name}"
+      THEME_REMOVE_BLOCK: "لا يمكن إزالة {name}."
+      ACTIVE_THEME_REMOVE_BLOCK: "لا يمكن إزالة السمة المفعّلة. بدّل إلى سمة أخرى أولاً."
+      GPM_REFRESHED: "{n, plural, =0{تم تحديث GPM — لا توجد تحديثات} one{تم تحديث GPM — يتوفر تحديث واحد} two{تم تحديث GPM — يتوفر تحديثان} few{تم تحديث GPM — يتوفر # تحديثات} many{تم تحديث GPM — يتوفر # تحديثًا} other{تم تحديث GPM — يتوفر # تحديث}}"
+      GRAV_UPGRADED: "تمت ترقية Grav إلى v{version}"
+      BACKUP_CREATED: "تم إنشاء النسخة الاحتياطية ({size})"
+      CACHE_CLEARED: "تم مسح الذاكرة المؤقتة ({scope})"
+      FILES_UPLOADED: "{n, plural, zero{لم يتم رفع أي ملف} one{تم رفع ملف واحد} two{تم رفع ملفين} few{تم رفع # ملفات} many{تم رفع # ملفًا} other{تم رفع # ملف}}"
+      FOLDER_CREATED: 'تم إنشاء المجلد "{name}"'
+      FILE_DELETED: "تم حذف {name}"
+      FILE_DELETE_FAILED: "فشل حذف {name}"
+      FILES_DELETE_FAILED: "{n, plural, zero{لم يفشل حذف أي ملف} one{فشل حذف ملف واحد} two{فشل حذف ملفين} few{فشل حذف # ملفات} many{فشل حذف # ملفًا} other{فشل حذف # ملف}}"
+      COPIED: "تم نسخ {label}"
+      COPY_FAILED: "فشل النسخ: {detail}"
+      SAVED_AS_LANGUAGE: "تم الحفظ كـ {language}"
+      TRANSLATION_CREATED: "تم إنشاء ترجمة {language}"
+      TRANSLATION_RESET: "تمت إعادة تعيين {target} من {source}"
+      SAVED: تم الحفظ
+      ITEM_SAVED: "تم حفظ {name}"
+      ITEM_DELETED: 'تم حذف "{name}"'
+      ITEM_DELETE_FAILED: 'فشل حذف "{name}"'
+      ITEM_MOVED: 'تم نقل "{name}"'
+      ITEM_REORDERED: 'تمت إعادة ترتيب "{name}"'
+      USER_CREATED: "تم إنشاء المستخدم '{username}'"
+      USER_SAVED: "تم حفظ المستخدم '{username}'"
+      USER_DELETED: "تم حذف المستخدم '{username}'"
+      USER_DELETE_FAILED: "فشل حذف المستخدم '{username}'"
+      API_KEY_REVOKED: 'تم إبطال مفتاح API "{name}"'
+      PLUGIN_INSTALLED: "تم تثبيت الإضافة '{name}'"
+      THEME_INSTALLED: "تم تثبيت السمة '{name}'"
+      INSTALL_FAILED: "فشل تثبيت '{slug}': {detail}"
+      TOTP_CODE_REQUIRED: أدخل الرمز المكوّن من 6 أرقام من تطبيق المصادقة
+      SAVE_FORM_FAILED: "فشل حفظ {form}"
+      FORM_LABEL:
+        FORM: النموذج
+        CONFIGURATION: الإعدادات
+        PLUGIN: الإضافة
+        PLUGIN_PAGE: صفحة الإضافة
+        FLEX_OBJECT: كائن Flex
+        USER: المستخدم
+        THEME: السمة
+        PAGE: الصفحة
