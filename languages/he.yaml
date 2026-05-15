@@ -1,1643 +1,898 @@
-# תרגומי ממשק המשתמש של Admin2 (admin-next).
-#
-# כל המפתחות המיוחדים ל-admin-next נמצאים תחת בלוק השורש ICU. הערכים יכולים
-# להשתמש בתחביר ICU MessageFormat עבור placeholders, ריבוי וצורות בחירה —
-# admin-next מעביר ערכי ICU.* דרך @formatjs/intl-messageformat.
-#
-# מפתחות רגילים (לא ICU) ללא קידומת ICU מובילה מחפשים על ידי
-# admin-next כ-fallback למחרוזות מהדור הקודם (וממשיכים להיות
-# הדבר היחיד ש-admin הישן / Grav 1 רואים).
-#
-# מוסכמה: שמור על קיבוץ מפתחות לפי מקטעים ומסודרים אלפביתית בתוך
-# מקטע כאשר זה סביר. השתמש ב-ADMIN_NEXT.* עבור מפתחות ספציפיים
-# לממשק החדש.
-
 ICU:
-  ADMIN_NEXT:
-    ADD_PAGE: הוסף עמוד
-    CANCEL: ביטול
-    CLEAR_SEARCH: נקה חיפוש
-    CLOSE: סגור
-    COLLAPSE_SIDEBAR: כווץ סרגל צד
-    EXPAND_SIDEBAR: הרחב סרגל צד
-    CONFIRM_DELETE: 'למחוק את "{title}" ב-{route}?'
-    DELETE: מחק
-    DONE: בוצע
-    LOADING: טוען...
-    NO_CHANGES: אין שינויים לשמירה
-    SAVE: שמור
-    SAVING: שומר...
-    SEARCH: חיפוש
-    SIGN_OUT: התנתקות
-    TOGGLE_DARK_MODE: החלף מצב כהה
-    TOGGLE_MENU: החלף תפריט
-    UNSAVED_CHANGES: שינויים שלא נשמרו
-    DASHBOARD:
-      TITLE: לוח בקרה
-      CUSTOMIZE: התאמה אישית
-      CUSTOMIZE_TITLE: התאמת לוח הבקרה
-      EDIT_HINT: מצב התאמה אישית — גרור, שנה גודל, הסתר ווידג׳טים, ואז שמור.
-      PRESETS: ערכות מוכנות
-      SAVE_SITE_DEFAULT: שמור כברירת מחדל של האתר
-      RESET_LAYOUT: אפס את הפריסה שלי
-      ADD_WIDGET: הוסף ווידג׳ט
-      HIDE_WIDGET: הסתר ווידג׳ט
-      PICKER_TITLE: הוסף ווידג׳ט
-      PICKER_SUBTITLE: בחר ווידג׳ט להוספה חזרה ללוח הבקרה שלך.
-      PICKER_EMPTY: כל הווידג׳טים הזמינים כבר נמצאים בלוח הבקרה שלך.
-      EMPTY: לוח הבקרה שלך ריק
-      EMPTY_HINT: לחץ על סמל העיפרון למעלה כדי להוסיף ווידג׳טים
-      LAYOUT_SAVED: פריסת לוח הבקרה נשמרה
-      SITE_LAYOUT_SAVED: ברירת המחדל של האתר נשמרה
-      LAYOUT_RESET: הפריסה אופסה לברירת המחדל
-      WIDGETS:
-        STATS: סטטיסטיקות אתר
-        POPULARITY: צפיות בעמודים
-        SYSTEM_HEALTH: בריאות המערכת
-        RECENT_PAGES: עמודים אחרונים
-        TOP_PAGES: עמודים מובילים
-        BACKUPS: גיבויים
-        NOTIFICATIONS: התראות
-        NEWS_FEED: עדכוני חדשות
-      PRESET_DEFAULT: ברירת מחדל
-      PRESET_DEFAULT_DESC: פריסה מומלצת על ידי השרת — מנקה את ההתאמות האישיות שלך.
-      PRESET_MINIMAL: מינימלי
-      PRESET_MINIMAL_DESC: סטטיסטיקות ועמודים אחרונים בלבד.
-      PRESET_COMPACT: קומפקטי
-      PRESET_COMPACT_DESC: כל הווידג׳טים בגודל הקטן ביותר שכל אחד תומך בו.
-    PAGES:
-      TITLE: עמודים
-      SEARCH_PLACEHOLDER: חיפוש עמודים...
-      NO_PAGES: לא נמצאו עמודים
-      NO_SEARCH_RESULTS: אין עמודים התואמים לחיפוש שלך
-      LOADING: טוען עמודים...
-      REORDER_MOVE: סדר מחדש / העבר
-      REORDER_SAME_PARENT: ניתן לסדר מחדש רק עמודים תחת אותו הורה. השתמש בתצוגת עץ להעברות בין הורים.
-      MOVED: '"{title}" הועבר'
-      REORDERED: '"{title}" סודר מחדש'
-      MOVE_FAILED: נכשל בהעברת העמוד
-      REORDER_FAILED: סידור מחדש נכשל
-      DELETED: '"{title}" נמחק'
-      DELETE_FAILED: נכשל במחיקת העמוד
-      SAVED: העמוד נשמר בהצלחה
-      SAVE_FAILED: נכשל בשמירת העמוד
-      VIEW_TREE: עץ
-      VIEW_LIST: רשימה
-      VIEW_COLUMNS: עמודות
-      HEADER_TITLE: כותרת
-      HEADER_TEMPLATE: תבנית
-      HEADER_STATUS: סטטוס
-      HEADER_MODIFIED: שונה
-      HEADER_PARENT: הורה
-      PUBLISHED: פורסם
-      DRAFT: טיוטה
-      SORT_ORDER: סדר
-      SORT_TITLE_AZ: כותרת א-ת
-      SORT_TITLE_ZA: כותרת ת-א
-      SORT_NEWEST: חדש ביותר
-      SORT_OLDEST: ישן ביותר
-      SORT_DATE_NEWEST: תאריך (חדש ביותר)
-      RAW_HEADER: כותרת עמוד גולמית (JSON)
-      PAGE_INFO: מידע על העמוד
-      EDIT_PAGE: ערוך עמוד
-      MODE_NORMAL: רגיל
-      MODE_EXPERT: מומחה
-      FRONTMATTER: Frontmatter
-      INFO_PUBLISHED: פורסם
-      INFO_VISIBLE: גלוי בניווט
-      INFO_ROUTABLE: ניתן לניתוב
-      INFO_ROUTE: נתיב
-      INFO_SLUG: slug
-      INFO_TEMPLATE: תבנית
-      INFO_LANGUAGE: שפה
-      INFO_ORDER: סדר
-      INFO_DATE: תאריך
-      INFO_MODIFIED: שונה
-      INFO_PUBLISH_ON: פרסם בתאריך
-      INFO_UNPUBLISH_ON: בטל פרסום בתאריך
-      PAGES_MILLER_VIEW:
-        DRAFT_UNPUBLISHED: טיוטה (לא פורסם)
-        FOLDER_ORDER: סדר תיקיות
-        VISIBLE: גלוי
-        HAS_CHILDREN: יש לו ילדים
-        SUMMARY: תקציר
-      PAGES_TREE_VIEW:
-        FAILED_TO_REORGANIZE_PAGES: נכשל בארגון מחדש של עמודים
-        SEARCHING: מחפש…
-        NO_PAGES_MATCH: 'אין עמודים התואמים ל-"{query}"'
-      DELETE_PAGE: מחק עמוד
-      PAGES_GRAV_ADMIN: עמודים — Grav Admin
-      ADD_PAGE: הוסף עמוד
-      ADD_FOLDER: הוסף תיקייה
-      ADD_MODULE: הוסף מודול
-      ADD_MENU: תפריט הוספה
-      EDIT:
-        TOGGLE_PAGE_NAVIGATOR: החלף ניווט עמודים
-        PREVIEW_PAGE: תצוגה מקדימה של העמוד
-        COPY_PAGE: העתק עמוד
-        DELETE_PAGE: מחק עמוד
-        WRITE_YOUR_MARKDOWN_CONTENT_HERE: כתוב כאן את תוכן ה-Markdown שלך...
-        CONNECTING_TO_COLLAB: מתחבר לסשן שיתוף פעולה…
-        RESET_TRANSLATION: אפס תרגום
-        PAGE_PREVIEW: תצוגה מקדימה של העמוד
-        INVALID_YAML_FRONTMATTER: YAML frontmatter לא תקין
-        INVALID_YAML_FRONTMATTER_FIX_SYNTAX: YAML frontmatter לא תקין — תקן את התחביר לפני שמירה
-        PAGE_SAVED_AND_MOVED: העמוד נשמר והועבר
-        FAILED_TO_CREATE_TRANSLATION: נכשל ביצירת תרגום
-        FAILED_TO_SYNC_TRANSLATION: נכשל בסנכרון התרגום
-        PAGE_DELETED: העמוד נמחק
-        PAGE_COPIED: העמוד הועתק
-        PAGE_CHANGED_ELSEWHERE_SAVE_TO: העמוד שונה במקום אחר — שמור כדי לדרוס או טען מחדש
-        LOADING_PAGE: טוען עמוד...
-        FOLDER_NAME: שם תיקייה
-        THE_FOLDER_NAME_ON_DISK_URL_SLUG: שם התיקייה בדיסק (URL slug)
-        FALLBACK: (חלופה)
-        NOT_TRANSLATED: "לא מתורגם:"
-        RESET_CONTENT_FROM: "אפס תוכן מ:"
-        OPEN_IN_NEW_TAB: פתח בלשונית חדשה
-        SAVE_AS_LANGUAGE: שמור כ-{language}
-        CREATE_LANGUAGE: צור {language}
-        EDIT_PAGE: ערוך עמוד
-        FALLBACK_NOTICE: לא קיים תרגום ל-{active}. מציג חלופה של {effective}. השתמש ב"שמור כ-{active}" כדי ליצור תרגום שניתן לערוך.
-        PUBLISH_ON: פרסם בתאריך
-        UNPUBLISH_ON: בטל פרסום בתאריך
-        RESET_FROM: אפס מ-{language}
-      NEW:
-        MY_NEW_PAGE: העמוד החדש שלי
-        FILTER_PAGES: סנן עמודים...
-        FAILED_TO_LOAD_PAGE_TEMPLATES: נכשל בטעינת תבניות עמוד
-        ADD_PAGE_GRAV_ADMIN: הוסף עמוד — Grav Admin
-        PAGE_DETAILS: פרטי העמוד
-        PAGE_TITLE: כותרת העמוד
-        FOLDER_NAME: שם תיקייה
-        URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: שם תיקייה בטוח ל-URL עבור עמוד זה
-        PARENT_PAGE: עמוד הורה
-        ROOT: "<root> /"
-        PAGE_TEMPLATE: תבנית עמוד
-        LOADING_TEMPLATES: טוען תבניות...
-        VISIBLE: גלוי
-        CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: שולט אם העמוד הזה מופיע בתפריטי הניווט
-        CONTINUE: המשך
-        PAGE_CREATED: 'העמוד "{title}" נוצר'
-        FOLDER_CREATED: 'התיקייה "{title}" נוצרה'
-        MODULE_CREATED: 'המודול "{title}" נוצר'
-        FAILED_TO_CREATE: יצירת העמוד נכשלה
-        ORDERING: סדר
-        ORDERING_HELP_MODULE: מוסיף קידומת מספרית הקובעת את מיקום המודול בתוך העמוד המודולרי האב.
-        ORDERING_HELP_FOLDER: מוסיף קידומת מספרית הקובעת את מיקום התיקייה בין אחיותיה.
-        ORDERING_NONE: ללא
-        FOLDER_DETAILS: פרטי תיקייה
-      PAGE_COUNT: "{n, plural, one{עמוד אחד} two{שני עמודים} many{# עמודים} other{# עמודים}}"
-      SUBTITLE: נהל את התוכן והמבנה של האתר שלך
-    FIELDS:
-      CLEAR_DATE: נקה תאריך
-      REGENERATE_SLUG: צור מחדש אוטומטית מכותרת העמוד
-      ADD_ENTRY: הוסף ערך
-      NO_TAXONOMY_TYPES: לא הוגדרו סוגי טקסונומיה
-      FILE_PICKER_SOON: בורר קבצים — בקרוב
-      CRON:
-        AT_MINUTE: בדקה
-        ON_DAY: ביום
-        CRON: "Cron:"
-        MIN_HR_DOM_MON_DOW: min hr dom mon dow
-      CRON_STATUS:
-        FAILED_TO_LOAD_SCHEDULER_STATUS: נכשל בטעינת סטטוס המתזמן
-        SCHEDULER_RUN_COMPLETED: הרצת המתזמן הסתיימה
-        FAILED_TO_RUN_SCHEDULER: נכשל בהרצת המתזמן
-        LOADING_SCHEDULER_STATUS: טוען סטטוס מתזמן...
-        SCHEDULER_STATUS: סטטוס המתזמן
-        NO_SCHEDULED_JOBS_REGISTERED: לא רשומות משימות מתוזמנות.
-        JOB_ID: מזהה משימה
-        HEALTH_STATUS: סטטוס בריאות
-        STATUS: "סטטוס:"
-        LAST_RUN: הרצה אחרונה
-        SCHEDULED_JOBS: משימות מתוזמנות
-        QUEUE_SIZE: "גודל תור:"
-        ACTIVE_TRIGGERS: טריגרים פעילים
-        CRON: "Cron:"
-        NOT_CONFIGURED: לא מוגדר
-        WEBHOOK: "Webhook:"
-        NOT_INSTALLED: לא מותקן
-        NOT_ENABLED: לא מופעל
-        NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: אין טריגרים פעילים! הפעל webhooks או הגדר cron.
-        RUNNING: מריץ...
-        RUN_ALL: הרץ הכל
-      CUSTOM_FIELD_WRAPPER:
-        LOADING_CUSTOM_FIELD: טוען שדה מותאם אישית...
-      DATE_FORMAT:
-        SELECT_FORMAT: — בחר פורמט —
-        FORMAT_STRING: "מחרוזת פורמט:"
-      ICON_PICKER:
-        SEARCH_ICONS: חפש סמלים...
-        NO_ICONS_FOUND: לא נמצאו סמלים
-        SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: מציג 200 תוצאות ראשונות — הקלד כדי לצמצם
-      PAGE_EXISTS:
-        CHECKING_PAGE: בודק עמוד...
-      PAGE_MEDIA:
-        PAGE_MEDIA_UNAVAILABLE: מדיית עמוד לא זמינה
-      PAGES:
-        FILTER_PAGES: סנן עמודים...
-        ROOT: / (שורש)
-      PERMISSIONS:
-        NO_PERMISSIONS_CONFIGURED: לא הוגדרו הרשאות
-        NOT_SET: לא מוגדר
-      TABS:
-        NO_FIELDS_MATCH_YOUR_FILTER: אין שדות התואמים לסינון שלך
-      THEME_SELECT:
-        LOADING_THEMES: טוען ערכות נושא...
-        SELECT_THEME: — בחר ערכת נושא —
-      WEBHOOK_EXAMPLES:
-        HOW_TO_USE_WEBHOOKS: "כיצד להשתמש ב-webhooks:"
-        TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: "הפעל את כל המשימות המוכנות (מכבד תזמון):"
-        FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: "הרץ בכפייה משימה ספציפית (מתעלם מתזמון):"
-        CHECK_HEALTH_STATUS: "בדוק סטטוס בריאות:"
-        GITHUB_ACTIONS_EXAMPLE: "דוגמת GitHub Actions:"
-      WEBHOOK_STATUS:
-        CHECKING_WEBHOOK_PLUGIN_STATUS: בודק סטטוס תוסף webhook...
-        PLUGIN_IS_INSTALLED_AND_ENABLED: התוסף מותקן ומופעל.
-        PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: התוסף מותקן. הפעל טריגרי Webhook למטה כדי להפעיל.
-        WEBHOOK_PLUGIN_REQUIRED: נדרש תוסף Webhook
-        PLUGIN_IS_REQUIRED_FOR_WEBHOOK: התוסף נדרש לפונקציונליות webhook.
-        INSTALL_PLUGIN_NOW: התקן תוסף עכשיו
-        OR_RUN: "או הרץ:"
-        BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: bin/gpm install scheduler-webhook
-      FILE_PICKER:
-        NO_MEDIA_UPLOADED: עדיין לא הועלו קבצי מדיה
-        NO_MATCHING_FILES: אין קבצים תואמים
-    NAV:
-      DASHBOARD: לוח בקרה
-      CONFIGURATION: הגדרות
-      PAGES: עמודים
-      MEDIA: מדיה
-      USERS: משתמשים
-      PLUGINS: תוספים
-      THEMES: ערכות נושא
-      TOOLS: כלים
-      SYSTEM: מערכת
-      SETTINGS: הגדרות
-    LANG:
-      SWITCH_LANGUAGE: החלף שפת תוכן
-      TRANSLATIONS: תרגומים
-      TRANSLATED: מתורגם
-      NOT_TRANSLATED: לא מתורגם
-      SAVE_AS: שמור כ-{language}
-      CREATE_TRANSLATION: צור תרגום {language}
-      FALLBACK_NOTICE: אין תרגום ל-{language}. מציג תוכן ברירת מחדל.
-      SYNC_FROM: אפס מ-{language}
-      TRANSLATION_CREATED: "תרגום {language} נוצר"
-      DELETE_TRANSLATION: מחק תרגום {language}
-      CURRENT: נוכחי
-      DEFAULT: ברירת מחדל
-    TIME:
-      JUST_NOW: כעת
-      MINUTES_AGO: "לפני {n} דק׳"
-      HOURS_AGO: "לפני {n} שע׳"
-      DAYS_AGO: "לפני {n} ימים"
-    ADD_PLUGIN_MODAL:
-      FILTER_PLUGINS: סנן תוספים...
-      FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: נכשל בטעינת תוספים זמינים מ-GPM
-      ADD_PLUGIN: הוסף תוסף
-      SELECT_A_PLUGIN_TO_VIEW_DETAILS: בחר תוסף כדי לראות פרטים
-    PREMIUM: פרימיום
-    AUTHOR: יוצר
-    HOMEPAGE: עמוד הבית
-    VERSION: גרסה
-    KEYWORDS: מילות מפתח
-    DEPENDENCIES: תלויות
-    COMPATIBILITY: תאימות
-    ADD_THEME_MODAL:
-      FILTER_THEMES: סנן ערכות נושא...
-      FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: נכשל בטעינת ערכות נושא זמינות מ-GPM
-      ADD_THEME: הוסף ערכת נושא
-      SELECT_A_THEME_TO_VIEW_DETAILS: בחר ערכת נושא כדי לראות פרטים
-    API_KEYS_FIELD:
-      REVOKE_KEY: בטל מפתח
-      E_G_MY_CLI_TOOL: למשל הכלי שלי ל-CLI
-      REVOKE_API_KEY: בטל מפתח API
-      FAILED_TO_LOAD_API_KEYS: נכשל בטעינת מפתחות API
-      PLEASE_ENTER_A_KEY_NAME: אנא הזן שם מפתח
-      API_KEY_GENERATED: מפתח API נוצר
-      FAILED_TO_GENERATE_API_KEY: נכשל ביצירת מפתח API
-      FAILED_TO_REVOKE_API_KEY: נכשל בביטול מפתח API
-      FAILED_TO_COPY_TO_CLIPBOARD: נכשל בהעתקה ללוח
-      API_KEYS: מפתחות API
-      NO_API_KEYS_HAVE_BEEN_GENERATED_YET: עדיין לא נוצרו מפתחות API.
-      KEY_PREFIX: קידומת מפתח
-      CREATED: נוצר
-      EXPIRES: פג תוקף
-      LAST_USED: שימוש אחרון
-      COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: העתק את המפתח הזה עכשיו — הוא לא יוצג שוב.
-      KEY_NAME: שם המפתח
-      EXPIRY: תוקף
-      BLANK_NEVER: (ריק = אף פעם)
-      GENERATING: מייצר...
-      GENERATE_KEY: צור מפתח
-    APP_SHELL:
-      CLOSE_MENU: סגור תפריט
-      GRAV_VERSION: Grav v{version}
-      ADMIN_VERSION: ניהול v{version}
-    NORMAL_MODE: מצב רגיל
-    EXPERT_MODE: מצב מומחה
-    ALLOWED: מותר
-    DENIED: נדחה
-    PERMISSIONS_FIELD:
-      NOT_SET: לא מוגדר
-      FAILED_TO_LOAD_PERMISSIONS: נכשל בטעינת הרשאות
-    TWO_FACTOR_FIELD:
-      2FA_QR_CODE: קוד QR ל-2FA
-      SCAN_THE_QR_CODE_WITH_YOUR: סרוק את קוד ה-QR עם אפליקציית האימות שלך
-      FAILED_TO_GENERATE_2FA_SECRET: נכשל ביצירת סוד 2FA
-      ENTER_THE_6_DIGIT_CODE_FROM_YOUR: הזן את הקוד בן 6 הספרות מאפליקציית האימות שלך
-      2FA_ENABLED: 2FA מופעל
-      2FA_DISABLED: 2FA מושבת
-      TWO_FACTOR_AUTHENTICATION_IS_OFF: אימות דו-שלבי כבוי
-      ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: הוסף שכבת אבטחה נוספת על ידי דרישת קוד חד-פעמי בכניסה.
-      FINISH_ENABLING_2FA: סיים הפעלת 2FA
-      SCAN_THE_QR_CODE_WITH_YOUR_2: סרוק את קוד ה-QR עם אפליקציית האימות שלך, ואז הזן את הקוד בן 6 הספרות לאימות והפעלה.
-      SECRET_FOR_MANUAL_ENTRY: "סוד (להזנה ידנית):"
-      A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: סוד כבר נוצר אך לא מוצג מסיבות אבטחה.
-      REGENERATE_AND_SHOW_QR: צור מחדש והצג QR
-      VERIFICATION_CODE: קוד אימות
-      2FA_IS_ENABLED: 2FA מופעל
-      A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: קוד חד-פעמי נדרש בכל פעם שחשבון זה מתחבר.
-      ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: הזן את הקוד הנוכחי בן 6 הספרות כדי לאשר
-      ENABLE_2FA: הפעל 2FA
-      VERIFY_ENABLE: אמת והפעל
-      FORCE_DISABLE: כפה השבתה
-      CONFIRM_DISABLE: אשר השבתה
-      FORCE_DISABLE_PROMPT: כפה השבתת 2FA עבור **{username}**? השתמש בזה רק לשחזור מכשיר שאבד.
-    DISABLE: השבת
-    USER_AVATAR_CARD:
-      AVATAR_UPDATED: האווטר עודכן
-      FAILED_TO_UPLOAD_AVATAR: נכשל בהעלאת אווטר
-      AVATAR_REMOVED: האווטר הוסר
-      FAILED_TO_REMOVE_AVATAR: נכשל בהסרת האווטר
-      UPLOAD_AVATAR: העלה אווטר
-    REAUTH_MODAL:
-      SESSION_EXPIRED: הסשן פג
-      PLEASE_RE_ENTER_YOUR_PASSWORD_TO: אנא הזן מחדש את הסיסמה שלך כדי להמשיך. העבודה שלך נשמרה.
-    USERNAME: שם משתמש
-    PASSWORD: סיסמה
-    REMOVE: הסר
-    ENABLED: מופעל
-    DISABLED: מושבת
-    EXPAND_ALL: הרחב הכל
-    COLLAPSE_ALL: כווץ הכל
-    CONFIG_INFO_PAGE:
-      LOADING_SYSTEM_INFORMATION: טוען מידע מערכת...
-      EXPORT_YAML: ייצוא YAML
-      SERVER: שרת
-      GRAV_VERSION: גרסת Grav
-      PHP_VERSION: גרסת PHP
-      SERVER_SOFTWARE: תוכנת שרת
-      ENVIRONMENT: סביבה
-      PHP_EXTENSIONS: הרחבות PHP
-      PHP_CONFIGURATION: הגדרות PHP
-    DASHBOARD_GRID:
-      DRAG_TO_REORDER: גרור כדי לסדר מחדש
-    EDIT_MODE_TOOLBAR:
-      SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: שמור כברירת מחדל של האתר עבור כל המשתמשים
-      LAYOUT_PRESETS: ערכות פריסה
-    PLUGIN_WIDGET_LOADER:
-      WIDGET_FAILED_TO_LOAD: טעינת הווידג׳ט נכשלה
-    TOP_BANNER:
-      SITE_NOTIFICATION: התראת אתר
-      PREVIOUS: הקודם
-    DISMISS: בטל
-    BACKUPS_WIDGET:
-      CREATE_A_NEW_BACKUP_NOW: צור גיבוי חדש עכשיו
-      NO_BACKUPS_FOUND: לא נמצאו גיבויים
-      BACKING_UP: מגבה…
-      BACKUP_NOW: גבה עכשיו
-      DOWNLOAD_FILE: הורד {filename}
-    NEWS_FEED_WIDGET:
-      NO_FEED_ITEMS: אין פריטי הזנה
-    NOTIFICATIONS_WIDGET:
-      NO_NOTIFICATIONS: אין התראות
-    POPULARITY_WIDGET:
-      LAST_14_DAYS: 14 הימים האחרונים
-      THIS_WEEK: השבוע
-      THIS_MONTH: החודש
-    RECENT_PAGES_WIDGET:
-      VIEW_ALL: הצג הכל
-    STATS_WIDGET:
-      ACTIVE_THEME: ערכת נושא פעילה
-      UPDATE_COUNT: "{n, plural, one{עדכון אחד} two{שני עדכונים} many{# עדכונים} other{# עדכונים}}"
-      ACTIVE_COUNT: "({n} פעילים)"
-    SYSTEM_HEALTH_WIDGET:
-      UPDATES: עדכונים
-      EVERYTHING_UP_TO_DATE: הכל מעודכן
-      GRAV_UPDATE_AVAILABLE: עדכון Grav זמין
-      GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: Grav מותקן באמצעות symlink — שדרג ידנית.
-      SERVER: שרת
-      UPGRADE_GRAV: שדרג את Grav
-      UPDATE_ALL: עדכן הכל
-      PERCENT_USED: "{percent}% בשימוש"
-      UPDATES_AVAILABLE_COUNT: "{n} זמינים"
-      PACKAGES_OUTDATED: "{n, plural, one{חבילה אחת לא מעודכנת} two{שתי חבילות לא מעודכנות} many{# חבילות לא מעודכנות} other{# חבילות לא מעודכנות}}"
-      MORE_COUNT: "+ {n} נוספים…"
-      CACHE: מטמון
-      DISK: דיסק
-      BYTES_USED: "{size} בשימוש"
-      BYTES_FREE: "{size} פנויים"
-    TOP_PAGES_WIDGET:
-      NO_VIEW_DATA_YET: אין עדיין נתוני צפייה
-    MARKDOWN_EDITOR:
-      NOTHING_TO_PREVIEW: אין מה להציג בתצוגה מקדימה
-    FLOATING_WIDGET_LOADER:
-      CLOSE_WIDGETS_MENU: סגור תפריט ווידג׳טים
-    MEDIA:
-      MEDIA_INSPECTOR:
-        PREVIOUS_FILE: קובץ קודם
-        NEXT_FILE: קובץ הבא
-        RENAME: שנה שם
-        FAILED_TO_COPY: ההעתקה נכשלה
-        FILE_RENAMED: שם הקובץ שונה
-        DIMENSIONS: מימדים
-      MEDIA_MANAGER:
-        FOLDER_NAME: שם תיקייה
-        FILES_DELETED: הקבצים נמחקו
-        UPLOAD_FILES: העלה קבצים
-        NEW_FOLDER: תיקייה חדשה
-        CREATE: צור
-      MEDIA_TOOLBAR:
-        SEARCH_MEDIA: חיפוש מדיה...
-        GRID_VIEW: תצוגת רשת
-        LIST_VIEW: תצוגת רשימה
-        NEW_FOLDER: תיקייה חדשה
-        FOLDER: תיקייה
-      MEDIA_GRAV_ADMIN: מדיה — Grav Admin
-      MANAGE_SITE_WIDE_MEDIA_FILES: נהל קבצי מדיה ברחבי האתר
-      PAGE_MEDIA:
-        PAGE_MEDIA: מדיית עמוד
-        DRAG_INTO_EDITOR: גרור לתוך העורך
-    UPLOAD: העלאה
-    CACHE_CLEAR_BUTTON:
-      CLEAR_CACHE: נקה מטמון
-      CACHE_OPTIONS: אפשרויות מטמון
-      FAILED_TO_CLEAR_CACHE: נכשל בניקוי המטמון
-    CONFIRM_ACTION: אשר פעולה
-    VIEW_SITE_BUTTON:
-      OPEN_SITE_FRONTEND_IN_A_NEW_TAB: פתח את חזית האתר בלשונית חדשה
-      VIEW_SITE: צפה באתר
-    PLUGIN_PAGE_COMPONENT:
-      LOADING_PLUGIN_PAGE: טוען עמוד תוסף...
-    SYNC:
-      EDITOR_LOCK_NOTICE:
-        SWITCH_YOUR_EDITOR_PREFERENCE: החלף את העדפת העורך שלך
-        TO_COLLABORATE_LIVE: כדי לשתף פעולה בזמן אמת.
-        LOCKED: לקריאה בלבד — {owner} עורך עם **{editor}**. סוגי עורך מעורבים לא יכולים לערוך יחד; [החלף את העדפת העורך שלך]({href}) כדי לשתף פעולה בזמן אמת.
-        BUILTIN_MARKDOWN_EDITOR: עורך ה-Markdown המובנה
-    DOWNLOAD: הורד
-    TOOLS:
-      BACKUPS:
-        DELETE_BACKUP: מחק גיבוי
-        FAILED_TO_LOAD_BACKUPS: נכשל בטעינת גיבויים
-        BACKUP_CREATED_SUCCESSFULLY: גיבוי נוצר בהצלחה
-        FAILED_TO_CREATE_BACKUP: נכשל ביצירת גיבוי
-        BACKUP_DELETED: הגיבוי נמחק
-        FAILED_TO_DELETE_BACKUP: נכשל במחיקת הגיבוי
-        BACKUP_STATISTICS: סטטיסטיקות גיבוי
-        NUMBER_OF_BACKUPS: מספר גיבויים
-        NUMBER_OF_PROFILES: מספר פרופילים
-        NEWEST_BACKUP: הגיבוי החדש ביותר
-        OLDEST_BACKUP: הגיבוי הישן ביותר
-        BACKUP_HISTORY: היסטוריית גיבויים
-        LOADING_BACKUPS: טוען גיבויים...
-        NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: לא נמצאו גיבויים. צור אחד כדי להתחיל.
-        BACKUP_DATE: תאריך גיבוי
-        ACTION: פעולה
-        CREATING: יוצר...
-        BACKUP_NOW: גבה עכשיו
-      DIRECT_INSTALL:
-        PACKAGE_INSTALLED_SUCCESSFULLY: החבילה הותקנה בהצלחה
-        ONLY_ZIP_FILES_ARE_SUPPORTED: רק קבצי .zip נתמכים
-        INSTALL_FROM_FILE: התקן מקובץ
-        DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: שחרר קובץ .zip כאן או לחץ לעיון
-        SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: תומך בחבילות תוספי Grav וערכות נושא
-        INSTALL_FROM_URL: התקן מ-URL
-      LOGS:
-        SEARCH_MESSAGES: חיפוש הודעות...
-        FAILED_TO_LOAD_LOGS: נכשל בטעינת יומנים
-        FAILED_TO_LOAD_LOG_FILES: נכשל בטעינת קבצי יומן
-        LOG_FILE: קובץ יומן
-        ALL_LEVELS: כל הרמות
-        EMERGENCY: חירום
-        CRITICAL: קריטי
-        WARNING: אזהרה
-        NOTICE: הודעה
-        25_LINES: 25 שורות
-        50_LINES: 50 שורות
-        100_LINES: 100 שורות
-        200_LINES: 200 שורות
-        REFRESH: רענן
-        LOADING_LOGS: טוען יומנים...
-        MESSAGE: הודעה
-      REPORT_COMPONENT_WRAPPER:
-        LOADING_REPORT_COMPONENT: טוען רכיב דוח...
-      REPORTS:
-        FAILED_TO_LOAD_REPORTS: נכשל בטעינת דוחות
-        LOADING_REPORTS: טוען דוחות...
-        NO_REPORTS_AVAILABLE: אין דוחות זמינים.
-        CONTENT_FIELD: "תוכן: {field}"
-      SCHEDULER:
-        FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: נכשל בטעינת הגדרות המתזמן.
-        SCHEDULER_CONFIGURATION_SAVED: הגדרות המתזמן נשמרו
-        FAILED_TO_SAVE: השמירה נכשלה
-        LOADING_SCHEDULER: טוען מתזמן...
-        NOT_ENABLED_FOR_USER: "לא מופעל עבור משתמש:"
-        GRAV_SCHEDULER: מתזמן Grav
-        INFO_BANNER: המתזמן יכול להשתמש ב-crontab של המערכת או בטריגרי webhook כדי להריץ פקודות. מומלץ להשתמש ב-webhooks עבור סביבות ענן. רק משתמשים מתקדמים צריכים להגדיר משימות מותאמות אישית. הגדרה שגויה או שימוש לרעה עלולים להוביל לפרצות אבטחה.
-        CRONTAB_INSTRUCTIONS: כדי להפעיל את פונקציונליות המתזמן, עליך להוסיף את **מתזמן Grav** לקובץ crontab של המערכת עבור משתמש **{user}**. הרץ את הפקודה למעלה מהטרמינל כדי להוסיף אותה אוטומטית. לאחר השמירה, רענן עמוד זה כדי לראות את הסטטוס.
-        WEBHOOK_ALTERNATIVE: לחלופין, התקן את התוסף **scheduler-webhook** כדי להשתמש בהפעלת cron מבוססת webhook, המומלצת לסביבות ענן שבהן אין גישה ל-crontab של המערכת.
-        SECURITY_WARNING: רק משתמשים מתקדמים צריכים להגדיר משימות מתזמן מותאמות אישית. הגדרה שגויה עלולה לגרום לבעיות ביצועים או לפרצות אבטחה.
-      SYSTEM_INFO:
-        FAILED_TO_LOAD_SYSTEM_INFO: נכשל בטעינת מידע מערכת
-        LOADING_SYSTEM_INFO: טוען מידע מערכת...
-        GRAV_VERSION: גרסת Grav
-        PHP_VERSION: גרסת PHP
-        PHP_SAPI: PHP SAPI
-        MEMORY_LIMIT: מגבלת זיכרון
-        MAX_EXECUTION: זמן ביצוע מרבי
-        MAX_UPLOAD: העלאה מרבית
-        MAX_POST: POST מרבי
-        DISK_USAGE: שימוש בדיסק
-        DRIVER: דרייבר
-        DISK_FREE_OF: "{free} פנוי מתוך {total}"
-      TOOLS_GRAV_ADMIN: כלים — Grav Admin
-      BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: גיבויים, מתזמן, יומנים ואבחון
-    INSTALLING: מתקין...
-    ACCESS_DENIED:
-      ACCESS_DENIED: הגישה נדחתה
-    ARE_YOU_SURE: האם אתה בטוח?
-    ENVIRONMENT_SWITCHER:
-      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: בחר היכן נשמרות כתיבות הגדרה
-      HAS_OVERRIDES: יש דריסות
-      SELECTED_ENV: סביבה נבחרת
-      NO_LONGER_EXISTS_PICK_ANOTHER: לא קיימת יותר. בחר אחרת.
-      SAVE_CONFIG_TO: שמור הגדרה ל-
-      CREATES_PATH: יוצר user/env/{name}/config/
-      DEFAULT: ברירת מחדל
-      SAVING_TO_DEFAULT: נשמר לברירת המחדל (user/config)
-      SAVING_TO_ENV: "נשמר לסביבה: {name}"
-      ENV_CREATED: "הסביבה '{name}' נוצרה ונבחרה"
-      FAILED_TO_CREATE: יצירת הסביבה נכשלה
-      CREATE_ENVIRONMENT: "צור סביבה…"
-      CREATE_ENV_NAMED: "צור סביבה \"{name}\"…"
-      CREATE: צור
-    INLINE_ICON_PICKER:
-      SEARCH_ICONS: חפש סמלים...
-      NO_ICONS_FOUND: לא נמצאו סמלים
-      TYPE_TO_NARROW_RESULTS: הקלד כדי לצמצם תוצאות
-    PASSWORD_FIELD:
-      PASSWORD_REQUIREMENTS: דרישות סיסמה
-      PASSWORD_STRENGTH: חוזק סיסמה
-      REQUIREMENTS: דרישות
-    TOP_PROGRESS_BAR:
-      WORKING: עובד
-    UNSAVED_INDICATOR:
-      SAVING_CHANGES: שומר שינויים…
-      SAVING_CHANGES_2: שומר שינויים
-      UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: שינויים שלא נשמרו — לחץ על שמור כדי לשמור אותם
-      YOU_HAVE_UNSAVED_CHANGES: יש לך שינויים שלא נשמרו
-    ALL_CHANGES_SAVED: כל השינויים נשמרו
-    APP:
-      CREATING_BACKUP: יוצר גיבוי…
-      DASHBOARD_GRAV_ADMIN: לוח בקרה — Grav Admin
-      REFRESH: רענן
-      WELCOME_BACK: ברוך שובך, {name}
-      PAGE_TITLE: "{name} — Grav Admin"
-    CONFIG:
-      TITLE: הגדרות
-      TITLE_SCROLLED: "הגדרות: {scope}"
-      LOADING_CONFIGURATION: טוען הגדרות...
-      FILTER_FIELDS: סנן שדות...
-      CLEAR_FILTER: נקה סינון
-      NO_MATCHES_FOUND: לא נמצאו התאמות
-      CONFIGURATION_SAVED_SUCCESSFULLY: ההגדרות נשמרו בהצלחה
-      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: ההגדרות שונו במקום אחר. טען מחדש כדי לראות את השינויים האחרונים.
-      FAILED_TO_SAVE_CONFIGURATION: נכשל בשמירת ההגדרות
-      CONFIGURATION_RELOADED: ההגדרות נטענו מחדש
-      CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: ההגדרות שונו במקום אחר — שמור כדי לדרוס או טען מחדש
-      RELOAD: טען מחדש
-      NO_CONFIGURATION_BLUEPRINT_AVAILABLE: אין blueprint הגדרות זמין עבור scope זה.
-      PAGE_TITLE: "הגדרות: {scope} — Grav Admin"
-    FLEX_OBJECTS:
-      SEARCH: חיפוש...
-      PREVIOUS: הקודם
-      DELETE_OBJECT: מחק אובייקט
-      FAILED_TO_LOAD_DIRECTORY: נכשל בטעינת תיקייה
-      FAILED_TO_LOAD_OBJECTS: נכשל בטעינת אובייקטים
-      OBJECT_DELETED: האובייקט נמחק
-      FAILED_TO_DELETE_OBJECT: נכשל במחיקת האובייקט
-      EXPORT_FAILED: הייצוא נכשל
-      EXPORT: ייצוא
-      ACTIONS: פעולות
-      OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: האובייקט שונה במקום אחר. אנא טען מחדש.
-      FAILED_TO_SAVE: השמירה נכשלה.
-      OBJECT_CHANGED_ELSEWHERE_SAVE_TO: האובייקט שונה במקום אחר — שמור כדי לדרוס או טען מחדש
-      BACK_TO_LIST: חזור לרשימה
-      NEW:
-        OBJECT_CREATED: האובייקט נוצר
-        BACK_TO_LIST: חזור לרשימה
-        CREATE: צור
-    FORGOT:
-      UNABLE_TO_CONNECT_TO_SERVER: לא ניתן להתחבר לשרת.
-      FORGOT_PASSWORD_GRAV_ADMIN: שכחת סיסמה — Grav Admin
-      FORGOT_PASSWORD: שכחת סיסמה
-      EMAIL_ADDRESS: כתובת דוא״ל
-      ENTER_A_VALID_EMAIL_ADDRESS: הזן כתובת דוא״ל תקינה
-      IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: אם קיים חשבון לכתובת זו, נשלח קישור איפוס.
-      BACK_TO_SIGN_IN: חזור להתחברות
-      SENDING: שולח...
-      SEND_RESET_LINK: שלח קישור איפוס
-      CHECK_INBOX: בדוק את תיבת הדואר שלך לקישור איפוס.
-      SUBTITLE: הזן את כתובת הדוא״ל שלך ונשלח לך קישור איפוס.
-    LOGIN:
-      SIGNED_IN_SUCCESSFULLY: התחברת בהצלחה
-      PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: אנא מלא את כל השדות הנדרשים
-      INVALID_USERNAME_OR_PASSWORD: שם משתמש או סיסמה שגויים
-      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: לא ניתן להתחבר לשרת. בדוק את כתובת השרת ונסה שוב.
-      UNABLE_TO_VERIFY_CODE_CHECK_YOUR: לא ניתן לאמת את הקוד. בדוק את החיבור שלך ונסה שוב.
-      LOGIN_GRAV_ADMIN: התחברות — Grav Admin
-      GRAV_ADMIN: Grav Admin
-      SERVER_CONFIGURATION: הגדרות שרת
-      SERVER_URL: כתובת שרת
-      ENVIRONMENT: סביבה
-      USERNAME_IS_REQUIRED: שם משתמש נדרש
-      PASSWORD_IS_REQUIRED: סיסמה נדרשת
-      FORGOT_PASSWORD: שכחת סיסמה?
-      AUTHENTICATION_CODE: קוד אימות
-      ENTER_A_VALID_6_DIGIT_CODE: הזן קוד תקין בן 6 ספרות
-      BACK_TO_SIGN_IN: חזור להתחברות
-      POWERED_BY_GRAV_CMS: מופעל על ידי Grav CMS
-      SIGNING_IN: מתחבר...
-      SIGN_IN: התחברות
-      VERIFYING: מאמת...
-      VERIFY: אמת
-      TWOFA_SUBTITLE: הזן את קוד האימות שלך כדי להמשיך
-      SUBTITLE: התחבר כדי לנהל את האתר שלך
-      AUTH_CODE_PROMPT: פתח את אפליקציית האימות שלך והזן את הקוד בן 6 הספרות עבור **{username}**.
-    PLUGIN:
-      BACK_TO_DASHBOARD: חזור ללוח הבקרה
-      NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: אין תוכן זמין עבור עמוד התוסף הזה.
-    PLUGINS:
-      SEARCH_PLUGINS: חפש תוספים...
-      SYMLINKED: מקושר ב-symlink
-      FAILED_TO_LOAD_PLUGINS: נכשל בטעינת תוספים
-      FAILED_TO_CHECK_FOR_UPDATES: נכשל בבדיקת עדכונים
-      PLUGINS_GRAV_ADMIN: תוספים — Grav Admin
-      CHECK_UPDATES: בדוק עדכונים
-      CONFIGURE: הגדר
-      SELECT_A_PLUGIN_TO_VIEW_DETAILS: בחר תוסף כדי לראות פרטים
-      REMOVE_PLUGIN: הסר תוסף
-      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: ההגדרות שונו במקום אחר. אנא טען מחדש.
-      FAILED_TO_SAVE_CONFIGURATION: נכשל בשמירת ההגדרות.
-      PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: התוסף שונה במקום אחר — שמור כדי לדרוס או טען מחדש
-      BACK_TO_PLUGINS: חזור לתוספים
-      CHANGELOG: יומן שינויים
-      PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: יש להפעיל את התוסף כדי להגדיר אותו.
-      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: אין אפשרויות הגדרה זמינות עבור תוסף זה.
-      ENABLE_PLUGIN: הפעל תוסף
-      PAGE_TITLE: "{name} — תוספים — Grav Admin"
-    RESET:
-      PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: הסיסמה אופסה בהצלחה. אנא התחבר.
-      UNABLE_TO_CONNECT_TO_SERVER: לא ניתן להתחבר לשרת.
-      RESET_PASSWORD_GRAV_ADMIN: איפוס סיסמה — Grav Admin
-      RESET_PASSWORD: איפוס סיסמה
-      THIS_RESET_LINK_IS_MISSING_REQUIRED: קישור איפוס זה חסר פרמטרים נדרשים. בקש קישור חדש מעמוד שכחת סיסמה.
-      CONFIRM_PASSWORD: אשר סיסמה
-      PASSWORDS_DO_NOT_MATCH: הסיסמאות אינן תואמות
-      BACK_TO_SIGN_IN: חזור להתחברות
-      RESETTING: מאפס...
-      INVALID_LINK: קישור איפוס לא תקין.
-      NEW_PASSWORD_FOR: בחר סיסמה חדשה עבור **{username}**.
-    SETTINGS:
-      LIGHT_LOGO: לוגו בהיר
-      DARK_LOGO: לוגו כהה
-      REMOVE_LINK: הסר קישור
-      RESET_PREFERENCES: אפס העדפות
-      PREFERENCES_RESET_RELOAD_TO_APPLY: ההעדפות אופסו. טען מחדש כדי להחיל.
-      SETTINGS_GRAV_ADMIN: הגדרות — Grav Admin
-      ADMIN_PREFERENCES_AND_APPEARANCE: העדפות ומראה של ה-admin
-      CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: התאם את הלוגו המוצג בסרגל הצד ובעמוד ההתחברות
-      LOGO_TYPE: סוג לוגו
-      CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: בחר כיצד הלוגו מוצג
-      GRAV_LOGO: לוגו Grav
-      CUSTOM_TEXT: טקסט מותאם אישית
-      CUSTOM_IMAGE: תמונה מותאמת אישית
-      LOGO_TEXT: טקסט לוגו
-      THE_FIRST_LETTER_BECOMES_THE_ICON: האות הראשונה הופכת לסמל
-      LIGHT_MODE_LOGO: לוגו למצב בהיר
-      USED_ON_LIGHT_BACKGROUNDS: בשימוש על רקעים בהירים
-      DARK_MODE_LOGO: לוגו למצב כהה
-      USED_ON_DARK_BACKGROUNDS: בשימוש על רקעים כהים
-      APPEARANCE: מראה
-      CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: התאם את המראה והתחושה של ה-admin
-      COLOR_MODE: מצב צבע
-      CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: בחר בין מראה בהיר לכהה
-      ACCENT_COLOR: צבע הדגשה
-      PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: צבע ראשי המשמש לכפתורים, קישורים והדגשות
-      SATURATION: רוויה
-      TYPEFACE_USED_THROUGHOUT_THE_ADMIN: גופן המשמש בכל ה-admin
-      FONT_SIZE: גודל גופן
-      TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: גודל הטקסט המשמש בכל ה-admin
-      FONT_SIZE_SMALL: קטן
-      FONT_SIZE_NORMAL: רגיל
-      FONT_SIZE_LARGE: גדול
-      FONT_SIZE_XLARGE: גדול מאוד
-      DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: הגדרות ברירת מחדל לדפדפן העמודים
-      DEFAULT_VIEW: תצוגת ברירת מחדל
-      HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: כיצד עמודים מוצגים כברירת מחדל
-      ITEMS_PER_PAGE: פריטים בעמוד
-      NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: מספר העמודים המוצגים בתצוגת רשימה
-      EDITING: עריכה
-      AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: התנהגות שמירה אוטומטית וביטול עבור עורכי טפסים
-      AUTO_SAVE: שמירה אוטומטית
-      AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: שמור אוטומטית כאשר אתה עוזב שדה
-      TOOLBAR_UNDO_BUTTON: כפתור ביטול בסרגל הכלים
-      SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: הצג כפתור ביטול בסרגל הכלים של העורך
-      UNDO_BATCH_WINDOW: חלון איגוד ביטולים
-      GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: קבץ שינויי שדות מהירים לפעולת ביטול אחת
-      NONE_1_FIELD_1_UNDO: ללא (שדה אחד = ביטול אחד)
-      1_SECOND: שנייה אחת
-      2_SECONDS: 2 שניות
-      REAL_TIME_COLLABORATION: שיתוף פעולה בזמן אמת
-      PLUGIN_ON_THE_SERVER_EXPERIMENTAL: תוסף בשרת. ניסיוני.
-      ADMIN_INTERFACE_LANGUAGE: שפת ממשק ה-admin
-      ADMIN_LANGUAGE: שפת ה-admin
-      ENGLISH: English
-      FRAN_AIS: Français
-      DEUTSCH: Deutsch
-      ESPA_OL: Español
-      ITALIANO: Italiano
-      PORTUGU_S: Português
-      NEDERLANDS: Nederlands
-      MENUBAR_LINKS: קישורי תפריט עליון
-      CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: קיצורי דרך מותאמים אישית המוצגים בתפריט העליון
-      EXTERNAL: חיצוני
-      ADD_LINK: הוסף קישור
-      CONNECTION: חיבור
-      SERVER_CONNECTION_DETAILS: פרטי חיבור לשרת
-      SERVER_URL: כתובת שרת
-      ENVIRONMENT: סביבה
-      AUTHENTICATED_AS: מאומת בתור
-      RESET_ALL_PREFERENCES: אפס את כל ההעדפות
-      COLLAB_DESCRIPTION: עריכה רב-משתמשית בזמן אמת עם נוכחות. דורש את התוסף `sync` בשרת. ניסיוני.
-      ADMIN_LANGUAGE_DESC: שפה עבור תוויות, תפריטים והודעות ({count} מחרוזות נטענו)
-      LANGUAGE_CHANGED: השפה שונתה ל-{language}
-      HUE: גוון
-      FONT: גופן
-      LIGHT: בהיר
-      DARK: כהה
-      FOLLOW_OS: בהתאם למערכת
-      "ON": מופעל
-      "OFF": כבוי
-      RESET_TO_SITE_DEFAULTS: אפס את ההעדפות שלי לברירות המחדל של האתר
-      SITE_DEFAULTS: ברירות מחדל לאתר
-      SITE_DEFAULTS_DESCRIPTION: ההגדרות שלהלן חלות על כל משתמש בממשק הניהול כבסיס. פריטי שכבה B (מראה, עמודים, שפה, עורך) ניתנים לעקיפה על ידי כל משתמש בהעדפות האישיות שלו למעלה. פריטי שכבה A (עריכה, סרגל תפריטים) הם כלל-אתריים ולא ניתנים לעקיפה.
-      BRANDING: מיתוג
-      BRANDING_DESC: הלוגו ותווית המותג המוצגים בכל מקום בממשק הניהול.
-      SAVED_AUTOMATICALLY: נשמר אוטומטית
-      SITE_SETTINGS_HEADING: הגדרות אתר
-      SITE_SETTINGS_DESC: העדפות ברירת מחדל למשתמשים חדשים בנוסף להתנהגות כלל-אתרית. השינויים חלים בטעינה הבאה למשתמשים המושפעים.
-      DEFAULT_APPEARANCE: מראה ברירת מחדל
-      DEFAULT_COLOR_APPEARANCE_DESC: מראה צבעוני ברירת מחדל למשתמשים חדשים.
-      DEFAULT_PRIMARY_COLOR_DESC: צבע ראשי ברירת מחדל לכפתורים, קישורים והדגשות.
-      DEFAULT_TYPEFACE_DESC: גופן ברירת מחדל לממשק הניהול.
-      DEFAULT_TEXT_SIZE_DESC: גודל טקסט ברירת מחדל לממשק הניהול.
-      DEFAULT_PAGES: עמודי ברירת מחדל
-      DEFAULT_LANGUAGE: שפת ברירת מחדל
-      DEFAULT_INTERFACE_LANGUAGE_DESC: שפת ממשק ברירת מחדל למשתמשים חדשים.
-      EDITOR_HEADING: עורך
-      EDITOR_MODE: מצב עורך
-      DEFAULT_FORM_EDITOR_DENSITY: צפיפות עורך טפסים ברירת מחדל.
-      USERS_MAY_OVERRIDE: ניתן לעקיפה על ידי המשתמש
-      SITE_WIDE_ONLY: כלל-אתרי בלבד
-      REVERT_CHANGES: בטל שינויים
-      SAVE_SITE_DEFAULTS: שמור ברירות מחדל לאתר
-      RESET_PREFERENCES_MSG: להסיר את כל העקיפות האישיות שלך ולחזור לברירות המחדל של האתר?
-      RESET: איפוס
-      FAILED_TO_SAVE_LOGO_MODE: שמירת מצב הלוגו נכשלה.
-      FAILED_TO_SAVE_LOGO_TEXT: שמירת טקסט הלוגו נכשלה.
-      LIGHT_LOGO_UPLOADED: הלוגו הבהיר הועלה.
-      DARK_LOGO_UPLOADED: הלוגו הכהה הועלה.
-      LOGO_UPLOAD_FAILED: העלאת הלוגו נכשלה.
-      LIGHT_LOGO_REMOVED: הלוגו הבהיר הוסר.
-      DARK_LOGO_REMOVED: הלוגו הכהה הוסר.
-      FAILED_TO_REMOVE_LOGO: הסרת הלוגו נכשלה.
-      SITE_DEFAULTS_SAVED: ברירות המחדל לאתר נשמרו. כל המשתמשים יראו אותן בטעינה הבאה.
-      FAILED_TO_SAVE_SITE_DEFAULTS: שמירת ברירות המחדל לאתר נכשלה.
-      FAILED_TO_RESET_PREFERENCES: איפוס ההעדפות נכשל.
-    CUSTOM: מותאם אישית
-    PREVIEW: תצוגה מקדימה
-    SETUP:
-      PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: אנא תקן את השגיאות למעלה ונסה שוב
-      ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: חשבון מנהל נוצר — ברוכים הבאים ל-Grav
-      SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: ההתקנה כבר הושלמה. אנא התחבר.
-      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: לא ניתן להתחבר לשרת. בדוק את כתובת השרת ונסה שוב.
-      SETUP_GRAV_ADMIN: התקנה — Grav Admin
-      WELCOME_TO_GRAV: ברוכים הבאים ל-Grav
-      CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: צור את חשבון המנהל שלך כדי להתחיל
-      CHECKING_SERVER: בודק שרת…
-      SERVER_CONFIGURATION: הגדרות שרת
-      SERVER_URL: כתובת שרת
-      ENVIRONMENT: סביבה
-      3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: "3-64 תווים: אותיות, ספרות, מקפים, קווים תחתונים"
-      FULL_NAME: שם מלא
-      OPTIONAL: (אופציונלי)
-      ENTER_A_VALID_EMAIL_ADDRESS: הזן כתובת דוא״ל תקינה
-      CONFIRM_PASSWORD: אשר סיסמה
-      PASSWORDS_DO_NOT_MATCH: הסיסמאות אינן תואמות
-      POWERED_BY_GRAV_CMS: מופעל על ידי Grav CMS
-      CREATING_ACCOUNT: יוצר חשבון...
-      CREATE_ADMINISTRATOR: צור מנהל
-    SYSTEM:
-      SYSTEM_GRAV_ADMIN: מערכת — Grav Admin
-      COMING_SOON: בקרוב
-    THEMES:
-      SEARCH_THEMES: חפש ערכות נושא...
-      SYMLINKED: מקושר ב-symlink
-      FAILED_TO_LOAD_THEMES: נכשל בטעינת ערכות נושא
-      FAILED_TO_CHECK_FOR_UPDATES: נכשל בבדיקת עדכונים
-      THEMES_GRAV_ADMIN: ערכות נושא — Grav Admin
-      CHECK_UPDATES: בדוק עדכונים
-      CONFIGURE: הגדר
-      SELECT_A_THEME_TO_VIEW_DETAILS: בחר ערכת נושא כדי לראות פרטים
-      ACTIVE_THEME: ערכת נושא פעילה
-      CLICK_TO_VIEW_FULL_SIZE: לחץ כדי להציג בגודל מלא
-      REMOVE_THEME: הסר ערכת נושא
-      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: ההגדרות שונו במקום אחר. אנא טען מחדש.
-      FAILED_TO_SAVE_CONFIGURATION: נכשל בשמירת ההגדרות.
-      BACK_TO_THEMES: חזור לערכות נושא
-      CHANGELOG: יומן שינויים
-      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: אין אפשרויות הגדרה זמינות עבור ערכת נושא זו.
-      PAGE_TITLE: "{name} — ערכות נושא — Grav Admin"
-    ACTIVE: פעיל
-    ACTIVATE: הפעל
-    USERS:
-      STATUS: סטטוס
-      STATUS_HELP: חשבונות מושבתים אינם יכולים להתחבר או להשתמש ב-API.
-      SEARCH_USERS: חפש משתמשים...
-      FAILED_TO_LOAD_USERS: נכשל בטעינת משתמשים
-      USERS_GRAV_ADMIN: משתמשים — Grav Admin
-      ADD_USER: הוסף משתמש
-      SUPER_ADMIN: מנהל-על
-      CREATED: נוצר
-      PERMISSIONS: הרשאות
-      SELECT_A_USER_TO_VIEW_DETAILS: בחר משתמש כדי לראות פרטים
-      DELETE_USER: מחק משתמש
-      USER_WAS_MODIFIED_ELSEWHERE_PLEASE: המשתמש שונה במקום אחר. אנא טען מחדש.
-      FAILED_TO_SAVE_USER: נכשל בשמירת המשתמש.
-      YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: לא ניתן למחוק את החשבון שלך עצמך.
-      USER_CHANGED_ELSEWHERE_SAVE_TO: המשתמש שונה במקום אחר — שמור כדי לדרוס או טען מחדש
-      BACK_TO_USERS: חזור למשתמשים
-      2_FACTOR_AUTHENTICATION: אימות דו-שלבי
-      NEW:
-        LOWERCASE_3_64_CHARS: אותיות קטנות, 3-64 תווים
-        NEW_USER_GRAV_ADMIN: משתמש חדש — Grav Admin
-        NEW_USER: משתמש חדש
-        ACCOUNT: חשבון
-        FULL_NAME: שם מלא
-        PERMISSIONS: הרשאות
-        CREATE: צור
-      PAGE_TITLE: "{name} — משתמשים — Grav Admin"
-    INFO: מידע
-    INSTALL: התקן
-    COPY_BUTTON:
-      COPIED: הועתק!
-    WIDGET_HOST:
-      UNKNOWN_WIDGET: "ווידג׳ט לא ידוע: {id}"
-    UPDATE_AVAILABLE_VERSION: "עדכון זמין: v{version}"
-    UPDATE_TO_VERSION: עדכן לגרסה v{version}
-  PLUGIN_ADMIN:
-    2FA_ENABLED: 2FA מופעל
-    2FA_SECRET: סוד 2FA
-    2FA_SECRET_HELP: "סרוק את קוד ה-QR לתוך [אפליקציית האימות](https://learn.getgrav.org/admin-panel/2fa#apps) שלך. כמו כן, רעיון טוב לגבות את הסוד במקום בטוח, למקרה שתצטרך להתקין מחדש את האפליקציה שלך. עיין ב[תיעוד Grav](https://learn.getgrav.org/admin-panel/2fa) למידע נוסף "
-    2FA_TITLE: אימות דו-שלבי
-    ABSOLUTE_URLS: כתובות URL מוחלטות
-    ABSOLUTE_URLS_HELP: כתובות URL מוחלטות או יחסיות עבור `base_url`
-    ACCESS: גישה
-    ACCESS_LEVELS: רמות גישה
-    ACCOUNT: חשבון
-    ACCOUNTS: חשבונות
-    ACCOUNTS_STORAGE: אחסון חשבונות
-    ACCOUNTS_STORAGE_HELP: מנגנון האחסון לשימוש עבור סוג Flex Object Account. Files היא הגישה המסורתית שבה חשבונות מאוחסנים בקובץ YAML בתיקייה אחת, בעוד ש-Folder יוצרת תיקייה חדשה עבור כל חשבון
-    ACCOUNTS_TYPE: סוג חשבונות
-    ACCOUNTS_TYPE_HELP: מערכת Flex Object לאחסון חשבונות משתמש
-    ACTIVE_LANGUAGE_IN_SESSION: שפה פעילה ב-session
-    ACTIVE_LANGUAGE_IN_SESSION_HELP: אחסן את השפה הפעילה ב-session
-    ADD: הוסף
-    ADD_ACCOUNT: הוסף חשבון
-    ADMIN_CHILDREN_DISPLAY_ORDER: סדר תצוגת ילדים
-    ADMIN_CHILDREN_DISPLAY_ORDER_HELP: הסדר שבו ילדי העמוד הזה צריכים להיות מוצגים בתצוגת 'עמודים' של תוסף Admin
-    ADMIN_SPECIFIC_OVERRIDES: דריסות ספציפיות ל-Admin
-    ADVANCED: מתקדם
-    ALLOW_URL_TAXONOMY_FILTERS: סינוני טקסונומיה ב-URL
-    ALLOW_URL_TAXONOMY_FILTERS_HELP: אוספים מבוססי עמודים מאפשרים לסנן באמצעות `/taxonomy:value`.
-    ALLOW_WEBSERVER_GZIP: אפשר Gzip של שרת אינטרנט
-    ALLOW_WEBSERVER_GZIP_HELP: כבוי כברירת מחדל. כאשר מופעל, דחיסת Gzip/Deflate שמוגדרת בשרת האינטרנט תעבוד, אך חיבור http לא ייסגר לפני אירוע onShutDown() מה שיגרום לטעינת עמוד איטית יותר
-    APPEND_URL_EXT: הוסף סיומת URL
-    APPEND_URL_EXT_HELP: יוסיף סיומת מותאמת אישית ל-URL של העמוד. שים לב, זה יגרום ל-Grav לחפש תבנית `<template>.<extension>.twig`
-    ASCENDING: עולה
-    ASSETS: נכסים
-    AUTO: אוטומטי
-    AUTO_LINE_BREAKS: שבירות שורה אוטומטיות
-    AUTO_LINE_BREAKS_HELP: הפעל תמיכה בשבירות שורה אוטומטיות ב-Markdown
-    AUTO_URL_LINKS: קישורי URL אוטומטיים
-    AUTO_URL_LINKS_HELP: הפעל המרה אוטומטית של URLs לקישורי HTML
-    AUTOESCAPE_VARIABLES: בריחה אוטומטית של משתנים
-    AUTOESCAPE_VARIABLES_HELP: בורח אוטומטית מכל המשתנים. סביר שזה ישבור את האתר שלך
-    AVATAR: יוצר אווטרים
-    AVATAR_HASH: "הערה: מחרוזת 'hash' אופציונלית מותאמת אישית לאווטר"
-    AVATAR_HELP: Multiavatar הוא אווטר שנוצר מקומית. Gravatar הוא שירות חיצוני שמשתמש בכתובת הדוא״ל שלך כדי למשוך אווטר מוגדר מראש מרחוק
-    BACK: חזור
-    BACKUPS: גיבויים
-    BACKUPS_HISTORY: היסטוריית גיבויים
-    BACKUPS_MAX_COUNT: מספר מרבי של גיבויים
-    BACKUPS_MAX_RETENTION_TIME: זמן שמירה מרבי
-    BACKUPS_MAX_RETENTION_TIME_APPEND: בימים
-    BACKUPS_MAX_SPACE: שטח גיבוי מרבי
-    BACKUPS_PROFILE_ENVIRONMENT: סביבה
-    BACKUPS_PROFILE_ENVIRONMENT_HELP: הקשר סביבת Grav שבה רץ הגיבוי המתוזמן.
-    BACKUPS_PROFILE_EXCLUDE_FILES: קבצים להחרגה
-    BACKUPS_PROFILE_EXCLUDE_FILES_HELP: קבצים או תיקיות ספציפיות להחרגה, אחד בשורה
-    BACKUPS_PROFILE_EXCLUDE_PATHS: נתיבים להחרגה
-    BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: נתיבים מוחלטים להחרגה, אחד בשורה
-    BACKUPS_PROFILE_NAME: שם גיבוי
-    BACKUPS_PROFILE_ROOT_FOLDER: תיקיית שורש
-    BACKUPS_PROFILE_ROOT_FOLDER_HELP: יכול להיות נתיב מוחלט או stream
-    BACKUPS_PROFILE_SCHEDULE: הפעל משימה מתוזמנת
-    BACKUPS_PROFILE_SCHEDULE_AT: הרץ משימה מתוזמנת
-    BACKUPS_PROFILES: פרופילי גיבוי
-    BACKUPS_PURGE_CONFIG: הגדרות ניקוי גיבוי
-    BACKUPS_STORAGE_PURGE_TRIGGER: טריגר ניקוי אחסון גיבוי
-    BODY_CLASSES: מחלקות body
-    CACHE_ALL: שמור במטמון את כל התמונות
-    CACHE_ALL_HELP: הרץ את כל התמונות דרך מערכת המטמון של Grav אפילו אם אין להן מניפולציות מדיה
-    CACHE_CHECK_METHOD: שיטת בדיקת מטמון
-    CACHE_CHECK_METHOD_HELP: בחר את השיטה ש-Grav משתמשת כדי לבדוק אם קבצי עמוד שונו.
-    CACHE_CLEAR_JOB: הרץ משימת ניקוי מתוזמנת
-    CACHE_CLEAR_JOB_HELP: עם המתזמן ניתן לנקות תקופתית את מטמון Grav
-    CACHE_CONTROL: HTTP Cache-Control
-    CACHE_CONTROL_HELP: הגדר לערך cache-control תקין כגון `no-cache, no-store, must-revalidate`
-    CACHE_DRIVER: דרייבר מטמון
-    CACHE_DRIVER_HELP: בחר באיזה דרייבר מטמון Grav צריכה להשתמש. 'Auto Detect' מנסה למצוא את הטוב ביותר עבורך
-    CACHE_JOB_TYPE: סוג משימת מטמון
-    CACHE_JOB_TYPE_HELP: נקה עם ניקוי תיקיות 'standard' או עם 'all' תיקיות
-    CACHE_PERMS: הרשאות מטמון
-    CACHE_PERMS_HELP: הרשאות תיקיית מטמון ברירת מחדל. בדרך כלל 0755 או 0775 בהתאם להגדרה
-    CACHE_PREFIX: קידומת מטמון
-    CACHE_PREFIX_HELP: מזהה לחלק ממפתח Grav. אל תשנה אלא אם כן אתה יודע מה אתה עושה.
-    CACHE_PREFIX_PLACEHOLDER: נגזר מ-base URL (דרוס על ידי הזנת מחרוזת אקראית)
-    CACHE_PURGE_AGE: גיל ניקוי מטמון
-    CACHE_PURGE_AGE_HELP: נקה את כל פריטי המטמון הישנים יותר מגיל זה (בשניות)
-    CACHE_PURGE_JOB: הרץ משימת ניקוי מתוזמנת
-    CACHE_PURGE_JOB_HELP: עם המתזמן ניתן לנקות תקופתית תיקיות מטמון ישנות של Doctrine עם המשימה הזו
-    CACHING: שמירה במטמון
-    CACHING_HELP: מתג גלובלי ON/OFF להפעלה/השבתה של שמירת Grav במטמון
-    CHARACTERS: תווים
-    CLEAR_IMAGES_BY_DEFAULT: נקה מטמון תמונות כברירת מחדל
-    CLEAR_IMAGES_BY_DEFAULT_HELP: כברירת מחדל תמונות מעובדות נמחקות לכל ניקויי המטמון, ניתן להשבית זאת
-    CLI_COMPATIBILITY: תאימות CLI
-    CLI_COMPATIBILITY_HELP: מבטיח שרק דרייברי מטמון לא-נדיפים ישמשו (file, redis, memcache, וכו׳)
-    COLLECTIONS: אוספים
-    COMMAND: פקודה
-    CONFIGURATION: הגדרות
-    CONTENT: תוכן
-    CONTENT_EDITOR: עורך תוכן
-    CONTENT_EDITOR_HELP: ניתן להעדיף עורכים מותאמים אישית לעריכת תוכן
-    CONTENT_FALLBACK_LANGUAGE_HELP: ציין קוד שפה שברצונך להתאים אישית.
-    CONTENT_LANGUAGE_FALLBACK: שפות חלופה
-    CONTENT_LANGUAGE_FALLBACK_HELP: אנא הזן רשימה של קודי שפה. שים לב שאם תשמיט את קוד שפת ברירת המחדל, היא לא תשמש.
-    CONTENT_LANGUAGE_FALLBACKS: חלופת שפת תוכן
-    CONTENT_LANGUAGE_FALLBACKS_HELP: כברירת מחדל אם התוכן אינו מתורגם, Grav תציג תוכן בשפת ברירת המחדל. השתמש בהגדרה זו כדי לדרוס את ההתנהגות הזו לכל שפה.
-    COPY: העתק
-    CREATE: צור
-    CSS_ASSETS: נכסי CSS
-    CSS_MINIFY: כיווץ CSS
-    CSS_MINIFY_HELP: כווץ את ה-CSS במהלך ה-pipelining
-    CSS_MINIFY_WINDOWS_OVERRIDE: דריסת כיווץ CSS ל-Windows
-    CSS_MINIFY_WINDOWS_OVERRIDE_HELP: דריסת כיווץ לפלטפורמות Windows. False כברירת מחדל בגלל ThreadStackSize
-    CSS_PIPELINE: pipeline של CSS
-    CSS_PIPELINE_BEFORE_EXCLUDES: רנדר pipeline של CSS תחילה
-    CSS_PIPELINE_BEFORE_EXCLUDES_HELP: רנדר את ה-pipeline של CSS לפני כל הפניות CSS אחרות שאינן כלולות
-    CSS_PIPELINE_HELP: ה-pipeline של CSS הוא איחוד של מספר משאבי CSS לקובץ אחד
-    CSS_PIPELINE_INCLUDE_EXTERNALS: כלול externals ב-pipeline של CSS
-    CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: ל-URLs חיצוניים יש לפעמים הפניות לקבצים יחסיים ואסור לעשות להם pipelining
-    CSS_REWRITE: שכתוב CSS
-    CSS_REWRITE_HELP: שכתב URLs יחסיים של CSS במהלך ה-pipelining
-    CURL: cURL
-    CUSTOM_BASE_URL: base URL מותאם אישית
-    CUSTOM_BASE_URL_HELP: "השתמש אם ברצונך לשכתב את דומיין האתר או להשתמש בתת-תיקייה שונה מזו שבה Grav משתמשת. דוגמה: http://localhost"
-    CUSTOM_REDIRECTS: הפניות מותאמות אישית
-    CUSTOM_REDIRECTS_HELP: נתיבים להפניה לעמודים אחרים. החלפת Regex סטנדרטית תקפה
-    CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
-    CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
-    CUSTOM_ROUTES: נתיבים מותאמים אישית
-    CUSTOM_ROUTES_HELP: נתיבים לכינוי לעמודים אחרים. החלפת Regex סטנדרטית תקפה
-    CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
-    CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
-    DATE: תאריך
-    DATE_BASED_PUBLISHING: פרסום מבוסס תאריך
-    DATE_BASED_PUBLISHING_HELP: (בטל) פרסם אוטומטית פוסטים בהתבסס על תאריכם
-    DATE_HELP: משתנה התאריך מאפשר לך להגדיר תאריך ספציפי המשויך לעמוד זה.
-    DEBUGGER: Debugger
-    DEBUGGER_CENSORED: צנזר נתונים רגישים
-    DEBUGGER_CENSORED_HELP: "Clockwork Provider ONLY: אם Yes, צנזר מידע פוטנציאלי רגיש (פרמטרי POST, cookies, קבצים, הגדרות ורוב נתוני array/object בהודעות יומן)"
-    DEBUGGER_CLOCKWORK: הרחבת דפדפן Clockwork
-    DEBUGGER_DEBUGBAR: PHP Debug Bar
-    DEBUGGER_HELP: הפעל את ה-debugger של Grav ואת ההגדרות הבאות
-    DEBUGGER_PROVIDER: ספק Debugger
-    DEBUGGER_PROVIDER_HELP: ברירת המחדל היא PHP Debug Bar, אך הרחבת הדפדפן Clockwork מספקת גישה פחות חודרנית
-    DEFAULT: ברירת מחדל
-    DEFAULT_AUTHOR: יוצר ברירת מחדל
-    DEFAULT_AUTHOR_HELP: שם יוצר ברירת מחדל, משמש לרוב בערכות נושא או בתוכן עמודים
-    DEFAULT_CHILD_TYPE: סוג ילד ברירת מחדל
-    DEFAULT_DATE_FORMAT: פורמט תאריך עמוד
-    DEFAULT_DATE_FORMAT_HELP: "פורמט תאריך עמוד שמשמש את Grav. כברירת מחדל, Grav מנסה לנחש את פורמט התאריך שלך, אך ניתן לציין פורמט באמצעות תחביר התאריך של PHP (למשל: Y-m-d H:i)"
-    DEFAULT_DATE_FORMAT_PLACEHOLDER: נחש אוטומטית
-    DEFAULT_EMAIL: דוא״ל ברירת מחדל
-    DEFAULT_EMAIL_HELP: דוא״ל ברירת מחדל לשימוש בערכות נושא או עמודים
-    DEFAULT_IMAGE_QUALITY: איכות תמונה ברירת מחדל
-    DEFAULT_IMAGE_QUALITY_HELP: איכות תמונה ברירת מחדל לשימוש בעת דגימה מחדש או שמירת תמונות במטמון (85%)
-    DEFAULT_LANG: דרוס שפת ברירת מחדל
-    DEFAULT_LANG_HELP: ברירת המחדל היא השפה הראשונה הנתמכת. ניתן לדרוס זאת על ידי הגדרת אפשרות זו אך זה חייב להיות אחת מהשפות הנתמכות
-    DEFAULT_ORDER_DIRECTION: כיוון סדר ברירת מחדל
-    DEFAULT_ORDER_DIRECTION_HELP: כיוון העמודים ברשימה
-    DEFAULT_ORDERING: סדר ברירת מחדל
-    DEFAULT_ORDERING_DATE: תאריך - מבוסס על שדה תאריך ב-header
-    DEFAULT_ORDERING_DEFAULT: ברירת מחדל - מבוסס על שם התיקייה
-    DEFAULT_ORDERING_FOLDER: תיקייה - מבוסס על שם תיקייה ללא קידומת
-    DEFAULT_ORDERING_HELP: עמודים ברשימה יוצגו לפי סדר זה אלא אם נדרס
-    DEFAULT_ORDERING_TITLE: כותרת - מבוסס על שדה כותרת ב-header
-    DEFAULT_PAGE_COUNT: ספירת עמודים ברירת מחדל
-    DEFAULT_PAGE_COUNT_HELP: מקסימום עמודים ברירת מחדל ברשימה
-    DEFAULT_THEME: ערכת נושא ברירת מחדל
-    DEFAULT_THEME_HELP: הגדר את ערכת הנושא ברירת המחדל לשימוש Grav (ברירת המחדל היא Antimatter)
-    DEFAULTS: ברירות מחדל
-    DELETE: מחק
-    DELIMITER: מפריד
-    DELIMITER_HELP: מפריד התקציר (ברירת מחדל '===')
-    DESCENDING: יורד
-    DESCRIPTION: תיאור
-    DETAILS: פרטים
-    DETECT_CHANGES: זהה שינויים
-    DETECT_CHANGES_HELP: Twig יקמפל מחדש אוטומטית את מטמון ה-Twig אם הוא יזהה שינויים בתבניות Twig
-    DISABLED: מושבת
-    DISPLAY_ERRORS: הצג שגיאות
-    DISPLAY_ERRORS_HELP: הצג עמוד שגיאה מלא בסגנון backtrace
-    DISPLAY_NAME: שם להצגה
-    DISPLAY_TEMPLATE: תבנית תצוגה
-    EMAIL: דוא״ל
-    EMAIL_VALIDATION_MESSAGE: חייבת להיות כתובת דוא״ל תקינה
-    ENABLE_AUTO_METADATA: מטא-נתונים אוטומטיים מ-Exif
-    ENABLE_AUTO_METADATA_HELP: צור אוטומטית קבצי מטא-נתונים עבור תמונות עם מידע Exif
-    ENABLE_MEDIA_TIMESTAMP: הפעל חותמות זמן על מדיה
-    ENABLE_MEDIA_TIMESTAMP_HELP: מוסיף חותמת זמן מבוססת תאריך שינוי אחרון לכל פריט מדיה
-    ENABLED: מופעל
-    ENABLED_HELP: הפעל תקציר עמוד (התקציר מחזיר את אותו דבר כמו תוכן העמוד)
-    ENABLED_SRI_ON_ASSETS: הפעל SRI על נכסים
-    ENABLED_SRI_ON_ASSETS_HELP: הפעל SRI על נכסים
-    ENABLED_TIMESTAMPS_ON_ASSETS: הפעל חותמות זמן על נכסים
-    ENABLED_TIMESTAMPS_ON_ASSETS_HELP: הפעל חותמות זמן על נכסים
-    ERROR_FULL_BACKTRACE: שגיאת Backtrace מלא
-    ERROR_HANDLER: מטפל שגיאות
-    ERROR_SIMPLE: שגיאה פשוטה
-    ERROR_SYSTEM: שגיאת מערכת
-    ESCAPE_MARKUP: בריחת תגיות
-    ESCAPE_MARKUP_HELP: ברח מתגיות markup לישויות HTML
-    ETAG: ETag
-    ETAG_HELP: מגדיר את כותרת ה-etag כדי לעזור לזהות מתי עמוד שונה
-    EVENTS: אירועים
-    EVENTS_HELP: הפעל או השבת אירועים ספציפיים. השבתה יכולה לשבור תוספים
-    EXPERIMENTAL: ניסיוני
-    EXPIRES: פג תוקף
-    EXPIRES_HELP: מגדיר את כותרת ה-expires. הערך הוא בשניות.
-    EXTERNAL: עמוד חיצוני
-    EXTERNAL_URL: URL חיצוני
-    EXTRA_ARGUMENTS: ארגומנטים נוספים
-    FALLBACK_TYPES: סוגי חלופה מותרים
-    FALLBACK_TYPES_HELP: סוגי קבצים מותרים שניתן למצוא אם ניגשים אליהם דרך נתיב עמוד. ברירת המחדל היא כל סוג מדיה נתמך.
-    FILE: קובץ
-    FILE_EXTENSION: סיומת קובץ
-    FILE_STREAMS: File Streams
-    FLEX: Flex Object (ניסיוני)
-    FLEX_CACHING: שמירת Flex במטמון
-    FLEX_INDEX_CACHE_ENABLED: הפעל שמירת אינדקס במטמון
-    FLEX_INDEX_CACHE_LIFETIME: אורך חיי מטמון אינדקס (שניות)
-    FLEX_OBJECT_CACHE_ENABLED: הפעל שמירת אובייקטים במטמון
-    FLEX_OBJECT_CACHE_LIFETIME: אורך חיי מטמון אובייקטים (שניות)
-    FLEX_RENDER_CACHE_ENABLED: הפעל שמירת רנדור במטמון
-    FLEX_RENDER_CACHE_LIFETIME: אורך חיי מטמון רנדור (שניות)
-    FOLDER: תיקייה
-    FOLDER_NAME: שם תיקייה
-    FOLDER_NUMERIC_PREFIX: קידומת נומרית של תיקייה
-    FOLDER_NUMERIC_PREFIX_HELP: קידומת נומרית המספקת מיון ידני ומרמזת על נראות
-    FOPEN: fopen
-    FORCE_LOWERCASE_URLS: כפה אותיות קטנות ב-URLs
-    FORCE_LOWERCASE_URLS_HELP: כברירת מחדל Grav תגדיר את כל ה-slugs והנתיבים להיות באותיות קטנות. עם הגדרה זו ל-false, slugs ונתיבים באותיות גדולות יכולים לשמש
-    FORCE_SSL: כפה SSL
-    FORCE_SSL_HELP: כפה SSL גלובלית, אם מופעל כאשר ניגשים לאתר דרך HTTP, Grav שולחת הפניה לעמוד HTTPS
-    FORMAT: פורמט
-    FORMAT_HELP: short = השתמש במופע הראשון של מפריד או גודל; long = מפריד התקציר ייתעלם
-    FRONTMATTER_IGNORE_FIELDS: התעלם משדות frontmatter
-    FRONTMATTER_IGNORE_FIELDS_HELP: שדות frontmatter מסוימים עשויים להכיל Twig אך לא צריכים להיות מעובדים, כגון 'forms'
-    FRONTMATTER_PROCESS_TWIG: עבד frontmatter עם Twig
-    FRONTMATTER_PROCESS_TWIG_HELP: כאשר מופעל ניתן להשתמש במשתני הגדרות Twig ב-frontmatter של עמוד
-    FULL_NAME: שם מלא
-    GENERAL_CONFIG: הגדרות נכסים כלליות
-    GPM_METHOD: שיטת אחזור מרחוק
-    GPM_METHOD_HELP: כאשר מוגדר ל-Auto, Grav תקבע אם fopen זמין ותשתמש בו, אחרת תחזור ל-cURL. כדי לכפות את השימוש באחד מהם החלף את ההגדרה.
-    GPM_OFFICIAL_ONLY: GPM רשמי בלבד
-    GPM_OFFICIAL_ONLY_HELP: אפשר התקנות ישירות רק ממאגר ה-GPM הרשמי בלבד.
-    GPM_RELEASES: הוצאות GPM
-    GPM_RELEASES_HELP: בחר 'Testing' כדי להתקין גרסאות beta או testing
-    GPM_SECTION: מקטע GPM
-    GROUP_NAME: שם קבוצה
-    GROUPS: קבוצות
-    GROUPS_HELP: רשימת הקבוצות שהמשתמש חבר בהן
-    GZIP_COMPRESSION: דחיסת Gzip
-    GZIP_COMPRESSION_HELP: הפעל דחיסת GZip של עמוד Grav לביצועים משופרים.
-    HIDE_EMPTY_FOLDERS: הסתר תיקיות ריקות
-    HIDE_EMPTY_FOLDERS_HELP: אם לתיקייה אין קובץ .md, האם היא צריכה להיות מוסתרת בניווט וגם לא ניתנת לניתוב
-    HIDE_HOME_IN_URLS: הסתר נתיב הבית ב-URLs
-    HIDE_HOME_IN_URLS_HELP: יבטיח שהנתיבים ברירת המחדל לכל עמוד תחת הבית לא יפנו לנתיב הרגיל של הבית
-    HOME_PAGE: עמוד הבית
-    HOME_PAGE_HELP: העמוד ש-Grav תשתמש בו כעמוד נחיתה ברירת מחדל
-    HTTP_ACCEPT_LANGUAGE: הגדר שפה מהדפדפן
-    HTTP_ACCEPT_LANGUAGE_HELP: ניתן לבחור לנסות להגדיר את השפה בהתבסס על תגית `http_accept_language` בכותרת בדפדפן
-    HTTP_CONNECTIONS: חיבורי HTTP
-    HTTP_CONNECTIONS_HELP: מספר חיבורי ה-HTTP המקבילים במהלך בקשות מרובות
-    HTTP_HEADERS: כותרות HTTP
-    HTTP_SECTION: מקטע HTTP
-    ICON: סמל
-    IGNORE_FILES: התעלם מקבצים
-    IGNORE_FILES_HELP: קבצים ספציפיים להתעלם מהם בעת עיבוד עמודים
-    IGNORE_FOLDERS: התעלם מתיקיות
-    IGNORE_FOLDERS_HELP: תיקיות ספציפיות להתעלם מהן בעת עיבוד עמודים
-    IGNORE_HIDDEN: התעלם ממוסתרים
-    IGNORE_HIDDEN_HELP: התעלם מכל הקבצים והתיקיות שמתחילים בנקודה
-    IMAGE_ADAPTER: מתאם תמונה
-    IMAGE_ADAPTER_HELP: מתאם התמונה לשימוש למניפולציית תמונות. 'GD' הוא ברירת המחדל, 'Imagick' הוא חלופה
-    IMAGE_OPTIONS: אפשרויות תמונה
-    IMAGES_AUTO_FIX_ORIENTATION: תקן כיוון אוטומטית
-    IMAGES_AUTO_FIX_ORIENTATION_HELP: תקן אוטומטית את כיוון התמונה בהתבסס על נתוני Exif
-    IMAGES_CLS_ASPECT_RATIO: הפעל יחס רוחב-גובה
-    IMAGES_CLS_ASPECT_RATIO_HELP: משתנה CSS אופציונלי שמוחל באמצעות תכונת 'style' שניתן להשתמש בה ב-CSS לעיצוב מותאם אישית
-    IMAGES_CLS_AUTO_SIZES: הפעל גדלים אוטומטיים
-    IMAGES_CLS_AUTO_SIZES_HELP: הוסף אוטומטית תכונות 'width' ו-'height' לתמונות כדי לטפל ב-CLS
-    IMAGES_CLS_RETINA_SCALE: גורם קנה מידה Retina
-    IMAGES_CLS_RETINA_SCALE_HELP: ייקח את הגודל המחושב ויחלק בגורם קנה המידה כדי להציג תמונה ברזולוציה גבוהה יותר בגודל פיקסל קטן יותר לטיפול טוב יותר ברזולוציות HiDPI
-    IMAGES_CLS_TITLE: Cumulative Layout Shift (CLS)
-    IMAGES_DEBUG: סימן מים לדיבוג תמונה
-    IMAGES_DEBUG_HELP: הצג שכבת-על על תמונות המציינת את עומק הפיקסלים של התמונה בעת עבודה עם retina למשל
-    IMAGES_DECODING: התנהגות פענוח תמונה
-    IMAGES_DECODING_HELP: "תכונת decoding מאפשרת לדפדפן לדחות פענוח תמונות מחוץ למסך עד שמשתמשים גוללים בקרבתן. decoding תומך בשלושה ערכים: auto, sync, async"
-    IMAGES_FETCHPRIORITY: תכונת Fetchpriority של תמונה
-    IMAGES_FETCHPRIORITY_HELP: התכונה fetchpriority ב-HTML היא תכונה המציינת את העדיפות לטעינת משאבים מסוימים, כגון תמונות או iframes, לאופטימיזציה של ביצועים. ערכים אפשריים הם high, low או auto.
-    IMAGES_LOADING: התנהגות טעינת תמונה
-    IMAGES_LOADING_HELP: "תכונת loading מאפשרת לדפדפן לדחות טעינת תמונות ו-iframes מחוץ למסך עד שמשתמשים גוללים בקרבתם. loading תומך בשלושה ערכים: auto, lazy, eager"
-    IMAGES_SEOFRIENDLY: שמות תמונה ידידותיים ל-SEO
-    IMAGES_SEOFRIENDLY_HELP: כאשר מופעל, שם התמונה מוצג ראשון, ולאחר מכן hash קטן יותר המשקף פעולות מעובדות
-    INCLUDE_DEFAULT_LANG: כלול שפת ברירת מחדל
-    INCLUDE_DEFAULT_LANG_FILE_EXTENSION: כלול שפת ברירת מחדל בסיומת הקובץ
-    INCLUDE_DEFAULT_LANG_HELP: זה יוסיף לכל ה-URLs בשפת ברירת המחדל את שפת ברירת המחדל. למשל `/en/blog/my-post`
-    INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: אם מופעל, זה יוסיף את שפת ברירת המחדל לסיומת הקובץ (למשל `.en.md`). השבת זאת כדי לשמור על שפת ברירת המחדל באמצעות סיומת קובץ `.md`.
-    INLINE_TYPES: סוגי חלופה inline
-    INLINE_TYPES_HELP: רשימה של סוגי קבצים שצריכים להיות מוצגים inline במקום להיות מורדים
-    INTL_ENABLED: שילוב מודול Intl
-    INTL_ENABLED_HELP: השתמש במודול Intl PHP ו-collate למיון אוספים מבוססי UTF8
-    ITEMS: פריטים
-    JAVASCRIPT_MINIFY: כיווץ JavaScript
-    JAVASCRIPT_MINIFY_HELP: כווץ את ה-JS במהלך ה-pipelining
-    JAVASCRIPT_MODULE_PIPELINE: pipeline של JavaScript Module
-    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: רנדר pipeline של JS Module תחילה
-    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: רנדר את ה-pipeline של JS לפני כל הפניות JS אחרות שאינן כלולות
-    JAVASCRIPT_MODULE_PIPELINE_HELP: ה-pipeline של JS Module הוא איחוד של מספר משאבי JS לקובץ אחד
-    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: כלול externals ב-pipeline של JS Module
-    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: ל-URLs חיצוניים יש לפעמים הפניות לקבצים יחסיים ואסור לעשות להם pipelining
-    JAVASCRIPT_PIPELINE: pipeline של JavaScript
-    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: רנדר pipeline של JS תחילה
-    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: רנדר את ה-pipeline של JS לפני כל הפניות JS אחרות שאינן כלולות
-    JAVASCRIPT_PIPELINE_HELP: ה-pipeline של JS הוא איחוד של מספר משאבי JS לקובץ אחד
-    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: כלול externals ב-pipeline של JS
-    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: ל-URLs חיצוניים יש לפעמים הפניות לקבצים יחסיים ואסור לעשות להם pipelining
-    JS_ASSETS: נכסי JavaScript
-    JS_MODULE_ASSETS: נכסי JavaScript Module
-    LANGUAGE: שפה
-    LANGUAGE_DEBUG: דיבוג שפה
-    LANGUAGE_DEBUG_HELP: הפעל את הדיבוג של שפות שמשתמשות במסנן twig |t על ידי הוספת span סביבן שניתן לעצב כדי לעזור באבחון בעיות
-    LANGUAGE_HELP: הגדר את השפה המועדפת
-    LANGUAGE_TRANSLATIONS: תרגומים
-    LANGUAGE_TRANSLATIONS_HELP: אם false, מפתחות תרגום משמשים במקום מחרוזות מתורגמות. תכונה זו יכולה לשמש כדי לעזור לתקן תרגומים גרועים או למצוא מחרוזות אנגלית קשיחות.
-    LANGUAGES: שפות
-    LAST_MODIFIED: שונה לאחרונה
-    LAST_MODIFIED_HELP: מגדיר את הכותרת last modified שיכולה לסייע באופטימיזציה של מטמון proxy ודפדפן
-    LIFETIME: אורך חיים
-    LIFETIME_HELP: מגדיר את אורך חיי המטמון בשניות. 0 = אינסופי
-    LIST: רשימה
-    LOG_ERRORS: יומן שגיאות
-    LOG_ERRORS_HELP: רשום שגיאות לתיקיית /logs
-    LOG_HANDLER: מטפל יומן
-    LOG_HANDLER_HELP: היכן להוציא את היומנים
-    LONG: ארוך
-    LONG_DATE_FORMAT: פורמט תאריך תצוגה ארוך
-    LONG_DATE_FORMAT_HELP: הגדר את פורמט התאריך הארוך שיכול לשמש על ידי ערכות נושא
-    MARKDOWN: Markdown
-    MARKDOWN_EXTRA_HELP: הפעל תמיכת ברירת מחדל ב-Markdown Extra - https://michelf.ca/projects/php-markdown/extra/
-    MEDIA: מדיה
-    MEDIA_TYPES: סוגי מדיה
-    MEMCACHED_PORT: פורט Memcached
-    MEMCACHED_PORT_HELP: פורט שרת Memcached
-    MEMCACHED_SERVER: שרת Memcached
-    MEMCACHED_SERVER_HELP: כתובת שרת Memcached
-    MENU: תפריט
-    MENU_HELP: המחרוזת שתשמש בתפריט. אם לא מוגדר, ייעשה שימוש בכותרת.
-    METADATA: מטא-נתונים
-    METADATA_HELP: ערכי מטא-נתונים ברירת מחדל שיוצגו בכל עמוד אלא אם יידרסו על ידי העמוד
-    METADATA_KEY: מפתח (למשל 'Keywords')
-    METADATA_VALUE: ערך (למשל 'Blog, Grav')
-    MIME_TYPE: סוג Mime
-    MISC_SECTION: מקטע שונות
-    MODULE: מודול
-    MODULE_SETUP: הגדרת מודול
-    MOVE: העבר
-    NAME: שם
-    NEVER_CACHE_TWIG: לעולם אל תשמור Twig במטמון
-    NEVER_CACHE_TWIG_HELP: רק שמור תוכן במטמון ועבד את Twig בכל פעם עבור עמודים. מתעלם מהגדרת twig_first.
-    "NO": לא
-    OPTIONS: אפשרויות
-    ORDER: סדר
-    ORDER_BY: מסודר לפי
-    ORDER_DIGITS: ספרות סדר
-    ORDER_DIGITS_HELP: מספר הספרות המשמשות לקידומת שמות תיקיות למיון (למשל `01.about`, `001.about`).
-    ORDERING: סדר
-    OVERRIDE_LOCALE: דרוס locale
-    OVERRIDE_LOCALE_HELP: דרוס את הגדרת ה-locale ב-PHP בהתבסס על השפה הנוכחית
-    OVERRIDES: דריסות
-    PAGE: עמוד
-    PAGE_ACCESS: גישה לעמוד
-    PAGE_ACCESS_HELP: משתמש עם הרשאות הגישה הבאות יכול לגשת לעמוד.
-    PAGE_AUTHORS: יוצרי עמוד
-    PAGE_AUTHORS_HELP: חברי יוצרי העמוד יש להם גישה ברמת בעלים לעמוד זה המוגדרת בקבוצת עמוד מיוחדת 'Authors'.
-    PAGE_FILE: תבנית עמוד
-    PAGE_FILE_HELP: שם קובץ תבנית העמוד, וכברירת מחדל תבנית התצוגה לעמוד זה
-    PAGE_GROUPS: קבוצות עמוד
-    PAGE_GROUPS_HELP: חברי קבוצות העמוד יש להם גישה מיוחדת לעמוד זה.
-    PAGE_INHERIT_PERMISSIONS: ירש הרשאות
-    PAGE_INHERIT_PERMISSIONS_HELP: ירש ACL מעמוד ההורה.
-    PAGE_MEDIA: מדיית עמוד
-    PAGE_SUMMARY: תקציר עמוד
-    PAGE_TYPES: סוגי עמוד
-    PAGE_TYPES_HELP: קובע את סוגי העמודים ש-Grav תומכת בהם והסדר קובע לאיזה סוג ליפול חזרה אם הבקשה לא חד-משמעית
-    PAGE_VISIBILITY_REQUIRES_ACCESS: נראות תפריט דורשת גישה
-    PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: הגדר ל-Yes אם העמוד צריך להיות מוצג בתפריטים רק אם המשתמש יכול לגשת אליהם.
-    PAGES: עמודים
-    PAGES_FALLBACK_ONLY: חלופה לעמודים בלבד
-    PAGES_FALLBACK_ONLY_HELP: רק 'חלופה' למצוא תוכן עמוד דרך שפות נתמכות, התנהגות ברירת המחדל היא להציג כל שפה שנמצאה אם השפה הפעילה חסרה
-    PAGES_TYPE: סוג עמוד frontend
-    PAGES_TYPE_HELP: אפשרות זו מפעילה עמודי Flex Object בחזית. עמודי Admin Flex דורשים את התוסף Flex Objects
-    PARAMETER_SEPARATOR: מפריד פרמטרים
-    PARAMETER_SEPARATOR_HELP: מפריד עבור פרמטרים מועברים שניתן לשנות עבור Apache ב-Windows
-    PARENT: הורה
-    PASSWORD: סיסמה
-    PASSWORD_VALIDATION_MESSAGE: הסיסמה חייבת להכיל לפחות מספר אחד ואות גדולה וקטנה אחת, ולפחות 8 תווים או יותר
-    PERMISSIONS: הרשאות
-    PLUGIN_STATUS: סטטוס תוסף
-    PREVIEW: תצוגה מקדימה
-    PROCESS: עיבוד
-    PROCESS_HELP: שלוט כיצד עמודים מעובדים. ניתן להגדיר ברמת עמוד ולא גלובלית
-    PROXY_CERT: נתיב תעודת Proxy
-    PROXY_CERT_HELP: נתיב מקומי לתיקייה המכילה קובץ pem של תעודת proxy
-    PROXY_URL: כתובת Proxy
-    PROXY_URL_HELP: הזן את ה-HOST או IP ואת ה-PORT של ה-proxy
-    PUBLISH: פרסם
-    PUBLISHED: פורסם
-    PUBLISHED_DATE: תאריך פרסום
-    PUBLISHED_DATE_HELP: יכול לספק תאריך כדי להפעיל אוטומטית פרסום.
-    PUBLISHED_HELP: "כברירת מחדל, עמוד מתפרסם אלא אם הגדרת במפורש published: false או באמצעות publish_date בעתיד, או unpublish_date בעבר"
-    PUBLISHING: פרסום
-    PWD_REGEX: Regex סיסמה
-    PWD_REGEX_HELP: "כברירת מחדל: הסיסמה חייבת להכיל לפחות מספר אחד ואות גדולה וקטנה אחת, ולפחות 8 תווים או יותר"
-    PWD_RULES: כללי סיסמה
-    PWD_RULES_HELP: כללי אימות סיסמה מותאמים אישית. לכל כלל יש ID, תווית אנושית ו-regex שהסיסמה חייבת להתאים אליו.
-    PWD_RULES_ID: ID
-    PWD_RULES_LABEL: תווית
-    PWD_RULES_PATTERN: דפוס Regex
-    READ: קרא
-    READ_FILE_ALLOWED_EXTENSIONS: סיומות קובץ מותרות
-    READ_FILE_ALLOWED_EXTENSIONS_HELP: "סיומות קובץ ש-<code>read_file()</code> תקרא (לא רגיש לאותיות, ללא נקודה מובילה). ברירות המחדל הן פורמטים של טקסט/תוכן בלבד. הוספת פורמטים שבילים או הגדרה (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) היא מסוכנת ואינה מומלצת."
-    READ_FILE_ALLOWED_STREAMS: streams מותרים
-    READ_FILE_ALLOWED_STREAMS_HELP: "סכמות stream ש-<code>read_file()</code> עשויה לפתור. ברירות מחדל: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. הוספת streams רחבים כמו <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> או <code>cache</code> חושפת קבצים רגישים ואינה מומלצת בתוקף."
-    READ_FILE_MAX_SIZE: גודל קובץ מרבי (בבייטים)
-    READ_FILE_MAX_SIZE_HELP: "קבצים גדולים יותר מזה מחזירים <code>false</code> במקום להיטען לזיכרון. ברירת המחדל היא <code>1048576</code> (1 MB). הגדר ל-<code>0</code> כדי להשבית את מגבלת הגודל."
-    READ_FILE_SECTION_HELP: "אילוצים על פונקציית ה-Twig <code>read_file()</code>. הקריאות נכפות דרך כתובות stream של Grav ומאומתות על ידי בדיקת containment של canonical-realpath מול שורשי ה-stream הפתורים, כך ש-traversal מקודד או עם symlink חסום בשכבת מערכת הקבצים ללא קשר לאופן שבו הנתיב נכתב."
-    READ_FILE_SECTION_TITLE: Twig read_file()
-    REDIRECT: הפניית עמוד
-    REDIRECT_DEFAULT_CODE: קוד הפניה ברירת מחדל
-    REDIRECT_DEFAULT_CODE_HELP: קוד סטטוס ה-HTTP לשימוש להפניות
-    REDIRECT_DEFAULT_ROUTE: הפניית נתיב ברירת מחדל
-    REDIRECT_DEFAULT_ROUTE_HELP: הפנה אוטומטית לנתיב ברירת המחדל של עמוד
-    REDIRECT_HELP: הזן נתיב עמוד או URL חיצוני שעמוד זה יפנה אליו. למשל `/some/route` או `http://somesite.com`
-    REDIRECT_OPTION_301: 301 - הועבר לצמיתות
-    REDIRECT_OPTION_302: 302 - הועבר זמנית
-    REDIRECT_OPTION_303: 303 - ראה אחר
-    REDIRECT_OPTION_DEFAULT_REDIRECT: השתמש בקוד הפניה ברירת מחדל
-    REDIRECT_OPTION_NO_REDIRECT: ללא הפניה
-    REDIRECT_TRAILING_SLASH: הפניית slash סופי
-    REDIRECT_TRAILING_SLASH_HELP: בצע הפניית 301 במקום לטפל בשקיפות ב-URIs עם slash סופי.
-    REDIRECTS_AND_ROUTES: הפניות ונתיבים
-    REDIS_DATABASE: ID מסד נתונים Redis
-    REDIS_DATABASE_HELP: ID מסד הנתונים של מופע Redis
-    REDIS_PASSWORD: סיסמה/סוד Redis
-    REDIS_PORT: פורט Redis
-    REDIS_PORT_HELP: פורט שרת Redis
-    REDIS_SERVER: שרת Redis
-    REDIS_SERVER_HELP: כתובת שרת Redis
-    REDIS_SOCKET: שקע Redis
-    REDIS_SOCKET_HELP: שקע Redis
-    REGULAR: רגיל
-    REVERSE_PROXY: Reverse Proxy
-    REVERSE_PROXY_HELP: הפעל זאת אם אתה מאחורי reverse proxy ויש לך בעיות עם URLs המכילים פורטים שגויים
-    ROOT: שורש
-    ROUTABLE: ניתן לניתוב
-    ROUTABLE_HELP: אם עמוד זה נגיש על ידי URL
-    ROUTE_ALIASES: כינויי נתיב
-    ROUTE_CANONICAL: נתיב קנוני
-    ROUTE_DEFAULT: נתיב ברירת מחדל
-    ROUTE_OVERRIDES: דריסות נתיב
-    SANITIZE_SVG: סינון SVG
-    SANITIZE_SVG_HELP: מסיר כל קוד XSS מ-SVG
-    SAVE: שמור
-    SCHEDULER: מתזמן
-    SCHEDULER_EMAIL: דוא״ל
-    SCHEDULER_EMAIL_HELP: "דוא״ל לשליחת הפלט אליו. הערה: דורש שקובץ הפלט יוגדר"
-    SCHEDULER_JOBS: משימות מתזמן מותאמות אישית
-    SCHEDULER_OUTPUT: קובץ פלט
-    SCHEDULER_OUTPUT_HELP: הנתיב/שם הקובץ של קובץ הפלט (משורש התקנת Grav)
-    SCHEDULER_OUTPUT_TYPE: סוג פלט
-    SCHEDULER_OUTPUT_TYPE_HELP: הוסף לאותו קובץ בכל הרצה, או דרוס את הקובץ בכל הרצה
-    SCHEDULER_RUNAT: רוץ ב-
-    SCHEDULER_RUNAT_HELP: "תחביר 'at' בפורמט Cron. הערה: כל הזמנים הם UTC!"
-    SCHEDULER_STATUS: סטטוס מתזמן
-    SECURITY: אבטחה
-    SESSION: Session
-    SESSION_DOMAIN: דומיין session
-    SESSION_DOMAIN_HELP: השתמש רק אם אתה משכתב את דומיין האתר לדוגמה בקונטיינר Docker.
-    SESSION_ENABLED_HELP: הפעל תמיכת session בתוך Grav
-    SESSION_HTTPONLY: HTTP בלבד
-    SESSION_HTTPONLY_HELP: אם true, מציין שיש להשתמש ב-cookies רק על HTTP, ושינוי JavaScript אינו מותר
-    SESSION_INITIALIZE: אתחל Session
-    SESSION_INITIALIZE_HELP: גורם ל-Grav להתחיל session. תכונה זו נחוצה כדי שכל אינטראקציית משתמש תעבוד, כגון התחברות, טפסים וכו׳. תוסף Admin לא מושפע מהגדרה זו.
-    SESSION_NAME_HELP: מזהה המשמש ליצירת שם של cookie ה-session
-    SESSION_PATH: נתיב session
-    SESSION_PATH_HELP: השתמש רק אם אתה משכתב את נתיב האתר לדוגמה בקונטיינר Docker.
-    SESSION_SAMESITE: תכונת SameSite של ה-session
-    SESSION_SAMESITE_HELP: Lax|Strict|None. ראה https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite למידע נוסף
-    SESSION_SECURE: מאובטח
-    SESSION_SECURE_HELP: "אם true, מציין שתקשורת עבור cookie זה חייבת להיות על העברה מוצפנת. אזהרה: הפעל זאת רק באתרים שרצים אך ורק על HTTPS"
-    SESSION_SECURE_HTTPS: מאובטח (HTTPS)
-    SESSION_SECURE_HTTPS_HELP: הגדר session מאובטח על HTTPS אך לא על HTTP. אין השפעה אם יש לך את הגדרת Secure לעיל מוגדרת ל-true. הגדר ל-false אם האתר שלך קופץ בין HTTP ל-HTTPS.
-    SESSION_SPLIT: פיצול Session
-    SESSION_SPLIT_HELP: sessions מפוצלים בלתי תלויים בין האתר ותוספים אחרים (כגון admin)
-    SESSION_UNIQUENESS: מחרוזת ייחודית
-    SESSION_UNIQUENESS_HELP: hash MD5 של נתיב השורש של Grav, כלומר `GRAV_ROOT` (ברירת מחדל) או מבוסס על מחרוזת `security.salt` אקראית.
-    SETTINGS: הגדרות
-    SHORT: קצר
-    SHORT_DATE_FORMAT: פורמט תאריך תצוגה קצר
-    SHORT_DATE_FORMAT_HELP: הגדר את פורמט התאריך הקצר שיכול לשמש על ידי ערכות נושא
-    SHUTDOWN_CLOSE_CONNECTION: סגור חיבור בכיבוי
-    SHUTDOWN_CLOSE_CONNECTION_HELP: סגור את החיבור לפני קריאה ל-onShutdown(). false לדיבוג
-    SITE: אתר
-    SITE_ACCESS: גישה לאתר
-    SITE_DEFAULT_LANG: שפת ברירת מחדל
-    SITE_DEFAULT_LANG_HELP: שפת ברירת המחדל שתשמש על ידי תגית ה-<HTML> של ערכת הנושא
-    SITE_DEFAULT_LANG_PLACEHOLDER: שפת ברירת המחדל שתשמש על ידי תגית ה-<HTML> של ערכת הנושא
-    SITE_TITLE: כותרת אתר
-    SITE_TITLE_HELP: כותרת ברירת המחדל לאתר שלך, משמשת לרוב בערכות נושא
-    SITE_TITLE_PLACEHOLDER: כותרת אתר כללית
-    SLUG: slug
-    SLUG_HELP: משתנה ה-slug מאפשר לך להגדיר במיוחד את החלק של ה-URL של העמוד
-    SLUG_VALIDATE_MESSAGE: slug חייב להכיל רק תווים אלפא-נומריים באותיות קטנות ומקפים
-    SORTABLE_PAGES: "עמודים ניתנים למיון:"
-    SSL_ENABLE_PROXY: הפעל שרת Proxy
-    SSL_VERIFY_HOST: אמת host מרחוק
-    SSL_VERIFY_HOST_HELP: חלק עשויים להיכשל באימות תעודות SSL
-    SSL_VERIFY_PEER: אמת peer מרחוק
-    SSL_VERIFY_PEER_HELP: חלק עשויים להיכשל באימות תעודות SSL
-    STABLE: יציב
-    STRICT_BLUEPRINT_COMPAT: תאימות Blueprint
-    STRICT_BLUEPRINT_COMPAT_HELP: מאפשר תמיכה תואמת לאחור קפדנית עבור blueprints. אם כבוי, ההתנהגות החדשה גורמת לאימות הטופס להיכשל אם יש נתונים נוספים שלא הוגדרו ב-blueprint.
-    STRICT_TWIG_COMPAT: תאימות Twig
-    STRICT_TWIG_COMPAT_HELP: מאפשר הגדרת autoescape של Twig שהוצאה משימוש. כאשר מושבת, נדרש מסנן |raw להפקת HTML מכיוון ש-Twig יבצע autoescape לפלט
-    STRICT_YAML_COMPAT: תאימות YAML
-    STRICT_YAML_COMPAT_HELP: נופל חזרה ל-parser YAML של Symfony 2.4 אם parser Native או 3.4 נכשל
-    SUMMARY_SIZE: גודל תקציר
-    SUMMARY_SIZE_HELP: כמות התווים של עמוד לשימוש כתקציר תוכן
-    SUPPORTED: נתמך
-    SUPPORTED_HELP: רשימה מופרדת בפסיקים של קודי שפה בני 2 אותיות (לדוגמה 'en,fr,de')
-    SYSLOG_FACILITY: facility של Syslog
-    SYSLOG_FACILITY_HELP: facility של Syslog לפלט
-    SYSLOG_TAG: תגית Syslog
-    SYSLOG_TAG_HELP: תגית Syslog לפלט
-    SYSTEM: מערכת
-    TAXONOMIES: טקסונומיות
-    TAXONOMY: טקסונומיה
-    TAXONOMY_TYPES: סוגי טקסונומיה
-    TAXONOMY_TYPES_HELP: יש להגדיר סוגי טקסונומיה כאן אם ברצונך להשתמש בהם בעמודים
-    TESTING: בדיקות
-    THUMB: תמונה ממוזערת
-    TIMEOUT: timeout
-    TIMEOUT_HELP: מגדיר את timeout ה-session בשניות
-    TIMEZONE: אזור זמן
-    TIMEZONE_HELP: דרוס את אזור הזמן ברירת המחדל של השרת
-    TITLE: כותרת
-    TRANSLATIONS_FALLBACK: חלופת תרגומים
-    TRANSLATIONS_FALLBACK_HELP: נפילה חזרה דרך תרגומים נתמכים אם השפה הפעילה לא קיימת
-    TWIG_CACHING: שמירת Twig במטמון
-    TWIG_CACHING_HELP: שלוט במנגנון שמירת Twig במטמון. השאר זאת מופעל לביצועים מיטביים.
-    TWIG_DEBUG: דיבוג Twig
-    TWIG_DEBUG_HELP: מאפשר את האפשרות לא לטעון את הרחבת Twig Debugger
-    TWIG_FIRST: עבד Twig תחילה
-    TWIG_FIRST_HELP: אם הפעלת עיבוד עמוד Twig, אז ניתן להגדיר את Twig לעיבוד לפני או אחרי Markdown
-    TWIG_SANDBOX: Twig Sandbox
-    TWIG_SANDBOX_ADMIN_HINT: הערת רמז ל-Admin
-    TWIG_SANDBOX_ALLOWED_FILTERS: מסננים מותרים
-    TWIG_SANDBOX_ALLOWED_FILTERS_HELP: מסנני Twig שתוכן עמוד יכול להחיל.
-    TWIG_SANDBOX_ALLOWED_FUNCTIONS: פונקציות מותרות
-    TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: פונקציות Twig שתוכן עמוד יכול לקרוא להן.
-    TWIG_SANDBOX_ALLOWED_METHODS: שיטות מותרות
-    TWIG_SANDBOX_ALLOWED_METHODS_HELP: רשימות לפי מחלקה של שיטות אובייקט שתוכן עמוד יכול להפעיל.
-    TWIG_SANDBOX_ALLOWED_PROPERTIES: מאפיינים מותרים
-    TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: רשימות לפי מחלקה של מאפייני אובייקט שתוכן עמוד יכול לקרוא.
-    TWIG_SANDBOX_ALLOWED_TAGS: תגיות מותרות
-    TWIG_SANDBOX_ALLOWED_TAGS_HELP: תגיות Twig שתוכן עמוד יכול להשתמש בהן. הוסף רק תגיות שאת ההשפעות שלהן ברצונך לחשוף ליוצרים.
-    TWIG_SANDBOX_CLASS: מחלקה
-    TWIG_SANDBOX_ENABLED: הפעל Twig sandbox
-    TWIG_SANDBOX_HELP: רשימה מותרת של תגיות, מסננים, פונקציות, שיטות ומאפיינים של Twig שתבניות תוכן-עמוד יכולות להשתמש בהם. תוכן שנכתב על ידי עורך מרונדר דרך sandbox זה כך שיוצר שנפרץ או באג של template-injection לא יכולים להגיע לקונטיינר הרחב יותר.
-    TWIG_SANDBOX_LOGGING: רשום הפרות ביומן
-    TWIG_SANDBOX_LOGGING_HELP: כתוב כל ביטוי חסום ל-<code>logs/twig-sandbox.log</code>. שימושי בזמן כוונון רשימת ההיתר; כבה בייצור כדי לשמור על יומנים שקטים.
-    TWIG_SANDBOX_METHODS: שיטות
-    TWIG_SANDBOX_PROPERTIES: מאפיינים
-    TWIG_TEMPLATING: תבניות Twig
-    TYPE: סוג
-    UNPUBLISHED_DATE: תאריך ביטול פרסום
-    UNPUBLISHED_DATE_HELP: יכול לספק תאריך כדי להפעיל אוטומטית ביטול פרסום.
-    UPDATE: עדכן
-    UPLOADS_DANGEROUS_EXTENSIONS: סיומות מסוכנות
-    UPLOADS_DANGEROUS_EXTENSIONS_HELP: חסום את הסיומות האלה מהעלאה ללא קשר לסוגי ה-MIME המקובלים
-    UPLOADS_SECURITY: אבטחת העלאות
-    USE_GLOBAL: השתמש בגלובלי
-    USERNAME: שם משתמש
-    USERNAME_HELP: שם משתמש צריך להיות בין 3 ל-16 תווים, כולל אותיות קטנות, ספרות, קווים תחתונים ומקפים. אותיות גדולות, רווחים ותווים מיוחדים אינם מותרים
-    USERNAME_REGEX: Regex שם משתמש
-    USERNAME_REGEX_HELP: "כברירת מחדל: רק אותיות קטנות, ספרות, מקפים וקווים תחתונים. 3 - 16 תווים"
-    VALID_LINK_ATTRIBUTES: תכונות קישור תקפות
-    VALID_LINK_ATTRIBUTES_HELP: תכונות שיתווספו אוטומטית לאלמנט HTML של מדיה
-    VARY_ACCEPT_ENCODING: vary accept encoding
-    VARY_ACCEPT_ENCODING_HELP: "מגדיר את הכותרת `Vary: Accept Encoding` כדי לסייע במטמון proxy ו-CDN"
-    VERSION: גרסה
-    VISIBLE: גלוי
-    VISIBLE_HELP: קובע אם העמוד גלוי בניווט.
-    WRAPPED_SITE: אתר עטוף
-    WRAPPED_SITE_HELP: עבור ערכות נושא/תוספים לדעת אם Grav עטופה על ידי פלטפורמה אחרת
-    XSS_DANGEROUS_TAGS: סנן תגיות HTML מסוכנות
-    XSS_DANGEROUS_TAGS_LIST: רשימת תגיות HTML מסוכנות
-    XSS_HTML_INLINE_STYLES: סנן סגנונות HTML inline
-    XSS_INVALID_PROTOCOLS: סנן פרוטוקולים לא חוקיים
-    XSS_INVALID_PROTOCOLS_LIST: רשימת פרוטוקולים לא חוקיים
-    XSS_MOZ_BINDINGS: סנן Moz bindings
-    XSS_ON_EVENTS: סנן On-events
-    XSS_SECURITY: אבטחת XSS לתוכן
-    XSS_WHITELIST_PERMISSIONS: הרשאות רשימת היתר
-    XSS_WHITELIST_PERMISSIONS_HELP: משתמשים עם הרשאות אלה ידלגו על כללי XSS בעת שמירת תוכן
-    "YES": כן
-    YUBIKEY_HELP: הכנס את ה-YubiKey שלך למחשב ולחץ על הכפתור כדי ליצור OTP. 12 התווים הראשונים הם ה-client ID שלך וישמרו.
-    YUBIKEY_ID: YubiKey ID
-    CACHE_CHECK_INTERVAL: מרווח בדיקת מטמון
-    CACHE_CHECK_INTERVAL_HELP: שניות לשימוש חוזר ב-hash של מערכת הקבצים שחושב בעבר לפני בדיקה נוספת. אפס שומר על בדיקות לכל בקשה הקיימות.
-    HTTP_X_FORWARDED_HOST_ENABLED: HTTP_X_FORWARDED_HOST מופעל
-    HTTP_X_FORWARDED_HOST_HELP: "סמוך על כותרת הבקשה <code>X-Forwarded-Host</code>. הפעל רק כאשר האתר באמת מאחורי reverse proxy שמגדיר ודורס כותרת זו; אחרת לקוחות יכולים לזייף את ה-host ש-Grav רואה."
-    HTTP_X_FORWARDED_IP_ENABLED: HTTP_X_FORWARDED IP מופעל
-    HTTP_X_FORWARDED_IP_HELP: "סמוך על כותרות <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> בעת פתרון IP של לקוח. הפעל רק כאשר האתר באמת מאחורי reverse proxy שמגדיר ודורס כותרות אלה; אחרת לקוחות יכולים לזייף את ה-IP שלהם ולעקוף הגבלת קצב, חסימות IP ויומן ביקורת."
-    HTTP_X_FORWARDED_PORT_ENABLED: HTTP_X_FORWARDED_PORT מופעל
-    HTTP_X_FORWARDED_PORT_HELP: "סמוך על כותרת הבקשה <code>X-Forwarded-Port</code>. הפעל רק כאשר האתר באמת מאחורי reverse proxy שמגדיר ודורס כותרת זו."
-    HTTP_X_FORWARDED_PROTO_ENABLED: HTTP_X_FORWARDED_PROTO מופעל
-    HTTP_X_FORWARDED_PROTO_HELP: "סמוך על כותרת הבקשה <code>X-Forwarded-Proto</code> (משמש בדרך כלל לזיהוי HTTPS מאחורי proxy שמסיים TLS). הפעל רק כאשר האתר באמת מאחורי reverse proxy שמגדיר ודורס כותרת זו."
-    HTTP_CLIENT_IP_ENABLED: HTTP_CLIENT_IP מופעל
-    HTTP_CLIENT_IP_HELP: "סמוך על כותרת הבקשה <code>Client-IP</code> בעת פתרון IP של לקוח. נדיר; בדרך כלל מוגדר רק על ידי load balancers ספציפיים. השאר כבוי אלא אם ידוע לך שה-proxy שלך מגדיר ודורס כותרת זו."
-    HTTP_CF_CONNECTING_IP_ENABLED: HTTP_CF_CONNECTING_IP מופעל
-    HTTP_CF_CONNECTING_IP_HELP: "סמוך על כותרת הבקשה <code>CF-Connecting-IP</code> בעת פתרון IP של לקוח. הפעל כאשר האתר באמת מאחורי Cloudflare; אחרת לקוחות יכולים לזייף את ה-IP שלהם. לבטיחות מלאה, הגבל גם גישת origin לטווחי IP של Cloudflare בשרת האינטרנט."
-    MARKDOWN_EXTRA: Markdown extra
-    ORDER_DIR_HELP: '"desc" או "asc" הם ערכים תקפים'
-    TWIG_3_COMPATIBILITY: תאימות Twig 3
-    TWIG_3_COMPATIBILITY_HELP: "הפעל שכתובים אוטומטיים לתחביר Twig 1/2 ישן שנשבר ב-Twig 3 (למשל guards של <code>for ... if ...</code>)."
-    TWIG_SANDBOX_ADMIN_HINT_HELP: "כאשר ה-sandbox חוסם ביטוי, צרף הערת HTML של שורה אחת לעמוד המרונדר כך ש-super-admins הצופים במקור יראו שמשהו סונן. מבקרים ולא-admins לא רואים כלום."
-    TWIG_SANDBOX_ENABLED_HELP: "מרנדר תוכן עמוד שנכתב על ידי עורך בתוך Twig SecurityPolicy מבוסס רשימת היתר. <strong>השבתה מסירה את ההגנה היחידה נגד התקפות template-injection דרך תוכן עמוד</strong>: כל חשבון עם גישה ברמת עורך (או כל מי שפורץ את מערכת הקבצים) יכול להריץ PHP שרירותי דרך Twig. כבה רק אם אתר באמת צריך גישת קונטיינר מתוכן עמוד ואתה סומך לחלוטין על כל יוצר."
-    ACCOUNTS_CONFIGURATION: הגדרות חשבונות
-    COMPATIBILITY: תאימות
-    FLEX_ADMIN_EVENT_COMPAT: תאימות אירועי Admin
-    FLEX_ADMIN_EVENT_COMPAT_HELP: מפעיל אירועי onAdminSave ו-onAdminAfterSave עבור תוספים.
-    ID: ID
-    PAGE_PERMISSIONS: הרשאות עמוד
-    PAGES_CONFIGURATION: הגדרות עמודים
-    ROUTE: נתיב
-    SCHEDULER_ACTIVE_TRIGGERS: טריגרים פעילים
-    SCHEDULER_ADVANCED_FEATURES: תכונות מתקדמות
-    SCHEDULER_CONCURRENT_WORKERS: עובדים מקבילים
-    SCHEDULER_CONCURRENT_WORKERS_HELP: מספר המשימות שיכולות לרוץ בו-זמנית (1 = סדרתי).
-    SCHEDULER_HEALTH_CHECK_CONFIG: הגדרות בדיקת בריאות
-    SCHEDULER_HEALTH_CHECK_ENABLED: הפעל בדיקת בריאות
-    SCHEDULER_HEALTH_CHECK_ENABLED_HELP: ספק נקודת קצה של סטטוס בריאות לניטור.
-    SCHEDULER_HEALTH_CHECK_PATH: נתיב בדיקת בריאות
-    SCHEDULER_HEALTH_CHECK_PATH_HELP: נתיב URL לנקודת הקצה של בדיקת הבריאות.
-    SCHEDULER_HEALTH_STATUS: סטטוס בריאות
-    SCHEDULER_HISTORY: היסטוריית משימות
-    SCHEDULER_HISTORY_ENABLED: הפעל היסטוריית משימות
-    SCHEDULER_HISTORY_ENABLED_HELP: עקוב אחר היסטוריית ביצוע עבור כל המשימות.
-    SCHEDULER_HISTORY_RETENTION: שמירת היסטוריה (בימים)
-    SCHEDULER_HISTORY_RETENTION_HELP: כמה זמן לשמור היסטוריית משימות.
-    SCHEDULER_QUEUE_CONFIG: הגדרות תור
-    SCHEDULER_QUEUE_MAX_SIZE: גודל תור מרבי
-    SCHEDULER_QUEUE_MAX_SIZE_HELP: מספר מרבי של משימות שניתן לתור.
-    SCHEDULER_QUEUE_PATH: נתיב אחסון תור
-    SCHEDULER_QUEUE_PATH_HELP: היכן לאחסן משימות בתור.
-    SCHEDULER_RETRY_BACKOFF: אסטרטגיית backoff של ניסיון חוזר
-    SCHEDULER_RETRY_BACKOFF_HELP: כיצד לחשב את ההשהיה בין ניסיונות חוזרים.
-    SCHEDULER_RETRY_CONFIG: הגדרות ניסיון חוזר
-    SCHEDULER_RETRY_ENABLED: הפעל ניסיון חוזר של משימה
-    SCHEDULER_RETRY_ENABLED_HELP: נסה אוטומטית שוב משימות שנכשלו.
-    SCHEDULER_RETRY_MAX_ATTEMPTS: ניסיונות חוזרים מרביים
-    SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: מספר מרבי של פעמים לנסות שוב משימה שנכשלה.
-    SCHEDULER_USAGE_EXAMPLES: דוגמאות שימוש
-    SCHEDULER_WEBHOOK_CONFIG: הגדרות Webhook
-    SCHEDULER_WEBHOOK_ENABLED: הפעל טריגרי Webhook
-    SCHEDULER_WEBHOOK_ENABLED_HELP: אפשר הפעלת המתזמן באמצעות HTTP webhook.
-    SCHEDULER_WEBHOOK_PATH: נתיב Webhook
-    SCHEDULER_WEBHOOK_PATH_HELP: נתיב URL לנקודת הקצה של ה-webhook.
-    SCHEDULER_WEBHOOK_TOKEN: טוקן אבטחת Webhook
-    SCHEDULER_WEBHOOK_TOKEN_HELP: טוקן סודי לאימות בקשות webhook. שמור על סודיות!
-    SCHEDULER_WORKER_CONFIG: הגדרות עובד
-    TRANSLATIONS: תרגומים
-    USER_ACCOUNTS: חשבונות משתמש
-    TOASTS:
-      CONFIG_SAVED: "הגדרות {name} נשמרו"
-      CONFIG_MODIFIED_ELSEWHERE: ההגדרות שונו במקום אחר — טען מחדש כדי לראות את הגרסה העדכנית
-      SAVE_FAILED: השמירה נכשלה
-      DEPENDENCY_INSTALLED: "התוסף '{slug}' הותקן (תלות)"
-      PACKAGE_UPDATED: "{name} עודכן"
-      PACKAGE_UPDATE_FAILED: "עדכון {name} נכשל: {detail}"
-      PACKAGE_REMOVED: "{name} הוסר"
-      PACKAGE_REMOVE_FAILED: "הסרת {name} נכשלה"
-      PACKAGES_UPDATED: "{n, plural, one{חבילה אחת עודכנה} two{# חבילות עודכנו} many{# חבילות עודכנו} other{# חבילות עודכנו}}"
-      UPDATE_FAILED: "העדכון נכשל: {detail}"
-      PLUGIN_ENABLED: "{name} הופעל"
-      PLUGIN_DISABLED: "{name} הושבת"
-      PLUGIN_ENABLE_FAILED: "הפעלת {name} נכשלה: {detail}"
-      PLUGIN_DISABLE_FAILED: "השבתת {name} נכשלה: {detail}"
-      PLUGIN_LOCKOUT_BLOCK: "לא ניתן להשבית את {name} מ-admin-next — הדבר ינעל אותך בחוץ."
-      PLUGIN_REQUIRED_BLOCK: "לא ניתן להסיר את {name} — הוא נדרש על ידי admin-next."
-      THEME_ACTIVATED: "{name} הוא כעת ערכת העיצוב הפעילה"
-      THEME_ACTIVATE_FAILED: "הפעלת {name} נכשלה"
-      THEME_REMOVE_BLOCK: "לא ניתן להסיר את {name}."
-      ACTIVE_THEME_REMOVE_BLOCK: "לא ניתן להסיר את ערכת העיצוב הפעילה. עבור לערכה אחרת קודם."
-      GPM_REFRESHED: "{n, plural, =0{GPM רוענן — אין עדכונים זמינים} one{GPM רוענן — עדכון אחד זמין} two{GPM רוענן — # עדכונים זמינים} many{GPM רוענן — # עדכונים זמינים} other{GPM רוענן — # עדכונים זמינים}}"
-      GRAV_UPGRADED: "Grav שודרג ל-v{version}"
-      BACKUP_CREATED: "גיבוי נוצר ({size})"
-      CACHE_CLEARED: "המטמון נוקה ({scope})"
-      FILES_UPLOADED: "{n, plural, one{קובץ אחד הועלה} two{# קבצים הועלו} many{# קבצים הועלו} other{# קבצים הועלו}}"
-      FOLDER_CREATED: 'התיקייה "{name}" נוצרה'
-      FILE_DELETED: "{name} נמחק"
-      FILE_DELETE_FAILED: "מחיקת {name} נכשלה"
-      FILES_DELETE_FAILED: "{n, plural, one{מחיקת קובץ אחד נכשלה} two{מחיקת # קבצים נכשלה} many{מחיקת # קבצים נכשלה} other{מחיקת # קבצים נכשלה}}"
-      COPIED: "{label} הועתק"
-      COPY_FAILED: "ההעתקה נכשלה: {detail}"
-      SAVED_AS_LANGUAGE: "נשמר כ-{language}"
-      TRANSLATION_CREATED: "התרגום ל-{language} נוצר"
-      TRANSLATION_RESET: "{target} אופס מ-{source}"
-      SAVED: נשמר
-      ITEM_SAVED: "{name} נשמר"
-      ITEM_DELETED: '"{name}" נמחק'
-      ITEM_DELETE_FAILED: 'מחיקת "{name}" נכשלה'
-      ITEM_MOVED: '"{name}" הועבר'
-      ITEM_REORDERED: '"{name}" סודר מחדש'
-      USER_CREATED: "המשתמש '{username}' נוצר"
-      USER_SAVED: "המשתמש '{username}' נשמר"
-      USER_DELETED: "המשתמש '{username}' נמחק"
-      USER_DELETE_FAILED: "מחיקת המשתמש '{username}' נכשלה"
-      API_KEY_REVOKED: 'מפתח API "{name}" בוטל'
-      PLUGIN_INSTALLED: "התוסף '{name}' הותקן"
-      THEME_INSTALLED: "ערכת העיצוב '{name}' הותקנה"
-      INSTALL_FAILED: "התקנת '{slug}' נכשלה: {detail}"
-      TOTP_CODE_REQUIRED: הזן את הקוד בן 6 הספרות מהאפליקציה שלך
-      SAVE_FORM_FAILED: "שמירת {form} נכשלה"
-      FORM_LABEL:
-        FORM: טופס
-        CONFIGURATION: הגדרות
-        PLUGIN: תוסף
-        PLUGIN_PAGE: עמוד תוסף
-        FLEX_OBJECT: אובייקט Flex
-        USER: משתמש
-        THEME: ערכת עיצוב
-        PAGE: עמוד
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'הגישה נדחתה'
+        ACTIVATE: הפעל
+        ACTIVE: פעיל
+        ADD_PAGE: 'הוסף עמוד'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'הוסף תוסף'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'נכשל בטעינת תוספים זמינים מ-GPM'
+            FILTER_PLUGINS: 'סנן תוספים...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'בחר תוסף כדי לראות פרטים'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'הוסף ערכת נושא'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'נכשל בטעינת ערכות נושא זמינות מ-GPM'
+            FILTER_THEMES: 'סנן ערכות נושא...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'בחר ערכת נושא כדי לראות פרטים'
+        ALLOWED: מותר
+        ALL_CHANGES_SAVED: 'כל השינויים נשמרו'
+        API_KEYS_FIELD:
+            API_KEYS: 'מפתחות API'
+            API_KEY_GENERATED: 'מפתח API נוצר'
+            BLANK_NEVER: '(ריק = אף פעם)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'העתק את המפתח הזה עכשיו — הוא לא יוצג שוב.'
+            CREATED: נוצר
+            EXPIRES: 'פג תוקף'
+            EXPIRY: תוקף
+            E_G_MY_CLI_TOOL: 'למשל הכלי שלי ל-CLI'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'נכשל בהעתקה ללוח'
+            FAILED_TO_GENERATE_API_KEY: 'נכשל ביצירת מפתח API'
+            FAILED_TO_LOAD_API_KEYS: 'נכשל בטעינת מפתחות API'
+            FAILED_TO_REVOKE_API_KEY: 'נכשל בביטול מפתח API'
+            GENERATE_KEY: 'צור מפתח'
+            GENERATING: מייצר...
+            KEY_NAME: 'שם המפתח'
+            KEY_PREFIX: 'קידומת מפתח'
+            LAST_USED: 'שימוש אחרון'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'עדיין לא נוצרו מפתחות API.'
+            PLEASE_ENTER_A_KEY_NAME: 'אנא הזן שם מפתח'
+            REVOKE_API_KEY: 'בטל מפתח API'
+            REVOKE_KEY: 'בטל מפתח'
+        APP:
+            CREATING_BACKUP: 'יוצר גיבוי…'
+            DASHBOARD_GRAV_ADMIN: 'לוח בקרה — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: רענן
+            WELCOME_BACK: 'ברוך שובך, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'ניהול v{version}'
+            CLOSE_MENU: 'סגור תפריט'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'האם אתה בטוח?'
+        AUTHOR: יוצר
+        BACKUPS_WIDGET:
+            BACKING_UP: מגבה…
+            BACKUP_NOW: 'גבה עכשיו'
+            CREATE_A_NEW_BACKUP_NOW: 'צור גיבוי חדש עכשיו'
+            DOWNLOAD_FILE: 'הורד {filename}'
+            NO_BACKUPS_FOUND: 'לא נמצאו גיבויים'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 'אפשרויות מטמון'
+            CLEAR_CACHE: 'נקה מטמון'
+            FAILED_TO_CLEAR_CACHE: 'נכשל בניקוי המטמון'
+        CANCEL: ביטול
+        CLEAR_SEARCH: 'נקה חיפוש'
+        CLOSE: סגור
+        COLLAPSE_ALL: 'כווץ הכל'
+        COLLAPSE_SIDEBAR: 'כווץ סרגל צד'
+        COMPATIBILITY: תאימות
+        CONFIG:
+            CLEAR_FILTER: 'נקה סינון'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'ההגדרות שונו במקום אחר — שמור כדי לדרוס או טען מחדש'
+            CONFIGURATION_RELOADED: 'ההגדרות נטענו מחדש'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'ההגדרות נשמרו בהצלחה'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'ההגדרות שונו במקום אחר. טען מחדש כדי לראות את השינויים האחרונים.'
+            FAILED_TO_SAVE_CONFIGURATION: 'נכשל בשמירת ההגדרות'
+            FILTER_FIELDS: 'סנן שדות...'
+            LOADING_CONFIGURATION: 'טוען הגדרות...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'אין blueprint הגדרות זמין עבור scope זה.'
+            NO_MATCHES_FOUND: 'לא נמצאו התאמות'
+            PAGE_TITLE: 'הגדרות: {scope} — Grav Admin'
+            RELOAD: 'טען מחדש'
+            TITLE: הגדרות
+            TITLE_SCROLLED: 'הגדרות: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: סביבה
+            EXPORT_YAML: 'ייצוא YAML'
+            GRAV_VERSION: 'גרסת Grav'
+            LOADING_SYSTEM_INFORMATION: 'טוען מידע מערכת...'
+            PHP_CONFIGURATION: 'הגדרות PHP'
+            PHP_EXTENSIONS: 'הרחבות PHP'
+            PHP_VERSION: 'גרסת PHP'
+            SERVER: שרת
+            SERVER_SOFTWARE: 'תוכנת שרת'
+        CONFIRM_ACTION: 'אשר פעולה'
+        CONFIRM_DELETE: 'למחוק את "{title}" ב-{route}?'
+        COPY_BUTTON:
+            COPIED: הועתק!
+        CUSTOM: 'מותאם אישית'
+        DASHBOARD:
+            ADD_WIDGET: 'הוסף ווידג׳ט'
+            CUSTOMIZE: 'התאמה אישית'
+            CUSTOMIZE_TITLE: 'התאמת לוח הבקרה'
+            EDIT_HINT: 'מצב התאמה אישית — גרור, שנה גודל, הסתר ווידג׳טים, ואז שמור.'
+            EMPTY: 'לוח הבקרה שלך ריק'
+            EMPTY_HINT: 'לחץ על סמל העיפרון למעלה כדי להוסיף ווידג׳טים'
+            HIDE_WIDGET: 'הסתר ווידג׳ט'
+            LAYOUT_RESET: 'הפריסה אופסה לברירת המחדל'
+            LAYOUT_SAVED: 'פריסת לוח הבקרה נשמרה'
+            PICKER_EMPTY: 'כל הווידג׳טים הזמינים כבר נמצאים בלוח הבקרה שלך.'
+            PICKER_SUBTITLE: 'בחר ווידג׳ט להוספה חזרה ללוח הבקרה שלך.'
+            PICKER_TITLE: 'הוסף ווידג׳ט'
+            PRESETS: 'ערכות מוכנות'
+            PRESET_COMPACT: קומפקטי
+            PRESET_COMPACT_DESC: 'כל הווידג׳טים בגודל הקטן ביותר שכל אחד תומך בו.'
+            PRESET_DEFAULT: 'ברירת מחדל'
+            PRESET_DEFAULT_DESC: 'פריסה מומלצת על ידי השרת — מנקה את ההתאמות האישיות שלך.'
+            PRESET_MINIMAL: מינימלי
+            PRESET_MINIMAL_DESC: 'סטטיסטיקות ועמודים אחרונים בלבד.'
+            RESET_LAYOUT: 'אפס את הפריסה שלי'
+            SAVE_SITE_DEFAULT: 'שמור כברירת מחדל של האתר'
+            SITE_LAYOUT_SAVED: 'ברירת המחדל של האתר נשמרה'
+            TITLE: 'לוח בקרה'
+            WIDGETS:
+                BACKUPS: גיבויים
+                NEWS_FEED: 'עדכוני חדשות'
+                NOTIFICATIONS: התראות
+                POPULARITY: 'צפיות בעמודים'
+                RECENT_PAGES: 'עמודים אחרונים'
+                STATS: 'סטטיסטיקות אתר'
+                SYSTEM_HEALTH: 'בריאות המערכת'
+                TOP_PAGES: 'עמודים מובילים'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'גרור כדי לסדר מחדש'
+        DELETE: מחק
+        DENIED: נדחה
+        DEPENDENCIES: תלויות
+        DISABLE: השבת
+        DISABLED: מושבת
+        DISMISS: בטל
+        DONE: בוצע
+        DOWNLOAD: הורד
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: 'ערכות פריסה'
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'שמור כברירת מחדל של האתר עבור כל המשתמשים'
+        ENABLED: מופעל
+        ENVIRONMENT_SWITCHER:
+            CREATE: צור
+            CREATES_PATH: 'יוצר user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'צור סביבה…'
+            CREATE_ENV_NAMED: 'צור סביבה "{name}"…'
+            DEFAULT: 'ברירת מחדל'
+            ENV_CREATED: "הסביבה '{name}' נוצרה ונבחרה"
+            FAILED_TO_CREATE: 'יצירת הסביבה נכשלה'
+            HAS_OVERRIDES: 'יש דריסות'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'לא קיימת יותר. בחר אחרת.'
+            SAVE_CONFIG_TO: 'שמור הגדרה ל-'
+            SAVING_TO_DEFAULT: 'נשמר לברירת המחדל (user/config)'
+            SAVING_TO_ENV: 'נשמר לסביבה: {name}'
+            SELECTED_ENV: 'סביבה נבחרת'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'בחר היכן נשמרות כתיבות הגדרה'
+        EXPAND_ALL: 'הרחב הכל'
+        EXPAND_SIDEBAR: 'הרחב סרגל צד'
+        EXPERT_MODE: 'מצב מומחה'
+        FIELDS:
+            ADD_ENTRY: 'הוסף ערך'
+            CLEAR_DATE: 'נקה תאריך'
+            CRON:
+                AT_MINUTE: בדקה
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min hr dom mon dow'
+                ON_DAY: ביום
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'טריגרים פעילים'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'נכשל בטעינת סטטוס המתזמן'
+                FAILED_TO_RUN_SCHEDULER: 'נכשל בהרצת המתזמן'
+                HEALTH_STATUS: 'סטטוס בריאות'
+                JOB_ID: 'מזהה משימה'
+                LAST_RUN: 'הרצה אחרונה'
+                LOADING_SCHEDULER_STATUS: 'טוען סטטוס מתזמן...'
+                NOT_CONFIGURED: 'לא מוגדר'
+                NOT_ENABLED: 'לא מופעל'
+                NOT_INSTALLED: 'לא מותקן'
+                NO_SCHEDULED_JOBS_REGISTERED: 'לא רשומות משימות מתוזמנות.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'אין טריגרים פעילים! הפעל webhooks או הגדר cron.'
+                QUEUE_SIZE: 'גודל תור:'
+                RUNNING: מריץ...
+                RUN_ALL: 'הרץ הכל'
+                SCHEDULED_JOBS: 'משימות מתוזמנות'
+                SCHEDULER_RUN_COMPLETED: 'הרצת המתזמן הסתיימה'
+                SCHEDULER_STATUS: 'סטטוס המתזמן'
+                STATUS: 'סטטוס:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'טוען שדה מותאם אישית...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'מחרוזת פורמט:'
+                SELECT_FORMAT: '— בחר פורמט —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'אין קבצים תואמים'
+                NO_MEDIA_UPLOADED: 'עדיין לא הועלו קבצי מדיה'
+            FILE_PICKER_SOON: 'בורר קבצים — בקרוב'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'לא נמצאו סמלים'
+                SEARCH_ICONS: 'חפש סמלים...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'מציג 200 תוצאות ראשונות — הקלד כדי לצמצם'
+            NO_TAXONOMY_TYPES: 'לא הוגדרו סוגי טקסונומיה'
+            PAGES:
+                FILTER_PAGES: 'סנן עמודים...'
+                ROOT: '/ (שורש)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'בודק עמוד...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'מדיית עמוד לא זמינה'
+            PERMISSIONS:
+                NOT_SET: 'לא מוגדר'
+                NO_PERMISSIONS_CONFIGURED: 'לא הוגדרו הרשאות'
+            REGENERATE_SLUG: 'צור מחדש אוטומטית מכותרת העמוד'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'אין שדות התואמים לסינון שלך'
+            THEME_SELECT:
+                LOADING_THEMES: 'טוען ערכות נושא...'
+                SELECT_THEME: '— בחר ערכת נושא —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'בדוק סטטוס בריאות:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'הרץ בכפייה משימה ספציפית (מתעלם מתזמון):'
+                GITHUB_ACTIONS_EXAMPLE: 'דוגמת GitHub Actions:'
+                HOW_TO_USE_WEBHOOKS: 'כיצד להשתמש ב-webhooks:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'הפעל את כל המשימות המוכנות (מכבד תזמון):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'בודק סטטוס תוסף webhook...'
+                INSTALL_PLUGIN_NOW: 'התקן תוסף עכשיו'
+                OR_RUN: 'או הרץ:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'התוסף מותקן ומופעל.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'התוסף מותקן. הפעל טריגרי Webhook למטה כדי להפעיל.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'התוסף נדרש לפונקציונליות webhook.'
+                WEBHOOK_PLUGIN_REQUIRED: 'נדרש תוסף Webhook'
+        FLEX_OBJECTS:
+            ACTIONS: פעולות
+            BACK_TO_LIST: 'חזור לרשימה'
+            DELETE_OBJECT: 'מחק אובייקט'
+            EXPORT: ייצוא
+            EXPORT_FAILED: 'הייצוא נכשל'
+            FAILED_TO_DELETE_OBJECT: 'נכשל במחיקת האובייקט'
+            FAILED_TO_LOAD_DIRECTORY: 'נכשל בטעינת תיקייה'
+            FAILED_TO_LOAD_OBJECTS: 'נכשל בטעינת אובייקטים'
+            FAILED_TO_SAVE: 'השמירה נכשלה.'
+            NEW:
+                BACK_TO_LIST: 'חזור לרשימה'
+                CREATE: צור
+                OBJECT_CREATED: 'האובייקט נוצר'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'האובייקט שונה במקום אחר — שמור כדי לדרוס או טען מחדש'
+            OBJECT_DELETED: 'האובייקט נמחק'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'האובייקט שונה במקום אחר. אנא טען מחדש.'
+            PREVIOUS: הקודם
+            SEARCH: חיפוש...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'סגור תפריט ווידג׳טים'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'חזור להתחברות'
+            CHECK_INBOX: 'בדוק את תיבת הדואר שלך לקישור איפוס.'
+            EMAIL_ADDRESS: 'כתובת דוא״ל'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'הזן כתובת דוא״ל תקינה'
+            FORGOT_PASSWORD: 'שכחת סיסמה'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'שכחת סיסמה — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'אם קיים חשבון לכתובת זו, נשלח קישור איפוס.'
+            SENDING: שולח...
+            SEND_RESET_LINK: 'שלח קישור איפוס'
+            SUBTITLE: 'הזן את כתובת הדוא״ל שלך ונשלח לך קישור איפוס.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'לא ניתן להתחבר לשרת.'
+        HOMEPAGE: 'עמוד הבית'
+        INFO: מידע
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'לא נמצאו סמלים'
+            SEARCH_ICONS: 'חפש סמלים...'
+            TYPE_TO_NARROW_RESULTS: 'הקלד כדי לצמצם תוצאות'
+        INSTALL: התקן
+        INSTALLING: מתקין...
+        KEYWORDS: 'מילות מפתח'
+        LANG:
+            CREATE_TRANSLATION: 'צור תרגום {language}'
+            CURRENT: נוכחי
+            DEFAULT: 'ברירת מחדל'
+            DELETE_TRANSLATION: 'מחק תרגום {language}'
+            FALLBACK_NOTICE: 'אין תרגום ל-{language}. מציג תוכן ברירת מחדל.'
+            NOT_TRANSLATED: 'לא מתורגם'
+            SAVE_AS: 'שמור כ-{language}'
+            SWITCH_LANGUAGE: 'החלף שפת תוכן'
+            SYNC_FROM: 'אפס מ-{language}'
+            TRANSLATED: מתורגם
+            TRANSLATIONS: תרגומים
+            TRANSLATION_CREATED: 'תרגום {language} נוצר'
+        LOADING: טוען...
+        LOGIN:
+            AUTHENTICATION_CODE: 'קוד אימות'
+            AUTH_CODE_PROMPT: 'פתח את אפליקציית האימות שלך והזן את הקוד בן 6 הספרות עבור **{username}**.'
+            BACK_TO_SIGN_IN: 'חזור להתחברות'
+            ENTER_A_VALID_6_DIGIT_CODE: 'הזן קוד תקין בן 6 ספרות'
+            ENVIRONMENT: סביבה
+            FORGOT_PASSWORD: 'שכחת סיסמה?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'שם משתמש או סיסמה שגויים'
+            LOGIN_GRAV_ADMIN: 'התחברות — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'סיסמה נדרשת'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'אנא מלא את כל השדות הנדרשים'
+            POWERED_BY_GRAV_CMS: 'מופעל על ידי Grav CMS'
+            SERVER_CONFIGURATION: 'הגדרות שרת'
+            SERVER_URL: 'כתובת שרת'
+            SIGNED_IN_SUCCESSFULLY: 'התחברת בהצלחה'
+            SIGNING_IN: מתחבר...
+            SIGN_IN: התחברות
+            SUBTITLE: 'התחבר כדי לנהל את האתר שלך'
+            TWOFA_SUBTITLE: 'הזן את קוד האימות שלך כדי להמשיך'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'לא ניתן להתחבר לשרת. בדוק את כתובת השרת ונסה שוב.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'לא ניתן לאמת את הקוד. בדוק את החיבור שלך ונסה שוב.'
+            USERNAME_IS_REQUIRED: 'שם משתמש נדרש'
+            VERIFY: אמת
+            VERIFYING: מאמת...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'אין מה להציג בתצוגה מקדימה'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'נהל קבצי מדיה ברחבי האתר'
+            MEDIA_GRAV_ADMIN: 'מדיה — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: מימדים
+                FAILED_TO_COPY: 'ההעתקה נכשלה'
+                FILE_RENAMED: 'שם הקובץ שונה'
+                NEXT_FILE: 'קובץ הבא'
+                PREVIOUS_FILE: 'קובץ קודם'
+                RENAME: 'שנה שם'
+            MEDIA_MANAGER:
+                CREATE: צור
+                FILES_DELETED: 'הקבצים נמחקו'
+                FOLDER_NAME: 'שם תיקייה'
+                NEW_FOLDER: 'תיקייה חדשה'
+                UPLOAD_FILES: 'העלה קבצים'
+            MEDIA_TOOLBAR:
+                FOLDER: תיקייה
+                GRID_VIEW: 'תצוגת רשת'
+                LIST_VIEW: 'תצוגת רשימה'
+                NEW_FOLDER: 'תיקייה חדשה'
+                SEARCH_MEDIA: 'חיפוש מדיה...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'גרור לתוך העורך'
+                PAGE_MEDIA: 'מדיית עמוד'
+        NAV:
+            CONFIGURATION: הגדרות
+            DASHBOARD: 'לוח בקרה'
+            MEDIA: מדיה
+            PAGES: עמודים
+            PLUGINS: תוספים
+            SETTINGS: הגדרות
+            SYSTEM: מערכת
+            THEMES: 'ערכות נושא'
+            TOOLS: כלים
+            USERS: משתמשים
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'אין פריטי הזנה'
+        NORMAL_MODE: 'מצב רגיל'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'אין התראות'
+        NO_CHANGES: 'אין שינויים לשמירה'
+        PAGES:
+            ADD_FOLDER: 'הוסף תיקייה'
+            ADD_MENU: 'תפריט הוספה'
+            ADD_MODULE: 'הוסף מודול'
+            ADD_PAGE: 'הוסף עמוד'
+            DELETED: '"{title}" נמחק'
+            DELETE_FAILED: 'נכשל במחיקת העמוד'
+            DELETE_PAGE: 'מחק עמוד'
+            DRAFT: טיוטה
+            EDIT:
+                CONNECTING_TO_COLLAB: 'מתחבר לסשן שיתוף פעולה…'
+                COPY_PAGE: 'העתק עמוד'
+                CREATE_LANGUAGE: 'צור {language}'
+                DELETE_PAGE: 'מחק עמוד'
+                EDIT_PAGE: 'ערוך עמוד'
+                FAILED_TO_CREATE_TRANSLATION: 'נכשל ביצירת תרגום'
+                FAILED_TO_SYNC_TRANSLATION: 'נכשל בסנכרון התרגום'
+                FALLBACK: (חלופה)
+                FALLBACK_NOTICE: 'לא קיים תרגום ל-{active}. מציג חלופה של {effective}. השתמש ב"שמור כ-{active}" כדי ליצור תרגום שניתן לערוך.'
+                FOLDER_NAME: 'שם תיקייה'
+                INVALID_YAML_FRONTMATTER: 'YAML frontmatter לא תקין'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'YAML frontmatter לא תקין — תקן את התחביר לפני שמירה'
+                LOADING_PAGE: 'טוען עמוד...'
+                NOT_TRANSLATED: 'לא מתורגם:'
+                OPEN_IN_NEW_TAB: 'פתח בלשונית חדשה'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'העמוד שונה במקום אחר — שמור כדי לדרוס או טען מחדש'
+                PAGE_COPIED: 'העמוד הועתק'
+                PAGE_DELETED: 'העמוד נמחק'
+                PAGE_PREVIEW: 'תצוגה מקדימה של העמוד'
+                PAGE_SAVED_AND_MOVED: 'העמוד נשמר והועבר'
+                PREVIEW_PAGE: 'תצוגה מקדימה של העמוד'
+                PUBLISH_ON: 'פרסם בתאריך'
+                RESET_CONTENT_FROM: 'אפס תוכן מ:'
+                RESET_FROM: 'אפס מ-{language}'
+                RESET_TRANSLATION: 'אפס תרגום'
+                SAVE_AS_LANGUAGE: 'שמור כ-{language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'שם התיקייה בדיסק (URL slug)'
+                TOGGLE_PAGE_NAVIGATOR: 'החלף ניווט עמודים'
+                UNPUBLISH_ON: 'בטל פרסום בתאריך'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'כתוב כאן את תוכן ה-Markdown שלך...'
+            EDIT_PAGE: 'ערוך עמוד'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: שונה
+            HEADER_PARENT: הורה
+            HEADER_STATUS: סטטוס
+            HEADER_TEMPLATE: תבנית
+            HEADER_TITLE: כותרת
+            INFO_DATE: תאריך
+            INFO_LANGUAGE: שפה
+            INFO_MODIFIED: שונה
+            INFO_ORDER: סדר
+            INFO_PUBLISHED: פורסם
+            INFO_PUBLISH_ON: 'פרסם בתאריך'
+            INFO_ROUTABLE: 'ניתן לניתוב'
+            INFO_ROUTE: נתיב
+            INFO_SLUG: slug
+            INFO_TEMPLATE: תבנית
+            INFO_UNPUBLISH_ON: 'בטל פרסום בתאריך'
+            INFO_VISIBLE: 'גלוי בניווט'
+            LOADING: 'טוען עמודים...'
+            MODE_EXPERT: מומחה
+            MODE_NORMAL: רגיל
+            MOVED: '"{title}" הועבר'
+            MOVE_FAILED: 'נכשל בהעברת העמוד'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'הוסף עמוד — Grav Admin'
+                CONTINUE: המשך
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'שולט אם העמוד הזה מופיע בתפריטי הניווט'
+                FAILED_TO_CREATE: 'יצירת העמוד נכשלה'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'נכשל בטעינת תבניות עמוד'
+                FILTER_PAGES: 'סנן עמודים...'
+                FOLDER_CREATED: 'התיקייה "{title}" נוצרה'
+                FOLDER_DETAILS: 'פרטי תיקייה'
+                FOLDER_NAME: 'שם תיקייה'
+                LOADING_TEMPLATES: 'טוען תבניות...'
+                MODULE_CREATED: 'המודול "{title}" נוצר'
+                MY_NEW_PAGE: 'העמוד החדש שלי'
+                ORDERING: סדר
+                ORDERING_HELP_FOLDER: 'מוסיף קידומת מספרית הקובעת את מיקום התיקייה בין אחיותיה.'
+                ORDERING_HELP_MODULE: 'מוסיף קידומת מספרית הקובעת את מיקום המודול בתוך העמוד המודולרי האב.'
+                ORDERING_NONE: ללא
+                PAGE_CREATED: 'העמוד "{title}" נוצר'
+                PAGE_DETAILS: 'פרטי העמוד'
+                PAGE_TEMPLATE: 'תבנית עמוד'
+                PAGE_TITLE: 'כותרת העמוד'
+                PARENT_PAGE: 'עמוד הורה'
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'שם תיקייה בטוח ל-URL עבור עמוד זה'
+                VISIBLE: גלוי
+            NO_PAGES: 'לא נמצאו עמודים'
+            NO_SEARCH_RESULTS: 'אין עמודים התואמים לחיפוש שלך'
+            PAGES_GRAV_ADMIN: 'עמודים — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'טיוטה (לא פורסם)'
+                FOLDER_ORDER: 'סדר תיקיות'
+                HAS_CHILDREN: 'יש לו ילדים'
+                SUMMARY: תקציר
+                VISIBLE: גלוי
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'נכשל בארגון מחדש של עמודים'
+                NO_PAGES_MATCH: 'אין עמודים התואמים ל-"{query}"'
+                SEARCHING: מחפש…
+            PAGE_COUNT: '{n, plural, one{עמוד אחד} two{שני עמודים} many{# עמודים} other{# עמודים}}'
+            PAGE_INFO: 'מידע על העמוד'
+            PUBLISHED: פורסם
+            RAW_HEADER: 'כותרת עמוד גולמית (JSON)'
+            REORDERED: '"{title}" סודר מחדש'
+            REORDER_FAILED: 'סידור מחדש נכשל'
+            REORDER_MOVE: 'סדר מחדש / העבר'
+            REORDER_SAME_PARENT: 'ניתן לסדר מחדש רק עמודים תחת אותו הורה. השתמש בתצוגת עץ להעברות בין הורים.'
+            SAVED: 'העמוד נשמר בהצלחה'
+            SAVE_FAILED: 'נכשל בשמירת העמוד'
+            SEARCH_PLACEHOLDER: 'חיפוש עמודים...'
+            SORT_DATE_NEWEST: 'תאריך (חדש ביותר)'
+            SORT_NEWEST: 'חדש ביותר'
+            SORT_OLDEST: 'ישן ביותר'
+            SORT_ORDER: סדר
+            SORT_TITLE_AZ: 'כותרת א-ת'
+            SORT_TITLE_ZA: 'כותרת ת-א'
+            SUBTITLE: 'נהל את התוכן והמבנה של האתר שלך'
+            TITLE: עמודים
+            VIEW_COLUMNS: עמודות
+            VIEW_LIST: רשימה
+            VIEW_TREE: עץ
+        PASSWORD: סיסמה
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 'דרישות סיסמה'
+            PASSWORD_STRENGTH: 'חוזק סיסמה'
+            REQUIREMENTS: דרישות
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'נכשל בטעינת הרשאות'
+            NOT_SET: 'לא מוגדר'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'חזור ללוח הבקרה'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'אין תוכן זמין עבור עמוד התוסף הזה.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'חזור לתוספים'
+            CHANGELOG: 'יומן שינויים'
+            CHECK_UPDATES: 'בדוק עדכונים'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'ההגדרות שונו במקום אחר. אנא טען מחדש.'
+            CONFIGURE: הגדר
+            ENABLE_PLUGIN: 'הפעל תוסף'
+            FAILED_TO_CHECK_FOR_UPDATES: 'נכשל בבדיקת עדכונים'
+            FAILED_TO_LOAD_PLUGINS: 'נכשל בטעינת תוספים'
+            FAILED_TO_SAVE_CONFIGURATION: 'נכשל בשמירת ההגדרות.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'אין אפשרויות הגדרה זמינות עבור תוסף זה.'
+            PAGE_TITLE: '{name} — תוספים — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'תוספים — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'התוסף שונה במקום אחר — שמור כדי לדרוס או טען מחדש'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'יש להפעיל את התוסף כדי להגדיר אותו.'
+            REMOVE_PLUGIN: 'הסר תוסף'
+            SEARCH_PLUGINS: 'חפש תוספים...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'בחר תוסף כדי לראות פרטים'
+            SYMLINKED: 'מקושר ב-symlink'
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'טוען עמוד תוסף...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'טעינת הווידג׳ט נכשלה'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: '14 הימים האחרונים'
+            THIS_MONTH: החודש
+            THIS_WEEK: השבוע
+        PREMIUM: פרימיום
+        PREVIEW: 'תצוגה מקדימה'
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'אנא הזן מחדש את הסיסמה שלך כדי להמשיך. העבודה שלך נשמרה.'
+            SESSION_EXPIRED: 'הסשן פג'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'הצג הכל'
+        REMOVE: הסר
+        RESET:
+            BACK_TO_SIGN_IN: 'חזור להתחברות'
+            CONFIRM_PASSWORD: 'אשר סיסמה'
+            INVALID_LINK: 'קישור איפוס לא תקין.'
+            NEW_PASSWORD_FOR: 'בחר סיסמה חדשה עבור **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'הסיסמאות אינן תואמות'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'הסיסמה אופסה בהצלחה. אנא התחבר.'
+            RESETTING: מאפס...
+            RESET_PASSWORD: 'איפוס סיסמה'
+            RESET_PASSWORD_GRAV_ADMIN: 'איפוס סיסמה — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'קישור איפוס זה חסר פרמטרים נדרשים. בקש קישור חדש מעמוד שכחת סיסמה.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'לא ניתן להתחבר לשרת.'
+        SAVE: שמור
+        SAVING: שומר...
+        SEARCH: חיפוש
+        SETTINGS:
+            1_SECOND: 'שנייה אחת'
+            2_SECONDS: '2 שניות'
+            ACCENT_COLOR: 'צבע הדגשה'
+            ADD_LINK: 'הוסף קישור'
+            ADMIN_INTERFACE_LANGUAGE: 'שפת ממשק ה-admin'
+            ADMIN_LANGUAGE: 'שפת ה-admin'
+            ADMIN_LANGUAGE_DESC: 'שפה עבור תוויות, תפריטים והודעות ({count} מחרוזות נטענו)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'העדפות ומראה של ה-admin'
+            APPEARANCE: מראה
+            AUTHENTICATED_AS: 'מאומת בתור'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'שמור אוטומטית כאשר אתה עוזב שדה'
+            AUTO_SAVE: 'שמירה אוטומטית'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'התנהגות שמירה אוטומטית וביטול עבור עורכי טפסים'
+            BRANDING: מיתוג
+            BRANDING_DESC: 'הלוגו ותווית המותג המוצגים בכל מקום בממשק הניהול.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'בחר בין מראה בהיר לכהה'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'בחר כיצד הלוגו מוצג'
+            COLLAB_DESCRIPTION: 'עריכה רב-משתמשית בזמן אמת עם נוכחות. דורש את התוסף `sync` בשרת. ניסיוני.'
+            COLOR_MODE: 'מצב צבע'
+            CONNECTION: חיבור
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'התאם את הלוגו המוצג בסרגל הצד ובעמוד ההתחברות'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'התאם את המראה והתחושה של ה-admin'
+            CUSTOM_IMAGE: 'תמונה מותאמת אישית'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'קיצורי דרך מותאמים אישית המוצגים בתפריט העליון'
+            CUSTOM_TEXT: 'טקסט מותאם אישית'
+            DARK: כהה
+            DARK_LOGO: 'לוגו כהה'
+            DARK_LOGO_REMOVED: 'הלוגו הכהה הוסר.'
+            DARK_LOGO_UPLOADED: 'הלוגו הכהה הועלה.'
+            DARK_MODE_LOGO: 'לוגו למצב כהה'
+            DEFAULT_APPEARANCE: 'מראה ברירת מחדל'
+            DEFAULT_COLOR_APPEARANCE_DESC: 'מראה צבעוני ברירת מחדל למשתמשים חדשים.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'צפיפות עורך טפסים ברירת מחדל.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'שפת ממשק ברירת מחדל למשתמשים חדשים.'
+            DEFAULT_LANGUAGE: 'שפת ברירת מחדל'
+            DEFAULT_PAGES: 'עמודי ברירת מחדל'
+            DEFAULT_PRIMARY_COLOR_DESC: 'צבע ראשי ברירת מחדל לכפתורים, קישורים והדגשות.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'הגדרות ברירת מחדל לדפדפן העמודים'
+            DEFAULT_TEXT_SIZE_DESC: 'גודל טקסט ברירת מחדל לממשק הניהול.'
+            DEFAULT_TYPEFACE_DESC: 'גופן ברירת מחדל לממשק הניהול.'
+            DEFAULT_VIEW: 'תצוגת ברירת מחדל'
+            DEUTSCH: Deutsch
+            EDITING: עריכה
+            EDITOR_HEADING: עורך
+            EDITOR_MODE: 'מצב עורך'
+            ENGLISH: English
+            ENVIRONMENT: סביבה
+            ESPA_OL: Español
+            EXTERNAL: חיצוני
+            FAILED_TO_REMOVE_LOGO: 'הסרת הלוגו נכשלה.'
+            FAILED_TO_RESET_PREFERENCES: 'איפוס ההעדפות נכשל.'
+            FAILED_TO_SAVE_LOGO_MODE: 'שמירת מצב הלוגו נכשלה.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'שמירת טקסט הלוגו נכשלה.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'שמירת ברירות המחדל לאתר נכשלה.'
+            FOLLOW_OS: 'בהתאם למערכת'
+            FONT: גופן
+            FONT_SIZE: 'גודל גופן'
+            FONT_SIZE_LARGE: גדול
+            FONT_SIZE_NORMAL: רגיל
+            FONT_SIZE_SMALL: קטן
+            FONT_SIZE_XLARGE: 'גדול מאוד'
+            FRAN_AIS: Français
+            GRAV_LOGO: 'לוגו Grav'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'קבץ שינויי שדות מהירים לפעולת ביטול אחת'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'כיצד עמודים מוצגים כברירת מחדל'
+            HUE: גוון
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'פריטים בעמוד'
+            LANGUAGE_CHANGED: 'השפה שונתה ל-{language}'
+            LIGHT: בהיר
+            LIGHT_LOGO: 'לוגו בהיר'
+            LIGHT_LOGO_REMOVED: 'הלוגו הבהיר הוסר.'
+            LIGHT_LOGO_UPLOADED: 'הלוגו הבהיר הועלה.'
+            LIGHT_MODE_LOGO: 'לוגו למצב בהיר'
+            LOGO_TEXT: 'טקסט לוגו'
+            LOGO_TYPE: 'סוג לוגו'
+            LOGO_UPLOAD_FAILED: 'העלאת הלוגו נכשלה.'
+            MENUBAR_LINKS: 'קישורי תפריט עליון'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'ללא (שדה אחד = ביטול אחד)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'מספר העמודים המוצגים בתצוגת רשימה'
+            'OFF': כבוי
+            'ON': מופעל
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'תוסף בשרת. ניסיוני.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'ההעדפות אופסו. טען מחדש כדי להחיל.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'צבע ראשי המשמש לכפתורים, קישורים והדגשות'
+            REAL_TIME_COLLABORATION: 'שיתוף פעולה בזמן אמת'
+            REMOVE_LINK: 'הסר קישור'
+            RESET: איפוס
+            RESET_ALL_PREFERENCES: 'אפס את כל ההעדפות'
+            RESET_PREFERENCES: 'אפס העדפות'
+            RESET_PREFERENCES_MSG: 'להסיר את כל העקיפות האישיות שלך ולחזור לברירות המחדל של האתר?'
+            RESET_TO_SITE_DEFAULTS: 'אפס את ההעדפות שלי לברירות המחדל של האתר'
+            REVERT_CHANGES: 'בטל שינויים'
+            SATURATION: רוויה
+            SAVED_AUTOMATICALLY: 'נשמר אוטומטית'
+            SAVE_SITE_DEFAULTS: 'שמור ברירות מחדל לאתר'
+            SERVER_CONNECTION_DETAILS: 'פרטי חיבור לשרת'
+            SERVER_URL: 'כתובת שרת'
+            SETTINGS_GRAV_ADMIN: 'הגדרות — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'הצג כפתור ביטול בסרגל הכלים של העורך'
+            SITE_DEFAULTS: 'ברירות מחדל לאתר'
+            SITE_DEFAULTS_DESCRIPTION: 'ההגדרות שלהלן חלות על כל משתמש בממשק הניהול כבסיס. פריטי שכבה B (מראה, עמודים, שפה, עורך) ניתנים לעקיפה על ידי כל משתמש בהעדפות האישיות שלו למעלה. פריטי שכבה A (עריכה, סרגל תפריטים) הם כלל-אתריים ולא ניתנים לעקיפה.'
+            SITE_DEFAULTS_SAVED: 'ברירות המחדל לאתר נשמרו. כל המשתמשים יראו אותן בטעינה הבאה.'
+            SITE_SETTINGS_DESC: 'העדפות ברירת מחדל למשתמשים חדשים בנוסף להתנהגות כלל-אתרית. השינויים חלים בטעינה הבאה למשתמשים המושפעים.'
+            SITE_SETTINGS_HEADING: 'הגדרות אתר'
+            SITE_WIDE_ONLY: 'כלל-אתרי בלבד'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'גודל הטקסט המשמש בכל ה-admin'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'האות הראשונה הופכת לסמל'
+            TOOLBAR_UNDO_BUTTON: 'כפתור ביטול בסרגל הכלים'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'גופן המשמש בכל ה-admin'
+            UNDO_BATCH_WINDOW: 'חלון איגוד ביטולים'
+            USED_ON_DARK_BACKGROUNDS: 'בשימוש על רקעים כהים'
+            USED_ON_LIGHT_BACKGROUNDS: 'בשימוש על רקעים בהירים'
+            USERS_MAY_OVERRIDE: 'ניתן לעקיפה על ידי המשתמש'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 תווים: אותיות, ספרות, מקפים, קווים תחתונים'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'חשבון מנהל נוצר — ברוכים הבאים ל-Grav'
+            CHECKING_SERVER: 'בודק שרת…'
+            CONFIRM_PASSWORD: 'אשר סיסמה'
+            CREATE_ADMINISTRATOR: 'צור מנהל'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'צור את חשבון המנהל שלך כדי להתחיל'
+            CREATING_ACCOUNT: 'יוצר חשבון...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'הזן כתובת דוא״ל תקינה'
+            ENVIRONMENT: סביבה
+            FULL_NAME: 'שם מלא'
+            OPTIONAL: (אופציונלי)
+            PASSWORDS_DO_NOT_MATCH: 'הסיסמאות אינן תואמות'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'אנא תקן את השגיאות למעלה ונסה שוב'
+            POWERED_BY_GRAV_CMS: 'מופעל על ידי Grav CMS'
+            SERVER_CONFIGURATION: 'הגדרות שרת'
+            SERVER_URL: 'כתובת שרת'
+            SETUP_GRAV_ADMIN: 'התקנה — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'ההתקנה כבר הושלמה. אנא התחבר.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'לא ניתן להתחבר לשרת. בדוק את כתובת השרת ונסה שוב.'
+            WELCOME_TO_GRAV: 'ברוכים הבאים ל-Grav'
+        SIGN_OUT: התנתקות
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} פעילים)'
+            ACTIVE_THEME: 'ערכת נושא פעילה'
+            UPDATE_COUNT: '{n, plural, one{עדכון אחד} two{שני עדכונים} many{# עדכונים} other{# עדכונים}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'עורך ה-Markdown המובנה'
+                LOCKED: 'לקריאה בלבד — {owner} עורך עם **{editor}**. סוגי עורך מעורבים לא יכולים לערוך יחד; [החלף את העדפת העורך שלך]({href}) כדי לשתף פעולה בזמן אמת.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'החלף את העדפת העורך שלך'
+                TO_COLLABORATE_LIVE: 'כדי לשתף פעולה בזמן אמת.'
+        SYSTEM:
+            COMING_SOON: בקרוב
+            SYSTEM_GRAV_ADMIN: 'מערכת — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} פנויים'
+            BYTES_USED: '{size} בשימוש'
+            CACHE: מטמון
+            DISK: דיסק
+            EVERYTHING_UP_TO_DATE: 'הכל מעודכן'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav מותקן באמצעות symlink — שדרג ידנית.'
+            GRAV_UPDATE_AVAILABLE: 'עדכון Grav זמין'
+            MORE_COUNT: '+ {n} נוספים…'
+            PACKAGES_OUTDATED: '{n, plural, one{חבילה אחת לא מעודכנת} two{שתי חבילות לא מעודכנות} many{# חבילות לא מעודכנות} other{# חבילות לא מעודכנות}}'
+            PERCENT_USED: '{percent}% בשימוש'
+            SERVER: שרת
+            UPDATES: עדכונים
+            UPDATES_AVAILABLE_COUNT: '{n} זמינים'
+            UPDATE_ALL: 'עדכן הכל'
+            UPGRADE_GRAV: 'שדרג את Grav'
+        THEMES:
+            ACTIVE_THEME: 'ערכת נושא פעילה'
+            BACK_TO_THEMES: 'חזור לערכות נושא'
+            CHANGELOG: 'יומן שינויים'
+            CHECK_UPDATES: 'בדוק עדכונים'
+            CLICK_TO_VIEW_FULL_SIZE: 'לחץ כדי להציג בגודל מלא'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'ההגדרות שונו במקום אחר. אנא טען מחדש.'
+            CONFIGURE: הגדר
+            FAILED_TO_CHECK_FOR_UPDATES: 'נכשל בבדיקת עדכונים'
+            FAILED_TO_LOAD_THEMES: 'נכשל בטעינת ערכות נושא'
+            FAILED_TO_SAVE_CONFIGURATION: 'נכשל בשמירת ההגדרות.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'אין אפשרויות הגדרה זמינות עבור ערכת נושא זו.'
+            PAGE_TITLE: '{name} — ערכות נושא — Grav Admin'
+            REMOVE_THEME: 'הסר ערכת נושא'
+            SEARCH_THEMES: 'חפש ערכות נושא...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'בחר ערכת נושא כדי לראות פרטים'
+            SYMLINKED: 'מקושר ב-symlink'
+            THEMES_GRAV_ADMIN: 'ערכות נושא — Grav Admin'
+        TIME:
+            DAYS_AGO: 'לפני {n} ימים'
+            HOURS_AGO: 'לפני {n} שע׳'
+            JUST_NOW: כעת
+            MINUTES_AGO: 'לפני {n} דק׳'
+        TOGGLE_DARK_MODE: 'החלף מצב כהה'
+        TOGGLE_MENU: 'החלף תפריט'
+        TOOLS:
+            BACKUPS:
+                ACTION: פעולה
+                BACKUP_CREATED_SUCCESSFULLY: 'גיבוי נוצר בהצלחה'
+                BACKUP_DATE: 'תאריך גיבוי'
+                BACKUP_DELETED: 'הגיבוי נמחק'
+                BACKUP_HISTORY: 'היסטוריית גיבויים'
+                BACKUP_NOW: 'גבה עכשיו'
+                BACKUP_STATISTICS: 'סטטיסטיקות גיבוי'
+                CREATING: יוצר...
+                DELETE_BACKUP: 'מחק גיבוי'
+                FAILED_TO_CREATE_BACKUP: 'נכשל ביצירת גיבוי'
+                FAILED_TO_DELETE_BACKUP: 'נכשל במחיקת הגיבוי'
+                FAILED_TO_LOAD_BACKUPS: 'נכשל בטעינת גיבויים'
+                LOADING_BACKUPS: 'טוען גיבויים...'
+                NEWEST_BACKUP: 'הגיבוי החדש ביותר'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'לא נמצאו גיבויים. צור אחד כדי להתחיל.'
+                NUMBER_OF_BACKUPS: 'מספר גיבויים'
+                NUMBER_OF_PROFILES: 'מספר פרופילים'
+                OLDEST_BACKUP: 'הגיבוי הישן ביותר'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'גיבויים, מתזמן, יומנים ואבחון'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'שחרר קובץ .zip כאן או לחץ לעיון'
+                INSTALL_FROM_FILE: 'התקן מקובץ'
+                INSTALL_FROM_URL: 'התקן מ-URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'רק קבצי .zip נתמכים'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'החבילה הותקנה בהצלחה'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'תומך בחבילות תוספי Grav וערכות נושא'
+            LOGS:
+                100_LINES: '100 שורות'
+                200_LINES: '200 שורות'
+                25_LINES: '25 שורות'
+                50_LINES: '50 שורות'
+                ALL_LEVELS: 'כל הרמות'
+                CRITICAL: קריטי
+                EMERGENCY: חירום
+                FAILED_TO_LOAD_LOGS: 'נכשל בטעינת יומנים'
+                FAILED_TO_LOAD_LOG_FILES: 'נכשל בטעינת קבצי יומן'
+                LOADING_LOGS: 'טוען יומנים...'
+                LOG_FILE: 'קובץ יומן'
+                MESSAGE: הודעה
+                NOTICE: הודעה
+                REFRESH: רענן
+                SEARCH_MESSAGES: 'חיפוש הודעות...'
+                WARNING: אזהרה
+            REPORTS:
+                CONTENT_FIELD: 'תוכן: {field}'
+                FAILED_TO_LOAD_REPORTS: 'נכשל בטעינת דוחות'
+                LOADING_REPORTS: 'טוען דוחות...'
+                NO_REPORTS_AVAILABLE: 'אין דוחות זמינים.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'טוען רכיב דוח...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'כדי להפעיל את פונקציונליות המתזמן, עליך להוסיף את **מתזמן Grav** לקובץ crontab של המערכת עבור משתמש **{user}**. הרץ את הפקודה למעלה מהטרמינל כדי להוסיף אותה אוטומטית. לאחר השמירה, רענן עמוד זה כדי לראות את הסטטוס.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'נכשל בטעינת הגדרות המתזמן.'
+                FAILED_TO_SAVE: 'השמירה נכשלה'
+                GRAV_SCHEDULER: 'מתזמן Grav'
+                INFO_BANNER: 'המתזמן יכול להשתמש ב-crontab של המערכת או בטריגרי webhook כדי להריץ פקודות. מומלץ להשתמש ב-webhooks עבור סביבות ענן. רק משתמשים מתקדמים צריכים להגדיר משימות מותאמות אישית. הגדרה שגויה או שימוש לרעה עלולים להוביל לפרצות אבטחה.'
+                LOADING_SCHEDULER: 'טוען מתזמן...'
+                NOT_ENABLED_FOR_USER: 'לא מופעל עבור משתמש:'
+                SCHEDULER_CONFIGURATION_SAVED: 'הגדרות המתזמן נשמרו'
+                SECURITY_WARNING: 'רק משתמשים מתקדמים צריכים להגדיר משימות מתזמן מותאמות אישית. הגדרה שגויה עלולה לגרום לבעיות ביצועים או לפרצות אבטחה.'
+                WEBHOOK_ALTERNATIVE: 'לחלופין, התקן את התוסף **scheduler-webhook** כדי להשתמש בהפעלת cron מבוססת webhook, המומלצת לסביבות ענן שבהן אין גישה ל-crontab של המערכת.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} פנוי מתוך {total}'
+                DISK_USAGE: 'שימוש בדיסק'
+                DRIVER: דרייבר
+                FAILED_TO_LOAD_SYSTEM_INFO: 'נכשל בטעינת מידע מערכת'
+                GRAV_VERSION: 'גרסת Grav'
+                LOADING_SYSTEM_INFO: 'טוען מידע מערכת...'
+                MAX_EXECUTION: 'זמן ביצוע מרבי'
+                MAX_POST: 'POST מרבי'
+                MAX_UPLOAD: 'העלאה מרבית'
+                MEMORY_LIMIT: 'מגבלת זיכרון'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'גרסת PHP'
+            TOOLS_GRAV_ADMIN: 'כלים — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: הקודם
+            SITE_NOTIFICATION: 'התראת אתר'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'אין עדיין נתוני צפייה'
+        TOP_PROGRESS_BAR:
+            WORKING: עובד
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA מושבת'
+            2FA_ENABLED: '2FA מופעל'
+            2FA_IS_ENABLED: '2FA מופעל'
+            2FA_QR_CODE: 'קוד QR ל-2FA'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'הוסף שכבת אבטחה נוספת על ידי דרישת קוד חד-פעמי בכניסה.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'קוד חד-פעמי נדרש בכל פעם שחשבון זה מתחבר.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'סוד כבר נוצר אך לא מוצג מסיבות אבטחה.'
+            CONFIRM_DISABLE: 'אשר השבתה'
+            ENABLE_2FA: 'הפעל 2FA'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'הזן את הקוד בן 6 הספרות מאפליקציית האימות שלך'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'הזן את הקוד הנוכחי בן 6 הספרות כדי לאשר'
+            FAILED_TO_GENERATE_2FA_SECRET: 'נכשל ביצירת סוד 2FA'
+            FINISH_ENABLING_2FA: 'סיים הפעלת 2FA'
+            FORCE_DISABLE: 'כפה השבתה'
+            FORCE_DISABLE_PROMPT: 'כפה השבתת 2FA עבור **{username}**? השתמש בזה רק לשחזור מכשיר שאבד.'
+            REGENERATE_AND_SHOW_QR: 'צור מחדש והצג QR'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'סרוק את קוד ה-QR עם אפליקציית האימות שלך'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'סרוק את קוד ה-QR עם אפליקציית האימות שלך, ואז הזן את הקוד בן 6 הספרות לאימות והפעלה.'
+            SECRET_FOR_MANUAL_ENTRY: 'סוד (להזנה ידנית):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'אימות דו-שלבי כבוי'
+            VERIFICATION_CODE: 'קוד אימות'
+            VERIFY_ENABLE: 'אמת והפעל'
+        UNSAVED_CHANGES: 'שינויים שלא נשמרו'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'שומר שינויים…'
+            SAVING_CHANGES_2: 'שומר שינויים'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'שינויים שלא נשמרו — לחץ על שמור כדי לשמור אותם'
+            YOU_HAVE_UNSAVED_CHANGES: 'יש לך שינויים שלא נשמרו'
+        UPDATE_AVAILABLE_VERSION: 'עדכון זמין: v{version}'
+        UPDATE_TO_VERSION: 'עדכן לגרסה v{version}'
+        UPLOAD: העלאה
+        USERNAME: 'שם משתמש'
+        USERS:
+            2_FACTOR_AUTHENTICATION: 'אימות דו-שלבי'
+            ADD_USER: 'הוסף משתמש'
+            BACK_TO_USERS: 'חזור למשתמשים'
+            CREATED: נוצר
+            DELETE_USER: 'מחק משתמש'
+            FAILED_TO_LOAD_USERS: 'נכשל בטעינת משתמשים'
+            FAILED_TO_SAVE_USER: 'נכשל בשמירת המשתמש.'
+            NEW:
+                ACCOUNT: חשבון
+                CREATE: צור
+                FULL_NAME: 'שם מלא'
+                LOWERCASE_3_64_CHARS: 'אותיות קטנות, 3-64 תווים'
+                NEW_USER: 'משתמש חדש'
+                NEW_USER_GRAV_ADMIN: 'משתמש חדש — Grav Admin'
+                PERMISSIONS: הרשאות
+            PAGE_TITLE: '{name} — משתמשים — Grav Admin'
+            PERMISSIONS: הרשאות
+            SEARCH_USERS: 'חפש משתמשים...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'בחר משתמש כדי לראות פרטים'
+            STATUS: סטטוס
+            STATUS_HELP: 'חשבונות מושבתים אינם יכולים להתחבר או להשתמש ב-API.'
+            SUPER_ADMIN: מנהל-על
+            USERS_GRAV_ADMIN: 'משתמשים — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'המשתמש שונה במקום אחר — שמור כדי לדרוס או טען מחדש'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'המשתמש שונה במקום אחר. אנא טען מחדש.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'לא ניתן למחוק את החשבון שלך עצמך.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'האווטר הוסר'
+            AVATAR_UPDATED: 'האווטר עודכן'
+            FAILED_TO_REMOVE_AVATAR: 'נכשל בהסרת האווטר'
+            FAILED_TO_UPLOAD_AVATAR: 'נכשל בהעלאת אווטר'
+            UPLOAD_AVATAR: 'העלה אווטר'
+        VERSION: גרסה
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'פתח את חזית האתר בלשונית חדשה'
+            VIEW_SITE: 'צפה באתר'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'ווידג׳ט לא ידוע: {id}'
