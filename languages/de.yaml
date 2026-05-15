@@ -1,0 +1,10 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Zugriff verweigert'
+        ACTIVATE: Aktivieren
+        ACTIVE: Aktiv
+        ADD_PAGE: 'Seite hinzufügen'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Plugin hinzufügen'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Verfügbare Plugins konnten nicht von GPM geladen werden'
