@@ -887,3 +887,12 @@ ICU:
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 头像已移除
             AVATAR_UPDATED: 头像已更新
+            FAILED_TO_REMOVE_AVATAR: 删除头像失败
+            FAILED_TO_UPLOAD_AVATAR: 上传头像失败
+            UPLOAD_AVATAR: 上传头像
+        VERSION: 版本
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 在新标签页中打开网站前端
+            VIEW_SITE: 查看网站
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: '未知小部件: {id}'
