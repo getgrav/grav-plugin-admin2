@@ -1,0 +1,898 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Toegang geweigerd'
+        ACTIVATE: Activeren
+        ACTIVE: Actief
+        ADD_PAGE: 'Pagina toevoegen'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Plugin toevoegen'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Kan beschikbare plugins niet laden van GPM'
+            FILTER_PLUGINS: 'Plugins filteren...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecteer een plugin om details te bekijken'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Thema toevoegen'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: "Kan beschikbare thema's niet laden van GPM"
+            FILTER_THEMES: "Thema's filteren..."
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecteer een thema om details te bekijken'
+        ALLOWED: Toegestaan
+        ALL_CHANGES_SAVED: 'Alle wijzigingen opgeslagen'
+        API_KEYS_FIELD:
+            API_KEYS: API-sleutels
+            API_KEY_GENERATED: 'API-sleutel gegenereerd'
+            BLANK_NEVER: '(leeg = nooit)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Kopieer deze sleutel nu — deze wordt niet meer weergegeven.'
+            CREATED: Gemaakt
+            EXPIRES: Vervalt
+            EXPIRY: Vervaldatum
+            E_G_MY_CLI_TOOL: 'bijv. Mijn CLI-gereedschap'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Kan niet naar klembord kopiëren'
+            FAILED_TO_GENERATE_API_KEY: 'Kan API-sleutel niet genereren'
+            FAILED_TO_LOAD_API_KEYS: 'Kan API-sleutels niet laden'
+            FAILED_TO_REVOKE_API_KEY: 'API-sleutel intrekken is mislukt'
+            GENERATE_KEY: 'Sleutel genereren'
+            GENERATING: 'Bezig met genereren...'
+            KEY_NAME: Sleutelnaam
+            KEY_PREFIX: Sleutelprefix
+            LAST_USED: 'Laatst gebruikt'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Er zijn nog geen API-sleutels gegenereerd.'
+            PLEASE_ENTER_A_KEY_NAME: 'Voer een sleutelnaam in'
+            REVOKE_API_KEY: 'API-sleutel intrekken'
+            REVOKE_KEY: 'Sleutel intrekken'
+        APP:
+            CREATING_BACKUP: 'Back-up wordt gemaakt…'
+            DASHBOARD_GRAV_ADMIN: 'Dashboard — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Vernieuwen
+            WELCOME_BACK: 'Welkom terug, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Menu sluiten'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Weet je het zeker?'
+        AUTHOR: Auteur
+        BACKUPS_WIDGET:
+            BACKING_UP: 'Back-up maken…'
+            BACKUP_NOW: 'Nu back-up maken'
+            CREATE_A_NEW_BACKUP_NOW: 'Maak nu een nieuwe back-up'
+            DOWNLOAD_FILE: '{filename} downloaden'
+            NO_BACKUPS_FOUND: 'Geen back-ups gevonden'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: Cache-opties
+            CLEAR_CACHE: 'Cache wissen'
+            FAILED_TO_CLEAR_CACHE: 'Cache wissen mislukt'
+        CANCEL: Annuleren
+        CLEAR_SEARCH: 'Zoekopdracht wissen'
+        CLOSE: Sluiten
+        COLLAPSE_ALL: 'Alles samenvouwen'
+        COLLAPSE_SIDEBAR: 'Zijbalk samenvouwen'
+        COMPATIBILITY: Compatibiliteit
+        CONFIG:
+            CLEAR_FILTER: 'Filter wissen'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Configuratie gewijzigd op een ander moment — opslaan om overschrijven of opnieuw laden'
+            CONFIGURATION_RELOADED: 'Configuratie opnieuw geladen'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Configuratie succesvol opgeslagen'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Configuratie is op een ander moment gewijzigd. Laad opnieuw om de laatste wijzigingen te zien.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Configuratie opslaan mislukt'
+            FILTER_FIELDS: 'Velden filteren...'
+            LOADING_CONFIGURATION: 'Configuratie laden...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Geen configuratieschema beschikbaar voor dit bereik.'
+            NO_MATCHES_FOUND: 'Geen overeenkomsten gevonden'
+            PAGE_TITLE: 'Configuratie: {scope} — Grav Admin'
+            RELOAD: 'Opnieuw laden'
+            TITLE: Configuratie
+            TITLE_SCROLLED: 'Configuratie: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Omgeving
+            EXPORT_YAML: 'YAML exporteren'
+            GRAV_VERSION: Grav-versie
+            LOADING_SYSTEM_INFORMATION: 'Systeeminformatie wordt geladen...'
+            PHP_CONFIGURATION: PHP-configuratie
+            PHP_EXTENSIONS: PHP-extensies
+            PHP_VERSION: PHP-versie
+            SERVER: Server
+            SERVER_SOFTWARE: Serversoftware
+        CONFIRM_ACTION: 'Actie bevestigen'
+        CONFIRM_DELETE: '"{title}" op {route} verwijderen?'
+        COPY_BUTTON:
+            COPIED: Gekopieerd!
+        CUSTOM: Aangepast
+        DASHBOARD:
+            ADD_WIDGET: 'Een widget toevoegen'
+            CUSTOMIZE: Aanpassen
+            CUSTOMIZE_TITLE: 'Dashboard aanpassen'
+            EDIT_HINT: 'Aanpassingsmodus — widgets slepen, vergroten/verkleinen, verbergen en opslaan.'
+            EMPTY: 'Uw dashboard is leeg'
+            EMPTY_HINT: 'Klik op het potloodpictogram hierboven om widgets toe te voegen'
+            HIDE_WIDGET: 'Widget verbergen'
+            LAYOUT_RESET: 'Indeling teruggezet naar standaard'
+            LAYOUT_SAVED: 'Dashboardindeling opgeslagen'
+            PICKER_EMPTY: 'Alle beschikbare widgets staan al op uw dashboard.'
+            PICKER_SUBTITLE: 'Kies een widget om terug toe te voegen aan uw dashboard.'
+            PICKER_TITLE: 'Een widget toevoegen'
+            PRESETS: Voorinstellingen
+            PRESET_COMPACT: Compact
+            PRESET_COMPACT_DESC: 'Alle widgets in de kleinste ondersteunde grootte.'
+            PRESET_DEFAULT: Standaard
+            PRESET_DEFAULT_DESC: 'Door de server aanbevolen layout — wist uw aanpassingen.'
+            PRESET_MINIMAL: Minimaal
+            PRESET_MINIMAL_DESC: "Alleen statistieken en recente pagina's."
+            RESET_LAYOUT: 'Mijn layout herstellen'
+            SAVE_SITE_DEFAULT: 'Opslaan als standaardinstelling voor site'
+            SITE_LAYOUT_SAVED: 'Standaardinstelling site opgeslagen'
+            TITLE: Dashboard
+            WIDGETS:
+                BACKUPS: Back-ups
+                NEWS_FEED: Nieuwsfeed
+                NOTIFICATIONS: Meldingen
+                POPULARITY: Paginaweergaven
+                RECENT_PAGES: "Recente pagina's"
+                STATS: Sitestatistieken
+                SYSTEM_HEALTH: Systeemstatus
+                TOP_PAGES: Topafspeling
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Sleep om opnieuw in te delen'
+        DELETE: Verwijderen
+        DENIED: Geweigerd
+        DEPENDENCIES: Afhankelijkheden
+        DISABLE: Uitschakelen
+        DISABLED: Uitgeschakeld
+        DISMISS: Sluiten
+        DONE: Klaar
+        DOWNLOAD: Downloaden
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: Lay-outsjablonen
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Opslaan als standaard voor alle gebruikers'
+        ENABLED: Ingeschakeld
+        ENVIRONMENT_SWITCHER:
+            CREATE: Maken
+            CREATES_PATH: 'Maakt user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Omgeving maken…'
+            CREATE_ENV_NAMED: 'Omgeving "{name}" maken…'
+            DEFAULT: Standaard
+            ENV_CREATED: "Omgeving '{name}' gemaakt en geselecteerd"
+            FAILED_TO_CREATE: 'Kan omgeving niet maken'
+            HAS_OVERRIDES: 'heeft overschrijvingen'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'bestaat niet meer. Kies een ander.'
+            SAVE_CONFIG_TO: 'Configuratie opslaan in'
+            SAVING_TO_DEFAULT: 'Opslaan naar standaard (user/config)'
+            SAVING_TO_ENV: 'Opslaan naar omgeving: {name}'
+            SELECTED_ENV: 'Geselecteerde omgeving'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Selecteer waar configuratiewijzigingen worden opgeslagen'
+        EXPAND_ALL: 'Alles uitvouwen'
+        EXPAND_SIDEBAR: 'Zijbalk uitvouwen'
+        EXPERT_MODE: Expertmodus
+        FIELDS:
+            ADD_ENTRY: 'Item toevoegen'
+            CLEAR_DATE: 'Datum wissen'
+            CRON:
+                AT_MINUTE: 'Op minuut'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min uur dom maa woe'
+                ON_DAY: 'Op dag'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Actieve triggers'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Schedulerstatus kon niet worden geladen'
+                FAILED_TO_RUN_SCHEDULER: 'Scheduler kon niet worden uitgevoerd'
+                HEALTH_STATUS: Gezondheidsstatus
+                JOB_ID: Taak-ID
+                LAST_RUN: 'Laatste uitvoering'
+                LOADING_SCHEDULER_STATUS: 'Schedulerstatus laden...'
+                NOT_CONFIGURED: 'NIET GECONFIGUREERD'
+                NOT_ENABLED: 'NIET INGESCHAKELD'
+                NOT_INSTALLED: 'NIET GEÏNSTALLEERD'
+                NO_SCHEDULED_JOBS_REGISTERED: 'Geen geplande taken geregistreerd.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Geen triggers actief! Webhooks inschakelen of cron configureren.'
+                QUEUE_SIZE: 'Wachtrijgrootte:'
+                RUNNING: 'Bezig met uitvoeren...'
+                RUN_ALL: 'Alles uitvoeren'
+                SCHEDULED_JOBS: 'Geplande taken'
+                SCHEDULER_RUN_COMPLETED: 'Scheduleruitvoering voltooid'
+                SCHEDULER_STATUS: Schedulerstatus
+                STATUS: 'Status:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Aangepast veld laden...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Opmaakstring:'
+                SELECT_FORMAT: '— Selecteer formaat —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Geen overeenkomende bestanden'
+                NO_MEDIA_UPLOADED: 'Nog geen mediabestanden geüpload'
+            FILE_PICKER_SOON: 'Bestandenkiezer — binnenkort beschikbaar'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Geen pictogrammen gevonden'
+                SEARCH_ICONS: 'Pictogrammen zoeken...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Eerste 200 resultaten weergegeven — typ om in te perken'
+            NO_TAXONOMY_TYPES: 'Geen taxonomietypen geconfigureerd'
+            PAGES:
+                FILTER_PAGES: "Pagina's filteren..."
+                ROOT: '/ (root)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Pagina controleren...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Paginamedia niet beschikbaar'
+            PERMISSIONS:
+                NOT_SET: 'Niet ingesteld'
+                NO_PERMISSIONS_CONFIGURED: 'Geen machtigingen geconfigureerd'
+            REGENERATE_SLUG: 'Automatisch regenereren van paginatitel'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Geen velden komen overeen met uw filter'
+            THEME_SELECT:
+                LOADING_THEMES: "Thema's laden..."
+                SELECT_THEME: '— Selecteer thema —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Gezondheidsstatus controleren:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Specifieke taak forceren (negeert planning):'
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions-voorbeeld:'
+                HOW_TO_USE_WEBHOOKS: 'Webhooks gebruiken:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Alle vervallen taken activeren (respecteert planning):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Webhookplugin-status controleren...'
+                INSTALL_PLUGIN_NOW: 'Plugin nu installeren'
+                OR_RUN: 'of voer uit:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'plugin is geïnstalleerd en ingeschakeld.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin is geïnstalleerd. Schakel Webhook-triggers hieronder in om te activeren.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin is vereist voor webhook-functionaliteit.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin vereist'
+        FLEX_OBJECTS:
+            ACTIONS: Acties
+            BACK_TO_LIST: 'Terug naar lijst'
+            DELETE_OBJECT: 'Object verwijderen'
+            EXPORT: Exporteren
+            EXPORT_FAILED: 'Exporteren mislukt'
+            FAILED_TO_DELETE_OBJECT: 'Object verwijderen mislukt'
+            FAILED_TO_LOAD_DIRECTORY: 'Map laden mislukt'
+            FAILED_TO_LOAD_OBJECTS: 'Objecten laden mislukt'
+            FAILED_TO_SAVE: 'Opslaan mislukt.'
+            NEW:
+                BACK_TO_LIST: 'Terug naar lijst'
+                CREATE: Maken
+                OBJECT_CREATED: 'Object aangemaakt'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Object gewijzigd elders — opslaan om te overschrijven of opnieuw laden'
+            OBJECT_DELETED: 'Object verwijderd'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Object is elders gewijzigd. Gelieve opnieuw in te laden.'
+            PREVIOUS: Vorige
+            SEARCH: Zoeken...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Widgetsmenu sluiten'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Terug naar aanmelden'
+            CHECK_INBOX: 'Controleer uw inbox op een resetlink.'
+            EMAIL_ADDRESS: E-mailadres
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Voer een geldig e-mailadres in'
+            FORGOT_PASSWORD: 'Wachtwoord vergeten'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Wachtwoord vergeten — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Als er een account voor dat e-mailadres bestaat, is er een resetlink verzonden.'
+            SENDING: Verzenden...
+            SEND_RESET_LINK: 'Verzend resetlink'
+            SUBTITLE: 'Voer je e-mailadres in en we sturen je een resetlink.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Kan geen verbinding maken met de server.'
+        HOMEPAGE: Startpagina
+        INFO: Info
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Geen pictogrammen gevonden'
+            SEARCH_ICONS: 'Pictogrammen zoeken...'
+            TYPE_TO_NARROW_RESULTS: 'Typ om resultaten in te perken'
+        INSTALL: Installeren
+        INSTALLING: 'Bezig met installeren...'
+        KEYWORDS: Trefwoorden
+        LANG:
+            CREATE_TRANSLATION: '{language}-vertaling maken'
+            CURRENT: huidige
+            DEFAULT: standaard
+            DELETE_TRANSLATION: '{language}-vertaling verwijderen'
+            FALLBACK_NOTICE: 'Geen {language}-vertaling. Standaardinhoud wordt weergegeven.'
+            NOT_TRANSLATED: 'Niet vertaald'
+            SAVE_AS: 'Opslaan als {language}'
+            SWITCH_LANGUAGE: 'Wissel inhoudstaal'
+            SYNC_FROM: 'Opnieuw instellen vanaf {language}'
+            TRANSLATED: Vertaald
+            TRANSLATIONS: Vertalingen
+            TRANSLATION_CREATED: '{language} vertaling aangemaakt'
+        LOADING: 'Bezig met laden...'
+        LOGIN:
+            AUTHENTICATION_CODE: Verificatiecode
+            AUTH_CODE_PROMPT: 'Open uw authenticator-app en voer de 6-cijferige code in voor **{username}**.'
+            BACK_TO_SIGN_IN: 'Terug naar aanmelden'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Voer een geldige 6-cijferige code in'
+            ENVIRONMENT: Omgeving
+            FORGOT_PASSWORD: 'Wachtwoord vergeten?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Ongeldige gebruikersnaam of wachtwoord'
+            LOGIN_GRAV_ADMIN: 'Aanmelden — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'Wachtwoord is vereist'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Vul alle verplichte velden in'
+            POWERED_BY_GRAV_CMS: 'Aangedreven door Grav CMS'
+            SERVER_CONFIGURATION: Serverconfiguratie
+            SERVER_URL: Server-URL
+            SIGNED_IN_SUCCESSFULLY: 'Succesvol aangemeld'
+            SIGNING_IN: 'Bezig met aanmelden...'
+            SIGN_IN: Aanmelden
+            SUBTITLE: 'Meld u aan om uw site te beheren'
+            TWOFA_SUBTITLE: 'Voer uw verificatiecode in om door te gaan'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Kan geen verbinding maken met server. Controleer uw server-URL en probeer opnieuw.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Kan code niet verifiëren. Controleer uw verbinding en probeer opnieuw.'
+            USERNAME_IS_REQUIRED: 'Gebruikersnaam is vereist'
+            VERIFY: Verifiëren
+            VERIFYING: Verifiëren...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Niets om voor te bekijken'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Beheer mediabestanden voor de hele site'
+            MEDIA_GRAV_ADMIN: 'Media — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Afmetingen
+                FAILED_TO_COPY: 'Kopiëren mislukt'
+                FILE_RENAMED: 'Bestand hernoemd'
+                NEXT_FILE: 'Volgende bestand'
+                PREVIOUS_FILE: 'Vorig bestand'
+                RENAME: Hernoemen
+            MEDIA_MANAGER:
+                CREATE: Maken
+                FILES_DELETED: 'Bestanden verwijderd'
+                FOLDER_NAME: Mapnaam
+                NEW_FOLDER: 'Nieuwe map'
+                UPLOAD_FILES: 'Bestanden uploaden'
+            MEDIA_TOOLBAR:
+                FOLDER: Map
+                GRID_VIEW: Rasterweergave
+                LIST_VIEW: Lijstweergave
+                NEW_FOLDER: 'Nieuwe map'
+                SEARCH_MEDIA: 'Media zoeken...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Sleep in editor'
+                PAGE_MEDIA: Paginamedia
+        NAV:
+            CONFIGURATION: Configuratie
+            DASHBOARD: Dashboard
+            MEDIA: Media
+            PAGES: "Pagina's"
+            PLUGINS: Plugins
+            SETTINGS: Instellingen
+            SYSTEM: Systeem
+            THEMES: "Thema's"
+            TOOLS: Hulpmiddelen
+            USERS: Gebruikers
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Geen feeditems'
+        NORMAL_MODE: 'Normale modus'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Geen meldingen'
+        NO_CHANGES: 'Geen wijzigingen om op te slaan'
+        PAGES:
+            ADD_FOLDER: 'Map toevoegen'
+            ADD_MENU: 'Menu toevoegen'
+            ADD_MODULE: 'Module toevoegen'
+            ADD_PAGE: 'Pagina toevoegen'
+            DELETED: '"{title}" verwijderd'
+            DELETE_FAILED: 'Pagina kon niet worden verwijderd'
+            DELETE_PAGE: 'Pagina verwijderen'
+            DRAFT: Concept
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Verbinding maken met samenwerkingssessie…'
+                COPY_PAGE: 'Pagina kopiëren'
+                CREATE_LANGUAGE: 'Maak {language}'
+                DELETE_PAGE: 'Pagina verwijderen'
+                EDIT_PAGE: 'Pagina bewerken'
+                FAILED_TO_CREATE_TRANSLATION: 'Kon vertaling niet maken'
+                FAILED_TO_SYNC_TRANSLATION: 'Kon vertaling niet synchroniseren'
+                FALLBACK: (fallback)
+                FALLBACK_NOTICE: 'Er bestaat geen {active} vertaling. Bekijkt {effective} fallback. Gebruik "Opslaan als {active}" om een vertaling te maken die je kunt bewerken.'
+                FOLDER_NAME: Mapnaam
+                INVALID_YAML_FRONTMATTER: 'Ongeldige YAML frontmatter'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Ongeldige YAML frontmatter — repareer de syntaxis voor het opslaan'
+                LOADING_PAGE: 'Pagina laden...'
+                NOT_TRANSLATED: 'Niet vertaald:'
+                OPEN_IN_NEW_TAB: 'Openen in nieuw tabblad'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Pagina ergens anders gewijzigd — opslaan om te overschrijven of vernieuwen'
+                PAGE_COPIED: 'Pagina gekopieerd'
+                PAGE_DELETED: 'Pagina verwijderd'
+                PAGE_PREVIEW: Paginavoorbeeld
+                PAGE_SAVED_AND_MOVED: 'Pagina opgeslagen en verplaatst'
+                PREVIEW_PAGE: 'Pagina voorvertonen'
+                PUBLISH_ON: 'Publiceren op'
+                RESET_CONTENT_FROM: 'Inhoud herstellen van:'
+                RESET_FROM: 'Herstellen van {language}'
+                RESET_TRANSLATION: 'Vertaling herstellen'
+                SAVE_AS_LANGUAGE: 'Opslaan als {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'De mapnaam op schijf (URL slug)'
+                TOGGLE_PAGE_NAVIGATOR: 'Paginanavigator in-/uitschakelen'
+                UNPUBLISH_ON: 'Publicatie opheffen op'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Schrijf hier uw markdown-inhoud...'
+            EDIT_PAGE: 'Pagina bewerken'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: Gewijzigd
+            HEADER_PARENT: Parent
+            HEADER_STATUS: Status
+            HEADER_TEMPLATE: Template
+            HEADER_TITLE: Titel
+            INFO_DATE: Datum
+            INFO_LANGUAGE: Taal
+            INFO_MODIFIED: Gewijzigd
+            INFO_ORDER: Volgorde
+            INFO_PUBLISHED: Gepubliceerd
+            INFO_PUBLISH_ON: 'Publiceren op'
+            INFO_ROUTABLE: Routeerbaar
+            INFO_ROUTE: Route
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Sjabloon
+            INFO_UNPUBLISH_ON: 'Publicatie intrekken op'
+            INFO_VISIBLE: 'Zichtbaar in navigatie'
+            LOADING: "Pagina's laden..."
+            MODE_EXPERT: Expert
+            MODE_NORMAL: Normaal
+            MOVED: '"{title}" verplaatst'
+            MOVE_FAILED: 'Pagina kon niet worden verplaatst'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Pagina toevoegen — Grav Admin'
+                CONTINUE: Doorgaan
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: "Bepaalt of deze pagina in navigatiemenu's verschijnt"
+                FAILED_TO_CREATE: 'Pagina kon niet worden gemaakt'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Paginasjablonen konden niet worden geladen'
+                FILTER_PAGES: "Pagina's filteren..."
+                FOLDER_CREATED: 'Map "{title}" gemaakt'
+                FOLDER_DETAILS: Mapdetails
+                FOLDER_NAME: Mapnaam
+                LOADING_TEMPLATES: 'Sjablonen laden...'
+                MODULE_CREATED: 'Module "{title}" gemaakt'
+                MY_NEW_PAGE: 'Mijn nieuwe pagina'
+                ORDERING: Volgorde
+                ORDERING_HELP_FOLDER: 'Voegt een numeriek voorvoegsel toe dat de positie van deze map onder haar gelijken bepaalt.'
+                ORDERING_HELP_MODULE: 'Voegt een numeriek voorvoegsel toe dat de positie van deze module in zijn modulaire bovenliggende element bepaalt.'
+                ORDERING_NONE: Geen
+                PAGE_CREATED: 'Pagina "{title}" gemaakt'
+                PAGE_DETAILS: Paginadetails
+                PAGE_TEMPLATE: Paginasjabloon
+                PAGE_TITLE: Paginatitel
+                PARENT_PAGE: 'Bovenliggende pagina'
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-veilige mapnaam voor deze pagina'
+                VISIBLE: Zichtbaar
+            NO_PAGES: "Geen pagina's gevonden"
+            NO_SEARCH_RESULTS: "Geen pagina's komen overeen met uw zoekopdracht"
+            PAGES_GRAV_ADMIN: "Pagina's — Grav Admin"
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Concept (niet gepubliceerd)'
+                FOLDER_ORDER: Mapvolgorde
+                HAS_CHILDREN: 'Heeft onderliggende items'
+                SUMMARY: Samenvatting
+                VISIBLE: Zichtbaar
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: "Pagina's opnieuw organiseren mislukt"
+                NO_PAGES_MATCH: 'Geen pagina''s komen overeen met "{query}"'
+                SEARCHING: Zoeken…
+            PAGE_COUNT: "{n, plural, one{# pagina} other{# pagina's}}"
+            PAGE_INFO: Paginagegevens
+            PUBLISHED: Gepubliceerd
+            RAW_HEADER: 'Ruwe paginakop (JSON)'
+            REORDERED: '"{title}" opnieuw geordend'
+            REORDER_FAILED: 'Opnieuw ordenen mislukt'
+            REORDER_MOVE: 'Opnieuw ordenen / Verplaatsen'
+            REORDER_SAME_PARENT: "Pagina's kunnen alleen opnieuw worden geordend onder dezelfde bovenliggende pagina. Gebruik de boomweergave voor verplaatsingen tussen bovenliggende pagina's."
+            SAVED: 'Pagina succesvol opgeslagen'
+            SAVE_FAILED: 'Pagina opslaan mislukt'
+            SEARCH_PLACEHOLDER: "Pagina's zoeken..."
+            SORT_DATE_NEWEST: 'Datum (nieuwste)'
+            SORT_NEWEST: Nieuwste
+            SORT_OLDEST: Oudste
+            SORT_ORDER: Volgorde
+            SORT_TITLE_AZ: 'Titel A-Z'
+            SORT_TITLE_ZA: 'Titel Z-A'
+            SUBTITLE: 'Beheer uw site-inhoud en -structuur'
+            TITLE: "Pagina's"
+            VIEW_COLUMNS: Kolommen
+            VIEW_LIST: Lijst
+            VIEW_TREE: Structuur
+        PASSWORD: Wachtwoord
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: Wachtwoordvereisten
+            PASSWORD_STRENGTH: Wachtwoordsterkte
+            REQUIREMENTS: Vereisten
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'Machtigingen kunnen niet worden geladen'
+            NOT_SET: 'Niet ingesteld'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Terug naar Dashboard'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Geen inhoud beschikbaar voor deze pluginpagina.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Terug naar Plugins'
+            CHANGELOG: Changelog
+            CHECK_UPDATES: 'Controleer op updates'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Configuratie is elders gewijzigd. Gelieve te herladen.'
+            CONFIGURE: Configureer
+            ENABLE_PLUGIN: 'Plugin inschakelen'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Controleren op updates is mislukt'
+            FAILED_TO_LOAD_PLUGINS: 'Plugins laden mislukt'
+            FAILED_TO_SAVE_CONFIGURATION: 'Configuratie opslaan mislukt.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Geen configuratieopties beschikbaar voor deze plugin.'
+            PAGE_TITLE: '{name} — Plugins — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Plugins — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Plugin gewijzigd elders — opslaan om te overschrijven of opnieuw laden'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'Plugin moet zijn ingeschakeld om te configureren.'
+            REMOVE_PLUGIN: 'Plugin verwijderen'
+            SEARCH_PLUGINS: 'Plugins zoeken...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecteer een plugin om details weer te geven'
+            SYMLINKED: 'Symbolische koppeling'
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Pluginpagina laden...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Widget kon niet worden geladen'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Afgelopen 14 dagen'
+            THIS_MONTH: 'Deze maand'
+            THIS_WEEK: 'Deze week'
+        PREMIUM: Premium
+        PREVIEW: Voorbeeld
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Voer uw wachtwoord opnieuw in om door te gaan. Uw werk is behouden gebleven.'
+            SESSION_EXPIRED: 'Sessie verlopen'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Alles weergeven'
+        REMOVE: Verwijderen
+        RESET:
+            BACK_TO_SIGN_IN: 'Terug naar aanmelden'
+            CONFIRM_PASSWORD: 'Wachtwoord bevestigen'
+            INVALID_LINK: 'Ongeldige resetkoppeling.'
+            NEW_PASSWORD_FOR: 'Kies een nieuw wachtwoord voor **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Wachtwoorden komen niet overeen'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Wachtwoord succesvol opnieuw ingesteld. Meld u alstublieft aan.'
+            RESETTING: 'Opnieuw instellen...'
+            RESET_PASSWORD: 'Wachtwoord opnieuw instellen'
+            RESET_PASSWORD_GRAV_ADMIN: 'Wachtwoord opnieuw instellen — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: "Deze resetlink bevat niet alle vereiste parameters. Vraag een nieuwe aan via de pagina 'Wachtwoord vergeten'."
+            UNABLE_TO_CONNECT_TO_SERVER: 'Kan niet verbinding maken met server.'
+        SAVE: Opslaan
+        SAVING: Opslaan...
+        SEARCH: Zoeken
+        SETTINGS:
+            1_SECOND: '1 seconde'
+            2_SECONDS: '2 seconden'
+            ACCENT_COLOR: Accentkleur
+            ADD_LINK: 'Link toevoegen'
+            ADMIN_INTERFACE_LANGUAGE: 'Taal admininterface'
+            ADMIN_LANGUAGE: Beheeradministrator-taal
+            ADMIN_LANGUAGE_DESC: "Taal voor labels, menu's en berichten ({count} strings geladen)"
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Beheerdervoorkeuren en -uiterlijk'
+            APPEARANCE: Uiterlijk
+            AUTHENTICATED_AS: 'Geverifieerd als'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Automatisch opslaan wanneer u een veld verlaat'
+            AUTO_SAVE: 'Automatisch opslaan'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Gedrag voor automatisch opslaan en ongedaan maken voor formuliereditoren'
+            BRANDING: Branding
+            BRANDING_DESC: 'Logo en brandingtext die overal in de admin worden weergegeven.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Kies tussen lichte en donkere weergave'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Kies hoe het logo wordt weergegeven'
+            COLLAB_DESCRIPTION: 'Live editing voor meerdere gebruikers met aanwezigheid. Vereist de `sync`-plugin op de server. Experimenteel.'
+            COLOR_MODE: Kleurmodus
+            CONNECTION: Verbinding
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Pas het logo aan dat in de zijbalk en inlogpagina wordt weergegeven'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Pas het uiterlijk van de beheerinterface aan'
+            CUSTOM_IMAGE: 'Aangepaste afbeelding'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Aangepaste snelkoppelingen weergegeven in de bovenste menubalk'
+            CUSTOM_TEXT: 'Aangepaste tekst'
+            DARK: Donker
+            DARK_LOGO: 'Donker logo'
+            DARK_LOGO_REMOVED: 'Donker logo verwijderd.'
+            DARK_LOGO_UPLOADED: 'Donker logo geüpload.'
+            DARK_MODE_LOGO: 'Dark Mode Logo'
+            DEFAULT_APPEARANCE: Standaardweergave
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Standaard kleurweergave voor nieuwe gebruikers.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Standaard formuliereditordichtheid.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Standaardinterfacetaal voor nieuwe gebruikers.'
+            DEFAULT_LANGUAGE: Standaardtaal
+            DEFAULT_PAGES: "Standaardpagina's"
+            DEFAULT_PRIMARY_COLOR_DESC: 'Standaardprimaire kleur voor knoppen, koppelingen en highlights.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Standaardinstellingen voor de paginabrowser'
+            DEFAULT_TEXT_SIZE_DESC: 'Standaardtekstgrootte voor de admin-UI.'
+            DEFAULT_TYPEFACE_DESC: 'Standaardlettertype voor de admin UI.'
+            DEFAULT_VIEW: Standaardweergave
+            DEUTSCH: Deutsch
+            EDITING: Bewerking
+            EDITOR_HEADING: Editor
+            EDITOR_MODE: Editor-modus
+            ENGLISH: English
+            ENVIRONMENT: Omgeving
+            ESPA_OL: Español
+            EXTERNAL: Extern
+            FAILED_TO_REMOVE_LOGO: 'Kon logo niet verwijderen.'
+            FAILED_TO_RESET_PREFERENCES: 'Kon voorkeuren niet opnieuw instellen.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Kon logo-modus niet opslaan.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Kon logo-tekst niet opslaan.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Kon standaardinstellingen van site niet opslaan.'
+            FOLLOW_OS: 'Volg OS'
+            FONT: Lettertype
+            FONT_SIZE: Lettergrootte
+            FONT_SIZE_LARGE: Groot
+            FONT_SIZE_NORMAL: Normaal
+            FONT_SIZE_SMALL: Klein
+            FONT_SIZE_XLARGE: X-Groot
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Grav Logo'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Snelle veldwijzigingen in één ongedaan maken-stap groeperen'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: "Hoe pagina's standaard worden weergegeven"
+            HUE: Tint
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Items per pagina'
+            LANGUAGE_CHANGED: 'Taal gewijzigd naar {language}'
+            LIGHT: Licht
+            LIGHT_LOGO: 'Licht logo'
+            LIGHT_LOGO_REMOVED: 'Licht logo verwijderd.'
+            LIGHT_LOGO_UPLOADED: 'Licht logo geüpload.'
+            LIGHT_MODE_LOGO: 'Licht modus logo'
+            LOGO_TEXT: 'Logo tekst'
+            LOGO_TYPE: 'Logo type'
+            LOGO_UPLOAD_FAILED: 'Logo uploaden mislukt.'
+            MENUBAR_LINKS: Menubalkoppelingen
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Geen (1 veld = 1 ongedaan maken)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: "Aantal pagina's weergegeven in lijstweergave"
+            'OFF': Uit
+            'ON': Aan
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'plugin op de server. Experimenteel.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Voorkeuren gereset. Herlaad om toe te passen.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Primaire kleur gebruikt voor knoppen, koppelingen en markeringen'
+            REAL_TIME_COLLABORATION: 'Realtime samenwerking'
+            REMOVE_LINK: 'Koppeling verwijderen'
+            RESET: Herstellen
+            RESET_ALL_PREFERENCES: 'Alle voorkeuren herstellen'
+            RESET_PREFERENCES: 'Voorkeuren herstellen'
+            RESET_PREFERENCES_MSG: 'Alle persoonlijke instellingen verwijderen en naar de standaardinstellingen van de site terugkeren?'
+            RESET_TO_SITE_DEFAULTS: 'Mijn voorkeuren terugzetten naar standaardinstellingen van de site'
+            REVERT_CHANGES: 'Wijzigingen ongedaan maken'
+            SATURATION: Verzadiging
+            SAVED_AUTOMATICALLY: 'Automatisch opgeslagen'
+            SAVE_SITE_DEFAULTS: 'Standaardinstellingen van de site opslaan'
+            SERVER_CONNECTION_DETAILS: Serververbindingsgegevens
+            SERVER_URL: Server-URL
+            SETTINGS_GRAV_ADMIN: 'Instellingen — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Een knop ongedaan maken weergeven in de editorwerkbalk'
+            SITE_DEFAULTS: 'Standaardinstellingen van de site'
+            SITE_DEFAULTS_DESCRIPTION: "Onderstaande instellingen gelden voor elke admin-gebruiker als basis. Items van categorie B (uiterlijk, pagina's, taal, editor) kunnen worden overschreven in de eigen voorkeuren van elke gebruiker. Items van categorie A (bewerking, menubalk) zijn sitebreed en kunnen niet worden overschreven."
+            SITE_DEFAULTS_SAVED: 'Standaardinstellingen van de site opgeslagen. Alle gebruikers zien deze bij de volgende herlezing.'
+            SITE_SETTINGS_DESC: 'Standaardvoorkeuren voor nieuwe gebruikers en sitebreed gedrag. Wijzigingen worden toegepast bij de volgende herlezing voor betrokken gebruikers.'
+            SITE_SETTINGS_HEADING: Site-instellingen
+            SITE_WIDE_ONLY: 'Alleen sitebreed'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Tekstgrootte gebruikt in de gehele admin'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'De eerste letter wordt het pictogram'
+            TOOLBAR_UNDO_BUTTON: 'Werkbalk ongedaan maken knop'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Lettertype gebruikt in de gehele admin'
+            UNDO_BATCH_WINDOW: 'Venster ongedaan maken batch'
+            USED_ON_DARK_BACKGROUNDS: 'Gebruikt op donkere achtergronden'
+            USED_ON_LIGHT_BACKGROUNDS: 'Gebruikt op lichte achtergronden'
+            USERS_MAY_OVERRIDE: 'Gebruikers kunnen dit overschrijven'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
+            CHECKING_SERVER: 'Server controleren…'
+            CONFIRM_PASSWORD: 'Wachtwoord bevestigen'
+            CREATE_ADMINISTRATOR: 'Administrator maken'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Maak uw beheerdersaccount aan om aan de slag te gaan'
+            CREATING_ACCOUNT: 'Account wordt aangemaakt...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Voer een geldig e-mailadres in'
+            ENVIRONMENT: Omgeving
+            FULL_NAME: 'Volledige naam'
+            OPTIONAL: (optioneel)
+            PASSWORDS_DO_NOT_MATCH: 'Wachtwoorden komen niet overeen'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Los de bovenstaande fouten op en probeer opnieuw'
+            POWERED_BY_GRAV_CMS: 'Aangestuurd door Grav CMS'
+            SERVER_CONFIGURATION: Serverconfiguratie
+            SERVER_URL: Server-URL
+            SETUP_GRAV_ADMIN: 'Instellen — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'De installatie is al voltooid. Log in.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Kan geen verbinding maken met de server. Controleer uw server-URL en probeer opnieuw.'
+            WELCOME_TO_GRAV: 'Welkom bij Grav'
+        SIGN_OUT: Afmelden
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} actief)'
+            ACTIVE_THEME: 'Actief thema'
+            UPDATE_COUNT: '{n, plural, one{# update} other{# updates}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'de ingebouwde markdown-editor'
+                LOCKED: 'Alleen-lezen — {owner} bewerkt met **{editor}**. Gemengde editortypen kunnen niet samen bewerken; [wijzig uw editorvoorkeur]({href}) om live samen te werken.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'wijzig uw editorvoorkeur'
+                TO_COLLABORATE_LIVE: 'om live samen te werken.'
+        SYSTEM:
+            COMING_SOON: 'Binnenkort beschikbaar'
+            SYSTEM_GRAV_ADMIN: 'Systeem — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} vrij'
+            BYTES_USED: '{size} gebruikt'
+            CACHE: Cache
+            DISK: Schijf
+            EVERYTHING_UP_TO_DATE: 'Alles is up-to-date'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav is geïnstalleerd via symlink — upgrade handmatig.'
+            GRAV_UPDATE_AVAILABLE: 'Grav-update beschikbaar'
+            MORE_COUNT: '+ {n} meer…'
+            PACKAGES_OUTDATED: '{n, plural, one{# pakket verouderd} other{# pakketten verouderd}}'
+            PERCENT_USED: '{percent}% gebruikt'
+            SERVER: Server
+            UPDATES: Updates
+            UPDATES_AVAILABLE_COUNT: '{n} beschikbaar'
+            UPDATE_ALL: 'Alles bijwerken'
+            UPGRADE_GRAV: 'Grav upgraden'
+        THEMES:
+            ACTIVE_THEME: 'Actief thema'
+            BACK_TO_THEMES: "Terug naar thema's"
+            CHANGELOG: Wijzigingenlogboek
+            CHECK_UPDATES: 'Updates controleren'
+            CLICK_TO_VIEW_FULL_SIZE: 'Klik om volledige grootte weer te geven'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Configuratie is elders gewijzigd. Laad alstublieft opnieuw.'
+            CONFIGURE: Configureren
+            FAILED_TO_CHECK_FOR_UPDATES: 'Controleren op updates is mislukt'
+            FAILED_TO_LOAD_THEMES: "Thema's laden is mislukt"
+            FAILED_TO_SAVE_CONFIGURATION: 'Configuratie opslaan is mislukt.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Geen configuratieopties beschikbaar voor dit thema.'
+            PAGE_TITLE: "{name} — Thema's — Grav Admin"
+            REMOVE_THEME: 'Thema verwijderen'
+            SEARCH_THEMES: "Thema's zoeken..."
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecteer een thema om details weer te geven'
+            SYMLINKED: Gesymlinkt
+            THEMES_GRAV_ADMIN: "Thema's — Grav Admin"
+        TIME:
+            DAYS_AGO: '{n}d geleden'
+            HOURS_AGO: '{n}u geleden'
+            JUST_NOW: zojuist
+            MINUTES_AGO: '{n}m geleden'
+        TOGGLE_DARK_MODE: 'Donkere modus aan/uit'
+        TOGGLE_MENU: 'Menu aan/uit'
+        TOOLS:
+            BACKUPS:
+                ACTION: Actie
+                BACKUP_CREATED_SUCCESSFULLY: 'Back-up succesvol gemaakt'
+                BACKUP_DATE: Backup-datum
+                BACKUP_DELETED: 'Back-up verwijderd'
+                BACKUP_HISTORY: Back-upgeschiedenis
+                BACKUP_NOW: 'Nu een backup maken'
+                BACKUP_STATISTICS: Backup-statistieken
+                CREATING: 'Bezig met maken...'
+                DELETE_BACKUP: 'Backup verwijderen'
+                FAILED_TO_CREATE_BACKUP: 'Kan backup niet maken'
+                FAILED_TO_DELETE_BACKUP: 'Kan backup niet verwijderen'
+                FAILED_TO_LOAD_BACKUPS: 'Kan backups niet laden'
+                LOADING_BACKUPS: 'Backups worden geladen...'
+                NEWEST_BACKUP: 'Nieuwste backup'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Geen backups gevonden. Maak een backup om te beginnen.'
+                NUMBER_OF_BACKUPS: 'Aantal backups'
+                NUMBER_OF_PROFILES: 'Aantal profielen'
+                OLDEST_BACKUP: 'Oudste backup'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Backups, scheduler, logs en diagnostiek'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Sleep een .zip-bestand hier of klik om te bladeren'
+                INSTALL_FROM_FILE: 'Installeren vanuit bestand'
+                INSTALL_FROM_URL: 'Installeren vanuit URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Alleen .zip-bestanden worden ondersteund'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Pakket succesvol geïnstalleerd'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Ondersteunt Grav-plugin- en thema-pakketten'
+            LOGS:
+                100_LINES: '100 regels'
+                200_LINES: '200 regels'
+                25_LINES: '25 regels'
+                50_LINES: '50 regels'
+                ALL_LEVELS: 'Alle niveaus'
+                CRITICAL: Kritiek
+                EMERGENCY: Noodtoestand
+                FAILED_TO_LOAD_LOGS: 'Logboeken konden niet worden geladen'
+                FAILED_TO_LOAD_LOG_FILES: 'Logbestanden konden niet worden geladen'
+                LOADING_LOGS: 'Logbestanden laden...'
+                LOG_FILE: Logbestand
+                MESSAGE: Bericht
+                NOTICE: Opmerking
+                REFRESH: Vernieuwen
+                SEARCH_MESSAGES: 'Berichten zoeken...'
+                WARNING: Waarschuwing
+            REPORTS:
+                CONTENT_FIELD: 'content: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Rapporten konden niet worden geladen'
+                LOADING_REPORTS: 'Rapporten laden...'
+                NO_REPORTS_AVAILABLE: 'Geen rapporten beschikbaar.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Rapportcomponent laden...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'Om de functionaliteit van de Scheduler in te schakelen, moet u de **Grav Scheduler** toevoegen aan het crontab-bestand van uw systeem voor de **{user}** gebruiker. Voer de bovenstaande opdracht uit via de terminal om deze automatisch toe te voegen. Nadat u hebt opgeslagen, vernieuwt u deze pagina om de status te zien.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Scheduler-configuratie kon niet worden geladen.'
+                FAILED_TO_SAVE: 'Opslaan mislukt'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'De scheduler kan zowel systeem-crontab als webhook-triggers gebruiken om opdrachten uit te voeren. Webhooks worden aanbevolen voor cloudomgevingen. Alleen geavanceerde gebruikers moeten aangepaste taken configureren. Onjuiste configuratie of misbruik kan leiden tot beveiligingsproblemen.'
+                LOADING_SCHEDULER: 'Scheduler laden...'
+                NOT_ENABLED_FOR_USER: 'Niet ingeschakeld voor gebruiker:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-configuratie opgeslagen'
+                SECURITY_WARNING: 'Alleen geavanceerde gebruikers moeten aangepaste scheduler-taken configureren. Onjuiste configuratie kan prestatieproblemen of beveiligingsproblemen veroorzaken.'
+                WEBHOOK_ALTERNATIVE: 'U kunt ook de **scheduler-webhook** plugin installeren voor webhook-gebaseerde cron-activering, wat aanbevolen wordt voor cloudomgevingen waar systeemcrontab-toegang niet beschikbaar is.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} vrij van {total}'
+                DISK_USAGE: Schijfgebruik
+                DRIVER: Stuurprogramma
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Systeeminformatie kon niet worden geladen'
+                GRAV_VERSION: Grav-versie
+                LOADING_SYSTEM_INFO: 'Systeeminformatie laden...'
+                MAX_EXECUTION: 'Max uitvoeringstijd'
+                MAX_POST: 'Max POST'
+                MAX_UPLOAD: 'Max upload'
+                MEMORY_LIMIT: Geheugenlimiet
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: PHP-versie
+            TOOLS_GRAV_ADMIN: 'Tools — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Vorige
+            SITE_NOTIFICATION: Sitemelding
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Nog geen weergavegegevens'
+        TOP_PROGRESS_BAR:
+            WORKING: Bezig
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA uitgeschakeld'
+            2FA_ENABLED: '2FA ingeschakeld'
+            2FA_IS_ENABLED: '2FA is ingeschakeld'
+            2FA_QR_CODE: '2FA QR-code'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Voeg een extra beveiligingslaag toe door bij aanmelden een eenmalige code vereist te stellen.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'Een eenmalige code is vereist wanneer dit account zich aanmeldt.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'Een geheim is al gegenereerd maar wordt niet weergegeven om veiligheidsredenen.'
+            CONFIRM_DISABLE: 'Uitschakeling bevestigen'
+            ENABLE_2FA: '2FA inschakelen'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Voer de 6-cijferige code van uw authenticator in'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Voer uw huidige 6-cijferige code in om te bevestigen'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Kon 2FA-geheim niet genereren'
+            FINISH_ENABLING_2FA: '2FA-activering voltooien'
+            FORCE_DISABLE: 'Geforceerd uitschakelen'
+            FORCE_DISABLE_PROMPT: '2FA geforceerd uitschakelen voor **{username}**? Gebruik dit alleen voor herstelling van verloren apparaten.'
+            REGENERATE_AND_SHOW_QR: 'Opnieuw genereren en QR-code weergeven'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Scan de QR-code met uw authenticator-app'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Scan de QR-code met uw authenticator-app en voer vervolgens de 6-cijferige code in om te verifiëren en te activeren.'
+            SECRET_FOR_MANUAL_ENTRY: 'Geheim (voor handmatige invoer):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Twee-factor authenticatie is uit'
+            VERIFICATION_CODE: Verificatiecode
+            VERIFY_ENABLE: 'Verifiëren & Inschakelen'
+        UNSAVED_CHANGES: 'Niet-opgeslagen wijzigingen'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Wijzigingen opslaan…'
+            SAVING_CHANGES_2: 'Wijzigingen opslaan'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Niet-opgeslagen wijzigingen — klik Opslaan om ze op te slaan'
+            YOU_HAVE_UNSAVED_CHANGES: 'U hebt niet-opgeslagen wijzigingen'
+        UPDATE_AVAILABLE_VERSION: 'Update beschikbaar: v{version}'
+        UPDATE_TO_VERSION: 'Bijwerken naar v{version}'
+        UPLOAD: Uploaden
+        USERNAME: Gebruikersnaam
+        USERS:
+            2_FACTOR_AUTHENTICATION: '2-Factor Authenticatie'
+            ADD_USER: 'Gebruiker Toevoegen'
+            BACK_TO_USERS: 'Terug naar Gebruikers'
+            CREATED: Gemaakt
+            DELETE_USER: 'Gebruiker Verwijderen'
+            FAILED_TO_LOAD_USERS: 'Kon gebruikers niet laden'
+            FAILED_TO_SAVE_USER: 'Kon gebruiker niet opslaan.'
+            NEW:
+                ACCOUNT: Account
+                CREATE: Maken
+                FULL_NAME: 'Volledige Naam'
+                LOWERCASE_3_64_CHARS: 'kleine letters, 3-64 tekens'
+                NEW_USER: 'Nieuwe Gebruiker'
+                NEW_USER_GRAV_ADMIN: 'Nieuwe Gebruiker — Grav Admin'
+                PERMISSIONS: Machtigingen
+            PAGE_TITLE: '{name} — Gebruikers — Grav Admin'
+            PERMISSIONS: Machtigingen
+            SEARCH_USERS: 'Zoek gebruikers...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Selecteer een gebruiker om details weer te geven'
+            STATUS: Status
+            STATUS_HELP: 'Uitgeschakelde accounts kunnen niet inloggen of de API gebruiken.'
+            SUPER_ADMIN: 'Super Admin'
+            USERS_GRAV_ADMIN: 'Gebruikers — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Gebruiker is elders gewijzigd — opslaan om te overschrijven of herlaad'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Gebruiker is elders gewijzigd. Laad alstublieft opnieuw.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'U kunt uw eigen account niet verwijderen.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Avatar verwijderd'
+            AVATAR_UPDATED: 'Avatar bijgewerkt'
+            FAILED_TO_REMOVE_AVATAR: 'Avatar kon niet worden verwijderd'
+            FAILED_TO_UPLOAD_AVATAR: 'Avatar kon niet worden geüpload'
+            UPLOAD_AVATAR: 'Avatar uploaden'
+        VERSION: Versie
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Website-voorkant in een nieuw tabblad openen'
+            VIEW_SITE: 'Website weergeven'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Onbekende widget: {id}'
