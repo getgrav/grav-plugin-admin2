@@ -1,0 +1,889 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 访问被拒绝
+        ACTIVATE: 激活
+        ACTIVE: 活跃
+        ADD_PAGE: 添加页面
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 添加插件
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: '无法从 GPM 加载可用插件'
+            FILTER_PLUGINS: 筛选插件...
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 选择插件以查看详情
+        ADD_THEME_MODAL:
+            ADD_THEME: 添加主题
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: '无法从 GPM 加载可用主题'
+            FILTER_THEMES: 筛选主题...
+            SELECT_A_THEME_TO_VIEW_DETAILS: 选择主题以查看详情
+        ALLOWED: 允许
+        ALL_CHANGES_SAVED: 所有更改已保存
+        API_KEYS_FIELD:
+            API_KEYS: 'API 密钥'
+            API_KEY_GENERATED: 'API 密钥已生成'
+            BLANK_NEVER: '（空白 = 永不）'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 立即复制此密钥——它将不再显示。
+            CREATED: 已创建
+            EXPIRES: 过期
+            EXPIRY: 过期时间
+            E_G_MY_CLI_TOOL: '例如 My CLI Tool'
+            FAILED_TO_COPY_TO_CLIPBOARD: 无法复制到剪贴板
+            FAILED_TO_GENERATE_API_KEY: '无法生成 API 密钥'
+            FAILED_TO_LOAD_API_KEYS: '无法加载 API 密钥'
+            FAILED_TO_REVOKE_API_KEY: '撤销 API 密钥失败'
+            GENERATE_KEY: 生成密钥
+            GENERATING: 生成中...
+            KEY_NAME: 密钥名称
+            KEY_PREFIX: 密钥前缀
+            LAST_USED: 最后使用
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: '尚未生成任何 API 密钥。'
+            PLEASE_ENTER_A_KEY_NAME: 请输入密钥名称
+            REVOKE_API_KEY: '撤销 API 密钥'
+            REVOKE_KEY: 撤销密钥
+        APP:
+            CREATING_BACKUP: 创建备份中…
+            DASHBOARD_GRAV_ADMIN: '仪表盘 — Grav 管理员'
+            PAGE_TITLE: '{name} — Grav 管理员'
+            REFRESH: 刷新
+            WELCOME_BACK: '欢迎回来，{name}'
+        APP_SHELL:
+            ADMIN_VERSION: '管理员 v{version}'
+            CLOSE_MENU: 关闭菜单
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 您确定吗？
+        AUTHOR: 作者
+        BACKUPS_WIDGET:
+            BACKING_UP: 备份中…
+            BACKUP_NOW: 立即备份
+            CREATE_A_NEW_BACKUP_NOW: 立即创建新备份
+            DOWNLOAD_FILE: '下载 {filename}'
+            NO_BACKUPS_FOUND: 未找到备份
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 缓存选项
+            CLEAR_CACHE: 清除缓存
+            FAILED_TO_CLEAR_CACHE: 清除缓存失败
+        CANCEL: 取消
+        CLEAR_SEARCH: 清除搜索
+        CLOSE: 关闭
+        COLLAPSE_ALL: 全部折叠
+        COLLAPSE_SIDEBAR: 折叠侧边栏
+        COMPATIBILITY: 兼容性
+        CONFIG:
+            CLEAR_FILTER: 清除筛选
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: '配置已在其他地方更改 — 保存以覆盖或重新加载'
+            CONFIGURATION_RELOADED: 配置已重新加载
+            CONFIGURATION_SAVED_SUCCESSFULLY: 配置保存成功
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 配置已在其他地方修改。重新加载以查看最新更改。
+            FAILED_TO_SAVE_CONFIGURATION: 保存配置失败
+            FILTER_FIELDS: 筛选字段...
+            LOADING_CONFIGURATION: 正在加载配置...
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 此范围没有可用的配置蓝图。
+            NO_MATCHES_FOUND: 未找到匹配项
+            PAGE_TITLE: '配置：{scope} — Grav Admin'
+            RELOAD: 重新加载
+            TITLE: 配置
+            TITLE_SCROLLED: '配置：{scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: 环境
+            EXPORT_YAML: '导出 YAML'
+            GRAV_VERSION: 'Grav 版本'
+            LOADING_SYSTEM_INFORMATION: 正在加载系统信息...
+            PHP_CONFIGURATION: 'PHP 配置'
+            PHP_EXTENSIONS: 'PHP 扩展'
+            PHP_VERSION: 'PHP 版本'
+            SERVER: 服务器
+            SERVER_SOFTWARE: 服务器软件
+        CONFIRM_ACTION: 确认操作
+        CONFIRM_DELETE: '删除 "{title}" 在 {route}？'
+        COPY_BUTTON:
+            COPIED: 已复制！
+        CUSTOM: 自定义
+        DASHBOARD:
+            ADD_WIDGET: 添加小部件
+            CUSTOMIZE: 自定义
+            CUSTOMIZE_TITLE: 自定义仪表板
+            EDIT_HINT: '自定义模式 — 拖动、调整大小、隐藏小部件，然后保存。'
+            EMPTY: 您的仪表板为空
+            EMPTY_HINT: 点击上方的铅笔图标以添加小部件
+            HIDE_WIDGET: 隐藏小部件
+            LAYOUT_RESET: 布局已重置为默认值
+            LAYOUT_SAVED: 仪表板布局已保存
+            PICKER_EMPTY: 所有可用的小部件都已在您的仪表板上。
+            PICKER_SUBTITLE: 选择要恢复到仪表板的小部件。
+            PICKER_TITLE: 添加小部件
+            PRESETS: 预设
+            PRESET_COMPACT: 紧凑
+            PRESET_COMPACT_DESC: 所有小部件均采用各自支持的最小尺寸。
+            PRESET_DEFAULT: 默认
+            PRESET_DEFAULT_DESC: '服务器推荐布局 — 清除您的自定义设置。'
+            PRESET_MINIMAL: 最简
+            PRESET_MINIMAL_DESC: 仅统计数据和最近页面。
+            RESET_LAYOUT: 重置我的布局
+            SAVE_SITE_DEFAULT: 保存为网站默认设置
+            SITE_LAYOUT_SAVED: 网站默认设置已保存
+            TITLE: 仪表板
+            WIDGETS:
+                BACKUPS: 备份
+                NEWS_FEED: 新闻源
+                NOTIFICATIONS: 通知
+                POPULARITY: 页面浏览量
+                RECENT_PAGES: 最近页面
+                STATS: 网站统计
+                SYSTEM_HEALTH: 系统健康状态
+                TOP_PAGES: 热门页面
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 拖动以重新排序
+        DELETE: 删除
+        DENIED: 已拒绝
+        DEPENDENCIES: 依赖项
+        DISABLE: 禁用
+        DISABLED: 已禁用
+        DISMISS: 关闭
+        DONE: 完成
+        DOWNLOAD: 下载
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: 布局预设
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 保存为所有用户的站点默认值
+        ENABLED: 已启用
+        ENVIRONMENT_SWITCHER:
+            CREATE: 创建
+            CREATES_PATH: '创建 user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 创建环境…
+            CREATE_ENV_NAMED: '创建环境 "{name}"…'
+            DEFAULT: 默认
+            ENV_CREATED: "环境 '{name}' 已创建并选中"
+            FAILED_TO_CREATE: 创建环境失败
+            HAS_OVERRIDES: 有覆盖
+            NO_LONGER_EXISTS_PICK_ANOTHER: 不再存在。请选择其他环境。
+            SAVE_CONFIG_TO: 保存配置到
+            SAVING_TO_DEFAULT: '保存到默认位置 (user/config)'
+            SAVING_TO_ENV: '保存到环境：{name}'
+            SELECTED_ENV: 已选中的环境
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 选择配置保存位置
+        EXPAND_ALL: 全部展开
+        EXPAND_SIDEBAR: 展开侧边栏
+        EXPERT_MODE: 专家模式
+        FIELDS:
+            ADD_ENTRY: 添加条目
+            CLEAR_DATE: 清除日期
+            CRON:
+                AT_MINUTE: 在分钟时
+                CRON: Cron：
+                MIN_HR_DOM_MON_DOW: '分 小时 日 月 周'
+                ON_DAY: 在日期
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 活跃触发器
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 无法加载调度程序状态
+                FAILED_TO_RUN_SCHEDULER: 无法运行调度程序
+                HEALTH_STATUS: 健康状态
+                JOB_ID: '任务 ID'
+                LAST_RUN: 上次运行
+                LOADING_SCHEDULER_STATUS: 正在加载调度程序状态...
+                NOT_CONFIGURED: 未配置
+                NOT_ENABLED: 未启用
+                NOT_INSTALLED: 未安装
+                NO_SCHEDULED_JOBS_REGISTERED: 未注册任何计划任务。
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: '没有触发器处于活跃状态！请启用 webhook 或配置 cron。'
+                QUEUE_SIZE: '队列大小:'
+                RUNNING: 运行中...
+                RUN_ALL: 全部运行
+                SCHEDULED_JOBS: 计划任务
+                SCHEDULER_RUN_COMPLETED: 调度程序运行完成
+                SCHEDULER_STATUS: 调度程序状态
+                STATUS: '状态:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 正在加载自定义字段...
+            DATE_FORMAT:
+                FORMAT_STRING: '格式字符串:'
+                SELECT_FORMAT: '— 选择格式 —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 没有匹配的文件
+                NO_MEDIA_UPLOADED: 还没有上传媒体文件
+            FILE_PICKER_SOON: '文件选择器 — 即将推出'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 未找到图标
+                SEARCH_ICONS: 搜索图标...
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: '显示前 200 个结果 — 输入内容以缩小范围'
+            NO_TAXONOMY_TYPES: 未配置分类类型
+            PAGES:
+                FILTER_PAGES: 筛选页面...
+                ROOT: '/ (根目录)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 正在检查页面...
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 页面媒体不可用
+            PERMISSIONS:
+                NOT_SET: 未设置
+                NO_PERMISSIONS_CONFIGURED: 未配置权限
+            REGENERATE_SLUG: 从页面标题自动生成
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 没有字段与您的筛选条件匹配
+            THEME_SELECT:
+                LOADING_THEMES: 加载主题中...
+                SELECT_THEME: '— 选择主题 —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 检查健康状态：
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 强制运行特定任务（忽略计划）：
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions 示例：'
+                HOW_TO_USE_WEBHOOKS: '如何使用 webhook：'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 触发所有待运行的任务（遵守计划）：
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: '正在检查 webhook 插件状态...'
+                INSTALL_PLUGIN_NOW: 立即安装插件
+                OR_RUN: 或运行：
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 插件已安装且已启用。
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: '插件已安装。启用下方的 Webhook 触发器以激活。'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'webhook 功能需要此插件。'
+                WEBHOOK_PLUGIN_REQUIRED: '需要 Webhook 插件'
+        FLEX_OBJECTS:
+            ACTIONS: 操作
+            BACK_TO_LIST: 返回列表
+            DELETE_OBJECT: 删除对象
+            EXPORT: 导出
+            EXPORT_FAILED: 导出失败
+            FAILED_TO_DELETE_OBJECT: 删除对象失败
+            FAILED_TO_LOAD_DIRECTORY: 加载目录失败
+            FAILED_TO_LOAD_OBJECTS: 加载对象失败
+            FAILED_TO_SAVE: 保存失败。
+            NEW:
+                BACK_TO_LIST: 返回列表
+                CREATE: 创建
+                OBJECT_CREATED: 对象已创建
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: '对象已在其他地方修改 — 保存以覆盖或重新加载'
+            OBJECT_DELETED: 对象已删除
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 对象已在其他地方修改。请重新加载。
+            PREVIOUS: 上一个
+            SEARCH: 搜索...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 关闭小部件菜单
+        FORGOT:
+            BACK_TO_SIGN_IN: 返回登录
+            CHECK_INBOX: 检查您的收件箱以获取重置链接。
+            EMAIL_ADDRESS: 电子邮件地址
+            ENTER_A_VALID_EMAIL_ADDRESS: 请输入有效的电子邮件地址
+            FORGOT_PASSWORD: 忘记密码
+            FORGOT_PASSWORD_GRAV_ADMIN: '忘记密码 — Grav 管理'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 如果该电子邮件存在账户，已发送重置链接。
+            SENDING: 发送中...
+            SEND_RESET_LINK: 发送重置链接
+            SUBTITLE: 输入您的电子邮件，我们将向您发送重置链接。
+            UNABLE_TO_CONNECT_TO_SERVER: 无法连接到服务器。
+        HOMEPAGE: 主页
+        INFO: 信息
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 未找到图标
+            SEARCH_ICONS: 搜索图标...
+            TYPE_TO_NARROW_RESULTS: 输入以缩小结果范围
+        INSTALL: 安装
+        INSTALLING: 安装中...
+        KEYWORDS: 关键词
+        LANG:
+            CREATE_TRANSLATION: '创建 {language} 翻译'
+            CURRENT: 当前
+            DEFAULT: 默认
+            DELETE_TRANSLATION: '删除 {language} 翻译'
+            FALLBACK_NOTICE: '没有 {language} 翻译。显示默认内容。'
+            NOT_TRANSLATED: 未翻译
+            SAVE_AS: '另存为 {language}'
+            SWITCH_LANGUAGE: 切换内容语言
+            SYNC_FROM: '从 {language} 重置'
+            TRANSLATED: 已翻译
+            TRANSLATIONS: 翻译
+            TRANSLATION_CREATED: '已创建 {language} 翻译'
+        LOADING: 加载中...
+        LOGIN:
+            AUTHENTICATION_CODE: 身份验证码
+            AUTH_CODE_PROMPT: '打开您的身份验证器应用，输入 **{username}** 的 6 位数代码。'
+            BACK_TO_SIGN_IN: 返回登录
+            ENTER_A_VALID_6_DIGIT_CODE: '输入有效的 6 位数代码'
+            ENVIRONMENT: 环境
+            FORGOT_PASSWORD: 忘记密码？
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 用户名或密码无效
+            LOGIN_GRAV_ADMIN: '登录 — Grav Admin'
+            PASSWORD_IS_REQUIRED: 需要输入密码
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 请填写所有必填字段
+            POWERED_BY_GRAV_CMS: '由 Grav CMS 提供支持'
+            SERVER_CONFIGURATION: 服务器配置
+            SERVER_URL: '服务器 URL'
+            SIGNED_IN_SUCCESSFULLY: 登录成功
+            SIGNING_IN: 登录中...
+            SIGN_IN: 登录
+            SUBTITLE: 登录以管理您的网站
+            TWOFA_SUBTITLE: 输入您的身份验证码以继续
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 无法连接到服务器。请检查您的服务器URL并重试。
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 无法验证代码。请检查您的连接并重试。
+            USERNAME_IS_REQUIRED: 用户名是必需的
+            VERIFY: 验证
+            VERIFYING: 验证中...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 没有可预览的内容
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 管理站点范围内的媒体文件
+            MEDIA_GRAV_ADMIN: '媒体 — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: 尺寸
+                FAILED_TO_COPY: 复制失败
+                FILE_RENAMED: 文件已重命名
+                NEXT_FILE: 下一个文件
+                PREVIOUS_FILE: 上一个文件
+                RENAME: 重命名
+            MEDIA_MANAGER:
+                CREATE: 创建
+                FILES_DELETED: 文件已删除
+                FOLDER_NAME: 文件夹名称
+                NEW_FOLDER: 新建文件夹
+                UPLOAD_FILES: 上传文件
+            MEDIA_TOOLBAR:
+                FOLDER: 文件夹
+                GRID_VIEW: 网格视图
+                LIST_VIEW: 列表视图
+                NEW_FOLDER: 新建文件夹
+                SEARCH_MEDIA: 搜索媒体...
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 拖入编辑器
+                PAGE_MEDIA: 页面媒体
+        NAV:
+            CONFIGURATION: 配置
+            DASHBOARD: 仪表板
+            MEDIA: 媒体
+            PAGES: 页面
+            PLUGINS: 插件
+            SETTINGS: 设置
+            SYSTEM: 系统
+            THEMES: 主题
+            TOOLS: 工具
+            USERS: 用户
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 无源项目
+        NORMAL_MODE: 常规模式
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 无通知
+        NO_CHANGES: 无需保存的更改
+        PAGES:
+            ADD_FOLDER: 添加文件夹
+            ADD_MENU: 添加菜单
+            ADD_MODULE: 添加模块
+            ADD_PAGE: 添加页面
+            DELETED: '已删除 "{title}"'
+            DELETE_FAILED: 删除页面失败
+            DELETE_PAGE: 删除页面
+            DRAFT: 草稿
+            EDIT:
+                CONNECTING_TO_COLLAB: 正在连接到协作会话…
+                COPY_PAGE: 复制页面
+                CREATE_LANGUAGE: '创建 {language}'
+                DELETE_PAGE: 删除页面
+                EDIT_PAGE: 编辑页面
+                FAILED_TO_CREATE_TRANSLATION: 创建翻译失败
+                FAILED_TO_SYNC_TRANSLATION: 同步翻译失败
+                FALLBACK: （回退）
+                FALLBACK_NOTICE: '不存在 {active} 翻译。正在查看 {effective} 备用版本。使用「另存为 {active}」创建可编辑的翻译。'
+                FOLDER_NAME: 文件夹名称
+                INVALID_YAML_FRONTMATTER: '无效的 YAML 前置元数据'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: '无效的 YAML 前置元数据 — 保存前请修复语法'
+                LOADING_PAGE: 加载页面中...
+                NOT_TRANSLATED: 未翻译：
+                OPEN_IN_NEW_TAB: 在新标签页中打开
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: '页面已在其他位置更改 — 保存以覆盖或重新加载'
+                PAGE_COPIED: 页面已复制
+                PAGE_DELETED: 页面已删除
+                PAGE_PREVIEW: 页面预览
+                PAGE_SAVED_AND_MOVED: 页面已保存并移动
+                PREVIEW_PAGE: 预览页面
+                PUBLISH_ON: 发布于
+                RESET_CONTENT_FROM: 重置内容来自：
+                RESET_FROM: '从 {language} 重置'
+                RESET_TRANSLATION: 重置翻译
+                SAVE_AS_LANGUAGE: '另存为 {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: '磁盘上的文件夹名称（URL 别名）'
+                TOGGLE_PAGE_NAVIGATOR: 切换页面导航器
+                UNPUBLISH_ON: 取消发布于
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: '在此输入你的 markdown 内容...'
+            EDIT_PAGE: 编辑页面
+            FRONTMATTER: 前置元数据
+            HEADER_MODIFIED: 修改时间
+            HEADER_PARENT: 父页面
+            HEADER_STATUS: 状态
+            HEADER_TEMPLATE: 模板
+            HEADER_TITLE: 标题
+            INFO_DATE: 日期
+            INFO_LANGUAGE: 语言
+            INFO_MODIFIED: 修改时间
+            INFO_ORDER: 排序
+            INFO_PUBLISHED: 已发布
+            INFO_PUBLISH_ON: 发布于
+            INFO_ROUTABLE: 可路由
+            INFO_ROUTE: 路由
+            INFO_SLUG: 别名
+            INFO_TEMPLATE: 模板
+            INFO_UNPUBLISH_ON: 取消发布于
+            INFO_VISIBLE: 在导航中显示
+            LOADING: 正在加载页面...
+            MODE_EXPERT: 专家
+            MODE_NORMAL: 普通
+            MOVED: '已移动 "{title}"'
+            MOVE_FAILED: 移动页面失败
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: '添加页面 — Grav Admin'
+                CONTINUE: 继续
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 控制此页面是否在导航菜单中显示
+                FAILED_TO_CREATE: 创建页面失败
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 加载页面模板失败
+                FILTER_PAGES: 筛选页面...
+                FOLDER_CREATED: '文件夹 "{title}" 已创建'
+                FOLDER_DETAILS: 文件夹详情
+                FOLDER_NAME: 文件夹名称
+                LOADING_TEMPLATES: 正在加载模板...
+                MODULE_CREATED: '模块 "{title}" 已创建'
+                MY_NEW_PAGE: 我的新页面
+                ORDERING: 排序
+                ORDERING_HELP_FOLDER: 添加数字前缀以设置此文件夹在同级中的位置。
+                ORDERING_HELP_MODULE: 添加数字前缀以设置此模块在其模块化父级中的位置。
+                ORDERING_NONE: 无
+                PAGE_CREATED: '页面 "{title}" 已创建'
+                PAGE_DETAILS: 页面详情
+                PAGE_TEMPLATE: 页面模板
+                PAGE_TITLE: 页面标题
+                PARENT_PAGE: 父页面
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 此页面的URL友好文件夹名称
+                VISIBLE: 可见
+            NO_PAGES: 未找到页面
+            NO_SEARCH_RESULTS: 没有页面与您的搜索相符
+            PAGES_GRAV_ADMIN: '页面 — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 草稿（未发布）
+                FOLDER_ORDER: 文件夹顺序
+                HAS_CHILDREN: 有子页面
+                SUMMARY: 摘要
+                VISIBLE: 可见
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 页面重组失败
+                NO_PAGES_MATCH: '没有页面与"{query}"相符'
+                SEARCHING: 搜索中…
+            PAGE_COUNT: '{n, plural, one{# 个页面} other{# 个页面}}'
+            PAGE_INFO: 页面信息
+            PUBLISHED: 已发布
+            RAW_HEADER: '原始页面头部 (JSON)'
+            REORDERED: '已重新排序"{title}"'
+            REORDER_FAILED: 重新排序失败
+            REORDER_MOVE: '重新排序 / 移动'
+            REORDER_SAME_PARENT: 只能重新排序同一父级下的页面。使用树形视图进行跨父级移动。
+            SAVED: 页面保存成功
+            SAVE_FAILED: 保存页面失败
+            SEARCH_PLACEHOLDER: 搜索页面...
+            SORT_DATE_NEWEST: 日期（最新）
+            SORT_NEWEST: 最新
+            SORT_OLDEST: 最早
+            SORT_ORDER: 顺序
+            SORT_TITLE_AZ: '标题 A-Z'
+            SORT_TITLE_ZA: '标题 Z-A'
+            SUBTITLE: 管理您的网站内容和结构
+            TITLE: 页面
+            VIEW_COLUMNS: 列
+            VIEW_LIST: 列表
+            VIEW_TREE: 树形
+        PASSWORD: 密码
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 密码要求
+            PASSWORD_STRENGTH: 密码强度
+            REQUIREMENTS: 要求
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 加载权限失败
+            NOT_SET: 未设置
+        PLUGIN:
+            BACK_TO_DASHBOARD: 返回仪表板
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 此插件页面没有可用内容。
+        PLUGINS:
+            BACK_TO_PLUGINS: 返回插件
+            CHANGELOG: 更新日志
+            CHECK_UPDATES: 检查更新
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 配置已在其他地方修改。请重新加载。
+            CONFIGURE: 配置
+            ENABLE_PLUGIN: 启用插件
+            FAILED_TO_CHECK_FOR_UPDATES: 检查更新失败
+            FAILED_TO_LOAD_PLUGINS: 加载插件失败
+            FAILED_TO_SAVE_CONFIGURATION: 保存配置失败。
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 此插件没有可用的配置选项。
+            PAGE_TITLE: '{name} — 插件 — Grav Admin'
+            PLUGINS_GRAV_ADMIN: '插件 — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: '插件已在其他地方修改 — 保存以覆盖或重新加载'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 必须启用插件才能进行配置。
+            REMOVE_PLUGIN: 移除插件
+            SEARCH_PLUGINS: 搜索插件...
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 选择一个插件以查看详情
+            SYMLINKED: 符号链接
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 正在加载插件页面...
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 小部件加载失败
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: '过去 14 天'
+            THIS_MONTH: 本月
+            THIS_WEEK: 本周
+        PREMIUM: 高级
+        PREVIEW: 预览
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 请重新输入您的密码以继续。您的工作已被保存。
+            SESSION_EXPIRED: 会话已过期
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 查看全部
+        REMOVE: 移除
+        RESET:
+            BACK_TO_SIGN_IN: 返回登录
+            CONFIRM_PASSWORD: 确认密码
+            INVALID_LINK: 重置链接无效。
+            NEW_PASSWORD_FOR: '为 **{username}** 选择新密码。'
+            PASSWORDS_DO_NOT_MATCH: 密码不匹配
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 密码重置成功。请登录。
+            RESETTING: 正在重置...
+            RESET_PASSWORD: 重置密码
+            RESET_PASSWORD_GRAV_ADMIN: '重置密码 — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 此重置链接缺少必需的参数。请从忘记密码页面请求新的链接。
+            UNABLE_TO_CONNECT_TO_SERVER: 无法连接到服务器。
+        SAVE: 保存
+        SAVING: 正在保存...
+        SEARCH: 搜索
+        SETTINGS:
+            1_SECOND: '1 秒'
+            2_SECONDS: '2 秒'
+            ACCENT_COLOR: 强调色
+            ADD_LINK: 添加链接
+            ADMIN_INTERFACE_LANGUAGE: 管理界面语言
+            ADMIN_LANGUAGE: 管理员语言
+            ADMIN_LANGUAGE_DESC: '标签、菜单和消息的语言（已加载 {count} 个字符串）'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 管理员偏好和外观
+            APPEARANCE: 外观
+            AUTHENTICATED_AS: 身份验证为
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 离开字段时自动保存
+            AUTO_SAVE: 自动保存
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 表单编辑器的自动保存和撤销行为
+            BRANDING: 品牌
+            BRANDING_DESC: 在整个管理界面中显示的徽标和品牌文本。
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 在浅色和深色外观之间选择
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 选择logo的显示方式
+            COLLAB_DESCRIPTION: '实时多用户编辑，支持用户在线状态显示。需要服务器上的 `sync` 插件。实验性功能。'
+            COLOR_MODE: 颜色模式
+            CONNECTION: 连接
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 自定义在侧边栏和登录页面中显示的logo
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 自定义管理界面的外观和风格
+            CUSTOM_IMAGE: 自定义图像
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 显示在顶部菜单栏中的自定义快捷方式
+            CUSTOM_TEXT: 自定义文本
+            DARK: 深色
+            DARK_LOGO: 深色logo
+            DARK_LOGO_REMOVED: 深色logo已移除。
+            DARK_LOGO_UPLOADED: 深色logo已上传。
+            DARK_MODE_LOGO: 深色模式Logo
+            DEFAULT_APPEARANCE: 默认外观
+            DEFAULT_COLOR_APPEARANCE_DESC: 新用户的默认颜色外观。
+            DEFAULT_FORM_EDITOR_DENSITY: 默认表单编辑器密度。
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 新用户的默认界面语言。
+            DEFAULT_LANGUAGE: 默认语言
+            DEFAULT_PAGES: 默认页面
+            DEFAULT_PRIMARY_COLOR_DESC: 按钮、链接和高亮的默认主色。
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 页面浏览器的默认设置
+            DEFAULT_TEXT_SIZE_DESC: 管理UI的默认文本大小。
+            DEFAULT_TYPEFACE_DESC: 管理UI的默认字体。
+            DEFAULT_VIEW: 默认视图
+            DEUTSCH: Deutsch
+            EDITING: 编辑
+            EDITOR_HEADING: 编辑器
+            EDITOR_MODE: 编辑器模式
+            ENGLISH: English
+            ENVIRONMENT: 环境
+            ESPA_OL: Español
+            EXTERNAL: 外部
+            FAILED_TO_REMOVE_LOGO: 删除徽标失败。
+            FAILED_TO_RESET_PREFERENCES: 重置偏好设置失败。
+            FAILED_TO_SAVE_LOGO_MODE: 保存徽标模式失败。
+            FAILED_TO_SAVE_LOGO_TEXT: 保存徽标文本失败。
+            FAILED_TO_SAVE_SITE_DEFAULTS: 保存网站默认设置失败。
+            FOLLOW_OS: 跟随系统
+            FONT: 字体
+            FONT_SIZE: 字体大小
+            FONT_SIZE_LARGE: 大
+            FONT_SIZE_NORMAL: 正常
+            FONT_SIZE_SMALL: 小
+            FONT_SIZE_XLARGE: 超大
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Grav 徽标'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 将快速字段更改分组为单个撤销步骤
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 页面默认显示方式
+            HUE: 色调
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 每页项目数
+            LANGUAGE_CHANGED: '语言已更改为 {language}'
+            LIGHT: 浅色
+            LIGHT_LOGO: 浅色徽标
+            LIGHT_LOGO_REMOVED: 浅色徽标已移除。
+            LIGHT_LOGO_UPLOADED: 浅色徽标已上传。
+            LIGHT_MODE_LOGO: 浅色模式徽标
+            LOGO_TEXT: 徽标文本
+            LOGO_TYPE: 徽标类型
+            LOGO_UPLOAD_FAILED: 徽标上传失败。
+            MENUBAR_LINKS: 菜单栏链接
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: '无 (1 个字段 = 1 次撤销)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 列表视图中显示的页面数
+            'OFF': 关闭
+            'ON': 打开
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 服务器上的插件。实验性功能。
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 偏好设置已重置。重新加载以应用更改。
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 用于按钮、链接和高亮的主色调
+            REAL_TIME_COLLABORATION: 实时协作
+            REMOVE_LINK: 移除链接
+            RESET: 重置
+            RESET_ALL_PREFERENCES: 重置所有偏好设置
+            RESET_PREFERENCES: 重置偏好设置
+            RESET_PREFERENCES_MSG: 移除所有个人覆盖设置并恢复为网站默认值？
+            RESET_TO_SITE_DEFAULTS: 将我的偏好设置重置为网站默认值
+            REVERT_CHANGES: 还原更改
+            SATURATION: 饱和度
+            SAVED_AUTOMATICALLY: 已自动保存
+            SAVE_SITE_DEFAULTS: 保存网站默认值
+            SERVER_CONNECTION_DETAILS: 服务器连接详情
+            SERVER_URL: '服务器 URL'
+            SETTINGS_GRAV_ADMIN: '设置 — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 在编辑器工具栏中显示撤销按钮
+            SITE_DEFAULTS: 网站默认值
+            SITE_DEFAULTS_DESCRIPTION: '下列设置作为基线适用于每个管理员用户。第 B 级项目（外观、页面、语言、编辑器）可在每个用户的个人偏好设置中覆盖。第 A 级项目（编辑、菜单栏）为网站范围内的设置，不可覆盖。'
+            SITE_DEFAULTS_SAVED: 网站默认值已保存。所有用户将在下次重新加载时看到这些设置。
+            SITE_SETTINGS_DESC: 新用户的默认偏好设置加上网站范围内的行为。更改将在下次重新加载时对受影响的用户应用。
+            SITE_SETTINGS_HEADING: 网站设置
+            SITE_WIDE_ONLY: 仅网站范围内
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 在整个管理界面中使用的文本大小
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 首字母成为图标
+            TOOLBAR_UNDO_BUTTON: 工具栏撤销按钮
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 在整个管理界面中使用的字体
+            UNDO_BATCH_WINDOW: 撤销批处理窗口
+            USED_ON_DARK_BACKGROUNDS: 用于深色背景
+            USED_ON_LIGHT_BACKGROUNDS: 用于浅色背景
+            USERS_MAY_OVERRIDE: 用户可以覆盖
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 个字符：字母、数字、连字符、下划线'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理员账户已创建 — 欢迎使用 Grav'
+            CHECKING_SERVER: 检查服务器中…
+            CONFIRM_PASSWORD: 确认密码
+            CREATE_ADMINISTRATOR: 创建管理员
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 创建管理员账户以开始使用
+            CREATING_ACCOUNT: 正在创建账户...
+            ENTER_A_VALID_EMAIL_ADDRESS: 请输入有效的电子邮件地址
+            ENVIRONMENT: 环境
+            FULL_NAME: 全名
+            OPTIONAL: （可选）
+            PASSWORDS_DO_NOT_MATCH: 密码不匹配
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 请修复上述错误后重试
+            POWERED_BY_GRAV_CMS: '由 Grav CMS 驱动'
+            SERVER_CONFIGURATION: 服务器配置
+            SERVER_URL: '服务器 URL'
+            SETUP_GRAV_ADMIN: '设置 — Grav 管理'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 设置已完成。请登录。
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: '无法连接到服务器。请检查您的服务器 URL 后重试。'
+            WELCOME_TO_GRAV: '欢迎使用 Grav'
+        SIGN_OUT: 退出登录
+        STATS_WIDGET:
+            ACTIVE_COUNT: '（{n} 个活跃）'
+            ACTIVE_THEME: 活跃主题
+            UPDATE_COUNT: '{n, plural, one{# 个更新} other{# 个更新}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 内置markdown编辑器
+                LOCKED: '只读 — {owner}正在使用**{editor}**编辑。混合编辑器类型无法协同编辑；[切换你的编辑器偏好]({href})以实时协作。'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 切换你的编辑器偏好
+                TO_COLLABORATE_LIVE: 以实时协作。
+        SYSTEM:
+            COMING_SOON: 即将推出
+            SYSTEM_GRAV_ADMIN: '系统 — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size}可用'
+            BYTES_USED: '{size}已用'
+            CACHE: 缓存
+            DISK: 磁盘
+            EVERYTHING_UP_TO_DATE: 一切都是最新的
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav通过符号链接安装 — 请手动升级。'
+            GRAV_UPDATE_AVAILABLE: Grav有更新可用
+            MORE_COUNT: '+{n}个更多…'
+            PACKAGES_OUTDATED: '{n, plural, one{#个包已过期} other{#个包已过期}}'
+            PERCENT_USED: '{percent}%已用'
+            SERVER: 服务器
+            UPDATES: 更新
+            UPDATES_AVAILABLE_COUNT: '{n}个可用'
+            UPDATE_ALL: 全部更新
+            UPGRADE_GRAV: 升级Grav
+        THEMES:
+            ACTIVE_THEME: 活跃主题
+            BACK_TO_THEMES: 返回主题
+            CHANGELOG: 更新日志
+            CHECK_UPDATES: 检查更新
+            CLICK_TO_VIEW_FULL_SIZE: 点击查看全尺寸
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 配置已在其他地方修改。请重新加载。
+            CONFIGURE: 配置
+            FAILED_TO_CHECK_FOR_UPDATES: 检查更新失败
+            FAILED_TO_LOAD_THEMES: 加载主题失败
+            FAILED_TO_SAVE_CONFIGURATION: 保存配置失败。
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 此主题没有可用的配置选项。
+            PAGE_TITLE: '{name} — 主题 — Grav Admin'
+            REMOVE_THEME: 移除主题
+            SEARCH_THEMES: 搜索主题...
+            SELECT_A_THEME_TO_VIEW_DETAILS: 选择主题以查看详情
+            SYMLINKED: 符号链接
+            THEMES_GRAV_ADMIN: '主题 — Grav Admin'
+        TIME:
+            DAYS_AGO: '{n}天前'
+            HOURS_AGO: '{n}小时前'
+            JUST_NOW: 刚刚
+            MINUTES_AGO: '{n}分钟前'
+        TOGGLE_DARK_MODE: 切换深色模式
+        TOGGLE_MENU: 切换菜单
+        TOOLS:
+            BACKUPS:
+                ACTION: 操作
+                BACKUP_CREATED_SUCCESSFULLY: 备份创建成功
+                BACKUP_DATE: 备份日期
+                BACKUP_DELETED: 备份已删除
+                BACKUP_HISTORY: 备份历史
+                BACKUP_NOW: 立即备份
+                BACKUP_STATISTICS: 备份统计
+                CREATING: 创建中...
+                DELETE_BACKUP: 删除备份
+                FAILED_TO_CREATE_BACKUP: 创建备份失败
+                FAILED_TO_DELETE_BACKUP: 删除备份失败
+                FAILED_TO_LOAD_BACKUPS: 加载备份失败
+                LOADING_BACKUPS: 加载备份中...
+                NEWEST_BACKUP: 最新备份
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 未找到备份。创建一个备份以开始。
+                NUMBER_OF_BACKUPS: 备份数量
+                NUMBER_OF_PROFILES: 配置文件数量
+                OLDEST_BACKUP: 最旧备份
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 备份、计划程序、日志和诊断
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: '将 .zip 文件拖放到此处或点击浏览'
+                INSTALL_FROM_FILE: 从文件安装
+                INSTALL_FROM_URL: '从 URL 安装'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: '仅支持 .zip 文件'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 软件包安装成功
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: '支持 Grav 插件和主题软件包'
+            LOGS:
+                100_LINES: '100 行'
+                200_LINES: '200 行'
+                25_LINES: '25 行'
+                50_LINES: '50 行'
+                ALL_LEVELS: 所有级别
+                CRITICAL: 严重
+                EMERGENCY: 紧急
+                FAILED_TO_LOAD_LOGS: 加载日志失败
+                FAILED_TO_LOAD_LOG_FILES: 加载日志文件失败
+                LOADING_LOGS: 加载日志中...
+                LOG_FILE: 日志文件
+                MESSAGE: 消息
+                NOTICE: 通知
+                REFRESH: 刷新
+                SEARCH_MESSAGES: 搜索消息...
+                WARNING: 警告
+            REPORTS:
+                CONTENT_FIELD: '内容: {field}'
+                FAILED_TO_LOAD_REPORTS: 加载报告失败
+                LOADING_REPORTS: 加载报告中...
+                NO_REPORTS_AVAILABLE: 没有可用的报告。
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 加载报告组件中...
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: '要启用 Scheduler 功能，您必须为 **{user}** 用户将 **Grav Scheduler** 添加到系统的 crontab 文件。从终端运行上面的命令以自动添加它。保存后，刷新此页面以查看状态。'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 加载调度器配置失败。
+                FAILED_TO_SAVE: 保存失败
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: '调度器可以使用系统 crontab 或 webhook 触发器来执行命令。建议在云环境中使用 Webhooks。只有高级用户才应配置自定义作业。配置错误或滥用可能导致安全漏洞。'
+                LOADING_SCHEDULER: 加载调度器中...
+                NOT_ENABLED_FOR_USER: '未为用户启用:'
+                SCHEDULER_CONFIGURATION_SAVED: 调度器配置已保存
+                SECURITY_WARNING: 只有高级用户才应配置自定义调度器作业。配置不当可能导致性能问题或安全漏洞。
+                WEBHOOK_ALTERNATIVE: '或者，安装 **scheduler-webhook** 插件来使用基于 webhook 的 cron 触发，这对于无法访问系统 crontab 的云环境推荐使用。'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} 可用（共 {total}）'
+                DISK_USAGE: 磁盘使用情况
+                DRIVER: 驱动程序
+                FAILED_TO_LOAD_SYSTEM_INFO: 加载系统信息失败
+                GRAV_VERSION: 'Grav 版本'
+                LOADING_SYSTEM_INFO: 正在加载系统信息...
+                MAX_EXECUTION: 最大执行时间
+                MAX_POST: '最大 POST'
+                MAX_UPLOAD: 最大上传
+                MEMORY_LIMIT: 内存限制
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'PHP 版本'
+            TOOLS_GRAV_ADMIN: '工具 — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: 上一页
+            SITE_NOTIFICATION: 站点通知
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 还没有浏览数据
+        TOP_PROGRESS_BAR:
+            WORKING: 工作中
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA 已禁用'
+            2FA_ENABLED: '2FA 已启用'
+            2FA_IS_ENABLED: '2FA 已启用'
+            2FA_QR_CODE: '2FA 二维码'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 通过在登录时要求一次性代码来增加额外的安全保护层。
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 每当该账户登录时都需要一次性代码。
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 密钥已生成但出于安全原因未显示。
+            CONFIRM_DISABLE: 确认禁用
+            ENABLE_2FA: 启用双因素认证
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 输入您的身份验证器中的6位代码
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 输入您当前的6位代码以确认
+            FAILED_TO_GENERATE_2FA_SECRET: 无法生成双因素认证密钥
+            FINISH_ENABLING_2FA: 完成启用双因素认证
+            FORCE_DISABLE: 强制禁用
+            FORCE_DISABLE_PROMPT: '强制禁用 **{username}** 的双因素认证？仅在设备丢失恢复时使用。'
+            REGENERATE_AND_SHOW_QR: 重新生成并显示二维码
+            SCAN_THE_QR_CODE_WITH_YOUR: 使用您的身份验证器应用扫描二维码
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 使用您的身份验证器应用扫描二维码，然后输入6位代码进行验证和激活。
+            SECRET_FOR_MANUAL_ENTRY: 密钥（手动输入）：
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 双因素认证已关闭
+            VERIFICATION_CODE: 验证码
+            VERIFY_ENABLE: 验证并启用
+        UNSAVED_CHANGES: 未保存的更改
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 正在保存更改…
+            SAVING_CHANGES_2: 正在保存更改
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: '有未保存的更改 — 点击保存以保留它们'
+            YOU_HAVE_UNSAVED_CHANGES: 您有未保存的更改
+        UPDATE_AVAILABLE_VERSION: '有可用的更新：v{version}'
+        UPDATE_TO_VERSION: '更新到 v{version}'
+        UPLOAD: 上传
+        USERNAME: 用户名
+        USERS:
+            2_FACTOR_AUTHENTICATION: 双因素认证
+            ADD_USER: 添加用户
+            BACK_TO_USERS: 返回用户
+            CREATED: 已创建
+            DELETE_USER: 删除用户
+            FAILED_TO_LOAD_USERS: 加载用户失败
+            FAILED_TO_SAVE_USER: 保存用户失败。
+            NEW:
+                ACCOUNT: 账户
+                CREATE: 创建
+                FULL_NAME: 全名
+                LOWERCASE_3_64_CHARS: '小写字母，3-64 个字符'
+                NEW_USER: 新用户
+                NEW_USER_GRAV_ADMIN: '新用户 — Grav 管理员'
+                PERMISSIONS: 权限
+            PAGE_TITLE: '{name} — 用户 — Grav 管理员'
+            PERMISSIONS: 权限
+            SEARCH_USERS: 搜索用户...
+            SELECT_A_USER_TO_VIEW_DETAILS: 选择用户以查看详情
+            STATUS: 状态
+            STATUS_HELP: '禁用的账户无法登录或使用 API。'
+            SUPER_ADMIN: 超级管理员
+            USERS_GRAV_ADMIN: '用户 — Grav 管理'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: '用户在其他地方已更改 — 保存以覆盖或重新加载'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 用户在其他地方已被修改。请重新加载。
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 您无法删除自己的账户。
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 头像已移除
+            AVATAR_UPDATED: 头像已更新
