@@ -1,0 +1,898 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Pääsy evätty'
+        ACTIVATE: Aktivoi
+        ACTIVE: Aktiivinen
+        ADD_PAGE: 'Lisää sivu'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Lisää lisäosa'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Saatavilla olevien lisäosien lataaminen GPM:stä epäonnistui'
+            FILTER_PLUGINS: 'Suodata lisäosia...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Valitse lisäosa nähdäksesi tiedot'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Lisää teema'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Saatavilla olevien teemojen lataaminen GPM:stä epäonnistui'
+            FILTER_THEMES: 'Suodata teemoja...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Valitse teema nähdäksesi tiedot'
+        ALLOWED: Sallittu
+        ALL_CHANGES_SAVED: 'Kaikki muutokset tallennettu'
+        API_KEYS_FIELD:
+            API_KEYS: API-avaimet
+            API_KEY_GENERATED: 'API-avain luotu'
+            BLANK_NEVER: '(tyhjä = ei koskaan)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Kopioi tämä avain nyt — sitä ei näytetä enää.'
+            CREATED: Luotu
+            EXPIRES: Vanhenee
+            EXPIRY: Vanhentuminen
+            E_G_MY_CLI_TOOL: 'esim. Oma CLI-työkalu'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Leikepöydälle kopioiminen epäonnistui'
+            FAILED_TO_GENERATE_API_KEY: 'API-avaimen luominen epäonnistui'
+            FAILED_TO_LOAD_API_KEYS: 'API-avainten lataaminen epäonnistui'
+            FAILED_TO_REVOKE_API_KEY: 'API-avaimen peruuttaminen epäonnistui'
+            GENERATE_KEY: 'Luo avain'
+            GENERATING: Luodaan...
+            KEY_NAME: 'Avaimen nimi'
+            KEY_PREFIX: 'Avaimen etuliite'
+            LAST_USED: 'Viimeksi käytetty'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'API-avaimia ei ole vielä luotu.'
+            PLEASE_ENTER_A_KEY_NAME: 'Syötä avaimen nimi'
+            REVOKE_API_KEY: 'Peruuta API-avain'
+            REVOKE_KEY: 'Peruuta avain'
+        APP:
+            CREATING_BACKUP: 'Luodaan varmuuskopiota…'
+            DASHBOARD_GRAV_ADMIN: 'Hallintapaneeli — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Päivitä
+            WELCOME_BACK: 'Tervetuloa takaisin, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Sulje valikko'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Oletko varma?'
+        AUTHOR: Tekijä
+        BACKUPS_WIDGET:
+            BACKING_UP: Varmuuskopioidaan…
+            BACKUP_NOW: 'Varmuuskopioi nyt'
+            CREATE_A_NEW_BACKUP_NOW: 'Luo uusi varmuuskoppi nyt'
+            DOWNLOAD_FILE: 'Lataa {filename}'
+            NO_BACKUPS_FOUND: 'Varmuuskopioita ei löytynyt'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 'Välimuistin asetukset'
+            CLEAR_CACHE: 'Tyhjennä välimuisti'
+            FAILED_TO_CLEAR_CACHE: 'Välimuistin tyhjentäminen epäonnistui'
+        CANCEL: Peruuta
+        CLEAR_SEARCH: 'Tyhjennä haku'
+        CLOSE: Sulje
+        COLLAPSE_ALL: 'Kutista kaikki'
+        COLLAPSE_SIDEBAR: 'Kutista sivupalkki'
+        COMPATIBILITY: Yhteensopivuus
+        CONFIG:
+            CLEAR_FILTER: 'Tyhjennä suodatin'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Määritys muuttunut muualla — tallenna muutosten tekemiseksi tai lataa uudelleen'
+            CONFIGURATION_RELOADED: 'Määritys ladattu uudelleen'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Määritys tallennettu onnistuneesti'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Määritystä muutettiin muualla. Lataa uudelleen nähdäksesi uusimmat muutokset.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Määrityksen tallentaminen epäonnistui'
+            FILTER_FIELDS: 'Suodata kenttiä...'
+            LOADING_CONFIGURATION: 'Ladataan määritystä...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Tämän alueen määritysmallia ei ole saatavilla.'
+            NO_MATCHES_FOUND: 'Osumia ei löytynyt'
+            PAGE_TITLE: 'Määritys: {scope} — Grav Admin'
+            RELOAD: 'Lataa uudelleen'
+            TITLE: Määritys
+            TITLE_SCROLLED: 'Määritys: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Ympäristö
+            EXPORT_YAML: 'Vie YAML'
+            GRAV_VERSION: Grav-versio
+            LOADING_SYSTEM_INFORMATION: 'Järjestelmätietojen lataaminen...'
+            PHP_CONFIGURATION: PHP-konfiguraatio
+            PHP_EXTENSIONS: PHP-laajennukset
+            PHP_VERSION: PHP-versio
+            SERVER: Palvelin
+            SERVER_SOFTWARE: Palvelinyöprogramma
+        CONFIRM_ACTION: 'Vahvista toiminto'
+        CONFIRM_DELETE: 'Poista „{title}" kohteesta {route}?'
+        COPY_BUTTON:
+            COPIED: Kopioitu!
+        CUSTOM: Mukautettu
+        DASHBOARD:
+            ADD_WIDGET: 'Lisää widget'
+            CUSTOMIZE: Mukauta
+            CUSTOMIZE_TITLE: 'Mukauta kojelautaa'
+            EDIT_HINT: 'Mukauttamistila — vedä, muuta kokoa, piilota widgettejä ja tallenna sitten.'
+            EMPTY: 'Kojelautasi on tyhjä'
+            EMPTY_HINT: 'Napsauta yläpuolella olevaa kynä-kuvaketta widgettien lisäämiseksi'
+            HIDE_WIDGET: 'Piilota widget'
+            LAYOUT_RESET: 'Asettelu palautettu oletukseksi'
+            LAYOUT_SAVED: 'Kojelaudan asettelu tallennettu'
+            PICKER_EMPTY: 'Kaikki saatavilla olevat widgetit ovat jo kojelaudallasi.'
+            PICKER_SUBTITLE: 'Valitse widget lisätäksesi sen takaisin kojelaudalleen.'
+            PICKER_TITLE: 'Lisää widget'
+            PRESETS: Esiasetukset
+            PRESET_COMPACT: Kompakti
+            PRESET_COMPACT_DESC: 'Kaikki pienimmillä tuetun kokoisen sovittimet.'
+            PRESET_DEFAULT: Oletus
+            PRESET_DEFAULT_DESC: 'Palvelimen suosittelema asettelu — tyhjentää mukautuksesi.'
+            PRESET_MINIMAL: Minimaalinen
+            PRESET_MINIMAL_DESC: 'Vain tilastot ja viimeaikaiset sivut.'
+            RESET_LAYOUT: 'Palauta asetteluni'
+            SAVE_SITE_DEFAULT: 'Tallenna sivuston oletukseksi'
+            SITE_LAYOUT_SAVED: 'Sivuston oletus tallennettu'
+            TITLE: Hallintapaneeli
+            WIDGETS:
+                BACKUPS: Varmuuskopiot
+                NEWS_FEED: Uutissyöte
+                NOTIFICATIONS: Ilmoitukset
+                POPULARITY: 'Sivun näyttökerrat'
+                RECENT_PAGES: 'Viimeaikaiset sivut'
+                STATS: 'Sivuston tilastot'
+                SYSTEM_HEALTH: 'Järjestelmän tila'
+                TOP_PAGES: 'Suosituimmat sivut'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Vedä järjestykseen'
+        DELETE: Poista
+        DENIED: Kielletty
+        DEPENDENCIES: Riippuvuudet
+        DISABLE: 'Poista käytöstä'
+        DISABLED: 'Poistettu käytöstä'
+        DISMISS: Hylkää
+        DONE: Valmis
+        DOWNLOAD: Lataa
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: Asettelupohjat
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Tallenna sivuston oletukseksi kaikille käyttäjille'
+        ENABLED: Käytössä
+        ENVIRONMENT_SWITCHER:
+            CREATE: Luo
+            CREATES_PATH: 'Luo user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Luo ympäristö…'
+            CREATE_ENV_NAMED: 'Luo ympäristö „{name}"…'
+            DEFAULT: Oletus
+            ENV_CREATED: 'Ympäristö „{name}" luotu ja valittu'
+            FAILED_TO_CREATE: 'Ympäristön luominen epäonnistui'
+            HAS_OVERRIDES: 'sisältää ohituksia'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'ei enää ole olemassa. Valitse toinen.'
+            SAVE_CONFIG_TO: 'Tallenna asetukset kohteeseen'
+            SAVING_TO_DEFAULT: 'Tallennetaan oletukseen (user/config)'
+            SAVING_TO_ENV: 'Tallennetaan ympäristöön: {name}'
+            SELECTED_ENV: 'Valittu ympäristö'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Valitse, mihin asetuksien kirjoitukset tallennetaan'
+        EXPAND_ALL: 'Laajenna kaikki'
+        EXPAND_SIDEBAR: 'Laajenna sivupalkki'
+        EXPERT_MODE: Asiantuntijamoodi
+        FIELDS:
+            ADD_ENTRY: 'Lisää merkintä'
+            CLEAR_DATE: 'Tyhjennä päivämäärä'
+            CRON:
+                AT_MINUTE: Minuutilla
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min h vrk kk vvv'
+                ON_DAY: Päivässä
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Aktiiviset laukaisut'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Ajoittimen tilan lataaminen epäonnistui'
+                FAILED_TO_RUN_SCHEDULER: 'Ajoittimen suorittaminen epäonnistui'
+                HEALTH_STATUS: Terveydentila
+                JOB_ID: 'Työn tunnus'
+                LAST_RUN: 'Viimeksi suoritettu'
+                LOADING_SCHEDULER_STATUS: 'Ajoittimen tilaa ladataan...'
+                NOT_CONFIGURED: 'EI MÄÄRITETTY'
+                NOT_ENABLED: 'EI KÄYTÖSSÄ'
+                NOT_INSTALLED: 'EI ASENNETTU'
+                NO_SCHEDULED_JOBS_REGISTERED: 'Ei rekisteröityjä ajoitettuja töitä.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Ei aktiivisia laukaisuja! Ota webhookit käyttöön tai määritä cron.'
+                QUEUE_SIZE: 'Jonon koko:'
+                RUNNING: Suoritetaan...
+                RUN_ALL: 'Suorita kaikki'
+                SCHEDULED_JOBS: 'Ajoitetut työt'
+                SCHEDULER_RUN_COMPLETED: 'Ajoittimen suoritus valmis'
+                SCHEDULER_STATUS: 'Ajoittimen tila'
+                STATUS: 'Tila:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Mukautettua kenttää ladataan...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Muotoilumerkkijono:'
+                SELECT_FORMAT: '— Valitse muoto —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Ei vastaavia tiedostoja'
+                NO_MEDIA_UPLOADED: 'Mediatiedostoja ei ole ladattu vielä'
+            FILE_PICKER_SOON: 'Tiedostoselain — tulossa pian'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Kuvakkeita ei löytynyt'
+                SEARCH_ICONS: 'Etsi kuvakkeita...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Näytetään ensimmäiset 200 tulosta — kirjoita rajoittaaksesi'
+            NO_TAXONOMY_TYPES: 'Taksonomiatyyppejä ei ole määritetty'
+            PAGES:
+                FILTER_PAGES: 'Suodata sivuja...'
+                ROOT: '/ (juuret)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Tarkistetaan sivua...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Sivun media ei ole käytettävissä'
+            PERMISSIONS:
+                NOT_SET: 'Ei määritetty'
+                NO_PERMISSIONS_CONFIGURED: 'Käyttöoikeuksia ei ole määritetty'
+            REGENERATE_SLUG: 'Luo automaattisesti sivun otsikosta'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Mikään kenttä ei vastaa suodatintasi'
+            THEME_SELECT:
+                LOADING_THEMES: 'Ladataan teemoja...'
+                SELECT_THEME: '— Valitse teema —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Tarkista terveystila:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Pakota tietyn työn suoritus (ohittaa aikataulun):'
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions -esimerkki:'
+                HOW_TO_USE_WEBHOOKS: 'Kuinka käyttää webhookeja:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Käynnistä kaikki erääntyneet työt (kunnioittaa aikataulua):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Tarkistetaan webhook-laajennoksen tilaa...'
+                INSTALL_PLUGIN_NOW: 'Asenna laajennus nyt'
+                OR_RUN: 'tai suorita:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'laajennus on asennettu ja käytössä.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'laajennus on asennettu. Ota alla olevat Webhook-liipaisut käyttöön aktivoidaksesi.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'laajennus vaaditaan webhook-toiminnallisuudelle.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Webhook-laajennus vaaditaan'
+        FLEX_OBJECTS:
+            ACTIONS: Toiminnot
+            BACK_TO_LIST: 'Takaisin luetteloon'
+            DELETE_OBJECT: 'Poista objekti'
+            EXPORT: Vie
+            EXPORT_FAILED: 'Vienti epäonnistui'
+            FAILED_TO_DELETE_OBJECT: 'Objektin poistaminen epäonnistui'
+            FAILED_TO_LOAD_DIRECTORY: 'Kansion lataaminen epäonnistui'
+            FAILED_TO_LOAD_OBJECTS: 'Objektien lataaminen epäonnistui'
+            FAILED_TO_SAVE: 'Tallentaminen epäonnistui.'
+            NEW:
+                BACK_TO_LIST: 'Takaisin luetteloon'
+                CREATE: Luo
+                OBJECT_CREATED: 'Objekti luotu'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Objektia muokattiin muualla — tallenna jos haluat korvata tai lataa uudelleen'
+            OBJECT_DELETED: 'Objekti poistettu'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objektia muokattiin muualla. Lataa sivu uudelleen.'
+            PREVIOUS: Edellinen
+            SEARCH: Haku...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Sulje widgetien valikko'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Takaisin kirjautumiseen'
+            CHECK_INBOX: 'Tarkista sähköpostisi nollauspyynnön linkistä.'
+            EMAIL_ADDRESS: Sähköpostiosoite
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Anna kelvollinen sähköpostiosoite'
+            FORGOT_PASSWORD: 'Unohtunut salasana'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Unohtunut salasana — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Jos tälle sähköpostiosoitteelle on olemassa tili, nollauspyyntö on lähetetty.'
+            SENDING: Lähetetään...
+            SEND_RESET_LINK: 'Lähetä nollauspyynnön linkki'
+            SUBTITLE: 'Anna sähköpostiosoitteesi niin lähetämme sinulle nollauspyynnön linkin.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Palvelimeen ei voida muodostaa yhteyttä.'
+        HOMEPAGE: Etusivu
+        INFO: Tiedot
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Kuvakkeita ei löytynyt'
+            SEARCH_ICONS: 'Etsi kuvakkeita...'
+            TYPE_TO_NARROW_RESULTS: 'Kirjoita kaventaaksesi tuloksia'
+        INSTALL: Asenna
+        INSTALLING: Asennetaan...
+        KEYWORDS: Avainsanat
+        LANG:
+            CREATE_TRANSLATION: 'Luo {language}-käännös'
+            CURRENT: nykyinen
+            DEFAULT: oletus
+            DELETE_TRANSLATION: 'Poista {language}-käännös'
+            FALLBACK_NOTICE: 'Ei {language}-käännöstä. Näytetään oletussisältö.'
+            NOT_TRANSLATED: 'Ei käännetty'
+            SAVE_AS: 'Tallenna {language}-kielellä'
+            SWITCH_LANGUAGE: 'Vaihda sisällön kieltä'
+            SYNC_FROM: 'Palauta kohteesta {language}'
+            TRANSLATED: Käännetty
+            TRANSLATIONS: Käännökset
+            TRANSLATION_CREATED: '{language}-käännös luotu'
+        LOADING: Ladataan...
+        LOGIN:
+            AUTHENTICATION_CODE: Todennuskoodi
+            AUTH_CODE_PROMPT: 'Avaa todennussovelluksesi ja syötä käyttäjän **{username}** 6-numeroinen koodi.'
+            BACK_TO_SIGN_IN: 'Takaisin kirjautumiseen'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Syötä kelvollinen 6-numeroinen koodi'
+            ENVIRONMENT: Ympäristö
+            FORGOT_PASSWORD: 'Unohditko salasanan?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Virheellinen käyttäjänimi tai salasana'
+            LOGIN_GRAV_ADMIN: 'Kirjautuminen — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'Salasana on pakollinen'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Täytä kaikki pakolliset kentät'
+            POWERED_BY_GRAV_CMS: 'Powered by Grav CMS'
+            SERVER_CONFIGURATION: 'Palvelimen asetukset'
+            SERVER_URL: 'Palvelimen URL'
+            SIGNED_IN_SUCCESSFULLY: 'Kirjauduttiin onnistuneesti'
+            SIGNING_IN: Kirjaudutaan...
+            SIGN_IN: Kirjaudu
+            SUBTITLE: 'Kirjaudu hallinnoimaan sivustoasi'
+            TWOFA_SUBTITLE: 'Syötä todennuskoodi jatkaaksesi'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Palvelimeen ei saada yhteyttä. Tarkista palvelimen URL-osoite ja yritä uudelleen.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Koodin vahvistaminen epäonnistui. Tarkista yhteys ja yritä uudelleen.'
+            USERNAME_IS_REQUIRED: 'Käyttäjänimi vaaditaan'
+            VERIFY: Vahvista
+            VERIFYING: Vahvistetaan...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Ei mitään esikatseltavaksi'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Hallinnoi sivustolaajuisia mediatiedostoja'
+            MEDIA_GRAV_ADMIN: 'Media — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Dimensiot
+                FAILED_TO_COPY: 'Kopiointi epäonnistui'
+                FILE_RENAMED: 'Tiedosto nimetty uudelleen'
+                NEXT_FILE: 'Seuraava tiedosto'
+                PREVIOUS_FILE: 'Edellinen tiedosto'
+                RENAME: 'Nimeä uudelleen'
+            MEDIA_MANAGER:
+                CREATE: Luo
+                FILES_DELETED: 'Tiedostot poistettu'
+                FOLDER_NAME: 'Kansion nimi'
+                NEW_FOLDER: 'Uusi kansio'
+                UPLOAD_FILES: 'Lataa tiedostoja'
+            MEDIA_TOOLBAR:
+                FOLDER: Kansio
+                GRID_VIEW: Ruudukkonäkymä
+                LIST_VIEW: Luettelonäkymä
+                NEW_FOLDER: 'Uusi kansio'
+                SEARCH_MEDIA: 'Hae mediaa...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Vedä editoriin'
+                PAGE_MEDIA: 'Sivun media'
+        NAV:
+            CONFIGURATION: Kokoonpano
+            DASHBOARD: Koontinäyttö
+            MEDIA: Media
+            PAGES: Sivut
+            PLUGINS: Liitännäiset
+            SETTINGS: Asetukset
+            SYSTEM: Järjestelmä
+            THEMES: Teemat
+            TOOLS: Työkalut
+            USERS: Käyttäjät
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Ei syötteen kohteita'
+        NORMAL_MODE: 'Normaali tila'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Ei ilmoituksia'
+        NO_CHANGES: 'Ei tallennettavia muutoksia'
+        PAGES:
+            ADD_FOLDER: 'Lisää kansio'
+            ADD_MENU: 'Lisää valikko'
+            ADD_MODULE: 'Lisää moduuli'
+            ADD_PAGE: 'Lisää sivu'
+            DELETED: 'Sivun „{title}" poistaminen onnistui'
+            DELETE_FAILED: 'Sivun poistaminen epäonnistui'
+            DELETE_PAGE: 'Poista sivu'
+            DRAFT: Luonnos
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Yhdistetään yhteistyöistuntoon…'
+                COPY_PAGE: 'Kopioi sivu'
+                CREATE_LANGUAGE: 'Luo {language}'
+                DELETE_PAGE: 'Poista sivu'
+                EDIT_PAGE: 'Muokkaa sivua'
+                FAILED_TO_CREATE_TRANSLATION: 'Käännöksen luominen epäonnistui'
+                FAILED_TO_SYNC_TRANSLATION: 'Käännöksen synkronointi epäonnistui'
+                FALLBACK: (varaversio)
+                FALLBACK_NOTICE: '{active}-käännöstä ei ole olemassa. Näytetään {effective}-varaversio. Luo muokattava käännös käyttämällä "Tallenna nimellä {active}".'
+                FOLDER_NAME: 'Kansion nimi'
+                INVALID_YAML_FRONTMATTER: 'Virheellinen YAML-otsake'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Virheellinen YAML-otsake — korjaa syntaksi ennen tallentamista'
+                LOADING_PAGE: 'Ladataan sivua...'
+                NOT_TRANSLATED: 'Ei käännetty:'
+                OPEN_IN_NEW_TAB: 'Avaa uudella välilehdellä'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Sivu on muuttunut muualla — tallenna muutosten pitämiseksi tai lataa uudelleen'
+                PAGE_COPIED: 'Sivu kopioitu'
+                PAGE_DELETED: 'Sivu poistettu'
+                PAGE_PREVIEW: 'Sivun esikatselu'
+                PAGE_SAVED_AND_MOVED: 'Sivu tallennettu ja siirretty'
+                PREVIEW_PAGE: 'Esikatsele sivua'
+                PUBLISH_ON: Julkaise
+                RESET_CONTENT_FROM: 'Nollaa sisältö lähteestä:'
+                RESET_FROM: 'Nollaa lähteestä {language}'
+                RESET_TRANSLATION: 'Nollaa käännös'
+                SAVE_AS_LANGUAGE: 'Tallenna nimellä {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'Kansion nimi levyllä (URL-slug)'
+                TOGGLE_PAGE_NAVIGATOR: 'Näytä/piilota sivunavigaattori'
+                UNPUBLISH_ON: 'Poista julkaisusta'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Kirjoita markdown-sisältösi tähän...'
+            EDIT_PAGE: 'Muokkaa sivua'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: Muokattu
+            HEADER_PARENT: Yläsivu
+            HEADER_STATUS: Tila
+            HEADER_TEMPLATE: Malli
+            HEADER_TITLE: Otsikko
+            INFO_DATE: Päivämäärä
+            INFO_LANGUAGE: Kieli
+            INFO_MODIFIED: Muokattu
+            INFO_ORDER: Järjestys
+            INFO_PUBLISHED: Julkaistu
+            INFO_PUBLISH_ON: Julkaise
+            INFO_ROUTABLE: Reititettävä
+            INFO_ROUTE: Reitti
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Malli
+            INFO_UNPUBLISH_ON: 'Poista julkaisusta'
+            INFO_VISIBLE: 'Näkyvä navigaatiossa'
+            LOADING: 'Ladataan sivuja...'
+            MODE_EXPERT: Edistynyt
+            MODE_NORMAL: Normaali
+            MOVED: 'Siirretty „{title}"'
+            MOVE_FAILED: 'Sivun siirtäminen epäonnistui'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Lisää sivu — Grav Admin'
+                CONTINUE: Jatka
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Määrittää, näkyykö tämä sivu navigaatiovalikossa'
+                FAILED_TO_CREATE: 'Sivun luominen epäonnistui'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Sivumallineiden lataaminen epäonnistui'
+                FILTER_PAGES: 'Suodata sivuja...'
+                FOLDER_CREATED: 'Kansio „{title}" luotu'
+                FOLDER_DETAILS: 'Kansion tiedot'
+                FOLDER_NAME: 'Kansion nimi'
+                LOADING_TEMPLATES: 'Ladataan malleja...'
+                MODULE_CREATED: 'Moduuli „{title}" luotu'
+                MY_NEW_PAGE: 'Uusi sivuni'
+                ORDERING: Järjestys
+                ORDERING_HELP_FOLDER: 'Lisää numeroprefixin, joka määrittää tämän kansion sijainnin sisarelementtiensä joukossa.'
+                ORDERING_HELP_MODULE: 'Lisää numeroprefixin, joka määrittää tämän moduulin sijainnin sen modulaarisen päälähteen sisällä.'
+                ORDERING_NONE: 'Ei mitään'
+                PAGE_CREATED: 'Sivu „{title}" luotu'
+                PAGE_DETAILS: 'Sivun tiedot'
+                PAGE_TEMPLATE: Sivumalli
+                PAGE_TITLE: 'Sivun otsikko'
+                PARENT_PAGE: Päätaso
+                ROOT: '&lt;root&gt; /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-turvallinen kansion nimi tälle sivulle'
+                VISIBLE: Näkyvä
+            NO_PAGES: 'Sivuja ei löytynyt'
+            NO_SEARCH_RESULTS: 'Haullasi ei löytynyt sivuja'
+            PAGES_GRAV_ADMIN: 'Sivut — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Luonnos (julkaisematon)'
+                FOLDER_ORDER: 'Kansion järjestys'
+                HAS_CHILDREN: 'Sisältää alasivuja'
+                SUMMARY: Yhteenveto
+                VISIBLE: Näkyvä
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Sivujen uudelleenjärjestäminen epäonnistui'
+                NO_PAGES_MATCH: 'Haullasi „{query}" ei löytynyt sivuja'
+                SEARCHING: Haetaan…
+            PAGE_COUNT: '{n, plural, one{# sivu} other{# sivua}}'
+            PAGE_INFO: 'Sivun tiedot'
+            PUBLISHED: Julkaistu
+            RAW_HEADER: 'Sivun raakaotsakko (JSON)'
+            REORDERED: '„{title}" uudelleenjärjestetty'
+            REORDER_FAILED: 'Uudelleenjärjestäminen epäonnistui'
+            REORDER_MOVE: 'Uudelleenjärjestä / Siirrä'
+            REORDER_SAME_PARENT: 'Voit uudelleenjärjestää vain samassa kansiossa olevia sivuja. Käytä puunäkymää siirtoihin eri kansioiden välillä.'
+            SAVED: 'Sivu tallennettu onnistuneesti'
+            SAVE_FAILED: 'Sivun tallennus epäonnistui'
+            SEARCH_PLACEHOLDER: 'Hae sivuja…'
+            SORT_DATE_NEWEST: 'Päivämäärä (uusimmat)'
+            SORT_NEWEST: Uusimmat
+            SORT_OLDEST: Vanhin
+            SORT_ORDER: Järjestys
+            SORT_TITLE_AZ: 'Otsikko A-Ö'
+            SORT_TITLE_ZA: 'Otsikko Ö-A'
+            SUBTITLE: 'Hallitse sivuston sisältöä ja rakennetta'
+            TITLE: Sivut
+            VIEW_COLUMNS: Sarakkeet
+            VIEW_LIST: Lista
+            VIEW_TREE: Puu
+        PASSWORD: Salasana
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: Salasanavaatimukset
+            PASSWORD_STRENGTH: 'Salasanan vahvuus'
+            REQUIREMENTS: Vaatimukset
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'Käyttöoikeuksien lataaminen epäonnistui'
+            NOT_SET: 'Ei asetettu'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Takaisin kojelautaan'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Tälle liitännäissivulle ei ole saatavilla sisältöä.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Takaisin liitännäisiin'
+            CHANGELOG: Muutosloki
+            CHECK_UPDATES: 'Tarkista päivitykset'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Määritystä muutettiin muualla. Lataa sivu uudelleen.'
+            CONFIGURE: Määritä
+            ENABLE_PLUGIN: 'Ota liitännäinen käyttöön'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Päivitysten tarkistus epäonnistui'
+            FAILED_TO_LOAD_PLUGINS: 'Liitännäisten lataaminen epäonnistui'
+            FAILED_TO_SAVE_CONFIGURATION: 'Määrityksen tallennus epäonnistui.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Tälle liitännäiselle ei ole saatavilla määritysasetuksia.'
+            PAGE_TITLE: '{name} — Liitännäiset — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Liitännäiset — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Liitännäinen on muutettu muualla — tallenna, jotta korvaat sen, tai lataa uudelleen'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'Liitännäinen on otettava käyttöön, jotta voit määrittää sen.'
+            REMOVE_PLUGIN: 'Poista liitännäinen'
+            SEARCH_PLUGINS: 'Etsi liitännäisiä...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Valitse liitännäinen nähdäksesi sen tiedot'
+            SYMLINKED: 'Symbolinen linkki'
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Ladataan liitännäisen sivua...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Pienoisohjelma epäonnistui latautumisessa'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Viimeiset 14 päivää'
+            THIS_MONTH: 'Tämä kuukausi'
+            THIS_WEEK: 'Tämä viikko'
+        PREMIUM: Premium
+        PREVIEW: Esikatselu
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Syötä salasanasi uudelleen jatkaaksesi. Työ on tallennettu.'
+            SESSION_EXPIRED: 'Istunto on vanhentunut'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Näytä kaikki'
+        REMOVE: Poista
+        RESET:
+            BACK_TO_SIGN_IN: 'Takaisin kirjautumiseen'
+            CONFIRM_PASSWORD: 'Vahvista salasana'
+            INVALID_LINK: 'Nollaimen linkki ei ole kelvollinen.'
+            NEW_PASSWORD_FOR: 'Valitse uusi salasana käyttäjälle **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Salasanat eivät täsmää'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Salasana nollattu onnistuneesti. Kirjaudu sisään.'
+            RESETTING: Nollataan...
+            RESET_PASSWORD: 'Nollaa salasana'
+            RESET_PASSWORD_GRAV_ADMIN: 'Nollaa salasana — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'Tämä nollauspaikka puuttuu vaaditut parametrit. Pyydä uutta salasanan unohtamissivulta.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Palvelimeen ei saada yhteyttä.'
+        SAVE: Tallenna
+        SAVING: Tallennetaan...
+        SEARCH: Hae
+        SETTINGS:
+            1_SECOND: '1 sekunti'
+            2_SECONDS: '2 sekuntia'
+            ACCENT_COLOR: Korostusväri
+            ADD_LINK: 'Lisää linkki'
+            ADMIN_INTERFACE_LANGUAGE: 'Hallintapaneelin kieli'
+            ADMIN_LANGUAGE: 'Hallintapaneelin kieli'
+            ADMIN_LANGUAGE_DESC: 'Otsikkojen, valikoiden ja viestien kieli ({count} merkkijonoa ladattu)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Hallintapaneelin asetukset ja ulkoasu'
+            APPEARANCE: Ulkoasu
+            AUTHENTICATED_AS: 'Kirjautuneena käyttäjänä'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Tallenna automaattisesti, kun poistut kentästä'
+            AUTO_SAVE: 'Automaattinen tallennus'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Automaattisen tallennuksen ja kumota-toiminnon käyttäytyminen lomakkeen muokkaajalle'
+            BRANDING: Brändäys
+            BRANDING_DESC: 'Logo ja bränditeksti näytetään kaikkialla hallintapaneelissa.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Valitse vaaleaa tai tummaa ulkoasua'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Valitse, kuinka logo näytetään'
+            COLLAB_DESCRIPTION: 'Reaaliaikainen usean käyttäjän muokkaus läsnäoloindikaattorilla. Vaatii palvelimella olevan `sync`-liitännäisen. Kokeellinen.'
+            COLOR_MODE: Väritila
+            CONNECTION: Yhteys
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Mukauta sivupalkkiin ja kirjautumissivulle näytettävää logoa'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Mukauta hallintapaneelin ulkoasua ja käyttökokemusta'
+            CUSTOM_IMAGE: 'Mukautettu kuva'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Yläpalkkiin näytettävät mukautetut pikanäppäimet'
+            CUSTOM_TEXT: 'Mukautettu teksti'
+            DARK: Tumma
+            DARK_LOGO: 'Tumma logo'
+            DARK_LOGO_REMOVED: 'Tumma logo poistettu.'
+            DARK_LOGO_UPLOADED: 'Tumma logo ladattu.'
+            DARK_MODE_LOGO: 'Tumma logoversio'
+            DEFAULT_APPEARANCE: Oletusvärjäys
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Uusien käyttäjien oletusvärjäys.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Lomakeeditorin oletustiheys.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Uusien käyttäjien käyttöliittymän oletuskieli.'
+            DEFAULT_LANGUAGE: Oletuskieli
+            DEFAULT_PAGES: Oletusstandardit
+            DEFAULT_PRIMARY_COLOR_DESC: 'Painikkeiden, linkkien ja korostuksien oletusten perusväri.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Sivuselaimeen liittyvät oletusasetukset'
+            DEFAULT_TEXT_SIZE_DESC: 'Hallintakäyttöliittymän oletusfonttin koko.'
+            DEFAULT_TYPEFACE_DESC: 'Hallintakäyttöliittymän oletusfonttiperhe.'
+            DEFAULT_VIEW: Oletusnäkymä
+            DEUTSCH: Deutsch
+            EDITING: Muokkaus
+            EDITOR_HEADING: Editori
+            EDITOR_MODE: 'Editorin tila'
+            ENGLISH: English
+            ENVIRONMENT: Ympäristö
+            ESPA_OL: Español
+            EXTERNAL: Ulkoinen
+            FAILED_TO_REMOVE_LOGO: 'Logon poistaminen epäonnistui.'
+            FAILED_TO_RESET_PREFERENCES: 'Asetuksien palauttaminen epäonnistui.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Logon tilan tallentaminen epäonnistui.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Logon tekstin tallentaminen epäonnistui.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Sivuston oletusarvojen tallentaminen epäonnistui.'
+            FOLLOW_OS: 'Noudata OS:ää'
+            FONT: Kirjasin
+            FONT_SIZE: 'Kirjasimen koko'
+            FONT_SIZE_LARGE: Suuri
+            FONT_SIZE_NORMAL: Normaali
+            FONT_SIZE_SMALL: Pieni
+            FONT_SIZE_XLARGE: 'Erittäin suuri'
+            FRAN_AIS: Français
+            GRAV_LOGO: Grav-logo
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Yhdistä nopeita kenttämuutoksia yhdeksi kumoa-vaiheeksi'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Kuinka sivut näytetään oletuksena'
+            HUE: Sävy
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Kohteita sivulla'
+            LANGUAGE_CHANGED: 'Kieli vaihdettu kohteeseen {language}'
+            LIGHT: Vaalea
+            LIGHT_LOGO: 'Vaalea logo'
+            LIGHT_LOGO_REMOVED: 'Vaalea logo poistettu.'
+            LIGHT_LOGO_UPLOADED: 'Vaalea logo ladattu.'
+            LIGHT_MODE_LOGO: 'Vaalea tilan logo'
+            LOGO_TEXT: 'Logon teksti'
+            LOGO_TYPE: 'Logon tyyppi'
+            LOGO_UPLOAD_FAILED: 'Logon lataaminen epäonnistui.'
+            MENUBAR_LINKS: 'Valikkopalkin linkit'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Ei mitään (1 kenttä = 1 peruutus)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Luettelonäkymässä näytettävien sivujen määrä'
+            'OFF': 'Pois päältä'
+            'ON': Päällä
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'plugin palvelimella. Kokeellinen.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Asetukset nollattu. Lataa uudelleen soveltaaksesi.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Ensisijainen väri, jota käytetään painikkeisiin, linkkeihin ja korostuksiin'
+            REAL_TIME_COLLABORATION: 'Reaaliaikainen yhteistyö'
+            REMOVE_LINK: 'Poista linkki'
+            RESET: Nollaa
+            RESET_ALL_PREFERENCES: 'Nollaa kaikki asetukset'
+            RESET_PREFERENCES: 'Nollaa asetukset'
+            RESET_PREFERENCES_MSG: 'Poista kaikki henkilökohtaiset muutokset ja palauta sivuston oletusasetukset?'
+            RESET_TO_SITE_DEFAULTS: 'Nollaa asetukseni sivuston oletuksiin'
+            REVERT_CHANGES: 'Peru muutokset'
+            SATURATION: Värikylläisyys
+            SAVED_AUTOMATICALLY: 'Tallennettu automaattisesti'
+            SAVE_SITE_DEFAULTS: 'Tallenna sivuston oletusasetukset'
+            SERVER_CONNECTION_DETAILS: 'Palvelimen yhteystiedot'
+            SERVER_URL: 'Palvelimen URL'
+            SETTINGS_GRAV_ADMIN: 'Asetukset — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Näytä peruuta-painike muokkauksen työkalussa'
+            SITE_DEFAULTS: 'Sivuston oletusasetukset'
+            SITE_DEFAULTS_DESCRIPTION: 'Seuraavat asetukset koskevat kaikkia admin-käyttäjiä perusarvona. Tason B kohteet (ulkoasu, sivut, kieli, muokkain) voidaan ohittaa kunkin käyttäjän omissa asetuksissa yllä. Tason A kohteet (muokkaus, valikkopalkki) ovat sivuston laajuisia eivätkä ole ohitettavissa.'
+            SITE_DEFAULTS_SAVED: 'Sivuston oletusasetukset tallennettu. Kaikki käyttäjät näkevät nämä seuraavalla uudelleenlatauksella.'
+            SITE_SETTINGS_DESC: 'Uusien käyttäjien oletusasetukset sekä sivuston laajuinen toiminta. Muutokset tulevat voimaan seuraavalla uudelleenlatauksella kaikille käyttäjille.'
+            SITE_SETTINGS_HEADING: 'Sivuston asetukset'
+            SITE_WIDE_ONLY: 'Vain sivuston laajuinen'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Teksti koko, jota käytetään koko hallinnon ympärillä'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'Ensimmäinen kirjain muuttuu kuvakkeeksi'
+            TOOLBAR_UNDO_BUTTON: 'Työkalupalkin peruuta-painike'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Fontti, jota käytetään koko hallinnon ympärillä'
+            UNDO_BATCH_WINDOW: 'Peruuta-jonoikkunan aika-alue'
+            USED_ON_DARK_BACKGROUNDS: 'Käytetään tumman taustan päällä'
+            USED_ON_LIGHT_BACKGROUNDS: 'Käytetään vaalean taustan päällä'
+            USERS_MAY_OVERRIDE: 'Käyttäjät voivat ohittaa'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
+            CHECKING_SERVER: 'Tarkistetaan palvelinta…'
+            CONFIRM_PASSWORD: 'Vahvista salasana'
+            CREATE_ADMINISTRATOR: 'Luo järjestelmänvalvoja'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Luo järjestelmänvalvojan tili aloittaaksesi'
+            CREATING_ACCOUNT: 'Luodaan tiliä...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Syötä kelvollinen sähköpostiosoite'
+            ENVIRONMENT: Ympäristö
+            FULL_NAME: 'Koko nimi'
+            OPTIONAL: (valinnainen)
+            PASSWORDS_DO_NOT_MATCH: 'Salasanat eivät vastaa toisiaan'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Korjaa yllä olevat virheet ja yritä uudelleen'
+            POWERED_BY_GRAV_CMS: 'Powered by Grav CMS'
+            SERVER_CONFIGURATION: 'Palvelimen konfiguraatio'
+            SERVER_URL: 'Palvelimen URL'
+            SETUP_GRAV_ADMIN: 'Setup — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'Setup on jo suoritettu. Kirjaudu sisään.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Palvelimeen ei voida muodostaa yhteyttä. Tarkista palvelimen URL ja yritä uudelleen.'
+            WELCOME_TO_GRAV: 'Tervetuloa Graviin'
+        SIGN_OUT: 'Kirjaudu ulos'
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} aktiivinen)'
+            ACTIVE_THEME: 'Aktiivinen teema'
+            UPDATE_COUNT: '{n, plural, one{# päivitys} other{# päivitystä}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'sisäänrakennettu markdown-editori'
+                LOCKED: 'Vain luku — {owner} muokkaa **{editor}**-editorilla. Sekalaiset editoritypit eivät voi tehdä yhteistyötä; [vaihda editorin asetuksia]({href}) päivitettävän yhteistyön vuoksi.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'vaihda editorin asetuksia'
+                TO_COLLABORATE_LIVE: 'päivitettävän yhteistyön vuoksi.'
+        SYSTEM:
+            COMING_SOON: 'Tulossa pian'
+            SYSTEM_GRAV_ADMIN: 'Järjestelmä — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} vapaa'
+            BYTES_USED: '{size} käytetty'
+            CACHE: Välimuisti
+            DISK: Levy
+            EVERYTHING_UP_TO_DATE: 'Kaikki on ajan tasalla'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav on asennettu symbolisen linkin kautta — päivitä manuaalisesti.'
+            GRAV_UPDATE_AVAILABLE: 'Grav-päivitys saatavilla'
+            MORE_COUNT: '+ {n} lisää…'
+            PACKAGES_OUTDATED: '{n, plural, one{# paketti vanhentunut} other{# pakettia vanhentuneet}}'
+            PERCENT_USED: '{percent}% käytetty'
+            SERVER: Palvelin
+            UPDATES: Päivitykset
+            UPDATES_AVAILABLE_COUNT: '{n} saatavilla'
+            UPDATE_ALL: 'Päivitä kaikki'
+            UPGRADE_GRAV: 'Päivitä Grav'
+        THEMES:
+            ACTIVE_THEME: 'Aktiivinen teema'
+            BACK_TO_THEMES: 'Takaisin teemoihin'
+            CHANGELOG: Muutosloki
+            CHECK_UPDATES: 'Tarkista päivitykset'
+            CLICK_TO_VIEW_FULL_SIZE: 'Napsauta katsellaksesi täysikokoisena'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfiguraatio muutettiin muualla. Lataa uudelleen.'
+            CONFIGURE: Määritä
+            FAILED_TO_CHECK_FOR_UPDATES: 'Päivitysten tarkistus epäonnistui'
+            FAILED_TO_LOAD_THEMES: 'Teemojen lataaminen epäonnistui'
+            FAILED_TO_SAVE_CONFIGURATION: 'Konfiguraation tallentaminen epäonnistui.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Tälle teemalle ei ole saatavilla konfiguraatioasetuksia.'
+            PAGE_TITLE: '{name} — Teemat — Grav Admin'
+            REMOVE_THEME: 'Poista teema'
+            SEARCH_THEMES: 'Etsi teemoja...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Valitse teema nähdäksesi tiedot'
+            SYMLINKED: 'Symbolisesti linkitetty'
+            THEMES_GRAV_ADMIN: 'Teemat — Grav Admin'
+        TIME:
+            DAYS_AGO: '{n}pv sitten'
+            HOURS_AGO: '{n}h sitten'
+            JUST_NOW: 'juuri nyt'
+            MINUTES_AGO: '{n}min sitten'
+        TOGGLE_DARK_MODE: 'Vaihda pimeää tilaa'
+        TOGGLE_MENU: 'Vaihda valikkoa'
+        TOOLS:
+            BACKUPS:
+                ACTION: Toiminto
+                BACKUP_CREATED_SUCCESSFULLY: 'Varmuuskopio luotiin onnistuneesti'
+                BACKUP_DATE: 'Varmuuskopion päivämäärä'
+                BACKUP_DELETED: 'Varmuuskopio poistettu'
+                BACKUP_HISTORY: 'Varmuuskopion historia'
+                BACKUP_NOW: 'Varmuuskopio nyt'
+                BACKUP_STATISTICS: Varmuuskopiointitilastot
+                CREATING: Luodaan...
+                DELETE_BACKUP: 'Poista varmuuskopio'
+                FAILED_TO_CREATE_BACKUP: 'Varmuuskopioinnin luominen epäonnistui'
+                FAILED_TO_DELETE_BACKUP: 'Varmuuskopion poistaminen epäonnistui'
+                FAILED_TO_LOAD_BACKUPS: 'Varmuuskopioiden lataaminen epäonnistui'
+                LOADING_BACKUPS: 'Ladataan varmuuskopioita...'
+                NEWEST_BACKUP: 'Uusin varmuuskopio'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Varmuuskopioita ei löytynyt. Luo sellainen aloittaaksesi.'
+                NUMBER_OF_BACKUPS: 'Varmuuskopioiden määrä'
+                NUMBER_OF_PROFILES: 'Profiilien määrä'
+                OLDEST_BACKUP: 'Vanhin varmuuskopio'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Varmuuskopiot, ajoitin, lokit ja diagnostiikka'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Pudota .zip-tiedosto tähän tai klikkaa selataksesi'
+                INSTALL_FROM_FILE: 'Asenna tiedostosta'
+                INSTALL_FROM_URL: 'Asenna URL-osoitteesta'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Vain .zip-tiedostot ovat tuettuja'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Paketti asennettu onnistuneesti'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Tukee Grav-liitännäisiä ja teemapaketeja'
+            LOGS:
+                100_LINES: '100 riviä'
+                200_LINES: '200 riviä'
+                25_LINES: '25 riviä'
+                50_LINES: '50 riviä'
+                ALL_LEVELS: 'Kaikki tasot'
+                CRITICAL: Kriittinen
+                EMERGENCY: Hätätapaus
+                FAILED_TO_LOAD_LOGS: 'Lokien lataaminen epäonnistui'
+                FAILED_TO_LOAD_LOG_FILES: 'Lokitiedostojen lataaminen epäonnistui'
+                LOADING_LOGS: 'Ladataan lokeja...'
+                LOG_FILE: Lokitiedosto
+                MESSAGE: Viesti
+                NOTICE: Huomautus
+                REFRESH: Päivitä
+                SEARCH_MESSAGES: 'Hae viestejä...'
+                WARNING: Varoitus
+            REPORTS:
+                CONTENT_FIELD: 'sisältö: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Raporttien lataaminen epäonnistui'
+                LOADING_REPORTS: 'Ladataan raportteja...'
+                NO_REPORTS_AVAILABLE: 'Raportteja ei ole saatavilla.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Ladataan raportin komponenttia...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'Jotta Scheduler-ominaisuus toimisi, sinun on lisättävä **Grav Scheduler** järjestelmän crontab-tiedostoon käyttäjälle **{user}**. Suorita yllä oleva komento päätteestä lisätäksesi sen automaattisesti. Kun olet tallentanut, päivitä tämä sivu nähdäksesi tilan.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Scheduler-konfiguraation lataaminen epäonnistui.'
+                FAILED_TO_SAVE: 'Tallentaminen epäonnistui'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'Scheduler voi käyttää joko järjestelmän crontabia tai webhook-liipaisimia komentojen suorittamiseen. Webhookit ovat suositeltava vaihtoehto pilvipalveluympäristöissä. Vain edistyneet käyttäjät voivat määrittää mukautettuja töitä. Väärä määritys tai väärinkäyttö voi johtaa tietoturva-aukkoihin.'
+                LOADING_SCHEDULER: 'Ladataan scheduleria...'
+                NOT_ENABLED_FOR_USER: 'Ei ole otettu käyttöön käyttäjälle:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-konfiguraatio tallennettu'
+                SECURITY_WARNING: 'Vain edistyneet käyttäjät voivat määrittää mukautettuja scheduler-töitä. Väärä määritys voi aiheuttaa suorituskyky-ongelmia tai tietoturva-aukkoihin.'
+                WEBHOOK_ALTERNATIVE: 'Vaihtoehtoisesti asenna **scheduler-webhook**-laajennus, jotta voit käyttää webhook-pohjaista cron-ajoa, mikä on suositeltava järjestelmissä, joissa järjestelmän crontab-pääsy ei ole saatavilla.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} vapaata {total}:sta'
+                DISK_USAGE: 'Levyn käyttö'
+                DRIVER: Ajuri
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Järjestelmän tietojen lataaminen epäonnistui'
+                GRAV_VERSION: 'Gravin versio'
+                LOADING_SYSTEM_INFO: 'Ladataan järjestelmän tietoja...'
+                MAX_EXECUTION: 'Suurin suoritusaika'
+                MAX_POST: 'Suurin POST-koko'
+                MAX_UPLOAD: 'Suurin latauksen koko'
+                MEMORY_LIMIT: 'Muistin raja'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: PHP-versio
+            TOOLS_GRAV_ADMIN: 'Työkalut — Gravin hallinta'
+        TOP_BANNER:
+            PREVIOUS: Edellinen
+            SITE_NOTIFICATION: 'Sivun ilmoitus'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Näkymätietoja ei vielä ole'
+        TOP_PROGRESS_BAR:
+            WORKING: Käynnissä
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA käytöstä poistettu'
+            2FA_ENABLED: '2FA käytössä'
+            2FA_IS_ENABLED: '2FA on käytössä'
+            2FA_QR_CODE: '2FA QR-koodi'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Lisää turvallisuuskerros vaatimalla kertakäyttöinen koodi sisäänkirjautuessa.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'Kertakäyttöinen koodi vaaditaan aina, kun tämä tili kirjautuu sisään.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'Salaisuus on jo luotu, mutta sitä ei näytetä turvallisuussyistä.'
+            CONFIRM_DISABLE: 'Vahvista poistaminen käytöstä'
+            ENABLE_2FA: 'Ota 2FA käyttöön'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Kirjoita 6-numeroinen koodi todentajastasi'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Kirjoita nykyinen 6-numeroinen koodi vahvistaaksesi'
+            FAILED_TO_GENERATE_2FA_SECRET: '2FA-salaisuuden luominen epäonnistui'
+            FINISH_ENABLING_2FA: 'Viimeistele 2FA:n käyttöönotto'
+            FORCE_DISABLE: 'Pakota poistaminen käytöstä'
+            FORCE_DISABLE_PROMPT: 'Pakota 2FA poistaminen käytöstä käyttäjälle **{username}**? Käytä vain menetetyn laitteen palauttamiseen.'
+            REGENERATE_AND_SHOW_QR: 'Luo uudelleen ja näytä QR-koodi'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Skannaa QR-koodi todentajasovelluksellasi'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Skannaa QR-koodi todentajasovelluksellasi ja kirjoita sitten 6-numeroinen koodi vahvistaaksesi ja aktivoidaksesi.'
+            SECRET_FOR_MANUAL_ENTRY: 'Salaisuus (manuaalista kirjoittamista varten):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Kaksivaiheinen tunnistus on pois päältä'
+            VERIFICATION_CODE: Vahvistuskoodi
+            VERIFY_ENABLE: 'Vahvista ja ota käyttöön'
+        UNSAVED_CHANGES: 'Tallentamattomia muutoksia'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Tallennetaan muutoksia…'
+            SAVING_CHANGES_2: 'Muutoksien tallentaminen'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Tallentamattomia muutoksia — tallentaaksesi ne klikkaa Tallenna'
+            YOU_HAVE_UNSAVED_CHANGES: 'Sinulla on tallentamattomia muutoksia'
+        UPDATE_AVAILABLE_VERSION: 'Päivitys saatavilla: v{version}'
+        UPDATE_TO_VERSION: 'Päivitä versioon v{version}'
+        UPLOAD: Lataa
+        USERNAME: Käyttäjänimi
+        USERS:
+            2_FACTOR_AUTHENTICATION: 'Kaksivaiheinen tunnistus'
+            ADD_USER: 'Lisää käyttäjä'
+            BACK_TO_USERS: 'Takaisin käyttäjiin'
+            CREATED: Luotu
+            DELETE_USER: 'Poista käyttäjä'
+            FAILED_TO_LOAD_USERS: 'Käyttäjien lataaminen epäonnistui'
+            FAILED_TO_SAVE_USER: 'Käyttäjän tallentaminen epäonnistui.'
+            NEW:
+                ACCOUNT: Tili
+                CREATE: Luo
+                FULL_NAME: 'Koko nimi'
+                LOWERCASE_3_64_CHARS: 'pienet kirjaimet, 3–64 merkkiä'
+                NEW_USER: 'Uusi käyttäjä'
+                NEW_USER_GRAV_ADMIN: 'Uusi käyttäjä — Grav Admin'
+                PERMISSIONS: Käyttöoikeudet
+            PAGE_TITLE: '{name} — Käyttäjät — Grav Admin'
+            PERMISSIONS: Käyttöoikeudet
+            SEARCH_USERS: 'Etsi käyttäjiä...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Valitse käyttäjä nähdäksesi tiedot'
+            STATUS: Tila
+            STATUS_HELP: 'Poistetut tilit eivät voi kirjautua sisään tai käyttää ohjelmointirajapintaa.'
+            SUPER_ADMIN: Pääylläpitäjä
+            USERS_GRAV_ADMIN: 'Käyttäjät — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Käyttäjä muutettiin muualla — tallenna päivitysten tekemiseksi tai lataa uudelleen'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Käyttäjä muutettiin muualla. Lataa sivu uudelleen.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Et voi poistaa omaa tiliäsi.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Profiilikuva poistettu'
+            AVATAR_UPDATED: 'Profiilikuva päivitetty'
+            FAILED_TO_REMOVE_AVATAR: 'Avatarin poistaminen epäonnistui'
+            FAILED_TO_UPLOAD_AVATAR: 'Avatarin lataaminen epäonnistui'
+            UPLOAD_AVATAR: 'Lataa avatar'
+        VERSION: Versio
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Avaa sivuston etusivu uudessa välilehdessä'
+            VIEW_SITE: 'Näytä sivusto'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Tuntematon widget: {id}'
