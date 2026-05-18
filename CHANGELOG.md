@@ -1,3 +1,14 @@
+# v2.0.0-rc.9
+## 05/18/2026
+
+1. [](#new)
+    * **New "Twig in Content" panel in Configuration > Security.** Surfaces the Grav 2.0 master gate, the editor-permission toggle, and the `config` access toggle that govern editor-authored Twig in page content. Requires grav ≥ 2.0.0-rc.4 and grav-plugin-api ≥ 1.0.0-rc.9.
+    * Pages with `process: twig: true` that the current user can't edit now show a clear toast explaining why the editor is blocked, instead of just a generic Access Denied screen.
+2. [](#bugfix)
+    * Inline HTML in section-panel help text (e.g. `<code>`, `<strong>`) now renders again. Help text outside an active search filter was being escaped instead of rendered; the two code paths are now consistent.
+    * Toggling a toggleable field whose default is an object (e.g. the page editor's Process group) no longer throws a `DataCloneError`. The form sync helper now falls back to a JSON round-trip when the browser's `structuredClone` rejects a value.
+    * After upgrading, humanized labels (e.g. "Twig Content Help" instead of the real translation) no longer linger until you switch language and back. The translation store now force-syncs on the first network load of each session.
+
 # v2.0.0-rc.8
 ## 05/17/2026
 
