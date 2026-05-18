@@ -1581,6 +1581,14 @@ ICU:
     SCHEDULER_WORKER_CONFIG: Worker Configuration
     TRANSLATIONS: Translations
     USER_ACCOUNTS: User Accounts
+    TWIG_CONTENT: Twig in Content
+    TWIG_CONTENT_HELP: Controls for editor-authored Twig embedded in page content. Theme templates on disk are not affected by these settings; they only apply to Twig that authors put into page bodies or frontmatter.
+    TWIG_CONTENT_PROCESS_ENABLED: Enable Twig in Content
+    TWIG_CONTENT_PROCESS_ENABLED_HELP: "Allow pages with <code>process: twig: true</code> in their frontmatter (and the site-wide <code>system.pages.frontmatter.process_twig</code> opt-in) to actually run Twig. <strong>Off by default in Grav 2.0.</strong> Leaving this disabled reduces template-injection attack surface, but breaks any page that needs Twig in its body."
+    TWIG_CONTENT_EDITOR_ENABLED: Allow editors to toggle Twig in Content
+    TWIG_CONTENT_EDITOR_ENABLED_HELP: "When off (default), the Twig checkbox in the page editor's Advanced tab is only visible to users granted the <code>admin.pages_twig</code> permission, and pages that already have Twig enabled can only be edited by those users. When on, anyone with page-edit access can toggle Twig on individual pages."
+    TWIG_CONTENT_CONFIG_ACCESS: Allow config variable access in Twig
+    TWIG_CONTENT_CONFIG_ACCESS_HELP: "Whether the <code>config</code> Twig variable is readable from page content. When off (default), reading <code>config.system.title</code> from a page returns nothing. When on, <code>config</code> is exposed but still filtered by <code>config_denied_paths</code> (see Twig Sandbox below) so credentials and other sensitive subtrees stay hidden."
     TOASTS:
       CONFIG_SAVED: "{name} configuration saved"
       CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
