@@ -1,5 +1,5 @@
 # v2.0.0-rc.8
-## 05/14/2026
+## 05/17/2026
 
 1. [](#new)
     * **The "Add Page" button on the Pages page is now a three-way split.** Mirrors classic admin's split-button: the main button still adds a regular page; the chevron opens a menu with **Add Folder** (a routing/grouping folder with no `.md` file) and **Add Module** (a modular sub-page — the folder name is automatically prefixed with `_` per Grav's modular convention, and the template picker shows only modular templates). The Folder form is slimmed down (no Page Title or template selector, just folder name + parent + ordering), and the Module form replaces the "Visible" toggle with an "Ordering" toggle because modular sub-pages never appear in nav. Requires grav-plugin-api ≥ 1.0.0-rc.8.
