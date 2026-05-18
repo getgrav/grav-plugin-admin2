@@ -1,0 +1,898 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Доступ запрещён'
+        ACTIVATE: Активировать
+        ACTIVE: Активно
+        ADD_PAGE: 'Добавить страницу'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Добавить плагин'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Не удалось загрузить доступные плагины из GPM'
+            FILTER_PLUGINS: 'Фильтр плагинов...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Выберите плагин для просмотра деталей'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Добавить тему'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Не удалось загрузить доступные темы из GPM'
+            FILTER_THEMES: 'Фильтр тем...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Выберите тему для просмотра деталей'
+        ALLOWED: Разрешено
+        ALL_CHANGES_SAVED: 'Все изменения сохранены'
+        API_KEYS_FIELD:
+            API_KEYS: 'Ключи API'
+            API_KEY_GENERATED: 'Ключ API создан'
+            BLANK_NEVER: '(пусто = никогда)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Скопируйте этот ключ сейчас — он больше не будет показан.'
+            CREATED: Создано
+            EXPIRES: Истекает
+            EXPIRY: 'Срок действия'
+            E_G_MY_CLI_TOOL: 'например «Мой инструмент CLI»'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Не удалось скопировать в буфер обмена'
+            FAILED_TO_GENERATE_API_KEY: 'Не удалось создать ключ API'
+            FAILED_TO_LOAD_API_KEYS: 'Не удалось загрузить ключи API'
+            FAILED_TO_REVOKE_API_KEY: 'Не удалось отозвать ключ API'
+            GENERATE_KEY: 'Создать ключ'
+            GENERATING: Создание…
+            KEY_NAME: 'Имя ключа'
+            KEY_PREFIX: 'Префикс ключа'
+            LAST_USED: 'Последний раз использовался'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Ключи API еще не созданы.'
+            PLEASE_ENTER_A_KEY_NAME: 'Пожалуйста, введите имя ключа'
+            REVOKE_API_KEY: 'Отозвать ключ API'
+            REVOKE_KEY: 'Отозвать ключ'
+        APP:
+            CREATING_BACKUP: 'Создание резервной копии…'
+            DASHBOARD_GRAV_ADMIN: 'Панель управления — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Обновить
+            WELCOME_BACK: 'С возвращением, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Закрыть меню'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Вы уверены?'
+        AUTHOR: Автор
+        BACKUPS_WIDGET:
+            BACKING_UP: 'Резервная копия…'
+            BACKUP_NOW: 'Создать резервную копию'
+            CREATE_A_NEW_BACKUP_NOW: 'Создать новую резервную копию сейчас'
+            DOWNLOAD_FILE: 'Скачать {filename}'
+            NO_BACKUPS_FOUND: 'Резервные копии не найдены'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 'Параметры кеша'
+            CLEAR_CACHE: 'Очистить кеш'
+            FAILED_TO_CLEAR_CACHE: 'Не удалось очистить кеш'
+        CANCEL: Отмена
+        CLEAR_SEARCH: 'Очистить поиск'
+        CLOSE: Закрыть
+        COLLAPSE_ALL: 'Свернуть все'
+        COLLAPSE_SIDEBAR: 'Свернуть боковую панель'
+        COMPATIBILITY: Совместимость
+        CONFIG:
+            CLEAR_FILTER: 'Очистить фильтр'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Конфигурация изменена в другом месте — сохраните для перезаписи или перезагрузите'
+            CONFIGURATION_RELOADED: 'Конфигурация перезагружена'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Конфигурация успешно сохранена'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Конфигурация была изменена в другом месте. Перезагрузите для просмотра последних изменений.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Не удалось сохранить конфигурацию'
+            FILTER_FIELDS: 'Фильтр полей...'
+            LOADING_CONFIGURATION: 'Загрузка конфигурации...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Нет доступной схемы конфигурации для этой области.'
+            NO_MATCHES_FOUND: 'Совпадений не найдено'
+            PAGE_TITLE: 'Конфигурация: {scope} — Grav Admin'
+            RELOAD: Перезагрузить
+            TITLE: Конфигурация
+            TITLE_SCROLLED: 'Конфигурация: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Окружение
+            EXPORT_YAML: 'Экспортировать YAML'
+            GRAV_VERSION: 'Версия Grav'
+            LOADING_SYSTEM_INFORMATION: 'Загрузка системной информации...'
+            PHP_CONFIGURATION: 'Конфигурация PHP'
+            PHP_EXTENSIONS: 'Расширения PHP'
+            PHP_VERSION: 'Версия PHP'
+            SERVER: Сервер
+            SERVER_SOFTWARE: 'Серверное ПО'
+        CONFIRM_ACTION: 'Подтверждение действия'
+        CONFIRM_DELETE: 'Удалить „{title}" по адресу {route}?'
+        COPY_BUTTON:
+            COPIED: Скопировано!
+        CUSTOM: Пользовательский
+        DASHBOARD:
+            ADD_WIDGET: 'Добавить виджет'
+            CUSTOMIZE: Настроить
+            CUSTOMIZE_TITLE: 'Настроить панель управления'
+            EDIT_HINT: 'Режим настройки — перемещайте, изменяйте размер, скрывайте виджеты, а затем сохраняйте.'
+            EMPTY: 'Ваша панель управления пуста'
+            EMPTY_HINT: 'Нажмите на значок карандаша выше, чтобы добавить виджеты'
+            HIDE_WIDGET: 'Скрыть виджет'
+            LAYOUT_RESET: 'Макет панели управления восстановлен по умолчанию'
+            LAYOUT_SAVED: 'Макет панели управления сохранён'
+            PICKER_EMPTY: 'Все доступные виджеты уже находятся на вашей панели управления.'
+            PICKER_SUBTITLE: 'Выберите виджет, чтобы добавить его обратно на панель управления.'
+            PICKER_TITLE: 'Добавить виджет'
+            PRESETS: Предустановки
+            PRESET_COMPACT: Компактный
+            PRESET_COMPACT_DESC: 'Все виджеты с минимально поддерживаемым размером.'
+            PRESET_DEFAULT: 'По умолчанию'
+            PRESET_DEFAULT_DESC: 'Рекомендуемая сервером разметка — очищает ваши настройки.'
+            PRESET_MINIMAL: Минимальная
+            PRESET_MINIMAL_DESC: 'Только статистика и недавние страницы.'
+            RESET_LAYOUT: 'Сбросить мою разметку'
+            SAVE_SITE_DEFAULT: 'Сохранить как значение по умолчанию сайта'
+            SITE_LAYOUT_SAVED: 'Значение по умолчанию сайта сохранено'
+            TITLE: 'Панель управления'
+            WIDGETS:
+                BACKUPS: 'Резервные копии'
+                NEWS_FEED: 'Лента новостей'
+                NOTIFICATIONS: Уведомления
+                POPULARITY: 'Просмотры страниц'
+                RECENT_PAGES: 'Недавние страницы'
+                STATS: 'Статистика сайта'
+                SYSTEM_HEALTH: 'Состояние системы'
+                TOP_PAGES: 'Лучшие страницы'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Перетащите для переупорядочения'
+        DELETE: Удалить
+        DENIED: 'Доступ запрещён'
+        DEPENDENCIES: Зависимости
+        DISABLE: Отключить
+        DISABLED: Отключено
+        DISMISS: Отклонить
+        DONE: Готово
+        DOWNLOAD: Скачать
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: 'Предустановки макета'
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Сохранить как стандарт сайта для всех пользователей'
+        ENABLED: Включено
+        ENVIRONMENT_SWITCHER:
+            CREATE: Создать
+            CREATES_PATH: 'Создает user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Создать окружение…'
+            CREATE_ENV_NAMED: 'Создать окружение „{name}"…'
+            DEFAULT: 'По умолчанию'
+            ENV_CREATED: 'Окружение „{name}" создано и выбрано'
+            FAILED_TO_CREATE: 'Не удалось создать окружение'
+            HAS_OVERRIDES: 'содержит переопределения'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'больше не существует. Выберите другое.'
+            SAVE_CONFIG_TO: 'Сохранить конфигурацию в'
+            SAVING_TO_DEFAULT: 'Сохранение в стандартное расположение (user/config)'
+            SAVING_TO_ENV: 'Сохранение в окружение: {name}'
+            SELECTED_ENV: 'Выбранное окружение'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Выберите, куда сохранять изменения конфигурации'
+        EXPAND_ALL: 'Развернуть все'
+        EXPAND_SIDEBAR: 'Развернуть боковую панель'
+        EXPERT_MODE: 'Режим эксперта'
+        FIELDS:
+            ADD_ENTRY: 'Добавить запись'
+            CLEAR_DATE: 'Очистить дату'
+            CRON:
+                AT_MINUTE: 'На минуте'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'мин ч день мес дн_нед'
+                ON_DAY: 'В день'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Активные триггеры'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Ошибка при загрузке статуса планировщика'
+                FAILED_TO_RUN_SCHEDULER: 'Ошибка при запуске планировщика'
+                HEALTH_STATUS: 'Статус здоровья'
+                JOB_ID: 'ID задачи'
+                LAST_RUN: 'Последний запуск'
+                LOADING_SCHEDULER_STATUS: 'Загрузка статуса планировщика…'
+                NOT_CONFIGURED: 'НЕ НАСТРОЕНО'
+                NOT_ENABLED: 'НЕ ВКЛЮЧЕНО'
+                NOT_INSTALLED: 'НЕ УСТАНОВЛЕНО'
+                NO_SCHEDULED_JOBS_REGISTERED: 'Нет зарегистрированных запланированных задач.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Нет активных триггеров! Включите вебхуки или настройте cron.'
+                QUEUE_SIZE: 'Размер очереди:'
+                RUNNING: Выполняется…
+                RUN_ALL: 'Запустить все'
+                SCHEDULED_JOBS: 'Запланированные задачи'
+                SCHEDULER_RUN_COMPLETED: 'Выполнение планировщика завершено'
+                SCHEDULER_STATUS: 'Статус планировщика'
+                STATUS: 'Статус:'
+                WEBHOOK: 'Вебхук:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Загрузка пользовательского поля…'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Строка формата:'
+                SELECT_FORMAT: '— Выберите формат —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Не найдены подходящие файлы'
+                NO_MEDIA_UPLOADED: 'Файлы медиа еще не загружены'
+            FILE_PICKER_SOON: 'Средство выбора файлов — скоро появится'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Значки не найдены'
+                SEARCH_ICONS: 'Поиск значков...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Показаны первые 200 результатов — введите для сужения'
+            NO_TAXONOMY_TYPES: 'Не настроены типы таксономии'
+            PAGES:
+                FILTER_PAGES: 'Фильтровать страницы...'
+                ROOT: '/ (корень)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Проверка страницы...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Медиа-файлы страницы недоступны'
+            PERMISSIONS:
+                NOT_SET: 'Не установлено'
+                NO_PERMISSIONS_CONFIGURED: 'Разрешения не настроены'
+            REGENERATE_SLUG: 'Автоматически создавать из заголовка страницы'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Поля не соответствуют вашему фильтру'
+            THEME_SELECT:
+                LOADING_THEMES: 'Загрузка тем...'
+                SELECT_THEME: '— Выберите тему —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Проверить статус здоровья:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Принудительный запуск конкретного задания (игнорирует расписание):'
+                GITHUB_ACTIONS_EXAMPLE: 'Пример GitHub Actions:'
+                HOW_TO_USE_WEBHOOKS: 'Как использовать вебхуки:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Запустить все предусмотренные задания (соблюдает расписание):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Проверка статуса плагина вебхука...'
+                INSTALL_PLUGIN_NOW: 'Установить плагин сейчас'
+                OR_RUN: 'или запустите:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'плагин установлен и включен.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'плагин установлен. Включите триггеры Webhook ниже для активации.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'плагин требуется для функциональности webhook.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Требуется плагин Webhook'
+        FLEX_OBJECTS:
+            ACTIONS: Действия
+            BACK_TO_LIST: 'Вернуться к списку'
+            DELETE_OBJECT: 'Удалить объект'
+            EXPORT: Экспортировать
+            EXPORT_FAILED: 'Экспорт не удался'
+            FAILED_TO_DELETE_OBJECT: 'Ошибка при удалении объекта'
+            FAILED_TO_LOAD_DIRECTORY: 'Ошибка при загрузке директории'
+            FAILED_TO_LOAD_OBJECTS: 'Ошибка при загрузке объектов'
+            FAILED_TO_SAVE: 'Ошибка сохранения.'
+            NEW:
+                BACK_TO_LIST: 'Вернуться к списку'
+                CREATE: Создать
+                OBJECT_CREATED: 'Объект создан'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Объект изменен в другом месте — сохраните, чтобы перезаписать, или перезагрузите'
+            OBJECT_DELETED: 'Объект удален'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Объект был изменен в другом месте. Пожалуйста, перезагрузите.'
+            PREVIOUS: Назад
+            SEARCH: Поиск...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Закрыть меню виджетов'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Вернуться к входу'
+            CHECK_INBOX: 'Проверьте папку входящих писем для ссылки сброса пароля.'
+            EMAIL_ADDRESS: 'Адрес электронной почты'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Введите действительный адрес электронной почты'
+            FORGOT_PASSWORD: 'Забыли пароль'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Забыли пароль — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Если учетная запись существует для этого адреса электронной почты, ссылка на сброс пароля была отправлена.'
+            SENDING: Отправка...
+            SEND_RESET_LINK: 'Отправить ссылку сброса'
+            SUBTITLE: 'Введите свой адрес электронной почты, и мы отправим вам ссылку на сброс пароля.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Невозможно подключиться к серверу.'
+        HOMEPAGE: 'Главная страница'
+        INFO: Информация
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Значки не найдены'
+            SEARCH_ICONS: 'Поиск значков...'
+            TYPE_TO_NARROW_RESULTS: 'Введите текст для уточнения результатов'
+        INSTALL: Установить
+        INSTALLING: Установка...
+        KEYWORDS: 'Ключевые слова'
+        LANG:
+            CREATE_TRANSLATION: 'Создать перевод на {language}'
+            CURRENT: текущий
+            DEFAULT: 'по умолчанию'
+            DELETE_TRANSLATION: 'Удалить перевод на {language}'
+            FALLBACK_NOTICE: 'Перевода на {language} нет. Показывается содержимое по умолчанию.'
+            NOT_TRANSLATED: 'Не переведено'
+            SAVE_AS: 'Сохранить как {language}'
+            SWITCH_LANGUAGE: 'Переключить язык контента'
+            SYNC_FROM: 'Сбросить с {language}'
+            TRANSLATED: Переведено
+            TRANSLATIONS: Переводы
+            TRANSLATION_CREATED: 'Перевод на {language} создан'
+        LOADING: Загрузка...
+        LOGIN:
+            AUTHENTICATION_CODE: 'Код аутентификации'
+            AUTH_CODE_PROMPT: 'Откройте приложение аутентификатора и введите 6-значный код для **{username}**.'
+            BACK_TO_SIGN_IN: 'Вернуться на страницу входа'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Введите правильный 6-значный код'
+            ENVIRONMENT: Окружение
+            FORGOT_PASSWORD: 'Забыли пароль?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Неверное имя пользователя или пароль'
+            LOGIN_GRAV_ADMIN: 'Вход — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'Пароль является обязательным'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Пожалуйста, заполните все обязательные поля'
+            POWERED_BY_GRAV_CMS: 'Работает на Grav CMS'
+            SERVER_CONFIGURATION: 'Конфигурация сервера'
+            SERVER_URL: 'URL сервера'
+            SIGNED_IN_SUCCESSFULLY: 'Вы успешно вошли'
+            SIGNING_IN: Вход...
+            SIGN_IN: Войти
+            SUBTITLE: 'Войдите для управления вашим сайтом'
+            TWOFA_SUBTITLE: 'Введите код аутентификатора для продолжения'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Не удается подключиться к серверу. Проверьте URL вашего сервера и повторите попытку.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Не удается проверить код. Проверьте ваше соединение и повторите попытку.'
+            USERNAME_IS_REQUIRED: 'Требуется имя пользователя'
+            VERIFY: Проверить
+            VERIFYING: Проверка...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Нечего предпросмотреть'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Управление медиафайлами сайта'
+            MEDIA_GRAV_ADMIN: 'Медиа — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Размеры
+                FAILED_TO_COPY: 'Не удалось скопировать'
+                FILE_RENAMED: 'Файл переименован'
+                NEXT_FILE: 'Следующий файл'
+                PREVIOUS_FILE: 'Предыдущий файл'
+                RENAME: Переименовать
+            MEDIA_MANAGER:
+                CREATE: Создать
+                FILES_DELETED: 'Файлы удалены'
+                FOLDER_NAME: 'Имя папки'
+                NEW_FOLDER: 'Новая папка'
+                UPLOAD_FILES: 'Загрузить файлы'
+            MEDIA_TOOLBAR:
+                FOLDER: Папка
+                GRID_VIEW: 'Вид сетки'
+                LIST_VIEW: 'Вид списка'
+                NEW_FOLDER: 'Новая папка'
+                SEARCH_MEDIA: 'Поиск медиа...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Перетащить в редактор'
+                PAGE_MEDIA: 'Медиа страницы'
+        NAV:
+            CONFIGURATION: Конфигурация
+            DASHBOARD: 'Панель управления'
+            MEDIA: Медиа
+            PAGES: Страницы
+            PLUGINS: Плагины
+            SETTINGS: Параметры
+            SYSTEM: Система
+            THEMES: Темы
+            TOOLS: Инструменты
+            USERS: Пользователи
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Нет элементов в ленте'
+        NORMAL_MODE: 'Обычный режим'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Нет уведомлений'
+        NO_CHANGES: 'Нет изменений для сохранения'
+        PAGES:
+            ADD_FOLDER: 'Добавить папку'
+            ADD_MENU: 'Добавить меню'
+            ADD_MODULE: 'Добавить модуль'
+            ADD_PAGE: 'Добавить страницу'
+            DELETED: 'Удалена страница „{title}"'
+            DELETE_FAILED: 'Ошибка при удалении страницы'
+            DELETE_PAGE: 'Удалить страницу'
+            DRAFT: Черновик
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Подключение к сеансу совместной работы…'
+                COPY_PAGE: 'Копировать страницу'
+                CREATE_LANGUAGE: 'Создать {language}'
+                DELETE_PAGE: 'Удалить страницу'
+                EDIT_PAGE: 'Редактировать страницу'
+                FAILED_TO_CREATE_TRANSLATION: 'Не удалось создать перевод'
+                FAILED_TO_SYNC_TRANSLATION: 'Не удалось синхронизировать перевод'
+                FALLBACK: (резервный)
+                FALLBACK_NOTICE: 'Перевод на {active} не существует. Просмотр резервного копирования {effective}. Используйте «Сохранить как {active}», чтобы создать перевод для редактирования.'
+                FOLDER_NAME: 'Имя папки'
+                INVALID_YAML_FRONTMATTER: 'Недопустимый YAML frontmatter'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Недопустимый YAML frontmatter — исправьте синтаксис перед сохранением'
+                LOADING_PAGE: 'Загрузка страницы...'
+                NOT_TRANSLATED: 'Не переведено:'
+                OPEN_IN_NEW_TAB: 'Открыть в новой вкладке'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Страница изменена в другом месте — сохраните для перезаписи или перезагрузите'
+                PAGE_COPIED: 'Страница скопирована'
+                PAGE_DELETED: 'Страница удалена'
+                PAGE_PREVIEW: 'Предпросмотр страницы'
+                PAGE_SAVED_AND_MOVED: 'Страница сохранена и перемещена'
+                PREVIEW_PAGE: 'Предпросмотр страницы'
+                PUBLISH_ON: Опубликовать
+                RESET_CONTENT_FROM: 'Сбросить содержимое из:'
+                RESET_FROM: 'Сбросить из {language}'
+                RESET_TRANSLATION: 'Сбросить перевод'
+                SAVE_AS_LANGUAGE: 'Сохранить как {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'Имя папки на диске (URL слаг)'
+                TOGGLE_PAGE_NAVIGATOR: 'Переключить навигатор страницы'
+                UNPUBLISH_ON: 'Отменить публикацию'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Напишите здесь содержание в формате markdown...'
+            EDIT_PAGE: 'Редактировать страницу'
+            FRONTMATTER: 'Заголовок страницы'
+            HEADER_MODIFIED: Изменено
+            HEADER_PARENT: 'Родительская страница'
+            HEADER_STATUS: Статус
+            HEADER_TEMPLATE: Шаблон
+            HEADER_TITLE: Заголовок
+            INFO_DATE: Дата
+            INFO_LANGUAGE: Язык
+            INFO_MODIFIED: Изменено
+            INFO_ORDER: Порядок
+            INFO_PUBLISHED: Опубликовано
+            INFO_PUBLISH_ON: Опубликовать
+            INFO_ROUTABLE: Маршрутизируемая
+            INFO_ROUTE: Маршрут
+            INFO_SLUG: Слаг
+            INFO_TEMPLATE: Шаблон
+            INFO_UNPUBLISH_ON: 'Отменить публикацию'
+            INFO_VISIBLE: 'Видна в навигации'
+            LOADING: 'Загрузка страниц...'
+            MODE_EXPERT: Эксперт
+            MODE_NORMAL: Обычный
+            MOVED: 'Переименовано „{title}"'
+            MOVE_FAILED: 'Не удалось переместить страницу'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Добавить страницу — Grav Admin'
+                CONTINUE: Продолжить
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Определяет, будет ли эта страница отображаться в меню навигации'
+                FAILED_TO_CREATE: 'Не удалось создать страницу'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Не удалось загрузить шаблоны страниц'
+                FILTER_PAGES: 'Фильтровать страницы...'
+                FOLDER_CREATED: 'Папка „{title}" создана'
+                FOLDER_DETAILS: 'Сведения о папке'
+                FOLDER_NAME: 'Имя папки'
+                LOADING_TEMPLATES: 'Загрузка шаблонов...'
+                MODULE_CREATED: 'Модуль „{title}" создан'
+                MY_NEW_PAGE: 'Моя новая страница'
+                ORDERING: Порядок
+                ORDERING_HELP_FOLDER: 'Добавляет числовой префикс, который определяет позицию этой папки среди соседних элементов.'
+                ORDERING_HELP_MODULE: 'Добавляет числовой префикс, который определяет позицию этого модуля внутри его модульного родителя.'
+                ORDERING_NONE: Отсутствует
+                PAGE_CREATED: 'Страница „{title}" создана'
+                PAGE_DETAILS: 'Сведения о странице'
+                PAGE_TEMPLATE: 'Шаблон страницы'
+                PAGE_TITLE: 'Заголовок страницы'
+                PARENT_PAGE: 'Родительская страница'
+                ROOT: '&lt;root&gt; /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-безопасное имя папки для этой страницы'
+                VISIBLE: Видно
+            NO_PAGES: 'Страницы не найдены'
+            NO_SEARCH_RESULTS: 'Нет страниц, соответствующих вашему поиску'
+            PAGES_GRAV_ADMIN: 'Страницы — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Черновик (не опубликовано)'
+                FOLDER_ORDER: 'Порядок папок'
+                HAS_CHILDREN: 'Имеет дочерние элементы'
+                SUMMARY: Сводка
+                VISIBLE: Видно
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Ошибка при переорганизации страниц'
+                NO_PAGES_MATCH: 'Нет страниц, соответствующих "{query}"'
+                SEARCHING: Поиск…
+            PAGE_COUNT: '{n, plural, one{# страница} other{# страниц}}'
+            PAGE_INFO: 'Информация о странице'
+            PUBLISHED: Опубликовано
+            RAW_HEADER: 'Исходный заголовок страницы (JSON)'
+            REORDERED: '"{title}" переупорядочена'
+            REORDER_FAILED: 'Ошибка при переупорядочении'
+            REORDER_MOVE: 'Переупорядочить / Переместить'
+            REORDER_SAME_PARENT: 'Можно переупорядочивать только страницы под одним родителем. Используйте представление дерева для перемещения между родителями.'
+            SAVED: 'Страница успешно сохранена'
+            SAVE_FAILED: 'Ошибка при сохранении страницы'
+            SEARCH_PLACEHOLDER: 'Поиск страниц…'
+            SORT_DATE_NEWEST: 'Дата (новейшие)'
+            SORT_NEWEST: Новейшие
+            SORT_OLDEST: Старейшие
+            SORT_ORDER: Порядок
+            SORT_TITLE_AZ: 'Название (А-Я)'
+            SORT_TITLE_ZA: 'Название (Я-А)'
+            SUBTITLE: 'Управляйте содержимым и структурой вашего сайта'
+            TITLE: Страницы
+            VIEW_COLUMNS: Столбцы
+            VIEW_LIST: Список
+            VIEW_TREE: Дерево
+        PASSWORD: Пароль
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 'Требования к паролю'
+            PASSWORD_STRENGTH: 'Надежность пароля'
+            REQUIREMENTS: Требования
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'Не удалось загрузить разрешения'
+            NOT_SET: 'Не установлено'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Вернуться на панель управления'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Для этой страницы плагина нет доступного содержимого.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Вернуться к плагинам'
+            CHANGELOG: 'Журнал изменений'
+            CHECK_UPDATES: 'Проверить обновления'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Конфигурация была изменена в другом месте. Пожалуйста, перезагрузите.'
+            CONFIGURE: Настроить
+            ENABLE_PLUGIN: 'Включить плагин'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Не удалось проверить обновления'
+            FAILED_TO_LOAD_PLUGINS: 'Не удалось загрузить плагины'
+            FAILED_TO_SAVE_CONFIGURATION: 'Не удалось сохранить конфигурацию.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Для этого плагина нет доступных параметров конфигурации.'
+            PAGE_TITLE: '{name} — Плагины — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Плагины — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Плагин был изменён в другом месте — сохраните, чтобы перезаписать, или перезагрузите'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'Плагин должен быть включён для настройки.'
+            REMOVE_PLUGIN: 'Удалить плагин'
+            SEARCH_PLUGINS: 'Поиск плагинов...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Выберите плагин для просмотра подробностей'
+            SYMLINKED: 'Символическая ссылка'
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Загрузка страницы плагина...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Ошибка загрузки виджета'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Последние 14 дней'
+            THIS_MONTH: 'На этом месяце'
+            THIS_WEEK: 'На этой неделе'
+        PREMIUM: Премиум
+        PREVIEW: Предпросмотр
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Пожалуйста, повторно введите свой пароль, чтобы продолжить. Ваша работа сохранена.'
+            SESSION_EXPIRED: 'Сеанс истёк'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Показать всё'
+        REMOVE: Удалить
+        RESET:
+            BACK_TO_SIGN_IN: 'Вернуться к входу'
+            CONFIRM_PASSWORD: 'Подтверждение пароля'
+            INVALID_LINK: 'Неверная ссылка сброса.'
+            NEW_PASSWORD_FOR: 'Выберите новый пароль для **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Пароли не совпадают'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Пароль успешно сброшен. Пожалуйста, выполните вход.'
+            RESETTING: Сброс...
+            RESET_PASSWORD: 'Сбросить пароль'
+            RESET_PASSWORD_GRAV_ADMIN: 'Сбросить пароль — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'В этой ссылке для сброса отсутствуют необходимые параметры. Запросите новую на странице восстановления пароля.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Не удалось подключиться к серверу.'
+        SAVE: Сохранить
+        SAVING: Сохранение...
+        SEARCH: Поиск
+        SETTINGS:
+            1_SECOND: '1 секунда'
+            2_SECONDS: '2 секунды'
+            ACCENT_COLOR: 'Цвет акцента'
+            ADD_LINK: 'Добавить ссылку'
+            ADMIN_INTERFACE_LANGUAGE: 'Язык интерфейса администратора'
+            ADMIN_LANGUAGE: 'Язык администратора'
+            ADMIN_LANGUAGE_DESC: 'Язык для меток, меню и сообщений (загружено {count} строк)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Параметры администратора и внешний вид'
+            APPEARANCE: 'Внешний вид'
+            AUTHENTICATED_AS: 'Аутентифицирован как'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Автоматически сохранять при выходе из поля'
+            AUTO_SAVE: Автосохранение
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Поведение автосохранения и отмены для редакторов форм'
+            BRANDING: 'Фирменное стиль'
+            BRANDING_DESC: 'Логотип и текст бренда, отображаемые везде в администраторе.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Выберите между светлым и тёмным оформлением'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Выберите, как отображается логотип'
+            COLLAB_DESCRIPTION: 'Живое совместное редактирование с отображением присутствия. Требует плагин `sync` на сервере. Экспериментально.'
+            COLOR_MODE: 'Цветовой режим'
+            CONNECTION: Соединение
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Настройте логотип, отображаемый в боковой панели и на странице входа'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Настройте внешний вид администратора'
+            CUSTOM_IMAGE: 'Пользовательское изображение'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Пользовательские ярлыки, показанные в верхней меню-панели'
+            CUSTOM_TEXT: 'Пользовательский текст'
+            DARK: Тёмный
+            DARK_LOGO: 'Тёмный логотип'
+            DARK_LOGO_REMOVED: 'Тёмный логотип удалён.'
+            DARK_LOGO_UPLOADED: 'Тёмный логотип загружен.'
+            DARK_MODE_LOGO: 'Логотип для тёмного режима'
+            DEFAULT_APPEARANCE: 'Оформление по умолчанию'
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Цветовое оформление по умолчанию для новых пользователей.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Плотность редактора формы по умолчанию.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Язык интерфейса по умолчанию для новых пользователей.'
+            DEFAULT_LANGUAGE: 'Язык по умолчанию'
+            DEFAULT_PAGES: 'Страницы по умолчанию'
+            DEFAULT_PRIMARY_COLOR_DESC: 'Основной цвет по умолчанию для кнопок, ссылок и выделения.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Параметры по умолчанию для браузера страниц'
+            DEFAULT_TEXT_SIZE_DESC: 'Размер текста по умолчанию для администратора.'
+            DEFAULT_TYPEFACE_DESC: 'Шрифт по умолчанию для администратора.'
+            DEFAULT_VIEW: 'Представление по умолчанию'
+            DEUTSCH: Deutsch
+            EDITING: Редактирование
+            EDITOR_HEADING: Редактор
+            EDITOR_MODE: 'Режим редактора'
+            ENGLISH: English
+            ENVIRONMENT: Окружение
+            ESPA_OL: Español
+            EXTERNAL: Внешний
+            FAILED_TO_REMOVE_LOGO: 'Не удалось удалить логотип.'
+            FAILED_TO_RESET_PREFERENCES: 'Не удалось сбросить параметры.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Не удалось сохранить режим логотипа.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Не удалось сохранить текст логотипа.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Не удалось сохранить параметры сайта по умолчанию.'
+            FOLLOW_OS: 'Следовать ОС'
+            FONT: Шрифт
+            FONT_SIZE: 'Размер шрифта'
+            FONT_SIZE_LARGE: Большой
+            FONT_SIZE_NORMAL: Обычный
+            FONT_SIZE_SMALL: Маленький
+            FONT_SIZE_XLARGE: 'Очень большой'
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Логотип Grav'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Объединить быстрые изменения полей в один шаг отмены'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Как страницы отображаются по умолчанию'
+            HUE: Оттенок
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Элементов на странице'
+            LANGUAGE_CHANGED: 'Язык изменён на {language}'
+            LIGHT: Светлый
+            LIGHT_LOGO: 'Логотип для светлой темы'
+            LIGHT_LOGO_REMOVED: 'Логотип для светлой темы удален.'
+            LIGHT_LOGO_UPLOADED: 'Логотип для светлой темы загружен.'
+            LIGHT_MODE_LOGO: 'Логотип светлого режима'
+            LOGO_TEXT: 'Текст логотипа'
+            LOGO_TYPE: 'Тип логотипа'
+            LOGO_UPLOAD_FAILED: 'Ошибка загрузки логотипа.'
+            MENUBAR_LINKS: 'Ссылки в меню'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Нет (1 поле = 1 отмена)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Количество страниц, отображаемых в списке'
+            'OFF': Выкл
+            'ON': Вкл
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'плагин на сервере. Экспериментальная функция.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Предпочтения сброшены. Перезагрузитесь, чтобы применить.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Основной цвет для кнопок, ссылок и выделения'
+            REAL_TIME_COLLABORATION: 'Совместное редактирование в реальном времени'
+            REMOVE_LINK: 'Удалить ссылку'
+            RESET: Сброс
+            RESET_ALL_PREFERENCES: 'Сбросить все параметры'
+            RESET_PREFERENCES: 'Сбросить параметры'
+            RESET_PREFERENCES_MSG: 'Удалить все личные переопределения и вернуться к значениям по умолчанию сайта?'
+            RESET_TO_SITE_DEFAULTS: 'Сбросить мои параметры на значения по умолчанию сайта'
+            REVERT_CHANGES: 'Отменить изменения'
+            SATURATION: Насыщенность
+            SAVED_AUTOMATICALLY: 'Сохранено автоматически'
+            SAVE_SITE_DEFAULTS: 'Сохранить параметры сайта по умолчанию'
+            SERVER_CONNECTION_DETAILS: 'Параметры подключения к серверу'
+            SERVER_URL: 'URL сервера'
+            SETTINGS_GRAV_ADMIN: 'Параметры — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Показывать кнопку отката в панели инструментов редактора'
+            SITE_DEFAULTS: 'Параметры сайта по умолчанию'
+            SITE_DEFAULTS_DESCRIPTION: 'Приведённые ниже параметры применяются ко всем пользователям администратора как базовые. Элементы уровня B (внешний вид, страницы, язык, редактор) могут быть переопределены в собственных параметрах каждого пользователя выше. Элементы уровня A (редактирование, панель меню) относятся ко всему сайту и не подлежат переопределению.'
+            SITE_DEFAULTS_SAVED: 'Параметры сайта по умолчанию сохранены. Все пользователи увидят их при следующей загрузке.'
+            SITE_SETTINGS_DESC: 'Параметры по умолчанию для новых пользователей и поведение всего сайта. Изменения применяются при следующей загрузке для затронутых пользователей.'
+            SITE_SETTINGS_HEADING: 'Параметры сайта'
+            SITE_WIDE_ONLY: 'Только для сайта'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Размер текста, используемый во всей администрации'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'Первая буква становится значком'
+            TOOLBAR_UNDO_BUTTON: 'Кнопка отката на панели инструментов'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Шрифт, используемый во всей администрации'
+            UNDO_BATCH_WINDOW: 'Окно пакетного отката'
+            USED_ON_DARK_BACKGROUNDS: 'Используется на тёмных фонах'
+            USED_ON_LIGHT_BACKGROUNDS: 'Используется на светлых фонах'
+            USERS_MAY_OVERRIDE: 'Пользователи могут переопределить'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 символа: буквы, цифры, дефисы, подчеркивания'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Учетная запись администратора создана — добро пожаловать в Grav'
+            CHECKING_SERVER: 'Проверка сервера…'
+            CONFIRM_PASSWORD: 'Подтвердите пароль'
+            CREATE_ADMINISTRATOR: 'Создать администратора'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Создайте учетную запись администратора, чтобы начать'
+            CREATING_ACCOUNT: 'Создание учетной записи...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Введите действительный адрес электронной почты'
+            ENVIRONMENT: Среда
+            FULL_NAME: 'Полное имя'
+            OPTIONAL: (опционально)
+            PASSWORDS_DO_NOT_MATCH: 'Пароли не совпадают'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Пожалуйста, исправьте ошибки выше и попробуйте снова'
+            POWERED_BY_GRAV_CMS: 'Работает на Grav CMS'
+            SERVER_CONFIGURATION: 'Конфигурация сервера'
+            SERVER_URL: 'URL сервера'
+            SETUP_GRAV_ADMIN: 'Установка — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'Установка уже завершена. Пожалуйста, войдите.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Не удается подключиться к серверу. Проверьте URL сервера и попробуйте снова.'
+            WELCOME_TO_GRAV: 'Добро пожаловать в Grav'
+        SIGN_OUT: Выход
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} активных)'
+            ACTIVE_THEME: 'Активная тема'
+            UPDATE_COUNT: '{n, plural, one{# обновление} other{# обновлений}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'встроенный редактор markdown'
+                LOCKED: 'Только чтение — {owner} редактирует с помощью **{editor}**. Смешанные типы редакторов не могут работать вместе; [измените предпочтение редактора]({href}), чтобы редактировать совместно в реальном времени.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'измените предпочтение редактора'
+                TO_COLLABORATE_LIVE: 'чтобы редактировать совместно в реальном времени.'
+        SYSTEM:
+            COMING_SOON: Скоро
+            SYSTEM_GRAV_ADMIN: 'Система — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} свободно'
+            BYTES_USED: '{size} использовано'
+            CACHE: Кеш
+            DISK: Диск
+            EVERYTHING_UP_TO_DATE: 'Всё актуально'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav установлен через symlink — обновите вручную.'
+            GRAV_UPDATE_AVAILABLE: 'Доступно обновление Grav'
+            MORE_COUNT: '+ {n} ещё…'
+            PACKAGES_OUTDATED: '{n, plural, one{# пакет устарел} other{# пакетов устарело}}'
+            PERCENT_USED: '{percent}% использовано'
+            SERVER: Сервер
+            UPDATES: Обновления
+            UPDATES_AVAILABLE_COUNT: '{n} доступно'
+            UPDATE_ALL: 'Обновить всё'
+            UPGRADE_GRAV: 'Обновить Grav'
+        THEMES:
+            ACTIVE_THEME: 'Активная тема'
+            BACK_TO_THEMES: 'Вернуться к темам'
+            CHANGELOG: 'Журнал изменений'
+            CHECK_UPDATES: 'Проверить обновления'
+            CLICK_TO_VIEW_FULL_SIZE: 'Нажмите, чтобы увидеть в полном размере'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Конфигурация была изменена в другом месте. Пожалуйста, перезагрузите.'
+            CONFIGURE: Настроить
+            FAILED_TO_CHECK_FOR_UPDATES: 'Не удалось проверить обновления'
+            FAILED_TO_LOAD_THEMES: 'Не удалось загрузить темы'
+            FAILED_TO_SAVE_CONFIGURATION: 'Не удалось сохранить конфигурацию.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Нет доступных параметров конфигурации для этой темы.'
+            PAGE_TITLE: '{name} — Темы — Grav Admin'
+            REMOVE_THEME: 'Удалить тему'
+            SEARCH_THEMES: 'Поиск тем...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Выберите тему для просмотра деталей'
+            SYMLINKED: 'Символическая ссылка'
+            THEMES_GRAV_ADMIN: 'Темы — Grav Admin'
+        TIME:
+            DAYS_AGO: '{n}д назад'
+            HOURS_AGO: '{n}ч назад'
+            JUST_NOW: 'только что'
+            MINUTES_AGO: '{n}м назад'
+        TOGGLE_DARK_MODE: 'Переключить темный режим'
+        TOGGLE_MENU: 'Переключить меню'
+        TOOLS:
+            BACKUPS:
+                ACTION: Действие
+                BACKUP_CREATED_SUCCESSFULLY: 'Резервная копия успешно создана'
+                BACKUP_DATE: 'Дата резервной копии'
+                BACKUP_DELETED: 'Резервная копия удалена'
+                BACKUP_HISTORY: 'История резервных копий'
+                BACKUP_NOW: 'Создать резервную копию'
+                BACKUP_STATISTICS: 'Статистика резервных копий'
+                CREATING: Создание...
+                DELETE_BACKUP: 'Удалить резервную копию'
+                FAILED_TO_CREATE_BACKUP: 'Не удалось создать резервную копию'
+                FAILED_TO_DELETE_BACKUP: 'Не удалось удалить резервную копию'
+                FAILED_TO_LOAD_BACKUPS: 'Не удалось загрузить резервные копии'
+                LOADING_BACKUPS: 'Загрузка резервных копий...'
+                NEWEST_BACKUP: 'Самая новая резервная копия'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Резервные копии не найдены. Создайте одну, чтобы начать.'
+                NUMBER_OF_BACKUPS: 'Количество резервных копий'
+                NUMBER_OF_PROFILES: 'Количество профилей'
+                OLDEST_BACKUP: 'Самая старая резервная копия'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Резервные копии, планировщик, логи и диагностика'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Перетащите файл .zip сюда или нажмите для обзора'
+                INSTALL_FROM_FILE: 'Установить из файла'
+                INSTALL_FROM_URL: 'Установить с URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Поддерживаются только файлы .zip'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Пакет успешно установлен'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Поддерживает пакеты плагинов и тем Grav'
+            LOGS:
+                100_LINES: '100 строк'
+                200_LINES: '200 строк'
+                25_LINES: '25 строк'
+                50_LINES: '50 строк'
+                ALL_LEVELS: 'Все уровни'
+                CRITICAL: Критический
+                EMERGENCY: Экстренное
+                FAILED_TO_LOAD_LOGS: 'Не удалось загрузить логи'
+                FAILED_TO_LOAD_LOG_FILES: 'Не удалось загрузить файлы логов'
+                LOADING_LOGS: 'Загрузка логов...'
+                LOG_FILE: 'Файл логов'
+                MESSAGE: Сообщение
+                NOTICE: Уведомление
+                REFRESH: Обновить
+                SEARCH_MESSAGES: 'Поиск сообщений...'
+                WARNING: Предупреждение
+            REPORTS:
+                CONTENT_FIELD: 'content: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Не удалось загрузить отчеты'
+                LOADING_REPORTS: 'Загрузка отчетов...'
+                NO_REPORTS_AVAILABLE: 'Отчеты недоступны.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Загрузка компонента отчета...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'Для включения функциональности планировщика необходимо добавить **Grav Scheduler** в файл crontab вашей системы для пользователя **{user}**. Выполните приведённую выше команду из терминала, чтобы добавить её автоматически. После сохранения обновите эту страницу, чтобы увидеть статус.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Не удалось загрузить конфигурацию планировщика.'
+                FAILED_TO_SAVE: 'Не удалось сохранить'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'Планировщик может использовать системный crontab или webhook-триггеры для выполнения команд. Webhooks рекомендуются для облачных сред. Только опытные пользователи должны настраивать пользовательские задания. Неправильная конфигурация или злоупотребление может привести к уязвимостям безопасности.'
+                LOADING_SCHEDULER: 'Загрузка планировщика...'
+                NOT_ENABLED_FOR_USER: 'Не включено для пользователя:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Конфигурация планировщика сохранена'
+                SECURITY_WARNING: 'Только опытные пользователи должны настраивать пользовательские задания планировщика. Неправильная конфигурация может привести к проблемам производительности или уязвимостям безопасности.'
+                WEBHOOK_ALTERNATIVE: 'Кроме того, установите плагин **scheduler-webhook**, чтобы использовать webhook-based выполнение cron, которое рекомендуется для облачных сред, где доступ к системному crontab недоступен.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} свободно из {total}'
+                DISK_USAGE: 'Использование диска'
+                DRIVER: Драйвер
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Не удалось загрузить информацию о системе'
+                GRAV_VERSION: 'Версия Grav'
+                LOADING_SYSTEM_INFO: 'Загрузка информации о системе...'
+                MAX_EXECUTION: 'Макс. время выполнения'
+                MAX_POST: 'Макс. POST'
+                MAX_UPLOAD: 'Макс. загрузка'
+                MEMORY_LIMIT: 'Лимит памяти'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'Версия PHP'
+            TOOLS_GRAV_ADMIN: 'Инструменты — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Назад
+            SITE_NOTIFICATION: 'Уведомление сайта'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Данных представления еще нет'
+        TOP_PROGRESS_BAR:
+            WORKING: Работает
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA отключена'
+            2FA_ENABLED: '2FA включена'
+            2FA_IS_ENABLED: '2FA включена'
+            2FA_QR_CODE: 'QR-код 2FA'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Добавьте дополнительный уровень безопасности, требуя одноразовый код при входе.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'Одноразовый код требуется всякий раз, когда эта учетная запись входит в систему.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'Секрет уже создан, но не отображается в целях безопасности.'
+            CONFIRM_DISABLE: 'Подтвердить отключение'
+            ENABLE_2FA: 'Включить двухфакторную аутентификацию'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Введите 6-значный код из приложения аутентификатора'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Введите текущий 6-значный код для подтверждения'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Ошибка при генерации секрета двухфакторной аутентификации'
+            FINISH_ENABLING_2FA: 'Завершить включение двухфакторной аутентификации'
+            FORCE_DISABLE: 'Принудительно отключить'
+            FORCE_DISABLE_PROMPT: 'Принудительно отключить двухфакторную аутентификацию для **{username}**? Используйте это только для восстановления потерянного устройства.'
+            REGENERATE_AND_SHOW_QR: 'Заново создать и показать QR-код'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Отсканируйте QR-код с помощью приложения аутентификатора'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Отсканируйте QR-код с помощью приложения аутентификатора, затем введите 6-значный код для проверки и активации.'
+            SECRET_FOR_MANUAL_ENTRY: 'Секрет (для ручного ввода):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Двухфакторная аутентификация отключена'
+            VERIFICATION_CODE: 'Код подтверждения'
+            VERIFY_ENABLE: 'Проверить и включить'
+        UNSAVED_CHANGES: 'Несохранённые изменения'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Сохранение изменений…'
+            SAVING_CHANGES_2: 'Сохранение изменений'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Несохранённые изменения — нажмите «Сохранить» для их фиксации'
+            YOU_HAVE_UNSAVED_CHANGES: 'У вас есть несохранённые изменения'
+        UPDATE_AVAILABLE_VERSION: 'Доступно обновление: v{version}'
+        UPDATE_TO_VERSION: 'Обновить до v{version}'
+        UPLOAD: Загрузить
+        USERNAME: 'Имя пользователя'
+        USERS:
+            2_FACTOR_AUTHENTICATION: 'Двухфакторная аутентификация'
+            ADD_USER: 'Добавить пользователя'
+            BACK_TO_USERS: 'Вернуться к пользователям'
+            CREATED: Создано
+            DELETE_USER: 'Удалить пользователя'
+            FAILED_TO_LOAD_USERS: 'Не удалось загрузить пользователей'
+            FAILED_TO_SAVE_USER: 'Не удалось сохранить пользователя.'
+            NEW:
+                ACCOUNT: Аккаунт
+                CREATE: Создать
+                FULL_NAME: 'Полное имя'
+                LOWERCASE_3_64_CHARS: 'строчные буквы, 3–64 символа'
+                NEW_USER: 'Новый пользователь'
+                NEW_USER_GRAV_ADMIN: 'Новый пользователь — Grav Admin'
+                PERMISSIONS: Разрешения
+            PAGE_TITLE: '{name} — Пользователи — Grav Admin'
+            PERMISSIONS: Разрешения
+            SEARCH_USERS: 'Поиск пользователей...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Выберите пользователя для просмотра подробностей'
+            STATUS: Статус
+            STATUS_HELP: 'Отключенные аккаунты не могут входить или использовать API.'
+            SUPER_ADMIN: 'Супер администратор'
+            USERS_GRAV_ADMIN: 'Пользователи — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Пользователь изменен в другом месте — сохраните, чтобы перезаписать, или перезагрузите'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Пользователь был изменен в другом месте. Пожалуйста, перезагрузите.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Вы не можете удалить свой аккаунт.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Аватар удален'
+            AVATAR_UPDATED: 'Аватар обновлен'
+            FAILED_TO_REMOVE_AVATAR: 'Не удалось удалить аватар'
+            FAILED_TO_UPLOAD_AVATAR: 'Не удалось загрузить аватар'
+            UPLOAD_AVATAR: 'Загрузить аватар'
+        VERSION: Версия
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Открыть передний конец сайта на новой вкладке'
+            VIEW_SITE: 'Просмотр сайта'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Неизвестный виджет: {id}'

@@ -1,0 +1,898 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Acceso Denegado'
+        ACTIVATE: Activar
+        ACTIVE: Activo
+        ADD_PAGE: 'Añadir Página'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Añadir Plugin'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Error al cargar los plugins disponibles desde GPM'
+            FILTER_PLUGINS: 'Filtrar plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecciona un plugin para ver los detalles'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Añadir Tema'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Error al cargar los temas disponibles desde GPM'
+            FILTER_THEMES: 'Filtrar temas...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecciona un tema para ver los detalles'
+        ALLOWED: Permitido
+        ALL_CHANGES_SAVED: 'Todos los cambios guardados'
+        API_KEYS_FIELD:
+            API_KEYS: 'Claves API'
+            API_KEY_GENERATED: 'Clave API generada'
+            BLANK_NEVER: '(en blanco = nunca)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Copia esta clave ahora — no se mostrará de nuevo.'
+            CREATED: Creada
+            EXPIRES: Vence
+            EXPIRY: Vencimiento
+            E_G_MY_CLI_TOOL: 'p. ej. Mi Herramienta CLI'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Error al copiar al portapapeles'
+            FAILED_TO_GENERATE_API_KEY: 'Error al generar la clave API'
+            FAILED_TO_LOAD_API_KEYS: 'Error al cargar las claves API'
+            FAILED_TO_REVOKE_API_KEY: 'Error al revocar la clave API'
+            GENERATE_KEY: 'Generar clave'
+            GENERATING: Generando...
+            KEY_NAME: 'Nombre de la clave'
+            KEY_PREFIX: 'Prefijo de la clave'
+            LAST_USED: 'Última utilización'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Aún no se ha generado ninguna clave API.'
+            PLEASE_ENTER_A_KEY_NAME: 'Por favor, introduce un nombre de clave'
+            REVOKE_API_KEY: 'Revocar clave API'
+            REVOKE_KEY: 'Revocar clave'
+        APP:
+            CREATING_BACKUP: 'Creando copia de seguridad…'
+            DASHBOARD_GRAV_ADMIN: 'Panel de control — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Actualizar
+            WELCOME_BACK: 'Bienvenido de nuevo, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Cerrar menú'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: '¿Estás seguro?'
+        AUTHOR: Autor
+        BACKUPS_WIDGET:
+            BACKING_UP: 'Realizando copia de seguridad…'
+            BACKUP_NOW: 'Realizar copia de seguridad ahora'
+            CREATE_A_NEW_BACKUP_NOW: 'Crear una nueva copia de seguridad ahora'
+            DOWNLOAD_FILE: 'Descargar {filename}'
+            NO_BACKUPS_FOUND: 'No se encontraron copias de seguridad'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 'Opciones de caché'
+            CLEAR_CACHE: 'Limpiar caché'
+            FAILED_TO_CLEAR_CACHE: 'Error al limpiar el caché'
+        CANCEL: Cancelar
+        CLEAR_SEARCH: 'Limpiar búsqueda'
+        CLOSE: Cerrar
+        COLLAPSE_ALL: 'Contraer todo'
+        COLLAPSE_SIDEBAR: 'Contraer barra lateral'
+        COMPATIBILITY: Compatibilidad
+        CONFIG:
+            CLEAR_FILTER: 'Limpiar filtro'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'La configuración se modificó en otro lugar — guarde para sobrescribir o recargue'
+            CONFIGURATION_RELOADED: 'Configuración recargada'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Configuración guardada correctamente'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'La configuración se modificó en otro lugar. Recargue para ver los cambios más recientes.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Error al guardar la configuración'
+            FILTER_FIELDS: 'Filtrar campos...'
+            LOADING_CONFIGURATION: 'Cargando configuración...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'No hay blueprint de configuración disponible para este alcance.'
+            NO_MATCHES_FOUND: 'No se encontraron resultados'
+            PAGE_TITLE: 'Configuración: {scope} — Grav Admin'
+            RELOAD: Recargar
+            TITLE: Configuración
+            TITLE_SCROLLED: 'Configuración: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Entorno
+            EXPORT_YAML: 'Exportar YAML'
+            GRAV_VERSION: 'Versión de Grav'
+            LOADING_SYSTEM_INFORMATION: 'Cargando información del sistema...'
+            PHP_CONFIGURATION: 'Configuración de PHP'
+            PHP_EXTENSIONS: 'Extensiones de PHP'
+            PHP_VERSION: 'Versión de PHP'
+            SERVER: Servidor
+            SERVER_SOFTWARE: 'Software del servidor'
+        CONFIRM_ACTION: 'Confirmar acción'
+        CONFIRM_DELETE: '¿Eliminar "{title}" en {route}?'
+        COPY_BUTTON:
+            COPIED: ¡Copiado!
+        CUSTOM: Personalizado
+        DASHBOARD:
+            ADD_WIDGET: 'Añadir un widget'
+            CUSTOMIZE: Personalizar
+            CUSTOMIZE_TITLE: 'Personalizar panel'
+            EDIT_HINT: 'Modo personalización — arrastra, redimensiona, oculta widgets y luego guarda.'
+            EMPTY: 'Tu panel está vacío'
+            EMPTY_HINT: 'Haz clic en el icono de lápiz arriba para añadir widgets'
+            HIDE_WIDGET: 'Ocultar widget'
+            LAYOUT_RESET: 'Diseño restablecido al predeterminado'
+            LAYOUT_SAVED: 'Diseño del panel guardado'
+            PICKER_EMPTY: 'Todos los widgets disponibles ya están en tu panel.'
+            PICKER_SUBTITLE: 'Elige un widget para añadirlo de nuevo a tu panel.'
+            PICKER_TITLE: 'Añadir un widget'
+            PRESETS: Preajustes
+            PRESET_COMPACT: Compacto
+            PRESET_COMPACT_DESC: 'Todos los widgets al tamaño más pequeño que cada uno admite.'
+            PRESET_DEFAULT: 'Por defecto'
+            PRESET_DEFAULT_DESC: 'Diseño recomendado por el servidor — borra tus personalizaciones.'
+            PRESET_MINIMAL: Mínimo
+            PRESET_MINIMAL_DESC: 'Solo estadísticas y páginas recientes.'
+            RESET_LAYOUT: 'Restablecer mi diseño'
+            SAVE_SITE_DEFAULT: 'Guardar como predeterminado del sitio'
+            SITE_LAYOUT_SAVED: 'Predeterminado del sitio guardado'
+            TITLE: 'Panel de control'
+            WIDGETS:
+                BACKUPS: 'Copias de seguridad'
+                NEWS_FEED: 'Feed de noticias'
+                NOTIFICATIONS: Notificaciones
+                POPULARITY: 'Visualizaciones de página'
+                RECENT_PAGES: 'Páginas recientes'
+                STATS: 'Estadísticas del sitio'
+                SYSTEM_HEALTH: 'Estado del sistema'
+                TOP_PAGES: 'Páginas principales'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Arrastra para reordenar'
+        DELETE: Eliminar
+        DENIED: Denegado
+        DEPENDENCIES: Dependencias
+        DISABLE: Desactivar
+        DISABLED: Desactivado
+        DISMISS: Descartar
+        DONE: Listo
+        DOWNLOAD: Descargar
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: 'Presets de diseño'
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Guardar como predeterminado del sitio para todos los usuarios'
+        ENABLED: Habilitado
+        ENVIRONMENT_SWITCHER:
+            CREATE: Crear
+            CREATES_PATH: 'Crea user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Crear entorno…'
+            CREATE_ENV_NAMED: 'Crear entorno "{name}"…'
+            DEFAULT: Predeterminado
+            ENV_CREATED: "Entorno '{name}' creado y seleccionado"
+            FAILED_TO_CREATE: 'No se pudo crear el entorno'
+            HAS_OVERRIDES: 'tiene anulaciones'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'ya no existe. Elige otro.'
+            SAVE_CONFIG_TO: 'Guardar configuración en'
+            SAVING_TO_DEFAULT: 'Guardando en predeterminado (user/config)'
+            SAVING_TO_ENV: 'Guardando en entorno: {name}'
+            SELECTED_ENV: 'Entorno seleccionado'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Selecciona dónde se guardan las escrituras de configuración'
+        EXPAND_ALL: 'Expandir todo'
+        EXPAND_SIDEBAR: 'Expandir barra lateral'
+        EXPERT_MODE: 'Modo experto'
+        FIELDS:
+            ADD_ENTRY: 'Añadir entrada'
+            CLEAR_DATE: 'Borrar fecha'
+            CRON:
+                AT_MINUTE: 'En el minuto'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min hr dom lun jue'
+                ON_DAY: 'En el día'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Activadores Activos'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Error al cargar el estado del programador'
+                FAILED_TO_RUN_SCHEDULER: 'Error al ejecutar el programador'
+                HEALTH_STATUS: 'Estado de Salud'
+                JOB_ID: 'ID de Trabajo'
+                LAST_RUN: 'Última Ejecución'
+                LOADING_SCHEDULER_STATUS: 'Cargando estado del programador...'
+                NOT_CONFIGURED: 'NO CONFIGURADO'
+                NOT_ENABLED: 'NO HABILITADO'
+                NOT_INSTALLED: 'NO INSTALADO'
+                NO_SCHEDULED_JOBS_REGISTERED: 'No hay trabajos programados registrados.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: '¡No hay activadores activos! Habilite webhooks o configure cron.'
+                QUEUE_SIZE: 'Tamaño de la Cola:'
+                RUNNING: Ejecutando...
+                RUN_ALL: 'Ejecutar Todo'
+                SCHEDULED_JOBS: 'Trabajos Programados'
+                SCHEDULER_RUN_COMPLETED: 'Ejecución del programador completada'
+                SCHEDULER_STATUS: 'Estado del Programador'
+                STATUS: 'Estado:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Cargando campo personalizado...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Cadena de formato:'
+                SELECT_FORMAT: '— Seleccionar formato —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'No hay archivos coincidentes'
+                NO_MEDIA_UPLOADED: 'Aún no hay archivos multimedia cargados'
+            FILE_PICKER_SOON: 'Selector de archivos — próximamente'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'No se encontraron iconos'
+                SEARCH_ICONS: 'Buscar iconos...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Mostrando los primeros 200 resultados — escribe para filtrar'
+            NO_TAXONOMY_TYPES: 'No hay tipos de taxonomía configurados'
+            PAGES:
+                FILTER_PAGES: 'Filtrar páginas...'
+                ROOT: '/ (raíz)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Verificando página...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Multimedia de página no disponible'
+            PERMISSIONS:
+                NOT_SET: 'No definido'
+                NO_PERMISSIONS_CONFIGURED: 'No hay permisos configurados'
+            REGENERATE_SLUG: 'Generar automáticamente desde el título de la página'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Ningún campo coincide con tu filtro'
+            THEME_SELECT:
+                LOADING_THEMES: 'Cargando temas...'
+                SELECT_THEME: '— Seleccionar tema —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Verificar estado de salud:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Ejecutar forzadamente un trabajo específico (ignora la programación):'
+                GITHUB_ACTIONS_EXAMPLE: 'Ejemplo de GitHub Actions:'
+                HOW_TO_USE_WEBHOOKS: 'Cómo usar webhooks:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Desencadenar todos los trabajos pendientes (respeta la programación):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Verificando estado del plugin webhook...'
+                INSTALL_PLUGIN_NOW: 'Instalar Complemento Ahora'
+                OR_RUN: 'o ejecutar:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'complemento está instalado y habilitado.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'complemento está instalado. Habilita Disparadores de Webhook a continuación para activar.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'complemento es necesario para la funcionalidad de webhook.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Complemento Webhook Requerido'
+        FLEX_OBJECTS:
+            ACTIONS: Acciones
+            BACK_TO_LIST: 'Volver a la Lista'
+            DELETE_OBJECT: 'Eliminar Objeto'
+            EXPORT: Exportar
+            EXPORT_FAILED: 'Error en la exportación'
+            FAILED_TO_DELETE_OBJECT: 'Error al eliminar el objeto'
+            FAILED_TO_LOAD_DIRECTORY: 'Error al cargar el directorio'
+            FAILED_TO_LOAD_OBJECTS: 'Error al cargar los objetos'
+            FAILED_TO_SAVE: 'Error al guardar.'
+            NEW:
+                BACK_TO_LIST: 'Volver a la Lista'
+                CREATE: Crear
+                OBJECT_CREATED: 'Objeto creado'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Objeto modificado en otro lugar — guarda para sobrescribir o recarga'
+            OBJECT_DELETED: 'Objeto eliminado'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'El objeto fue modificado en otro lugar. Por favor, recarga.'
+            PREVIOUS: Anterior
+            SEARCH: Buscar...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Cerrar menú de widgets'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Volver a iniciar sesión'
+            CHECK_INBOX: 'Revisa tu bandeja de entrada para un enlace de restablecimiento.'
+            EMAIL_ADDRESS: 'Correo electrónico'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Ingresa una dirección de correo electrónico válida'
+            FORGOT_PASSWORD: 'Olvidé mi contraseña'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Olvidé mi contraseña — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Si existe una cuenta para ese correo, se ha enviado un enlace de restablecimiento.'
+            SENDING: Enviando...
+            SEND_RESET_LINK: 'Enviar enlace de restablecimiento'
+            SUBTITLE: 'Ingresa tu correo electrónico y te enviaremos un enlace de restablecimiento.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'No se puede conectar al servidor.'
+        HOMEPAGE: 'Página de inicio'
+        INFO: Información
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'No se encontraron iconos'
+            SEARCH_ICONS: 'Buscar iconos...'
+            TYPE_TO_NARROW_RESULTS: 'Escribe para filtrar resultados'
+        INSTALL: Instalar
+        INSTALLING: Instalando...
+        KEYWORDS: 'Palabras clave'
+        LANG:
+            CREATE_TRANSLATION: 'Crear traducción a {language}'
+            CURRENT: actual
+            DEFAULT: predeterminado
+            DELETE_TRANSLATION: 'Eliminar traducción a {language}'
+            FALLBACK_NOTICE: 'Sin traducción a {language}. Mostrando contenido predeterminado.'
+            NOT_TRANSLATED: 'No traducido'
+            SAVE_AS: 'Guardar como {language}'
+            SWITCH_LANGUAGE: 'Cambiar idioma del contenido'
+            SYNC_FROM: 'Restablecer desde {language}'
+            TRANSLATED: Traducido
+            TRANSLATIONS: Traducciones
+            TRANSLATION_CREATED: 'Traducción a {language} creada'
+        LOADING: Cargando...
+        LOGIN:
+            AUTHENTICATION_CODE: 'Código de autenticación'
+            AUTH_CODE_PROMPT: 'Abre tu aplicación de autenticación e ingresa el código de 6 dígitos para **{username}**.'
+            BACK_TO_SIGN_IN: 'Volver a iniciar sesión'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Ingresa un código válido de 6 dígitos'
+            ENVIRONMENT: Entorno
+            FORGOT_PASSWORD: '¿Olvidaste tu contraseña?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Usuario o contraseña inválidos'
+            LOGIN_GRAV_ADMIN: 'Iniciar sesión — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'La contraseña es requerida'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Por favor completa todos los campos requeridos'
+            POWERED_BY_GRAV_CMS: 'Impulsado por Grav CMS'
+            SERVER_CONFIGURATION: 'Configuración del servidor'
+            SERVER_URL: 'URL del servidor'
+            SIGNED_IN_SUCCESSFULLY: 'Sesión iniciada correctamente'
+            SIGNING_IN: 'Iniciando sesión...'
+            SIGN_IN: 'Iniciar sesión'
+            SUBTITLE: 'Inicia sesión para gestionar tu sitio'
+            TWOFA_SUBTITLE: 'Ingresa tu código de autenticación para continuar'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'No se puede conectar al servidor. Verifica la URL del servidor e intenta de nuevo.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'No se puede verificar el código. Verifica tu conexión e intenta de nuevo.'
+            USERNAME_IS_REQUIRED: 'El nombre de usuario es obligatorio'
+            VERIFY: Verificar
+            VERIFYING: Verificando...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Nada que previsualizar'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Gestionar archivos multimedia de todo el sitio'
+            MEDIA_GRAV_ADMIN: 'Multimedia — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Dimensiones
+                FAILED_TO_COPY: 'Error al copiar'
+                FILE_RENAMED: 'Archivo renombrado'
+                NEXT_FILE: 'Siguiente archivo'
+                PREVIOUS_FILE: 'Archivo anterior'
+                RENAME: Renombrar
+            MEDIA_MANAGER:
+                CREATE: Crear
+                FILES_DELETED: 'Archivos eliminados'
+                FOLDER_NAME: 'Nombre de la carpeta'
+                NEW_FOLDER: 'Nueva carpeta'
+                UPLOAD_FILES: 'Subir archivos'
+            MEDIA_TOOLBAR:
+                FOLDER: Carpeta
+                GRID_VIEW: 'Vista de cuadrícula'
+                LIST_VIEW: 'Vista de lista'
+                NEW_FOLDER: 'Nueva carpeta'
+                SEARCH_MEDIA: 'Buscar multimedia...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Arrastra al editor'
+                PAGE_MEDIA: 'Medios de página'
+        NAV:
+            CONFIGURATION: Configuración
+            DASHBOARD: 'Panel de control'
+            MEDIA: Medios
+            PAGES: Páginas
+            PLUGINS: Plugins
+            SETTINGS: Configuración
+            SYSTEM: Sistema
+            THEMES: Temas
+            TOOLS: Herramientas
+            USERS: Usuarios
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Sin elementos de feed'
+        NORMAL_MODE: 'Modo normal'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Sin notificaciones'
+        NO_CHANGES: 'Sin cambios para guardar'
+        PAGES:
+            ADD_FOLDER: 'Añadir carpeta'
+            ADD_MENU: 'Añadir menú'
+            ADD_MODULE: 'Añadir módulo'
+            ADD_PAGE: 'Añadir página'
+            DELETED: 'Se eliminó "{title}"'
+            DELETE_FAILED: 'Error al eliminar la página'
+            DELETE_PAGE: 'Eliminar página'
+            DRAFT: Borrador
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Conectando a sesión de colaboración…'
+                COPY_PAGE: 'Copiar página'
+                CREATE_LANGUAGE: 'Crear {language}'
+                DELETE_PAGE: 'Eliminar página'
+                EDIT_PAGE: 'Editar página'
+                FAILED_TO_CREATE_TRANSLATION: 'Error al crear la traducción'
+                FAILED_TO_SYNC_TRANSLATION: 'Error al sincronizar la traducción'
+                FALLBACK: (alternativa)
+                FALLBACK_NOTICE: 'No existe traducción a {active}. Visualizando alternativa {effective}. Use "Guardar como {active}" para crear una traducción que pueda editar.'
+                FOLDER_NAME: 'Nombre de carpeta'
+                INVALID_YAML_FRONTMATTER: 'Frontmatter YAML inválido'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Frontmatter YAML inválido — corrija la sintaxis antes de guardar'
+                LOADING_PAGE: 'Cargando página...'
+                NOT_TRANSLATED: 'No traducido:'
+                OPEN_IN_NEW_TAB: 'Abrir en nueva pestaña'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Página modificada en otro lugar — guarde para sobrescribir o recargue'
+                PAGE_COPIED: 'Página copiada'
+                PAGE_DELETED: 'Página eliminada'
+                PAGE_PREVIEW: 'Vista previa de página'
+                PAGE_SAVED_AND_MOVED: 'Página guardada y movida'
+                PREVIEW_PAGE: 'Previsualizar página'
+                PUBLISH_ON: 'Publicar en'
+                RESET_CONTENT_FROM: 'Restablecer contenido desde:'
+                RESET_FROM: 'Restablecer desde {language}'
+                RESET_TRANSLATION: 'Restablecer traducción'
+                SAVE_AS_LANGUAGE: 'Guardar como {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'El nombre de carpeta en disco (slug de URL)'
+                TOGGLE_PAGE_NAVIGATOR: 'Alternar navegador de páginas'
+                UNPUBLISH_ON: 'Despublicar en'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Escribe tu contenido markdown aquí...'
+            EDIT_PAGE: 'Editar página'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: Modificado
+            HEADER_PARENT: 'Página principal'
+            HEADER_STATUS: Estado
+            HEADER_TEMPLATE: Plantilla
+            HEADER_TITLE: Título
+            INFO_DATE: Fecha
+            INFO_LANGUAGE: Idioma
+            INFO_MODIFIED: Modificado
+            INFO_ORDER: Orden
+            INFO_PUBLISHED: Publicado
+            INFO_PUBLISH_ON: 'Publicar en'
+            INFO_ROUTABLE: Enrutable
+            INFO_ROUTE: Ruta
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Plantilla
+            INFO_UNPUBLISH_ON: 'Despublicar en'
+            INFO_VISIBLE: 'Visible en navegación'
+            LOADING: 'Cargando páginas...'
+            MODE_EXPERT: Experto
+            MODE_NORMAL: Normal
+            MOVED: '"{title}" movido'
+            MOVE_FAILED: 'Error al mover la página'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Agregar página — Grav Admin'
+                CONTINUE: Continuar
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Controla si esta página aparece en los menús de navegación'
+                FAILED_TO_CREATE: 'Error al crear la página'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Error al cargar las plantillas de página'
+                FILTER_PAGES: 'Filtrar páginas...'
+                FOLDER_CREATED: 'Carpeta "{title}" creada'
+                FOLDER_DETAILS: 'Detalles de la carpeta'
+                FOLDER_NAME: 'Nombre de la carpeta'
+                LOADING_TEMPLATES: 'Cargando plantillas...'
+                MODULE_CREATED: 'Módulo "{title}" creado'
+                MY_NEW_PAGE: 'Mi nueva página'
+                ORDERING: Ordenación
+                ORDERING_HELP_FOLDER: 'Añade un prefijo numérico que establece la posición de esta carpeta entre sus hermanas.'
+                ORDERING_HELP_MODULE: 'Añade un prefijo numérico que establece la posición de este módulo dentro de su padre modular.'
+                ORDERING_NONE: Ninguno
+                PAGE_CREATED: 'Página "{title}" creada'
+                PAGE_DETAILS: 'Detalles de la página'
+                PAGE_TEMPLATE: 'Plantilla de página'
+                PAGE_TITLE: 'Título de la página'
+                PARENT_PAGE: 'Página padre'
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'Nombre de carpeta seguro para URL para esta página'
+                VISIBLE: Visible
+            NO_PAGES: 'No se encontraron páginas'
+            NO_SEARCH_RESULTS: 'Ninguna página coincide con tu búsqueda'
+            PAGES_GRAV_ADMIN: 'Páginas — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Borrador (sin publicar)'
+                FOLDER_ORDER: 'Orden de carpeta'
+                HAS_CHILDREN: 'Tiene subpáginas'
+                SUMMARY: Resumen
+                VISIBLE: Visible
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Error al reorganizar las páginas'
+                NO_PAGES_MATCH: 'Ninguna página coincide con "{query}"'
+                SEARCHING: Buscando…
+            PAGE_COUNT: '{n, plural, one{# página} other{# páginas}}'
+            PAGE_INFO: 'Información de página'
+            PUBLISHED: Publicado
+            RAW_HEADER: 'Encabezado de página sin procesar (JSON)'
+            REORDERED: 'Se reordenó "{title}"'
+            REORDER_FAILED: 'Error al reordenar'
+            REORDER_MOVE: 'Reordenar / Mover'
+            REORDER_SAME_PARENT: 'Solo se pueden reordenar páginas bajo el mismo padre. Usa la vista de árbol para movimientos entre padres diferentes.'
+            SAVED: 'Página guardada correctamente'
+            SAVE_FAILED: 'Error al guardar la página'
+            SEARCH_PLACEHOLDER: 'Buscar páginas...'
+            SORT_DATE_NEWEST: 'Fecha (más recientes)'
+            SORT_NEWEST: 'Más recientes'
+            SORT_OLDEST: 'Más antiguo'
+            SORT_ORDER: Orden
+            SORT_TITLE_AZ: 'Título A-Z'
+            SORT_TITLE_ZA: 'Título Z-A'
+            SUBTITLE: 'Gestiona el contenido y la estructura de tu sitio'
+            TITLE: Páginas
+            VIEW_COLUMNS: Columnas
+            VIEW_LIST: Lista
+            VIEW_TREE: Árbol
+        PASSWORD: Contraseña
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 'Requisitos de contraseña'
+            PASSWORD_STRENGTH: 'Seguridad de la contraseña'
+            REQUIREMENTS: Requisitos
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'Error al cargar los permisos'
+            NOT_SET: 'No establecido'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Volver al Panel'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'No hay contenido disponible para esta página de plugin.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Volver a Plugins'
+            CHANGELOG: 'Registro de cambios'
+            CHECK_UPDATES: 'Buscar actualizaciones'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'La configuración fue modificada en otro lugar. Por favor, recarga.'
+            CONFIGURE: Configurar
+            ENABLE_PLUGIN: 'Activar Plugin'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Error al buscar actualizaciones'
+            FAILED_TO_LOAD_PLUGINS: 'Error al cargar los plugins'
+            FAILED_TO_SAVE_CONFIGURATION: 'No se pudo guardar la configuración.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'No hay opciones de configuración disponibles para este plugin.'
+            PAGE_TITLE: '{name} — Plugins — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Plugins — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Plugin modificado en otro lugar — guarda para sobrescribir o recarga'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'El plugin debe estar habilitado para configurarlo.'
+            REMOVE_PLUGIN: 'Eliminar Plugin'
+            SEARCH_PLUGINS: 'Buscar plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecciona un plugin para ver los detalles'
+            SYMLINKED: 'Vinculado simbólicamente'
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Cargando página del plugin...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Error al cargar el widget'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Últimos 14 días'
+            THIS_MONTH: 'Este mes'
+            THIS_WEEK: 'Esta semana'
+        PREMIUM: Premium
+        PREVIEW: 'Vista previa'
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Por favor, vuelve a ingresar tu contraseña para continuar. Tu trabajo ha sido guardado.'
+            SESSION_EXPIRED: 'Sesión expirada'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Ver todo'
+        REMOVE: Eliminar
+        RESET:
+            BACK_TO_SIGN_IN: 'Volver a iniciar sesión'
+            CONFIRM_PASSWORD: 'Confirmar contraseña'
+            INVALID_LINK: 'Enlace de restablecimiento inválido.'
+            NEW_PASSWORD_FOR: 'Elige una nueva contraseña para **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Las contraseñas no coinciden'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Contraseña restablecida correctamente. Por favor, inicia sesión.'
+            RESETTING: Restableciendo...
+            RESET_PASSWORD: 'Restablecer contraseña'
+            RESET_PASSWORD_GRAV_ADMIN: 'Restablecer contraseña — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'Este enlace de restablecimiento no tiene los parámetros requeridos. Solicita uno nuevo desde la página de contraseña olvidada.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'No se puede conectar al servidor.'
+        SAVE: Guardar
+        SAVING: Guardando...
+        SEARCH: Buscar
+        SETTINGS:
+            1_SECOND: '1 segundo'
+            2_SECONDS: '2 segundos'
+            ACCENT_COLOR: 'Color de acento'
+            ADD_LINK: 'Agregar enlace'
+            ADMIN_INTERFACE_LANGUAGE: 'Idioma de la interfaz de administración'
+            ADMIN_LANGUAGE: 'Idioma de administración'
+            ADMIN_LANGUAGE_DESC: 'Idioma para etiquetas, menús y mensajes ({count} cadenas cargadas)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Preferencias y apariencia de administración'
+            APPEARANCE: Apariencia
+            AUTHENTICATED_AS: 'Autenticado como'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Guardar automáticamente cuando abandones un campo'
+            AUTO_SAVE: 'Guardado automático'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Comportamiento de guardado automático y deshacer para editores de formularios'
+            BRANDING: Marca
+            BRANDING_DESC: 'Logo y texto de marca mostrados en todas partes del panel de administración.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Elige entre una apariencia clara y oscura'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Elige cómo se muestra el logo'
+            COLLAB_DESCRIPTION: 'Edición multiusuario en vivo con presencia. Requiere el plugin `sync` en el servidor. Experimental.'
+            COLOR_MODE: 'Modo de color'
+            CONNECTION: Conexión
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Personaliza el logo mostrado en la barra lateral y la página de inicio de sesión'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Personaliza la apariencia y comportamiento del panel de administración'
+            CUSTOM_IMAGE: 'Imagen personalizada'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Accesos directos personalizados mostrados en la barra de menú superior'
+            CUSTOM_TEXT: 'Texto personalizado'
+            DARK: Oscuro
+            DARK_LOGO: 'Logo oscuro'
+            DARK_LOGO_REMOVED: 'Logo oscuro eliminado.'
+            DARK_LOGO_UPLOADED: 'Logo oscuro cargado.'
+            DARK_MODE_LOGO: 'Logo del modo oscuro'
+            DEFAULT_APPEARANCE: 'Apariencia predeterminada'
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Apariencia de color predeterminada para nuevos usuarios.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Densidad predeterminada del editor de formularios.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Idioma de interfaz predeterminado para nuevos usuarios.'
+            DEFAULT_LANGUAGE: 'Idioma predeterminado'
+            DEFAULT_PAGES: 'Páginas predeterminadas'
+            DEFAULT_PRIMARY_COLOR_DESC: 'Color primario predeterminado para botones, enlaces y resaltados.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Configuración predeterminada para el navegador de páginas'
+            DEFAULT_TEXT_SIZE_DESC: 'Tamaño de texto predeterminado para la interfaz de administración.'
+            DEFAULT_TYPEFACE_DESC: 'Tipo de letra predeterminado para la interfaz de administración.'
+            DEFAULT_VIEW: 'Vista predeterminada'
+            DEUTSCH: Deutsch
+            EDITING: Edición
+            EDITOR_HEADING: Editor
+            EDITOR_MODE: 'Modo de editor'
+            ENGLISH: English
+            ENVIRONMENT: Entorno
+            ESPA_OL: Español
+            EXTERNAL: Externo
+            FAILED_TO_REMOVE_LOGO: 'No se pudo eliminar el logo.'
+            FAILED_TO_RESET_PREFERENCES: 'No se pudieron restablecer las preferencias.'
+            FAILED_TO_SAVE_LOGO_MODE: 'No se pudo guardar el modo de logo.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'No se pudo guardar el texto del logo.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'No se pudieron guardar los valores predeterminados del sitio.'
+            FOLLOW_OS: 'Seguir SO'
+            FONT: Fuente
+            FONT_SIZE: 'Tamaño de fuente'
+            FONT_SIZE_LARGE: Grande
+            FONT_SIZE_NORMAL: Normal
+            FONT_SIZE_SMALL: Pequeño
+            FONT_SIZE_XLARGE: 'Muy grande'
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Logo de Grav'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Agrupar cambios rápidos de campos en un solo paso de deshacer'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Cómo se muestran las páginas de forma predeterminada'
+            HUE: Matiz
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Elementos por página'
+            LANGUAGE_CHANGED: 'Idioma cambiado a {language}'
+            LIGHT: Claro
+            LIGHT_LOGO: 'Logo claro'
+            LIGHT_LOGO_REMOVED: 'Logo claro eliminado.'
+            LIGHT_LOGO_UPLOADED: 'Logo claro cargado.'
+            LIGHT_MODE_LOGO: 'Logo de modo claro'
+            LOGO_TEXT: 'Texto del logo'
+            LOGO_TYPE: 'Tipo de logo'
+            LOGO_UPLOAD_FAILED: 'Error al cargar el logo.'
+            MENUBAR_LINKS: 'Enlaces de la barra de menú'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Ninguno (1 campo = 1 deshacer)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Número de páginas mostradas en la vista de lista'
+            'OFF': Desactivado
+            'ON': Activado
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'plugin en el servidor. Experimental.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Preferencias restablecidas. Recarga para aplicar.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Color principal utilizado para botones, enlaces y resaltes'
+            REAL_TIME_COLLABORATION: 'Colaboración en tiempo real'
+            REMOVE_LINK: 'Eliminar enlace'
+            RESET: Restablecer
+            RESET_ALL_PREFERENCES: 'Restablecer todas las preferencias'
+            RESET_PREFERENCES: 'Restablecer preferencias'
+            RESET_PREFERENCES_MSG: '¿Eliminar todos tus cambios personales y revertir a los valores predeterminados del sitio?'
+            RESET_TO_SITE_DEFAULTS: 'Restablecer mis preferencias a los valores predeterminados del sitio'
+            REVERT_CHANGES: 'Revertir cambios'
+            SATURATION: Saturación
+            SAVED_AUTOMATICALLY: 'Guardado automáticamente'
+            SAVE_SITE_DEFAULTS: 'Guardar valores predeterminados del sitio'
+            SERVER_CONNECTION_DETAILS: 'Detalles de conexión del servidor'
+            SERVER_URL: 'URL del servidor'
+            SETTINGS_GRAV_ADMIN: 'Configuración — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Mostrar un botón deshacer en la barra de herramientas del editor'
+            SITE_DEFAULTS: 'Valores predeterminados del sitio'
+            SITE_DEFAULTS_DESCRIPTION: 'La configuración a continuación se aplica a todos los usuarios administradores como línea base. Los elementos de nivel B (apariencia, páginas, idioma, editor) pueden anularse en las preferencias de cada usuario. Los elementos de nivel A (edición, barra de menú) son en todo el sitio y no pueden anularse.'
+            SITE_DEFAULTS_SAVED: 'Valores predeterminados del sitio guardados. Todos los usuarios verán estos cambios en la próxima recarga.'
+            SITE_SETTINGS_DESC: 'Preferencias predeterminadas para nuevos usuarios más comportamiento en todo el sitio. Los cambios se aplican en la próxima recarga para los usuarios afectados.'
+            SITE_SETTINGS_HEADING: 'Configuración del sitio'
+            SITE_WIDE_ONLY: 'Solo en todo el sitio'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Tamaño de texto usado en todo el administrador'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'La primera letra se convierte en el icono'
+            TOOLBAR_UNDO_BUTTON: 'Botón Deshacer en la barra de herramientas'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Tipografía usada en todo el administrador'
+            UNDO_BATCH_WINDOW: 'Ventana de lote Deshacer'
+            USED_ON_DARK_BACKGROUNDS: 'Usado en fondos oscuros'
+            USED_ON_LIGHT_BACKGROUNDS: 'Usado en fondos claros'
+            USERS_MAY_OVERRIDE: 'Los usuarios pueden anular'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, guiones, guiones bajos'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Cuenta de administrador creada — bienvenido a Grav'
+            CHECKING_SERVER: 'Comprobando servidor…'
+            CONFIRM_PASSWORD: 'Confirmar contraseña'
+            CREATE_ADMINISTRATOR: 'Crear administrador'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Crea tu cuenta de administrador para comenzar'
+            CREATING_ACCOUNT: 'Creando cuenta...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Ingresa una dirección de correo electrónico válida'
+            ENVIRONMENT: Entorno
+            FULL_NAME: 'Nombre completo'
+            OPTIONAL: (opcional)
+            PASSWORDS_DO_NOT_MATCH: 'Las contraseñas no coinciden'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Por favor, corrige los errores anteriores e intenta de nuevo'
+            POWERED_BY_GRAV_CMS: 'Powered by Grav CMS'
+            SERVER_CONFIGURATION: 'Configuración del servidor'
+            SERVER_URL: 'URL del servidor'
+            SETUP_GRAV_ADMIN: 'Configuración — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'La configuración ya ha sido completada. Por favor, inicia sesión.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'No se puede conectar al servidor. Comprueba tu URL del servidor e intenta de nuevo.'
+            WELCOME_TO_GRAV: 'Bienvenido a Grav'
+        SIGN_OUT: 'Cerrar sesión'
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} activo)'
+            ACTIVE_THEME: 'Tema activo'
+            UPDATE_COUNT: '{n, plural, one{# actualización} other{# actualizaciones}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'el editor de markdown integrado'
+                LOCKED: 'Solo lectura — {owner} está editando con **{editor}**. Los tipos de editor mixtos no pueden coeditarse; [cambia tu preferencia de editor]({href}) para colaborar en tiempo real.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'cambia tu preferencia de editor'
+                TO_COLLABORATE_LIVE: 'para colaborar en tiempo real.'
+        SYSTEM:
+            COMING_SOON: Próximamente
+            SYSTEM_GRAV_ADMIN: 'Sistema — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} libre'
+            BYTES_USED: '{size} usado'
+            CACHE: Caché
+            DISK: Disco
+            EVERYTHING_UP_TO_DATE: 'Todo actualizado'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav está instalado mediante symlink — actualiza manualmente.'
+            GRAV_UPDATE_AVAILABLE: 'Actualización de Grav Disponible'
+            MORE_COUNT: '+ {n} más…'
+            PACKAGES_OUTDATED: '{n, plural, one{# paquete desactualizado} other{# paquetes desactualizados}}'
+            PERCENT_USED: '{percent}% usado'
+            SERVER: Servidor
+            UPDATES: Actualizaciones
+            UPDATES_AVAILABLE_COUNT: '{n} disponibles'
+            UPDATE_ALL: 'Actualizar Todo'
+            UPGRADE_GRAV: 'Actualizar Grav'
+        THEMES:
+            ACTIVE_THEME: 'Tema Activo'
+            BACK_TO_THEMES: 'Volver a Temas'
+            CHANGELOG: 'Registro de Cambios'
+            CHECK_UPDATES: 'Buscar Actualizaciones'
+            CLICK_TO_VIEW_FULL_SIZE: 'Haz clic para ver a tamaño completo'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'La configuración fue modificada en otro lugar. Por favor, recarga.'
+            CONFIGURE: Configurar
+            FAILED_TO_CHECK_FOR_UPDATES: 'Error al verificar actualizaciones'
+            FAILED_TO_LOAD_THEMES: 'Error al cargar temas'
+            FAILED_TO_SAVE_CONFIGURATION: 'Error al guardar la configuración.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'No hay opciones de configuración disponibles para este tema.'
+            PAGE_TITLE: '{name} — Temas — Administrador de Grav'
+            REMOVE_THEME: 'Eliminar Tema'
+            SEARCH_THEMES: 'Buscar temas...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecciona un tema para ver detalles'
+            SYMLINKED: 'Enlace simbólico'
+            THEMES_GRAV_ADMIN: 'Temas — Administrador de Grav'
+        TIME:
+            DAYS_AGO: 'hace {n}d'
+            HOURS_AGO: 'hace {n}h'
+            JUST_NOW: 'justo ahora'
+            MINUTES_AGO: 'hace {n}m'
+        TOGGLE_DARK_MODE: 'Alternar modo oscuro'
+        TOGGLE_MENU: 'Alternar menú'
+        TOOLS:
+            BACKUPS:
+                ACTION: Acción
+                BACKUP_CREATED_SUCCESSFULLY: 'Copia de seguridad creada correctamente'
+                BACKUP_DATE: 'Fecha de la copia de seguridad'
+                BACKUP_DELETED: 'Copia de seguridad eliminada'
+                BACKUP_HISTORY: 'Historial de copias de seguridad'
+                BACKUP_NOW: 'Hacer copia de seguridad ahora'
+                BACKUP_STATISTICS: 'Estadísticas de Copias de Seguridad'
+                CREATING: Creando...
+                DELETE_BACKUP: 'Eliminar Copia de Seguridad'
+                FAILED_TO_CREATE_BACKUP: 'Error al crear la copia de seguridad'
+                FAILED_TO_DELETE_BACKUP: 'Error al eliminar la copia de seguridad'
+                FAILED_TO_LOAD_BACKUPS: 'Error al cargar las copias de seguridad'
+                LOADING_BACKUPS: 'Cargando copias de seguridad...'
+                NEWEST_BACKUP: 'Copia de Seguridad Más Reciente'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'No se encontraron copias de seguridad. Crea una para comenzar.'
+                NUMBER_OF_BACKUPS: 'Número de Copias de Seguridad'
+                NUMBER_OF_PROFILES: 'Número de Perfiles'
+                OLDEST_BACKUP: 'Copia de Seguridad Más Antigua'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Copias de seguridad, planificador, registros y diagnósticos'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Arrastra un archivo .zip aquí o haz clic para examinar'
+                INSTALL_FROM_FILE: 'Instalar desde Archivo'
+                INSTALL_FROM_URL: 'Instalar desde URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Solo se admiten archivos .zip'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Paquete instalado correctamente'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Compatible con paquetes de plugins y temas de Grav'
+            LOGS:
+                100_LINES: '100 líneas'
+                200_LINES: '200 líneas'
+                25_LINES: '25 líneas'
+                50_LINES: '50 líneas'
+                ALL_LEVELS: 'Todos los Niveles'
+                CRITICAL: Crítico
+                EMERGENCY: Emergencia
+                FAILED_TO_LOAD_LOGS: 'Error al cargar los registros'
+                FAILED_TO_LOAD_LOG_FILES: 'Error al cargar los archivos de registro'
+                LOADING_LOGS: 'Cargando registros...'
+                LOG_FILE: 'Archivo de registro'
+                MESSAGE: Mensaje
+                NOTICE: Aviso
+                REFRESH: Actualizar
+                SEARCH_MESSAGES: 'Buscar mensajes...'
+                WARNING: Advertencia
+            REPORTS:
+                CONTENT_FIELD: 'contenido: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Error al cargar los informes'
+                LOADING_REPORTS: 'Cargando informes...'
+                NO_REPORTS_AVAILABLE: 'No hay informes disponibles.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Cargando componente de informe...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'Para habilitar la funcionalidad del Programador, debe agregar el **Grav Scheduler** al archivo crontab de su sistema para el usuario **{user}**. Ejecute el comando anterior desde la terminal para agregarlo automáticamente. Una vez guardado, actualice esta página para ver el estado.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Error al cargar la configuración del programador.'
+                FAILED_TO_SAVE: 'Error al guardar'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'El programador puede usar crontab del sistema o activadores de webhook para ejecutar comandos. Los webhooks se recomiendan para entornos en la nube. Solo los usuarios avanzados deben configurar trabajos personalizados. La configuración incorrecta o el abuso pueden generar vulnerabilidades de seguridad.'
+                LOADING_SCHEDULER: 'Cargando programador...'
+                NOT_ENABLED_FOR_USER: 'No habilitado para el usuario:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Configuración del programador guardada'
+                SECURITY_WARNING: 'Solo los usuarios avanzados deben configurar trabajos personalizados del programador. La configuración incorrecta puede causar problemas de rendimiento o vulnerabilidades de seguridad.'
+                WEBHOOK_ALTERNATIVE: 'Alternativamente, instale el complemento **scheduler-webhook** para usar activación de cron basada en webhook, que se recomienda para entornos en la nube donde el acceso al crontab del sistema no está disponible.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} libre de {total}'
+                DISK_USAGE: 'Uso de disco'
+                DRIVER: Controlador
+                FAILED_TO_LOAD_SYSTEM_INFO: 'No se pudo cargar la información del sistema'
+                GRAV_VERSION: 'Versión de Grav'
+                LOADING_SYSTEM_INFO: 'Cargando información del sistema...'
+                MAX_EXECUTION: 'Ejecución máxima'
+                MAX_POST: 'POST máximo'
+                MAX_UPLOAD: 'Carga máxima'
+                MEMORY_LIMIT: 'Límite de memoria'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'Versión de PHP'
+            TOOLS_GRAV_ADMIN: 'Herramientas — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Anterior
+            SITE_NOTIFICATION: 'Notificación del sitio'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Sin datos de vista aún'
+        TOP_PROGRESS_BAR:
+            WORKING: Procesando
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA deshabilitado'
+            2FA_ENABLED: '2FA habilitado'
+            2FA_IS_ENABLED: '2FA está habilitado'
+            2FA_QR_CODE: 'Código QR 2FA'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Añade una capa extra de seguridad requiriendo un código de un solo uso al iniciar sesión.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'Se requiere un código de un solo uso cada vez que esta cuenta inicia sesión.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'Ya se ha generado un secreto pero no se muestra por razones de seguridad.'
+            CONFIRM_DISABLE: 'Confirmar deshabilitación'
+            ENABLE_2FA: 'Habilitar 2FA'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Introduce el código de 6 dígitos de tu autenticador'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Introduce tu código actual de 6 dígitos para confirmar'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Error al generar el secreto 2FA'
+            FINISH_ENABLING_2FA: 'Finalizar la habilitación de 2FA'
+            FORCE_DISABLE: 'Forzar deshabilitación'
+            FORCE_DISABLE_PROMPT: '¿Forzar la deshabilitación de 2FA para **{username}**? Úsalo solo para recuperación de dispositivos perdidos.'
+            REGENERATE_AND_SHOW_QR: 'Regenerar y mostrar código QR'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Escanea el código QR con tu aplicación autenticadora'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Escanea el código QR con tu aplicación autenticadora, luego introduce el código de 6 dígitos para verificar y activar.'
+            SECRET_FOR_MANUAL_ENTRY: 'Secreto (para entrada manual):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'La autenticación de dos factores está desactivada'
+            VERIFICATION_CODE: 'Código de verificación'
+            VERIFY_ENABLE: 'Verificar y habilitar'
+        UNSAVED_CHANGES: 'Cambios sin guardar'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Guardando cambios…'
+            SAVING_CHANGES_2: 'Guardando cambios'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Cambios sin guardar — haz clic en Guardar para persistirlos'
+            YOU_HAVE_UNSAVED_CHANGES: 'Tienes cambios sin guardar'
+        UPDATE_AVAILABLE_VERSION: 'Actualización disponible: v{version}'
+        UPDATE_TO_VERSION: 'Actualizar a v{version}'
+        UPLOAD: Subir
+        USERNAME: 'Nombre de usuario'
+        USERS:
+            2_FACTOR_AUTHENTICATION: 'Autenticación de dos factores'
+            ADD_USER: 'Añadir usuario'
+            BACK_TO_USERS: 'Volver a Usuarios'
+            CREATED: Creado
+            DELETE_USER: 'Eliminar Usuario'
+            FAILED_TO_LOAD_USERS: 'Error al cargar usuarios'
+            FAILED_TO_SAVE_USER: 'Error al guardar usuario.'
+            NEW:
+                ACCOUNT: Cuenta
+                CREATE: Crear
+                FULL_NAME: 'Nombre Completo'
+                LOWERCASE_3_64_CHARS: 'minúsculas, 3-64 caracteres'
+                NEW_USER: 'Nuevo Usuario'
+                NEW_USER_GRAV_ADMIN: 'Nuevo Usuario — Grav Admin'
+                PERMISSIONS: Permisos
+            PAGE_TITLE: '{name} — Usuarios — Grav Admin'
+            PERMISSIONS: Permisos
+            SEARCH_USERS: 'Buscar usuarios...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Selecciona un usuario para ver los detalles'
+            STATUS: Estado
+            STATUS_HELP: 'Las cuentas deshabilitadas no pueden iniciar sesión ni usar la API.'
+            SUPER_ADMIN: 'Super Admin'
+            USERS_GRAV_ADMIN: 'Usuarios — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Usuario modificado en otro lugar — guarda para sobrescribir o recarga'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'El usuario fue modificado en otro lugar. Por favor, recarga.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'No puedes eliminar tu propia cuenta.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Avatar eliminado'
+            AVATAR_UPDATED: 'Avatar actualizado'
+            FAILED_TO_REMOVE_AVATAR: 'Error al eliminar el avatar'
+            FAILED_TO_UPLOAD_AVATAR: 'Error al cargar el avatar'
+            UPLOAD_AVATAR: 'Cargar Avatar'
+        VERSION: Versión
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Abrir el frontend del sitio en una nueva pestaña'
+            VIEW_SITE: 'Ver sitio'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Widget desconocido: {id}'

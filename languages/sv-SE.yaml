@@ -1,0 +1,898 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Åtkomst nekad'
+        ACTIVATE: Aktivera
+        ACTIVE: Aktiv
+        ADD_PAGE: 'Lägg till sida'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Lägg till plugin'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Det gick inte att läsa in tillgängliga plugins från GPM'
+            FILTER_PLUGINS: 'Filtrera plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Välj ett plugin för att visa detaljer'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Lägg till tema'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Det gick inte att läsa in tillgängliga teman från GPM'
+            FILTER_THEMES: 'Filtrera teman...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Välj ett tema för att visa detaljer'
+        ALLOWED: Tillåtet
+        ALL_CHANGES_SAVED: 'Alla ändringar sparade'
+        API_KEYS_FIELD:
+            API_KEYS: API-nycklar
+            API_KEY_GENERATED: 'API-nyckel genererad'
+            BLANK_NEVER: '(tomt = aldrig)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Kopiera denna nyckel nu — den kommer inte att visas igen.'
+            CREATED: Skapad
+            EXPIRES: Upphör
+            EXPIRY: Förfallodatum
+            E_G_MY_CLI_TOOL: 't.ex. Min CLI-verktyg'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Det gick inte att kopiera till urklipp'
+            FAILED_TO_GENERATE_API_KEY: 'Det gick inte att generera API-nyckel'
+            FAILED_TO_LOAD_API_KEYS: 'Det gick inte att läsa in API-nycklar'
+            FAILED_TO_REVOKE_API_KEY: 'Det gick inte att återkalla API-nyckeln'
+            GENERATE_KEY: 'Generera nyckel'
+            GENERATING: Genererar...
+            KEY_NAME: Nyckelnamn
+            KEY_PREFIX: Nyckelprefix
+            LAST_USED: 'Senast använd'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Inga API-nycklar har genererats ännu.'
+            PLEASE_ENTER_A_KEY_NAME: 'Ange ett nyckelnamn'
+            REVOKE_API_KEY: 'Återkalla API-nyckel'
+            REVOKE_KEY: 'Återkalla nyckel'
+        APP:
+            CREATING_BACKUP: 'Skapar säkerhetskopia…'
+            DASHBOARD_GRAV_ADMIN: 'Instrumentpanel — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Uppdatera
+            WELCOME_BACK: 'Välkommen tillbaka, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Stäng meny'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Är du säker?'
+        AUTHOR: Författare
+        BACKUPS_WIDGET:
+            BACKING_UP: Säkerhetskopierar…
+            BACKUP_NOW: 'Säkerhetskopiera nu'
+            CREATE_A_NEW_BACKUP_NOW: 'Skapa en ny säkerhetskopia nu'
+            DOWNLOAD_FILE: 'Ladda ner {filename}'
+            NO_BACKUPS_FOUND: 'Inga säkerhetskopior hittades'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: Cachealternativ
+            CLEAR_CACHE: 'Rensa cache'
+            FAILED_TO_CLEAR_CACHE: 'Det gick inte att rensa cache'
+        CANCEL: Avbryt
+        CLEAR_SEARCH: 'Rensa sökning'
+        CLOSE: Stäng
+        COLLAPSE_ALL: 'Dölj allt'
+        COLLAPSE_SIDEBAR: 'Dölj sidopanel'
+        COMPATIBILITY: Kompatibilitet
+        CONFIG:
+            CLEAR_FILTER: 'Rensa filter'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Konfiguration ändrad på annan plats — spara för att skriva över eller ladda om'
+            CONFIGURATION_RELOADED: 'Konfiguration omladdat'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Konfiguration sparad utan fel'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurationen ändrades på annan plats. Ladda om för att se de senaste ändringarna.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Misslyckades att spara konfiguration'
+            FILTER_FIELDS: 'Filtrera fält...'
+            LOADING_CONFIGURATION: 'Laddar konfiguration...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Ingen konfigurationsritning tillgänglig för detta område.'
+            NO_MATCHES_FOUND: 'Inga matchningar hittades'
+            PAGE_TITLE: 'Konfiguration: {scope} — Grav Admin'
+            RELOAD: 'Ladda om'
+            TITLE: Konfiguration
+            TITLE_SCROLLED: 'Konfiguration: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Miljö
+            EXPORT_YAML: 'Exportera YAML'
+            GRAV_VERSION: Grav-version
+            LOADING_SYSTEM_INFORMATION: 'Läser in systeminformation...'
+            PHP_CONFIGURATION: PHP-konfiguration
+            PHP_EXTENSIONS: PHP-tillägg
+            PHP_VERSION: PHP-version
+            SERVER: Server
+            SERVER_SOFTWARE: Serverprogramvara
+        CONFIRM_ACTION: 'Bekräfta åtgärd'
+        CONFIRM_DELETE: 'Ta bort "{title}" på {route}?'
+        COPY_BUTTON:
+            COPIED: Kopierad!
+        CUSTOM: Anpassad
+        DASHBOARD:
+            ADD_WIDGET: 'Lägg till en widget'
+            CUSTOMIZE: Anpassa
+            CUSTOMIZE_TITLE: 'Anpassa instrumentpanel'
+            EDIT_HINT: 'Anpassningsläge — dra, ändra storlek på, dölj widgetar och spara sedan.'
+            EMPTY: 'Din instrumentpanel är tom'
+            EMPTY_HINT: 'Klicka på pennikonen ovan för att lägga till widgetar'
+            HIDE_WIDGET: 'Dölj widget'
+            LAYOUT_RESET: 'Layouten återställd till standard'
+            LAYOUT_SAVED: 'Instrumentpanelens layout sparad'
+            PICKER_EMPTY: 'Alla tillgängliga widgetar finns redan på din instrumentpanel.'
+            PICKER_SUBTITLE: 'Välj en widget för att lägga tillbaka den på din instrumentpanel.'
+            PICKER_TITLE: 'Lägg till en widget'
+            PRESETS: Förinställningar
+            PRESET_COMPACT: Kompakt
+            PRESET_COMPACT_DESC: 'Alla widgetar i minsta möjliga storlek.'
+            PRESET_DEFAULT: Standard
+            PRESET_DEFAULT_DESC: 'Serverrekommenderad layout — rensar dina anpassningar.'
+            PRESET_MINIMAL: Minimal
+            PRESET_MINIMAL_DESC: 'Endast statistik och senaste sidor.'
+            RESET_LAYOUT: 'Återställ min layout'
+            SAVE_SITE_DEFAULT: 'Spara som webbplatsstandard'
+            SITE_LAYOUT_SAVED: 'Webbplatsstandard sparad'
+            TITLE: Instrumentpanel
+            WIDGETS:
+                BACKUPS: Säkerhetskopior
+                NEWS_FEED: Nyhetsflöde
+                NOTIFICATIONS: Aviseringar
+                POPULARITY: Sidvisningar
+                RECENT_PAGES: 'Senaste sidor'
+                STATS: Webbplatsstatistik
+                SYSTEM_HEALTH: Systemhälsa
+                TOP_PAGES: 'Populäraste sidor'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Dra för att ändra ordning'
+        DELETE: 'Ta bort'
+        DENIED: Nekad
+        DEPENDENCIES: Beroenden
+        DISABLE: Inaktivera
+        DISABLED: Inaktiverad
+        DISMISS: Avfärda
+        DONE: Klar
+        DOWNLOAD: 'Ladda ned'
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: Layoutförinställningar
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Spara som standardinställning för alla användare'
+        ENABLED: Aktiverad
+        ENVIRONMENT_SWITCHER:
+            CREATE: Skapa
+            CREATES_PATH: 'Skapar user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Skapa miljö…'
+            CREATE_ENV_NAMED: 'Skapa miljö "{name}"…'
+            DEFAULT: Standard
+            ENV_CREATED: "Miljön '{name}' skapades och valdes"
+            FAILED_TO_CREATE: 'Det gick inte att skapa miljön'
+            HAS_OVERRIDES: 'har åsidosättningar'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'finns inte längre. Välj en annan.'
+            SAVE_CONFIG_TO: 'Spara config till'
+            SAVING_TO_DEFAULT: 'Sparar till standard (user/config)'
+            SAVING_TO_ENV: 'Sparar till env: {name}'
+            SELECTED_ENV: 'Vald env'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Välj var config-skrivningar sparas'
+        EXPAND_ALL: 'Expandera alla'
+        EXPAND_SIDEBAR: 'Expandera sidofält'
+        EXPERT_MODE: Expertläge
+        FIELDS:
+            ADD_ENTRY: 'Lägg till post'
+            CLEAR_DATE: 'Rensa datum'
+            CRON:
+                AT_MINUTE: 'Vid minut'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min tim dag mån veckodag'
+                ON_DAY: 'På dagen'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Aktiva utlösare'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Misslyckades att ladda schemaläggarstatus'
+                FAILED_TO_RUN_SCHEDULER: 'Misslyckades att köra schemaläggaren'
+                HEALTH_STATUS: Hälsostatus
+                JOB_ID: Jobb-ID
+                LAST_RUN: 'Senaste körning'
+                LOADING_SCHEDULER_STATUS: 'Laddar schemaläggarstatus...'
+                NOT_CONFIGURED: 'INTE KONFIGURERAD'
+                NOT_ENABLED: 'INTE AKTIVERAD'
+                NOT_INSTALLED: 'INTE INSTALLERAD'
+                NO_SCHEDULED_JOBS_REGISTERED: 'Inga schemalagda jobb registrerade.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Inga utlösare aktiva! Aktivera webhooks eller konfigurera cron.'
+                QUEUE_SIZE: 'Köstorlek:'
+                RUNNING: Körs...
+                RUN_ALL: 'Kör alla'
+                SCHEDULED_JOBS: 'Schemalagda jobb'
+                SCHEDULER_RUN_COMPLETED: 'Schemaläggarköring slutförd'
+                SCHEDULER_STATUS: Schemaläggarstatus
+                STATUS: 'Status:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Laddar anpassat fält...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Formatstränq:'
+                SELECT_FORMAT: '— Välj format —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Inga matchande filer'
+                NO_MEDIA_UPLOADED: 'Inga mediefiler har laddats upp än'
+            FILE_PICKER_SOON: 'Filväljare — kommer snart'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Inga ikoner hittades'
+                SEARCH_ICONS: 'Sök ikoner...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Visar första 200 resultaten — skriv för att begränsa'
+            NO_TAXONOMY_TYPES: 'Inga taxonomityper konfigurerade'
+            PAGES:
+                FILTER_PAGES: 'Filtrera sidor...'
+                ROOT: '/ (rot)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Kontrollerar sida...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Sidmedia är inte tillgänglig'
+            PERMISSIONS:
+                NOT_SET: 'Ej inställd'
+                NO_PERMISSIONS_CONFIGURED: 'Inga behörigheter konfigurerade'
+            REGENERATE_SLUG: 'Auto-generera från sidtitel'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Inga fält matchar ditt filter'
+            THEME_SELECT:
+                LOADING_THEMES: 'Läser in teman...'
+                SELECT_THEME: '— Välj tema —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Kontrollera hälsostatus:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Framtvinga körning av specifikt jobb (ignorerar schema):'
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions-exempel:'
+                HOW_TO_USE_WEBHOOKS: 'Hur du använder webhooks:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Utlös alla förfallna jobb (respekterar schema):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Kontrollerar webhook-pluginstatus...'
+                INSTALL_PLUGIN_NOW: 'Installera plugin nu'
+                OR_RUN: 'eller kör:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'plugin är installerat och aktiverat.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin är installerat. Aktivera Webhook-utlösare nedan för att aktivera.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin krävs för webhook-funktionalitet.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin krävs'
+        FLEX_OBJECTS:
+            ACTIONS: Åtgärder
+            BACK_TO_LIST: 'Tillbaka till lista'
+            DELETE_OBJECT: 'Radera objekt'
+            EXPORT: Exportera
+            EXPORT_FAILED: 'Exporten misslyckades'
+            FAILED_TO_DELETE_OBJECT: 'Det gick inte att radera objektet'
+            FAILED_TO_LOAD_DIRECTORY: 'Det gick inte att ladda katalogen'
+            FAILED_TO_LOAD_OBJECTS: 'Det gick inte att ladda objekt'
+            FAILED_TO_SAVE: 'Det gick inte att spara.'
+            NEW:
+                BACK_TO_LIST: 'Tillbaka till lista'
+                CREATE: Skapa
+                OBJECT_CREATED: 'Objekt skapat'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Objektet ändrades på annan plats — spara för att skriva över eller ladda om'
+            OBJECT_DELETED: 'Objekt borttaget'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objektet ändrades på annan plats. Ladda om igen.'
+            PREVIOUS: Föregående
+            SEARCH: Sök...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Stäng widgetmeny'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Tillbaka till inloggning'
+            CHECK_INBOX: 'Kontrollera din inkorg för en återställningslänk.'
+            EMAIL_ADDRESS: E-postadress
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Ange en giltig e-postadress'
+            FORGOT_PASSWORD: 'Glömt lösenord'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Glömt lösenord — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Om ett konto finns för den e-postadressen har en återställningslänk skickats.'
+            SENDING: Skickar...
+            SEND_RESET_LINK: 'Skicka återställningslänk'
+            SUBTITLE: 'Ange din e-postadress så skickar vi dig en återställningslänk.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Det gick inte att ansluta till servern.'
+        HOMEPAGE: Startsida
+        INFO: Info
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Inga ikoner hittades'
+            SEARCH_ICONS: 'Sök ikoner...'
+            TYPE_TO_NARROW_RESULTS: 'Skriv för att begränsa resultat'
+        INSTALL: Installera
+        INSTALLING: Installerar...
+        KEYWORDS: Nyckelord
+        LANG:
+            CREATE_TRANSLATION: 'Skapa {language}-översättning'
+            CURRENT: aktuell
+            DEFAULT: standard
+            DELETE_TRANSLATION: 'Ta bort {language}-översättning'
+            FALLBACK_NOTICE: 'Ingen {language}-översättning. Visar standardinnehål.'
+            NOT_TRANSLATED: 'Inte översatt'
+            SAVE_AS: 'Spara som {language}'
+            SWITCH_LANGUAGE: 'Byt innehållsspråk'
+            SYNC_FROM: 'Återställ från {language}'
+            TRANSLATED: Översatt
+            TRANSLATIONS: Översättningar
+            TRANSLATION_CREATED: '{language} översättning skapad'
+        LOADING: 'Läser in...'
+        LOGIN:
+            AUTHENTICATION_CODE: Autentiseringskod
+            AUTH_CODE_PROMPT: 'Öppna din autentiseringsapp och ange den 6-siffriga koden för **{username}**.'
+            BACK_TO_SIGN_IN: 'Tillbaka till inloggning'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Ange en giltig 6-siffrig kod'
+            ENVIRONMENT: Miljö
+            FORGOT_PASSWORD: 'Glömt lösenord?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Ogiltigt användarnamn eller lösenord'
+            LOGIN_GRAV_ADMIN: 'Logga in — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'Lösenord är obligatoriskt'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Fyll i alla obligatoriska fält'
+            POWERED_BY_GRAV_CMS: 'Drivs av Grav CMS'
+            SERVER_CONFIGURATION: Serverkonfiguration
+            SERVER_URL: Server-URL
+            SIGNED_IN_SUCCESSFULLY: 'Inloggning lyckad'
+            SIGNING_IN: 'Loggar in...'
+            SIGN_IN: 'Logga in'
+            SUBTITLE: 'Logga in för att hantera din webbplats'
+            TWOFA_SUBTITLE: 'Ange din autentiseringskod för att fortsätta'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Det gick inte att ansluta till servern. Kontrollera din server-URL och försök igen.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Det gick inte att verifiera koden. Kontrollera din anslutning och försök igen.'
+            USERNAME_IS_REQUIRED: 'Användarnamn är obligatoriskt'
+            VERIFY: Verifiera
+            VERIFYING: Verifierar...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Inget att förhandsgranska'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Hantera mediafiler för hela webbplatsen'
+            MEDIA_GRAV_ADMIN: 'Media — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Dimensioner
+                FAILED_TO_COPY: 'Det gick inte att kopiera'
+                FILE_RENAMED: 'Fil döpt om'
+                NEXT_FILE: 'Nästa fil'
+                PREVIOUS_FILE: 'Föregående fil'
+                RENAME: 'Byt namn'
+            MEDIA_MANAGER:
+                CREATE: Skapa
+                FILES_DELETED: 'Filer borttagna'
+                FOLDER_NAME: Mappnamn
+                NEW_FOLDER: 'Ny mapp'
+                UPLOAD_FILES: 'Ladda upp filer'
+            MEDIA_TOOLBAR:
+                FOLDER: Mapp
+                GRID_VIEW: Rutnätsvy
+                LIST_VIEW: Listvy
+                NEW_FOLDER: 'Ny mapp'
+                SEARCH_MEDIA: 'Sök media...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Dra till redigerare'
+                PAGE_MEDIA: Sidmedia
+        NAV:
+            CONFIGURATION: Konfiguration
+            DASHBOARD: Instrumentpanel
+            MEDIA: Media
+            PAGES: Sidor
+            PLUGINS: Tillägg
+            SETTINGS: Inställningar
+            SYSTEM: System
+            THEMES: Teman
+            TOOLS: Verktyg
+            USERS: Användare
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Inga flödesobjekt'
+        NORMAL_MODE: Normalläge
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Inga meddelanden'
+        NO_CHANGES: 'Inga ändringar att spara'
+        PAGES:
+            ADD_FOLDER: 'Lägg till mapp'
+            ADD_MENU: 'Lägg till meny'
+            ADD_MODULE: 'Lägg till modul'
+            ADD_PAGE: 'Lägg till sida'
+            DELETED: 'Tog bort "{title}"'
+            DELETE_FAILED: 'Det gick inte att ta bort sidan'
+            DELETE_PAGE: 'Ta bort sida'
+            DRAFT: Utkast
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Ansluter till samarbetssession…'
+                COPY_PAGE: 'Kopiera sida'
+                CREATE_LANGUAGE: 'Skapa {language}'
+                DELETE_PAGE: 'Radera sida'
+                EDIT_PAGE: 'Redigera sida'
+                FAILED_TO_CREATE_TRANSLATION: 'Misslyckades att skapa översättning'
+                FAILED_TO_SYNC_TRANSLATION: 'Misslyckades att synkronisera översättning'
+                FALLBACK: (reserv)
+                FALLBACK_NOTICE: 'Ingen {active}-översättning finns. Visar {effective}-reserv. Använd "Spara som {active}" för att skapa en översättning som du kan redigera.'
+                FOLDER_NAME: Mappnamn
+                INVALID_YAML_FRONTMATTER: 'Ogiltig YAML frontmatter'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Ogiltig YAML frontmatter — åtgärda syntaxen innan du sparar'
+                LOADING_PAGE: 'Läser in sida...'
+                NOT_TRANSLATED: 'Inte översatt:'
+                OPEN_IN_NEW_TAB: 'Öppna i ny flik'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Sidan ändrades på annat håll — spara för att skriva över eller läs in på nytt'
+                PAGE_COPIED: 'Sida kopierad'
+                PAGE_DELETED: 'Sida raderad'
+                PAGE_PREVIEW: 'Förhandsvisning av sida'
+                PAGE_SAVED_AND_MOVED: 'Sida sparad och flyttad'
+                PREVIEW_PAGE: 'Förhandsvisning av sida'
+                PUBLISH_ON: 'Publicera den'
+                RESET_CONTENT_FROM: 'Återställ innehåll från:'
+                RESET_FROM: 'Återställ från {language}'
+                RESET_TRANSLATION: 'Återställ översättning'
+                SAVE_AS_LANGUAGE: 'Spara som {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'Mappnamnet på disk (URL-slug)'
+                TOGGLE_PAGE_NAVIGATOR: 'Växla sidnavigator'
+                UNPUBLISH_ON: 'Avpublicera den'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Skriv ditt markdown-innehål här...'
+            EDIT_PAGE: 'Redigera sida'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: Ändrad
+            HEADER_PARENT: Överordnad
+            HEADER_STATUS: Status
+            HEADER_TEMPLATE: Mall
+            HEADER_TITLE: Titel
+            INFO_DATE: Datum
+            INFO_LANGUAGE: Språk
+            INFO_MODIFIED: Ändrad
+            INFO_ORDER: Ordning
+            INFO_PUBLISHED: Publicerad
+            INFO_PUBLISH_ON: 'Publicera den'
+            INFO_ROUTABLE: Routbar
+            INFO_ROUTE: Route
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Mall
+            INFO_UNPUBLISH_ON: 'Avpublicera den'
+            INFO_VISIBLE: 'Synlig i meny'
+            LOADING: 'Läser in sidor...'
+            MODE_EXPERT: Expert
+            MODE_NORMAL: Normal
+            MOVED: 'Flyttade "{title}"'
+            MOVE_FAILED: 'Det gick inte att flytta sidan'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Lägg till sida — Grav Admin'
+                CONTINUE: Fortsätt
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Styr om denna sida visas i navigeringsmenyer'
+                FAILED_TO_CREATE: 'Det gick inte att skapa sidan'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Det gick inte att läsa in sidmallar'
+                FILTER_PAGES: 'Filtrera sidor...'
+                FOLDER_CREATED: 'Mappen "{title}" skapades'
+                FOLDER_DETAILS: Mappdetaljer
+                FOLDER_NAME: Mappnamn
+                LOADING_TEMPLATES: 'Läser in mallar...'
+                MODULE_CREATED: 'Modulen "{title}" skapades'
+                MY_NEW_PAGE: 'Min nya sida'
+                ORDERING: Sortering
+                ORDERING_HELP_FOLDER: 'Lägger till ett numeriskt prefix som anger denna mapps position bland dess syskon.'
+                ORDERING_HELP_MODULE: 'Lägger till ett numeriskt prefix som anger denna moduls position inuti dess modulära överordnade.'
+                ORDERING_NONE: Ingen
+                PAGE_CREATED: 'Sidan "{title}" skapades'
+                PAGE_DETAILS: Siddetaljer
+                PAGE_TEMPLATE: Sidmall
+                PAGE_TITLE: Sidtitel
+                PARENT_PAGE: 'Överordnad sida'
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-säker mappnamn för denna sida'
+                VISIBLE: Synlig
+            NO_PAGES: 'Inga sidor hittades'
+            NO_SEARCH_RESULTS: 'Inga sidor matchar din sökning'
+            PAGES_GRAV_ADMIN: 'Sidor — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Utkast (opublicerad)'
+                FOLDER_ORDER: Mappordning
+                HAS_CHILDREN: 'Har underordnade'
+                SUMMARY: Sammanfattning
+                VISIBLE: Synlig
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Misslyckades att omorganisera sidor'
+                NO_PAGES_MATCH: 'Inga sidor matchar "{query}"'
+                SEARCHING: Söker…
+            PAGE_COUNT: '{n, plural, one{# sida} other{# sidor}}'
+            PAGE_INFO: Sidinfo
+            PUBLISHED: Publicerad
+            RAW_HEADER: 'Rå sidhuvud (JSON)'
+            REORDERED: 'Omordnade "{title}"'
+            REORDER_FAILED: 'Misslyckades att omordna'
+            REORDER_MOVE: 'Omordna / Flytta'
+            REORDER_SAME_PARENT: 'Kan endast omordna sidor under samma överordnade. Använd trädvyn för att flytta mellan föräldrar.'
+            SAVED: 'Sidan sparades framgångsrikt'
+            SAVE_FAILED: 'Misslyckades att spara sida'
+            SEARCH_PLACEHOLDER: 'Sök sidor...'
+            SORT_DATE_NEWEST: 'Datum (nyast)'
+            SORT_NEWEST: Nyast
+            SORT_OLDEST: Äldst
+            SORT_ORDER: Ordning
+            SORT_TITLE_AZ: 'Titel A-Ö'
+            SORT_TITLE_ZA: 'Titel Ö-A'
+            SUBTITLE: 'Hantera webbplatsens innehål och struktur'
+            TITLE: Sidor
+            VIEW_COLUMNS: Kolumner
+            VIEW_LIST: Lista
+            VIEW_TREE: Träd
+        PASSWORD: Lösenord
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: Lösenordskrav
+            PASSWORD_STRENGTH: Lösenordsstyrka
+            REQUIREMENTS: Krav
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'Det gick inte att läsa in behörigheter'
+            NOT_SET: 'Inte inställd'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Tillbaka till instrumentpanel'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Inget innehål tillgängligt för denna plugin-sida.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Tillbaka till insticksmoduler'
+            CHANGELOG: Ändringslogg
+            CHECK_UPDATES: 'Sök uppdateringar'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurationen ändrades på annat håll. Ladda om sidan.'
+            CONFIGURE: Konfigurera
+            ENABLE_PLUGIN: 'Aktivera insticksmodul'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Det gick inte att kontrollera uppdateringar'
+            FAILED_TO_LOAD_PLUGINS: 'Det gick inte att läsa in plugin'
+            FAILED_TO_SAVE_CONFIGURATION: 'Det gick inte att spara konfigurationen.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Inga konfigurationsalternativ tillgängliga för detta plugin.'
+            PAGE_TITLE: '{name} — Plugin — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Plugin — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Plugin ändrad på annan plats — spara för att skriva över eller ladda om'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'Plugin måste vara aktiverad för att konfigurera.'
+            REMOVE_PLUGIN: 'Ta bort plugin'
+            SEARCH_PLUGINS: 'Sök plugin...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Välj ett plugin för att visa detaljer'
+            SYMLINKED: Symlänkad
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Läser in plugin-sida...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Widget kunde inte läsas in'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Senaste 14 dagarna'
+            THIS_MONTH: 'Den här månaden'
+            THIS_WEEK: 'Den här veckan'
+        PREMIUM: Premium
+        PREVIEW: Förhandsvisning
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Ange ditt lösenord igen för att fortsätta. Ditt arbete har sparats.'
+            SESSION_EXPIRED: 'Sessionen har upphört'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Visa alla'
+        REMOVE: 'Ta bort'
+        RESET:
+            BACK_TO_SIGN_IN: 'Tillbaka till inloggning'
+            CONFIRM_PASSWORD: 'Bekräfta lösenord'
+            INVALID_LINK: 'Ogiltig återställningslänk.'
+            NEW_PASSWORD_FOR: 'Välj ett nytt lösenord för **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Lösenorden matchar inte'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Lösenord återställt. Logga in.'
+            RESETTING: Återställer...
+            RESET_PASSWORD: 'Återställ lösenord'
+            RESET_PASSWORD_GRAV_ADMIN: 'Återställ lösenord — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'Den här återställningslänken saknar obligatoriska parametrar. Begär en ny från sidan för glömt lösenord.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Det gick inte att ansluta till servern.'
+        SAVE: Spara
+        SAVING: Sparar...
+        SEARCH: Sök
+        SETTINGS:
+            1_SECOND: '1 sekund'
+            2_SECONDS: '2 sekunder'
+            ACCENT_COLOR: Accentfärg
+            ADD_LINK: 'Lägg till länk'
+            ADMIN_INTERFACE_LANGUAGE: 'Språk för admininterfacet'
+            ADMIN_LANGUAGE: Adminspråk
+            ADMIN_LANGUAGE_DESC: 'Språk för etiketter, menyer och meddelanden ({count} strängar laddade)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Admininställningar och utseende'
+            APPEARANCE: Utseende
+            AUTHENTICATED_AS: 'Autentiserad som'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Spara automatiskt när du lämnar ett fält'
+            AUTO_SAVE: 'Automatisk sparning'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Automatisk sparning och ångra-beteende för formulärredigerare'
+            BRANDING: Varumärkesprofilering
+            BRANDING_DESC: 'Logotyp och varumärkestext som visas överallt i administratören.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Välj mellan ljust och mörkt utseende'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Välj hur logotypen ska visas'
+            COLLAB_DESCRIPTION: 'Direktredigering för flera användare med närvaro. Kräver insticksprogrammet `sync` på servern. Experimentell.'
+            COLOR_MODE: Färgläge
+            CONNECTION: Anslutning
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Anpassa logotypen som visas i sidofältet och på inloggningssidan'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Anpassa utseendet och känslan av administratören'
+            CUSTOM_IMAGE: 'Anpassad bild'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Anpassade genvägar som visas i den översta menyraden'
+            CUSTOM_TEXT: 'Anpassad text'
+            DARK: Mörk
+            DARK_LOGO: 'Mörk logotyp'
+            DARK_LOGO_REMOVED: 'Mörk logotyp borttagen.'
+            DARK_LOGO_UPLOADED: 'Mörk logotyp uppladdad.'
+            DARK_MODE_LOGO: 'Mörkt läge-logotyp'
+            DEFAULT_APPEARANCE: Standardutseende
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Standardfärgutseende för nya användare.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Standardtäthet för formulärredigerare.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Standardgränssnittsspråk för nya användare.'
+            DEFAULT_LANGUAGE: Standardspråk
+            DEFAULT_PAGES: Standardsidor
+            DEFAULT_PRIMARY_COLOR_DESC: 'Standardprimärfärg för knappar, länkar och markeringar.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Standardinställningar för sidbläsaren'
+            DEFAULT_TEXT_SIZE_DESC: 'Standardtextstorlek för admin-gränssnittet.'
+            DEFAULT_TYPEFACE_DESC: 'Standardtypsnitt för admin-gränssnittet.'
+            DEFAULT_VIEW: Standardvy
+            DEUTSCH: Deutsch
+            EDITING: Redigering
+            EDITOR_HEADING: Editor
+            EDITOR_MODE: Redigerarläge
+            ENGLISH: English
+            ENVIRONMENT: Miljö
+            ESPA_OL: Español
+            EXTERNAL: Extern
+            FAILED_TO_REMOVE_LOGO: 'Det gick inte att ta bort logotypen.'
+            FAILED_TO_RESET_PREFERENCES: 'Det gick inte att återställa inställningar.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Det gick inte att spara logotypläge.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Det gick inte att spara logotyptext.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Det gick inte att spara webbplatsstandarden.'
+            FOLLOW_OS: 'Följ OS'
+            FONT: Typsnitt
+            FONT_SIZE: Teckenstorlek
+            FONT_SIZE_LARGE: Stor
+            FONT_SIZE_NORMAL: Normal
+            FONT_SIZE_SMALL: Liten
+            FONT_SIZE_XLARGE: X-Stor
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Grav Logo'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Gruppera snabba fältändringar till ett enda ångra-steg'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Hur sidor visas som standard'
+            HUE: Färgton
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Objekt per sida'
+            LANGUAGE_CHANGED: 'Språk ändrat till {language}'
+            LIGHT: Ljus
+            LIGHT_LOGO: 'Ljus logotyp'
+            LIGHT_LOGO_REMOVED: 'Ljus logotyp borttagen.'
+            LIGHT_LOGO_UPLOADED: 'Ljus logotyp uppladdad.'
+            LIGHT_MODE_LOGO: 'Logotyp för ljust läge'
+            LOGO_TEXT: Logotyptext
+            LOGO_TYPE: Logotyptyp
+            LOGO_UPLOAD_FAILED: 'Logotypuppladdning misslyckades.'
+            MENUBAR_LINKS: Menylänkar
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Ingen (1 fält = 1 ångra)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Antal sidor som visas i listvy'
+            'OFF': Av
+            'ON': På
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'insticksprogram på servern. Experimentellt.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Inställningar återställda. Ladda om för att tillämpa.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Primär färg som används för knappar, länkar och markeringar'
+            REAL_TIME_COLLABORATION: 'Samarbete i realtid'
+            REMOVE_LINK: 'Ta bort länk'
+            RESET: Återställ
+            RESET_ALL_PREFERENCES: 'Återställ alla inställningar'
+            RESET_PREFERENCES: 'Återställ inställningar'
+            RESET_PREFERENCES_MSG: 'Ta bort alla dina personliga åsidosättningar och återgå till webbplatsens standardinställningar?'
+            RESET_TO_SITE_DEFAULTS: 'Återställ mina inställningar till webbplatsens standardinställningar'
+            REVERT_CHANGES: 'Ångra ändringar'
+            SATURATION: Mättnad
+            SAVED_AUTOMATICALLY: 'Sparad automatiskt'
+            SAVE_SITE_DEFAULTS: 'Spara webbplatsens standardinställningar'
+            SERVER_CONNECTION_DETAILS: Serveranslutningsdetaljer
+            SERVER_URL: Server-URL
+            SETTINGS_GRAV_ADMIN: 'Inställningar — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Visa en ångra-knapp i redigerarens verktygsfält'
+            SITE_DEFAULTS: 'Webbplatsens standardinställningar'
+            SITE_DEFAULTS_DESCRIPTION: 'Inställningarna nedan gäller för alla adminanvändare som utgångspunkt. Nivå B-objekt (utseende, sidor, språk, redigerare) kan åsidosättas i varje användares egna inställningar ovan. Nivå A-objekt (redigering, menyrad) är webbplatsomfattande och kan inte åsidosättas.'
+            SITE_DEFAULTS_SAVED: 'Webbplatsens standardinställningar sparades. Alla användare kommer att se dessa vid nästa omhämtning.'
+            SITE_SETTINGS_DESC: 'Standardinställningar för nya användare plus webbplatsomfattande beteende. Ändringar tillämpas vid nästa omhämtning för berörda användare.'
+            SITE_SETTINGS_HEADING: Webbplatsinställningar
+            SITE_WIDE_ONLY: 'Endast webbplatsomfattande'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Textstorlek som används i hela admin'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'Den första bokstaven blir ikonen'
+            TOOLBAR_UNDO_BUTTON: 'Ångra-knapp i verktygsfältet'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Typsnitt som används i hela admin'
+            UNDO_BATCH_WINDOW: 'Ångra batch-fönster'
+            USED_ON_DARK_BACKGROUNDS: 'Använd på mörka bakgrunder'
+            USED_ON_LIGHT_BACKGROUNDS: 'Använd på ljusa bakgrunder'
+            USERS_MAY_OVERRIDE: 'Användare kan åsidosätta'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
+            CHECKING_SERVER: 'Kontrollerar server…'
+            CONFIRM_PASSWORD: 'Bekräfta lösenord'
+            CREATE_ADMINISTRATOR: 'Skapa administratör'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Skapa ditt administratörkonto för att komma igång'
+            CREATING_ACCOUNT: 'Skapar konto...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Ange en giltig e-postadress'
+            ENVIRONMENT: Miljö
+            FULL_NAME: 'Fullständigt namn'
+            OPTIONAL: (valfritt)
+            PASSWORDS_DO_NOT_MATCH: 'Lösenorden matchar inte'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Åtgärda felen ovan och försök igen'
+            POWERED_BY_GRAV_CMS: 'Powered by Grav CMS'
+            SERVER_CONFIGURATION: Serverkonfiguration
+            SERVER_URL: Server-URL
+            SETUP_GRAV_ADMIN: 'Installation — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'Installationen är redan slutförd. Logga in.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Det gick inte att ansluta till servern. Kontrollera din server-URL och försök igen.'
+            WELCOME_TO_GRAV: 'Välkommen till Grav'
+        SIGN_OUT: 'Logga ut'
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} aktiv)'
+            ACTIVE_THEME: 'Aktivt tema'
+            UPDATE_COUNT: '{n, plural, one{# uppdatering} other{# uppdateringar}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'den inbyggda markdown-redigeraren'
+                LOCKED: 'Skrivskyddad — {owner} redigerar med **{editor}**. Blandade redigerartyper kan inte samarbeta; [byt dina redigerarinställningar]({href}) för att samarbeta live.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'byt dina redigerarinställningar'
+                TO_COLLABORATE_LIVE: 'för att samarbeta live.'
+        SYSTEM:
+            COMING_SOON: 'Kommer snart'
+            SYSTEM_GRAV_ADMIN: 'System — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} ledigt'
+            BYTES_USED: '{size} använt'
+            CACHE: Cache
+            DISK: Disk
+            EVERYTHING_UP_TO_DATE: 'Allt är uppdaterat'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav är installerad via symlink — uppgradera manuellt.'
+            GRAV_UPDATE_AVAILABLE: 'Grav-uppdatering tillgänglig'
+            MORE_COUNT: '+ {n} fler…'
+            PACKAGES_OUTDATED: '{n, plural, one{# paket föråldrat} other{# paket föråldrade}}'
+            PERCENT_USED: '{percent}% använt'
+            SERVER: Server
+            UPDATES: Uppdateringar
+            UPDATES_AVAILABLE_COUNT: '{n} tillgängliga'
+            UPDATE_ALL: 'Uppdatera alla'
+            UPGRADE_GRAV: 'Uppgradera Grav'
+        THEMES:
+            ACTIVE_THEME: 'Aktivt tema'
+            BACK_TO_THEMES: 'Tillbaka till teman'
+            CHANGELOG: Ändringslogg
+            CHECK_UPDATES: 'Sök uppdateringar'
+            CLICK_TO_VIEW_FULL_SIZE: 'Klicka för att visa i full storlek'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurationen ändrades någon annanstans. Ladda om sidan.'
+            CONFIGURE: Konfigurera
+            FAILED_TO_CHECK_FOR_UPDATES: 'Misslyckades att söka efter uppdateringar'
+            FAILED_TO_LOAD_THEMES: 'Misslyckades att ladda teman'
+            FAILED_TO_SAVE_CONFIGURATION: 'Misslyckades att spara konfiguration.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Inga konfigurationsalternativ tillgängliga för det här temat.'
+            PAGE_TITLE: '{name} — Teman — Grav Admin'
+            REMOVE_THEME: 'Ta bort tema'
+            SEARCH_THEMES: 'Sök teman...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Välj ett tema för att visa detaljer'
+            SYMLINKED: Symbollänk
+            THEMES_GRAV_ADMIN: 'Teman — Grav Admin'
+        TIME:
+            DAYS_AGO: 'för {n}d sedan'
+            HOURS_AGO: 'för {n}h sedan'
+            JUST_NOW: 'just nu'
+            MINUTES_AGO: 'för {n}m sedan'
+        TOGGLE_DARK_MODE: 'Växla mörkt läge'
+        TOGGLE_MENU: 'Växla meny'
+        TOOLS:
+            BACKUPS:
+                ACTION: Åtgärd
+                BACKUP_CREATED_SUCCESSFULLY: 'Säkerhetskopia skapad'
+                BACKUP_DATE: Säkerhetskopieringsdatum
+                BACKUP_DELETED: 'Säkerhetskopia borttagen'
+                BACKUP_HISTORY: Säkerhetskopieringshistorik
+                BACKUP_NOW: 'Säkerhetskopiera nu'
+                BACKUP_STATISTICS: Säkerhetskopieringsstatistik
+                CREATING: Skapar...
+                DELETE_BACKUP: 'Ta bort säkerhetskopia'
+                FAILED_TO_CREATE_BACKUP: 'Misslyckades att skapa säkerhetskopia'
+                FAILED_TO_DELETE_BACKUP: 'Misslyckades att ta bort säkerhetskopia'
+                FAILED_TO_LOAD_BACKUPS: 'Misslyckades att ladda säkerhetskopior'
+                LOADING_BACKUPS: 'Laddar säkerhetskopior...'
+                NEWEST_BACKUP: 'Senaste säkerhetskopia'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Ingen säkerhetskopia hittad. Skapa en för att komma igång.'
+                NUMBER_OF_BACKUPS: 'Antal säkerhetskopior'
+                NUMBER_OF_PROFILES: 'Antal profiler'
+                OLDEST_BACKUP: 'Äldsta säkerhetskopia'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Säkerhetskopior, schemaläggare, loggar och diagnostik'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Släpp en .zip-fil här eller klicka för att bläddra'
+                INSTALL_FROM_FILE: 'Installera från fil'
+                INSTALL_FROM_URL: 'Installera från URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Endast .zip-filer stöds'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Paket installerades framgångsrikt'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Stöder Grav plugin och tema-paket'
+            LOGS:
+                100_LINES: '100 rader'
+                200_LINES: '200 rader'
+                25_LINES: '25 rader'
+                50_LINES: '50 rader'
+                ALL_LEVELS: 'Alla nivåer'
+                CRITICAL: Kritisk
+                EMERGENCY: Nödsituation
+                FAILED_TO_LOAD_LOGS: 'Kunde inte ladda loggar'
+                FAILED_TO_LOAD_LOG_FILES: 'Misslyckades att läsa in loggfiler'
+                LOADING_LOGS: 'Läser in loggar...'
+                LOG_FILE: Loggfil
+                MESSAGE: Meddelande
+                NOTICE: Notis
+                REFRESH: Uppdatera
+                SEARCH_MESSAGES: 'Sök meddelanden...'
+                WARNING: Varning
+            REPORTS:
+                CONTENT_FIELD: 'content: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Kunde inte ladda rapporter'
+                LOADING_REPORTS: 'Laddar rapporter...'
+                NO_REPORTS_AVAILABLE: 'Inga rapporter tillgängliga.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Laddar rapportkomponent...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'För att aktivera Scheduler-funktionen måste du lägga till **Grav Scheduler** i systemets crontab-fil för användaren **{user}**. Kör kommandot ovan från terminalen för att lägga till det automatiskt. När det är sparat, uppdatera den här sidan för att se statusen.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Kunde inte ladda schedulerkonfiguration.'
+                FAILED_TO_SAVE: 'Kunde inte spara'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'Schedulern kan använda antingen systemets crontab eller webhook-utlösare för att köra kommandon. Webhooks rekommenderas för molnmiljöer. Endast avancerade användare bör konfigurera anpassade jobb. Felaktig konfigurering eller missbruk kan leda till säkerhetsproblem.'
+                LOADING_SCHEDULER: 'Laddar scheduler...'
+                NOT_ENABLED_FOR_USER: 'Inte aktiverad för användare:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Schedulerkonfiguration sparad'
+                SECURITY_WARNING: 'Endast avancerade användare bör konfigurera anpassade scheduler-jobb. Felaktig konfiguration kan orsaka prestandaproblem eller säkerhetssårbarheter.'
+                WEBHOOK_ALTERNATIVE: 'Alternativt kan du installera pluginen **scheduler-webhook** för att använda webhook-baserad cron-utlösning, vilket rekommenderas för molnmiljöer där systemcrontab-åtkomst inte är tillgänglig.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} ledigt av {total}'
+                DISK_USAGE: Diskutrymme
+                DRIVER: Drivrutin
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Misslyckades att ladda systeminformation'
+                GRAV_VERSION: Grav-version
+                LOADING_SYSTEM_INFO: 'Laddar systeminformation...'
+                MAX_EXECUTION: 'Max exekvering'
+                MAX_POST: 'Max POST'
+                MAX_UPLOAD: 'Max uppladdning'
+                MEMORY_LIMIT: Minnesgräns
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: PHP-version
+            TOOLS_GRAV_ADMIN: 'Verktyg — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Föregående
+            SITE_NOTIFICATION: Webbplatsnotifiering
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Ingen vydata ännu'
+        TOP_PROGRESS_BAR:
+            WORKING: Arbetar
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA inaktiverad'
+            2FA_ENABLED: '2FA aktiverad'
+            2FA_IS_ENABLED: '2FA är aktiverad'
+            2FA_QR_CODE: '2FA QR-kod'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Lägg till ett extra lager av säkerhet genom att kräva en engångskod vid inloggning.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'En engångskod krävs när detta konto loggar in.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'En hemlighet är redan genererad men visas inte av säkerhetsskäl.'
+            CONFIRM_DISABLE: 'Bekräfta inaktivering'
+            ENABLE_2FA: 'Aktivera 2FA'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Ange 6-siffrig kod från din autentiseringsapp'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Ange din nuvarande 6-siffriga kod för att bekräfta'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Misslyckades att generera 2FA-hemlighet'
+            FINISH_ENABLING_2FA: 'Avsluta aktivering av 2FA'
+            FORCE_DISABLE: 'Tvinga inaktivera'
+            FORCE_DISABLE_PROMPT: 'Tvinga inaktivera 2FA för **{username}**? Använd detta endast för återställning av förlorad enhet.'
+            REGENERATE_AND_SHOW_QR: 'Återskapa och visa QR'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Skanna QR-koden med din autentiseringsapp'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Skanna QR-koden med din autentiseringsapp och ange sedan den 6-siffriga koden för att verifiera och aktivera.'
+            SECRET_FOR_MANUAL_ENTRY: 'Hemlighet (för manuell inmatning):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Tvåfaktorsautentisering är inaktiverad'
+            VERIFICATION_CODE: Verifieringskod
+            VERIFY_ENABLE: 'Verifiera och aktivera'
+        UNSAVED_CHANGES: 'Osparade ändringar'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Sparar ändringar…'
+            SAVING_CHANGES_2: 'Sparar ändringar'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Osparade ändringar — klicka på Spara för att bevara dem'
+            YOU_HAVE_UNSAVED_CHANGES: 'Du har osparade ändringar'
+        UPDATE_AVAILABLE_VERSION: 'Uppdatering tillgänglig: v{version}'
+        UPDATE_TO_VERSION: 'Uppdatera till v{version}'
+        UPLOAD: 'Ladda upp'
+        USERNAME: Användarnamn
+        USERS:
+            2_FACTOR_AUTHENTICATION: 2-faktorautentisering
+            ADD_USER: 'Lägg till användare'
+            BACK_TO_USERS: 'Tillbaka till användare'
+            CREATED: Skapad
+            DELETE_USER: 'Ta bort användare'
+            FAILED_TO_LOAD_USERS: 'Misslyckades att ladda användare'
+            FAILED_TO_SAVE_USER: 'Misslyckades att spara användare.'
+            NEW:
+                ACCOUNT: Konto
+                CREATE: Skapa
+                FULL_NAME: 'Fullständigt namn'
+                LOWERCASE_3_64_CHARS: 'gemener, 3-64 tecken'
+                NEW_USER: 'Ny användare'
+                NEW_USER_GRAV_ADMIN: 'Ny användare — Grav Admin'
+                PERMISSIONS: Behörigheter
+            PAGE_TITLE: '{name} — Användare — Grav Admin'
+            PERMISSIONS: Behörigheter
+            SEARCH_USERS: 'Sök användare...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Välj en användare för att visa detaljer'
+            STATUS: Status
+            STATUS_HELP: 'Inaktiverade konton kan inte logga in eller använda API:t.'
+            SUPER_ADMIN: Superadministratör
+            USERS_GRAV_ADMIN: 'Användare — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Användare ändrad på annan plats — spara för att skriva över eller ladda om'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Användare ändrades på annan plats. Vänligen ladda om.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Du kan inte ta bort ditt eget konto.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Avatar borttagen'
+            AVATAR_UPDATED: 'Avatar uppdaterad'
+            FAILED_TO_REMOVE_AVATAR: 'Det gick inte att ta bort avatar'
+            FAILED_TO_UPLOAD_AVATAR: 'Det gick inte att ladda upp avatar'
+            UPLOAD_AVATAR: 'Ladda upp Avatar'
+        VERSION: Version
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Öppna webbplatsens frontend i en ny flik'
+            VIEW_SITE: 'Visa webbplats'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Okänd widget: {id}'

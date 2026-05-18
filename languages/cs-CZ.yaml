@@ -1,0 +1,898 @@
+ICU:
+    ADMIN_NEXT:
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Přístup odepřen'
+        ACTIVATE: Aktivovat
+        ACTIVE: Aktivní
+        ADD_PAGE: 'Přidat stránku'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Přidat plugin'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Selhalo načtení dostupných pluginů z GPM'
+            FILTER_PLUGINS: 'Filtrovat pluginy...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Vyberte plugin pro zobrazení podrobností'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Přidat motiv'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Selhalo načtení dostupných motivů z GPM'
+            FILTER_THEMES: 'Filtrovat motivy...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Vyberte motiv pro zobrazení podrobností'
+        ALLOWED: Povoleno
+        ALL_CHANGES_SAVED: 'Všechny změny uloženy'
+        API_KEYS_FIELD:
+            API_KEYS: 'API klíče'
+            API_KEY_GENERATED: 'API klíč byl vygenerován'
+            BLANK_NEVER: '(prázdné = nikdy)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Zkopírujte tento klíč nyní — nebude zobrazen znovu.'
+            CREATED: Vytvořeno
+            EXPIRES: 'Vypršení platnosti'
+            EXPIRY: Vypršení
+            E_G_MY_CLI_TOOL: 'např. Můj nástroj CLI'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Selhalo kopírování do schránky'
+            FAILED_TO_GENERATE_API_KEY: 'Selhalo generování API klíče'
+            FAILED_TO_LOAD_API_KEYS: 'Selhalo načtení API klíčů'
+            FAILED_TO_REVOKE_API_KEY: 'Nepodařilo se zrušit klíč API'
+            GENERATE_KEY: 'Vytvořit klíč'
+            GENERATING: Generování...
+            KEY_NAME: 'Název klíče'
+            KEY_PREFIX: 'Prefix klíče'
+            LAST_USED: 'Naposledy použito'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Zatím nebyly vygenerovány žádné klíče API.'
+            PLEASE_ENTER_A_KEY_NAME: 'Prosím zadejte název klíče'
+            REVOKE_API_KEY: 'Zrušit klíč API'
+            REVOKE_KEY: 'Zrušit klíč'
+        APP:
+            CREATING_BACKUP: 'Vytváření zálohy…'
+            DASHBOARD_GRAV_ADMIN: 'Dashboard — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Obnovit
+            WELCOME_BACK: 'Vítejte zpět, {name}'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Zavřít nabídku'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Jste si jisti?'
+        AUTHOR: Autor
+        BACKUPS_WIDGET:
+            BACKING_UP: Zálohování…
+            BACKUP_NOW: 'Zálohovat nyní'
+            CREATE_A_NEW_BACKUP_NOW: 'Vytvořit novou zálohu nyní'
+            DOWNLOAD_FILE: 'Stáhnout {filename}'
+            NO_BACKUPS_FOUND: 'Nebyly nalezeny žádné zálohy'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 'Možnosti mezipaměti'
+            CLEAR_CACHE: 'Vymazat mezipaměť'
+            FAILED_TO_CLEAR_CACHE: 'Vymazání mezipaměti selhalo'
+        CANCEL: Zrušit
+        CLEAR_SEARCH: 'Vymazat hledání'
+        CLOSE: Zavřít
+        COLLAPSE_ALL: 'Sbalit vše'
+        COLLAPSE_SIDEBAR: 'Sbalit postranní panel'
+        COMPATIBILITY: Kompatibilita
+        CONFIG:
+            CLEAR_FILTER: 'Vymazat filtr'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Konfigurace se změnila jinde — uložit k přepsání nebo znovu načíst'
+            CONFIGURATION_RELOADED: 'Konfigurace byla znovu načtena'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Konfigurace byla úspěšně uložena'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurace byla změněna jinde. Znovu načtěte, abyste viděli nejnovější změny.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Uložení konfigurace selhalo'
+            FILTER_FIELDS: 'Filtrovat pole...'
+            LOADING_CONFIGURATION: 'Načítání konfigurace...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Pro tuto oblast není k dispozici žádná konfiguračníšablona.'
+            NO_MATCHES_FOUND: 'Nenalezeny žádné výsledky'
+            PAGE_TITLE: 'Konfigurace: {scope} — Grav Admin'
+            RELOAD: 'Znovu načíst'
+            TITLE: Konfigurace
+            TITLE_SCROLLED: 'Konfigurace: {scope}'
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Prostředí
+            EXPORT_YAML: 'Exportovat YAML'
+            GRAV_VERSION: 'Verze Gravu'
+            LOADING_SYSTEM_INFORMATION: 'Načítání informací o systému...'
+            PHP_CONFIGURATION: 'Konfigurace PHP'
+            PHP_EXTENSIONS: 'Rozšíření PHP'
+            PHP_VERSION: 'Verze PHP'
+            SERVER: Server
+            SERVER_SOFTWARE: 'Serverový software'
+        CONFIRM_ACTION: 'Potvrdit akci'
+        CONFIRM_DELETE: 'Smazat „{title}" na {route}?'
+        COPY_BUTTON:
+            COPIED: Zkopírováno!
+        CUSTOM: Vlastní
+        DASHBOARD:
+            ADD_WIDGET: 'Přidat widget'
+            CUSTOMIZE: Přizpůsobit
+            CUSTOMIZE_TITLE: 'Přizpůsobit dashboard'
+            EDIT_HINT: 'Režim přizpůsobení — přetahujte, měňte velikost widgetů, skrývejte je a pak uložte.'
+            EMPTY: 'Váš dashboard je prázdný'
+            EMPTY_HINT: 'Kliknutím na ikonu tužky výše přidáte widgety'
+            HIDE_WIDGET: 'Skrýt widget'
+            LAYOUT_RESET: 'Rozložení dashboardu obnoveno na výchozí'
+            LAYOUT_SAVED: 'Rozložení dashboardu uloženo'
+            PICKER_EMPTY: 'Všechny dostupné widgety jsou již na vašem dashboardu.'
+            PICKER_SUBTITLE: 'Vyberte widget, který chcete vrátit na váš dashboard.'
+            PICKER_TITLE: 'Přidat widget'
+            PRESETS: Předvolby
+            PRESET_COMPACT: Kompaktní
+            PRESET_COMPACT_DESC: 'Všechny widgety v nejmenší velikosti, kterou každý podporuje.'
+            PRESET_DEFAULT: Výchozí
+            PRESET_DEFAULT_DESC: 'Rozložení doporučené serverem – vymaže vaše přizpůsobení.'
+            PRESET_MINIMAL: Minimální
+            PRESET_MINIMAL_DESC: 'Pouze statistiky a poslední stránky.'
+            RESET_LAYOUT: 'Obnovit moje rozložení'
+            SAVE_SITE_DEFAULT: 'Uložit jako výchozí pro web'
+            SITE_LAYOUT_SAVED: 'Výchozí nastavení webu uloženo'
+            TITLE: Přehled
+            WIDGETS:
+                BACKUPS: Zálohování
+                NEWS_FEED: Zpravodaj
+                NOTIFICATIONS: Oznámení
+                POPULARITY: 'Zobrazení stránky'
+                RECENT_PAGES: 'Poslední stránky'
+                STATS: 'Statistiky webu'
+                SYSTEM_HEALTH: 'Stav systému'
+                TOP_PAGES: 'Nejlepší stránky'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Přetáhněte pro změnu pořadí'
+        DELETE: Smazat
+        DENIED: Odepřeno
+        DEPENDENCIES: Závislosti
+        DISABLE: Zakázat
+        DISABLED: Zakázáno
+        DISMISS: Zavřít
+        DONE: Hotovo
+        DOWNLOAD: Stáhnout
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: 'Předvolby rozvržení'
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Uložit jako výchozí nastavení webu pro všechny uživatele'
+        ENABLED: Povoleno
+        ENVIRONMENT_SWITCHER:
+            CREATE: Vytvořit
+            CREATES_PATH: 'Vytvoří user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Vytvořit prostředí…'
+            CREATE_ENV_NAMED: 'Vytvořit prostředí "{name}"…'
+            DEFAULT: Výchozí
+            ENV_CREATED: "Prostředí '{name}' bylo vytvořeno a vybráno"
+            FAILED_TO_CREATE: 'Nepodařilo se vytvořit prostředí'
+            HAS_OVERRIDES: 'má přepsání'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'již neexistuje. Vyberte další.'
+            SAVE_CONFIG_TO: 'Uložit konfiguraci do'
+            SAVING_TO_DEFAULT: 'Ukládání na výchozí umístění (user/config)'
+            SAVING_TO_ENV: 'Ukládání do prostředí: {name}'
+            SELECTED_ENV: 'Vybrané prostředí'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Vyberte, kam se budou uklá­dat zápisy konfigurace'
+        EXPAND_ALL: 'Rozbalit vše'
+        EXPAND_SIDEBAR: 'Rozbalit postranní panel'
+        EXPERT_MODE: 'Režim expert'
+        FIELDS:
+            ADD_ENTRY: 'Přidat položku'
+            CLEAR_DATE: 'Vymazat datum'
+            CRON:
+                AT_MINUTE: 'V minutě'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min hr dom mon dow'
+                ON_DAY: 'Na den'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Aktivní spouštěče'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Selhalo načtení stavu plánovače'
+                FAILED_TO_RUN_SCHEDULER: 'Selhalo spuštění plánovače'
+                HEALTH_STATUS: 'Stav zdraví'
+                JOB_ID: 'ID úlohy'
+                LAST_RUN: 'Poslední spuštění'
+                LOADING_SCHEDULER_STATUS: 'Načítání stavu plánovače...'
+                NOT_CONFIGURED: NENAKONFIGUROVÁNO
+                NOT_ENABLED: NEPOVOLENO
+                NOT_INSTALLED: NENAINSTALOVÁNO
+                NO_SCHEDULED_JOBS_REGISTERED: 'Nejsou registrovány žádné naplánované úlohy.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Žádné aktivní spouštěče! Povolte webhooky nebo nakonfigurujte cron.'
+                QUEUE_SIZE: 'Velikost fronty:'
+                RUNNING: Spouštění...
+                RUN_ALL: 'Spustit vše'
+                SCHEDULED_JOBS: 'Naplánované úlohy'
+                SCHEDULER_RUN_COMPLETED: 'Spuštění plánovače bylo dokončeno'
+                SCHEDULER_STATUS: 'Stav plánovače'
+                STATUS: 'Stav:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Načítání vlastního pole...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Formátovací řetězec:'
+                SELECT_FORMAT: '— Vybrat formát —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Žádné vyhovující soubory'
+                NO_MEDIA_UPLOADED: 'Žádné mediální soubory dosud nahráno'
+            FILE_PICKER_SOON: 'Výběr souboru — již brzy'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Žádné ikony nenalezeny'
+                SEARCH_ICONS: 'Hledat ikony...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Zobrazujem prvních 200 výsledků — zúžit zadáním'
+            NO_TAXONOMY_TYPES: 'Žádné typy taxonomie nejsou nakonfigurovány'
+            PAGES:
+                FILTER_PAGES: 'Filtrovat stránky...'
+                ROOT: '/ (kořen)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Kontrola stránky...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Média stránky nejsou dostupná'
+            PERMISSIONS:
+                NOT_SET: Nenastaveno
+                NO_PERMISSIONS_CONFIGURED: 'Žádná oprávnění nakonfigurována'
+            REGENERATE_SLUG: 'Automaticky regenerovat z názvu stránky'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Žádná pole se neshodují s vaším filtrem'
+            THEME_SELECT:
+                LOADING_THEMES: 'Načítání motivů...'
+                SELECT_THEME: '— Vybrat motiv —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Zkontrolovat stav zdraví:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Vynutit spuštění konkrétní úlohy (ignoruje plán):'
+                GITHUB_ACTIONS_EXAMPLE: 'Příklad GitHub Actions:'
+                HOW_TO_USE_WEBHOOKS: 'Jak používat webhooki:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Spustit všechny splatné úlohy (respektuje plán):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Kontrola stavu pluginu webhooku...'
+                INSTALL_PLUGIN_NOW: 'Nainstalovat plugin nyní'
+                OR_RUN: 'nebo spusťte:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'plugin je nainstalován a povolen.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin je nainstalován. Povolte níže Webhook Triggers pro aktivaci.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin je vyžadován pro funkcionalitu webhoku.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Webhook plugin vyžadován'
+        FLEX_OBJECTS:
+            ACTIONS: Akce
+            BACK_TO_LIST: 'Zpět na seznam'
+            DELETE_OBJECT: 'Smazat objekt'
+            EXPORT: Exportovat
+            EXPORT_FAILED: 'Export se nezdařil'
+            FAILED_TO_DELETE_OBJECT: 'Nepodařilo se odstranit objekt'
+            FAILED_TO_LOAD_DIRECTORY: 'Nepodařilo se načíst adresář'
+            FAILED_TO_LOAD_OBJECTS: 'Nepodařilo se načíst objekty'
+            FAILED_TO_SAVE: 'Nepodařilo se uložit.'
+            NEW:
+                BACK_TO_LIST: 'Zpět na seznam'
+                CREATE: Vytvořit
+                OBJECT_CREATED: 'Objekt vytvořen'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Objekt byl změněn jinde — uložte pro přepsání nebo znovu načtěte'
+            OBJECT_DELETED: 'Objekt smazán'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objekt byl změněn jinde. Prosím načtěte znovu.'
+            PREVIOUS: Předchozí
+            SEARCH: Hledat...
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Zavřít nabídku widgetů'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Zpět na přihlášení'
+            CHECK_INBOX: 'Zkontrolujte svou poštu pro odkaz na resetování.'
+            EMAIL_ADDRESS: 'E-mailová adresa'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Zadejte platnou e-mailovou adresu'
+            FORGOT_PASSWORD: 'Zapomenuté heslo'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Zapomenuté heslo — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Pokud účet existuje pro daný e-mail, byl odeslán odkaz na resetování.'
+            SENDING: Odesílám...
+            SEND_RESET_LINK: 'Odeslat odkaz na resetování'
+            SUBTITLE: 'Zadejte svůj e-mail a my vám pošleme odkaz na resetování.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Nelze se připojit k serveru.'
+        HOMEPAGE: 'Domovská stránka'
+        INFO: Informace
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Žádné ikony nenalezeny'
+            SEARCH_ICONS: 'Hledat ikony...'
+            TYPE_TO_NARROW_RESULTS: 'Zadejte pro zúžení výsledků'
+        INSTALL: Instalovat
+        INSTALLING: Instaluji...
+        KEYWORDS: 'Klíčová slova'
+        LANG:
+            CREATE_TRANSLATION: 'Vytvořit překlad {language}'
+            CURRENT: aktuální
+            DEFAULT: výchozí
+            DELETE_TRANSLATION: 'Smazat překlad {language}'
+            FALLBACK_NOTICE: 'Žádný překlad {language}. Zobrazuji výchozí obsah.'
+            NOT_TRANSLATED: Nepřeloženo
+            SAVE_AS: 'Uložit jako {language}'
+            SWITCH_LANGUAGE: 'Přepnout jazyk obsahu'
+            SYNC_FROM: 'Obnovit z {language}'
+            TRANSLATED: Přeloženo
+            TRANSLATIONS: Překlady
+            TRANSLATION_CREATED: 'Překlad {language} vytvořen'
+        LOADING: Načítání...
+        LOGIN:
+            AUTHENTICATION_CODE: 'Ověřovací kód'
+            AUTH_CODE_PROMPT: 'Otevřete aplikaci autentizátoru a zadejte 6místný kód pro **{username}**.'
+            BACK_TO_SIGN_IN: 'Zpět na přihlášení'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Zadejte platný 6místný kód'
+            ENVIRONMENT: Prostředí
+            FORGOT_PASSWORD: 'Zapomněli jste heslo?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Neplatné uživatelské jméno nebo heslo'
+            LOGIN_GRAV_ADMIN: 'Přihlášení — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'Heslo je povinné'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Vyplňte prosím všechna povinná pole'
+            POWERED_BY_GRAV_CMS: 'Provozováno Grav CMS'
+            SERVER_CONFIGURATION: 'Konfigurace serveru'
+            SERVER_URL: 'URL serveru'
+            SIGNED_IN_SUCCESSFULLY: 'Úspěšně přihlášeno'
+            SIGNING_IN: Přihlašování...
+            SIGN_IN: 'Přihlásit se'
+            SUBTITLE: 'Přihlaste se a spravujte svůj web'
+            TWOFA_SUBTITLE: 'Pokračujte zadáním ověřovacího kódu'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Nelze se připojit k serveru. Zkontrolujte adresu serveru a zkuste znovu.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Nelze ověřit kód. Zkontrolujte připojení a zkuste znovu.'
+            USERNAME_IS_REQUIRED: 'Uživatelské jméno je povinné'
+            VERIFY: Ověřit
+            VERIFYING: Ověřování...
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Nic k náhledu'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Správa mediálních souborů v celém webu'
+            MEDIA_GRAV_ADMIN: 'Média — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Rozměry
+                FAILED_TO_COPY: 'Kopírování se nezdařilo'
+                FILE_RENAMED: 'Soubor přejmenován'
+                NEXT_FILE: 'Další soubor'
+                PREVIOUS_FILE: 'Předchozí soubor'
+                RENAME: Přejmenovat
+            MEDIA_MANAGER:
+                CREATE: Vytvořit
+                FILES_DELETED: 'Soubory smazány'
+                FOLDER_NAME: 'Název složky'
+                NEW_FOLDER: 'Nová složka'
+                UPLOAD_FILES: 'Nahrát soubory'
+            MEDIA_TOOLBAR:
+                FOLDER: Složka
+                GRID_VIEW: 'Zobrazení mřížky'
+                LIST_VIEW: 'Zobrazení seznamu'
+                NEW_FOLDER: 'Nová složka'
+                SEARCH_MEDIA: 'Vyhledávání médií...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Přetáhnout do editoru'
+                PAGE_MEDIA: 'Média stránky'
+        NAV:
+            CONFIGURATION: Konfigurace
+            DASHBOARD: Přehled
+            MEDIA: Média
+            PAGES: Stránky
+            PLUGINS: 'Moduly plug-in'
+            SETTINGS: Nastavení
+            SYSTEM: Systém
+            THEMES: Motivy
+            TOOLS: Nástroje
+            USERS: Uživatelé
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Žádné položky informačního kanálu'
+        NORMAL_MODE: 'Normální režim'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Žádná oznámení'
+        NO_CHANGES: 'Žádné změny k uložení'
+        PAGES:
+            ADD_FOLDER: 'Přidat složku'
+            ADD_MENU: 'Přidat nabídku'
+            ADD_MODULE: 'Přidat modul'
+            ADD_PAGE: 'Přidat stránku'
+            DELETED: 'Smazáno 「{title}」'
+            DELETE_FAILED: 'Nepodařilo se smazat stránku'
+            DELETE_PAGE: 'Smazat stránku'
+            DRAFT: Koncept
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Připojování k relaci spolupráce…'
+                COPY_PAGE: 'Zkopírovat stránku'
+                CREATE_LANGUAGE: 'Vytvořit {language}'
+                DELETE_PAGE: 'Smazat stránku'
+                EDIT_PAGE: 'Upravit stránku'
+                FAILED_TO_CREATE_TRANSLATION: 'Chyba při vytváření překladu'
+                FAILED_TO_SYNC_TRANSLATION: 'Chyba při synchronizaci překladu'
+                FALLBACK: (záloha)
+                FALLBACK_NOTICE: 'Překlad {active} neexistuje. Zobrazen je záložní překlad {effective}. Pokud chcete vytvořit překlad, který si budete moci upravit, zvolte „Uložit jako {active}".'
+                FOLDER_NAME: 'Název složky'
+                INVALID_YAML_FRONTMATTER: 'Neplatný YAML frontmatter'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Neplatný YAML frontmatter — opravte syntaxi před uložením'
+                LOADING_PAGE: 'Načítání stránky…'
+                NOT_TRANSLATED: 'Nepřeloženo:'
+                OPEN_IN_NEW_TAB: 'Otevřít na novém panelu'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Stránka se změnila jinde — uložte, abyste přepsali, nebo znovu načtěte'
+                PAGE_COPIED: 'Stránka zkopírována'
+                PAGE_DELETED: 'Stránka smazána'
+                PAGE_PREVIEW: 'Náhled stránky'
+                PAGE_SAVED_AND_MOVED: 'Stránka uložena a přesunuta'
+                PREVIEW_PAGE: 'Náhled stránky'
+                PUBLISH_ON: 'Publikovat dne'
+                RESET_CONTENT_FROM: 'Obnovit obsah z:'
+                RESET_FROM: 'Obnovit z {language}'
+                RESET_TRANSLATION: 'Obnovit překlad'
+                SAVE_AS_LANGUAGE: 'Uložit jako {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'Název složky na disku (URL slug)'
+                TOGGLE_PAGE_NAVIGATOR: 'Přepnout navigátor stránky'
+                UNPUBLISH_ON: 'Zrušit publikování v'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Napište sem svůj obsah v markdownu...'
+            EDIT_PAGE: 'Upravit stránku'
+            FRONTMATTER: Předmluva
+            HEADER_MODIFIED: Změněno
+            HEADER_PARENT: Nadřazená
+            HEADER_STATUS: Stav
+            HEADER_TEMPLATE: Šablona
+            HEADER_TITLE: Název
+            INFO_DATE: Datum
+            INFO_LANGUAGE: Jazyk
+            INFO_MODIFIED: Změněno
+            INFO_ORDER: Pořadí
+            INFO_PUBLISHED: Publikováno
+            INFO_PUBLISH_ON: 'Publikovat v'
+            INFO_ROUTABLE: Směrovatelné
+            INFO_ROUTE: Trasa
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Šablona
+            INFO_UNPUBLISH_ON: 'Zrušit publikování v'
+            INFO_VISIBLE: 'Viditelné v navigaci'
+            LOADING: 'Načítání stránek...'
+            MODE_EXPERT: Pokročilé
+            MODE_NORMAL: Normální
+            MOVED: 'Přesunuto „{title}"'
+            MOVE_FAILED: 'Nepodařilo se přesunout stránku'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Přidat stránku — Grav Admin'
+                CONTINUE: Pokračovat
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Určuje, zda se tato stránka zobrazuje v navigačních nabídkách'
+                FAILED_TO_CREATE: 'Nepodařilo se vytvořit stránku'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Nepodařilo se načíst šablony stránek'
+                FILTER_PAGES: 'Filtrovat stránky...'
+                FOLDER_CREATED: 'Složka „{title}" vytvořena'
+                FOLDER_DETAILS: 'Podrobnosti složky'
+                FOLDER_NAME: 'Název složky'
+                LOADING_TEMPLATES: 'Načítání šablon...'
+                MODULE_CREATED: 'Modul „{title}" vytvořen'
+                MY_NEW_PAGE: 'Moje nová stránka'
+                ORDERING: Řazení
+                ORDERING_HELP_FOLDER: 'Přidá číselnou předponu, která určuje pozici této složky mezi jejími sestrami.'
+                ORDERING_HELP_MODULE: 'Přidá číselnou předponu, která určuje pozici tohoto modulu v jeho modulárním nadřazeném prvku.'
+                ORDERING_NONE: Žádný
+                PAGE_CREATED: 'Stránka „{title}" vytvořena'
+                PAGE_DETAILS: 'Podrobnosti stránky'
+                PAGE_TEMPLATE: 'Šablona stránky'
+                PAGE_TITLE: 'Název stránky'
+                PARENT_PAGE: 'Nadřazená stránka'
+                ROOT: '&lt;root&gt; /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'Název složky bezpečný pro URL adresy pro tuto stránku'
+                VISIBLE: Viditelný
+            NO_PAGES: 'Žádné stránky nenalezeny'
+            NO_SEARCH_RESULTS: 'Žádné stránky neodpovídají vašemu vyhledávání'
+            PAGES_GRAV_ADMIN: 'Stránky — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Koncept (neveřejná)'
+                FOLDER_ORDER: 'Pořadí složky'
+                HAS_CHILDREN: 'Má podstránky'
+                SUMMARY: Souhrn
+                VISIBLE: Viditelné
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Reorganizace stránek selhala'
+                NO_PAGES_MATCH: 'Žádné stránky neodpovídají „{query}"'
+                SEARCHING: Hledání…
+            PAGE_COUNT: '{n, plural, one{# stránka} other{# stránek}}'
+            PAGE_INFO: 'Informace o stránce'
+            PUBLISHED: Publikováno
+            RAW_HEADER: 'Surová hlavička stránky (JSON)'
+            REORDERED: 'Změřeno pořadí „{title}"'
+            REORDER_FAILED: 'Změna pořadí se nezdařila'
+            REORDER_MOVE: 'Změna pořadí / Přesun'
+            REORDER_SAME_PARENT: 'Lze měnit pořadí pouze stránek pod stejným nadřazeným prvkem. Pro přesuny mezi nadřazenými prvky použijte zobrazení stromu.'
+            SAVED: 'Stránka byla úspěšně uložena'
+            SAVE_FAILED: 'Uložení stránky selhalo'
+            SEARCH_PLACEHOLDER: 'Hledat stránky…'
+            SORT_DATE_NEWEST: 'Datum (nejnovější)'
+            SORT_NEWEST: Nejnovější
+            SORT_OLDEST: Nejstarší
+            SORT_ORDER: Řazení
+            SORT_TITLE_AZ: 'Název A-Z'
+            SORT_TITLE_ZA: 'Název Z-A'
+            SUBTITLE: 'Správa obsahu a struktury vašeho webu'
+            TITLE: Stránky
+            VIEW_COLUMNS: Sloupce
+            VIEW_LIST: Seznam
+            VIEW_TREE: Strom
+        PASSWORD: Heslo
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 'Požadavky na heslo'
+            PASSWORD_STRENGTH: 'Síla hesla'
+            REQUIREMENTS: Požadavky
+        PERMISSIONS_FIELD:
+            FAILED_TO_LOAD_PERMISSIONS: 'Selhání načtení oprávnění'
+            NOT_SET: Nenastaveno
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Zpět na Řídicí panel'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Žádný obsah není dostupný pro tuto stránku modulu plug-in.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Zpět na Moduly plug-in'
+            CHANGELOG: 'Záznam změn'
+            CHECK_UPDATES: 'Kontrola aktualizací'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurace byla změněna jinde. Prosím obnovte.'
+            CONFIGURE: Konfigurovat
+            ENABLE_PLUGIN: 'Povolit modul plug-in'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Selhání kontroly aktualizací'
+            FAILED_TO_LOAD_PLUGINS: 'Selhání načtení modulů plug-in'
+            FAILED_TO_SAVE_CONFIGURATION: 'Nepovedlo se uložit konfiguraci.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Nejsou k dispozici žádné možnosti konfigurace pro tento plugin.'
+            PAGE_TITLE: '{name} — Pluginy — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Pluginy — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Plugin byl změněn jinde — uložte, chcete-li přepsat, nebo znovu načtěte'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'Plugin musí být povolen, aby bylo možné jej konfigurovat.'
+            REMOVE_PLUGIN: 'Odebrat plugin'
+            SEARCH_PLUGINS: 'Hledat pluginy...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Vyberte plugin pro zobrazení podrobností'
+            SYMLINKED: Symlink
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Načítání stránky pluginu...'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Widgetu se nepodařilo načíst'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Posledních 14 dní'
+            THIS_MONTH: 'Tento měsíc'
+            THIS_WEEK: 'Tento týden'
+        PREMIUM: Premium
+        PREVIEW: Náhled
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Prosím, znovu zadejte své heslo, abyste mohli pokračovat. Vaše práce byla zachována.'
+            SESSION_EXPIRED: 'Relace vypršela'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Zobrazit vše'
+        REMOVE: Odebrat
+        RESET:
+            BACK_TO_SIGN_IN: 'Zpět na přihlášení'
+            CONFIRM_PASSWORD: 'Potvrďte heslo'
+            INVALID_LINK: 'Neplatný odkaz pro resetování.'
+            NEW_PASSWORD_FOR: 'Zvolte nové heslo pro **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Hesla se neshodují'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Heslo bylo úspěšně obnoveno. Prosím přihlaste se.'
+            RESETTING: Obnovuji...
+            RESET_PASSWORD: 'Obnovit heslo'
+            RESET_PASSWORD_GRAV_ADMIN: 'Obnovit heslo — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'Tento odkaz pro obnovení hesla postrádá požadované parametry. Požádejte o nový na stránce zapomenutého hesla.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Nelze se připojit k serveru.'
+        SAVE: Uložit
+        SAVING: Ukládám...
+        SEARCH: Hledat
+        SETTINGS:
+            1_SECOND: '1 sekunda'
+            2_SECONDS: '2 sekundy'
+            ACCENT_COLOR: 'Barva zdůraznění'
+            ADD_LINK: 'Přidat odkaz'
+            ADMIN_INTERFACE_LANGUAGE: 'Jazyk rozhraní administrace'
+            ADMIN_LANGUAGE: 'Jazyk administrace'
+            ADMIN_LANGUAGE_DESC: 'Jazyk pro štítky, nabídky a zprávy ({count} řetězců nahráno)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Nastavení a vzhled administrace'
+            APPEARANCE: Vzhled
+            AUTHENTICATED_AS: 'Přihlášen jako'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Automaticky uložit při opuštění pole'
+            AUTO_SAVE: 'Automatické ukládání'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Chování automatického ukládání a zpět pro editory formulářů'
+            BRANDING: Branding
+            BRANDING_DESC: 'Logo a text značky zobrazované všude v administraci.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Vyberte mezi světlým a tmavým vzhledem'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Vyberte způsob zobrazení loga'
+            COLLAB_DESCRIPTION: 'Živá víceživatelská úprava s přítomností. Vyžaduje plugin `sync` na serveru. Experimentální.'
+            COLOR_MODE: 'Režim barev'
+            CONNECTION: Připojení
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Přizpůsobte logo zobrazované v postranním panelu a na přihlašovací stránce'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Přizpůsobte si vzhled a chování správy'
+            CUSTOM_IMAGE: 'Vlastní obrázek'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Vlastní zkratky zobrazené v horní nabídce'
+            CUSTOM_TEXT: 'Vlastní text'
+            DARK: Tmavý
+            DARK_LOGO: 'Tmavé logo'
+            DARK_LOGO_REMOVED: 'Tmavé logo odebráno.'
+            DARK_LOGO_UPLOADED: 'Tmavé logo nahráno.'
+            DARK_MODE_LOGO: 'Logo tmavého režimu'
+            DEFAULT_APPEARANCE: 'Výchozí vzhled'
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Výchozí barevný vzhled pro nové uživatele.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Výchozí hustota editoru formuláře.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Výchozí jazyk rozhraní pro nové uživatele.'
+            DEFAULT_LANGUAGE: 'Výchozí jazyk'
+            DEFAULT_PAGES: 'Výchozí stránky'
+            DEFAULT_PRIMARY_COLOR_DESC: 'Výchozí primární barva pro tlačítka, odkazy a zvýraznění.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Výchozí nastavení pro prohlížeč stránek'
+            DEFAULT_TEXT_SIZE_DESC: 'Výchozí velikost textu pro administrativní rozhraní.'
+            DEFAULT_TYPEFACE_DESC: 'Výchozí druh písma pro administrativní rozhraní.'
+            DEFAULT_VIEW: 'Výchozí zobrazení'
+            DEUTSCH: Deutsch
+            EDITING: Úprava
+            EDITOR_HEADING: Editor
+            EDITOR_MODE: 'Režim editoru'
+            ENGLISH: English
+            ENVIRONMENT: Prostředí
+            ESPA_OL: Español
+            EXTERNAL: Externí
+            FAILED_TO_REMOVE_LOGO: 'Nepodařilo se odstranit logo.'
+            FAILED_TO_RESET_PREFERENCES: 'Nepodařilo se obnovit předvolby.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Nepodařilo se uložit režim loga.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Nepodařilo se uložit text loga.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Nepodařilo se uložit výchozí nastavení webu.'
+            FOLLOW_OS: 'Následovat OS'
+            FONT: Písmo
+            FONT_SIZE: 'Velikost písma'
+            FONT_SIZE_LARGE: Velké
+            FONT_SIZE_NORMAL: Normální
+            FONT_SIZE_SMALL: Malé
+            FONT_SIZE_XLARGE: 'Velmi velké'
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Logo Grav'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Seskupit rychlé změny polí do jednoho kroku zpět'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Jak jsou stránky ve výchozím nastavení zobrazeny'
+            HUE: 'Barevný tón'
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Počet položek na stránku'
+            LANGUAGE_CHANGED: 'Jazyk změněn na {language}'
+            LIGHT: Světlý
+            LIGHT_LOGO: 'Světlé logo'
+            LIGHT_LOGO_REMOVED: 'Světlé logo odebráno.'
+            LIGHT_LOGO_UPLOADED: 'Světlé logo nahrány.'
+            LIGHT_MODE_LOGO: 'Logo světlého režimu'
+            LOGO_TEXT: 'Text loga'
+            LOGO_TYPE: 'Typ loga'
+            LOGO_UPLOAD_FAILED: 'Nahrání loga selhalo.'
+            MENUBAR_LINKS: 'Odkazy v menubar'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Žádné (1 pole = 1 vrácení zpět)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Počet stránek zobrazených v zobrazení seznamu'
+            'OFF': Vypnuto
+            'ON': Zapnuto
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'modul na serveru. Experimentální.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Nastavení obnoveno. Načtěte znovu, aby se změny projevily.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Primární barva použitá pro tlačítka, odkazy a zvýraznění'
+            REAL_TIME_COLLABORATION: 'Spolupráce v reálném čase'
+            REMOVE_LINK: 'Odebrat odkaz'
+            RESET: Obnovit
+            RESET_ALL_PREFERENCES: 'Resetovat všechny předvolby'
+            RESET_PREFERENCES: 'Resetovat předvolby'
+            RESET_PREFERENCES_MSG: 'Chcete odstranit všechny své osobní nastavení a obnovit výchozí nastavení webu?'
+            RESET_TO_SITE_DEFAULTS: 'Resetovat své předvolby na výchozí nastavení webu'
+            REVERT_CHANGES: 'Vrátit změny'
+            SATURATION: Sytost
+            SAVED_AUTOMATICALLY: 'Uloženo automaticky'
+            SAVE_SITE_DEFAULTS: 'Uložit výchozí nastavení webu'
+            SERVER_CONNECTION_DETAILS: 'Údaje o připojení serveru'
+            SERVER_URL: 'URL adresa serveru'
+            SETTINGS_GRAV_ADMIN: 'Nastavení — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Zobrazit tlačítko zpět na panelu nástrojů editoru'
+            SITE_DEFAULTS: 'Výchozí nastavení webu'
+            SITE_DEFAULTS_DESCRIPTION: 'Níže uvedená nastavení se vztahují na každého správce webu jako základnu. Položky Tier B (vzhled, stránky, jazyk, editor) lze přepsat v předvolbách jednotlivých uživatelů výše. Položky Tier A (úpravy, nabídka) jsou celowebu a nelze je přepsat.'
+            SITE_DEFAULTS_SAVED: 'Výchozí nastavení webu uloženo. Všichni uživatelé je budou vidět při příštím načtení.'
+            SITE_SETTINGS_DESC: 'Výchozí předvolby pro nové uživatele a chování celowebu. Změny se projeví při příštím načtení pro ovlivněné uživatele.'
+            SITE_SETTINGS_HEADING: 'Nastavení webu'
+            SITE_WIDE_ONLY: 'Pouze celowebu'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Velikost textu používaná v celém administračním rozhraní'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'První písmeno se stane ikonou'
+            TOOLBAR_UNDO_BUTTON: 'Tlačítko zpět na panelu nástrojů'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Typ písma používaný v celém administračním rozhraní'
+            UNDO_BATCH_WINDOW: 'Okno dávky zpět'
+            USED_ON_DARK_BACKGROUNDS: 'Používá se na tmavých pozadích'
+            USED_ON_LIGHT_BACKGROUNDS: 'Používá se na světlých pozadích'
+            USERS_MAY_OVERRIDE: 'Uživatelé mohou přepsat'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
+            CHECKING_SERVER: 'Kontrola serveru…'
+            CONFIRM_PASSWORD: 'Potvrdit heslo'
+            CREATE_ADMINISTRATOR: 'Vytvořit správce'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Vytvořte si účet správce, abyste mohli začít'
+            CREATING_ACCOUNT: 'Vytváření účtu...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Zadejte platnou e-mailovou adresu'
+            ENVIRONMENT: Prostředí
+            FULL_NAME: 'Celé jméno'
+            OPTIONAL: (volitelné)
+            PASSWORDS_DO_NOT_MATCH: 'Hesla se neshodují'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Opravte výše uvedené chyby a zkuste znovu'
+            POWERED_BY_GRAV_CMS: 'Poháněno Grav CMS'
+            SERVER_CONFIGURATION: 'Konfigurace serveru'
+            SERVER_URL: 'URL serveru'
+            SETUP_GRAV_ADMIN: 'Nastavení — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'Nastavení již bylo dokončeno. Prosím přihlaste se.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Nelze se připojit k serveru. Zkontrolujte adresu URL vašeho serveru a zkuste znovu.'
+            WELCOME_TO_GRAV: 'Vítejte v Gravu'
+        SIGN_OUT: 'Odhlásit se'
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} aktivní)'
+            ACTIVE_THEME: 'Aktivní motiv'
+            UPDATE_COUNT: '{n, plural, one{# aktualizace} other{# aktualizací}}'
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'vestavěný editor markdown'
+                LOCKED: 'Pouze čtení — uživatel {owner} upravuje s pomocí **{editor}**. Smíšené typy editorů nelze editovat společně; [změňte své předvolby editoru]({href}) pro živou spolupráci.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'změňte své předvolby editoru'
+                TO_COLLABORATE_LIVE: 'pro živou spolupráci.'
+        SYSTEM:
+            COMING_SOON: 'Již brzy'
+            SYSTEM_GRAV_ADMIN: 'Systém — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} volného místa'
+            BYTES_USED: '{size} použito'
+            CACHE: Mezipaměť
+            DISK: Disk
+            EVERYTHING_UP_TO_DATE: 'Vše je aktuální'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav je nainstalován přes symlink — aktualizujte ručně.'
+            GRAV_UPDATE_AVAILABLE: 'Dostupná aktualizace Grabu'
+            MORE_COUNT: '+ {n} další…'
+            PACKAGES_OUTDATED: '{n, plural, one{# balíček zastaralý} other{# balíčky zastaralé}}'
+            PERCENT_USED: '{percent}% použito'
+            SERVER: Server
+            UPDATES: Aktualizace
+            UPDATES_AVAILABLE_COUNT: '{n} dostupných'
+            UPDATE_ALL: 'Aktualizovat vše'
+            UPGRADE_GRAV: 'Upgradovat Grav'
+        THEMES:
+            ACTIVE_THEME: 'Aktivní motiv'
+            BACK_TO_THEMES: 'Zpět na motivy'
+            CHANGELOG: 'Protokol změn'
+            CHECK_UPDATES: 'Zkontrolovat aktualizace'
+            CLICK_TO_VIEW_FULL_SIZE: 'Kliknutím zobrazíte plnou velikost'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurace byla změněna jinde. Prosím obnovte stránku.'
+            CONFIGURE: Nastavit
+            FAILED_TO_CHECK_FOR_UPDATES: 'Nepodařilo se zkontrolovat aktualizace'
+            FAILED_TO_LOAD_THEMES: 'Nepodařilo se načíst motivy'
+            FAILED_TO_SAVE_CONFIGURATION: 'Nepodařilo se uložit konfiguraci.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Pro tento motiv nejsou dostupné žádné možnosti konfigurace.'
+            PAGE_TITLE: '{name} — Motivy — Grav Admin'
+            REMOVE_THEME: 'Odebrat motiv'
+            SEARCH_THEMES: 'Hledat motivy...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Vyberte motiv pro zobrazení podrobností'
+            SYMLINKED: 'Symbolicky propojeno'
+            THEMES_GRAV_ADMIN: 'Motivy — Grav Admin'
+        TIME:
+            DAYS_AGO: 'před {n} dny'
+            HOURS_AGO: 'před {n} hodinami'
+            JUST_NOW: 'právě teď'
+            MINUTES_AGO: 'před {n} minutami'
+        TOGGLE_DARK_MODE: 'Přepnout tmavý režim'
+        TOGGLE_MENU: 'Přepnout nabídku'
+        TOOLS:
+            BACKUPS:
+                ACTION: Akce
+                BACKUP_CREATED_SUCCESSFULLY: 'Záloha vytvořena úspěšně'
+                BACKUP_DATE: 'Datum zálohy'
+                BACKUP_DELETED: 'Záloha odstraněna'
+                BACKUP_HISTORY: 'Historie záloh'
+                BACKUP_NOW: 'Vytvořit zálohu'
+                BACKUP_STATISTICS: 'Statistika záloh'
+                CREATING: Vytváření...
+                DELETE_BACKUP: 'Smazat zálohu'
+                FAILED_TO_CREATE_BACKUP: 'Nepodařilo se vytvořit zálohu'
+                FAILED_TO_DELETE_BACKUP: 'Nepodařilo se smazat zálohu'
+                FAILED_TO_LOAD_BACKUPS: 'Nepodařilo se načíst zálohy'
+                LOADING_BACKUPS: 'Načítání záloh...'
+                NEWEST_BACKUP: 'Nejnovější záloha'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Nebyly nalezeny žádné zálohy. Vytvořte si jednu, abyste mohli začít.'
+                NUMBER_OF_BACKUPS: 'Počet záloh'
+                NUMBER_OF_PROFILES: 'Počet profilů'
+                OLDEST_BACKUP: 'Nejstarší záloha'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Zálohy, plánovač, protokoly a diagnostika'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Přetáhněte soubor .zip sem nebo kliknutím procházejte'
+                INSTALL_FROM_FILE: 'Instalovat ze souboru'
+                INSTALL_FROM_URL: 'Instalovat z adresy URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Podporovány jsou pouze soubory .zip'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Balíček byl úspěšně nainstalován'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Podporuje balíčky pluginů a motivů Grav'
+            LOGS:
+                100_LINES: '100 řádků'
+                200_LINES: '200 řádků'
+                25_LINES: '25 řádků'
+                50_LINES: '50 řádků'
+                ALL_LEVELS: 'Všechny úrovně'
+                CRITICAL: Kritické
+                EMERGENCY: 'Nouzový stav'
+                FAILED_TO_LOAD_LOGS: 'Nepodařilo se načíst protokoly'
+                FAILED_TO_LOAD_LOG_FILES: 'Nepodařilo se načíst soubory protokolu'
+                LOADING_LOGS: 'Načítání protokolů...'
+                LOG_FILE: 'Soubor protokolu'
+                MESSAGE: Zpráva
+                NOTICE: Oznámení
+                REFRESH: Obnovit
+                SEARCH_MESSAGES: 'Hledat zprávy...'
+                WARNING: Varování
+            REPORTS:
+                CONTENT_FIELD: 'content: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Nepodařilo se načíst zprávy'
+                LOADING_REPORTS: 'Načítání zpráv...'
+                NO_REPORTS_AVAILABLE: 'Žádné dostupné zprávy.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Načítání komponenty zpráv...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'Chcete-li povolit funkčnost Scheduleru, musíte přidat **Grav Scheduler** do souboru crontab vašeho systému pro uživatele **{user}**. Spusťte výše uvedený příkaz z terminálu, abyste jej přidali automaticky. Po uložení obnovte tuto stránku, abyste viděli stav.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Nepodařilo se načíst konfiguraci scheduleru.'
+                FAILED_TO_SAVE: 'Nepodařilo se uložit'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'Scheduler může používat buď systémový crontab nebo webhook triggery ke spouštění příkazů. Webhooky jsou doporučeny pro cloudová prostředí. Pouze pokročilí uživatelé by měli konfigurovat vlastní úlohy. Nesprávná konfigurace nebo zneužití může vést k bezpečnostním problémům.'
+                LOADING_SCHEDULER: 'Načítání scheduleru...'
+                NOT_ENABLED_FOR_USER: 'Není povoleno pro uživatele:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Konfigurace scheduleru uložena'
+                SECURITY_WARNING: 'Pouze pokročilí uživatelé by měli konfigurovat vlastní úlohy scheduleru. Nesprávná konfigurace může způsobit problémy s výkonem nebo bezpečnostní problémy.'
+                WEBHOOK_ALTERNATIVE: 'Případně nainstalujte plugin **scheduler-webhook** pro používání webhook-based cronování, které je doporučeno pro cloudová prostředí, kde není dostupný přístup k systémovému crontabu.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} volné z {total}'
+                DISK_USAGE: 'Využití disku'
+                DRIVER: Ovladač
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Nepodařilo se načíst informace o systému'
+                GRAV_VERSION: 'Verze Grav'
+                LOADING_SYSTEM_INFO: 'Načítání informací o systému...'
+                MAX_EXECUTION: 'Max. doby provádění'
+                MAX_POST: 'Max POST'
+                MAX_UPLOAD: 'Max nahrávání'
+                MEMORY_LIMIT: 'Limit paměti'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'Verze PHP'
+            TOOLS_GRAV_ADMIN: 'Nástroje — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Předchozí
+            SITE_NOTIFICATION: 'Upozornění webu'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Zatím žádná data zobrazení'
+        TOP_PROGRESS_BAR:
+            WORKING: Pracuje
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA zakázáno'
+            2FA_ENABLED: '2FA povoleno'
+            2FA_IS_ENABLED: '2FA je povoleno'
+            2FA_QR_CODE: '2FA QR kód'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Přidejte další vrstvu zabezpečení vyžadováním jednorázového kódu při přihlášení.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'Jednorázový kód se vyžaduje vždy, když se tento účet přihlásí.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'Tajemství je již vygenerováno, ale z bezpečnostních důvodů se nezobrazuje.'
+            CONFIRM_DISABLE: 'Potvrdit zakázání'
+            ENABLE_2FA: 'Povolit 2FA'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Zadejte 6místný kód z vaší autentizační aplikace'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Zadejte svůj aktuální 6místný kód pro potvrzení'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Nepodařilo se vygenerovat 2FA tajemství'
+            FINISH_ENABLING_2FA: 'Dokončit povolení 2FA'
+            FORCE_DISABLE: 'Vynutit vypnutí'
+            FORCE_DISABLE_PROMPT: 'Vynutit vypnutí 2FA pro **{username}**? Používejte pouze pro obnovení ztraceného zařízení.'
+            REGENERATE_AND_SHOW_QR: 'Regenerovat a zobrazit QR kód'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Naskenujte QR kód pomocí vaší autentizační aplikace'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Naskenujte QR kód pomocí vaší autentizační aplikace, poté zadejte 6místný kód pro ověření a aktivaci.'
+            SECRET_FOR_MANUAL_ENTRY: 'Tajemství (pro ruční zadání):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Dvojfaktorová autentizace je vypnutá'
+            VERIFICATION_CODE: 'Ověřovací kód'
+            VERIFY_ENABLE: 'Ověřit a povolit'
+        UNSAVED_CHANGES: 'Neuložené změny'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Ukládání změn…'
+            SAVING_CHANGES_2: 'Ukládání změn'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Neuložené změny — kliknutím na Uložit je uložte'
+            YOU_HAVE_UNSAVED_CHANGES: 'Máte neuložené změny'
+        UPDATE_AVAILABLE_VERSION: 'Dostupná aktualizace: v{version}'
+        UPDATE_TO_VERSION: 'Aktualizovat na v{version}'
+        UPLOAD: Nahrát
+        USERNAME: 'Uživatelské jméno'
+        USERS:
+            2_FACTOR_AUTHENTICATION: 'Dvoustupňová autentizace'
+            ADD_USER: 'Přidat uživatele'
+            BACK_TO_USERS: 'Zpět na Uživatele'
+            CREATED: Vytvořeno
+            DELETE_USER: 'Smazat uživatele'
+            FAILED_TO_LOAD_USERS: 'Nepodařilo se načíst uživatele'
+            FAILED_TO_SAVE_USER: 'Nepodařilo se uložit uživatele.'
+            NEW:
+                ACCOUNT: Účet
+                CREATE: Vytvořit
+                FULL_NAME: 'Celé jméno'
+                LOWERCASE_3_64_CHARS: 'malá písmena, 3–64 znaků'
+                NEW_USER: 'Nový uživatel'
+                NEW_USER_GRAV_ADMIN: 'Nový uživatel — Grav Admin'
+                PERMISSIONS: Oprávnění
+            PAGE_TITLE: '{name} — Uživatelé — Grav Admin'
+            PERMISSIONS: Oprávnění
+            SEARCH_USERS: 'Hledat uživatele...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Vyberte uživatele pro zobrazení podrobností'
+            STATUS: Stav
+            STATUS_HELP: 'Deaktivované účty se nemohou přihlásit ani používat rozhraní API.'
+            SUPER_ADMIN: 'Super Admin'
+            USERS_GRAV_ADMIN: 'Uživatelé — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Uživatel byl změněn jinde — uložit pro přepsání nebo znovu načíst'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Uživatel byl změněn jinde. Prosím, znovu načtěte.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Nemůžete smazat svůj vlastní účet.'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Avatar odstraněn'
+            AVATAR_UPDATED: 'Avatar aktualizován'
+            FAILED_TO_REMOVE_AVATAR: 'Nepodařilo se odebrat avatar'
+            FAILED_TO_UPLOAD_AVATAR: 'Nepodařilo se nahrát avatar'
+            UPLOAD_AVATAR: 'Nahrát avatar'
+        VERSION: Verze
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Otevřít frontend webu v nové kartě'
+            VIEW_SITE: 'Zobrazit web'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Neznámý widget: {id}'
