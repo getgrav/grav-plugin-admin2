@@ -1,5 +1,5 @@
 # v2.0.0-rc.9
-## 05/18/2026
+## 05/19/2026
 
 1. [](#new)
     * **New "Twig in Content" panel in Configuration > Security.** Surfaces the Grav 2.0 master gate, the editor-permission toggle, and the `config` access toggle that govern editor-authored Twig in page content. Requires grav ≥ 2.0.0-rc.4 and grav-plugin-api ≥ 1.0.0-rc.9.
@@ -18,6 +18,7 @@
     * **Language-code chip auto-widens for longer codes.** The badge that shows `EN-US` / `FR-FR` / etc. in the language menu and translation listings had a hardcoded `w-6` width, so any code longer than two characters wrapped inside the chip. It's now `width: auto` with 2px horizontal padding plus `shrink-0` + `whitespace-nowrap` so the badge grows to fit the code and never collapses when the parent dropdown is narrow.
     * **Site languages now refresh after a `system.yaml` save.** Changing `languages.supported` or `languages.default_lang` from the Configuration → System page used to require a hard browser reload before the topbar language switcher and content-language selectors picked up the new list. The `contentLang` store now subscribes to the `config:update:system` invalidation tag the API emits on every system-config save and refetches the language list automatically.
     * **Dashboard widgets refresh after any config save.** The dashboard was wired to auto-refresh on `pages:*` / `users:*` / `plugins:*` / `gpm:*` invalidations but not `config:*`, so cache-status / system-health / language-aware widgets could stay stale until the user hit the Refresh button. Now also subscribes to `config:update` and silently reloads when anything in `/config/*` changes.
+    * **Sidebar, menubar, floating widgets, context panels, and badge counts now refresh without a page reload.** Installing, removing, or enabling/disabling a plugin or theme used to leave the navigation stale — new sidebar items (e.g. from License Manager) didn't appear, the plugins/themes badges didn't move, and the same was true for the pages/users/media counts after creating or deleting content. All five integration points now react to the relevant `X-Invalidates` events the API already emits ([grav-plugin-admin2#17](https://github.com/getgrav/grav-plugin-admin2/issues/17)).
 
 # v2.0.0-rc.8
 ## 05/17/2026
