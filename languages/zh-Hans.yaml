@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 创建环境…
             CREATE_ENV_NAMED: '创建环境 "{name}"…'
             DEFAULT: 默认
-            ENV_CREATED: "环境 '{name}' 已创建并选中"
+            ENV_CREATED: "环境 {name} 已创建并选中"
             FAILED_TO_CREATE: 创建环境失败
             HAS_OVERRIDES: 有覆盖
             NO_LONGER_EXISTS_PICK_ANOTHER: 不再存在。请选择其他环境。

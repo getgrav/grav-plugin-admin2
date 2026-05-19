@@ -580,11 +580,17 @@ ICU:
       DEFAULT: Default
       SAVING_TO_DEFAULT: Saving to default (user/config)
       SAVING_TO_ENV: "Saving to env: {name}"
-      ENV_CREATED: "Environment '{name}' created and selected"
+      ENV_CREATED: "Environment {name} created and selected"
+      ENV_DELETED: "Environment {name} deleted"
       FAILED_TO_CREATE: Failed to create environment
+      FAILED_TO_DELETE: Failed to delete environment
       CREATE_ENVIRONMENT: "Create environment…"
       CREATE_ENV_NAMED: "Create env \"{name}\"…"
       CREATE: Create
+      DELETE: Delete
+      DELETE_ENV_TOOLTIP: "Delete environment {name}"
+      CONFIRM_DELETE: "Delete {name}?"
+      CONFIRM_DELETE_WITH_OVERRIDES: "Delete {name} and all its config overrides?"
     INLINE_ICON_PICKER:
       SEARCH_ICONS: Search icons...
       NO_ICONS_FOUND: No icons found
@@ -1593,7 +1599,7 @@ ICU:
       CONFIG_SAVED: "{name} configuration saved"
       CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
       SAVE_FAILED: Failed to save
-      DEPENDENCY_INSTALLED: "Plugin '{slug}' installed (dependency)"
+      DEPENDENCY_INSTALLED: "Plugin {slug} installed (dependency)"
       PACKAGE_UPDATED: "{name} updated"
       PACKAGE_UPDATE_FAILED: "Failed to update {name}: {detail}"
       PACKAGE_REMOVED: "{name} removed"
@@ -1630,14 +1636,14 @@ ICU:
       ITEM_DELETE_FAILED: 'Failed to delete "{name}"'
       ITEM_MOVED: 'Moved "{name}"'
       ITEM_REORDERED: 'Reordered "{name}"'
-      USER_CREATED: "User '{username}' created"
-      USER_SAVED: "User '{username}' saved"
-      USER_DELETED: "User '{username}' deleted"
-      USER_DELETE_FAILED: "Failed to delete user '{username}'"
+      USER_CREATED: "User {username} created"
+      USER_SAVED: "User {username} saved"
+      USER_DELETED: "User {username} deleted"
+      USER_DELETE_FAILED: "Failed to delete user {username}"
       API_KEY_REVOKED: 'API key "{name}" revoked'
-      PLUGIN_INSTALLED: "Plugin '{name}' installed"
-      THEME_INSTALLED: "Theme '{name}' installed"
-      INSTALL_FAILED: "Failed to install '{slug}': {detail}"
+      PLUGIN_INSTALLED: "Plugin {name} installed"
+      THEME_INSTALLED: "Theme {name} installed"
+      INSTALL_FAILED: "Failed to install {slug}: {detail}"
       TOTP_CODE_REQUIRED: Enter the 6-digit code from your authenticator
       SAVE_FORM_FAILED: "Failed to save {form}"
       FORM_LABEL:

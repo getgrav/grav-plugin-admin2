@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Umgebung erstellen…'
             CREATE_ENV_NAMED: 'Umgebung "{name}" erstellen…'
             DEFAULT: Standard
-            ENV_CREATED: "Umgebung '{name}' erstellt und ausgewählt"
+            ENV_CREATED: "Umgebung {name} erstellt und ausgewählt"
             FAILED_TO_CREATE: 'Umgebung konnte nicht erstellt werden'
             HAS_OVERRIDES: 'hat Überschreibungen'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'existiert nicht mehr. Wählen Sie eine andere.'

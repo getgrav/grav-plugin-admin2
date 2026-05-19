@@ -4,10 +4,13 @@
 1. [](#new)
     * **New "Twig in Content" panel in Configuration > Security.** Surfaces the Grav 2.0 master gate, the editor-permission toggle, and the `config` access toggle that govern editor-authored Twig in page content. Requires grav ≥ 2.0.0-rc.4 and grav-plugin-api ≥ 1.0.0-rc.9.
     * Pages with `process: twig: true` that the current user can't edit now show a clear toast explaining why the editor is blocked, instead of just a generic Access Denied screen.
+    * **Environment switcher now lets you delete environments inline.** Hover any non-Default, non-active row to reveal a trash icon; clicking it shows an inline Cancel / Delete confirmation, and the whole `user/env/<name>/` folder is removed on confirm. The currently active environment (the one Grav resolved for the current request) is shielded so you cannot yank the config out from under your own session, and legacy `user/<name>/config/` layouts (Grav 1.6 fallback) must still be cleaned up by hand. Create and Delete affordances are gated on `api.config.write` so read-only users only see the selection list. Requires grav-plugin-api ≥ 1.0.0-rc.9.
 2. [](#bugfix)
     * Inline HTML in section-panel help text (e.g. `<code>`, `<strong>`) now renders again. Help text outside an active search filter was being escaped instead of rendered; the two code paths are now consistent.
     * Toggling a toggleable field whose default is an object (e.g. the page editor's Process group) no longer throws a `DataCloneError`. The form sync helper now falls back to a JSON round-trip when the browser's `structuredClone` rejects a value.
     * After upgrading, humanized labels (e.g. "Twig Content Help" instead of the real translation) no longer linger until you switch language and back. The translation store now force-syncs on the first network load of each session.
+    * Toast notifications that name an entity (environment created, plugin installed, user saved, etc.) no longer render with a literal `{name}` placeholder. The translation strings were wrapping the placeholder in single quotes (`'{name}'`), which the ICU MessageFormat parser treats as a quoted literal and drops the substitution; the quotes are removed from every affected string across all shipped languages.
+    * Creating a new environment from the topbar switcher now responds instantly. The store was awaiting a blocking refetch that duplicated the X-Invalidates-driven background reload, adding an extra round trip before the success toast could fire.
 
 # v2.0.0-rc.8
 ## 05/17/2026

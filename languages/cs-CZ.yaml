@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Vytvořit prostředí…'
             CREATE_ENV_NAMED: 'Vytvořit prostředí "{name}"…'
             DEFAULT: Výchozí
-            ENV_CREATED: "Prostředí '{name}' bylo vytvořeno a vybráno"
+            ENV_CREATED: "Prostředí {name} bylo vytvořeno a vybráno"
             FAILED_TO_CREATE: 'Nepodařilo se vytvořit prostředí'
             HAS_OVERRIDES: 'má přepsání'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'již neexistuje. Vyberte další.'

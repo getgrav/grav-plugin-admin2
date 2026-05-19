@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Omgeving maken…'
             CREATE_ENV_NAMED: 'Omgeving "{name}" maken…'
             DEFAULT: Standaard
-            ENV_CREATED: "Omgeving '{name}' gemaakt en geselecteerd"
+            ENV_CREATED: "Omgeving {name} gemaakt en geselecteerd"
             FAILED_TO_CREATE: 'Kan omgeving niet maken'
             HAS_OVERRIDES: 'heeft overschrijvingen'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'bestaat niet meer. Kies een ander.'
