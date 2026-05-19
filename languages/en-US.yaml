@@ -408,7 +408,7 @@ ICU:
       CREATE_A_NEW_BACKUP_NOW: Create a new backup now
       NO_BACKUPS_FOUND: No backups found
       BACKING_UP: Backing up…
-      BACKUP_NOW: Backup Now
+      BACKUP_NOW: New
       DOWNLOAD_FILE: Download {filename}
     NEWS_FEED_WIDGET:
       NO_FEED_ITEMS: No feed items
