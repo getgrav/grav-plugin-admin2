@@ -7,7 +7,7 @@ ICU:
         ADD_PAGE: 'Ajouter une page'
         ADD_PLUGIN_MODAL:
             ADD_PLUGIN: 'Ajouter un plugin'
-            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Impossible de charger les plugins disponibles depuis GPM'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Impossible de charger les plugins disponibles depuis le GPM'
             FILTER_PLUGINS: 'Filtrer les plugins...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Sélectionnez un plugin pour voir les détails'
         ADD_THEME_MODAL:
@@ -21,7 +21,7 @@ ICU:
             API_KEYS: 'Clés API'
             API_KEY_GENERATED: 'Clé API générée'
             BLANK_NEVER: '(vide = jamais)'
-            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Copiez cette clé maintenant — elle ne sera plus affichée.'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Copiez cette clé maintenant — elle ne sera plus jamais affichée.'
             CREATED: Créé
             EXPIRES: Expire
             EXPIRY: Expiration
@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Créer un environnement…'
             CREATE_ENV_NAMED: 'Créer l''env "{name}"…'
             DEFAULT: 'Par défaut'
-            ENV_CREATED: "Environnement {name} créé et sélectionné"
+            ENV_CREATED: 'Environnement {name} créé et sélectionné'
             FAILED_TO_CREATE: "Impossible de créer l'environnement"
             HAS_OVERRIDES: 'a des substitutions'
             NO_LONGER_EXISTS_PICK_ANOTHER: "n'existe plus. Choisissez-en un autre."
@@ -159,6 +159,12 @@ ICU:
             SAVING_TO_ENV: "Enregistrement dans l'env : {name}"
             SELECTED_ENV: 'Env sélectionné'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Sélectionnez où les écritures de configuration sont enregistrées'
+            CONFIRM_DELETE: 'Supprimer {name} ?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Supprimer {name} et toutes ses configurations personnalisées ?'
+            DELETE: Supprimer
+            DELETE_ENV_TOOLTIP: "Supprimer l'environnement {name}"
+            ENV_DELETED: 'Environnement {name} supprimé'
+            FAILED_TO_DELETE: 'Impossible de supprimer cet environnement'
         EXPAND_ALL: 'Développer tout'
         EXPAND_SIDEBAR: 'Développer la barre latérale'
         EXPERT_MODE: 'Mode expert'
