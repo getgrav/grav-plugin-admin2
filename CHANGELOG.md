@@ -1,5 +1,5 @@
 # v2.0.0-rc.9
-## 05/20/2026
+## 05/21/2026
 
 1. [](#new)
     * **Users page now has Users / Groups / Configuration tabs across the top**, restoring the three-pane shell from admin classic. Users keeps the existing list + detail view; Groups gains full CRUD (list + blueprint-driven edit + create) backed by the new `/groups` API; Configuration is the Flex accounts compatibility + caching form, gated on super-admin. Requires grav-plugin-api ≥ 1.0.0-rc.9.
