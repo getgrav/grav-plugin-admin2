@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Skapa miljö…'
             CREATE_ENV_NAMED: 'Skapa miljö "{name}"…'
             DEFAULT: Standard
-            ENV_CREATED: "Miljön '{name}' skapades och valdes"
+            ENV_CREATED: "Miljön {name} skapades och valdes"
             FAILED_TO_CREATE: 'Det gick inte att skapa miljön'
             HAS_OVERRIDES: 'har åsidosättningar'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'finns inte längre. Välj en annan.'

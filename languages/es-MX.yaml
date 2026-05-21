@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Crear entorno…'
             CREATE_ENV_NAMED: 'Crear entorno "{name}"…'
             DEFAULT: Predeterminado
-            ENV_CREATED: "Entorno '{name}' creado y seleccionado"
+            ENV_CREATED: "Entorno {name} creado y seleccionado"
             FAILED_TO_CREATE: 'Error al crear el entorno'
             HAS_OVERRIDES: 'tiene sobrescrituras'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'ya no existe. Elige otro.'

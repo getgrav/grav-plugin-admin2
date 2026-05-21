@@ -53,7 +53,7 @@ ICU:
         AUTHOR: Auteur
         BACKUPS_WIDGET:
             BACKING_UP: 'Back-up maken…'
-            BACKUP_NOW: 'Nu back-up maken'
+            BACKUP_NOW: Nieuw
             CREATE_A_NEW_BACKUP_NOW: 'Maak nu een nieuwe back-up'
             DOWNLOAD_FILE: '{filename} downloaden'
             NO_BACKUPS_FOUND: 'Geen back-ups gevonden'
@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Omgeving maken…'
             CREATE_ENV_NAMED: 'Omgeving "{name}" maken…'
             DEFAULT: Standaard
-            ENV_CREATED: "Omgeving '{name}' gemaakt en geselecteerd"
+            ENV_CREATED: 'Omgeving {name} gemaakt en geselecteerd'
             FAILED_TO_CREATE: 'Kan omgeving niet maken'
             HAS_OVERRIDES: 'heeft overschrijvingen'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'bestaat niet meer. Kies een ander.'
@@ -159,6 +159,12 @@ ICU:
             SAVING_TO_ENV: 'Opslaan naar omgeving: {name}'
             SELECTED_ENV: 'Geselecteerde omgeving'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Selecteer waar configuratiewijzigingen worden opgeslagen'
+            CONFIRM_DELETE: 'verwijder {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Verwijder {name} en zijn configuratie instellingen?'
+            DELETE: Verwijder
+            DELETE_ENV_TOOLTIP: 'Verwijder omgeving {name}'
+            ENV_DELETED: 'Omgeving {name} verwijderd.'
+            FAILED_TO_DELETE: 'Het verwijderen van deze omgeving mislukt.'
         EXPAND_ALL: 'Alles uitvouwen'
         EXPAND_SIDEBAR: 'Zijbalk uitvouwen'
         EXPERT_MODE: Expertmodus

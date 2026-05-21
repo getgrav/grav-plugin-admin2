@@ -23,6 +23,7 @@ ICU:
     CONFIRM_DELETE: Delete "{title}" at {route}?
     DELETE: Delete
     DONE: Done
+    EDIT: Edit
     LOADING: Loading...
     NO_CHANGES: No changes to save
     SAVE: Save
@@ -121,6 +122,7 @@ ICU:
         VISIBLE: Visible
         HAS_CHILDREN: Has children
         SUMMARY: Summary
+        DROP_HERE: Drop here
       PAGES_TREE_VIEW:
         FAILED_TO_REORGANIZE_PAGES: Failed to reorganize pages
         SEARCHING: Searching…
@@ -408,7 +410,7 @@ ICU:
       CREATE_A_NEW_BACKUP_NOW: Create a new backup now
       NO_BACKUPS_FOUND: No backups found
       BACKING_UP: Backing up…
-      BACKUP_NOW: Backup Now
+      BACKUP_NOW: New
       DOWNLOAD_FILE: Download {filename}
     NEWS_FEED_WIDGET:
       NO_FEED_ITEMS: No feed items
@@ -580,11 +582,17 @@ ICU:
       DEFAULT: Default
       SAVING_TO_DEFAULT: Saving to default (user/config)
       SAVING_TO_ENV: "Saving to env: {name}"
-      ENV_CREATED: "Environment '{name}' created and selected"
+      ENV_CREATED: "Environment {name} created and selected"
+      ENV_DELETED: "Environment {name} deleted"
       FAILED_TO_CREATE: Failed to create environment
+      FAILED_TO_DELETE: Failed to delete environment
       CREATE_ENVIRONMENT: "Create environment…"
       CREATE_ENV_NAMED: "Create env \"{name}\"…"
       CREATE: Create
+      DELETE: Delete
+      DELETE_ENV_TOOLTIP: "Delete environment {name}"
+      CONFIRM_DELETE: "Delete {name}?"
+      CONFIRM_DELETE_WITH_OVERRIDES: "Delete {name} and all its config overrides?"
     INLINE_ICON_PICKER:
       SEARCH_ICONS: Search icons...
       NO_ICONS_FOUND: No icons found
@@ -887,6 +895,7 @@ ICU:
       PERMISSIONS: Permissions
       SELECT_A_USER_TO_VIEW_DETAILS: Select a user to view details
       DELETE_USER: Delete User
+      CONFIRM_DELETE_USER: "Delete user '{username}'? This cannot be undone."
       USER_WAS_MODIFIED_ELSEWHERE_PLEASE: User was modified elsewhere. Please reload.
       FAILED_TO_SAVE_USER: Failed to save user.
       YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: You cannot delete your own account.
@@ -902,6 +911,71 @@ ICU:
         PERMISSIONS: Permissions
         CREATE: Create
       PAGE_TITLE: "{name} — Users — Grav Admin"
+    USERS_NAV:
+      USERS: Users
+      GROUPS: Groups
+      CONFIGURATION: Configuration
+    USERS_TABLE:
+      USERNAME: Username
+      EMAIL: Email
+      FULL_NAME: Full name
+      STATUS: Status
+      ACTIONS: Actions
+      ENABLED: Enabled
+      DISABLED: Disabled
+      EDIT: Edit
+      DELETE: Delete
+      NO_USERS: No users found
+      CARDS: Cards
+      TABLE: Table
+    PLUGINS_TABLE:
+      NAME: Name
+      VERSION: Version
+      NO_PLUGINS: No plugins installed
+      PROTECTED_PLUGIN: This plugin cannot be disabled from admin-next without locking yourself out.
+    THEMES_TABLE:
+      NO_THEMES: No themes installed
+    GROUPS:
+      GROUPS: Groups
+      GROUPS_GRAV_ADMIN: Groups — Grav Admin
+      ADD_GROUP: Add Group
+      NEW_GROUP: New Group
+      NEW_GROUP_GRAV_ADMIN: New Group — Grav Admin
+      GROUP_NAME: Group name
+      GROUP_NAME_PLACEHOLDER: e.g. editors
+      GROUP_NAME_HELP: 1–200 characters of letters, numbers, hyphens or underscores. Used as the storage key.
+      DISPLAY_NAME: Display name
+      DESCRIPTION: Description
+      SEARCH_GROUPS: Search groups...
+      NO_GROUPS: No groups found
+      NO_GROUPS_MATCH_SEARCH: No groups match your search
+      SELECT_A_GROUP_TO_VIEW_DETAILS: Select a group to view details
+      BACK_TO_GROUPS: Back to Groups
+      CREATE: Create
+      DELETE_GROUP: Delete Group
+      CONFIRM_DELETE_GROUP: "Delete group '{name}'? This cannot be undone."
+      FAILED_TO_LOAD_GROUPS: Failed to load groups
+      FAILED_TO_LOAD_GROUP: "Failed to load group '{name}'."
+      FAILED_TO_SAVE_GROUP: Failed to save group.
+      FAILED_TO_CREATE_GROUP: Failed to create group.
+      GROUP_SAVED: "Group '{name}' saved"
+      GROUP_CREATED: "Group '{name}' created"
+      GROUP_DELETED: "Group '{name}' deleted"
+      GROUP_DELETE_FAILED: "Failed to delete group '{name}'"
+      GROUP_MODIFIED_ELSEWHERE: Group was modified elsewhere. Please reload.
+      GROUP_PAGE_TITLE: "{name} — Groups — Grav Admin"
+      GROUP_COUNT_ONE: "{n} group"
+      GROUP_COUNT_OTHER: "{n} groups"
+    ACCOUNTS_CONFIG:
+      TITLE: Accounts Configuration
+      PAGE_TITLE: Accounts Configuration — Grav Admin
+      SAVED: Configuration saved
+      FAILED_TO_LOAD: Failed to load accounts configuration
+      FAILED_TO_SAVE: Failed to save accounts configuration
+      MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Please reload.
+      NO_FIELDS: No configuration options available.
+    PAGINATION:
+      PAGE_OF: "Page {current} of {total}"
     INFO: Info
     INSTALL: Install
     COPY_BUTTON:
@@ -1581,11 +1655,19 @@ ICU:
     SCHEDULER_WORKER_CONFIG: Worker Configuration
     TRANSLATIONS: Translations
     USER_ACCOUNTS: User Accounts
+    TWIG_CONTENT: Twig in Content
+    TWIG_CONTENT_HELP: Controls for editor-authored Twig embedded in page content. Theme templates on disk are not affected by these settings; they only apply to Twig that authors put into page bodies or frontmatter.
+    TWIG_CONTENT_PROCESS_ENABLED: Enable Twig in Content
+    TWIG_CONTENT_PROCESS_ENABLED_HELP: "Allow pages with <code>process: twig: true</code> in their frontmatter (and the site-wide <code>system.pages.frontmatter.process_twig</code> opt-in) to actually run Twig. <strong>Off by default in Grav 2.0.</strong> Leaving this disabled reduces template-injection attack surface, but breaks any page that needs Twig in its body."
+    TWIG_CONTENT_EDITOR_ENABLED: Allow editors to toggle Twig in Content
+    TWIG_CONTENT_EDITOR_ENABLED_HELP: "When off (default), the Twig checkbox in the page editor's Advanced tab is only visible to users granted the <code>admin.pages_twig</code> permission, and pages that already have Twig enabled can only be edited by those users. When on, anyone with page-edit access can toggle Twig on individual pages."
+    TWIG_CONTENT_CONFIG_ACCESS: Allow config variable access in Twig
+    TWIG_CONTENT_CONFIG_ACCESS_HELP: "Whether the <code>config</code> Twig variable is readable from page content. When off (default), reading <code>config.system.title</code> from a page returns nothing. When on, <code>config</code> is exposed but still filtered by <code>config_denied_paths</code> (see Twig Sandbox below) so credentials and other sensitive subtrees stay hidden."
     TOASTS:
       CONFIG_SAVED: "{name} configuration saved"
       CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
       SAVE_FAILED: Failed to save
-      DEPENDENCY_INSTALLED: "Plugin '{slug}' installed (dependency)"
+      DEPENDENCY_INSTALLED: "Plugin {slug} installed (dependency)"
       PACKAGE_UPDATED: "{name} updated"
       PACKAGE_UPDATE_FAILED: "Failed to update {name}: {detail}"
       PACKAGE_REMOVED: "{name} removed"
@@ -1622,14 +1704,14 @@ ICU:
       ITEM_DELETE_FAILED: 'Failed to delete "{name}"'
       ITEM_MOVED: 'Moved "{name}"'
       ITEM_REORDERED: 'Reordered "{name}"'
-      USER_CREATED: "User '{username}' created"
-      USER_SAVED: "User '{username}' saved"
-      USER_DELETED: "User '{username}' deleted"
-      USER_DELETE_FAILED: "Failed to delete user '{username}'"
+      USER_CREATED: "User {username} created"
+      USER_SAVED: "User {username} saved"
+      USER_DELETED: "User {username} deleted"
+      USER_DELETE_FAILED: "Failed to delete user {username}"
       API_KEY_REVOKED: 'API key "{name}" revoked'
-      PLUGIN_INSTALLED: "Plugin '{name}' installed"
-      THEME_INSTALLED: "Theme '{name}' installed"
-      INSTALL_FAILED: "Failed to install '{slug}': {detail}"
+      PLUGIN_INSTALLED: "Plugin {name} installed"
+      THEME_INSTALLED: "Theme {name} installed"
+      INSTALL_FAILED: "Failed to install {slug}: {detail}"
       TOTP_CODE_REQUIRED: Enter the 6-digit code from your authenticator
       SAVE_FORM_FAILED: "Failed to save {form}"
       FORM_LABEL:

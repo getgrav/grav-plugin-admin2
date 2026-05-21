@@ -580,7 +580,7 @@ ICU:
       DEFAULT: ברירת מחדל
       SAVING_TO_DEFAULT: נשמר לברירת המחדל (user/config)
       SAVING_TO_ENV: "נשמר לסביבה: {name}"
-      ENV_CREATED: "הסביבה '{name}' נוצרה ונבחרה"
+      ENV_CREATED: "הסביבה {name} נוצרה ונבחרה"
       FAILED_TO_CREATE: יצירת הסביבה נכשלה
       CREATE_ENVIRONMENT: "צור סביבה…"
       CREATE_ENV_NAMED: "צור סביבה \"{name}\"…"
@@ -1585,7 +1585,7 @@ ICU:
       CONFIG_SAVED: "הגדרות {name} נשמרו"
       CONFIG_MODIFIED_ELSEWHERE: ההגדרות שונו במקום אחר — טען מחדש כדי לראות את הגרסה העדכנית
       SAVE_FAILED: השמירה נכשלה
-      DEPENDENCY_INSTALLED: "התוסף '{slug}' הותקן (תלות)"
+      DEPENDENCY_INSTALLED: "התוסף {slug} הותקן (תלות)"
       PACKAGE_UPDATED: "{name} עודכן"
       PACKAGE_UPDATE_FAILED: "עדכון {name} נכשל: {detail}"
       PACKAGE_REMOVED: "{name} הוסר"
@@ -1622,14 +1622,14 @@ ICU:
       ITEM_DELETE_FAILED: 'מחיקת "{name}" נכשלה'
       ITEM_MOVED: '"{name}" הועבר'
       ITEM_REORDERED: '"{name}" סודר מחדש'
-      USER_CREATED: "המשתמש '{username}' נוצר"
-      USER_SAVED: "המשתמש '{username}' נשמר"
-      USER_DELETED: "המשתמש '{username}' נמחק"
-      USER_DELETE_FAILED: "מחיקת המשתמש '{username}' נכשלה"
+      USER_CREATED: "המשתמש {username} נוצר"
+      USER_SAVED: "המשתמש {username} נשמר"
+      USER_DELETED: "המשתמש {username} נמחק"
+      USER_DELETE_FAILED: "מחיקת המשתמש {username} נכשלה"
       API_KEY_REVOKED: 'מפתח API "{name}" בוטל'
-      PLUGIN_INSTALLED: "התוסף '{name}' הותקן"
-      THEME_INSTALLED: "ערכת העיצוב '{name}' הותקנה"
-      INSTALL_FAILED: "התקנת '{slug}' נכשלה: {detail}"
+      PLUGIN_INSTALLED: "התוסף {name} הותקן"
+      THEME_INSTALLED: "ערכת העיצוב {name} הותקנה"
+      INSTALL_FAILED: "התקנת {slug} נכשלה: {detail}"
       TOTP_CODE_REQUIRED: הזן את הקוד בן 6 הספרות מהאפליקציה שלך
       SAVE_FORM_FAILED: "שמירת {form} נכשלה"
       FORM_LABEL:

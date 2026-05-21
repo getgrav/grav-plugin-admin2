@@ -579,7 +579,7 @@ ICU:
       DEFAULT: افتراضي
       SAVING_TO_DEFAULT: الحفظ إلى الافتراضي (user/config)
       SAVING_TO_ENV: "الحفظ إلى البيئة: {name}"
-      ENV_CREATED: "تم إنشاء البيئة '{name}' وتحديدها"
+      ENV_CREATED: "تم إنشاء البيئة {name} وتحديدها"
       FAILED_TO_CREATE: فشل في إنشاء البيئة
       CREATE_ENVIRONMENT: "إنشاء بيئة…"
       CREATE_ENV_NAMED: "إنشاء البيئة \"{name}\"…"
@@ -1584,7 +1584,7 @@ ICU:
       CONFIG_SAVED: "تم حفظ إعدادات {name}"
       CONFIG_MODIFIED_ELSEWHERE: تم تعديل الإعدادات من مكان آخر — أعد التحميل لرؤية أحدث نسخة
       SAVE_FAILED: فشل الحفظ
-      DEPENDENCY_INSTALLED: "تم تثبيت الإضافة '{slug}' (تبعية)"
+      DEPENDENCY_INSTALLED: "تم تثبيت الإضافة {slug} (تبعية)"
       PACKAGE_UPDATED: "تم تحديث {name}"
       PACKAGE_UPDATE_FAILED: "فشل تحديث {name}: {detail}"
       PACKAGE_REMOVED: "تم إزالة {name}"
@@ -1621,14 +1621,14 @@ ICU:
       ITEM_DELETE_FAILED: 'فشل حذف "{name}"'
       ITEM_MOVED: 'تم نقل "{name}"'
       ITEM_REORDERED: 'تمت إعادة ترتيب "{name}"'
-      USER_CREATED: "تم إنشاء المستخدم '{username}'"
-      USER_SAVED: "تم حفظ المستخدم '{username}'"
-      USER_DELETED: "تم حذف المستخدم '{username}'"
-      USER_DELETE_FAILED: "فشل حذف المستخدم '{username}'"
+      USER_CREATED: "تم إنشاء المستخدم {username}"
+      USER_SAVED: "تم حفظ المستخدم {username}"
+      USER_DELETED: "تم حذف المستخدم {username}"
+      USER_DELETE_FAILED: "فشل حذف المستخدم {username}"
       API_KEY_REVOKED: 'تم إبطال مفتاح API "{name}"'
-      PLUGIN_INSTALLED: "تم تثبيت الإضافة '{name}'"
-      THEME_INSTALLED: "تم تثبيت السمة '{name}'"
-      INSTALL_FAILED: "فشل تثبيت '{slug}': {detail}"
+      PLUGIN_INSTALLED: "تم تثبيت الإضافة {name}"
+      THEME_INSTALLED: "تم تثبيت السمة {name}"
+      INSTALL_FAILED: "فشل تثبيت {slug}: {detail}"
       TOTP_CODE_REQUIRED: أدخل الرمز المكوّن من 6 أرقام من تطبيق المصادقة
       SAVE_FORM_FAILED: "فشل حفظ {form}"
       FORM_LABEL:
