@@ -23,6 +23,7 @@ ICU:
     CONFIRM_DELETE: Delete "{title}" at {route}?
     DELETE: Delete
     DONE: Done
+    EDIT: Edit
     LOADING: Loading...
     NO_CHANGES: No changes to save
     SAVE: Save
@@ -121,6 +122,7 @@ ICU:
         VISIBLE: Visible
         HAS_CHILDREN: Has children
         SUMMARY: Summary
+        DROP_HERE: Drop here
       PAGES_TREE_VIEW:
         FAILED_TO_REORGANIZE_PAGES: Failed to reorganize pages
         SEARCHING: Searching…
@@ -893,6 +895,7 @@ ICU:
       PERMISSIONS: Permissions
       SELECT_A_USER_TO_VIEW_DETAILS: Select a user to view details
       DELETE_USER: Delete User
+      CONFIRM_DELETE_USER: "Delete user '{username}'? This cannot be undone."
       USER_WAS_MODIFIED_ELSEWHERE_PLEASE: User was modified elsewhere. Please reload.
       FAILED_TO_SAVE_USER: Failed to save user.
       YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: You cannot delete your own account.
@@ -908,6 +911,71 @@ ICU:
         PERMISSIONS: Permissions
         CREATE: Create
       PAGE_TITLE: "{name} — Users — Grav Admin"
+    USERS_NAV:
+      USERS: Users
+      GROUPS: Groups
+      CONFIGURATION: Configuration
+    USERS_TABLE:
+      USERNAME: Username
+      EMAIL: Email
+      FULL_NAME: Full name
+      STATUS: Status
+      ACTIONS: Actions
+      ENABLED: Enabled
+      DISABLED: Disabled
+      EDIT: Edit
+      DELETE: Delete
+      NO_USERS: No users found
+      CARDS: Cards
+      TABLE: Table
+    PLUGINS_TABLE:
+      NAME: Name
+      VERSION: Version
+      NO_PLUGINS: No plugins installed
+      PROTECTED_PLUGIN: This plugin cannot be disabled from admin-next without locking yourself out.
+    THEMES_TABLE:
+      NO_THEMES: No themes installed
+    GROUPS:
+      GROUPS: Groups
+      GROUPS_GRAV_ADMIN: Groups — Grav Admin
+      ADD_GROUP: Add Group
+      NEW_GROUP: New Group
+      NEW_GROUP_GRAV_ADMIN: New Group — Grav Admin
+      GROUP_NAME: Group name
+      GROUP_NAME_PLACEHOLDER: e.g. editors
+      GROUP_NAME_HELP: 1–200 characters of letters, numbers, hyphens or underscores. Used as the storage key.
+      DISPLAY_NAME: Display name
+      DESCRIPTION: Description
+      SEARCH_GROUPS: Search groups...
+      NO_GROUPS: No groups found
+      NO_GROUPS_MATCH_SEARCH: No groups match your search
+      SELECT_A_GROUP_TO_VIEW_DETAILS: Select a group to view details
+      BACK_TO_GROUPS: Back to Groups
+      CREATE: Create
+      DELETE_GROUP: Delete Group
+      CONFIRM_DELETE_GROUP: "Delete group '{name}'? This cannot be undone."
+      FAILED_TO_LOAD_GROUPS: Failed to load groups
+      FAILED_TO_LOAD_GROUP: "Failed to load group '{name}'."
+      FAILED_TO_SAVE_GROUP: Failed to save group.
+      FAILED_TO_CREATE_GROUP: Failed to create group.
+      GROUP_SAVED: "Group '{name}' saved"
+      GROUP_CREATED: "Group '{name}' created"
+      GROUP_DELETED: "Group '{name}' deleted"
+      GROUP_DELETE_FAILED: "Failed to delete group '{name}'"
+      GROUP_MODIFIED_ELSEWHERE: Group was modified elsewhere. Please reload.
+      GROUP_PAGE_TITLE: "{name} — Groups — Grav Admin"
+      GROUP_COUNT_ONE: "{n} group"
+      GROUP_COUNT_OTHER: "{n} groups"
+    ACCOUNTS_CONFIG:
+      TITLE: Accounts Configuration
+      PAGE_TITLE: Accounts Configuration — Grav Admin
+      SAVED: Configuration saved
+      FAILED_TO_LOAD: Failed to load accounts configuration
+      FAILED_TO_SAVE: Failed to save accounts configuration
+      MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Please reload.
+      NO_FIELDS: No configuration options available.
+    PAGINATION:
+      PAGE_OF: "Page {current} of {total}"
     INFO: Info
     INSTALL: Install
     COPY_BUTTON:
