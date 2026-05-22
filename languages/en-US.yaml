@@ -1715,6 +1715,7 @@ ICU:
       ITEM_SAVED: "{name} saved"
       ITEM_DELETED: 'Deleted "{name}"'
       ITEM_DELETE_FAILED: 'Failed to delete "{name}"'
+      ITEM_COPIED: 'Copied "{name}" to "{target}"'
       ITEM_MOVED: 'Moved "{name}"'
       ITEM_REORDERED: 'Reordered "{name}"'
       USER_CREATED: "User {username} created"

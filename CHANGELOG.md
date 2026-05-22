@@ -2,6 +2,7 @@
 ## 05/22/2026
 
 1. [](#new)
+    * **Copy and Delete are now reachable from every Pages view without opening the editor.** Tree and list rows gain a Copy icon next to the existing Delete icon on hover; the columns view's preview pane gets both as small icon-buttons at the end of the badges row (Delete was missing entirely before). The slug + title increment logic is shared with the page-editor's Copy button, so all four entry points yield identical results — `foo` becomes `foo-2`, `foo-3` becomes `foo-4`, and the title's trailing number is bumped or ` 2` is appended. Fixes [getgrav/grav-plugin-admin2#19](https://github.com/getgrav/grav-plugin-admin2/issues/19).
     * Pages tree, list, and columns views now load pages on demand as you scroll, so folders with hundreds or thousands of children open instantly instead of hanging or quietly hiding rows.
     * A new "Chunk" picker in the pages toolbar (50 / 100 / 250 / 500 / 1000) lets you tune how many rows are fetched per scroll request; it replaces the unused "Items per page" setting which has been removed.
     * Returning to the pages view after editing a page now scrolls right back to that page (in tree, list, and columns), so you don't have to re-scroll to find where you were.
