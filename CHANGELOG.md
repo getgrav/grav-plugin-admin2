@@ -1,3 +1,16 @@
+# v2.0.0-rc.10
+## 05/22/2026
+
+1. [](#new)
+    * Pages tree, list, and columns views now load pages on demand as you scroll, so folders with hundreds or thousands of children open instantly instead of hanging or quietly hiding rows.
+    * A new "Chunk" picker in the pages toolbar (50 / 100 / 250 / 500 / 1000) lets you tune how many rows are fetched per scroll request; it replaces the unused "Items per page" setting which has been removed.
+    * Returning to the pages view after editing a page now scrolls right back to that page (in tree, list, and columns), so you don't have to re-scroll to find where you were.
+    * Reorder / Move in any view now silently loads the full sibling list of the folders being dragged between before sending the change, so the reorder is always correct even on chunked folders.
+    * "Reorder / Move" toolbar button is now just "Move" so it stops wrapping onto two lines at common browser widths, and its label + tooltip are now translatable along with the rest of the pages toolbar, footer stats, and delete-confirmation dialog.
+2. [](#bugfix)
+    * Pages tree, columns, and navigator views now show every child of a folder, no matter how many there are. Requires grav-plugin-api ≥ 1.0.0-rc.10. Fixes [getgrav/grav#4096](https://github.com/getgrav/grav/issues/4096).
+    * **Add Page / Add Module parent picker now works on sites where the home page is aliased to a non-root folder** (e.g. `system.home.alias: /blog`). Selecting the home-aliased page as the parent used to create the new page in `/pages` root, and the same row stayed checked alongside `<root>`. Fixes [getgrav/grav-plugin-admin2#18](https://github.com/getgrav/grav-plugin-admin2/issues/18).
+
 # v2.0.0-rc.9
 ## 05/21/2026
 
