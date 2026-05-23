@@ -4,14 +4,14 @@ ICU:
             ACCESS_DENIED: 'Acceso denegado'
         ACTIVATE: Activar
         ACTIVE: Activo
-        ADD_PAGE: 'Agregar página'
+        ADD_PAGE: 'Agregar Página'
         ADD_PLUGIN_MODAL:
-            ADD_PLUGIN: 'Agregar plugin'
+            ADD_PLUGIN: 'Agregar Plugin'
             FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'No se pudieron cargar los plugins disponibles de GPM'
             FILTER_PLUGINS: 'Filtrar plugins...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecciona un plugin para ver los detalles'
         ADD_THEME_MODAL:
-            ADD_THEME: 'Agregar tema'
+            ADD_THEME: 'Agregar Tema'
             FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'No se pudieron cargar los temas disponibles de GPM'
             FILTER_THEMES: 'Filtrar temas...'
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecciona un tema para ver los detalles'
