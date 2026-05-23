@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Crear entorno…'
             CREATE_ENV_NAMED: 'Crear entorno "{name}"…'
             DEFAULT: Predeterminado
-            ENV_CREATED: "Entorno {name} creado y seleccionado"
+            ENV_CREATED: 'Entorno {name} creado y seleccionado'
             FAILED_TO_CREATE: 'Error al crear el entorno'
             HAS_OVERRIDES: 'tiene sobrescrituras'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'ya no existe. Elige otro.'
@@ -159,6 +159,12 @@ ICU:
             SAVING_TO_ENV: 'Guardando en entorno: {name}'
             SELECTED_ENV: 'Entorno seleccionado'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Selecciona dónde se guardan los cambios de configuración'
+            CONFIRM_DELETE: 'Borrar {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Borrar  {name} y todas sus configuraciones personalizadas?'
+            DELETE: Borrar
+            DELETE_ENV_TOOLTIP: 'Borrar ambiente {name}'
+            ENV_DELETED: 'Ambiente {name} borrado'
+            FAILED_TO_DELETE: 'Falló el borrado del ambiente'
         EXPAND_ALL: 'Expandir todo'
         EXPAND_SIDEBAR: 'Expandir barra lateral'
         EXPERT_MODE: 'Modo experto'
