@@ -1,14 +1,17 @@
 # v2.0.0-rc.10
-## 05/22/2026
+## 05/23/2026
 
 1. [](#new)
+    * **File picker fields now honor any Grav stream or scope token in their blueprint `folder:` option.** A field set to `folder: user://media`, `folder: theme://images`, `folder: account://`, `folder: self@:videos`, or any other stream the locator can resolve now lists files from that folder, matching admin classic. Requires grav-plugin-api ≥ 1.0.0-rc.10.
     * **Copy and Delete are now reachable from every Pages view without opening the editor.** Tree and list rows gain a Copy icon next to the existing Delete icon on hover; the columns view's preview pane gets both as small icon-buttons at the end of the badges row (Delete was missing entirely before). The slug + title increment logic is shared with the page-editor's Copy button, so all four entry points yield identical results — `foo` becomes `foo-2`, `foo-3` becomes `foo-4`, and the title's trailing number is bumped or ` 2` is appended. Fixes [getgrav/grav-plugin-admin2#19](https://github.com/getgrav/grav-plugin-admin2/issues/19).
     * Pages tree, list, and columns views now load pages on demand as you scroll, so folders with hundreds or thousands of children open instantly instead of hanging or quietly hiding rows.
     * A new "Chunk" picker in the pages toolbar (50 / 100 / 250 / 500 / 1000) lets you tune how many rows are fetched per scroll request; it replaces the unused "Items per page" setting which has been removed.
     * Returning to the pages view after editing a page now scrolls right back to that page (in tree, list, and columns), so you don't have to re-scroll to find where you were.
     * Reorder / Move in any view now silently loads the full sibling list of the folders being dragged between before sending the change, so the reorder is always correct even on chunked folders.
     * "Reorder / Move" toolbar button is now just "Move" so it stops wrapping onto two lines at common browser widths, and its label + tooltip are now translatable along with the rest of the pages toolbar, footer stats, and delete-confirmation dialog.
-2. [](#bugfix)
+2. [](#improved)
+    * Media grid cards no longer grow when selected or hovered — the selection outline is now reserved at idle so neighboring cards stop nudging around when you pick one. The hover checkbox has a stronger outline so it reads as a checkbox affordance rather than a small grey square against a busy image.
+3. [](#bugfix)
     * Pages tree, columns, and navigator views now show every child of a folder, no matter how many there are. Requires grav-plugin-api ≥ 1.0.0-rc.10. Fixes [getgrav/grav#4096](https://github.com/getgrav/grav/issues/4096).
     * **Add Page / Add Module parent picker now works on sites where the home page is aliased to a non-root folder** (e.g. `system.home.alias: /blog`). Selecting the home-aliased page as the parent used to create the new page in `/pages` root, and the same row stayed checked alongside `<root>`. Fixes [getgrav/grav-plugin-admin2#18](https://github.com/getgrav/grav-plugin-admin2/issues/18).
 
