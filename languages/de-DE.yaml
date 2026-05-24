@@ -53,7 +53,7 @@ ICU:
         AUTHOR: Autor
         BACKUPS_WIDGET:
             BACKING_UP: 'Wird gesichert…'
-            BACKUP_NOW: 'Jetzt sichern'
+            BACKUP_NOW: Neu
             DOWNLOAD_FILE: '{filename} herunterladen'
             NO_BACKUPS_FOUND: 'Keine Sicherungen gefunden'
             CREATE_A_NEW_BACKUP_NOW: 'Erstellen Sie jetzt eine neue Sicherung'
@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Umgebung erstellen…'
             CREATE_ENV_NAMED: 'Umgebung "{name}" erstellen…'
             DEFAULT: Standard
-            ENV_CREATED: "Umgebung {name} erstellt und ausgewählt"
+            ENV_CREATED: 'Umgebung {name} erstellt und ausgewählt'
             FAILED_TO_CREATE: 'Umgebung konnte nicht erstellt werden'
             HAS_OVERRIDES: 'hat Überschreibungen'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'existiert nicht mehr. Wählen Sie eine andere.'
@@ -159,6 +159,12 @@ ICU:
             SAVING_TO_ENV: 'Speichern unter Umgebung: {name}'
             SELECTED_ENV: 'Ausgewählte Umgebung'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Wählen Sie, wo Konfigurationsänderungen gespeichert werden'
+            CONFIRM_DELETE: '{name} löschen?'
+            CONFIRM_DELETE_WITH_OVERRIDES: '{name} und all seine Config-Overrides löschen?'
+            DELETE: Löschen
+            DELETE_ENV_TOOLTIP: 'Umgebung {name} löschen'
+            ENV_DELETED: 'Umgebung {name} gelöscht'
+            FAILED_TO_DELETE: 'Konnte Umgebung nicht löschen'
         EXPAND_ALL: 'Alle ausklappen'
         EXPAND_SIDEBAR: 'Seitenleiste ausklappen'
         EXPERT_MODE: Expertenmodus
@@ -470,7 +476,7 @@ ICU:
             RAW_HEADER: 'Roher Seitenkopf (JSON)'
             REORDERED: '"{title}" neu angeordnet'
             REORDER_FAILED: 'Neuanordnung fehlgeschlagen'
-            REORDER_MOVE: 'Neu anordnen / Verschieben'
+            REORDER_MOVE: Bewegen
             REORDER_SAME_PARENT: 'Seiten können nur unter derselben übergeordneten Seite neu angeordnet werden. Verwenden Sie die Baumansicht für Verschiebungen zwischen übergeordneten Seiten.'
             SAVED: 'Seite erfolgreich gespeichert'
             SAVE_FAILED: 'Seite konnte nicht gespeichert werden'
