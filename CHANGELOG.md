@@ -1,3 +1,12 @@
+# v2.0.0-rc.11
+## 05/26/2026
+
+1. [](#improved)
+    * **Pages tree and list views now show Copy and Delete in a permanent column on the right instead of fading in on hover**, so they're reachable on touch devices and stop visually overlapping the page title and date. Fixes [getgrav/grav-plugin-admin2#19](https://github.com/getgrav/grav-plugin-admin2/issues/19).
+2. [](#bugfix)
+    * **Hebrew and Arabic admin languages render the admin in right-to-left layout again.** Requires grav-plugin-api ≥ 1.0.0-rc.11.
+    * **Site Defaults editor's Admin Language dropdown now preselects the right option when the saved value is a short code like `en` instead of `en-US`.**
+
 # v2.0.0-rc.10
 ## 05/26/2026
 
