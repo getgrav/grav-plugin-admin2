@@ -7,12 +7,12 @@ ICU:
         ADD_PAGE: 'Seite hinzufügen'
         ADD_PLUGIN_MODAL:
             ADD_PLUGIN: 'Plugin hinzufügen'
-            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Verfügbare Plugins konnten nicht von GPM geladen werden'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Verfügbare Plugins konnten nicht vom GPM geladen werden'
             FILTER_PLUGINS: 'Plugins filtern...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Wählen Sie ein Plugin aus, um Details anzuzeigen'
         ADD_THEME_MODAL:
             ADD_THEME: 'Theme hinzufügen'
-            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Verfügbare Themes konnten nicht von GPM geladen werden'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Verfügbare Themes konnten nicht vom GPM geladen werden'
             FILTER_THEMES: 'Themes filtern...'
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Wählen Sie ein Theme, um Details anzuzeigen'
         ALLOWED: Zulässig
@@ -53,7 +53,7 @@ ICU:
         AUTHOR: Autor
         BACKUPS_WIDGET:
             BACKING_UP: 'Wird gesichert…'
-            BACKUP_NOW: 'Jetzt sichern'
+            BACKUP_NOW: Neu
             DOWNLOAD_FILE: '{filename} herunterladen'
             NO_BACKUPS_FOUND: 'Keine Sicherungen gefunden'
             CREATE_A_NEW_BACKUP_NOW: 'Erstellen Sie jetzt eine neue Sicherung'
@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Umgebung erstellen…'
             CREATE_ENV_NAMED: 'Umgebung "{name}" erstellen…'
             DEFAULT: Standard
-            ENV_CREATED: "Umgebung {name} erstellt und ausgewählt"
+            ENV_CREATED: 'Umgebung {name} erstellt und ausgewählt'
             FAILED_TO_CREATE: 'Umgebung konnte nicht erstellt werden'
             HAS_OVERRIDES: 'hat Überschreibungen'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'existiert nicht mehr. Wählen Sie eine andere.'
@@ -159,6 +159,12 @@ ICU:
             SAVING_TO_ENV: 'Speichern unter Umgebung: {name}'
             SELECTED_ENV: 'Ausgewählte Umgebung'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Wählen Sie, wo Konfigurationsänderungen gespeichert werden'
+            CONFIRM_DELETE: '{name} löschen?'
+            CONFIRM_DELETE_WITH_OVERRIDES: '{name} und all seine Config-Overrides löschen?'
+            DELETE: Löschen
+            DELETE_ENV_TOOLTIP: 'Umgebung {name} löschen'
+            ENV_DELETED: 'Umgebung {name} gelöscht'
+            FAILED_TO_DELETE: 'Konnte Umgebung nicht löschen'
         EXPAND_ALL: 'Alle ausklappen'
         EXPAND_SIDEBAR: 'Seitenleiste ausklappen'
         EXPERT_MODE: Expertenmodus
@@ -470,7 +476,7 @@ ICU:
             RAW_HEADER: 'Roher Seitenkopf (JSON)'
             REORDERED: '"{title}" neu angeordnet'
             REORDER_FAILED: 'Neuanordnung fehlgeschlagen'
-            REORDER_MOVE: 'Neu anordnen / Verschieben'
+            REORDER_MOVE: Bewegen
             REORDER_SAME_PARENT: 'Seiten können nur unter derselben übergeordneten Seite neu angeordnet werden. Verwenden Sie die Baumansicht für Verschiebungen zwischen übergeordneten Seiten.'
             SAVED: 'Seite erfolgreich gespeichert'
             SAVE_FAILED: 'Seite konnte nicht gespeichert werden'
@@ -486,6 +492,7 @@ ICU:
             VIEW_COLUMNS: Spalten
             VIEW_LIST: Liste
             VIEW_TREE: Baum
+            STATS_PUBLISHED: '{n} veröffentlicht'
         PASSWORD: Passwort
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Passwortanforderungen
@@ -884,6 +891,7 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Benutzer wurde anderswo geändert — speichern zum Überschreiben oder neuladen'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Benutzer wurde anderswo geändert. Bitte neuladen.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Sie können Ihr eigenes Konto nicht löschen.'
+            CONFIRM_DELETE_USER: "Benutzer '{username}' löschen? Dies kann nicht rückgängig gemacht werden."
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar entfernt'
             AVATAR_UPDATED: 'Avatar aktualisiert'
@@ -896,3 +904,36 @@ ICU:
             VIEW_SITE: 'Website anzeigen'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Unbekanntes Widget: {id}'
+        EDIT: Bearbeiten
+        GROUPS:
+            ADD_GROUP: 'Gruppe hinzufügen'
+            CREATE: Erstellen
+            DELETE_GROUP: 'Gruppe löschen'
+            DESCRIPTION: Beschreibung
+            DISPLAY_NAME: Anzeigename
+            GROUPS: Gruppen
+            GROUPS_GRAV_ADMIN: 'Gruppen — Grav Admin'
+            GROUP_COUNT_ONE: '{n} Gruppe'
+            GROUP_COUNT_OTHER: '{n} Gruppen'
+            NEW_GROUP: 'Neue Gruppe'
+            NEW_GROUP_GRAV_ADMIN: 'Neue Gruppe — Grav Admin'
+            NO_GROUPS: 'Keine Gruppen gefunden'
+        PAGINATION:
+            PAGE_OF: 'Seite {current} von {total}'
+        PLUGINS_TABLE:
+            NAME: Name
+            VERSION: Version
+        USERS_NAV:
+            CONFIGURATION: Konfiguration
+            GROUPS: Gruppen
+            USERS: Benutzer
+        USERS_TABLE:
+            DELETE: Löschen
+            DISABLED: Deaktiviert
+            EDIT: Bearbeiten
+            EMAIL: E-Mail
+            ENABLED: Aktiviert
+            NO_USERS: 'Keine Benutzer gefunden'
+            STATUS: Status
+            TABLE: Tabelle
+            USERNAME: Benutzername

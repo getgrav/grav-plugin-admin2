@@ -72,7 +72,13 @@ ICU:
       NO_PAGES: No pages found
       NO_SEARCH_RESULTS: No pages match your search
       LOADING: Loading pages...
-      REORDER_MOVE: Reorder / Move
+      REORDER_MOVE: Move
+      REORDER_DONE: Done
+      REORDER_EXIT_TITLE: Exit reorder mode
+      REORDER_START_TITLE: Reorder pages
+      STATS_TOTAL: "{n} total"
+      STATS_PUBLISHED: "{n} published"
+      STATS_UNPUBLISHED: "{n} unpublished"
       REORDER_SAME_PARENT: Can only reorder pages under the same parent. Use Tree view for cross-parent moves.
       MOVED: Moved "{title}"
       REORDERED: Reordered "{title}"
@@ -85,6 +91,13 @@ ICU:
       VIEW_TREE: Tree
       VIEW_LIST: List
       VIEW_COLUMNS: Columns
+      CHUNK_SIZE: Chunk
+      CHUNK_SIZE_HELP: Rows to fetch per request as you scroll. Larger values load slower the first time but reduce follow-up requests.
+      LOADING_CHUNK: Loading rows {from}–{to}…
+      LOADED_OF: '{n, plural, one {# loaded} other {# loaded}} of {total}'
+      REORDER_LOADING: Still loading the full list — try again in a moment.
+      REORDER_LOADING_ALL: Loading every chunk so reorder can affect the whole list…
+      NO_MATCH: No pages match your search
       HEADER_TITLE: Title
       HEADER_TEMPLATE: Template
       HEADER_STATUS: Status
@@ -1702,6 +1715,7 @@ ICU:
       ITEM_SAVED: "{name} saved"
       ITEM_DELETED: 'Deleted "{name}"'
       ITEM_DELETE_FAILED: 'Failed to delete "{name}"'
+      ITEM_COPIED: 'Copied "{name}" to "{target}"'
       ITEM_MOVED: 'Moved "{name}"'
       ITEM_REORDERED: 'Reordered "{name}"'
       USER_CREATED: "User {username} created"

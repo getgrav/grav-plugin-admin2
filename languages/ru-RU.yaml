@@ -53,7 +53,7 @@ ICU:
         AUTHOR: Автор
         BACKUPS_WIDGET:
             BACKING_UP: 'Резервная копия…'
-            BACKUP_NOW: 'Создать резервную копию'
+            BACKUP_NOW: Новый
             CREATE_A_NEW_BACKUP_NOW: 'Создать новую резервную копию сейчас'
             DOWNLOAD_FILE: 'Скачать {filename}'
             NO_BACKUPS_FOUND: 'Резервные копии не найдены'
@@ -150,7 +150,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Создать окружение…'
             CREATE_ENV_NAMED: 'Создать окружение „{name}"…'
             DEFAULT: 'По умолчанию'
-            ENV_CREATED: 'Окружение „{name}" создано и выбрано'
+            ENV_CREATED: 'Окружение {name} создано и выбрано'
             FAILED_TO_CREATE: 'Не удалось создать окружение'
             HAS_OVERRIDES: 'содержит переопределения'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'больше не существует. Выберите другое.'
@@ -470,7 +470,7 @@ ICU:
             RAW_HEADER: 'Исходный заголовок страницы (JSON)'
             REORDERED: '"{title}" переупорядочена'
             REORDER_FAILED: 'Ошибка при переупорядочении'
-            REORDER_MOVE: 'Переупорядочить / Переместить'
+            REORDER_MOVE: Переместить
             REORDER_SAME_PARENT: 'Можно переупорядочивать только страницы под одним родителем. Используйте представление дерева для перемещения между родителями.'
             SAVED: 'Страница успешно сохранена'
             SAVE_FAILED: 'Ошибка при сохранении страницы'

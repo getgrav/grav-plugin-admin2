@@ -124,6 +124,10 @@ While it is technically possible to run both plugins at the same time during the
 
 The two admins do not share UI code, events, or templates. Admin2 does not fire the `onAdmin*` event family that the classic admin exposes, because it does not run Grav's admin lifecycle — all data operations go through the API plugin instead. Plugins that integrate with the classic admin via Twig templates or admin-specific events will need to be updated to work with Admin2 and the API plugin.
 
+## Languages and Translations
+
+If you would like to contribute or add a new language for Admin2, please visit [The Grav Translations Community Portal for Admin2](https://translations.getgrav.org/translate/projects/getgrav/grav-plugin-admin2).
+
 ## Contributing
 
 Issues and pull requests are welcome at [getgrav/grav-plugin-admin2](https://github.com/getgrav/grav-plugin-admin2). The SvelteKit UI lives in [grav-admin-next](https://github.com/getgrav/grav-admin-next); please open PRs against the appropriate repo.
