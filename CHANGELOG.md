@@ -1,5 +1,5 @@
 # v2.0.0-rc.10
-## 05/23/2026
+## 05/26/2026
 
 1. [](#new)
     * **File picker fields now honor any Grav stream or scope token in their blueprint `folder:` option.** A field set to `folder: user://media`, `folder: theme://images`, `folder: account://`, `folder: self@:videos`, or any other stream the locator can resolve now lists files from that folder, matching admin classic. Requires grav-plugin-api ≥ 1.0.0-rc.10.
@@ -11,6 +11,7 @@
     * "Reorder / Move" toolbar button is now just "Move" so it stops wrapping onto two lines at common browser widths, and its label + tooltip are now translatable along with the rest of the pages toolbar, footer stats, and delete-confirmation dialog.
 2. [](#improved)
     * Media grid cards no longer grow when selected or hovered — the selection outline is now reserved at idle so neighboring cards stop nudging around when you pick one. The hover checkbox has a stronger outline so it reads as a checkbox affordance rather than a small grey square against a busy image.
+    * Updated languages from https://translations.getgrav.org
 3. [](#bugfix)
     * Pages tree, columns, and navigator views now show every child of a folder, no matter how many there are. Requires grav-plugin-api ≥ 1.0.0-rc.10. Fixes [getgrav/grav#4096](https://github.com/getgrav/grav/issues/4096).
     * **Add Page / Add Module parent picker now works on sites where the home page is aliased to a non-root folder** (e.g. `system.home.alias: /blog`). Selecting the home-aliased page as the parent used to create the new page in `/pages` root, and the same row stayed checked alongside `<root>`. Fixes [getgrav/grav-plugin-admin2#18](https://github.com/getgrav/grav-plugin-admin2/issues/18).
