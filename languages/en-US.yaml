@@ -105,6 +105,8 @@ ICU:
       HEADER_PARENT: Parent
       PUBLISHED: Published
       DRAFT: Draft
+      PUBLISH: Publish
+      UNPUBLISH: Unpublish
       SORT_ORDER: Order
       SORT_TITLE_AZ: Title A-Z
       SORT_TITLE_ZA: Title Z-A
@@ -721,6 +723,9 @@ ICU:
       NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: No configuration options available for this plugin.
       ENABLE_PLUGIN: Enable Plugin
       PAGE_TITLE: "{name} — Plugins — Grav Admin"
+      REMOVE_CONFIRM_TITLE: Remove plugin?
+      REMOVE_CONFIRM_MESSAGE: 'Remove {name}? This will uninstall the plugin and delete its files. Configuration will be preserved.'
+      TITLE: Plugins
     RESET:
       PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: Password reset successfully. Please sign in.
       UNABLE_TO_CONNECT_TO_SERVER: Unable to connect to server.
@@ -770,6 +775,8 @@ ICU:
       DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: Default settings for the page browser
       DEFAULT_VIEW: Default View
       HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: How pages are displayed by default
+      OTHER_LIST_VIEWS: Other List Views
+      OTHER_LIST_VIEWS_DESC: Default layout for the users, plugins, and themes lists
       ITEMS_PER_PAGE: Items per Page
       NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: Number of pages shown in list view
       EDITING: Editing
@@ -894,9 +901,19 @@ ICU:
       CHANGELOG: Changelog
       NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: No configuration options available for this theme.
       PAGE_TITLE: "{name} — Themes — Grav Admin"
+      TITLE: Themes
+      ACTIVATE: Activate
+      ACTIVATE_THEME: 'Activate {name}'
+      ACTIVATE_CONFIRM_TITLE: Activate theme?
+      ACTIVATE_CONFIRM_MESSAGE: 'Switch the active site theme to {name}? Frontend rendering will use this theme immediately.'
+      REMOVE_CONFIRM_TITLE: Remove theme?
+      REMOVE_CONFIRM_MESSAGE: 'Remove {name}? This will uninstall the theme and delete its files.'
+      REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} is the currently active theme. Removing it will leave the site without a theme until another one is activated. Continue?'
+      DELETE_ACTIVE_WARNING: 'Currently active. Switching themes first is recommended before deleting.'
     ACTIVE: Active
     ACTIVATE: Activate
     USERS:
+      TITLE: Users
       STATUS: Status
       STATUS_HELP: Disabled accounts cannot sign in or use the API.
       SEARCH_USERS: Search users...
@@ -1693,10 +1710,20 @@ ICU:
       PLUGIN_DISABLE_FAILED: "Failed to disable {name}: {detail}"
       PLUGIN_LOCKOUT_BLOCK: "{name} cannot be disabled from admin-next — it would lock you out."
       PLUGIN_REQUIRED_BLOCK: "{name} cannot be removed — it is required by admin-next."
+      PLUGIN_REMOVED: "{name} removed"
+      PLUGIN_REMOVE_FAILED: "Failed to remove {name}: {detail}"
       THEME_ACTIVATED: "{name} is now the active theme"
-      THEME_ACTIVATE_FAILED: "Failed to activate {name}"
+      THEME_ACTIVATE_FAILED: "Failed to activate {name}: {detail}"
+      THEME_REMOVED: "{name} removed"
+      THEME_REMOVE_FAILED: "Failed to remove {name}: {detail}"
       THEME_REMOVE_BLOCK: "{name} cannot be removed."
       ACTIVE_THEME_REMOVE_BLOCK: "Cannot remove the active theme. Switch to another theme first."
+      PAGE_PUBLISHED: '"{name}" published'
+      PAGE_UNPUBLISHED: '"{name}" unpublished'
+      PAGE_PUBLISH_FAILED: "Failed to change publish state: {detail}"
+      USER_ENABLED: "User {username} enabled"
+      USER_DISABLED: "User {username} disabled"
+      USER_STATE_FAILED: "Failed to change state for {username}: {detail}"
       GPM_REFRESHED: "{n, plural, =0{GPM refreshed — no updates available} one{GPM refreshed — # update available} other{GPM refreshed — # updates available}}"
       GRAV_UPGRADED: "Grav upgraded to v{version}"
       BACKUP_CREATED: "Backup created ({size})"

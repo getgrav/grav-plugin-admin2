@@ -1,11 +1,14 @@
 # v2.0.0-rc.11
-## 05/26/2026
+## 05/27/2026
 
 1. [](#improved)
     * **Pages tree and list views now show Copy and Delete in a permanent column on the right instead of fading in on hover**, so they're reachable on touch devices and stop visually overlapping the page title and date. Fixes [getgrav/grav-plugin-admin2#19](https://github.com/getgrav/grav-plugin-admin2/issues/19).
+    * **Common actions are now reachable directly from every list view, without entering the detail / configure screen.** Pages tree, list, and columns views get a publish/unpublish toggle by clicking the status indicator. Plugins table and cards views get an inline Delete (alongside the existing Enable toggle). Themes table and cards views get inline Activate and Delete, including switching themes with one click without leaving the list. Users table and cards views get an inline Enable/Disable toggle (alongside the existing Edit/Delete icons), and the user detail panel gains the same toggle and a Delete button. Each detail / preview pane mirrors the row-level action set for parity. Destructive actions go through the standard confirm dialog. Addresses [getgrav/grav-plugin-admin2#21](https://github.com/getgrav/grav-plugin-admin2/issues/21).
+    * **The settings panel's "Default View" section now covers users, plugins, and themes in addition to pages**, so an operator can set the default landing layout (cards vs table) per list type rather than per device. These preferences sync to the server alongside the existing pages-layout preference (uses the four preference keys already added in grav-plugin-api 1.0.0-rc.9).
 2. [](#bugfix)
     * **Hebrew and Arabic admin languages render the admin in right-to-left layout again.** Requires grav-plugin-api ≥ 1.0.0-rc.11.
     * **Site Defaults editor's Admin Language dropdown now preselects the right option when the saved value is a short code like `en` instead of `en-US`.**
+    * **Media files in subfolders (e.g. `Folder1/image1.png`) can be deleted again.** The client was percent-encoding the whole path including the slashes, producing `Folder1%2Fimage1.png`, which Apache rejects by default before PHP ever sees it. Path segments are now encoded individually so folder boundaries stay as literal `/`. Fixes [getgrav/grav-plugin-admin2#22](https://github.com/getgrav/grav-plugin-admin2/issues/22).
 
 # v2.0.0-rc.10
 ## 05/26/2026
