@@ -1,7 +1,7 @@
 name: Admin2
 slug: admin2
 type: plugin
-version: 2.0.0-rc.10
+version: 2.0.0-rc.11
 testing: true
 description: Modern administration panel for Grav CMS. A redesigned admin experience.
 icon: black-tie
@@ -15,12 +15,12 @@ bugs: https://github.com/getgrav/grav-plugin-admin2/issues
 docs: https://github.com/getgrav/grav-plugin-admin2/blob/main/README.md
 license: MIT
 compatibility:
-  grav: ['2.0']
+  grav: ["2.0"]
 
 dependencies:
-  - { name: grav, version: '>=2.0.0-rc.2' }
-  - { name: api, version: '>=1.0.0-rc.10' }
-  - { name: login, version: '>=3.8.2' }
+  - { name: grav, version: ">=2.0.0-rc.2" }
+  - { name: api, version: ">=1.0.0-rc.11" }
+  - { name: login, version: ">=3.8.2" }
 
 form:
   validation: loose
