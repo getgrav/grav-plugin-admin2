@@ -1,5 +1,5 @@
 # v2.0.0-rc.11
-## 05/27/2026
+## 05/28/2026
 
 1. [](#improved)
     * **Pages tree and list views now show Copy and Delete in a permanent column on the right instead of fading in on hover**, so they're reachable on touch devices and stop visually overlapping the page title and date. Fixes [getgrav/grav-plugin-admin2#19](https://github.com/getgrav/grav-plugin-admin2/issues/19).
@@ -9,6 +9,8 @@
     * **Hebrew and Arabic admin languages render the admin in right-to-left layout again.** Requires grav-plugin-api ≥ 1.0.0-rc.11.
     * **Site Defaults editor's Admin Language dropdown now preselects the right option when the saved value is a short code like `en` instead of `en-US`.**
     * **Media files in subfolders (e.g. `Folder1/image1.png`) can be deleted again.** The client was percent-encoding the whole path including the slashes, producing `Folder1%2Fimage1.png`, which Apache rejects by default before PHP ever sees it. Path segments are now encoded individually so folder boundaries stay as literal `/`. Fixes [getgrav/grav-plugin-admin2#22](https://github.com/getgrav/grav-plugin-admin2/issues/22).
+    * **The page editor no longer warns about unsaved changes when leaving a page whose only "changes" were edits a peer already saved.** The dirty indicator and leave-prompt now track local edits only, and reset when the sync plugin broadcasts that a peer's save landed. Requires grav-plugin-sync ≥ 1.1.2. Fixes [getgrav/grav-plugin-admin2#25](https://github.com/getgrav/grav-plugin-admin2/issues/25).
+    * **Media files whose names contain `#` or `?` (e.g. `image#1.png`) now render their thumbnail and Open link instead of 404ing.** The characters are percent-encoded when the URL is assembled, in both the media manager (grid/list/inspector) and the page editor's file fields and pickers. Fixes [getgrav/grav-plugin-admin2#26](https://github.com/getgrav/grav-plugin-admin2/issues/26).
 
 # v2.0.0-rc.10
 ## 05/26/2026

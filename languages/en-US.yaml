@@ -160,6 +160,8 @@ ICU:
         INVALID_YAML_FRONTMATTER: Invalid YAML frontmatter
         INVALID_YAML_FRONTMATTER_FIX_SYNTAX: Invalid YAML frontmatter — fix syntax before saving
         PAGE_SAVED_AND_MOVED: Page saved and moved
+        SAVED_BY_PEER: '{user} saved this page'
+        SAVED_BY_PEER_ANON: Another user saved this page
         FAILED_TO_CREATE_TRANSLATION: Failed to create translation
         FAILED_TO_SYNC_TRANSLATION: Failed to sync translation
         PAGE_DELETED: Page deleted
