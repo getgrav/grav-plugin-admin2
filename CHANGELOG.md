@@ -1,5 +1,5 @@
 # v2.0.0-rc.11
-## 05/28/2026
+## 05/29/2026
 
 1. [](#improved)
     * **Pages tree and list views now show Copy and Delete in a permanent column on the right instead of fading in on hover**, so they're reachable on touch devices and stop visually overlapping the page title and date. Fixes [getgrav/grav-plugin-admin2#19](https://github.com/getgrav/grav-plugin-admin2/issues/19).
