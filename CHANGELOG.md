@@ -1,5 +1,5 @@
 # v2.0.0-rc.12
-## 05/29/2026
+## 06/03/2026
 
 1. [](#new)
     * **Invite users by email** from the Users area: pre-set their permissions and groups, send a time-limited invite link, and they choose their own username, name and password when they accept. Requires grav-plugin-api ≥ 1.0.0-rc.12.
