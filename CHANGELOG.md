@@ -1,3 +1,14 @@
+# v2.0.0-rc.12
+## 06/03/2026
+
+1. [](#new)
+    * **Invite users by email** from the Users area: pre-set their permissions and groups, send a time-limited invite link, and they choose their own username, name and password when they accept. Requires grav-plugin-api ≥ 1.0.0-rc.12.
+2. [](#improved)
+    * **The permissions editor now leads with the live API permissions and the super-user crown shows on them too**, groups the sections as Site, API, then Admin (legacy, collapsed), so the deprecated admin-classic permissions stay out of the way.
+3. [](#bugfix)
+    * **Usernames with periods (e.g. `john.doe`) can now be created**, matching the characters admin classic has always allowed. Requires grav-plugin-api ≥ 1.0.0-rc.12.
+    * **Running `bin/gpm` commands no longer aborts with a `Grav::close()` error.** When a site had no user accounts yet, the post-install cache clear could redirect the console command to the admin route and stop it dead. Admin2 now stays out of the way entirely on the command line.
+
 # v2.0.0-rc.11
 ## 05/29/2026
 

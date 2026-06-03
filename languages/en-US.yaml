@@ -362,6 +362,7 @@ ICU:
     PERMISSIONS_FIELD:
       NOT_SET: Not set
       FAILED_TO_LOAD_PERMISSIONS: Failed to load permissions
+      ADMIN_LEGACY: Admin (legacy)
     TWO_FACTOR_FIELD:
       2FA_QR_CODE: 2FA QR Code
       SCAN_THE_QR_CODE_WITH_YOUR: Scan the QR code with your authenticator app
@@ -935,7 +936,7 @@ ICU:
       BACK_TO_USERS: Back to Users
       2_FACTOR_AUTHENTICATION: 2-Factor Authentication
       NEW:
-        LOWERCASE_3_64_CHARS: lowercase, 3-64 chars
+        LOWERCASE_3_64_CHARS: "3-64 chars: letters, numbers, . - _"
         NEW_USER_GRAV_ADMIN: New User — Grav Admin
         NEW_USER: New User
         ACCOUNT: Account
@@ -946,7 +947,78 @@ ICU:
     USERS_NAV:
       USERS: Users
       GROUPS: Groups
+      INVITATIONS: Invitations
       CONFIGURATION: Configuration
+    INVITATIONS:
+      INVITE: Invite
+      INVITE_USER: Invite User
+      SEND_INVITE: Send Invite
+      # Create form
+      RECIPIENT: Recipient
+      RECIPIENT_HINT: They'll choose their own username and password when they accept.
+      EMAIL: Email
+      FULL_NAME_OPTIONAL: Full name (optional)
+      MESSAGE_OPTIONAL: Personal message (optional)
+      EXPIRES_AFTER: Invitation expires after
+      EXPIRY_1_DAY: 1 day
+      EXPIRY_3_DAYS: 3 days
+      EXPIRY_7_DAYS: 7 days
+      EXPIRY_14_DAYS: 14 days
+      EXPIRY_30_DAYS: 30 days
+      GROUPS: Groups
+      GROUPS_HINT: Groups the invited user will be added to.
+      LOADING_GROUPS: Loading groups...
+      NO_GROUPS: No groups defined yet.
+      PERMISSIONS: Permissions
+      PERMISSIONS_HINT: Permissions the invited user will receive. They can't grant themselves more than you set here.
+      # Result panel
+      INVITE_READY: Invitation ready
+      EMAIL_SENT_TO: "An invitation email was sent to {email}."
+      INVITE_LINK: Invitation link
+      COPY: Copy
+      COPIED: Copied
+      INVITE_ANOTHER: Invite another
+      VIEW_PENDING: View pending
+      # Toasts
+      SENT_TOAST: "Invitation sent to {email}."
+      CREATED_NO_EMAIL_TOAST: Invitation created. Email isn't configured, so share the link manually.
+      RESENT_TOAST: "Invitation resent to {email}."
+      REVOKED_TOAST: Invitation revoked.
+      SEND_FAILED: Failed to send invitation.
+      RESEND_FAILED: Failed to resend invitation.
+      REVOKE_FAILED: Failed to revoke invitation.
+      LOAD_FAILED: Failed to load invitations.
+      COPY_FAILED: Couldn't copy the link.
+      # Pending list
+      PENDING_COUNT: "{count, plural, =0 {No pending invitations} one {# pending invitation} other {# pending invitations}}"
+      NONE_PENDING: No pending invitations
+      NONE_PENDING_HINT: Invite someone to join and their pending invitation will appear here.
+      INVITED_BY: "Invited by {name}"
+      EXPIRED: Expired
+      EXPIRES_IN_DAYS: "{count, plural, one {Expires in # day} other {Expires in # days}}"
+      EXPIRES_IN_HOURS: "{count, plural, one {Expires in # hour} other {Expires in # hours}}"
+      RESEND: Resend
+      REVOKE: Revoke
+      REVOKE_TITLE: Revoke invitation
+      CONFIRM_REVOKE: "Revoke the invitation for {email}? The link will stop working."
+      # Public accept page
+      ACCEPT_TITLE: Accept Invitation — Grav Admin
+      ACCEPT_HEADING: Accept invitation
+      ACCEPT_SUBHEADING: Set up your account to get started.
+      CHECKING_INVITE: Checking your invitation...
+      INVALID_INVITE: This invitation isn't valid.
+      INVALID_INVITE_BODY: This invitation link is invalid or has already been used.
+      EXPIRED_INVITE: This invitation has expired.
+      EXPIRED_INVITE_BODY: This invitation has expired. Ask an administrator to send a new one.
+      TITLE_OPTIONAL: Title (optional)
+      CHOOSE_PASSWORD: Choose a password
+      PASSWORD_POLICY: Password does not meet the required policy
+      USERNAME_INVALID: Username must be 3-64 characters.
+      USERNAME_TAKEN: That username is already taken.
+      CREATE_ACCOUNT: Create account
+      CREATING_ACCOUNT: Creating account...
+      ACCEPT_SUCCESS: Account created. Welcome!
+      ACCEPT_FAILED: Couldn't create your account.
     USERS_TABLE:
       USERNAME: Username
       EMAIL: Email

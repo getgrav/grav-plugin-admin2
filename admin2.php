@@ -253,6 +253,14 @@ class Admin2Plugin extends Plugin
      */
     public function setup(): void
     {
+        // Admin2 is a web-only plugin; skip entirely in CLI. Otherwise the
+        // bootstrap hijack in onPluginsInitialized() can fire redirect('/admin')
+        // during console commands (e.g. the cache clear after `bin/gpm install`),
+        // which calls Grav::close() and aborts the command.
+        if (\PHP_SAPI === 'cli') {
+            return;
+        }
+
         $route = $this->config->get('plugins.admin2.route');
         if (!$route) {
             return;
