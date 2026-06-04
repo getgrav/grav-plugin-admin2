@@ -591,11 +591,13 @@ ICU:
       ACCESS_DENIED: Access Denied
     ARE_YOU_SURE: Are you sure?
     ENVIRONMENT_SWITCHER:
-      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: Select where config writes are saved
+      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: Select the active environment — controls which config you see and where saves go
       HAS_OVERRIDES: has overrides
       SELECTED_ENV: Selected env
       NO_LONGER_EXISTS_PICK_ANOTHER: no longer exists. Pick another.
-      SAVE_CONFIG_TO: Save config to
+      SAVE_CONFIG_TO: Active environment
+      SWITCH_DISCARDS_UNSAVED: Switching environment reloads the admin and discards unsaved changes. Continue?
+      SWITCH_AND_RELOAD: Switch & reload
       CREATES_PATH: Creates user/env/{name}/config/
       DEFAULT: Default
       SAVING_TO_DEFAULT: Saving to default (user/config)
@@ -648,6 +650,17 @@ ICU:
       RELOAD: Reload
       NO_CONFIGURATION_BLUEPRINT_AVAILABLE: No configuration blueprint available for this scope.
       PAGE_TITLE: "Configuration: {scope} — Grav Admin"
+      OVERRIDE:
+        REVERT_TOOLTIP: "Overrides default ({value}). Click to revert."
+        DEFAULT_EMPTY: empty
+        REVERTED: Reverted to the inherited value
+        REVERT_FAILED: Could not revert
+        RESET_BUTTON: Reset overrides
+        RESET_TOOLTIP: Remove every override and restore inherited values
+        RESET_TITLE: Reset all overrides?
+        RESET_MESSAGE: "This removes every override on {scope} and restores the inherited values. This cannot be undone."
+        RESET_CONFIRM: Reset
+        RESET_DONE: Overrides reset
     FLEX_OBJECTS:
       SEARCH: Search...
       PREVIOUS: Previous

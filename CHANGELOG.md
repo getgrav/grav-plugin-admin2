@@ -1,3 +1,9 @@
+# v2.0.0-rc.13
+## 06/04/2026
+
+1. [](#new)
+    * **Configuration fields that override an inherited default now show a revert icon**, with the default value in its tooltip, and a "Reset overrides" button clears every override for the scope at once. Works across the config sections, plugin and theme settings, for both the base configuration and per-environment overlays. Requires grav-plugin-api ≥ 1.0.0-rc.13.
+
 # v2.0.0-rc.12
 ## 06/03/2026
 
