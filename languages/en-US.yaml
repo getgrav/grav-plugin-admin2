@@ -650,6 +650,17 @@ ICU:
       RELOAD: Reload
       NO_CONFIGURATION_BLUEPRINT_AVAILABLE: No configuration blueprint available for this scope.
       PAGE_TITLE: "Configuration: {scope} — Grav Admin"
+      OVERRIDE:
+        REVERT_TOOLTIP: "Overrides default ({value}). Click to revert."
+        DEFAULT_EMPTY: empty
+        REVERTED: Reverted to the inherited value
+        REVERT_FAILED: Could not revert
+        RESET_BUTTON: Reset overrides
+        RESET_TOOLTIP: Remove every override and restore inherited values
+        RESET_TITLE: Reset all overrides?
+        RESET_MESSAGE: "This removes every override on {scope} and restores the inherited values. This cannot be undone."
+        RESET_CONFIRM: Reset
+        RESET_DONE: Overrides reset
     FLEX_OBJECTS:
       SEARCH: Search...
       PREVIOUS: Previous
