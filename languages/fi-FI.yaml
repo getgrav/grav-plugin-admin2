@@ -82,6 +82,17 @@ ICU:
             RELOAD: 'Lataa uudelleen'
             TITLE: Määritys
             TITLE_SCROLLED: 'Määritys: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: tyhjä
+                RESET_BUTTON: 'Palauta ohitukset'
+                RESET_CONFIRM: Palauta
+                RESET_DONE: 'Ohitukset palautettu'
+                RESET_MESSAGE: 'Tämä poistaa kaikki ohitukset kohtaan {scope} ja palauttaa perityt arvot. Tätä ei voi kumota.'
+                RESET_TITLE: 'Palautetaanko kaikki ohitukset?'
+                RESET_TOOLTIP: 'Poista kaikki ohitukset ja palauta perityt arvot'
+                REVERTED: 'Palautettu perittyyn arvoon'
+                REVERT_FAILED: 'Palautus epäonnistui'
+                REVERT_TOOLTIP: 'Ohittaa oletusarvon ({value}). Napsauta palautukseen.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ympäristö
             EXPORT_YAML: 'Vie YAML'
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: 'Tallennetaan ympäristöön: {name}'
             SELECTED_ENV: 'Valittu ympäristö'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Valitse, mihin asetuksien kirjoitukset tallennetaan'
+            CONFIRM_DELETE: 'Poista {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Poista {name} ja kaikki sen asetuksien ohitukset?'
+            DELETE: Poista
+            DELETE_ENV_TOOLTIP: 'Poista ympäristö {name}'
+            ENV_DELETED: 'Ympäristö {name} poistettu'
+            FAILED_TO_DELETE: 'Ympäristön poistaminen epäonnistui'
+            SWITCH_AND_RELOAD: 'Vaihda ja lataa uudelleen'
+            SWITCH_DISCARDS_UNSAVED: 'Ympäristön vaihtaminen lataa hallinnon uudelleen ja hylkää tallentamattomat muutokset. Jatketaanko?'
         EXPAND_ALL: 'Laajenna kaikki'
         EXPAND_SIDEBAR: 'Laajenna sivupalkki'
         EXPERT_MODE: Asiantuntijamoodi
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Näytä/piilota sivunavigaattori'
                 UNPUBLISH_ON: 'Poista julkaisusta'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Kirjoita markdown-sisältösi tähän...'
+                SAVED_BY_PEER: '{user} tallentaa tämän sivun'
+                SAVED_BY_PEER_ANON: 'Toinen käyttäjä tallentaa tämän sivun'
             EDIT_PAGE: 'Muokkaa sivua'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Muokattu
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Sisältää alasivuja'
                 SUMMARY: Yhteenveto
                 VISIBLE: Näkyvä
+                DROP_HERE: 'Pudota tähän'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Sivujen uudelleenjärjestäminen epäonnistui'
                 NO_PAGES_MATCH: 'Haullasi „{query}" ei löytynyt sivuja'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Sarakkeet
             VIEW_LIST: Lista
             VIEW_TREE: Puu
+            CHUNK_SIZE: Jakso
+            CHUNK_SIZE_HELP: 'Rivejä, jotka haetaan pyyntöä kohti selaillessasi. Suuremmat arvot latautuvat hitaammin ensimmäistä kertaa, mutta vähentävät seuraavia pyyntöjä.'
+            LOADED_OF: '{n, plural, one {# ladattu} other {# ladattu}} yhteensä {total}'
+            LOADING_CHUNK: 'Ladataan rivejä {from}–{to}…'
+            NO_MATCH: 'Yhään sivua ei vastaavaa hakuasi'
+            PUBLISH: Julkaise
+            REORDER_DONE: Valmis
+            REORDER_EXIT_TITLE: 'Poistu järjestyksen muuttamisen tilasta'
+            REORDER_LOADING: 'Täydellistä luetteloa ladataan edelleen – yritä uudelleen hetken kuluttua.'
+            REORDER_LOADING_ALL: 'Ladataan jokaista osaa, jotta järjestyksen muutos vaikuttaa koko luetteloon…'
+            REORDER_START_TITLE: 'Järjestä sivut uudelleen'
+            STATS_PUBLISHED: '{n} julkaistu'
+            STATS_TOTAL: '{n} yhteensä'
+            STATS_UNPUBLISHED: '{n} julkaisematon'
+            UNPUBLISH: 'Peruuta julkaiseminen'
         PASSWORD: Salasana
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Salasanavaatimukset
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Käyttöoikeuksien lataaminen epäonnistui'
             NOT_SET: 'Ei asetettu'
+            ADMIN_LEGACY: 'Admin (perintö)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Takaisin kojelautaan'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Tälle liitännäissivulle ei ole saatavilla sisältöä.'
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Etsi liitännäisiä...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Valitse liitännäinen nähdäksesi sen tiedot'
             SYMLINKED: 'Symbolinen linkki'
+            REMOVE_CONFIRM_MESSAGE: 'Poistetaanko {name}? Tämä poistaa laajennuksen asennuksen ja poistaa sen tiedostot. Määritykset säilytetään.'
+            REMOVE_CONFIRM_TITLE: 'Poistetaanko laajennus?'
+            TITLE: Laajennukset
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Ladataan liitännäisen sivua...'
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Käytetään tumman taustan päällä'
             USED_ON_LIGHT_BACKGROUNDS: 'Käytetään vaalean taustan päällä'
             USERS_MAY_OVERRIDE: 'Käyttäjät voivat ohittaa'
+            OTHER_LIST_VIEWS: 'Muut luettelonäkymät'
+            OTHER_LIST_VIEWS_DESC: 'Käyttäjien, laajennuksien ja teemojen luetteloiden oletusasettelu'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Valitse teema nähdäksesi tiedot'
             SYMLINKED: 'Symbolisesti linkitetty'
             THEMES_GRAV_ADMIN: 'Teemat — Grav Admin'
+            ACTIVATE: Aktivoi
+            ACTIVATE_CONFIRM_MESSAGE: 'Vaihda aktiivinen sivuston teema kohteeseen {name}? Frontend-käyttö ottaa tämän teeman käyttöön välittömästi.'
+            ACTIVATE_CONFIRM_TITLE: 'Aktivoidaanko teema?'
+            ACTIVATE_THEME: 'Aktivoi {name}'
+            DELETE_ACTIVE_WARNING: 'Tällä hetkellä aktiivinen. Teeman vaihtaminen ennen poistamista on suositeltavaa.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} on tällä hetkellä aktiivinen teema. Sen poistaminen jättää sivuston ilman teemaa, kunnes toinen aktivoidaan. Jatketaanko?'
+            REMOVE_CONFIRM_MESSAGE: 'Poistetaanko {name}? Tämä poistaa teeman ja sen tiedostot.'
+            REMOVE_CONFIRM_TITLE: 'Poistetaanko teema?'
+            TITLE: Teemat
         TIME:
             DAYS_AGO: '{n}pv sitten'
             HOURS_AGO: '{n}h sitten'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Käyttäjä muutettiin muualla — tallenna päivitysten tekemiseksi tai lataa uudelleen'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Käyttäjä muutettiin muualla. Lataa sivu uudelleen.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Et voi poistaa omaa tiliäsi.'
+            CONFIRM_DELETE_USER: 'Poistetaanko käyttäjä „{username}"? Tätä ei voi kumota.'
+            TITLE: Käyttäjät
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Profiilikuva poistettu'
             AVATAR_UPDATED: 'Profiilikuva päivitetty'
@@ -896,3 +950,135 @@ ICU:
             VIEW_SITE: 'Näytä sivusto'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Tuntematon widget: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Tilejä koskevien asetuksien lataaminen epäonnistui'
+            FAILED_TO_SAVE: 'Tilejä koskevien asetuksien tallentaminen epäonnistui'
+            MODIFIED_ELSEWHERE: 'Asetuksia on muutettu muualla. Lataa sivu uudelleen.'
+            NO_FIELDS: 'Asetuksissa ei ole saatavilla olevia vaihtoehtoja.'
+            PAGE_TITLE: 'Tilejä koskevat asetukset — Grav Admin'
+            SAVED: 'Asetukset tallennettu'
+            TITLE: 'Tilejä koskevat asetukset'
+        EDIT: Muokkaa
+        GROUPS:
+            ADD_GROUP: 'Lisää ryhmä'
+            BACK_TO_GROUPS: 'Takaisin ryhmiin'
+            CONFIRM_DELETE_GROUP: "Poista ryhmä '{name}'? Tätä ei voi kumota."
+            CREATE: Luo
+            DELETE_GROUP: 'Poista ryhmä'
+            DESCRIPTION: Kuvaus
+            DISPLAY_NAME: Näyttönimi
+            FAILED_TO_CREATE_GROUP: 'Ryhmän luominen epäonnistui.'
+            FAILED_TO_LOAD_GROUP: "Ryhmän '{name}' lataaminen epäonnistui."
+            FAILED_TO_LOAD_GROUPS: 'Ryhmien lataaminen epäonnistui'
+            FAILED_TO_SAVE_GROUP: 'Ryhmän tallentaminen epäonnistui.'
+            GROUPS: Ryhmät
+            GROUPS_GRAV_ADMIN: 'Ryhmät — Grav Admin'
+            GROUP_COUNT_ONE: '{n} ryhmä'
+            GROUP_COUNT_OTHER: '{n} ryhmää'
+            GROUP_CREATED: "Ryhmä '{name}' luotu"
+            GROUP_DELETED: "Ryhmä '{name}' poistettu"
+            GROUP_DELETE_FAILED: "Ryhmän '{name}' poistaminen epäonnistui"
+            GROUP_MODIFIED_ELSEWHERE: 'Ryhmää on muokattu muualla. Lataa sivu uudelleen.'
+            GROUP_NAME: 'Ryhmän nimi'
+            GROUP_NAME_HELP: '1–200 merkkiä kirjaimia, numeroita, tavuviivoja tai alaviivoja sisältävä. Käytetään tallennusavaimena.'
+            GROUP_NAME_PLACEHOLDER: 'esim. toimittajat'
+            GROUP_PAGE_TITLE: '{name} — Ryhmät — Grav Admin'
+            GROUP_SAVED: "Ryhmä '{name}' tallennettu"
+            NEW_GROUP: 'Uusi ryhmä'
+            NEW_GROUP_GRAV_ADMIN: 'Uusi ryhmä – Grav Admin'
+            NO_GROUPS: 'Ryhmiä ei löytynyt'
+            NO_GROUPS_MATCH_SEARCH: 'Hakua vastaavia ryhmiä ei löytynyt'
+            SEARCH_GROUPS: 'Etsi ryhmiä...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Valitse ryhmä nähdäksesi tiedot'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Tiliä ei voitu luoda.'
+            ACCEPT_HEADING: 'Hyväksy kutsu'
+            ACCEPT_SUBHEADING: 'Aseta tilisi käyttöön pääsemiseksi.'
+            ACCEPT_SUCCESS: 'Tili luotu. Tervetuloa!'
+            ACCEPT_TITLE: 'Hyväksy kutsu – Grav Admin'
+            CHECKING_INVITE: 'Tarkistetaan kutsua...'
+            CHOOSE_PASSWORD: 'Valitse salasana'
+            CONFIRM_REVOKE: 'Peruutetaanko kutsun osoitteelle {email}? Linkki lakkaa toimimasta.'
+            COPIED: Kopioitu
+            COPY: Kopioi
+            COPY_FAILED: 'Linkkiä ei voitu kopioida.'
+            CREATED_NO_EMAIL_TOAST: 'Kutsu luotu. Sähköpostia ei ole määritetty, joten jaa linkki manuaalisesti.'
+            CREATE_ACCOUNT: 'Luo tili'
+            CREATING_ACCOUNT: 'Luodaan tiliä...'
+            EMAIL: Sähköposti
+            EMAIL_SENT_TO: 'Kutsukirje lähetettiin osoitteeseen {email}.'
+            EXPIRED: Vanhentunut
+            EXPIRED_INVITE: 'Tämä kutsu on vanhentunut.'
+            EXPIRED_INVITE_BODY: 'Tämä kutsu on vanhentunut. Pyydä järjestelmänvalvojaa lähettämään uusi kutsu.'
+            EXPIRES_AFTER: 'Kutsu vanhenee jälkeen'
+            EXPIRES_IN_DAYS: '{count, plural, one {Vanhenee # päivässä} other {Vanhenee # päivässä}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Vanhenee # tunnissa} other {Vanhenee # tunnissa}}'
+            EXPIRY_14_DAYS: '14 päivää'
+            EXPIRY_1_DAY: '1 päivä'
+            EXPIRY_30_DAYS: '30 päivää'
+            EXPIRY_3_DAYS: '3 päivää'
+            EXPIRY_7_DAYS: '7 päivää'
+            FULL_NAME_OPTIONAL: 'Koko nimi (valinnainen)'
+            GROUPS: Ryhmät
+            GROUPS_HINT: 'Ryhmät, joihin kutsuttu käyttäjä lisätään.'
+            INVALID_INVITE: 'Tämä kutsu ei ole voimassa.'
+            INVALID_INVITE_BODY: 'Tämä kutsulinkki on virheellinen tai se on jo käytetty.'
+            INVITE: Kutsu
+            INVITED_BY: 'Kutsuttu käyttäjältä {name}'
+            INVITE_ANOTHER: 'Kutsu toinen'
+            INVITE_LINK: Kutsulinkki
+            INVITE_READY: 'Kutsu valmis'
+            INVITE_USER: 'Kutsu käyttäjä'
+            LOADING_GROUPS: 'Ladataan ryhmiä...'
+            LOAD_FAILED: 'Kutsuja ei voitu ladata.'
+            MESSAGE_OPTIONAL: 'Henkilökohtainen viesti (valinnainen)'
+            NONE_PENDING: 'Ei odottavia kutsuja'
+            NONE_PENDING_HINT: 'Kutsu joku liittymään, ja heidän odottava kutsunsa ilmestyy tähän.'
+            NO_GROUPS: 'Ryhmiä ei ole vielä määritetty.'
+            PASSWORD_POLICY: 'Salasana ei täytä vaadittuja vaatimuksia'
+            PENDING_COUNT: '{count, plural, =0 {Ei odottavia kutsuja} one {# odottava kutsu} other {# odottavaa kutsua}}'
+            PERMISSIONS: Käyttöoikeudet
+            PERMISSIONS_HINT: 'Käyttöoikeudet, jotka kutsuttu käyttäjä saa. He eivät voi myöntää itselleen enempää oikeuksia kuin tässä asetamme.'
+            RECIPIENT: Vastaanottaja
+            RECIPIENT_HINT: 'He valitsevat oman käyttäjänimensä ja salasanansa kutsua hyväksyessään.'
+            RESEND: 'Lähetä uudelleen'
+            RESEND_FAILED: 'Kutsun uudelleenlähettäminen epäonnistui.'
+            RESENT_TOAST: 'Kutsu lähetetty uudelleen osoitteeseen {email}.'
+            REVOKE: 'Peruuta kutsu'
+            REVOKED_TOAST: 'Kutsu peruutettu.'
+            REVOKE_FAILED: 'Kutsun peruuttaminen epäonnistui.'
+            REVOKE_TITLE: 'Peruuta kutsu'
+            SEND_FAILED: 'Kutsun lähettäminen epäonnistui.'
+            SEND_INVITE: 'Lähetä kutsu'
+            SENT_TOAST: 'Kutsu lähetetty osoitteeseen {email}.'
+            TITLE_OPTIONAL: 'Nimike (valinnainen)'
+            USERNAME_INVALID: 'Käyttäjänimen on oltava 3–64 merkkiä.'
+            USERNAME_TAKEN: 'Tämä käyttäjänimi on jo käytössä.'
+            VIEW_PENDING: 'Näytä odottavat'
+        PAGINATION:
+            PAGE_OF: 'Sivu {current} / {total}'
+        PLUGINS_TABLE:
+            NAME: Nimi
+            NO_PLUGINS: 'Yhtään laajennusta ei ole asennettu'
+            PROTECTED_PLUGIN: 'Tätä laajennusta ei voi poistaa käytöstä admin-nextista ilman, että lukitset itsesi ulos.'
+            VERSION: Versio
+        THEMES_TABLE:
+            NO_THEMES: 'Teemoja ei ole asennettu'
+        USERS_NAV:
+            CONFIGURATION: Määritykset
+            GROUPS: Ryhmät
+            INVITATIONS: Kutsut
+            USERS: Käyttäjät
+        USERS_TABLE:
+            ACTIONS: Toiminnot
+            CARDS: Kortit
+            DELETE: Poista
+            DISABLED: 'Poistettu käytöstä'
+            EDIT: Muokkaa
+            EMAIL: Sähköposti
+            ENABLED: Käytössä
+            FULL_NAME: 'Koko nimi'
+            NO_USERS: 'Käyttäjiä ei löytynyt'
+            STATUS: Tila
+            TABLE: Taulukko
+            USERNAME: Käyttäjänimi
