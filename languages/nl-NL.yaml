@@ -82,6 +82,17 @@ ICU:
             RELOAD: 'Opnieuw laden'
             TITLE: Configuratie
             TITLE_SCROLLED: 'Configuratie: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: leeg
+                RESET_BUTTON: 'Overschrijvingen opnieuw instellen'
+                RESET_CONFIRM: 'Opnieuw instellen'
+                RESET_DONE: 'Overschrijvingen opnieuw ingesteld'
+                RESET_MESSAGE: 'Dit verwijdert elke overschrijving op {scope} en herstelt de overgenomen waarden. Dit kan niet ongedaan gemaakt worden.'
+                RESET_TITLE: 'Alle overschrijvingen opnieuw instellen?'
+                RESET_TOOLTIP: 'Verwijder elke overschrijving en herstel overgenomen waarden'
+                REVERTED: 'Teruggezet naar de overgenomen waarde'
+                REVERT_FAILED: 'Kon niet terugzetten'
+                REVERT_TOOLTIP: 'Overschrijft standaard ({value}). Klik om terug te zetten.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Omgeving
             EXPORT_YAML: 'YAML exporteren'
@@ -165,6 +176,8 @@ ICU:
             DELETE_ENV_TOOLTIP: 'Verwijder omgeving {name}'
             ENV_DELETED: 'Omgeving {name} verwijderd.'
             FAILED_TO_DELETE: 'Het verwijderen van deze omgeving mislukt.'
+            SWITCH_AND_RELOAD: 'Omgeving wisselen en herladen'
+            SWITCH_DISCARDS_UNSAVED: 'Het wisselen van omgeving herlaadt de beheerdersinterface en verwijdert niet-opgeslagen wijzigingen. Doorgaan?'
         EXPAND_ALL: 'Alles uitvouwen'
         EXPAND_SIDEBAR: 'Zijbalk uitvouwen'
         EXPERT_MODE: Expertmodus
@@ -408,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Paginanavigator in-/uitschakelen'
                 UNPUBLISH_ON: 'Publicatie opheffen op'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Schrijf hier uw markdown-inhoud...'
+                SAVED_BY_PEER: 'Gebruiker {user} heeft deze pagina opgeslagen'
+                SAVED_BY_PEER_ANON: 'Een andere gebruiker heeft deze pagina opgeslagen'
             EDIT_PAGE: 'Pagina bewerken'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Gewijzigd
@@ -466,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Heeft onderliggende items'
                 SUMMARY: Samenvatting
                 VISIBLE: Zichtbaar
+                DROP_HERE: 'Hier neerzetten'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: "Pagina's opnieuw organiseren mislukt"
                 NO_PAGES_MATCH: 'Geen pagina''s komen overeen met "{query}"'
@@ -492,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Kolommen
             VIEW_LIST: Lijst
             VIEW_TREE: Structuur
+            CHUNK_SIZE: blok
+            CHUNK_SIZE_HELP: 'Aantal rijen dat per scroll wordt opgehaald. Hogere waarde laadt de eerste keer trager, maar vermindert het aantal vervolgverzoeken.'
+            LOADED_OF: '{n, plural, one {# geladen} other {# geladen}} van {total}'
+            LOADING_CHUNK: 'Rijen {from}–{to} worden geladen'
+            NO_MATCH: 'Geen resultaten gevonden voor uw zoekopdracht'
+            PUBLISH: Publiceren
+            REORDER_DONE: Klaar
+            REORDER_EXIT_TITLE: 'Herschikkingsmodus verlaten'
+            REORDER_LOADING: 'Volledige lijst wordt nog geladen — probeer het straks nog eens'
+            REORDER_LOADING_ALL: 'Elk blok wordt geladen, zodat de hele lijst kan worden herschikt…'
+            REORDER_START_TITLE: "Pagina's herschikken"
+            STATS_PUBLISHED: '{n} gepubliceerd'
+            STATS_TOTAL: '{n} totaal'
+            STATS_UNPUBLISHED: '{n} gepubliceerd'
+            UNPUBLISH: 'Niet publiceren'
         PASSWORD: Wachtwoord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Wachtwoordvereisten
@@ -500,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Machtigingen kunnen niet worden geladen'
             NOT_SET: 'Niet ingesteld'
+            ADMIN_LEGACY: 'Beheer (oude versie)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Terug naar Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Geen inhoud beschikbaar voor deze pluginpagina.'
@@ -522,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Plugins zoeken...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecteer een plugin om details weer te geven'
             SYMLINKED: 'Symbolische koppeling'
+            REMOVE_CONFIRM_MESSAGE: '{name} verwijderen? Hiermee wordt de plug-in verwijderd en worden de bijbehorende bestanden gewist. De instellingen blijven behouden.'
+            REMOVE_CONFIRM_TITLE: 'Plug-in verwijderen?'
+            TITLE: Plug-ins
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Pluginpagina laden...'
         PLUGIN_WIDGET_LOADER:
@@ -670,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Gebruikt op donkere achtergronden'
             USED_ON_LIGHT_BACKGROUNDS: 'Gebruikt op lichte achtergronden'
             USERS_MAY_OVERRIDE: 'Gebruikers kunnen dit overschrijven'
+            OTHER_LIST_VIEWS: 'Andere lijstweergaven'
+            OTHER_LIST_VIEWS_DESC: 'Standaardindeling voor de lijsten met gebruikers, plug-ins en thema’s'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
@@ -739,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecteer een thema om details weer te geven'
             SYMLINKED: Gesymlinkt
             THEMES_GRAV_ADMIN: "Thema's — Grav Admin"
+            ACTIVATE: Activeren
+            ACTIVATE_CONFIRM_MESSAGE: 'Het thema van de actieve site wijzigen in {name}? De weergave op de frontend zal onmiddellijk dit thema gebruiken.'
+            ACTIVATE_CONFIRM_TITLE: 'Thema activeren?'
+            ACTIVATE_THEME: 'Activeer {name}'
+            DELETE_ACTIVE_WARNING: 'Momenteel actief. Wissel eerst van thema voordat je het verwijdert.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: 'Thema {name} is het momenteel actief. Als je dit verwijdert, heeft de site geen thema meer totdat er een ander wordt geactiveerd. Doorgaan?'
+            REMOVE_CONFIRM_MESSAGE: '{name} verwijderen? Hiermee wordt het thema verwijderd en worden de bijbehorende bestanden gewist.'
+            REMOVE_CONFIRM_TITLE: 'Thema verwijderen?'
+            TITLE: "Thema's"
         TIME:
             DAYS_AGO: '{n}d geleden'
             HOURS_AGO: '{n}u geleden'
@@ -890,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Gebruiker is elders gewijzigd — opslaan om te overschrijven of herlaad'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Gebruiker is elders gewijzigd. Laad alstublieft opnieuw.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'U kunt uw eigen account niet verwijderen.'
+            CONFIRM_DELETE_USER: "Gebruiker '{username}' verwijderen? Dit kan niet ongedaan worden gemaakt."
+            TITLE: Gebruikers
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar verwijderd'
             AVATAR_UPDATED: 'Avatar bijgewerkt'
@@ -902,3 +950,135 @@ ICU:
             VIEW_SITE: 'Website weergeven'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Onbekende widget: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Laden van accounts configuratie mislukt'
+            FAILED_TO_SAVE: 'Opslaan van de accountconfiguratie is mislukt'
+            MODIFIED_ELSEWHERE: 'Configuratie is elders gewijzigd. Laad de pagina opnieuw.'
+            NO_FIELDS: 'Er zijn geen configuratieopties beschikbaar.'
+            PAGE_TITLE: 'Accounts configuratie — Grav Admin'
+            SAVED: 'Configuratie opgeslagen'
+            TITLE: 'Accounts configuratie'
+        EDIT: Bewerken
+        GROUPS:
+            ADD_GROUP: 'Groep toevoegen'
+            BACK_TO_GROUPS: 'Terug naar overzicht groepen'
+            CONFIRM_DELETE_GROUP: "Groep '{name}' verwijderen? Dit kan niet ongedaan worden gemaakt."
+            CREATE: Aanmaken
+            DELETE_GROUP: 'Groep verwijderen'
+            DESCRIPTION: Omschrijving
+            DISPLAY_NAME: 'Toon naam'
+            FAILED_TO_CREATE_GROUP: 'Aanmaken groep is mislukt'
+            FAILED_TO_LOAD_GROUP: "Laden van groep '{name}' is mislukt"
+            FAILED_TO_LOAD_GROUPS: 'Laden van groepen is mislukt'
+            FAILED_TO_SAVE_GROUP: 'Bewaren groep is mislukt'
+            GROUPS: Groepen
+            GROUPS_GRAV_ADMIN: 'Groepen — Grav Admin'
+            GROUP_COUNT_ONE: '{n} groep'
+            GROUP_COUNT_OTHER: '{n} groepen'
+            GROUP_CREATED: "Groep '{name}' aangemaakt"
+            GROUP_DELETED: "Groep '{name}' verwijderd"
+            GROUP_DELETE_FAILED: "Kan groep '{name}' niet verwijderen"
+            GROUP_MODIFIED_ELSEWHERE: 'Groep is elders gewijzigd. Laad de pagina opnieuw.'
+            GROUP_NAME: 'Naam groep'
+            GROUP_NAME_HELP: '1–200 tekens, bestaande uit letters, cijfers, koppeltekens of onderstrepingstekens. Wordt gebruikt als opslagcode.'
+            GROUP_NAME_PLACEHOLDER: 'bijv. redacteuren'
+            GROUP_PAGE_TITLE: '{name} — Groepen — Grav Admin'
+            GROUP_SAVED: "Groep '{name}' opgeslagen"
+            NEW_GROUP: 'Nieuwe groep'
+            NEW_GROUP_GRAV_ADMIN: 'Nieuw groep — Grav Admin'
+            NO_GROUPS: 'Geen groepen gevonden'
+            NO_GROUPS_MATCH_SEARCH: 'Geen groepen gevonden die aan je zoekopdracht voldoen'
+            SEARCH_GROUPS: 'Groepen zoeken...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Kies een groep om de details te bekijken'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Je account kon niet worden aangemaakt.'
+            ACCEPT_HEADING: 'Uitnodiging accepteren'
+            ACCEPT_SUBHEADING: 'Stel uw account in om aan de slag te gaan.'
+            ACCEPT_SUCCESS: 'Account gemaakt. Welkom!'
+            ACCEPT_TITLE: 'Uitnodiging accepteren — Grav Admin'
+            CHECKING_INVITE: 'Uw uitnodiging wordt gecontroleerd...'
+            CHOOSE_PASSWORD: 'Kies een wachtwoord'
+            CONFIRM_REVOKE: 'Intrekken van de uitnodiging voor {email}? De koppeling werkt niet meer.'
+            COPIED: Gekopieerd
+            COPY: Kopiëren
+            COPY_FAILED: 'Kon de koppeling niet kopiëren.'
+            CREATED_NO_EMAIL_TOAST: 'Uitnodiging gemaakt. E-mail is niet geconfigureerd, dus deel de koppeling handmatig.'
+            CREATE_ACCOUNT: 'Account maken'
+            CREATING_ACCOUNT: 'Account wordt gemaakt...'
+            EMAIL: E-mail
+            EMAIL_SENT_TO: 'Een uitnodigingse-mail is naar {email} verzonden.'
+            EXPIRED: Verlopen
+            EXPIRED_INVITE: 'Deze uitnodiging is verlopen.'
+            EXPIRED_INVITE_BODY: 'Deze uitnodiging is verlopen. Vraag een beheerder om een nieuwe uit te sturen.'
+            EXPIRES_AFTER: 'Uitnodiging verloopt na'
+            EXPIRES_IN_DAYS: '{count, plural, one {Verloopt over # dag} other {Verloopt over # dagen}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Verloopt over # uur} other {Verloopt over # uur}}'
+            EXPIRY_14_DAYS: '14 dagen'
+            EXPIRY_1_DAY: '1 dag'
+            EXPIRY_30_DAYS: '30 dagen'
+            EXPIRY_3_DAYS: '3 dagen'
+            EXPIRY_7_DAYS: '7 dagen'
+            FULL_NAME_OPTIONAL: 'Volledige naam (optioneel)'
+            GROUPS: Groepen
+            GROUPS_HINT: 'Groepen waaraan de uitgenodigde gebruiker wordt toegevoegd.'
+            INVALID_INVITE: 'Deze uitnodiging is niet geldig.'
+            INVALID_INVITE_BODY: 'Deze uitnodigingslink is ongeldig of is al gebruikt.'
+            INVITE: Uitnodigen
+            INVITED_BY: 'Uitgenodigd door {name}'
+            INVITE_ANOTHER: 'Nog iemand uitnodigen'
+            INVITE_LINK: Uitnodigingslink
+            INVITE_READY: 'Uitnodiging gereed'
+            INVITE_USER: 'Gebruiker uitnodigen'
+            LOADING_GROUPS: 'Groepen laden...'
+            LOAD_FAILED: 'Uitnodigingen laden is mislukt.'
+            MESSAGE_OPTIONAL: 'Persoonlijk bericht (optioneel)'
+            NONE_PENDING: 'Geen uitnodigingen in afwachting'
+            NONE_PENDING_HINT: 'Nodig iemand uit om lid te worden en hun uitnodiging in afwachting verschijnt hier.'
+            NO_GROUPS: 'Nog geen groepen gedefinieerd.'
+            PASSWORD_POLICY: 'Wachtwoord voldoet niet aan het vereiste beleid'
+            PENDING_COUNT: '{count, plural, =0 {Geen uitnodigingen in afwachting} one {# uitnodiging in afwachting} other {# uitnodigingen in afwachting}}'
+            PERMISSIONS: Machtigingen
+            PERMISSIONS_HINT: 'Machtigingen die de uitgenodigde gebruiker zal ontvangen. Ze kunnen zichzelf niet meer machtigingen toekennen dan u hier instelt.'
+            RECIPIENT: Ontvanger
+            RECIPIENT_HINT: 'Ze zullen hun eigen gebruikersnaam en wachtwoord kiezen wanneer ze accepteren.'
+            RESEND: 'Opnieuw verzenden'
+            RESEND_FAILED: 'Opnieuw verzenden uitnodiging is mislukt.'
+            RESENT_TOAST: 'Uitnodiging opnieuw verzonden naar {email}.'
+            REVOKE: Intrekken
+            REVOKED_TOAST: 'Uitnodiging ingetrokken'
+            REVOKE_FAILED: 'Intrekken van de uitnodiging is mislukt.'
+            REVOKE_TITLE: 'Uitnodiging intrekken'
+            SEND_FAILED: 'Verzenden van de uitnodiging is mislukt.'
+            SEND_INVITE: 'Uitnodiging verzenden'
+            SENT_TOAST: 'Uitnodiging verzonden naar {email}.'
+            TITLE_OPTIONAL: 'Titel (optioneel)'
+            USERNAME_INVALID: 'De gebruikersnaam moet uit 3 tot 64 tekens bestaan.'
+            USERNAME_TAKEN: 'Die gebruikersnaam is al in gebruik.'
+            VIEW_PENDING: 'Toon in behandeling'
+        PAGINATION:
+            PAGE_OF: 'Pagina {current} van {total}'
+        PLUGINS_TABLE:
+            NAME: Naam
+            NO_PLUGINS: 'Geen plugins geïnstalleerd'
+            PROTECTED_PLUGIN: 'Deze plug-in kan niet worden uitgeschakeld vanuit Admin-Next zonder dat je jezelf buitensluit'
+            VERSION: Versie
+        THEMES_TABLE:
+            NO_THEMES: "Geen thema's geïnstalleerd"
+        USERS_NAV:
+            CONFIGURATION: Configuratie
+            GROUPS: Groepen
+            INVITATIONS: Uitnodigingen
+            USERS: Gebruikers
+        USERS_TABLE:
+            ACTIONS: Acties
+            CARDS: Kaart
+            DELETE: Verwijderen
+            DISABLED: Uitgeschakeld
+            EDIT: Bewerken
+            EMAIL: E-mail
+            ENABLED: Ingeschakeld
+            FULL_NAME: 'Volledige naam'
+            NO_USERS: 'Geen gebruikers gevonden'
+            STATUS: Status
+            TABLE: Tabel
+            USERNAME: Gebruikersnaam
