@@ -82,6 +82,17 @@ ICU:
             RELOAD: Перезагрузить
             TITLE: Конфигурация
             TITLE_SCROLLED: 'Конфигурация: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: пусто
+                RESET_BUTTON: 'Сбросить переопределения'
+                RESET_CONFIRM: Сбросить
+                RESET_DONE: 'Переопределения сброшены'
+                RESET_MESSAGE: 'Это удалит все переопределения в {scope} и восстановит унаследованные значения. Это действие невозможно отменить.'
+                RESET_TITLE: 'Сбросить все переопределения?'
+                RESET_TOOLTIP: 'Удалить все переопределения и восстановить унаследованные значения'
+                REVERTED: 'Восстановлено унаследованное значение'
+                REVERT_FAILED: 'Не удалось восстановить'
+                REVERT_TOOLTIP: 'Переопределяет значение по умолчанию ({value}). Нажмите для восстановления.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Окружение
             EXPORT_YAML: 'Экспортировать YAML'
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: 'Сохранение в окружение: {name}'
             SELECTED_ENV: 'Выбранное окружение'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Выберите, куда сохранять изменения конфигурации'
+            CONFIRM_DELETE: 'Удалить {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Удалить {name} и все его переопределения конфигурации?'
+            DELETE: Удалить
+            DELETE_ENV_TOOLTIP: 'Удалить окружение {name}'
+            ENV_DELETED: 'Окружение {name} удалено'
+            FAILED_TO_DELETE: 'Ошибка при удалении окружения'
+            SWITCH_AND_RELOAD: 'Переключить и перезагрузить'
+            SWITCH_DISCARDS_UNSAVED: 'Переключение окружения перезагружает админ-панель и отменяет несохраненные изменения. Продолжить?'
         EXPAND_ALL: 'Развернуть все'
         EXPAND_SIDEBAR: 'Развернуть боковую панель'
         EXPERT_MODE: 'Режим эксперта'
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Переключить навигатор страницы'
                 UNPUBLISH_ON: 'Отменить публикацию'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Напишите здесь содержание в формате markdown...'
+                SAVED_BY_PEER: '{user} сохранил(а) эту страницу'
+                SAVED_BY_PEER_ANON: 'Другой пользователь сохранил эту страницу'
             EDIT_PAGE: 'Редактировать страницу'
             FRONTMATTER: 'Заголовок страницы'
             HEADER_MODIFIED: Изменено
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Имеет дочерние элементы'
                 SUMMARY: Сводка
                 VISIBLE: Видно
+                DROP_HERE: 'Перетащите сюда'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Ошибка при переорганизации страниц'
                 NO_PAGES_MATCH: 'Нет страниц, соответствующих "{query}"'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Столбцы
             VIEW_LIST: Список
             VIEW_TREE: Дерево
+            CHUNK_SIZE: Порция
+            CHUNK_SIZE_HELP: 'Количество строк для загрузки при прокрутке. Большие значения медленнее загружаются в первый раз, но уменьшают количество дополнительных запросов.'
+            LOADED_OF: '{n, plural, one {# загружен} other {# загружено}} из {total}'
+            LOADING_CHUNK: 'Загрузка строк {from}–{to}…'
+            NO_MATCH: 'Нет страниц, соответствующих вашему поиску'
+            PUBLISH: Опубликовать
+            REORDER_DONE: Готово
+            REORDER_EXIT_TITLE: 'Выход из режима переупорядочения'
+            REORDER_LOADING: 'Полный список все еще загружается — попробуйте повторить попытку через момент.'
+            REORDER_LOADING_ALL: 'Загрузка каждого блока, чтобы переупорядочение могло повлиять на весь список…'
+            REORDER_START_TITLE: 'Переупорядочить страницы'
+            STATS_PUBLISHED: '{n} опубликовано'
+            STATS_TOTAL: '{n} всего'
+            STATS_UNPUBLISHED: '{n} не опубликовано'
+            UNPUBLISH: 'Снять с публикации'
         PASSWORD: Пароль
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Требования к паролю'
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Не удалось загрузить разрешения'
             NOT_SET: 'Не установлено'
+            ADMIN_LEGACY: 'Admin (legacy)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Вернуться на панель управления'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Для этой страницы плагина нет доступного содержимого.'
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Поиск плагинов...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Выберите плагин для просмотра подробностей'
             SYMLINKED: 'Символическая ссылка'
+            REMOVE_CONFIRM_MESSAGE: 'Удалить {name}? Это приведет к удалению плагина и его файлов. Конфигурация будет сохранена.'
+            REMOVE_CONFIRM_TITLE: 'Удалить плагин?'
+            TITLE: Плагины
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Загрузка страницы плагина...'
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Используется на тёмных фонах'
             USED_ON_LIGHT_BACKGROUNDS: 'Используется на светлых фонах'
             USERS_MAY_OVERRIDE: 'Пользователи могут переопределить'
+            OTHER_LIST_VIEWS: 'Другие представления списка'
+            OTHER_LIST_VIEWS_DESC: 'Макет по умолчанию для списков пользователей, плагинов и тем'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 символа: буквы, цифры, дефисы, подчеркивания'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Учетная запись администратора создана — добро пожаловать в Grav'
@@ -733,6 +776,7 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Выберите тему для просмотра деталей'
             SYMLINKED: 'Символическая ссылка'
             THEMES_GRAV_ADMIN: 'Темы — Grav Admin'
+            ACTIVATE: Активировать
         TIME:
             DAYS_AGO: '{n}д назад'
             HOURS_AGO: '{n}ч назад'
@@ -896,3 +940,115 @@ ICU:
             VIEW_SITE: 'Просмотр сайта'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Неизвестный виджет: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Ошибка при загрузке конфигурации учётных записей'
+            FAILED_TO_SAVE: 'Ошибка при сохранении конфигурации учётных записей'
+            MODIFIED_ELSEWHERE: 'Конфигурация была изменена в другом месте. Пожалуйста, перезагрузитесь.'
+            NO_FIELDS: 'Параметры конфигурации недоступны.'
+            PAGE_TITLE: 'Конфигурация учётных записей — Grav Admin'
+            SAVED: 'Конфигурация сохранена'
+            TITLE: 'Конфигурация учётных записей'
+        EDIT: Редактировать
+        GROUPS:
+            ADD_GROUP: 'Добавить группу'
+            BACK_TO_GROUPS: 'Вернуться к группам'
+            CONFIRM_DELETE_GROUP: 'Удалить группу „{name}"? Это действие невозможно отменить.'
+            CREATE: Создать
+            DELETE_GROUP: 'Удалить группу'
+            DESCRIPTION: Описание
+            DISPLAY_NAME: 'Отображаемое имя'
+            FAILED_TO_CREATE_GROUP: 'Ошибка создания группы.'
+            FAILED_TO_LOAD_GROUP: 'Ошибка загрузки группы „{name}".'
+            FAILED_TO_LOAD_GROUPS: 'Ошибка загрузки групп'
+            FAILED_TO_SAVE_GROUP: 'Ошибка сохранения группы.'
+            GROUPS: Группы
+            GROUPS_GRAV_ADMIN: 'Группы — Grav Admin'
+            GROUP_COUNT_ONE: '{n} группа'
+            GROUP_COUNT_OTHER: '{n} групп'
+            GROUP_CREATED: 'Группа „{name}" создана'
+            GROUP_DELETED: 'Группа „{name}" удалена'
+            GROUP_DELETE_FAILED: 'Ошибка удаления группы „{name}"'
+            GROUP_MODIFIED_ELSEWHERE: 'Группа была изменена в другом месте. Пожалуйста, перезагрузите.'
+            GROUP_NAME: 'Имя группы'
+            GROUP_NAME_HELP: '1–200 символов букв, цифр, дефисов или подчеркиваний. Используется в качестве ключа хранилища.'
+            GROUP_NAME_PLACEHOLDER: 'например, редакторы'
+            GROUP_PAGE_TITLE: '{name} — Группы — Grav Admin'
+            GROUP_SAVED: 'Группа „{name}" сохранена'
+            NEW_GROUP: 'Новая группа'
+            NEW_GROUP_GRAV_ADMIN: 'Новая группа — Grav Admin'
+            NO_GROUPS: 'Группы не найдены'
+            NO_GROUPS_MATCH_SEARCH: 'Группы, совпадающие с поиском, не найдены'
+            SEARCH_GROUPS: 'Поиск групп...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Выберите группу для просмотра подробностей'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Не удалось создать учетную запись.'
+            ACCEPT_HEADING: 'Принять приглашение'
+            ACCEPT_SUBHEADING: 'Настройте свою учетную запись для начала работы.'
+            ACCEPT_SUCCESS: 'Учетная запись создана. Добро пожаловать!'
+            ACCEPT_TITLE: 'Принять приглашение — Grav Admin'
+            CHECKING_INVITE: 'Проверка приглашения...'
+            CHOOSE_PASSWORD: 'Выберите пароль'
+            CONFIRM_REVOKE: 'Отозвать приглашение для {email}? Ссылка перестанет работать.'
+            COPIED: Скопировано
+            COPY: Копировать
+            COPY_FAILED: 'Не удалось скопировать ссылку.'
+            CREATED_NO_EMAIL_TOAST: 'Приглашение создано. Email не настроен, поэтому поделитесь ссылкой вручную.'
+            CREATE_ACCOUNT: 'Создать учетную запись'
+            CREATING_ACCOUNT: 'Создание учетной записи...'
+            EMAIL: Email
+            EMAIL_SENT_TO: 'Письмо с приглашением было отправлено на адрес {email}.'
+            EXPIRED: Истекло
+            EXPIRED_INVITE: 'Срок действия этого приглашения истек.'
+            EXPIRED_INVITE_BODY: 'Срок действия этого приглашения истек. Попросите администратора отправить новое приглашение.'
+            EXPIRES_AFTER: 'Приглашение истекает через'
+            EXPIRES_IN_DAYS: '{count, plural, one {Истекает через # день} other {Истекает через # дней}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Истекает через # час} other {Истекает через # часов}}'
+            EXPIRY_14_DAYS: '14 дней'
+            EXPIRY_1_DAY: '1 день'
+            EXPIRY_30_DAYS: '30 дней'
+            EXPIRY_3_DAYS: '3 дня'
+            EXPIRY_7_DAYS: '7 дней'
+            FULL_NAME_OPTIONAL: 'Полное имя (необязательно)'
+            GROUPS: Группы
+            GROUPS_HINT: 'Группы, в которые будет добавлен приглашённый пользователь.'
+            INVALID_INVITE: 'Это приглашение недействительно.'
+            INVALID_INVITE_BODY: 'Ссылка приглашения недействительна или уже использована.'
+            INVITE: Пригласить
+            INVITED_BY: 'Приглашён пользователем {name}'
+            INVITE_ANOTHER: 'Пригласить ещё'
+            INVITE_LINK: 'Ссылка приглашения'
+            INVITE_READY: 'Приглашение готово'
+            INVITE_USER: 'Пригласить пользователя'
+            LOADING_GROUPS: 'Загрузка групп...'
+            LOAD_FAILED: 'Ошибка при загрузке приглашений.'
+            MESSAGE_OPTIONAL: 'Личное сообщение (необязательно)'
+            NONE_PENDING: 'Нет ожидающих приглашений'
+            NONE_PENDING_HINT: 'Пригласите кого-нибудь присоединиться, и его ожидающее приглашение появится здесь.'
+            NO_GROUPS: 'Группы ещё не определены.'
+            PASSWORD_POLICY: 'Пароль не соответствует требуемой политике'
+            PENDING_COUNT: '{count, plural, =0 {Нет ожидающих приглашений} one {# ожидающееся приглашение} other {# ожидающихся приглашений}}'
+            PERMISSIONS: Разрешения
+            PERMISSIONS_HINT: 'Разрешения, которые получит приглашённый пользователь. Они не смогут предоставить себе больше прав, чем вы установили здесь.'
+            RECIPIENT: Получатель
+            RECIPIENT_HINT: 'При принятии приглашения они выберут своё имя пользователя и пароль.'
+            RESEND: 'Повторно отправить'
+            RESEND_FAILED: 'Не удалось повторно отправить приглашение.'
+            RESENT_TOAST: 'Приглашение повторно отправлено на {email}.'
+            REVOKE: Отозвать
+            REVOKED_TOAST: 'Приглашение отозвано.'
+            REVOKE_FAILED: 'Не удалось отозвать приглашение.'
+            REVOKE_TITLE: 'Отозвать приглашение'
+            SEND_FAILED: 'Не удалось отправить приглашение.'
+            SEND_INVITE: 'Отправить приглашение'
+            SENT_TOAST: 'Приглашение отправлено на {email}.'
+            TITLE_OPTIONAL: 'Название (необязательно)'
+            USERNAME_INVALID: 'Имя пользователя должно быть от 3 до 64 символов.'
+            USERNAME_TAKEN: 'Это имя пользователя уже занято.'
+            VIEW_PENDING: 'Просмотреть ожидающие'
+        PAGINATION:
+            PAGE_OF: 'Страница {current} из {total}'
+        PLUGINS_TABLE:
+            NAME: Название
+            NO_PLUGINS: 'Плагины не установлены'
+            PROTECTED_PLUGIN: 'Этот плагин не может быть отключен в admin-next без блокировки входа.'
+            VERSION: Версия
