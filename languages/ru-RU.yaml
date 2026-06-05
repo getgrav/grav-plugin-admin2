@@ -777,6 +777,14 @@ ICU:
             SYMLINKED: 'Символическая ссылка'
             THEMES_GRAV_ADMIN: 'Темы — Grav Admin'
             ACTIVATE: Активировать
+            ACTIVATE_CONFIRM_MESSAGE: 'Переключить активную тему сайта на {name}? Интерфейс будет использовать эту тему немедленно.'
+            ACTIVATE_CONFIRM_TITLE: 'Активировать тему?'
+            ACTIVATE_THEME: 'Активировать {name}'
+            DELETE_ACTIVE_WARNING: 'Текущая активная тема. Рекомендуется сначала переключить тему перед удалением.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} — текущая активная тема. Её удаление оставит сайт без темы до активации другой. Продолжить?'
+            REMOVE_CONFIRM_MESSAGE: 'Удалить {name}? Это деинсталлирует тему и удалит её файлы.'
+            REMOVE_CONFIRM_TITLE: 'Удалить тему?'
+            TITLE: Темы
         TIME:
             DAYS_AGO: '{n}д назад'
             HOURS_AGO: '{n}ч назад'
@@ -928,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Пользователь изменен в другом месте — сохраните, чтобы перезаписать, или перезагрузите'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Пользователь был изменен в другом месте. Пожалуйста, перезагрузите.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Вы не можете удалить свой аккаунт.'
+            CONFIRM_DELETE_USER: 'Удалить пользователя „{username}"? Это действие невозможно отменить.'
+            TITLE: Пользователи
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Аватар удален'
             AVATAR_UPDATED: 'Аватар обновлен'
@@ -1052,3 +1062,23 @@ ICU:
             NO_PLUGINS: 'Плагины не установлены'
             PROTECTED_PLUGIN: 'Этот плагин не может быть отключен в admin-next без блокировки входа.'
             VERSION: Версия
+        THEMES_TABLE:
+            NO_THEMES: 'Темы не установлены'
+        USERS_NAV:
+            CONFIGURATION: Конфигурация
+            GROUPS: Группы
+            INVITATIONS: Приглашения
+            USERS: Пользователи
+        USERS_TABLE:
+            ACTIONS: Действия
+            CARDS: Карточки
+            DELETE: Удалить
+            DISABLED: Отключено
+            EDIT: Изменить
+            EMAIL: Почта
+            ENABLED: Включено
+            FULL_NAME: 'Полное имя'
+            NO_USERS: 'Пользователи не найдены'
+            STATUS: Статус
+            TABLE: Таблица
+            USERNAME: 'Имя пользователя'
