@@ -1037,6 +1037,7 @@ ICU:
       EMAIL: Email
       FULL_NAME: Full name
       STATUS: Status
+      PERMISSIONS: Permissions
       ACTIONS: Actions
       ENABLED: Enabled
       DISABLED: Disabled
@@ -1045,6 +1046,19 @@ ICU:
       NO_USERS: No users found
       CARDS: Cards
       TABLE: Table
+    USERS_FILTER:
+      PERMISSION: Permission
+      GROUP: Group
+      GROUPS: Groups
+      BACKEND_ACCESS: Backend access
+      CLEAR: Clear
+      CLEAR_ALL: Clear filters
+      TYPE_TO_FILTER: Type to filter…
+      LOADING: Loading…
+      NO_MATCHES: No matches
+      NO_MATCHES_FILTERS: No users match these filters
+      FILTER_BY_PERMISSION: Filter by this permission
+      FILTER_BY_GROUP: Filter by this group
     PLUGINS_TABLE:
       NAME: Name
       VERSION: Version
