@@ -82,6 +82,17 @@ ICU:
             RELOAD: 'Neu laden'
             TITLE: Konfiguration
             TITLE_SCROLLED: 'Konfiguration: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: leer
+                RESET_BUTTON: 'Übersteuerungen zurücksetzen'
+                RESET_CONFIRM: Zurücksetzen
+                RESET_DONE: 'Übersteuerungen zurückgesetzt'
+                RESET_MESSAGE: 'Dies entfernt jede Übersteuerung auf {scope} und stellt die geerbten Werte wieder her. Dies kann nicht rückgängig gemacht werden.'
+                RESET_TITLE: 'Alle Übersteuerungen zurücksetzen?'
+                RESET_TOOLTIP: 'Entfernen Sie jede Übersteuerung und stellen Sie die geerbten Werte wieder her'
+                REVERTED: 'Auf den geerbten Wert zurückgesetzt'
+                REVERT_FAILED: 'Konnte nicht zurückgesetzt werden'
+                REVERT_TOOLTIP: 'Übersteuert Standard ({value}). Klicken zum Zurücksetzen.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Umgebung
             EXPORT_YAML: 'YAML exportieren'
@@ -165,6 +176,8 @@ ICU:
             DELETE_ENV_TOOLTIP: 'Umgebung {name} löschen'
             ENV_DELETED: 'Umgebung {name} gelöscht'
             FAILED_TO_DELETE: 'Konnte Umgebung nicht löschen'
+            SWITCH_AND_RELOAD: 'Wechseln & neu laden'
+            SWITCH_DISCARDS_UNSAVED: 'Das Wechseln der Umgebung lädt den Admin neu und verwirft ungespeicherte Änderungen. Fortfahren?'
         EXPAND_ALL: 'Alle ausklappen'
         EXPAND_SIDEBAR: 'Seitenleiste ausklappen'
         EXPERT_MODE: Expertenmodus
@@ -408,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Seitennavigator umschalten'
                 UNPUBLISH_ON: 'Veröffentlichung aufheben am'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Schreiben Sie hier Ihren Markdown-Inhalt...'
+                SAVED_BY_PEER: '{user} hat diese Seite gespeichert'
+                SAVED_BY_PEER_ANON: 'Ein anderer Benutzer hat diese Seite gespeichert'
             EDIT_PAGE: 'Seite bearbeiten'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Geändert
@@ -466,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Hat Unterseiten'
                 SUMMARY: Zusammenfassung
                 VISIBLE: Sichtbar
+                DROP_HERE: 'Hier ablegen'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Seiten konnten nicht neu organisiert werden'
                 NO_PAGES_MATCH: 'Keine Seiten entsprechen "{query}"'
@@ -493,6 +509,20 @@ ICU:
             VIEW_LIST: Liste
             VIEW_TREE: Baum
             STATS_PUBLISHED: '{n} veröffentlicht'
+            CHUNK_SIZE: Chunk
+            CHUNK_SIZE_HELP: 'Zeilen zum Abrufen pro Anfrage beim Scrollen. Größere Werte laden beim ersten Mal langsamer, reduzieren aber Folgeanfragen.'
+            LOADED_OF: '{n, plural, one {# geladen} other {# geladen}} von {total}'
+            LOADING_CHUNK: 'Zeilen {from}–{to} werden geladen…'
+            NO_MATCH: 'Keine Seiten entsprechen Ihrer Suche'
+            PUBLISH: Veröffentlichen
+            REORDER_DONE: Fertig
+            REORDER_EXIT_TITLE: 'Neuordnungsmodus beenden'
+            REORDER_LOADING: 'Die vollständige Liste wird noch geladen – versuchen Sie es in einem Moment noch einmal.'
+            REORDER_LOADING_ALL: 'Jedes Chunk wird geladen, damit die Neuordnung die gesamte Liste betreffen kann…'
+            REORDER_START_TITLE: 'Seiten neu ordnen'
+            STATS_TOTAL: '{n} insgesamt'
+            STATS_UNPUBLISHED: '{n} nicht veröffentlicht'
+            UNPUBLISH: 'Veröffentlichung aufheben'
         PASSWORD: Passwort
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Passwortanforderungen
@@ -501,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Berechtigungen konnten nicht geladen werden'
             NOT_SET: 'Nicht gesetzt'
+            ADMIN_LEGACY: 'Admin (Legacy)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Zurück zum Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Für diese Plugin-Seite ist kein Inhalt verfügbar.'
@@ -523,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Plugins durchsuchen...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Wählen Sie ein Plugin aus, um Details anzuzeigen'
             SYMLINKED: Symlink
+            REMOVE_CONFIRM_MESSAGE: '{name} entfernen? Dies deinstalliert das Plugin und löscht seine Dateien. Die Konfiguration bleibt erhalten.'
+            REMOVE_CONFIRM_TITLE: 'Plugin entfernen?'
+            TITLE: Plugins
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Plugin-Seite wird geladen...'
         PLUGIN_WIDGET_LOADER:
@@ -671,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Verwendung auf dunklen Hintergründen'
             USED_ON_LIGHT_BACKGROUNDS: 'Verwendung auf hellen Hintergründen'
             USERS_MAY_OVERRIDE: 'Benutzer können überschreiben'
+            OTHER_LIST_VIEWS: 'Andere Listenansichten'
+            OTHER_LIST_VIEWS_DESC: 'Standardlayout für die Listen von Benutzern, Plugins und Themes'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -740,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Wählen Sie ein Design, um Details anzuzeigen'
             SYMLINKED: Verlinkt
             THEMES_GRAV_ADMIN: 'Designs — Grav Admin'
+            ACTIVATE: Aktivieren
+            ACTIVATE_CONFIRM_MESSAGE: 'Das aktive Website-Theme zu {name} wechseln? Das Frontend wird dieses Theme sofort verwenden.'
+            ACTIVATE_CONFIRM_TITLE: 'Theme aktivieren?'
+            ACTIVATE_THEME: '{name} aktivieren'
+            DELETE_ACTIVE_WARNING: 'Derzeit aktiv. Es wird empfohlen, zuerst zu einem anderen Theme zu wechseln, bevor Sie es löschen.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} ist das derzeit aktive Theme. Wenn Sie es entfernen, bleibt die Website ohne Theme, bis ein anderes aktiviert wird. Fortfahren?'
+            REMOVE_CONFIRM_MESSAGE: '{name} entfernen? Dies deinstalliert das Theme und löscht seine Dateien.'
+            REMOVE_CONFIRM_TITLE: 'Theme entfernen?'
+            TITLE: Themes
         TIME:
             DAYS_AGO: 'vor {n}T'
             HOURS_AGO: 'vor {n}h'
@@ -892,6 +937,7 @@ ICU:
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Benutzer wurde anderswo geändert. Bitte neuladen.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Sie können Ihr eigenes Konto nicht löschen.'
             CONFIRM_DELETE_USER: "Benutzer '{username}' löschen? Dies kann nicht rückgängig gemacht werden."
+            TITLE: Benutzer
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar entfernt'
             AVATAR_UPDATED: 'Avatar aktualisiert'
@@ -918,15 +964,36 @@ ICU:
             NEW_GROUP: 'Neue Gruppe'
             NEW_GROUP_GRAV_ADMIN: 'Neue Gruppe — Grav Admin'
             NO_GROUPS: 'Keine Gruppen gefunden'
+            BACK_TO_GROUPS: 'Zurück zu Gruppen'
+            CONFIRM_DELETE_GROUP: 'Gruppe „{name}" löschen? Dies kann nicht rückgängig gemacht werden.'
+            FAILED_TO_CREATE_GROUP: 'Fehler beim Erstellen der Gruppe.'
+            FAILED_TO_LOAD_GROUP: 'Fehler beim Laden der Gruppe „{name}".'
+            FAILED_TO_LOAD_GROUPS: 'Fehler beim Laden der Gruppen'
+            FAILED_TO_SAVE_GROUP: 'Fehler beim Speichern der Gruppe.'
+            GROUP_CREATED: 'Gruppe „{name}" erstellt'
+            GROUP_DELETED: 'Gruppe „{name}" gelöscht'
+            GROUP_DELETE_FAILED: 'Fehler beim Löschen der Gruppe „{name}"'
+            GROUP_MODIFIED_ELSEWHERE: 'Die Gruppe wurde anderswo geändert. Bitte neu laden.'
+            GROUP_NAME: Gruppennamen
+            GROUP_NAME_HELP: '1–200 Zeichen aus Buchstaben, Zahlen, Bindestrichen oder Unterstrichen. Wird als Speicherschlüssel verwendet.'
+            GROUP_NAME_PLACEHOLDER: 'z. B. editors'
+            GROUP_PAGE_TITLE: '{name} — Gruppen — Grav Admin'
+            GROUP_SAVED: 'Gruppe „{name}" gespeichert'
+            NO_GROUPS_MATCH_SEARCH: 'Keine Gruppen entsprechen deiner Suche'
+            SEARCH_GROUPS: 'Gruppen durchsuchen...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Wähle eine Gruppe, um Details anzuzeigen'
         PAGINATION:
             PAGE_OF: 'Seite {current} von {total}'
         PLUGINS_TABLE:
             NAME: Name
             VERSION: Version
+            NO_PLUGINS: 'Keine Plugins installiert'
+            PROTECTED_PLUGIN: 'Dieses Plugin kann in Admin-Next nicht deaktiviert werden, ohne Sie auszusperren.'
         USERS_NAV:
             CONFIGURATION: Konfiguration
             GROUPS: Gruppen
             USERS: Benutzer
+            INVITATIONS: Einladungen
         USERS_TABLE:
             DELETE: Löschen
             DISABLED: Deaktiviert
@@ -937,3 +1004,81 @@ ICU:
             STATUS: Status
             TABLE: Tabelle
             USERNAME: Benutzername
+            ACTIONS: Aktionen
+            CARDS: Karten
+            FULL_NAME: 'Vollständiger Name'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Fehler beim Laden der Kontenkonfiguration'
+            FAILED_TO_SAVE: 'Fehler beim Speichern der Kontenkonfiguration'
+            MODIFIED_ELSEWHERE: 'Konfiguration wurde anderswo geändert. Bitte neu laden.'
+            NO_FIELDS: 'Keine Konfigurationsoptionen verfügbar.'
+            PAGE_TITLE: 'Kontenkonfiguration — Grav Admin'
+            SAVED: 'Konfiguration gespeichert'
+            TITLE: Kontenkonfiguration
+        INVITATIONS:
+            ACCEPT_FAILED: 'Konto konnte nicht erstellt werden.'
+            ACCEPT_HEADING: 'Einladung annehmen'
+            ACCEPT_SUBHEADING: 'Richte dein Konto ein, um zu beginnen.'
+            ACCEPT_SUCCESS: 'Konto erstellt. Willkommen!'
+            ACCEPT_TITLE: 'Einladung annehmen — Grav Admin'
+            CHECKING_INVITE: 'Deine Einladung wird überprüft...'
+            CHOOSE_PASSWORD: 'Wähle ein Passwort'
+            CONFIRM_REVOKE: 'Einladung für {email} widerrufen? Der Link funktioniert dann nicht mehr.'
+            COPIED: Kopiert
+            COPY: Kopieren
+            COPY_FAILED: 'Link konnte nicht kopiert werden.'
+            CREATED_NO_EMAIL_TOAST: 'Einladung erstellt. E-Mail ist nicht konfiguriert, daher teile den Link manuell.'
+            CREATE_ACCOUNT: 'Konto erstellen'
+            CREATING_ACCOUNT: 'Konto wird erstellt …'
+            EMAIL: E-Mail
+            EMAIL_SENT_TO: 'Eine Einladungs-E-Mail wurde an {email} gesendet.'
+            EXPIRED: Abgelaufen
+            EXPIRED_INVITE: 'Diese Einladung ist abgelaufen.'
+            EXPIRED_INVITE_BODY: 'Diese Einladung ist abgelaufen. Bitten Sie einen Administrator, eine neue zu senden.'
+            EXPIRES_AFTER: 'Einladung läuft ab nach'
+            EXPIRES_IN_DAYS: '{count, plural, one {Läuft in # Tag ab} other {Läuft in # Tagen ab}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Läuft in # Stunde ab} other {Läuft in # Stunden ab}}'
+            EXPIRY_14_DAYS: '14 Tage'
+            EXPIRY_1_DAY: '1 Tag'
+            EXPIRY_30_DAYS: '30 Tage'
+            EXPIRY_3_DAYS: '3 Tage'
+            EXPIRY_7_DAYS: '7 Tage'
+            FULL_NAME_OPTIONAL: 'Vollständiger Name (optional)'
+            GROUPS: Gruppen
+            GROUPS_HINT: 'Gruppen, zu denen der eingeladene Benutzer hinzugefügt wird.'
+            INVALID_INVITE: 'Diese Einladung ist nicht gültig.'
+            INVALID_INVITE_BODY: 'Dieser Einladungslink ist ungültig oder wurde bereits verwendet.'
+            INVITE: Einladen
+            INVITED_BY: 'Einladung von {name}'
+            INVITE_ANOTHER: 'Weitere einladen'
+            INVITE_LINK: Einladungslink
+            INVITE_READY: 'Einladung bereit'
+            INVITE_USER: 'Benutzer einladen'
+            LOADING_GROUPS: 'Gruppen werden geladen …'
+            LOAD_FAILED: 'Einladungen konnten nicht geladen werden.'
+            MESSAGE_OPTIONAL: 'Persönliche Nachricht (optional)'
+            NONE_PENDING: 'Keine ausstehenden Einladungen'
+            NONE_PENDING_HINT: 'Laden Sie jemanden ein, und seine ausstehende Einladung wird hier angezeigt.'
+            NO_GROUPS: 'Noch keine Gruppen definiert.'
+            PASSWORD_POLICY: 'Das Passwort erfüllt nicht die erforderliche Richtlinie'
+            PENDING_COUNT: '{count, plural, =0 {Keine ausstehenden Einladungen} one {# ausstehende Einladung} other {# ausstehende Einladungen}}'
+            PERMISSIONS: Berechtigungen
+            PERMISSIONS_HINT: 'Berechtigungen, die der eingeladene Benutzer erhält. Er kann sich selbst nicht mehr Berechtigungen erteilen, als Sie hier festgelegt haben.'
+            RECIPIENT: Empfänger
+            RECIPIENT_HINT: 'Sie wählen ihren eigenen Benutzernamen und ihr eigenes Passwort, wenn sie die Einladung annehmen.'
+            RESEND: 'Erneut senden'
+            RESEND_FAILED: 'Einladung konnte nicht erneut gesendet werden.'
+            RESENT_TOAST: 'Einladung erneut an {email} gesendet.'
+            REVOKE: Widerrufen
+            REVOKED_TOAST: 'Einladung widerrufen.'
+            REVOKE_FAILED: 'Einladung konnte nicht widerrufen werden.'
+            REVOKE_TITLE: 'Einladung widerrufen'
+            SEND_FAILED: 'Einladung konnte nicht gesendet werden.'
+            SEND_INVITE: 'Einladung senden'
+            SENT_TOAST: 'Einladung an {email} gesendet.'
+            TITLE_OPTIONAL: 'Titel (optional)'
+            USERNAME_INVALID: 'Der Benutzername muss 3–64 Zeichen lang sein.'
+            USERNAME_TAKEN: 'Dieser Benutzername ist bereits vergeben.'
+            VIEW_PENDING: 'Ausstehende anzeigen'
+        THEMES_TABLE:
+            NO_THEMES: 'Keine Themes installiert'

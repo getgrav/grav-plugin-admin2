@@ -82,6 +82,17 @@ ICU:
             RELOAD: Ricarica
             TITLE: Configurazione
             TITLE_SCROLLED: 'Configurazione: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: vuoto
+                RESET_BUTTON: 'Ripristina override'
+                RESET_CONFIRM: Ripristina
+                RESET_DONE: 'Override ripristinati'
+                RESET_MESSAGE: 'Questo rimuove ogni override su {scope} e ripristina i valori ereditati. Questa azione non può essere annullata.'
+                RESET_TITLE: 'Ripristinare tutti gli override?'
+                RESET_TOOLTIP: 'Rimuovi ogni override e ripristina i valori ereditati'
+                REVERTED: 'Ripristinato al valore ereditato'
+                REVERT_FAILED: 'Impossibile ripristinare'
+                REVERT_TOOLTIP: 'Sostituisce il valore predefinito ({value}). Fare clic per ripristinare.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ambiente
             EXPORT_YAML: 'Esporta YAML'
@@ -150,7 +161,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Crea ambiente…'
             CREATE_ENV_NAMED: 'Crea ambiente "{name}"…'
             DEFAULT: Predefinito
-            ENV_CREATED: "Ambiente {name} creato e selezionato"
+            ENV_CREATED: 'Ambiente {name} creato e selezionato'
             FAILED_TO_CREATE: "Impossibile creare l'ambiente"
             HAS_OVERRIDES: 'ha override'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'non esiste più. Scegline un altro.'
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: 'Salvataggio in ambiente: {name}'
             SELECTED_ENV: 'Ambiente selezionato'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Seleziona dove vengono salvate le modifiche di configurazione'
+            CONFIRM_DELETE: 'Eliminare {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Eliminare {name} e tutti i suoi override di configurazione?'
+            DELETE: Elimina
+            DELETE_ENV_TOOLTIP: 'Elimina ambiente {name}'
+            ENV_DELETED: 'Ambiente {name} eliminato'
+            FAILED_TO_DELETE: "Impossibile eliminare l'ambiente"
+            SWITCH_AND_RELOAD: 'Cambia e ricarica'
+            SWITCH_DISCARDS_UNSAVED: "Cambiare ambiente ricarica l'admin e scarta i cambiamenti non salvati. Continuare?"
         EXPAND_ALL: 'Espandi tutto'
         EXPAND_SIDEBAR: 'Espandi barra laterale'
         EXPERT_MODE: 'Modalità esperto'
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Attiva/disattiva navigatore pagine'
                 UNPUBLISH_ON: 'Annulla pubblicazione il'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Scrivi il tuo contenuto markdown qui...'
+                SAVED_BY_PEER: '{user} ha salvato questa pagina'
+                SAVED_BY_PEER_ANON: 'Un altro utente ha salvato questa pagina'
             EDIT_PAGE: 'Modifica Pagina'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificato
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Ha pagine figlie'
                 SUMMARY: Riepilogo
                 VISIBLE: Visibile
+                DROP_HERE: 'Rilascia qui'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Impossibile riorganizzare le pagine'
                 NO_PAGES_MATCH: 'Nessuna pagina corrisponde a "{query}"'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Colonne
             VIEW_LIST: Elenco
             VIEW_TREE: Albero
+            CHUNK_SIZE: Blocco
+            CHUNK_SIZE_HELP: 'Righe da recuperare per richiesta mentre scorri. Valori più grandi caricano più lentamente la prima volta ma riducono le richieste successive.'
+            LOADED_OF: '{n, plural, one {# caricato} other {# caricati}} di {total}'
+            LOADING_CHUNK: 'Caricamento righe {from}–{to}…'
+            NO_MATCH: 'Nessuna pagina corrisponde alla tua ricerca'
+            PUBLISH: Pubblica
+            REORDER_DONE: Fatto
+            REORDER_EXIT_TITLE: 'Esci dalla modalità riordino'
+            REORDER_LOADING: "Caricamento completo dell'elenco in corso — riprova tra un momento."
+            REORDER_LOADING_ALL: "Caricamento di ogni sezione per consentire al riordino di interessare l'intero elenco…"
+            REORDER_START_TITLE: 'Riordina pagine'
+            STATS_PUBLISHED: '{n} pubblicato'
+            STATS_TOTAL: '{n} totale'
+            STATS_UNPUBLISHED: '{n} non pubblicato'
+            UNPUBLISH: 'Annulla pubblicazione'
         PASSWORD: Password
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisiti della password'
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Impossibile caricare i permessi'
             NOT_SET: 'Non impostato'
+            ADMIN_LEGACY: 'Admin (legacy)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Torna al Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Nessun contenuto disponibile per questa pagina plugin.'
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Cerca plugin...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Seleziona un plugin per visualizzare i dettagli'
             SYMLINKED: 'Collegamento simbolico'
+            REMOVE_CONFIRM_MESSAGE: 'Rimuovere {name}? Questo disinstallerà il plugin e ne eliminerà i file. La configurazione verrà preservata.'
+            REMOVE_CONFIRM_TITLE: 'Rimuovere il plugin?'
+            TITLE: Plugin
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Caricamento pagina plugin...'
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Utilizzato su sfondi scuri'
             USED_ON_LIGHT_BACKGROUNDS: 'Utilizzato su sfondi chiari'
             USERS_MAY_OVERRIDE: "Gli utenti possono eseguire l'override"
+            OTHER_LIST_VIEWS: 'Altre visualizzazioni elenco'
+            OTHER_LIST_VIEWS_DESC: 'Layout predefinito per gli elenchi di utenti, plugin e temi'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caratteri: lettere, numeri, trattini, sottolineature'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Account amministratore creato — benvenuto in Grav'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Seleziona un tema per visualizzare i dettagli'
             SYMLINKED: 'Collegamento simbolico'
             THEMES_GRAV_ADMIN: 'Temi — Grav Admin'
+            ACTIVATE: Attiva
+            ACTIVATE_CONFIRM_MESSAGE: 'Cambiare il tema del sito attivo in {name}? Il rendering frontend utilizzerà immediatamente questo tema.'
+            ACTIVATE_CONFIRM_TITLE: 'Attivare il tema?'
+            ACTIVATE_THEME: 'Attiva {name}'
+            DELETE_ACTIVE_WARNING: 'Attualmente attivo. Si consiglia di cambiare i temi prima di eliminare.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} è il tema attualmente attivo. Rimuoverlo lascerà il sito senza un tema fino a quando non ne viene attivato un altro. Continuare?'
+            REMOVE_CONFIRM_MESSAGE: 'Rimuovere {name}? Questo disinstallerà il tema e ne eliminerà i file.'
+            REMOVE_CONFIRM_TITLE: 'Rimuovere il tema?'
+            TITLE: Temi
         TIME:
             DAYS_AGO: '{n}g fa'
             HOURS_AGO: '{n}h fa'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Utente modificato altrove — salva per sovrascrivere o ricarica'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: "L'utente è stato modificato altrove. Ricarica la pagina."
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Non puoi eliminare il tuo account.'
+            CONFIRM_DELETE_USER: 'Eliminare l''utente „{username}"? Questa azione non può essere annullata.'
+            TITLE: Utenti
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar rimosso'
             AVATAR_UPDATED: 'Avatar aggiornato'
@@ -896,3 +950,135 @@ ICU:
             VIEW_SITE: 'Visualizza sito'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Widget sconosciuto: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Impossibile caricare la configurazione degli account'
+            FAILED_TO_SAVE: 'Impossibile salvare la configurazione degli account'
+            MODIFIED_ELSEWHERE: 'La configurazione è stata modificata altrove. Si prega di ricaricare.'
+            NO_FIELDS: 'Nessuna opzione di configurazione disponibile.'
+            PAGE_TITLE: 'Configurazione Account — Grav Admin'
+            SAVED: 'Configurazione salvata'
+            TITLE: 'Configurazione Account'
+        EDIT: Modifica
+        GROUPS:
+            ADD_GROUP: 'Aggiungi Gruppo'
+            BACK_TO_GROUPS: 'Torna ai Gruppi'
+            CONFIRM_DELETE_GROUP: 'Eliminare il gruppo „{name}"? Questa azione non può essere annullata.'
+            CREATE: Crea
+            DELETE_GROUP: 'Elimina Gruppo'
+            DESCRIPTION: Descrizione
+            DISPLAY_NAME: 'Nome visualizzato'
+            FAILED_TO_CREATE_GROUP: 'Impossibile creare il gruppo.'
+            FAILED_TO_LOAD_GROUP: 'Impossibile caricare il gruppo „{name}".'
+            FAILED_TO_LOAD_GROUPS: 'Impossibile caricare i gruppi'
+            FAILED_TO_SAVE_GROUP: 'Impossibile salvare il gruppo.'
+            GROUPS: Gruppi
+            GROUPS_GRAV_ADMIN: 'Gruppi — Grav Admin'
+            GROUP_COUNT_ONE: '{n} gruppo'
+            GROUP_COUNT_OTHER: '{n} gruppi'
+            GROUP_CREATED: 'Gruppo „{name}" creato'
+            GROUP_DELETED: 'Gruppo „{name}" eliminato'
+            GROUP_DELETE_FAILED: 'Impossibile eliminare il gruppo „{name}"'
+            GROUP_MODIFIED_ELSEWHERE: 'Il gruppo è stato modificato altrove. Ricarica la pagina.'
+            GROUP_NAME: 'Nome del gruppo'
+            GROUP_NAME_HELP: 'Da 1 a 200 caratteri di lettere, numeri, trattini o sottolineature. Utilizzato come chiave di archiviazione.'
+            GROUP_NAME_PLACEHOLDER: 'ad es. editors'
+            GROUP_PAGE_TITLE: '{name} — Gruppi — Grav Admin'
+            GROUP_SAVED: 'Gruppo „{name}" salvato'
+            NEW_GROUP: 'Nuovo Gruppo'
+            NEW_GROUP_GRAV_ADMIN: 'Nuovo Gruppo — Grav Admin'
+            NO_GROUPS: 'Nessun gruppo trovato'
+            NO_GROUPS_MATCH_SEARCH: 'Nessun gruppo corrisponde alla tua ricerca'
+            SEARCH_GROUPS: 'Cerca gruppi...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Seleziona un gruppo per visualizzare i dettagli'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Impossibile creare il tuo account.'
+            ACCEPT_HEADING: 'Accetta invito'
+            ACCEPT_SUBHEADING: 'Configura il tuo account per iniziare.'
+            ACCEPT_SUCCESS: 'Account creato. Benvenuto!'
+            ACCEPT_TITLE: 'Accetta Invito — Grav Admin'
+            CHECKING_INVITE: 'Verifica del tuo invito in corso...'
+            CHOOSE_PASSWORD: 'Scegli una password'
+            CONFIRM_REVOKE: "Revocare l'invito per {email}? Il link smetterà di funzionare."
+            COPIED: Copiato
+            COPY: Copia
+            COPY_FAILED: 'Impossibile copiare il link.'
+            CREATED_NO_EMAIL_TOAST: "Invito creato. L'email non è configurata, condividi il link manualmente."
+            CREATE_ACCOUNT: 'Crea account'
+            CREATING_ACCOUNT: 'Creazione account in corso...'
+            EMAIL: Email
+            EMAIL_SENT_TO: "Un'email di invito è stata inviata a {email}."
+            EXPIRED: Scaduto
+            EXPIRED_INVITE: 'Questo invito è scaduto.'
+            EXPIRED_INVITE_BODY: 'Questo invito è scaduto. Chiedi a un amministratore di inviarne uno nuovo.'
+            EXPIRES_AFTER: "L'invito scade dopo"
+            EXPIRES_IN_DAYS: '{count, plural, one {Scade in # giorno} other {Scade in # giorni}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Scade in # ora} other {Scade in # ore}}'
+            EXPIRY_14_DAYS: '14 giorni'
+            EXPIRY_1_DAY: '1 giorno'
+            EXPIRY_30_DAYS: '30 giorni'
+            EXPIRY_3_DAYS: '3 giorni'
+            EXPIRY_7_DAYS: '7 giorni'
+            FULL_NAME_OPTIONAL: 'Nome completo (facoltativo)'
+            GROUPS: Gruppi
+            GROUPS_HINT: "Gruppi a cui verrà aggiunto l'utente invitato."
+            INVALID_INVITE: "L'invito non è valido."
+            INVALID_INVITE_BODY: 'Il link di invito non è valido o è già stato utilizzato.'
+            INVITE: Invita
+            INVITED_BY: 'Invitato da {name}'
+            INVITE_ANOTHER: 'Invita un altro'
+            INVITE_LINK: 'Link di invito'
+            INVITE_READY: 'Invito pronto'
+            INVITE_USER: 'Invita utente'
+            LOADING_GROUPS: 'Caricamento gruppi in corso...'
+            LOAD_FAILED: 'Impossibile caricare gli inviti.'
+            MESSAGE_OPTIONAL: 'Messaggio personale (facoltativo)'
+            NONE_PENDING: 'Nessun invito in sospeso'
+            NONE_PENDING_HINT: 'Invita qualcuno a partecipare e il suo invito in sospeso apparirà qui.'
+            NO_GROUPS: 'Nessun gruppo definito ancora.'
+            PASSWORD_POLICY: 'La password non soddisfa i requisiti della politica'
+            PENDING_COUNT: '{count, plural, =0 {Nessun invito in sospeso} one {# invito in sospeso} other {# inviti in sospeso}}'
+            PERMISSIONS: Permessi
+            PERMISSIONS_HINT: "Permessi che l'utente invitato riceverà. Non possono concedere a se stessi più di quanto hai impostato qui."
+            RECIPIENT: Destinatario
+            RECIPIENT_HINT: 'Sceglieranno il proprio nome utente e la propria password quando accetteranno.'
+            RESEND: Rinvia
+            RESEND_FAILED: "Impossibile rinviare l'invito."
+            RESENT_TOAST: 'Invito rinviato a {email}.'
+            REVOKE: Revoca
+            REVOKED_TOAST: 'Invito revocato.'
+            REVOKE_FAILED: "Impossibile revocare l'invito."
+            REVOKE_TITLE: 'Revoca invito'
+            SEND_FAILED: "Impossibile inviare l'invito."
+            SEND_INVITE: 'Invia Invito'
+            SENT_TOAST: 'Invito inviato a {email}.'
+            TITLE_OPTIONAL: 'Titolo (facoltativo)'
+            USERNAME_INVALID: 'Il nome utente deve contenere 3-64 caratteri.'
+            USERNAME_TAKEN: 'Questo nome utente è già in uso.'
+            VIEW_PENDING: 'Visualizza in sospeso'
+        PAGINATION:
+            PAGE_OF: 'Pagina {current} di {total}'
+        PLUGINS_TABLE:
+            NAME: Nome
+            NO_PLUGINS: 'Nessun plugin installato'
+            PROTECTED_PLUGIN: 'Questo plugin non può essere disabilitato da admin-next senza bloccarti fuori.'
+            VERSION: Versione
+        THEMES_TABLE:
+            NO_THEMES: 'Nessun tema installato'
+        USERS_NAV:
+            CONFIGURATION: Configurazione
+            GROUPS: Gruppi
+            INVITATIONS: Inviti
+            USERS: Utenti
+        USERS_TABLE:
+            ACTIONS: Azioni
+            CARDS: Schede
+            DELETE: Elimina
+            DISABLED: Disabilitato
+            EDIT: Modifica
+            EMAIL: Email
+            ENABLED: Abilitato
+            FULL_NAME: 'Nome completo'
+            NO_USERS: 'Nessun utente trovato'
+            STATUS: Stato
+            TABLE: Tabella
+            USERNAME: 'Nome utente'

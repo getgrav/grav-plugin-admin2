@@ -1,1739 +1,1824 @@
-# Admin2 (admin-next) UI translations.
-#
-# All admin-next-only keys live under the ICU root block. Values may use
-# ICU MessageFormat syntax for placeholders, plurals, and select cases —
-# admin-next pipes ICU.* values through @formatjs/intl-messageformat.
-#
-# Plain (non-ICU) keys without a leading ICU prefix are looked up by
-# admin-next as a fallback for legacy strings (and continue to be the
-# only thing legacy admin / Grav 1 sees).
-#
-# Convention: keep keys grouped by section and alphabetised within a
-# section where reasonable. Use ADMIN_NEXT.* for keys specific to the
-# new UI.
-
 ICU:
-  ADMIN_NEXT:
-    ADD_PAGE: ページを追加
-    CANCEL: キャンセル
-    CLEAR_SEARCH: 検索をクリア
-    CLOSE: 閉じる
-    COLLAPSE_SIDEBAR: サイドバーを折りたたむ
-    EXPAND_SIDEBAR: サイドバーを展開
-    CONFIRM_DELETE: '{route} の「{title}」を削除しますか？'
-    DELETE: 削除
-    DONE: 完了
-    EDIT: 編集
-    LOADING: 読み込み中...
-    NO_CHANGES: 保存する変更はありません
-    SAVE: 保存
-    SAVING: 保存中...
-    SEARCH: 検索
-    SIGN_OUT: サインアウト
-    TOGGLE_DARK_MODE: ダークモードを切り替え
-    TOGGLE_MENU: メニューを切り替え
-    UNSAVED_CHANGES: 未保存の変更があります
-    DASHBOARD:
-      TITLE: ダッシュボード
-      CUSTOMIZE: カスタマイズ
-      CUSTOMIZE_TITLE: ダッシュボードをカスタマイズ
-      EDIT_HINT: カスタマイズモード — ウィジェットをドラッグ、リサイズ、非表示にして保存します。
-      PRESETS: プリセット
-      SAVE_SITE_DEFAULT: サイトのデフォルトとして保存
-      RESET_LAYOUT: 自分のレイアウトをリセット
-      ADD_WIDGET: ウィジェットを追加
-      HIDE_WIDGET: ウィジェットを非表示
-      PICKER_TITLE: ウィジェットを追加
-      PICKER_SUBTITLE: ダッシュボードに戻すウィジェットを選択してください。
-      PICKER_EMPTY: 利用可能なすべてのウィジェットは既にダッシュボードに表示されています。
-      EMPTY: ダッシュボードは空です
-      EMPTY_HINT: 上の鉛筆アイコンをクリックしてウィジェットを追加してください
-      LAYOUT_SAVED: ダッシュボードレイアウトを保存しました
-      SITE_LAYOUT_SAVED: サイトのデフォルトを保存しました
-      LAYOUT_RESET: レイアウトをデフォルトにリセットしました
-      WIDGETS:
-        STATS: サイト統計
-        POPULARITY: ページビュー
-        SYSTEM_HEALTH: システムヘルス
-        RECENT_PAGES: 最近のページ
-        TOP_PAGES: 人気ページ
-        BACKUPS: バックアップ
-        NOTIFICATIONS: 通知
-        NEWS_FEED: ニュースフィード
-      PRESET_DEFAULT: デフォルト
-      PRESET_DEFAULT_DESC: サーバー推奨のレイアウト — カスタマイズはクリアされます。
-      PRESET_MINIMAL: ミニマル
-      PRESET_MINIMAL_DESC: 統計と最近のページのみ。
-      PRESET_COMPACT: コンパクト
-      PRESET_COMPACT_DESC: 各ウィジェットを最小サイズで表示します。
-    PAGES:
-      TITLE: ページ
-      SEARCH_PLACEHOLDER: ページを検索...
-      NO_PAGES: ページが見つかりません
-      NO_SEARCH_RESULTS: 検索条件に一致するページはありません
-      LOADING: ページを読み込み中...
-      REORDER_MOVE: 移動
-      REORDER_DONE: 完了
-      REORDER_EXIT_TITLE: 並び替えモードを終了
-      REORDER_START_TITLE: ページを並び替え
-      STATS_TOTAL: "合計 {n} 件"
-      STATS_PUBLISHED: "公開 {n} 件"
-      STATS_UNPUBLISHED: "未公開 {n} 件"
-      REORDER_SAME_PARENT: 同じ親の下にあるページのみ並び替えできます。親をまたぐ移動にはツリービューを使用してください。
-      MOVED: 「{title}」を移動しました
-      REORDERED: 「{title}」を並び替えました
-      MOVE_FAILED: ページの移動に失敗しました
-      REORDER_FAILED: 並び替えに失敗しました
-      DELETED: 「{title}」を削除しました
-      DELETE_FAILED: ページの削除に失敗しました
-      SAVED: ページを正常に保存しました
-      SAVE_FAILED: ページの保存に失敗しました
-      VIEW_TREE: ツリー
-      VIEW_LIST: リスト
-      VIEW_COLUMNS: 列
-      CHUNK_SIZE: チャンク
-      CHUNK_SIZE_HELP: スクロールに合わせて 1 リクエストで取得する行数。大きい値は初回読み込みが遅くなりますが、後続のリクエストは減ります。
-      LOADING_CHUNK: 行 {from}–{to} を読み込み中…
-      LOADED_OF: '{n, plural, one {# 件読み込み済み} other {# 件読み込み済み}} / {total} 件'
-      REORDER_LOADING: まだ全リストを読み込み中です — 少ししてから再度お試しください。
-      REORDER_LOADING_ALL: 並び替えがリスト全体に反映されるよう、すべてのチャンクを読み込み中…
-      NO_MATCH: 検索条件に一致するページはありません
-      HEADER_TITLE: タイトル
-      HEADER_TEMPLATE: テンプレート
-      HEADER_STATUS: ステータス
-      HEADER_MODIFIED: 更新日
-      HEADER_PARENT: 親
-      PUBLISHED: 公開済み
-      DRAFT: 下書き
-      SORT_ORDER: 順序
-      SORT_TITLE_AZ: タイトル A-Z
-      SORT_TITLE_ZA: タイトル Z-A
-      SORT_NEWEST: 新しい順
-      SORT_OLDEST: 古い順
-      SORT_DATE_NEWEST: 日付（新しい順）
-      RAW_HEADER: ページヘッダーの生データ (JSON)
-      PAGE_INFO: ページ情報
-      EDIT_PAGE: ページを編集
-      MODE_NORMAL: 通常
-      MODE_EXPERT: エキスパート
-      FRONTMATTER: フロントマター
-      INFO_PUBLISHED: 公開済み
-      INFO_VISIBLE: ナビゲーションに表示
-      INFO_ROUTABLE: ルーティング可能
-      INFO_ROUTE: ルート
-      INFO_SLUG: スラッグ
-      INFO_TEMPLATE: テンプレート
-      INFO_LANGUAGE: 言語
-      INFO_ORDER: 順序
-      INFO_DATE: 日付
-      INFO_MODIFIED: 更新日
-      INFO_PUBLISH_ON: 公開日
-      INFO_UNPUBLISH_ON: 非公開日
-      PAGES_MILLER_VIEW:
-        DRAFT_UNPUBLISHED: 下書き（未公開）
-        FOLDER_ORDER: フォルダーの順序
-        VISIBLE: 表示
-        HAS_CHILDREN: 子ページあり
-        SUMMARY: 概要
-        DROP_HERE: ここにドロップ
-      PAGES_TREE_VIEW:
-        FAILED_TO_REORGANIZE_PAGES: ページの再構成に失敗しました
-        SEARCHING: 検索中…
-        NO_PAGES_MATCH: 「{query}」に一致するページはありません
-      DELETE_PAGE: ページを削除
-      PAGES_GRAV_ADMIN: ページ — Grav Admin
-      ADD_PAGE: ページを追加
-      ADD_FOLDER: フォルダーを追加
-      ADD_MODULE: モジュールを追加
-      ADD_MENU: メニューを追加
-      EDIT:
-        TOGGLE_PAGE_NAVIGATOR: ページナビゲーターを切り替え
-        PREVIEW_PAGE: ページをプレビュー
-        COPY_PAGE: ページをコピー
-        DELETE_PAGE: ページを削除
-        WRITE_YOUR_MARKDOWN_CONTENT_HERE: ここに Markdown コンテンツを記述します...
-        CONNECTING_TO_COLLAB: 共同編集セッションに接続中…
-        RESET_TRANSLATION: 翻訳をリセット
-        PAGE_PREVIEW: ページプレビュー
-        INVALID_YAML_FRONTMATTER: YAML フロントマターが無効です
-        INVALID_YAML_FRONTMATTER_FIX_SYNTAX: YAML フロントマターが無効です — 保存前に構文を修正してください
-        PAGE_SAVED_AND_MOVED: ページを保存して移動しました
-        FAILED_TO_CREATE_TRANSLATION: 翻訳の作成に失敗しました
-        FAILED_TO_SYNC_TRANSLATION: 翻訳の同期に失敗しました
-        PAGE_DELETED: ページを削除しました
-        PAGE_COPIED: ページをコピーしました
-        PAGE_CHANGED_ELSEWHERE_SAVE_TO: ページが別の場所で変更されました — 上書き保存するか再読み込みしてください
-        LOADING_PAGE: ページを読み込み中...
-        FOLDER_NAME: フォルダー名
-        THE_FOLDER_NAME_ON_DISK_URL_SLUG: ディスク上のフォルダー名（URL スラッグ）
-        FALLBACK: （フォールバック）
-        NOT_TRANSLATED: "未翻訳:"
-        RESET_CONTENT_FROM: "コンテンツをリセット:"
-        OPEN_IN_NEW_TAB: 新しいタブで開く
-        SAVE_AS_LANGUAGE: '{language} として保存'
-        CREATE_LANGUAGE: '{language} を作成'
-        EDIT_PAGE: ページを編集
-        FALLBACK_NOTICE: '{active} の翻訳が存在しません。{effective} のフォールバックを表示しています。編集可能な翻訳を作成するには「{active} として保存」を使用してください。'
-        PUBLISH_ON: 公開日
-        UNPUBLISH_ON: 非公開日
-        RESET_FROM: '{language} からリセット'
-      NEW:
-        MY_NEW_PAGE: 新しいページ
-        FILTER_PAGES: ページを絞り込み...
-        FAILED_TO_LOAD_PAGE_TEMPLATES: ページテンプレートの読み込みに失敗しました
-        ADD_PAGE_GRAV_ADMIN: ページを追加 — Grav Admin
-        PAGE_DETAILS: ページ詳細
-        PAGE_TITLE: ページタイトル
-        FOLDER_NAME: フォルダー名
-        URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: このページの URL セーフなフォルダー名
-        PARENT_PAGE: 親ページ
-        ROOT: <root> /
-        PAGE_TEMPLATE: ページテンプレート
-        LOADING_TEMPLATES: テンプレートを読み込み中...
-        VISIBLE: 表示
-        CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: このページをナビゲーションメニューに表示するかを制御します
-        CONTINUE: 続行
-        PAGE_CREATED: 'ページ「{title}」を作成しました'
-        FOLDER_CREATED: 'フォルダー「{title}」を作成しました'
-        MODULE_CREATED: 'モジュール「{title}」を作成しました'
-        FAILED_TO_CREATE: ページの作成に失敗しました
-        ORDERING: 順序
-        ORDERING_HELP_MODULE: モジュラー親内でのこのモジュールの位置を決定する数値プレフィックスを追加します。
-        ORDERING_HELP_FOLDER: 兄弟フォルダー内でのこのフォルダーの位置を決定する数値プレフィックスを追加します。
-        ORDERING_NONE: なし
-        FOLDER_DETAILS: フォルダー詳細
-      PAGE_COUNT: "{n, plural, one{# ページ} other{# ページ}}"
-      SUBTITLE: サイトのコンテンツと構造を管理
-    FIELDS:
-      CLEAR_DATE: 日付をクリア
-      REGENERATE_SLUG: ページタイトルから自動再生成
-      ADD_ENTRY: エントリーを追加
-      NO_TAXONOMY_TYPES: タクソノミータイプが設定されていません
-      FILE_PICKER_SOON: ファイルピッカー — 近日公開
-      CRON:
-        AT_MINUTE: 分
-        ON_DAY: 日
-        CRON: "Cron:"
-        MIN_HR_DOM_MON_DOW: 分 時 日 月 曜日
-      CRON_STATUS:
-        FAILED_TO_LOAD_SCHEDULER_STATUS: スケジューラのステータスを読み込めませんでした
-        SCHEDULER_RUN_COMPLETED: スケジューラの実行が完了しました
-        FAILED_TO_RUN_SCHEDULER: スケジューラの実行に失敗しました
-        LOADING_SCHEDULER_STATUS: スケジューラのステータスを読み込み中...
-        SCHEDULER_STATUS: スケジューラステータス
-        NO_SCHEDULED_JOBS_REGISTERED: 登録されたスケジュールジョブはありません。
-        JOB_ID: ジョブ ID
-        HEALTH_STATUS: ヘルスステータス
-        STATUS: "ステータス:"
-        LAST_RUN: 前回実行
-        SCHEDULED_JOBS: スケジュールジョブ
-        QUEUE_SIZE: "キューサイズ:"
-        ACTIVE_TRIGGERS: アクティブなトリガー
-        CRON: "Cron:"
-        NOT_CONFIGURED: 未設定
-        WEBHOOK: "Webhook:"
-        NOT_INSTALLED: 未インストール
-        NOT_ENABLED: 無効
-        NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: アクティブなトリガーがありません。Webhook を有効にするか cron を設定してください。
-        RUNNING: 実行中...
-        RUN_ALL: すべて実行
-      CUSTOM_FIELD_WRAPPER:
-        LOADING_CUSTOM_FIELD: カスタムフィールドを読み込み中...
-      DATE_FORMAT:
-        SELECT_FORMAT: — フォーマットを選択 —
-        FORMAT_STRING: "フォーマット文字列:"
-      ICON_PICKER:
-        SEARCH_ICONS: アイコンを検索...
-        NO_ICONS_FOUND: アイコンが見つかりません
-        SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 最初の 200 件を表示 — 入力して絞り込んでください
-      PAGE_EXISTS:
-        CHECKING_PAGE: ページを確認中...
-      PAGE_MEDIA:
-        PAGE_MEDIA_UNAVAILABLE: ページメディアは利用できません
-      PAGES:
-        FILTER_PAGES: ページを絞り込み...
-        ROOT: / (ルート)
-      PERMISSIONS:
-        NO_PERMISSIONS_CONFIGURED: 権限が設定されていません
-        NOT_SET: 未設定
-      TABS:
-        NO_FIELDS_MATCH_YOUR_FILTER: フィルターに一致するフィールドはありません
-      THEME_SELECT:
-        LOADING_THEMES: テーマを読み込み中...
-        SELECT_THEME: — テーマを選択 —
-      WEBHOOK_EXAMPLES:
-        HOW_TO_USE_WEBHOOKS: "Webhook の使い方:"
-        TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: "実行予定のすべてのジョブをトリガー（スケジュール準拠）:"
-        FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: "特定のジョブを強制実行（スケジュール無視）:"
-        CHECK_HEALTH_STATUS: "ヘルスステータスを確認:"
-        GITHUB_ACTIONS_EXAMPLE: "GitHub Actions の例:"
-      WEBHOOK_STATUS:
-        CHECKING_WEBHOOK_PLUGIN_STATUS: Webhook プラグインのステータスを確認中...
-        PLUGIN_IS_INSTALLED_AND_ENABLED: プラグインはインストール済みかつ有効です。
-        PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: プラグインはインストール済みです。下の Webhook トリガーを有効にしてアクティブ化してください。
-        WEBHOOK_PLUGIN_REQUIRED: Webhook プラグインが必要です
-        PLUGIN_IS_REQUIRED_FOR_WEBHOOK: Webhook 機能にはプラグインが必要です。
-        INSTALL_PLUGIN_NOW: 今すぐプラグインをインストール
-        OR_RUN: "または次を実行:"
-        BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: bin/gpm install scheduler-webhook
-      FILE_PICKER:
-        NO_MEDIA_UPLOADED: メディアファイルがまだアップロードされていません
-        NO_MATCHING_FILES: 一致するファイルはありません
-    NAV:
-      DASHBOARD: ダッシュボード
-      CONFIGURATION: 設定
-      PAGES: ページ
-      MEDIA: メディア
-      USERS: ユーザー
-      PLUGINS: プラグイン
-      THEMES: テーマ
-      TOOLS: ツール
-      SYSTEM: システム
-      SETTINGS: 設定
-    LANG:
-      SWITCH_LANGUAGE: コンテンツ言語を切り替え
-      TRANSLATIONS: 翻訳
-      TRANSLATED: 翻訳済み
-      NOT_TRANSLATED: 未翻訳
-      SAVE_AS: '{language} として保存'
-      CREATE_TRANSLATION: '{language} の翻訳を作成'
-      FALLBACK_NOTICE: '{language} の翻訳がありません。デフォルトのコンテンツを表示しています。'
-      SYNC_FROM: '{language} からリセット'
-      TRANSLATION_CREATED: "{language} の翻訳を作成しました"
-      DELETE_TRANSLATION: '{language} の翻訳を削除'
-      CURRENT: 現在
-      DEFAULT: デフォルト
-    TIME:
-      JUST_NOW: たった今
-      MINUTES_AGO: "{n} 分前"
-      HOURS_AGO: "{n} 時間前"
-      DAYS_AGO: "{n} 日前"
-    ADD_PLUGIN_MODAL:
-      FILTER_PLUGINS: プラグインを絞り込み...
-      FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: GPM から利用可能なプラグインの読み込みに失敗しました
-      ADD_PLUGIN: プラグインを追加
-      SELECT_A_PLUGIN_TO_VIEW_DETAILS: 詳細を表示するプラグインを選択してください
-    PREMIUM: プレミアム
-    AUTHOR: 作者
-    HOMEPAGE: ホームページ
-    VERSION: バージョン
-    KEYWORDS: キーワード
-    DEPENDENCIES: 依存関係
-    COMPATIBILITY: 互換性
-    ADD_THEME_MODAL:
-      FILTER_THEMES: テーマを絞り込み...
-      FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: GPM から利用可能なテーマの読み込みに失敗しました
-      ADD_THEME: テーマを追加
-      SELECT_A_THEME_TO_VIEW_DETAILS: 詳細を表示するテーマを選択してください
-    API_KEYS_FIELD:
-      REVOKE_KEY: キーを取り消す
-      E_G_MY_CLI_TOOL: 例：My CLI Tool
-      REVOKE_API_KEY: API キーを取り消す
-      FAILED_TO_LOAD_API_KEYS: API キーの読み込みに失敗しました
-      PLEASE_ENTER_A_KEY_NAME: キー名を入力してください
-      API_KEY_GENERATED: API キーを生成しました
-      FAILED_TO_GENERATE_API_KEY: API キーの生成に失敗しました
-      FAILED_TO_REVOKE_API_KEY: API キーの取り消しに失敗しました
-      FAILED_TO_COPY_TO_CLIPBOARD: クリップボードへのコピーに失敗しました
-      API_KEYS: API キー
-      NO_API_KEYS_HAVE_BEEN_GENERATED_YET: まだ API キーは生成されていません。
-      KEY_PREFIX: キーのプレフィックス
-      CREATED: 作成日
-      EXPIRES: 有効期限
-      LAST_USED: 最終使用
-      COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 今すぐこのキーをコピーしてください — 再表示されません。
-      KEY_NAME: キー名
-      EXPIRY: 有効期限
-      BLANK_NEVER: （空欄 = 期限なし）
-      GENERATING: 生成中...
-      GENERATE_KEY: キーを生成
-    APP_SHELL:
-      CLOSE_MENU: メニューを閉じる
-      GRAV_VERSION: Grav v{version}
-      ADMIN_VERSION: Admin v{version}
-    NORMAL_MODE: 通常モード
-    EXPERT_MODE: エキスパートモード
-    ALLOWED: 許可
-    DENIED: 拒否
-    PERMISSIONS_FIELD:
-      NOT_SET: 未設定
-      FAILED_TO_LOAD_PERMISSIONS: 権限の読み込みに失敗しました
-    TWO_FACTOR_FIELD:
-      2FA_QR_CODE: 2FA QR コード
-      SCAN_THE_QR_CODE_WITH_YOUR: 認証アプリで QR コードをスキャンしてください
-      FAILED_TO_GENERATE_2FA_SECRET: 2FA シークレットの生成に失敗しました
-      ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 認証アプリの 6 桁コードを入力してください
-      2FA_ENABLED: 2FA を有効化しました
-      2FA_DISABLED: 2FA を無効化しました
-      TWO_FACTOR_AUTHENTICATION_IS_OFF: 二要素認証はオフです
-      ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: サインイン時にワンタイムコードを必須にすることで、セキュリティを強化します。
-      FINISH_ENABLING_2FA: 2FA の有効化を完了
-      SCAN_THE_QR_CODE_WITH_YOUR_2: 認証アプリで QR コードをスキャンし、6 桁のコードを入力して確認・アクティブ化してください。
-      SECRET_FOR_MANUAL_ENTRY: "シークレット（手動入力用）:"
-      A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: シークレットは既に生成されていますが、セキュリティ上の理由で表示されていません。
-      REGENERATE_AND_SHOW_QR: 再生成して QR を表示
-      VERIFICATION_CODE: 認証コード
-      2FA_IS_ENABLED: 2FA が有効です
-      A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: このアカウントがサインインする際は毎回ワンタイムコードが必要です。
-      ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 確認のため現在の 6 桁コードを入力してください
-      ENABLE_2FA: 2FA を有効化
-      VERIFY_ENABLE: 確認して有効化
-      FORCE_DISABLE: 強制無効化
-      CONFIRM_DISABLE: 無効化を確認
-      FORCE_DISABLE_PROMPT: '**{username}** の 2FA を強制無効化しますか？デバイス紛失時の復旧のみに使用してください。'
-    DISABLE: 無効化
-    USER_AVATAR_CARD:
-      AVATAR_UPDATED: アバターを更新しました
-      FAILED_TO_UPLOAD_AVATAR: アバターのアップロードに失敗しました
-      AVATAR_REMOVED: アバターを削除しました
-      FAILED_TO_REMOVE_AVATAR: アバターの削除に失敗しました
-      UPLOAD_AVATAR: アバターをアップロード
-    REAUTH_MODAL:
-      SESSION_EXPIRED: セッションが期限切れです
-      PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 続行するにはパスワードを再入力してください。作業内容は保持されています。
-    USERNAME: ユーザー名
-    PASSWORD: パスワード
-    REMOVE: 削除
-    ENABLED: 有効
-    DISABLED: 無効
-    EXPAND_ALL: すべて展開
-    COLLAPSE_ALL: すべて折りたたむ
-    CONFIG_INFO_PAGE:
-      LOADING_SYSTEM_INFORMATION: システム情報を読み込み中...
-      EXPORT_YAML: YAML をエクスポート
-      SERVER: サーバー
-      GRAV_VERSION: Grav バージョン
-      PHP_VERSION: PHP バージョン
-      SERVER_SOFTWARE: サーバーソフトウェア
-      ENVIRONMENT: 環境
-      PHP_EXTENSIONS: PHP 拡張モジュール
-      PHP_CONFIGURATION: PHP 設定
-    DASHBOARD_GRID:
-      DRAG_TO_REORDER: ドラッグして並び替え
-    EDIT_MODE_TOOLBAR:
-      SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 全ユーザーのサイトデフォルトとして保存
-      LAYOUT_PRESETS: レイアウトプリセット
-    PLUGIN_WIDGET_LOADER:
-      WIDGET_FAILED_TO_LOAD: ウィジェットの読み込みに失敗しました
-    TOP_BANNER:
-      SITE_NOTIFICATION: サイト通知
-      PREVIOUS: 前へ
-    DISMISS: 閉じる
-    BACKUPS_WIDGET:
-      CREATE_A_NEW_BACKUP_NOW: 今すぐ新しいバックアップを作成
-      NO_BACKUPS_FOUND: バックアップが見つかりません
-      BACKING_UP: バックアップ中…
-      BACKUP_NOW: 新規
-      DOWNLOAD_FILE: '{filename} をダウンロード'
-    NEWS_FEED_WIDGET:
-      NO_FEED_ITEMS: フィード項目がありません
-    NOTIFICATIONS_WIDGET:
-      NO_NOTIFICATIONS: 通知はありません
-    POPULARITY_WIDGET:
-      LAST_14_DAYS: 過去 14 日間
-      THIS_WEEK: 今週
-      THIS_MONTH: 今月
-    RECENT_PAGES_WIDGET:
-      VIEW_ALL: すべて表示
-    STATS_WIDGET:
-      ACTIVE_THEME: アクティブテーマ
-      UPDATE_COUNT: "{n, plural, one{# 件の更新} other{# 件の更新}}"
-      ACTIVE_COUNT: "（{n} 件アクティブ）"
-    SYSTEM_HEALTH_WIDGET:
-      UPDATES: 更新
-      EVERYTHING_UP_TO_DATE: すべて最新です
-      GRAV_UPDATE_AVAILABLE: Grav の更新が利用可能です
-      GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: Grav はシンボリックリンク経由でインストールされています — 手動でアップグレードしてください。
-      SERVER: サーバー
-      UPGRADE_GRAV: Grav をアップグレード
-      UPDATE_ALL: すべて更新
-      PERCENT_USED: "{percent}% 使用"
-      UPDATES_AVAILABLE_COUNT: "{n} 件利用可能"
-      PACKAGES_OUTDATED: "{n, plural, one{# 件のパッケージが古い} other{# 件のパッケージが古い}}"
-      MORE_COUNT: "+ さらに {n} 件…"
-      CACHE: キャッシュ
-      DISK: ディスク
-      BYTES_USED: "{size} 使用"
-      BYTES_FREE: "{size} 空き"
-    TOP_PAGES_WIDGET:
-      NO_VIEW_DATA_YET: ビューデータがまだありません
-    MARKDOWN_EDITOR:
-      NOTHING_TO_PREVIEW: プレビューする内容がありません
-    FLOATING_WIDGET_LOADER:
-      CLOSE_WIDGETS_MENU: ウィジェットメニューを閉じる
-    MEDIA:
-      MEDIA_INSPECTOR:
-        PREVIOUS_FILE: 前のファイル
-        NEXT_FILE: 次のファイル
-        RENAME: 名前を変更
-        FAILED_TO_COPY: コピーに失敗しました
-        FILE_RENAMED: ファイル名を変更しました
-        DIMENSIONS: サイズ
-      MEDIA_MANAGER:
-        FOLDER_NAME: フォルダー名
-        FILES_DELETED: ファイルを削除しました
-        UPLOAD_FILES: ファイルをアップロード
-        NEW_FOLDER: 新しいフォルダー
-        CREATE: 作成
-      MEDIA_TOOLBAR:
-        SEARCH_MEDIA: メディアを検索...
-        GRID_VIEW: グリッド表示
-        LIST_VIEW: リスト表示
-        NEW_FOLDER: 新しいフォルダー
-        FOLDER: フォルダー
-      MEDIA_GRAV_ADMIN: メディア — Grav Admin
-      MANAGE_SITE_WIDE_MEDIA_FILES: サイト全体のメディアファイルを管理
-      PAGE_MEDIA:
-        PAGE_MEDIA: ページメディア
-        DRAG_INTO_EDITOR: エディターにドラッグ
-    UPLOAD: アップロード
-    CACHE_CLEAR_BUTTON:
-      CLEAR_CACHE: キャッシュをクリア
-      CACHE_OPTIONS: キャッシュオプション
-      FAILED_TO_CLEAR_CACHE: キャッシュのクリアに失敗しました
-    CONFIRM_ACTION: 操作を確認
-    VIEW_SITE_BUTTON:
-      OPEN_SITE_FRONTEND_IN_A_NEW_TAB: サイトのフロントエンドを新しいタブで開く
-      VIEW_SITE: サイトを表示
-    PLUGIN_PAGE_COMPONENT:
-      LOADING_PLUGIN_PAGE: プラグインページを読み込み中...
-    SYNC:
-      EDITOR_LOCK_NOTICE:
-        SWITCH_YOUR_EDITOR_PREFERENCE: エディター設定を切り替え
-        TO_COLLABORATE_LIVE: してリアルタイム共同編集を行ってください。
-        LOCKED: 読み取り専用 — {owner} さんが **{editor}** で編集中です。異なる種類のエディターでは共同編集できません。リアルタイム共同編集には [エディター設定を切り替え]({href})てください。
-        BUILTIN_MARKDOWN_EDITOR: 組み込みの Markdown エディター
-    DOWNLOAD: ダウンロード
-    TOOLS:
-      BACKUPS:
-        DELETE_BACKUP: バックアップを削除
-        FAILED_TO_LOAD_BACKUPS: バックアップの読み込みに失敗しました
-        BACKUP_CREATED_SUCCESSFULLY: バックアップを正常に作成しました
-        FAILED_TO_CREATE_BACKUP: バックアップの作成に失敗しました
-        BACKUP_DELETED: バックアップを削除しました
-        FAILED_TO_DELETE_BACKUP: バックアップの削除に失敗しました
-        BACKUP_STATISTICS: バックアップ統計
-        NUMBER_OF_BACKUPS: バックアップ数
-        NUMBER_OF_PROFILES: プロファイル数
-        NEWEST_BACKUP: 最新のバックアップ
-        OLDEST_BACKUP: 最古のバックアップ
-        BACKUP_HISTORY: バックアップ履歴
-        LOADING_BACKUPS: バックアップを読み込み中...
-        NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: バックアップが見つかりません。作成して開始してください。
-        BACKUP_DATE: バックアップ日時
-        ACTION: アクション
-        CREATING: 作成中...
-        BACKUP_NOW: 今すぐバックアップ
-      DIRECT_INSTALL:
-        PACKAGE_INSTALLED_SUCCESSFULLY: パッケージを正常にインストールしました
-        ONLY_ZIP_FILES_ARE_SUPPORTED: .zip ファイルのみサポートされています
-        INSTALL_FROM_FILE: ファイルからインストール
-        DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: .zip ファイルをここにドロップするか、クリックして参照
-        SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: Grav プラグインおよびテーマパッケージに対応
-        INSTALL_FROM_URL: URL からインストール
-      LOGS:
-        SEARCH_MESSAGES: メッセージを検索...
-        FAILED_TO_LOAD_LOGS: ログの読み込みに失敗しました
-        FAILED_TO_LOAD_LOG_FILES: ログファイルの読み込みに失敗しました
-        LOG_FILE: ログファイル
-        ALL_LEVELS: すべてのレベル
-        EMERGENCY: 緊急
-        CRITICAL: 重大
-        WARNING: 警告
-        NOTICE: 通知
-        25_LINES: 25 行
-        50_LINES: 50 行
-        100_LINES: 100 行
-        200_LINES: 200 行
-        REFRESH: 更新
-        LOADING_LOGS: ログを読み込み中...
-        MESSAGE: メッセージ
-      REPORT_COMPONENT_WRAPPER:
-        LOADING_REPORT_COMPONENT: レポートコンポーネントを読み込み中...
-      REPORTS:
-        FAILED_TO_LOAD_REPORTS: レポートの読み込みに失敗しました
-        LOADING_REPORTS: レポートを読み込み中...
-        NO_REPORTS_AVAILABLE: 利用可能なレポートはありません。
-        CONTENT_FIELD: "content: {field}"
-      SCHEDULER:
-        FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: スケジューラ設定の読み込みに失敗しました。
-        SCHEDULER_CONFIGURATION_SAVED: スケジューラ設定を保存しました
-        FAILED_TO_SAVE: 保存に失敗しました
-        LOADING_SCHEDULER: スケジューラを読み込み中...
-        NOT_ENABLED_FOR_USER: "ユーザーに対して有効化されていません:"
-        GRAV_SCHEDULER: Grav スケジューラ
-        INFO_BANNER: スケジューラはシステムの crontab か Webhook トリガーのいずれかを使ってコマンドを実行できます。クラウド環境では Webhook が推奨されます。カスタムジョブは上級ユーザーのみが設定するようにしてください。誤設定や悪用はセキュリティ脆弱性につながる可能性があります。
-        CRONTAB_INSTRUCTIONS: スケジューラ機能を有効にするには、**{user}** ユーザーのシステム crontab に **Grav スケジューラ** を追加する必要があります。上記のコマンドをターミナルから実行すると自動的に追加されます。保存後、このページを更新してステータスを確認してください。
-        WEBHOOK_ALTERNATIVE: あるいは、**scheduler-webhook** プラグインをインストールして Webhook ベースの cron 発火を使用することもできます。これはシステム crontab にアクセスできないクラウド環境で推奨されます。
-        SECURITY_WARNING: カスタムスケジューラジョブは上級ユーザーのみが設定するようにしてください。誤設定はパフォーマンス問題やセキュリティ脆弱性の原因となります。
-      SYSTEM_INFO:
-        FAILED_TO_LOAD_SYSTEM_INFO: システム情報の読み込みに失敗しました
-        LOADING_SYSTEM_INFO: システム情報を読み込み中...
-        GRAV_VERSION: Grav バージョン
-        PHP_VERSION: PHP バージョン
-        PHP_SAPI: PHP SAPI
-        MEMORY_LIMIT: メモリ上限
-        MAX_EXECUTION: 最大実行時間
-        MAX_UPLOAD: 最大アップロードサイズ
-        MAX_POST: 最大 POST サイズ
-        DISK_USAGE: ディスク使用量
-        DRIVER: ドライバ
-        DISK_FREE_OF: "{total} 中 {free} 空き"
-      TOOLS_GRAV_ADMIN: ツール — Grav Admin
-      BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: バックアップ、スケジューラ、ログ、診断
-    INSTALLING: インストール中...
-    ACCESS_DENIED:
-      ACCESS_DENIED: アクセスが拒否されました
-    ARE_YOU_SURE: よろしいですか？
-    ENVIRONMENT_SWITCHER:
-      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 設定の書き込み先を選択
-      HAS_OVERRIDES: 上書きあり
-      SELECTED_ENV: 選択中の環境
-      NO_LONGER_EXISTS_PICK_ANOTHER: は存在しません。別のものを選択してください。
-      SAVE_CONFIG_TO: 設定の保存先
-      CREATES_PATH: user/env/{name}/config/ を作成します
-      DEFAULT: デフォルト
-      SAVING_TO_DEFAULT: デフォルト (user/config) に保存中
-      SAVING_TO_ENV: "環境に保存中: {name}"
-      ENV_CREATED: "環境 {name} を作成して選択しました"
-      ENV_DELETED: "環境 {name} を削除しました"
-      FAILED_TO_CREATE: 環境の作成に失敗しました
-      FAILED_TO_DELETE: 環境の削除に失敗しました
-      CREATE_ENVIRONMENT: "環境を作成…"
-      CREATE_ENV_NAMED: "環境「{name}」を作成…"
-      CREATE: 作成
-      DELETE: 削除
-      DELETE_ENV_TOOLTIP: "環境 {name} を削除"
-      CONFIRM_DELETE: "{name} を削除しますか？"
-      CONFIRM_DELETE_WITH_OVERRIDES: "{name} とそのすべての設定上書きを削除しますか？"
-    INLINE_ICON_PICKER:
-      SEARCH_ICONS: アイコンを検索...
-      NO_ICONS_FOUND: アイコンが見つかりません
-      TYPE_TO_NARROW_RESULTS: 入力して結果を絞り込んでください
-    PASSWORD_FIELD:
-      PASSWORD_REQUIREMENTS: パスワード要件
-      PASSWORD_STRENGTH: パスワードの強度
-      REQUIREMENTS: 要件
-    TOP_PROGRESS_BAR:
-      WORKING: 処理中
-    UNSAVED_INDICATOR:
-      SAVING_CHANGES: 変更を保存中…
-      SAVING_CHANGES_2: 変更を保存中
-      UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 未保存の変更があります — 保存ボタンをクリックして反映してください
-      YOU_HAVE_UNSAVED_CHANGES: 未保存の変更があります
-    ALL_CHANGES_SAVED: すべての変更を保存しました
-    APP:
-      CREATING_BACKUP: バックアップを作成中…
-      DASHBOARD_GRAV_ADMIN: ダッシュボード — Grav Admin
-      REFRESH: 更新
-      WELCOME_BACK: おかえりなさい、{name} さん
-      PAGE_TITLE: "{name} — Grav Admin"
-    CONFIG:
-      TITLE: 設定
-      TITLE_SCROLLED: "設定: {scope}"
-      LOADING_CONFIGURATION: 設定を読み込み中...
-      FILTER_FIELDS: フィールドを絞り込み...
-      CLEAR_FILTER: フィルターをクリア
-      NO_MATCHES_FOUND: 一致するものが見つかりません
-      CONFIGURATION_SAVED_SUCCESSFULLY: 設定を正常に保存しました
-      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みして最新の変更を確認してください。
-      FAILED_TO_SAVE_CONFIGURATION: 設定の保存に失敗しました
-      CONFIGURATION_RELOADED: 設定を再読み込みしました
-      CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 設定が別の場所で変更されました — 上書き保存するか再読み込みしてください
-      RELOAD: 再読み込み
-      NO_CONFIGURATION_BLUEPRINT_AVAILABLE: このスコープに利用可能な設定ブループリントはありません。
-      PAGE_TITLE: "設定: {scope} — Grav Admin"
-    FLEX_OBJECTS:
-      SEARCH: 検索...
-      PREVIOUS: 前へ
-      DELETE_OBJECT: オブジェクトを削除
-      FAILED_TO_LOAD_DIRECTORY: ディレクトリの読み込みに失敗しました
-      FAILED_TO_LOAD_OBJECTS: オブジェクトの読み込みに失敗しました
-      OBJECT_DELETED: オブジェクトを削除しました
-      FAILED_TO_DELETE_OBJECT: オブジェクトの削除に失敗しました
-      EXPORT_FAILED: エクスポートに失敗しました
-      EXPORT: エクスポート
-      ACTIONS: アクション
-      OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: オブジェクトが別の場所で変更されました。再読み込みしてください。
-      FAILED_TO_SAVE: 保存に失敗しました。
-      OBJECT_CHANGED_ELSEWHERE_SAVE_TO: オブジェクトが別の場所で変更されました — 上書き保存するか再読み込みしてください
-      BACK_TO_LIST: 一覧へ戻る
-      NEW:
-        OBJECT_CREATED: オブジェクトを作成しました
-        BACK_TO_LIST: 一覧へ戻る
-        CREATE: 作成
-    FORGOT:
-      UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
-      FORGOT_PASSWORD_GRAV_ADMIN: パスワードをお忘れの方 — Grav Admin
-      FORGOT_PASSWORD: パスワードをお忘れの方
-      EMAIL_ADDRESS: メールアドレス
-      ENTER_A_VALID_EMAIL_ADDRESS: 有効なメールアドレスを入力してください
-      IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: そのメールアドレスのアカウントが存在する場合、リセットリンクが送信されました。
-      BACK_TO_SIGN_IN: サインインへ戻る
-      SENDING: 送信中...
-      SEND_RESET_LINK: リセットリンクを送信
-      CHECK_INBOX: 受信トレイでリセットリンクを確認してください。
-      SUBTITLE: メールアドレスを入力していただければ、リセットリンクをお送りします。
-    LOGIN:
-      SIGNED_IN_SUCCESSFULLY: 正常にサインインしました
-      PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 必須項目をすべて入力してください
-      INVALID_USERNAME_OR_PASSWORD: ユーザー名またはパスワードが正しくありません
-      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: サーバーに接続できません。サーバー URL を確認して再試行してください。
-      UNABLE_TO_VERIFY_CODE_CHECK_YOUR: コードを確認できません。接続を確認して再試行してください。
-      LOGIN_GRAV_ADMIN: ログイン — Grav Admin
-      GRAV_ADMIN: Grav Admin
-      SERVER_CONFIGURATION: サーバー設定
-      SERVER_URL: サーバー URL
-      ENVIRONMENT: 環境
-      USERNAME_IS_REQUIRED: ユーザー名は必須です
-      PASSWORD_IS_REQUIRED: パスワードは必須です
-      FORGOT_PASSWORD: パスワードをお忘れの方
-      AUTHENTICATION_CODE: 認証コード
-      ENTER_A_VALID_6_DIGIT_CODE: 有効な 6 桁のコードを入力してください
-      BACK_TO_SIGN_IN: サインインへ戻る
-      POWERED_BY_GRAV_CMS: Powered by Grav CMS
-      SIGNING_IN: サインイン中...
-      SIGN_IN: サインイン
-      VERIFYING: 確認中...
-      VERIFY: 確認
-      TWOFA_SUBTITLE: 続行するには認証アプリのコードを入力してください
-      SUBTITLE: サインインしてサイトを管理
-      AUTH_CODE_PROMPT: 認証アプリを開き、**{username}** の 6 桁コードを入力してください。
-    PLUGIN:
-      BACK_TO_DASHBOARD: ダッシュボードへ戻る
-      NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: このプラグインページに利用可能なコンテンツはありません。
-    PLUGINS:
-      SEARCH_PLUGINS: プラグインを検索...
-      SYMLINKED: シンボリックリンク
-      FAILED_TO_LOAD_PLUGINS: プラグインの読み込みに失敗しました
-      FAILED_TO_CHECK_FOR_UPDATES: 更新の確認に失敗しました
-      PLUGINS_GRAV_ADMIN: プラグイン — Grav Admin
-      CHECK_UPDATES: 更新を確認
-      CONFIGURE: 設定
-      SELECT_A_PLUGIN_TO_VIEW_DETAILS: 詳細を表示するプラグインを選択してください
-      REMOVE_PLUGIN: プラグインを削除
-      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
-      FAILED_TO_SAVE_CONFIGURATION: 設定の保存に失敗しました。
-      PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: プラグインが別の場所で変更されました — 上書き保存するか再読み込みしてください
-      BACK_TO_PLUGINS: プラグインへ戻る
-      CHANGELOG: 変更履歴
-      PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 設定するにはプラグインを有効にする必要があります。
-      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: このプラグインに利用可能な設定オプションはありません。
-      ENABLE_PLUGIN: プラグインを有効化
-      PAGE_TITLE: "{name} — プラグイン — Grav Admin"
-    RESET:
-      PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: パスワードを正常にリセットしました。サインインしてください。
-      UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
-      RESET_PASSWORD_GRAV_ADMIN: パスワードをリセット — Grav Admin
-      RESET_PASSWORD: パスワードをリセット
-      THIS_RESET_LINK_IS_MISSING_REQUIRED: このリセットリンクには必要なパラメータがありません。パスワードを忘れた場合のページから新しいリンクをリクエストしてください。
-      CONFIRM_PASSWORD: パスワードを確認
-      PASSWORDS_DO_NOT_MATCH: パスワードが一致しません
-      BACK_TO_SIGN_IN: サインインへ戻る
-      RESETTING: リセット中...
-      INVALID_LINK: リセットリンクが無効です。
-      NEW_PASSWORD_FOR: '**{username}** の新しいパスワードを選択してください。'
-    SETTINGS:
-      LIGHT_LOGO: ライトロゴ
-      DARK_LOGO: ダークロゴ
-      REMOVE_LINK: リンクを削除
-      RESET_PREFERENCES: 環境設定をリセット
-      PREFERENCES_RESET_RELOAD_TO_APPLY: 環境設定をリセットしました。再読み込みして適用してください。
-      SETTINGS_GRAV_ADMIN: 設定 — Grav Admin
-      ADMIN_PREFERENCES_AND_APPEARANCE: 管理画面の環境設定と外観
-      CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: サイドバーとログインページに表示されるロゴをカスタマイズ
-      LOGO_TYPE: ロゴタイプ
-      CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: ロゴの表示方法を選択
-      GRAV_LOGO: Grav ロゴ
-      CUSTOM_TEXT: カスタムテキスト
-      CUSTOM_IMAGE: カスタム画像
-      LOGO_TEXT: ロゴテキスト
-      THE_FIRST_LETTER_BECOMES_THE_ICON: 最初の文字がアイコンになります
-      LIGHT_MODE_LOGO: ライトモードロゴ
-      USED_ON_LIGHT_BACKGROUNDS: 明るい背景で使用
-      DARK_MODE_LOGO: ダークモードロゴ
-      USED_ON_DARK_BACKGROUNDS: 暗い背景で使用
-      APPEARANCE: 外観
-      CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 管理画面の見た目と操作感をカスタマイズ
-      COLOR_MODE: カラーモード
-      CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: ライトとダークの外観を選択
-      ACCENT_COLOR: アクセントカラー
-      PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: ボタン、リンク、ハイライトに使用されるメインカラー
-      SATURATION: 彩度
-      TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 管理画面全体で使用される書体
-      FONT_SIZE: フォントサイズ
-      TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 管理画面全体で使用される文字サイズ
-      FONT_SIZE_SMALL: 小
-      FONT_SIZE_NORMAL: 標準
-      FONT_SIZE_LARGE: 大
-      FONT_SIZE_XLARGE: 特大
-      DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: ページブラウザのデフォルト設定
-      DEFAULT_VIEW: デフォルト表示
-      HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: ページのデフォルト表示方法
-      ITEMS_PER_PAGE: 1 ページあたりの項目数
-      NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: リスト表示で表示するページ数
-      EDITING: 編集
-      AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: フォームエディターの自動保存と元に戻す動作
-      AUTO_SAVE: 自動保存
-      AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: フィールドを離れたときに自動的に保存します
-      TOOLBAR_UNDO_BUTTON: ツールバーの元に戻すボタン
-      SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: エディターツールバーに元に戻すボタンを表示します
-      UNDO_BATCH_WINDOW: 元に戻すバッチウィンドウ
-      GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 短時間のフィールド変更を 1 つの元に戻すステップにまとめます
-      NONE_1_FIELD_1_UNDO: なし（1 フィールド = 1 回の元に戻す）
-      1_SECOND: 1 秒
-      2_SECONDS: 2 秒
-      REAL_TIME_COLLABORATION: リアルタイム共同編集
-      PLUGIN_ON_THE_SERVER_EXPERIMENTAL: プラグインがサーバー上で必要です。実験的機能です。
-      ADMIN_INTERFACE_LANGUAGE: 管理画面の言語
-      ADMIN_LANGUAGE: 管理画面の言語
-      ENGLISH: English
-      FRAN_AIS: Français
-      DEUTSCH: Deutsch
-      ESPA_OL: Español
-      ITALIANO: Italiano
-      PORTUGU_S: Português
-      NEDERLANDS: Nederlands
-      MENUBAR_LINKS: メニューバーリンク
-      CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: トップメニューバーに表示されるカスタムショートカット
-      EXTERNAL: 外部
-      ADD_LINK: リンクを追加
-      CONNECTION: 接続
-      SERVER_CONNECTION_DETAILS: サーバー接続の詳細
-      SERVER_URL: サーバー URL
-      ENVIRONMENT: 環境
-      AUTHENTICATED_AS: 認証ユーザー
-      RESET_ALL_PREFERENCES: すべての環境設定をリセット
-      COLLAB_DESCRIPTION: プレゼンス表示付きのリアルタイム複数ユーザー編集。サーバーに `sync` プラグインが必要です。実験的機能です。
-      ADMIN_LANGUAGE_DESC: ラベル、メニュー、メッセージの言語（{count} 件の文字列を読み込み済み）
-      LANGUAGE_CHANGED: 言語を {language} に変更しました
-      HUE: 色相
-      FONT: フォント
-      LIGHT: ライト
-      DARK: ダーク
-      FOLLOW_OS: OS に従う
-      "ON": "オン"
-      "OFF": "オフ"
-      RESET_TO_SITE_DEFAULTS: 自分の環境設定をサイトのデフォルトにリセット
-      SITE_DEFAULTS: サイトデフォルト
-      SITE_DEFAULTS_DESCRIPTION: 以下の設定は、すべての管理ユーザーに対するベースラインとして適用されます。ティア B の項目（外観、ページ、言語、エディター）は上の各ユーザーの環境設定で上書き可能です。ティア A の項目（編集、メニューバー）はサイト全体に適用され、上書きできません。
-      BRANDING: ブランディング
-      BRANDING_DESC: 管理画面全体に表示されるロゴとブランドテキスト。
-      SAVED_AUTOMATICALLY: 自動的に保存されました
-      SITE_SETTINGS_HEADING: サイト設定
-      SITE_SETTINGS_DESC: 新規ユーザーのデフォルト環境設定とサイト全体の動作。変更は影響を受けるユーザーの次回の再読み込み時に適用されます。
-      DEFAULT_APPEARANCE: デフォルトの外観
-      DEFAULT_COLOR_APPEARANCE_DESC: 新規ユーザーのデフォルトカラー外観。
-      DEFAULT_PRIMARY_COLOR_DESC: ボタン、リンク、ハイライト用のデフォルトのメインカラー。
-      DEFAULT_TYPEFACE_DESC: 管理画面 UI のデフォルト書体。
-      DEFAULT_TEXT_SIZE_DESC: 管理画面 UI のデフォルト文字サイズ。
-      DEFAULT_PAGES: デフォルトのページ
-      DEFAULT_LANGUAGE: デフォルトの言語
-      DEFAULT_INTERFACE_LANGUAGE_DESC: 新規ユーザーのデフォルトのインターフェイス言語。
-      EDITOR_HEADING: エディター
-      EDITOR_MODE: エディターモード
-      DEFAULT_FORM_EDITOR_DENSITY: デフォルトのフォームエディター密度。
-      USERS_MAY_OVERRIDE: ユーザーが上書き可能
-      SITE_WIDE_ONLY: サイト全体のみ
-      REVERT_CHANGES: 変更を元に戻す
-      SAVE_SITE_DEFAULTS: サイトデフォルトを保存
-      RESET_PREFERENCES_MSG: すべての個人的な上書きを削除してサイトデフォルトに戻しますか？
-      RESET: リセット
-      FAILED_TO_SAVE_LOGO_MODE: ロゴモードの保存に失敗しました。
-      FAILED_TO_SAVE_LOGO_TEXT: ロゴテキストの保存に失敗しました。
-      LIGHT_LOGO_UPLOADED: ライトロゴをアップロードしました。
-      DARK_LOGO_UPLOADED: ダークロゴをアップロードしました。
-      LOGO_UPLOAD_FAILED: ロゴのアップロードに失敗しました。
-      LIGHT_LOGO_REMOVED: ライトロゴを削除しました。
-      DARK_LOGO_REMOVED: ダークロゴを削除しました。
-      FAILED_TO_REMOVE_LOGO: ロゴの削除に失敗しました。
-      SITE_DEFAULTS_SAVED: サイトデフォルトを保存しました。すべてのユーザーは次回の再読み込み時にこれが反映されます。
-      FAILED_TO_SAVE_SITE_DEFAULTS: サイトデフォルトの保存に失敗しました。
-      FAILED_TO_RESET_PREFERENCES: 環境設定のリセットに失敗しました。
-    CUSTOM: カスタム
-    PREVIEW: プレビュー
-    SETUP:
-      PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 上のエラーを修正して再試行してください
-      ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 管理者アカウントを作成しました — Grav へようこそ
-      SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: セットアップは既に完了しています。サインインしてください。
-      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: サーバーに接続できません。サーバー URL を確認して再試行してください。
-      SETUP_GRAV_ADMIN: セットアップ — Grav Admin
-      WELCOME_TO_GRAV: Grav へようこそ
-      CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 開始するには管理者アカウントを作成してください
-      CHECKING_SERVER: サーバーを確認中…
-      SERVER_CONFIGURATION: サーバー設定
-      SERVER_URL: サーバー URL
-      ENVIRONMENT: 環境
-      3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: "3〜64 文字：英字、数字、ハイフン、アンダースコア"
-      FULL_NAME: フルネーム
-      OPTIONAL: （任意）
-      ENTER_A_VALID_EMAIL_ADDRESS: 有効なメールアドレスを入力してください
-      CONFIRM_PASSWORD: パスワードを確認
-      PASSWORDS_DO_NOT_MATCH: パスワードが一致しません
-      POWERED_BY_GRAV_CMS: Powered by Grav CMS
-      CREATING_ACCOUNT: アカウントを作成中...
-      CREATE_ADMINISTRATOR: 管理者を作成
-    SYSTEM:
-      SYSTEM_GRAV_ADMIN: システム — Grav Admin
-      COMING_SOON: 近日公開
-    THEMES:
-      SEARCH_THEMES: テーマを検索...
-      SYMLINKED: シンボリックリンク
-      FAILED_TO_LOAD_THEMES: テーマの読み込みに失敗しました
-      FAILED_TO_CHECK_FOR_UPDATES: 更新の確認に失敗しました
-      THEMES_GRAV_ADMIN: テーマ — Grav Admin
-      CHECK_UPDATES: 更新を確認
-      CONFIGURE: 設定
-      SELECT_A_THEME_TO_VIEW_DETAILS: 詳細を表示するテーマを選択してください
-      ACTIVE_THEME: アクティブテーマ
-      CLICK_TO_VIEW_FULL_SIZE: クリックして実寸を表示
-      REMOVE_THEME: テーマを削除
-      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
-      FAILED_TO_SAVE_CONFIGURATION: 設定の保存に失敗しました。
-      BACK_TO_THEMES: テーマへ戻る
-      CHANGELOG: 変更履歴
-      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: このテーマに利用可能な設定オプションはありません。
-      PAGE_TITLE: "{name} — テーマ — Grav Admin"
-    ACTIVE: アクティブ
-    ACTIVATE: 有効化
-    USERS:
-      STATUS: ステータス
-      STATUS_HELP: 無効化されたアカウントはサインインや API を使用できません。
-      SEARCH_USERS: ユーザーを検索...
-      FAILED_TO_LOAD_USERS: ユーザーの読み込みに失敗しました
-      USERS_GRAV_ADMIN: ユーザー — Grav Admin
-      ADD_USER: ユーザーを追加
-      SUPER_ADMIN: スーパー管理者
-      CREATED: 作成日
-      PERMISSIONS: 権限
-      SELECT_A_USER_TO_VIEW_DETAILS: 詳細を表示するユーザーを選択してください
-      DELETE_USER: ユーザーを削除
-      CONFIRM_DELETE_USER: "ユーザー「{username}」を削除しますか？この操作は元に戻せません。"
-      USER_WAS_MODIFIED_ELSEWHERE_PLEASE: ユーザーが別の場所で変更されました。再読み込みしてください。
-      FAILED_TO_SAVE_USER: ユーザーの保存に失敗しました。
-      YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 自分自身のアカウントは削除できません。
-      USER_CHANGED_ELSEWHERE_SAVE_TO: ユーザーが別の場所で変更されました — 上書き保存するか再読み込みしてください
-      BACK_TO_USERS: ユーザーへ戻る
-      2_FACTOR_AUTHENTICATION: 二要素認証
-      NEW:
-        LOWERCASE_3_64_CHARS: 小文字、3〜64 文字
-        NEW_USER_GRAV_ADMIN: 新規ユーザー — Grav Admin
-        NEW_USER: 新規ユーザー
+    ADMIN_NEXT:
+        ADD_PAGE: ページを追加
+        CANCEL: キャンセル
+        CLEAR_SEARCH: 検索をクリア
+        CLOSE: 閉じる
+        COLLAPSE_SIDEBAR: サイドバーを折りたたむ
+        EXPAND_SIDEBAR: サイドバーを展開
+        CONFIRM_DELETE: '{route} の「{title}」を削除しますか？'
+        DELETE: 削除
+        DONE: 完了
+        EDIT: 編集
+        LOADING: 読み込み中...
+        NO_CHANGES: 保存する変更はありません
+        SAVE: 保存
+        SAVING: 保存中...
+        SEARCH: 検索
+        SIGN_OUT: サインアウト
+        TOGGLE_DARK_MODE: ダークモードを切り替え
+        TOGGLE_MENU: メニューを切り替え
+        UNSAVED_CHANGES: 未保存の変更があります
+        DASHBOARD:
+            TITLE: ダッシュボード
+            CUSTOMIZE: カスタマイズ
+            CUSTOMIZE_TITLE: ダッシュボードをカスタマイズ
+            EDIT_HINT: 'カスタマイズモード — ウィジェットをドラッグ、リサイズ、非表示にして保存します。'
+            PRESETS: プリセット
+            SAVE_SITE_DEFAULT: サイトのデフォルトとして保存
+            RESET_LAYOUT: 自分のレイアウトをリセット
+            ADD_WIDGET: ウィジェットを追加
+            HIDE_WIDGET: ウィジェットを非表示
+            PICKER_TITLE: ウィジェットを追加
+            PICKER_SUBTITLE: ダッシュボードに戻すウィジェットを選択してください。
+            PICKER_EMPTY: 利用可能なすべてのウィジェットは既にダッシュボードに表示されています。
+            EMPTY: ダッシュボードは空です
+            EMPTY_HINT: 上の鉛筆アイコンをクリックしてウィジェットを追加してください
+            LAYOUT_SAVED: ダッシュボードレイアウトを保存しました
+            SITE_LAYOUT_SAVED: サイトのデフォルトを保存しました
+            LAYOUT_RESET: レイアウトをデフォルトにリセットしました
+            WIDGETS:
+                STATS: サイト統計
+                POPULARITY: ページビュー
+                SYSTEM_HEALTH: システムヘルス
+                RECENT_PAGES: 最近のページ
+                TOP_PAGES: 人気ページ
+                BACKUPS: バックアップ
+                NOTIFICATIONS: 通知
+                NEWS_FEED: ニュースフィード
+            PRESET_DEFAULT: デフォルト
+            PRESET_DEFAULT_DESC: 'サーバー推奨のレイアウト — カスタマイズはクリアされます。'
+            PRESET_MINIMAL: ミニマル
+            PRESET_MINIMAL_DESC: 統計と最近のページのみ。
+            PRESET_COMPACT: コンパクト
+            PRESET_COMPACT_DESC: 各ウィジェットを最小サイズで表示します。
+        PAGES:
+            TITLE: ページ
+            SEARCH_PLACEHOLDER: ページを検索...
+            NO_PAGES: ページが見つかりません
+            NO_SEARCH_RESULTS: 検索条件に一致するページはありません
+            LOADING: ページを読み込み中...
+            REORDER_MOVE: 移動
+            REORDER_DONE: 完了
+            REORDER_EXIT_TITLE: 並び替えモードを終了
+            REORDER_START_TITLE: ページを並び替え
+            STATS_TOTAL: '合計 {n} 件'
+            STATS_PUBLISHED: '公開 {n} 件'
+            STATS_UNPUBLISHED: '未公開 {n} 件'
+            REORDER_SAME_PARENT: 同じ親の下にあるページのみ並び替えできます。親をまたぐ移動にはツリービューを使用してください。
+            MOVED: '「{title}」を移動しました'
+            REORDERED: '「{title}」を並び替えました'
+            MOVE_FAILED: ページの移動に失敗しました
+            REORDER_FAILED: 並び替えに失敗しました
+            DELETED: '「{title}」を削除しました'
+            DELETE_FAILED: ページの削除に失敗しました
+            SAVED: ページを正常に保存しました
+            SAVE_FAILED: ページの保存に失敗しました
+            VIEW_TREE: ツリー
+            VIEW_LIST: リスト
+            VIEW_COLUMNS: 列
+            CHUNK_SIZE: チャンク
+            CHUNK_SIZE_HELP: 'スクロールに合わせて 1 リクエストで取得する行数。大きい値は初回読み込みが遅くなりますが、後続のリクエストは減ります。'
+            LOADING_CHUNK: '行 {from}–{to} を読み込み中…'
+            LOADED_OF: '{n, plural, one {# 件読み込み済み} other {# 件読み込み済み}} / {total} 件'
+            REORDER_LOADING: 'まだ全リストを読み込み中です — 少ししてから再度お試しください。'
+            REORDER_LOADING_ALL: 並び替えがリスト全体に反映されるよう、すべてのチャンクを読み込み中…
+            NO_MATCH: 検索条件に一致するページはありません
+            HEADER_TITLE: タイトル
+            HEADER_TEMPLATE: テンプレート
+            HEADER_STATUS: ステータス
+            HEADER_MODIFIED: 更新日
+            HEADER_PARENT: 親
+            PUBLISHED: 公開済み
+            DRAFT: 下書き
+            SORT_ORDER: 順序
+            SORT_TITLE_AZ: 'タイトル A-Z'
+            SORT_TITLE_ZA: 'タイトル Z-A'
+            SORT_NEWEST: 新しい順
+            SORT_OLDEST: 古い順
+            SORT_DATE_NEWEST: 日付（新しい順）
+            RAW_HEADER: 'ページヘッダーの生データ (JSON)'
+            PAGE_INFO: ページ情報
+            EDIT_PAGE: ページを編集
+            MODE_NORMAL: 通常
+            MODE_EXPERT: エキスパート
+            FRONTMATTER: フロントマター
+            INFO_PUBLISHED: 公開済み
+            INFO_VISIBLE: ナビゲーションに表示
+            INFO_ROUTABLE: ルーティング可能
+            INFO_ROUTE: ルート
+            INFO_SLUG: スラッグ
+            INFO_TEMPLATE: テンプレート
+            INFO_LANGUAGE: 言語
+            INFO_ORDER: 順序
+            INFO_DATE: 日付
+            INFO_MODIFIED: 更新日
+            INFO_PUBLISH_ON: 公開日
+            INFO_UNPUBLISH_ON: 非公開日
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 下書き（未公開）
+                FOLDER_ORDER: フォルダーの順序
+                VISIBLE: 表示
+                HAS_CHILDREN: 子ページあり
+                SUMMARY: 概要
+                DROP_HERE: ここにドロップ
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: ページの再構成に失敗しました
+                SEARCHING: 検索中…
+                NO_PAGES_MATCH: '「{query}」に一致するページはありません'
+            DELETE_PAGE: ページを削除
+            PAGES_GRAV_ADMIN: 'ページ — Grav Admin'
+            ADD_PAGE: ページを追加
+            ADD_FOLDER: フォルダーを追加
+            ADD_MODULE: モジュールを追加
+            ADD_MENU: メニューを追加
+            EDIT:
+                TOGGLE_PAGE_NAVIGATOR: ページナビゲーターを切り替え
+                PREVIEW_PAGE: ページをプレビュー
+                COPY_PAGE: ページをコピー
+                DELETE_PAGE: ページを削除
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'ここに Markdown コンテンツを記述します...'
+                CONNECTING_TO_COLLAB: 共同編集セッションに接続中…
+                RESET_TRANSLATION: 翻訳をリセット
+                PAGE_PREVIEW: ページプレビュー
+                INVALID_YAML_FRONTMATTER: 'YAML フロントマターが無効です'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'YAML フロントマターが無効です — 保存前に構文を修正してください'
+                PAGE_SAVED_AND_MOVED: ページを保存して移動しました
+                FAILED_TO_CREATE_TRANSLATION: 翻訳の作成に失敗しました
+                FAILED_TO_SYNC_TRANSLATION: 翻訳の同期に失敗しました
+                PAGE_DELETED: ページを削除しました
+                PAGE_COPIED: ページをコピーしました
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'ページが別の場所で変更されました — 上書き保存するか再読み込みしてください'
+                LOADING_PAGE: ページを読み込み中...
+                FOLDER_NAME: フォルダー名
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'ディスク上のフォルダー名（URL スラッグ）'
+                FALLBACK: （フォールバック）
+                NOT_TRANSLATED: '未翻訳:'
+                RESET_CONTENT_FROM: 'コンテンツをリセット:'
+                OPEN_IN_NEW_TAB: 新しいタブで開く
+                SAVE_AS_LANGUAGE: '{language} として保存'
+                CREATE_LANGUAGE: '{language} を作成'
+                EDIT_PAGE: ページを編集
+                FALLBACK_NOTICE: '{active} の翻訳が存在しません。{effective} のフォールバックを表示しています。編集可能な翻訳を作成するには「{active} として保存」を使用してください。'
+                PUBLISH_ON: 公開日
+                UNPUBLISH_ON: 非公開日
+                RESET_FROM: '{language} からリセット'
+                SAVED_BY_PEER: '{user} がこのページを保存しました'
+                SAVED_BY_PEER_ANON: 他のユーザーがこのページを保存しました
+            NEW:
+                MY_NEW_PAGE: 新しいページ
+                FILTER_PAGES: ページを絞り込み...
+                FAILED_TO_LOAD_PAGE_TEMPLATES: ページテンプレートの読み込みに失敗しました
+                ADD_PAGE_GRAV_ADMIN: 'ページを追加 — Grav Admin'
+                PAGE_DETAILS: ページ詳細
+                PAGE_TITLE: ページタイトル
+                FOLDER_NAME: フォルダー名
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'このページの URL セーフなフォルダー名'
+                PARENT_PAGE: 親ページ
+                ROOT: '<root> /'
+                PAGE_TEMPLATE: ページテンプレート
+                LOADING_TEMPLATES: テンプレートを読み込み中...
+                VISIBLE: 表示
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: このページをナビゲーションメニューに表示するかを制御します
+                CONTINUE: 続行
+                PAGE_CREATED: 'ページ「{title}」を作成しました'
+                FOLDER_CREATED: 'フォルダー「{title}」を作成しました'
+                MODULE_CREATED: 'モジュール「{title}」を作成しました'
+                FAILED_TO_CREATE: ページの作成に失敗しました
+                ORDERING: 順序
+                ORDERING_HELP_MODULE: モジュラー親内でのこのモジュールの位置を決定する数値プレフィックスを追加します。
+                ORDERING_HELP_FOLDER: 兄弟フォルダー内でのこのフォルダーの位置を決定する数値プレフィックスを追加します。
+                ORDERING_NONE: なし
+                FOLDER_DETAILS: フォルダー詳細
+            PAGE_COUNT: '{n, plural, one{# ページ} other{# ページ}}'
+            SUBTITLE: サイトのコンテンツと構造を管理
+            PUBLISH: 公開
+            UNPUBLISH: 非公開
+        FIELDS:
+            CLEAR_DATE: 日付をクリア
+            REGENERATE_SLUG: ページタイトルから自動再生成
+            ADD_ENTRY: エントリーを追加
+            NO_TAXONOMY_TYPES: タクソノミータイプが設定されていません
+            FILE_PICKER_SOON: 'ファイルピッカー — 近日公開'
+            CRON:
+                AT_MINUTE: 分
+                ON_DAY: 日
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: '分 時 日 月 曜日'
+            CRON_STATUS:
+                FAILED_TO_LOAD_SCHEDULER_STATUS: スケジューラのステータスを読み込めませんでした
+                SCHEDULER_RUN_COMPLETED: スケジューラの実行が完了しました
+                FAILED_TO_RUN_SCHEDULER: スケジューラの実行に失敗しました
+                LOADING_SCHEDULER_STATUS: スケジューラのステータスを読み込み中...
+                SCHEDULER_STATUS: スケジューラステータス
+                NO_SCHEDULED_JOBS_REGISTERED: 登録されたスケジュールジョブはありません。
+                JOB_ID: 'ジョブ ID'
+                HEALTH_STATUS: ヘルスステータス
+                STATUS: 'ステータス:'
+                LAST_RUN: 前回実行
+                SCHEDULED_JOBS: スケジュールジョブ
+                QUEUE_SIZE: 'キューサイズ:'
+                ACTIVE_TRIGGERS: アクティブなトリガー
+                CRON: 'Cron:'
+                NOT_CONFIGURED: 未設定
+                WEBHOOK: 'Webhook:'
+                NOT_INSTALLED: 未インストール
+                NOT_ENABLED: 無効
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'アクティブなトリガーがありません。Webhook を有効にするか cron を設定してください。'
+                RUNNING: 実行中...
+                RUN_ALL: すべて実行
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: カスタムフィールドを読み込み中...
+            DATE_FORMAT:
+                SELECT_FORMAT: '— フォーマットを選択 —'
+                FORMAT_STRING: 'フォーマット文字列:'
+            ICON_PICKER:
+                SEARCH_ICONS: アイコンを検索...
+                NO_ICONS_FOUND: アイコンが見つかりません
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: '最初の 200 件を表示 — 入力して絞り込んでください'
+            PAGE_EXISTS:
+                CHECKING_PAGE: ページを確認中...
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: ページメディアは利用できません
+            PAGES:
+                FILTER_PAGES: ページを絞り込み...
+                ROOT: '/ (ルート)'
+            PERMISSIONS:
+                NO_PERMISSIONS_CONFIGURED: 権限が設定されていません
+                NOT_SET: 未設定
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: フィルターに一致するフィールドはありません
+            THEME_SELECT:
+                LOADING_THEMES: テーマを読み込み中...
+                SELECT_THEME: '— テーマを選択 —'
+            WEBHOOK_EXAMPLES:
+                HOW_TO_USE_WEBHOOKS: 'Webhook の使い方:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: '実行予定のすべてのジョブをトリガー（スケジュール準拠）:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: '特定のジョブを強制実行（スケジュール無視）:'
+                CHECK_HEALTH_STATUS: 'ヘルスステータスを確認:'
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions の例:'
+            WEBHOOK_STATUS:
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Webhook プラグインのステータスを確認中...'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: プラグインはインストール済みかつ有効です。
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'プラグインはインストール済みです。下の Webhook トリガーを有効にしてアクティブ化してください。'
+                WEBHOOK_PLUGIN_REQUIRED: 'Webhook プラグインが必要です'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'Webhook 機能にはプラグインが必要です。'
+                INSTALL_PLUGIN_NOW: 今すぐプラグインをインストール
+                OR_RUN: 'または次を実行:'
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+            FILE_PICKER:
+                NO_MEDIA_UPLOADED: メディアファイルがまだアップロードされていません
+                NO_MATCHING_FILES: 一致するファイルはありません
+        NAV:
+            DASHBOARD: ダッシュボード
+            CONFIGURATION: 設定
+            PAGES: ページ
+            MEDIA: メディア
+            USERS: ユーザー
+            PLUGINS: プラグイン
+            THEMES: テーマ
+            TOOLS: ツール
+            SYSTEM: システム
+            SETTINGS: 設定
+        LANG:
+            SWITCH_LANGUAGE: コンテンツ言語を切り替え
+            TRANSLATIONS: 翻訳
+            TRANSLATED: 翻訳済み
+            NOT_TRANSLATED: 未翻訳
+            SAVE_AS: '{language} として保存'
+            CREATE_TRANSLATION: '{language} の翻訳を作成'
+            FALLBACK_NOTICE: '{language} の翻訳がありません。デフォルトのコンテンツを表示しています。'
+            SYNC_FROM: '{language} からリセット'
+            TRANSLATION_CREATED: '{language} の翻訳を作成しました'
+            DELETE_TRANSLATION: '{language} の翻訳を削除'
+            CURRENT: 現在
+            DEFAULT: デフォルト
+        TIME:
+            JUST_NOW: たった今
+            MINUTES_AGO: '{n} 分前'
+            HOURS_AGO: '{n} 時間前'
+            DAYS_AGO: '{n} 日前'
+        ADD_PLUGIN_MODAL:
+            FILTER_PLUGINS: プラグインを絞り込み...
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'GPM から利用可能なプラグインの読み込みに失敗しました'
+            ADD_PLUGIN: プラグインを追加
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 詳細を表示するプラグインを選択してください
+        PREMIUM: プレミアム
+        AUTHOR: 作者
+        HOMEPAGE: ホームページ
+        VERSION: バージョン
+        KEYWORDS: キーワード
+        DEPENDENCIES: 依存関係
+        COMPATIBILITY: 互換性
+        ADD_THEME_MODAL:
+            FILTER_THEMES: テーマを絞り込み...
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'GPM から利用可能なテーマの読み込みに失敗しました'
+            ADD_THEME: テーマを追加
+            SELECT_A_THEME_TO_VIEW_DETAILS: 詳細を表示するテーマを選択してください
+        API_KEYS_FIELD:
+            REVOKE_KEY: キーを取り消す
+            E_G_MY_CLI_TOOL: '例：My CLI Tool'
+            REVOKE_API_KEY: 'API キーを取り消す'
+            FAILED_TO_LOAD_API_KEYS: 'API キーの読み込みに失敗しました'
+            PLEASE_ENTER_A_KEY_NAME: キー名を入力してください
+            API_KEY_GENERATED: 'API キーを生成しました'
+            FAILED_TO_GENERATE_API_KEY: 'API キーの生成に失敗しました'
+            FAILED_TO_REVOKE_API_KEY: 'API キーの取り消しに失敗しました'
+            FAILED_TO_COPY_TO_CLIPBOARD: クリップボードへのコピーに失敗しました
+            API_KEYS: 'API キー'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'まだ API キーは生成されていません。'
+            KEY_PREFIX: キーのプレフィックス
+            CREATED: 作成日
+            EXPIRES: 有効期限
+            LAST_USED: 最終使用
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: '今すぐこのキーをコピーしてください — 再表示されません。'
+            KEY_NAME: キー名
+            EXPIRY: 有効期限
+            BLANK_NEVER: '（空欄 = 期限なし）'
+            GENERATING: 生成中...
+            GENERATE_KEY: キーを生成
+        APP_SHELL:
+            CLOSE_MENU: メニューを閉じる
+            GRAV_VERSION: 'Grav v{version}'
+            ADMIN_VERSION: 'Admin v{version}'
+        NORMAL_MODE: 通常モード
+        EXPERT_MODE: エキスパートモード
+        ALLOWED: 許可
+        DENIED: 拒否
+        PERMISSIONS_FIELD:
+            NOT_SET: 未設定
+            FAILED_TO_LOAD_PERMISSIONS: 権限の読み込みに失敗しました
+            ADMIN_LEGACY: 'Admin (legacy)'
+        TWO_FACTOR_FIELD:
+            2FA_QR_CODE: '2FA QR コード'
+            SCAN_THE_QR_CODE_WITH_YOUR: '認証アプリで QR コードをスキャンしてください'
+            FAILED_TO_GENERATE_2FA_SECRET: '2FA シークレットの生成に失敗しました'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: '認証アプリの 6 桁コードを入力してください'
+            2FA_ENABLED: '2FA を有効化しました'
+            2FA_DISABLED: '2FA を無効化しました'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 二要素認証はオフです
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: サインイン時にワンタイムコードを必須にすることで、セキュリティを強化します。
+            FINISH_ENABLING_2FA: '2FA の有効化を完了'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: '認証アプリで QR コードをスキャンし、6 桁のコードを入力して確認・アクティブ化してください。'
+            SECRET_FOR_MANUAL_ENTRY: 'シークレット（手動入力用）:'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: シークレットは既に生成されていますが、セキュリティ上の理由で表示されていません。
+            REGENERATE_AND_SHOW_QR: '再生成して QR を表示'
+            VERIFICATION_CODE: 認証コード
+            2FA_IS_ENABLED: '2FA が有効です'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: このアカウントがサインインする際は毎回ワンタイムコードが必要です。
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: '確認のため現在の 6 桁コードを入力してください'
+            ENABLE_2FA: '2FA を有効化'
+            VERIFY_ENABLE: 確認して有効化
+            FORCE_DISABLE: 強制無効化
+            CONFIRM_DISABLE: 無効化を確認
+            FORCE_DISABLE_PROMPT: '**{username}** の 2FA を強制無効化しますか？デバイス紛失時の復旧のみに使用してください。'
+        DISABLE: 無効化
+        USER_AVATAR_CARD:
+            AVATAR_UPDATED: アバターを更新しました
+            FAILED_TO_UPLOAD_AVATAR: アバターのアップロードに失敗しました
+            AVATAR_REMOVED: アバターを削除しました
+            FAILED_TO_REMOVE_AVATAR: アバターの削除に失敗しました
+            UPLOAD_AVATAR: アバターをアップロード
+        REAUTH_MODAL:
+            SESSION_EXPIRED: セッションが期限切れです
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 続行するにはパスワードを再入力してください。作業内容は保持されています。
+        USERNAME: ユーザー名
+        PASSWORD: パスワード
+        REMOVE: 削除
+        ENABLED: 有効
+        DISABLED: 無効
+        EXPAND_ALL: すべて展開
+        COLLAPSE_ALL: すべて折りたたむ
+        CONFIG_INFO_PAGE:
+            LOADING_SYSTEM_INFORMATION: システム情報を読み込み中...
+            EXPORT_YAML: 'YAML をエクスポート'
+            SERVER: サーバー
+            GRAV_VERSION: 'Grav バージョン'
+            PHP_VERSION: 'PHP バージョン'
+            SERVER_SOFTWARE: サーバーソフトウェア
+            ENVIRONMENT: 環境
+            PHP_EXTENSIONS: 'PHP 拡張モジュール'
+            PHP_CONFIGURATION: 'PHP 設定'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: ドラッグして並び替え
+        EDIT_MODE_TOOLBAR:
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 全ユーザーのサイトデフォルトとして保存
+            LAYOUT_PRESETS: レイアウトプリセット
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: ウィジェットの読み込みに失敗しました
+        TOP_BANNER:
+            SITE_NOTIFICATION: サイト通知
+            PREVIOUS: 前へ
+        DISMISS: 閉じる
+        BACKUPS_WIDGET:
+            CREATE_A_NEW_BACKUP_NOW: 今すぐ新しいバックアップを作成
+            NO_BACKUPS_FOUND: バックアップが見つかりません
+            BACKING_UP: バックアップ中…
+            BACKUP_NOW: 新規
+            DOWNLOAD_FILE: '{filename} をダウンロード'
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: フィード項目がありません
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 通知はありません
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: '過去 14 日間'
+            THIS_WEEK: 今週
+            THIS_MONTH: 今月
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: すべて表示
+        STATS_WIDGET:
+            ACTIVE_THEME: アクティブテーマ
+            UPDATE_COUNT: '{n, plural, one{# 件の更新} other{# 件の更新}}'
+            ACTIVE_COUNT: '（{n} 件アクティブ）'
+        SYSTEM_HEALTH_WIDGET:
+            UPDATES: 更新
+            EVERYTHING_UP_TO_DATE: すべて最新です
+            GRAV_UPDATE_AVAILABLE: 'Grav の更新が利用可能です'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav はシンボリックリンク経由でインストールされています — 手動でアップグレードしてください。'
+            SERVER: サーバー
+            UPGRADE_GRAV: 'Grav をアップグレード'
+            UPDATE_ALL: すべて更新
+            PERCENT_USED: '{percent}% 使用'
+            UPDATES_AVAILABLE_COUNT: '{n} 件利用可能'
+            PACKAGES_OUTDATED: '{n, plural, one{# 件のパッケージが古い} other{# 件のパッケージが古い}}'
+            MORE_COUNT: '+ さらに {n} 件…'
+            CACHE: キャッシュ
+            DISK: ディスク
+            BYTES_USED: '{size} 使用'
+            BYTES_FREE: '{size} 空き'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: ビューデータがまだありません
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: プレビューする内容がありません
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: ウィジェットメニューを閉じる
+        MEDIA:
+            MEDIA_INSPECTOR:
+                PREVIOUS_FILE: 前のファイル
+                NEXT_FILE: 次のファイル
+                RENAME: 名前を変更
+                FAILED_TO_COPY: コピーに失敗しました
+                FILE_RENAMED: ファイル名を変更しました
+                DIMENSIONS: サイズ
+            MEDIA_MANAGER:
+                FOLDER_NAME: フォルダー名
+                FILES_DELETED: ファイルを削除しました
+                UPLOAD_FILES: ファイルをアップロード
+                NEW_FOLDER: 新しいフォルダー
+                CREATE: 作成
+            MEDIA_TOOLBAR:
+                SEARCH_MEDIA: メディアを検索...
+                GRID_VIEW: グリッド表示
+                LIST_VIEW: リスト表示
+                NEW_FOLDER: 新しいフォルダー
+                FOLDER: フォルダー
+            MEDIA_GRAV_ADMIN: 'メディア — Grav Admin'
+            MANAGE_SITE_WIDE_MEDIA_FILES: サイト全体のメディアファイルを管理
+            PAGE_MEDIA:
+                PAGE_MEDIA: ページメディア
+                DRAG_INTO_EDITOR: エディターにドラッグ
+        UPLOAD: アップロード
+        CACHE_CLEAR_BUTTON:
+            CLEAR_CACHE: キャッシュをクリア
+            CACHE_OPTIONS: キャッシュオプション
+            FAILED_TO_CLEAR_CACHE: キャッシュのクリアに失敗しました
+        CONFIRM_ACTION: 操作を確認
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: サイトのフロントエンドを新しいタブで開く
+            VIEW_SITE: サイトを表示
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: プラグインページを読み込み中...
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                SWITCH_YOUR_EDITOR_PREFERENCE: エディター設定を切り替え
+                TO_COLLABORATE_LIVE: してリアルタイム共同編集を行ってください。
+                LOCKED: '読み取り専用 — {owner} さんが **{editor}** で編集中です。異なる種類のエディターでは共同編集できません。リアルタイム共同編集には [エディター設定を切り替え]({href})てください。'
+                BUILTIN_MARKDOWN_EDITOR: '組み込みの Markdown エディター'
+        DOWNLOAD: ダウンロード
+        TOOLS:
+            BACKUPS:
+                DELETE_BACKUP: バックアップを削除
+                FAILED_TO_LOAD_BACKUPS: バックアップの読み込みに失敗しました
+                BACKUP_CREATED_SUCCESSFULLY: バックアップを正常に作成しました
+                FAILED_TO_CREATE_BACKUP: バックアップの作成に失敗しました
+                BACKUP_DELETED: バックアップを削除しました
+                FAILED_TO_DELETE_BACKUP: バックアップの削除に失敗しました
+                BACKUP_STATISTICS: バックアップ統計
+                NUMBER_OF_BACKUPS: バックアップ数
+                NUMBER_OF_PROFILES: プロファイル数
+                NEWEST_BACKUP: 最新のバックアップ
+                OLDEST_BACKUP: 最古のバックアップ
+                BACKUP_HISTORY: バックアップ履歴
+                LOADING_BACKUPS: バックアップを読み込み中...
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: バックアップが見つかりません。作成して開始してください。
+                BACKUP_DATE: バックアップ日時
+                ACTION: アクション
+                CREATING: 作成中...
+                BACKUP_NOW: 今すぐバックアップ
+            DIRECT_INSTALL:
+                PACKAGE_INSTALLED_SUCCESSFULLY: パッケージを正常にインストールしました
+                ONLY_ZIP_FILES_ARE_SUPPORTED: '.zip ファイルのみサポートされています'
+                INSTALL_FROM_FILE: ファイルからインストール
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: '.zip ファイルをここにドロップするか、クリックして参照'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Grav プラグインおよびテーマパッケージに対応'
+                INSTALL_FROM_URL: 'URL からインストール'
+            LOGS:
+                SEARCH_MESSAGES: メッセージを検索...
+                FAILED_TO_LOAD_LOGS: ログの読み込みに失敗しました
+                FAILED_TO_LOAD_LOG_FILES: ログファイルの読み込みに失敗しました
+                LOG_FILE: ログファイル
+                ALL_LEVELS: すべてのレベル
+                EMERGENCY: 緊急
+                CRITICAL: 重大
+                WARNING: 警告
+                NOTICE: 通知
+                25_LINES: '25 行'
+                50_LINES: '50 行'
+                100_LINES: '100 行'
+                200_LINES: '200 行'
+                REFRESH: 更新
+                LOADING_LOGS: ログを読み込み中...
+                MESSAGE: メッセージ
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: レポートコンポーネントを読み込み中...
+            REPORTS:
+                FAILED_TO_LOAD_REPORTS: レポートの読み込みに失敗しました
+                LOADING_REPORTS: レポートを読み込み中...
+                NO_REPORTS_AVAILABLE: 利用可能なレポートはありません。
+                CONTENT_FIELD: 'content: {field}'
+            SCHEDULER:
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: スケジューラ設定の読み込みに失敗しました。
+                SCHEDULER_CONFIGURATION_SAVED: スケジューラ設定を保存しました
+                FAILED_TO_SAVE: 保存に失敗しました
+                LOADING_SCHEDULER: スケジューラを読み込み中...
+                NOT_ENABLED_FOR_USER: 'ユーザーに対して有効化されていません:'
+                GRAV_SCHEDULER: 'Grav スケジューラ'
+                INFO_BANNER: 'スケジューラはシステムの crontab か Webhook トリガーのいずれかを使ってコマンドを実行できます。クラウド環境では Webhook が推奨されます。カスタムジョブは上級ユーザーのみが設定するようにしてください。誤設定や悪用はセキュリティ脆弱性につながる可能性があります。'
+                CRONTAB_INSTRUCTIONS: 'スケジューラ機能を有効にするには、**{user}** ユーザーのシステム crontab に **Grav スケジューラ** を追加する必要があります。上記のコマンドをターミナルから実行すると自動的に追加されます。保存後、このページを更新してステータスを確認してください。'
+                WEBHOOK_ALTERNATIVE: 'あるいは、**scheduler-webhook** プラグインをインストールして Webhook ベースの cron 発火を使用することもできます。これはシステム crontab にアクセスできないクラウド環境で推奨されます。'
+                SECURITY_WARNING: カスタムスケジューラジョブは上級ユーザーのみが設定するようにしてください。誤設定はパフォーマンス問題やセキュリティ脆弱性の原因となります。
+            SYSTEM_INFO:
+                FAILED_TO_LOAD_SYSTEM_INFO: システム情報の読み込みに失敗しました
+                LOADING_SYSTEM_INFO: システム情報を読み込み中...
+                GRAV_VERSION: 'Grav バージョン'
+                PHP_VERSION: 'PHP バージョン'
+                PHP_SAPI: 'PHP SAPI'
+                MEMORY_LIMIT: メモリ上限
+                MAX_EXECUTION: 最大実行時間
+                MAX_UPLOAD: 最大アップロードサイズ
+                MAX_POST: '最大 POST サイズ'
+                DISK_USAGE: ディスク使用量
+                DRIVER: ドライバ
+                DISK_FREE_OF: '{total} 中 {free} 空き'
+            TOOLS_GRAV_ADMIN: 'ツール — Grav Admin'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: バックアップ、スケジューラ、ログ、診断
+        INSTALLING: インストール中...
+        ACCESS_DENIED:
+            ACCESS_DENIED: アクセスが拒否されました
+        ARE_YOU_SURE: よろしいですか？
+        ENVIRONMENT_SWITCHER:
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'アクティブな環境の選択 — どの設定が表示されるか及び保存先を決定します'
+            HAS_OVERRIDES: 上書きあり
+            SELECTED_ENV: 選択中の環境
+            NO_LONGER_EXISTS_PICK_ANOTHER: は存在しません。別のものを選択してください。
+            SAVE_CONFIG_TO: アクティブな環境
+            CREATES_PATH: 'user/env/{name}/config/ を作成します'
+            DEFAULT: デフォルト
+            SAVING_TO_DEFAULT: 'デフォルト (user/config) に保存中'
+            SAVING_TO_ENV: '環境に保存中: {name}'
+            ENV_CREATED: '環境 {name} を作成して選択しました'
+            ENV_DELETED: '環境 {name} を削除しました'
+            FAILED_TO_CREATE: 環境の作成に失敗しました
+            FAILED_TO_DELETE: 環境の削除に失敗しました
+            CREATE_ENVIRONMENT: 環境を作成…
+            CREATE_ENV_NAMED: '環境「{name}」を作成…'
+            CREATE: 作成
+            DELETE: 削除
+            DELETE_ENV_TOOLTIP: '環境 {name} を削除'
+            CONFIRM_DELETE: '{name} を削除しますか？'
+            CONFIRM_DELETE_WITH_OVERRIDES: '{name} とそのすべての設定上書きを削除しますか？'
+            SWITCH_AND_RELOAD: '切り替え & 再読み込み'
+            SWITCH_DISCARDS_UNSAVED: 環境を切り替えると、管理パネルが再読み込みされ、保存されていない変更は破棄されます。続行しますか？
+        INLINE_ICON_PICKER:
+            SEARCH_ICONS: アイコンを検索...
+            NO_ICONS_FOUND: アイコンが見つかりません
+            TYPE_TO_NARROW_RESULTS: 入力して結果を絞り込んでください
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: パスワード要件
+            PASSWORD_STRENGTH: パスワードの強度
+            REQUIREMENTS: 要件
+        TOP_PROGRESS_BAR:
+            WORKING: 処理中
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 変更を保存中…
+            SAVING_CHANGES_2: 変更を保存中
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: '未保存の変更があります — 保存ボタンをクリックして反映してください'
+            YOU_HAVE_UNSAVED_CHANGES: 未保存の変更があります
+        ALL_CHANGES_SAVED: すべての変更を保存しました
+        APP:
+            CREATING_BACKUP: バックアップを作成中…
+            DASHBOARD_GRAV_ADMIN: 'ダッシュボード — Grav Admin'
+            REFRESH: 更新
+            WELCOME_BACK: 'おかえりなさい、{name} さん'
+            PAGE_TITLE: '{name} — Grav Admin'
+        CONFIG:
+            TITLE: 設定
+            TITLE_SCROLLED: '設定: {scope}'
+            LOADING_CONFIGURATION: 設定を読み込み中...
+            FILTER_FIELDS: フィールドを絞り込み...
+            CLEAR_FILTER: フィルターをクリア
+            NO_MATCHES_FOUND: 一致するものが見つかりません
+            CONFIGURATION_SAVED_SUCCESSFULLY: 設定を正常に保存しました
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みして最新の変更を確認してください。
+            FAILED_TO_SAVE_CONFIGURATION: 設定の保存に失敗しました
+            CONFIGURATION_RELOADED: 設定を再読み込みしました
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: '設定が別の場所で変更されました — 上書き保存するか再読み込みしてください'
+            RELOAD: 再読み込み
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: このスコープに利用可能な設定ブループリントはありません。
+            PAGE_TITLE: '設定: {scope} — Grav Admin'
+            OVERRIDE:
+                DEFAULT_EMPTY: 空
+                RESET_BUTTON: 上書きをリセット
+                RESET_CONFIRM: リセット
+                RESET_DONE: リセットを上書き
+                RESET_MESSAGE: '{scope} に関するすべての上書きを削除し、継承された値を復元します。この操作は取り消せません。'
+                RESET_TITLE: すべての上書きをリセットしますか？
+                RESET_TOOLTIP: すべての上書きを削除し、継承された値に復元します
+                REVERTED: 継承された値に戻す
+                REVERT_FAILED: 元に戻せませんでした
+                REVERT_TOOLTIP: 'デフォルト（{value}）を上書きします。クリックで取り消します。'
+        FLEX_OBJECTS:
+            SEARCH: 検索...
+            PREVIOUS: 前へ
+            DELETE_OBJECT: オブジェクトを削除
+            FAILED_TO_LOAD_DIRECTORY: ディレクトリの読み込みに失敗しました
+            FAILED_TO_LOAD_OBJECTS: オブジェクトの読み込みに失敗しました
+            OBJECT_DELETED: オブジェクトを削除しました
+            FAILED_TO_DELETE_OBJECT: オブジェクトの削除に失敗しました
+            EXPORT_FAILED: エクスポートに失敗しました
+            EXPORT: エクスポート
+            ACTIONS: アクション
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: オブジェクトが別の場所で変更されました。再読み込みしてください。
+            FAILED_TO_SAVE: 保存に失敗しました。
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'オブジェクトが別の場所で変更されました — 上書き保存するか再読み込みしてください'
+            BACK_TO_LIST: 一覧へ戻る
+            NEW:
+                OBJECT_CREATED: オブジェクトを作成しました
+                BACK_TO_LIST: 一覧へ戻る
+                CREATE: 作成
+        FORGOT:
+            UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
+            FORGOT_PASSWORD_GRAV_ADMIN: 'パスワードをお忘れの方 — Grav Admin'
+            FORGOT_PASSWORD: パスワードをお忘れの方
+            EMAIL_ADDRESS: メールアドレス
+            ENTER_A_VALID_EMAIL_ADDRESS: 有効なメールアドレスを入力してください
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: そのメールアドレスのアカウントが存在する場合、リセットリンクが送信されました。
+            BACK_TO_SIGN_IN: サインインへ戻る
+            SENDING: 送信中...
+            SEND_RESET_LINK: リセットリンクを送信
+            CHECK_INBOX: 受信トレイでリセットリンクを確認してください。
+            SUBTITLE: メールアドレスを入力していただければ、リセットリンクをお送りします。
+        LOGIN:
+            SIGNED_IN_SUCCESSFULLY: 正常にサインインしました
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 必須項目をすべて入力してください
+            INVALID_USERNAME_OR_PASSWORD: ユーザー名またはパスワードが正しくありません
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'サーバーに接続できません。サーバー URL を確認して再試行してください。'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: コードを確認できません。接続を確認して再試行してください。
+            LOGIN_GRAV_ADMIN: 'ログイン — Grav Admin'
+            GRAV_ADMIN: 'Grav Admin'
+            SERVER_CONFIGURATION: サーバー設定
+            SERVER_URL: 'サーバー URL'
+            ENVIRONMENT: 環境
+            USERNAME_IS_REQUIRED: ユーザー名は必須です
+            PASSWORD_IS_REQUIRED: パスワードは必須です
+            FORGOT_PASSWORD: パスワードをお忘れの方
+            AUTHENTICATION_CODE: 認証コード
+            ENTER_A_VALID_6_DIGIT_CODE: '有効な 6 桁のコードを入力してください'
+            BACK_TO_SIGN_IN: サインインへ戻る
+            POWERED_BY_GRAV_CMS: 'Powered by Grav CMS'
+            SIGNING_IN: サインイン中...
+            SIGN_IN: サインイン
+            VERIFYING: 確認中...
+            VERIFY: 確認
+            TWOFA_SUBTITLE: 続行するには認証アプリのコードを入力してください
+            SUBTITLE: サインインしてサイトを管理
+            AUTH_CODE_PROMPT: '認証アプリを開き、**{username}** の 6 桁コードを入力してください。'
+        PLUGIN:
+            BACK_TO_DASHBOARD: ダッシュボードへ戻る
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: このプラグインページに利用可能なコンテンツはありません。
+        PLUGINS:
+            SEARCH_PLUGINS: プラグインを検索...
+            SYMLINKED: シンボリックリンク
+            FAILED_TO_LOAD_PLUGINS: プラグインの読み込みに失敗しました
+            FAILED_TO_CHECK_FOR_UPDATES: 更新の確認に失敗しました
+            PLUGINS_GRAV_ADMIN: 'プラグイン — Grav Admin'
+            CHECK_UPDATES: 更新を確認
+            CONFIGURE: 設定
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 詳細を表示するプラグインを選択してください
+            REMOVE_PLUGIN: プラグインを削除
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
+            FAILED_TO_SAVE_CONFIGURATION: 設定の保存に失敗しました。
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'プラグインが別の場所で変更されました — 上書き保存するか再読み込みしてください'
+            BACK_TO_PLUGINS: プラグインへ戻る
+            CHANGELOG: 変更履歴
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 設定するにはプラグインを有効にする必要があります。
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: このプラグインに利用可能な設定オプションはありません。
+            ENABLE_PLUGIN: プラグインを有効化
+            PAGE_TITLE: '{name} — プラグイン — Grav Admin'
+            REMOVE_CONFIRM_MESSAGE: '{name} を削除しますか？ この操作により、プラグインはアンインストールされ、ファイルは削除されます。設定は残ります。'
+            REMOVE_CONFIRM_TITLE: プラグインを削除しますか？
+            TITLE: プラグイン
+        RESET:
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: パスワードを正常にリセットしました。サインインしてください。
+            UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
+            RESET_PASSWORD_GRAV_ADMIN: 'パスワードをリセット — Grav Admin'
+            RESET_PASSWORD: パスワードをリセット
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: このリセットリンクには必要なパラメータがありません。パスワードを忘れた場合のページから新しいリンクをリクエストしてください。
+            CONFIRM_PASSWORD: パスワードを確認
+            PASSWORDS_DO_NOT_MATCH: パスワードが一致しません
+            BACK_TO_SIGN_IN: サインインへ戻る
+            RESETTING: リセット中...
+            INVALID_LINK: リセットリンクが無効です。
+            NEW_PASSWORD_FOR: '**{username}** の新しいパスワードを選択してください。'
+        SETTINGS:
+            LIGHT_LOGO: ライトロゴ
+            DARK_LOGO: ダークロゴ
+            REMOVE_LINK: リンクを削除
+            RESET_PREFERENCES: 環境設定をリセット
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 環境設定をリセットしました。再読み込みして適用してください。
+            SETTINGS_GRAV_ADMIN: '設定 — Grav Admin'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 管理画面の環境設定と外観
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: サイドバーとログインページに表示されるロゴをカスタマイズ
+            LOGO_TYPE: ロゴタイプ
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: ロゴの表示方法を選択
+            GRAV_LOGO: 'Grav ロゴ'
+            CUSTOM_TEXT: カスタムテキスト
+            CUSTOM_IMAGE: カスタム画像
+            LOGO_TEXT: ロゴテキスト
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 最初の文字がアイコンになります
+            LIGHT_MODE_LOGO: ライトモードロゴ
+            USED_ON_LIGHT_BACKGROUNDS: 明るい背景で使用
+            DARK_MODE_LOGO: ダークモードロゴ
+            USED_ON_DARK_BACKGROUNDS: 暗い背景で使用
+            APPEARANCE: 外観
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 管理画面の見た目と操作感をカスタマイズ
+            COLOR_MODE: カラーモード
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: ライトとダークの外観を選択
+            ACCENT_COLOR: アクセントカラー
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: ボタン、リンク、ハイライトに使用されるメインカラー
+            SATURATION: 彩度
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 管理画面全体で使用される書体
+            FONT_SIZE: フォントサイズ
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 管理画面全体で使用される文字サイズ
+            FONT_SIZE_SMALL: 小
+            FONT_SIZE_NORMAL: 標準
+            FONT_SIZE_LARGE: 大
+            FONT_SIZE_XLARGE: 特大
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: ページブラウザのデフォルト設定
+            DEFAULT_VIEW: デフォルト表示
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: ページのデフォルト表示方法
+            ITEMS_PER_PAGE: '1 ページあたりの項目数'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: リスト表示で表示するページ数
+            EDITING: 編集
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: フォームエディターの自動保存と元に戻す動作
+            AUTO_SAVE: 自動保存
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: フィールドを離れたときに自動的に保存します
+            TOOLBAR_UNDO_BUTTON: ツールバーの元に戻すボタン
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: エディターツールバーに元に戻すボタンを表示します
+            UNDO_BATCH_WINDOW: 元に戻すバッチウィンドウ
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: '短時間のフィールド変更を 1 つの元に戻すステップにまとめます'
+            NONE_1_FIELD_1_UNDO: 'なし（1 フィールド = 1 回の元に戻す）'
+            1_SECOND: '1 秒'
+            2_SECONDS: '2 秒'
+            REAL_TIME_COLLABORATION: リアルタイム共同編集
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: プラグインがサーバー上で必要です。実験的機能です。
+            ADMIN_INTERFACE_LANGUAGE: 管理画面の言語
+            ADMIN_LANGUAGE: 管理画面の言語
+            ENGLISH: English
+            FRAN_AIS: Français
+            DEUTSCH: Deutsch
+            ESPA_OL: Español
+            ITALIANO: Italiano
+            PORTUGU_S: Português
+            NEDERLANDS: Nederlands
+            MENUBAR_LINKS: メニューバーリンク
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: トップメニューバーに表示されるカスタムショートカット
+            EXTERNAL: 外部
+            ADD_LINK: リンクを追加
+            CONNECTION: 接続
+            SERVER_CONNECTION_DETAILS: サーバー接続の詳細
+            SERVER_URL: 'サーバー URL'
+            ENVIRONMENT: 環境
+            AUTHENTICATED_AS: 認証ユーザー
+            RESET_ALL_PREFERENCES: すべての環境設定をリセット
+            COLLAB_DESCRIPTION: 'プレゼンス表示付きのリアルタイム複数ユーザー編集。サーバーに `sync` プラグインが必要です。実験的機能です。'
+            ADMIN_LANGUAGE_DESC: 'ラベル、メニュー、メッセージの言語（{count} 件の文字列を読み込み済み）'
+            LANGUAGE_CHANGED: '言語を {language} に変更しました'
+            HUE: 色相
+            FONT: フォント
+            LIGHT: ライト
+            DARK: ダーク
+            FOLLOW_OS: 'OS に従う'
+            'ON': オン
+            'OFF': オフ
+            RESET_TO_SITE_DEFAULTS: 自分の環境設定をサイトのデフォルトにリセット
+            SITE_DEFAULTS: サイトデフォルト
+            SITE_DEFAULTS_DESCRIPTION: '以下の設定は、すべての管理ユーザーに対するベースラインとして適用されます。ティア B の項目（外観、ページ、言語、エディター）は上の各ユーザーの環境設定で上書き可能です。ティア A の項目（編集、メニューバー）はサイト全体に適用され、上書きできません。'
+            BRANDING: ブランディング
+            BRANDING_DESC: 管理画面全体に表示されるロゴとブランドテキスト。
+            SAVED_AUTOMATICALLY: 自動的に保存されました
+            SITE_SETTINGS_HEADING: サイト設定
+            SITE_SETTINGS_DESC: 新規ユーザーのデフォルト環境設定とサイト全体の動作。変更は影響を受けるユーザーの次回の再読み込み時に適用されます。
+            DEFAULT_APPEARANCE: デフォルトの外観
+            DEFAULT_COLOR_APPEARANCE_DESC: 新規ユーザーのデフォルトカラー外観。
+            DEFAULT_PRIMARY_COLOR_DESC: ボタン、リンク、ハイライト用のデフォルトのメインカラー。
+            DEFAULT_TYPEFACE_DESC: '管理画面 UI のデフォルト書体。'
+            DEFAULT_TEXT_SIZE_DESC: '管理画面 UI のデフォルト文字サイズ。'
+            DEFAULT_PAGES: デフォルトのページ
+            DEFAULT_LANGUAGE: デフォルトの言語
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 新規ユーザーのデフォルトのインターフェイス言語。
+            EDITOR_HEADING: エディター
+            EDITOR_MODE: エディターモード
+            DEFAULT_FORM_EDITOR_DENSITY: デフォルトのフォームエディター密度。
+            USERS_MAY_OVERRIDE: ユーザーが上書き可能
+            SITE_WIDE_ONLY: サイト全体のみ
+            REVERT_CHANGES: 変更を元に戻す
+            SAVE_SITE_DEFAULTS: サイトデフォルトを保存
+            RESET_PREFERENCES_MSG: すべての個人的な上書きを削除してサイトデフォルトに戻しますか？
+            RESET: リセット
+            FAILED_TO_SAVE_LOGO_MODE: ロゴモードの保存に失敗しました。
+            FAILED_TO_SAVE_LOGO_TEXT: ロゴテキストの保存に失敗しました。
+            LIGHT_LOGO_UPLOADED: ライトロゴをアップロードしました。
+            DARK_LOGO_UPLOADED: ダークロゴをアップロードしました。
+            LOGO_UPLOAD_FAILED: ロゴのアップロードに失敗しました。
+            LIGHT_LOGO_REMOVED: ライトロゴを削除しました。
+            DARK_LOGO_REMOVED: ダークロゴを削除しました。
+            FAILED_TO_REMOVE_LOGO: ロゴの削除に失敗しました。
+            SITE_DEFAULTS_SAVED: サイトデフォルトを保存しました。すべてのユーザーは次回の再読み込み時にこれが反映されます。
+            FAILED_TO_SAVE_SITE_DEFAULTS: サイトデフォルトの保存に失敗しました。
+            FAILED_TO_RESET_PREFERENCES: 環境設定のリセットに失敗しました。
+            OTHER_LIST_VIEWS: その他のリストビュー
+            OTHER_LIST_VIEWS_DESC: ユーザー、プラグイン、テーマリストのデフォルトレイアウト
+        CUSTOM: カスタム
+        PREVIEW: プレビュー
+        SETUP:
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 上のエラーを修正して再試行してください
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理者アカウントを作成しました — Grav へようこそ'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: セットアップは既に完了しています。サインインしてください。
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'サーバーに接続できません。サーバー URL を確認して再試行してください。'
+            SETUP_GRAV_ADMIN: 'セットアップ — Grav Admin'
+            WELCOME_TO_GRAV: 'Grav へようこそ'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 開始するには管理者アカウントを作成してください
+            CHECKING_SERVER: サーバーを確認中…
+            SERVER_CONFIGURATION: サーバー設定
+            SERVER_URL: 'サーバー URL'
+            ENVIRONMENT: 環境
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3〜64 文字：英字、数字、ハイフン、アンダースコア'
+            FULL_NAME: フルネーム
+            OPTIONAL: （任意）
+            ENTER_A_VALID_EMAIL_ADDRESS: 有効なメールアドレスを入力してください
+            CONFIRM_PASSWORD: パスワードを確認
+            PASSWORDS_DO_NOT_MATCH: パスワードが一致しません
+            POWERED_BY_GRAV_CMS: 'Powered by Grav CMS'
+            CREATING_ACCOUNT: アカウントを作成中...
+            CREATE_ADMINISTRATOR: 管理者を作成
+        SYSTEM:
+            SYSTEM_GRAV_ADMIN: 'システム — Grav Admin'
+            COMING_SOON: 近日公開
+        THEMES:
+            SEARCH_THEMES: テーマを検索...
+            SYMLINKED: シンボリックリンク
+            FAILED_TO_LOAD_THEMES: テーマの読み込みに失敗しました
+            FAILED_TO_CHECK_FOR_UPDATES: 更新の確認に失敗しました
+            THEMES_GRAV_ADMIN: 'テーマ — Grav Admin'
+            CHECK_UPDATES: 更新を確認
+            CONFIGURE: 設定
+            SELECT_A_THEME_TO_VIEW_DETAILS: 詳細を表示するテーマを選択してください
+            ACTIVE_THEME: アクティブテーマ
+            CLICK_TO_VIEW_FULL_SIZE: クリックして実寸を表示
+            REMOVE_THEME: テーマを削除
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
+            FAILED_TO_SAVE_CONFIGURATION: 設定の保存に失敗しました。
+            BACK_TO_THEMES: テーマへ戻る
+            CHANGELOG: 変更履歴
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: このテーマに利用可能な設定オプションはありません。
+            PAGE_TITLE: '{name} — テーマ — Grav Admin'
+            ACTIVATE: 有効
+            ACTIVATE_CONFIRM_MESSAGE: 'サイトテーマを {name} に変更しますか？ フロントエンド表示は、即座にこのテーマでレンダリングされます。'
+            ACTIVATE_CONFIRM_TITLE: テーマを有効化しますか？
+            ACTIVATE_THEME: '{name} を有効化'
+            DELETE_ACTIVE_WARNING: 現在有効。削除前にテーマの変更を推奨します。
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} は現在有効なテーマです。削除すると別のテーマを有効化するまでサイトにテーマが適用されません。続けますか？'
+            REMOVE_CONFIRM_MESSAGE: '{name} を削除しますか？ この操作により、テーマがアンインストールされ、ファイルが削除されます。'
+            REMOVE_CONFIRM_TITLE: テーマを削除しますか？
+            TITLE: テーマ
+        ACTIVE: アクティブ
+        ACTIVATE: 有効化
+        USERS:
+            STATUS: ステータス
+            STATUS_HELP: '無効化されたアカウントはサインインや API を使用できません。'
+            SEARCH_USERS: ユーザーを検索...
+            FAILED_TO_LOAD_USERS: ユーザーの読み込みに失敗しました
+            USERS_GRAV_ADMIN: 'ユーザー — Grav Admin'
+            ADD_USER: ユーザーを追加
+            SUPER_ADMIN: スーパー管理者
+            CREATED: 作成日
+            PERMISSIONS: 権限
+            SELECT_A_USER_TO_VIEW_DETAILS: 詳細を表示するユーザーを選択してください
+            DELETE_USER: ユーザーを削除
+            CONFIRM_DELETE_USER: 'ユーザー「{username}」を削除しますか？この操作は元に戻せません。'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: ユーザーが別の場所で変更されました。再読み込みしてください。
+            FAILED_TO_SAVE_USER: ユーザーの保存に失敗しました。
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 自分自身のアカウントは削除できません。
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'ユーザーが別の場所で変更されました — 上書き保存するか再読み込みしてください'
+            BACK_TO_USERS: ユーザーへ戻る
+            2_FACTOR_AUTHENTICATION: 二要素認証
+            NEW:
+                LOWERCASE_3_64_CHARS: '3〜64 文字： 英字、数字、.-_'
+                NEW_USER_GRAV_ADMIN: '新規ユーザー — Grav Admin'
+                NEW_USER: 新規ユーザー
+                ACCOUNT: アカウント
+                FULL_NAME: フルネーム
+                PERMISSIONS: 権限
+                CREATE: 作成
+            PAGE_TITLE: '{name} — ユーザー — Grav Admin'
+            TITLE: ユーザー
+        USERS_NAV:
+            USERS: ユーザー
+            GROUPS: グループ
+            CONFIGURATION: 設定
+            INVITATIONS: 招待
+        USERS_TABLE:
+            USERNAME: ユーザー名
+            EMAIL: メールアドレス
+            FULL_NAME: フルネーム
+            STATUS: ステータス
+            ACTIONS: アクション
+            ENABLED: 有効
+            DISABLED: 無効
+            EDIT: 編集
+            DELETE: 削除
+            NO_USERS: ユーザーが見つかりません
+            CARDS: カード
+            TABLE: テーブル
+        PLUGINS_TABLE:
+            NAME: 名前
+            VERSION: バージョン
+            NO_PLUGINS: インストール済みのプラグインはありません
+            PROTECTED_PLUGIN: 'このプラグインは admin-next から無効化できません。無効化するとロックアウトされます。'
+        THEMES_TABLE:
+            NO_THEMES: インストール済みのテーマはありません
+        GROUPS:
+            GROUPS: グループ
+            GROUPS_GRAV_ADMIN: 'グループ — Grav Admin'
+            ADD_GROUP: グループを追加
+            NEW_GROUP: 新規グループ
+            NEW_GROUP_GRAV_ADMIN: '新規グループ — Grav Admin'
+            GROUP_NAME: グループ名
+            GROUP_NAME_PLACEHOLDER: 例：editors
+            GROUP_NAME_HELP: '1〜200 文字の英字、数字、ハイフン、アンダースコア。ストレージキーとして使用されます。'
+            DISPLAY_NAME: 表示名
+            DESCRIPTION: 説明
+            SEARCH_GROUPS: グループを検索...
+            NO_GROUPS: グループが見つかりません
+            NO_GROUPS_MATCH_SEARCH: 検索条件に一致するグループはありません
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 詳細を表示するグループを選択してください
+            BACK_TO_GROUPS: グループへ戻る
+            CREATE: 作成
+            DELETE_GROUP: グループを削除
+            CONFIRM_DELETE_GROUP: 'グループ「{name}」を削除しますか？この操作は元に戻せません。'
+            FAILED_TO_LOAD_GROUPS: グループの読み込みに失敗しました
+            FAILED_TO_LOAD_GROUP: 'グループ「{name}」の読み込みに失敗しました。'
+            FAILED_TO_SAVE_GROUP: グループの保存に失敗しました。
+            FAILED_TO_CREATE_GROUP: グループの作成に失敗しました。
+            GROUP_SAVED: 'グループ「{name}」を保存しました'
+            GROUP_CREATED: 'グループ「{name}」を作成しました'
+            GROUP_DELETED: 'グループ「{name}」を削除しました'
+            GROUP_DELETE_FAILED: 'グループ「{name}」の削除に失敗しました'
+            GROUP_MODIFIED_ELSEWHERE: グループが別の場所で変更されました。再読み込みしてください。
+            GROUP_PAGE_TITLE: '{name} — グループ — Grav Admin'
+            GROUP_COUNT_ONE: '{n} グループ'
+            GROUP_COUNT_OTHER: '{n} グループ'
+        ACCOUNTS_CONFIG:
+            TITLE: アカウント設定
+            PAGE_TITLE: 'アカウント設定 — Grav Admin'
+            SAVED: 設定を保存しました
+            FAILED_TO_LOAD: アカウント設定の読み込みに失敗しました
+            FAILED_TO_SAVE: アカウント設定の保存に失敗しました
+            MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
+            NO_FIELDS: 利用可能な設定オプションはありません。
+        PAGINATION:
+            PAGE_OF: '{total} ページ中 {current} ページ目'
+        INFO: 情報
+        INSTALL: インストール
+        COPY_BUTTON:
+            COPIED: コピーしました！
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: '不明なウィジェット: {id}'
+        UPDATE_AVAILABLE_VERSION: '更新が利用可能: v{version}'
+        UPDATE_TO_VERSION: 'v{version} に更新'
+        INVITATIONS:
+            USERNAME_INVALID: 'ユーザー名は 3-64 文字としてください。'
+            ACCEPT_FAILED: アカウントを作成できませんでした。
+            ACCEPT_HEADING: 招待を承認する
+            ACCEPT_SUBHEADING: アカウントを設定して、始めましょう。
+            ACCEPT_SUCCESS: アカウントが作成されました。ようこそ！
+            ACCEPT_TITLE: '招待を承認する — Grav Admin'
+            CHECKING_INVITE: 招待を確認中...
+            CHOOSE_PASSWORD: パスワードを入力してください
+            CONFIRM_REVOKE: '{email} への招待を取り消しますか？ リンクは利用できなくなります。'
+            COPIED: コピーしました
+            COPY: コピー
+            COPY_FAILED: リンクをコピーできませんでした。
+            CREATED_NO_EMAIL_TOAST: 招待を作成しました。メールが設定されていないため、リンクを手動で共有してください。
+            CREATE_ACCOUNT: アカウントを作成
+            CREATING_ACCOUNT: アカウントを作成中...
+            EMAIL: Eメール
+            EMAIL_SENT_TO: '{email} 宛てに招待メールを送信しました。'
+            EXPIRED: 有効期限切れ
+            EXPIRED_INVITE: この招待は有効期限を過ぎています。
+            EXPIRED_INVITE_BODY: この招待は有効期限を過ぎています。管理者に新しいものの再送を依頼してください。
+            EXPIRES_AFTER: 招待の有効期限
+            EXPIRES_IN_DAYS: '{count, plural, one {# 日後に有効期限切れ} other {# 日後に有効期限切れ}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {# 時間後に有効期限切れ} other {# 時間後に有効期限切れ}}'
+            EXPIRY_14_DAYS: 14日
+            EXPIRY_1_DAY: 1日
+            EXPIRY_30_DAYS: 30日
+            EXPIRY_3_DAYS: 3日
+            EXPIRY_7_DAYS: 7日
+            FULL_NAME_OPTIONAL: フルネーム（任意）
+            GROUPS: グループ
+            GROUPS_HINT: 招待されたユーザーが追加されるグループ。
+            INVALID_INVITE: この招待は有効ではありません。
+            INVALID_INVITE_BODY: この招待リンクは無効もしくは、すでに利用済みです。
+            INVITE: 招待
+            INVITED_BY: '{name} から招待された'
+            INVITE_ANOTHER: 別のユーザーを招待
+            INVITE_LINK: 招待リンク
+            INVITE_READY: 招待の準備ができました
+            INVITE_USER: ユーザーを招待
+            LOADING_GROUPS: グループを読み込み中...
+            LOAD_FAILED: 招待状の読み込みに失敗しました。
+            MESSAGE_OPTIONAL: 個人メッセージ（オプション）
+            NONE_PENDING: 保留中の招待状はありません
+            NONE_PENDING_HINT: 参加を招待すると、その保留中の招待状がここに表示されます。
+            NO_GROUPS: まだグループが定義されていません。
+            PASSWORD_POLICY: パスワードが必須のポリシーを満たしていません
+            PENDING_COUNT: '{count, plural, =0 {保留中の招待状はありません} one {# 件の保留中の招待状} other {# 件の保留中の招待状}}'
+            PERMISSIONS: 権限
+            PERMISSIONS_HINT: 招待されたユーザーが受け取る権限です。招待されたユーザーはここで設定した範囲を超えて権限を付与することはできません。
+            RECIPIENT: 受信者
+            RECIPIENT_HINT: 招待を受け入れるときに、ユーザー名とパスワードを自由に選択できます。
+            RESEND: 再送
+            RESEND_FAILED: 招待状の再送に失敗しました。
+            RESENT_TOAST: '{email} に招待状を再送しました。'
+            REVOKE: 取り消す
+            REVOKED_TOAST: 招待状が取り消されました。
+            REVOKE_FAILED: 招待状の取り消しに失敗しました。
+            REVOKE_TITLE: 招待状を取り消す
+            SEND_FAILED: 招待の送信に失敗しました。
+            SEND_INVITE: 招待を送信
+            SENT_TOAST: '{email} に招待を送信しました。'
+            TITLE_OPTIONAL: タイトル（オプション）
+            USERNAME_TAKEN: そのユーザー名はすでに使用されています。
+            VIEW_PENDING: 保留中を表示
+    PLUGIN_ADMIN:
+        2FA_ENABLED: '2FA 有効'
+        2FA_SECRET: '2FA シークレット'
+        2FA_SECRET_HELP: 'この QR コードを [認証アプリ](https://learn.getgrav.org/admin-panel/2fa#apps) にスキャンしてください。また、アプリを再インストールする必要がある場合に備えて、シークレットを安全な場所にバックアップしておくことをおすすめします。詳細は [Grav ドキュメント](https://learn.getgrav.org/admin-panel/2fa) をご覧ください。'
+        2FA_TITLE: 二要素認証
+        ABSOLUTE_URLS: '絶対 URL'
+        ABSOLUTE_URLS_HELP: '`base_url` に対する絶対 URL または相対 URL'
+        ACCESS: アクセス
+        ACCESS_LEVELS: アクセスレベル
         ACCOUNT: アカウント
-        FULL_NAME: フルネーム
-        PERMISSIONS: 権限
-        CREATE: 作成
-      PAGE_TITLE: "{name} — ユーザー — Grav Admin"
-    USERS_NAV:
-      USERS: ユーザー
-      GROUPS: グループ
-      CONFIGURATION: 設定
-    USERS_TABLE:
-      USERNAME: ユーザー名
-      EMAIL: メールアドレス
-      FULL_NAME: フルネーム
-      STATUS: ステータス
-      ACTIONS: アクション
-      ENABLED: 有効
-      DISABLED: 無効
-      EDIT: 編集
-      DELETE: 削除
-      NO_USERS: ユーザーが見つかりません
-      CARDS: カード
-      TABLE: テーブル
-    PLUGINS_TABLE:
-      NAME: 名前
-      VERSION: バージョン
-      NO_PLUGINS: インストール済みのプラグインはありません
-      PROTECTED_PLUGIN: このプラグインは admin-next から無効化できません。無効化するとロックアウトされます。
-    THEMES_TABLE:
-      NO_THEMES: インストール済みのテーマはありません
-    GROUPS:
-      GROUPS: グループ
-      GROUPS_GRAV_ADMIN: グループ — Grav Admin
-      ADD_GROUP: グループを追加
-      NEW_GROUP: 新規グループ
-      NEW_GROUP_GRAV_ADMIN: 新規グループ — Grav Admin
-      GROUP_NAME: グループ名
-      GROUP_NAME_PLACEHOLDER: 例：editors
-      GROUP_NAME_HELP: 1〜200 文字の英字、数字、ハイフン、アンダースコア。ストレージキーとして使用されます。
-      DISPLAY_NAME: 表示名
-      DESCRIPTION: 説明
-      SEARCH_GROUPS: グループを検索...
-      NO_GROUPS: グループが見つかりません
-      NO_GROUPS_MATCH_SEARCH: 検索条件に一致するグループはありません
-      SELECT_A_GROUP_TO_VIEW_DETAILS: 詳細を表示するグループを選択してください
-      BACK_TO_GROUPS: グループへ戻る
-      CREATE: 作成
-      DELETE_GROUP: グループを削除
-      CONFIRM_DELETE_GROUP: "グループ「{name}」を削除しますか？この操作は元に戻せません。"
-      FAILED_TO_LOAD_GROUPS: グループの読み込みに失敗しました
-      FAILED_TO_LOAD_GROUP: "グループ「{name}」の読み込みに失敗しました。"
-      FAILED_TO_SAVE_GROUP: グループの保存に失敗しました。
-      FAILED_TO_CREATE_GROUP: グループの作成に失敗しました。
-      GROUP_SAVED: "グループ「{name}」を保存しました"
-      GROUP_CREATED: "グループ「{name}」を作成しました"
-      GROUP_DELETED: "グループ「{name}」を削除しました"
-      GROUP_DELETE_FAILED: "グループ「{name}」の削除に失敗しました"
-      GROUP_MODIFIED_ELSEWHERE: グループが別の場所で変更されました。再読み込みしてください。
-      GROUP_PAGE_TITLE: "{name} — グループ — Grav Admin"
-      GROUP_COUNT_ONE: "{n} グループ"
-      GROUP_COUNT_OTHER: "{n} グループ"
-    ACCOUNTS_CONFIG:
-      TITLE: アカウント設定
-      PAGE_TITLE: アカウント設定 — Grav Admin
-      SAVED: 設定を保存しました
-      FAILED_TO_LOAD: アカウント設定の読み込みに失敗しました
-      FAILED_TO_SAVE: アカウント設定の保存に失敗しました
-      MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
-      NO_FIELDS: 利用可能な設定オプションはありません。
-    PAGINATION:
-      PAGE_OF: "{total} ページ中 {current} ページ目"
-    INFO: 情報
-    INSTALL: インストール
-    COPY_BUTTON:
-      COPIED: コピーしました！
-    WIDGET_HOST:
-      UNKNOWN_WIDGET: "不明なウィジェット: {id}"
-    UPDATE_AVAILABLE_VERSION: "更新が利用可能: v{version}"
-    UPDATE_TO_VERSION: v{version} に更新
-  PLUGIN_ADMIN:
-    2FA_ENABLED: 2FA 有効
-    2FA_SECRET: 2FA シークレット
-    2FA_SECRET_HELP: "この QR コードを [認証アプリ](https://learn.getgrav.org/admin-panel/2fa#apps) にスキャンしてください。また、アプリを再インストールする必要がある場合に備えて、シークレットを安全な場所にバックアップしておくことをおすすめします。詳細は [Grav ドキュメント](https://learn.getgrav.org/admin-panel/2fa) をご覧ください。"
-    2FA_TITLE: 二要素認証
-    ABSOLUTE_URLS: 絶対 URL
-    ABSOLUTE_URLS_HELP: '`base_url` に対する絶対 URL または相対 URL'
-    ACCESS: アクセス
-    ACCESS_LEVELS: アクセスレベル
-    ACCOUNT: アカウント
-    ACCOUNTS: アカウント
-    ACCOUNTS_STORAGE: アカウントストレージ
-    ACCOUNTS_STORAGE_HELP: Flex Object Account タイプに使用するストレージ方式。Files は従来のアプローチで、アカウントを 1 つのフォルダー内の YAML ファイルに保存します。Folder は各アカウントごとに新しいフォルダーを作成します。
-    ACCOUNTS_TYPE: アカウントタイプ
-    ACCOUNTS_TYPE_HELP: ユーザーアカウントを保存する Flex Object システム
-    ACTIVE_LANGUAGE_IN_SESSION: セッション内のアクティブ言語
-    ACTIVE_LANGUAGE_IN_SESSION_HELP: アクティブな言語をセッションに保存する
-    ADD: 追加
-    ADD_ACCOUNT: アカウントを追加
-    ADMIN_CHILDREN_DISPLAY_ORDER: 子ページの表示順
-    ADMIN_CHILDREN_DISPLAY_ORDER_HELP: Admin プラグインの「ページ」ビューで、このページの子ページが表示される順序
-    ADMIN_SPECIFIC_OVERRIDES: 管理画面固有の上書き
-    ADVANCED: 詳細設定
-    ALLOW_URL_TAXONOMY_FILTERS: URL タクソノミーフィルター
-    ALLOW_URL_TAXONOMY_FILTERS_HELP: ページベースのコレクションを `/taxonomy:value` でフィルタリングできるようにします。
-    ALLOW_WEBSERVER_GZIP: WebServer Gzip を許可
-    ALLOW_WEBSERVER_GZIP_HELP: デフォルトはオフ。有効にすると WebServer 設定の Gzip/Deflate 圧縮が動作しますが、onShutDown() イベント前に HTTP 接続が閉じられず、ページ読み込みが遅くなります
-    APPEND_URL_EXT: URL 拡張子を追加
-    APPEND_URL_EXT_HELP: ページの URL にカスタム拡張子を追加します。これにより、Grav は `<template>.<extension>.twig` テンプレートを探すようになります
-    ASCENDING: 昇順
-    ASSETS: アセット
-    AUTO: 自動
-    AUTO_LINE_BREAKS: 自動改行
-    AUTO_LINE_BREAKS_HELP: markdown での自動改行サポートを有効にする
-    AUTO_URL_LINKS: URL 自動リンク
-    AUTO_URL_LINKS_HELP: URL を HTML ハイパーリンクへ自動変換することを有効にする
-    AUTOESCAPE_VARIABLES: 変数の自動エスケープ
-    AUTOESCAPE_VARIABLES_HELP: すべての変数を自動エスケープします。多くの場合、サイトが壊れます
-    AVATAR: アバタージェネレーター
-    AVATAR_HASH: "注：オプションのアバターカスタム 'hash' 文字列"
-    AVATAR_HELP: Multiavatar はローカルで生成されるアバターです。Gravatar は外部サービスで、メールアドレスを使って事前設定されたアバターをリモートから取得します
-    BACK: 戻る
-    BACKUPS: バックアップ
-    BACKUPS_HISTORY: バックアップ履歴
-    BACKUPS_MAX_COUNT: バックアップの最大数
-    BACKUPS_MAX_RETENTION_TIME: 最大保持期間
-    BACKUPS_MAX_RETENTION_TIME_APPEND: 日
-    BACKUPS_MAX_SPACE: バックアップの最大容量
-    BACKUPS_PROFILE_ENVIRONMENT: 環境
-    BACKUPS_PROFILE_ENVIRONMENT_HELP: スケジュールバックアップが実行される Grav 環境コンテキスト。
-    BACKUPS_PROFILE_EXCLUDE_FILES: 除外ファイル
-    BACKUPS_PROFILE_EXCLUDE_FILES_HELP: 除外する個別のファイルまたはフォルダー、1 行に 1 つ
-    BACKUPS_PROFILE_EXCLUDE_PATHS: 除外パス
-    BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: 除外する絶対パス、1 行に 1 つ
-    BACKUPS_PROFILE_NAME: バックアップ名
-    BACKUPS_PROFILE_ROOT_FOLDER: ルートフォルダー
-    BACKUPS_PROFILE_ROOT_FOLDER_HELP: 絶対パスまたはストリームを指定できます
-    BACKUPS_PROFILE_SCHEDULE: スケジュールジョブを有効化
-    BACKUPS_PROFILE_SCHEDULE_AT: スケジュールジョブを実行
-    BACKUPS_PROFILES: バックアッププロファイル
-    BACKUPS_PURGE_CONFIG: バックアップ削除設定
-    BACKUPS_STORAGE_PURGE_TRIGGER: バックアップストレージ削除トリガー
-    BODY_CLASSES: ボディクラス
-    CACHE_ALL: すべての画像をキャッシュ
-    CACHE_ALL_HELP: メディア操作が含まれていなくても、すべての画像を Grav のキャッシュシステムを通します
-    CACHE_CHECK_METHOD: キャッシュ確認方式
-    CACHE_CHECK_METHOD_HELP: Grav がページファイルの変更を確認する方式を選択します。
-    CACHE_CLEAR_JOB: スケジュールクリアジョブを実行
-    CACHE_CLEAR_JOB_HELP: スケジューラを使って Grav のキャッシュを定期的にクリアできます
-    CACHE_CONTROL: HTTP Cache-Control
-    CACHE_CONTROL_HELP: '`no-cache, no-store, must-revalidate` のような有効な cache-control 値に設定します'
-    CACHE_DRIVER: キャッシュドライバ
-    CACHE_DRIVER_HELP: Grav が使用するキャッシュドライバを選択します。「自動検出」は最適なものを自動で見つけます
-    CACHE_JOB_TYPE: キャッシュジョブタイプ
-    CACHE_JOB_TYPE_HELP: 「standard」フォルダーキャッシュクリア、または「all」フォルダーのいずれかでクリアします
-    CACHE_PERMS: キャッシュパーミッション
-    CACHE_PERMS_HELP: デフォルトのキャッシュフォルダーパーミッション。通常は環境に応じて 0755 または 0775
-    CACHE_PREFIX: キャッシュプレフィックス
-    CACHE_PREFIX_HELP: Grav キーの一部の識別子。何をしているか分からない場合は変更しないでください。
-    CACHE_PREFIX_PLACEHOLDER: ベース URL から導出（ランダム文字列を入力して上書き）
-    CACHE_PURGE_AGE: キャッシュ削除期間
-    CACHE_PURGE_AGE_HELP: この期間（秒）より古いすべてのキャッシュ項目を削除します
-    CACHE_PURGE_JOB: スケジュール削除ジョブを実行
-    CACHE_PURGE_JOB_HELP: このジョブで、古い Doctrine ファイルキャッシュフォルダーをスケジューラで定期的に削除できます
-    CACHING: キャッシュ
-    CACHING_HELP: Grav のキャッシュを有効/無効にするグローバル ON/OFF スイッチ
-    CHARACTERS: 文字
-    CLEAR_IMAGES_BY_DEFAULT: デフォルトで画像キャッシュをクリア
-    CLEAR_IMAGES_BY_DEFAULT_HELP: デフォルトでは、処理済み画像はすべてのキャッシュクリアでクリアされますが、これを無効化できます
-    CLI_COMPATIBILITY: CLI 互換性
-    CLI_COMPATIBILITY_HELP: 非揮発性のキャッシュドライバ（file、redis、memcache など）のみが使用されることを保証します
-    COLLECTIONS: コレクション
-    COMMAND: コマンド
-    CONFIGURATION: 設定
-    CONTENT: コンテンツ
-    CONTENT_EDITOR: コンテンツエディター
-    CONTENT_EDITOR_HELP: コンテンツ編集にカスタムエディターを優先できます
-    CONTENT_FALLBACK_LANGUAGE_HELP: カスタマイズしたい言語コードを指定してください。
-    CONTENT_LANGUAGE_FALLBACK: フォールバック言語
-    CONTENT_LANGUAGE_FALLBACK_HELP: 言語コードのリストを入力してください。デフォルトの言語コードを省略した場合、それは使用されないことに注意してください。
-    CONTENT_LANGUAGE_FALLBACKS: コンテンツ言語フォールバック
-    CONTENT_LANGUAGE_FALLBACKS_HELP: デフォルトでは、コンテンツが翻訳されていない場合、Grav はデフォルト言語のコンテンツを表示します。この設定を使用して、言語ごとにその動作を上書きしてください。
-    COPY: コピー
-    CREATE: 作成
-    CSS_ASSETS: CSS アセット
-    CSS_MINIFY: CSS minify
-    CSS_MINIFY_HELP: パイプライン中に CSS を minify します
-    CSS_MINIFY_WINDOWS_OVERRIDE: CSS minify Windows 上書き
-    CSS_MINIFY_WINDOWS_OVERRIDE_HELP: Windows プラットフォーム用の minify 上書き。ThreadStackSize のためデフォルトでは false
-    CSS_PIPELINE: CSS パイプライン
-    CSS_PIPELINE_BEFORE_EXCLUDES: CSS パイプラインを先にレンダー
-    CSS_PIPELINE_BEFORE_EXCLUDES_HELP: 含まれない他の CSS 参照の前に CSS パイプラインをレンダーします
-    CSS_PIPELINE_HELP: CSS パイプラインは複数の CSS リソースを 1 つのファイルに統合します
-    CSS_PIPELINE_INCLUDE_EXTERNALS: CSS パイプラインに外部を含める
-    CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: 外部 URL は相対ファイル参照を持つ場合があり、パイプライン化すべきではありません
-    CSS_REWRITE: CSS rewrite
-    CSS_REWRITE_HELP: パイプライン中に CSS の相対 URL を書き換えます
-    CURL: cURL
-    CUSTOM_BASE_URL: カスタムベース URL
-    CUSTOM_BASE_URL_HELP: "Grav が使用するものとは別のサイトドメインやサブフォルダーを書き換えたい場合に使用します。例: http://localhost"
-    CUSTOM_REDIRECTS: カスタムリダイレクト
-    CUSTOM_REDIRECTS_HELP: 他のページにリダイレクトするためのルート。標準的な正規表現置換が有効です
-    CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
-    CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
-    CUSTOM_ROUTES: カスタムルート
-    CUSTOM_ROUTES_HELP: 他のページのエイリアスとして使用するルート。標準的な正規表現置換が有効です
-    CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
-    CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
-    DATE: 日付
-    DATE_BASED_PUBLISHING: 日付ベースの公開
-    DATE_BASED_PUBLISHING_HELP: 日付に基づいて投稿を自動的に（非）公開する
-    DATE_HELP: date 変数を使用すると、このページに関連付ける日付を明示的に設定できます。
-    DEBUGGER: デバッガー
-    DEBUGGER_CENSORED: 機密データを伏字化
-    DEBUGGER_CENSORED_HELP: "Clockwork プロバイダーのみ：Yes の場合、機密性の高い情報（POST パラメータ、Cookie、ファイル、設定、ログメッセージ内のほとんどの配列/オブジェクトデータ）を伏字化します"
-    DEBUGGER_CLOCKWORK: Clockwork ブラウザ拡張機能
-    DEBUGGER_DEBUGBAR: PHP Debug Bar
-    DEBUGGER_HELP: Grav デバッガーと以下の設定を有効にします
-    DEBUGGER_PROVIDER: デバッガープロバイダー
-    DEBUGGER_PROVIDER_HELP: デフォルトは PHP Debug Bar ですが、Clockwork ブラウザ拡張機能はより邪魔にならないアプローチを提供します
-    DEFAULT: デフォルト
-    DEFAULT_AUTHOR: デフォルト作者
-    DEFAULT_AUTHOR_HELP: デフォルトの作者名。テーマやページコンテンツでよく使用されます
-    DEFAULT_CHILD_TYPE: デフォルトの子タイプ
-    DEFAULT_DATE_FORMAT: ページ日付フォーマット
-    DEFAULT_DATE_FORMAT_HELP: "Grav が使用するページの日付フォーマット。デフォルトでは Grav が日付フォーマットを自動推測しますが、PHP の date 構文を使ってフォーマットを指定できます（例: Y-m-d H:i）"
-    DEFAULT_DATE_FORMAT_PLACEHOLDER: 自動推測
-    DEFAULT_EMAIL: デフォルトメール
-    DEFAULT_EMAIL_HELP: テーマやページで参照するデフォルトのメールアドレス
-    DEFAULT_IMAGE_QUALITY: デフォルト画像品質
-    DEFAULT_IMAGE_QUALITY_HELP: 画像をリサンプリングまたはキャッシュする際に使用するデフォルトの画像品質（85%）
-    DEFAULT_LANG: デフォルト言語の上書き
-    DEFAULT_LANG_HELP: デフォルトでは最初にサポートされる言語が使用されます。このオプションで上書きできますが、サポート対象の言語のいずれかである必要があります
-    DEFAULT_ORDER_DIRECTION: デフォルトの並び順方向
-    DEFAULT_ORDER_DIRECTION_HELP: リスト内のページの方向
-    DEFAULT_ORDERING: デフォルトの並び順
-    DEFAULT_ORDERING_DATE: 日付 - ヘッダーの date フィールドに基づく
-    DEFAULT_ORDERING_DEFAULT: デフォルト - フォルダー名に基づく
-    DEFAULT_ORDERING_FOLDER: フォルダー - プレフィックスを除いたフォルダー名に基づく
-    DEFAULT_ORDERING_HELP: リスト内のページは、上書きされない限りこの順序でレンダリングされます
-    DEFAULT_ORDERING_TITLE: タイトル - ヘッダーの title フィールドに基づく
-    DEFAULT_PAGE_COUNT: デフォルトページ数
-    DEFAULT_PAGE_COUNT_HELP: リスト内のデフォルトの最大ページ数
-    DEFAULT_THEME: デフォルトテーマ
-    DEFAULT_THEME_HELP: Grav が使用するデフォルトテーマを設定します（デフォルトは Antimatter）
-    DEFAULTS: デフォルト
-    DELETE: 削除
-    DELIMITER: デリミタ
-    DELIMITER_HELP: 概要のデリミタ（デフォルト '==='）
-    DESCENDING: 降順
-    DESCRIPTION: 説明
-    DETAILS: 詳細
-    DETECT_CHANGES: 変更検出
-    DETECT_CHANGES_HELP: Twig はテンプレートの変更を検出すると自動的に Twig キャッシュを再コンパイルします
-    DISABLED: 無効
-    DISPLAY_ERRORS: エラーを表示
-    DISPLAY_ERRORS_HELP: 完全なバックトレース形式のエラーページを表示します
-    DISPLAY_NAME: 表示名
-    DISPLAY_TEMPLATE: 表示テンプレート
-    EMAIL: メールアドレス
-    EMAIL_VALIDATION_MESSAGE: 有効なメールアドレスである必要があります
-    ENABLE_AUTO_METADATA: Exif から自動メタデータ
-    ENABLE_AUTO_METADATA_HELP: exif 情報を持つ画像のメタデータファイルを自動生成します
-    ENABLE_MEDIA_TIMESTAMP: メディアのタイムスタンプを有効化
-    ENABLE_MEDIA_TIMESTAMP_HELP: 各メディアアイテムの末尾に最終更新日に基づくタイムスタンプを追加します
-    ENABLED: 有効
-    ENABLED_HELP: ページ概要を有効化（概要はページコンテンツと同じものを返します）
-    ENABLED_SRI_ON_ASSETS: アセットの SRI を有効化
-    ENABLED_SRI_ON_ASSETS_HELP: アセット SRI を有効にする
-    ENABLED_TIMESTAMPS_ON_ASSETS: アセットのタイムスタンプを有効化
-    ENABLED_TIMESTAMPS_ON_ASSETS_HELP: アセットのタイムスタンプを有効にする
-    ERROR_FULL_BACKTRACE: 完全バックトレースエラー
-    ERROR_HANDLER: エラーハンドラ
-    ERROR_SIMPLE: シンプルエラー
-    ERROR_SYSTEM: システムエラー
-    ESCAPE_MARKUP: マークアップをエスケープ
-    ESCAPE_MARKUP_HELP: マークアップタグを HTML エンティティへエスケープします
-    ETAG: ETag
-    ETAG_HELP: etag ヘッダーを設定して、ページが変更されたタイミングの識別を助けます
-    EVENTS: イベント
-    EVENTS_HELP: 特定のイベントを有効または無効にします。これらを無効にするとプラグインが壊れる場合があります
-    EXPERIMENTAL: 実験的機能
-    EXPIRES: 有効期限
-    EXPIRES_HELP: expires ヘッダーを設定します。値は秒単位です。
-    EXTERNAL: 外部ページ
-    EXTERNAL_URL: 外部 URL
-    EXTRA_ARGUMENTS: 追加引数
-    FALLBACK_TYPES: 許可するフォールバックタイプ
-    FALLBACK_TYPES_HELP: ページルート経由でアクセスされる場合に検出可能なファイルタイプ。デフォルトはサポートされる任意のメディアタイプ。
-    FILE: ファイル
-    FILE_EXTENSION: ファイル拡張子
-    FILE_STREAMS: ファイルストリーム
-    FLEX: Flex Object（実験的）
-    FLEX_CACHING: Flex キャッシュ
-    FLEX_INDEX_CACHE_ENABLED: インデックスキャッシュを有効化
-    FLEX_INDEX_CACHE_LIFETIME: インデックスキャッシュ有効時間（秒）
-    FLEX_OBJECT_CACHE_ENABLED: オブジェクトキャッシュを有効化
-    FLEX_OBJECT_CACHE_LIFETIME: オブジェクトキャッシュ有効時間（秒）
-    FLEX_RENDER_CACHE_ENABLED: レンダーキャッシュを有効化
-    FLEX_RENDER_CACHE_LIFETIME: レンダーキャッシュ有効時間（秒）
-    FOLDER: フォルダー
-    FOLDER_NAME: フォルダー名
-    FOLDER_NUMERIC_PREFIX: フォルダー数値プレフィックス
-    FOLDER_NUMERIC_PREFIX_HELP: 手動の並び順を提供し、表示状態を暗黙的に示す数値プレフィックス
-    FOPEN: fopen
-    FORCE_LOWERCASE_URLS: URL を強制的に小文字化
-    FORCE_LOWERCASE_URLS_HELP: デフォルトでは Grav はすべてのスラッグとルートを小文字に設定します。これを false にすると、大文字を含むスラッグやルートが使用できます
-    FORCE_SSL: SSL を強制
-    FORCE_SSL_HELP: SSL をグローバルに強制します。有効な場合、サイトに HTTP でアクセスされると Grav は HTTPS ページへのリダイレクトを送信します
-    FORMAT: フォーマット
-    FORMAT_HELP: short = 最初のデリミタまたはサイズの出現を使用、long = 概要デリミタは無視されます
-    FRONTMATTER_IGNORE_FIELDS: フロントマターフィールドを無視
-    FRONTMATTER_IGNORE_FIELDS_HELP: "'forms' のように、Twig を含む可能性があるが処理してはならないフロントマターフィールド"
-    FRONTMATTER_PROCESS_TWIG: フロントマターの Twig を処理
-    FRONTMATTER_PROCESS_TWIG_HELP: 有効にすると、ページのフロントマターで Twig の設定変数を使用できます
-    FULL_NAME: フルネーム
-    GENERAL_CONFIG: 一般アセット設定
-    GPM_METHOD: リモート取得方式
-    GPM_METHOD_HELP: Auto に設定すると、Grav は fopen が利用可能かを判断して使用し、利用できない場合は cURL にフォールバックします。どちらかの使用を強制するには設定を切り替えてください。
-    GPM_OFFICIAL_ONLY: 公式 GPM のみ
-    GPM_OFFICIAL_ONLY_HELP: 公式 GPM リポジトリからの直接インストールのみを許可します。
-    GPM_RELEASES: GPM リリース
-    GPM_RELEASES_HELP: ベータまたはテストバージョンをインストールするには「Testing」を選択
-    GPM_SECTION: GPM セクション
-    GROUP_NAME: グループ名
-    GROUPS: グループ
-    GROUPS_HELP: ユーザーが所属するグループのリスト
-    GZIP_COMPRESSION: Gzip 圧縮
-    GZIP_COMPRESSION_HELP: パフォーマンス向上のため、Grav ページの GZip 圧縮を有効化します。
-    HIDE_EMPTY_FOLDERS: 空フォルダーを非表示
-    HIDE_EMPTY_FOLDERS_HELP: フォルダーに .md ファイルがない場合、ナビゲーションで非表示にしてルーティング不可にするかどうか
-    HIDE_HOME_IN_URLS: URL でホームルートを非表示
-    HIDE_HOME_IN_URLS_HELP: home 配下のページのデフォルトルートが home の通常ルートを参照しないようにします
-    HOME_PAGE: ホームページ
-    HOME_PAGE_HELP: Grav がデフォルトのランディングページとして使用するページ
-    HTTP_ACCEPT_LANGUAGE: ブラウザから言語を設定
-    HTTP_ACCEPT_LANGUAGE_HELP: ブラウザの `http_accept_language` ヘッダータグに基づいて言語を設定することを試みるオプションです
-    HTTP_CONNECTIONS: HTTP 接続数
-    HTTP_CONNECTIONS_HELP: 多重化リクエスト中の同時 HTTP 接続数
-    HTTP_HEADERS: HTTP ヘッダー
-    HTTP_SECTION: HTTP セクション
-    ICON: アイコン
-    IGNORE_FILES: ファイルを無視
-    IGNORE_FILES_HELP: ページ処理時に無視する特定のファイル
-    IGNORE_FOLDERS: フォルダーを無視
-    IGNORE_FOLDERS_HELP: ページ処理時に無視する特定のフォルダー
-    IGNORE_HIDDEN: 隠しファイルを無視
-    IGNORE_HIDDEN_HELP: ドットで始まるすべてのファイルとフォルダーを無視します
-    IMAGE_ADAPTER: 画像アダプター
-    IMAGE_ADAPTER_HELP: 画像操作に使用するアダプター。デフォルトは「GD」、もう一つの選択肢として「Imagick」があります
-    IMAGE_OPTIONS: 画像オプション
-    IMAGES_AUTO_FIX_ORIENTATION: 向きを自動修正
-    IMAGES_AUTO_FIX_ORIENTATION_HELP: Exif データに基づいて画像の向きを自動修正します
-    IMAGES_CLS_ASPECT_RATIO: アスペクト比を有効化
-    IMAGES_CLS_ASPECT_RATIO_HELP: オプションの CSS 変数で、'style' 属性で適用され、CSS でのカスタムスタイリングに使用できます
-    IMAGES_CLS_AUTO_SIZES: 自動サイズを有効化
-    IMAGES_CLS_AUTO_SIZES_HELP: CLS 対策のため、画像に 'width' および 'height' 属性を自動追加します
-    IMAGES_CLS_RETINA_SCALE: Retina スケール係数
-    IMAGES_CLS_RETINA_SCALE_HELP: 計算されたサイズをスケール係数で割って、HiDPI 解像度をより適切に扱うために、より高解像度の画像を小さなピクセルサイズで表示します
-    IMAGES_CLS_TITLE: Cumulative Layout Shift (CLS)
-    IMAGES_DEBUG: 画像デバッグウォーターマーク
-    IMAGES_DEBUG_HELP: たとえば retina 利用時に画像のピクセル深度を示すオーバーレイを画像上に表示します
-    IMAGES_DECODING: 画像デコード動作
-    IMAGES_DECODING_HELP: "decoding 属性により、ブラウザはユーザーが近づくまで画面外の画像のデコードを遅延できます。decoding は 3 つの値をサポートします: auto、sync、async"
-    IMAGES_FETCHPRIORITY: 画像 Fetchpriority プロパティ
-    IMAGES_FETCHPRIORITY_HELP: HTML の fetchpriority プロパティは、画像や iframe などの特定のリソースの読み込み優先度を指定して、パフォーマンスを最適化する属性です。可能な値は high、low、auto です。
-    IMAGES_LOADING: 画像読み込み動作
-    IMAGES_LOADING_HELP: "loading 属性により、ブラウザはユーザーが近づくまで画面外の画像や iframe の読み込みを遅延できます。loading は 3 つの値をサポートします: auto、lazy、eager"
-    IMAGES_SEOFRIENDLY: SEO フレンドリーな画像名
-    IMAGES_SEOFRIENDLY_HELP: 有効な場合、画像名が最初に表示され、その後に処理操作を反映する小さなハッシュが続きます
-    INCLUDE_DEFAULT_LANG: デフォルト言語を含める
-    INCLUDE_DEFAULT_LANG_FILE_EXTENSION: ファイル拡張子にデフォルト言語を含める
-    INCLUDE_DEFAULT_LANG_HELP: デフォルト言語のすべての URL の先頭にデフォルト言語を付加します。例：`/en/blog/my-post`
-    INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: 有効な場合、ファイル拡張子の前にデフォルト言語を付加します（例：`.en.md`）。無効にすると、デフォルト言語は `.md` ファイル拡張子のままになります。
-    INLINE_TYPES: インラインフォールバックタイプ
-    INLINE_TYPES_HELP: ダウンロードではなくインラインで表示するファイルタイプのリスト
-    INTL_ENABLED: Intl モジュール統合
-    INTL_ENABLED_HELP: Intl PHP モジュールと collate を使用して UTF8 ベースのコレクションをソートします
-    ITEMS: アイテム
-    JAVASCRIPT_MINIFY: JavaScript minify
-    JAVASCRIPT_MINIFY_HELP: パイプライン中に JS を minify します
-    JAVASCRIPT_MODULE_PIPELINE: JavaScript Module パイプライン
-    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: JS Module パイプラインを先にレンダー
-    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: 含まれない他の JS 参照の前に JS パイプラインをレンダーします
-    JAVASCRIPT_MODULE_PIPELINE_HELP: JS Module パイプラインは複数の JS リソースを 1 つのファイルに統合します
-    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: JS Module パイプラインに外部を含める
-    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: 外部 URL は相対ファイル参照を持つ場合があり、パイプライン化すべきではありません
-    JAVASCRIPT_PIPELINE: JavaScript パイプライン
-    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: JS パイプラインを先にレンダー
-    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: 含まれない他の JS 参照の前に JS パイプラインをレンダーします
-    JAVASCRIPT_PIPELINE_HELP: JS パイプラインは複数の JS リソースを 1 つのファイルに統合します
-    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: JS パイプラインに外部を含める
-    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: 外部 URL は相対ファイル参照を持つ場合があり、パイプライン化すべきではありません
-    JS_ASSETS: JavaScript アセット
-    JS_MODULE_ASSETS: JavaScript Module アセット
-    LANGUAGE: 言語
-    LANGUAGE_DEBUG: 言語デバッグ
-    LANGUAGE_DEBUG_HELP: "|t twig フィルターを使用している言語のデバッグを有効にし、問題診断を助けるためにスタイル可能な span で囲みます"
-    LANGUAGE_HELP: お気に入りの言語を設定します
-    LANGUAGE_TRANSLATIONS: 翻訳
-    LANGUAGE_TRANSLATIONS_HELP: false の場合、翻訳された文字列の代わりに翻訳キーが使用されます。この機能は、不適切な翻訳の修正やハードコーディングされた英語の文字列を見つけるのに役立ちます。
-    LANGUAGES: 言語
-    LAST_MODIFIED: 最終更新
-    LAST_MODIFIED_HELP: 最終更新ヘッダーを設定し、プロキシやブラウザキャッシュの最適化に役立てます
-    LIFETIME: 有効時間
-    LIFETIME_HELP: キャッシュ有効時間を秒で設定します。0 = 無限
-    LIST: リスト
-    LOG_ERRORS: エラーをログ
-    LOG_ERRORS_HELP: エラーを /logs フォルダーにログ出力します
-    LOG_HANDLER: ログハンドラ
-    LOG_HANDLER_HELP: ログを出力する場所
-    LONG: ロング
-    LONG_DATE_FORMAT: 長い表示日付フォーマット
-    LONG_DATE_FORMAT_HELP: テーマで使用できる長い日付フォーマットを設定します
-    MARKDOWN: Markdown
-    MARKDOWN_EXTRA_HELP: Markdown Extra のデフォルトサポートを有効化 - https://michelf.ca/projects/php-markdown/extra/
-    MEDIA: メディア
-    MEDIA_TYPES: メディアタイプ
-    MEMCACHED_PORT: Memcached ポート
-    MEMCACHED_PORT_HELP: Memcached サーバーのポート
-    MEMCACHED_SERVER: Memcached サーバー
-    MEMCACHED_SERVER_HELP: Memcached サーバーのアドレス
-    MENU: メニュー
-    MENU_HELP: メニューで使用される文字列。設定されていない場合は Title が使用されます。
-    METADATA: メタデータ
-    METADATA_HELP: ページで上書きされない限り、すべてのページに表示されるデフォルトのメタデータ値
-    METADATA_KEY: キー（例：'Keywords'）
-    METADATA_VALUE: 値（例：'Blog, Grav'）
-    MIME_TYPE: MIME タイプ
-    MISC_SECTION: その他のセクション
-    MODULE: モジュール
-    MODULE_SETUP: モジュールセットアップ
-    MOVE: 移動
-    NAME: 名前
-    NEVER_CACHE_TWIG: Twig をキャッシュしない
-    NEVER_CACHE_TWIG_HELP: コンテンツのみをキャッシュし、ページの Twig を毎回処理します。twig_first 設定を無視します。
-    "NO": "いいえ"
-    OPTIONS: オプション
-    ORDER: 順序
-    ORDER_BY: 並び替え基準
-    ORDER_DIGITS: 順序桁数
-    ORDER_DIGITS_HELP: 並び順のためにフォルダー名の先頭に付ける桁数（例：`01.about`、`001.about`）。
-    ORDERING: 順序
-    OVERRIDE_LOCALE: ロケールを上書き
-    OVERRIDE_LOCALE_HELP: 現在の言語に基づいて PHP のロケール設定を上書きします
-    OVERRIDES: 上書き
-    PAGE: ページ
-    PAGE_ACCESS: ページアクセス
-    PAGE_ACCESS_HELP: 以下のアクセス権限を持つユーザーがページにアクセスできます。
-    PAGE_AUTHORS: ページ作者
-    PAGE_AUTHORS_HELP: ページ作者のメンバーは、特別な 'Authors' ページグループで定義された、このページに対するオーナーレベルのアクセスを持ちます。
-    PAGE_FILE: ページテンプレート
-    PAGE_FILE_HELP: ページテンプレートのファイル名で、デフォルトではこのページの表示テンプレート
-    PAGE_GROUPS: ページグループ
-    PAGE_GROUPS_HELP: ページグループのメンバーは、このページに対して特別なアクセスを持ちます。
-    PAGE_INHERIT_PERMISSIONS: 権限を継承
-    PAGE_INHERIT_PERMISSIONS_HELP: 親ページから ACL を継承します。
-    PAGE_MEDIA: ページメディア
-    PAGE_SUMMARY: ページ概要
-    PAGE_TYPES: ページタイプ
-    PAGE_TYPES_HELP: Grav がサポートするページタイプを決定し、リクエストが曖昧な場合にフォールバックするタイプの順序を決定します
-    PAGE_VISIBILITY_REQUIRES_ACCESS: メニュー表示にアクセス権を要求
-    PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: ユーザーがアクセスできる場合のみページをメニューに表示する場合は Yes に設定します。
-    PAGES: ページ
-    PAGES_FALLBACK_ONLY: ページフォールバックのみ
-    PAGES_FALLBACK_ONLY_HELP: サポートされる言語を通じてページコンテンツを見つけるのに「フォールバック」のみを行います。デフォルトの動作では、アクティブ言語がない場合に見つかった任意の言語を表示します
-    PAGES_TYPE: フロントエンドページタイプ
-    PAGES_TYPE_HELP: このオプションはフロントエンドで Flex Object ページを有効にします。Admin Flex Pages には Flex Objects プラグインが必要です
-    PARAMETER_SEPARATOR: パラメータセパレータ
-    PARAMETER_SEPARATOR_HELP: Windows 上の Apache 用に変更できる、渡されるパラメータのセパレータ
-    PARENT: 親
-    PASSWORD: パスワード
-    PASSWORD_VALIDATION_MESSAGE: パスワードには少なくとも 1 つの数字、1 つの大文字と小文字、および少なくとも 8 文字以上が必要です
-    PERMISSIONS: 権限
-    PLUGIN_STATUS: プラグインステータス
-    PREVIEW: プレビュー
-    PROCESS: 処理
-    PROCESS_HELP: ページの処理方法を制御します。グローバルではなくページごとに設定できます
-    PROXY_CERT: プロキシ証明書パス
-    PROXY_CERT_HELP: プロキシ証明書 pem ファイルを含むフォルダーへのローカルパス
-    PROXY_URL: プロキシ URL
-    PROXY_URL_HELP: プロキシの HOST または IP と PORT を入力してください
-    PUBLISH: 公開
-    PUBLISHED: 公開済み
-    PUBLISHED_DATE: 公開日
-    PUBLISHED_DATE_HELP: 公開を自動的にトリガーするための日付を指定できます。
-    PUBLISHED_HELP: "デフォルトでは、ページは publish_date が未来、または unpublish_date が過去でない限り、published: false を明示的に設定しない限り公開されます"
-    PUBLISHING: 公開
-    PWD_REGEX: パスワード正規表現
-    PWD_REGEX_HELP: "デフォルト：パスワードには少なくとも 1 つの数字、1 つの大文字と小文字、および少なくとも 8 文字以上が必要です"
-    PWD_RULES: パスワードルール
-    PWD_RULES_HELP: カスタムのパスワード検証ルール。各ルールには ID、人間用ラベル、パスワードが一致する必要のある正規表現があります。
-    PWD_RULES_ID: ID
-    PWD_RULES_LABEL: ラベル
-    PWD_RULES_PATTERN: 正規表現パターン
-    READ: 読み取り
-    READ_FILE_ALLOWED_EXTENSIONS: 許可するファイル拡張子
-    READ_FILE_ALLOWED_EXTENSIONS_HELP: <code>read_file()</code> が読み取るファイル拡張子（大文字小文字区別なし、先頭ドットなし）。デフォルトはテキスト/コンテンツ形式のみです。実行可能ファイルや設定ファイル形式（<code>php</code>、<code>yaml</code>、<code>env</code>、<code>htaccess</code> など）を追加するのは危険であり推奨されません。
-    READ_FILE_ALLOWED_STREAMS: 許可するストリーム
-    READ_FILE_ALLOWED_STREAMS_HELP: "<code>read_file()</code> が解決できるストリームスキーマ。デフォルト: <code>theme</code>、<code>themes</code>、<code>page</code>、<code>user-data</code>。<code>user</code>、<code>system</code>、<code>config</code>、<code>account</code>、<code>log</code>、<code>cache</code> のような広範なストリームを追加すると機密ファイルが露出するため、強く非推奨です。"
-    READ_FILE_MAX_SIZE: 最大ファイルサイズ（バイト）
-    READ_FILE_MAX_SIZE_HELP: このサイズより大きいファイルはメモリに読み込まれず <code>false</code> を返します。デフォルトは <code>1048576</code>（1 MB）。サイズ制限を無効にするには <code>0</code> を設定します。
-    READ_FILE_SECTION_HELP: Twig <code>read_file()</code> 関数の制約。読み取りは Grav ストリーム URI を経由するように強制され、解決後のストリームルートに対する canonical-realpath 包含チェックで検証されるため、パスの記述方法に関わらず、エンコードされたまたはシンボリックリンクされたトラバーサルはファイルシステム層でブロックされます。
-    READ_FILE_SECTION_TITLE: Twig read_file()
-    REDIRECT: ページリダイレクト
-    REDIRECT_DEFAULT_CODE: デフォルトリダイレクトコード
-    REDIRECT_DEFAULT_CODE_HELP: リダイレクトに使用する HTTP ステータスコード
-    REDIRECT_DEFAULT_ROUTE: デフォルトルートをリダイレクト
-    REDIRECT_DEFAULT_ROUTE_HELP: ページのデフォルトルートへ自動的にリダイレクトします
-    REDIRECT_HELP: このページのリダイレクト先となるページルートまたは外部 URL を入力します。例：`/some/route` または `http://somesite.com`
-    REDIRECT_OPTION_301: 301 - 恒久的に移動
-    REDIRECT_OPTION_302: 302 - 一時的に移動
-    REDIRECT_OPTION_303: 303 - 他を参照
-    REDIRECT_OPTION_DEFAULT_REDIRECT: デフォルトリダイレクトコードを使用
-    REDIRECT_OPTION_NO_REDIRECT: リダイレクトしない
-    REDIRECT_TRAILING_SLASH: 末尾スラッシュをリダイレクト
-    REDIRECT_TRAILING_SLASH_HELP: 末尾スラッシュ URI を透過的に処理するのではなく 301 リダイレクトを実行します。
-    REDIRECTS_AND_ROUTES: リダイレクトとルート
-    REDIS_DATABASE: Redis データベース ID
-    REDIS_DATABASE_HELP: Redis インスタンスのデータベース ID
-    REDIS_PASSWORD: Redis パスワード/シークレット
-    REDIS_PORT: Redis ポート
-    REDIS_PORT_HELP: Redis サーバーのポート
-    REDIS_SERVER: Redis サーバー
-    REDIS_SERVER_HELP: Redis サーバーのアドレス
-    REDIS_SOCKET: Redis ソケット
-    REDIS_SOCKET_HELP: Redis ソケット
-    REGULAR: レギュラー
-    REVERSE_PROXY: リバースプロキシ
-    REVERSE_PROXY_HELP: リバースプロキシの背後にあり、誤ったポートを含む URL で問題が発生している場合に有効化します
-    ROOT: ルート
-    ROUTABLE: ルーティング可能
-    ROUTABLE_HELP: このページが URL から到達可能かどうか
-    ROUTE_ALIASES: ルートエイリアス
-    ROUTE_CANONICAL: 正規ルート
-    ROUTE_DEFAULT: デフォルトルート
-    ROUTE_OVERRIDES: ルート上書き
-    SANITIZE_SVG: SVG をサニタイズ
-    SANITIZE_SVG_HELP: SVG から XSS コードを削除します
-    SAVE: 保存
-    SCHEDULER: スケジューラ
-    SCHEDULER_EMAIL: メール
-    SCHEDULER_EMAIL_HELP: "出力を送信するメールアドレス。注：出力ファイルの設定が必要です"
-    SCHEDULER_JOBS: カスタムスケジューラジョブ
-    SCHEDULER_OUTPUT: 出力ファイル
-    SCHEDULER_OUTPUT_HELP: 出力ファイルのパス/ファイル名（Grav インストールのルートから）
-    SCHEDULER_OUTPUT_TYPE: 出力タイプ
-    SCHEDULER_OUTPUT_TYPE_HELP: 実行ごとに同じファイルに追記するか、実行ごとにファイルを上書きするか
-    SCHEDULER_RUNAT: 実行時刻
-    SCHEDULER_RUNAT_HELP: "Cron 形式の 'at' 構文。注：すべての時刻は UTC です！"
-    SCHEDULER_STATUS: スケジューラステータス
-    SECURITY: セキュリティ
-    SESSION: セッション
-    SESSION_DOMAIN: セッションドメイン
-    SESSION_DOMAIN_HELP: Docker コンテナなどでサイトドメインを書き換える場合にのみ使用します。
-    SESSION_ENABLED_HELP: Grav 内でのセッションサポートを有効にします
-    SESSION_HTTPONLY: HTTP のみ
-    SESSION_HTTPONLY_HELP: true の場合、Cookie は HTTP 経由でのみ使用されるべきであり、JavaScript による変更は許可されないことを示します
-    SESSION_INITIALIZE: セッションを初期化
-    SESSION_INITIALIZE_HELP: Grav にセッションを開始させます。この機能は、ログインやフォームなどのユーザー対話を機能させるために必要です。Admin プラグインはこの設定の影響を受けません。
-    SESSION_NAME_HELP: セッション Cookie の名前を形成するために使用される識別子
-    SESSION_PATH: セッションパス
-    SESSION_PATH_HELP: Docker コンテナなどでサイトパスを書き換える場合にのみ使用します。
-    SESSION_SAMESITE: セッションの SameSite 属性
-    SESSION_SAMESITE_HELP: Lax|Strict|None。詳細は https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite を参照
-    SESSION_SECURE: セキュア
-    SESSION_SECURE_HELP: "true の場合、この Cookie の通信は暗号化された伝送上でなければならないことを示します。警告：HTTPS でのみ動作するサイトでのみ有効化してください"
-    SESSION_SECURE_HTTPS: セキュア（HTTPS）
-    SESSION_SECURE_HTTPS_HELP: HTTPS ではセッションをセキュアに設定し、HTTP では設定しません。上の Secure 設定が true の場合は効果がありません。サイトが HTTP と HTTPS の間を行き来する場合は false に設定してください。
-    SESSION_SPLIT: セッション分割
-    SESSION_SPLIT_HELP: サイトと他のプラグイン（admin など）間で独立した分割セッション
-    SESSION_UNIQUENESS: ユニーク文字列
-    SESSION_UNIQUENESS_HELP: Grav のルートパス（`GRAV_ROOT`）の MD5 ハッシュ（デフォルト）、またはランダムな `security.salt` 文字列に基づくもの。
-    SETTINGS: 設定
-    SHORT: ショート
-    SHORT_DATE_FORMAT: 短い表示日付フォーマット
-    SHORT_DATE_FORMAT_HELP: テーマで使用できる短い日付フォーマットを設定します
-    SHUTDOWN_CLOSE_CONNECTION: シャットダウン時に接続を閉じる
-    SHUTDOWN_CLOSE_CONNECTION_HELP: onShutdown() を呼び出す前に接続を閉じます。デバッグ時は false
-    SITE: サイト
-    SITE_ACCESS: サイトアクセス
-    SITE_DEFAULT_LANG: デフォルト言語
-    SITE_DEFAULT_LANG_HELP: テーマの <HTML> タグで使用されるデフォルト言語
-    SITE_DEFAULT_LANG_PLACEHOLDER: テーマの <HTML> タグで使用されるデフォルト言語
-    SITE_TITLE: サイトタイトル
-    SITE_TITLE_HELP: サイトのデフォルトタイトル。テーマでよく使用されます
-    SITE_TITLE_PLACEHOLDER: サイト全体のタイトル
-    SLUG: スラッグ
-    SLUG_HELP: slug 変数を使用すると、ページの URL 部分を明示的に設定できます
-    SLUG_VALIDATE_MESSAGE: スラッグには小文字の英数字とダッシュのみを含める必要があります
-    SORTABLE_PAGES: "並び替え可能なページ:"
-    SSL_ENABLE_PROXY: プロキシサーバーを有効化
-    SSL_VERIFY_HOST: リモートホスト検証
-    SSL_VERIFY_HOST_HELP: SSL 証明書の検証に失敗することがあります
-    SSL_VERIFY_PEER: リモートピア検証
-    SSL_VERIFY_PEER_HELP: SSL 証明書の検証に失敗することがあります
-    STABLE: 安定版
-    STRICT_BLUEPRINT_COMPAT: ブループリント互換性
-    STRICT_BLUEPRINT_COMPAT_HELP: ブループリントの後方互換性のある厳密なサポートを有効にします。オフにすると、新しい動作では、ブループリントに定義されていない追加データがあるとフォーム検証が失敗します。
-    STRICT_TWIG_COMPAT: Twig 互換性
-    STRICT_TWIG_COMPAT_HELP: 非推奨の Twig autoescape 設定を有効にします。無効にすると、Twig が出力を自動エスケープするため、HTML を出力するには |raw フィルターが必要です
-    STRICT_YAML_COMPAT: YAML 互換性
-    STRICT_YAML_COMPAT_HELP: Native または 3.4 パーサーが失敗した場合に Symfony 2.4 YAML パーサーにフォールバックします
-    SUMMARY_SIZE: 概要サイズ
-    SUMMARY_SIZE_HELP: コンテンツ概要として使用するページの文字数
-    SUPPORTED: サポート対象
-    SUPPORTED_HELP: 2 文字の言語コードのカンマ区切りリスト（例：'en,fr,de'）
-    SYSLOG_FACILITY: Syslog ファシリティ
-    SYSLOG_FACILITY_HELP: 出力用の Syslog ファシリティ
-    SYSLOG_TAG: Syslog タグ
-    SYSLOG_TAG_HELP: 出力用の Syslog タグ
-    SYSTEM: システム
-    TAXONOMIES: タクソノミー
-    TAXONOMY: タクソノミー
-    TAXONOMY_TYPES: タクソノミータイプ
-    TAXONOMY_TYPES_HELP: ページで使用したいタクソノミータイプはここで定義する必要があります
-    TESTING: テスト
-    THUMB: サムネイル
-    TIMEOUT: タイムアウト
-    TIMEOUT_HELP: セッションのタイムアウトを秒で設定します
-    TIMEZONE: タイムゾーン
-    TIMEZONE_HELP: サーバーのデフォルトタイムゾーンを上書きします
-    TITLE: タイトル
-    TRANSLATIONS_FALLBACK: 翻訳フォールバック
-    TRANSLATIONS_FALLBACK_HELP: アクティブな言語が存在しない場合、サポートされる翻訳にフォールバックします
-    TWIG_CACHING: Twig キャッシュ
-    TWIG_CACHING_HELP: Twig キャッシュメカニズムを制御します。最高のパフォーマンスのために有効のままにしてください。
-    TWIG_DEBUG: Twig デバッグ
-    TWIG_DEBUG_HELP: Twig Debugger 拡張機能を読み込まないオプションを許可します
-    TWIG_FIRST: Twig を先に処理
-    TWIG_FIRST_HELP: Twig ページ処理を有効にしている場合、Twig を markdown の前または後に処理するかを設定できます
-    TWIG_SANDBOX: Twig サンドボックス
-    TWIG_SANDBOX_ADMIN_HINT: 管理者向けヒントコメント
-    TWIG_SANDBOX_ALLOWED_FILTERS: 許可するフィルター
-    TWIG_SANDBOX_ALLOWED_FILTERS_HELP: ページコンテンツが適用してよい Twig フィルター。
-    TWIG_SANDBOX_ALLOWED_FUNCTIONS: 許可する関数
-    TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: ページコンテンツが呼び出してよい Twig 関数。
-    TWIG_SANDBOX_ALLOWED_METHODS: 許可するメソッド
-    TWIG_SANDBOX_ALLOWED_METHODS_HELP: ページコンテンツが呼び出してよいオブジェクトメソッドのクラス別リスト。
-    TWIG_SANDBOX_ALLOWED_PROPERTIES: 許可するプロパティ
-    TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: ページコンテンツが読み取ってよいオブジェクトプロパティのクラス別リスト。
-    TWIG_SANDBOX_ALLOWED_TAGS: 許可するタグ
-    TWIG_SANDBOX_ALLOWED_TAGS_HELP: ページコンテンツが使用してよい Twig タグ。執筆者に公開したい効果を持つタグのみを追加してください。
-    TWIG_SANDBOX_CLASS: クラス
-    TWIG_SANDBOX_ENABLED: Twig サンドボックスを有効化
-    TWIG_SANDBOX_HELP: ページコンテンツのテンプレートが使用できる Twig タグ、フィルター、関数、メソッド、プロパティの許可リスト。エディターで作成されたコンテンツはこのサンドボックス経由でレンダリングされるため、侵害された作者やテンプレートインジェクションの不具合があっても広いコンテナへ到達できません。
-    TWIG_SANDBOX_LOGGING: 違反をログ
-    TWIG_SANDBOX_LOGGING_HELP: ブロックされたすべての式を <code>logs/twig-sandbox.log</code> に書き込みます。許可リストの調整時に便利です。本番ではログを静かに保つためオフにしてください。
-    TWIG_SANDBOX_METHODS: メソッド
-    TWIG_SANDBOX_PROPERTIES: プロパティ
-    TWIG_TEMPLATING: Twig テンプレーティング
-    TYPE: タイプ
-    UNPUBLISHED_DATE: 非公開日
-    UNPUBLISHED_DATE_HELP: 非公開を自動的にトリガーするための日付を指定できます。
-    UPDATE: 更新
-    UPLOADS_DANGEROUS_EXTENSIONS: 危険な拡張子
-    UPLOADS_DANGEROUS_EXTENSIONS_HELP: 受け入れる MIME タイプに関係なく、これらの拡張子のアップロードをブロックします
-    UPLOADS_SECURITY: アップロードセキュリティ
-    USE_GLOBAL: グローバルを使用
-    USERNAME: ユーザー名
-    USERNAME_HELP: ユーザー名は 3〜16 文字で、小文字、数字、アンダースコア、ハイフンを含むことができます。大文字、スペース、特殊文字は許可されません
-    USERNAME_REGEX: ユーザー名正規表現
-    USERNAME_REGEX_HELP: "デフォルト：小文字、数字、ダッシュ、アンダースコアのみ。3〜16 文字"
-    VALID_LINK_ATTRIBUTES: 有効なリンク属性
-    VALID_LINK_ATTRIBUTES_HELP: メディア HTML 要素に自動的に追加される属性
-    VARY_ACCEPT_ENCODING: Vary accept encoding
-    VARY_ACCEPT_ENCODING_HELP: "プロキシや CDN のキャッシュに役立つ `Vary: Accept Encoding` ヘッダーを設定します"
-    VERSION: バージョン
-    VISIBLE: 表示
-    VISIBLE_HELP: ページがナビゲーションに表示されるかどうかを決定します。
-    WRAPPED_SITE: ラップされたサイト
-    WRAPPED_SITE_HELP: テーマ/プラグインが Grav が別のプラットフォームによってラップされているかを知るためのもの
-    XSS_DANGEROUS_TAGS: 危険な HTML タグをフィルタ
-    XSS_DANGEROUS_TAGS_LIST: 危険な HTML タグのリスト
-    XSS_HTML_INLINE_STYLES: HTML インラインスタイルをフィルタ
-    XSS_INVALID_PROTOCOLS: 無効なプロトコルをフィルタ
-    XSS_INVALID_PROTOCOLS_LIST: 無効なプロトコルのリスト
-    XSS_MOZ_BINDINGS: Moz バインディングをフィルタ
-    XSS_ON_EVENTS: On イベントをフィルタ
-    XSS_SECURITY: コンテンツの XSS セキュリティ
-    XSS_WHITELIST_PERMISSIONS: ホワイトリスト権限
-    XSS_WHITELIST_PERMISSIONS_HELP: これらの権限を持つユーザーは、コンテンツ保存時に XSS ルールをスキップします
-    "YES": "はい"
-    YUBIKEY_HELP: YubiKey をコンピュータに挿入し、ボタンをクリックして OTP を生成してください。最初の 12 文字がクライアント ID で、これが保存されます。
-    YUBIKEY_ID: YubiKey ID
-    CACHE_CHECK_INTERVAL: キャッシュ確認間隔
-    CACHE_CHECK_INTERVAL_HELP: 再確認するまでに前回計算したファイルシステムハッシュを再利用する秒数。0 で既存のリクエストごとの確認を維持します。
-    HTTP_X_FORWARDED_HOST_ENABLED: HTTP_X_FORWARDED_HOST 有効
-    HTTP_X_FORWARDED_HOST_HELP: "<code>X-Forwarded-Host</code> リクエストヘッダーを信頼します。このヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。そうでない場合、クライアントが Grav が認識するホストを偽装できます。"
-    HTTP_X_FORWARDED_IP_ENABLED: HTTP_X_FORWARDED IP 有効
-    HTTP_X_FORWARDED_IP_HELP: "クライアント IP の解決時に <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> ヘッダーを信頼します。これらのヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。そうでない場合、クライアントが IP を偽装してレート制限、IP 禁止、監査ログを回避できます。"
-    HTTP_X_FORWARDED_PORT_ENABLED: HTTP_X_FORWARDED_PORT 有効
-    HTTP_X_FORWARDED_PORT_HELP: "<code>X-Forwarded-Port</code> リクエストヘッダーを信頼します。このヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。"
-    HTTP_X_FORWARDED_PROTO_ENABLED: HTTP_X_FORWARDED_PROTO 有効
-    HTTP_X_FORWARDED_PROTO_HELP: "<code>X-Forwarded-Proto</code> リクエストヘッダー（通常は TLS 終端プロキシの背後で HTTPS を検出するために使用）を信頼します。このヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。"
-    HTTP_CLIENT_IP_ENABLED: HTTP_CLIENT_IP 有効
-    HTTP_CLIENT_IP_HELP: "クライアント IP の解決時に <code>Client-IP</code> リクエストヘッダーを信頼します。まれで、通常は特定のロードバランサのみが設定します。プロキシがこのヘッダーを設定し上書きすると分かっていない限りはオフのままにしてください。"
-    HTTP_CF_CONNECTING_IP_ENABLED: HTTP_CF_CONNECTING_IP 有効
-    HTTP_CF_CONNECTING_IP_HELP: "クライアント IP の解決時に <code>CF-Connecting-IP</code> リクエストヘッダーを信頼します。サイトが実際に Cloudflare の背後にある場合に有効にしてください。そうでない場合、クライアントが IP を偽装できます。完全な安全のため、Web サーバーでオリジンアクセスを Cloudflare の IP 範囲に制限することもおすすめします。"
-    MARKDOWN_EXTRA: Markdown extra
-    ORDER_DIR_HELP: '"desc" または "asc" が有効な値です'
-    TWIG_3_COMPATIBILITY: Twig 3 互換性
-    TWIG_3_COMPATIBILITY_HELP: "Twig 3 で壊れるレガシー Twig 1/2 構文（例：<code>for ... if ...</code> ガード）の自動書き換えを有効にします。"
-    TWIG_SANDBOX_ADMIN_HINT_HELP: "サンドボックスが式をブロックしたとき、レンダリングされたページに 1 行の HTML コメントを追加して、ソースを見るスーパー管理者が何かフィルタされたことを確認できるようにします。訪問者や非管理者には何も表示されません。"
-    TWIG_SANDBOX_ENABLED_HELP: "エディターで作成されたページコンテンツを許可リストベースの Twig SecurityPolicy 内でレンダリングします。<strong>無効にすると、ページコンテンツ経由のテンプレートインジェクション攻撃に対する唯一の保護が解除されます</strong>：エディターレベルのアクセスを持つアカウント（またはファイルシステムを侵害した者）は誰でも Twig 経由で任意の PHP を実行できます。サイトが本当にページコンテンツからコンテナへのアクセスを必要とし、すべての作者を完全に信頼する場合にのみオフにしてください。"
-    ACCOUNTS_CONFIGURATION: アカウント設定
-    COMPATIBILITY: 互換性
-    FLEX_ADMIN_EVENT_COMPAT: 管理イベント互換性
-    FLEX_ADMIN_EVENT_COMPAT_HELP: プラグイン用に onAdminSave および onAdminAfterSave イベントを有効にします。
-    ID: ID
-    PAGE_PERMISSIONS: ページ権限
-    PAGES_CONFIGURATION: ページ設定
-    ROUTE: ルート
-    SCHEDULER_ACTIVE_TRIGGERS: アクティブなトリガー
-    SCHEDULER_ADVANCED_FEATURES: 高度な機能
-    SCHEDULER_CONCURRENT_WORKERS: 同時実行ワーカー数
-    SCHEDULER_CONCURRENT_WORKERS_HELP: 同時に実行できるジョブの数（1 = 逐次）。
-    SCHEDULER_HEALTH_CHECK_CONFIG: ヘルスチェック設定
-    SCHEDULER_HEALTH_CHECK_ENABLED: ヘルスチェックを有効化
-    SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 監視用のヘルスステータスエンドポイントを提供します。
-    SCHEDULER_HEALTH_CHECK_PATH: ヘルスチェックパス
-    SCHEDULER_HEALTH_CHECK_PATH_HELP: ヘルスチェックエンドポイントの URL パス。
-    SCHEDULER_HEALTH_STATUS: ヘルスステータス
-    SCHEDULER_HISTORY: ジョブ履歴
-    SCHEDULER_HISTORY_ENABLED: ジョブ履歴を有効化
-    SCHEDULER_HISTORY_ENABLED_HELP: すべてのジョブの実行履歴を追跡します。
-    SCHEDULER_HISTORY_RETENTION: 履歴保持期間（日）
-    SCHEDULER_HISTORY_RETENTION_HELP: ジョブ履歴を保持する期間。
-    SCHEDULER_QUEUE_CONFIG: キュー設定
-    SCHEDULER_QUEUE_MAX_SIZE: 最大キューサイズ
-    SCHEDULER_QUEUE_MAX_SIZE_HELP: キューに入れられるジョブの最大数。
-    SCHEDULER_QUEUE_PATH: キュー保存パス
-    SCHEDULER_QUEUE_PATH_HELP: キューに入ったジョブを保存する場所。
-    SCHEDULER_RETRY_BACKOFF: リトライバックオフ戦略
-    SCHEDULER_RETRY_BACKOFF_HELP: リトライ間の遅延時間の計算方法。
-    SCHEDULER_RETRY_CONFIG: リトライ設定
-    SCHEDULER_RETRY_ENABLED: ジョブリトライを有効化
-    SCHEDULER_RETRY_ENABLED_HELP: 失敗したジョブを自動的にリトライします。
-    SCHEDULER_RETRY_MAX_ATTEMPTS: 最大リトライ回数
-    SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 失敗したジョブをリトライする最大回数。
-    SCHEDULER_USAGE_EXAMPLES: 使用例
-    SCHEDULER_WEBHOOK_CONFIG: Webhook 設定
-    SCHEDULER_WEBHOOK_ENABLED: Webhook トリガーを有効化
-    SCHEDULER_WEBHOOK_ENABLED_HELP: HTTP Webhook 経由でスケジューラをトリガーすることを許可します。
-    SCHEDULER_WEBHOOK_PATH: Webhook パス
-    SCHEDULER_WEBHOOK_PATH_HELP: Webhook エンドポイントの URL パス。
-    SCHEDULER_WEBHOOK_TOKEN: Webhook セキュリティトークン
-    SCHEDULER_WEBHOOK_TOKEN_HELP: Webhook リクエストを認証するシークレットトークン。これは秘密にしてください！
-    SCHEDULER_WORKER_CONFIG: ワーカー設定
-    TRANSLATIONS: 翻訳
-    USER_ACCOUNTS: ユーザーアカウント
-    TWIG_CONTENT: コンテンツ内の Twig
-    TWIG_CONTENT_HELP: ページコンテンツに埋め込まれたエディター作成の Twig に対する制御。ディスク上のテーマテンプレートはこれらの設定の影響を受けません。ページ本文やフロントマターに作者が入れた Twig のみに適用されます。
-    TWIG_CONTENT_PROCESS_ENABLED: コンテンツ内の Twig を有効化
-    TWIG_CONTENT_PROCESS_ENABLED_HELP: "フロントマターに <code>process: twig: true</code> を持つページ（およびサイト全体の <code>system.pages.frontmatter.process_twig</code> オプトイン）が実際に Twig を実行できるようにします。<strong>Grav 2.0 ではデフォルトでオフ。</strong>無効のままにするとテンプレートインジェクションの攻撃面が減りますが、本文に Twig を必要とするページは壊れます。"
-    TWIG_CONTENT_EDITOR_ENABLED: エディターがコンテンツ内 Twig を切り替えることを許可
-    TWIG_CONTENT_EDITOR_ENABLED_HELP: "オフ（デフォルト）の場合、ページエディターの Advanced タブの Twig チェックボックスは <code>admin.pages_twig</code> 権限を付与されたユーザーにのみ表示され、既に Twig が有効になっているページもそれらのユーザーのみが編集できます。オンの場合、ページ編集アクセスを持つ誰もが個別のページで Twig を切り替えできます。"
-    TWIG_CONTENT_CONFIG_ACCESS: Twig での config 変数アクセスを許可
-    TWIG_CONTENT_CONFIG_ACCESS_HELP: "ページコンテンツから <code>config</code> Twig 変数が読み取り可能かどうか。オフ（デフォルト）の場合、ページから <code>config.system.title</code> を読み取っても何も返されません。オンの場合、<code>config</code> は公開されますが、引き続き <code>config_denied_paths</code>（下の Twig サンドボックスを参照）でフィルタリングされ、認証情報やその他の機密サブツリーは隠されたままになります。"
-    TOASTS:
-      CONFIG_SAVED: "{name} の設定を保存しました"
-      CONFIG_MODIFIED_ELSEWHERE: 設定が別の場所で変更されました — 再読み込みして最新を確認してください
-      SAVE_FAILED: 保存に失敗しました
-      DEPENDENCY_INSTALLED: "プラグイン {slug} をインストールしました（依存関係）"
-      PACKAGE_UPDATED: "{name} を更新しました"
-      PACKAGE_UPDATE_FAILED: "{name} の更新に失敗しました：{detail}"
-      PACKAGE_REMOVED: "{name} を削除しました"
-      PACKAGE_REMOVE_FAILED: "{name} の削除に失敗しました"
-      PACKAGES_UPDATED: "{n, plural, one{# 個のパッケージを更新しました} other{# 個のパッケージを更新しました}}"
-      UPDATE_FAILED: "更新に失敗しました：{detail}"
-      PLUGIN_ENABLED: "{name} を有効化しました"
-      PLUGIN_DISABLED: "{name} を無効化しました"
-      PLUGIN_ENABLE_FAILED: "{name} の有効化に失敗しました：{detail}"
-      PLUGIN_DISABLE_FAILED: "{name} の無効化に失敗しました：{detail}"
-      PLUGIN_LOCKOUT_BLOCK: "{name} は admin-next から無効化できません — ロックアウトされます。"
-      PLUGIN_REQUIRED_BLOCK: "{name} は削除できません — admin-next が必要としています。"
-      THEME_ACTIVATED: "{name} がアクティブテーマになりました"
-      THEME_ACTIVATE_FAILED: "{name} の有効化に失敗しました"
-      THEME_REMOVE_BLOCK: "{name} は削除できません。"
-      ACTIVE_THEME_REMOVE_BLOCK: "アクティブテーマは削除できません。先に別のテーマに切り替えてください。"
-      GPM_REFRESHED: "{n, plural, =0{GPM を更新しました — 利用可能な更新はありません} one{GPM を更新しました — # 件の更新が利用可能です} other{GPM を更新しました — # 件の更新が利用可能です}}"
-      GRAV_UPGRADED: "Grav を v{version} にアップグレードしました"
-      BACKUP_CREATED: "バックアップを作成しました（{size}）"
-      CACHE_CLEARED: "キャッシュをクリアしました（{scope}）"
-      FILES_UPLOADED: "{n, plural, one{# 個のファイルをアップロードしました} other{# 個のファイルをアップロードしました}}"
-      FOLDER_CREATED: 'フォルダー「{name}」を作成しました'
-      FILE_DELETED: "{name} を削除しました"
-      FILE_DELETE_FAILED: "{name} の削除に失敗しました"
-      FILES_DELETE_FAILED: "{n, plural, one{# 個のファイルの削除に失敗しました} other{# 個のファイルの削除に失敗しました}}"
-      COPIED: "{label} をコピーしました"
-      COPY_FAILED: "コピーに失敗しました：{detail}"
-      SAVED_AS_LANGUAGE: "{language} として保存しました"
-      TRANSLATION_CREATED: "{language} の翻訳を作成しました"
-      TRANSLATION_RESET: "{target} を {source} からリセットしました"
-      SAVED: 保存しました
-      ITEM_SAVED: "{name} を保存しました"
-      ITEM_DELETED: '「{name}」を削除しました'
-      ITEM_DELETE_FAILED: '「{name}」の削除に失敗しました'
-      ITEM_COPIED: '「{name}」を「{target}」へコピーしました'
-      ITEM_MOVED: '「{name}」を移動しました'
-      ITEM_REORDERED: '「{name}」を並び替えました'
-      USER_CREATED: "ユーザー {username} を作成しました"
-      USER_SAVED: "ユーザー {username} を保存しました"
-      USER_DELETED: "ユーザー {username} を削除しました"
-      USER_DELETE_FAILED: "ユーザー {username} の削除に失敗しました"
-      API_KEY_REVOKED: 'API キー「{name}」を取り消しました'
-      PLUGIN_INSTALLED: "プラグイン {name} をインストールしました"
-      THEME_INSTALLED: "テーマ {name} をインストールしました"
-      INSTALL_FAILED: "{slug} のインストールに失敗しました：{detail}"
-      TOTP_CODE_REQUIRED: 認証アプリの 6 桁コードを入力してください
-      SAVE_FORM_FAILED: "{form} の保存に失敗しました"
-      FORM_LABEL:
-        FORM: フォーム
+        ACCOUNTS: アカウント
+        ACCOUNTS_STORAGE: アカウントストレージ
+        ACCOUNTS_STORAGE_HELP: 'Flex Object Account タイプに使用するストレージ方式。Files は従来のアプローチで、アカウントを 1 つのフォルダー内の YAML ファイルに保存します。Folder は各アカウントごとに新しいフォルダーを作成します。'
+        ACCOUNTS_TYPE: アカウントタイプ
+        ACCOUNTS_TYPE_HELP: 'ユーザーアカウントを保存する Flex Object システム'
+        ACTIVE_LANGUAGE_IN_SESSION: セッション内のアクティブ言語
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: アクティブな言語をセッションに保存する
+        ADD: 追加
+        ADD_ACCOUNT: アカウントを追加
+        ADMIN_CHILDREN_DISPLAY_ORDER: 子ページの表示順
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: 'Admin プラグインの「ページ」ビューで、このページの子ページが表示される順序'
+        ADMIN_SPECIFIC_OVERRIDES: 管理画面固有の上書き
+        ADVANCED: 詳細設定
+        ALLOW_URL_TAXONOMY_FILTERS: 'URL タクソノミーフィルター'
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: 'ページベースのコレクションを `/taxonomy:value` でフィルタリングできるようにします。'
+        ALLOW_WEBSERVER_GZIP: 'WebServer Gzip を許可'
+        ALLOW_WEBSERVER_GZIP_HELP: 'デフォルトはオフ。有効にすると WebServer 設定の Gzip/Deflate 圧縮が動作しますが、onShutDown() イベント前に HTTP 接続が閉じられず、ページ読み込みが遅くなります'
+        APPEND_URL_EXT: 'URL 拡張子を追加'
+        APPEND_URL_EXT_HELP: 'ページの URL にカスタム拡張子を追加します。これにより、Grav は `<template>.<extension>.twig` テンプレートを探すようになります'
+        ASCENDING: 昇順
+        ASSETS: アセット
+        AUTO: 自動
+        AUTO_LINE_BREAKS: 自動改行
+        AUTO_LINE_BREAKS_HELP: 'markdown での自動改行サポートを有効にする'
+        AUTO_URL_LINKS: 'URL 自動リンク'
+        AUTO_URL_LINKS_HELP: 'URL を HTML ハイパーリンクへ自動変換することを有効にする'
+        AUTOESCAPE_VARIABLES: 変数の自動エスケープ
+        AUTOESCAPE_VARIABLES_HELP: すべての変数を自動エスケープします。多くの場合、サイトが壊れます
+        AVATAR: アバタージェネレーター
+        AVATAR_HASH: "注：オプションのアバターカスタム 'hash' 文字列"
+        AVATAR_HELP: 'Multiavatar はローカルで生成されるアバターです。Gravatar は外部サービスで、メールアドレスを使って事前設定されたアバターをリモートから取得します'
+        BACK: 戻る
+        BACKUPS: バックアップ
+        BACKUPS_HISTORY: バックアップ履歴
+        BACKUPS_MAX_COUNT: バックアップの最大数
+        BACKUPS_MAX_RETENTION_TIME: 最大保持期間
+        BACKUPS_MAX_RETENTION_TIME_APPEND: 日
+        BACKUPS_MAX_SPACE: バックアップの最大容量
+        BACKUPS_PROFILE_ENVIRONMENT: 環境
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: 'スケジュールバックアップが実行される Grav 環境コンテキスト。'
+        BACKUPS_PROFILE_EXCLUDE_FILES: 除外ファイル
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: '除外する個別のファイルまたはフォルダー、1 行に 1 つ'
+        BACKUPS_PROFILE_EXCLUDE_PATHS: 除外パス
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: '除外する絶対パス、1 行に 1 つ'
+        BACKUPS_PROFILE_NAME: バックアップ名
+        BACKUPS_PROFILE_ROOT_FOLDER: ルートフォルダー
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: 絶対パスまたはストリームを指定できます
+        BACKUPS_PROFILE_SCHEDULE: スケジュールジョブを有効化
+        BACKUPS_PROFILE_SCHEDULE_AT: スケジュールジョブを実行
+        BACKUPS_PROFILES: バックアッププロファイル
+        BACKUPS_PURGE_CONFIG: バックアップ削除設定
+        BACKUPS_STORAGE_PURGE_TRIGGER: バックアップストレージ削除トリガー
+        BODY_CLASSES: ボディクラス
+        CACHE_ALL: すべての画像をキャッシュ
+        CACHE_ALL_HELP: 'メディア操作が含まれていなくても、すべての画像を Grav のキャッシュシステムを通します'
+        CACHE_CHECK_METHOD: キャッシュ確認方式
+        CACHE_CHECK_METHOD_HELP: 'Grav がページファイルの変更を確認する方式を選択します。'
+        CACHE_CLEAR_JOB: スケジュールクリアジョブを実行
+        CACHE_CLEAR_JOB_HELP: 'スケジューラを使って Grav のキャッシュを定期的にクリアできます'
+        CACHE_CONTROL: 'HTTP Cache-Control'
+        CACHE_CONTROL_HELP: '`no-cache, no-store, must-revalidate` のような有効な cache-control 値に設定します'
+        CACHE_DRIVER: キャッシュドライバ
+        CACHE_DRIVER_HELP: 'Grav が使用するキャッシュドライバを選択します。「自動検出」は最適なものを自動で見つけます'
+        CACHE_JOB_TYPE: キャッシュジョブタイプ
+        CACHE_JOB_TYPE_HELP: 「standard」フォルダーキャッシュクリア、または「all」フォルダーのいずれかでクリアします
+        CACHE_PERMS: キャッシュパーミッション
+        CACHE_PERMS_HELP: 'デフォルトのキャッシュフォルダーパーミッション。通常は環境に応じて 0755 または 0775'
+        CACHE_PREFIX: キャッシュプレフィックス
+        CACHE_PREFIX_HELP: 'Grav キーの一部の識別子。何をしているか分からない場合は変更しないでください。'
+        CACHE_PREFIX_PLACEHOLDER: 'ベース URL から導出（ランダム文字列を入力して上書き）'
+        CACHE_PURGE_AGE: キャッシュ削除期間
+        CACHE_PURGE_AGE_HELP: この期間（秒）より古いすべてのキャッシュ項目を削除します
+        CACHE_PURGE_JOB: スケジュール削除ジョブを実行
+        CACHE_PURGE_JOB_HELP: 'このジョブで、古い Doctrine ファイルキャッシュフォルダーをスケジューラで定期的に削除できます'
+        CACHING: キャッシュ
+        CACHING_HELP: 'Grav のキャッシュを有効/無効にするグローバル ON/OFF スイッチ'
+        CHARACTERS: 文字
+        CLEAR_IMAGES_BY_DEFAULT: デフォルトで画像キャッシュをクリア
+        CLEAR_IMAGES_BY_DEFAULT_HELP: デフォルトでは、処理済み画像はすべてのキャッシュクリアでクリアされますが、これを無効化できます
+        CLI_COMPATIBILITY: 'CLI 互換性'
+        CLI_COMPATIBILITY_HELP: '非揮発性のキャッシュドライバ（file、redis、memcache など）のみが使用されることを保証します'
+        COLLECTIONS: コレクション
+        COMMAND: コマンド
         CONFIGURATION: 設定
-        PLUGIN: プラグイン
-        PLUGIN_PAGE: プラグインページ
-        FLEX_OBJECT: Flex Object
-        USER: ユーザー
-        THEME: テーマ
+        CONTENT: コンテンツ
+        CONTENT_EDITOR: コンテンツエディター
+        CONTENT_EDITOR_HELP: コンテンツ編集にカスタムエディターを優先できます
+        CONTENT_FALLBACK_LANGUAGE_HELP: カスタマイズしたい言語コードを指定してください。
+        CONTENT_LANGUAGE_FALLBACK: フォールバック言語
+        CONTENT_LANGUAGE_FALLBACK_HELP: 言語コードのリストを入力してください。デフォルトの言語コードを省略した場合、それは使用されないことに注意してください。
+        CONTENT_LANGUAGE_FALLBACKS: コンテンツ言語フォールバック
+        CONTENT_LANGUAGE_FALLBACKS_HELP: 'デフォルトでは、コンテンツが翻訳されていない場合、Grav はデフォルト言語のコンテンツを表示します。この設定を使用して、言語ごとにその動作を上書きしてください。'
+        COPY: コピー
+        CREATE: 作成
+        CSS_ASSETS: 'CSS アセット'
+        CSS_MINIFY: 'CSS minify'
+        CSS_MINIFY_HELP: 'パイプライン中に CSS を minify します'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'CSS minify Windows 上書き'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Windows プラットフォーム用の minify 上書き。ThreadStackSize のためデフォルトでは false'
+        CSS_PIPELINE: 'CSS パイプライン'
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'CSS パイプラインを先にレンダー'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: '含まれない他の CSS 参照の前に CSS パイプラインをレンダーします'
+        CSS_PIPELINE_HELP: 'CSS パイプラインは複数の CSS リソースを 1 つのファイルに統合します'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: 'CSS パイプラインに外部を含める'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: '外部 URL は相対ファイル参照を持つ場合があり、パイプライン化すべきではありません'
+        CSS_REWRITE: 'CSS rewrite'
+        CSS_REWRITE_HELP: 'パイプライン中に CSS の相対 URL を書き換えます'
+        CURL: cURL
+        CUSTOM_BASE_URL: 'カスタムベース URL'
+        CUSTOM_BASE_URL_HELP: 'Grav が使用するものとは別のサイトドメインやサブフォルダーを書き換えたい場合に使用します。例: http://localhost'
+        CUSTOM_REDIRECTS: カスタムリダイレクト
+        CUSTOM_REDIRECTS_HELP: 他のページにリダイレクトするためのルート。標準的な正規表現置換が有効です
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+        CUSTOM_ROUTES: カスタムルート
+        CUSTOM_ROUTES_HELP: 他のページのエイリアスとして使用するルート。標準的な正規表現置換が有効です
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+        DATE: 日付
+        DATE_BASED_PUBLISHING: 日付ベースの公開
+        DATE_BASED_PUBLISHING_HELP: 日付に基づいて投稿を自動的に（非）公開する
+        DATE_HELP: 'date 変数を使用すると、このページに関連付ける日付を明示的に設定できます。'
+        DEBUGGER: デバッガー
+        DEBUGGER_CENSORED: 機密データを伏字化
+        DEBUGGER_CENSORED_HELP: 'Clockwork プロバイダーのみ：Yes の場合、機密性の高い情報（POST パラメータ、Cookie、ファイル、設定、ログメッセージ内のほとんどの配列/オブジェクトデータ）を伏字化します'
+        DEBUGGER_CLOCKWORK: 'Clockwork ブラウザ拡張機能'
+        DEBUGGER_DEBUGBAR: 'PHP Debug Bar'
+        DEBUGGER_HELP: 'Grav デバッガーと以下の設定を有効にします'
+        DEBUGGER_PROVIDER: デバッガープロバイダー
+        DEBUGGER_PROVIDER_HELP: 'デフォルトは PHP Debug Bar ですが、Clockwork ブラウザ拡張機能はより邪魔にならないアプローチを提供します'
+        DEFAULT: デフォルト
+        DEFAULT_AUTHOR: デフォルト作者
+        DEFAULT_AUTHOR_HELP: デフォルトの作者名。テーマやページコンテンツでよく使用されます
+        DEFAULT_CHILD_TYPE: デフォルトの子タイプ
+        DEFAULT_DATE_FORMAT: ページ日付フォーマット
+        DEFAULT_DATE_FORMAT_HELP: 'Grav が使用するページの日付フォーマット。デフォルトでは Grav が日付フォーマットを自動推測しますが、PHP の date 構文を使ってフォーマットを指定できます（例: Y-m-d H:i）'
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: 自動推測
+        DEFAULT_EMAIL: デフォルトメール
+        DEFAULT_EMAIL_HELP: テーマやページで参照するデフォルトのメールアドレス
+        DEFAULT_IMAGE_QUALITY: デフォルト画像品質
+        DEFAULT_IMAGE_QUALITY_HELP: 画像をリサンプリングまたはキャッシュする際に使用するデフォルトの画像品質（85%）
+        DEFAULT_LANG: デフォルト言語の上書き
+        DEFAULT_LANG_HELP: デフォルトでは最初にサポートされる言語が使用されます。このオプションで上書きできますが、サポート対象の言語のいずれかである必要があります
+        DEFAULT_ORDER_DIRECTION: デフォルトの並び順方向
+        DEFAULT_ORDER_DIRECTION_HELP: リスト内のページの方向
+        DEFAULT_ORDERING: デフォルトの並び順
+        DEFAULT_ORDERING_DATE: '日付 - ヘッダーの date フィールドに基づく'
+        DEFAULT_ORDERING_DEFAULT: 'デフォルト - フォルダー名に基づく'
+        DEFAULT_ORDERING_FOLDER: 'フォルダー - プレフィックスを除いたフォルダー名に基づく'
+        DEFAULT_ORDERING_HELP: リスト内のページは、上書きされない限りこの順序でレンダリングされます
+        DEFAULT_ORDERING_TITLE: 'タイトル - ヘッダーの title フィールドに基づく'
+        DEFAULT_PAGE_COUNT: デフォルトページ数
+        DEFAULT_PAGE_COUNT_HELP: リスト内のデフォルトの最大ページ数
+        DEFAULT_THEME: デフォルトテーマ
+        DEFAULT_THEME_HELP: 'Grav が使用するデフォルトテーマを設定します（デフォルトは Antimatter）'
+        DEFAULTS: デフォルト
+        DELETE: 削除
+        DELIMITER: デリミタ
+        DELIMITER_HELP: "概要のデリミタ（デフォルト '==='）"
+        DESCENDING: 降順
+        DESCRIPTION: 説明
+        DETAILS: 詳細
+        DETECT_CHANGES: 変更検出
+        DETECT_CHANGES_HELP: 'Twig はテンプレートの変更を検出すると自動的に Twig キャッシュを再コンパイルします'
+        DISABLED: 無効
+        DISPLAY_ERRORS: エラーを表示
+        DISPLAY_ERRORS_HELP: 完全なバックトレース形式のエラーページを表示します
+        DISPLAY_NAME: 表示名
+        DISPLAY_TEMPLATE: 表示テンプレート
+        EMAIL: メールアドレス
+        EMAIL_VALIDATION_MESSAGE: 有効なメールアドレスである必要があります
+        ENABLE_AUTO_METADATA: 'Exif から自動メタデータ'
+        ENABLE_AUTO_METADATA_HELP: 'exif 情報を持つ画像のメタデータファイルを自動生成します'
+        ENABLE_MEDIA_TIMESTAMP: メディアのタイムスタンプを有効化
+        ENABLE_MEDIA_TIMESTAMP_HELP: 各メディアアイテムの末尾に最終更新日に基づくタイムスタンプを追加します
+        ENABLED: 有効
+        ENABLED_HELP: ページ概要を有効化（概要はページコンテンツと同じものを返します）
+        ENABLED_SRI_ON_ASSETS: 'アセットの SRI を有効化'
+        ENABLED_SRI_ON_ASSETS_HELP: 'アセット SRI を有効にする'
+        ENABLED_TIMESTAMPS_ON_ASSETS: アセットのタイムスタンプを有効化
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: アセットのタイムスタンプを有効にする
+        ERROR_FULL_BACKTRACE: 完全バックトレースエラー
+        ERROR_HANDLER: エラーハンドラ
+        ERROR_SIMPLE: シンプルエラー
+        ERROR_SYSTEM: システムエラー
+        ESCAPE_MARKUP: マークアップをエスケープ
+        ESCAPE_MARKUP_HELP: 'マークアップタグを HTML エンティティへエスケープします'
+        ETAG: ETag
+        ETAG_HELP: 'etag ヘッダーを設定して、ページが変更されたタイミングの識別を助けます'
+        EVENTS: イベント
+        EVENTS_HELP: 特定のイベントを有効または無効にします。これらを無効にするとプラグインが壊れる場合があります
+        EXPERIMENTAL: 実験的機能
+        EXPIRES: 有効期限
+        EXPIRES_HELP: 'expires ヘッダーを設定します。値は秒単位です。'
+        EXTERNAL: 外部ページ
+        EXTERNAL_URL: '外部 URL'
+        EXTRA_ARGUMENTS: 追加引数
+        FALLBACK_TYPES: 許可するフォールバックタイプ
+        FALLBACK_TYPES_HELP: ページルート経由でアクセスされる場合に検出可能なファイルタイプ。デフォルトはサポートされる任意のメディアタイプ。
+        FILE: ファイル
+        FILE_EXTENSION: ファイル拡張子
+        FILE_STREAMS: ファイルストリーム
+        FLEX: 'Flex Object（実験的）'
+        FLEX_CACHING: 'Flex キャッシュ'
+        FLEX_INDEX_CACHE_ENABLED: インデックスキャッシュを有効化
+        FLEX_INDEX_CACHE_LIFETIME: インデックスキャッシュ有効時間（秒）
+        FLEX_OBJECT_CACHE_ENABLED: オブジェクトキャッシュを有効化
+        FLEX_OBJECT_CACHE_LIFETIME: オブジェクトキャッシュ有効時間（秒）
+        FLEX_RENDER_CACHE_ENABLED: レンダーキャッシュを有効化
+        FLEX_RENDER_CACHE_LIFETIME: レンダーキャッシュ有効時間（秒）
+        FOLDER: フォルダー
+        FOLDER_NAME: フォルダー名
+        FOLDER_NUMERIC_PREFIX: フォルダー数値プレフィックス
+        FOLDER_NUMERIC_PREFIX_HELP: 手動の並び順を提供し、表示状態を暗黙的に示す数値プレフィックス
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: 'URL を強制的に小文字化'
+        FORCE_LOWERCASE_URLS_HELP: 'デフォルトでは Grav はすべてのスラッグとルートを小文字に設定します。これを false にすると、大文字を含むスラッグやルートが使用できます'
+        FORCE_SSL: 'SSL を強制'
+        FORCE_SSL_HELP: 'SSL をグローバルに強制します。有効な場合、サイトに HTTP でアクセスされると Grav は HTTPS ページへのリダイレクトを送信します'
+        FORMAT: フォーマット
+        FORMAT_HELP: 'short = 最初のデリミタまたはサイズの出現を使用、long = 概要デリミタは無視されます'
+        FRONTMATTER_IGNORE_FIELDS: フロントマターフィールドを無視
+        FRONTMATTER_IGNORE_FIELDS_HELP: "'forms' のように、Twig を含む可能性があるが処理してはならないフロントマターフィールド"
+        FRONTMATTER_PROCESS_TWIG: 'フロントマターの Twig を処理'
+        FRONTMATTER_PROCESS_TWIG_HELP: '有効にすると、ページのフロントマターで Twig の設定変数を使用できます'
+        FULL_NAME: フルネーム
+        GENERAL_CONFIG: 一般アセット設定
+        GPM_METHOD: リモート取得方式
+        GPM_METHOD_HELP: 'Auto に設定すると、Grav は fopen が利用可能かを判断して使用し、利用できない場合は cURL にフォールバックします。どちらかの使用を強制するには設定を切り替えてください。'
+        GPM_OFFICIAL_ONLY: '公式 GPM のみ'
+        GPM_OFFICIAL_ONLY_HELP: '公式 GPM リポジトリからの直接インストールのみを許可します。'
+        GPM_RELEASES: 'GPM リリース'
+        GPM_RELEASES_HELP: ベータまたはテストバージョンをインストールするには「Testing」を選択
+        GPM_SECTION: 'GPM セクション'
+        GROUP_NAME: グループ名
+        GROUPS: グループ
+        GROUPS_HELP: ユーザーが所属するグループのリスト
+        GZIP_COMPRESSION: 'Gzip 圧縮'
+        GZIP_COMPRESSION_HELP: 'パフォーマンス向上のため、Grav ページの GZip 圧縮を有効化します。'
+        HIDE_EMPTY_FOLDERS: 空フォルダーを非表示
+        HIDE_EMPTY_FOLDERS_HELP: 'フォルダーに .md ファイルがない場合、ナビゲーションで非表示にしてルーティング不可にするかどうか'
+        HIDE_HOME_IN_URLS: 'URL でホームルートを非表示'
+        HIDE_HOME_IN_URLS_HELP: 'home 配下のページのデフォルトルートが home の通常ルートを参照しないようにします'
+        HOME_PAGE: ホームページ
+        HOME_PAGE_HELP: 'Grav がデフォルトのランディングページとして使用するページ'
+        HTTP_ACCEPT_LANGUAGE: ブラウザから言語を設定
+        HTTP_ACCEPT_LANGUAGE_HELP: 'ブラウザの `http_accept_language` ヘッダータグに基づいて言語を設定することを試みるオプションです'
+        HTTP_CONNECTIONS: 'HTTP 接続数'
+        HTTP_CONNECTIONS_HELP: '多重化リクエスト中の同時 HTTP 接続数'
+        HTTP_HEADERS: 'HTTP ヘッダー'
+        HTTP_SECTION: 'HTTP セクション'
+        ICON: アイコン
+        IGNORE_FILES: ファイルを無視
+        IGNORE_FILES_HELP: ページ処理時に無視する特定のファイル
+        IGNORE_FOLDERS: フォルダーを無視
+        IGNORE_FOLDERS_HELP: ページ処理時に無視する特定のフォルダー
+        IGNORE_HIDDEN: 隠しファイルを無視
+        IGNORE_HIDDEN_HELP: ドットで始まるすべてのファイルとフォルダーを無視します
+        IMAGE_ADAPTER: 画像アダプター
+        IMAGE_ADAPTER_HELP: 画像操作に使用するアダプター。デフォルトは「GD」、もう一つの選択肢として「Imagick」があります
+        IMAGE_OPTIONS: 画像オプション
+        IMAGES_AUTO_FIX_ORIENTATION: 向きを自動修正
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: 'Exif データに基づいて画像の向きを自動修正します'
+        IMAGES_CLS_ASPECT_RATIO: アスペクト比を有効化
+        IMAGES_CLS_ASPECT_RATIO_HELP: "オプションの CSS 変数で、'style' 属性で適用され、CSS でのカスタムスタイリングに使用できます"
+        IMAGES_CLS_AUTO_SIZES: 自動サイズを有効化
+        IMAGES_CLS_AUTO_SIZES_HELP: "CLS 対策のため、画像に 'width' および 'height' 属性を自動追加します"
+        IMAGES_CLS_RETINA_SCALE: 'Retina スケール係数'
+        IMAGES_CLS_RETINA_SCALE_HELP: '計算されたサイズをスケール係数で割って、HiDPI 解像度をより適切に扱うために、より高解像度の画像を小さなピクセルサイズで表示します'
+        IMAGES_CLS_TITLE: 'Cumulative Layout Shift (CLS)'
+        IMAGES_DEBUG: 画像デバッグウォーターマーク
+        IMAGES_DEBUG_HELP: 'たとえば retina 利用時に画像のピクセル深度を示すオーバーレイを画像上に表示します'
+        IMAGES_DECODING: 画像デコード動作
+        IMAGES_DECODING_HELP: 'decoding 属性により、ブラウザはユーザーが近づくまで画面外の画像のデコードを遅延できます。decoding は 3 つの値をサポートします: auto、sync、async'
+        IMAGES_FETCHPRIORITY: '画像 Fetchpriority プロパティ'
+        IMAGES_FETCHPRIORITY_HELP: 'HTML の fetchpriority プロパティは、画像や iframe などの特定のリソースの読み込み優先度を指定して、パフォーマンスを最適化する属性です。可能な値は high、low、auto です。'
+        IMAGES_LOADING: 画像読み込み動作
+        IMAGES_LOADING_HELP: 'loading 属性により、ブラウザはユーザーが近づくまで画面外の画像や iframe の読み込みを遅延できます。loading は 3 つの値をサポートします: auto、lazy、eager'
+        IMAGES_SEOFRIENDLY: 'SEO フレンドリーな画像名'
+        IMAGES_SEOFRIENDLY_HELP: 有効な場合、画像名が最初に表示され、その後に処理操作を反映する小さなハッシュが続きます
+        INCLUDE_DEFAULT_LANG: デフォルト言語を含める
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: ファイル拡張子にデフォルト言語を含める
+        INCLUDE_DEFAULT_LANG_HELP: 'デフォルト言語のすべての URL の先頭にデフォルト言語を付加します。例：`/en/blog/my-post`'
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: '有効な場合、ファイル拡張子の前にデフォルト言語を付加します（例：`.en.md`）。無効にすると、デフォルト言語は `.md` ファイル拡張子のままになります。'
+        INLINE_TYPES: インラインフォールバックタイプ
+        INLINE_TYPES_HELP: ダウンロードではなくインラインで表示するファイルタイプのリスト
+        INTL_ENABLED: 'Intl モジュール統合'
+        INTL_ENABLED_HELP: 'Intl PHP モジュールと collate を使用して UTF8 ベースのコレクションをソートします'
+        ITEMS: アイテム
+        JAVASCRIPT_MINIFY: 'JavaScript minify'
+        JAVASCRIPT_MINIFY_HELP: 'パイプライン中に JS を minify します'
+        JAVASCRIPT_MODULE_PIPELINE: 'JavaScript Module パイプライン'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'JS Module パイプラインを先にレンダー'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: '含まれない他の JS 参照の前に JS パイプラインをレンダーします'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'JS Module パイプラインは複数の JS リソースを 1 つのファイルに統合します'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: 'JS Module パイプラインに外部を含める'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: '外部 URL は相対ファイル参照を持つ場合があり、パイプライン化すべきではありません'
+        JAVASCRIPT_PIPELINE: 'JavaScript パイプライン'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'JS パイプラインを先にレンダー'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: '含まれない他の JS 参照の前に JS パイプラインをレンダーします'
+        JAVASCRIPT_PIPELINE_HELP: 'JS パイプラインは複数の JS リソースを 1 つのファイルに統合します'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: 'JS パイプラインに外部を含める'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: '外部 URL は相対ファイル参照を持つ場合があり、パイプライン化すべきではありません'
+        JS_ASSETS: 'JavaScript アセット'
+        JS_MODULE_ASSETS: 'JavaScript Module アセット'
+        LANGUAGE: 言語
+        LANGUAGE_DEBUG: 言語デバッグ
+        LANGUAGE_DEBUG_HELP: '|t twig フィルターを使用している言語のデバッグを有効にし、問題診断を助けるためにスタイル可能な span で囲みます'
+        LANGUAGE_HELP: お気に入りの言語を設定します
+        LANGUAGE_TRANSLATIONS: 翻訳
+        LANGUAGE_TRANSLATIONS_HELP: 'false の場合、翻訳された文字列の代わりに翻訳キーが使用されます。この機能は、不適切な翻訳の修正やハードコーディングされた英語の文字列を見つけるのに役立ちます。'
+        LANGUAGES: 言語
+        LAST_MODIFIED: 最終更新
+        LAST_MODIFIED_HELP: 最終更新ヘッダーを設定し、プロキシやブラウザキャッシュの最適化に役立てます
+        LIFETIME: 有効時間
+        LIFETIME_HELP: 'キャッシュ有効時間を秒で設定します。0 = 無限'
+        LIST: リスト
+        LOG_ERRORS: エラーをログ
+        LOG_ERRORS_HELP: 'エラーを /logs フォルダーにログ出力します'
+        LOG_HANDLER: ログハンドラ
+        LOG_HANDLER_HELP: ログを出力する場所
+        LONG: ロング
+        LONG_DATE_FORMAT: 長い表示日付フォーマット
+        LONG_DATE_FORMAT_HELP: テーマで使用できる長い日付フォーマットを設定します
+        MARKDOWN: Markdown
+        MARKDOWN_EXTRA_HELP: 'Markdown Extra のデフォルトサポートを有効化 - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA: メディア
+        MEDIA_TYPES: メディアタイプ
+        MEMCACHED_PORT: 'Memcached ポート'
+        MEMCACHED_PORT_HELP: 'Memcached サーバーのポート'
+        MEMCACHED_SERVER: 'Memcached サーバー'
+        MEMCACHED_SERVER_HELP: 'Memcached サーバーのアドレス'
+        MENU: メニュー
+        MENU_HELP: 'メニューで使用される文字列。設定されていない場合は Title が使用されます。'
+        METADATA: メタデータ
+        METADATA_HELP: ページで上書きされない限り、すべてのページに表示されるデフォルトのメタデータ値
+        METADATA_KEY: "キー（例：'Keywords'）"
+        METADATA_VALUE: "値（例：'Blog, Grav'）"
+        MIME_TYPE: 'MIME タイプ'
+        MISC_SECTION: その他のセクション
+        MODULE: モジュール
+        MODULE_SETUP: モジュールセットアップ
+        MOVE: 移動
+        NAME: 名前
+        NEVER_CACHE_TWIG: 'Twig をキャッシュしない'
+        NEVER_CACHE_TWIG_HELP: 'コンテンツのみをキャッシュし、ページの Twig を毎回処理します。twig_first 設定を無視します。'
+        'NO': いいえ
+        OPTIONS: オプション
+        ORDER: 順序
+        ORDER_BY: 並び替え基準
+        ORDER_DIGITS: 順序桁数
+        ORDER_DIGITS_HELP: 並び順のためにフォルダー名の先頭に付ける桁数（例：`01.about`、`001.about`）。
+        ORDERING: 順序
+        OVERRIDE_LOCALE: ロケールを上書き
+        OVERRIDE_LOCALE_HELP: '現在の言語に基づいて PHP のロケール設定を上書きします'
+        OVERRIDES: 上書き
         PAGE: ページ
+        PAGE_ACCESS: ページアクセス
+        PAGE_ACCESS_HELP: 以下のアクセス権限を持つユーザーがページにアクセスできます。
+        PAGE_AUTHORS: ページ作者
+        PAGE_AUTHORS_HELP: "ページ作者のメンバーは、特別な 'Authors' ページグループで定義された、このページに対するオーナーレベルのアクセスを持ちます。"
+        PAGE_FILE: ページテンプレート
+        PAGE_FILE_HELP: ページテンプレートのファイル名で、デフォルトではこのページの表示テンプレート
+        PAGE_GROUPS: ページグループ
+        PAGE_GROUPS_HELP: ページグループのメンバーは、このページに対して特別なアクセスを持ちます。
+        PAGE_INHERIT_PERMISSIONS: 権限を継承
+        PAGE_INHERIT_PERMISSIONS_HELP: '親ページから ACL を継承します。'
+        PAGE_MEDIA: ページメディア
+        PAGE_SUMMARY: ページ概要
+        PAGE_TYPES: ページタイプ
+        PAGE_TYPES_HELP: 'Grav がサポートするページタイプを決定し、リクエストが曖昧な場合にフォールバックするタイプの順序を決定します'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: メニュー表示にアクセス権を要求
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: 'ユーザーがアクセスできる場合のみページをメニューに表示する場合は Yes に設定します。'
+        PAGES: ページ
+        PAGES_FALLBACK_ONLY: ページフォールバックのみ
+        PAGES_FALLBACK_ONLY_HELP: サポートされる言語を通じてページコンテンツを見つけるのに「フォールバック」のみを行います。デフォルトの動作では、アクティブ言語がない場合に見つかった任意の言語を表示します
+        PAGES_TYPE: フロントエンドページタイプ
+        PAGES_TYPE_HELP: 'このオプションはフロントエンドで Flex Object ページを有効にします。Admin Flex Pages には Flex Objects プラグインが必要です'
+        PARAMETER_SEPARATOR: パラメータセパレータ
+        PARAMETER_SEPARATOR_HELP: 'Windows 上の Apache 用に変更できる、渡されるパラメータのセパレータ'
+        PARENT: 親
+        PASSWORD: パスワード
+        PASSWORD_VALIDATION_MESSAGE: 'パスワードには少なくとも 1 つの数字、1 つの大文字と小文字、および少なくとも 8 文字以上が必要です'
+        PERMISSIONS: 権限
+        PLUGIN_STATUS: プラグインステータス
+        PREVIEW: プレビュー
+        PROCESS: 処理
+        PROCESS_HELP: ページの処理方法を制御します。グローバルではなくページごとに設定できます
+        PROXY_CERT: プロキシ証明書パス
+        PROXY_CERT_HELP: 'プロキシ証明書 pem ファイルを含むフォルダーへのローカルパス'
+        PROXY_URL: 'プロキシ URL'
+        PROXY_URL_HELP: 'プロキシの HOST または IP と PORT を入力してください'
+        PUBLISH: 公開
+        PUBLISHED: 公開済み
+        PUBLISHED_DATE: 公開日
+        PUBLISHED_DATE_HELP: 公開を自動的にトリガーするための日付を指定できます。
+        PUBLISHED_HELP: 'デフォルトでは、ページは publish_date が未来、または unpublish_date が過去でない限り、published: false を明示的に設定しない限り公開されます'
+        PUBLISHING: 公開
+        PWD_REGEX: パスワード正規表現
+        PWD_REGEX_HELP: 'デフォルト：パスワードには少なくとも 1 つの数字、1 つの大文字と小文字、および少なくとも 8 文字以上が必要です'
+        PWD_RULES: パスワードルール
+        PWD_RULES_HELP: 'カスタムのパスワード検証ルール。各ルールには ID、人間用ラベル、パスワードが一致する必要のある正規表現があります。'
+        PWD_RULES_ID: ID
+        PWD_RULES_LABEL: ラベル
+        PWD_RULES_PATTERN: 正規表現パターン
+        READ: 読み取り
+        READ_FILE_ALLOWED_EXTENSIONS: 許可するファイル拡張子
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: '<code>read_file()</code> が読み取るファイル拡張子（大文字小文字区別なし、先頭ドットなし）。デフォルトはテキスト/コンテンツ形式のみです。実行可能ファイルや設定ファイル形式（<code>php</code>、<code>yaml</code>、<code>env</code>、<code>htaccess</code> など）を追加するのは危険であり推奨されません。'
+        READ_FILE_ALLOWED_STREAMS: 許可するストリーム
+        READ_FILE_ALLOWED_STREAMS_HELP: '<code>read_file()</code> が解決できるストリームスキーマ。デフォルト: <code>theme</code>、<code>themes</code>、<code>page</code>、<code>user-data</code>。<code>user</code>、<code>system</code>、<code>config</code>、<code>account</code>、<code>log</code>、<code>cache</code> のような広範なストリームを追加すると機密ファイルが露出するため、強く非推奨です。'
+        READ_FILE_MAX_SIZE: 最大ファイルサイズ（バイト）
+        READ_FILE_MAX_SIZE_HELP: 'このサイズより大きいファイルはメモリに読み込まれず <code>false</code> を返します。デフォルトは <code>1048576</code>（1 MB）。サイズ制限を無効にするには <code>0</code> を設定します。'
+        READ_FILE_SECTION_HELP: 'Twig <code>read_file()</code> 関数の制約。読み取りは Grav ストリーム URI を経由するように強制され、解決後のストリームルートに対する canonical-realpath 包含チェックで検証されるため、パスの記述方法に関わらず、エンコードされたまたはシンボリックリンクされたトラバーサルはファイルシステム層でブロックされます。'
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REDIRECT: ページリダイレクト
+        REDIRECT_DEFAULT_CODE: デフォルトリダイレクトコード
+        REDIRECT_DEFAULT_CODE_HELP: 'リダイレクトに使用する HTTP ステータスコード'
+        REDIRECT_DEFAULT_ROUTE: デフォルトルートをリダイレクト
+        REDIRECT_DEFAULT_ROUTE_HELP: ページのデフォルトルートへ自動的にリダイレクトします
+        REDIRECT_HELP: 'このページのリダイレクト先となるページルートまたは外部 URL を入力します。例：`/some/route` または `http://somesite.com`'
+        REDIRECT_OPTION_301: '301 - 恒久的に移動'
+        REDIRECT_OPTION_302: '302 - 一時的に移動'
+        REDIRECT_OPTION_303: '303 - 他を参照'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: デフォルトリダイレクトコードを使用
+        REDIRECT_OPTION_NO_REDIRECT: リダイレクトしない
+        REDIRECT_TRAILING_SLASH: 末尾スラッシュをリダイレクト
+        REDIRECT_TRAILING_SLASH_HELP: '末尾スラッシュ URI を透過的に処理するのではなく 301 リダイレクトを実行します。'
+        REDIRECTS_AND_ROUTES: リダイレクトとルート
+        REDIS_DATABASE: 'Redis データベース ID'
+        REDIS_DATABASE_HELP: 'Redis インスタンスのデータベース ID'
+        REDIS_PASSWORD: 'Redis パスワード/シークレット'
+        REDIS_PORT: 'Redis ポート'
+        REDIS_PORT_HELP: 'Redis サーバーのポート'
+        REDIS_SERVER: 'Redis サーバー'
+        REDIS_SERVER_HELP: 'Redis サーバーのアドレス'
+        REDIS_SOCKET: 'Redis ソケット'
+        REDIS_SOCKET_HELP: 'Redis ソケット'
+        REGULAR: レギュラー
+        REVERSE_PROXY: リバースプロキシ
+        REVERSE_PROXY_HELP: 'リバースプロキシの背後にあり、誤ったポートを含む URL で問題が発生している場合に有効化します'
+        ROOT: ルート
+        ROUTABLE: ルーティング可能
+        ROUTABLE_HELP: 'このページが URL から到達可能かどうか'
+        ROUTE_ALIASES: ルートエイリアス
+        ROUTE_CANONICAL: 正規ルート
+        ROUTE_DEFAULT: デフォルトルート
+        ROUTE_OVERRIDES: ルート上書き
+        SANITIZE_SVG: 'SVG をサニタイズ'
+        SANITIZE_SVG_HELP: 'SVG から XSS コードを削除します'
+        SAVE: 保存
+        SCHEDULER: スケジューラ
+        SCHEDULER_EMAIL: メール
+        SCHEDULER_EMAIL_HELP: 出力を送信するメールアドレス。注：出力ファイルの設定が必要です
+        SCHEDULER_JOBS: カスタムスケジューラジョブ
+        SCHEDULER_OUTPUT: 出力ファイル
+        SCHEDULER_OUTPUT_HELP: '出力ファイルのパス/ファイル名（Grav インストールのルートから）'
+        SCHEDULER_OUTPUT_TYPE: 出力タイプ
+        SCHEDULER_OUTPUT_TYPE_HELP: 実行ごとに同じファイルに追記するか、実行ごとにファイルを上書きするか
+        SCHEDULER_RUNAT: 実行時刻
+        SCHEDULER_RUNAT_HELP: "Cron 形式の 'at' 構文。注：すべての時刻は UTC です！"
+        SCHEDULER_STATUS: スケジューラステータス
+        SECURITY: セキュリティ
+        SESSION: セッション
+        SESSION_DOMAIN: セッションドメイン
+        SESSION_DOMAIN_HELP: 'Docker コンテナなどでサイトドメインを書き換える場合にのみ使用します。'
+        SESSION_ENABLED_HELP: 'Grav 内でのセッションサポートを有効にします'
+        SESSION_HTTPONLY: 'HTTP のみ'
+        SESSION_HTTPONLY_HELP: 'true の場合、Cookie は HTTP 経由でのみ使用されるべきであり、JavaScript による変更は許可されないことを示します'
+        SESSION_INITIALIZE: セッションを初期化
+        SESSION_INITIALIZE_HELP: 'Grav にセッションを開始させます。この機能は、ログインやフォームなどのユーザー対話を機能させるために必要です。Admin プラグインはこの設定の影響を受けません。'
+        SESSION_NAME_HELP: 'セッション Cookie の名前を形成するために使用される識別子'
+        SESSION_PATH: セッションパス
+        SESSION_PATH_HELP: 'Docker コンテナなどでサイトパスを書き換える場合にのみ使用します。'
+        SESSION_SAMESITE: 'セッションの SameSite 属性'
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None。詳細は https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite を参照'
+        SESSION_SECURE: セキュア
+        SESSION_SECURE_HELP: 'true の場合、この Cookie の通信は暗号化された伝送上でなければならないことを示します。警告：HTTPS でのみ動作するサイトでのみ有効化してください'
+        SESSION_SECURE_HTTPS: セキュア（HTTPS）
+        SESSION_SECURE_HTTPS_HELP: 'HTTPS ではセッションをセキュアに設定し、HTTP では設定しません。上の Secure 設定が true の場合は効果がありません。サイトが HTTP と HTTPS の間を行き来する場合は false に設定してください。'
+        SESSION_SPLIT: セッション分割
+        SESSION_SPLIT_HELP: 'サイトと他のプラグイン（admin など）間で独立した分割セッション'
+        SESSION_UNIQUENESS: ユニーク文字列
+        SESSION_UNIQUENESS_HELP: 'Grav のルートパス（`GRAV_ROOT`）の MD5 ハッシュ（デフォルト）、またはランダムな `security.salt` 文字列に基づくもの。'
+        SETTINGS: 設定
+        SHORT: ショート
+        SHORT_DATE_FORMAT: 短い表示日付フォーマット
+        SHORT_DATE_FORMAT_HELP: テーマで使用できる短い日付フォーマットを設定します
+        SHUTDOWN_CLOSE_CONNECTION: シャットダウン時に接続を閉じる
+        SHUTDOWN_CLOSE_CONNECTION_HELP: 'onShutdown() を呼び出す前に接続を閉じます。デバッグ時は false'
+        SITE: サイト
+        SITE_ACCESS: サイトアクセス
+        SITE_DEFAULT_LANG: デフォルト言語
+        SITE_DEFAULT_LANG_HELP: 'テーマの <HTML> タグで使用されるデフォルト言語'
+        SITE_DEFAULT_LANG_PLACEHOLDER: 'テーマの <HTML> タグで使用されるデフォルト言語'
+        SITE_TITLE: サイトタイトル
+        SITE_TITLE_HELP: サイトのデフォルトタイトル。テーマでよく使用されます
+        SITE_TITLE_PLACEHOLDER: サイト全体のタイトル
+        SLUG: スラッグ
+        SLUG_HELP: 'slug 変数を使用すると、ページの URL 部分を明示的に設定できます'
+        SLUG_VALIDATE_MESSAGE: スラッグには小文字の英数字とダッシュのみを含める必要があります
+        SORTABLE_PAGES: '並び替え可能なページ:'
+        SSL_ENABLE_PROXY: プロキシサーバーを有効化
+        SSL_VERIFY_HOST: リモートホスト検証
+        SSL_VERIFY_HOST_HELP: 'SSL 証明書の検証に失敗することがあります'
+        SSL_VERIFY_PEER: リモートピア検証
+        SSL_VERIFY_PEER_HELP: 'SSL 証明書の検証に失敗することがあります'
+        STABLE: 安定版
+        STRICT_BLUEPRINT_COMPAT: ブループリント互換性
+        STRICT_BLUEPRINT_COMPAT_HELP: ブループリントの後方互換性のある厳密なサポートを有効にします。オフにすると、新しい動作では、ブループリントに定義されていない追加データがあるとフォーム検証が失敗します。
+        STRICT_TWIG_COMPAT: 'Twig 互換性'
+        STRICT_TWIG_COMPAT_HELP: '非推奨の Twig autoescape 設定を有効にします。無効にすると、Twig が出力を自動エスケープするため、HTML を出力するには |raw フィルターが必要です'
+        STRICT_YAML_COMPAT: 'YAML 互換性'
+        STRICT_YAML_COMPAT_HELP: 'Native または 3.4 パーサーが失敗した場合に Symfony 2.4 YAML パーサーにフォールバックします'
+        SUMMARY_SIZE: 概要サイズ
+        SUMMARY_SIZE_HELP: コンテンツ概要として使用するページの文字数
+        SUPPORTED: サポート対象
+        SUPPORTED_HELP: "2 文字の言語コードのカンマ区切りリスト（例：'en,fr,de'）"
+        SYSLOG_FACILITY: 'Syslog ファシリティ'
+        SYSLOG_FACILITY_HELP: '出力用の Syslog ファシリティ'
+        SYSLOG_TAG: 'Syslog タグ'
+        SYSLOG_TAG_HELP: '出力用の Syslog タグ'
+        SYSTEM: システム
+        TAXONOMIES: タクソノミー
+        TAXONOMY: タクソノミー
+        TAXONOMY_TYPES: タクソノミータイプ
+        TAXONOMY_TYPES_HELP: ページで使用したいタクソノミータイプはここで定義する必要があります
+        TESTING: テスト
+        THUMB: サムネイル
+        TIMEOUT: タイムアウト
+        TIMEOUT_HELP: セッションのタイムアウトを秒で設定します
+        TIMEZONE: タイムゾーン
+        TIMEZONE_HELP: サーバーのデフォルトタイムゾーンを上書きします
+        TITLE: タイトル
+        TRANSLATIONS_FALLBACK: 翻訳フォールバック
+        TRANSLATIONS_FALLBACK_HELP: アクティブな言語が存在しない場合、サポートされる翻訳にフォールバックします
+        TWIG_CACHING: 'Twig キャッシュ'
+        TWIG_CACHING_HELP: 'Twig キャッシュメカニズムを制御します。最高のパフォーマンスのために有効のままにしてください。'
+        TWIG_DEBUG: 'Twig デバッグ'
+        TWIG_DEBUG_HELP: 'Twig Debugger 拡張機能を読み込まないオプションを許可します'
+        TWIG_FIRST: 'Twig を先に処理'
+        TWIG_FIRST_HELP: 'Twig ページ処理を有効にしている場合、Twig を markdown の前または後に処理するかを設定できます'
+        TWIG_SANDBOX: 'Twig サンドボックス'
+        TWIG_SANDBOX_ADMIN_HINT: 管理者向けヒントコメント
+        TWIG_SANDBOX_ALLOWED_FILTERS: 許可するフィルター
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: 'ページコンテンツが適用してよい Twig フィルター。'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: 許可する関数
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: 'ページコンテンツが呼び出してよい Twig 関数。'
+        TWIG_SANDBOX_ALLOWED_METHODS: 許可するメソッド
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: ページコンテンツが呼び出してよいオブジェクトメソッドのクラス別リスト。
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: 許可するプロパティ
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: ページコンテンツが読み取ってよいオブジェクトプロパティのクラス別リスト。
+        TWIG_SANDBOX_ALLOWED_TAGS: 許可するタグ
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: 'ページコンテンツが使用してよい Twig タグ。執筆者に公開したい効果を持つタグのみを追加してください。'
+        TWIG_SANDBOX_CLASS: クラス
+        TWIG_SANDBOX_ENABLED: 'Twig サンドボックスを有効化'
+        TWIG_SANDBOX_HELP: 'ページコンテンツのテンプレートが使用できる Twig タグ、フィルター、関数、メソッド、プロパティの許可リスト。エディターで作成されたコンテンツはこのサンドボックス経由でレンダリングされるため、侵害された作者やテンプレートインジェクションの不具合があっても広いコンテナへ到達できません。'
+        TWIG_SANDBOX_LOGGING: 違反をログ
+        TWIG_SANDBOX_LOGGING_HELP: 'ブロックされたすべての式を <code>logs/twig-sandbox.log</code> に書き込みます。許可リストの調整時に便利です。本番ではログを静かに保つためオフにしてください。'
+        TWIG_SANDBOX_METHODS: メソッド
+        TWIG_SANDBOX_PROPERTIES: プロパティ
+        TWIG_TEMPLATING: 'Twig テンプレーティング'
+        TYPE: タイプ
+        UNPUBLISHED_DATE: 非公開日
+        UNPUBLISHED_DATE_HELP: 非公開を自動的にトリガーするための日付を指定できます。
+        UPDATE: 更新
+        UPLOADS_DANGEROUS_EXTENSIONS: 危険な拡張子
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: '受け入れる MIME タイプに関係なく、これらの拡張子のアップロードをブロックします'
+        UPLOADS_SECURITY: アップロードセキュリティ
+        USE_GLOBAL: グローバルを使用
+        USERNAME: ユーザー名
+        USERNAME_HELP: 'ユーザー名は 3〜16 文字で、小文字、数字、アンダースコア、ハイフンを含むことができます。大文字、スペース、特殊文字は許可されません'
+        USERNAME_REGEX: ユーザー名正規表現
+        USERNAME_REGEX_HELP: 'デフォルト：小文字、数字、ダッシュ、アンダースコアのみ。3〜16 文字'
+        VALID_LINK_ATTRIBUTES: 有効なリンク属性
+        VALID_LINK_ATTRIBUTES_HELP: 'メディア HTML 要素に自動的に追加される属性'
+        VARY_ACCEPT_ENCODING: 'Vary accept encoding'
+        VARY_ACCEPT_ENCODING_HELP: 'プロキシや CDN のキャッシュに役立つ `Vary: Accept Encoding` ヘッダーを設定します'
+        VERSION: バージョン
+        VISIBLE: 表示
+        VISIBLE_HELP: ページがナビゲーションに表示されるかどうかを決定します。
+        WRAPPED_SITE: ラップされたサイト
+        WRAPPED_SITE_HELP: 'テーマ/プラグインが Grav が別のプラットフォームによってラップされているかを知るためのもの'
+        XSS_DANGEROUS_TAGS: '危険な HTML タグをフィルタ'
+        XSS_DANGEROUS_TAGS_LIST: '危険な HTML タグのリスト'
+        XSS_HTML_INLINE_STYLES: 'HTML インラインスタイルをフィルタ'
+        XSS_INVALID_PROTOCOLS: 無効なプロトコルをフィルタ
+        XSS_INVALID_PROTOCOLS_LIST: 無効なプロトコルのリスト
+        XSS_MOZ_BINDINGS: 'Moz バインディングをフィルタ'
+        XSS_ON_EVENTS: 'On イベントをフィルタ'
+        XSS_SECURITY: 'コンテンツの XSS セキュリティ'
+        XSS_WHITELIST_PERMISSIONS: ホワイトリスト権限
+        XSS_WHITELIST_PERMISSIONS_HELP: 'これらの権限を持つユーザーは、コンテンツ保存時に XSS ルールをスキップします'
+        'YES': はい
+        YUBIKEY_HELP: 'YubiKey をコンピュータに挿入し、ボタンをクリックして OTP を生成してください。最初の 12 文字がクライアント ID で、これが保存されます。'
+        YUBIKEY_ID: 'YubiKey ID'
+        CACHE_CHECK_INTERVAL: キャッシュ確認間隔
+        CACHE_CHECK_INTERVAL_HELP: '再確認するまでに前回計算したファイルシステムハッシュを再利用する秒数。0 で既存のリクエストごとの確認を維持します。'
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST 有効'
+        HTTP_X_FORWARDED_HOST_HELP: '<code>X-Forwarded-Host</code> リクエストヘッダーを信頼します。このヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。そうでない場合、クライアントが Grav が認識するホストを偽装できます。'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP 有効'
+        HTTP_X_FORWARDED_IP_HELP: 'クライアント IP の解決時に <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> ヘッダーを信頼します。これらのヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。そうでない場合、クライアントが IP を偽装してレート制限、IP 禁止、監査ログを回避できます。'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT 有効'
+        HTTP_X_FORWARDED_PORT_HELP: '<code>X-Forwarded-Port</code> リクエストヘッダーを信頼します。このヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO 有効'
+        HTTP_X_FORWARDED_PROTO_HELP: '<code>X-Forwarded-Proto</code> リクエストヘッダー（通常は TLS 終端プロキシの背後で HTTPS を検出するために使用）を信頼します。このヘッダーを設定し上書きするリバースプロキシの背後にサイトが実際にある場合にのみ有効にしてください。'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP 有効'
+        HTTP_CLIENT_IP_HELP: 'クライアント IP の解決時に <code>Client-IP</code> リクエストヘッダーを信頼します。まれで、通常は特定のロードバランサのみが設定します。プロキシがこのヘッダーを設定し上書きすると分かっていない限りはオフのままにしてください。'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP 有効'
+        HTTP_CF_CONNECTING_IP_HELP: 'クライアント IP の解決時に <code>CF-Connecting-IP</code> リクエストヘッダーを信頼します。サイトが実際に Cloudflare の背後にある場合に有効にしてください。そうでない場合、クライアントが IP を偽装できます。完全な安全のため、Web サーバーでオリジンアクセスを Cloudflare の IP 範囲に制限することもおすすめします。'
+        MARKDOWN_EXTRA: 'Markdown extra'
+        ORDER_DIR_HELP: '"desc" または "asc" が有効な値です'
+        TWIG_3_COMPATIBILITY: 'Twig 3 互換性'
+        TWIG_3_COMPATIBILITY_HELP: 'Twig 3 で壊れるレガシー Twig 1/2 構文（例：<code>for ... if ...</code> ガード）の自動書き換えを有効にします。'
+        TWIG_SANDBOX_ADMIN_HINT_HELP: 'サンドボックスが式をブロックしたとき、レンダリングされたページに 1 行の HTML コメントを追加して、ソースを見るスーパー管理者が何かフィルタされたことを確認できるようにします。訪問者や非管理者には何も表示されません。'
+        TWIG_SANDBOX_ENABLED_HELP: 'エディターで作成されたページコンテンツを許可リストベースの Twig SecurityPolicy 内でレンダリングします。<strong>無効にすると、ページコンテンツ経由のテンプレートインジェクション攻撃に対する唯一の保護が解除されます</strong>：エディターレベルのアクセスを持つアカウント（またはファイルシステムを侵害した者）は誰でも Twig 経由で任意の PHP を実行できます。サイトが本当にページコンテンツからコンテナへのアクセスを必要とし、すべての作者を完全に信頼する場合にのみオフにしてください。'
+        ACCOUNTS_CONFIGURATION: アカウント設定
+        COMPATIBILITY: 互換性
+        FLEX_ADMIN_EVENT_COMPAT: 管理イベント互換性
+        FLEX_ADMIN_EVENT_COMPAT_HELP: 'プラグイン用に onAdminSave および onAdminAfterSave イベントを有効にします。'
+        ID: ID
+        PAGE_PERMISSIONS: ページ権限
+        PAGES_CONFIGURATION: ページ設定
+        ROUTE: ルート
+        SCHEDULER_ACTIVE_TRIGGERS: アクティブなトリガー
+        SCHEDULER_ADVANCED_FEATURES: 高度な機能
+        SCHEDULER_CONCURRENT_WORKERS: 同時実行ワーカー数
+        SCHEDULER_CONCURRENT_WORKERS_HELP: '同時に実行できるジョブの数（1 = 逐次）。'
+        SCHEDULER_HEALTH_CHECK_CONFIG: ヘルスチェック設定
+        SCHEDULER_HEALTH_CHECK_ENABLED: ヘルスチェックを有効化
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 監視用のヘルスステータスエンドポイントを提供します。
+        SCHEDULER_HEALTH_CHECK_PATH: ヘルスチェックパス
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: 'ヘルスチェックエンドポイントの URL パス。'
+        SCHEDULER_HEALTH_STATUS: ヘルスステータス
+        SCHEDULER_HISTORY: ジョブ履歴
+        SCHEDULER_HISTORY_ENABLED: ジョブ履歴を有効化
+        SCHEDULER_HISTORY_ENABLED_HELP: すべてのジョブの実行履歴を追跡します。
+        SCHEDULER_HISTORY_RETENTION: 履歴保持期間（日）
+        SCHEDULER_HISTORY_RETENTION_HELP: ジョブ履歴を保持する期間。
+        SCHEDULER_QUEUE_CONFIG: キュー設定
+        SCHEDULER_QUEUE_MAX_SIZE: 最大キューサイズ
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: キューに入れられるジョブの最大数。
+        SCHEDULER_QUEUE_PATH: キュー保存パス
+        SCHEDULER_QUEUE_PATH_HELP: キューに入ったジョブを保存する場所。
+        SCHEDULER_RETRY_BACKOFF: リトライバックオフ戦略
+        SCHEDULER_RETRY_BACKOFF_HELP: リトライ間の遅延時間の計算方法。
+        SCHEDULER_RETRY_CONFIG: リトライ設定
+        SCHEDULER_RETRY_ENABLED: ジョブリトライを有効化
+        SCHEDULER_RETRY_ENABLED_HELP: 失敗したジョブを自動的にリトライします。
+        SCHEDULER_RETRY_MAX_ATTEMPTS: 最大リトライ回数
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 失敗したジョブをリトライする最大回数。
+        SCHEDULER_USAGE_EXAMPLES: 使用例
+        SCHEDULER_WEBHOOK_CONFIG: 'Webhook 設定'
+        SCHEDULER_WEBHOOK_ENABLED: 'Webhook トリガーを有効化'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: 'HTTP Webhook 経由でスケジューラをトリガーすることを許可します。'
+        SCHEDULER_WEBHOOK_PATH: 'Webhook パス'
+        SCHEDULER_WEBHOOK_PATH_HELP: 'Webhook エンドポイントの URL パス。'
+        SCHEDULER_WEBHOOK_TOKEN: 'Webhook セキュリティトークン'
+        SCHEDULER_WEBHOOK_TOKEN_HELP: 'Webhook リクエストを認証するシークレットトークン。これは秘密にしてください！'
+        SCHEDULER_WORKER_CONFIG: ワーカー設定
+        TRANSLATIONS: 翻訳
+        USER_ACCOUNTS: ユーザーアカウント
+        TWIG_CONTENT: 'コンテンツ内の Twig'
+        TWIG_CONTENT_HELP: 'ページコンテンツに埋め込まれたエディター作成の Twig に対する制御。ディスク上のテーマテンプレートはこれらの設定の影響を受けません。ページ本文やフロントマターに作者が入れた Twig のみに適用されます。'
+        TWIG_CONTENT_PROCESS_ENABLED: 'コンテンツ内の Twig を有効化'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: 'フロントマターに <code>process: twig: true</code> を持つページ（およびサイト全体の <code>system.pages.frontmatter.process_twig</code> オプトイン）が実際に Twig を実行できるようにします。<strong>Grav 2.0 ではデフォルトでオフ。</strong>無効のままにするとテンプレートインジェクションの攻撃面が減りますが、本文に Twig を必要とするページは壊れます。'
+        TWIG_CONTENT_EDITOR_ENABLED: 'エディターがコンテンツ内 Twig を切り替えることを許可'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: 'オフ（デフォルト）の場合、ページエディターの Advanced タブの Twig チェックボックスは <code>admin.pages_twig</code> 権限を付与されたユーザーにのみ表示され、既に Twig が有効になっているページもそれらのユーザーのみが編集できます。オンの場合、ページ編集アクセスを持つ誰もが個別のページで Twig を切り替えできます。'
+        TWIG_CONTENT_CONFIG_ACCESS: 'Twig での config 変数アクセスを許可'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: 'ページコンテンツから <code>config</code> Twig 変数が読み取り可能かどうか。オフ（デフォルト）の場合、ページから <code>config.system.title</code> を読み取っても何も返されません。オンの場合、<code>config</code> は公開されますが、引き続き <code>config_denied_paths</code>（下の Twig サンドボックスを参照）でフィルタリングされ、認証情報やその他の機密サブツリーは隠されたままになります。'
+        TOASTS:
+            CONFIG_SAVED: '{name} の設定を保存しました'
+            CONFIG_MODIFIED_ELSEWHERE: '設定が別の場所で変更されました — 再読み込みして最新を確認してください'
+            SAVE_FAILED: 保存に失敗しました
+            DEPENDENCY_INSTALLED: 'プラグイン {slug} をインストールしました（依存関係）'
+            PACKAGE_UPDATED: '{name} を更新しました'
+            PACKAGE_UPDATE_FAILED: '{name} の更新に失敗しました：{detail}'
+            PACKAGE_REMOVED: '{name} を削除しました'
+            PACKAGE_REMOVE_FAILED: '{name} の削除に失敗しました'
+            PACKAGES_UPDATED: '{n, plural, one{# 個のパッケージを更新しました} other{# 個のパッケージを更新しました}}'
+            UPDATE_FAILED: '更新に失敗しました：{detail}'
+            PLUGIN_ENABLED: '{name} を有効化しました'
+            PLUGIN_DISABLED: '{name} を無効化しました'
+            PLUGIN_ENABLE_FAILED: '{name} の有効化に失敗しました：{detail}'
+            PLUGIN_DISABLE_FAILED: '{name} の無効化に失敗しました：{detail}'
+            PLUGIN_LOCKOUT_BLOCK: '{name} は admin-next から無効化できません — ロックアウトされます。'
+            PLUGIN_REQUIRED_BLOCK: '{name} は削除できません — admin-next が必要としています。'
+            THEME_ACTIVATED: '{name} がアクティブテーマになりました'
+            THEME_ACTIVATE_FAILED: '{name} の有効化に失敗しました'
+            THEME_REMOVE_BLOCK: '{name} は削除できません。'
+            ACTIVE_THEME_REMOVE_BLOCK: アクティブテーマは削除できません。先に別のテーマに切り替えてください。
+            GPM_REFRESHED: '{n, plural, =0{GPM を更新しました — 利用可能な更新はありません} one{GPM を更新しました — # 件の更新が利用可能です} other{GPM を更新しました — # 件の更新が利用可能です}}'
+            GRAV_UPGRADED: 'Grav を v{version} にアップグレードしました'
+            BACKUP_CREATED: 'バックアップを作成しました（{size}）'
+            CACHE_CLEARED: 'キャッシュをクリアしました（{scope}）'
+            FILES_UPLOADED: '{n, plural, one{# 個のファイルをアップロードしました} other{# 個のファイルをアップロードしました}}'
+            FOLDER_CREATED: 'フォルダー「{name}」を作成しました'
+            FILE_DELETED: '{name} を削除しました'
+            FILE_DELETE_FAILED: '{name} の削除に失敗しました'
+            FILES_DELETE_FAILED: '{n, plural, one{# 個のファイルの削除に失敗しました} other{# 個のファイルの削除に失敗しました}}'
+            COPIED: '{label} をコピーしました'
+            COPY_FAILED: 'コピーに失敗しました：{detail}'
+            SAVED_AS_LANGUAGE: '{language} として保存しました'
+            TRANSLATION_CREATED: '{language} の翻訳を作成しました'
+            TRANSLATION_RESET: '{target} を {source} からリセットしました'
+            SAVED: 保存しました
+            ITEM_SAVED: '{name} を保存しました'
+            ITEM_DELETED: '「{name}」を削除しました'
+            ITEM_DELETE_FAILED: '「{name}」の削除に失敗しました'
+            ITEM_COPIED: '「{name}」を「{target}」へコピーしました'
+            ITEM_MOVED: '「{name}」を移動しました'
+            ITEM_REORDERED: '「{name}」を並び替えました'
+            USER_CREATED: 'ユーザー {username} を作成しました'
+            USER_SAVED: 'ユーザー {username} を保存しました'
+            USER_DELETED: 'ユーザー {username} を削除しました'
+            USER_DELETE_FAILED: 'ユーザー {username} の削除に失敗しました'
+            API_KEY_REVOKED: 'API キー「{name}」を取り消しました'
+            PLUGIN_INSTALLED: 'プラグイン {name} をインストールしました'
+            THEME_INSTALLED: 'テーマ {name} をインストールしました'
+            INSTALL_FAILED: '{slug} のインストールに失敗しました：{detail}'
+            TOTP_CODE_REQUIRED: '認証アプリの 6 桁コードを入力してください'
+            SAVE_FORM_FAILED: '{form} の保存に失敗しました'
+            FORM_LABEL:
+                FORM: フォーム
+                CONFIGURATION: 設定
+                PLUGIN: プラグイン
+                PLUGIN_PAGE: プラグインページ
+                FLEX_OBJECT: 'Flex Object'
+                USER: ユーザー
+                THEME: テーマ
+                PAGE: ページ

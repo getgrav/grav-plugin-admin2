@@ -82,6 +82,17 @@ ICU:
             RELOAD: 'Znovu načíst'
             TITLE: Konfigurace
             TITLE_SCROLLED: 'Konfigurace: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: prázdné
+                RESET_BUTTON: 'Obnovit přepsání'
+                RESET_CONFIRM: Obnovit
+                RESET_DONE: 'Přepsání obnoveno'
+                RESET_MESSAGE: 'Tím se odstraní každé přepsání na {scope} a obnoví se zděděné hodnoty. Toto nelze vrátit zpět.'
+                RESET_TITLE: 'Obnovit všechna přepsání?'
+                RESET_TOOLTIP: 'Odstraní každé přepsání a obnoví zděděné hodnoty'
+                REVERTED: 'Vráceno na zděděnou hodnotu'
+                REVERT_FAILED: 'Nepodařilo se vrátit'
+                REVERT_TOOLTIP: 'Přepisuje výchozí hodnotu ({value}). Kliknutím vrátíte.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Prostředí
             EXPORT_YAML: 'Exportovat YAML'
@@ -150,7 +161,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Vytvořit prostředí…'
             CREATE_ENV_NAMED: 'Vytvořit prostředí "{name}"…'
             DEFAULT: Výchozí
-            ENV_CREATED: "Prostředí {name} bylo vytvořeno a vybráno"
+            ENV_CREATED: 'Prostředí {name} bylo vytvořeno a vybráno'
             FAILED_TO_CREATE: 'Nepodařilo se vytvořit prostředí'
             HAS_OVERRIDES: 'má přepsání'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'již neexistuje. Vyberte další.'
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: 'Ukládání do prostředí: {name}'
             SELECTED_ENV: 'Vybrané prostředí'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Vyberte, kam se budou uklá­dat zápisy konfigurace'
+            CONFIRM_DELETE: 'Smazat {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Smazat {name} a všechna jeho přepsání konfigurace?'
+            DELETE: Smazat
+            DELETE_ENV_TOOLTIP: 'Smazat prostředí {name}'
+            ENV_DELETED: 'Prostředí {name} odstraněno'
+            FAILED_TO_DELETE: 'Nepodařilo se odstranit prostředí'
+            SWITCH_AND_RELOAD: 'Přepnout a obnovit'
+            SWITCH_DISCARDS_UNSAVED: 'Přepnutí prostředí znovu načte administraci a zruší neuložené změny. Pokračovat?'
         EXPAND_ALL: 'Rozbalit vše'
         EXPAND_SIDEBAR: 'Rozbalit postranní panel'
         EXPERT_MODE: 'Režim expert'
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Přepnout navigátor stránky'
                 UNPUBLISH_ON: 'Zrušit publikování v'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Napište sem svůj obsah v markdownu...'
+                SAVED_BY_PEER: '{user} uložil tuto stránku'
+                SAVED_BY_PEER_ANON: 'Jiný uživatel uložil tuto stránku'
             EDIT_PAGE: 'Upravit stránku'
             FRONTMATTER: Předmluva
             HEADER_MODIFIED: Změněno
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Má podstránky'
                 SUMMARY: Souhrn
                 VISIBLE: Viditelné
+                DROP_HERE: 'Sem umístit'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Reorganizace stránek selhala'
                 NO_PAGES_MATCH: 'Žádné stránky neodpovídají „{query}"'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Sloupce
             VIEW_LIST: Seznam
             VIEW_TREE: Strom
+            CHUNK_SIZE: Chunk
+            CHUNK_SIZE_HELP: 'Počet řádků k načtení na požadavek při posouvání. Větší hodnoty se poprve načítají pomaleji, ale snižují počet následujících požadavků.'
+            LOADED_OF: '{n, plural, one {# načteno} other {# načteno}} z {total}'
+            LOADING_CHUNK: 'Načítání řádků {from}–{to}…'
+            NO_MATCH: 'Žádné stránky neodpovídají vašemu hledání'
+            PUBLISH: Publikovat
+            REORDER_DONE: Hotovo
+            REORDER_EXIT_TITLE: 'Konec režimu přeřazování'
+            REORDER_LOADING: 'Stále se načítá úplný seznam – zkuste to za chvíli.'
+            REORDER_LOADING_ALL: 'Načítání všech částí, aby přeřazování ovlivnilo celý seznam…'
+            REORDER_START_TITLE: 'Přeřazování stránek'
+            STATS_PUBLISHED: '{n} publikováno'
+            STATS_TOTAL: '{n} celkem'
+            STATS_UNPUBLISHED: '{n} nepublikováno'
+            UNPUBLISH: 'Zrušit publikování'
         PASSWORD: Heslo
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Požadavky na heslo'
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Selhání načtení oprávnění'
             NOT_SET: Nenastaveno
+            ADMIN_LEGACY: 'Admin (starší verze)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Zpět na Řídicí panel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Žádný obsah není dostupný pro tuto stránku modulu plug-in.'
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Hledat pluginy...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Vyberte plugin pro zobrazení podrobností'
             SYMLINKED: Symlink
+            REMOVE_CONFIRM_MESSAGE: 'Odebrat {name}? Tím se plugin odinstaluje a smažou se jeho soubory. Konfigurace bude zachována.'
+            REMOVE_CONFIRM_TITLE: 'Odebrat plugin?'
+            TITLE: Pluginy
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Načítání stránky pluginu...'
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Používá se na tmavých pozadích'
             USED_ON_LIGHT_BACKGROUNDS: 'Používá se na světlých pozadích'
             USERS_MAY_OVERRIDE: 'Uživatelé mohou přepsat'
+            OTHER_LIST_VIEWS: 'Jiné zobrazení seznamů'
+            OTHER_LIST_VIEWS_DESC: 'Výchozí rozvržení pro seznamy uživatelů, pluginů a motivů'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Vyberte motiv pro zobrazení podrobností'
             SYMLINKED: 'Symbolicky propojeno'
             THEMES_GRAV_ADMIN: 'Motivy — Grav Admin'
+            ACTIVATE: Aktivovat
+            ACTIVATE_CONFIRM_MESSAGE: 'Přepnout aktivní motiv webu na {name}? Frontend bude okamžitě používat tento motiv.'
+            ACTIVATE_CONFIRM_TITLE: 'Aktivovat motiv?'
+            ACTIVATE_THEME: 'Aktivovat {name}'
+            DELETE_ACTIVE_WARNING: 'Právě aktivní. Před smazáním se doporučuje nejdřív přepnout na jiný motiv.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} je aktuálně aktivní motiv. Jeho odstranění ponechá web bez motivu, dokud nebude aktivován jiný. Pokračovat?'
+            REMOVE_CONFIRM_MESSAGE: 'Odebrat {name}? Tím se motiv odinstaluje a smažou se jeho soubory.'
+            REMOVE_CONFIRM_TITLE: 'Odebrat motiv?'
+            TITLE: Motivy
         TIME:
             DAYS_AGO: 'před {n} dny'
             HOURS_AGO: 'před {n} hodinami'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Uživatel byl změněn jinde — uložit pro přepsání nebo znovu načíst'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Uživatel byl změněn jinde. Prosím, znovu načtěte.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Nemůžete smazat svůj vlastní účet.'
+            CONFIRM_DELETE_USER: 'Smazat uživatele „{username}"? Toto nelze vzít zpět.'
+            TITLE: Uživatelé
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar odstraněn'
             AVATAR_UPDATED: 'Avatar aktualizován'
@@ -896,3 +950,135 @@ ICU:
             VIEW_SITE: 'Zobrazit web'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Neznámý widget: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Nepodařilo se načíst konfiguraci účtů'
+            FAILED_TO_SAVE: 'Nepodařilo se uložit konfiguraci účtů'
+            MODIFIED_ELSEWHERE: 'Konfigurace byla změněna jinde. Prosím obnovte.'
+            NO_FIELDS: 'Žádné možnosti konfigurace nejsou k dispozici.'
+            PAGE_TITLE: 'Konfigurace účtů — Grav Admin'
+            SAVED: 'Konfigurace uložena'
+            TITLE: 'Konfigurace účtů'
+        EDIT: Upravit
+        GROUPS:
+            ADD_GROUP: 'Přidat skupinu'
+            BACK_TO_GROUPS: 'Zpět na skupiny'
+            CONFIRM_DELETE_GROUP: 'Smazat skupinu „{name}"? Tuto akci nelze vrátit zpět.'
+            CREATE: Vytvořit
+            DELETE_GROUP: 'Smazat skupinu'
+            DESCRIPTION: Popis
+            DISPLAY_NAME: 'Zobrazovaný název'
+            FAILED_TO_CREATE_GROUP: 'Nepodařilo se vytvořit skupinu.'
+            FAILED_TO_LOAD_GROUP: 'Nepodařilo se načíst skupinu „{name}".'
+            FAILED_TO_LOAD_GROUPS: 'Nepodařilo se načíst skupiny'
+            FAILED_TO_SAVE_GROUP: 'Nepodařilo se uložit skupinu.'
+            GROUPS: Skupiny
+            GROUPS_GRAV_ADMIN: 'Skupiny — Grav Admin'
+            GROUP_COUNT_ONE: '{n} skupina'
+            GROUP_COUNT_OTHER: '{n} skupiny'
+            GROUP_CREATED: 'Skupina „{name}" vytvořena'
+            GROUP_DELETED: 'Skupina „{name}" smazána'
+            GROUP_DELETE_FAILED: 'Nepodařilo se smazat skupinu „{name}"'
+            GROUP_MODIFIED_ELSEWHERE: 'Skupina byla změněna jinde. Prosím znovu načtěte.'
+            GROUP_NAME: 'Název skupiny'
+            GROUP_NAME_HELP: '1–200 znaků složených z písmen, číslic, pomlček nebo podtržítek. Používá se jako klíč úložiště.'
+            GROUP_NAME_PLACEHOLDER: 'např. redaktoři'
+            GROUP_PAGE_TITLE: '{name} — Skupiny — Grav Admin'
+            GROUP_SAVED: 'Skupina „{name}" uložena'
+            NEW_GROUP: 'Nová skupina'
+            NEW_GROUP_GRAV_ADMIN: 'Nová skupina — Grav Admin'
+            NO_GROUPS: 'Žádné skupiny nebyly nalezeny'
+            NO_GROUPS_MATCH_SEARCH: 'Žádné skupiny neodpovídají vašemu hledání'
+            SEARCH_GROUPS: 'Hledat skupiny…'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Vyberte skupinu pro zobrazení podrobností'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Nepodařilo se vytvořit váš účet.'
+            ACCEPT_HEADING: 'Přijmout pozvání'
+            ACCEPT_SUBHEADING: 'Nastavte si svůj účet a začněte.'
+            ACCEPT_SUCCESS: 'Účet vytvořen. Vítejte!'
+            ACCEPT_TITLE: 'Přijmout pozvání — Grav Admin'
+            CHECKING_INVITE: 'Kontrola vašeho pozvání…'
+            CHOOSE_PASSWORD: 'Zvolte heslo'
+            CONFIRM_REVOKE: 'Odvolat pozvání pro {email}? Odkaz přestane fungovat.'
+            COPIED: Zkopírováno
+            COPY: Kopírovat
+            COPY_FAILED: 'Nepodařilo se zkopírovat odkaz.'
+            CREATED_NO_EMAIL_TOAST: 'Pozvání vytvořeno. E-mail není nakonfigurován, proto odkaz sdílejte ručně.'
+            CREATE_ACCOUNT: 'Vytvořit účet'
+            CREATING_ACCOUNT: 'Vytváření účtu…'
+            EMAIL: E-mail
+            EMAIL_SENT_TO: 'Pozvánka byla odeslána na {email}.'
+            EXPIRED: Vypršelo
+            EXPIRED_INVITE: 'Toto pozvání vypršelo.'
+            EXPIRED_INVITE_BODY: 'Toto pozvání vypršelo. Požádejte správce, aby vám poslal nové.'
+            EXPIRES_AFTER: 'Pozvánka vyprší po'
+            EXPIRES_IN_DAYS: '{count, plural, one {Vyprší za # den} other {Vyprší za # dní}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Vyprší za # hodinu} other {Vyprší za # hodin}}'
+            EXPIRY_14_DAYS: '14 dní'
+            EXPIRY_1_DAY: '1 den'
+            EXPIRY_30_DAYS: '30 dní'
+            EXPIRY_3_DAYS: '3 dny'
+            EXPIRY_7_DAYS: '7 dní'
+            FULL_NAME_OPTIONAL: 'Celé jméno (nepovinné)'
+            GROUPS: Skupiny
+            GROUPS_HINT: 'Skupiny, do kterých bude pozvaný uživatel přidán.'
+            INVALID_INVITE: 'Tato pozvánka není platná.'
+            INVALID_INVITE_BODY: 'Tento odkaz pozvánky je neplatný nebo již byl použit.'
+            INVITE: Pozvat
+            INVITED_BY: 'Pozval {name}'
+            INVITE_ANOTHER: 'Pozvat dalšího'
+            INVITE_LINK: 'Odkaz pozvánky'
+            INVITE_READY: 'Pozvánka připravena'
+            INVITE_USER: 'Pozvat uživatele'
+            LOADING_GROUPS: 'Načítání skupin…'
+            LOAD_FAILED: 'Nepovedlo se načíst pozvánky.'
+            MESSAGE_OPTIONAL: 'Osobní zpráva (nepovinné)'
+            NONE_PENDING: 'Žádné čekající pozvánky'
+            NONE_PENDING_HINT: 'Pozvěte někoho, aby se připojil, a jejich čekající pozvánka se zobrazí zde.'
+            NO_GROUPS: 'Zatím nejsou definovány žádné skupiny.'
+            PASSWORD_POLICY: 'Heslo nesplňuje požadovanou zásadu'
+            PENDING_COUNT: '{count, plural, =0 {Žádné pending pozvánky} one {# pending pozvánka} other {# pending pozvánek}}'
+            PERMISSIONS: Oprávnění
+            PERMISSIONS_HINT: 'Oprávnění, která obdrží pozvaný uživatel. Nemohou si sami udělit více, než jste zde nastavili.'
+            RECIPIENT: Příjemce
+            RECIPIENT_HINT: 'Při přijetí si zvolí své vlastní uživatelské jméno a heslo.'
+            RESEND: 'Poslat znovu'
+            RESEND_FAILED: 'Nepodařilo se znovu poslat pozvánku.'
+            RESENT_TOAST: 'Pozvánka byla poslána znovu na adresu {email}.'
+            REVOKE: Zrušit
+            REVOKED_TOAST: 'Pozvánka byla zrušena.'
+            REVOKE_FAILED: 'Nepodařilo se zrušit pozvánku.'
+            REVOKE_TITLE: 'Zrušit pozvánku'
+            SEND_FAILED: 'Nepodařilo se poslat pozvánku.'
+            SEND_INVITE: 'Poslat pozvánku'
+            SENT_TOAST: 'Pozvánka byla poslána na adresu {email}.'
+            TITLE_OPTIONAL: 'Název (volitelné)'
+            USERNAME_INVALID: 'Uživatelské jméno musí mít 3–64 znaků.'
+            USERNAME_TAKEN: 'Toto uživatelské jméno je již obsazeno.'
+            VIEW_PENDING: 'Zobrazit pending'
+        PAGINATION:
+            PAGE_OF: 'Stránka {current} z {total}'
+        PLUGINS_TABLE:
+            NAME: Název
+            NO_PLUGINS: 'Nejsou nainstalovány žádné pluginy'
+            PROTECTED_PLUGIN: 'Tento plugin nelze deaktivovat z admin-next bez zablokování přístupu.'
+            VERSION: Verze
+        THEMES_TABLE:
+            NO_THEMES: 'Nejsou nainstalovány žádné motivy'
+        USERS_NAV:
+            CONFIGURATION: Konfigurace
+            GROUPS: Skupiny
+            INVITATIONS: Pozvánky
+            USERS: Uživatelé
+        USERS_TABLE:
+            ACTIONS: Akce
+            CARDS: Karty
+            DELETE: Smazat
+            DISABLED: Zakázáno
+            EDIT: Upravit
+            EMAIL: E-mail
+            ENABLED: Povoleno
+            FULL_NAME: 'Celé jméno'
+            NO_USERS: 'Nebyli nalezeni žádní uživatelé'
+            STATUS: Stav
+            TABLE: Tabulka
+            USERNAME: 'Uživatelské jméno'
