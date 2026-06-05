@@ -82,6 +82,17 @@ ICU:
             RELOAD: 重新加载
             TITLE: 配置
             TITLE_SCROLLED: '配置：{scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: 空
+                RESET_BUTTON: 重置覆盖
+                RESET_CONFIRM: 重置
+                RESET_DONE: 覆盖已重置
+                RESET_MESSAGE: '这将删除 {scope} 上的所有覆盖并恢复继承的值。此操作无法撤销。'
+                RESET_TITLE: 重置所有覆盖？
+                RESET_TOOLTIP: 删除所有覆盖并恢复继承的值
+                REVERTED: 已还原为继承的值
+                REVERT_FAILED: 无法还原
+                REVERT_TOOLTIP: '覆盖默认值（{value}）。单击以还原。'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: 环境
             EXPORT_YAML: '导出 YAML'
@@ -150,7 +161,7 @@ ICU:
             CREATE_ENVIRONMENT: 创建环境…
             CREATE_ENV_NAMED: '创建环境 "{name}"…'
             DEFAULT: 默认
-            ENV_CREATED: "环境 {name} 已创建并选中"
+            ENV_CREATED: '环境 {name} 已创建并选中'
             FAILED_TO_CREATE: 创建环境失败
             HAS_OVERRIDES: 有覆盖
             NO_LONGER_EXISTS_PICK_ANOTHER: 不再存在。请选择其他环境。
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: '保存到环境：{name}'
             SELECTED_ENV: 已选中的环境
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 选择配置保存位置
+            CONFIRM_DELETE: '删除 {name}？'
+            CONFIRM_DELETE_WITH_OVERRIDES: '删除 {name} 及其所有配置覆盖？'
+            DELETE: 删除
+            DELETE_ENV_TOOLTIP: '删除环境 {name}'
+            ENV_DELETED: '环境 {name} 已删除'
+            FAILED_TO_DELETE: 删除环境失败
+            SWITCH_AND_RELOAD: 切换并重新加载
+            SWITCH_DISCARDS_UNSAVED: 切换环境将重新加载管理员界面并放弃未保存的更改。是否继续？
         EXPAND_ALL: 全部展开
         EXPAND_SIDEBAR: 展开侧边栏
         EXPERT_MODE: 专家模式
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 切换页面导航器
                 UNPUBLISH_ON: 取消发布于
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: '在此输入你的 markdown 内容...'
+                SAVED_BY_PEER: '{user} 保存了此页面'
+                SAVED_BY_PEER_ANON: 另一个用户保存了此页面
             EDIT_PAGE: 编辑页面
             FRONTMATTER: 前置元数据
             HEADER_MODIFIED: 修改时间
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 有子页面
                 SUMMARY: 摘要
                 VISIBLE: 可见
+                DROP_HERE: 在此处放开
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 页面重组失败
                 NO_PAGES_MATCH: '没有页面与"{query}"相符'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: 列
             VIEW_LIST: 列表
             VIEW_TREE: 树形
+            CHUNK_SIZE: 块
+            CHUNK_SIZE_HELP: 滚动时每个请求要获取的行数。较大的值首次加载较慢，但可减少后续请求。
+            LOADED_OF: '{n, plural, one {# 已加载} other {# 已加载}} 共 {total}'
+            LOADING_CHUNK: '加载行 {from}–{to}…'
+            NO_MATCH: 没有页面与您的搜索匹配
+            PUBLISH: 发布
+            REORDER_DONE: 完成
+            REORDER_EXIT_TITLE: 退出重新排序模式
+            REORDER_LOADING: '仍在加载完整列表 — 请稍后再试。'
+            REORDER_LOADING_ALL: 正在加载每个块以便重新排序可以影响整个列表…
+            REORDER_START_TITLE: 重新排序页面
+            STATS_PUBLISHED: '{n} 已发布'
+            STATS_TOTAL: '{n} 总计'
+            STATS_UNPUBLISHED: '{n} 未发布'
+            UNPUBLISH: 取消发布
         PASSWORD: 密码
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 密码要求
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 加载权限失败
             NOT_SET: 未设置
+            ADMIN_LEGACY: Admin（旧版）
         PLUGIN:
             BACK_TO_DASHBOARD: 返回仪表板
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 此插件页面没有可用内容。
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 搜索插件...
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 选择一个插件以查看详情
             SYMLINKED: 符号链接
+            REMOVE_CONFIRM_MESSAGE: '删除 {name}？这将卸载该插件并删除其文件。配置将被保留。'
+            REMOVE_CONFIRM_TITLE: 删除插件？
+            TITLE: 插件
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 正在加载插件页面...
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 用于深色背景
             USED_ON_LIGHT_BACKGROUNDS: 用于浅色背景
             USERS_MAY_OVERRIDE: 用户可以覆盖
+            OTHER_LIST_VIEWS: 其他列表视图
+            OTHER_LIST_VIEWS_DESC: 用户、插件和主题列表的默认布局
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 个字符：字母、数字、连字符、下划线'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理员账户已创建 — 欢迎使用 Grav'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 选择主题以查看详情
             SYMLINKED: 符号链接
             THEMES_GRAV_ADMIN: '主题 — Grav Admin'
+            ACTIVATE: 激活
+            ACTIVATE_CONFIRM_MESSAGE: '将活跃网站主题切换为 {name}？前端呈现将立即使用此主题。'
+            ACTIVATE_CONFIRM_TITLE: 激活主题？
+            ACTIVATE_THEME: '激活 {name}'
+            DELETE_ACTIVE_WARNING: 当前处于活跃状态。建议先切换主题，然后再删除。
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} 是当前活跃主题。移除它将使网站没有主题，直到激活另一个主题。继续？'
+            REMOVE_CONFIRM_MESSAGE: '移除 {name}？这将卸载主题并删除其文件。'
+            REMOVE_CONFIRM_TITLE: 移除主题？
+            TITLE: 主题
         TIME:
             DAYS_AGO: '{n}天前'
             HOURS_AGO: '{n}小时前'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: '用户在其他地方已更改 — 保存以覆盖或重新加载'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 用户在其他地方已被修改。请重新加载。
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 您无法删除自己的账户。
+            CONFIRM_DELETE_USER: '删除用户 „{username}"？此操作无法撤销。'
+            TITLE: 用户
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 头像已移除
             AVATAR_UPDATED: 头像已更新
@@ -896,3 +950,135 @@ ICU:
             VIEW_SITE: 查看网站
         WIDGET_HOST:
             UNKNOWN_WIDGET: '未知小部件: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 加载账户配置失败
+            FAILED_TO_SAVE: 保存账户配置失败
+            MODIFIED_ELSEWHERE: 配置已在其他地方修改。请重新加载。
+            NO_FIELDS: 没有可用的配置选项。
+            PAGE_TITLE: '账户配置 — Grav Admin'
+            SAVED: 配置已保存
+            TITLE: 账户配置
+        EDIT: 编辑
+        GROUPS:
+            ADD_GROUP: 添加组
+            BACK_TO_GROUPS: 返回组
+            CONFIRM_DELETE_GROUP: '删除组"{name}"？此操作无法撤销。'
+            CREATE: 创建
+            DELETE_GROUP: 删除组
+            DESCRIPTION: 描述
+            DISPLAY_NAME: 显示名称
+            FAILED_TO_CREATE_GROUP: 创建组失败。
+            FAILED_TO_LOAD_GROUP: '加载组"{name}"失败。'
+            FAILED_TO_LOAD_GROUPS: 加载组失败
+            FAILED_TO_SAVE_GROUP: 保存组失败。
+            GROUPS: 组
+            GROUPS_GRAV_ADMIN: '组 — Grav 管理员'
+            GROUP_COUNT_ONE: '{n} 个组'
+            GROUP_COUNT_OTHER: '{n} 个组'
+            GROUP_CREATED: '组"{name}"已创建'
+            GROUP_DELETED: '组"{name}"已删除'
+            GROUP_DELETE_FAILED: '删除组"{name}"失败'
+            GROUP_MODIFIED_ELSEWHERE: 组已在其他地方被修改。请重新加载。
+            GROUP_NAME: 组名称
+            GROUP_NAME_HELP: '1–200 个字符，可包含字母、数字、连字符或下划线。用作存储密钥。'
+            GROUP_NAME_PLACEHOLDER: '例如 editors'
+            GROUP_PAGE_TITLE: '{name} — 组 — Grav 管理员'
+            GROUP_SAVED: '组"{name}"已保存'
+            NEW_GROUP: 新建组
+            NEW_GROUP_GRAV_ADMIN: '新建组 — Grav 管理'
+            NO_GROUPS: 未找到任何组
+            NO_GROUPS_MATCH_SEARCH: 未找到与您的搜索相匹配的组
+            SEARCH_GROUPS: 搜索组...
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 选择一个组以查看详情
+        INVITATIONS:
+            ACCEPT_FAILED: 无法创建您的账户。
+            ACCEPT_HEADING: 接受邀请
+            ACCEPT_SUBHEADING: 设置您的账户以开始使用。
+            ACCEPT_SUCCESS: 账户已创建。欢迎！
+            ACCEPT_TITLE: '接受邀请 — Grav 管理'
+            CHECKING_INVITE: 正在检查您的邀请...
+            CHOOSE_PASSWORD: 选择密码
+            CONFIRM_REVOKE: '撤销向 {email} 的邀请？该链接将停止工作。'
+            COPIED: 已复制
+            COPY: 复制
+            COPY_FAILED: 无法复制链接。
+            CREATED_NO_EMAIL_TOAST: 邀请已创建。未配置电子邮件，请手动共享链接。
+            CREATE_ACCOUNT: 创建账户
+            CREATING_ACCOUNT: 正在创建账户...
+            EMAIL: 电子邮件
+            EMAIL_SENT_TO: '邀请电子邮件已发送至 {email}。'
+            EXPIRED: 已过期
+            EXPIRED_INVITE: 此邀请已过期。
+            EXPIRED_INVITE_BODY: 此邀请已过期。请要求管理员发送新的邀请。
+            EXPIRES_AFTER: 邀请过期时间
+            EXPIRES_IN_DAYS: '{count, plural, one {在 # 天后过期} other {在 # 天后过期}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {在 # 小时后过期} other {在 # 小时后过期}}'
+            EXPIRY_14_DAYS: '14 天'
+            EXPIRY_1_DAY: '1 天'
+            EXPIRY_30_DAYS: '30 天'
+            EXPIRY_3_DAYS: '3 天'
+            EXPIRY_7_DAYS: '7 天'
+            FULL_NAME_OPTIONAL: 全名（可选）
+            GROUPS: 分组
+            GROUPS_HINT: 邀请的用户将被添加到的分组。
+            INVALID_INVITE: 此邀请无效。
+            INVALID_INVITE_BODY: 此邀请链接无效或已被使用。
+            INVITE: 邀请
+            INVITED_BY: '由 {name} 邀请'
+            INVITE_ANOTHER: 邀请另一个
+            INVITE_LINK: 邀请链接
+            INVITE_READY: 邀请已就绪
+            INVITE_USER: 邀请用户
+            LOADING_GROUPS: 加载分组中...
+            LOAD_FAILED: 加载邀请失败。
+            MESSAGE_OPTIONAL: 个人消息（可选）
+            NONE_PENDING: 无待处理邀请
+            NONE_PENDING_HINT: 邀请某人加入，他们的待处理邀请将显示在此处。
+            NO_GROUPS: 尚未定义任何分组。
+            PASSWORD_POLICY: 密码不符合所需策略
+            PENDING_COUNT: '{count, plural, =0 {无待处理邀请} one {# 个待处理邀请} other {# 个待处理邀请}}'
+            PERMISSIONS: 权限
+            PERMISSIONS_HINT: 受邀用户将获得的权限。他们无法为自己授予超过您在此设置的权限。
+            RECIPIENT: 收件人
+            RECIPIENT_HINT: 他们在接受邀请时将选择自己的用户名和密码。
+            RESEND: 重新发送
+            RESEND_FAILED: 未能重新发送邀请。
+            RESENT_TOAST: '邀请已重新发送至 {email}。'
+            REVOKE: 撤销
+            REVOKED_TOAST: 邀请已撤销。
+            REVOKE_FAILED: 未能撤销邀请。
+            REVOKE_TITLE: 撤销邀请
+            SEND_FAILED: 未能发送邀请。
+            SEND_INVITE: 发送邀请
+            SENT_TOAST: '邀请已发送至 {email}。'
+            TITLE_OPTIONAL: 标题（可选）
+            USERNAME_INVALID: '用户名必须为 3-64 个字符。'
+            USERNAME_TAKEN: 该用户名已被使用。
+            VIEW_PENDING: 查看待处理
+        PAGINATION:
+            PAGE_OF: '第 {current} 页，共 {total} 页'
+        PLUGINS_TABLE:
+            NAME: 名称
+            NO_PLUGINS: 未安装任何插件
+            PROTECTED_PLUGIN: '此插件不能从 admin-next 禁用，否则您会将自己锁定在外。'
+            VERSION: 版本
+        THEMES_TABLE:
+            NO_THEMES: 未安装主题
+        USERS_NAV:
+            CONFIGURATION: 配置
+            GROUPS: 组
+            INVITATIONS: 邀请
+            USERS: 用户
+        USERS_TABLE:
+            ACTIONS: 操作
+            CARDS: 卡片
+            DELETE: 删除
+            DISABLED: 已禁用
+            EDIT: 编辑
+            EMAIL: 电子邮件
+            ENABLED: 已启用
+            FULL_NAME: 全名
+            NO_USERS: 未找到用户
+            STATUS: 状态
+            TABLE: 表格
+            USERNAME: 用户名
