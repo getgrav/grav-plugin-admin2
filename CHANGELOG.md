@@ -1,10 +1,12 @@
 # v2.0.0-rc.14
-## 06/04/2026
+## 06/05/2026
 
 1. [](#new)
     * **The Users area can now be filtered by permission or group** with a type-ahead picker, so you can find every account that holds a given permission, such as all admins. Requires grav-plugin-api ≥ 1.0.0-rc.14.
     * **The users table gains a Permissions column, and both the table and cards views flag accounts that have backend access**, with super admins called out separately.
     * **A user's group memberships now show in their detail panel, and clicking any permission or group filters the list by it.**
+2. [](#improved)
+    * **Added labels for the new image security settings** (URL-based image actions and the maximum-pixels limit) under Configuration > System > Images. Requires Grav ≥ 2.0.0-rc.8.
 
 # v2.0.0-rc.13
 ## 06/04/2026

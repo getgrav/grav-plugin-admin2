@@ -1403,8 +1403,12 @@ ICU:
     IMAGES_FETCHPRIORITY_HELP: The fetchpriority property in HTML is an attribute that specifies the priority for loading certain resources, such as images or iframes, to optimize performance. Possible values are high, low, or auto.
     IMAGES_LOADING: Image loading behavior
     IMAGES_LOADING_HELP: "The loading attribute allows a browser to defer loading offscreen images and iframes until users scroll near them. loading supports three values: auto, lazy, eager"
+    IMAGES_MAX_PIXELS: Maximum image pixels
+    IMAGES_MAX_PIXELS_HELP: "Total-pixel ceiling (width x height) for URL-based resize actions. Requests above this limit are refused. Set to 0 to disable the check."
     IMAGES_SEOFRIENDLY: SEO-Friendly Image names
     IMAGES_SEOFRIENDLY_HELP: When enabled, the image name is displayed first, then a smaller hash to reflect processed operations
+    IMAGES_URL_ACTIONS: Allow URL-based image actions
+    IMAGES_URL_ACTIONS_HELP: "Allow image transforms via URL query parameters (e.g. `image.jpg?resize=600,400`). Disabled by default; normal Twig and Markdown image resizing is unaffected."
     INCLUDE_DEFAULT_LANG: Include default language
     INCLUDE_DEFAULT_LANG_FILE_EXTENSION: Include default language in file extension
     INCLUDE_DEFAULT_LANG_HELP: This will prepend all URLs in the default language with the default language.  e.g. `/en/blog/my-post`
