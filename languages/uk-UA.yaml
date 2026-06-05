@@ -82,6 +82,17 @@ ICU:
             RELOAD: Перезавантажити
             TITLE: Конфігурація
             TITLE_SCROLLED: 'Конфігурація: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: порожньо
+                RESET_BUTTON: 'Скасувати переозначення'
+                RESET_CONFIRM: Скасувати
+                RESET_DONE: 'Переозначення скасовано'
+                RESET_MESSAGE: 'Це видалить усі переозначення на {scope} і відновить успадковані значення. Цю дію не можна скасувати.'
+                RESET_TITLE: 'Скасувати всі переозначення?'
+                RESET_TOOLTIP: 'Видалити всі переозначення та відновити успадковані значення'
+                REVERTED: 'Відновлено успадковане значення'
+                REVERT_FAILED: 'Не вдалося відновити'
+                REVERT_TOOLTIP: 'Переозначує значення за замовчуванням ({value}). Натисніть, щоб відновити.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Середовище
             EXPORT_YAML: 'Експортувати YAML'
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: 'Збереження в середовище: {name}'
             SELECTED_ENV: 'Вибране середовище'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Вибрати місце збереження записів конфігурації'
+            CONFIRM_DELETE: 'Видалити {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Видалити {name} та всі його переозначення конфігурації?'
+            DELETE: Видалити
+            DELETE_ENV_TOOLTIP: 'Видалити середовище {name}'
+            ENV_DELETED: 'Середовище {name} видалено'
+            FAILED_TO_DELETE: 'Не вдалося видалити середовище'
+            SWITCH_AND_RELOAD: 'Перемкнути та перезавантажити'
+            SWITCH_DISCARDS_UNSAVED: 'Переключення середовища перезавантажує адміністратор і відкидає незбережені зміни. Продовжити?'
         EXPAND_ALL: 'Розгорнути все'
         EXPAND_SIDEBAR: 'Розгорнути бічну панель'
         EXPERT_MODE: 'Експертний режим'
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Перемкнути навігатор сторінок'
                 UNPUBLISH_ON: 'Скасувати публікацію'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Напишіть тут вміст markdown...'
+                SAVED_BY_PEER: '{user} зберіг цю сторінку'
+                SAVED_BY_PEER_ANON: 'Інший користувач зберіг цю сторінку'
             EDIT_PAGE: 'Редагувати сторінку'
             FRONTMATTER: Фронтматер
             HEADER_MODIFIED: Змінено
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Має дочірні елементи'
                 SUMMARY: Резюме
                 VISIBLE: Видимо
+                DROP_HERE: 'Перетягніть сюди'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Не вдалося переорганізувати сторінки'
                 NO_PAGES_MATCH: 'Жодних сторінок, що відповідають „{query}"'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Колонки
             VIEW_LIST: Список
             VIEW_TREE: Дерево
+            CHUNK_SIZE: Фрагмент
+            CHUNK_SIZE_HELP: 'Кількість рядків для завантаження за запитом під час прокручування. Більші значення повільніше завантажуються вперше, але зменшують подальші запити.'
+            LOADED_OF: '{n, plural, one {# завантажено} other {# завантажено}} з {total}'
+            LOADING_CHUNK: 'Завантаження рядків {from}–{to}…'
+            NO_MATCH: 'Жодна сторінка не відповідає вашому пошуку'
+            PUBLISH: Опублікувати
+            REORDER_DONE: Готово
+            REORDER_EXIT_TITLE: 'Вийти з режиму переупорядкування'
+            REORDER_LOADING: 'Повний список все ще завантажується — спробуйте ще раз за мить.'
+            REORDER_LOADING_ALL: 'Завантаження кожного блоку, щоб переупорядкування вплинуло на весь список…'
+            REORDER_START_TITLE: 'Переупорядкування сторінок'
+            STATS_PUBLISHED: '{n} опубліковано'
+            STATS_TOTAL: '{n} всього'
+            STATS_UNPUBLISHED: '{n} не опубліковано'
+            UNPUBLISH: 'Зняти з публікації'
         PASSWORD: Пароль
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Вимоги до пароля'
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Не вдалося завантажити дозволи'
             NOT_SET: 'Не встановлено'
+            ADMIN_LEGACY: 'Admin (legacy)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Повернутися до Панелі керування'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Для цієї сторінки плагіна немає доступного вмісту.'
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Пошук плагінів...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Виберіть плагін для перегляду деталей'
             SYMLINKED: 'Символічне посилання'
+            REMOVE_CONFIRM_MESSAGE: 'Видалити {name}? Це видалить плагін і його файли. Конфігурація буде збережена.'
+            REMOVE_CONFIRM_TITLE: 'Видалити плагін?'
+            TITLE: Плагіни
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Завантаження сторінки плагіна...'
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Використовується на темних фонах'
             USED_ON_LIGHT_BACKGROUNDS: 'Використовується на світлих фонах'
             USERS_MAY_OVERRIDE: 'Користувачі можуть замінити'
+            OTHER_LIST_VIEWS: 'Інші подання списку'
+            OTHER_LIST_VIEWS_DESC: 'Макет за умовчанням для списків користувачів, плагінів і тем'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 символи: букви, цифри, дефіси, підкреслення'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Обліковий запис адміністратора створено — ласкаво просимо до Grav'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Виберіть тему для перегляду деталей'
             SYMLINKED: 'Символічне посилання'
             THEMES_GRAV_ADMIN: 'Теми — Grav Admin'
+            ACTIVATE: Активувати
+            ACTIVATE_CONFIRM_MESSAGE: 'Перемкнути активну тему сайту на {name}? Інтерфейс сайту буде використовувати цю тему негайно.'
+            ACTIVATE_CONFIRM_TITLE: 'Активувати тему?'
+            ACTIVATE_THEME: 'Активувати {name}'
+            DELETE_ACTIVE_WARNING: 'Наразі активна. Рекомендується спочатку перемкнути теми перед видаленням.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} — це наразі активна тема. Її видалення залишить сайт без теми, доки не буде активована інша. Продовжити?'
+            REMOVE_CONFIRM_MESSAGE: 'Видалити {name}? Це видалить тему та її файли.'
+            REMOVE_CONFIRM_TITLE: 'Видалити тему?'
+            TITLE: Теми
         TIME:
             DAYS_AGO: '{n}д тому'
             HOURS_AGO: '{n}г тому'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Користувач змінився в іншому місці — збережіть, щоб перезаписати, або перезавантажте'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Користувач був змінений в іншому місці. Будь ласка, перезавантажте.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Ви не можете видалити свій власний обліковий запис.'
+            CONFIRM_DELETE_USER: 'Видалити користувача „{username}"? Це неможливо буде скасувати.'
+            TITLE: Користувачі
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Аватар видалено'
             AVATAR_UPDATED: 'Аватар оновлено'
@@ -896,3 +950,135 @@ ICU:
             VIEW_SITE: 'Переглянути сайт'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Невідомий віджет: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Не вдалося завантажити конфігурацію облікових записів'
+            FAILED_TO_SAVE: 'Не вдалося зберегти конфігурацію облікових записів'
+            MODIFIED_ELSEWHERE: 'Конфігурація була змінена в іншому місці. Будь ласка, перезавантажте.'
+            NO_FIELDS: 'Немає доступних параметрів конфігурації.'
+            PAGE_TITLE: 'Конфігурація облікових записів — Grav Admin'
+            SAVED: 'Конфігурація збережена'
+            TITLE: 'Конфігурація облікових записів'
+        EDIT: Редагувати
+        GROUPS:
+            ADD_GROUP: 'Додати групу'
+            BACK_TO_GROUPS: 'Повернутися до груп'
+            CONFIRM_DELETE_GROUP: 'Видалити групу „{name}"? Це не можна буде скасувати.'
+            CREATE: Створити
+            DELETE_GROUP: 'Видалити групу'
+            DESCRIPTION: Опис
+            DISPLAY_NAME: "Відображуване ім'я"
+            FAILED_TO_CREATE_GROUP: 'Не вдалося створити групу.'
+            FAILED_TO_LOAD_GROUP: 'Не вдалося завантажити групу „{name}".'
+            FAILED_TO_LOAD_GROUPS: 'Не вдалося завантажити групи'
+            FAILED_TO_SAVE_GROUP: 'Не вдалося зберегти групу.'
+            GROUPS: Групи
+            GROUPS_GRAV_ADMIN: 'Групи — Grav Admin'
+            GROUP_COUNT_ONE: '{n} група'
+            GROUP_COUNT_OTHER: '{n} груп'
+            GROUP_CREATED: 'Група „{name}" створена'
+            GROUP_DELETED: 'Група „{name}" видалена'
+            GROUP_DELETE_FAILED: 'Не вдалося видалити групу „{name}"'
+            GROUP_MODIFIED_ELSEWHERE: 'Групу змінено в іншому місці. Будь ласка, перезавантажте.'
+            GROUP_NAME: 'Назва групи'
+            GROUP_NAME_HELP: '1–200 символів літер, цифр, дефісів або підкреслень. Використовується як ключ зберігання.'
+            GROUP_NAME_PLACEHOLDER: 'наприклад, редактори'
+            GROUP_PAGE_TITLE: '{name} — Групи — Grav Admin'
+            GROUP_SAVED: 'Група „{name}" збережена'
+            NEW_GROUP: 'Нова група'
+            NEW_GROUP_GRAV_ADMIN: 'Нова група — Grav Admin'
+            NO_GROUPS: 'Групи не знайдені'
+            NO_GROUPS_MATCH_SEARCH: 'Немає груп, які відповідають вашому пошуку'
+            SEARCH_GROUPS: 'Пошук груп...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Виберіть групу для перегляду деталей'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Не вдалося створити ваш обліковий запис.'
+            ACCEPT_HEADING: 'Прийняти запрошення'
+            ACCEPT_SUBHEADING: 'Налаштуйте свій обліковий запис для початку роботи.'
+            ACCEPT_SUCCESS: 'Обліковий запис створено. Ласкаво просимо!'
+            ACCEPT_TITLE: 'Прийняти запрошення — Grav Admin'
+            CHECKING_INVITE: 'Перевірка вашого запрошення...'
+            CHOOSE_PASSWORD: 'Виберіть пароль'
+            CONFIRM_REVOKE: 'Анулювати запрошення для {email}? Посилання перестане працювати.'
+            COPIED: Скопійовано
+            COPY: Копіювати
+            COPY_FAILED: 'Не вдалося скопіювати посилання.'
+            CREATED_NO_EMAIL_TOAST: 'Запрошення створено. Електронну пошту не налаштовано, тому поділіться посиланням вручну.'
+            CREATE_ACCOUNT: 'Створити обліковий запис'
+            CREATING_ACCOUNT: 'Створення облікового запису...'
+            EMAIL: 'Електронна пошта'
+            EMAIL_SENT_TO: 'Запрошення було надіслано на {email}.'
+            EXPIRED: Закінчилося
+            EXPIRED_INVITE: 'Це запрошення закінчилося.'
+            EXPIRED_INVITE_BODY: 'Це запрошення закінчилося. Попросіть адміністратора надіслати нове.'
+            EXPIRES_AFTER: 'Запрошення закінчується через'
+            EXPIRES_IN_DAYS: '{count, plural, one {Закінчується за # день} other {Закінчується за # днів}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Закінчується за # годину} other {Закінчується за # годин}}'
+            EXPIRY_14_DAYS: '14 днів'
+            EXPIRY_1_DAY: '1 день'
+            EXPIRY_30_DAYS: '30 днів'
+            EXPIRY_3_DAYS: '3 дні'
+            EXPIRY_7_DAYS: '7 днів'
+            FULL_NAME_OPTIONAL: "Повне ім'я (необов'язково)"
+            GROUPS: Групи
+            GROUPS_HINT: 'Групи, до яких буде додано запрошеного користувача.'
+            INVALID_INVITE: 'Це запрошення недійсне.'
+            INVALID_INVITE_BODY: 'Це посилання запрошення недійсне або вже використано.'
+            INVITE: Запросити
+            INVITED_BY: 'Запросив(ла) {name}'
+            INVITE_ANOTHER: 'Запросити іншого'
+            INVITE_LINK: 'Посилання запрошення'
+            INVITE_READY: 'Запрошення готове'
+            INVITE_USER: 'Запросити користувача'
+            LOADING_GROUPS: 'Завантаження груп...'
+            LOAD_FAILED: 'Не вдалося завантажити запрошення.'
+            MESSAGE_OPTIONAL: "Особистий лист (необов'язково)"
+            NONE_PENDING: 'Немає очікуваних запрошень'
+            NONE_PENDING_HINT: "Запросіть когось приєднатися, і їхнє очікуване запрошення з'явиться тут."
+            NO_GROUPS: 'Групи ще не визначені.'
+            PASSWORD_POLICY: 'Пароль не відповідає необхідній політиці'
+            PENDING_COUNT: '{count, plural, =0 {Немає очікуваних запрошень} one {# очікуване запрошення} other {# очікуваних запрошень}}'
+            PERMISSIONS: Дозволи
+            PERMISSIONS_HINT: 'Дозволи, які отримає запрошений користувач. Вони не можуть надати собі більше дозволів, ніж ви встановили тут.'
+            RECIPIENT: Отримувач
+            RECIPIENT_HINT: "Вони виберуть своє власне ім'я користувача та пароль, коли прийматимуть запрошення."
+            RESEND: 'Відправити повторно'
+            RESEND_FAILED: 'Не вдалося повторно відправити запрошення.'
+            RESENT_TOAST: 'Запрошення повторно відправлено на {email}.'
+            REVOKE: Відкликати
+            REVOKED_TOAST: 'Запрошення було відкликано.'
+            REVOKE_FAILED: 'Не вдалося відкликати запрошення.'
+            REVOKE_TITLE: 'Відкликати запрошення'
+            SEND_FAILED: 'Не вдалося відправити запрошення.'
+            SEND_INVITE: 'Відправити запрошення'
+            SENT_TOAST: 'Запрошення відправлено на {email}.'
+            TITLE_OPTIONAL: "Назва (необов'язково)"
+            USERNAME_INVALID: "Ім'я користувача має містити від 3 до 64 символів."
+            USERNAME_TAKEN: "Це ім'я користувача вже занято."
+            VIEW_PENDING: 'Переглянути очікуючі'
+        PAGINATION:
+            PAGE_OF: 'Сторінка {current} з {total}'
+        PLUGINS_TABLE:
+            NAME: Назва
+            NO_PLUGINS: 'Жодних плагінів не встановлено'
+            PROTECTED_PLUGIN: 'Цей плагін не можна вимкнути з admin-next без блокування доступу.'
+            VERSION: Версія
+        THEMES_TABLE:
+            NO_THEMES: 'Тем не встановлено'
+        USERS_NAV:
+            CONFIGURATION: Конфігурація
+            GROUPS: Групи
+            INVITATIONS: Запрошення
+            USERS: Користувачі
+        USERS_TABLE:
+            ACTIONS: Дії
+            CARDS: Карточки
+            DELETE: Видалити
+            DISABLED: Вимкнено
+            EDIT: Редагувати
+            EMAIL: 'Електронна пошта'
+            ENABLED: Увімкнено
+            FULL_NAME: "Повне ім'я"
+            NO_USERS: 'Користувачів не знайдено'
+            STATUS: Стан
+            TABLE: Таблиця
+            USERNAME: "Ім'я користувача"

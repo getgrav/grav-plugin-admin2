@@ -348,6 +348,7 @@ ICU:
         PERMISSIONS_FIELD:
             NOT_SET: 未設定
             FAILED_TO_LOAD_PERMISSIONS: 権限の読み込みに失敗しました
+            ADMIN_LEGACY: 'Admin (legacy)'
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: '2FA QR コード'
             SCAN_THE_QR_CODE_WITH_YOUR: '認証アプリで QR コードをスキャンしてください'
@@ -576,11 +577,11 @@ ICU:
             ACCESS_DENIED: アクセスが拒否されました
         ARE_YOU_SURE: よろしいですか？
         ENVIRONMENT_SWITCHER:
-            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 設定の書き込み先を選択
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'アクティブな環境の選択 — どの設定が表示されるか及び保存先を決定します'
             HAS_OVERRIDES: 上書きあり
             SELECTED_ENV: 選択中の環境
             NO_LONGER_EXISTS_PICK_ANOTHER: は存在しません。別のものを選択してください。
-            SAVE_CONFIG_TO: 設定の保存先
+            SAVE_CONFIG_TO: アクティブな環境
             CREATES_PATH: 'user/env/{name}/config/ を作成します'
             DEFAULT: デフォルト
             SAVING_TO_DEFAULT: 'デフォルト (user/config) に保存中'
@@ -596,6 +597,8 @@ ICU:
             DELETE_ENV_TOOLTIP: '環境 {name} を削除'
             CONFIRM_DELETE: '{name} を削除しますか？'
             CONFIRM_DELETE_WITH_OVERRIDES: '{name} とそのすべての設定上書きを削除しますか？'
+            SWITCH_AND_RELOAD: '切り替え & 再読み込み'
+            SWITCH_DISCARDS_UNSAVED: 環境を切り替えると、管理パネルが再読み込みされ、保存されていない変更は破棄されます。続行しますか？
         INLINE_ICON_PICKER:
             SEARCH_ICONS: アイコンを検索...
             NO_ICONS_FOUND: アイコンが見つかりません
@@ -633,6 +636,17 @@ ICU:
             RELOAD: 再読み込み
             NO_CONFIGURATION_BLUEPRINT_AVAILABLE: このスコープに利用可能な設定ブループリントはありません。
             PAGE_TITLE: '設定: {scope} — Grav Admin'
+            OVERRIDE:
+                DEFAULT_EMPTY: 空
+                RESET_BUTTON: 上書きをリセット
+                RESET_CONFIRM: リセット
+                RESET_DONE: リセットを上書き
+                RESET_MESSAGE: '{scope} に関するすべての上書きを削除し、継承された値を復元します。この操作は取り消せません。'
+                RESET_TITLE: すべての上書きをリセットしますか？
+                RESET_TOOLTIP: すべての上書きを削除し、継承された値に復元します
+                REVERTED: 継承された値に戻す
+                REVERT_FAILED: 元に戻せませんでした
+                REVERT_TOOLTIP: 'デフォルト（{value}）を上書きします。クリックで取り消します。'
         FLEX_OBJECTS:
             SEARCH: 検索...
             PREVIOUS: 前へ
@@ -843,6 +857,8 @@ ICU:
             SITE_DEFAULTS_SAVED: サイトデフォルトを保存しました。すべてのユーザーは次回の再読み込み時にこれが反映されます。
             FAILED_TO_SAVE_SITE_DEFAULTS: サイトデフォルトの保存に失敗しました。
             FAILED_TO_RESET_PREFERENCES: 環境設定のリセットに失敗しました。
+            OTHER_LIST_VIEWS: その他のリストビュー
+            OTHER_LIST_VIEWS_DESC: ユーザー、プラグイン、テーマリストのデフォルトレイアウト
         CUSTOM: カスタム
         PREVIEW: プレビュー
         SETUP:
@@ -918,7 +934,7 @@ ICU:
             BACK_TO_USERS: ユーザーへ戻る
             2_FACTOR_AUTHENTICATION: 二要素認証
             NEW:
-                LOWERCASE_3_64_CHARS: '小文字、3〜64 文字'
+                LOWERCASE_3_64_CHARS: '3〜64 文字： 英字、数字、.-_'
                 NEW_USER_GRAV_ADMIN: '新規ユーザー — Grav Admin'
                 NEW_USER: 新規ユーザー
                 ACCOUNT: アカウント
@@ -931,6 +947,7 @@ ICU:
             USERS: ユーザー
             GROUPS: グループ
             CONFIGURATION: 設定
+            INVITATIONS: 招待
         USERS_TABLE:
             USERNAME: ユーザー名
             EMAIL: メールアドレス
@@ -1002,6 +1019,69 @@ ICU:
         UPDATE_TO_VERSION: 'v{version} に更新'
         INVITATIONS:
             USERNAME_INVALID: 'ユーザー名は 3-64 文字としてください。'
+            ACCEPT_FAILED: アカウントを作成できませんでした。
+            ACCEPT_HEADING: 招待を承認する
+            ACCEPT_SUBHEADING: アカウントを設定して、始めましょう。
+            ACCEPT_SUCCESS: アカウントが作成されました。ようこそ！
+            ACCEPT_TITLE: '招待を承認する — Grav Admin'
+            CHECKING_INVITE: 招待を確認中...
+            CHOOSE_PASSWORD: パスワードを入力してください
+            CONFIRM_REVOKE: '{email} への招待を取り消しますか？ リンクは利用できなくなります。'
+            COPIED: コピーしました
+            COPY: コピー
+            COPY_FAILED: リンクをコピーできませんでした。
+            CREATED_NO_EMAIL_TOAST: 招待を作成しました。メールが設定されていないため、リンクを手動で共有してください。
+            CREATE_ACCOUNT: アカウントを作成
+            CREATING_ACCOUNT: アカウントを作成中...
+            EMAIL: Eメール
+            EMAIL_SENT_TO: '{email} 宛てに招待メールを送信しました。'
+            EXPIRED: 有効期限切れ
+            EXPIRED_INVITE: この招待は有効期限を過ぎています。
+            EXPIRED_INVITE_BODY: この招待は有効期限を過ぎています。管理者に新しいものの再送を依頼してください。
+            EXPIRES_AFTER: 招待の有効期限
+            EXPIRES_IN_DAYS: '{count, plural, one {# 日後に有効期限切れ} other {# 日後に有効期限切れ}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {# 時間後に有効期限切れ} other {# 時間後に有効期限切れ}}'
+            EXPIRY_14_DAYS: 14日
+            EXPIRY_1_DAY: 1日
+            EXPIRY_30_DAYS: 30日
+            EXPIRY_3_DAYS: 3日
+            EXPIRY_7_DAYS: 7日
+            FULL_NAME_OPTIONAL: フルネーム（任意）
+            GROUPS: グループ
+            GROUPS_HINT: 招待されたユーザーが追加されるグループ。
+            INVALID_INVITE: この招待は有効ではありません。
+            INVALID_INVITE_BODY: この招待リンクは無効もしくは、すでに利用済みです。
+            INVITE: 招待
+            INVITED_BY: '{name} から招待された'
+            INVITE_ANOTHER: 別のユーザーを招待
+            INVITE_LINK: 招待リンク
+            INVITE_READY: 招待の準備ができました
+            INVITE_USER: ユーザーを招待
+            LOADING_GROUPS: グループを読み込み中...
+            LOAD_FAILED: 招待状の読み込みに失敗しました。
+            MESSAGE_OPTIONAL: 個人メッセージ（オプション）
+            NONE_PENDING: 保留中の招待状はありません
+            NONE_PENDING_HINT: 参加を招待すると、その保留中の招待状がここに表示されます。
+            NO_GROUPS: まだグループが定義されていません。
+            PASSWORD_POLICY: パスワードが必須のポリシーを満たしていません
+            PENDING_COUNT: '{count, plural, =0 {保留中の招待状はありません} one {# 件の保留中の招待状} other {# 件の保留中の招待状}}'
+            PERMISSIONS: 権限
+            PERMISSIONS_HINT: 招待されたユーザーが受け取る権限です。招待されたユーザーはここで設定した範囲を超えて権限を付与することはできません。
+            RECIPIENT: 受信者
+            RECIPIENT_HINT: 招待を受け入れるときに、ユーザー名とパスワードを自由に選択できます。
+            RESEND: 再送
+            RESEND_FAILED: 招待状の再送に失敗しました。
+            RESENT_TOAST: '{email} に招待状を再送しました。'
+            REVOKE: 取り消す
+            REVOKED_TOAST: 招待状が取り消されました。
+            REVOKE_FAILED: 招待状の取り消しに失敗しました。
+            REVOKE_TITLE: 招待状を取り消す
+            SEND_FAILED: 招待の送信に失敗しました。
+            SEND_INVITE: 招待を送信
+            SENT_TOAST: '{email} に招待を送信しました。'
+            TITLE_OPTIONAL: タイトル（オプション）
+            USERNAME_TAKEN: そのユーザー名はすでに使用されています。
+            VIEW_PENDING: 保留中を表示
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA 有効'
         2FA_SECRET: '2FA シークレット'

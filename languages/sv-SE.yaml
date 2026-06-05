@@ -82,6 +82,17 @@ ICU:
             RELOAD: 'Ladda om'
             TITLE: Konfiguration
             TITLE_SCROLLED: 'Konfiguration: {scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: tom
+                RESET_BUTTON: 'Återställ åsidosättningar'
+                RESET_CONFIRM: Återställ
+                RESET_DONE: 'Åsidosättningar återställda'
+                RESET_MESSAGE: 'Detta tar bort varje åsidosättning på {scope} och återställer de ärvda värdena. Detta kan inte göras ogjort.'
+                RESET_TITLE: 'Återställa alla åsidosättningar?'
+                RESET_TOOLTIP: 'Ta bort varje åsidosättning och återställ ärvda värden'
+                REVERTED: 'Återställd till det ärvda värdet'
+                REVERT_FAILED: 'Kunde inte återställa'
+                REVERT_TOOLTIP: 'Åsidosätter standard ({value}). Klicka för att återställa.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljö
             EXPORT_YAML: 'Exportera YAML'
@@ -150,7 +161,7 @@ ICU:
             CREATE_ENVIRONMENT: 'Skapa miljö…'
             CREATE_ENV_NAMED: 'Skapa miljö "{name}"…'
             DEFAULT: Standard
-            ENV_CREATED: "Miljön {name} skapades och valdes"
+            ENV_CREATED: 'Miljön {name} skapades och valdes'
             FAILED_TO_CREATE: 'Det gick inte att skapa miljön'
             HAS_OVERRIDES: 'har åsidosättningar'
             NO_LONGER_EXISTS_PICK_ANOTHER: 'finns inte längre. Välj en annan.'
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: 'Sparar till env: {name}'
             SELECTED_ENV: 'Vald env'
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Välj var config-skrivningar sparas'
+            CONFIRM_DELETE: 'Ta bort {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Ta bort {name} och all dess konfigurationsåsidosättning?'
+            DELETE: 'Ta bort'
+            DELETE_ENV_TOOLTIP: 'Ta bort miljö {name}'
+            ENV_DELETED: 'Miljö {name} borttagen'
+            FAILED_TO_DELETE: 'Misslyckades att ta bort miljö'
+            SWITCH_AND_RELOAD: 'Byt och ladda om'
+            SWITCH_DISCARDS_UNSAVED: 'Miljöväxling startar om admin och förkastar osparade ändringar. Fortsätta?'
         EXPAND_ALL: 'Expandera alla'
         EXPAND_SIDEBAR: 'Expandera sidofält'
         EXPERT_MODE: Expertläge
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Växla sidnavigator'
                 UNPUBLISH_ON: 'Avpublicera den'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Skriv ditt markdown-innehål här...'
+                SAVED_BY_PEER: '{user} sparade denna sida'
+                SAVED_BY_PEER_ANON: 'En annan användare sparade denna sida'
             EDIT_PAGE: 'Redigera sida'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ändrad
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 'Har underordnade'
                 SUMMARY: Sammanfattning
                 VISIBLE: Synlig
+                DROP_HERE: 'Släpp här'
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 'Misslyckades att omorganisera sidor'
                 NO_PAGES_MATCH: 'Inga sidor matchar "{query}"'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: Kolumner
             VIEW_LIST: Lista
             VIEW_TREE: Träd
+            CHUNK_SIZE: Chunk
+            CHUNK_SIZE_HELP: 'Rader att hämta per begäran när du bläddrar. Större värden läses in långsammare första gången men minskar efterföljande begäranden.'
+            LOADED_OF: '{n, plural, one {# inladdad} other {# inladdade}} av {total}'
+            LOADING_CHUNK: 'Laddar rader {from}–{to}…'
+            NO_MATCH: 'Inga sidor matchar din sökning'
+            PUBLISH: Publicera
+            REORDER_DONE: Klar
+            REORDER_EXIT_TITLE: 'Avsluta omordningsläge'
+            REORDER_LOADING: 'Den fullständiga listan läses fortfarande in — försök igen om en stund.'
+            REORDER_LOADING_ALL: 'Laddar varje del så att omordning kan påverka hela listan…'
+            REORDER_START_TITLE: 'Omordna sidor'
+            STATS_PUBLISHED: '{n} publicerad'
+            STATS_TOTAL: '{n} totalt'
+            STATS_UNPUBLISHED: '{n} opublicerad'
+            UNPUBLISH: Avpublicera
         PASSWORD: Lösenord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Lösenordskrav
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 'Det gick inte att läsa in behörigheter'
             NOT_SET: 'Inte inställd'
+            ADMIN_LEGACY: 'Admin (äldre)'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Tillbaka till instrumentpanel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Inget innehål tillgängligt för denna plugin-sida.'
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 'Sök plugin...'
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Välj ett plugin för att visa detaljer'
             SYMLINKED: Symlänkad
+            REMOVE_CONFIRM_MESSAGE: 'Ta bort {name}? Det avinstallerar insticksprogrammet och tar bort dess filer. Konfigurationen bevaras.'
+            REMOVE_CONFIRM_TITLE: 'Ta bort insticksprogram?'
+            TITLE: Insticksprogram
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Läser in plugin-sida...'
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Använd på mörka bakgrunder'
             USED_ON_LIGHT_BACKGROUNDS: 'Använd på ljusa bakgrunder'
             USERS_MAY_OVERRIDE: 'Användare kan åsidosätta'
+            OTHER_LIST_VIEWS: 'Övriga listvyer'
+            OTHER_LIST_VIEWS_DESC: 'Standardlayout för användar-, insticksprogram- och temalistor'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 'Välj ett tema för att visa detaljer'
             SYMLINKED: Symbollänk
             THEMES_GRAV_ADMIN: 'Teman — Grav Admin'
+            ACTIVATE: Aktivera
+            ACTIVATE_CONFIRM_MESSAGE: 'Byt aktivt tema för webbplatsen till {name}? Framåtrendering kommer att använda detta tema omedelbar.'
+            ACTIVATE_CONFIRM_TITLE: 'Aktivera tema?'
+            ACTIVATE_THEME: 'Aktivera {name}'
+            DELETE_ACTIVE_WARNING: 'För närvarande aktivt. Det rekommenderas att byta tema först innan du tar bort det.'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} är det för närvarande aktiva temat. Om du tar bort det lämnar du webbplatsen utan tema tills ett annat aktiveras. Fortsätta?'
+            REMOVE_CONFIRM_MESSAGE: 'Ta bort {name}? Detta kommer att avinstallera temat och ta bort dess filer.'
+            REMOVE_CONFIRM_TITLE: 'Ta bort tema?'
+            TITLE: Teman
         TIME:
             DAYS_AGO: 'för {n}d sedan'
             HOURS_AGO: 'för {n}h sedan'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Användare ändrad på annan plats — spara för att skriva över eller ladda om'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Användare ändrades på annan plats. Vänligen ladda om.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Du kan inte ta bort ditt eget konto.'
+            CONFIRM_DELETE_USER: 'Ta bort användare „{username}"? Detta kan inte ångras.'
+            TITLE: Användare
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar borttagen'
             AVATAR_UPDATED: 'Avatar uppdaterad'
@@ -896,3 +950,135 @@ ICU:
             VIEW_SITE: 'Visa webbplats'
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'Okänd widget: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Misslyckades att ladda kontokonfiguration'
+            FAILED_TO_SAVE: 'Misslyckades att spara kontokonfiguration'
+            MODIFIED_ELSEWHERE: 'Konfigurationen ändrades på annat håll. Vänligen ladda om.'
+            NO_FIELDS: 'Inga konfigurationsalternativ tillgängliga.'
+            PAGE_TITLE: 'Kontokonfiguration — Grav Admin'
+            SAVED: 'Konfiguration sparad'
+            TITLE: Kontokonfiguration
+        EDIT: Redigera
+        GROUPS:
+            ADD_GROUP: 'Lägg till grupp'
+            BACK_TO_GROUPS: 'Tillbaka till grupper'
+            CONFIRM_DELETE_GROUP: 'Ta bort gruppen „{name}"? Detta kan inte ångras.'
+            CREATE: Skapa
+            DELETE_GROUP: 'Ta bort grupp'
+            DESCRIPTION: Beskrivning
+            DISPLAY_NAME: Visningsnamn
+            FAILED_TO_CREATE_GROUP: 'Det gick inte att skapa gruppen.'
+            FAILED_TO_LOAD_GROUP: 'Det gick inte att läsa in gruppen „{name}".'
+            FAILED_TO_LOAD_GROUPS: 'Det gick inte att läsa in grupper'
+            FAILED_TO_SAVE_GROUP: 'Det gick inte att spara gruppen.'
+            GROUPS: Grupper
+            GROUPS_GRAV_ADMIN: 'Grupper — Grav Admin'
+            GROUP_COUNT_ONE: '{n} grupp'
+            GROUP_COUNT_OTHER: '{n} grupper'
+            GROUP_CREATED: 'Gruppen „{name}" skapades'
+            GROUP_DELETED: 'Gruppen „{name}" raderades'
+            GROUP_DELETE_FAILED: 'Det gick inte att ta bort gruppen „{name}"'
+            GROUP_MODIFIED_ELSEWHERE: 'Gruppen ändrades någon annanstans. Ladda om sidan.'
+            GROUP_NAME: Gruppnamn
+            GROUP_NAME_HELP: '1–200 tecken bestående av bokstäver, siffror, bindestreck eller understreck. Används som lagringsnyckel.'
+            GROUP_NAME_PLACEHOLDER: 't.ex. redaktörer'
+            GROUP_PAGE_TITLE: '{name} — Grupper — Grav Admin'
+            GROUP_SAVED: 'Gruppen „{name}" sparades'
+            NEW_GROUP: 'Ny grupp'
+            NEW_GROUP_GRAV_ADMIN: 'Ny grupp — Grav Admin'
+            NO_GROUPS: 'Inga grupper hittades'
+            NO_GROUPS_MATCH_SEARCH: 'Inga grupper matchar din sökning'
+            SEARCH_GROUPS: 'Sök grupper...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Välj en grupp för att visa detaljer'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Kunde inte skapa ditt konto.'
+            ACCEPT_HEADING: 'Acceptera inbjudan'
+            ACCEPT_SUBHEADING: 'Ställ in ditt konto för att komma igång.'
+            ACCEPT_SUCCESS: 'Konto skapat. Välkommen!'
+            ACCEPT_TITLE: 'Acceptera inbjudan — Grav Admin'
+            CHECKING_INVITE: 'Kontrollerar din inbjudan...'
+            CHOOSE_PASSWORD: 'Välj ett lösenord'
+            CONFIRM_REVOKE: 'Återkalla inbjudan för {email}? Länken slutar fungera.'
+            COPIED: Kopierad
+            COPY: Kopiera
+            COPY_FAILED: 'Kunde inte kopiera länken.'
+            CREATED_NO_EMAIL_TOAST: 'Inbjudan skapad. E-post är inte konfigurerad, så dela länken manuellt.'
+            CREATE_ACCOUNT: 'Skapa konto'
+            CREATING_ACCOUNT: 'Skapar konto...'
+            EMAIL: E-post
+            EMAIL_SENT_TO: 'Ett inbjudanmail skickades till {email}.'
+            EXPIRED: Utgånget
+            EXPIRED_INVITE: 'Denna inbjudan har utgått.'
+            EXPIRED_INVITE_BODY: 'Denna inbjudan har utgått. Be en administratör att skicka en ny.'
+            EXPIRES_AFTER: 'Inbjudan upphör efter'
+            EXPIRES_IN_DAYS: '{count, plural, one {Upphör om # dag} other {Upphör om # dagar}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Upphör om # timme} other {Upphör om # timmar}}'
+            EXPIRY_14_DAYS: '14 dagar'
+            EXPIRY_1_DAY: '1 dag'
+            EXPIRY_30_DAYS: '30 dagar'
+            EXPIRY_3_DAYS: '3 dagar'
+            EXPIRY_7_DAYS: '7 dagar'
+            FULL_NAME_OPTIONAL: 'Fullständigt namn (valfritt)'
+            GROUPS: Grupper
+            GROUPS_HINT: 'Grupper som den inbjudna användaren kommer att läggas till i.'
+            INVALID_INVITE: 'Den här inbjudan är inte giltig.'
+            INVALID_INVITE_BODY: 'Den här inbjudningslänken är ogiltig eller har redan använts.'
+            INVITE: 'Bjud in'
+            INVITED_BY: 'Inbjuden av {name}'
+            INVITE_ANOTHER: 'Bjud in en annan'
+            INVITE_LINK: Inbjudningslänk
+            INVITE_READY: 'Inbjudan klar'
+            INVITE_USER: 'Bjud in användare'
+            LOADING_GROUPS: 'Läser in grupper...'
+            LOAD_FAILED: 'Det gick inte att läsa in inbjudningar.'
+            MESSAGE_OPTIONAL: 'Personligt meddelande (valfritt)'
+            NONE_PENDING: 'Inga väntande inbjudningar'
+            NONE_PENDING_HINT: 'Bjud in någon att gå med och deras väntande inbjudan kommer att visas här.'
+            NO_GROUPS: 'Inga grupper definierade ännu.'
+            PASSWORD_POLICY: 'Lösenordet uppfyller inte de obligatoriska kraven'
+            PENDING_COUNT: '{count, plural, =0 {Inga väntande inbjudningar} one {# väntande inbjudan} other {# väntande inbjudningar}}'
+            PERMISSIONS: Behörigheter
+            PERMISSIONS_HINT: 'Behörigheter som den inbjudna användaren kommer att få. De kan inte ge sig själva fler än du anger här.'
+            RECIPIENT: Mottagare
+            RECIPIENT_HINT: 'De väljer sitt eget användarnamn och lösenord när de accepterar.'
+            RESEND: 'Skicka igen'
+            RESEND_FAILED: 'Det gick inte att skicka inbjudningen igen.'
+            RESENT_TOAST: 'Inbjudan skickad igen till {email}.'
+            REVOKE: Återkalla
+            REVOKED_TOAST: 'Inbjudan återkallad.'
+            REVOKE_FAILED: 'Det gick inte att återkalla inbjudningen.'
+            REVOKE_TITLE: 'Återkalla inbjudan'
+            SEND_FAILED: 'Det gick inte att skicka inbjudningen.'
+            SEND_INVITE: 'Skicka inbjudan'
+            SENT_TOAST: 'Inbjudan skickad till {email}.'
+            TITLE_OPTIONAL: 'Titel (valfritt)'
+            USERNAME_INVALID: 'Användarnamnet måste vara 3–64 tecken.'
+            USERNAME_TAKEN: 'Det användarnamnet är redan taget.'
+            VIEW_PENDING: 'Visa väntande'
+        PAGINATION:
+            PAGE_OF: 'Sida {current} av {total}'
+        PLUGINS_TABLE:
+            NAME: Namn
+            NO_PLUGINS: 'Inga insticksprogram är installerade'
+            PROTECTED_PLUGIN: 'Det här insticksprogrammet kan inte inaktiveras från admin-next utan att låsa dig ute.'
+            VERSION: Version
+        THEMES_TABLE:
+            NO_THEMES: 'Inga teman installerade'
+        USERS_NAV:
+            CONFIGURATION: Konfiguration
+            GROUPS: Grupper
+            INVITATIONS: Inbjudningar
+            USERS: Användare
+        USERS_TABLE:
+            ACTIONS: Åtgärder
+            CARDS: Kort
+            DELETE: 'Ta bort'
+            DISABLED: Inaktiverad
+            EDIT: Redigera
+            EMAIL: E-post
+            ENABLED: Aktiverad
+            FULL_NAME: 'Fullständigt namn'
+            NO_USERS: 'Inga användare hittades'
+            STATUS: Status
+            TABLE: Tabell
+            USERNAME: Användarnamn
