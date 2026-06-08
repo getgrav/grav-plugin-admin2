@@ -33,6 +33,10 @@ ICU:
     TOGGLE_DARK_MODE: Toggle dark mode
     TOGGLE_MENU: Toggle menu
     UNSAVED_CHANGES: Unsaved changes
+    VALIDATION:
+      FIELD_REQUIRED: '{label} is required'
+      REQUIRED_GENERIC: This field is required
+      FORM_HAS_ERRORS: '{count, plural, one {# field needs your attention} other {# fields need your attention}}'
     DASHBOARD:
       TITLE: Dashboard
       CUSTOMIZE: Customize

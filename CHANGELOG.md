@@ -7,6 +7,8 @@
     * **A user's group memberships now show in their detail panel, and clicking any permission or group filters the list by it.**
 2. [](#improved)
     * **Added labels for the new image security settings** (URL-based image actions and the maximum-pixels limit) under Configuration > System > Images. Requires Grav ≥ 2.0.0-rc.8.
+3. [](#bugfix)
+    * **Forms now block saving when a required field is empty and flag each one inline**, instead of saving silently, across configuration, plugin and theme settings, users, groups, flex objects and pages ([#30](https://github.com/getgrav/grav-plugin-admin2/issues/30)).
 
 # v2.0.0-rc.13
 ## 06/04/2026
