@@ -1,5 +1,5 @@
 # v2.0.0-rc.14
-## 06/05/2026
+## 06/08/2026
 
 1. [](#new)
     * **The Users area can now be filtered by permission or group** with a type-ahead picker, so you can find every account that holds a given permission, such as all admins. Requires grav-plugin-api ≥ 1.0.0-rc.14.
@@ -9,6 +9,7 @@
     * **Added labels for the new image security settings** (URL-based image actions and the maximum-pixels limit) under Configuration > System > Images. Requires Grav ≥ 2.0.0-rc.8.
 3. [](#bugfix)
     * **Forms now block saving when a required field is empty and flag each one inline**, instead of saving silently, across configuration, plugin and theme settings, users, groups, flex objects and pages ([#30](https://github.com/getgrav/grav-plugin-admin2/issues/30)).
+    * **Drilling into the home page in Columns view now opens its sub-pages instead of just adding it to the breadcrumb over and over** ([#33](https://github.com/getgrav/grav-plugin-admin2/issues/33)).
 
 # v2.0.0-rc.13
 ## 06/04/2026
