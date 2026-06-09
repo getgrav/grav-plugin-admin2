@@ -1119,7 +1119,6 @@ ICU:
       UNKNOWN_WIDGET: "Unknown widget: {id}"
     UPDATE_AVAILABLE_VERSION: "Update available: v{version}"
     UPDATE_TO_VERSION: Update to v{version}
-  PLUGIN_ADMIN:
     2FA_ENABLED: 2FA Enabled
     2FA_SECRET: 2FA Secret
     2FA_SECRET_HELP: "Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it's a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information "
@@ -1285,7 +1284,6 @@ ICU:
     DEFAULT_THEME: Default theme
     DEFAULT_THEME_HELP: Set the default theme for Grav to use (default is Antimatter)
     DEFAULTS: Defaults
-    DELETE: Delete
     DELIMITER: Delimiter
     DELIMITER_HELP: The summary delimiter (default '===')
     DESCENDING: Descending
@@ -1293,7 +1291,6 @@ ICU:
     DETAILS: Details
     DETECT_CHANGES: Detect changes
     DETECT_CHANGES_HELP: Twig will automatically recompile the Twig cache if it detects any changes in Twig templates
-    DISABLED: Disabled
     DISPLAY_ERRORS: Display errors
     DISPLAY_ERRORS_HELP: Display full backtrace-style error page
     DISPLAY_NAME: Display Name
@@ -1304,7 +1301,6 @@ ICU:
     ENABLE_AUTO_METADATA_HELP: Automatically generate metadata files for images with exif information
     ENABLE_MEDIA_TIMESTAMP: Enable timestamps on media
     ENABLE_MEDIA_TIMESTAMP_HELP: Appends a timestamp based on last modified date to each media item
-    ENABLED: Enabled
     ENABLED_HELP: Enable page summary (the summary returns the same as the page content)
     ENABLED_SRI_ON_ASSETS: Enable SRI on assets
     ENABLED_SRI_ON_ASSETS_HELP: Enable asset SRI
@@ -1364,7 +1360,6 @@ ICU:
     GPM_RELEASES_HELP: Choose 'Testing' to install beta or testing versions
     GPM_SECTION: GPM Section
     GROUP_NAME: Group Name
-    GROUPS: Groups
     GROUPS_HELP: List of groups the user is part of
     GZIP_COMPRESSION: Gzip compression
     GZIP_COMPRESSION_HELP: Enable GZip compression of the Grav page for increased performance.
@@ -1459,7 +1454,6 @@ ICU:
     LONG_DATE_FORMAT_HELP: Set the long date format that can be used by themes
     MARKDOWN: Markdown
     MARKDOWN_EXTRA_HELP: Enable default support for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/
-    MEDIA: Media
     MEDIA_TYPES: Media Types
     MEMCACHED_PORT: Memcached port
     MEMCACHED_PORT_HELP: The Memcached server port
@@ -1506,7 +1500,6 @@ ICU:
     PAGE_TYPES_HELP: Determines the page types that Grav supports and the order determines which type to fall back to if the request is ambiguous
     PAGE_VISIBILITY_REQUIRES_ACCESS: Menu Visibility Requires Access
     PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: Set to Yes if page should be shown in menus only if user can access them.
-    PAGES: Pages
     PAGES_FALLBACK_ONLY: Pages fallback only
     PAGES_FALLBACK_ONLY_HELP: Only 'fallback' to find page content through supported languages, default behavior is to display any language found if active language is missing
     PAGES_TYPE: Frontend Page Type
@@ -1514,11 +1507,9 @@ ICU:
     PARAMETER_SEPARATOR: Parameter separator
     PARAMETER_SEPARATOR_HELP: Separator for passed parameters that can be changed for Apache on Windows
     PARENT: Parent
-    PASSWORD: Password
     PASSWORD_VALIDATION_MESSAGE: Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
     PERMISSIONS: Permissions
     PLUGIN_STATUS: Plugin status
-    PREVIEW: Preview
     PROCESS: Process
     PROCESS_HELP: Control how pages are processed. Can be set per-page rather than globally
     PROXY_CERT: Proxy Certificate Path
@@ -1582,7 +1573,6 @@ ICU:
     ROUTE_OVERRIDES: Route Overrides
     SANITIZE_SVG: Sanitize SVG
     SANITIZE_SVG_HELP: Removes any XSS code from SVG
-    SAVE: Save
     SCHEDULER: Scheduler
     SCHEDULER_EMAIL: Email
     SCHEDULER_EMAIL_HELP: "Email to send output to. NOTE: requires output file to be set"
@@ -1616,7 +1606,6 @@ ICU:
     SESSION_SPLIT_HELP: Independent split sessions between site and other plugins (such as admin)
     SESSION_UNIQUENESS: Unique string
     SESSION_UNIQUENESS_HELP: MD5 hash of Grav's root path, ie `GRAV_ROOT` (default) or a based on the random `security.salt` string.
-    SETTINGS: Settings
     SHORT: Short
     SHORT_DATE_FORMAT: Short display date format
     SHORT_DATE_FORMAT_HELP: Set the short date format that can be used by themes
@@ -1654,7 +1643,6 @@ ICU:
     SYSLOG_FACILITY_HELP: Syslog facility for output
     SYSLOG_TAG: Syslog tag
     SYSLOG_TAG_HELP: Syslog tag for output
-    SYSTEM: System
     TAXONOMIES: Taxonomies
     TAXONOMY: Taxonomy
     TAXONOMY_TYPES: Taxonomy Types
@@ -1702,7 +1690,6 @@ ICU:
     UPLOADS_DANGEROUS_EXTENSIONS_HELP: Block these extensions from being uploaded no matter the accepted MIME types
     UPLOADS_SECURITY: Uploads Security
     USE_GLOBAL: Use Global
-    USERNAME: Username
     USERNAME_HELP: Username should be between 3 and 16 characters, including lowercase letters, numbers, underscores, and hyphens. Uppercase letters, spaces, and special characters are not allowed
     USERNAME_REGEX: Username Regex
     USERNAME_REGEX_HELP: "By default: Only lowercase chars, digits, dashes, and underscores. 3 - 16 chars"
@@ -1710,7 +1697,6 @@ ICU:
     VALID_LINK_ATTRIBUTES_HELP: Attributes that will be automatically added to the media HTML element
     VARY_ACCEPT_ENCODING: Vary accept encoding
     VARY_ACCEPT_ENCODING_HELP: "Sets the `Vary: Accept Encoding` header to help with proxy and CDN caching"
-    VERSION: Version
     VISIBLE: Visible
     VISIBLE_HELP: Determines if a page is visible in the navigation.
     WRAPPED_SITE: Wrapped site
@@ -1749,7 +1735,6 @@ ICU:
     TWIG_SANDBOX_ADMIN_HINT_HELP: "When the sandbox blocks an expression, append a one-line HTML comment to the rendered page so super-admins viewing the source see that something was filtered. Visitors and non-admins see nothing."
     TWIG_SANDBOX_ENABLED_HELP: "Renders editor-authored page content inside an allowlist-based Twig SecurityPolicy. <strong>Disabling removes the only protection against template-injection attacks via page content</strong>: any account with editor-level access (or anyone who compromises the file system) can execute arbitrary PHP via Twig. Only turn off if a site genuinely needs container access from page content and you fully trust every author."
     ACCOUNTS_CONFIGURATION: Accounts Configuration
-    COMPATIBILITY: Compatibility
     FLEX_ADMIN_EVENT_COMPAT: Admin event compatibility
     FLEX_ADMIN_EVENT_COMPAT_HELP: Enables onAdminSave and onAdminAfterSave events for plugins.
     ID: ID

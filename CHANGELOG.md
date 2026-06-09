@@ -7,7 +7,10 @@
     * **A user's group memberships now show in their detail panel, and clicking any permission or group filters the list by it.**
 2. [](#improved)
     * **Added labels for the new image security settings** (URL-based image actions and the maximum-pixels limit) under Configuration > System > Images. Requires Grav ≥ 2.0.0-rc.8.
+    * **Configuration and form field labels and help text can now be translated into the admin's chosen language** instead of always appearing in English, now that the shared admin vocabulary is part of the translatable language set. Requires grav-plugin-api ≥ 1.0.0-rc.14.
 3. [](#bugfix)
+    * **Configuration and blueprint help text no longer renders as an auto-generated placeholder** such as "Default Theme Help" and now shows the real description, including for admins whose language is a base code like English. Requires grav-plugin-api ≥ 1.0.0-rc.14.
+    * **The page editor no longer shows a false unsaved-changes indicator the moment it loads** in collaborative mode.
     * **Forms now block saving when a required field is empty and flag each one inline**, instead of saving silently, across configuration, plugin and theme settings, users, groups, flex objects and pages ([#30](https://github.com/getgrav/grav-plugin-admin2/issues/30)).
     * **Drilling into the home page in Columns view now opens its sub-pages instead of just adding it to the breadcrumb over and over** ([#33](https://github.com/getgrav/grav-plugin-admin2/issues/33)).
 
