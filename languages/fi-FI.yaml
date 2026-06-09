@@ -1082,3 +1082,760 @@ ICU:
             STATUS: Tila
             TABLE: Taulukko
             USERNAME: Käyttäjänimi
+            PERMISSIONS: Käyttöoikeudet
+        2FA_ENABLED: '2-tekijäisen todentamisen käytössä'
+        2FA_SECRET: '2-tekijäisen todentamisen salaisuus'
+        2FA_SECRET_HELP: 'Skannaa tämä QR-koodi [Authenticator-sovellukseen](https://learn.getgrav.org/admin-panel/2fa#apps). On myös hyvä idea varmuuskopioida salaisuus turvalliseen paikkaan siinä tapauksessa, että joudut asentamaan sovelluksen uudelleen. Lisätietoja löydät [Gravin dokumentaatiosta](https://learn.getgrav.org/admin-panel/2fa)'
+        2FA_TITLE: '2-tekijäinen todentaminen'
+        ABSOLUTE_URLS: 'Absoluuttiset URL-osoitteet'
+        ABSOLUTE_URLS_HELP: 'Absoluuttiset tai suhteelliset URL-osoitteet kohteelle `base_url`'
+        ACCESS: Pääsy
+        ACCESS_LEVELS: 'Käyttöoikeuksien tasot'
+        ACCOUNT: Tili
+        ACCOUNTS: Tilit
+        ACCOUNTS_CONFIGURATION: 'Tilien määritys'
+        ACCOUNTS_STORAGE: 'Tilien tallennuspaikka'
+        ACCOUNTS_STORAGE_HELP: 'Tallennusmekanismi, jota käytetään Flex Object -tilityypin kanssa. Files on perinteinen menetelmä, jossa tilit tallennetaan YAML-tiedostoon yhdessä kansiossa, kun taas Folder luo uuden kansion jokaista tiliä varten'
+        ACCOUNTS_TYPE: 'Tilien tyyppi'
+        ACCOUNTS_TYPE_HELP: 'Flex Object -järjestelmä käyttäjätilien tallentamiseen'
+        ACTIVE_LANGUAGE_IN_SESSION: 'Aktiivinen kieli istunnossa'
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: 'Tallenna aktiivinen kieli istuntoon'
+        ADD: Lisää
+        ADD_ACCOUNT: 'Lisää tili'
+        ADMIN_CHILDREN_DISPLAY_ORDER: 'Alasivujen näyttöjärjestys'
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: 'Järjestys, jossa tämän sivun alasivut näytetään hallintoliitännäisen „Sivut"-näkymässä'
+        ADMIN_SPECIFIC_OVERRIDES: 'Hallintopaneelin erityiset ohitukset'
+        ADVANCED: Edistynyt
+        ALLOW_URL_TAXONOMY_FILTERS: URL-taksonomisuodattimet
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: 'Sivupohjaiset kokoelmat mahdollistavat suodattamisen muodossa `/taxonomy:value`'
+        ALLOW_WEBSERVER_GZIP: 'Salli WebServer-pakkaus'
+        ALLOW_WEBSERVER_GZIP_HELP: 'Oletuksena pois käytöstä. Kun käytössä, WebServer-konfiguroitu Gzip/Deflate-pakkaus toimii, mutta http-yhteys ei sulkeudu ennen onShutDown()-tapahtumaa, mikä hidastaa sivun lataamista'
+        APPEND_URL_EXT: 'Lisää URL-tiedostopääte'
+        APPEND_URL_EXT_HELP: 'Lisää mukautetun tiedostopäätteen sivun URL-osoitteeseen. Huomaa, että Grav etsii mallia `<template>.<extension>.twig`'
+        ASCENDING: Nouseva
+        ASSETS: Resurssit
+        AUTO: Automaattinen
+        AUTOESCAPE_VARIABLES: 'Poista muuttujien merkitys automaattisesti'
+        AUTOESCAPE_VARIABLES_HELP: 'Poistaa automaattisesti kaikkien muuttujien merkityksen. Tämä todennäköisesti rikkoo sivustosi'
+        AUTO_LINE_BREAKS: 'Automaattiset rivinvaihdot'
+        AUTO_LINE_BREAKS_HELP: 'Ota käyttöön automaattisten rivinvaihtojen tuki markdownissa'
+        AUTO_URL_LINKS: 'Automaattiset URL-linkit'
+        AUTO_URL_LINKS_HELP: 'Ota käyttöön URL-osoitteiden automaattinen muuntaminen HTML-hyperlinkeiksi'
+        AVATAR: Profiilipicture-generaattori
+        AVATAR_HASH: 'HUOMIO: Valinnainen profiilipicture-mukautus „hash"-merkkijono'
+        AVATAR_HELP: 'Multiavatar on paikallisesti luotu profiilipicture. Gravatar on ulkoinen palvelu, joka käyttää sähköpostiosoitettasi etäkonfiguroitua profiilipicturea varten'
+        BACK: Takaisin
+        BACKUPS: Varmuuskopiot
+        BACKUPS_HISTORY: Varmuuskopiohistoria
+        BACKUPS_MAX_COUNT: 'Varmuuskopioiden enimmäismäärä'
+        BACKUPS_MAX_RETENTION_TIME: 'Varmuuskopioiden enimmäissäilytysaika'
+        BACKUPS_MAX_RETENTION_TIME_APPEND: päivinä
+        BACKUPS_MAX_SPACE: 'Varmuuskopioiden enimmäistila'
+        BACKUPS_PROFILES: Varmuuskopioprofiilit
+        BACKUPS_PROFILE_ENVIRONMENT: Ympäristö
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: 'Grav-ympäristökonteksti, jossa ajoitettu varmuuskopio suoritetaan.'
+        BACKUPS_PROFILE_EXCLUDE_FILES: 'Jätä pois tiedostot'
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: 'Tietyt poistettavat tiedostot tai kansiot, yksi per rivi'
+        BACKUPS_PROFILE_EXCLUDE_PATHS: 'Jätä pois polut'
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: 'Absoluuttiset polut, jotka jätetään pois, yksi per rivi'
+        BACKUPS_PROFILE_NAME: 'Varmuuskopion nimi'
+        BACKUPS_PROFILE_ROOT_FOLDER: Juurikansio
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: 'Voi olla absoluuttinen polku tai muodostin'
+        BACKUPS_PROFILE_SCHEDULE: 'Ota käyttöön ajoitettu työ'
+        BACKUPS_PROFILE_SCHEDULE_AT: 'Suorita ajoitettu työ'
+        BACKUPS_PURGE_CONFIG: 'Varmuuskopion poisto -määritys'
+        BACKUPS_STORAGE_PURGE_TRIGGER: 'Varmuuskopion säilytyksen poisto -laukaisin'
+        BODY_CLASSES: Runko-luokat
+        CACHE_ALL: 'Välimuisti kaikki kuvat'
+        CACHE_ALL_HELP: 'Suorita kaikki kuvat Gravin välimuistijärjestelmän kautta, vaikka niillä ei olisi mediamanipulaatioita'
+        CACHE_CHECK_INTERVAL: 'Välimuistin tarkistusväli'
+        CACHE_CHECK_INTERVAL_HELP: 'Sekunteja, joiden ajan aiemmin laskettua tiedostojärjestelmän hajautusarvoa käytetään uudelleen ennen uutta tarkistusta. Nolla pitää olemassa olevan pyyntökohtaiset tarkistukset.'
+        CACHE_CHECK_METHOD: 'Välimuistin tarkistusmenetelmä'
+        CACHE_CHECK_METHOD_HELP: 'Valitse menetelmä, jota Grav käyttää sivutiedostojen muutoksista tarkistamiseen.'
+        CACHE_CLEAR_JOB: 'Suorita ajoitettu tyhjennys -työ'
+        CACHE_CLEAR_JOB_HELP: 'Ajoittimen avulla voit säännöllisesti tyhjentää Gravin välimuistin'
+        CACHE_CONTROL: 'HTTP Cache-Control'
+        CACHE_CONTROL_HELP: 'Aseta kelvolliseksi cache-control-arvoksi, kuten `no-cache, no-store, must-revalidate`'
+        CACHE_DRIVER: 'Välimuistin ajuri'
+        CACHE_DRIVER_HELP: 'Valitse, mitä välimuistin ajuria Gravin tulee käyttää. „Auto Detect" yrittää löytää parhaan vaihtoehdon sinulle'
+        CACHE_JOB_TYPE: 'Välimuistin työtyyppi'
+        CACHE_JOB_TYPE_HELP: 'Poista joko "standard" kansioiden välimuistin tyhjennyksen tai "all" kansioiden avulla'
+        CACHE_PERMS: 'Välimuistin käyttöoikeudet'
+        CACHE_PERMS_HELP: 'Oletusvälimuisti-kansion käyttöoikeudet. Yleensä 0755 tai 0775 riippuen asennuksesta'
+        CACHE_PREFIX: 'Välimuistin etuliite'
+        CACHE_PREFIX_HELP: 'Tunnus Gravin avaimen osalle. Älä muuta, ellei tiedä mitä teet.'
+        CACHE_PREFIX_PLACEHOLDER: 'Perustettu perus-URL:sta (voit ohittaa antamalla satunnaisen merkkijonon)'
+        CACHE_PURGE_AGE: 'Välimuistin tyhjennysikä'
+        CACHE_PURGE_AGE_HELP: 'Tyhjennä kaikki välimuistin kohteet, jotka ovat vanhempia kuin tämä ikä (sekunneissa)'
+        CACHE_PURGE_JOB: 'Suorita ajoitettu tyhjennystyö'
+        CACHE_PURGE_JOB_HELP: 'Ajoittimen avulla voit säännöllisesti tyhjentää vanhat Doctrine-tiedostovälimuisti-kansiot tällä työllä'
+        CACHING: Välimuistintaminen
+        CACHING_HELP: 'Globaali ON/OFF-kytkin Gravin välimuistin ottamiseksi käyttöön/poistamiseksi käytöstä'
+        CHARACTERS: merkkiä
+        CLEAR_IMAGES_BY_DEFAULT: 'Tyhjennä kuvavälimuisti oletuksena'
+        CLEAR_IMAGES_BY_DEFAULT_HELP: 'Oletuksena käsitellyt kuvat tyhjennetään kaikista välimuistin tyhjennysistä, tämä voidaan poistaa käytöstä'
+        CLI_COMPATIBILITY: CLI-yhteensopivuus
+        CLI_COMPATIBILITY_HELP: 'Varmistaa, että käytetään vain ei-haihtuvaa välimuistin ajuria (tiedosto, redis, memcache jne.)'
+        COLLECTIONS: Kokoelmat
+        COMMAND: Komento
+        CONFIGURATION: Konfiguraatio
+        CONTENT: Sisältö
+        CONTENT_EDITOR: Sisältöeditori
+        CONTENT_EDITOR_HELP: 'Sisällön muokkaukseen voidaan haluta käyttää mukautettuja editoreja'
+        CONTENT_FALLBACK_LANGUAGE_HELP: 'Määritä kielitunnus, jonka haluat mukauttaa.'
+        CONTENT_LANGUAGE_FALLBACK: Varakielet
+        CONTENT_LANGUAGE_FALLBACKS: 'Sisällön kielen varaaminen'
+        CONTENT_LANGUAGE_FALLBACKS_HELP: 'Oletusarvoisesti, jos sisältöä ei ole käännetty, Grav näyttää sisällön oletuskielellä. Käytä tätä asetusta ohittamaan kyseinen käyttäytyminen kielikohtaisesti.'
+        CONTENT_LANGUAGE_FALLBACK_HELP: 'Kirjoita luettelo kielikoodeista. Huomaa, että jos jätät oletuskielikielin pois, sitä ei käytetä.'
+        COPY: Kopioi
+        CREATE: Luo
+        CSS_ASSETS: CSS-resurssit
+        CSS_MINIFY: CSS-pakkaus
+        CSS_MINIFY_HELP: 'Pakkaa CSS putkilinjauksen aikana'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'CSS-pakkauksen Windows-ohitus'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Pakkauksen ohitus Windows-alustoille. Oletusarvoisesti epätosi ThreadStackSizen vuoksi'
+        CSS_PIPELINE: CSS-putkilinjaus
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'CSS-putkilinjauksen renderöinti ensin'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: 'Renderöi CSS-putkilinjaus ennen muita CSS-viitteitä, jotka eivät ole sisällytettyjä'
+        CSS_PIPELINE_HELP: 'CSS-putkilinjaus on useiden CSS-resurssien yhdistämistä yhdeksi tiedostoksi'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: 'Sisällytä ulkoiset CSS-putkilinjaukseeen'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: 'Ulkoisilla URL-osoitteilla on joskus suhteellisia tiedostoviitteitä, ja niitä ei pitäisi siirtää putkilinjaukseeen'
+        CSS_REWRITE: CSS-uudelleenkirjoitus
+        CSS_REWRITE_HELP: 'Kirjoita uudelleen kaikki CSS-suhteelliset URL-osoitteet putkilinjauksen aikana'
+        CURL: cURL
+        CUSTOM_BASE_URL: 'Mukautettu perus-URL'
+        CUSTOM_BASE_URL_HELP: 'Käytä, jos haluat kirjoittaa uudelleen sivuston toimialueen tai käyttää eri alikansioita kuin Gravin käyttämä. Esimerkki: http://localhost'
+        CUSTOM_REDIRECTS: 'Mukautetut uudelleenohjaukset'
+        CUSTOM_REDIRECTS_HELP: 'reitit, joita ohjataan uudelleen muille sivuille. Standardi Regex-korvaus on kelvollinen'
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+        CUSTOM_ROUTES: 'Mukautetut reitit'
+        CUSTOM_ROUTES_HELP: 'reitit muilla sivuilla olevia aliaksia varten. Standardi Regex-korvaus on voimassa'
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+        DATE: Päivämäärä
+        DATE_BASED_PUBLISHING: 'Päivämäärään perustuva julkaisu'
+        DATE_BASED_PUBLISHING_HELP: 'Julkaise tai poista artikkelit automaattisesti niiden päivämäärän perusteella'
+        DATE_HELP: 'Päivämäärämuuttuja mahdollistaa tähän sivuun liittyvän päivämäärän asettamisen.'
+        DEBUGGER: Debuggeri
+        DEBUGGER_CENSORED: 'Sensuroi arkaluonteiset tiedot'
+        DEBUGGER_CENSORED_HELP: 'Vain Clockwork-tarjoajalle: Jos kyllä, sensuroi potentiaalisesti arkaluonteiset tiedot (POST-parametrit, evästeet, tiedostot, konfiguraatio ja suurin osa array/object-tiedoista lokiviestissä)'
+        DEBUGGER_CLOCKWORK: Clockwork-selainlaajennus
+        DEBUGGER_DEBUGBAR: 'PHP Debug Bar'
+        DEBUGGER_HELP: 'Ota käyttöön Grav-debuggeri ja seuraavat asetukset'
+        DEBUGGER_PROVIDER: 'Debuggerin tarjoaja'
+        DEBUGGER_PROVIDER_HELP: 'Oletusarvoisesti PHP Debug Bar, mutta Clockwork-selainlaajennus tarjoaa vähemmän häiritsevän lähestymistavan'
+        DEFAULT: Oletus
+        DEFAULTS: Oletusarvot
+        DEFAULT_AUTHOR: Oletuskirjoittaja
+        DEFAULT_AUTHOR_HELP: 'Oletuskirjoittajan nimi, jota käytetään usein teemoissa tai sivun sisällössä'
+        DEFAULT_CHILD_TYPE: Oletusalatyyppi
+        DEFAULT_DATE_FORMAT: 'Sivun päivämäärämuoto'
+        DEFAULT_DATE_FORMAT_HELP: 'Gravin käyttämä sivun päivämäärämuoto. Oletuksena Grav yrittää arvata päivämäärämuotosi, mutta voit määrittää muodon käyttämällä PHP:n päivämäärän syntaksia (esim: Y-m-d H:i)'
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: 'Arvaa automaattisesti'
+        DEFAULT_EMAIL: Oletuspostisosoite
+        DEFAULT_EMAIL_HELP: 'Oletuspostisosoite, jota voidaan käyttää teemoissa tai sivuissa'
+        DEFAULT_IMAGE_QUALITY: 'Kuvan oletuslaatu'
+        DEFAULT_IMAGE_QUALITY_HELP: 'Kuvan oletuslaatu, jota käytetään kuvien uudelleen näytteistämisessä tai välimuistiin tallentamisessa (85%)'
+        DEFAULT_LANG: 'Ohita oletuskieli'
+        DEFAULT_LANG_HELP: 'Oletusasetus on ensimmäinen tuettu kieli. Sitä voidaan ohittaa asettamalla tämä vaihtoehto, mutta sen on oltava yksi tuetuista kielistä'
+        DEFAULT_ORDERING: Oletusjärjestys
+        DEFAULT_ORDERING_DATE: 'Päivämäärä – otsikoiden päivämäärä-kentän perusteella'
+        DEFAULT_ORDERING_DEFAULT: 'Oletus – kansion nimen perusteella'
+        DEFAULT_ORDERING_FOLDER: 'Kansio – ilman etuliitettä olevan kansion nimen perusteella'
+        DEFAULT_ORDERING_HELP: 'Sivut luettelossa käyttävät tätä järjestystä, ellei sitä ole ylikirjoitettu'
+        DEFAULT_ORDERING_TITLE: 'Otsikko – otsikoiden otsikko-kentän perusteella'
+        DEFAULT_ORDER_DIRECTION: Oletusjärjestyssuunta
+        DEFAULT_ORDER_DIRECTION_HELP: 'Sivujen järjestyssuunta luettelossa'
+        DEFAULT_PAGE_COUNT: 'Oletusoletussivujen määrä'
+        DEFAULT_PAGE_COUNT_HELP: 'Oletusarvoisesti enimmäismäärä sivuja luettelossa'
+        DEFAULT_THEME: Oletusteema
+        DEFAULT_THEME_HELP: 'Aseta Gravin käyttämä oletusteema (oletusarvo on Antimatter)'
+        DELIMITER: Erotteluvaihto
+        DELIMITER_HELP: 'Yhteenvedon erotteluvaihto (oletusarvo „===")'
+        DESCENDING: Laskeva
+        DESCRIPTION: Kuvaus
+        DETAILS: Tiedot
+        DETECT_CHANGES: 'Muutosten havaitseminen'
+        DETECT_CHANGES_HELP: 'Twig käännetään automaattisesti Twig-välimuistiin uudelleen, jos se havaitsee muutoksia Twig-malleissa'
+        DISPLAY_ERRORS: 'Näytä virheet'
+        DISPLAY_ERRORS_HELP: 'Näytä täysi jäljitystyyli-virheestä'
+        DISPLAY_NAME: Näyttönimi
+        DISPLAY_TEMPLATE: 'Näytä malli'
+        EMAIL: Sähköposti
+        EMAIL_VALIDATION_MESSAGE: 'Täytyy olla kelvollinen sähköpostiosoite'
+        ENABLED_HELP: 'Ota käyttöön sivuyhteenveto (yhteenveto palauttaa saman kuin sivun sisältö)'
+        ENABLED_SRI_ON_ASSETS: 'Ota käyttöön SRI resursseissa'
+        ENABLED_SRI_ON_ASSETS_HELP: 'Ota käyttöön resurssin SRI'
+        ENABLED_TIMESTAMPS_ON_ASSETS: 'Ota käyttöön aikaleimoja resursseissa'
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: 'Ota käyttöön resurssin aikaleimoja'
+        ENABLE_AUTO_METADATA: 'Automaattinen metatietoa Exifista'
+        ENABLE_AUTO_METADATA_HELP: 'Luo automaattisesti metatietotiedostot kuville, joissa on exif-tiedot'
+        ENABLE_MEDIA_TIMESTAMP: 'Ota käyttöön aikaleimoja mediassa'
+        ENABLE_MEDIA_TIMESTAMP_HELP: 'Lisää aikaleima, joka perustuu viimeiseen muokkauspäivämäärään, jokaiselle medialle'
+        ERROR_FULL_BACKTRACE: 'Täysi jäljitystyyli-virhe'
+        ERROR_HANDLER: Virheenkäsittelijä
+        ERROR_SIMPLE: 'Yksinkertainen virhe'
+        ERROR_SYSTEM: Järjestelmävirhe
+        ESCAPE_MARKUP: Escape-merkintä
+        ESCAPE_MARKUP_HELP: 'Poista merkintätagit HTML-entiteeteiksi'
+        ETAG: ETag
+        ETAG_HELP: 'Asettaa etag-otsikon auttamaan tunnistamaan, milloin sivu on muokattu'
+        EVENTS: Tapahtumat
+        EVENTS_HELP: 'Ota käyttöön tai poista käytöstä tietyt tapahtumat. Näiden poistaminen käytöstä voi vahingoittaa laajennoksia'
+        EXPERIMENTAL: Kokeellinen
+        EXPIRES: Vanhentuu
+        EXPIRES_HELP: 'Asettaa Expires-otsikon. Arvo on sekunneissa.'
+        EXTERNAL: 'Ulkoinen sivu'
+        EXTERNAL_URL: 'Ulkoinen URL'
+        EXTRA_ARGUMENTS: Lisäargumentit
+        FALLBACK_TYPES: 'Sallitut varaavaintyypit'
+        FALLBACK_TYPES_HELP: 'Sallitut tiedostotyypit, jotka voidaan löytää käytettäessä sivun reittiä. Oletuksena mikä tahansa tuettu mediatyyppi.'
+        FILE: Tiedosto
+        FILE_EXTENSION: Tiedostopääte
+        FILE_STREAMS: Tiedostovirrat
+        FLEX: 'Flex-objekti (KOKEELLINEN)'
+        FLEX_ADMIN_EVENT_COMPAT: 'Admin-tapahtumien yhteensopivuus'
+        FLEX_ADMIN_EVENT_COMPAT_HELP: 'Ottaa käyttöön onAdminSave- ja onAdminAfterSave-tapahtumat laajennuksille.'
+        FLEX_CACHING: Flex-välimuisti
+        FLEX_INDEX_CACHE_ENABLED: 'Ota indeksin välimuisti käyttöön'
+        FLEX_INDEX_CACHE_LIFETIME: 'Indeksin välimuistin voimassaoloaika (sekuntia)'
+        FLEX_OBJECT_CACHE_ENABLED: 'Ota objektin välimuisti käyttöön'
+        FLEX_OBJECT_CACHE_LIFETIME: 'Objektin välimuistin voimassaoloaika (sekuntia)'
+        FLEX_RENDER_CACHE_ENABLED: 'Ota renderöinnin välimuisti käyttöön'
+        FLEX_RENDER_CACHE_LIFETIME: 'Renderöinnin välimuistin voimassaoloaika (sekuntia)'
+        FOLDER: Kansio
+        FOLDER_NAME: 'Kansion nimi'
+        FOLDER_NUMERIC_PREFIX: 'Kansion numeerinen etuliite'
+        FOLDER_NUMERIC_PREFIX_HELP: 'Numeerinen etuliite, joka mahdollistaa manuaalisen järjestämisen ja merkitsee näkyvyyden'
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: 'Pakota URL-osoitteiden pieneksi kirjoitukseksi'
+        FORCE_LOWERCASE_URLS_HELP: 'Oletuksena Grav asettaa kaikki slug-nimet ja reitit pieniksi kirjoituksiksi. Jos asetus on false, voidaan käyttää isoja kirjaimia sisältäviä slug-nimiä ja reittejä'
+        FORCE_SSL: 'Pakota SSL'
+        FORCE_SSL_HELP: 'Pakota SSL globaalisesti: jos käytössä, kun sivustoon saapuu HTTP-yhteyden kautta, Grav lähettää uudelleenohjauksen HTTPS-sivulle'
+        FORMAT: Muoto
+        FORMAT_HELP: 'short = käyttää erottimen tai koon ensimmäistä esiintymää; long = yhteenveto-erottimen ohitetaan'
+        FRONTMATTER_IGNORE_FIELDS: 'Ohita etusivun kenttien merkinnät'
+        FRONTMATTER_IGNORE_FIELDS_HELP: 'Tietyt etusivun kentät voivat sisältää Twigiä, mutta niitä ei pitäisi käsitellä, kuten „forms"'
+        FRONTMATTER_PROCESS_TWIG: 'Käsittele etusivun Twig-merkinnät'
+        FRONTMATTER_PROCESS_TWIG_HELP: 'Kun käytössä, voit käyttää Twig-konfiguraatiomuuttujia sivun etusivun merkinnöissä'
+        FULL_NAME: 'Koko nimi'
+        GENERAL_CONFIG: 'Yleisen omaisuuden konfiguraatio'
+        GPM_METHOD: 'Etähaun menetelmä'
+        GPM_METHOD_HELP: 'Kun asetus on Auto, Grav tarkistaa, onko fopen saatavilla, ja käyttää sitä, muuten käyttää cURL:ää. Pakota toisen käyttäminen muuttamalla asetusta'
+        GPM_OFFICIAL_ONLY: 'Vain virallinen GPM'
+        GPM_OFFICIAL_ONLY_HELP: 'Salli suorat asennukset vain virallisesta GPM-varastosta'
+        GPM_RELEASES: GPM-versiot
+        GPM_RELEASES_HELP: 'Valitse „Testing" asentaaksesi beta- tai testausversioita'
+        GPM_SECTION: GPM-osio
+        GROUPS_HELP: 'Luettelo ryhmistä, joihin käyttäjä kuuluu'
+        GROUP_NAME: 'Ryhmän nimi'
+        GZIP_COMPRESSION: Gzip-pakkaus
+        GZIP_COMPRESSION_HELP: 'Ota käyttöön Grav-sivun GZip-pakkaus suorituskyvyn parantamiseksi'
+        HIDE_EMPTY_FOLDERS: 'Piilota tyhjät kansiot'
+        HIDE_EMPTY_FOLDERS_HELP: 'Jos kansiolla ei ole .md-tiedostoa, pitäisikö se piilottaa myös navigaatiosta ja tehdä sitä reitityksen kannalta saavuttamattomaksi'
+        HIDE_HOME_IN_URLS: 'Piilota kotiutiosinta URL-osoitteissa'
+        HIDE_HOME_IN_URLS_HELP: 'Varmistaa, että kotiutiosintaa alla olevien sivujen oletusreitit eivät viittaa kotiutiosinnon säännölliseen reittiin'
+        HOME_PAGE: Kotisivu
+        HOME_PAGE_HELP: 'Sivu, jota Grav käyttää oletuksena saapumissivuna'
+        HTTP_ACCEPT_LANGUAGE: 'Aseta kieli selaimesta'
+        HTTP_ACCEPT_LANGUAGE_HELP: 'Voit asettaa kielen selaimen <code>http_accept_language</code>-otsikkotunnisteen perusteella'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP käytössä'
+        HTTP_CF_CONNECTING_IP_HELP: 'Luota <code>CF-Connecting-IP</code>-pyynnön otsikkoon asiakkaan IP-osoitteen selvittämisessä. Ota käyttöön, kun sivusto on todella Cloudflaren takana; muussa tapauksessa asiakkaat voivat huijata IP-osoitteensa. Turvallisuuden varmistamiseksi rajoita myös alkuperäisen pääsyn Cloudflaren IP-alueisiin verkkopalvelimella.'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP käytössä'
+        HTTP_CLIENT_IP_HELP: 'Luota <code>Client-IP</code>-pyynnön otsikkoon asiakkaan IP-osoitteen selvittämisessä. Harvinainen; yleensä asetetaan vain tiettyjen kuormituksen jakajien kautta. Jätä pois käytöstä, ellei tiedä, että välityspalvelin asettaa ja korvaa tämän otsikon.'
+        HTTP_CONNECTIONS: HTTP-yhteydet
+        HTTP_CONNECTIONS_HELP: 'Samanaikaisten HTTP-yhteyksien määrä multipleksattujen pyyntöjen aikana'
+        HTTP_HEADERS: HTTP-otsikot
+        HTTP_SECTION: HTTP-osio
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST käytössä'
+        HTTP_X_FORWARDED_HOST_HELP: 'Luota <code>X-Forwarded-Host</code>-pyynnön otsikkoon. Ota käyttöön vain, kun sivusto on todella käänteisen välityspalvelimen takana, joka asettaa ja korvaa tämän otsikon; muussa tapauksessa asiakkaat voivat huijata isäntää, jonka Grav näkee.'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP käytössä'
+        HTTP_X_FORWARDED_IP_HELP: 'Luota <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code>-otsikoihin asiakkaan IP-osoitteen selvittämisessä. Ota käyttöön vain, kun sivusto on todella käänteisen välityspalvelimen takana, joka asettaa ja korvaa nämä otsikot; muussa tapauksessa asiakkaat voivat huijata IP-osoitteensa ja kiertää nopeusrajoitukset, IP-kiellot ja auditoinnin.'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT käytössä'
+        HTTP_X_FORWARDED_PORT_HELP: 'Luota <code>X-Forwarded-Port</code>-pyynnön otsikkoon. Ota käyttöön vain, kun sivusto on todella käänteisen välityspalvelimen takana, joka asettaa ja korvaa tämän otsikon.'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO käytössä'
+        HTTP_X_FORWARDED_PROTO_HELP: 'Luota <code>X-Forwarded-Proto</code>-pyynnön otsikkoon (yleensä käytetään HTTPS:n havaitsemiseen TLS-terminoivan välityspalvelimen takana). Ota käyttöön vain, kun sivusto on todella käänteisen välityspalvelimen takana, joka asettaa ja korvaa tämän otsikon.'
+        ICON: Kuvake
+        ID: ID
+        IGNORE_FILES: 'Ohita tiedostot'
+        IGNORE_FILES_HELP: 'Tietyt tiedostot, jotka ohitetaan sivuja käsiteltäessä'
+        IGNORE_FOLDERS: 'Ohita kansiot'
+        IGNORE_FOLDERS_HELP: 'Tietyt kansiot, jotka ohitetaan sivuja käsiteltäessä'
+        IGNORE_HIDDEN: 'Ohita piilotetut'
+        IGNORE_HIDDEN_HELP: 'Ohita kaikki tiedostot ja kansiot, jotka alkavat PISTEELLÄ'
+        IMAGES_AUTO_FIX_ORIENTATION: 'Korjaa orientaatio automaattisesti'
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: 'Korjaa kuvan orientaatio automaattisesti Exif-tietojen perusteella'
+        IMAGES_CLS_ASPECT_RATIO: 'Ota kuvasuhde käyttöön'
+        IMAGES_CLS_ASPECT_RATIO_HELP: 'Valinnainen CSS-muuttuja, joka käytetään „style"-attribuutin kautta ja jota voidaan käyttää CSS:ssä mukautettuun tyylittelyyn'
+        IMAGES_CLS_AUTO_SIZES: 'Ota automaattiset koot käyttöön'
+        IMAGES_CLS_AUTO_SIZES_HELP: 'Lisää kuville automaattisesti „width"- ja „height"-attribuutit CLS-ongelman ratkaisemiseksi'
+        IMAGES_CLS_RETINA_SCALE: Retina-skaalaustekijä
+        IMAGES_CLS_RETINA_SCALE_HELP: 'Ottaa lasketun koon ja jakaa sen skaalaustekijällä näyttääkseen suuremmalla tarkkuudella kuvia pienemmällä pikselleilla HiDPI-näyttöjen paremman käsittelyn vuoksi'
+        IMAGES_CLS_TITLE: 'Kumulatiivinen asettelun siirtymä (CLS)'
+        IMAGES_DEBUG: 'Kuvan virheenkorjaus-vesileima'
+        IMAGES_DEBUG_HELP: 'Näytä peitto kuvien yli, joka ilmaisee kuvan pikselivärin syvyyden, kun työskentelet esimerkiksi retina-näytön kanssa'
+        IMAGES_DECODING: 'Kuvan dekoodauskäyttäytyminen'
+        IMAGES_DECODING_HELP: 'Dekoodausattribuutti antaa selaimelle mahdollisuuden siirtää kuvasiihen kuvia, kunnes käyttäjät selailevat niiden lähellä. Dekoodaus tukee kolmea arvoa: auto, sync, async'
+        IMAGES_FETCHPRIORITY: 'Kuvan fetchpriority-ominaisuus'
+        IMAGES_FETCHPRIORITY_HELP: 'HTML:n fetchpriority-ominaisuus on attribuutti, joka määrittää tiettyjen resurssien, kuten kuvien tai iframien, lataamisen prioriteetin suorituskyvyn optimoimiseksi. Mahdolliset arvot ovat high, low tai auto.'
+        IMAGES_LOADING: 'Kuvan latautumiskäyttäytyminen'
+        IMAGES_LOADING_HELP: 'Loading-attribuutti antaa selaimelle mahdollisuuden siirtää kuvasiihen kuvia ja iframe-kehyksiä, kunnes käyttäjät selailevat niiden lähellä. Loading tukee kolmea arvoa: auto, lazy, eager'
+        IMAGES_MAX_PIXELS: 'Kuvan enimmäispikselit'
+        IMAGES_MAX_PIXELS_HELP: 'Pikselien kokonaiskatto (leveys x korkeus) URL-pohjaisille muutoskooille. Tätä rajaa suuremmat pyynnöt hylätään. Aseta arvoksi 0 poistaaksesi tarkistuksen käytöstä.'
+        IMAGES_SEOFRIENDLY: 'SEO-ystävälliset kuvanityypit'
+        IMAGES_SEOFRIENDLY_HELP: 'Kun tämä on käytössä, kuvan nimi näytetään ensin, sitten pienempi tiiviste käsiteltyjen toimintojen heijastamiseksi'
+        IMAGES_URL_ACTIONS: 'Salli URL-pohjaiset kuvatoiminnot'
+        IMAGES_URL_ACTIONS_HELP: 'Salli kuvan muunnokset URL-kyselyparametreilla (esim. `image.jpg?resize=600,400`). Poistettu käytöstä oletuksena; tavallinen Twig- ja Markdown-kuvien koon muuttaminen ei ole vaikutuksessa.'
+        IMAGE_ADAPTER: Kuvasovitin
+        IMAGE_ADAPTER_HELP: 'Kuvankäsittelyyn käytettävä kuvasovitin. „GD" on oletuksena, „Imagick" on vaihtoehto'
+        IMAGE_OPTIONS: 'Kuvan asetukset'
+        INCLUDE_DEFAULT_LANG: 'Sisällytä oletuskieli'
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: 'Sisällytä oletuskieli tiedostopäätteeseen'
+        INCLUDE_DEFAULT_LANG_HELP: 'Tämä lisää kaikille oletuskielen URL-osoitteille oletuskielen eteen. esim. `/en/blog/my-post`'
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: 'Jos tämä on käytössä, se lisää oletuskielen tiedostopäätteeseen (esim. `.en.md`). Poista se käytöstä pitääksesi oletuskielen `.md`-tiedostopäätteellä.'
+        INLINE_TYPES: 'Sisäiset varatyypityypit'
+        INLINE_TYPES_HELP: 'Luettelo tiedostotyypeistä, jotka tulisi näyttää sisäisesti lataamisen sijaan'
+        INTL_ENABLED: 'Intl-moduulin integrointi'
+        INTL_ENABLED_HELP: 'Käytä Intl PHP-moduulia ja vertaile UTF8-pohjaisten kokoelmien lajitteluun'
+        ITEMS: Kohteet
+        JAVASCRIPT_MINIFY: 'JavaScriptin pienennys'
+        JAVASCRIPT_MINIFY_HELP: 'Pienennä JS putkituksen aikana'
+        JAVASCRIPT_MODULE_PIPELINE: 'JavaScriptin moduuliputki'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'JS-moduuliputken renderöinti ensin'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: 'Renderöi JS-putki ennen muita JS-viittauksia, joita ei ole sisällytetty'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'JS-moduuliputki on useiden JS-resurssien yhdistyminen yhdeksi tiedostoksi'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: 'Sisällytä ulkoiset JS-moduuliputkeen'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: 'Ulkoisilla URL-osoitteilla on joskus suhteellisia tiedostoviittauksia, eikä niitä pitäisi putkiloida'
+        JAVASCRIPT_PIPELINE: 'JavaScriptin putki'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'JS-putkilinja renderöidään ensin'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: 'Renderöi JS-putkilinja ennen mitään muita JS-viitteitä, jotka eivät ole sisällytetyt'
+        JAVASCRIPT_PIPELINE_HELP: 'JS-putkilinja on useiden JS-resurssien yhdistäminen yhdeksi tiedostoksi'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: 'Sisällytä ulkoiset osoitteet JS-putkilinjaan'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: 'Ulkoisilla URL-osoitteilla on joskus suhteellisia tiedostoviitteitä, eikä niitä pitäisi liittää putkilinjaan'
+        JS_ASSETS: JavaScript-varat
+        JS_MODULE_ASSETS: JavaScript-moduulivarat
+        LANGUAGE: Kieli
+        LANGUAGES: Kielet
+        LANGUAGE_DEBUG: 'Kielen virheenkorjaus'
+        LANGUAGE_DEBUG_HELP: 'Ota käyttöön kielten virheenkorjaus, joissa käytetään |t twig-suodatinta lisäämällä niiden ympärille jäljitettävä span, jota voidaan tyylitellä ongelmien diagnoosin apuna'
+        LANGUAGE_HELP: 'Aseta suosikkikieli'
+        LANGUAGE_TRANSLATIONS: Käännökset
+        LANGUAGE_TRANSLATIONS_HELP: 'Jos epätosi, käytetään käännösavaimia käännettyjen merkkijonojen sijaan. Tätä ominaisuutta voidaan käyttää apuna huonojen käännösten korjaamiseen tai kovakoodattujen englanninkielisten merkkijonojen etsimiseen.'
+        LAST_MODIFIED: 'Viimeksi muokattu'
+        LAST_MODIFIED_HELP: 'Asettaa viimeksi muokatun otsikon, joka voi auttaa välityspalvelimen ja selaimen välimuistin optimoinnissa'
+        LIFETIME: Elinikä
+        LIFETIME_HELP: 'Asettaa välimuistin elinkaaren sekunneissa. 0 = ääretön'
+        LIST: Luettelo
+        LOG_ERRORS: 'Lokita virheet'
+        LOG_ERRORS_HELP: 'Lokita virheet kansioon /logs'
+        LOG_HANDLER: Lokikäsittelijä
+        LOG_HANDLER_HELP: 'Minne lokitiedot tulostetaan'
+        LONG: Pitkä
+        LONG_DATE_FORMAT: 'Pitkä päivämäärän näyttömuoto'
+        LONG_DATE_FORMAT_HELP: 'Aseta pitkä päivämäärämuoto, jota teemat voivat käyttää'
+        MARKDOWN: Markdown
+        MARKDOWN_EXTRA: 'Markdown Extra'
+        MARKDOWN_EXTRA_HELP: 'Ota käyttöön Markdown Extra -tuki - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA_TYPES: Mediatyyppit
+        MEMCACHED_PORT: Memcached-portti
+        MEMCACHED_PORT_HELP: 'Memcached-palvelimen portti'
+        MEMCACHED_SERVER: Memcached-palvelin
+        MEMCACHED_SERVER_HELP: 'Memcached-palvelimen osoite'
+        MENU: Valikko
+        MENU_HELP: 'Valikkoon käytettävä merkkijono. Jos sitä ei ole asetettu, käytetään Otsikkoa.'
+        METADATA: Metatiedot
+        METADATA_HELP: 'Oletusmetatietojen arvot, jotka näytetään jokaisella sivulla, ellei sivulla ole muuta määritetty'
+        METADATA_KEY: 'Avain (esim. „Avainsanat")'
+        METADATA_VALUE: 'Arvo (esim. „Blogi, Grav")'
+        MIME_TYPE: MIME-tyyppi
+        MISC_SECTION: 'Sekalainen osio'
+        MODULE: Moduuli
+        MODULE_SETUP: 'Moduulin asetukset'
+        MOVE: Siirrä
+        NAME: Nimi
+        NEVER_CACHE_TWIG: 'Älä koskaan välimuistaa Twigiä'
+        NEVER_CACHE_TWIG_HELP: 'Välimuistoi vain sisältö ja käsittele Twig joka kerta sivuille. Ohittaa twig_first -asetuksen.'
+        'NO': Ei
+        OPTIONS: Asetukset
+        ORDER: Järjestys
+        ORDERING: Järjestäminen
+        ORDER_BY: Järjestä
+        ORDER_DIGITS: 'Järjestysmerkkien lukumäärä'
+        ORDER_DIGITS_HELP: 'Kansionimien etuliitteeksi käytettävien numeroiden lukumäärä järjestykselle (esim. `01.about`, `001.about`).'
+        ORDER_DIR_HELP: '„desc" tai „asc" ovat kelvolliset arvot'
+        OVERRIDES: Ohitukset
+        OVERRIDE_LOCALE: 'Ohita kieliasetukset'
+        OVERRIDE_LOCALE_HELP: 'Ohita PHP:n kieliasetukset nykyisen kielen perusteella'
+        PAGE: Sivu
+        PAGES_CONFIGURATION: 'Sivujen määritys'
+        PAGES_FALLBACK_ONLY: 'Vain sivujen varatoiminto'
+        PAGES_FALLBACK_ONLY_HELP: 'Käytä vain „varatoimintoa" sivun sisällön etsimiseen tuettujen kielten välillä. Oletuskäyttäytyminen on näyttää mikä tahansa löydetty kieli, jos aktiivinen kieli puuttuu'
+        PAGES_TYPE: 'Sivun esiintymistyyppi'
+        PAGES_TYPE_HELP: 'Tämä asetus mahdollistaa Flex Object -sivut etupuolella. Admin Flex Pages -ominaisuus vaatii Flex Objects -laajennuksen'
+        PAGE_ACCESS: 'Sivun käyttöoikeudet'
+        PAGE_ACCESS_HELP: 'Käyttäjät, joilla on seuraavat käyttöoikeudet, voivat käyttää sivua.'
+        PAGE_AUTHORS: 'Sivun tekijät'
+        PAGE_AUTHORS_HELP: 'Sivun tekijät -ryhmän jäsenillä on omistaja-tasoiset käyttöoikeudet tälle sivulle, jotka määritellään erityisessä „Tekijät"-sivuryhmässä.'
+        PAGE_FILE: 'Sivun malli'
+        PAGE_FILE_HELP: 'Sivun mallin tiedostonimi ja oletuksena näyttömalli tälle sivulle'
+        PAGE_GROUPS: Sivuryhmät
+        PAGE_GROUPS_HELP: 'Sivuryhmien jäsenillä on erityiset käyttöoikeudet tälle sivulle.'
+        PAGE_INHERIT_PERMISSIONS: 'Periä käyttöoikeudet'
+        PAGE_INHERIT_PERMISSIONS_HELP: 'Peri ACL pääsivulta.'
+        PAGE_MEDIA: 'Sivun media'
+        PAGE_PERMISSIONS: 'Sivun käyttöoikeudet'
+        PAGE_SUMMARY: 'Sivun yhteenveto'
+        PAGE_TYPES: Sivutyypit
+        PAGE_TYPES_HELP: 'Määrittää sivutyypit, joita Grav tukee, ja järjestys määrää, mihin tyyppiin palautetaan, jos pyyntö on epäselvä'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: 'Valikon näkyvyys vaatii pääsyn'
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: 'Aseta Kyllä-arvoksi, jos sivu tulee näkyä valikoissa vain, jos käyttäjä pääsee siihen käsiksi.'
+        PARAMETER_SEPARATOR: 'Parametrin erottaja'
+        PARAMETER_SEPARATOR_HELP: 'Erottin välitetyille parametreille, joka voidaan muuttaa Apachelle Windowsissa'
+        PARENT: 'Ylätason sivu'
+        PASSWORD_VALIDATION_MESSAGE: 'Salasanan on sisällettävä vähintään yksi numero, yksi iso- ja pienaakkonen, ja vähintään 8 tai enemmän merkkejä'
+        PERMISSIONS: Käyttöoikeudet
+        PLUGIN_STATUS: 'Laajennoksen tila'
+        PROCESS: Käsittely
+        PROCESS_HELP: 'Ohjaa, miten sivuja käsitellään. Voidaan asettaa sivu kerrallaan sen sijaan, että se olisi yleinen'
+        PROXY_CERT: 'Välityspalvelimen varmenteen polku'
+        PROXY_CERT_HELP: 'Paikallinen polku kansiolle, joka sisältää välityspalvelimen varmenteen pem-tiedoston'
+        PROXY_URL: 'Välityspalvelimen URL'
+        PROXY_URL_HELP: 'Syötä välityspalvelimen HOST tai IP ja PORTTI'
+        PUBLISH: Julkaise
+        PUBLISHED: Julkaistu
+        PUBLISHED_DATE: Julkaisupäivä
+        PUBLISHED_DATE_HELP: 'Voit antaa päivämäärän, joka käynnistää automaattisesti julkaisun.'
+        PUBLISHED_HELP: 'Oletusarvoisesti sivu julkaistaan, ellei nimenomaisesti aseta published: false tai julkaisupäivämäärä tulevaisuudessa tai julkaisun lopetuspäivä menneisyydessä'
+        PUBLISHING: Julkaiseminen
+        PWD_REGEX: 'Salasanan Regex'
+        PWD_REGEX_HELP: 'Oletuksena: Salasanan on sisällettävä vähintään yksi numero ja yksi isoja ja pieniä kirjaimia, sekä vähintään 8 tai enemmän merkkejä'
+        PWD_RULES: 'Salasanan säännöt'
+        PWD_RULES_HELP: 'Mukautetut salasanan vahvistussäännöt. Jokaisella säännöllä on tunnus, ihmiselle luettava selite ja regex-kuvio, jonka salasanan on vastattava.'
+        PWD_RULES_ID: Tunnus
+        PWD_RULES_LABEL: Selite
+        PWD_RULES_PATTERN: Regex-kuvio
+        READ: Luku
+        READ_FILE_ALLOWED_EXTENSIONS: 'Sallitut tiedostotunnisteet'
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: 'Tiedostotunnisteet, jotka <code>read_file()</code> lukee (pienet ja isot kirjaimet sekoitettu, ilman johtavaa pistettä). Oletukset ovat vain teksti- ja sisältömuotoja. Suoritettavien tai konfiguraatiotiedostojen muotojen (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) lisääminen on risky ja ei suositeltua.'
+        READ_FILE_ALLOWED_STREAMS: 'Sallitut virrat'
+        READ_FILE_ALLOWED_STREAMS_HELP: 'Virran järjestelmät, joita <code>read_file()</code> saattaa ratkaista. Oletukset: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. Laajoja virtoja kuten <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> tai <code>cache</code> lisääminen paljastaa arkaluontoisia tiedostoja ja on erittäin epäsuositeltavaa.'
+        READ_FILE_MAX_SIZE: 'Suurin tiedostokoko (tavuja)'
+        READ_FILE_MAX_SIZE_HELP: 'Tiedostot, jotka ovat suurempia kuin tämä, palauttavat <code>false</code> sen sijaan, että ne luettaisiin muistiin. Oletusarvo on <code>1048576</code> (1 Mt). Aseta <code>0</code> poistamaan kokorajoitus käytöstä.'
+        READ_FILE_SECTION_HELP: 'Rajoitukset Twig-funktion <code>read_file()</code> suhteen. Luetut tiedostot käytetään Grav-virran URI-osoitteisiin ja vahvistetaan kanonisella-realpath-sisällyttämisen tarkistuksella ratkaistuja virran juuria vastaan, joten koodatut tai symbolisella linkillä tehdyt läpijuoksut estetään tiedostojärjestelmän tasolla riippumatta siitä, miten polku kirjoitetaan.'
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REDIRECT: 'Sivun uudelleenohjaus'
+        REDIRECTS_AND_ROUTES: 'Uudelleenohjaukset ja reitit'
+        REDIRECT_DEFAULT_CODE: 'Oletusarvoisesti käytettävä uudelleenohjauskoodi'
+        REDIRECT_DEFAULT_CODE_HELP: 'HTTP-tilakoodi, jota käytetään uudelleenohjauksiin'
+        REDIRECT_DEFAULT_ROUTE: 'Oletusarvoinen uudelleenohjausreitti'
+        REDIRECT_DEFAULT_ROUTE_HELP: 'Ohjaa automaattisesti sivun oletusreittiin'
+        REDIRECT_HELP: 'Syötä sivun reitti tai ulkoinen URL, johon tämä sivu ohjautuu. Esimerkiksi `/some/route` tai `http://somesite.com`'
+        REDIRECT_OPTION_301: '301 - Siirretty pysyvästi'
+        REDIRECT_OPTION_302: '302 - Siirretty väliaikaisesti'
+        REDIRECT_OPTION_303: '303 - Katso muualla'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: 'Käytä oletusarvoista uudelleenohjausvirhekoodia'
+        REDIRECT_OPTION_NO_REDIRECT: 'Ei uudelleenohjausta'
+        REDIRECT_TRAILING_SLASH: 'Uudelleenohjaa perässä oleva kauttaviiva'
+        REDIRECT_TRAILING_SLASH_HELP: 'Suorita 301-uudelleenohjaus sen sijaan, että käsittelisit perässä olevien kaltaisten kauttaviivojen URI-osoitteita läpinäkyvästi.'
+        REDIS_DATABASE: 'Redis-tietokannan tunnus'
+        REDIS_DATABASE_HELP: 'Redis-instanssin tietokannan tunnus'
+        REDIS_PASSWORD: Redis-salasana/salaisuus
+        REDIS_PORT: Redis-portti
+        REDIS_PORT_HELP: 'Redis-palvelimen portti'
+        REDIS_SERVER: Redis-palvelin
+        REDIS_SERVER_HELP: 'Redis-palvelimen osoite'
+        REDIS_SOCKET: Redis-soketti
+        REDIS_SOCKET_HELP: Redis-soketti
+        REGULAR: Tavallinen
+        REVERSE_PROXY: 'Käänteinen välityspalvelin'
+        REVERSE_PROXY_HELP: 'Ota tämä käyttöön, jos olet käänteisen välityspalvelimen takana ja sinulla on ongelmia virheellisiä portteja sisältävien URL-osoitteiden kanssa'
+        ROOT: Juurihakemisto
+        ROUTABLE: Reititettävä
+        ROUTABLE_HELP: 'Jos tämä sivu on saavutettavissa URL-osoitteen kautta'
+        ROUTE: Reitti
+        ROUTE_ALIASES: 'Reitin aliakset'
+        ROUTE_CANONICAL: 'Kanoninen reitti'
+        ROUTE_DEFAULT: Oletusreitti
+        ROUTE_OVERRIDES: 'Reitin ohitukset'
+        SANITIZE_SVG: 'Puhdista SVG'
+        SANITIZE_SVG_HELP: 'Poistaa kaikki XSS-koodit SVG-tiedostosta'
+        SCHEDULER: Ajastin
+        SCHEDULER_ACTIVE_TRIGGERS: 'Aktiiviset käynnistimet'
+        SCHEDULER_ADVANCED_FEATURES: Lisäominaisuudet
+        SCHEDULER_CONCURRENT_WORKERS: 'Rinnakkaiset työntekijät'
+        SCHEDULER_CONCURRENT_WORKERS_HELP: 'Kuinka monta tehtävää voi ajaa samanaikaisesti (1 = peräkkäin).'
+        SCHEDULER_EMAIL: Sähköposti
+        SCHEDULER_EMAIL_HELP: 'Sähköpostiosoite, johon tulostus lähetetään. HUOM: vaatii, että tulostustehdosto on asetettu'
+        SCHEDULER_HEALTH_CHECK_CONFIG: 'Terveystarkistuksen määritys'
+        SCHEDULER_HEALTH_CHECK_ENABLED: 'Ota terveystarkistus käyttöön'
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 'Tarjoa terveystila-päätepisteen seurantaa varten.'
+        SCHEDULER_HEALTH_CHECK_PATH: 'Terveystarkistuksen polku'
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: 'URL-polku terveystarkistus-päätepisteelle.'
+        SCHEDULER_HEALTH_STATUS: Terveystila
+        SCHEDULER_HISTORY: 'Tehtävien historia'
+        SCHEDULER_HISTORY_ENABLED: 'Ota tehtävien historia käyttöön'
+        SCHEDULER_HISTORY_ENABLED_HELP: 'Seuraa kaikki tehtävien suoritushistoriaa.'
+        SCHEDULER_HISTORY_RETENTION: 'Historian säilytysaika (päivät)'
+        SCHEDULER_HISTORY_RETENTION_HELP: 'Kuinka kauan tehtävien historia säilytetään.'
+        SCHEDULER_JOBS: 'Mukautetut ajastintehtävät'
+        SCHEDULER_OUTPUT: Tulostustehdosto
+        SCHEDULER_OUTPUT_HELP: 'Tulostustehdoston polku/nimi (Grav-asennuksen juuresta)'
+        SCHEDULER_OUTPUT_TYPE: Tulostustyyppi
+        SCHEDULER_OUTPUT_TYPE_HELP: 'Joko lisää samaan tiedostoon jokaisen ajon yhteydessä tai korvaa tiedosto jokaisen ajon yhteydessä'
+        SCHEDULER_QUEUE_CONFIG: 'Jonon konfiguraatio'
+        SCHEDULER_QUEUE_MAX_SIZE: 'Jonon enimmäiskoko'
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: 'Enimmäismäärä töitä, jotka voidaan lisätä jonoon.'
+        SCHEDULER_QUEUE_PATH: 'Jonon varastointikansio'
+        SCHEDULER_QUEUE_PATH_HELP: 'Missä varastoida jonoon lisätyt työt.'
+        SCHEDULER_RETRY_BACKOFF: 'Uudelleenyrityksen taaksepäin vetäytymisstrategia'
+        SCHEDULER_RETRY_BACKOFF_HELP: 'Kuinka laskea viive uudelleenyritysten välillä.'
+        SCHEDULER_RETRY_CONFIG: 'Uudelleenyrityksen konfiguraatio'
+        SCHEDULER_RETRY_ENABLED: 'Ota työt käyttöön uudelleen'
+        SCHEDULER_RETRY_ENABLED_HELP: 'Yritä epäonnistuneita töitä uudelleen automaattisesti.'
+        SCHEDULER_RETRY_MAX_ATTEMPTS: 'Enimmäismäärä uudelleenyrityksiä'
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 'Enimmäismäärä kertoja, joina epäonnistunutta työtä voidaan yrittää uudelleen.'
+        SCHEDULER_RUNAT: 'Suorita kohdalla'
+        SCHEDULER_RUNAT_HELP: 'Cron-muotoinen "at"-syntaksi. HUOMIO: Kaikki ajat ovat UTC!'
+        SCHEDULER_STATUS: 'Ajoitintilan tila'
+        SCHEDULER_USAGE_EXAMPLES: Käyttöesimerkkejä
+        SCHEDULER_WEBHOOK_CONFIG: Webhook-konfiguraatio
+        SCHEDULER_WEBHOOK_ENABLED: 'Ota webhook-liipaisin käyttöön'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: 'Salli ajoittimen käynnistys HTTP-webhookin kautta.'
+        SCHEDULER_WEBHOOK_PATH: Webhook-polku
+        SCHEDULER_WEBHOOK_PATH_HELP: 'URL-polku webhook-päätepisteelle.'
+        SCHEDULER_WEBHOOK_TOKEN: Webhook-suojaustunnus
+        SCHEDULER_WEBHOOK_TOKEN_HELP: 'Salainen tunnus webhook-pyyntöjen todentamiseen. Pidä tämä salaisena!'
+        SCHEDULER_WORKER_CONFIG: 'Työntekijän konfiguraatio'
+        SECURITY: Turvallisuus
+        SESSION: Istunto
+        SESSION_DOMAIN: 'Istunnon verkkoalue'
+        SESSION_DOMAIN_HELP: 'Käytä vain, jos kirjoitat sivuston verkkoalueen uudelleen, esimerkiksi Docker-säiliössä.'
+        SESSION_ENABLED_HELP: 'Ota istuntotuki käyttöön Gravissa'
+        SESSION_HTTPONLY: 'Vain HTTP'
+        SESSION_HTTPONLY_HELP: 'Jos tosi, osoittaa, että evästeitä tulisi käyttää vain HTTP:n kautta ja JavaScript-muokkaus ei ole sallittu'
+        SESSION_INITIALIZE: 'Alusta istunto'
+        SESSION_INITIALIZE_HELP: 'Saa Gravin aloittamaan istunnon. Tämä ominaisuus vaaditaan, jotta käyttäjän vuorovaikutus toimisi, kuten kirjautuminen, lomakkeet jne. Admin-liitännäiset eivät ole vaikuttaneet tästä asetuksesta.'
+        SESSION_NAME_HELP: 'Tunnus, jota käytetään istuntoevästeen nimen muodostamiseen'
+        SESSION_PATH: 'Istunnon polku'
+        SESSION_PATH_HELP: 'Käytä vain, jos kirjoitat sivuston polun uudelleen, esimerkiksi Docker-säiliössä.'
+        SESSION_SAMESITE: 'Istunnon SameSite-attribuutti'
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None. Katso https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite lisätietoja varten'
+        SESSION_SECURE: Suojattu
+        SESSION_SECURE_HELP: 'Jos tosi, osoittaa, että tämän evästeen viestinnän on tapahduttava salatun siirron yli. VAROITUS: Ota tämä käyttöön vain sivustoilla, jotka toimivat yksinomaan HTTPS:llä'
+        SESSION_SECURE_HTTPS: 'Suojattu (HTTPS)'
+        SESSION_SECURE_HTTPS_HELP: 'Aseta istunto suojatuksi HTTPS:ssä, mutta ei HTTP:ssä. Ei vaikutusta, jos sinulla on edellä oleva Suojattu-asetus asetettu todeksi. Aseta epätodeksi, jos sivustosi vaihtaa HTTP:n ja HTTPS:n välillä.'
+        SESSION_SPLIT: 'Istunnon jakaminen'
+        SESSION_SPLIT_HELP: 'Itsenäiset jaetut istunnot sivuston ja muiden liitännäisten (kuten admin) välillä'
+        SESSION_UNIQUENESS: 'Ainutlaatuinen merkkijono'
+        SESSION_UNIQUENESS_HELP: 'MD5-tiiviste Gravin juuripolusta, eli `GRAV_ROOT` (oletus) tai satunnaisen `security.salt`-merkkijonon perusteella.'
+        SHORT: Lyhyt
+        SHORT_DATE_FORMAT: 'Lyhyt näyttöpäivämäärämuoto'
+        SHORT_DATE_FORMAT_HELP: 'Aseta lyhyt päivämäärämuoto, jota voidaan käyttää teemoissa'
+        SHUTDOWN_CLOSE_CONNECTION: 'Sammuta yhteyden sulkeminen'
+        SHUTDOWN_CLOSE_CONNECTION_HELP: 'Sulje yhteys ennen onShutdown()-funktion kutsumista. Palauta epätosi vianetsintää varten'
+        SITE: Sivusto
+        SITE_ACCESS: 'Sivuston käyttöoikeus'
+        SITE_DEFAULT_LANG: Oletuskieli
+        SITE_DEFAULT_LANG_HELP: 'Teeman <HTML>-tunnisteessa käytettävä oletuskieli'
+        SITE_DEFAULT_LANG_PLACEHOLDER: 'Teeman <HTML>-tunnisteessa käytettävä oletuskieli'
+        SITE_TITLE: 'Sivuston otsikko'
+        SITE_TITLE_HELP: 'Sivuston oletusarvoinen otsikko, jota käytetään usein teemoissa'
+        SITE_TITLE_PLACEHOLDER: 'Sivustolta kattava otsikko'
+        SLUG: Slug
+        SLUG_HELP: 'Slug-muuttuja mahdollistaa sivun URL-osan määrittämisen'
+        SLUG_VALIDATE_MESSAGE: 'Slug saa sisältää vain pieniä kirjaimia, numeroita ja väliviivoja'
+        SORTABLE_PAGES: 'Lajiteltavat sivut:'
+        SSL_ENABLE_PROXY: 'Ota välityspalvelin käyttöön'
+        SSL_VERIFY_HOST: 'Etäisännän tarkistus'
+        SSL_VERIFY_HOST_HELP: 'Jotkin voivat epäonnistua SSL-varmenteiden tarkistuksessa'
+        SSL_VERIFY_PEER: 'Etäisäädinnän tarkistus'
+        SSL_VERIFY_PEER_HELP: 'Jotkin voivat epäonnistua SSL-varmenteiden tarkistuksessa'
+        STABLE: Vakaa
+        STRICT_BLUEPRINT_COMPAT: 'Kaavion yhteensopivuus'
+        STRICT_BLUEPRINT_COMPAT_HELP: 'Ottaa käyttöön taaksepäin yhteensopivan tiukan tuen kaavoissa. Jos poistetaan käytöstä, uusi toiminta aiheuttaa lomakkeen vahvistuksen epäonnistumisen, jos kaaviovissa määrittelemätöntä ylimääräistä tietoa on olemassa.'
+        STRICT_TWIG_COMPAT: Twig-yhteensopivuus
+        STRICT_TWIG_COMPAT_HELP: 'Ottaa käyttöön vanhentuneen Twig autoescape -asetuksen. Kun poistetaan käytöstä, |raw-suodatin vaaditaan HTML:n tulostukseen, koska Twig poistaa automaattisesti ulostuloa'
+        STRICT_YAML_COMPAT: YAML-yhteensopivuus
+        STRICT_YAML_COMPAT_HELP: 'Palaa Symfony 2.4 YAML-jäsentimeen, jos Native tai 3.4 -jäsentimen epäonnistuminen'
+        SUMMARY_SIZE: 'Yhteenvedon koko'
+        SUMMARY_SIZE_HELP: 'Sivun sisällön yhteenvedoksi käytettävien merkkien määrä'
+        SUPPORTED: Tuettu
+        SUPPORTED_HELP: 'Pilkuilla erotettu luettelo 2-kirjaimisista kielikoodeista (esimerkiksi "en,fr,de")'
+        SYSLOG_FACILITY: Syslog-laitos
+        SYSLOG_FACILITY_HELP: 'Syslog-laitos tulosteelle'
+        SYSLOG_TAG: Syslog-tunniste
+        SYSLOG_TAG_HELP: 'Syslog-tunniste tulosteelle'
+        TAXONOMIES: Taksonomiaa
+        TAXONOMY: Taksonomiaa
+        TAXONOMY_TYPES: 'Taksonomian tyypit'
+        TAXONOMY_TYPES_HELP: 'Taksonomian tyypit on määriteltävä täällä, jos haluat käyttää niitä sivuilla'
+        TESTING: Testaus
+        THUMB: Pikkukuva
+        TIMEOUT: Aikakatkaisu
+        TIMEOUT_HELP: 'Asettaa istunnon aikakatkaisun sekunteina'
+        TIMEZONE: Aikavyöhyke
+        TIMEZONE_HELP: 'Ohita palvelimen oletusaikavyöhyke'
+        TITLE: Otsikko
+        TOASTS:
+            ACTIVE_THEME_REMOVE_BLOCK: 'Aktiivista teemaa ei voi poistaa. Vaihda ensin toiseen teemaan.'
+            API_KEY_REVOKED: 'API-avain „{name}" peruutettu'
+            BACKUP_CREATED: 'Varmuuskopio luotu ({size})'
+            CACHE_CLEARED: 'Välimuisti tyhjennettiin ({scope})'
+            CONFIG_MODIFIED_ELSEWHERE: 'Konfiguraatio muokattiin muualla — lataa uudelleen nähdäksesi uusimman version'
+            CONFIG_SAVED: '{name}-konfiguraatio tallennettu'
+            COPIED: '{label} kopioitu'
+            COPY_FAILED: 'Kopiointi epäonnistui: {detail}'
+            DEPENDENCY_INSTALLED: 'Liitännäinen {slug} asennettu (riippuvuus)'
+            FILES_DELETE_FAILED: '{n, plural, one{Tiedoston poistaminen epäonnistui (# tiedosto)} other{Tiedostojen poistaminen epäonnistui (# tiedostoa)}}'
+            FILES_UPLOADED: '{n, plural, one{Ladattu # tiedosto} other{Ladattu # tiedostoa}}'
+            FILE_DELETED: '{name} poistettu'
+            FILE_DELETE_FAILED: '{name} poistaminen epäonnistui'
+            FOLDER_CREATED: 'Kansio „{name}" luotu'
+            FORM_LABEL:
+                CONFIGURATION: Konfiguraatio
+                FLEX_OBJECT: Flex-objekti
+                FORM: Lomake
+                PAGE: Sivu
+                PLUGIN: Liitännäinen
+                PLUGIN_PAGE: 'Liitännäisen sivu'
+                THEME: Teema
+                USER: Käyttäjä
+            GPM_REFRESHED: '{n, plural, =0{GPM päivitetty — päivityksiä ei saatavilla} one{GPM päivitetty — # päivitys saatavilla} other{GPM päivitetty — # päivitystä saatavilla}}'
+            GRAV_UPGRADED: 'Grav päivitetty versioksi v{version}'
+            INSTALL_FAILED: '{slug} asentaminen epäonnistui: {detail}'
+            ITEM_COPIED: '„{name}" kopioitu kohteeseen „{target}"'
+            ITEM_DELETED: '„{name}" poistettu'
+            ITEM_DELETE_FAILED: '„{name}" poistaminen epäonnistui'
+            ITEM_MOVED: '„{name}" siirretty'
+            ITEM_REORDERED: '„{name}" järjestetty uudelleen'
+            ITEM_SAVED: '{name} tallennettu'
+            PACKAGES_UPDATED: '{n, plural, one{Päivitetty # paketti} other{Päivitetty # pakettia}}'
+            PACKAGE_REMOVED: '{name} poistettu'
+            PACKAGE_REMOVE_FAILED: 'Virhe poistettaessa {name}'
+            PACKAGE_UPDATED: '{name} päivitetty'
+            PACKAGE_UPDATE_FAILED: 'Virhe päivitettäessä {name}: {detail}'
+            PAGE_PUBLISHED: '{name} julkaistu'
+            PAGE_PUBLISH_FAILED: 'Virhe julkaisun tilan muuttamisessa: {detail}'
+            PAGE_UNPUBLISHED: '{name} piillotettu'
+            PLUGIN_DISABLED: '{name} poistettu käytöstä'
+            PLUGIN_DISABLE_FAILED: 'Virhe poistettaessa {name} käytöstä: {detail}'
+            PLUGIN_ENABLED: '{name} otettu käyttöön'
+            PLUGIN_ENABLE_FAILED: 'Virhe otettaessa {name} käyttöön: {detail}'
+            PLUGIN_INSTALLED: 'Laajennus {name} asennettu'
+            PLUGIN_LOCKOUT_BLOCK: '{name} ei voi olla poistettu käytöstä admin-nextista — se lukitsisi sinut ulos.'
+            PLUGIN_REMOVED: '{name} poistettu'
+            PLUGIN_REMOVE_FAILED: 'Virhe poistettaessa {name}: {detail}'
+            PLUGIN_REQUIRED_BLOCK: '{name} ei voi olla poistettu — admin-next vaatii sen.'
+            SAVED: Tallennettu
+            SAVED_AS_LANGUAGE: 'Tallennettu muodossa {language}'
+            SAVE_FAILED: 'Virhe tallennuksessa'
+            SAVE_FORM_FAILED: 'Virhe tallennettaessa {form}'
+            THEME_ACTIVATED: '{name} on nyt aktiivinen teema'
+            THEME_ACTIVATE_FAILED: 'Virhe aktivoitaessa {name}: {detail}'
+            THEME_INSTALLED: 'Teema {name} asennettu'
+            THEME_REMOVED: '{name} poistettu'
+            THEME_REMOVE_BLOCK: '{name} ei voida poistaa.'
+            THEME_REMOVE_FAILED: '{name} poistaminen epäonnistui: {detail}'
+            TOTP_CODE_REQUIRED: 'Syötä 6-numeroinen koodi todentajastasi'
+            TRANSLATION_CREATED: '{language}-käännös luotu'
+            TRANSLATION_RESET: '{target} nollattu lähteestä {source}'
+            UPDATE_FAILED: 'Päivitys epäonnistui: {detail}'
+            USER_CREATED: 'Käyttäjä {username} luotu'
+            USER_DELETED: 'Käyttäjä {username} poistettu'
+            USER_DELETE_FAILED: 'Käyttäjän {username} poistaminen epäonnistui'
+            USER_DISABLED: 'Käyttäjä {username} poistettu käytöstä'
+            USER_ENABLED: 'Käyttäjä {username} otettu käyttöön'
+            USER_SAVED: 'Käyttäjä {username} tallennettu'
+            USER_STATE_FAILED: 'Käyttäjän {username} tilan muuttaminen epäonnistui: {detail}'
+        TRANSLATIONS: Käännökset
+        TRANSLATIONS_FALLBACK: 'Käännösten varaversio'
+        TRANSLATIONS_FALLBACK_HELP: 'Käytä tuettuja käännöksiä varaversiona, jos aktiivinen kieli ei ole olemassa'
+        TWIG_3_COMPATIBILITY: 'Twig 3 -yhteensopivuus'
+        TWIG_3_COMPATIBILITY_HELP: 'Ota käyttöön automaattiset kirjoitukset uudelleen vanhoille Twig 1/2 syntaksille, jotka eivät toimi Twig 3:ssa (esim. <code>for ... if ...</code> suojaukset).'
+        TWIG_CACHING: 'Twig-välimuistiin tallennus'
+        TWIG_CACHING_HELP: 'Hallitse Twig-välimuistin mekanismia. Pidä tämä käytössä parhaan suorituskyvyn vuoksi.'
+        TWIG_CONTENT: 'Twig sisällössä'
+        TWIG_CONTENT_CONFIG_ACCESS: 'Salli config-muuttujan pääsy Twigissa'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: 'Määrittää, onko <code>config</code> Twig-muuttuja luettavissa sivun sisällöstä. Kun se on poistettu käytöstä (oletus), <code>config.system.title</code> lukeminen sivusta ei palauta mitään. Kun se on käytössä, <code>config</code> on näkyvissä, mutta sitä suodataan edelleen <code>config_denied_paths</code> avulla (katso Twig Sandbox alla), joten tunnistetiedot ja muut arkaluonteiset alipuut pysyvät piilossa.'
+        TWIG_CONTENT_EDITOR_ENABLED: 'Salli editoreiden kytkeä Twig sisällössä päälle/pois'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: 'Kun se on poistettu käytöstä (oletus), sivueditorin Lisäasetukset-välilehdessä oleva Twig-valintaruutu näkyy vain käyttäjille, joilla on <code>admin.pages_twig</code>-oikeus, ja sivujen, joissa Twig on jo käytössä, voi muokata vain nämä käyttäjät. Kun se on käytössä, jokainen sivuja muokaava käyttäjä voi kytkeä Twig:in päälle tai pois yksittäisillä sivuilla.'
+        TWIG_CONTENT_HELP: 'Editoreiden kirjoittamaan sivun sisältöön upotetuun Twigiin liittyvät kontrollit. Levyllä olevat teemamallit eivät vaikeutu näillä asetuksilla; ne vaikuttavat vain Twigiin, jonka tekijät lisäävät sivun runkoon tai etutietoihin.'
+        TWIG_CONTENT_PROCESS_ENABLED: 'Ota Twig käyttöön sisällössä'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: 'Salli sivuille, joissa on <code>process: twig: true</code> etutiedoissa (ja sivustolla <code>system.pages.frontmatter.process_twig</code> on valittu), ajaa Twig-koodia tosiasiallisesti. <strong>Poissa käytöstä oletuksena Grav 2.0:ssa.</strong> Tämän poistaminen käytöstä vähentää malliin injektointiin liittyvää hyökkäyspintaa, mutta rikkoo kaikki sivut, jotka tarvitsevat Twigiin runkossaan.'
+        TWIG_DEBUG: Twig-virheenkorjaus
+        TWIG_DEBUG_HELP: 'Sallii valinnan olla lataamatta Twig Debugger -laajennusta'
+        TWIG_FIRST: 'Käsittele Twig ensin'
+        TWIG_FIRST_HELP: 'Jos olet ottanut Twig-sivun käsittelyn käyttöön, voit määrittää Twigin käsittelemään ennen tai jälkeen markdown-muunnoksen'
+        TWIG_SANDBOX: Twig-hiekkalaatikko
+        TWIG_SANDBOX_ADMIN_HINT: Admin-vinkkikommentti
+        TWIG_SANDBOX_ADMIN_HINT_HELP: 'Kun hiekkalaatikko estää lausekkeen, liitä yhden rivin HTML-kommentti renderöidylle sivulle, jotta super-ylläpitäjät näkevät lähdemuodossa, että jotain suodatettiin. Vierailijat ja ei-ylläpitäjät eivät näe mitään.'
+        TWIG_SANDBOX_ALLOWED_FILTERS: 'Sallitut suodattimet'
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: 'Twig-suodattimet, joita sivun sisältö voi käyttää.'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: 'Sallitut funktiot'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: 'Twig-funktiot, joita sivun sisältö voi kutsua.'
+        TWIG_SANDBOX_ALLOWED_METHODS: 'Sallitut metodit'
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: 'Luokkakohtaiset objektin metodien luettelot, joita sivun sisältö voi kutsua.'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: 'Sallitut ominaisuudet'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: 'Luokkakohtaiset objektin ominaisuuksien luettelot, joita sivun sisältö voi lukea.'
+        TWIG_SANDBOX_ALLOWED_TAGS: 'Sallitut tagit'
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: 'Twig-tagit, joita sivun sisältö voi käyttää. Lisää vain tagit, joiden vaikutukset haluat altistaa tekijöille.'
+        TWIG_SANDBOX_CLASS: Luokka
+        TWIG_SANDBOX_ENABLED: 'Ota Twig-hiekkalaatikko käyttöön'
+        TWIG_SANDBOX_ENABLED_HELP: 'Renderöi editoreiden kirjoittama sivun sisältö sallintalistaan perustuvan Twig SecurityPolicy-käytännön sisällä. <strong>Tämän poistaminen käytöstä poistaa ainoan suojauksen malliininjektointihyökkäyksiltä sivun sisällön kautta</strong>: kuka tahansa, jolla on editorin tasoinen käyttöoikeus (tai joka vaarantaa tiedostojärjestelmän), voi suorittaa mielivaltaista PHP-koodia Twigin kautta. Poista käytöstä vain, jos sivusto todella tarvitsee kontin käyttöä sivun sisällöstä ja luotat täysin jokaiseen tekijään.'
+        TWIG_SANDBOX_HELP: 'Twig-tagien, suodattimien, funktioiden, metodien ja ominaisuuksien sallintasijainti, joita sivun sisältömallit voivat käyttää. Editoreiden kirjoittama sisältö renderöidään tämän hiekkalaatikon kautta, jotta vaarannaisluettelo tai malliininjektointi ei voi päästä laajempaan säiliöön.'
+        TWIG_SANDBOX_LOGGING: 'Kirjaa loukkaukset'
+        TWIG_SANDBOX_LOGGING_HELP: 'Kirjoita jokainen estetty lauseke tiedostoon <code>logs/twig-sandbox.log</code>. Hyödyllinen sallittujen lausekkeiden hienosäätöön; kytke pois käytöstä tuotantokäytössä lokitiedoston pitämiseksi tyhjänä.'
+        TWIG_SANDBOX_METHODS: Metodit
+        TWIG_SANDBOX_PROPERTIES: Ominaisuudet
+        TWIG_TEMPLATING: Twig-mallinnus
+        TYPE: Tyyppi
+        UNPUBLISHED_DATE: 'Julkaisun lopetuspäivä'
+        UNPUBLISHED_DATE_HELP: 'Voit antaa päivämäärän, joka käynnistää julkaisun lopetuksen automaattisesti.'
+        UPDATE: Päivitä
+        UPLOADS_DANGEROUS_EXTENSIONS: 'Vaaralliset laajennukset'
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: 'Estä näiden laajennusten lataaminen riippumatta hyväksytyistä MIME-tyypeistä'
+        UPLOADS_SECURITY: 'Latausten turvallisuus'
+        USERNAME_HELP: 'Käyttäjänimen tulee olla 3–16 merkkiä pitkä, sisältäen pieniä kirjaimia, numeroita, alaviivoja ja väliviivoja. Isoilla kirjaimilla, välilyönneillä ja erikoismerkeillä ei ole sallittuja.'
+        USERNAME_REGEX: 'Käyttäjänimen regex'
+        USERNAME_REGEX_HELP: 'Oletuksena: Vain pienet kirjaimet, numerot, väliviivat ja alaviivat. 3–16 merkkiä'
+        USERS_FILTER:
+            BACKEND_ACCESS: 'Taustajärjestelmän käyttöoikeus'
+            CLEAR: Tyhjennä
+            CLEAR_ALL: 'Tyhjennä suodattimet'
+            FILTER_BY_GROUP: 'Suodata tämän ryhmän perusteella'
+            FILTER_BY_PERMISSION: 'Suodata tämän oikeuden perusteella'
+            GROUP: Ryhmä
+            GROUPS: Ryhmät
+            LOADING: Ladataan…
+            NO_MATCHES: 'Ei tuloksia'
+            NO_MATCHES_FILTERS: 'Yksikään käyttäjä ei vastaa näitä suodattimia'
+            PERMISSION: Oikeus
+            TYPE_TO_FILTER: 'Kirjoita suodattaaksesi…'
+        USER_ACCOUNTS: Käyttäjätilit
+        USE_GLOBAL: 'Käytä globaalia'
+        VALIDATION:
+            FIELD_REQUIRED: '{label} on pakollinen'
+            FORM_HAS_ERRORS: '{count, plural, one {# kenttä vaatii huomiotasi} other {# kenttää vaatii huomiotasi}}'
+            REQUIRED_GENERIC: 'Tämä kenttä on pakollinen'
+        VALID_LINK_ATTRIBUTES: 'Kelvollisia linkkiattribuutteja'
+        VALID_LINK_ATTRIBUTES_HELP: 'Attribuutit, jotka lisätään automaattisesti media-HTML-elementtiin'
+        VARY_ACCEPT_ENCODING: 'Vaihtele hyväksymisen koodausta'
+        VARY_ACCEPT_ENCODING_HELP: 'Asettaa `Vary: Accept Encoding` -otsikon auttaakseen välityspalvelimen ja CDN-välimuistin kanssa'
+        VISIBLE: Näkyvä
+        VISIBLE_HELP: 'Määrittää, näkyykö sivu navigoinnissa.'
+        WRAPPED_SITE: 'Kääritty sivusto'
+        WRAPPED_SITE_HELP: 'Jotta teemat/laajennukset tietävät, onko Grav kääritty toisella alustalla'
+        XSS_DANGEROUS_TAGS: 'Suodata vaaralliset HTML-tunnisteet'
+        XSS_DANGEROUS_TAGS_LIST: 'Vaarallisten HTML-tunnisteiden luettelo'
+        XSS_HTML_INLINE_STYLES: 'Suodata HTML-sisäiset tyylit'
+        XSS_INVALID_PROTOCOLS: 'Suodata virheelliset protokollat'
+        XSS_INVALID_PROTOCOLS_LIST: 'Virheellisten protokollien luettelo'
+        XSS_MOZ_BINDINGS: 'Suodata Moz-sidonnat'
+        XSS_ON_EVENTS: 'Suodata On-tapahtumat'
+        XSS_SECURITY: 'XSS-turvallisuus sisällölle'
+        XSS_WHITELIST_PERMISSIONS: Whitelist-käyttöoikeudet
+        XSS_WHITELIST_PERMISSIONS_HELP: 'Näille käyttöoikeuksille kuuluvat käyttäjät ohittavat XSS-säännöt sisältöä tallentaessaan'
+        'YES': Kyllä
+        YUBIKEY_HELP: 'Liitä YubiKey tietokoneeseen ja napsauta painiketta luodaksesi OTP-koodin. Ensimmäiset 12 merkkiä ovat asiakastunnuksesi ja ne tallennetaan.'
+        YUBIKEY_ID: YubiKey-tunnus
