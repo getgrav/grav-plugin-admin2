@@ -1082,3 +1082,760 @@ ICU:
             STATUS: Status
             TABLE: Tabell
             USERNAME: Användarnamn
+            PERMISSIONS: Behörigheter
+        2FA_ENABLED: '2FA aktiverad'
+        2FA_SECRET: 2FA-hemlighet
+        2FA_SECRET_HELP: 'Skanna denna QR-kod in i din [autentiseringsapp](https://learn.getgrav.org/admin-panel/2fa#apps). Det är också en bra idé att säkerhetskopiera hemligheten på en säker plats, för att du ska kunna installera om din app. Kolla [Grav-dokumentationen](https://learn.getgrav.org/admin-panel/2fa) för mer information'
+        2FA_TITLE: Tvåfaktorautentisering
+        ABSOLUTE_URLS: 'Absoluta webbadresser'
+        ABSOLUTE_URLS_HELP: 'Absoluta eller relativa webbadresser för `base_url`'
+        ACCESS: Åtkomst
+        ACCESS_LEVELS: Åtkomstnivåer
+        ACCOUNT: Konto
+        ACCOUNTS: Konton
+        ACCOUNTS_CONFIGURATION: Kontokonfiguration
+        ACCOUNTS_STORAGE: Kontolagring
+        ACCOUNTS_STORAGE_HELP: 'Lagringsmekanismen som ska användas för Flex Object-kontotyp. Files är det traditionella tillvägagångssättet där konton lagras i en YAML-fil i en enda mapp, medan Folder skapar en ny mapp för varje konto'
+        ACCOUNTS_TYPE: Kontotyp
+        ACCOUNTS_TYPE_HELP: 'Flex Object-system för lagring av användarkonton'
+        ACTIVE_LANGUAGE_IN_SESSION: 'Aktivt språk i sessionen'
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: 'Lagra det aktiva språket i sessionen'
+        ADD: 'Lägg till'
+        ADD_ACCOUNT: 'Lägg till konto'
+        ADMIN_CHILDREN_DISPLAY_ORDER: 'Visningsordning för underordnade sidor'
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: 'Den ordning som underordnade sidor på denna sida ska visas i vyn „Sidor" i admin-plugin'
+        ADMIN_SPECIFIC_OVERRIDES: 'Administrativa åsidosättningar'
+        ADVANCED: Avancerat
+        ALLOW_URL_TAXONOMY_FILTERS: URL-taxonomifilter
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: 'Sidbaserade samlingar låter dig filtrera via `/taxonomy:value`'
+        ALLOW_WEBSERVER_GZIP: 'Tillåt WebServer Gzip'
+        ALLOW_WEBSERVER_GZIP_HELP: 'Inaktiverat som standard. När det är aktiverat kommer WebServer-konfigurerad Gzip/Deflate-komprimering att fungera, men http-anslutningen kommer inte att stängas innan onShutDown()-händelsen inträffar, vilket orsakar långsammare sidladdning'
+        APPEND_URL_EXT: 'Lägg till URL-tillägg'
+        APPEND_URL_EXT_HELP: 'Lägg till ett anpassat tillägg till sidans URL. Observera att detta innebär att Grav kommer att söka efter mallen `<template>.<extension>.twig`'
+        ASCENDING: Stigande
+        ASSETS: Resurser
+        AUTO: Automatisk
+        AUTOESCAPE_VARIABLES: 'Automatisk escape för variabler'
+        AUTOESCAPE_VARIABLES_HELP: 'Automatisk escape för alla variabler. Detta kommer förmodligen att bryta din webbplats'
+        AUTO_LINE_BREAKS: 'Automatiska radbrytningar'
+        AUTO_LINE_BREAKS_HELP: 'Aktivera stöd för automatiska radbrytningar i markdown'
+        AUTO_URL_LINKS: 'Automatiska URL-länkar'
+        AUTO_URL_LINKS_HELP: 'Aktivera automatisk konvertering av URL:er till HTML-hyperlänkar'
+        AVATAR: Avatar-generator
+        AVATAR_HASH: 'OBS: Valfri anpassad Avatar-"hash"-sträng'
+        AVATAR_HELP: 'Multiavatar är en lokalt genererad avatar. Gravatar är en extern tjänst som använder din e-postadress för att hämta en förkonfigurerad avatar på distans'
+        BACK: Tillbaka
+        BACKUPS: Säkerhetskopior
+        BACKUPS_HISTORY: 'Historik för säkerhetskopior'
+        BACKUPS_MAX_COUNT: 'Maximalt antal säkerhetskopior'
+        BACKUPS_MAX_RETENTION_TIME: 'Maximal lagringstid'
+        BACKUPS_MAX_RETENTION_TIME_APPEND: 'i dagar'
+        BACKUPS_MAX_SPACE: 'Maximalt säkerhetskopieringsutrymme'
+        BACKUPS_PROFILES: Säkerhetskopieprofiler
+        BACKUPS_PROFILE_ENVIRONMENT: Miljö
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: 'Grav-miljökontexten som den schemalagda säkerhetskopian körs i.'
+        BACKUPS_PROFILE_EXCLUDE_FILES: 'Uteslut filer'
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: 'Specifika filer eller mappar att utesluta, en per rad'
+        BACKUPS_PROFILE_EXCLUDE_PATHS: 'Uteslut sökvägar'
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: 'Absoluta sökvägar att utesluta, en per rad'
+        BACKUPS_PROFILE_NAME: 'Namn på säkerhetskopia'
+        BACKUPS_PROFILE_ROOT_FOLDER: Rotmapp
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: 'Kan vara en absolut sökväg eller en ström'
+        BACKUPS_PROFILE_SCHEDULE: 'Aktivera schemalagt jobb'
+        BACKUPS_PROFILE_SCHEDULE_AT: 'Kör schemalagt jobb'
+        BACKUPS_PURGE_CONFIG: 'Konfiguration för säkerhetskopieringsrensning'
+        BACKUPS_STORAGE_PURGE_TRIGGER: 'Utlösare för säkerhetskopieringsrensning'
+        BODY_CLASSES: Brödtextklasser
+        CACHE_ALL: 'Cachelagra alla bilder'
+        CACHE_ALL_HELP: 'Kör alla bilder genom Gravs cachesystem även om de inte har några mediemanipulationer'
+        CACHE_CHECK_INTERVAL: Cachekontrollintervall
+        CACHE_CHECK_INTERVAL_HELP: 'Sekunder för att återanvända den tidigare beräknade filsystemhashen innan den kontrolleras igen. Noll behåller befintliga per-request-kontroller.'
+        CACHE_CHECK_METHOD: Cachekontrollmetod
+        CACHE_CHECK_METHOD_HELP: 'Välj metoden som Grav använder för att kontrollera om sidfiler har ändrats.'
+        CACHE_CLEAR_JOB: 'Kör schemalagt rensningsjobb'
+        CACHE_CLEAR_JOB_HELP: 'Med schemaläggaren kan du regelbundet rensa Grav-cachen'
+        CACHE_CONTROL: 'HTTP Cache-Control'
+        CACHE_CONTROL_HELP: 'Ange ett giltigt cache-control-värde som `no-cache, no-store, must-revalidate`'
+        CACHE_DRIVER: Cachedrivrutine
+        CACHE_DRIVER_HELP: 'Välj vilken cachedrivrutine Grav ska använda. „Automatisk identifiering" försöker hitta det bästa för dig'
+        CACHE_JOB_TYPE: Cachejobtyp
+        CACHE_JOB_TYPE_HELP: 'Antingen rensa med vanlig cacheborttagning av mappar, eller med "all" mappar'
+        CACHE_PERMS: Cachebehörigheter
+        CACHE_PERMS_HELP: 'Standardbehörigheter för cachemapp. Vanligtvis 0755 eller 0775 beroende på konfiguration'
+        CACHE_PREFIX: Cacheprefix
+        CACHE_PREFIX_HELP: 'En identifierare för en del av Grav-nyckeln. Ändra inte om du inte vet vad du gör.'
+        CACHE_PREFIX_PLACEHOLDER: 'Härledd från bas-URL (åsidosätt genom att ange en slumpmässig sträng)'
+        CACHE_PURGE_AGE: Cacheborttagningsålder
+        CACHE_PURGE_AGE_HELP: 'Radera alla cacheobjekt som är äldre än denna ålder (i sekunder)'
+        CACHE_PURGE_JOB: 'Kör schemalagd borttagningsjobb'
+        CACHE_PURGE_JOB_HELP: 'Med schemaläggaren kan du regelbundet rensa gamla Doctrine-filcachemappar med detta jobb'
+        CACHING: Cachning
+        CACHING_HELP: 'Global på/av-växel för att aktivera/inaktivera Grav-cachning'
+        CHARACTERS: tecken
+        CLEAR_IMAGES_BY_DEFAULT: 'Rensa bildcache som standard'
+        CLEAR_IMAGES_BY_DEFAULT_HELP: 'Som standard raderas bearbetade bilder för alla cacheborttagningar, detta kan inaktiveras'
+        CLI_COMPATIBILITY: CLI-kompatibilitet
+        CLI_COMPATIBILITY_HELP: 'Säkerställer att endast icke-flygande cacheminnen används (fil, redis, memcache osv.)'
+        COLLECTIONS: Samlingar
+        COMMAND: Kommando
+        CONFIGURATION: Konfiguration
+        CONTENT: Innehål
+        CONTENT_EDITOR: Innehållsredigerare
+        CONTENT_EDITOR_HELP: 'Anpassade redigerare kan föredras för innehållsredigering'
+        CONTENT_FALLBACK_LANGUAGE_HELP: 'Ange språkkod som du vill anpassa.'
+        CONTENT_LANGUAGE_FALLBACK: Reservspråk
+        CONTENT_LANGUAGE_FALLBACKS: 'Reservspråk för innehål'
+        CONTENT_LANGUAGE_FALLBACKS_HELP: 'Som standard visar Grav innehål på standardspråket om innehållet inte är översatt. Använd denna inställning för att åsidosätta detta beteende per språk.'
+        CONTENT_LANGUAGE_FALLBACK_HELP: 'Ange en lista med språkkoder. Observera att om du utelämnar standardspråkkoden kommer den inte att användas.'
+        COPY: Kopiera
+        CREATE: Skapa
+        CSS_ASSETS: CSS-tillgångar
+        CSS_MINIFY: CSS-minifiering
+        CSS_MINIFY_HELP: 'Minifiera CSS under sammanslagning'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'CSS-minifiering Windows-åsidosättning'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Minifierings-åsidosättning för Windows-plattformar. Falskt som standard på grund av ThreadStackSize'
+        CSS_PIPELINE: CSS-pipeline
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'Rendera CSS-pipeline först'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: 'Rendera CSS-pipelinen före andra CSS-referenser som inte är inkluderade'
+        CSS_PIPELINE_HELP: 'CSS-pipelinen är en sammanslagning av flera CSS-resurser till en fil'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: 'Inkludera externa resurser i CSS-pipeline'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: 'Externa URL:er har ibland relativa filreferenser och bör inte slås samman i pipeline'
+        CSS_REWRITE: CSS-omskrivning
+        CSS_REWRITE_HELP: 'Skriv om relativa CSS-URL:er under sammanslagning'
+        CURL: cURL
+        CUSTOM_BASE_URL: 'Anpassad bas-URL'
+        CUSTOM_BASE_URL_HELP: 'Använd om du vill skriva om webbplatsen eller använda en annan undermapp än den som används av Grav. Exempel: http://localhost'
+        CUSTOM_REDIRECTS: 'Anpassade omdirigeringar'
+        CUSTOM_REDIRECTS_HELP: 'vägar att omdirigera till andra sidor. Standard Regex-ersättning är giltig'
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /din/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+        CUSTOM_ROUTES: 'Anpassade vägar'
+        CUSTOM_ROUTES_HELP: 'vägar för att skapa alias till andra sidor. Standard Regex-ersättning är giltigt'
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+        DATE: Datum
+        DATE_BASED_PUBLISHING: 'Datumbaserad publicering'
+        DATE_BASED_PUBLISHING_HELP: 'Publicera eller avpublicera inlägg automatiskt baserat på deras datum'
+        DATE_HELP: 'Datumvariabeln gör att du kan ange ett specifikt datum som är associerat med denna sida.'
+        DEBUGGER: Felsökare
+        DEBUGGER_CENSORED: 'Censurera känslig data'
+        DEBUGGER_CENSORED_HELP: 'Endast Clockwork-leverantör: Om Ja, censurera potentiellt känslig information (POST-parametrar, cookies, filer, konfiguration och mest array/objektdata i loggmeddelanden)'
+        DEBUGGER_CLOCKWORK: 'Clockwork webbläsartillägg'
+        DEBUGGER_DEBUGBAR: 'PHP Debug Bar'
+        DEBUGGER_HELP: 'Aktivera Grav-felsökare och följande inställningar'
+        DEBUGGER_PROVIDER: Felsökarleverantör
+        DEBUGGER_PROVIDER_HELP: 'Standard är PHP Debug Bar, men Clockwork webbläsartillägget ger ett mindre påträngande tillvagagångssätt'
+        DEFAULT: Standard
+        DEFAULTS: Standarder
+        DEFAULT_AUTHOR: Standardförfattare
+        DEFAULT_AUTHOR_HELP: 'Ett standardförfattarnamn, ofta använt i teman eller sidinnehål'
+        DEFAULT_CHILD_TYPE: 'Standardtyp för underordnade sidor'
+        DEFAULT_DATE_FORMAT: 'Datumformat för sida'
+        DEFAULT_DATE_FORMAT_HELP: 'Datumformat för sida som används av Grav. Som standard försöker Grav gissa ditt datumformat, men du kan ange ett format med PHP:s datumsyntax (t.ex.: Y-m-d H:i)'
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: 'Gissa automatiskt'
+        DEFAULT_EMAIL: 'Standard e-postadress'
+        DEFAULT_EMAIL_HELP: 'En standard e-postadress att referera till i teman eller sidor'
+        DEFAULT_IMAGE_QUALITY: 'Standard bildkvalitet'
+        DEFAULT_IMAGE_QUALITY_HELP: 'Standard bildkvalitet att användas vid omsampling eller caching av bilder (85%)'
+        DEFAULT_LANG: 'Åsidosätt standardspråk'
+        DEFAULT_LANG_HELP: 'Standard är det första språk som stöds. Detta kan åsidosättas genom att ställa in det här alternativet, men det måste vara ett av de språk som stöds'
+        DEFAULT_ORDERING: Standardordning
+        DEFAULT_ORDERING_DATE: 'Datum – baserat på datumfält i sidhuvud'
+        DEFAULT_ORDERING_DEFAULT: 'Standard – baserat på mappnamn'
+        DEFAULT_ORDERING_FOLDER: 'Mapp – baserat på mappnamn utan prefix'
+        DEFAULT_ORDERING_HELP: 'Sidor i en lista kommer att renderas med denna ordning såvida den inte åsidosätts'
+        DEFAULT_ORDERING_TITLE: 'Titel – baserat på titelfält i sidhuvud'
+        DEFAULT_ORDER_DIRECTION: Standardsorteringsriktning
+        DEFAULT_ORDER_DIRECTION_HELP: 'Sorteringsriktningen för sidor i en lista'
+        DEFAULT_PAGE_COUNT: 'Standardantal sidor'
+        DEFAULT_PAGE_COUNT_HELP: 'Standardmaximalt antal sidor i en lista'
+        DEFAULT_THEME: 'Standard tema'
+        DEFAULT_THEME_HELP: 'Ange standardtemat för Grav att använda (standard är Antimatter)'
+        DELIMITER: Avgränsare
+        DELIMITER_HELP: 'Sammanfattningsavgränsaren (standard „===")'
+        DESCENDING: Fallande
+        DESCRIPTION: Beskrivning
+        DETAILS: Detaljer
+        DETECT_CHANGES: 'Detektera ändringar'
+        DETECT_CHANGES_HELP: 'Twig kommer automatiskt att omkompilera Twig-cachen om den detekterar någon ändring i Twig-mallar'
+        DISPLAY_ERRORS: 'Visa fel'
+        DISPLAY_ERRORS_HELP: 'Visa fullständig felhanteringssida med stack trace-stil'
+        DISPLAY_NAME: Visningsnamn
+        DISPLAY_TEMPLATE: 'Visa mall'
+        EMAIL: E-post
+        EMAIL_VALIDATION_MESSAGE: 'Måste vara en giltig e-postadress'
+        ENABLED_HELP: 'Aktivera sidsammanfattning (sammanfattningen returnerar samma innehål som sidan)'
+        ENABLED_SRI_ON_ASSETS: 'Aktivera SRI på tillgångar'
+        ENABLED_SRI_ON_ASSETS_HELP: 'Aktivera tillgångs-SRI'
+        ENABLED_TIMESTAMPS_ON_ASSETS: 'Aktivera tidsstämplar på tillgångar'
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: 'Aktivera tidsstämplar för tillgångar'
+        ENABLE_AUTO_METADATA: 'Automatisk metadata från Exif'
+        ENABLE_AUTO_METADATA_HELP: 'Generera automatiskt metadatafiler för bilder med exif-information'
+        ENABLE_MEDIA_TIMESTAMP: 'Aktivera tidsstämplar på media'
+        ENABLE_MEDIA_TIMESTAMP_HELP: 'Lägger till en tidsstämpel baserad på senast ändrad datum för varje mediaobjekt'
+        ERROR_FULL_BACKTRACE: 'Fullständigt stack trace-fel'
+        ERROR_HANDLER: Felhanterare
+        ERROR_SIMPLE: 'Enkelt fel'
+        ERROR_SYSTEM: Systemfel
+        ESCAPE_MARKUP: Escape-markering
+        ESCAPE_MARKUP_HELP: 'Escape-märkningstaggar till HTML-enheter'
+        ETAG: ETag
+        ETAG_HELP: 'Ställer in etag-huvudet för att identifiera när en sida har ändrats'
+        EVENTS: Händelser
+        EVENTS_HELP: 'Aktivera eller inaktivera specifika händelser. Att inaktivera dessa kan bryta insticksprogram'
+        EXPERIMENTAL: Experimentell
+        EXPIRES: Upphör
+        EXPIRES_HELP: 'Anger upphörshuvudet. Värdet är i sekunder.'
+        EXTERNAL: 'Extern sida'
+        EXTERNAL_URL: 'Extern URL'
+        EXTRA_ARGUMENTS: 'Extra argument'
+        FALLBACK_TYPES: 'Tillåtna reservtyper'
+        FALLBACK_TYPES_HELP: 'Tillåtna filtyper som kan hittas vid åtkomst via sidrout. Standardvärde är alla medietyper som stöds.'
+        FILE: Fil
+        FILE_EXTENSION: Filtillägg
+        FILE_STREAMS: Filströmmar
+        FLEX: 'Flex-objekt (EXPERIMENTELL)'
+        FLEX_ADMIN_EVENT_COMPAT: 'Kompatibilitet för administratörsehändelse'
+        FLEX_ADMIN_EVENT_COMPAT_HELP: 'Möjliggör onAdminSave och onAdminAfterSave-händelser för insticksmoduler.'
+        FLEX_CACHING: Flex-cachning
+        FLEX_INDEX_CACHE_ENABLED: 'Aktivera indexcachning'
+        FLEX_INDEX_CACHE_LIFETIME: 'Livstid för indexcache (sekunder)'
+        FLEX_OBJECT_CACHE_ENABLED: 'Aktivera objektcachning'
+        FLEX_OBJECT_CACHE_LIFETIME: 'Livstid för objektcache (sekunder)'
+        FLEX_RENDER_CACHE_ENABLED: 'Aktivera renderingscachning'
+        FLEX_RENDER_CACHE_LIFETIME: 'Livstid för renderingscache (sekunder)'
+        FOLDER: Mapp
+        FOLDER_NAME: Mappnamn
+        FOLDER_NUMERIC_PREFIX: 'Mappnumerisk prefix'
+        FOLDER_NUMERIC_PREFIX_HELP: 'Numerisk prefix som ger manuell sortering och innebär synlighet'
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: 'Tvinga gemener i URL:er'
+        FORCE_LOWERCASE_URLS_HELP: 'Som standard kommer Grav att ställa in alla slug:ar och vägar till gemener. Om detta är inställt på falskt kan versaler slug:ar och vägar användas'
+        FORCE_SSL: 'Tvinga SSL'
+        FORCE_SSL_HELP: 'Tvinga SSL globalt. Om detta är aktiverat och webbplatsen nås via HTTP skickar Grav en omdirigering till HTTPS-sidan'
+        FORMAT: Format
+        FORMAT_HELP: 'short = använd första förekomsten av avgränsare eller storlek; long = sammanfattningsavgränsare kommer att ignoreras'
+        FRONTMATTER_IGNORE_FIELDS: 'Ignorera frontmatter-fält'
+        FRONTMATTER_IGNORE_FIELDS_HELP: 'Vissa frontmatter-fält kan innehålla Twig men bör inte bearbetas, till exempel „forms"'
+        FRONTMATTER_PROCESS_TWIG: 'Bearbeta frontmatter Twig'
+        FRONTMATTER_PROCESS_TWIG_HELP: 'När detta är aktiverat kan du använda Twig-konfigurationsvariabler i sidans frontmatter'
+        FULL_NAME: 'Fullständigt namn'
+        GENERAL_CONFIG: 'Allmän tillgångskonfiguration'
+        GPM_METHOD: Fjärrinhämtningsmetod
+        GPM_METHOD_HELP: 'När detta är inställt på Auto bestämmer Grav om fopen är tillgänglig och använder det, annars återgår det till cURL. För att tvinga användningen av det ena eller det andra byter du inställningen.'
+        GPM_OFFICIAL_ONLY: 'Endast officiell GPM'
+        GPM_OFFICIAL_ONLY_HELP: 'Tillåt endast direktinstallationer från den officiella GPM-databasen'
+        GPM_RELEASES: GPM-versioner
+        GPM_RELEASES_HELP: 'Välj „Testing" för att installera beta- eller testversioner'
+        GPM_SECTION: GPM-avsnitt
+        GROUPS_HELP: 'Lista över grupper som användaren är medlem i'
+        GROUP_NAME: Gruppnamn
+        GZIP_COMPRESSION: Gzip-komprimering
+        GZIP_COMPRESSION_HELP: 'Aktivera Gzip-komprimering av Grav-sidan för bättre prestanda'
+        HIDE_EMPTY_FOLDERS: 'Dölj tomma mappar'
+        HIDE_EMPTY_FOLDERS_HELP: 'Om en mapp saknar .md-fil, bör den också vara dold i navigationen och vara oroutbar'
+        HIDE_HOME_IN_URLS: 'Dölj hemvägen i URL:er'
+        HIDE_HOME_IN_URLS_HELP: 'Säkerställer att standardvägarna för sidor under hem inte refererar till hemets vanliga väg'
+        HOME_PAGE: Hemsida
+        HOME_PAGE_HELP: 'Sidan som Grav kommer att använda som standardlandningssida'
+        HTTP_ACCEPT_LANGUAGE: 'Ställ in språk från webbläsaren'
+        HTTP_ACCEPT_LANGUAGE_HELP: 'Du kan välja att försöka ställa in språket baserat på `http_accept_language`-headern i webbläsaren'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP aktiverad'
+        HTTP_CF_CONNECTING_IP_HELP: 'Lita på <code>CF-Connecting-IP</code>-förfrågehuvudet vid lösning av klient-IP. Aktivera när webbplatsen är äkta bakom Cloudflare; annars kan klienter förfalska sin IP. För fullständig säkerhet, begränsa även ursprungsåtkomsten till Cloudflare IP-intervall på webbservern.'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP aktiverad'
+        HTTP_CLIENT_IP_HELP: 'Lita på <code>Client-IP</code>-förfrågehuvudet vid lösning av klient-IP. Sällsynt; vanligtvis endast angett av specifika belastningsutjämnare. Lämna av om du inte vet att din proxy ställer in och skriver över detta huvud.'
+        HTTP_CONNECTIONS: HTTP-anslutningar
+        HTTP_CONNECTIONS_HELP: 'Antalet samtidiga HTTP-anslutningar under multiplexade förfrågningar'
+        HTTP_HEADERS: HTTP-rubriker
+        HTTP_SECTION: HTTP-avsnitt
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST aktiverad'
+        HTTP_X_FORWARDED_HOST_HELP: 'Lita på <code>X-Forwarded-Host</code>-förfrågehuvudet. Aktivera endast när webbplatsen är äkta bakom en omvänd proxy som ställer in och skriver över detta huvud; annars kan klienter förfalska värden som Grav ser.'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP aktiverad'
+        HTTP_X_FORWARDED_IP_HELP: 'Lita på <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code>-huvuden vid lösning av klient-IP. Aktivera endast när webbplatsen är äkta bakom en omvänd proxy som ställer in och skriver över dessa huvuden; annars kan klienter förfalska sin IP och kringgå hastighetsbegränsning, IP-förbjudanden och granskningsloggning.'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT aktiverad'
+        HTTP_X_FORWARDED_PORT_HELP: 'Lita på <code>X-Forwarded-Port</code>-förfrågehuvudet. Aktivera endast när webbplatsen är äkta bakom en omvänd proxy som ställer in och skriver över detta huvud.'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO aktiverad'
+        HTTP_X_FORWARDED_PROTO_HELP: 'Lita på <code>X-Forwarded-Proto</code>-förfrågehuvudet (vanligtvis används för att detektera HTTPS bakom en TLS-avslutande proxy). Aktivera endast när webbplatsen är äkta bakom en omvänd proxy som ställer in och skriver över detta huvud.'
+        ICON: Ikon
+        ID: ID
+        IGNORE_FILES: 'Ignorera filer'
+        IGNORE_FILES_HELP: 'Specifika filer som ska ignoreras vid bearbetning av sidor'
+        IGNORE_FOLDERS: 'Ignorera mappar'
+        IGNORE_FOLDERS_HELP: 'Specifika mappar som ska ignoreras vid bearbetning av sidor'
+        IGNORE_HIDDEN: 'Ignorera dolda'
+        IGNORE_HIDDEN_HELP: 'Ignorera alla filer och mappar som börjar med en PUNKT'
+        IMAGES_AUTO_FIX_ORIENTATION: 'Åtgärda orientering automatiskt'
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: 'Åtgärda bildorienteringen automatiskt baserat på Exif-data'
+        IMAGES_CLS_ASPECT_RATIO: 'Aktivera bildförhållande'
+        IMAGES_CLS_ASPECT_RATIO_HELP: 'Valfri CSS-variabel som tillämpas via ett "style"-attribut som kan användas i CSS för anpassad styling'
+        IMAGES_CLS_AUTO_SIZES: 'Aktivera automatiska storlekar'
+        IMAGES_CLS_AUTO_SIZES_HELP: 'Lägg automatiskt till "width"- och "height"-attribut till bilder för att hantera CLS'
+        IMAGES_CLS_RETINA_SCALE: Retina-skalningsfaktor
+        IMAGES_CLS_RETINA_SCALE_HELP: 'Tar den beräknade storleken och dividerar med skalningsfaktorn för att visa en högre upplösningsbild i en mindre pixelstorlek för bättre hantering av HiDPI-upplösningar'
+        IMAGES_CLS_TITLE: 'Kumulativ layoutförskjutning (CLS)'
+        IMAGES_DEBUG: 'Vattenstämpel för bildfel'
+        IMAGES_DEBUG_HELP: 'Visa ett överlägg över bilder som anger bilddjupet för bilden när man till exempel arbetar med retina'
+        IMAGES_DECODING: Bildavkodningsbeteende
+        IMAGES_DECODING_HELP: 'Dekodningsattributet tillåter en webbläsare att skjuta upp avkodningen av bilder utanför skärmen tills användare rullar nära dem. decoding stöder tre värden: auto, sync, async'
+        IMAGES_FETCHPRIORITY: 'Bildprioriteringsegenskap för hämtning'
+        IMAGES_FETCHPRIORITY_HELP: 'Fetchpriority-egenskapen i HTML är ett attribut som anger prioriteten för inläsning av vissa resurser, såsom bilder eller iframes, för att optimera prestanda. Möjliga värden är high, low eller auto.'
+        IMAGES_LOADING: Bildladdningsbeteende
+        IMAGES_LOADING_HELP: 'Attributet loading tillåter en webbläsare att skjuta upp inläsningen av bilder och iframes utanför skärmen tills användare rullar nära dem. loading stöder tre värden: auto, lazy, eager'
+        IMAGES_MAX_PIXELS: 'Maximalt antal bildpixlar'
+        IMAGES_MAX_PIXELS_HELP: 'Totalt pixeltak (bredd × höjd) för URL-baserade storleksändringsåtgärder. Förfrågningar över denna gräns avvisas. Ställ in på 0 för att inaktivera kontrollen.'
+        IMAGES_SEOFRIENDLY: 'SEO-vänliga bildnamn'
+        IMAGES_SEOFRIENDLY_HELP: 'När detta är aktiverat visas bildnamnet först, följt av en mindre hash som återspeglar bearbetade operationer'
+        IMAGES_URL_ACTIONS: 'Tillåt URL-baserade bildåtgärder'
+        IMAGES_URL_ACTIONS_HELP: 'Tillåt bildtransformationer via URL-frågeparametrar (t.ex. `image.jpg?resize=600,400`). Inaktiverat som standard; normal bildstorlek i Twig och Markdown påverkas inte.'
+        IMAGE_ADAPTER: Bildadapter
+        IMAGE_ADAPTER_HELP: "Bildadaptern som ska användas för bildmanipulation. 'GD' är standard, 'Imagick' är ett alternativ"
+        IMAGE_OPTIONS: Bildalternativ
+        INCLUDE_DEFAULT_LANG: 'Inkludera standardspråk'
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: 'Inkludera standardspråk i filtillägg'
+        INCLUDE_DEFAULT_LANG_HELP: 'Detta kommer att föregå alla URL:er på standardspråket med standardspråket. t.ex. `/en/blog/my-post`'
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: 'Om detta är aktiverat föregås filtillägget med standardspråket (t.ex. `.en.md`). Inaktivera det för att behålla standardspråket med `.md`-filtillägg.'
+        INLINE_TYPES: Inline-reservtyper
+        INLINE_TYPES_HELP: 'En lista över filtyper som bör visas inline snarare än laddas ned'
+        INTL_ENABLED: Intl-modulintegration
+        INTL_ENABLED_HELP: 'Använd Intl PHP-modul och collate för att sortera UTF8-baserade samlingar'
+        ITEMS: Objekt
+        JAVASCRIPT_MINIFY: JavaScript-minifiering
+        JAVASCRIPT_MINIFY_HELP: 'Minifiera JS under pipeline-bearbetning'
+        JAVASCRIPT_MODULE_PIPELINE: 'JavaScript Module pipeline'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'JS Module pipeline render först'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: 'Gör JavaScript-pipeline innan andra JavaScript-referenser som inte ingår'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'JS Module pipeline är föreningen av flera JavaScript-resurser till en fil'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: 'Inkludera externa i JS Module pipeline'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: 'Externa URL:er har ibland relativa filreferenser och bör inte pipelineras'
+        JAVASCRIPT_PIPELINE: JavaScript-pipeline
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'JS-pipeline renderas först'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: 'Rendera JS-pipelinen före andra JS-referenser som inte är inkluderade'
+        JAVASCRIPT_PIPELINE_HELP: 'JS-pipelinen är sammanslagningen av flera JS-resurser till en fil'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: 'Inkludera externa i JS-pipeline'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: 'Externa URL:er har ibland relativa filreferenser och bör inte pipelines'
+        JS_ASSETS: JavaScript-resurser
+        JS_MODULE_ASSETS: JavaScript-modulresurser
+        LANGUAGE: Språk
+        LANGUAGES: Språk
+        LANGUAGE_DEBUG: 'Felsöka språk'
+        LANGUAGE_DEBUG_HELP: 'Aktivera felsökning av språk som använder filtret |t twig genom att lägga till ett span-element runt dem som kan formateras för att diagnostisera problem'
+        LANGUAGE_HELP: 'Ange favoritspråk'
+        LANGUAGE_TRANSLATIONS: Översättningar
+        LANGUAGE_TRANSLATIONS_HELP: 'Om falskt används översättningsnycklar istället för översatta strängar. Den här funktionen kan användas för att reparera felaktiga översättningar eller hitta hårdkodade engelska strängar.'
+        LAST_MODIFIED: 'Senast modifierad'
+        LAST_MODIFIED_HELP: 'Anger huvudet för senaste ändringsdag som kan hjälpa till att optimera proxy- och webbläsarcachning'
+        LIFETIME: Livslängd
+        LIFETIME_HELP: 'Anger cachens livslängd i sekunder. 0 = oändlig'
+        LIST: Lista
+        LOG_ERRORS: 'Logga fel'
+        LOG_ERRORS_HELP: 'Logga fel till mappen /logs'
+        LOG_HANDLER: Logghanterare
+        LOG_HANDLER_HELP: 'Där loggar ska matas ut'
+        LONG: Lång
+        LONG_DATE_FORMAT: 'Långt datumformat för visning'
+        LONG_DATE_FORMAT_HELP: 'Ange det långa datumformat som kan användas av teman'
+        MARKDOWN: Markdown
+        MARKDOWN_EXTRA: 'Markdown extra'
+        MARKDOWN_EXTRA_HELP: 'Aktivera standardstöd för Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA_TYPES: Medietyper
+        MEMCACHED_PORT: Memcached-port
+        MEMCACHED_PORT_HELP: 'Memcached-serverns port'
+        MEMCACHED_SERVER: Memcached-server
+        MEMCACHED_SERVER_HELP: 'Memcached-serverns adress'
+        MENU: Meny
+        MENU_HELP: 'Strängen som ska användas i en meny. Om den inte är inställd används Titel.'
+        METADATA: Metadata
+        METADATA_HELP: 'Standardmetadata-värden som visas på varje sida om de inte åsidosätts av sidan'
+        METADATA_KEY: 'Nyckel (t.ex. „Nyckelord")'
+        METADATA_VALUE: 'Värde (t.ex. „Blogg, Grav")'
+        MIME_TYPE: MIME-typ
+        MISC_SECTION: 'Diverse sektion'
+        MODULE: Modul
+        MODULE_SETUP: Modulkonfiguration
+        MOVE: Flytta
+        NAME: Namn
+        NEVER_CACHE_TWIG: 'Cachelagra aldrig Twig'
+        NEVER_CACHE_TWIG_HELP: 'Cachelagra endast innehåll och bearbeta Twig varje gång för sidor. Ignorerar twig_first-inställningen.'
+        'NO': Nej
+        OPTIONS: Alternativ
+        ORDER: Ordning
+        ORDERING: Ordning
+        ORDER_BY: 'Ordna efter'
+        ORDER_DIGITS: Ordningsiffror
+        ORDER_DIGITS_HELP: 'Antal siffror som används för att prefixera mappnamn för ordning (t.ex. `01.about`, `001.about`).'
+        ORDER_DIR_HELP: '„desc" eller „asc" är giltiga värden'
+        OVERRIDES: Åsidosättningar
+        OVERRIDE_LOCALE: 'Åsidosätt språkinställning'
+        OVERRIDE_LOCALE_HELP: 'Åsidosätt språkinställningen i PHP baserat på det aktuella språket'
+        PAGE: Sida
+        PAGES_CONFIGURATION: Sidkonfiguration
+        PAGES_FALLBACK_ONLY: 'Endast reserv för sidor'
+        PAGES_FALLBACK_ONLY_HELP: 'Använd endast „reserv" för att hitta sidinnehål genom de språk som stöds, standardbeteendet är att visa alla språk som finns om det aktiva språket saknas'
+        PAGES_TYPE: Frontend-sidtyp
+        PAGES_TYPE_HELP: 'Det här alternativet aktiverar Flex Object-sidor på klientsidan. Admin Flex Pages kräver insticksprogrammet Flex Objects'
+        PAGE_ACCESS: Sidåtkomst
+        PAGE_ACCESS_HELP: 'Användare med följande åtkomsträttigheter kan komma åt sidan.'
+        PAGE_AUTHORS: Sidförfattare
+        PAGE_AUTHORS_HELP: 'Medlemmar av sidförfattare har ägaråtkomst till denna sida enligt definitionen i den särskilda sidgruppen „Författare".'
+        PAGE_FILE: Sidmall
+        PAGE_FILE_HELP: 'Namn på sidmall och som standard visningsbetten för denna sida'
+        PAGE_GROUPS: Sidgrupper
+        PAGE_GROUPS_HELP: 'Medlemmar av sidgrupper har särskild åtkomst till denna sida.'
+        PAGE_INHERIT_PERMISSIONS: 'Ärv behörigheter'
+        PAGE_INHERIT_PERMISSIONS_HELP: 'Ärv ACL från överordnad sida.'
+        PAGE_MEDIA: Sidmedia
+        PAGE_PERMISSIONS: Sidbehörigheter
+        PAGE_SUMMARY: Sidsammanfattning
+        PAGE_TYPES: Sidtyper
+        PAGE_TYPES_HELP: 'Bestämmer de sidtyper som Grav stöder och ordningen bestämmer vilken typ som ska återfalla till om begäran är tvetydig'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: 'Menysynlighet Kräver Åtkomst'
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: 'Ställ in på Ja om sidan endast ska visas i menyer om användaren har åtkomst till dem.'
+        PARAMETER_SEPARATOR: Parameterseparator
+        PARAMETER_SEPARATOR_HELP: 'Separator för överförda parametrar som kan ändras för Apache på Windows'
+        PARENT: Överordnad
+        PASSWORD_VALIDATION_MESSAGE: 'Lösenord måste innehålla minst ett nummer och en stor och liten bokstav, samt minst 8 eller fler tecken'
+        PERMISSIONS: Behörigheter
+        PLUGIN_STATUS: Plugin-status
+        PROCESS: Bearbeta
+        PROCESS_HELP: 'Kontrollera hur sidor bearbetas. Kan ställas in per sida snarare än globalt'
+        PROXY_CERT: 'Sökväg för proxycertifikat'
+        PROXY_CERT_HELP: 'Lokal sökväg till mapp som innehåller proxycertifikat pem-fil'
+        PROXY_URL: Proxy-URL
+        PROXY_URL_HELP: 'Ange proxy HOST eller IP och PORT'
+        PUBLISH: Publicera
+        PUBLISHED: Publicerad
+        PUBLISHED_DATE: Publiceringsdatum
+        PUBLISHED_DATE_HELP: 'Kan tillhandahålla ett datum för att automatiskt utlösa publikation.'
+        PUBLISHED_HELP: 'Som standard publiceras en sida såvida du inte uttryckligen ställer in published: false eller via ett publish_date i framtiden, eller unpublish_date i det förflutna'
+        PUBLISHING: Publicering
+        PWD_REGEX: Lösenordsregex
+        PWD_REGEX_HELP: 'Som standard: Lösenord måste innehålla minst en siffra och en stor bokstav och en liten bokstav, och minst 8 eller fler tecken'
+        PWD_RULES: Lösenordsregler
+        PWD_RULES_HELP: 'Anpassade lösenordsvalideringsregler. Varje regel har ett ID, en läsbar etikett och ett regex som lösenordet måste matcha.'
+        PWD_RULES_ID: ID
+        PWD_RULES_LABEL: Etikett
+        PWD_RULES_PATTERN: Regex-mönster
+        READ: Läs
+        READ_FILE_ALLOWED_EXTENSIONS: 'Tillåtna filtyper'
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: 'Filtyper <code>read_file()</code> kommer att läsa (skiftlägesokänslig, utan inledande punkt). Standard är endast textformat. Att lägga till körbara eller konfigurationsformat (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) är riskabelt och rekommenderas inte.'
+        READ_FILE_ALLOWED_STREAMS: 'Tillåtna strömmar'
+        READ_FILE_ALLOWED_STREAMS_HELP: 'Strömningsscheman som <code>read_file()</code> kan lösa. Standard: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. Att lägga till breda strömmar som <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> eller <code>cache</code> exponerar känsliga filer och rekommenderas starkt emot.'
+        READ_FILE_MAX_SIZE: 'Max filstorlek (byte)'
+        READ_FILE_MAX_SIZE_HELP: 'Filer större än detta returnerar <code>false</code> istället för att läsas in i minnet. Standard är <code>1048576</code> (1 MB). Ställ in på <code>0</code> för att inaktivera storleksgränsen.'
+        READ_FILE_SECTION_HELP: 'Begränsningar för Twig-funktionen <code>read_file()</code>. Läsningar går genom Grav stream-URI:er och verifieras genom en kanonisk realpathkontroll mot de lösta stream-rötterna, så kodad eller symbolisk länktraversal är blockerad på filsystemsnivå oavsett hur sökvägen skrivs.'
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REDIRECT: Sidömbedirigering
+        REDIRECTS_AND_ROUTES: 'Omdirigeringar och vägar'
+        REDIRECT_DEFAULT_CODE: Standardomdirigerkod
+        REDIRECT_DEFAULT_CODE_HELP: 'HTTP-statuskoden som ska användas för omdirigeringar'
+        REDIRECT_DEFAULT_ROUTE: 'Omdirigera standardväg'
+        REDIRECT_DEFAULT_ROUTE_HELP: 'Omdirigera automatiskt till en sidas standardväg'
+        REDIRECT_HELP: 'Ange en sidväg eller extern URL som denna sida ska omdirigera till. T.ex. `/some/route` eller `http://somesite.com`'
+        REDIRECT_OPTION_301: '301 - Flyttad permanent'
+        REDIRECT_OPTION_302: '302 - Flyttad tillfälligt'
+        REDIRECT_OPTION_303: '303 - Se Other'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: 'Använd standard omdirigeringskod'
+        REDIRECT_OPTION_NO_REDIRECT: 'Ingen omdirigering'
+        REDIRECT_TRAILING_SLASH: 'Omdirigera avslutande snedstreck'
+        REDIRECT_TRAILING_SLASH_HELP: 'Utför en 301-omdirigering istället för att transparent hantera avslutande snedstreck i URI:er.'
+        REDIS_DATABASE: Redis-databas-ID
+        REDIS_DATABASE_HELP: 'Redis-instansens databas-ID'
+        REDIS_PASSWORD: Redis-lösenord/hemlighet
+        REDIS_PORT: Redis-port
+        REDIS_PORT_HELP: 'Redis-serverns port'
+        REDIS_SERVER: Redis-server
+        REDIS_SERVER_HELP: 'Redis-serverns adress'
+        REDIS_SOCKET: Redis-socket
+        REDIS_SOCKET_HELP: Redis-socketen
+        REGULAR: Vanlig
+        REVERSE_PROXY: 'Omvänd proxy'
+        REVERSE_PROXY_HELP: 'Aktivera detta om du är bakom en omvänd proxy och har problem med URL:er som innehåller felaktiga portar'
+        ROOT: Root
+        ROUTABLE: Dirigerbar
+        ROUTABLE_HELP: 'Om denna sida kan nås via en URL'
+        ROUTE: Väg
+        ROUTE_ALIASES: Väg-alias
+        ROUTE_CANONICAL: 'Kanonisk väg'
+        ROUTE_DEFAULT: Standardväg
+        ROUTE_OVERRIDES: Väg-åsidosättningar
+        SANITIZE_SVG: 'Sanera SVG'
+        SANITIZE_SVG_HELP: 'Tar bort all XSS-kod från SVG'
+        SCHEDULER: Schemaläggare
+        SCHEDULER_ACTIVE_TRIGGERS: 'Aktiva utlösare'
+        SCHEDULER_ADVANCED_FEATURES: 'Avancerade funktioner'
+        SCHEDULER_CONCURRENT_WORKERS: 'Samtidiga arbetsprocesser'
+        SCHEDULER_CONCURRENT_WORKERS_HELP: 'Antal jobb som kan köras samtidigt (1 = sekventiellt).'
+        SCHEDULER_EMAIL: E-post
+        SCHEDULER_EMAIL_HELP: 'E-postadress för utmatning. OBSERVERA: kräver att utmatningsfilen är inställd'
+        SCHEDULER_HEALTH_CHECK_CONFIG: 'Konfiguration av hälsokontroll'
+        SCHEDULER_HEALTH_CHECK_ENABLED: 'Aktivera hälsokontroll'
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 'Tillhandahåll en hälsostatus-slutpunkt för övervakning.'
+        SCHEDULER_HEALTH_CHECK_PATH: 'Sökväg för hälsokontroll'
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: 'URL-sökväg för hälsokontrollslutpunkten.'
+        SCHEDULER_HEALTH_STATUS: Hälsostatus
+        SCHEDULER_HISTORY: Jobbhistorik
+        SCHEDULER_HISTORY_ENABLED: 'Aktivera jobbhistorik'
+        SCHEDULER_HISTORY_ENABLED_HELP: 'Spåra körningshistorik för alla jobb.'
+        SCHEDULER_HISTORY_RETENTION: 'Kvarhållning av historik (dagar)'
+        SCHEDULER_HISTORY_RETENTION_HELP: 'Hur länge jobbhistorik ska behållas.'
+        SCHEDULER_JOBS: 'Anpassade schemaläggare-jobb'
+        SCHEDULER_OUTPUT: Utmatningsfil
+        SCHEDULER_OUTPUT_HELP: 'Sökvägen/filnamnet för utmatningsfilen (från roten av Grav-installationen)'
+        SCHEDULER_OUTPUT_TYPE: Utmatningstyp
+        SCHEDULER_OUTPUT_TYPE_HELP: 'Antingen lägg till i samma fil vid varje körning, eller skriv över filen vid varje körning'
+        SCHEDULER_QUEUE_CONFIG: Kökonfiguration
+        SCHEDULER_QUEUE_MAX_SIZE: 'Maximal köstorlek'
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: 'Maximalt antal jobb som kan köas.'
+        SCHEDULER_QUEUE_PATH: 'Lagringssökväg för kö'
+        SCHEDULER_QUEUE_PATH_HELP: 'Var köade jobb ska lagras.'
+        SCHEDULER_RETRY_BACKOFF: 'Omförsöksstrategi för återskjuvning'
+        SCHEDULER_RETRY_BACKOFF_HELP: 'Hur fördröjningen mellan omförsök beräknas.'
+        SCHEDULER_RETRY_CONFIG: 'Konfiguration för omförsök'
+        SCHEDULER_RETRY_ENABLED: 'Aktivera jobomförsök'
+        SCHEDULER_RETRY_ENABLED_HELP: 'Försök automatiskt att köra misslyckade jobb igen.'
+        SCHEDULER_RETRY_MAX_ATTEMPTS: 'Maximalt antal omförsöksförsök'
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 'Maximalt antal gånger ett misslyckad jobb ska försökas igen.'
+        SCHEDULER_RUNAT: 'Kör vid'
+        SCHEDULER_RUNAT_HELP: 'Cron-formaterad "vid"-syntax. NOTERING: Alla tider är UTC!'
+        SCHEDULER_STATUS: Schemaläggningsstatus
+        SCHEDULER_USAGE_EXAMPLES: Användningsexempel
+        SCHEDULER_WEBHOOK_CONFIG: Webhook-konfiguration
+        SCHEDULER_WEBHOOK_ENABLED: 'Aktivera webhook-utlösare'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: 'Tillåt att utlösa schemaläggaren via HTTP-webhook.'
+        SCHEDULER_WEBHOOK_PATH: Webhook-sökväg
+        SCHEDULER_WEBHOOK_PATH_HELP: 'URL-sökväg för webhook-slutpunkten.'
+        SCHEDULER_WEBHOOK_TOKEN: Webhook-säkerhetsnyckel
+        SCHEDULER_WEBHOOK_TOKEN_HELP: 'Hemlig token för autentisering av webhook-förfrågningar. Håll denna hemlig!'
+        SCHEDULER_WORKER_CONFIG: Arbetskonfiguration
+        SECURITY: Säkerhet
+        SESSION: Session
+        SESSION_DOMAIN: Sessiondomän
+        SESSION_DOMAIN_HELP: 'Använd endast om du skriver om webbplatsens domän, till exempel i en Docker-container.'
+        SESSION_ENABLED_HELP: 'Aktivera sessionsstöd i Grav'
+        SESSION_HTTPONLY: 'Endast HTTP'
+        SESSION_HTTPONLY_HELP: 'Om sant anger det att cookies endast ska användas över HTTP och JavaScript-ändringar inte är tillåtna'
+        SESSION_INITIALIZE: 'Initiera session'
+        SESSION_INITIALIZE_HELP: 'Gör att Grav startar en session. Den här funktionen krävs för att användarinteraktion ska fungera, till exempel inloggning, formulär osv. Admin-plugin påverkas inte av denna inställning.'
+        SESSION_NAME_HELP: 'En identifierare som används för att bilda sessionscookiets namn'
+        SESSION_PATH: Sessionssökväg
+        SESSION_PATH_HELP: 'Använd endast om du skriver om webbplatsens sökväg, till exempel i en Docker-container.'
+        SESSION_SAMESITE: SessionSameSite-attribut
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None. Se https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite för mer information'
+        SESSION_SECURE: Säker
+        SESSION_SECURE_HELP: 'Om sant anger det att kommunikationen för denna cookie måste vara över en krypterad överföring. VARNING: Aktivera detta endast på webbplatser som körs exklusivt på HTTPS'
+        SESSION_SECURE_HTTPS: 'Säker (HTTPS)'
+        SESSION_SECURE_HTTPS_HELP: 'Ställ in sessionen som säker på HTTPS men inte på HTTP. Har ingen effekt om du har ovanstående Säker-inställning inställd på sant. Ställ in på falskt om din webbplats växlar mellan HTTP och HTTPS.'
+        SESSION_SPLIT: Sessionssplit
+        SESSION_SPLIT_HELP: 'Oberoende delade sessioner mellan webbplats och andra insticksprogram (till exempel admin)'
+        SESSION_UNIQUENESS: 'Unik sträng'
+        SESSION_UNIQUENESS_HELP: 'MD5-hash för Gravs rotsökväg, d.v.s. `GRAV_ROOT` (standard) eller baserad på den slumpmässiga `security.salt`-strängen.'
+        SHORT: Kort
+        SHORT_DATE_FORMAT: 'Kort visningsdatumformat'
+        SHORT_DATE_FORMAT_HELP: 'Ange det korta datumformat som kan användas av teman'
+        SHUTDOWN_CLOSE_CONNECTION: 'Stäng anslutning vid avstängning'
+        SHUTDOWN_CLOSE_CONNECTION_HELP: 'Stäng anslutningen innan onShutdown() anropas. false för felsökning'
+        SITE: Webbplats
+        SITE_ACCESS: Webbplatsåtkomst
+        SITE_DEFAULT_LANG: Standardspråk
+        SITE_DEFAULT_LANG_HELP: 'Standardspråk som ska användas av temats <HTML>-tagg'
+        SITE_DEFAULT_LANG_PLACEHOLDER: 'Standardspråk som ska användas av temats <HTML>-tagg'
+        SITE_TITLE: Webbplatstitel
+        SITE_TITLE_HELP: 'Standardtitel för din webbplats, ofta använd i teman'
+        SITE_TITLE_PLACEHOLDER: 'Webbplatsövergripande titel'
+        SLUG: Slug
+        SLUG_HELP: 'Slug-variabeln låter dig specifikt ställa in sidans del av webbadressen'
+        SLUG_VALIDATE_MESSAGE: 'En slug får endast innehålla gemena alfanumeriska tecken och bindestreck'
+        SORTABLE_PAGES: 'Sorterbara sidor:'
+        SSL_ENABLE_PROXY: 'Aktivera proxyserver'
+        SSL_VERIFY_HOST: 'Fjärr verifiera värd'
+        SSL_VERIFY_HOST_HELP: 'Vissa kan misslyckas med att verifiera SSL-certifikat'
+        SSL_VERIFY_PEER: 'Fjärr verifiera peer'
+        SSL_VERIFY_PEER_HELP: 'Vissa kan misslyckas med att verifiera SSL-certifikat'
+        STABLE: Stabil
+        STRICT_BLUEPRINT_COMPAT: Blueprint-kompatibilitet
+        STRICT_BLUEPRINT_COMPAT_HELP: 'Aktiverar bakåtkompatibel strikt stöd för blueprints. Om det är inaktiverat, gör det nya beteendet att formulärvalidering misslyckas om det finns extra data som inte är definierad i blueprint.'
+        STRICT_TWIG_COMPAT: Twig-kompatibilitet
+        STRICT_TWIG_COMPAT_HELP: 'Aktiverar föråldrad Twig autoescape-inställning. Om det är inaktiverat krävs |raw-filtret för att mata ut HTML eftersom Twig kommer att auto-escape-utmatning'
+        STRICT_YAML_COMPAT: YAML-kompatibilitet
+        STRICT_YAML_COMPAT_HELP: 'Faller tillbaka till Symfony 2.4 YAML-parser om Native eller 3.4-parser misslyckas'
+        SUMMARY_SIZE: Sammanfattningsstorlek
+        SUMMARY_SIZE_HELP: 'Antalet tecken från en sida som ska användas som innehållssammanfattning'
+        SUPPORTED: Stöds
+        SUPPORTED_HELP: "Kommaseparerad lista med tvåbokstavers språkkoder (till exempel 'en,fr,de')"
+        SYSLOG_FACILITY: Syslog-funktion
+        SYSLOG_FACILITY_HELP: 'Syslog-funktion för utdata'
+        SYSLOG_TAG: Syslog-tagg
+        SYSLOG_TAG_HELP: 'Syslog-tagg för utdata'
+        TAXONOMIES: Taxonomier
+        TAXONOMY: Taxonomi
+        TAXONOMY_TYPES: Taxonomityper
+        TAXONOMY_TYPES_HELP: 'Taxonomityper måste definieras här om du vill använda dem på sidor'
+        TESTING: Testning
+        THUMB: Miniatyrbild
+        TIMEOUT: Timeout
+        TIMEOUT_HELP: 'Anger tidsgränsen för sessionen i sekunder'
+        TIMEZONE: Tidszon
+        TIMEZONE_HELP: 'Åsidosätt serverns standardtidszon'
+        TITLE: Titel
+        TOASTS:
+            ACTIVE_THEME_REMOVE_BLOCK: 'Det går inte att ta bort det aktiva temat. Växla till ett annat tema först.'
+            API_KEY_REVOKED: 'API-nyckel „{name}" återkallad'
+            BACKUP_CREATED: 'Säkerhetskopia skapad ({size})'
+            CACHE_CLEARED: 'Cache rensad ({scope})'
+            CONFIG_MODIFIED_ELSEWHERE: 'Konfigurationen har ändrats någon annanstans — läs in på nytt för att se den senaste versionen'
+            CONFIG_SAVED: 'Konfigurationen för {name} sparad'
+            COPIED: '{label} kopierad'
+            COPY_FAILED: 'Kopiering misslyckades: {detail}'
+            DEPENDENCY_INSTALLED: 'Plugin {slug} installerad (beroende)'
+            FILES_DELETE_FAILED: '{n, plural, one{Misslyckades att radera # fil} other{Misslyckades att radera # filer}}'
+            FILES_UPLOADED: '{n, plural, one{Överförde # fil} other{Överförde # filer}}'
+            FILE_DELETED: 'Raderade {name}'
+            FILE_DELETE_FAILED: 'Misslyckades att radera {name}'
+            FOLDER_CREATED: 'Mapp "{name}" skapad'
+            FORM_LABEL:
+                CONFIGURATION: Konfiguration
+                FLEX_OBJECT: Flex-objekt
+                FORM: Formulär
+                PAGE: Sida
+                PLUGIN: Plugin
+                PLUGIN_PAGE: Plugin-sida
+                THEME: Tema
+                USER: Användare
+            GPM_REFRESHED: '{n, plural, =0{GPM uppdaterad — inga uppdateringar tillgängliga} one{GPM uppdaterad — # uppdatering tillgänglig} other{GPM uppdaterad — # uppdateringar tillgängliga}}'
+            GRAV_UPGRADED: 'Grav uppgraderad till v{version}'
+            INSTALL_FAILED: 'Misslyckades att installera {slug}: {detail}'
+            ITEM_COPIED: 'Kopierade "{name}" till "{target}"'
+            ITEM_DELETED: 'Raderade "{name}"'
+            ITEM_DELETE_FAILED: 'Misslyckades att radera "{name}"'
+            ITEM_MOVED: 'Flyttade "{name}"'
+            ITEM_REORDERED: 'Omordnade "{name}"'
+            ITEM_SAVED: '{name} sparad'
+            PACKAGES_UPDATED: '{n, plural, one{Uppdaterade # paket} other{Uppdaterade # paket}}'
+            PACKAGE_REMOVED: '{name} borttagen'
+            PACKAGE_REMOVE_FAILED: 'Misslyckades att ta bort {name}'
+            PACKAGE_UPDATED: '{name} uppdaterad'
+            PACKAGE_UPDATE_FAILED: 'Misslyckades att uppdatera {name}: {detail}'
+            PAGE_PUBLISHED: '{name} publicerad'
+            PAGE_PUBLISH_FAILED: 'Misslyckades att ändra publiceringsstatus: {detail}'
+            PAGE_UNPUBLISHED: '{name} opublicerad'
+            PLUGIN_DISABLED: '{name} inaktiverad'
+            PLUGIN_DISABLE_FAILED: 'Misslyckades att inaktivera {name}: {detail}'
+            PLUGIN_ENABLED: '{name} aktiverad'
+            PLUGIN_ENABLE_FAILED: 'Misslyckades att aktivera {name}: {detail}'
+            PLUGIN_INSTALLED: 'Plugin {name} installerad'
+            PLUGIN_LOCKOUT_BLOCK: '{name} kan inte inaktiveras från admin-next – det skulle låsa dig ute.'
+            PLUGIN_REMOVED: '{name} borttagen'
+            PLUGIN_REMOVE_FAILED: 'Misslyckades att ta bort {name}: {detail}'
+            PLUGIN_REQUIRED_BLOCK: '{name} kan inte tas bort – det krävs av admin-next.'
+            SAVED: Sparad
+            SAVED_AS_LANGUAGE: 'Sparad som {language}'
+            SAVE_FAILED: 'Misslyckades att spara'
+            SAVE_FORM_FAILED: 'Misslyckades att spara {form}'
+            THEME_ACTIVATED: '{name} är nu det aktiva temat'
+            THEME_ACTIVATE_FAILED: 'Misslyckades att aktivera {name}: {detail}'
+            THEME_INSTALLED: 'Tema {name} installerad'
+            THEME_REMOVED: '{name} borttagen'
+            THEME_REMOVE_BLOCK: '{name} kan inte tas bort.'
+            THEME_REMOVE_FAILED: 'Det gick inte att ta bort {name}: {detail}'
+            TOTP_CODE_REQUIRED: 'Ange 6-siffrig kod från autentiseringsappen'
+            TRANSLATION_CREATED: 'Översättning till {language} skapad'
+            TRANSLATION_RESET: '{target} återställd från {source}'
+            UPDATE_FAILED: 'Uppdatering misslyckades: {detail}'
+            USER_CREATED: 'Användare {username} skapad'
+            USER_DELETED: 'Användare {username} borttagen'
+            USER_DELETE_FAILED: 'Det gick inte att ta bort användare {username}'
+            USER_DISABLED: 'Användare {username} inaktiverad'
+            USER_ENABLED: 'Användare {username} aktiverad'
+            USER_SAVED: 'Användare {username} sparad'
+            USER_STATE_FAILED: 'Det gick inte att ändra tillstånd för {username}: {detail}'
+        TRANSLATIONS: Översättningar
+        TRANSLATIONS_FALLBACK: 'Reserv för översättningar'
+        TRANSLATIONS_FALLBACK_HELP: 'Använd reservöversättningar om det aktiva språket inte finns'
+        TWIG_3_COMPATIBILITY: 'Twig 3-kompatibilitet'
+        TWIG_3_COMPATIBILITY_HELP: 'Aktivera automatisk omskrivning av äldre Twig 1/2-syntax som inte fungerar på Twig 3 (t.ex. <code>for ... if ...</code> villkor).'
+        TWIG_CACHING: Twig-cachelagring
+        TWIG_CACHING_HELP: 'Kontrollera Twig-cachelagringen. Låt detta vara aktiverat för bästa prestanda.'
+        TWIG_CONTENT: 'Twig i innehål'
+        TWIG_CONTENT_CONFIG_ACCESS: 'Tillåt åtkomst till konfigurationsvariabler i Twig'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: 'Huruvida <code>config</code> Twig-variabeln kan läsas från sidinnehål. När den är inaktiv (standard) returnerar läsning av <code>config.system.title</code> från en sida ingenting. När den är aktiv exponeras <code>config</code> men filtreras fortfarande av <code>config_denied_paths</code> (se Twig-sandbox nedan) så autentiseringsuppgifter och andra känsliga underträd förblir dolda.'
+        TWIG_CONTENT_EDITOR_ENABLED: 'Tillåt redigerare att växla Twig i innehål'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: 'När den är inaktiv (standard) är Twig-kryssrutan i sidredigerarens fliken Avancerat endast synlig för användare med behörigheten <code>admin.pages_twig</code>, och sidor som redan har Twig aktiverat kan endast redigeras av dessa användare. När den är aktiv kan vem som helst med åtkomst till sidredigering växla Twig på enskilda sidor.'
+        TWIG_CONTENT_HELP: 'Kontroller för Twig inbäddat av redigerare i sidinnehål. Temamallarna på disk påverkas inte av dessa inställningar; de gäller endast för Twig som författare lägger till i sidtexter eller frontmatter.'
+        TWIG_CONTENT_PROCESS_ENABLED: 'Aktivera Twig i innehål'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: 'Tillåt sidor med <code>process: twig: true</code> i deras frontmatter (och möjligheten att välja in på sajtnivå <code>system.pages.frontmatter.process_twig</code>) att faktiskt köra Twig. <strong>Inaktiverat som standard i Grav 2.0.</strong> Om du lämnar detta inaktiverat minskas ytan för mallinjektionsattacker, men bryter alla sidor som behöver Twig i sin text.'
+        TWIG_DEBUG: Twig-felsökning
+        TWIG_DEBUG_HELP: 'Tillåter möjligheten att inte ladda Twig Debugger-tillägget'
+        TWIG_FIRST: 'Bearbeta Twig först'
+        TWIG_FIRST_HELP: 'Om du har aktiverat Twig-sidbearbetning kan du konfigurera Twig att bearbetas före eller efter markdown'
+        TWIG_SANDBOX: Twig-sandlåda
+        TWIG_SANDBOX_ADMIN_HINT: 'Kommentar för administratörtips'
+        TWIG_SANDBOX_ADMIN_HINT_HELP: 'När sandlådan blockerar ett uttryck, lägg en enradig HTML-kommentar till den renderade sidan så att superadministratörer som visar källan ser att något filtrerades. Besökare och icke-administratörer ser ingenting.'
+        TWIG_SANDBOX_ALLOWED_FILTERS: 'Tillåtna filter'
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: 'Twig-filter som sidinnehål får använda.'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: 'Tillåtna funktioner'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: 'Twig-funktioner som sidinnehål får anropa.'
+        TWIG_SANDBOX_ALLOWED_METHODS: 'Tillåtna metoder'
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: 'Listor per klass med objektmetoder som sidinnehål får anropa.'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: 'Tillåtna egenskaper'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: 'Listor per klass med objektegenskaper som sidinnehål får läsa.'
+        TWIG_SANDBOX_ALLOWED_TAGS: 'Tillåtna taggar'
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: 'Twig-taggar som sidinnehål får använda. Lägg endast till taggar vars effekter du vill exponera för författare.'
+        TWIG_SANDBOX_CLASS: Klass
+        TWIG_SANDBOX_ENABLED: 'Aktivera Twig-sandlåda'
+        TWIG_SANDBOX_ENABLED_HELP: 'Renderar innehål som skapats av redigerare inuti en Twig SecurityPolicy baserad på en tillåtlista. <strong>Om du inaktiverar detta tas det enda skyddet bort mot mallinjektionsattacker via sidinnehål</strong>: alla konton med redigarnivåbehörighet (eller alla som kompromissar filsystemet) kan köra godtycklig PHP via Twig. Stäng av detta bara om en webbplats verkligen behöver behållaråtkomst från sidinnehål och du litar helt på alla författare.'
+        TWIG_SANDBOX_HELP: 'Tillåtlista med Twig-taggar, filter, funktioner, metoder och egenskaper som mallar skrivna av sidinnehål får använda. Innehål skapat av redigerare renderas genom denna sandlåda så en kompromissad författare eller mallinjektionsbug kan inte komma åt den större behållaren.'
+        TWIG_SANDBOX_LOGGING: 'Logga överträdelser'
+        TWIG_SANDBOX_LOGGING_HELP: 'Skriv alla blockerade uttryck till <code>logs/twig-sandbox.log</code>. Användbar vid justering av tillåtelselistan; stäng av i produktion för att hålla loggarna tysta.'
+        TWIG_SANDBOX_METHODS: Metoder
+        TWIG_SANDBOX_PROPERTIES: Egenskaper
+        TWIG_TEMPLATING: Twig-mallning
+        TYPE: Typ
+        UNPUBLISHED_DATE: 'Opublicerat datum'
+        UNPUBLISHED_DATE_HELP: 'Kan ange ett datum för att automatiskt utlösa avpublicering.'
+        UPDATE: Uppdatera
+        UPLOADS_DANGEROUS_EXTENSIONS: 'Farliga tillägg'
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: 'Blockera dessa tillägg från att laddas upp oavsett accepterade MIME-typer'
+        UPLOADS_SECURITY: 'Säkerhet vid uppladdning'
+        USERNAME_HELP: 'Användarnamn ska innehålla mellan 3 och 16 tecken, inklusive gemener, siffror, understreck och bindestreck. Versaler, mellanslag och specialtecken är inte tillåtna'
+        USERNAME_REGEX: 'Användarnamn Regex'
+        USERNAME_REGEX_HELP: 'Som standard: Endast gemener, siffror, bindestreck och understreck. 3 - 16 tecken'
+        USERS_FILTER:
+            BACKEND_ACCESS: 'Åtkomst till backend'
+            CLEAR: Rensa
+            CLEAR_ALL: 'Rensa filter'
+            FILTER_BY_GROUP: 'Filtrera efter denna grupp'
+            FILTER_BY_PERMISSION: 'Filtrera efter denna behörighet'
+            GROUP: Grupp
+            GROUPS: Grupper
+            LOADING: 'Läser in…'
+            NO_MATCHES: 'Inga träffar'
+            NO_MATCHES_FILTERS: 'Inga användare matchar dessa filter'
+            PERMISSION: Behörighet
+            TYPE_TO_FILTER: 'Skriv för att filtrera…'
+        USER_ACCOUNTS: Användarkonton
+        USE_GLOBAL: 'Använd global'
+        VALIDATION:
+            FIELD_REQUIRED: '{label} är obligatorisk'
+            FORM_HAS_ERRORS: '{count, plural, one {# fält behöver din uppmärksamhet} other {# fält behöver din uppmärksamhet}}'
+            REQUIRED_GENERIC: 'Det här fältet är obligatoriskt'
+        VALID_LINK_ATTRIBUTES: 'Giltiga länkattribut'
+        VALID_LINK_ATTRIBUTES_HELP: 'Attribut som automatiskt läggs till HTML-elementet för media'
+        VARY_ACCEPT_ENCODING: 'Variera accept encoding'
+        VARY_ACCEPT_ENCODING_HELP: 'Ställer in huvudet `Vary: Accept Encoding` för att hjälpa till med proxy- och CDN-cachelagring'
+        VISIBLE: Synlig
+        VISIBLE_HELP: 'Avgör om en sida är synlig i navigeringen.'
+        WRAPPED_SITE: 'Webbplats i omslutning'
+        WRAPPED_SITE_HELP: 'För teman/instick för att veta om Grav är omsluten av en annan plattform'
+        XSS_DANGEROUS_TAGS: 'Filtrera farliga HTML-taggar'
+        XSS_DANGEROUS_TAGS_LIST: 'Lista med farliga HTML-taggar'
+        XSS_HTML_INLINE_STYLES: 'Filtrera HTML-inlinestil'
+        XSS_INVALID_PROTOCOLS: 'Filtrera ogiltiga protokoll'
+        XSS_INVALID_PROTOCOLS_LIST: 'Lista med ogiltiga protokoll'
+        XSS_MOZ_BINDINGS: 'Filtrera Moz-bindningar'
+        XSS_ON_EVENTS: 'Filtrera On-events'
+        XSS_SECURITY: 'XSS-säkerhet för innehål'
+        XSS_WHITELIST_PERMISSIONS: 'Behörigheter för vitlista'
+        XSS_WHITELIST_PERMISSIONS_HELP: 'Användare med dessa behörigheter kommer att hoppa över XSS-reglerna när innehål sparas'
+        'YES': Ja
+        YUBIKEY_HELP: 'Sätt in din YubiKey i datorn och klicka på knappen för att generera en OTP. De första 12 tecknen är ditt klient-ID och kommer att sparas.'
+        YUBIKEY_ID: YubiKey-ID
