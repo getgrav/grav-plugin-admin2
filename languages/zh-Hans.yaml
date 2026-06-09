@@ -82,6 +82,17 @@ ICU:
             RELOAD: 重新加载
             TITLE: 配置
             TITLE_SCROLLED: '配置：{scope}'
+            OVERRIDE:
+                DEFAULT_EMPTY: 空
+                RESET_BUTTON: 重置覆盖
+                RESET_CONFIRM: 重置
+                RESET_DONE: 覆盖已重置
+                RESET_MESSAGE: '这将删除 {scope} 上的所有覆盖并恢复继承的值。此操作无法撤销。'
+                RESET_TITLE: 重置所有覆盖？
+                RESET_TOOLTIP: 删除所有覆盖并恢复继承的值
+                REVERTED: 已还原为继承的值
+                REVERT_FAILED: 无法还原
+                REVERT_TOOLTIP: '覆盖默认值（{value}）。单击以还原。'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: 环境
             EXPORT_YAML: '导出 YAML'
@@ -150,7 +161,7 @@ ICU:
             CREATE_ENVIRONMENT: 创建环境…
             CREATE_ENV_NAMED: '创建环境 "{name}"…'
             DEFAULT: 默认
-            ENV_CREATED: "环境 {name} 已创建并选中"
+            ENV_CREATED: '环境 {name} 已创建并选中'
             FAILED_TO_CREATE: 创建环境失败
             HAS_OVERRIDES: 有覆盖
             NO_LONGER_EXISTS_PICK_ANOTHER: 不再存在。请选择其他环境。
@@ -159,6 +170,14 @@ ICU:
             SAVING_TO_ENV: '保存到环境：{name}'
             SELECTED_ENV: 已选中的环境
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 选择配置保存位置
+            CONFIRM_DELETE: '删除 {name}？'
+            CONFIRM_DELETE_WITH_OVERRIDES: '删除 {name} 及其所有配置覆盖？'
+            DELETE: 删除
+            DELETE_ENV_TOOLTIP: '删除环境 {name}'
+            ENV_DELETED: '环境 {name} 已删除'
+            FAILED_TO_DELETE: 删除环境失败
+            SWITCH_AND_RELOAD: 切换并重新加载
+            SWITCH_DISCARDS_UNSAVED: 切换环境将重新加载管理员界面并放弃未保存的更改。是否继续？
         EXPAND_ALL: 全部展开
         EXPAND_SIDEBAR: 展开侧边栏
         EXPERT_MODE: 专家模式
@@ -402,6 +421,8 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 切换页面导航器
                 UNPUBLISH_ON: 取消发布于
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: '在此输入你的 markdown 内容...'
+                SAVED_BY_PEER: '{user} 保存了此页面'
+                SAVED_BY_PEER_ANON: 另一个用户保存了此页面
             EDIT_PAGE: 编辑页面
             FRONTMATTER: 前置元数据
             HEADER_MODIFIED: 修改时间
@@ -460,6 +481,7 @@ ICU:
                 HAS_CHILDREN: 有子页面
                 SUMMARY: 摘要
                 VISIBLE: 可见
+                DROP_HERE: 在此处放开
             PAGES_TREE_VIEW:
                 FAILED_TO_REORGANIZE_PAGES: 页面重组失败
                 NO_PAGES_MATCH: '没有页面与"{query}"相符'
@@ -486,6 +508,21 @@ ICU:
             VIEW_COLUMNS: 列
             VIEW_LIST: 列表
             VIEW_TREE: 树形
+            CHUNK_SIZE: 块
+            CHUNK_SIZE_HELP: 滚动时每个请求要获取的行数。较大的值首次加载较慢，但可减少后续请求。
+            LOADED_OF: '{n, plural, one {# 已加载} other {# 已加载}} 共 {total}'
+            LOADING_CHUNK: '加载行 {from}–{to}…'
+            NO_MATCH: 没有页面与您的搜索匹配
+            PUBLISH: 发布
+            REORDER_DONE: 完成
+            REORDER_EXIT_TITLE: 退出重新排序模式
+            REORDER_LOADING: '仍在加载完整列表 — 请稍后再试。'
+            REORDER_LOADING_ALL: 正在加载每个块以便重新排序可以影响整个列表…
+            REORDER_START_TITLE: 重新排序页面
+            STATS_PUBLISHED: '{n} 已发布'
+            STATS_TOTAL: '{n} 总计'
+            STATS_UNPUBLISHED: '{n} 未发布'
+            UNPUBLISH: 取消发布
         PASSWORD: 密码
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 密码要求
@@ -494,6 +531,7 @@ ICU:
         PERMISSIONS_FIELD:
             FAILED_TO_LOAD_PERMISSIONS: 加载权限失败
             NOT_SET: 未设置
+            ADMIN_LEGACY: Admin（旧版）
         PLUGIN:
             BACK_TO_DASHBOARD: 返回仪表板
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 此插件页面没有可用内容。
@@ -516,6 +554,9 @@ ICU:
             SEARCH_PLUGINS: 搜索插件...
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 选择一个插件以查看详情
             SYMLINKED: 符号链接
+            REMOVE_CONFIRM_MESSAGE: '删除 {name}？这将卸载该插件并删除其文件。配置将被保留。'
+            REMOVE_CONFIRM_TITLE: 删除插件？
+            TITLE: 插件
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 正在加载插件页面...
         PLUGIN_WIDGET_LOADER:
@@ -664,6 +705,8 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 用于深色背景
             USED_ON_LIGHT_BACKGROUNDS: 用于浅色背景
             USERS_MAY_OVERRIDE: 用户可以覆盖
+            OTHER_LIST_VIEWS: 其他列表视图
+            OTHER_LIST_VIEWS_DESC: 用户、插件和主题列表的默认布局
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 个字符：字母、数字、连字符、下划线'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理员账户已创建 — 欢迎使用 Grav'
@@ -733,6 +776,15 @@ ICU:
             SELECT_A_THEME_TO_VIEW_DETAILS: 选择主题以查看详情
             SYMLINKED: 符号链接
             THEMES_GRAV_ADMIN: '主题 — Grav Admin'
+            ACTIVATE: 激活
+            ACTIVATE_CONFIRM_MESSAGE: '将活跃网站主题切换为 {name}？前端呈现将立即使用此主题。'
+            ACTIVATE_CONFIRM_TITLE: 激活主题？
+            ACTIVATE_THEME: '激活 {name}'
+            DELETE_ACTIVE_WARNING: 当前处于活跃状态。建议先切换主题，然后再删除。
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} 是当前活跃主题。移除它将使网站没有主题，直到激活另一个主题。继续？'
+            REMOVE_CONFIRM_MESSAGE: '移除 {name}？这将卸载主题并删除其文件。'
+            REMOVE_CONFIRM_TITLE: 移除主题？
+            TITLE: 主题
         TIME:
             DAYS_AGO: '{n}天前'
             HOURS_AGO: '{n}小时前'
@@ -884,6 +936,8 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: '用户在其他地方已更改 — 保存以覆盖或重新加载'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 用户在其他地方已被修改。请重新加载。
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 您无法删除自己的账户。
+            CONFIRM_DELETE_USER: '删除用户 „{username}"？此操作无法撤销。'
+            TITLE: 用户
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 头像已移除
             AVATAR_UPDATED: 头像已更新
@@ -896,3 +950,892 @@ ICU:
             VIEW_SITE: 查看网站
         WIDGET_HOST:
             UNKNOWN_WIDGET: '未知小部件: {id}'
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 加载账户配置失败
+            FAILED_TO_SAVE: 保存账户配置失败
+            MODIFIED_ELSEWHERE: 配置已在其他地方修改。请重新加载。
+            NO_FIELDS: 没有可用的配置选项。
+            PAGE_TITLE: '账户配置 — Grav Admin'
+            SAVED: 配置已保存
+            TITLE: 账户配置
+        EDIT: 编辑
+        GROUPS:
+            ADD_GROUP: 添加组
+            BACK_TO_GROUPS: 返回组
+            CONFIRM_DELETE_GROUP: '删除组"{name}"？此操作无法撤销。'
+            CREATE: 创建
+            DELETE_GROUP: 删除组
+            DESCRIPTION: 描述
+            DISPLAY_NAME: 显示名称
+            FAILED_TO_CREATE_GROUP: 创建组失败。
+            FAILED_TO_LOAD_GROUP: '加载组"{name}"失败。'
+            FAILED_TO_LOAD_GROUPS: 加载组失败
+            FAILED_TO_SAVE_GROUP: 保存组失败。
+            GROUPS: 组
+            GROUPS_GRAV_ADMIN: '组 — Grav 管理员'
+            GROUP_COUNT_ONE: '{n} 个组'
+            GROUP_COUNT_OTHER: '{n} 个组'
+            GROUP_CREATED: '组"{name}"已创建'
+            GROUP_DELETED: '组"{name}"已删除'
+            GROUP_DELETE_FAILED: '删除组"{name}"失败'
+            GROUP_MODIFIED_ELSEWHERE: 组已在其他地方被修改。请重新加载。
+            GROUP_NAME: 组名称
+            GROUP_NAME_HELP: '1–200 个字符，可包含字母、数字、连字符或下划线。用作存储密钥。'
+            GROUP_NAME_PLACEHOLDER: '例如 editors'
+            GROUP_PAGE_TITLE: '{name} — 组 — Grav 管理员'
+            GROUP_SAVED: '组"{name}"已保存'
+            NEW_GROUP: 新建组
+            NEW_GROUP_GRAV_ADMIN: '新建组 — Grav 管理'
+            NO_GROUPS: 未找到任何组
+            NO_GROUPS_MATCH_SEARCH: 未找到与您的搜索相匹配的组
+            SEARCH_GROUPS: 搜索组...
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 选择一个组以查看详情
+        INVITATIONS:
+            ACCEPT_FAILED: 无法创建您的账户。
+            ACCEPT_HEADING: 接受邀请
+            ACCEPT_SUBHEADING: 设置您的账户以开始使用。
+            ACCEPT_SUCCESS: 账户已创建。欢迎！
+            ACCEPT_TITLE: '接受邀请 — Grav 管理'
+            CHECKING_INVITE: 正在检查您的邀请...
+            CHOOSE_PASSWORD: 选择密码
+            CONFIRM_REVOKE: '撤销向 {email} 的邀请？该链接将停止工作。'
+            COPIED: 已复制
+            COPY: 复制
+            COPY_FAILED: 无法复制链接。
+            CREATED_NO_EMAIL_TOAST: 邀请已创建。未配置电子邮件，请手动共享链接。
+            CREATE_ACCOUNT: 创建账户
+            CREATING_ACCOUNT: 正在创建账户...
+            EMAIL: 电子邮件
+            EMAIL_SENT_TO: '邀请电子邮件已发送至 {email}。'
+            EXPIRED: 已过期
+            EXPIRED_INVITE: 此邀请已过期。
+            EXPIRED_INVITE_BODY: 此邀请已过期。请要求管理员发送新的邀请。
+            EXPIRES_AFTER: 邀请过期时间
+            EXPIRES_IN_DAYS: '{count, plural, one {在 # 天后过期} other {在 # 天后过期}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {在 # 小时后过期} other {在 # 小时后过期}}'
+            EXPIRY_14_DAYS: '14 天'
+            EXPIRY_1_DAY: '1 天'
+            EXPIRY_30_DAYS: '30 天'
+            EXPIRY_3_DAYS: '3 天'
+            EXPIRY_7_DAYS: '7 天'
+            FULL_NAME_OPTIONAL: 全名（可选）
+            GROUPS: 分组
+            GROUPS_HINT: 邀请的用户将被添加到的分组。
+            INVALID_INVITE: 此邀请无效。
+            INVALID_INVITE_BODY: 此邀请链接无效或已被使用。
+            INVITE: 邀请
+            INVITED_BY: '由 {name} 邀请'
+            INVITE_ANOTHER: 邀请另一个
+            INVITE_LINK: 邀请链接
+            INVITE_READY: 邀请已就绪
+            INVITE_USER: 邀请用户
+            LOADING_GROUPS: 加载分组中...
+            LOAD_FAILED: 加载邀请失败。
+            MESSAGE_OPTIONAL: 个人消息（可选）
+            NONE_PENDING: 无待处理邀请
+            NONE_PENDING_HINT: 邀请某人加入，他们的待处理邀请将显示在此处。
+            NO_GROUPS: 尚未定义任何分组。
+            PASSWORD_POLICY: 密码不符合所需策略
+            PENDING_COUNT: '{count, plural, =0 {无待处理邀请} one {# 个待处理邀请} other {# 个待处理邀请}}'
+            PERMISSIONS: 权限
+            PERMISSIONS_HINT: 受邀用户将获得的权限。他们无法为自己授予超过您在此设置的权限。
+            RECIPIENT: 收件人
+            RECIPIENT_HINT: 他们在接受邀请时将选择自己的用户名和密码。
+            RESEND: 重新发送
+            RESEND_FAILED: 未能重新发送邀请。
+            RESENT_TOAST: '邀请已重新发送至 {email}。'
+            REVOKE: 撤销
+            REVOKED_TOAST: 邀请已撤销。
+            REVOKE_FAILED: 未能撤销邀请。
+            REVOKE_TITLE: 撤销邀请
+            SEND_FAILED: 未能发送邀请。
+            SEND_INVITE: 发送邀请
+            SENT_TOAST: '邀请已发送至 {email}。'
+            TITLE_OPTIONAL: 标题（可选）
+            USERNAME_INVALID: '用户名必须为 3-64 个字符。'
+            USERNAME_TAKEN: 该用户名已被使用。
+            VIEW_PENDING: 查看待处理
+        PAGINATION:
+            PAGE_OF: '第 {current} 页，共 {total} 页'
+        PLUGINS_TABLE:
+            NAME: 名称
+            NO_PLUGINS: 未安装任何插件
+            PROTECTED_PLUGIN: '此插件不能从 admin-next 禁用，否则您会将自己锁定在外。'
+            VERSION: 版本
+        THEMES_TABLE:
+            NO_THEMES: 未安装主题
+        USERS_NAV:
+            CONFIGURATION: 配置
+            GROUPS: 组
+            INVITATIONS: 邀请
+            USERS: 用户
+        USERS_TABLE:
+            ACTIONS: 操作
+            CARDS: 卡片
+            DELETE: 删除
+            DISABLED: 已禁用
+            EDIT: 编辑
+            EMAIL: 电子邮件
+            ENABLED: 已启用
+            FULL_NAME: 全名
+            NO_USERS: 未找到用户
+            STATUS: 状态
+            TABLE: 表格
+            USERNAME: 用户名
+            PERMISSIONS: 权限
+        2FA_ENABLED: 已启用2FA
+        2FA_SECRET: 2FA密钥
+        2FA_SECRET_HELP: '将此二维码扫描到您的[身份验证器应用](https://learn.getgrav.org/admin-panel/2fa#apps)中。同时，最好将密钥备份到安全位置，以防您需要重新安装应用。查看[Grav文档](https://learn.getgrav.org/admin-panel/2fa)了解更多信息'
+        2FA_TITLE: 双因素认证
+        ABSOLUTE_URLS: 绝对URL
+        ABSOLUTE_URLS_HELP: '`base_url`的绝对或相对URL'
+        ACCESS: 访问
+        ACCESS_LEVELS: 访问级别
+        ACCOUNT: 账户
+        ACCOUNTS: 账户
+        ACCOUNTS_CONFIGURATION: 账户配置
+        ACCOUNTS_STORAGE: 账户存储
+        ACCOUNTS_STORAGE_HELP: '用于Flex Object账户类型的存储机制。Files是传统方法，其中账户存储在单个文件夹中的YAML文件中，而Folder为每个账户创建一个新文件夹'
+        ACCOUNTS_TYPE: 账户类型
+        ACCOUNTS_TYPE_HELP: 'Flex Object系统用于存储用户账户'
+        ACTIVE_LANGUAGE_IN_SESSION: 会话中的活动语言
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: 在会话中存储活动语言
+        ADD: 添加
+        ADD_ACCOUNT: 添加账户
+        ADMIN_CHILDREN_DISPLAY_ORDER: 子页面显示顺序
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: 此页面的子页面在管理插件的「页面」视图中的显示顺序
+        ADMIN_SPECIFIC_OVERRIDES: 管理员特定覆盖
+        ADVANCED: 高级
+        ALLOW_URL_TAXONOMY_FILTERS: URL分类法过滤
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: '基于页面的集合允许您通过`/taxonomy:value`进行过滤'
+        ALLOW_WEBSERVER_GZIP: '允许 WebServer Gzip'
+        ALLOW_WEBSERVER_GZIP_HELP: '默认关闭。启用后，WebServer 配置的 Gzip/Deflate 压缩将工作，但 HTTP 连接不会在 onShutDown() 事件前关闭，导致页面加载速度变慢'
+        APPEND_URL_EXT: '追加 URL 扩展名'
+        APPEND_URL_EXT_HELP: '将向页面的 URL 添加自定义扩展名。请注意，这意味着 Grav 将查找 `<template>.<extension>.twig` 模板'
+        ASCENDING: 升序
+        ASSETS: 资源
+        AUTO: 自动
+        AUTOESCAPE_VARIABLES: 自动转义变量
+        AUTOESCAPE_VARIABLES_HELP: 自动转义所有变量。这很可能会破坏您的网站
+        AUTO_LINE_BREAKS: 自动换行
+        AUTO_LINE_BREAKS_HELP: '启用 Markdown 中自动换行的支持'
+        AUTO_URL_LINKS: '自动 URL 链接'
+        AUTO_URL_LINKS_HELP: '启用 URL 自动转换为 HTML 超链接'
+        AVATAR: 头像生成器
+        AVATAR_HASH: 注意：可选的自定义头像「hash」字符串
+        AVATAR_HELP: 'Multiavatar 是本地生成的头像。Gravatar 是一个外部服务，它使用您的电子邮件地址来远程拉取预配置的头像'
+        BACK: 返回
+        BACKUPS: 备份
+        BACKUPS_HISTORY: 备份历史记录
+        BACKUPS_MAX_COUNT: 最大备份数
+        BACKUPS_MAX_RETENTION_TIME: 最大保留时间
+        BACKUPS_MAX_RETENTION_TIME_APPEND: 天数
+        BACKUPS_MAX_SPACE: 最大备份空间
+        BACKUPS_PROFILES: 备份配置文件
+        BACKUPS_PROFILE_ENVIRONMENT: 环境
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: '计划备份运行的 Grav 环境上下文。'
+        BACKUPS_PROFILE_EXCLUDE_FILES: 排除文件
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: 要排除的特定文件或文件夹，每行一个
+        BACKUPS_PROFILE_EXCLUDE_PATHS: 排除路径
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: 要排除的绝对路径，每行一个
+        BACKUPS_PROFILE_NAME: 备份名称
+        BACKUPS_PROFILE_ROOT_FOLDER: 根文件夹
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: 可以是绝对路径或流
+        BACKUPS_PROFILE_SCHEDULE: 启用计划任务
+        BACKUPS_PROFILE_SCHEDULE_AT: 运行计划任务
+        BACKUPS_PURGE_CONFIG: 备份清理配置
+        BACKUPS_STORAGE_PURGE_TRIGGER: 备份存储清理触发
+        BODY_CLASSES: 'Body 类'
+        CACHE_ALL: 缓存所有图像
+        CACHE_ALL_HELP: '即使图像没有任何媒体操作，也要通过 Grav 的缓存系统运行所有图像'
+        CACHE_CHECK_INTERVAL: 缓存检查间隔
+        CACHE_CHECK_INTERVAL_HELP: 在再次检查之前重复使用先前计算的文件系统哈希值的秒数。零保持现有的每请求检查。
+        CACHE_CHECK_METHOD: 缓存检查方法
+        CACHE_CHECK_METHOD_HELP: '选择 Grav 用于检查页面文件是否已修改的方法。'
+        CACHE_CLEAR_JOB: 运行计划清理任务
+        CACHE_CLEAR_JOB_HELP: '使用计划程序，您可以定期清除 Grav 缓存'
+        CACHE_CONTROL: 'HTTP 缓存控制'
+        CACHE_CONTROL_HELP: '设置为有效的缓存控制值，例如 `no-cache, no-store, must-revalidate`'
+        CACHE_DRIVER: 缓存驱动程序
+        CACHE_DRIVER_HELP: '选择 Grav 应使用的缓存驱动程序。"自动检测"尝试为您找到最佳选项'
+        CACHE_JOB_TYPE: 缓存任务类型
+        CACHE_JOB_TYPE_HELP: '使用"标准"文件夹缓存清空或"全部"文件夹进行清除'
+        CACHE_PERMS: 缓存权限
+        CACHE_PERMS_HELP: '默认缓存文件夹权限。通常根据配置为 0755 或 0775'
+        CACHE_PREFIX: 缓存前缀
+        CACHE_PREFIX_HELP: 'Grav 密钥的一部分标识符。除非你知道你在做什么，否则不要更改。'
+        CACHE_PREFIX_PLACEHOLDER: '从基础 URL 派生（通过输入随机字符串覆盖）'
+        CACHE_PURGE_AGE: 缓存清除时间
+        CACHE_PURGE_AGE_HELP: 清除所有早于此年龄的缓存项（以秒为单位）
+        CACHE_PURGE_JOB: 运行定时清除任务
+        CACHE_PURGE_JOB_HELP: '使用计划程序，你可以通过此任务定期清除旧的 Doctrine 文件缓存文件夹'
+        CACHING: 缓存
+        CACHING_HELP: '全局开启/关闭开关，用于启用/禁用 Grav 缓存'
+        CHARACTERS: 字符
+        CLEAR_IMAGES_BY_DEFAULT: 默认清除图像缓存
+        CLEAR_IMAGES_BY_DEFAULT_HELP: 默认情况下，所有缓存清除都会清除已处理的图像，可以禁用此功能
+        CLI_COMPATIBILITY: 命令行兼容性
+        CLI_COMPATIBILITY_HELP: '确保仅使用非易失性缓存驱动程序（文件、redis、memcache 等）'
+        COLLECTIONS: 集合
+        COMMAND: 命令
+        CONFIGURATION: 配置
+        CONTENT: 内容
+        CONTENT_EDITOR: 内容编辑器
+        CONTENT_EDITOR_HELP: 可以为内容编辑选择自定义编辑器
+        CONTENT_FALLBACK_LANGUAGE_HELP: 指定要自定义的语言代码。
+        CONTENT_LANGUAGE_FALLBACK: 备用语言
+        CONTENT_LANGUAGE_FALLBACKS: 内容语言备用
+        CONTENT_LANGUAGE_FALLBACKS_HELP: '默认情况下，如果内容未被翻译，Grav 将显示默认语言的内容。使用此设置可以按语言基础覆盖该行为。'
+        CONTENT_LANGUAGE_FALLBACK_HELP: 请输入语言代码列表。请注意，如果您省略默认语言代码，它将不被使用。
+        COPY: 复制
+        CREATE: 创建
+        CSS_ASSETS: 'CSS 资源'
+        CSS_MINIFY: 'CSS 压缩'
+        CSS_MINIFY_HELP: '在管道处理期间压缩 CSS'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'CSS 压缩 Windows 覆盖'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Windows 平台的压缩覆盖。由于 ThreadStackSize 原因，默认为 False'
+        CSS_PIPELINE: 'CSS 管道'
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'CSS 管道优先渲染'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: '在未包含的任何其他 CSS 引用之前渲染 CSS 管道'
+        CSS_PIPELINE_HELP: 'CSS 管道是将多个 CSS 资源统一为一个文件'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: '在 CSS 管道中包含外部资源'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: '外部 URL 有时有相对文件引用，不应该被管道化'
+        CSS_REWRITE: 'CSS 重写'
+        CSS_REWRITE_HELP: '在管道处理期间重写任何 CSS 相对 URL'
+        CURL: cURL
+        CUSTOM_BASE_URL: '自定义基础 URL'
+        CUSTOM_BASE_URL_HELP: '如果您想重写网站域或使用与 Grav 使用的不同的子文件夹，可以使用此选项。示例：http://localhost'
+        CUSTOM_REDIRECTS: 自定义重定向
+        CUSTOM_REDIRECTS_HELP: 重定向到其他页面的路由。标准正则表达式替换有效
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+        CUSTOM_ROUTES: 自定义路由
+        CUSTOM_ROUTES_HELP: 别名到其他页面的路由。标准正则表达式替换有效
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+        DATE: 日期
+        DATE_BASED_PUBLISHING: 基于日期的发布
+        DATE_BASED_PUBLISHING_HELP: 根据页面的日期自动发布/取消发布文章
+        DATE_HELP: 日期变量允许您为此页面专门设置关联的日期。
+        DEBUGGER: 调试器
+        DEBUGGER_CENSORED: 审查敏感数据
+        DEBUGGER_CENSORED_HELP: '仅限 Clockwork 提供程序：如果选择"是"，则审查可能的敏感信息（日志消息中的 POST 参数、Cookie、文件、配置和大多数数组/对象数据）'
+        DEBUGGER_CLOCKWORK: 'Clockwork 浏览器扩展'
+        DEBUGGER_DEBUGBAR: 'PHP 调试栏'
+        DEBUGGER_HELP: '启用 Grav 调试器和以下设置'
+        DEBUGGER_PROVIDER: 调试器提供程序
+        DEBUGGER_PROVIDER_HELP: '默认为 PHP 调试栏，但 Clockwork 浏览器扩展提供了一种侵入性较低的方法'
+        DEFAULT: 默认
+        DEFAULTS: 默认值
+        DEFAULT_AUTHOR: 默认作者
+        DEFAULT_AUTHOR_HELP: 默认作者名称，通常在主题或页面内容中使用
+        DEFAULT_CHILD_TYPE: 默认子页面类型
+        DEFAULT_DATE_FORMAT: 页面日期格式
+        DEFAULT_DATE_FORMAT_HELP: 'Grav 使用的页面日期格式。默认情况下，Grav 会尝试猜测您的日期格式，但您可以使用 PHP 的日期语法（例如：Y-m-d H:i）指定格式'
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: 自动检测
+        DEFAULT_EMAIL: 默认电子邮件
+        DEFAULT_EMAIL_HELP: 在主题或页面中引用的默认电子邮件
+        DEFAULT_IMAGE_QUALITY: 默认图像质量
+        DEFAULT_IMAGE_QUALITY_HELP: 重新采样或缓存图像时使用的默认图像质量(85%)
+        DEFAULT_LANG: 覆盖默认语言
+        DEFAULT_LANG_HELP: 默认为第一个受支持的语言。可以通过设置此选项来覆盖，但必须是受支持的语言之一
+        DEFAULT_ORDERING: 默认排序
+        DEFAULT_ORDERING_DATE: '日期 - 基于标题中的日期字段'
+        DEFAULT_ORDERING_DEFAULT: '默认 - 基于文件夹名称'
+        DEFAULT_ORDERING_FOLDER: '文件夹 - 基于没有前缀的文件夹名称'
+        DEFAULT_ORDERING_HELP: 列表中的页面将使用此顺序渲染，除非被覆盖
+        DEFAULT_ORDERING_TITLE: '标题 - 基于标题中的标题字段'
+        DEFAULT_ORDER_DIRECTION: 默认排序方向
+        DEFAULT_ORDER_DIRECTION_HELP: 列表中页面的排序方向
+        DEFAULT_PAGE_COUNT: 默认页面计数
+        DEFAULT_PAGE_COUNT_HELP: 列表中的默认最大页面数
+        DEFAULT_THEME: 默认主题
+        DEFAULT_THEME_HELP: '设置 Grav 使用的默认主题(默认为 Antimatter)'
+        DELIMITER: 分隔符
+        DELIMITER_HELP: '摘要分隔符(默认为 「===」)'
+        DESCENDING: 降序
+        DESCRIPTION: 描述
+        DETAILS: 详情
+        DETECT_CHANGES: 检测更改
+        DETECT_CHANGES_HELP: '如果 Twig 检测到 Twig 模板中的任何更改，它将自动重新编译 Twig 缓存'
+        DISPLAY_ERRORS: 显示错误
+        DISPLAY_ERRORS_HELP: 显示完整的回溯样式错误页面
+        DISPLAY_NAME: 显示名称
+        DISPLAY_TEMPLATE: 显示模板
+        EMAIL: 电子邮件
+        EMAIL_VALIDATION_MESSAGE: 必须是有效的电子邮件地址
+        ENABLED_HELP: 启用页面摘要（摘要返回与页面内容相同）
+        ENABLED_SRI_ON_ASSETS: '在资源上启用 SRI'
+        ENABLED_SRI_ON_ASSETS_HELP: '启用资源 SRI'
+        ENABLED_TIMESTAMPS_ON_ASSETS: 在资源上启用时间戳
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: 启用资源时间戳
+        ENABLE_AUTO_METADATA: '从 Exif 自动生成元数据'
+        ENABLE_AUTO_METADATA_HELP: '自动为具有 exif 信息的图像生成元数据文件'
+        ENABLE_MEDIA_TIMESTAMP: 在媒体上启用时间戳
+        ENABLE_MEDIA_TIMESTAMP_HELP: 根据最后修改日期为每个媒体项附加时间戳
+        ERROR_FULL_BACKTRACE: 完整回溯错误
+        ERROR_HANDLER: 错误处理程序
+        ERROR_SIMPLE: 简单错误
+        ERROR_SYSTEM: 系统错误
+        ESCAPE_MARKUP: 转义标记
+        ESCAPE_MARKUP_HELP: '将标记标签转义为 HTML 实体'
+        ETAG: ETag
+        ETAG_HELP: '设置 etag 头以帮助识别页面何时被修改'
+        EVENTS: 事件
+        EVENTS_HELP: 启用或禁用特定事件。禁用这些可能会破坏插件
+        EXPERIMENTAL: 实验性
+        EXPIRES: 过期时间
+        EXPIRES_HELP: 设置过期标头。该值以秒为单位。
+        EXTERNAL: 外部页面
+        EXTERNAL_URL: '外部 URL'
+        EXTRA_ARGUMENTS: 额外参数
+        FALLBACK_TYPES: 允许的后备类型
+        FALLBACK_TYPES_HELP: 可通过页面路由访问的允许文件类型。默认为任何支持的媒体类型。
+        FILE: 文件
+        FILE_EXTENSION: 文件扩展名
+        FILE_STREAMS: 文件流
+        FLEX: 'Flex 对象（实验性）'
+        FLEX_ADMIN_EVENT_COMPAT: 管理员事件兼容性
+        FLEX_ADMIN_EVENT_COMPAT_HELP: '为插件启用 onAdminSave 和 onAdminAfterSave 事件。'
+        FLEX_CACHING: 'Flex 缓存'
+        FLEX_INDEX_CACHE_ENABLED: 启用索引缓存
+        FLEX_INDEX_CACHE_LIFETIME: 索引缓存生命周期（秒）
+        FLEX_OBJECT_CACHE_ENABLED: 启用对象缓存
+        FLEX_OBJECT_CACHE_LIFETIME: 对象缓存生命周期（秒）
+        FLEX_RENDER_CACHE_ENABLED: 启用渲染缓存
+        FLEX_RENDER_CACHE_LIFETIME: 渲染缓存生命周期（秒）
+        FOLDER: 文件夹
+        FOLDER_NAME: 文件夹名称
+        FOLDER_NUMERIC_PREFIX: 文件夹数字前缀
+        FOLDER_NUMERIC_PREFIX_HELP: 提供手动排序和隐含可见性的数字前缀
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: 强制小写URL
+        FORCE_LOWERCASE_URLS_HELP: '默认情况下，Grav 会将所有URL别名和路由设置为小写。如果将此项设置为禁用，可以使用大写的URL别名和路由'
+        FORCE_SSL: 强制SSL
+        FORCE_SSL_HELP: 全局强制使用SSL，如果启用此选项，当网站通过HTTP访问时，Grav会重定向到HTTPS页面
+        FORMAT: 格式
+        FORMAT_HELP: 'short = 使用分隔符或大小的第一次出现；long = 将忽略摘要分隔符'
+        FRONTMATTER_IGNORE_FIELDS: 忽略frontmatter字段
+        FRONTMATTER_IGNORE_FIELDS_HELP: '某些frontmatter字段可能包含Twig代码但不应被处理，例如„forms"'
+        FRONTMATTER_PROCESS_TWIG: '处理frontmatter Twig'
+        FRONTMATTER_PROCESS_TWIG_HELP: 启用此选项后，您可以在页面前置事项中使用Twig配置变量
+        FULL_NAME: 全名
+        GENERAL_CONFIG: 常规资源配置
+        GPM_METHOD: 远程获取方法
+        GPM_METHOD_HELP: 当设置为自动时，Grav会判断是否可用fopen，如果可用则使用它，否则回退到cURL。要强制使用其中一种方法，请切换此设置
+        GPM_OFFICIAL_ONLY: 仅官方GPM
+        GPM_OFFICIAL_ONLY_HELP: 仅允许从官方GPM存储库进行直接安装
+        GPM_RELEASES: GPM发布版本
+        GPM_RELEASES_HELP: '选择„测试"来安装测试版或测试版本'
+        GPM_SECTION: GPM分类
+        GROUPS_HELP: 用户所属群组的列表
+        GROUP_NAME: 群组名称
+        GZIP_COMPRESSION: Gzip压缩
+        GZIP_COMPRESSION_HELP: 启用Grav页面的GZip压缩以提高性能
+        HIDE_EMPTY_FOLDERS: 隐藏空文件夹
+        HIDE_EMPTY_FOLDERS_HELP: '如果文件夹没有 .md 文件，它在导航中也应该被隐藏并且不可路由'
+        HIDE_HOME_IN_URLS: '在 URL 中隐藏主页路由'
+        HIDE_HOME_IN_URLS_HELP: 将确保主页下任何页面的默认路由不引用主页的常规路由
+        HOME_PAGE: 主页
+        HOME_PAGE_HELP: 'Grav 将用作默认着陆页的页面'
+        HTTP_ACCEPT_LANGUAGE: 从浏览器设置语言
+        HTTP_ACCEPT_LANGUAGE_HELP: '您可以选择根据浏览器中的 `http_accept_language` 标头标签来尝试设置语言'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP 已启用'
+        HTTP_CF_CONNECTING_IP_HELP: '在解析客户端 IP 时信任 <code>CF-Connecting-IP</code> 请求标头。仅当网站确实在 Cloudflare 后面时才启用；否则客户端可以欺骗其 IP。为了完全安全，还应在 Web 服务器处限制到 Cloudflare IP 范围的源访问。'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP 已启用'
+        HTTP_CLIENT_IP_HELP: '在解析客户端 IP 时信任 <code>Client-IP</code> 请求标头。罕见；通常仅由特定负载均衡器设置。除非您知道代理设置并覆盖此标头，否则请关闭。'
+        HTTP_CONNECTIONS: 'HTTP 连接'
+        HTTP_CONNECTIONS_HELP: '多路复用请求期间的并发 HTTP 连接数'
+        HTTP_HEADERS: 'HTTP 标头'
+        HTTP_SECTION: 'HTTP 部分'
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST 已启用'
+        HTTP_X_FORWARDED_HOST_HELP: '信任 <code>X-Forwarded-Host</code> 请求标头。仅当网站确实在设置和覆盖此标头的反向代理后面时才启用；否则客户端可以欺骗 Grav 看到的主机。'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP 已启用'
+        HTTP_X_FORWARDED_IP_HELP: '在解析客户端 IP 时信任 <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> 标头。仅当网站确实在设置和覆盖这些标头的反向代理后面时才启用；否则客户端可以欺骗其 IP 并绕过速率限制、IP 禁止和审计日志。'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT 已启用'
+        HTTP_X_FORWARDED_PORT_HELP: '信任 <code>X-Forwarded-Port</code> 请求标头。仅当网站确实在设置和覆盖此标头的反向代理后面时才启用。'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO 已启用'
+        HTTP_X_FORWARDED_PROTO_HELP: '信任 <code>X-Forwarded-Proto</code> 请求标头（通常用于检测 TLS 终止代理后的 HTTPS）。仅当网站确实在设置和覆盖此标头的反向代理后面时才启用。'
+        ICON: 图标
+        ID: ID
+        IGNORE_FILES: 忽略文件
+        IGNORE_FILES_HELP: 处理页面时要忽略的特定文件
+        IGNORE_FOLDERS: 忽略文件夹
+        IGNORE_FOLDERS_HELP: 处理页面时要忽略的特定文件夹
+        IGNORE_HIDDEN: 忽略隐藏文件
+        IGNORE_HIDDEN_HELP: 忽略所有以点号开头的文件和文件夹
+        IMAGES_AUTO_FIX_ORIENTATION: 自动修复方向
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: '根据 Exif 数据自动修复图像方向'
+        IMAGES_CLS_ASPECT_RATIO: 启用宽高比
+        IMAGES_CLS_ASPECT_RATIO_HELP: "可选的 CSS 变量，通过 'style' 属性应用，可用于 CSS 自定义样式"
+        IMAGES_CLS_AUTO_SIZES: 启用自动尺寸
+        IMAGES_CLS_AUTO_SIZES_HELP: "自动为图像添加 'width' 和 'height' 属性以解决 CLS 问题"
+        IMAGES_CLS_RETINA_SCALE: 视网膜缩放因子
+        IMAGES_CLS_RETINA_SCALE_HELP: '将计算的尺寸除以缩放因子，以更小的像素尺寸显示更高分辨率的图像，以更好地处理 HiDPI 分辨率'
+        IMAGES_CLS_TITLE: '累积布局偏移 (CLS)'
+        IMAGES_DEBUG: 图像调试水印
+        IMAGES_DEBUG_HELP: 在图像上显示覆盖层，指示图像的像素深度，例如在使用视网膜屏幕时
+        IMAGES_DECODING: 图像解码行为
+        IMAGES_DECODING_HELP: 'decoding 属性允许浏览器延迟解码屏幕外的图像，直到用户滚动到附近。decoding 支持三个值：auto、sync、async'
+        IMAGES_FETCHPRIORITY: 图像获取优先级属性
+        IMAGES_FETCHPRIORITY_HELP: 'HTML 中的 fetchpriority 属性用于指定加载某些资源（如图像或 iframe）的优先级以优化性能。可能的值为 high、low 或 auto。'
+        IMAGES_LOADING: 图像加载行为
+        IMAGES_LOADING_HELP: 'loading 属性允许浏览器延迟加载屏幕外的图像和 iframe，直到用户滚动到附近。loading 支持三个值：auto、lazy、eager'
+        IMAGES_MAX_PIXELS: 最大图像像素数
+        IMAGES_MAX_PIXELS_HELP: '基于 URL 的调整大小操作的总像素上限（宽度 x 高度）。超过此限制的请求将被拒绝。设置为 0 以禁用检查。'
+        IMAGES_SEOFRIENDLY: 'SEO 友好的图像名称'
+        IMAGES_SEOFRIENDLY_HELP: 启用后，首先显示图像名称，然后显示一个较小的哈希值以反映处理的操作
+        IMAGES_URL_ACTIONS: '允许基于 URL 的图像操作'
+        IMAGES_URL_ACTIONS_HELP: '允许通过 URL 查询参数进行图像转换（例如 `image.jpg?resize=600,400`）。默认禁用；普通的 Twig 和 Markdown 图像调整大小不受影响。'
+        IMAGE_ADAPTER: 图像适配器
+        IMAGE_ADAPTER_HELP: '用于图像处理的图像适配器。"GD" 是默认值，"Imagick" 是一个替代方案'
+        IMAGE_OPTIONS: 图像选项
+        INCLUDE_DEFAULT_LANG: 包含默认语言
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: 在文件扩展名中包含默认语言
+        INCLUDE_DEFAULT_LANG_HELP: '这将在默认语言中为所有 URL 添加前缀。例如 `/en/blog/my-post`'
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: '如果启用，它会将默认语言前置到文件扩展名中（例如 `.en.md`）。禁用它可保持默认语言使用 `.md` 文件扩展名。'
+        INLINE_TYPES: 内联回退类型
+        INLINE_TYPES_HELP: 应该内联显示而不是下载的文件类型列表
+        INTL_ENABLED: 国际化模块集成
+        INTL_ENABLED_HELP: '使用 Intl PHP 模块和整理排序基于 UTF8 的集合'
+        ITEMS: 项目
+        JAVASCRIPT_MINIFY: 'JavaScript 缩小'
+        JAVASCRIPT_MINIFY_HELP: '在管道传输期间缩小 JS'
+        JAVASCRIPT_MODULE_PIPELINE: 'JavaScript 模块管道'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'JS 模块管道优先渲染'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: '在未包含的任何其他 JS 引用之前渲染 JS 管道'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'JS 模块管道是将多个 JS 资源统一为一个文件'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: '在 JS 模块管道中包含外部资源'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: '外部 URL 有时具有相对文件引用，不应该进行管道传输'
+        JAVASCRIPT_PIPELINE: 'JavaScript 管道'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'JS 管道优先渲染'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: '在任何其他未包含的 JS 引用之前渲染 JS 管道'
+        JAVASCRIPT_PIPELINE_HELP: 'JS 管道是将多个 JS 资源统一为一个文件'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: '在 JS 管道中包含外部资源'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: '外部 URL 有时具有相对文件引用，不应该被管道化'
+        JS_ASSETS: 'JavaScript 资源'
+        JS_MODULE_ASSETS: 'JavaScript 模块资源'
+        LANGUAGE: 语言
+        LANGUAGES: 语言
+        LANGUAGE_DEBUG: 调试语言
+        LANGUAGE_DEBUG_HELP: '启用使用 |t twig 过滤器的语言调试，通过在它们周围添加一个可设置样式的 span 来帮助诊断问题'
+        LANGUAGE_HELP: 设置偏好语言
+        LANGUAGE_TRANSLATIONS: 翻译
+        LANGUAGE_TRANSLATIONS_HELP: '如果为 false，将使用翻译键而不是翻译字符串。此功能可用于帮助修复不良翻译或查找硬编码的英文字符串。'
+        LAST_MODIFIED: 最后修改
+        LAST_MODIFIED_HELP: 设置最后修改标头，可帮助优化代理和浏览器缓存
+        LIFETIME: 生命周期
+        LIFETIME_HELP: '设置缓存生命周期（单位：秒）。0 = 永久'
+        LIST: 列表
+        LOG_ERRORS: 记录错误
+        LOG_ERRORS_HELP: '将错误记录到 /logs 文件夹'
+        LOG_HANDLER: 日志处理程序
+        LOG_HANDLER_HELP: 日志输出位置
+        LONG: 长
+        LONG_DATE_FORMAT: 长日期格式显示
+        LONG_DATE_FORMAT_HELP: 设置主题可以使用的长日期格式
+        MARKDOWN: Markdown
+        MARKDOWN_EXTRA: 'Markdown extra'
+        MARKDOWN_EXTRA_HELP: '启用 Markdown Extra 的默认支持 - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA_TYPES: 媒体类型
+        MEMCACHED_PORT: 'Memcached 端口'
+        MEMCACHED_PORT_HELP: 'Memcached 服务器端口'
+        MEMCACHED_SERVER: 'Memcached 服务器'
+        MEMCACHED_SERVER_HELP: 'Memcached 服务器地址'
+        MENU: 菜单
+        MENU_HELP: 用于菜单中的字符串。如果未设置，将使用标题。
+        METADATA: 元数据
+        METADATA_HELP: 默认元数据值，将显示在每个页面上，除非被页面覆盖
+        METADATA_KEY: 键（例如「关键词」）
+        METADATA_VALUE: 值（例如「博客、Grav」）
+        MIME_TYPE: 'MIME 类型'
+        MISC_SECTION: 杂项部分
+        MODULE: 模块
+        MODULE_SETUP: 模块设置
+        MOVE: 移动
+        NAME: 名称
+        NEVER_CACHE_TWIG: '从不缓存 Twig'
+        NEVER_CACHE_TWIG_HELP: '仅缓存内容并每次处理 Twig 以处理页面。忽略 twig_first 设置。'
+        'NO': 否
+        OPTIONS: 选项
+        ORDER: 顺序
+        ORDERING: 排序
+        ORDER_BY: 排序依据
+        ORDER_DIGITS: 排序数字位数
+        ORDER_DIGITS_HELP: '用于为文件夹名称添加排序前缀的数字位数（例如 `01.about`、`001.about`）。'
+        ORDER_DIR_HELP: 「desc」或「asc」是有效值
+        OVERRIDES: 覆盖
+        OVERRIDE_LOCALE: 覆盖语言环境
+        OVERRIDE_LOCALE_HELP: '根据当前语言覆盖 PHP 中的语言环境设置'
+        PAGE: 页面
+        PAGES_CONFIGURATION: 页面配置
+        PAGES_FALLBACK_ONLY: 仅页面回退
+        PAGES_FALLBACK_ONLY_HELP: 仅通过支持的语言「回退」查找页面内容，默认行为是在活动语言缺失时显示任何找到的语言
+        PAGES_TYPE: 前端页面类型
+        PAGES_TYPE_HELP: '此选项在前端启用 Flex 对象页面。Admin Flex Pages 需要 Flex Objects 插件'
+        PAGE_ACCESS: 页面访问权限
+        PAGE_ACCESS_HELP: 拥有以下访问权限的用户可以访问该页面。
+        PAGE_AUTHORS: 页面作者
+        PAGE_AUTHORS_HELP: 页面作者成员对在特殊「作者」页面组中定义的此页面具有所有者级别的访问权限。
+        PAGE_FILE: 页面模板
+        PAGE_FILE_HELP: 页面模板文件名，以及默认情况下此页面的显示模板
+        PAGE_GROUPS: 页面组
+        PAGE_GROUPS_HELP: 页面组成员对此页面具有特殊访问权限。
+        PAGE_INHERIT_PERMISSIONS: 继承权限
+        PAGE_INHERIT_PERMISSIONS_HELP: '从父页面继承 ACL。'
+        PAGE_MEDIA: 页面媒体
+        PAGE_PERMISSIONS: 页面权限
+        PAGE_SUMMARY: 页面摘要
+        PAGE_TYPES: 页面类型
+        PAGE_TYPES_HELP: '确定 Grav 支持的页面类型，顺序决定在请求不明确时回退到哪种类型'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: 菜单可见性需要访问权限
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: '如果页面仅在用户可访问时才应显示在菜单中，请设置为"是"'
+        PARAMETER_SEPARATOR: 参数分隔符
+        PARAMETER_SEPARATOR_HELP: '已传递参数的分隔符，可针对 Windows 上的 Apache 进行更改'
+        PARENT: 父级
+        PASSWORD_VALIDATION_MESSAGE: '密码必须至少包含一个数字、一个大写字母、一个小写字母，且长度至少 8 个或更多字符'
+        PERMISSIONS: 权限
+        PLUGIN_STATUS: 插件状态
+        PROCESS: 处理
+        PROCESS_HELP: 控制页面的处理方式。可按页面设置而不是全局设置
+        PROXY_CERT: 代理证书路径
+        PROXY_CERT_HELP: '包含代理证书 pem 文件的本地文件夹路径'
+        PROXY_URL: '代理 URL'
+        PROXY_URL_HELP: '输入代理 HOST 或 IP 和 PORT'
+        PUBLISH: 发布
+        PUBLISHED: 已发布
+        PUBLISHED_DATE: 发布日期
+        PUBLISHED_DATE_HELP: 可以提供日期以自动触发发布
+        PUBLISHED_HELP: '默认情况下，页面已发布，除非您明确设置 published: false 或发布日期在未来，或取消发布日期在过去'
+        PUBLISHING: 发布中
+        PWD_REGEX: 密码正则表达式
+        PWD_REGEX_HELP: '默认情况下：密码必须至少包含一个数字、一个大写字母和一个小写字母，且至少 8 个或更多字符'
+        PWD_RULES: 密码规则
+        PWD_RULES_HELP: '自定义密码验证规则。每个规则有一个 ID、一个人类可读标签和密码必须匹配的正则表达式。'
+        PWD_RULES_ID: ID
+        PWD_RULES_LABEL: 标签
+        PWD_RULES_PATTERN: 正则表达式模式
+        READ: 读取
+        READ_FILE_ALLOWED_EXTENSIONS: 允许的文件扩展名
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: '文件扩展名 <code>read_file()</code> 将读取（不区分大小写，无前导点）。默认为纯文本/内容格式。添加可执行文件或配置格式（<code>php</code>、<code>yaml</code>、<code>env</code>、<code>htaccess</code> 等）存在安全风险，不推荐。'
+        READ_FILE_ALLOWED_STREAMS: 允许的流
+        READ_FILE_ALLOWED_STREAMS_HELP: '<code>read_file()</code> 可能解析的流方案。默认：<code>theme</code>、<code>themes</code>、<code>page</code>、<code>user-data</code>。添加广泛的流如 <code>user</code>、<code>system</code>、<code>config</code>、<code>account</code>、<code>log</code> 或 <code>cache</code> 会暴露敏感文件，强烈不推荐。'
+        READ_FILE_MAX_SIZE: 最大文件大小（字节）
+        READ_FILE_MAX_SIZE_HELP: '大于此大小的文件返回 <code>false</code> 而不是被读入内存。默认为 <code>1048576</code>（1 MB）。设置为 <code>0</code> 以禁用大小限制。'
+        READ_FILE_SECTION_HELP: '对 Twig <code>read_file()</code> 函数的约束。读取通过 Grav 流 URI 强制进行，并通过对已解析流根目录的规范化实路径包含检查来验证，因此无论路径如何编写，编码或符号链接遍历都在文件系统层被阻止。'
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REDIRECT: 页面重定向
+        REDIRECTS_AND_ROUTES: 重定向和路由
+        REDIRECT_DEFAULT_CODE: 默认重定向代码
+        REDIRECT_DEFAULT_CODE_HELP: '用于重定向的 HTTP 状态代码'
+        REDIRECT_DEFAULT_ROUTE: 重定向默认路由
+        REDIRECT_DEFAULT_ROUTE_HELP: 自动重定向到页面的默认路由
+        REDIRECT_HELP: '输入此页面要重定向到的页面路由或外部 URL。例如 `/some/route` 或 `http://somesite.com`'
+        REDIRECT_OPTION_301: '301 - 永久移动'
+        REDIRECT_OPTION_302: '302 - 临时移动'
+        REDIRECT_OPTION_303: '303 - 查看其他'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: 使用默认重定向代码
+        REDIRECT_OPTION_NO_REDIRECT: 不重定向
+        REDIRECT_TRAILING_SLASH: 重定向末尾斜杠
+        REDIRECT_TRAILING_SLASH_HELP: '执行 301 重定向，而不是透明地处理末尾斜杠 URI。'
+        REDIS_DATABASE: 'Redis 数据库 ID'
+        REDIS_DATABASE_HELP: 'Redis 实例数据库 ID'
+        REDIS_PASSWORD: 'Redis 密码/密钥'
+        REDIS_PORT: 'Redis 端口'
+        REDIS_PORT_HELP: 'Redis 服务器端口'
+        REDIS_SERVER: 'Redis 服务器'
+        REDIS_SERVER_HELP: 'Redis 服务器地址'
+        REDIS_SOCKET: 'Redis 套接字'
+        REDIS_SOCKET_HELP: 'Redis 套接字'
+        REGULAR: 常规
+        REVERSE_PROXY: 反向代理
+        REVERSE_PROXY_HELP: '如果您在反向代理后面且 URL 包含不正确的端口，请启用此选项'
+        ROOT: 根目录
+        ROUTABLE: 可路由
+        ROUTABLE_HELP: '如果此页面可通过 URL 访问'
+        ROUTE: 路由
+        ROUTE_ALIASES: 路由别名
+        ROUTE_CANONICAL: 规范路由
+        ROUTE_DEFAULT: 默认路由
+        ROUTE_OVERRIDES: 路由覆盖
+        SANITIZE_SVG: '清理 SVG'
+        SANITIZE_SVG_HELP: '从 SVG 中删除任何 XSS 代码'
+        SCHEDULER: 调度器
+        SCHEDULER_ACTIVE_TRIGGERS: 活跃触发器
+        SCHEDULER_ADVANCED_FEATURES: 高级功能
+        SCHEDULER_CONCURRENT_WORKERS: 并发工作线程
+        SCHEDULER_CONCURRENT_WORKERS_HELP: '可以同时运行的任务数（1 = 顺序执行）。'
+        SCHEDULER_EMAIL: 电子邮件
+        SCHEDULER_EMAIL_HELP: 发送输出的电子邮件。注意：需要设置输出文件
+        SCHEDULER_HEALTH_CHECK_CONFIG: 健康检查配置
+        SCHEDULER_HEALTH_CHECK_ENABLED: 启用健康检查
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 为监控提供健康状态端点。
+        SCHEDULER_HEALTH_CHECK_PATH: 健康检查路径
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: '健康检查端点的 URL 路径。'
+        SCHEDULER_HEALTH_STATUS: 健康状态
+        SCHEDULER_HISTORY: 任务历史
+        SCHEDULER_HISTORY_ENABLED: 启用任务历史
+        SCHEDULER_HISTORY_ENABLED_HELP: 跟踪所有任务的执行历史。
+        SCHEDULER_HISTORY_RETENTION: 历史保留（天数）
+        SCHEDULER_HISTORY_RETENTION_HELP: 保留任务历史的时长。
+        SCHEDULER_JOBS: 自定义调度器任务
+        SCHEDULER_OUTPUT: 输出文件
+        SCHEDULER_OUTPUT_HELP: '输出文件的路径/文件名（从 Grav 安装根目录开始）'
+        SCHEDULER_OUTPUT_TYPE: 输出类型
+        SCHEDULER_OUTPUT_TYPE_HELP: 每次运行时追加到同一文件，或用新内容覆盖文件
+        SCHEDULER_QUEUE_CONFIG: 队列配置
+        SCHEDULER_QUEUE_MAX_SIZE: 最大队列大小
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: 可以排队的最大作业数。
+        SCHEDULER_QUEUE_PATH: 队列存储路径
+        SCHEDULER_QUEUE_PATH_HELP: 存储排队作业的位置。
+        SCHEDULER_RETRY_BACKOFF: 重试退避策略
+        SCHEDULER_RETRY_BACKOFF_HELP: 如何计算重试之间的延迟。
+        SCHEDULER_RETRY_CONFIG: 重试配置
+        SCHEDULER_RETRY_ENABLED: 启用作业重试
+        SCHEDULER_RETRY_ENABLED_HELP: 自动重试失败的作业。
+        SCHEDULER_RETRY_MAX_ATTEMPTS: 最大重试次数
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 重试失败作业的最大次数。
+        SCHEDULER_RUNAT: 运行时间
+        SCHEDULER_RUNAT_HELP: 'Cron 格式的"at"语法。注意：所有时间均为 UTC！'
+        SCHEDULER_STATUS: 调度程序状态
+        SCHEDULER_USAGE_EXAMPLES: 使用示例
+        SCHEDULER_WEBHOOK_CONFIG: 'Webhook 配置'
+        SCHEDULER_WEBHOOK_ENABLED: '启用 Webhook 触发器'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: '允许通过 HTTP Webhook 触发调度程序。'
+        SCHEDULER_WEBHOOK_PATH: 'Webhook 路径'
+        SCHEDULER_WEBHOOK_PATH_HELP: 'Webhook 端点的 URL 路径。'
+        SCHEDULER_WEBHOOK_TOKEN: 'Webhook 安全令牌'
+        SCHEDULER_WEBHOOK_TOKEN_HELP: '用于对 Webhook 请求进行身份验证的密钥。请保管好！'
+        SCHEDULER_WORKER_CONFIG: 工作进程配置
+        SECURITY: 安全
+        SESSION: 会话
+        SESSION_DOMAIN: 会话域
+        SESSION_DOMAIN_HELP: '仅在您重写站点域（例如在 Docker 容器中）时使用。'
+        SESSION_ENABLED_HELP: '在 Grav 中启用会话支持'
+        SESSION_HTTPONLY: '仅 HTTP'
+        SESSION_HTTPONLY_HELP: '如果为真，表示 Cookie 只能通过 HTTP 使用，不允许 JavaScript 修改'
+        SESSION_INITIALIZE: 初始化会话
+        SESSION_INITIALIZE_HELP: '使 Grav 启动会话。需要此功能以使任何用户交互正常工作，例如登录、表单等。管理插件不受此设置影响。'
+        SESSION_NAME_HELP: '用于形成会话 Cookie 名称的标识符'
+        SESSION_PATH: 会话路径
+        SESSION_PATH_HELP: '仅在您重写站点路径（例如在 Docker 容器中）时使用。'
+        SESSION_SAMESITE: '会话 SameSite 属性'
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None。有关更多信息，请参阅 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite'
+        SESSION_SECURE: 安全
+        SESSION_SECURE_HELP: '如果为真，表示此 Cookie 的通信必须通过加密传输进行。警告：仅在专门运行 HTTPS 的站点上启用此选项'
+        SESSION_SECURE_HTTPS: '安全 (HTTPS)'
+        SESSION_SECURE_HTTPS_HELP: '在 HTTPS 上设置会话安全，但在 HTTP 上不设置。如果您已将上面的「安全」设置设为真，则无效。如果您的站点在 HTTP 和 HTTPS 之间切换，请设置为假。'
+        SESSION_SPLIT: 会话分割
+        SESSION_SPLIT_HELP: 站点和其他插件（如管理）之间的独立分割会话
+        SESSION_UNIQUENESS: 唯一字符串
+        SESSION_UNIQUENESS_HELP: 'Grav 根路径的 MD5 哈希，即 `GRAV_ROOT`（默认值）或基于随机 `security.salt` 字符串。'
+        SHORT: 简短
+        SHORT_DATE_FORMAT: 短日期显示格式
+        SHORT_DATE_FORMAT_HELP: 设置主题可以使用的短日期格式
+        SHUTDOWN_CLOSE_CONNECTION: 关闭连接
+        SHUTDOWN_CLOSE_CONNECTION_HELP: '在调用 onShutdown() 之前关闭连接。false 用于调试'
+        SITE: 网站
+        SITE_ACCESS: 网站访问
+        SITE_DEFAULT_LANG: 默认语言
+        SITE_DEFAULT_LANG_HELP: '主题 <HTML> 标签使用的默认语言'
+        SITE_DEFAULT_LANG_PLACEHOLDER: '主题 <HTML> 标签使用的默认语言'
+        SITE_TITLE: 网站标题
+        SITE_TITLE_HELP: 网站的默认标题，通常在主题中使用
+        SITE_TITLE_PLACEHOLDER: 网站范围的标题
+        SLUG: 缩略名
+        SLUG_HELP: '缩略名变量允许你特别设置页面的 URL 部分'
+        SLUG_VALIDATE_MESSAGE: 缩略名只能包含小写字母、数字和连字符
+        SORTABLE_PAGES: 可排序的页面：
+        SSL_ENABLE_PROXY: 启用代理服务器
+        SSL_VERIFY_HOST: 远程验证主机
+        SSL_VERIFY_HOST_HELP: '某些可能在验证 SSL 证书时失败'
+        SSL_VERIFY_PEER: 远程验证对等体
+        SSL_VERIFY_PEER_HELP: '某些可能在验证 SSL 证书时失败'
+        STABLE: 稳定版
+        STRICT_BLUEPRINT_COMPAT: 蓝图兼容性
+        STRICT_BLUEPRINT_COMPAT_HELP: 为蓝图启用向后兼容的严格支持。如果关闭，新行为会使表单验证在蓝图中未定义的额外数据存在时失败。
+        STRICT_TWIG_COMPAT: 'Twig 兼容性'
+        STRICT_TWIG_COMPAT_HELP: '启用已弃用的 Twig 自动转义设置。禁用时，|raw 过滤器是输出 HTML 所必需的，因为 Twig 会自动转义输出'
+        STRICT_YAML_COMPAT: 'YAML 兼容性'
+        STRICT_YAML_COMPAT_HELP: '如果原生或 3.4 解析器失败，则回退到 Symfony 2.4 YAML 解析器'
+        SUMMARY_SIZE: 摘要大小
+        SUMMARY_SIZE_HELP: 用作内容摘要的页面字符数量
+        SUPPORTED: 支持
+        SUPPORTED_HELP: '以逗号分隔的2字母语言代码列表（例如「en,fr,de」）'
+        SYSLOG_FACILITY: 'Syslog 工具'
+        SYSLOG_FACILITY_HELP: '输出的 Syslog 工具'
+        SYSLOG_TAG: 'Syslog 标签'
+        SYSLOG_TAG_HELP: '输出的 Syslog 标签'
+        TAXONOMIES: 分类
+        TAXONOMY: 分类
+        TAXONOMY_TYPES: 分类类型
+        TAXONOMY_TYPES_HELP: 如果要在页面中使用分类类型，必须在此处定义
+        TESTING: 测试
+        THUMB: 缩略图
+        TIMEOUT: 超时
+        TIMEOUT_HELP: 以秒为单位设置会话超时
+        TIMEZONE: 时区
+        TIMEZONE_HELP: 覆盖服务器默认时区
+        TITLE: 标题
+        TOASTS:
+            ACTIVE_THEME_REMOVE_BLOCK: 无法删除活跃主题。请先切换到另一个主题。
+            API_KEY_REVOKED: 'API 密钥「{name}」已撤销'
+            BACKUP_CREATED: '已创建备份 ({size})'
+            CACHE_CLEARED: '已清除缓存 ({scope})'
+            CONFIG_MODIFIED_ELSEWHERE: '配置已在其他地方被修改 — 重新加载以查看最新版本'
+            CONFIG_SAVED: '{name} 配置已保存'
+            COPIED: '{label}已复制'
+            COPY_FAILED: '复制失败：{detail}'
+            DEPENDENCY_INSTALLED: '已安装插件{slug}（依赖项）'
+            FILES_DELETE_FAILED: '{n, plural, one{删除#个文件失败} other{删除#个文件失败}}'
+            FILES_UPLOADED: '{n, plural, one{上传了#个文件} other{上传了#个文件}}'
+            FILE_DELETED: '已删除{name}'
+            FILE_DELETE_FAILED: '删除{name}失败'
+            FOLDER_CREATED: '已创建文件夹「{name}」'
+            FORM_LABEL:
+                CONFIGURATION: 配置
+                FLEX_OBJECT: 'Flex 对象'
+                FORM: 表单
+                PAGE: 页面
+                PLUGIN: 插件
+                PLUGIN_PAGE: 插件页面
+                THEME: 主题
+                USER: 用户
+            GPM_REFRESHED: '{n, plural, =0{GPM已刷新 — 没有可用更新} one{GPM已刷新 — #个更新可用} other{GPM已刷新 — #个更新可用}}'
+            GRAV_UPGRADED: 'Grav已升级至v{version}'
+            INSTALL_FAILED: '安装{slug}失败：{detail}'
+            ITEM_COPIED: '已将「{name}」复制到「{target}」'
+            ITEM_DELETED: '已删除「{name}」'
+            ITEM_DELETE_FAILED: '删除「{name}」失败'
+            ITEM_MOVED: '已移动「{name}」'
+            ITEM_REORDERED: '已重新排序「{name}」'
+            ITEM_SAVED: '{name}已保存'
+            PACKAGES_UPDATED: '{n, plural, one{更新了 # 个包} other{更新了 # 个包}}'
+            PACKAGE_REMOVED: '{name} 已移除'
+            PACKAGE_REMOVE_FAILED: '移除 {name} 失败'
+            PACKAGE_UPDATED: '{name} 已更新'
+            PACKAGE_UPDATE_FAILED: '更新 {name} 失败：{detail}'
+            PAGE_PUBLISHED: '"{name}" 已发布'
+            PAGE_PUBLISH_FAILED: '更改发布状态失败：{detail}'
+            PAGE_UNPUBLISHED: '"{name}" 已取消发布'
+            PLUGIN_DISABLED: '{name} 已禁用'
+            PLUGIN_DISABLE_FAILED: '禁用 {name} 失败：{detail}'
+            PLUGIN_ENABLED: '{name} 已启用'
+            PLUGIN_ENABLE_FAILED: '启用 {name} 失败：{detail}'
+            PLUGIN_INSTALLED: '插件 {name} 已安装'
+            PLUGIN_LOCKOUT_BLOCK: '{name} 无法从 admin-next 禁用——这会将您锁定在外。'
+            PLUGIN_REMOVED: '{name} 已移除'
+            PLUGIN_REMOVE_FAILED: '移除 {name} 失败：{detail}'
+            PLUGIN_REQUIRED_BLOCK: '{name} 无法移除——它是 admin-next 所需的。'
+            SAVED: 已保存
+            SAVED_AS_LANGUAGE: '已保存为 {language}'
+            SAVE_FAILED: 保存失败
+            SAVE_FORM_FAILED: '保存 {form} 失败'
+            THEME_ACTIVATED: '{name} 现在是活动主题'
+            THEME_ACTIVATE_FAILED: '激活 {name} 失败：{detail}'
+            THEME_INSTALLED: '主题 {name} 已安装'
+            THEME_REMOVED: '{name} 已移除'
+            THEME_REMOVE_BLOCK: '{name} 无法删除。'
+            THEME_REMOVE_FAILED: '删除 {name} 失败：{detail}'
+            TOTP_CODE_REQUIRED: '输入身份验证器中的 6 位代码'
+            TRANSLATION_CREATED: '已创建 {language} 翻译'
+            TRANSLATION_RESET: '{target} 已从 {source} 重置'
+            UPDATE_FAILED: '更新失败：{detail}'
+            USER_CREATED: '已创建用户 {username}'
+            USER_DELETED: '已删除用户 {username}'
+            USER_DELETE_FAILED: '删除用户 {username} 失败'
+            USER_DISABLED: '已禁用用户 {username}'
+            USER_ENABLED: '已启用用户 {username}'
+            USER_SAVED: '已保存用户 {username}'
+            USER_STATE_FAILED: '更改 {username} 的状态失败：{detail}'
+        TRANSLATIONS: 翻译
+        TRANSLATIONS_FALLBACK: 翻译回退
+        TRANSLATIONS_FALLBACK_HELP: 如果活动语言不存在，则通过受支持的翻译进行回退
+        TWIG_3_COMPATIBILITY: 'Twig 3 兼容性'
+        TWIG_3_COMPATIBILITY_HELP: '为在 Twig 3 中断裂的旧版 Twig 1/2 语法启用自动重写（例如 <code>for ... if ...</code> 防护）。'
+        TWIG_CACHING: 'Twig 缓存'
+        TWIG_CACHING_HELP: '控制 Twig 缓存机制。为获得最佳性能，保持启用此功能。'
+        TWIG_CONTENT: '内容中的 Twig'
+        TWIG_CONTENT_CONFIG_ACCESS: '允许在 Twig 中访问配置变量'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: '是否可以从页面内容中读取 <code>config</code> Twig 变量。关闭时（默认），从页面读取 <code>config.system.title</code> 返回空值。启用时，<code>config</code> 被公开但仍受 <code>config_denied_paths</code> 过滤（见下面的 Twig 沙箱），因此凭据和其他敏感子树保持隐藏。'
+        TWIG_CONTENT_EDITOR_ENABLED: '允许编辑者切换内容中的 Twig'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: '关闭时（默认），页面编辑器「高级」选项卡中的 Twig 复选框仅对被授予 <code>admin.pages_twig</code> 权限的用户可见，已启用 Twig 的页面只能由这些用户编辑。启用时，任何具有页面编辑访问权限的人都可以在单个页面上切换 Twig。'
+        TWIG_CONTENT_HELP: '控制编辑者创建的嵌入在页面内容中的 Twig。磁盘上的主题模板不受这些设置影响；它们仅适用于作者放入页面正文或前言中的 Twig。'
+        TWIG_CONTENT_PROCESS_ENABLED: '在内容中启用 Twig'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: '允许在前言中包含 <code>process: twig: true</code> 的页面（以及站点范围的 <code>system.pages.frontmatter.process_twig</code> 选择启用）实际运行 Twig。<strong>在 Grav 2.0 中默认关闭。</strong>保持禁用状态可以减少模板注入攻击面，但会破坏任何需要在正文中使用 Twig 的页面。'
+        TWIG_DEBUG: 'Twig 调试'
+        TWIG_DEBUG_HELP: '允许选择不加载 Twig 调试器扩展'
+        TWIG_FIRST: '先处理 Twig'
+        TWIG_FIRST_HELP: '如果启用了 Twig 页面处理，可以配置 Twig 在 markdown 之前或之后处理'
+        TWIG_SANDBOX: 'Twig 沙箱'
+        TWIG_SANDBOX_ADMIN_HINT: 管理员提示注释
+        TWIG_SANDBOX_ADMIN_HINT_HELP: '当沙箱阻止表达式时，在渲染页面中追加一行 HTML 注释，以便查看源代码的超级管理员看到有内容被过滤。访客和非管理员无法看到。'
+        TWIG_SANDBOX_ALLOWED_FILTERS: 允许的过滤器
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: '页面内容可以应用的 Twig 过滤器。'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: 允许的函数
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: '页面内容可以调用的 Twig 函数。'
+        TWIG_SANDBOX_ALLOWED_METHODS: 允许的方法
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: 页面内容可以调用的每个类的对象方法列表。
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: 允许的属性
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: 页面内容可以读取的每个类的对象属性列表。
+        TWIG_SANDBOX_ALLOWED_TAGS: 允许的标签
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: '页面内容可以使用的 Twig 标签。仅添加您希望向作者公开其效果的标签。'
+        TWIG_SANDBOX_CLASS: 类
+        TWIG_SANDBOX_ENABLED: '启用 Twig 沙箱'
+        TWIG_SANDBOX_ENABLED_HELP: '在基于允许列表的 Twig SecurityPolicy 中呈现编辑者创建的页面内容。<strong>禁用会移除针对模板注入攻击的唯一保护</strong>：任何具有编辑者级别访问权限的账户（或任何破坏文件系统的人）都可以通过 Twig 执行任意 PHP。仅在站点确实需要从页面内容访问容器且您完全信任每个作者时才关闭。'
+        TWIG_SANDBOX_HELP: '页面内容模板可以使用的 Twig 标签、过滤器、函数、方法和属性的允许列表。编辑者创建的内容通过此沙箱呈现，因此受到威胁的作者或模板注入漏洞无法访问更广泛的容器。'
+        TWIG_SANDBOX_LOGGING: 记录违规
+        TWIG_SANDBOX_LOGGING_HELP: '将每个被阻止的表达式写入 <code>logs/twig-sandbox.log</code>。在调整允许列表时很有用；在生产环境中关闭以保持日志清洁。'
+        TWIG_SANDBOX_METHODS: 方法
+        TWIG_SANDBOX_PROPERTIES: 属性
+        TWIG_TEMPLATING: 'Twig 模板'
+        TYPE: 类型
+        UNPUBLISHED_DATE: 未发布日期
+        UNPUBLISHED_DATE_HELP: 可以提供日期以自动触发取消发布。
+        UPDATE: 更新
+        UPLOADS_DANGEROUS_EXTENSIONS: 危险扩展
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: '无论接受的 MIME 类型如何，都阻止这些扩展上传'
+        UPLOADS_SECURITY: 上传安全
+        USERNAME_HELP: '用户名应在 3 到 16 个字符之间，包括小写字母、数字、下划线和连字符。不允许大写字母、空格和特殊字符'
+        USERNAME_REGEX: 用户名正则表达式
+        USERNAME_REGEX_HELP: '默认：仅小写字符、数字、破折号和下划线。3 - 16 个字符'
+        USERS_FILTER:
+            BACKEND_ACCESS: 后端访问
+            CLEAR: 清除
+            CLEAR_ALL: 清除筛选器
+            FILTER_BY_GROUP: 按此组筛选
+            FILTER_BY_PERMISSION: 按此权限筛选
+            GROUP: 组
+            GROUPS: 组
+            LOADING: 加载中…
+            NO_MATCHES: 无匹配项
+            NO_MATCHES_FILTERS: 没有用户匹配这些筛选器
+            PERMISSION: 权限
+            TYPE_TO_FILTER: 输入以过滤…
+        USER_ACCOUNTS: 用户账户
+        USE_GLOBAL: 使用全局设置
+        VALIDATION:
+            FIELD_REQUIRED: '{label} 是必需的'
+            FORM_HAS_ERRORS: '{count, plural, one {# 个字段需要您的关注} other {# 个字段需要您的关注}}'
+            REQUIRED_GENERIC: 此字段是必需的
+        VALID_LINK_ATTRIBUTES: 有效的链接属性
+        VALID_LINK_ATTRIBUTES_HELP: '将自动添加到媒体 HTML 元素的属性'
+        VARY_ACCEPT_ENCODING: 改变接受编码
+        VARY_ACCEPT_ENCODING_HELP: '设置 `Vary: Accept Encoding` 标头以帮助代理和 CDN 缓存'
+        VISIBLE: 可见
+        VISIBLE_HELP: 确定页面是否在导航中可见
+        WRAPPED_SITE: 包装的网站
+        WRAPPED_SITE_HELP: '用于主题/插件了解 Grav 是否被另一个平台包装'
+        XSS_DANGEROUS_TAGS: '过滤危险的 HTML 标签'
+        XSS_DANGEROUS_TAGS_LIST: '危险的 HTML 标签列表'
+        XSS_HTML_INLINE_STYLES: '过滤 HTML 内联样式'
+        XSS_INVALID_PROTOCOLS: 过滤无效的协议
+        XSS_INVALID_PROTOCOLS_LIST: 无效的协议列表
+        XSS_MOZ_BINDINGS: '过滤 Moz 绑定'
+        XSS_ON_EVENTS: 过滤事件属性
+        XSS_SECURITY: '内容 XSS 安全'
+        XSS_WHITELIST_PERMISSIONS: 权限白名单
+        XSS_WHITELIST_PERMISSIONS_HELP: '拥有这些权限的用户在保存内容时将跳过 XSS 规则'
+        'YES': 是
+        YUBIKEY_HELP: '将您的 YubiKey 插入计算机，然后单击按钮生成 OTP。前 12 个字符是您的客户端 ID，将被保存。'
+        YUBIKEY_ID: 'YubiKey ID'
