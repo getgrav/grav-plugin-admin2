@@ -1,5 +1,5 @@
 # v2.0.0-rc.14
-## 06/08/2026
+## 06/09/2026
 
 1. [](#new)
     * **The Users area can now be filtered by permission or group** with a type-ahead picker, so you can find every account that holds a given permission, such as all admins. Requires grav-plugin-api ≥ 1.0.0-rc.14.
