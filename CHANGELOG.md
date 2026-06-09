@@ -1,3 +1,9 @@
+# v2.0.0-rc.15
+## 06/09/2026
+
+1. [](#new)
+    * The Dashboard now shows a prominent warning when your `user/data`, `user/accounts` and `user/config` folders are downloadable over the web, catching a misconfigured webserver before it leaks certificates, keys or databases.
+
 # v2.0.0-rc.14
 ## 06/09/2026
 
