@@ -1,8 +1,12 @@
 # v2.0.0-rc.15
-## 06/09/2026
+## 06/10/2026
 
 1. [](#new)
     * The Dashboard now shows a prominent warning when your `user/data`, `user/accounts` and `user/config` folders are downloadable over the web, catching a misconfigured webserver before it leaks certificates, keys or databases.
+2. [](#bugfix)
+    * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
+    * **Required custom fields provided by plugins now block saving while they are empty too**, the same as the built-in fields ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
+    * Dragging an image from the Page Media panel into the markdown editor now inserts a single valid image tag instead of a doubled, corrupted one ([#4123](https://github.com/getgrav/grav/issues/4123)).
 
 # v2.0.0-rc.14
 ## 06/09/2026
