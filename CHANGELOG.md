@@ -7,6 +7,7 @@
     * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
     * **Required custom fields provided by plugins now block saving while they are empty too**, the same as the built-in fields ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
     * Required custom fields now show the same inline "field is required" message as built-in fields when you empty them ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
+    * The inline error on a required field now uses the custom `validate.message` from the blueprint when one is set, instead of the generic text ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
     * Dragging an image from the Page Media panel into the markdown editor now inserts a single valid image tag instead of a doubled, corrupted one ([#4123](https://github.com/getgrav/grav/issues/4123)).
     * The Folder Numeric Prefix toggle in a page's Advanced tab now reflects whether the folder actually has a numeric prefix instead of always showing Enabled, and toggling it adds or removes the prefix on save.
     * Turning the Folder Numeric Prefix on now places the page last in its folder by giving it a prefix one past the highest among its siblings.
