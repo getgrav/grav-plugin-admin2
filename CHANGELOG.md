@@ -1,15 +1,17 @@
 # v2.0.0-rc.15
-## 06/10/2026
+## 06/11/2026
 
 1. [](#new)
     * The Dashboard now shows a prominent warning when your `user/data`, `user/accounts` and `user/config` folders are downloadable over the web, catching a misconfigured webserver before it leaks certificates, keys or databases.
 2. [](#bugfix)
     * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
     * **Required custom fields provided by plugins now block saving while they are empty too**, the same as the built-in fields ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
+    * Required custom fields now show the same inline "field is required" message as built-in fields when you empty them ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
     * Dragging an image from the Page Media panel into the markdown editor now inserts a single valid image tag instead of a doubled, corrupted one ([#4123](https://github.com/getgrav/grav/issues/4123)).
     * The Folder Numeric Prefix toggle in a page's Advanced tab now reflects whether the folder actually has a numeric prefix instead of always showing Enabled, and toggling it adds or removes the prefix on save.
     * Turning the Folder Numeric Prefix on now places the page last in its folder by giving it a prefix one past the highest among its siblings.
     * The page editor's Page Info panel now shows the page's folder name, making numeric-prefix and ordering issues easier to spot.
+    * Uploading a file or image to a flex object now saves it to that object instead of failing with a Method Not Allowed error ([flex-objects#216](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/216)).
 
 # v2.0.0-rc.14
 ## 06/09/2026
