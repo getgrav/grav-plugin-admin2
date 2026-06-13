@@ -2,6 +2,7 @@
 ## 06/11/2026
 
 1. [](#new)
+    * The Markdown editor can now keep its toolbar pinned in view as you scroll, and optionally hold a fixed height with its own scrollbar, both configurable in Settings ([#37](https://github.com/getgrav/grav-plugin-admin2/issues/37)).
     * The Dashboard now shows a prominent warning when your `user/data`, `user/accounts` and `user/config` folders are downloadable over the web, catching a misconfigured webserver before it leaks certificates, keys or databases.
 2. [](#bugfix)
     * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).

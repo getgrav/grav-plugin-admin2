@@ -864,6 +864,13 @@ ICU:
       EDITOR_HEADING: Editor
       EDITOR_MODE: Editor mode
       DEFAULT_FORM_EDITOR_DENSITY: Default form editor density.
+      EDITOR_SECTION_DESC: How the Markdown editor behaves while you write.
+      STICKY_TOOLBAR: Sticky toolbar
+      STICKY_TOOLBAR_DESC: Keep the formatting toolbar and Preview button pinned in view as you scroll.
+      EDITOR_HEIGHT: Editor height
+      EDITOR_HEIGHT_DESC: Let the editor grow with your content, or cap it at a fixed height with its own scrollbar.
+      EDITOR_HEIGHT_AUTO: Auto
+      EDITOR_HEIGHT_FIXED: Fixed
       USERS_MAY_OVERRIDE: Users may override
       SITE_WIDE_ONLY: Site-wide only
       REVERT_CHANGES: Revert changes
@@ -1049,6 +1056,8 @@ ICU:
       ACTIONS: Actions
       ENABLED: Enabled
       DISABLED: Disabled
+      ON: 'On'
+      OFF: 'Off'
       EDIT: Edit
       DELETE: Delete
       NO_USERS: No users found
