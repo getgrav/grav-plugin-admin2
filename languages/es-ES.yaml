@@ -707,6 +707,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Los usuarios pueden anular'
             OTHER_LIST_VIEWS: 'Otras vistas de lista'
             OTHER_LIST_VIEWS_DESC: 'Diseño predeterminado para las listas de usuarios, complementos y temas'
+            EDITOR_HEIGHT: 'Altura del editor'
+            EDITOR_HEIGHT_AUTO: Auto
+            EDITOR_HEIGHT_DESC: 'Permite que el editor crezca al ritmo de tu contenido, o limita su altura a un valor fijo con su propia barra de desplazamiento.'
+            EDITOR_HEIGHT_FIXED: Fijo
+            EDITOR_SECTION_DESC: 'Cómo se comporta el editor de Markdown mientras escribes.'
+            STICKY_TOOLBAR: 'Barra de herramientas fija'
+            STICKY_TOOLBAR_DESC: 'Mantén la barra de herramientas de formato y el botón de vista previa fijos a la vista mientras te desplazas.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, guiones, guiones bajos'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Cuenta de administrador creada — bienvenido a Grav'
@@ -1083,6 +1090,8 @@ ICU:
             TABLE: Tabla
             USERNAME: 'Nombre de usuario'
             PERMISSIONS: Permisos
+            'OFF': Desactivado
+            'ON': Activado
         2FA_ENABLED: '2FA Habilitado'
         2FA_SECRET: 'Secreto 2FA'
         2FA_SECRET_HELP: 'Escanea este código QR en tu [Aplicación Autenticadora](https://learn.getgrav.org/admin-panel/2fa#apps). También es una buena idea hacer una copia de seguridad del secreto en un lugar seguro, en caso de que necesites reinstalar tu aplicación. Consulta la [documentación de Grav](https://learn.getgrav.org/admin-panel/2fa) para obtener más información'
@@ -1839,3 +1848,7 @@ ICU:
         'YES': Sí
         YUBIKEY_HELP: 'Inserta tu YubiKey en tu ordenador y haz clic en el botón para generar un OTP. Los primeros 12 caracteres son tu ID de cliente y se guardarán.'
         YUBIKEY_ID: 'ID de YubiKey'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Los archivos ubicados en user/data, user/accounts y user/config se pueden descargar directamente a través de HTTP, incluidos certificados, claves, tokens y bases de datos. Esto generalmente significa que su servidor web no está aplicando las reglas .htaccess de Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Cómo proteger su servidor web'
+            USER_FOLDER_EXPOSED_TITLE: 'Riesgo de seguridad: sus carpetas de datos de usuario son accesibles desde la web.'
