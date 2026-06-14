@@ -1,0 +1,1 @@
+import{i,o as a,j as s,g as r}from"./XIydm8LU.js";let e=i(a({}));const n={get types(){return r(e)},register(t,o){for(const g of Object.keys(o))r(e)[g]=t;s(e,{...r(e)},!0)},has(t){return t in r(e)},getPluginSlug(t){return r(e)[t]},clear(){s(e,{},!0)}};export{n as c};
