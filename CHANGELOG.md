@@ -17,6 +17,7 @@
     * The page editor's Page Info panel now shows the page's folder name, making numeric-prefix and ordering issues easier to spot.
     * Uploading a file or image to a flex object now saves it to that object instead of failing with a Method Not Allowed error ([flex-objects#216](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/216)).
     * A plugin page built as a custom component can now control its own Save button, which previously stayed greyed out and unusable ([#40](https://github.com/getgrav/grav-plugin-admin2/issues/40)).
+    * Custom fields shipped by a theme now load in the editor instead of failing with a "Failed to load custom field" error ([#3](https://github.com/getgrav/grav-admin-next/issues/3)). Requires grav-plugin-api ≥ 1.0.0-rc.15.
 
 # v2.0.0-rc.14
 ## 06/09/2026
