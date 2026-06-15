@@ -859,6 +859,13 @@ ICU:
             FAILED_TO_RESET_PREFERENCES: 環境設定のリセットに失敗しました。
             OTHER_LIST_VIEWS: その他のリストビュー
             OTHER_LIST_VIEWS_DESC: ユーザー、プラグイン、テーマリストのデフォルトレイアウト
+            EDITOR_HEIGHT: エディターの高さ
+            EDITOR_HEIGHT_AUTO: 自動
+            EDITOR_HEIGHT_DESC: コンテンツの量に応じてエディターを拡張するか、固定の高さとスクロールバーを設定します。
+            EDITOR_HEIGHT_FIXED: 固定
+            EDITOR_SECTION_DESC: Markdownエディターの記述中の挙動を設定します。
+            STICKY_TOOLBAR: スティッキーツールバー
+            STICKY_TOOLBAR_DESC: スクロール中もフォーマットツールバーとプレビューボタンを画面上部に固定します。
         CUSTOM: カスタム
         PREVIEW: プレビュー
         SETUP:
@@ -962,6 +969,8 @@ ICU:
             CARDS: カード
             TABLE: テーブル
             PERMISSIONS: 権限
+            'OFF': オフ
+            'ON': オン
         PLUGINS_TABLE:
             NAME: 名前
             VERSION: バージョン
@@ -1839,6 +1848,10 @@ ICU:
         'YES': はい
         YUBIKEY_HELP: YubiKeyをコンピュータに挿入し、ボタンをクリックしてOTPを生成してください。最初の12文字がクライアントIDで、保存されます。
         YUBIKEY_ID: 'YubiKey ID'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'user/data、user/accounts、user/config 配下のファイル（証明書、キー、トークン、データベースを含む）が、HTTP経由で直接ダウンロード可能な状態です。これは通常、お使いのWebサーバーでGravの.htaccessルールが適用されていないことを示しています。'
+            USER_FOLDER_EXPOSED_LEARN_MORE: Webサーバーのセキュリティ対策について
+            USER_FOLDER_EXPOSED_TITLE: 'セキュリティリスク: ユーザーデータフォルダーがWebからアクセス可能な状態です'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA 有効'
         2FA_SECRET: '2FA シークレット'
