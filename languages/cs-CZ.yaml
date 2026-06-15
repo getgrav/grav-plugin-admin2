@@ -707,6 +707,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Uživatelé mohou přepsat'
             OTHER_LIST_VIEWS: 'Jiné zobrazení seznamů'
             OTHER_LIST_VIEWS_DESC: 'Výchozí rozvržení pro seznamy uživatelů, pluginů a motivů'
+            EDITOR_HEIGHT: 'Výška editoru'
+            EDITOR_HEIGHT_AUTO: Automaticky
+            EDITOR_HEIGHT_DESC: 'Nechte editor zvětšovat podle obsahu, nebo jej omezte na pevnou výšku s vlastním posuvníkem.'
+            EDITOR_HEIGHT_FIXED: Pevná
+            EDITOR_SECTION_DESC: 'Jak se editor Markdownu chová při psaní.'
+            STICKY_TOOLBAR: 'Ukotvený panel nástrojů'
+            STICKY_TOOLBAR_DESC: 'Ponechat panel nástrojů formátování a tlačítko Náhled viditelné při posouvání stránky.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
@@ -1083,6 +1090,8 @@ ICU:
             TABLE: Tabulka
             USERNAME: 'Uživatelské jméno'
             PERMISSIONS: Oprávnění
+            'OFF': Vypnuto
+            'ON': Zapnuto
         2FA_ENABLED: '2FA povolena'
         2FA_SECRET: '2FA tajemství'
         2FA_SECRET_HELP: 'Naskenujte tento QR kód do vaší [aplikace Authenticator](https://learn.getgrav.org/admin-panel/2fa#apps). Je také vhodné si tajemství zálohovat na bezpečném místě, v případě že budete muset aplikaci přeinstalovat. Další informace naleznete v [dokumentaci Grafu](https://learn.getgrav.org/admin-panel/2fa)'
@@ -1839,3 +1848,7 @@ ICU:
         'YES': Ano
         YUBIKEY_HELP: 'Vložte svůj klíč YubiKey do počítače a kliknutím na tlačítko vygenerujte OTP. Prvních 12 znaků je vaše ID klienta a bude uloženo.'
         YUBIKEY_ID: 'ID YubiKey'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Soubory ve složkách user/data, user/accounts a user/config lze stahovat přímo přes HTTP — včetně certifikátů, klíčů, tokenů a databází. To obvykle znamená, že váš webový server neaplikuje pravidla .htaccess systému Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Jak zabezpečit váš webový server'
+            USER_FOLDER_EXPOSED_TITLE: 'Bezpečnostní riziko: vaše složky s uživatelskými daty jsou přístupné z webu'
