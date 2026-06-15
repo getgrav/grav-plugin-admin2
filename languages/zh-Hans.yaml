@@ -707,6 +707,13 @@ ICU:
             USERS_MAY_OVERRIDE: 用户可以覆盖
             OTHER_LIST_VIEWS: 其他列表视图
             OTHER_LIST_VIEWS_DESC: 用户、插件和主题列表的默认布局
+            EDITOR_HEIGHT: 编辑器高度
+            EDITOR_HEIGHT_AUTO: 自动
+            EDITOR_HEIGHT_DESC: 让编辑器随内容自动增长，或者将其限制在具有滚动条的固定高度。
+            EDITOR_HEIGHT_FIXED: 固定
+            EDITOR_SECTION_DESC: 'Markdown 编辑器在您编写时的行为方式。'
+            STICKY_TOOLBAR: 粘性工具栏
+            STICKY_TOOLBAR_DESC: 在滚动时将格式工具栏和“预览”按钮固定在视图中。
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 个字符：字母、数字、连字符、下划线'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理员账户已创建 — 欢迎使用 Grav'
@@ -1083,6 +1090,8 @@ ICU:
             TABLE: 表格
             USERNAME: 用户名
             PERMISSIONS: 权限
+            'OFF': 关闭
+            'ON': 开启
         2FA_ENABLED: 已启用2FA
         2FA_SECRET: 2FA密钥
         2FA_SECRET_HELP: '将此二维码扫描到您的[身份验证器应用](https://learn.getgrav.org/admin-panel/2fa#apps)中。同时，最好将密钥备份到安全位置，以防您需要重新安装应用。查看[Grav文档](https://learn.getgrav.org/admin-panel/2fa)了解更多信息'
@@ -1839,3 +1848,7 @@ ICU:
         'YES': 是
         YUBIKEY_HELP: '将您的 YubiKey 插入计算机，然后单击按钮生成 OTP。前 12 个字符是您的客户端 ID，将被保存。'
         YUBIKEY_ID: 'YubiKey ID'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: '位于 user/data、user/accounts 和 user/config 下的文件可以直接通过 HTTP 下载，包括证书、密钥、令牌和数据库。这通常意味着您的 Web 服务器没有正确应用 Grav 的 .htaccess 规则。'
+            USER_FOLDER_EXPOSED_LEARN_MORE: '如何确保您的 Web 服务器安全'
+            USER_FOLDER_EXPOSED_TITLE: '安全风险：您的用户数据文件夹可从 Web 直接访问'

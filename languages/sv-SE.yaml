@@ -707,6 +707,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Användare kan åsidosätta'
             OTHER_LIST_VIEWS: 'Övriga listvyer'
             OTHER_LIST_VIEWS_DESC: 'Standardlayout för användar-, insticksprogram- och temalistor'
+            EDITOR_HEIGHT: 'Redigerarens höjd'
+            EDITOR_HEIGHT_AUTO: Auto
+            EDITOR_HEIGHT_DESC: 'Låt redigeraren växa med ditt innehåll, eller begränsa den till en fast höjd med ett eget rullningsfält.'
+            EDITOR_HEIGHT_FIXED: Fast
+            EDITOR_SECTION_DESC: 'Hur Markdown-redigeraren beter sig medan du skriver.'
+            STICKY_TOOLBAR: 'Fäst verktygsfält'
+            STICKY_TOOLBAR_DESC: 'Behåll formateringsverktygsfältet och förhandsgranskningsknappen synliga när du rullar.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
@@ -1083,6 +1090,8 @@ ICU:
             TABLE: Tabell
             USERNAME: Användarnamn
             PERMISSIONS: Behörigheter
+            'OFF': Av
+            'ON': På
         2FA_ENABLED: '2FA aktiverad'
         2FA_SECRET: 2FA-hemlighet
         2FA_SECRET_HELP: 'Skanna denna QR-kod in i din [autentiseringsapp](https://learn.getgrav.org/admin-panel/2fa#apps). Det är också en bra idé att säkerhetskopiera hemligheten på en säker plats, för att du ska kunna installera om din app. Kolla [Grav-dokumentationen](https://learn.getgrav.org/admin-panel/2fa) för mer information'
@@ -1839,3 +1848,7 @@ ICU:
         'YES': Ja
         YUBIKEY_HELP: 'Sätt in din YubiKey i datorn och klicka på knappen för att generera en OTP. De första 12 tecknen är ditt klient-ID och kommer att sparas.'
         YUBIKEY_ID: YubiKey-ID
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Filer under user/data, user/accounts och user/config kan laddas ner direkt via HTTP — inklusive certifikat, nycklar, tokens och databaser. Detta innebär vanligtvis att din webbserver inte tillämpar Gravs .htaccess-regler.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Hur du säkrar din webbserver'
+            USER_FOLDER_EXPOSED_TITLE: 'Säkerhetsrisk: dina användardatamappar är åtkomliga från webben'
