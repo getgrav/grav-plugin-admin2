@@ -1,10 +1,11 @@
 # v2.0.0-rc.15
-## 06/13/2026
+## 06/15/2026
 
 1. [](#new)
     * The Markdown editor can now keep its toolbar pinned in view as you scroll, and optionally hold a fixed height with its own scrollbar, both configurable in Settings ([#37](https://github.com/getgrav/grav-plugin-admin2/issues/37)).
     * The Dashboard now shows a prominent warning when your `user/data`, `user/accounts` and `user/config` folders are downloadable over the web, catching a misconfigured webserver before it leaks certificates, keys or databases.
     * Plugin settings pages can now show a custom save notification supplied by the plugin, including longer-lived or dismiss-required messages, instead of always the generic saved message ([#38](https://github.com/getgrav/grav-plugin-admin2/issues/38)).
+    * Plugin sidebar items can now show a live count badge that refreshes on its own, instead of only a fixed number set when the page loads ([#42](https://github.com/getgrav/grav-plugin-admin2/issues/42)).
 2. [](#bugfix)
     * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
     * **Required custom fields provided by plugins now block saving while they are empty too**, the same as the built-in fields ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
@@ -15,6 +16,7 @@
     * Turning the Folder Numeric Prefix on now places the page last in its folder by giving it a prefix one past the highest among its siblings.
     * The page editor's Page Info panel now shows the page's folder name, making numeric-prefix and ordering issues easier to spot.
     * Uploading a file or image to a flex object now saves it to that object instead of failing with a Method Not Allowed error ([flex-objects#216](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/216)).
+    * A plugin page built as a custom component can now control its own Save button, which previously stayed greyed out and unusable ([#40](https://github.com/getgrav/grav-plugin-admin2/issues/40)).
 
 # v2.0.0-rc.14
 ## 06/09/2026
