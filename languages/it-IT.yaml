@@ -707,6 +707,13 @@ ICU:
             USERS_MAY_OVERRIDE: "Gli utenti possono eseguire l'override"
             OTHER_LIST_VIEWS: 'Altre visualizzazioni elenco'
             OTHER_LIST_VIEWS_DESC: 'Layout predefinito per gli elenchi di utenti, plugin e temi'
+            EDITOR_HEIGHT: "Altezza dell'editor"
+            EDITOR_HEIGHT_AUTO: Automatico
+            EDITOR_HEIGHT_DESC: "Lascia che l'editor si espanda in base al contenuto, oppure imposta un'altezza fissa con la propria barra di scorrimento."
+            EDITOR_HEIGHT_FIXED: Fissa
+            EDITOR_SECTION_DESC: "Come si comporta l'editor Markdown mentre scrivi."
+            STICKY_TOOLBAR: 'Barra degli strumenti fissa'
+            STICKY_TOOLBAR_DESC: 'Mantieni la barra degli strumenti di formattazione e il pulsante di anteprima in vista mentre scorri.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caratteri: lettere, numeri, trattini, sottolineature'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Account amministratore creato — benvenuto in Grav'
@@ -1083,6 +1090,8 @@ ICU:
             TABLE: Tabella
             USERNAME: 'Nome utente'
             PERMISSIONS: Permessi
+            'OFF': Disattivato
+            'ON': Attivato
         2FA_ENABLED: '2FA Abilitato'
         2FA_SECRET: 'Segreto 2FA'
         2FA_SECRET_HELP: "Scansiona questo codice QR nella tua [App Authenticator](https://learn.getgrav.org/admin-panel/2fa#apps). È anche una buona idea eseguire il backup del segreto in un luogo sicuro, nel caso in cui tu debba reinstallare l'app. Consulta la [documentazione di Grav](https://learn.getgrav.org/admin-panel/2fa) per ulteriori informazioni"
@@ -1839,3 +1848,7 @@ ICU:
         'YES': Sì
         YUBIKEY_HELP: 'Inserisci la tua YubiKey nel computer e fai clic sul pulsante per generare un OTP. I primi 12 caratteri sono il tuo ID cliente e verranno salvati.'
         YUBIKEY_ID: 'ID YubiKey'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'I file nelle cartelle user/data, user/accounts e user/config possono essere scaricati direttamente via HTTP — inclusi certificati, chiavi, token e database. Questo solitamente significa che il tuo web server non sta applicando le regole del file .htaccess di Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Come proteggere il tuo web server'
+            USER_FOLDER_EXPOSED_TITLE: 'Rischio di sicurezza: le tue cartelle con i dati utente sono raggiungibili dal web'
