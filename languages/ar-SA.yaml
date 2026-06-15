@@ -858,6 +858,13 @@ ICU:
             FAILED_TO_RESET_PREFERENCES: 'فشل في إعادة تعيين التفضيلات.'
             OTHER_LIST_VIEWS: 'عروض القائمة الأخرى'
             OTHER_LIST_VIEWS_DESC: 'التخطيط الافتراضي لقوائم المستخدمين والمكونات الإضافية والمواضيع'
+            EDITOR_HEIGHT: 'ارتفاع المحرر'
+            EDITOR_HEIGHT_AUTO: تلقائي
+            EDITOR_HEIGHT_DESC: 'اجعل المحرر يتوسع مع المحتوى الخاص بك، أو قم بتثبيته عند ارتفاع محدد مع شريط تمرير خاص به.'
+            EDITOR_HEIGHT_FIXED: ثابت
+            EDITOR_SECTION_DESC: 'كيفية عمل محرر Markdown أثناء الكتابة.'
+            STICKY_TOOLBAR: 'شريط الأدوات الثابت'
+            STICKY_TOOLBAR_DESC: 'احتفظ بشريط أدوات التنسيق وزر المعاينة مثبتاً في العرض أثناء التمرير.'
         CUSTOM: مخصص
         PREVIEW: معاينة
         SETUP:
@@ -1083,6 +1090,8 @@ ICU:
             TABLE: جدول
             USERNAME: 'اسم المستخدم'
             PERMISSIONS: الأذونات
+            'OFF': إيقاف
+            'ON': تشغيل
         2FA_ENABLED: 'تم تفعيل المصادقة الثنائية'
         2FA_SECRET: 'مفتاح المصادقة الثنائية'
         2FA_SECRET_HELP: 'امسح هذا الرمز الاستجابة السريعة في [تطبيق المصادقة](https://learn.getgrav.org/admin-panel/2fa#apps). من الجيد أيضاً عمل نسخة احتياطية من المفتاح في مكان آمن، في حالة احتجت إلى إعادة تثبيت التطبيق. تحقق من [وثائق Grav](https://learn.getgrav.org/admin-panel/2fa) للحصول على مزيد من المعلومات'
@@ -1839,6 +1848,10 @@ ICU:
         'YES': نعم
         YUBIKEY_HELP: 'أدخل مفتاح YubiKey في جهازك وانقر على الزر لإنشاء كلمة مرور لمرة واحدة. الأحرف الاثني عشر الأولى هي معرف العميل الخاص بك وسيتم حفظها.'
         YUBIKEY_ID: 'معرف YubiKey'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'يمكن تنزيل الملفات الموجودة تحت user/data و user/accounts و user/config مباشرة عبر HTTP — بما في ذلك الشهادات والمفاتيح والرموز وقواعد البيانات. هذا يعني عادةً أن خادم الويب الخاص بك لا يطبق قواعد .htaccess الخاصة بـ Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'كيفية تأمين خادم الويب الخاص بك'
+            USER_FOLDER_EXPOSED_TITLE: 'خطر أمني: مجلدات بيانات المستخدم الخاصة بك يمكن الوصول إليها من الويب'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA مُفعَّل'
         2FA_SECRET: 'سرّ 2FA'
