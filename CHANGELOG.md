@@ -1,5 +1,5 @@
 # v2.0.0-rc.15
-## 06/15/2026
+## 06/16/2026
 
 1. [](#new)
     * The Markdown editor can now keep its toolbar pinned in view as you scroll, and optionally hold a fixed height with its own scrollbar, both configurable in Settings ([#37](https://github.com/getgrav/grav-plugin-admin2/issues/37)).
