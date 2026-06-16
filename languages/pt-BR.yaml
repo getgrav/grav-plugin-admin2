@@ -1,0 +1,1862 @@
+ICU:
+    ADMIN_NEXT:
+        2FA_ENABLED: '2FA Ativado'
+        2FA_SECRET: 'Segredo 2FA'
+        2FA_SECRET_HELP: 'Escaneie este código QR em seu [Aplicativo de Autenticação](https://learn.getgrav.org/admin-panel/2fa#apps). Também é uma boa ideia fazer backup do segredo em um local seguro, caso precise reinstalar seu aplicativo. Verifique a [documentação do Grav](https://learn.getgrav.org/admin-panel/2fa) para mais informações.'
+        2FA_TITLE: 'Autenticação de Dois Fatores'
+        ABSOLUTE_URLS: 'URLs Absolutas'
+        ABSOLUTE_URLS_HELP: 'URLs absolutas ou relativas para `base_url`'
+        ACCESS: Acesso
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Acesso Negado'
+        ACCESS_LEVELS: 'Níveis de Acesso'
+        ACCOUNT: Conta
+        ACCOUNTS: Contas
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Falha ao carregar a configuração das contas'
+            FAILED_TO_SAVE: 'Falha ao salvar a configuração das contas'
+            MODIFIED_ELSEWHERE: 'A configuração foi modificada em outro lugar. Por favor, recarregue.'
+            NO_FIELDS: 'Nenhuma opção de configuração disponível.'
+            PAGE_TITLE: 'Configuração de Contas — Grav Admin'
+            SAVED: 'Configuração salva'
+            TITLE: 'Configuração de Contas'
+        ACCOUNTS_CONFIGURATION: 'Configuração de Contas'
+        ACCOUNTS_STORAGE: 'Armazenamento de Contas'
+        ACCOUNTS_STORAGE_HELP: "O mecanismo de armazenamento a ser usado para o tipo de Conta Flex Object. 'Arquivos' é a abordagem tradicional onde as contas são armazenadas em um arquivo YAML em uma única pasta, enquanto 'Pasta' cria uma nova pasta para cada conta"
+        ACCOUNTS_TYPE: 'Tipo de Contas'
+        ACCOUNTS_TYPE_HELP: 'Sistema Flex Object para armazenar contas de usuário'
+        ACTIVATE: Ativar
+        ACTIVE: Ativo
+        ACTIVE_LANGUAGE_IN_SESSION: 'Idioma ativo na sessão'
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: 'Armazena o idioma ativo na sessão'
+        ADD: Adicionar
+        ADD_ACCOUNT: 'Adicionar conta'
+        ADD_PAGE: 'Adicionar página'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Adicionar plugin'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Falha ao carregar plugins disponíveis do GPM'
+            FILTER_PLUGINS: 'Filtrar plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecione um plugin para ver detalhes'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Adicionar tema'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Falha ao carregar temas disponíveis do GPM'
+            FILTER_THEMES: 'Filtrar temas...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecione um tema para ver detalhes'
+        ADMIN_CHILDREN_DISPLAY_ORDER: 'Ordem de exibição dos filhos'
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: "A ordem na qual os filhos desta página devem ser exibidos na visualização 'Páginas' do plugin Admin"
+        ADMIN_SPECIFIC_OVERRIDES: 'Sobrescritas específicas do Admin'
+        ADVANCED: Avançado
+        ALLOWED: Permitido
+        ALLOW_URL_TAXONOMY_FILTERS: 'Filtros de taxonomia de URL'
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: 'Coleções baseadas em página permitem que você filtre via `/taxonomia:valor`.'
+        ALLOW_WEBSERVER_GZIP: 'Permitir Gzip do servidor web'
+        ALLOW_WEBSERVER_GZIP_HELP: 'Desligado por padrão. Quando ativado, a compressão Gzip/Deflate configurada no servidor web funcionará, mas a conexão http não será fechada antes do evento onShutDown(), causando um carregamento de página mais lento'
+        ALL_CHANGES_SAVED: 'Todas as alterações foram salvas'
+        API_KEYS_FIELD:
+            API_KEYS: 'Chaves de API'
+            API_KEY_GENERATED: 'Chave de API gerada'
+            BLANK_NEVER: '(vazio = nunca)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Copie esta chave agora — ela não será exibida novamente.'
+            CREATED: Criado
+            EXPIRES: Expira
+            EXPIRY: Expiração
+            E_G_MY_CLI_TOOL: 'ex.: Minha Ferramenta CLI'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Falha ao copiar para a área de transferência'
+            FAILED_TO_GENERATE_API_KEY: 'Falha ao gerar a chave de API'
+            FAILED_TO_LOAD_API_KEYS: 'Falha ao carregar as chaves de API'
+            FAILED_TO_REVOKE_API_KEY: 'Falha ao revogar a chave de API'
+            GENERATE_KEY: 'Gerar Chave'
+            GENERATING: Gerando...
+            KEY_NAME: 'Nome da Chave'
+            KEY_PREFIX: 'Prefixo da Chave'
+            LAST_USED: 'Último Uso'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Nenhuma chave de API foi gerada ainda.'
+            PLEASE_ENTER_A_KEY_NAME: 'Por favor, insira um nome para a chave'
+            REVOKE_API_KEY: 'Revogar Chave de API'
+            REVOKE_KEY: 'Revogar chave'
+        APP:
+            CREATING_BACKUP: 'Criando backup…'
+            DASHBOARD_GRAV_ADMIN: 'Painel — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Atualizar
+            WELCOME_BACK: 'Bem-vindo de volta, {name}'
+        APPEND_URL_EXT: 'Anexar extensão de URL'
+        APPEND_URL_EXT_HELP: 'Adicionará uma extensão personalizada à URL da Página. Observe que isso significa que o Grav procurará pelo template `<template>.<extension>.twig`'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Fechar menu'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Tem certeza?'
+        ASCENDING: Crescente
+        ASSETS: Ativos
+        AUTHOR: Autor
+        AUTO: Automático
+        AUTOESCAPE_VARIABLES: 'Autoescape de variáveis'
+        AUTOESCAPE_VARIABLES_HELP: 'Aplica autoescape a todas as variáveis. Isso provavelmente quebrará o seu site'
+        AUTO_LINE_BREAKS: 'Quebras de linha automáticas'
+        AUTO_LINE_BREAKS_HELP: 'Habilitar suporte para quebras de linha automáticas em markdown'
+        AUTO_URL_LINKS: 'Links de URL automáticos'
+        AUTO_URL_LINKS_HELP: 'Habilitar conversão automática de URLs em hiperlinks HTML'
+        AVATAR: 'Gerador de Avatar'
+        AVATAR_HASH: "NOTA: String 'hash' personalizada opcional para Avatar"
+        AVATAR_HELP: 'Multiavatar é um avatar gerado localmente. Gravatar é um serviço externo que usa seu endereço de e-mail para buscar um Avatar pré-configurado remotamente'
+        BACK: Voltar
+        BACKUPS: Backups
+        BACKUPS_HISTORY: 'Histórico de Backups'
+        BACKUPS_MAX_COUNT: 'Número Máximo de Backups'
+        BACKUPS_MAX_RETENTION_TIME: 'Tempo Máximo de Retenção'
+        BACKUPS_MAX_RETENTION_TIME_APPEND: 'em Dias'
+        BACKUPS_MAX_SPACE: 'Espaço Máximo para Backups'
+        BACKUPS_PROFILES: 'Perfis de Backup'
+        BACKUPS_PROFILE_ENVIRONMENT: Ambiente
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: 'Contexto do ambiente do Grav em que o backup agendado é executado.'
+        BACKUPS_PROFILE_EXCLUDE_FILES: 'Excluir Arquivos'
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: 'Arquivos ou pastas específicos para excluir, um por linha'
+        BACKUPS_PROFILE_EXCLUDE_PATHS: 'Excluir Caminhos'
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: 'Caminhos absolutos para excluir, um por linha'
+        BACKUPS_PROFILE_NAME: 'Nome do Backup'
+        BACKUPS_PROFILE_ROOT_FOLDER: 'Pasta Raiz'
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: 'Pode ser um caminho absoluto ou um stream'
+        BACKUPS_PROFILE_SCHEDULE: 'Habilitar Tarefa Agendada'
+        BACKUPS_PROFILE_SCHEDULE_AT: 'Executar Tarefa Agendada'
+        BACKUPS_PURGE_CONFIG: 'Configuração de Limpeza de Backup'
+        BACKUPS_STORAGE_PURGE_TRIGGER: 'Gatilho de Limpeza de Armazenamento de Backup'
+        BACKUPS_WIDGET:
+            BACKING_UP: 'Realizando backup…'
+            BACKUP_NOW: Novo
+            CREATE_A_NEW_BACKUP_NOW: 'Criar um novo backup agora'
+            DOWNLOAD_FILE: 'Baixar {filename}'
+            NO_BACKUPS_FOUND: 'Nenhum backup encontrado'
+        BODY_CLASSES: 'Classes do corpo (body)'
+        CACHE_ALL: 'Cache de todas as imagens'
+        CACHE_ALL_HELP: 'Executar todas as imagens através do sistema de cache do Grav, mesmo que não possuam manipulações de mídia'
+        CACHE_CHECK_INTERVAL: 'Intervalo de Verificação de Cache'
+        CACHE_CHECK_INTERVAL_HELP: 'Segundos para reutilizar o hash do sistema de arquivos calculado anteriormente antes de verificar novamente. Zero mantém as verificações existentes por solicitação.'
+        CACHE_CHECK_METHOD: 'Método de verificação de cache'
+        CACHE_CHECK_METHOD_HELP: 'Selecione o método que o Grav usa para verificar se os arquivos de página foram modificados.'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: 'Opções de cache'
+            CLEAR_CACHE: 'Limpar cache'
+            FAILED_TO_CLEAR_CACHE: 'Falha ao limpar o cache'
+        CACHE_CLEAR_JOB: 'Executar tarefa de limpeza agendada'
+        CACHE_CLEAR_JOB_HELP: 'Com o agendador, você pode limpar periodicamente o cache do Grav'
+        CACHE_CONTROL: 'HTTP Cache-Control'
+        CACHE_CONTROL_HELP: 'Defina um valor de cache-control válido, como `no-cache, no-store, must-revalidate`'
+        CACHE_DRIVER: 'Driver de cache'
+        CACHE_DRIVER_HELP: "Escolha qual driver de cache o Grav deve usar. 'Auto Detect' tenta encontrar o melhor para você"
+        CACHE_JOB_TYPE: 'Tipo de tarefa de cache'
+        CACHE_JOB_TYPE_HELP: "Limpar com a limpeza de pastas 'standard', ou com 'all' (todas) as pastas"
+        CACHE_PERMS: 'Permissões de cache'
+        CACHE_PERMS_HELP: 'Permissões padrão da pasta de cache. Geralmente 0755 ou 0775 dependendo da configuração'
+        CACHE_PREFIX: 'Prefixo de cache'
+        CACHE_PREFIX_HELP: 'Um identificador para parte da chave do Grav. Não altere a menos que saiba o que está fazendo.'
+        CACHE_PREFIX_PLACEHOLDER: 'Derivado da URL base (sobrescreva inserindo uma string aleatória)'
+        CACHE_PURGE_AGE: 'Idade de purga do cache'
+        CACHE_PURGE_AGE_HELP: 'Purgar todos os itens de cache mais antigos que esta idade (em segundos)'
+        CACHE_PURGE_JOB: 'Executar tarefa de purga agendada'
+        CACHE_PURGE_JOB_HELP: 'Com o agendador, você pode limpar periodicamente pastas antigas de cache de arquivo do Doctrine com esta tarefa'
+        CACHING: Cache
+        CACHING_HELP: 'Interruptor global ON/OFF para ativar/desativar o cache do Grav'
+        CANCEL: Cancelar
+        CHARACTERS: caracteres
+        CLEAR_IMAGES_BY_DEFAULT: 'Limpar cache de imagens por padrão'
+        CLEAR_IMAGES_BY_DEFAULT_HELP: 'Por padrão, as imagens processadas são limpas em todas as limpezas de cache; isso pode ser desativado'
+        CLEAR_SEARCH: 'Limpar busca'
+        CLI_COMPATIBILITY: 'Compatibilidade com CLI'
+        CLI_COMPATIBILITY_HELP: 'Garante que apenas drivers de cache não voláteis sejam usados (arquivo, redis, memcache, etc.)'
+        CLOSE: Fechar
+        COLLAPSE_ALL: 'Recolher tudo'
+        COLLAPSE_SIDEBAR: 'Recolher barra lateral'
+        COLLECTIONS: Coleções
+        COMMAND: Comando
+        COMPATIBILITY: Compatibilidade
+        CONFIG:
+            CLEAR_FILTER: 'Limpar filtro'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Configuração alterada em outro lugar — salve para sobrescrever ou recarregue'
+            CONFIGURATION_RELOADED: 'Configuração recarregada'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Configuração salva com sucesso'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'A configuração foi modificada em outro lugar. Recarregue para ver as alterações mais recentes.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Falha ao salvar a configuração'
+            FILTER_FIELDS: 'Filtrar campos...'
+            LOADING_CONFIGURATION: 'Carregando configuração...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Nenhum blueprint de configuração disponível para este escopo.'
+            NO_MATCHES_FOUND: 'Nenhuma correspondência encontrada'
+            OVERRIDE:
+                DEFAULT_EMPTY: vazio
+                RESET_BUTTON: 'Redefinir substituições'
+                RESET_CONFIRM: Redefinir
+                RESET_DONE: 'Substituições redefinidas'
+                RESET_MESSAGE: 'Isso remove todas as substituições em {scope} e restaura os valores herdados. Isso não pode ser desfeito.'
+                RESET_TITLE: 'Redefinir todas as substituições?'
+                RESET_TOOLTIP: 'Remover todas as substituições e restaurar os valores herdados'
+                REVERTED: 'Revertido para o valor herdado'
+                REVERT_FAILED: 'Não foi possível reverter'
+                REVERT_TOOLTIP: 'Substitui o padrão ({value}). Clique para reverter.'
+            PAGE_TITLE: 'Configuração: {scope} — Grav Admin'
+            RELOAD: Recarregar
+            TITLE: Configuração
+            TITLE_SCROLLED: 'Configuração: {scope}'
+        CONFIGURATION: Configuração
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Ambiente
+            EXPORT_YAML: 'Exportar YAML'
+            GRAV_VERSION: 'Versão do Grav'
+            LOADING_SYSTEM_INFORMATION: 'Carregando informações do sistema...'
+            PHP_CONFIGURATION: 'Configuração do PHP'
+            PHP_EXTENSIONS: 'Extensões PHP'
+            PHP_VERSION: 'Versão do PHP'
+            SERVER: Servidor
+            SERVER_SOFTWARE: 'Software do Servidor'
+        CONFIRM_ACTION: 'Confirmar Ação'
+        CONFIRM_DELETE: 'Excluir «{title}» em {route}?'
+        CONTENT: Conteúdo
+        CONTENT_EDITOR: 'Editor de Conteúdo'
+        CONTENT_EDITOR_HELP: 'Editores personalizados podem ser preferidos para a edição de conteúdo'
+        CONTENT_FALLBACK_LANGUAGE_HELP: 'Especifique o código do idioma que você deseja personalizar.'
+        CONTENT_LANGUAGE_FALLBACK: 'Idiomas de Fallback'
+        CONTENT_LANGUAGE_FALLBACKS: 'Fallback de Idioma de Conteúdo'
+        CONTENT_LANGUAGE_FALLBACKS_HELP: 'Por padrão, se o conteúdo não estiver traduzido, o Grav exibirá o conteúdo no idioma padrão. Use esta configuração para substituir esse comportamento por idioma.'
+        CONTENT_LANGUAGE_FALLBACK_HELP: 'Por favor, insira uma lista de códigos de idioma. Note que se você omitir o código do idioma padrão, ele não será usado.'
+        COPY: Copiar
+        COPY_BUTTON:
+            COPIED: Copiado!
+            COPY: Copiar
+        CREATE: Criar
+        CSS_ASSETS: 'Ativos CSS'
+        CSS_MINIFY: 'Minificação de CSS'
+        CSS_MINIFY_HELP: 'Minificar o CSS durante o pipeline'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'Substituição de minificação de CSS no Windows'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Substituição de minificação para plataformas Windows. Falso por padrão devido ao ThreadStackSize'
+        CSS_PIPELINE: 'Pipeline de CSS'
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'Renderizar pipeline de CSS primeiro'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: 'Renderizar o pipeline de CSS antes de quaisquer outras referências de CSS que não estão incluídas'
+        CSS_PIPELINE_HELP: 'O pipeline de CSS é a unificação de múltiplos recursos CSS em um único arquivo'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: 'Incluir externos no pipeline de CSS'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: 'URLs externas às vezes possuem referências de arquivos relativas e não devem ser incluídas no pipeline'
+        CSS_REWRITE: 'Reescrita de CSS'
+        CSS_REWRITE_HELP: 'Reescrever quaisquer URLs relativas de CSS durante o pipeline'
+        CURL: cURL
+        CUSTOM: Personalizado
+        CUSTOM_BASE_URL: 'URL base personalizada'
+        CUSTOM_BASE_URL_HELP: 'Use se você quiser reescrever o domínio do site ou usar uma subpasta diferente daquela usada pelo Grav. Exemplo: http://localhost'
+        CUSTOM_REDIRECTS: 'Redirecionamentos Personalizados'
+        CUSTOM_REDIRECTS_HELP: 'rotas para redirecionar para outras páginas. Substituição de Regex padrão é válida'
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /seu/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /seu/redirecionamento
+        CUSTOM_ROUTES: 'Rotas Personalizadas'
+        CUSTOM_ROUTES_HELP: 'rotas para criar alias para outras páginas. Substituição de Regex padrão é válida'
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /seu/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /sua/rota
+        DASHBOARD:
+            ADD_WIDGET: 'Adicionar um widget'
+            CUSTOMIZE: Personalizar
+            CUSTOMIZE_TITLE: 'Personalizar painel'
+            EDIT_HINT: 'Modo de personalização — arraste, redimensione, oculte widgets e depois salve.'
+            EMPTY: 'Seu painel está vazio'
+            EMPTY_HINT: 'Clique no ícone de lápis acima para adicionar widgets'
+            HIDE_WIDGET: 'Ocultar widget'
+            LAYOUT_RESET: 'Layout redefinido para o padrão'
+            LAYOUT_SAVED: 'Layout do painel salvo'
+            PICKER_EMPTY: 'Todos os widgets disponíveis já estão no seu painel.'
+            PICKER_SUBTITLE: 'Escolha um widget para adicionar de volta ao seu painel.'
+            PICKER_TITLE: 'Adicionar um widget'
+            PRESETS: Predefinições
+            PRESET_COMPACT: Compacto
+            PRESET_COMPACT_DESC: 'Todos os widgets no menor tamanho suportado por cada um.'
+            PRESET_DEFAULT: Padrão
+            PRESET_DEFAULT_DESC: 'Layout recomendado pelo servidor — limpa suas personalizações.'
+            PRESET_MINIMAL: Mínimo
+            PRESET_MINIMAL_DESC: 'Apenas estatísticas e páginas recentes.'
+            RESET_LAYOUT: 'Redefinir meu layout'
+            SAVE_SITE_DEFAULT: 'Salvar como padrão do site'
+            SITE_LAYOUT_SAVED: 'Padrão do site salvo'
+            TITLE: Painel
+            WIDGETS:
+                BACKUPS: Backups
+                NEWS_FEED: 'Feed de Notícias'
+                NOTIFICATIONS: Notificações
+                POPULARITY: 'Visualizações de Página'
+                RECENT_PAGES: 'Páginas Recentes'
+                STATS: 'Estatísticas do Site'
+                SYSTEM_HEALTH: 'Saúde do Sistema'
+                TOP_PAGES: 'Páginas Mais Acessadas'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Arraste para reordenar'
+        DATE: Data
+        DATE_BASED_PUBLISHING: 'Publicação baseada em data'
+        DATE_BASED_PUBLISHING_HELP: 'Publicar/despublicar posts automaticamente com base em suas datas'
+        DATE_HELP: 'A variável de data permite que você defina especificamente uma data associada a esta página.'
+        DEBUGGER: Depurador
+        DEBUGGER_CENSORED: 'Censurar Dados Sensíveis'
+        DEBUGGER_CENSORED_HELP: 'APENAS Provedor Clockwork: Se Sim, censura informações potencialmente sensíveis (parâmetros POST, cookies, arquivos, configuração e a maioria dos dados de array/objeto em mensagens de log)'
+        DEBUGGER_CLOCKWORK: 'Extensão de Navegador Clockwork'
+        DEBUGGER_DEBUGBAR: 'PHP Debug Bar'
+        DEBUGGER_HELP: 'Habilitar o depurador do Grav e as seguintes configurações'
+        DEBUGGER_PROVIDER: 'Provedor do depurador'
+        DEBUGGER_PROVIDER_HELP: 'O padrão é a PHP Debug Bar, mas a extensão de navegador Clockwork oferece uma abordagem menos intrusiva'
+        DEFAULT: Padrão
+        DEFAULTS: Padrões
+        DEFAULT_AUTHOR: 'Autor padrão'
+        DEFAULT_AUTHOR_HELP: 'Um nome de autor padrão, frequentemente usado em temas ou conteúdo de página'
+        DEFAULT_CHILD_TYPE: 'Tipo de filho padrão'
+        DEFAULT_DATE_FORMAT: 'Formato de data da página'
+        DEFAULT_DATE_FORMAT_HELP: 'Formato de data da página usado pelo Grav. Por padrão, o Grav tenta adivinhar o seu formato de data, no entanto, você pode especificar um formato usando a sintaxe de data do PHP (por exemplo: Y-m-d H:i)'
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: 'Adivinhar automaticamente'
+        DEFAULT_EMAIL: 'E-mail padrão'
+        DEFAULT_EMAIL_HELP: 'Um e-mail padrão para referência em temas ou páginas'
+        DEFAULT_IMAGE_QUALITY: 'Qualidade de imagem padrão'
+        DEFAULT_IMAGE_QUALITY_HELP: 'Qualidade de imagem padrão a ser usada ao reamostrar ou armazenar imagens em cache (85%)'
+        DEFAULT_LANG: 'Substituir idioma padrão'
+        DEFAULT_LANG_HELP: 'O padrão é o primeiro idioma suportado. Isso pode ser substituído definindo esta opção, mas deve ser um dos idiomas suportados'
+        DEFAULT_ORDERING: 'Ordenação padrão'
+        DEFAULT_ORDERING_DATE: 'Data - com base no campo de data no cabeçalho'
+        DEFAULT_ORDERING_DEFAULT: 'Padrão - com base no nome da pasta'
+        DEFAULT_ORDERING_FOLDER: 'Pasta - com base no nome da pasta sem prefixo'
+        DEFAULT_ORDERING_HELP: 'As páginas em uma lista serão renderizadas usando esta ordem, a menos que seja substituída'
+        DEFAULT_ORDERING_TITLE: 'Título - com base no campo de título no cabeçalho'
+        DEFAULT_ORDER_DIRECTION: 'Direção de ordenação padrão'
+        DEFAULT_ORDER_DIRECTION_HELP: 'A direção das páginas em uma lista'
+        DEFAULT_PAGE_COUNT: 'Contagem de páginas padrão'
+        DEFAULT_PAGE_COUNT_HELP: 'Contagem máxima padrão de páginas em uma lista'
+        DEFAULT_THEME: 'Tema padrão'
+        DEFAULT_THEME_HELP: 'Defina o tema padrão para o Grav usar (o padrão é o Antimatter)'
+        DELETE: Excluir
+        DELIMITER: Delimitador
+        DELIMITER_HELP: "O delimitador de resumo (padrão '===')"
+        DENIED: Negado
+        DEPENDENCIES: Dependências
+        DESCENDING: Decrescente
+        DESCRIPTION: Descrição
+        DETAILS: Detalhes
+        DETECT_CHANGES: 'Detectar alterações'
+        DETECT_CHANGES_HELP: 'O Twig recompilará automaticamente o cache do Twig se detectar quaisquer alterações nos modelos Twig'
+        DISABLE: Desativar
+        DISABLED: Desativado
+        DISMISS: Dispensar
+        DISPLAY_ERRORS: 'Exibir erros'
+        DISPLAY_ERRORS_HELP: 'Exibir página de erro completa com rastreamento (backtrace)'
+        DISPLAY_NAME: 'Nome de exibição'
+        DISPLAY_TEMPLATE: 'Modelo de exibição'
+        DONE: Concluído
+        DOWNLOAD: Download
+        EDIT: Editar
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: 'Predefinições de layout'
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Salvar como padrão do site para todos os usuários'
+        EMAIL: E-mail
+        EMAIL_VALIDATION_MESSAGE: 'Deve ser um endereço de e-mail válido'
+        ENABLED: Habilitado
+        ENABLED_HELP: 'Habilitar resumo da página (o resumo retorna o mesmo conteúdo da página)'
+        ENABLED_SRI_ON_ASSETS: 'Habilitar SRI em recursos'
+        ENABLED_SRI_ON_ASSETS_HELP: 'Habilitar SRI de recursos'
+        ENABLED_TIMESTAMPS_ON_ASSETS: 'Habilitar timestamps em recursos'
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: 'Habilitar timestamps de recursos'
+        ENABLE_AUTO_METADATA: 'Metadados automáticos de Exif'
+        ENABLE_AUTO_METADATA_HELP: 'Gerar automaticamente arquivos de metadados para imagens com informações exif'
+        ENABLE_MEDIA_TIMESTAMP: 'Habilitar timestamps na mídia'
+        ENABLE_MEDIA_TIMESTAMP_HELP: 'Anexa um timestamp baseado na data da última modificação a cada item de mídia'
+        ENVIRONMENT_SWITCHER:
+            CONFIRM_DELETE: 'Excluir {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Excluir {name} e todas as suas sobrescritas de configuração?'
+            CREATE: Criar
+            CREATES_PATH: 'Cria user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Criar ambiente…'
+            CREATE_ENV_NAMED: 'Criar ambiente «{name}»…'
+            DEFAULT: Padrão
+            DELETE: Excluir
+            DELETE_ENV_TOOLTIP: 'Excluir ambiente {name}'
+            ENV_CREATED: 'Ambiente {name} criado e selecionado'
+            ENV_DELETED: 'Ambiente {name} excluído'
+            FAILED_TO_CREATE: 'Falha ao criar ambiente'
+            FAILED_TO_DELETE: 'Falha ao excluir ambiente'
+            HAS_OVERRIDES: 'possui substituições'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'não existe mais. Escolha outro.'
+            SAVE_CONFIG_TO: 'Ambiente ativo'
+            SAVING_TO_DEFAULT: 'Salvando no padrão (user/config)'
+            SAVING_TO_ENV: 'Salvando no ambiente: {name}'
+            SELECTED_ENV: 'Ambiente selecionado'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Selecione o ambiente ativo — controla qual configuração você vê e para onde as alterações são salvas'
+            SWITCH_AND_RELOAD: 'Alternar e recarregar'
+            SWITCH_DISCARDS_UNSAVED: 'Alternar o ambiente recarrega o admin e descarta alterações não salvas. Continuar?'
+        ERROR_FULL_BACKTRACE: 'Rastreamento completo do erro'
+        ERROR_HANDLER: 'Manipulador de erros'
+        ERROR_SIMPLE: 'Erro simples'
+        ERROR_SYSTEM: 'Erro do sistema'
+        ESCAPE_MARKUP: 'Escapar marcação'
+        ESCAPE_MARKUP_HELP: 'Escapar tags de marcação para entidades HTML'
+        ETAG: ETag
+        ETAG_HELP: 'Define o cabeçalho etag para ajudar a identificar quando uma página foi modificada'
+        EVENTS: Eventos
+        EVENTS_HELP: 'Ativar ou desativar eventos específicos. Desativá-los pode quebrar plugins'
+        EXPAND_ALL: 'Expandir tudo'
+        EXPAND_SIDEBAR: 'Expandir barra lateral'
+        EXPERIMENTAL: Experimental
+        EXPERT_MODE: 'Modo especialista'
+        EXPIRES: Expira
+        EXPIRES_HELP: 'Define o cabeçalho de expiração. O valor é em segundos.'
+        EXTERNAL: 'Página Externa'
+        EXTERNAL_URL: 'URL Externa'
+        EXTRA_ARGUMENTS: 'Argumentos Extras'
+        FALLBACK_TYPES: 'Tipos de fallback permitidos'
+        FALLBACK_TYPES_HELP: 'Tipos de arquivo permitidos que podem ser encontrados se acessados via rota da Página. O padrão é qualquer tipo de mídia suportado.'
+        FIELDS:
+            ADD_ENTRY: 'Adicionar entrada'
+            CLEAR_DATE: 'Limpar data'
+            CRON:
+                AT_MINUTE: 'No minuto'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min hr dom mon dow'
+                ON_DAY: 'No dia'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Gatilhos Ativos'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Falha ao carregar o status do agendador'
+                FAILED_TO_RUN_SCHEDULER: 'Falha ao executar o agendador'
+                HEALTH_STATUS: 'Status de Saúde'
+                JOB_ID: 'ID do Trabalho'
+                LAST_RUN: 'Última Execução'
+                LOADING_SCHEDULER_STATUS: 'Carregando status do agendador...'
+                NOT_CONFIGURED: 'NÃO CONFIGURADO'
+                NOT_ENABLED: 'NÃO ATIVADO'
+                NOT_INSTALLED: 'NÃO INSTALADO'
+                NO_SCHEDULED_JOBS_REGISTERED: 'Nenhum trabalho agendado registrado.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Nenhum gatilho ativo! Ative webhooks ou configure o cron.'
+                QUEUE_SIZE: 'Tamanho da Fila:'
+                RUNNING: Executando...
+                RUN_ALL: 'Executar tudo'
+                SCHEDULED_JOBS: 'Tarefas agendadas'
+                SCHEDULER_RUN_COMPLETED: 'Execução do agendador concluída'
+                SCHEDULER_STATUS: 'Status do agendador'
+                STATUS: 'Status:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Carregando campo personalizado...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'String de formato:'
+                SELECT_FORMAT: '— Selecione o formato —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Nenhum arquivo correspondente'
+                NO_MEDIA_UPLOADED: 'Nenhum arquivo de mídia enviado ainda'
+            FILE_PICKER_SOON: 'Seletor de arquivos — em breve'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Nenhum ícone encontrado'
+                SEARCH_ICONS: 'Pesquisar ícones...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Exibindo os primeiros 200 resultados — digite para refinar'
+            NO_TAXONOMY_TYPES: 'Nenhum tipo de taxonomia configurado'
+            PAGES:
+                FILTER_PAGES: 'Filtrar páginas...'
+                ROOT: '/ (raiz)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Verificando página...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Mídia da página indisponível'
+            PERMISSIONS:
+                NOT_SET: 'Não definido'
+                NO_PERMISSIONS_CONFIGURED: 'Nenhuma permissão configurada'
+            REGENERATE_SLUG: 'Regerar automaticamente a partir do título da página'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Nenhum campo corresponde ao seu filtro'
+            THEME_SELECT:
+                LOADING_THEMES: 'Carregando temas...'
+                SELECT_THEME: '— Selecione um tema —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Verificar status de integridade:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Forçar execução de tarefa específica (ignora o agendamento):'
+                GITHUB_ACTIONS_EXAMPLE: 'Exemplo de GitHub Actions:'
+                HOW_TO_USE_WEBHOOKS: 'Como usar webhooks:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Acionar todas as tarefas pendentes (respeita o agendamento):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Verificando status do plugin de webhook...'
+                INSTALL_PLUGIN_NOW: 'Instalar Plugin Agora'
+                OR_RUN: 'ou execute:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'o plugin está instalado e habilitado.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'o plugin está instalado. Habilite os Gatilhos de Webhook abaixo para ativar.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'o plugin é necessário para a funcionalidade de webhook.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Plugin de Webhook Necessário'
+        FILE: Arquivo
+        FILE_EXTENSION: 'Extensão de Arquivo'
+        FILE_STREAMS: 'Streams de Arquivo'
+        FLEX: 'Flex Object (EXPERIMENTAL)'
+        FLEX_ADMIN_EVENT_COMPAT: 'Compatibilidade de eventos do Admin'
+        FLEX_ADMIN_EVENT_COMPAT_HELP: 'Habilita os eventos onAdminSave e onAdminAfterSave para plugins.'
+        FLEX_CACHING: 'Cache do Flex'
+        FLEX_INDEX_CACHE_ENABLED: 'Habilitar Cache de Índice'
+        FLEX_INDEX_CACHE_LIFETIME: 'Tempo de vida do Cache de Índice (segundos)'
+        FLEX_OBJECTS:
+            ACTIONS: Ações
+            BACK_TO_LIST: 'Voltar para a lista'
+            DELETE_OBJECT: 'Excluir objeto'
+            EXPORT: Exportar
+            EXPORT_FAILED: 'Falha na exportação'
+            FAILED_TO_DELETE_OBJECT: 'Falha ao excluir o objeto'
+            FAILED_TO_LOAD_DIRECTORY: 'Falha ao carregar diretório'
+            FAILED_TO_LOAD_OBJECTS: 'Falha ao carregar objetos'
+            FAILED_TO_SAVE: 'Falha ao salvar.'
+            NEW:
+                BACK_TO_LIST: 'Voltar para a lista'
+                CREATE: Criar
+                OBJECT_CREATED: 'Objeto criado'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Objeto alterado em outro lugar — salve para sobrescrever ou recarregue'
+            OBJECT_DELETED: 'Objeto excluído'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'O objeto foi modificado em outro lugar. Por favor, recarregue.'
+            PREVIOUS: Anterior
+            SEARCH: Pesquisar...
+            INFO:
+                DIRECTORY: Diretório
+                ID: ID
+                LOCATION: Localização
+                SHOW_INFO: 'Mostrar informações do objeto'
+                STORAGE_KEY: 'Chave de armazenamento'
+                TITLE: 'Informações do objeto'
+        FLEX_OBJECT_CACHE_ENABLED: 'Ativar cache de objeto'
+        FLEX_OBJECT_CACHE_LIFETIME: 'Tempo de vida do cache de objeto (segundos)'
+        FLEX_RENDER_CACHE_ENABLED: 'Ativar cache de renderização'
+        FLEX_RENDER_CACHE_LIFETIME: 'Tempo de vida do cache de renderização (segundos)'
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Fechar menu de widgets'
+        FOLDER: Pasta
+        FOLDER_NAME: 'Nome da pasta'
+        FOLDER_NUMERIC_PREFIX: 'Prefixo numérico da pasta'
+        FOLDER_NUMERIC_PREFIX_HELP: 'Prefixo numérico que fornece ordenação manual e implica visibilidade'
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: 'Forçar URLs em letras minúsculas'
+        FORCE_LOWERCASE_URLS_HELP: 'Por padrão, o Grav definirá todos os slugs e rotas como letras minúsculas. Com essa opção definida como falso, slugs e rotas com letras maiúsculas podem ser usados'
+        FORCE_SSL: 'Forçar SSL'
+        FORCE_SSL_HELP: 'Forçar SSL globalmente; se ativado, quando o site for acessado via HTTP, o Grav enviará um redirecionamento para a página HTTPS'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Voltar para o login'
+            CHECK_INBOX: 'Verifique sua caixa de entrada para obter um link de redefinição.'
+            EMAIL_ADDRESS: 'Endereço de e-mail'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Insira um endereço de e-mail válido'
+            FORGOT_PASSWORD: 'Esqueceu a senha'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Esqueceu a senha — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Se existir uma conta para esse e-mail, um link de redefinição foi enviado.'
+            SENDING: Enviando...
+            SEND_RESET_LINK: 'Enviar link de redefinição'
+            SUBTITLE: 'Insira seu e-mail e enviaremos um link de redefinição.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Não foi possível conectar ao servidor.'
+        FORMAT: Formato
+        FORMAT_HELP: 'short = usa a primeira ocorrência do delimitador ou tamanho; long = o delimitador de resumo será ignorado'
+        FRONTMATTER_IGNORE_FIELDS: 'Ignorar campos de frontmatter'
+        FRONTMATTER_IGNORE_FIELDS_HELP: "Certos campos de frontmatter podem conter Twig, mas não devem ser processados, como 'forms'"
+        FRONTMATTER_PROCESS_TWIG: 'Processar Twig no frontmatter'
+        FRONTMATTER_PROCESS_TWIG_HELP: 'Quando ativado, você pode usar variáveis de configuração Twig no frontmatter da página'
+        FULL_NAME: 'Nome completo'
+        GENERAL_CONFIG: 'Configuração Geral de Ativos'
+        GPM_METHOD: 'Método de Busca Remota'
+        GPM_METHOD_HELP: 'Quando definido como Auto, o Grav determinará se o fopen está disponível e o usará; caso contrário, recorrerá ao cURL. Para forçar o uso de um ou outro, altere a configuração.'
+        GPM_OFFICIAL_ONLY: 'Apenas GPM Oficial'
+        GPM_OFFICIAL_ONLY_HELP: 'Permitir instalações diretas apenas a partir do repositório oficial do GPM.'
+        GPM_RELEASES: 'Lançamentos do GPM'
+        GPM_RELEASES_HELP: "Escolha 'Testing' para instalar versões beta ou de teste"
+        GPM_SECTION: 'Seção GPM'
+        GROUPS:
+            ADD_GROUP: 'Adicionar Grupo'
+            BACK_TO_GROUPS: 'Voltar para Grupos'
+            CONFIRM_DELETE_GROUP: 'Excluir o grupo «{name}»? Isso não poderá ser desfeito.'
+            CREATE: Criar
+            DELETE_GROUP: 'Excluir Grupo'
+            DESCRIPTION: Descrição
+            DISPLAY_NAME: 'Nome de exibição'
+            FAILED_TO_CREATE_GROUP: 'Falha ao criar o grupo.'
+            FAILED_TO_LOAD_GROUP: 'Falha ao carregar o grupo «{name}».'
+            FAILED_TO_LOAD_GROUPS: 'Falha ao carregar grupos'
+            FAILED_TO_SAVE_GROUP: 'Falha ao salvar o grupo.'
+            GROUPS: Grupos
+            GROUPS_GRAV_ADMIN: 'Grupos — Grav Admin'
+            GROUP_COUNT_ONE: '{n} grupo'
+            GROUP_COUNT_OTHER: '{n} grupos'
+            GROUP_CREATED: 'Grupo «{name}» criado'
+            GROUP_DELETED: 'Grupo «{name}» excluído'
+            GROUP_DELETE_FAILED: 'Falha ao excluir o grupo «{name}»'
+            GROUP_MODIFIED_ELSEWHERE: 'O grupo foi modificado em outro local. Por favor, recarregue.'
+            GROUP_NAME: 'Nome do grupo'
+            GROUP_NAME_HELP: '1–200 caracteres de letras, números, hifens ou sublinhados. Usado como a chave de armazenamento.'
+            GROUP_NAME_PLACEHOLDER: 'ex.: editores'
+            GROUP_PAGE_TITLE: '{name} — Grupos — Grav Admin'
+            GROUP_SAVED: 'Grupo «{name}» salvo'
+            NEW_GROUP: 'Novo grupo'
+            NEW_GROUP_GRAV_ADMIN: 'Novo grupo — Grav Admin'
+            NO_GROUPS: 'Nenhum grupo encontrado'
+            NO_GROUPS_MATCH_SEARCH: 'Nenhum grupo corresponde à sua pesquisa'
+            SEARCH_GROUPS: 'Pesquisar grupos...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Selecione um grupo para ver os detalhes'
+        GROUPS_HELP: 'Lista de grupos dos quais o usuário faz parte'
+        GROUP_NAME: 'Nome do grupo'
+        GZIP_COMPRESSION: 'Compressão Gzip'
+        GZIP_COMPRESSION_HELP: 'Habilitar compressão GZip da página do Grav para maior desempenho.'
+        HIDE_EMPTY_FOLDERS: 'Ocultar pastas vazias'
+        HIDE_EMPTY_FOLDERS_HELP: 'Se a pasta não tiver nenhum arquivo .md, ela deve ser ocultada na navegação, além de não ser roteável'
+        HIDE_HOME_IN_URLS: 'Ocultar rota da página inicial nas URLs'
+        HIDE_HOME_IN_URLS_HELP: 'Garantirá que as rotas padrão para quaisquer páginas sob a página inicial não referenciem a rota regular da página inicial'
+        HOMEPAGE: 'Página inicial'
+        HOME_PAGE: 'Página inicial'
+        HOME_PAGE_HELP: 'A página que o Grav usará como página de destino padrão'
+        HTTP_ACCEPT_LANGUAGE: 'Definir idioma a partir do navegador'
+        HTTP_ACCEPT_LANGUAGE_HELP: 'Você pode optar por tentar definir o idioma com base na tag de cabeçalho `http_accept_language` no navegador'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP habilitado'
+        HTTP_CF_CONNECTING_IP_HELP: 'Confiar no cabeçalho de requisição <code>CF-Connecting-IP</code> ao resolver o IP do cliente. Ative apenas quando o site estiver genuinamente atrás do Cloudflare; caso contrário, os clientes podem falsificar seus IPs. Para total segurança, restrinja também o acesso à origem aos intervalos de IP do Cloudflare no servidor web.'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP habilitado'
+        HTTP_CLIENT_IP_HELP: 'Confiar no cabeçalho de requisição <code>Client-IP</code> ao resolver o IP do cliente. Raro; geralmente definido apenas por balanceadores de carga específicos. Deixe desativado, a menos que você saiba que seu proxy define e sobrescreve este cabeçalho.'
+        HTTP_CONNECTIONS: 'Conexões HTTP'
+        HTTP_CONNECTIONS_HELP: 'O número de conexões HTTP simultâneas durante requisições multiplexadas'
+        HTTP_HEADERS: 'Cabeçalhos HTTP'
+        HTTP_SECTION: 'Seção HTTP'
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST habilitado'
+        HTTP_X_FORWARDED_HOST_HELP: 'Confiar no cabeçalho de requisição <code>X-Forwarded-Host</code>. Ative apenas quando o site estiver genuinamente atrás de um proxy reverso que define e sobrescreve este cabeçalho; caso contrário, os clientes podem falsificar o host que o Grav enxerga.'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP habilitado'
+        HTTP_X_FORWARDED_IP_HELP: 'Confiar nos cabeçalhos <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> ao resolver o IP do cliente. Ative apenas quando o site estiver genuinamente atrás de um proxy reverso que define e sobrescreve estes cabeçalhos; caso contrário, os clientes podem falsificar seu IP e contornar a limitação de taxa (rate limiting), banimentos de IP e logs de auditoria.'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT habilitado'
+        HTTP_X_FORWARDED_PORT_HELP: 'Confiar no cabeçalho de requisição <code>X-Forwarded-Port</code>. Ative apenas quando o site estiver genuinamente atrás de um proxy reverso que define e sobrescreve este cabeçalho.'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO habilitado'
+        HTTP_X_FORWARDED_PROTO_HELP: 'Confiar no cabeçalho de requisição <code>X-Forwarded-Proto</code> (tipicamente usado para detectar HTTPS atrás de um proxy de terminação TLS). Ative apenas quando o site estiver genuinamente atrás de um proxy reverso que define e sobrescreve este cabeçalho.'
+        ICON: Ícone
+        ID: ID
+        IGNORE_FILES: 'Ignorar arquivos'
+        IGNORE_FILES_HELP: 'Arquivos específicos a serem ignorados ao processar páginas'
+        IGNORE_FOLDERS: 'Ignorar pastas'
+        IGNORE_FOLDERS_HELP: 'Pastas específicas a serem ignoradas ao processar páginas'
+        IGNORE_HIDDEN: 'Ignorar ocultos'
+        IGNORE_HIDDEN_HELP: 'Ignorar todos os arquivos e pastas que começam com um PONTO'
+        IMAGES_AUTO_FIX_ORIENTATION: 'Corrigir orientação automaticamente'
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: 'Corrigir automaticamente a orientação da imagem com base nos dados Exif'
+        IMAGES_CLS_ASPECT_RATIO: 'Habilitar Proporção'
+        IMAGES_CLS_ASPECT_RATIO_HELP: "Variável CSS opcional que é aplicada via atributo 'style', podendo ser utilizada em CSS para estilos personalizados"
+        IMAGES_CLS_AUTO_SIZES: 'Habilitar Tamanhos Automáticos'
+        IMAGES_CLS_AUTO_SIZES_HELP: "Adicionar automaticamente atributos 'width' e 'height' às imagens para mitigar CLS"
+        IMAGES_CLS_RETINA_SCALE: 'Fator de Escala Retina'
+        IMAGES_CLS_RETINA_SCALE_HELP: 'Pegará o tamanho calculado e dividirá pelo fator de escala para exibir uma imagem de resolução maior em um tamanho de pixel menor, melhorando o tratamento de resoluções HiDPI'
+        IMAGES_CLS_TITLE: 'Cumulative Layout Shift (CLS)'
+        IMAGES_DEBUG: "Marca d'água de depuração de imagem"
+        IMAGES_DEBUG_HELP: 'Exibir uma sobreposição sobre as imagens indicando a profundidade de pixel da imagem ao trabalhar com retina, por exemplo'
+        IMAGES_DECODING: 'Comportamento de decodificação de imagem'
+        IMAGES_DECODING_HELP: 'O atributo decoding permite que o navegador adie a decodificação de imagens fora da tela até que o usuário role a página para perto delas. O decoding suporta três valores: auto, sync, async'
+        IMAGES_FETCHPRIORITY: 'Propriedade Image Fetchpriority'
+        IMAGES_FETCHPRIORITY_HELP: 'A propriedade fetchpriority no HTML é um atributo que especifica a prioridade para o carregamento de certos recursos, como imagens ou iframes, para otimizar o desempenho. Valores possíveis são high, low ou auto.'
+        IMAGES_LOADING: 'Comportamento de carregamento de imagem'
+        IMAGES_LOADING_HELP: 'O atributo loading permite que o navegador adie o carregamento de imagens e iframes fora da tela até que o usuário role a página para perto delas. O loading suporta três valores: auto, lazy, eager'
+        IMAGES_MAX_PIXELS: 'Máximo de pixels da imagem'
+        IMAGES_MAX_PIXELS_HELP: 'Limite total de pixels (largura x altura) para ações de redimensionamento baseadas em URL. Solicitações acima deste limite são recusadas. Defina como 0 para desativar a verificação.'
+        IMAGES_SEOFRIENDLY: 'Nomes de imagem amigáveis para SEO'
+        IMAGES_SEOFRIENDLY_HELP: 'Quando ativado, o nome da imagem é exibido primeiro, seguido por um hash menor para refletir as operações processadas'
+        IMAGES_URL_ACTIONS: 'Permitir ações de imagem baseadas em URL'
+        IMAGES_URL_ACTIONS_HELP: 'Permitir transformações de imagem via parâmetros de consulta URL (por exemplo, `image.jpg?resize=600,400`). Desativado por padrão; o redimensionamento normal de imagens via Twig e Markdown não é afetado.'
+        IMAGE_ADAPTER: 'Adaptador de Imagem'
+        IMAGE_ADAPTER_HELP: "O adaptador de imagem a ser usado para manipulação de imagens. 'GD' é o padrão, 'Imagick' é uma alternativa"
+        IMAGE_OPTIONS: 'Opções de imagem'
+        INCLUDE_DEFAULT_LANG: 'Incluir idioma padrão'
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: 'Incluir idioma padrão na extensão do arquivo'
+        INCLUDE_DEFAULT_LANG_HELP: 'Isso prefixará todas as URLs no idioma padrão com o idioma padrão. ex.: `/en/blog/meu-post`'
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: 'Se habilitado, prefixará o idioma padrão à extensão do arquivo (ex.: `.en.md`). Desabilite para manter o idioma padrão usando a extensão `.md`.'
+        INFO: Informações
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Nenhum ícone encontrado'
+            SEARCH_ICONS: 'Pesquisar ícones...'
+            TYPE_TO_NARROW_RESULTS: 'Digite para restringir os resultados'
+        INLINE_TYPES: 'Tipos de fallback em linha'
+        INLINE_TYPES_HELP: 'Uma lista de tipos de arquivo que devem ser exibidos em linha em vez de baixados'
+        INSTALL: Instalar
+        INSTALLING: Instalando...
+        INTL_ENABLED: 'Integração do módulo Intl'
+        INTL_ENABLED_HELP: 'Usar o módulo PHP Intl e collate para ordenar coleções baseadas em UTF8'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Não foi possível criar sua conta.'
+            ACCEPT_HEADING: 'Aceitar convite'
+            ACCEPT_SUBHEADING: 'Configure sua conta para começar.'
+            ACCEPT_SUCCESS: 'Conta criada. Bem-vindo!'
+            ACCEPT_TITLE: 'Aceitar Convite — Grav Admin'
+            CHECKING_INVITE: 'Verificando seu convite...'
+            CHOOSE_PASSWORD: 'Escolha uma senha'
+            CONFIRM_REVOKE: 'Revogar o convite para {email}? O link deixará de funcionar.'
+            COPIED: Copiado
+            COPY: Copiar
+            COPY_FAILED: 'Não foi possível copiar o link.'
+            CREATED_NO_EMAIL_TOAST: 'Convite criado. O e-mail não está configurado, então compartilhe o link manualmente.'
+            CREATE_ACCOUNT: 'Criar conta'
+            CREATING_ACCOUNT: 'Criando conta...'
+            EMAIL: E-mail
+            EMAIL_SENT_TO: 'Um e-mail de convite foi enviado para {email}.'
+            EXPIRED: Expirado
+            EXPIRED_INVITE: 'Este convite expirou.'
+            EXPIRED_INVITE_BODY: 'Este convite expirou. Peça a um administrador para enviar um novo.'
+            EXPIRES_AFTER: 'O convite expira após'
+            EXPIRES_IN_DAYS: '{count, plural, one {Expira em # dia} other {Expira em # dias}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Expira em # hora} other {Expira em # horas}}'
+            EXPIRY_14_DAYS: '14 dias'
+            EXPIRY_1_DAY: '1 dia'
+            EXPIRY_30_DAYS: '30 dias'
+            EXPIRY_3_DAYS: '3 dias'
+            EXPIRY_7_DAYS: '7 dias'
+            FULL_NAME_OPTIONAL: 'Nome completo (opcional)'
+            GROUPS: Grupos
+            GROUPS_HINT: 'Grupos aos quais o usuário convidado será adicionado.'
+            INVALID_INVITE: 'Este convite não é válido.'
+            INVALID_INVITE_BODY: 'Este link de convite é inválido ou já foi utilizado.'
+            INVITE: Convidar
+            INVITED_BY: 'Convidado por {name}'
+            INVITE_ANOTHER: 'Convidar outro'
+            INVITE_LINK: 'Link de convite'
+            INVITE_READY: 'Convite pronto'
+            INVITE_USER: 'Convidar usuário'
+            LOADING_GROUPS: 'Carregando grupos...'
+            LOAD_FAILED: 'Falha ao carregar convites.'
+            MESSAGE_OPTIONAL: 'Mensagem pessoal (opcional)'
+            NONE_PENDING: 'Nenhum convite pendente'
+            NONE_PENDING_HINT: 'Convide alguém para participar e o convite pendente aparecerá aqui.'
+            NO_GROUPS: 'Nenhum grupo definido ainda.'
+            PASSWORD_POLICY: 'A senha não atende à política exigida'
+            PENDING_COUNT: '{count, plural, =0 {Nenhum convite pendente} one {# convite pendente} other {# convites pendentes}}'
+            PERMISSIONS: Permissões
+            PERMISSIONS_HINT: 'Permissões que o usuário convidado receberá. Ele não poderá conceder a si mesmo mais do que você definir aqui.'
+            RECIPIENT: Destinatário
+            RECIPIENT_HINT: 'Eles escolherão seu próprio nome de usuário e senha ao aceitar.'
+            RESEND: Reenviar
+            RESEND_FAILED: 'Falha ao reenviar o convite.'
+            RESENT_TOAST: 'Convite reenviado para {email}.'
+            REVOKE: Revogar
+            REVOKED_TOAST: 'Convite revogado.'
+            REVOKE_FAILED: 'Falha ao revogar o convite.'
+            REVOKE_TITLE: 'Revogar convite'
+            SEND_FAILED: 'Falha ao enviar o convite.'
+            SEND_INVITE: 'Enviar convite'
+            SENT_TOAST: 'Convite enviado para {email}.'
+            TITLE_OPTIONAL: 'Título (opcional)'
+            USERNAME_INVALID: 'O nome de usuário deve ter entre 3 e 64 caracteres.'
+            USERNAME_TAKEN: 'Esse nome de usuário já está sendo utilizado.'
+            VIEW_PENDING: 'Ver pendentes'
+        ITEMS: Itens
+        JAVASCRIPT_MINIFY: 'Minificação de JavaScript'
+        JAVASCRIPT_MINIFY_HELP: 'Minificar o JS durante o pipeline'
+        JAVASCRIPT_MODULE_PIPELINE: 'Pipeline de Módulo JavaScript'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'Renderizar pipeline de Módulo JS primeiro'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: 'Renderizar o pipeline de JS antes de quaisquer outras referências de JS que não estão incluídas'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'O pipeline de Módulo JS é a unificação de múltiplos recursos JS em um único arquivo'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: 'Incluir externos no pipeline de Módulo JS'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: 'URLs externas às vezes possuem referências de arquivo relativas e não devem ser processadas no pipeline'
+        JAVASCRIPT_PIPELINE: 'Pipeline de JavaScript'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'Renderizar pipeline de JS primeiro'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: 'Renderizar o pipeline de JS antes de quaisquer outras referências de JS que não estão incluídas'
+        JAVASCRIPT_PIPELINE_HELP: 'O pipeline de JS é a unificação de múltiplos recursos JS em um único arquivo'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: 'Incluir externos no pipeline de JS'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: 'URLs externas às vezes possuem referências de arquivo relativas e não devem ser processadas no pipeline'
+        JS_ASSETS: 'Ativos de JavaScript'
+        JS_MODULE_ASSETS: 'Ativos de Módulo JavaScript'
+        KEYWORDS: Palavras-chave
+        LANG:
+            CREATE_TRANSLATION: 'Criar tradução em {language}'
+            CURRENT: atual
+            DEFAULT: padrão
+            DELETE_TRANSLATION: 'Excluir tradução em {language}'
+            FALLBACK_NOTICE: 'Sem tradução em {language}. Exibindo conteúdo padrão.'
+            NOT_TRANSLATED: 'Não traduzido'
+            SAVE_AS: 'Salvar como {language}'
+            SWITCH_LANGUAGE: 'Alternar idioma do conteúdo'
+            SYNC_FROM: 'Redefinir de {language}'
+            TRANSLATED: Traduzido
+            TRANSLATIONS: Traduções
+            TRANSLATION_CREATED: 'Tradução para {language} criada'
+        LANGUAGE: Idioma
+        LANGUAGES: Idiomas
+        LANGUAGE_DEBUG: 'Depurar idioma'
+        LANGUAGE_DEBUG_HELP: 'Habilita a depuração de idiomas que utilizam o filtro |t do Twig, adicionando um elemento span ao redor deles que pode ser estilizado para ajudar a diagnosticar problemas.'
+        LANGUAGE_HELP: 'Definir o idioma favorito'
+        LANGUAGE_TRANSLATIONS: Traduções
+        LANGUAGE_TRANSLATIONS_HELP: 'Se falso, as chaves de tradução são usadas em vez das strings traduzidas. Este recurso pode ser usado para ajudar a corrigir traduções incorretas ou para encontrar strings em inglês codificadas diretamente (hardcoded).'
+        LAST_MODIFIED: 'Última modificação'
+        LAST_MODIFIED_HELP: 'Define o cabeçalho de última modificação que pode ajudar a otimizar o cache de proxy e de navegador.'
+        LIFETIME: 'Tempo de vida'
+        LIFETIME_HELP: 'Define o tempo de vida do cache em segundos. 0 = infinito'
+        LIST: Lista
+        LOADING: Carregando...
+        LOGIN:
+            AUTHENTICATION_CODE: 'Código de autenticação'
+            AUTH_CODE_PROMPT: 'Abra seu aplicativo autenticador e insira o código de 6 dígitos para **{username}**.'
+            BACK_TO_SIGN_IN: 'Voltar para o login'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Insira um código válido de 6 dígitos'
+            ENVIRONMENT: Ambiente
+            FORGOT_PASSWORD: 'Esqueceu a senha?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Usuário ou senha inválidos'
+            LOGIN_GRAV_ADMIN: 'Login — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'A senha é obrigatória'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Por favor, preencha todos os campos obrigatórios'
+            POWERED_BY_GRAV_CMS: 'Desenvolvido por Grav CMS'
+            SERVER_CONFIGURATION: 'Configuração do servidor'
+            SERVER_URL: 'URL do servidor'
+            SIGNED_IN_SUCCESSFULLY: 'Conectado com sucesso'
+            SIGNING_IN: Entrando...
+            SIGN_IN: Entrar
+            SUBTITLE: 'Entre para gerenciar seu site'
+            TWOFA_SUBTITLE: 'Insira seu código de autenticação para continuar'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Não foi possível conectar ao servidor. Verifique a URL do servidor e tente novamente.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Não foi possível verificar o código. Verifique sua conexão e tente novamente.'
+            USERNAME_IS_REQUIRED: 'O nome de usuário é obrigatório'
+            VERIFY: Verificar
+            VERIFYING: Verificando...
+        LOG_ERRORS: 'Registrar erros'
+        LOG_ERRORS_HELP: 'Registrar erros na pasta /logs'
+        LOG_HANDLER: 'Manipulador de logs'
+        LOG_HANDLER_HELP: 'Onde exibir os logs'
+        LONG: Longo
+        LONG_DATE_FORMAT: 'Formato de data de exibição longo'
+        LONG_DATE_FORMAT_HELP: 'Defina o formato de data longa que pode ser usado pelos temas'
+        MARKDOWN: Markdown
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Nada para visualizar'
+        MARKDOWN_EXTRA: 'Markdown extra'
+        MARKDOWN_EXTRA_HELP: 'Habilitar suporte padrão para Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Gerenciar arquivos de mídia de todo o site'
+            MEDIA_GRAV_ADMIN: 'Mídia — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Dimensões
+                FAILED_TO_COPY: 'Falha ao copiar'
+                FILE_RENAMED: 'Arquivo renomeado'
+                NEXT_FILE: 'Próximo arquivo'
+                PREVIOUS_FILE: 'Arquivo anterior'
+                RENAME: Renomear
+            MEDIA_MANAGER:
+                CREATE: Criar
+                FILES_DELETED: 'Arquivos excluídos'
+                FOLDER_NAME: 'Nome da pasta'
+                NEW_FOLDER: 'Nova pasta'
+                UPLOAD_FILES: 'Enviar arquivos'
+            MEDIA_TOOLBAR:
+                FOLDER: Pasta
+                GRID_VIEW: 'Visualização em grade'
+                LIST_VIEW: 'Visualização em lista'
+                NEW_FOLDER: 'Nova pasta'
+                SEARCH_MEDIA: 'Pesquisar mídia...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Arraste para o editor'
+                PAGE_MEDIA: 'Mídia da página'
+        MEDIA_TYPES: 'Tipos de Mídia'
+        MEMCACHED_PORT: 'Porta do Memcached'
+        MEMCACHED_PORT_HELP: 'A porta do servidor Memcached'
+        MEMCACHED_SERVER: 'Servidor Memcached'
+        MEMCACHED_SERVER_HELP: 'O endereço do servidor Memcached'
+        MENU: Menu
+        MENU_HELP: 'A string a ser usada em um menu. Se não definida, o Título será usado.'
+        METADATA: Metadados
+        METADATA_HELP: 'Valores de metadados padrão que serão exibidos em todas as páginas, a menos que sejam sobrescritos pela página'
+        METADATA_KEY: "Chave (ex: 'Keywords')"
+        METADATA_VALUE: "Valor (ex: 'Blog, Grav')"
+        MIME_TYPE: 'Tipo Mime'
+        MISC_SECTION: 'Seção Diversos'
+        MODULE: Módulo
+        MODULE_SETUP: 'Configuração do Módulo'
+        MOVE: Mover
+        NAME: Nome
+        NAV:
+            CONFIGURATION: Configuração
+            DASHBOARD: Painel
+            MEDIA: Mídia
+            PAGES: Páginas
+            PLUGINS: Plugins
+            SETTINGS: Configurações
+            SYSTEM: Sistema
+            THEMES: Temas
+            TOOLS: Ferramentas
+            USERS: Usuários
+        NEVER_CACHE_TWIG: 'Nunca armazenar Twig em cache'
+        NEVER_CACHE_TWIG_HELP: 'Armazena apenas o conteúdo e processa o Twig toda vez para as páginas. Ignora a configuração twig_first.'
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Nenhum item de feed'
+        'NO': Não
+        NORMAL_MODE: 'Modo normal'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Sem notificações'
+        NO_CHANGES: 'Nenhuma alteração para salvar'
+        OPTIONS: Opções
+        ORDER: Ordem
+        ORDERING: Ordenação
+        ORDER_BY: 'Ordenar por'
+        ORDER_DIGITS: 'Dígitos de ordenação'
+        ORDER_DIGITS_HELP: 'Número de dígitos usados para prefixar nomes de pastas para ordenação (ex: `01.sobre`, `001.sobre`).'
+        ORDER_DIR_HELP: '«desc» ou «asc» são valores válidos'
+        OVERRIDES: Substituições
+        OVERRIDE_LOCALE: 'Substituir localidade'
+        OVERRIDE_LOCALE_HELP: 'Substitui a configuração de localidade no PHP com base no idioma atual'
+        PAGE: Página
+        PAGES:
+            ADD_FOLDER: 'Adicionar pasta'
+            ADD_MENU: 'Adicionar menu'
+            ADD_MODULE: 'Adicionar módulo'
+            ADD_PAGE: 'Adicionar página'
+            CHUNK_SIZE: Fragmento
+            CHUNK_SIZE_HELP: 'Linhas a buscar por solicitação conforme você rola. Valores maiores carregam mais devagar na primeira vez, mas reduzem as solicitações subsequentes.'
+            DELETED: '«{title}» excluído(a)'
+            DELETE_FAILED: 'Falha ao excluir a página'
+            DELETE_PAGE: 'Excluir página'
+            DRAFT: Rascunho
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Conectando à sessão de colaboração…'
+                COPY_PAGE: 'Copiar página'
+                CREATE_LANGUAGE: 'Criar {language}'
+                DELETE_PAGE: 'Excluir página'
+                EDIT_PAGE: 'Editar página'
+                FAILED_TO_CREATE_TRANSLATION: 'Falha ao criar tradução'
+                FAILED_TO_SYNC_TRANSLATION: 'Falha ao sincronizar tradução'
+                FALLBACK: (fallback)
+                FALLBACK_NOTICE: 'Não existe tradução para {active}. Visualizando fallback {effective}. Use «Salvar como {active}» para criar uma tradução que você possa editar.'
+                FOLDER_NAME: 'Nome da pasta'
+                INVALID_YAML_FRONTMATTER: 'Frontmatter YAML inválido'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Frontmatter YAML inválido — corrija a sintaxe antes de salvar'
+                LOADING_PAGE: 'Carregando página...'
+                NOT_TRANSLATED: 'Não traduzido:'
+                OPEN_IN_NEW_TAB: 'Abrir em nova aba'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'A página foi alterada em outro lugar — salve para sobrescrever ou recarregue'
+                PAGE_COPIED: 'Página copiada'
+                PAGE_DELETED: 'Página excluída'
+                PAGE_PREVIEW: 'Visualização da página'
+                PAGE_SAVED_AND_MOVED: 'Página salva e movida'
+                PREVIEW_PAGE: 'Visualizar página'
+                PUBLISH_ON: 'Publicar em'
+                RESET_CONTENT_FROM: 'Redefinir conteúdo de:'
+                RESET_FROM: 'Redefinir de {language}'
+                RESET_TRANSLATION: 'Redefinir tradução'
+                SAVED_BY_PEER: '{user} salvou esta página'
+                SAVED_BY_PEER_ANON: 'Outro usuário salvou esta página'
+                SAVE_AS_LANGUAGE: 'Salvar como {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'O nome da pasta no disco (slug da URL)'
+                TOGGLE_PAGE_NAVIGATOR: 'Alternar navegador de páginas'
+                UNPUBLISH_ON: 'Despublicar em'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Escreva seu conteúdo markdown aqui...'
+            EDIT_PAGE: 'Editar página'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: Modificado
+            HEADER_PARENT: Pai
+            HEADER_STATUS: Status
+            HEADER_TEMPLATE: Template
+            HEADER_TITLE: Título
+            INFO_DATE: Data
+            INFO_LANGUAGE: Idioma
+            INFO_MODIFIED: Modificado
+            INFO_ORDER: Ordem
+            INFO_PUBLISHED: Publicado
+            INFO_PUBLISH_ON: 'Publicar em'
+            INFO_ROUTABLE: Roteável
+            INFO_ROUTE: Rota
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Modelo
+            INFO_UNPUBLISH_ON: 'Despublicar em'
+            INFO_VISIBLE: 'Visível na navegação'
+            LOADED_OF: '{n, plural, one {# carregado} other {# carregados}} de {total}'
+            LOADING: 'Carregando páginas...'
+            LOADING_CHUNK: 'Carregando linhas {from}–{to}…'
+            MODE_EXPERT: Especialista
+            MODE_NORMAL: Normal
+            MOVED: 'Movido “{title}”'
+            MOVE_FAILED: 'Falha ao mover página'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Adicionar página — Grav Admin'
+                CONTINUE: Continuar
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Controla se esta página aparece nos menus de navegação'
+                FAILED_TO_CREATE: 'Falha ao criar página'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Falha ao carregar modelos de página'
+                FILTER_PAGES: 'Filtrar páginas...'
+                FOLDER_CREATED: 'Pasta “{title}” criada'
+                FOLDER_DETAILS: 'Detalhes da pasta'
+                FOLDER_NAME: 'Nome da pasta'
+                LOADING_TEMPLATES: 'Carregando modelos...'
+                MODULE_CREATED: 'Módulo “{title}” criado'
+                MY_NEW_PAGE: 'Minha Nova Página'
+                ORDERING: Ordenação
+                ORDERING_HELP_FOLDER: 'Adiciona um prefixo numérico que define a posição desta pasta entre seus irmãos.'
+                ORDERING_HELP_MODULE: 'Adiciona um prefixo numérico que define a posição deste módulo dentro de seu pai modular.'
+                ORDERING_NONE: Nenhum
+                PAGE_CREATED: 'Página «{title}» criada'
+                PAGE_DETAILS: 'Detalhes da Página'
+                PAGE_TEMPLATE: 'Template da Página'
+                PAGE_TITLE: 'Título da Página'
+                PARENT_PAGE: 'Página Pai'
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'Nome de pasta compatível com URL para esta página'
+                VISIBLE: Visível
+            NO_MATCH: 'Nenhuma página corresponde à sua pesquisa'
+            NO_PAGES: 'Nenhuma página encontrada'
+            NO_SEARCH_RESULTS: 'Nenhuma página corresponde à sua pesquisa'
+            PAGES_GRAV_ADMIN: 'Páginas — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Rascunho (não publicado)'
+                DROP_HERE: 'Solte aqui'
+                FOLDER_ORDER: 'Ordem da Pasta'
+                HAS_CHILDREN: 'Possui subpáginas'
+                SUMMARY: Resumo
+                VISIBLE: Visível
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Falha ao reorganizar páginas'
+                NO_PAGES_MATCH: 'Nenhuma página corresponde a «{query}»'
+                SEARCHING: Pesquisando…
+            PAGE_COUNT: '{n, plural, one{# página} other{# páginas}}'
+            PAGE_INFO: 'Informações da Página'
+            PUBLISH: Publicar
+            PUBLISHED: Publicado
+            RAW_HEADER: 'Cabeçalho da Página (JSON)'
+            REORDERED: 'Reordenado "{title}"'
+            REORDER_DONE: Concluído
+            REORDER_EXIT_TITLE: 'Sair do modo de reordenação'
+            REORDER_FAILED: 'Falha ao reordenar'
+            REORDER_LOADING: 'Ainda carregando a lista completa — tente novamente em um momento.'
+            REORDER_LOADING_ALL: 'Carregando cada bloco para que a reordenação possa afetar a lista inteira...'
+            REORDER_MOVE: Mover
+            REORDER_SAME_PARENT: 'Só é possível reordenar páginas sob o mesmo pai. Use a visualização em Árvore para mover entre pais diferentes.'
+            REORDER_START_TITLE: 'Reordenar páginas'
+            SAVED: 'Página salva com sucesso'
+            SAVE_FAILED: 'Falha ao salvar página'
+            SEARCH_PLACEHOLDER: 'Pesquisar páginas...'
+            SORT_DATE_NEWEST: 'Data (mais recente)'
+            SORT_NEWEST: 'Mais recentes'
+            SORT_OLDEST: 'Mais antigos'
+            SORT_ORDER: Ordem
+            SORT_TITLE_AZ: 'Título A-Z'
+            SORT_TITLE_ZA: 'Título Z-A'
+            STATS_PUBLISHED: '{n} publicado'
+            STATS_TOTAL: '{n} total'
+            STATS_UNPUBLISHED: '{n} não publicado'
+            SUBTITLE: 'Gerencie o conteúdo e a estrutura do seu site'
+            TITLE: Páginas
+            UNPUBLISH: Despublicar
+            VIEW_COLUMNS: Colunas
+            VIEW_LIST: Lista
+            VIEW_TREE: Árvore
+        PAGES_CONFIGURATION: 'Configuração de Páginas'
+        PAGES_FALLBACK_ONLY: 'Apenas fallback de páginas'
+        PAGES_FALLBACK_ONLY_HELP: "Apenas usa 'fallback' para encontrar o conteúdo da página através de idiomas suportados; o comportamento padrão é exibir qualquer idioma encontrado caso o idioma ativo esteja ausente"
+        PAGES_TYPE: 'Tipo de Página do Frontend'
+        PAGES_TYPE_HELP: 'Esta opção habilita páginas Flex Object no front-end. O Admin Flex Pages requer o plugin Flex Objects'
+        PAGE_ACCESS: 'Acesso à Página'
+        PAGE_ACCESS_HELP: 'Usuário com as seguintes permissões de acesso pode acessar a página.'
+        PAGE_AUTHORS: 'Autores da Página'
+        PAGE_AUTHORS_HELP: "Membros de Autores da Página possuem acesso de nível proprietário a esta página, definido no grupo especial de página 'Autores'."
+        PAGE_FILE: 'Modelo da Página'
+        PAGE_FILE_HELP: 'Nome do arquivo de modelo da página e, por padrão, o modelo de exibição para esta página'
+        PAGE_GROUPS: 'Grupos de Página'
+        PAGE_GROUPS_HELP: 'Membros de Grupos de Página possuem acesso especial a esta página.'
+        PAGE_INHERIT_PERMISSIONS: 'Herdar Permissões'
+        PAGE_INHERIT_PERMISSIONS_HELP: 'Herdar ACL da página pai.'
+        PAGE_MEDIA: 'Mídia da Página'
+        PAGE_PERMISSIONS: 'Permissões da Página'
+        PAGE_SUMMARY: 'Resumo da Página'
+        PAGE_TYPES: 'Tipos de Página'
+        PAGE_TYPES_HELP: 'Determina os tipos de página que o Grav suporta e a ordem determina qual tipo deve ser usado caso a solicitação seja ambígua'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: 'Visibilidade do Menu Requer Acesso'
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: 'Defina como Sim se a página deve ser mostrada nos menus apenas se o usuário puder acessá-la.'
+        PAGINATION:
+            PAGE_OF: 'Página {current} de {total}'
+        PARAMETER_SEPARATOR: 'Separador de parâmetros'
+        PARAMETER_SEPARATOR_HELP: 'Separador para parâmetros passados que pode ser alterado para o Apache no Windows'
+        PARENT: Pai
+        PASSWORD: Senha
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 'Requisitos de senha'
+            PASSWORD_STRENGTH: 'Força da senha'
+            REQUIREMENTS: Requisitos
+        PASSWORD_VALIDATION_MESSAGE: 'A senha deve conter pelo menos um número, uma letra maiúscula e uma minúscula, e ter pelo menos 8 ou mais caracteres'
+        PERMISSIONS: Permissões
+        PERMISSIONS_FIELD:
+            ADMIN_LEGACY: 'Admin (legado)'
+            FAILED_TO_LOAD_PERMISSIONS: 'Falha ao carregar permissões'
+            NOT_SET: 'Não definido'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Voltar ao Painel'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Nenhum conteúdo disponível para esta página do plugin.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Voltar aos Plugins'
+            CHANGELOG: 'Registro de alterações'
+            CHECK_UPDATES: 'Verificar Atualizações'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'A configuração foi modificada em outro local. Por favor, recarregue.'
+            CONFIGURE: Configurar
+            ENABLE_PLUGIN: 'Ativar Plugin'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Falha ao verificar atualizações'
+            FAILED_TO_LOAD_PLUGINS: 'Falha ao carregar plugins'
+            FAILED_TO_SAVE_CONFIGURATION: 'Falha ao salvar a configuração.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Nenhuma opção de configuração disponível para este plugin.'
+            PAGE_TITLE: '{name} — Plugins — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Plugins — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'O plugin foi alterado em outro local — salve para sobrescrever ou recarregue'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'O plugin deve estar habilitado para ser configurado.'
+            REMOVE_CONFIRM_MESSAGE: 'Remover {name}? Isso desinstalará o plugin e excluirá seus arquivos. A configuração será preservada.'
+            REMOVE_CONFIRM_TITLE: 'Remover plugin?'
+            REMOVE_PLUGIN: 'Remover Plugin'
+            SEARCH_PLUGINS: 'Pesquisar plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Selecione um plugin para ver detalhes'
+            SYMLINKED: 'Com link simbólico'
+            TITLE: Plugins
+        PLUGINS_TABLE:
+            NAME: Nome
+            NO_PLUGINS: 'Nenhum plugin instalado'
+            PROTECTED_PLUGIN: 'Este plugin não pode ser desabilitado no admin-next sem que você perca o acesso.'
+            VERSION: Versão
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Carregando página do plugin...'
+        PLUGIN_STATUS: 'Status do plugin'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Falha ao carregar widget'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Últimos 14 dias'
+            THIS_MONTH: 'Este mês'
+            THIS_WEEK: 'Esta semana'
+        PREMIUM: Premium
+        PREVIEW: Visualizar
+        PROCESS: Processar
+        PROCESS_HELP: 'Controle como as páginas são processadas. Pode ser definido por página em vez de globalmente'
+        PROXY_CERT: 'Caminho do Certificado de Proxy'
+        PROXY_CERT_HELP: 'Caminho local para a pasta que contém o arquivo pem do certificado de proxy'
+        PROXY_URL: 'URL do Proxy'
+        PROXY_URL_HELP: 'Insira o HOST ou IP e PORTA do proxy'
+        PUBLISH: Publicar
+        PUBLISHED: Publicado
+        PUBLISHED_DATE: 'Data de Publicação'
+        PUBLISHED_DATE_HELP: 'Pode fornecer uma data para acionar automaticamente a publicação.'
+        PUBLISHED_HELP: 'Por padrão, uma página é publicada a menos que você defina explicitamente published: false ou através de uma publish_date no futuro, ou unpublish_date no passado'
+        PUBLISHING: Publicação
+        PWD_REGEX: 'Regex de Senha'
+        PWD_REGEX_HELP: 'Por padrão: A senha deve conter pelo menos um número, uma letra maiúscula e uma minúscula, e pelo menos 8 caracteres ou mais'
+        PWD_RULES: 'Regras de senha'
+        PWD_RULES_HELP: 'Regras personalizadas de validação de senha. Cada regra tem um ID, um rótulo legível e um regex que a senha deve corresponder.'
+        PWD_RULES_ID: ID
+        PWD_RULES_LABEL: Rótulo
+        PWD_RULES_PATTERN: 'Padrão Regex'
+        READ: Ler
+        READ_FILE_ALLOWED_EXTENSIONS: 'Extensões de arquivo permitidas'
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: 'Extensões de arquivo que <code>read_file()</code> irá ler (sem diferenciar maiúsculas de minúsculas, sem ponto inicial). Os padrões são apenas formatos de texto/conteúdo. Adicionar formatos executáveis ou de configuração (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) é perigoso e não recomendado.'
+        READ_FILE_ALLOWED_STREAMS: 'Streams permitidos'
+        READ_FILE_ALLOWED_STREAMS_HELP: 'Esquemas de stream que <code>read_file()</code> pode resolver. Padrões: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. Adicionar streams amplos como <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> ou <code>cache</code> expõe arquivos sensíveis e é fortemente desencorajado.'
+        READ_FILE_MAX_SIZE: 'Tamanho máximo do arquivo (bytes)'
+        READ_FILE_MAX_SIZE_HELP: 'Arquivos maiores que este retornam <code>false</code> em vez de serem carregados na memória. O padrão é <code>1048576</code> (1 MB). Defina como <code>0</code> para desativar o limite de tamanho.'
+        READ_FILE_SECTION_HELP: 'Restrições na função <code>read_file()</code> do Twig. As leituras são forçadas através de URIs de stream do Grav e verificadas por uma verificação de contenção canonical-realpath em relação às raízes de stream resolvidas, portanto, a travessia codificada ou por link simbólico é bloqueada na camada do sistema de arquivos, independentemente de como o caminho é escrito.'
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Por favor, insira novamente sua senha para continuar. Seu trabalho foi preservado.'
+            SESSION_EXPIRED: 'Sessão expirada'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Ver tudo'
+        REDIRECT: 'Redirecionamento de página'
+        REDIRECTS_AND_ROUTES: 'Redirecionamentos e Rotas'
+        REDIRECT_DEFAULT_CODE: 'Código de redirecionamento padrão'
+        REDIRECT_DEFAULT_CODE_HELP: 'O código de status HTTP a ser usado para redirecionamentos'
+        REDIRECT_DEFAULT_ROUTE: 'Redirecionar rota padrão'
+        REDIRECT_DEFAULT_ROUTE_HELP: 'Redirecionar automaticamente para a rota padrão de uma página'
+        REDIRECT_HELP: 'Insira uma rota de página ou URL externa para a qual esta página deve redirecionar. ex.: `/alguma/rota` ou `http://algumsite.com`'
+        REDIRECT_OPTION_301: '301 - Movido permanentemente'
+        REDIRECT_OPTION_302: '302 - Movido temporariamente'
+        REDIRECT_OPTION_303: '303 - Ver outro'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: 'Usar código de redirecionamento padrão'
+        REDIRECT_OPTION_NO_REDIRECT: 'Sem redirecionamento'
+        REDIRECT_TRAILING_SLASH: 'Redirecionar barra final (trailing slash)'
+        REDIRECT_TRAILING_SLASH_HELP: 'Executar um redirecionamento 301 em vez de tratar URIs com barra final de forma transparente.'
+        REDIS_DATABASE: 'ID do banco de dados Redis'
+        REDIS_DATABASE_HELP: 'O ID do banco de dados da instância Redis'
+        REDIS_PASSWORD: 'Senha/segredo do Redis'
+        REDIS_PORT: 'Porta do Redis'
+        REDIS_PORT_HELP: 'A porta do servidor Redis'
+        REDIS_SERVER: 'Servidor Redis'
+        REDIS_SERVER_HELP: 'O endereço do servidor Redis'
+        REDIS_SOCKET: 'Socket do Redis'
+        REDIS_SOCKET_HELP: 'O socket do Redis'
+        REGULAR: Regular
+        REMOVE: Remover
+        RESET:
+            BACK_TO_SIGN_IN: 'Voltar para o login'
+            CONFIRM_PASSWORD: 'Confirmar senha'
+            INVALID_LINK: 'Link de redefinição inválido.'
+            NEW_PASSWORD_FOR: 'Escolha uma nova senha para **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'As senhas não coincidem'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Senha redefinida com sucesso. Por favor, faça login.'
+            RESETTING: Redefinindo...
+            RESET_PASSWORD: 'Redefinir senha'
+            RESET_PASSWORD_GRAV_ADMIN: 'Redefinir senha — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'Este link de redefinição está faltando parâmetros obrigatórios. Solicite um novo na página de esqueci minha senha.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Não foi possível conectar ao servidor.'
+        REVERSE_PROXY: 'Proxy Reverso'
+        REVERSE_PROXY_HELP: 'Ative isso se você estiver atrás de um proxy reverso e estiver tendo problemas com URLs contendo portas incorretas'
+        ROOT: Raiz
+        ROUTABLE: Roteável
+        ROUTABLE_HELP: 'Se esta página é alcançável por uma URL'
+        ROUTE: Rota
+        ROUTE_ALIASES: 'Aliases de Rota'
+        ROUTE_CANONICAL: 'Rota Canônica'
+        ROUTE_DEFAULT: 'Rota Padrão'
+        ROUTE_OVERRIDES: 'Substituições de Rota'
+        SANITIZE_SVG: 'Sanitizar SVG'
+        SANITIZE_SVG_HELP: 'Remove qualquer código XSS de SVGs'
+        SAVE: Salvar
+        SAVING: Salvando...
+        SCHEDULER: Agendador
+        SCHEDULER_ACTIVE_TRIGGERS: 'Gatilhos Ativos'
+        SCHEDULER_ADVANCED_FEATURES: 'Recursos Avançados'
+        SCHEDULER_CONCURRENT_WORKERS: 'Trabalhadores Simultâneos'
+        SCHEDULER_CONCURRENT_WORKERS_HELP: 'Número de tarefas que podem ser executadas simultaneamente (1 = sequencial).'
+        SCHEDULER_EMAIL: E-mail
+        SCHEDULER_EMAIL_HELP: 'E-mail para enviar a saída. NOTA: requer que o arquivo de saída seja definido'
+        SCHEDULER_HEALTH_CHECK_CONFIG: 'Configuração de Verificação de Integridade'
+        SCHEDULER_HEALTH_CHECK_ENABLED: 'Habilitar Verificação de Integridade'
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 'Fornece um endpoint de status de integridade para monitoramento.'
+        SCHEDULER_HEALTH_CHECK_PATH: 'Caminho da Verificação de Integridade'
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: 'Caminho da URL para o endpoint de verificação de integridade.'
+        SCHEDULER_HEALTH_STATUS: 'Status de Integridade'
+        SCHEDULER_HISTORY: 'Histórico de Tarefas'
+        SCHEDULER_HISTORY_ENABLED: 'Habilitar Histórico de Tarefas'
+        SCHEDULER_HISTORY_ENABLED_HELP: 'Rastrear histórico de execução para todas as tarefas.'
+        SCHEDULER_HISTORY_RETENTION: 'Retenção de Histórico (dias)'
+        SCHEDULER_HISTORY_RETENTION_HELP: 'Por quanto tempo manter o histórico de tarefas.'
+        SCHEDULER_JOBS: 'Tarefas de Agendamento Personalizadas'
+        SCHEDULER_OUTPUT: 'Arquivo de Saída'
+        SCHEDULER_OUTPUT_HELP: 'O caminho/nome do arquivo de saída (a partir da raiz da instalação do Grav)'
+        SCHEDULER_OUTPUT_TYPE: 'Tipo de Saída'
+        SCHEDULER_OUTPUT_TYPE_HELP: 'Anexar ao mesmo arquivo a cada execução ou sobrescrever o arquivo a cada execução'
+        SCHEDULER_QUEUE_CONFIG: 'Configuração da Fila'
+        SCHEDULER_QUEUE_MAX_SIZE: 'Tamanho Máximo da Fila'
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: 'Número máximo de tarefas que podem ser enfileiradas.'
+        SCHEDULER_QUEUE_PATH: 'Caminho de Armazenamento da Fila'
+        SCHEDULER_QUEUE_PATH_HELP: 'Onde armazenar as tarefas enfileiradas.'
+        SCHEDULER_RETRY_BACKOFF: 'Estratégia de Atraso para Repetição'
+        SCHEDULER_RETRY_BACKOFF_HELP: 'Como calcular o atraso entre as repetições.'
+        SCHEDULER_RETRY_CONFIG: 'Configuração de Repetição'
+        SCHEDULER_RETRY_ENABLED: 'Habilitar Repetição de Tarefa'
+        SCHEDULER_RETRY_ENABLED_HELP: 'Repetir automaticamente tarefas com falha.'
+        SCHEDULER_RETRY_MAX_ATTEMPTS: 'Máximo de Tentativas de Repetição'
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 'Número máximo de vezes para repetir uma tarefa com falha.'
+        SCHEDULER_RUNAT: 'Executar Em'
+        SCHEDULER_RUNAT_HELP: "Sintaxe 'at' formatada em Cron. NOTA: Todos os horários estão em UTC!"
+        SCHEDULER_STATUS: 'Status do Agendador'
+        SCHEDULER_USAGE_EXAMPLES: 'Exemplos de Uso'
+        SCHEDULER_WEBHOOK_CONFIG: 'Configuração de Webhook'
+        SCHEDULER_WEBHOOK_ENABLED: 'Habilitar Gatilhos de Webhook'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: 'Permitir acionar o agendador via webhook HTTP.'
+        SCHEDULER_WEBHOOK_PATH: 'Caminho do Webhook'
+        SCHEDULER_WEBHOOK_PATH_HELP: 'Caminho da URL para o endpoint do webhook.'
+        SCHEDULER_WEBHOOK_TOKEN: 'Token de Segurança do Webhook'
+        SCHEDULER_WEBHOOK_TOKEN_HELP: 'Token secreto para autenticar solicitações de webhook. Mantenha isso em segredo!'
+        SCHEDULER_WORKER_CONFIG: 'Configuração do Worker'
+        SEARCH: Pesquisar
+        SECURITY: Segurança
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Arquivos em user/data, user/accounts e user/config podem ser baixados diretamente via HTTP — incluindo certificados, chaves, tokens e bancos de dados. Isso geralmente significa que seu servidor web não está aplicando as regras .htaccess do Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Como proteger seu servidor web'
+            USER_FOLDER_EXPOSED_TITLE: 'Risco de segurança: suas pastas de dados do usuário estão acessíveis pela web'
+        SESSION: Sessão
+        SESSION_DOMAIN: 'Domínio da sessão'
+        SESSION_DOMAIN_HELP: 'Use apenas se você sobrescrever o domínio do site, por exemplo, em um contêiner Docker.'
+        SESSION_ENABLED_HELP: 'Habilitar suporte a sessão no Grav'
+        SESSION_HTTPONLY: 'HTTP Apenas'
+        SESSION_HTTPONLY_HELP: 'Se verdadeiro, indica que os cookies devem ser usados apenas via HTTP e que a modificação por JavaScript não é permitida'
+        SESSION_INITIALIZE: 'Inicializar Sessão'
+        SESSION_INITIALIZE_HELP: 'Faz com que o Grav inicie uma sessão. Esse recurso é necessário para que qualquer interação do usuário funcione, como login, formulários, etc. O plugin Admin não é afetado por essa configuração.'
+        SESSION_NAME_HELP: 'Um identificador usado para formar o nome do cookie de sessão'
+        SESSION_PATH: 'Caminho da sessão'
+        SESSION_PATH_HELP: 'Use apenas se você sobrescrever o caminho do site, por exemplo, em um contêiner Docker.'
+        SESSION_SAMESITE: 'O atributo SameSite da sessão'
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None. Veja https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite para mais informações'
+        SESSION_SECURE: Seguro
+        SESSION_SECURE_HELP: 'Se verdadeiro, indica que a comunicação para este cookie deve ser feita por meio de uma transmissão criptografada. AVISO: Habilite isso apenas em sites que rodam exclusivamente em HTTPS'
+        SESSION_SECURE_HTTPS: 'Seguro (HTTPS)'
+        SESSION_SECURE_HTTPS_HELP: 'Define a sessão como segura em HTTPS, mas não em HTTP. Não tem efeito se você tiver a configuração Seguro acima definida como true. Defina como false se o seu site alterna entre HTTP e HTTPS.'
+        SESSION_SPLIT: 'Divisão de Sessão'
+        SESSION_SPLIT_HELP: 'Divisão de sessões independentes entre o site e outros plugins (como o admin)'
+        SESSION_UNIQUENESS: 'String única'
+        SESSION_UNIQUENESS_HELP: 'Hash MD5 do caminho raiz do Grav, ou seja, `GRAV_ROOT` (padrão) ou baseado na string aleatória `security.salt`.'
+        SETTINGS:
+            1_SECOND: '1 segundo'
+            2_SECONDS: '2 segundos'
+            ACCENT_COLOR: 'Cor de Acento'
+            ADD_LINK: 'Adicionar Link'
+            ADMIN_INTERFACE_LANGUAGE: 'Idioma da interface do admin'
+            ADMIN_LANGUAGE: 'Idioma do Admin'
+            ADMIN_LANGUAGE_DESC: 'Idioma para rótulos, menus e mensagens ({count} strings carregadas)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Preferências e aparência do admin'
+            APPEARANCE: Aparência
+            AUTHENTICATED_AS: 'Autenticado como'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Salvar automaticamente ao sair de um campo'
+            AUTO_SAVE: 'Salvamento Automático'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Comportamento de salvamento automático e desfazer para editores de formulário'
+            BRANDING: Marca
+            BRANDING_DESC: 'Logotipo e texto da marca exibidos em toda a área administrativa.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Escolha entre a aparência clara e escura'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Escolha como o logotipo é exibido'
+            COLLAB_DESCRIPTION: 'Edição multiusuário em tempo real com presença. Requer o plugin `sync` no servidor. Experimental.'
+            COLOR_MODE: 'Modo de Cor'
+            CONNECTION: Conexão
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Personalize o logotipo exibido na barra lateral e na página de login'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Personalize a aparência do painel administrativo'
+            CUSTOM_IMAGE: 'Imagem personalizada'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Atalhos personalizados exibidos na barra de menus superior'
+            CUSTOM_TEXT: 'Texto personalizado'
+            DARK: Escuro
+            DARK_LOGO: 'Logotipo escuro'
+            DARK_LOGO_REMOVED: 'Logotipo escuro removido.'
+            DARK_LOGO_UPLOADED: 'Logotipo escuro enviado.'
+            DARK_MODE_LOGO: 'Logotipo para Modo Escuro'
+            DEFAULT_APPEARANCE: 'Aparência padrão'
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Aparência de cor padrão para novos usuários.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Densidade padrão do editor de formulário.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Idioma da interface padrão para novos usuários.'
+            DEFAULT_LANGUAGE: 'Idioma padrão'
+            DEFAULT_PAGES: 'Páginas padrão'
+            DEFAULT_PRIMARY_COLOR_DESC: 'Cor primária padrão para botões, links e destaques.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Configurações padrão para o navegador de páginas'
+            DEFAULT_TEXT_SIZE_DESC: 'Tamanho de texto padrão para a interface do administrador.'
+            DEFAULT_TYPEFACE_DESC: 'Fonte padrão para a interface do administrador.'
+            DEFAULT_VIEW: 'Visualização padrão'
+            DEUTSCH: Deutsch
+            EDITING: Editando
+            EDITOR_HEADING: Editor
+            EDITOR_HEIGHT: 'Altura do editor'
+            EDITOR_HEIGHT_AUTO: Automático
+            EDITOR_HEIGHT_DESC: 'Deixe o editor expandir conforme o seu conteúdo, ou limite-o a uma altura fixa com sua própria barra de rolagem.'
+            EDITOR_HEIGHT_FIXED: Fixo
+            EDITOR_MODE: 'Modo do editor'
+            EDITOR_SECTION_DESC: 'Como o editor de Markdown se comporta enquanto você escreve.'
+            ENGLISH: Inglês
+            ENVIRONMENT: Ambiente
+            ESPA_OL: Espanhol
+            EXTERNAL: Externo
+            FAILED_TO_REMOVE_LOGO: 'Falha ao remover o logotipo.'
+            FAILED_TO_RESET_PREFERENCES: 'Falha ao redefinir as preferências.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Falha ao salvar o modo do logotipo.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Falha ao salvar o texto do logotipo.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Falha ao salvar os padrões do site.'
+            FOLLOW_OS: 'Seguir o SO'
+            FONT: Fonte
+            FONT_SIZE: 'Tamanho da fonte'
+            FONT_SIZE_LARGE: Grande
+            FONT_SIZE_NORMAL: Normal
+            FONT_SIZE_SMALL: Pequeno
+            FONT_SIZE_XLARGE: 'Muito Grande'
+            FRAN_AIS: Francês
+            GRAV_LOGO: 'Logotipo do Grav'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Agrupar mudanças rápidas de campo em um único passo de desfazer'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Como as páginas são exibidas por padrão'
+            HUE: Matiz
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Itens por página'
+            LANGUAGE_CHANGED: 'Idioma alterado para {language}'
+            LIGHT: Claro
+            LIGHT_LOGO: 'Logotipo claro'
+            LIGHT_LOGO_REMOVED: 'Logotipo claro removido.'
+            LIGHT_LOGO_UPLOADED: 'Logotipo claro enviado.'
+            LIGHT_MODE_LOGO: 'Logotipo do modo claro'
+            LOGO_TEXT: 'Texto do logotipo'
+            LOGO_TYPE: 'Tipo de logotipo'
+            LOGO_UPLOAD_FAILED: 'Falha no envio do logotipo.'
+            MENUBAR_LINKS: 'Links da barra de menu'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Nenhum (1 campo = 1 desfazer)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Número de páginas exibidas na visualização de lista'
+            'OFF': Desligado
+            'ON': Ligado
+            OTHER_LIST_VIEWS: 'Outras visualizações de lista'
+            OTHER_LIST_VIEWS_DESC: 'Layout padrão para as listas de usuários, plugins e temas'
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'plugin no servidor. Experimental.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Preferências redefinidas. Recarregue para aplicar.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Cor primária usada para botões, links e destaques'
+            REAL_TIME_COLLABORATION: 'Colaboração em tempo real'
+            REMOVE_LINK: 'Remover link'
+            RESET: Redefinir
+            RESET_ALL_PREFERENCES: 'Redefinir todas as preferências'
+            RESET_PREFERENCES: 'Redefinir preferências'
+            RESET_PREFERENCES_MSG: 'Remover todas as suas substituições pessoais e reverter para os padrões do site?'
+            RESET_TO_SITE_DEFAULTS: 'Redefinir minhas preferências para os padrões do site'
+            REVERT_CHANGES: 'Reverter alterações'
+            SATURATION: Saturação
+            SAVED_AUTOMATICALLY: 'Salvo automaticamente'
+            SAVE_SITE_DEFAULTS: 'Salvar padrões do site'
+            SERVER_CONNECTION_DETAILS: 'Detalhes da conexão do servidor'
+            SERVER_URL: 'URL do servidor'
+            SETTINGS_GRAV_ADMIN: 'Configurações — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Mostrar um botão de desfazer na barra de ferramentas do editor'
+            SITE_DEFAULTS: 'Padrões do site'
+            SITE_DEFAULTS_DESCRIPTION: 'As configurações abaixo aplicam-se a todos os usuários administradores como base. Os itens de Nível B (aparência, páginas, idioma, editor) podem ser substituídos nas preferências de cada usuário acima. Os itens de Nível A (edição, barra de menu) são aplicados a todo o site e não podem ser substituídos.'
+            SITE_DEFAULTS_SAVED: 'Padrões do site salvos. Todos os usuários verão essas alterações no próximo recarregamento.'
+            SITE_SETTINGS_DESC: 'Preferências padrão para novos usuários e comportamento em todo o site. As alterações aplicam-se no próximo recarregamento para os usuários afetados.'
+            SITE_SETTINGS_HEADING: 'Configurações do site'
+            SITE_WIDE_ONLY: 'Apenas em todo o site'
+            STICKY_TOOLBAR: 'Barra de ferramentas fixa'
+            STICKY_TOOLBAR_DESC: 'Mantenha a barra de ferramentas de formatação e o botão de Visualização fixos na tela enquanto você rola a página.'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Tamanho do texto usado em todo o admin'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'A primeira letra torna-se o ícone'
+            TOOLBAR_UNDO_BUTTON: 'Botão Desfazer da barra de ferramentas'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Tipo de fonte usado em toda a administração'
+            UNDO_BATCH_WINDOW: 'Janela de Desfazer em Lote'
+            USED_ON_DARK_BACKGROUNDS: 'Usado em fundos escuros'
+            USED_ON_LIGHT_BACKGROUNDS: 'Usado em fundos claros'
+            USERS_MAY_OVERRIDE: 'Usuários podem sobrescrever'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, hifens, sublinhados'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Conta de administrador criada — bem-vindo ao Grav'
+            CHECKING_SERVER: 'Verificando servidor…'
+            CONFIRM_PASSWORD: 'Confirmar senha'
+            CREATE_ADMINISTRATOR: 'Criar administrador'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Crie sua conta de administrador para começar'
+            CREATING_ACCOUNT: 'Criando conta...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Insira um endereço de e-mail válido'
+            ENVIRONMENT: Ambiente
+            FULL_NAME: 'Nome completo'
+            OPTIONAL: (opcional)
+            PASSWORDS_DO_NOT_MATCH: 'As senhas não coincidem'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Por favor, corrija os erros acima e tente novamente'
+            POWERED_BY_GRAV_CMS: 'Desenvolvido por Grav CMS'
+            SERVER_CONFIGURATION: 'Configuração do Servidor'
+            SERVER_URL: 'URL do Servidor'
+            SETUP_GRAV_ADMIN: 'Configuração — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'A configuração já foi concluída. Por favor, faça login.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Incapaz de conectar ao servidor. Verifique a URL do seu servidor e tente novamente.'
+            WELCOME_TO_GRAV: 'Bem-vindo ao Grav'
+        SHORT: Curto
+        SHORT_DATE_FORMAT: 'Formato de data de exibição curta'
+        SHORT_DATE_FORMAT_HELP: 'Defina o formato de data curta que pode ser usado pelos temas'
+        SHUTDOWN_CLOSE_CONNECTION: 'Fechar conexão no desligamento'
+        SHUTDOWN_CLOSE_CONNECTION_HELP: 'Fechar a conexão antes de chamar onShutdown(). false para depuração'
+        SIGN_OUT: Sair
+        SITE: Site
+        SITE_ACCESS: 'Acesso ao Site'
+        SITE_DEFAULT_LANG: 'Idioma padrão'
+        SITE_DEFAULT_LANG_HELP: 'Idioma padrão a ser usado pela tag <HTML> do tema'
+        SITE_DEFAULT_LANG_PLACEHOLDER: 'Idioma padrão a ser usado pela tag <HTML> do tema'
+        SITE_TITLE: 'Título do Site'
+        SITE_TITLE_HELP: 'Título padrão para o seu site, frequentemente usado em temas'
+        SITE_TITLE_PLACEHOLDER: 'Título de todo o site'
+        SLUG: Slug
+        SLUG_HELP: 'A variável slug permite que você defina especificamente a parte da URL da página'
+        SLUG_VALIDATE_MESSAGE: 'Um slug deve conter apenas caracteres alfanuméricos minúsculos e hifens'
+        SORTABLE_PAGES: 'Páginas Ordenáveis:'
+        SSL_ENABLE_PROXY: 'Ativar Servidor Proxy'
+        SSL_VERIFY_HOST: 'Verificar Host Remoto'
+        SSL_VERIFY_HOST_HELP: 'Alguns podem falhar na verificação de certificados SSL'
+        SSL_VERIFY_PEER: 'Verificar Peer Remoto'
+        SSL_VERIFY_PEER_HELP: 'Alguns podem falhar na verificação de certificados SSL'
+        STABLE: Estável
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} ativo)'
+            ACTIVE_THEME: 'Tema Ativo'
+            UPDATE_COUNT: '{n, plural, one{# atualização} other{# atualizações}}'
+        STRICT_BLUEPRINT_COMPAT: 'Compatibilidade de Blueprint'
+        STRICT_BLUEPRINT_COMPAT_HELP: 'Ativa o suporte estrito compatível com versões anteriores para blueprints. Se desativado, o novo comportamento faz com que a validação do formulário falhe se houver dados extras que não estão definidos no blueprint.'
+        STRICT_TWIG_COMPAT: 'Compatibilidade com Twig'
+        STRICT_TWIG_COMPAT_HELP: 'Ativa a configuração obsoleta de autoescape do Twig. Quando desativado, o filtro |raw é necessário para exibir HTML, já que o Twig fará o escape automático da saída.'
+        STRICT_YAML_COMPAT: 'Compatibilidade com YAML'
+        STRICT_YAML_COMPAT_HELP: 'Recorre ao analisador YAML do Symfony 2.4 se o analisador Nativo ou 3.4 falhar'
+        SUMMARY_SIZE: 'Tamanho do Resumo'
+        SUMMARY_SIZE_HELP: 'A quantidade de caracteres de uma página para usar como um resumo do conteúdo'
+        SUPPORTED: Suportado
+        SUPPORTED_HELP: "Lista separada por vírgulas de códigos de idioma com 2 letras (por exemplo, 'en,fr,de')"
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'o editor de markdown integrado'
+                LOCKED: 'Somente leitura — {owner} está editando com **{editor}**. Tipos de editor mistos não podem coeditar; [altere sua preferência de editor]({href}) para colaborar ao vivo.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'altere sua preferência de editor'
+                TO_COLLABORATE_LIVE: 'para colaborar ao vivo.'
+        SYSLOG_FACILITY: 'Instalação de Syslog'
+        SYSLOG_FACILITY_HELP: 'Instalação de Syslog para saída'
+        SYSLOG_TAG: 'Tag de Syslog'
+        SYSLOG_TAG_HELP: 'Tag de Syslog para saída'
+        SYSTEM:
+            COMING_SOON: 'Em breve'
+            SYSTEM_GRAV_ADMIN: 'Sistema — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} livre'
+            BYTES_USED: '{size} usado'
+            CACHE: Cache
+            DISK: Disco
+            EVERYTHING_UP_TO_DATE: 'Tudo atualizado'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'O Grav está instalado via symlink — atualize manualmente.'
+            GRAV_UPDATE_AVAILABLE: 'Atualização do Grav Disponível'
+            MORE_COUNT: '+ {n} mais…'
+            PACKAGES_OUTDATED: '{n, plural, one{# pacote desatualizado} other{# pacotes desatualizados}}'
+            PERCENT_USED: '{percent}% usado'
+            SERVER: Servidor
+            UPDATES: Atualizações
+            UPDATES_AVAILABLE_COUNT: '{n} disponível'
+            UPDATE_ALL: 'Atualizar Tudo'
+            UPGRADE_GRAV: 'Atualizar Grav'
+        TAXONOMIES: Taxonomias
+        TAXONOMY: Taxonomia
+        TAXONOMY_TYPES: 'Tipos de Taxonomia'
+        TAXONOMY_TYPES_HELP: 'Tipos de taxonomia devem ser definidos aqui se você deseja utilizá-los nas páginas'
+        TESTING: Testando
+        THEMES:
+            ACTIVATE: Ativar
+            ACTIVATE_CONFIRM_MESSAGE: 'Alternar o tema do site ativo para {name}? A renderização do front-end usará este tema imediatamente.'
+            ACTIVATE_CONFIRM_TITLE: 'Ativar tema?'
+            ACTIVATE_THEME: 'Ativar {name}'
+            ACTIVE_THEME: 'Tema Ativo'
+            BACK_TO_THEMES: 'Voltar para Temas'
+            CHANGELOG: 'Registro de alterações'
+            CHECK_UPDATES: 'Verificar atualizações'
+            CLICK_TO_VIEW_FULL_SIZE: 'Clique para ver em tamanho real'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'A configuração foi modificada em outro lugar. Por favor, recarregue.'
+            CONFIGURE: Configurar
+            DELETE_ACTIVE_WARNING: 'Atualmente ativo. Recomenda-se trocar de tema antes de excluir.'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Falha ao verificar atualizações'
+            FAILED_TO_LOAD_THEMES: 'Falha ao carregar temas'
+            FAILED_TO_SAVE_CONFIGURATION: 'Falha ao salvar configuração.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Nenhuma opção de configuração disponível para este tema.'
+            PAGE_TITLE: '{name} — Temas — Grav Admin'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} é o tema atualmente ativo. Removê-lo deixará o site sem um tema até que outro seja ativado. Continuar?'
+            REMOVE_CONFIRM_MESSAGE: 'Remover {name}? Isso desinstalará o tema e excluirá seus arquivos.'
+            REMOVE_CONFIRM_TITLE: 'Remover tema?'
+            REMOVE_THEME: 'Remover tema'
+            SEARCH_THEMES: 'Pesquisar temas...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Selecione um tema para ver detalhes'
+            SYMLINKED: Symlinked
+            THEMES_GRAV_ADMIN: 'Temas — Grav Admin'
+            TITLE: Temas
+        THEMES_TABLE:
+            NO_THEMES: 'Nenhum tema instalado'
+        THUMB: Miniatura
+        TIME:
+            DAYS_AGO: 'há {n}d'
+            HOURS_AGO: 'há {n}h'
+            JUST_NOW: 'agora mesmo'
+            MINUTES_AGO: 'há {n}m'
+        TIMEOUT: 'Tempo limite'
+        TIMEOUT_HELP: 'Define o tempo limite da sessão em segundos'
+        TIMEZONE: 'Fuso horário'
+        TIMEZONE_HELP: 'Substituir o fuso horário padrão do servidor'
+        TITLE: Título
+        TOASTS:
+            ACTIVE_THEME_REMOVE_BLOCK: 'Não é possível remover o tema ativo. Mude para outro tema primeiro.'
+            API_KEY_REVOKED: 'Chave de API «{name}» revogada'
+            BACKUP_CREATED: 'Backup criado ({size})'
+            CACHE_CLEARED: 'Cache limpo ({scope})'
+            CONFIG_MODIFIED_ELSEWHERE: 'A configuração foi modificada em outro lugar — recarregue para ver a mais recente'
+            CONFIG_SAVED: 'Configuração de {name} salva'
+            COPIED: '{label} copiado'
+            COPY_FAILED: 'Falha ao copiar: {detail}'
+            DEPENDENCY_INSTALLED: 'Plugin {slug} instalado (dependência)'
+            FILES_DELETE_FAILED: '{n, plural, one{Falha ao excluir # arquivo} other{Falha ao excluir # arquivos}}'
+            FILES_UPLOADED: '{n, plural, one{Enviado # arquivo} other{Enviados # arquivos}}'
+            FILE_DELETED: '{name} excluído'
+            FILE_DELETE_FAILED: 'Falha ao excluir {name}'
+            FOLDER_CREATED: 'Pasta «{name}» criada'
+            FORM_LABEL:
+                CONFIGURATION: Configuração
+                FLEX_OBJECT: 'Objeto Flex'
+                FORM: Formulário
+                PAGE: Página
+                PLUGIN: Plugin
+                PLUGIN_PAGE: 'Página de Plugin'
+                THEME: Tema
+                USER: Usuário
+            GPM_REFRESHED: '{n, plural, =0{GPM atualizado — nenhuma atualização disponível} one{GPM atualizado — # atualização disponível} other{GPM atualizado — # atualizações disponíveis}}'
+            GRAV_UPGRADED: 'Grav atualizado para v{version}'
+            INSTALL_FAILED: 'Falha ao instalar {slug}: {detail}'
+            ITEM_COPIED: 'Copiado “{name}” para “{target}”'
+            ITEM_DELETED: 'Excluído “{name}”'
+            ITEM_DELETE_FAILED: 'Falha ao excluir “{name}”'
+            ITEM_MOVED: 'Movido “{name}”'
+            ITEM_REORDERED: 'Reordenado “{name}”'
+            ITEM_SAVED: '{name} salvo'
+            PACKAGES_UPDATED: '{n, plural, one{# pacote atualizado} other{# pacotes atualizados}}'
+            PACKAGE_REMOVED: '{name} removido'
+            PACKAGE_REMOVE_FAILED: 'Falha ao remover {name}'
+            PACKAGE_UPDATED: '{name} atualizado'
+            PACKAGE_UPDATE_FAILED: 'Falha ao atualizar {name}: {detail}'
+            PAGE_PUBLISHED: '“{name}” publicado'
+            PAGE_PUBLISH_FAILED: 'Falha ao alterar o estado de publicação: {detail}'
+            PAGE_UNPUBLISHED: '“{name}” despublicado'
+            PLUGIN_DISABLED: '{name} desativado'
+            PLUGIN_DISABLE_FAILED: 'Falha ao desativar {name}: {detail}'
+            PLUGIN_ENABLED: '{name} ativado'
+            PLUGIN_ENABLE_FAILED: 'Falha ao ativar {name}: {detail}'
+            PLUGIN_INSTALLED: 'Plugin {name} instalado'
+            PLUGIN_LOCKOUT_BLOCK: '{name} não pode ser desativado do admin-next — isso bloquearia seu acesso.'
+            PLUGIN_REMOVED: '{name} removido'
+            PLUGIN_REMOVE_FAILED: 'Falha ao remover {name}: {detail}'
+            PLUGIN_REQUIRED_BLOCK: '{name} não pode ser removido — é necessário para o admin-next.'
+            SAVED: Salvo
+            SAVED_AS_LANGUAGE: 'Salvo como {language}'
+            SAVE_FAILED: 'Falha ao salvar'
+            SAVE_FORM_FAILED: 'Falha ao salvar {form}'
+            THEME_ACTIVATED: '{name} é agora o tema ativo'
+            THEME_ACTIVATE_FAILED: 'Falha ao ativar {name}: {detail}'
+            THEME_INSTALLED: 'Tema {name} instalado'
+            THEME_REMOVED: '{name} removido'
+            THEME_REMOVE_BLOCK: '{name} não pode ser removido.'
+            THEME_REMOVE_FAILED: 'Falha ao remover {name}: {detail}'
+            TOTP_CODE_REQUIRED: 'Insira o código de 6 dígitos do seu autenticador'
+            TRANSLATION_CREATED: 'Tradução para {language} criada'
+            TRANSLATION_RESET: '{target} redefinido a partir de {source}'
+            UPDATE_FAILED: 'Falha na atualização: {detail}'
+            USER_CREATED: 'Usuário {username} criado'
+            USER_DELETED: 'Usuário {username} excluído'
+            USER_DELETE_FAILED: 'Falha ao excluir o usuário {username}'
+            USER_DISABLED: 'Usuário {username} desativado'
+            USER_ENABLED: 'Usuário {username} ativado'
+            USER_SAVED: 'Usuário {username} salvo'
+            USER_STATE_FAILED: 'Falha ao alterar o estado de {username}: {detail}'
+        TOGGLE_DARK_MODE: 'Alternar modo escuro'
+        TOGGLE_MENU: 'Alternar menu'
+        TOOLS:
+            BACKUPS:
+                ACTION: Ação
+                BACKUP_CREATED_SUCCESSFULLY: 'Backup criado com sucesso'
+                BACKUP_DATE: 'Data do Backup'
+                BACKUP_DELETED: 'Backup excluído'
+                BACKUP_HISTORY: 'Histórico de Backups'
+                BACKUP_NOW: 'Fazer Backup Agora'
+                BACKUP_STATISTICS: 'Estatísticas de Backup'
+                CREATING: Criando...
+                DELETE_BACKUP: 'Excluir Backup'
+                FAILED_TO_CREATE_BACKUP: 'Falha ao criar backup'
+                FAILED_TO_DELETE_BACKUP: 'Falha ao excluir backup'
+                FAILED_TO_LOAD_BACKUPS: 'Falha ao carregar backups'
+                LOADING_BACKUPS: 'Carregando backups...'
+                NEWEST_BACKUP: 'Backup mais recente'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Nenhum backup encontrado. Crie um para começar.'
+                NUMBER_OF_BACKUPS: 'Número de Backups'
+                NUMBER_OF_PROFILES: 'Número de Perfis'
+                OLDEST_BACKUP: 'Backup mais antigo'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Backups, agendador, logs e diagnósticos'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Solte um arquivo .zip aqui ou clique para procurar'
+                INSTALL_FROM_FILE: 'Instalar de Arquivo'
+                INSTALL_FROM_URL: 'Instalar de URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Apenas arquivos .zip são suportados'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Pacote instalado com sucesso'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Suporta pacotes de plugins e temas do Grav'
+            LOGS:
+                100_LINES: '100 linhas'
+                200_LINES: '200 linhas'
+                25_LINES: '25 linhas'
+                50_LINES: '50 linhas'
+                ALL_LEVELS: 'Todos os níveis'
+                CRITICAL: Crítico
+                EMERGENCY: Emergência
+                FAILED_TO_LOAD_LOGS: 'Falha ao carregar logs'
+                FAILED_TO_LOAD_LOG_FILES: 'Falha ao carregar arquivos de log'
+                LOADING_LOGS: 'Carregando logs...'
+                LOG_FILE: 'Arquivo de log'
+                MESSAGE: Mensagem
+                NOTICE: Aviso
+                REFRESH: Atualizar
+                SEARCH_MESSAGES: 'Pesquisar mensagens...'
+                WARNING: Atenção
+            REPORTS:
+                CONTENT_FIELD: 'conteúdo: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Falha ao carregar relatórios'
+                LOADING_REPORTS: 'Carregando relatórios...'
+                NO_REPORTS_AVAILABLE: 'Nenhum relatório disponível.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Carregando componente de relatório...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'Para habilitar a funcionalidade do Agendador, você deve adicionar o **Grav Scheduler** ao arquivo crontab do seu sistema para o usuário **{user}**. Execute o comando acima no terminal para adicioná-lo automaticamente. Após salvar, atualize esta página para ver o status.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Falha ao carregar a configuração do agendador.'
+                FAILED_TO_SAVE: 'Falha ao salvar'
+                GRAV_SCHEDULER: 'Agendador do Grav'
+                INFO_BANNER: 'O agendador pode usar o crontab do sistema ou gatilhos de webhook para executar comandos. Webhooks são recomendados para ambientes em nuvem. Apenas usuários avançados devem configurar tarefas personalizadas. Configurações incorretas ou uso indevido podem levar a vulnerabilidades de segurança.'
+                LOADING_SCHEDULER: 'Carregando agendador...'
+                NOT_ENABLED_FOR_USER: 'Não habilitado para o usuário:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Configuração do agendador salva'
+                SECURITY_WARNING: 'Apenas usuários avançados devem configurar tarefas personalizadas do agendador. Configurações incorretas podem causar problemas de desempenho ou vulnerabilidades de segurança.'
+                WEBHOOK_ALTERNATIVE: 'Alternativamente, instale o plugin **scheduler-webhook** para usar o disparo de cron baseado em webhook, o que é recomendado para ambientes em nuvem onde o acesso ao crontab do sistema não está disponível.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} livre de {total}'
+                DISK_USAGE: 'Uso de Disco'
+                DRIVER: Driver
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Falha ao carregar informações do sistema'
+                GRAV_VERSION: 'Versão do Grav'
+                LOADING_SYSTEM_INFO: 'Carregando informações do sistema...'
+                MAX_EXECUTION: 'Execução Máxima'
+                MAX_POST: 'POST Máximo'
+                MAX_UPLOAD: 'Upload Máximo'
+                MEMORY_LIMIT: 'Limite de Memória'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'Versão do PHP'
+            TOOLS_GRAV_ADMIN: 'Ferramentas — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Anterior
+            SITE_NOTIFICATION: 'Notificação do site'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Nenhum dado de visualização ainda'
+        TOP_PROGRESS_BAR:
+            WORKING: Trabalhando
+        TRANSLATIONS: Traduções
+        TRANSLATIONS_FALLBACK: 'Fallback de traduções'
+        TRANSLATIONS_FALLBACK_HELP: 'Usar traduções de fallback caso o idioma ativo não exista'
+        TWIG_3_COMPATIBILITY: 'Compatibilidade com Twig 3'
+        TWIG_3_COMPATIBILITY_HELP: 'Habilitar reescritas automáticas para sintaxe legada do Twig 1/2 que falha no Twig 3 (ex: filtros <code>for ... if ...</code>).'
+        TWIG_CACHING: 'Cache do Twig'
+        TWIG_CACHING_HELP: 'Controla o mecanismo de cache do Twig. Deixe habilitado para um melhor desempenho.'
+        TWIG_CONTENT: 'Twig no Conteúdo'
+        TWIG_CONTENT_CONFIG_ACCESS: 'Permitir acesso a variáveis de configuração no Twig'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: 'Define se a variável <code>config</code> do Twig pode ser lida no conteúdo das páginas. Quando desativado (padrão), ler <code>config.system.title</code> de uma página não retorna nada. Quando ativado, <code>config</code> é exposto, mas ainda filtrado por <code>config_denied_paths</code> (veja Sandbox do Twig abaixo) para que credenciais e outras subárvores sensíveis permaneçam ocultas.'
+        TWIG_CONTENT_EDITOR_ENABLED: 'Permitir que editores alternem Twig no Conteúdo'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: 'Quando desativado (padrão), a caixa de seleção Twig na aba Avançado do editor de páginas só é visível para usuários com a permissão <code>admin.pages_twig</code>, e páginas que já têm o Twig habilitado só podem ser editadas por esses usuários. Quando ativado, qualquer pessoa com acesso de edição de página pode habilitar o Twig em páginas individuais.'
+        TWIG_CONTENT_HELP: 'Controles para Twig inserido no conteúdo da página por editores. Templates do tema no disco não são afetados por essas configurações; eles se aplicam apenas ao Twig que autores colocam no corpo da página ou no frontmatter.'
+        TWIG_CONTENT_PROCESS_ENABLED: 'Habilitar Twig no Conteúdo'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: 'Permite que páginas com <code>process: twig: true</code> em seu frontmatter (e a opção <code>system.pages.frontmatter.process_twig</code> habilitada globalmente) executem o Twig. <strong>Desativado por padrão no Grav 2.0.</strong> Manter isso desabilitado reduz a superfície de ataque de injeção de templates, mas interrompe qualquer página que precise de Twig em seu corpo.'
+        TWIG_DEBUG: 'Depuração do Twig'
+        TWIG_DEBUG_HELP: 'Permite a opção de não carregar a extensão do Depurador do Twig'
+        TWIG_FIRST: 'Processar Twig Primeiro'
+        TWIG_FIRST_HELP: 'Se você habilitou o processamento de Twig nas páginas, você pode configurar o Twig para ser processado antes ou depois do markdown'
+        TWIG_SANDBOX: 'Sandbox do Twig'
+        TWIG_SANDBOX_ADMIN_HINT: 'Comentário de dica de admin'
+        TWIG_SANDBOX_ADMIN_HINT_HELP: 'Quando o sandbox bloquear uma expressão, anexa um comentário HTML de uma linha à página renderizada para que super-admins que visualizam o código-fonte saibam que algo foi filtrado. Visitantes e não-admins não verão nada.'
+        TWIG_SANDBOX_ALLOWED_FILTERS: 'Filtros permitidos'
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: 'Filtros Twig que o conteúdo da página pode aplicar.'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: 'Funções permitidas'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: 'Funções Twig que o conteúdo da página pode chamar.'
+        TWIG_SANDBOX_ALLOWED_METHODS: 'Métodos permitidos'
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: 'Listas por classe de métodos de objeto que o conteúdo da página pode invocar.'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: 'Propriedades permitidas'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: 'Listas por classe de propriedades de objeto que o conteúdo da página pode ler.'
+        TWIG_SANDBOX_ALLOWED_TAGS: 'Tags permitidas'
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: 'Tags Twig que o conteúdo da página pode usar. Adicione apenas tags cujos efeitos você deseja expor aos autores.'
+        TWIG_SANDBOX_CLASS: Classe
+        TWIG_SANDBOX_ENABLED: 'Habilitar sandbox do Twig'
+        TWIG_SANDBOX_ENABLED_HELP: 'Renderiza o conteúdo da página criado pelo editor dentro de uma SecurityPolicy do Twig baseada em lista de permissões. <strong>Desativar isso remove a única proteção contra ataques de injeção de modelo via conteúdo de página</strong>: qualquer conta com acesso de nível de editor (ou qualquer pessoa que comprometa o sistema de arquivos) pode executar PHP arbitrário via Twig. Desative apenas se um site realmente precisar de acesso ao container a partir do conteúdo da página e você confiar totalmente em todos os autores.'
+        TWIG_SANDBOX_HELP: 'Lista de permissões de tags, filtros, funções, métodos e propriedades do Twig que modelos de conteúdo de página podem usar. O conteúdo criado pelo editor é renderizado através desta sandbox para que um autor comprometido ou um bug de injeção de modelo não possa alcançar o container mais amplo.'
+        TWIG_SANDBOX_LOGGING: 'Registrar violações'
+        TWIG_SANDBOX_LOGGING_HELP: 'Escrever cada expressão bloqueada em <code>logs/twig-sandbox.log</code>. Útil ao ajustar a lista de permissões; desative em produção para manter os logs limpos.'
+        TWIG_SANDBOX_METHODS: Métodos
+        TWIG_SANDBOX_PROPERTIES: Propriedades
+        TWIG_TEMPLATING: 'Templates Twig'
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA desativado'
+            2FA_ENABLED: '2FA ativado'
+            2FA_IS_ENABLED: '2FA está ativado'
+            2FA_QR_CODE: 'Código QR de 2FA'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Adicione uma camada extra de segurança exigindo um código de uso único no login.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'Um código de uso único é exigido sempre que esta conta fizer login.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'Um segredo já foi gerado, mas não é exibido por motivos de segurança.'
+            CONFIRM_DISABLE: 'Confirmar desativação'
+            ENABLE_2FA: 'Habilitar 2FA'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Insira o código de 6 dígitos do seu autenticador'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Insira seu código de 6 dígitos atual para confirmar'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Falha ao gerar segredo de 2FA'
+            FINISH_ENABLING_2FA: 'Concluir ativação do 2FA'
+            FORCE_DISABLE: 'Forçar desativação'
+            FORCE_DISABLE_PROMPT: 'Forçar a desativação do 2FA para **{username}**? Use isto apenas para recuperação de dispositivo perdido.'
+            REGENERATE_AND_SHOW_QR: 'Regerar e mostrar QR'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Escaneie o código QR com seu aplicativo autenticador'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Escaneie o código QR com seu aplicativo autenticador, em seguida insira o código de 6 dígitos para verificar e ativar.'
+            SECRET_FOR_MANUAL_ENTRY: 'Segredo (para entrada manual):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'A autenticação de dois fatores está desativada'
+            VERIFICATION_CODE: 'Código de verificação'
+            VERIFY_ENABLE: 'Verificar e Ativar'
+        TYPE: Tipo
+        UNPUBLISHED_DATE: 'Data de despublicação'
+        UNPUBLISHED_DATE_HELP: 'Pode fornecer uma data para disparar automaticamente a despublicação.'
+        UNSAVED_CHANGES: 'Alterações não salvas'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Salvando alterações…'
+            SAVING_CHANGES_2: 'Salvando alterações'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Alterações não salvas — clique em Salvar para persistí-las'
+            YOU_HAVE_UNSAVED_CHANGES: 'Você tem alterações não salvas'
+        UPDATE: Atualizar
+        UPDATE_AVAILABLE_VERSION: 'Atualização disponível: v{version}'
+        UPDATE_TO_VERSION: 'Atualizar para v{version}'
+        UPLOAD: Upload
+        UPLOADS_DANGEROUS_EXTENSIONS: 'Extensões perigosas'
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: 'Bloqueie estas extensões de serem enviadas, independentemente dos tipos MIME aceitos'
+        UPLOADS_SECURITY: 'Segurança de Uploads'
+        USERNAME: 'Nome de usuário'
+        USERNAME_HELP: 'O nome de usuário deve ter entre 3 e 16 caracteres, incluindo letras minúsculas, números, sublinhados e hífens. Letras maiúsculas, espaços e caracteres especiais não são permitidos'
+        USERNAME_REGEX: 'Regex de Nome de Usuário'
+        USERNAME_REGEX_HELP: 'Por padrão: Apenas caracteres minúsculos, dígitos, hífens e sublinhados. 3 - 16 caracteres'
+        USERS:
+            2_FACTOR_AUTHENTICATION: 'Autenticação de 2 Fatores'
+            ADD_USER: 'Adicionar Usuário'
+            BACK_TO_USERS: 'Voltar para Usuários'
+            CONFIRM_DELETE_USER: "Excluir o usuário '{username}'? Isso não pode ser desfeito."
+            CREATED: Criado
+            DELETE_USER: 'Excluir Usuário'
+            FAILED_TO_LOAD_USERS: 'Falha ao carregar usuários'
+            FAILED_TO_SAVE_USER: 'Falha ao salvar o usuário.'
+            NEW:
+                ACCOUNT: Conta
+                CREATE: Criar
+                FULL_NAME: 'Nome Completo'
+                LOWERCASE_3_64_CHARS: '3-64 caracteres: letras, números, . - _'
+                NEW_USER: 'Novo Usuário'
+                NEW_USER_GRAV_ADMIN: 'Novo Usuário — Grav Admin'
+                PERMISSIONS: Permissões
+            PAGE_TITLE: '{name} — Usuários — Grav Admin'
+            PERMISSIONS: Permissões
+            SEARCH_USERS: 'Pesquisar usuários...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Selecione um usuário para ver os detalhes'
+            STATUS: Status
+            STATUS_HELP: 'Contas desativadas não podem entrar ou usar a API.'
+            SUPER_ADMIN: 'Super Administrador'
+            TITLE: Usuários
+            USERS_GRAV_ADMIN: 'Usuários — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Usuário alterado em outro lugar — salve para sobrescrever ou recarregue'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'O usuário foi modificado em outro lugar. Por favor, recarregue.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Você não pode excluir sua própria conta.'
+        USERS_FILTER:
+            BACKEND_ACCESS: 'Acesso ao backend'
+            CLEAR: Limpar
+            CLEAR_ALL: 'Limpar filtros'
+            FILTER_BY_GROUP: 'Filtrar por este grupo'
+            FILTER_BY_PERMISSION: 'Filtrar por esta permissão'
+            GROUP: Grupo
+            GROUPS: Grupos
+            LOADING: Carregando…
+            NO_MATCHES: 'Sem resultados'
+            NO_MATCHES_FILTERS: 'Nenhum usuário corresponde a estes filtros'
+            PERMISSION: Permissão
+            TYPE_TO_FILTER: 'Digite para filtrar…'
+        USERS_NAV:
+            CONFIGURATION: Configuração
+            GROUPS: Grupos
+            INVITATIONS: Convites
+            USERS: Usuários
+        USERS_TABLE:
+            ACTIONS: Ações
+            CARDS: Cards
+            DELETE: Excluir
+            DISABLED: Desabilitado
+            EDIT: Editar
+            EMAIL: E-mail
+            ENABLED: Habilitado
+            FULL_NAME: 'Nome completo'
+            NO_USERS: 'Nenhum usuário encontrado'
+            'OFF': Desativado
+            'ON': Ativado
+            PERMISSIONS: Permissões
+            STATUS: Status
+            TABLE: Tabela
+            USERNAME: 'Nome de usuário'
+        USER_ACCOUNTS: 'Contas de usuário'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Avatar removido'
+            AVATAR_UPDATED: 'Avatar atualizado'
+            FAILED_TO_REMOVE_AVATAR: 'Falha ao remover avatar'
+            FAILED_TO_UPLOAD_AVATAR: 'Falha ao enviar avatar'
+            UPLOAD_AVATAR: 'Enviar avatar'
+        USE_GLOBAL: 'Usar global'
+        VALIDATION:
+            FIELD_REQUIRED: '{label} é obrigatório'
+            FORM_HAS_ERRORS: '{count, plural, one {# campo requer sua atenção} other {# campos requerem sua atenção}}'
+            REQUIRED_GENERIC: 'Este campo é obrigatório'
+        VALID_LINK_ATTRIBUTES: 'Atributos de link válidos'
+        VALID_LINK_ATTRIBUTES_HELP: 'Atributos que serão adicionados automaticamente ao elemento HTML de mídia'
+        VARY_ACCEPT_ENCODING: 'Vary accept encoding'
+        VARY_ACCEPT_ENCODING_HELP: 'Define o cabeçalho `Vary: Accept Encoding` para ajudar no cache de proxy e CDN'
+        VERSION: Versão
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Abrir o frontend do site em uma nova aba'
+            VIEW_SITE: 'Ver site'
+        VISIBLE: Visível
+        VISIBLE_HELP: 'Determina se uma página está visível na navegação.'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Widget desconhecido: {id}'
+        WRAPPED_SITE: 'Site encapsulado'
+        WRAPPED_SITE_HELP: 'Para que temas/plugins saibam se o Grav está sendo encapsulado por outra plataforma'
+        XSS_DANGEROUS_TAGS: 'Filtrar tags HTML perigosas'
+        XSS_DANGEROUS_TAGS_LIST: 'Lista de tags HTML perigosas'
+        XSS_HTML_INLINE_STYLES: 'Filtrar estilos inline HTML'
+        XSS_INVALID_PROTOCOLS: 'Filtrar protocolos inválidos'
+        XSS_INVALID_PROTOCOLS_LIST: 'Lista de protocolos inválidos'
+        XSS_MOZ_BINDINGS: 'Filtrar vínculos Moz'
+        XSS_ON_EVENTS: 'Filtrar On-events'
+        XSS_SECURITY: 'Segurança XSS para Conteúdo'
+        XSS_WHITELIST_PERMISSIONS: 'Permissões da Lista de Permissões'
+        XSS_WHITELIST_PERMISSIONS_HELP: 'Usuários com essas permissões pularão as regras de XSS ao salvar conteúdo'
+        'YES': Sim
+        YUBIKEY_HELP: 'Insira sua YubiKey no seu computador e clique no botão para gerar um OTP. Os primeiros 12 caracteres são seu ID de cliente e serão salvos.'
+        YUBIKEY_ID: 'ID da YubiKey'

@@ -1,0 +1,1862 @@
+ICU:
+    ADMIN_NEXT:
+        2FA_ENABLED: '2FA 사용됨'
+        2FA_SECRET: '2FA 보안 키'
+        2FA_SECRET_HELP: '이 QR 코드를 [인증 앱(Authenticator App)](https://learn.getgrav.org/admin-panel/2fa#apps)으로 스캔하세요. 앱을 재설치해야 할 경우를 대비해 보안 키를 안전한 장소에 백업해 두는 것이 좋습니다. 자세한 정보는 [Grav 문서](https://learn.getgrav.org/admin-panel/2fa)를 확인하세요.'
+        2FA_TITLE: '2단계 인증'
+        ABSOLUTE_URLS: '절대 URL'
+        ABSOLUTE_URLS_HELP: '`base_url`에 대한 절대 또는 상대 URL'
+        ACCESS: 액세스
+        ACCESS_DENIED:
+            ACCESS_DENIED: '액세스 거부됨'
+        ACCESS_LEVELS: '액세스 수준'
+        ACCOUNT: 계정
+        ACCOUNTS: 계정
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: '계정 구성을 불러오지 못했습니다'
+            FAILED_TO_SAVE: '계정 구성을 저장하지 못했습니다'
+            MODIFIED_ELSEWHERE: '다른 곳에서 구성이 수정되었습니다. 새로고침하세요.'
+            NO_FIELDS: '사용 가능한 구성 옵션이 없습니다.'
+            PAGE_TITLE: '계정 구성 — Grav 관리자'
+            SAVED: '구성이 저장되었습니다'
+            TITLE: '계정 구성'
+        ACCOUNTS_CONFIGURATION: '계정 구성'
+        ACCOUNTS_STORAGE: '계정 저장소'
+        ACCOUNTS_STORAGE_HELP: "Flex Object 계정 유형에 사용할 저장 메커니즘입니다. 'Files'는 계정이 단일 폴더 내의 YAML 파일에 저장되는 전통적인 방식이며, 'Folder'는 각 계정마다 새 폴더를 생성하는 방식입니다."
+        ACCOUNTS_TYPE: '계정 유형'
+        ACCOUNTS_TYPE_HELP: '사용자 계정을 저장하기 위한 Flex Object 시스템'
+        ACTIVATE: 활성화
+        ACTIVE: 활성
+        ACTIVE_LANGUAGE_IN_SESSION: '세션 내 활성 언어'
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: '세션에 활성 언어를 저장합니다'
+        ADD: 추가
+        ADD_ACCOUNT: '계정 추가'
+        ADD_PAGE: '페이지 추가'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: '플러그인 추가'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'GPM에서 사용 가능한 플러그인을 불러오지 못했습니다'
+            FILTER_PLUGINS: '플러그인 필터링...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: '상세 정보를 보려면 플러그인을 선택하세요'
+        ADD_THEME_MODAL:
+            ADD_THEME: '테마 추가'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'GPM에서 사용 가능한 테마를 불러오지 못했습니다'
+            FILTER_THEMES: '테마 필터링...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: '상세 정보를 보려면 테마를 선택하세요'
+        ADMIN_CHILDREN_DISPLAY_ORDER: '하위 항목 표시 순서'
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: "이 페이지의 하위 항목이 관리자 플러그인의 '페이지' 보기에서 표시될 순서입니다"
+        ADMIN_SPECIFIC_OVERRIDES: '관리자 전용 재정의'
+        ADVANCED: 고급
+        ALLOWED: 허용됨
+        ALLOW_URL_TAXONOMY_FILTERS: 'URL 분류 필터'
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: '페이지 기반 컬렉션을 사용하면 `/taxonomy:value`를 통해 필터링할 수 있습니다.'
+        ALLOW_WEBSERVER_GZIP: '웹 서버 Gzip 허용'
+        ALLOW_WEBSERVER_GZIP_HELP: '기본값은 꺼짐입니다. 활성화하면 웹 서버에 구성된 Gzip/Deflate 압축이 작동하지만, onShutDown() 이벤트 이전에 http 연결이 닫히지 않아 페이지 로딩 속도가 느려질 수 있습니다.'
+        ALL_CHANGES_SAVED: '모든 변경 사항이 저장되었습니다'
+        API_KEYS_FIELD:
+            API_KEYS: 'API 키'
+            API_KEY_GENERATED: 'API 키가 생성되었습니다'
+            BLANK_NEVER: '(비워두면 만료 없음)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: '이 키를 지금 복사하십시오. 다시 표시되지 않습니다.'
+            CREATED: 생성됨
+            EXPIRES: 만료일
+            EXPIRY: 만료
+            E_G_MY_CLI_TOOL: '예: 내 CLI 도구'
+            FAILED_TO_COPY_TO_CLIPBOARD: '클립보드 복사 실패'
+            FAILED_TO_GENERATE_API_KEY: 'API 키 생성 실패'
+            FAILED_TO_LOAD_API_KEYS: 'API 키 로드 실패'
+            FAILED_TO_REVOKE_API_KEY: 'API 키 취소 실패'
+            GENERATE_KEY: '키 생성'
+            GENERATING: '생성 중...'
+            KEY_NAME: '키 이름'
+            KEY_PREFIX: '키 접두사'
+            LAST_USED: '마지막 사용'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: '아직 생성된 API 키가 없습니다.'
+            PLEASE_ENTER_A_KEY_NAME: '키 이름을 입력하십시오'
+            REVOKE_API_KEY: 'API 키 취소'
+            REVOKE_KEY: '키 취소'
+        APP:
+            CREATING_BACKUP: '백업 생성 중...'
+            DASHBOARD_GRAV_ADMIN: '대시보드 — Grav 관리자'
+            PAGE_TITLE: '{name} — Grav 관리자'
+            REFRESH: 새로고침
+            WELCOME_BACK: '다시 오신 것을 환영합니다, {name}님'
+        APPEND_URL_EXT: 'URL 확장자 추가'
+        APPEND_URL_EXT_HELP: '페이지 URL에 사용자 지정 확장자를 추가합니다. 참고: Grav에서 `<template>.<extension>.twig` 템플릿을 찾게 됩니다.'
+        APP_SHELL:
+            ADMIN_VERSION: '관리자 v{version}'
+            CLOSE_MENU: '메뉴 닫기'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: '정말 진행하시겠습니까?'
+        ASCENDING: 오름차순
+        ASSETS: 에셋
+        AUTHOR: 작성자
+        AUTO: 자동
+        AUTOESCAPE_VARIABLES: '변수 자동 이스케이프'
+        AUTOESCAPE_VARIABLES_HELP: '모든 변수를 자동으로 이스케이프합니다. 사이트가 정상적으로 작동하지 않을 가능성이 높습니다.'
+        AUTO_LINE_BREAKS: '자동 줄바꿈'
+        AUTO_LINE_BREAKS_HELP: '마크다운에서 자동 줄바꿈 지원을 활성화합니다'
+        AUTO_URL_LINKS: '자동 URL 링크'
+        AUTO_URL_LINKS_HELP: 'URL을 HTML 하이퍼링크로 자동 변환하는 기능을 활성화합니다'
+        AVATAR: '아바타 생성기'
+        AVATAR_HASH: "참고: 선택 사항인 아바타 사용자 지정 '해시' 문자열"
+        AVATAR_HELP: 'Multiavatar는 로컬에서 생성되는 아바타입니다. Gravatar는 이메일 주소를 사용하여 원격으로 미리 구성된 아바타를 불러오는 외부 서비스입니다.'
+        BACK: 뒤로
+        BACKUPS: 백업
+        BACKUPS_HISTORY: '백업 기록'
+        BACKUPS_MAX_COUNT: '최대 백업 수'
+        BACKUPS_MAX_RETENTION_TIME: '최대 보관 기간'
+        BACKUPS_MAX_RETENTION_TIME_APPEND: '일 단위'
+        BACKUPS_MAX_SPACE: '최대 백업 용량'
+        BACKUPS_PROFILES: '백업 프로필'
+        BACKUPS_PROFILE_ENVIRONMENT: 환경
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: '예약된 백업이 실행될 Grav 환경 컨텍스트입니다.'
+        BACKUPS_PROFILE_EXCLUDE_FILES: '제외할 파일'
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: '제외할 특정 파일이나 폴더 (줄당 하나씩)'
+        BACKUPS_PROFILE_EXCLUDE_PATHS: '제외할 경로'
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: '제외할 절대 경로 (줄당 하나씩)'
+        BACKUPS_PROFILE_NAME: '백업 이름'
+        BACKUPS_PROFILE_ROOT_FOLDER: '루트 폴더'
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: '절대 경로 또는 스트림을 사용할 수 있습니다'
+        BACKUPS_PROFILE_SCHEDULE: '예약 작업 활성화'
+        BACKUPS_PROFILE_SCHEDULE_AT: '예약 작업 실행'
+        BACKUPS_PURGE_CONFIG: '백업 정리 구성'
+        BACKUPS_STORAGE_PURGE_TRIGGER: '백업 저장소 정리 트리거'
+        BACKUPS_WIDGET:
+            BACKING_UP: '백업 중…'
+            BACKUP_NOW: 신규
+            CREATE_A_NEW_BACKUP_NOW: '지금 새 백업 생성'
+            DOWNLOAD_FILE: '{filename} 다운로드'
+            NO_BACKUPS_FOUND: '백업을 찾을 수 없습니다'
+        BODY_CLASSES: '본문 클래스'
+        CACHE_ALL: '모든 이미지 캐시'
+        CACHE_ALL_HELP: '이미지에 미디어 조작이 없더라도 Grav의 캐시 시스템을 통해 모든 이미지를 처리합니다.'
+        CACHE_CHECK_INTERVAL: '캐시 확인 간격'
+        CACHE_CHECK_INTERVAL_HELP: '다시 확인하기 전 이전에 계산된 파일 시스템 해시를 재사용할 시간(초)입니다. 0으로 설정하면 기존의 요청별 확인이 유지됩니다.'
+        CACHE_CHECK_METHOD: '캐시 확인 방법'
+        CACHE_CHECK_METHOD_HELP: 'Grav가 페이지 파일의 수정 여부를 확인하는 방법을 선택합니다.'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: '캐시 옵션'
+            CLEAR_CACHE: '캐시 지우기'
+            FAILED_TO_CLEAR_CACHE: '캐시 지우기 실패'
+        CACHE_CLEAR_JOB: '예약된 지우기 작업 실행'
+        CACHE_CLEAR_JOB_HELP: '스케줄러를 사용하여 주기적으로 Grav 캐시를 지울 수 있습니다.'
+        CACHE_CONTROL: 'HTTP Cache-Control'
+        CACHE_CONTROL_HELP: '`no-cache, no-store, must-revalidate`와 같은 유효한 cache-control 값으로 설정하세요.'
+        CACHE_DRIVER: '캐시 드라이버'
+        CACHE_DRIVER_HELP: "Grav가 사용할 캐시 드라이버를 선택합니다. '자동 감지'는 사용자에게 가장 적합한 드라이버를 찾으려 시도합니다."
+        CACHE_JOB_TYPE: '캐시 작업 유형'
+        CACHE_JOB_TYPE_HELP: "'표준' 폴더 캐시 지우기 또는 '모든' 폴더 지우기 중 선택하세요."
+        CACHE_PERMS: '캐시 권한'
+        CACHE_PERMS_HELP: '기본 캐시 폴더 권한입니다. 설정에 따라 보통 0755 또는 0775를 사용합니다.'
+        CACHE_PREFIX: '캐시 접두사'
+        CACHE_PREFIX_HELP: 'Grav 키 일부에 대한 식별자입니다. 무엇을 하는지 확실히 알지 못한다면 변경하지 마세요.'
+        CACHE_PREFIX_PLACEHOLDER: '기본 URL에서 파생됨(임의의 문자열을 입력하여 재정의)'
+        CACHE_PURGE_AGE: '캐시 제거 기간'
+        CACHE_PURGE_AGE_HELP: '이 기간(초)보다 오래된 모든 캐시 항목을 제거합니다.'
+        CACHE_PURGE_JOB: '예약된 제거 작업 실행'
+        CACHE_PURGE_JOB_HELP: '스케줄러를 사용하면 이 작업을 통해 오래된 Doctrine 파일 캐시 폴더를 주기적으로 정리할 수 있습니다.'
+        CACHING: 캐싱
+        CACHING_HELP: 'Grav 캐싱을 활성화/비활성화하는 전체 ON/OFF 스위치'
+        CANCEL: 취소
+        CHARACTERS: 자
+        CLEAR_IMAGES_BY_DEFAULT: '기본적으로 이미지 캐시 삭제'
+        CLEAR_IMAGES_BY_DEFAULT_HELP: '기본적으로 캐시를 삭제하면 처리된 이미지도 삭제됩니다. 이 옵션을 비활성화할 수 있습니다.'
+        CLEAR_SEARCH: '검색 지우기'
+        CLI_COMPATIBILITY: 'CLI 호환성'
+        CLI_COMPATIBILITY_HELP: '비휘발성 캐시 드라이버(file, redis, memcache 등)만 사용하도록 보장합니다.'
+        CLOSE: 닫기
+        COLLAPSE_ALL: '모두 접기'
+        COLLAPSE_SIDEBAR: '사이드바 접기'
+        COLLECTIONS: 컬렉션
+        COMMAND: 명령어
+        COMPATIBILITY: 호환성
+        CONFIG:
+            CLEAR_FILTER: '필터 지우기'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: '다른 곳에서 설정이 변경되었습니다. 저장하여 덮어쓰거나 다시 불러오세요.'
+            CONFIGURATION_RELOADED: '설정이 다시 불러와졌습니다.'
+            CONFIGURATION_SAVED_SUCCESSFULLY: '설정이 성공적으로 저장되었습니다.'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: '다른 곳에서 설정이 수정되었습니다. 최신 변경 사항을 보려면 다시 불러오세요.'
+            FAILED_TO_SAVE_CONFIGURATION: '설정 저장에 실패했습니다.'
+            FILTER_FIELDS: '필드 필터링...'
+            LOADING_CONFIGURATION: '설정 불러오는 중...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: '이 범위에 사용할 수 있는 설정 설계도(blueprint)가 없습니다.'
+            NO_MATCHES_FOUND: '일치하는 항목을 찾을 수 없습니다'
+            OVERRIDE:
+                DEFAULT_EMPTY: '비어 있음'
+                RESET_BUTTON: '재정의 초기화'
+                RESET_CONFIRM: 초기화
+                RESET_DONE: '재정의 초기화됨'
+                RESET_MESSAGE: '{scope}에 대한 모든 재정의를 제거하고 상속된 값을 복원합니다. 이 작업은 되돌릴 수 없습니다.'
+                RESET_TITLE: '모든 재정의를 초기화하시겠습니까?'
+                RESET_TOOLTIP: '모든 재정의를 제거하고 상속된 값을 복원'
+                REVERTED: '상속된 값으로 되돌려짐'
+                REVERT_FAILED: '되돌릴 수 없습니다'
+                REVERT_TOOLTIP: '기본값({value})을 재정의했습니다. 클릭하여 되돌리세요.'
+            PAGE_TITLE: '설정: {scope} — Grav 관리자'
+            RELOAD: '새로 고침'
+            TITLE: 설정
+            TITLE_SCROLLED: '설정: {scope}'
+        CONFIGURATION: 설정
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: 환경
+            EXPORT_YAML: 'YAML 내보내기'
+            GRAV_VERSION: 'Grav 버전'
+            LOADING_SYSTEM_INFORMATION: '시스템 정보를 불러오는 중...'
+            PHP_CONFIGURATION: 'PHP 설정'
+            PHP_EXTENSIONS: 'PHP 확장'
+            PHP_VERSION: 'PHP 버전'
+            SERVER: 서버
+            SERVER_SOFTWARE: '서버 소프트웨어'
+        CONFIRM_ACTION: '작업 확인'
+        CONFIRM_DELETE: '{route} 경로의 「{title}」 항목을 삭제하시겠습니까?'
+        CONTENT: 콘텐츠
+        CONTENT_EDITOR: '콘텐츠 편집기'
+        CONTENT_EDITOR_HELP: '콘텐츠 편집 시 사용자 지정 편집기를 선호할 수 있습니다'
+        CONTENT_FALLBACK_LANGUAGE_HELP: '사용자 지정할 언어 코드를 지정하십시오.'
+        CONTENT_LANGUAGE_FALLBACK: '대체 언어'
+        CONTENT_LANGUAGE_FALLBACKS: '콘텐츠 언어 대체'
+        CONTENT_LANGUAGE_FALLBACKS_HELP: '기본적으로 콘텐츠가 번역되지 않은 경우 Grav는 기본 언어로 콘텐츠를 표시합니다. 이 설정을 사용하여 언어별로 해당 동작을 재정의하십시오.'
+        CONTENT_LANGUAGE_FALLBACK_HELP: '언어 코드 목록을 입력하십시오. 기본 언어 코드를 생략하면 해당 언어는 사용되지 않습니다.'
+        COPY: 복사
+        COPY_BUTTON:
+            COPIED: 복사됨!
+            COPY: 복사
+        CREATE: 생성
+        CSS_ASSETS: 'CSS 에셋'
+        CSS_MINIFY: 'CSS 압축'
+        CSS_MINIFY_HELP: '파이프라이닝 중에 CSS 압축'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'Windows용 CSS 압축 재정의'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Windows 플랫폼을 위한 압축 재정의입니다. ThreadStackSize 문제로 인해 기본값은 거짓(False)입니다'
+        CSS_PIPELINE: 'CSS 파이프라인'
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'CSS 파이프라인 우선 렌더링'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: '포함되지 않은 다른 CSS 참조보다 CSS 파이프라인을 먼저 렌더링합니다'
+        CSS_PIPELINE_HELP: 'CSS 파이프라인은 여러 CSS 리소스를 하나의 파일로 통합하는 기능입니다'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: 'CSS 파이프라인에 외부 리소스 포함'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: '외부 URL은 상대 파일 참조를 포함하는 경우가 있으므로 파이프라인 처리하지 않는 것이 좋습니다'
+        CSS_REWRITE: 'CSS 다시 쓰기'
+        CSS_REWRITE_HELP: '파이프라인 처리 중 CSS 상대 URL 다시 쓰기'
+        CURL: cURL
+        CUSTOM: '사용자 지정'
+        CUSTOM_BASE_URL: '사용자 지정 기본 URL'
+        CUSTOM_BASE_URL_HELP: '사이트 도메인을 다시 쓰거나 Grav에서 사용하는 것과 다른 하위 폴더를 사용하려는 경우 사용하세요. 예: http://localhost'
+        CUSTOM_REDIRECTS: '사용자 지정 리디렉션'
+        CUSTOM_REDIRECTS_HELP: '다른 페이지로 리디렉션할 경로입니다. 표준 정규 표현식 교체가 가능합니다.'
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /your/redirect
+        CUSTOM_ROUTES: '사용자 지정 경로'
+        CUSTOM_ROUTES_HELP: '다른 페이지에 별칭을 지정할 경로입니다. 표준 정규 표현식 교체가 가능합니다.'
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /your/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /your/route
+        DASHBOARD:
+            ADD_WIDGET: '위젯 추가'
+            CUSTOMIZE: '사용자 지정'
+            CUSTOMIZE_TITLE: '대시보드 사용자 지정'
+            EDIT_HINT: '사용자 지정 모드 — 위젯을 드래그, 크기 조정, 숨기기한 후 저장하세요.'
+            EMPTY: '대시보드가 비어 있습니다'
+            EMPTY_HINT: '위의 연필 아이콘을 클릭하여 위젯을 추가하세요'
+            HIDE_WIDGET: '위젯 숨기기'
+            LAYOUT_RESET: '레이아웃이 기본값으로 초기화되었습니다'
+            LAYOUT_SAVED: '대시보드 레이아웃이 저장되었습니다'
+            PICKER_EMPTY: '사용 가능한 모든 위젯이 이미 대시보드에 있습니다.'
+            PICKER_SUBTITLE: '대시보드에 다시 추가할 위젯을 선택하세요.'
+            PICKER_TITLE: '위젯 추가'
+            PRESETS: 프리셋
+            PRESET_COMPACT: 컴팩트
+            PRESET_COMPACT_DESC: '각 위젯을 지원하는 가장 작은 크기로 표시합니다.'
+            PRESET_DEFAULT: 기본값
+            PRESET_DEFAULT_DESC: '서버 권장 레이아웃 — 사용자 정의 설정을 초기화합니다.'
+            PRESET_MINIMAL: 최소형
+            PRESET_MINIMAL_DESC: '통계 및 최근 페이지만 표시합니다.'
+            RESET_LAYOUT: '레이아웃 재설정'
+            SAVE_SITE_DEFAULT: '사이트 기본값으로 저장'
+            SITE_LAYOUT_SAVED: '사이트 기본값이 저장되었습니다'
+            TITLE: 대시보드
+            WIDGETS:
+                BACKUPS: 백업
+                NEWS_FEED: '뉴스 피드'
+                NOTIFICATIONS: 알림
+                POPULARITY: '페이지 조회수'
+                RECENT_PAGES: '최근 페이지'
+                STATS: '사이트 통계'
+                SYSTEM_HEALTH: '시스템 상태'
+                TOP_PAGES: '인기 페이지'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: '드래그하여 재정렬'
+        DATE: 날짜
+        DATE_BASED_PUBLISHING: '날짜 기반 게시'
+        DATE_BASED_PUBLISHING_HELP: '날짜를 기준으로 게시물을 자동으로 게시하거나 게시 해제합니다'
+        DATE_HELP: '날짜 변수를 사용하면 이 페이지와 관련된 특정 날짜를 설정할 수 있습니다.'
+        DEBUGGER: 디버거
+        DEBUGGER_CENSORED: '민감한 데이터 검열'
+        DEBUGGER_CENSORED_HELP: "Clockwork 공급자 전용: '예'로 설정하면 잠재적으로 민감한 정보(POST 매개변수, 쿠키, 파일, 구성 및 로그 메시지의 대부분의 배열/객체 데이터)를 검열합니다"
+        DEBUGGER_CLOCKWORK: 'Clockwork 브라우저 확장 프로그램'
+        DEBUGGER_DEBUGBAR: 'PHP 디버그 바'
+        DEBUGGER_HELP: 'Grav 디버거 및 다음 설정 활성화'
+        DEBUGGER_PROVIDER: '디버거 공급자'
+        DEBUGGER_PROVIDER_HELP: '기본값은 PHP 디버그 바이지만, Clockwork 브라우저 확장 프로그램은 덜 방해가 되는 방식을 제공합니다'
+        DEFAULT: 기본값
+        DEFAULTS: '기본 설정'
+        DEFAULT_AUTHOR: '기본 작성자'
+        DEFAULT_AUTHOR_HELP: '테마나 페이지 콘텐츠에서 자주 사용되는 기본 작성자 이름'
+        DEFAULT_CHILD_TYPE: '기본 하위 페이지 유형'
+        DEFAULT_DATE_FORMAT: '페이지 날짜 형식'
+        DEFAULT_DATE_FORMAT_HELP: 'Grav에서 사용하는 페이지 날짜 형식입니다. 기본적으로 Grav은 날짜 형식을 자동으로 추측하지만, PHP 날짜 구문(예: Y-m-d H:i)을 사용하여 형식을 지정할 수 있습니다'
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: '자동으로 추측'
+        DEFAULT_EMAIL: '기본 이메일'
+        DEFAULT_EMAIL_HELP: '테마나 페이지에서 참조할 기본 이메일 주소'
+        DEFAULT_IMAGE_QUALITY: '기본 이미지 품질'
+        DEFAULT_IMAGE_QUALITY_HELP: '이미지 리샘플링 또는 캐싱 시 사용할 기본 이미지 품질(85%)'
+        DEFAULT_LANG: '기본 언어 재정의'
+        DEFAULT_LANG_HELP: '기본값은 첫 번째 지원 언어입니다. 이 옵션을 설정하여 재정의할 수 있지만, 반드시 지원되는 언어 중 하나여야 합니다'
+        DEFAULT_ORDERING: '기본 정렬 순서'
+        DEFAULT_ORDERING_DATE: '날짜 - 헤더의 날짜 필드 기준'
+        DEFAULT_ORDERING_DEFAULT: '기본값 - 폴더 이름 기준'
+        DEFAULT_ORDERING_FOLDER: '폴더 - 접두사가 없는 폴더 이름 기준'
+        DEFAULT_ORDERING_HELP: '목록 내 페이지는 재정의되지 않는 한 이 순서대로 렌더링됩니다'
+        DEFAULT_ORDERING_TITLE: '제목 - 헤더의 제목 필드 기준'
+        DEFAULT_ORDER_DIRECTION: '기본 정렬 방향'
+        DEFAULT_ORDER_DIRECTION_HELP: '목록 내 페이지의 정렬 방향'
+        DEFAULT_PAGE_COUNT: '기본 페이지 수'
+        DEFAULT_PAGE_COUNT_HELP: '목록 내 기본 최대 페이지 수'
+        DEFAULT_THEME: '기본 테마'
+        DEFAULT_THEME_HELP: 'Grav에서 사용할 기본 테마를 설정합니다 (기본값은 Antimatter)'
+        DELETE: 삭제
+        DELIMITER: 구분자
+        DELIMITER_HELP: "요약 구분자 (기본값 '===')"
+        DENIED: 거부됨
+        DEPENDENCIES: 의존성
+        DESCENDING: 내림차순
+        DESCRIPTION: 설명
+        DETAILS: '상세 정보'
+        DETECT_CHANGES: '변경 사항 감지'
+        DETECT_CHANGES_HELP: 'Twig 템플릿의 변경 사항이 감지되면 Twig 캐시를 자동으로 다시 컴파일합니다'
+        DISABLE: 비활성화
+        DISABLED: 비활성화됨
+        DISMISS: 닫기
+        DISPLAY_ERRORS: '오류 표시'
+        DISPLAY_ERRORS_HELP: '전체 백트레이스 스타일의 오류 페이지를 표시합니다'
+        DISPLAY_NAME: '표시 이름'
+        DISPLAY_TEMPLATE: '표시 템플릿'
+        DONE: 완료
+        DOWNLOAD: 다운로드
+        EDIT: 편집
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: '레이아웃 사전 설정'
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: '모든 사용자의 사이트 기본값으로 저장'
+        EMAIL: 이메일
+        EMAIL_VALIDATION_MESSAGE: '유효한 이메일 주소여야 합니다'
+        ENABLED: 활성화됨
+        ENABLED_HELP: '페이지 요약 활성화 (요약은 페이지 콘텐츠와 동일하게 반환됩니다)'
+        ENABLED_SRI_ON_ASSETS: '에셋에 SRI 활성화'
+        ENABLED_SRI_ON_ASSETS_HELP: '에셋 SRI 활성화'
+        ENABLED_TIMESTAMPS_ON_ASSETS: '에셋에 타임스탬프 활성화'
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: '에셋 타임스탬프 활성화'
+        ENABLE_AUTO_METADATA: 'Exif에서 자동 메타데이터 생성'
+        ENABLE_AUTO_METADATA_HELP: 'Exif 정보가 있는 이미지의 메타데이터 파일을 자동으로 생성합니다'
+        ENABLE_MEDIA_TIMESTAMP: '미디어에 타임스탬프 활성화'
+        ENABLE_MEDIA_TIMESTAMP_HELP: '각 미디어 항목에 마지막 수정 날짜를 기준으로 타임스탬프를 추가합니다'
+        ENVIRONMENT_SWITCHER:
+            CONFIRM_DELETE: '{name}을(를) 삭제하시겠습니까?'
+            CONFIRM_DELETE_WITH_OVERRIDES: '{name} 및 모든 구성 오버라이드를 삭제하시겠습니까?'
+            CREATE: 생성
+            CREATES_PATH: 'user/env/{name}/config/를 생성합니다'
+            CREATE_ENVIRONMENT: '환경 생성…'
+            CREATE_ENV_NAMED: '환경 「{name}」 생성…'
+            DEFAULT: 기본값
+            DELETE: 삭제
+            DELETE_ENV_TOOLTIP: '환경 {name} 삭제'
+            ENV_CREATED: '환경 {name}이(가) 생성되고 선택되었습니다'
+            ENV_DELETED: '환경 {name}이(가) 삭제되었습니다'
+            FAILED_TO_CREATE: '환경 생성에 실패했습니다'
+            FAILED_TO_DELETE: '환경 삭제에 실패했습니다'
+            HAS_OVERRIDES: '재정의 포함'
+            NO_LONGER_EXISTS_PICK_ANOTHER: '은(는) 더 이상 존재하지 않습니다. 다른 것을 선택하십시오.'
+            SAVE_CONFIG_TO: '활성 환경'
+            SAVING_TO_DEFAULT: '기본값(user/config)으로 저장 중'
+            SAVING_TO_ENV: '환경: {name}(으)로 저장 중'
+            SELECTED_ENV: '선택된 환경'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: '활성 환경 선택 — 표시되는 설정과 저장 위치를 제어합니다'
+            SWITCH_AND_RELOAD: '전환 및 새로 고침'
+            SWITCH_DISCARDS_UNSAVED: '환경을 전환하면 관리자가 새로 고쳐지고 저장되지 않은 변경 사항이 삭제됩니다. 계속하시겠습니까?'
+        ERROR_FULL_BACKTRACE: '전체 백트레이스 오류'
+        ERROR_HANDLER: '오류 핸들러'
+        ERROR_SIMPLE: '단순 오류'
+        ERROR_SYSTEM: '시스템 오류'
+        ESCAPE_MARKUP: '마크업 이스케이프'
+        ESCAPE_MARKUP_HELP: '마크업 태그를 HTML 엔티티로 이스케이프'
+        ETAG: ETag
+        ETAG_HELP: '페이지 수정 시점을 식별하는 데 도움이 되는 etag 헤더 설정'
+        EVENTS: 이벤트
+        EVENTS_HELP: '특정 이벤트를 활성화하거나 비활성화합니다. 이를 비활성화하면 플러그인이 중단될 수 있습니다'
+        EXPAND_ALL: '모두 확장'
+        EXPAND_SIDEBAR: '사이드바 확장'
+        EXPERIMENTAL: '실험적 기능'
+        EXPERT_MODE: '전문가 모드'
+        EXPIRES: 만료
+        EXPIRES_HELP: '만료 헤더를 설정합니다. 값은 초 단위입니다.'
+        EXTERNAL: '외부 페이지'
+        EXTERNAL_URL: '외부 URL'
+        EXTRA_ARGUMENTS: '추가 인수'
+        FALLBACK_TYPES: '허용된 대체 유형'
+        FALLBACK_TYPES_HELP: '페이지 경로를 통해 액세스할 때 찾을 수 있는 허용된 파일 유형입니다. 기본값은 지원되는 모든 미디어 유형입니다.'
+        FIELDS:
+            ADD_ENTRY: '항목 추가'
+            CLEAR_DATE: '날짜 지우기'
+            CRON:
+                AT_MINUTE: '분 단위'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: '분 시 일 월 요일'
+                ON_DAY: '일 단위'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: '활성 트리거'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: '스케줄러 상태를 불러오지 못했습니다'
+                FAILED_TO_RUN_SCHEDULER: '스케줄러를 실행하지 못했습니다'
+                HEALTH_STATUS: '상태 확인'
+                JOB_ID: '작업 ID'
+                LAST_RUN: '마지막 실행'
+                LOADING_SCHEDULER_STATUS: '스케줄러 상태 불러오는 중...'
+                NOT_CONFIGURED: '구성되지 않음'
+                NOT_ENABLED: '활성화되지 않음'
+                NOT_INSTALLED: '설치되지 않음'
+                NO_SCHEDULED_JOBS_REGISTERED: '등록된 예약 작업이 없습니다.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: '활성화된 트리거가 없습니다! 웹후크를 활성화하거나 cron을 설정하세요.'
+                QUEUE_SIZE: '대기열 크기:'
+                RUNNING: '실행 중...'
+                RUN_ALL: '모두 실행'
+                SCHEDULED_JOBS: '예약된 작업'
+                SCHEDULER_RUN_COMPLETED: '스케줄러 실행 완료'
+                SCHEDULER_STATUS: '스케줄러 상태'
+                STATUS: '상태:'
+                WEBHOOK: '웹후크:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: '사용자 지정 필드 로딩 중...'
+            DATE_FORMAT:
+                FORMAT_STRING: '형식 문자열:'
+                SELECT_FORMAT: '— 형식 선택 —'
+            FILE_PICKER:
+                NO_MATCHING_FILES: '일치하는 파일 없음'
+                NO_MEDIA_UPLOADED: '업로드된 미디어 파일 없음'
+            FILE_PICKER_SOON: '파일 선택기 — 곧 제공 예정'
+            ICON_PICKER:
+                NO_ICONS_FOUND: '아이콘을 찾을 수 없음'
+                SEARCH_ICONS: '아이콘 검색...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: '처음 200개 결과 표시 중 — 좁히려면 입력하세요'
+            NO_TAXONOMY_TYPES: '분류 유형이 설정되지 않음'
+            PAGES:
+                FILTER_PAGES: '페이지 필터링...'
+                ROOT: '/ (루트)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: '페이지 확인 중...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: '페이지 미디어를 사용할 수 없습니다'
+            PERMISSIONS:
+                NOT_SET: '설정 안 됨'
+                NO_PERMISSIONS_CONFIGURED: '구성된 권한 없음'
+            REGENERATE_SLUG: '페이지 제목에서 자동 생성'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: '필터와 일치하는 필드가 없습니다'
+            THEME_SELECT:
+                LOADING_THEMES: '테마 불러오는 중...'
+                SELECT_THEME: '— 테마 선택 —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: '상태 확인:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: '특정 작업 강제 실행 (일정 무시):'
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions 예시:'
+                HOW_TO_USE_WEBHOOKS: '웹훅 사용 방법:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: '예정된 모든 작업 실행 (일정 준수):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: '웹훅 플러그인 상태 확인 중...'
+                INSTALL_PLUGIN_NOW: '지금 플러그인 설치'
+                OR_RUN: '또는 다음을 실행하십시오:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: '플러그인이 설치되고 활성화되었습니다.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: '플러그인이 설치되었습니다. 웹훅 트리거를 활성화하려면 아래에서 사용 설정을 하세요.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: '플러그인은 웹훅 기능을 위해 필수입니다.'
+                WEBHOOK_PLUGIN_REQUIRED: '웹훅 플러그인 필수'
+        FILE: 파일
+        FILE_EXTENSION: '파일 확장자'
+        FILE_STREAMS: '파일 스트림'
+        FLEX: 'Flex Object (실험적)'
+        FLEX_ADMIN_EVENT_COMPAT: '관리자 이벤트 호환성'
+        FLEX_ADMIN_EVENT_COMPAT_HELP: '플러그인을 위한 onAdminSave 및 onAdminAfterSave 이벤트를 활성화합니다.'
+        FLEX_CACHING: 'Flex 캐싱'
+        FLEX_INDEX_CACHE_ENABLED: '인덱스 캐싱 활성화'
+        FLEX_INDEX_CACHE_LIFETIME: '인덱스 캐시 유지 시간(초)'
+        FLEX_OBJECTS:
+            ACTIONS: 작업
+            BACK_TO_LIST: '목록으로 돌아가기'
+            DELETE_OBJECT: '객체 삭제'
+            EXPORT: 내보내기
+            EXPORT_FAILED: '내보내기 실패'
+            FAILED_TO_DELETE_OBJECT: '객체 삭제 실패'
+            FAILED_TO_LOAD_DIRECTORY: '디렉터리 불러오기 실패'
+            FAILED_TO_LOAD_OBJECTS: '객체 불러오기 실패'
+            FAILED_TO_SAVE: '저장에 실패했습니다.'
+            NEW:
+                BACK_TO_LIST: '목록으로 돌아가기'
+                CREATE: 생성
+                OBJECT_CREATED: '객체가 생성되었습니다'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: '객체가 다른 곳에서 변경되었습니다 — 덮어쓰려면 저장하거나 새로고침하세요'
+            OBJECT_DELETED: '객체가 삭제되었습니다'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: '객체가 다른 곳에서 수정되었습니다. 새로고침해 주세요.'
+            PREVIOUS: 이전
+            SEARCH: 검색...
+            INFO:
+                DIRECTORY: 디렉토리
+                ID: ID
+                LOCATION: 위치
+                SHOW_INFO: '객체 정보 표시'
+                STORAGE_KEY: '스토리지 키'
+                TITLE: '객체 정보'
+        FLEX_OBJECT_CACHE_ENABLED: '객체 캐싱 활성화'
+        FLEX_OBJECT_CACHE_LIFETIME: '객체 캐시 유지 시간(초)'
+        FLEX_RENDER_CACHE_ENABLED: '렌더 캐싱 활성화'
+        FLEX_RENDER_CACHE_LIFETIME: '렌더 캐시 유지 시간(초)'
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: '위젯 메뉴 닫기'
+        FOLDER: 폴더
+        FOLDER_NAME: '폴더 이름'
+        FOLDER_NUMERIC_PREFIX: '폴더 숫자 접두사'
+        FOLDER_NUMERIC_PREFIX_HELP: '수동 정렬을 제공하고 표시 여부를 결정하는 숫자 접두사'
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: 'URL 소문자 강제'
+        FORCE_LOWERCASE_URLS_HELP: '기본적으로 Grav는 모든 슬러그와 경로를 소문자로 설정합니다. 이를 false로 설정하면 대문자 슬러그와 경로를 사용할 수 있습니다'
+        FORCE_SSL: 'SSL 강제'
+        FORCE_SSL_HELP: '전역적으로 SSL을 강제합니다. 활성화된 경우 HTTP를 통해 사이트에 접속하면 Grav가 HTTPS 페이지로 리다이렉트를 보냅니다'
+        FORGOT:
+            BACK_TO_SIGN_IN: '로그인으로 돌아가기'
+            CHECK_INBOX: '받은 편지함에서 재설정 링크를 확인하세요.'
+            EMAIL_ADDRESS: '이메일 주소'
+            ENTER_A_VALID_EMAIL_ADDRESS: '유효한 이메일 주소를 입력하세요'
+            FORGOT_PASSWORD: '비밀번호를 잊으셨나요'
+            FORGOT_PASSWORD_GRAV_ADMIN: '비밀번호 찾기 — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: '해당 이메일로 계정이 존재하면 재설정 링크가 발송되었습니다.'
+            SENDING: '전송 중...'
+            SEND_RESET_LINK: '재설정 링크 보내기'
+            SUBTITLE: '이메일을 입력하시면 재설정 링크를 보내드립니다.'
+            UNABLE_TO_CONNECT_TO_SERVER: '서버에 연결할 수 없습니다.'
+        FORMAT: 형식
+        FORMAT_HELP: 'short = 구분 기호나 크기가 처음 나타나는 지점 사용; long = 요약 구분 기호 무시'
+        FRONTMATTER_IGNORE_FIELDS: '프런트매터(frontmatter) 필드 무시'
+        FRONTMATTER_IGNORE_FIELDS_HELP: "일부 프런트매터 필드는 Twig를 포함할 수 있지만 'forms'와 같이 처리되어서는 안 됩니다"
+        FRONTMATTER_PROCESS_TWIG: '프런트매터 Twig 처리'
+        FRONTMATTER_PROCESS_TWIG_HELP: '활성화하면 페이지 프런트매터에서 Twig 설정 변수를 사용할 수 있습니다'
+        FULL_NAME: 성명
+        GENERAL_CONFIG: '일반 에셋 설정'
+        GPM_METHOD: '원격 가져오기 방식'
+        GPM_METHOD_HELP: 'Auto로 설정하면 Grav이 fopen 사용 가능 여부를 판단하여 사용하고, 그렇지 않으면 cURL로 대체합니다. 특정 방식을 강제하려면 설정을 전환하십시오.'
+        GPM_OFFICIAL_ONLY: '공식 GPM만 허용'
+        GPM_OFFICIAL_ONLY_HELP: '공식 GPM 저장소에서만 직접 설치를 허용합니다.'
+        GPM_RELEASES: 'GPM 릴리스'
+        GPM_RELEASES_HELP: "베타 또는 테스트 버전을 설치하려면 'Testing'을 선택하십시오"
+        GPM_SECTION: 'GPM 섹션'
+        GROUPS:
+            ADD_GROUP: '그룹 추가'
+            BACK_TO_GROUPS: '그룹으로 돌아가기'
+            CONFIRM_DELETE_GROUP: "'{name}' 그룹을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+            CREATE: 생성
+            DELETE_GROUP: '그룹 삭제'
+            DESCRIPTION: 설명
+            DISPLAY_NAME: '표시 이름'
+            FAILED_TO_CREATE_GROUP: '그룹 생성에 실패했습니다.'
+            FAILED_TO_LOAD_GROUP: "'{name}' 그룹을 불러오는 데 실패했습니다."
+            FAILED_TO_LOAD_GROUPS: '그룹을 불러오는 데 실패했습니다'
+            FAILED_TO_SAVE_GROUP: '그룹 저장에 실패했습니다.'
+            GROUPS: 그룹
+            GROUPS_GRAV_ADMIN: '그룹 — Grav Admin'
+            GROUP_COUNT_ONE: '{n}개의 그룹'
+            GROUP_COUNT_OTHER: '그룹 {n}개'
+            GROUP_CREATED: "그룹 '{name}' 생성됨"
+            GROUP_DELETED: "그룹 '{name}' 삭제됨"
+            GROUP_DELETE_FAILED: "그룹 '{name}' 삭제 실패"
+            GROUP_MODIFIED_ELSEWHERE: '다른 곳에서 그룹이 수정되었습니다. 새로 고침하세요.'
+            GROUP_NAME: '그룹 이름'
+            GROUP_NAME_HELP: '1~200자의 문자, 숫자, 하이픈 또는 밑줄. 저장 키로 사용됩니다.'
+            GROUP_NAME_PLACEHOLDER: '예: editors'
+            GROUP_PAGE_TITLE: '{name} — 그룹 — Grav 관리자'
+            GROUP_SAVED: "그룹 '{name}' 저장됨"
+            NEW_GROUP: '새 그룹'
+            NEW_GROUP_GRAV_ADMIN: '새 그룹 — Grav 관리자'
+            NO_GROUPS: '그룹을 찾을 수 없습니다'
+            NO_GROUPS_MATCH_SEARCH: '검색 결과와 일치하는 그룹이 없습니다'
+            SEARCH_GROUPS: '그룹 검색...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: '세부 정보를 보려면 그룹을 선택하세요'
+        GROUPS_HELP: '사용자가 속한 그룹 목록'
+        GROUP_NAME: '그룹 이름'
+        GZIP_COMPRESSION: 'Gzip 압축'
+        GZIP_COMPRESSION_HELP: '성능 향상을 위해 Grav 페이지의 GZip 압축을 활성화합니다.'
+        HIDE_EMPTY_FOLDERS: '빈 폴더 숨기기'
+        HIDE_EMPTY_FOLDERS_HELP: '.md 파일이 없는 폴더를 탐색 메뉴에서 숨기고 경로 접근을 차단할지 여부입니다'
+        HIDE_HOME_IN_URLS: 'URL에서 홈 경로 숨기기'
+        HIDE_HOME_IN_URLS_HELP: '홈 하위 페이지의 기본 경로가 홈의 일반 경로를 참조하지 않도록 합니다'
+        HOMEPAGE: 홈페이지
+        HOME_PAGE: '홈 페이지'
+        HOME_PAGE_HELP: 'Grav가 기본 랜딩 페이지로 사용할 페이지'
+        HTTP_ACCEPT_LANGUAGE: '브라우저에서 언어 설정'
+        HTTP_ACCEPT_LANGUAGE_HELP: '브라우저의 `http_accept_language` 헤더 태그를 기반으로 언어를 설정하도록 선택할 수 있습니다'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP 활성화'
+        HTTP_CF_CONNECTING_IP_HELP: '클라이언트 IP를 확인할 때 <code>CF-Connecting-IP</code> 요청 헤더를 신뢰합니다. 사이트가 실제로 Cloudflare 뒤에 있는 경우에만 활성화하십시오. 그렇지 않으면 클라이언트가 자신의 IP를 스푸핑할 수 있습니다. 완벽한 보안을 위해 웹 서버 수준에서 Cloudflare IP 범위로 원본 액세스를 제한하십시오.'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP 활성화'
+        HTTP_CLIENT_IP_HELP: '클라이언트 IP를 확인할 때 <code>Client-IP</code> 요청 헤더를 신뢰합니다. 드문 경우이며, 보통 특정 로드 밸런서에서만 설정합니다. 프록시가 이 헤더를 설정하고 덮어쓰는지 확실하지 않은 경우 비활성화 상태로 두십시오.'
+        HTTP_CONNECTIONS: 'HTTP 연결'
+        HTTP_CONNECTIONS_HELP: '다중화 요청 중 동시 HTTP 연결 수'
+        HTTP_HEADERS: 'HTTP 헤더'
+        HTTP_SECTION: 'HTTP 섹션'
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST 활성화'
+        HTTP_X_FORWARDED_HOST_HELP: '<code>X-Forwarded-Host</code> 요청 헤더를 신뢰합니다. 사이트가 이 헤더를 설정하고 덮어쓰는 리버스 프록시 뒤에 있는 경우에만 활성화하십시오. 그렇지 않으면 클라이언트가 Grav가 인식하는 호스트를 스푸핑할 수 있습니다.'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP 활성화'
+        HTTP_X_FORWARDED_IP_HELP: '클라이언트 IP를 확인할 때 <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> 헤더를 신뢰합니다. 사이트가 이 헤더를 설정하고 덮어쓰는 리버스 프록시 뒤에 있는 경우에만 활성화하십시오. 그렇지 않으면 클라이언트가 IP를 스푸핑하여 속도 제한, IP 차단, 감사 로깅을 우회할 수 있습니다.'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT 활성화'
+        HTTP_X_FORWARDED_PORT_HELP: '<code>X-Forwarded-Port</code> 요청 헤더를 신뢰합니다. 사이트가 이 헤더를 설정하고 덮어쓰는 리버스 프록시 뒤에 있는 경우에만 활성화하십시오.'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO 활성화'
+        HTTP_X_FORWARDED_PROTO_HELP: '<code>X-Forwarded-Proto</code> 요청 헤더를 신뢰합니다(일반적으로 TLS 종료 프록시 뒤에서 HTTPS를 감지하는 데 사용됨). 사이트가 이 헤더를 설정하고 덮어쓰는 리버스 프록시 뒤에 있는 경우에만 활성화하십시오.'
+        ICON: 아이콘
+        ID: ID
+        IGNORE_FILES: '무시할 파일'
+        IGNORE_FILES_HELP: '페이지 처리 시 무시할 특정 파일'
+        IGNORE_FOLDERS: '무시할 폴더'
+        IGNORE_FOLDERS_HELP: '페이지 처리 시 제외할 특정 폴더'
+        IGNORE_HIDDEN: '숨김 항목 무시'
+        IGNORE_HIDDEN_HELP: '점으로 시작하는 모든 파일과 폴더 무시'
+        IMAGES_AUTO_FIX_ORIENTATION: '방향 자동 수정'
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: 'Exif 데이터를 기반으로 이미지 방향을 자동으로 수정합니다'
+        IMAGES_CLS_ASPECT_RATIO: '가로세로 비율 활성화'
+        IMAGES_CLS_ASPECT_RATIO_HELP: "사용자 지정 스타일링을 위한 CSS에서 사용할 수 있도록 'style' 속성을 통해 적용되는 옵션 CSS 변수"
+        IMAGES_CLS_AUTO_SIZES: '자동 크기 활성화'
+        IMAGES_CLS_AUTO_SIZES_HELP: "CLS 해결을 위해 이미지에 'width' 및 'height' 속성을 자동으로 추가"
+        IMAGES_CLS_RETINA_SCALE: '레티나 스케일 계수'
+        IMAGES_CLS_RETINA_SCALE_HELP: 'HiDPI 해상도를 더 잘 처리하기 위해 계산된 크기를 스케일 계수로 나누어 더 작은 픽셀 크기로 고해상도 이미지를 표시합니다'
+        IMAGES_CLS_TITLE: '누적 레이아웃 시프트(CLS)'
+        IMAGES_DEBUG: '이미지 디버그 워터마크'
+        IMAGES_DEBUG_HELP: '예를 들어 레티나 작업 시 이미지의 픽셀 깊이를 나타내는 오버레이를 이미지 위에 표시'
+        IMAGES_DECODING: '이미지 디코딩 동작'
+        IMAGES_DECODING_HELP: 'decoding 속성을 사용하면 브라우저가 오프스크린 이미지 디코딩을 사용자가 근처로 스크롤할 때까지 연기할 수 있습니다. decoding은 auto, sync, async 세 가지 값을 지원합니다'
+        IMAGES_FETCHPRIORITY: '이미지 Fetchpriority 속성'
+        IMAGES_FETCHPRIORITY_HELP: 'HTML의 fetchpriority 속성은 성능 최적화를 위해 이미지나 iframe과 같은 특정 리소스 로딩 우선순위를 지정하는 속성입니다. 가능한 값은 high, low, auto입니다.'
+        IMAGES_LOADING: '이미지 로딩 동작'
+        IMAGES_LOADING_HELP: 'loading 속성을 사용하면 브라우저가 오프스크린 이미지 및 iframe 로딩을 사용자가 근처로 스크롤할 때까지 연기할 수 있습니다. loading은 auto, lazy, eager 세 가지 값을 지원합니다'
+        IMAGES_MAX_PIXELS: '최대 이미지 픽셀'
+        IMAGES_MAX_PIXELS_HELP: 'URL 기반 크기 조정 작업에 대한 총 픽셀 제한(너비 x 높이)입니다. 이 제한을 초과하는 요청은 거부됩니다. 확인을 비활성화하려면 0으로 설정하세요.'
+        IMAGES_SEOFRIENDLY: 'SEO 친화적인 이미지 이름'
+        IMAGES_SEOFRIENDLY_HELP: '활성화하면 이미지 이름이 먼저 표시된 다음, 처리된 작업을 반영하는 더 작은 해시가 표시됩니다'
+        IMAGES_URL_ACTIONS: 'URL 기반 이미지 작업 허용'
+        IMAGES_URL_ACTIONS_HELP: 'URL 쿼리 매개변수를 통한 이미지 변환을 허용합니다(예: `image.jpg?resize=600,400`). 기본값은 비활성화이며, 일반 Twig 및 Markdown 이미지 크기 조정에는 영향을 주지 않습니다.'
+        IMAGE_ADAPTER: '이미지 어댑터'
+        IMAGE_ADAPTER_HELP: "이미지 조작에 사용할 이미지 어댑터입니다. 기본값은 'GD'이며, 대체 수단으로 'Imagick'을 사용할 수 있습니다."
+        IMAGE_OPTIONS: '이미지 옵션'
+        INCLUDE_DEFAULT_LANG: '기본 언어 포함'
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: '파일 확장자에 기본 언어 포함'
+        INCLUDE_DEFAULT_LANG_HELP: '모든 기본 언어 URL 앞에 기본 언어를 추가합니다. 예: `/en/blog/my-post`'
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: '활성화하면 파일 확장자 앞에 기본 언어를 추가합니다(예: `.en.md`). 비활성화하면 `.md` 파일 확장자를 사용하여 기본 언어를 유지합니다.'
+        INFO: 정보
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: '아이콘을 찾을 수 없습니다'
+            SEARCH_ICONS: '아이콘 검색...'
+            TYPE_TO_NARROW_RESULTS: '결과를 좁히려면 입력하세요'
+        INLINE_TYPES: '인라인 대체 유형'
+        INLINE_TYPES_HELP: '다운로드하지 않고 인라인으로 표시할 파일 유형 목록'
+        INSTALL: 설치
+        INSTALLING: '설치 중...'
+        INTL_ENABLED: 'Intl 모듈 통합'
+        INTL_ENABLED_HELP: 'Intl PHP 모듈을 사용하고 대조(collate)하여 UTF8 기반 컬렉션을 정렬합니다'
+        INVITATIONS:
+            ACCEPT_FAILED: '계정을 생성할 수 없습니다.'
+            ACCEPT_HEADING: '초대 수락'
+            ACCEPT_SUBHEADING: '시작하려면 계정을 설정하세요.'
+            ACCEPT_SUCCESS: '계정이 생성되었습니다. 환영합니다!'
+            ACCEPT_TITLE: '초대 수락 — Grav 관리자'
+            CHECKING_INVITE: '초대 확인 중...'
+            CHOOSE_PASSWORD: '비밀번호 선택'
+            CONFIRM_REVOKE: '{email}에 대한 초대를 취소하시겠습니까? 링크가 더 이상 작동하지 않게 됩니다.'
+            COPIED: 복사됨
+            COPY: 복사
+            COPY_FAILED: '링크를 복사할 수 없습니다.'
+            CREATED_NO_EMAIL_TOAST: '초대가 생성되었습니다. 이메일이 구성되지 않았으므로 링크를 수동으로 공유하세요.'
+            CREATE_ACCOUNT: '계정 생성'
+            CREATING_ACCOUNT: '계정 생성 중...'
+            EMAIL: 이메일
+            EMAIL_SENT_TO: '{email}로 초대 이메일이 전송되었습니다.'
+            EXPIRED: 만료됨
+            EXPIRED_INVITE: '이 초대는 만료되었습니다.'
+            EXPIRED_INVITE_BODY: '이 초대는 만료되었습니다. 관리자에게 새 초대를 요청하세요.'
+            EXPIRES_AFTER: '초대 만료 기한'
+            EXPIRES_IN_DAYS: '{count, plural, one {#일 후 만료} other {#일 후 만료}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {#시간 후 만료} other {#시간 후 만료}}'
+            EXPIRY_14_DAYS: 14일
+            EXPIRY_1_DAY: 1일
+            EXPIRY_30_DAYS: 30일
+            EXPIRY_3_DAYS: 3일
+            EXPIRY_7_DAYS: 7일
+            FULL_NAME_OPTIONAL: '전체 이름 (선택 사항)'
+            GROUPS: 그룹
+            GROUPS_HINT: '초대된 사용자가 추가될 그룹입니다.'
+            INVALID_INVITE: '이 초대는 유효하지 않습니다.'
+            INVALID_INVITE_BODY: '이 초대 링크는 유효하지 않거나 이미 사용되었습니다.'
+            INVITE: 초대
+            INVITED_BY: '{name} 님이 보낸 초대'
+            INVITE_ANOTHER: '다른 사람 초대'
+            INVITE_LINK: '초대 링크'
+            INVITE_READY: '초대 준비 완료'
+            INVITE_USER: '사용자 초대'
+            LOADING_GROUPS: '그룹 불러오는 중...'
+            LOAD_FAILED: '초대를 불러오지 못했습니다.'
+            MESSAGE_OPTIONAL: '개인 메시지 (선택 사항)'
+            NONE_PENDING: '대기 중인 초대가 없습니다'
+            NONE_PENDING_HINT: '사용자를 초대하면 여기에 대기 중인 초대가 표시됩니다.'
+            NO_GROUPS: '아직 정의된 그룹이 없습니다.'
+            PASSWORD_POLICY: '비밀번호가 필수 정책을 충족하지 않습니다'
+            PENDING_COUNT: '{count, plural, =0 {대기 중인 초대가 없습니다} one {대기 중인 초대 #개} other {대기 중인 초대 #개}}'
+            PERMISSIONS: 권한
+            PERMISSIONS_HINT: '초대받은 사용자가 받게 될 권한입니다. 사용자는 여기서 설정한 것보다 더 높은 권한을 스스로 부여할 수 없습니다.'
+            RECIPIENT: 수신자
+            RECIPIENT_HINT: '초대를 수락할 때 직접 사용자 이름과 비밀번호를 설정하게 됩니다.'
+            RESEND: 재전송
+            RESEND_FAILED: '초대를 재전송하지 못했습니다.'
+            RESENT_TOAST: '{email} 님에게 초대를 다시 보냈습니다.'
+            REVOKE: 취소
+            REVOKED_TOAST: '초대가 취소되었습니다.'
+            REVOKE_FAILED: '초대를 취소하지 못했습니다.'
+            REVOKE_TITLE: '초대 취소'
+            SEND_FAILED: '초대장 전송에 실패했습니다.'
+            SEND_INVITE: '초대 보내기'
+            SENT_TOAST: '{email}(으)로 초대장이 전송되었습니다.'
+            TITLE_OPTIONAL: '제목 (선택 사항)'
+            USERNAME_INVALID: '사용자 이름은 3~64자여야 합니다.'
+            USERNAME_TAKEN: '이미 사용 중인 사용자 이름입니다.'
+            VIEW_PENDING: '대기 중인 항목 보기'
+        ITEMS: 항목
+        JAVASCRIPT_MINIFY: 'JavaScript 최소화'
+        JAVASCRIPT_MINIFY_HELP: '파이프라인 처리 중 JS 최소화'
+        JAVASCRIPT_MODULE_PIPELINE: 'JavaScript 모듈 파이프라인'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'JS 모듈 파이프라인 우선 렌더링'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: '포함되지 않은 다른 JS 참조보다 JS 파이프라인을 먼저 렌더링'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'JS 모듈 파이프라인은 여러 JS 리소스를 하나의 파일로 통합합니다'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: 'JS 모듈 파이프라인에 외부 리소스 포함'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: '외부 URL에는 상대 파일 경로가 포함된 경우가 있으므로 파이프라인 처리하지 않는 것이 좋습니다'
+        JAVASCRIPT_PIPELINE: 'JavaScript 파이프라인'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'JS 파이프라인 우선 렌더링'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: '포함되지 않은 다른 JS 참조보다 JS 파이프라인을 먼저 렌더링'
+        JAVASCRIPT_PIPELINE_HELP: 'JS 파이프라인은 여러 JS 리소스를 하나의 파일로 통합합니다'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: 'JS 파이프라인에 외부 리소스 포함'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: '외부 URL에는 상대 파일 경로가 포함된 경우가 있으므로 파이프라인 처리하지 않는 것이 좋습니다'
+        JS_ASSETS: 'JavaScript 에셋'
+        JS_MODULE_ASSETS: 'JavaScript 모듈 에셋'
+        KEYWORDS: 키워드
+        LANG:
+            CREATE_TRANSLATION: '{language} 번역 생성'
+            CURRENT: 현재
+            DEFAULT: 기본값
+            DELETE_TRANSLATION: '{language} 번역 삭제'
+            FALLBACK_NOTICE: '{language} 번역이 없습니다. 기본 콘텐츠를 표시합니다.'
+            NOT_TRANSLATED: '번역되지 않음'
+            SAVE_AS: '{language}(으)로 저장'
+            SWITCH_LANGUAGE: '콘텐츠 언어 전환'
+            SYNC_FROM: '{language}(으)로 재설정'
+            TRANSLATED: 번역됨
+            TRANSLATIONS: 번역
+            TRANSLATION_CREATED: '{language} 번역이 생성되었습니다'
+        LANGUAGE: 언어
+        LANGUAGES: 언어
+        LANGUAGE_DEBUG: '언어 디버그'
+        LANGUAGE_DEBUG_HELP: '|t Twig 필터를 사용하는 언어의 주위에 스타일을 지정할 수 있는 span을 추가하여 문제를 진단할 수 있도록 언어 디버깅을 활성화합니다'
+        LANGUAGE_HELP: '기본 언어 설정'
+        LANGUAGE_TRANSLATIONS: 번역
+        LANGUAGE_TRANSLATIONS_HELP: 'false로 설정하면 번역된 문자열 대신 번역 키가 사용됩니다. 이 기능은 잘못된 번역을 수정하거나 하드코딩된 영어 문자열을 찾는 데 도움을 줄 수 있습니다.'
+        LAST_MODIFIED: '최종 수정일'
+        LAST_MODIFIED_HELP: '프록시 및 브라우저 캐싱을 최적화하는 데 도움이 될 수 있는 최종 수정 헤더를 설정합니다'
+        LIFETIME: 수명
+        LIFETIME_HELP: '캐시 수명을 초 단위로 설정합니다. 0 = 무제한'
+        LIST: 목록
+        LOADING: '로드 중...'
+        LOGIN:
+            AUTHENTICATION_CODE: '인증 코드'
+            AUTH_CODE_PROMPT: '인증 앱을 열고 **{username}** 사용자에 대한 6자리 코드를 입력하세요.'
+            BACK_TO_SIGN_IN: '로그인으로 돌아가기'
+            ENTER_A_VALID_6_DIGIT_CODE: '유효한 6자리 코드를 입력하세요'
+            ENVIRONMENT: 환경
+            FORGOT_PASSWORD: '비밀번호를 잊으셨나요?'
+            GRAV_ADMIN: 'Grav 관리자'
+            INVALID_USERNAME_OR_PASSWORD: '사용자 이름 또는 비밀번호가 올바르지 않습니다'
+            LOGIN_GRAV_ADMIN: '로그인 — Grav 관리자'
+            PASSWORD_IS_REQUIRED: '비밀번호가 필요합니다'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: '모든 필수 항목을 입력해 주세요'
+            POWERED_BY_GRAV_CMS: 'Grav CMS 제공'
+            SERVER_CONFIGURATION: '서버 구성'
+            SERVER_URL: '서버 URL'
+            SIGNED_IN_SUCCESSFULLY: '성공적으로 로그인되었습니다'
+            SIGNING_IN: '로그인 중...'
+            SIGN_IN: 로그인
+            SUBTITLE: '사이트를 관리하려면 로그인하세요'
+            TWOFA_SUBTITLE: '계속하려면 인증 코드를 입력하세요'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: '서버에 연결할 수 없습니다. 서버 URL을 확인하고 다시 시도하세요.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: '코드를 확인할 수 없습니다. 연결 상태를 확인하고 다시 시도하세요.'
+            USERNAME_IS_REQUIRED: '사용자 이름이 필요합니다'
+            VERIFY: 확인
+            VERIFYING: '확인 중...'
+        LOG_ERRORS: '오류 기록'
+        LOG_ERRORS_HELP: '/logs 폴더에 오류 기록'
+        LOG_HANDLER: '로그 핸들러'
+        LOG_HANDLER_HELP: '로그 출력 위치'
+        LONG: '긴 형식'
+        LONG_DATE_FORMAT: '긴 날짜 표시 형식'
+        LONG_DATE_FORMAT_HELP: '테마에서 사용할 수 있는 긴 날짜 형식을 설정합니다'
+        MARKDOWN: Markdown
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: '미리보기할 내용이 없습니다'
+        MARKDOWN_EXTRA: 'Markdown Extra'
+        MARKDOWN_EXTRA_HELP: 'Markdown Extra에 대한 기본 지원 활성화 - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: '사이트 전체 미디어 파일 관리'
+            MEDIA_GRAV_ADMIN: '미디어 — Grav 관리자'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: 치수
+                FAILED_TO_COPY: '복사 실패'
+                FILE_RENAMED: '파일 이름 변경됨'
+                NEXT_FILE: '다음 파일'
+                PREVIOUS_FILE: '이전 파일'
+                RENAME: '이름 바꾸기'
+            MEDIA_MANAGER:
+                CREATE: 생성
+                FILES_DELETED: '파일 삭제됨'
+                FOLDER_NAME: '폴더 이름'
+                NEW_FOLDER: '새 폴더'
+                UPLOAD_FILES: '파일 업로드'
+            MEDIA_TOOLBAR:
+                FOLDER: 폴더
+                GRID_VIEW: '그리드 보기'
+                LIST_VIEW: '목록 보기'
+                NEW_FOLDER: '새 폴더'
+                SEARCH_MEDIA: '미디어 검색...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: '에디터로 드래그'
+                PAGE_MEDIA: '페이지 미디어'
+        MEDIA_TYPES: '미디어 유형'
+        MEMCACHED_PORT: 'Memcached 포트'
+        MEMCACHED_PORT_HELP: 'Memcached 서버 포트'
+        MEMCACHED_SERVER: 'Memcached 서버'
+        MEMCACHED_SERVER_HELP: 'Memcached 서버 주소'
+        MENU: 메뉴
+        MENU_HELP: '메뉴에 사용할 문자열입니다. 설정하지 않으면 제목이 사용됩니다.'
+        METADATA: 메타데이터
+        METADATA_HELP: '페이지에서 재정의하지 않는 한 모든 페이지에 표시될 기본 메타데이터 값'
+        METADATA_KEY: "키 (예: 'Keywords')"
+        METADATA_VALUE: "값 (예: 'Blog, Grav')"
+        MIME_TYPE: 'Mime 유형'
+        MISC_SECTION: '기타 섹션'
+        MODULE: 모듈
+        MODULE_SETUP: '모듈 설정'
+        MOVE: 이동
+        NAME: 이름
+        NAV:
+            CONFIGURATION: 구성
+            DASHBOARD: 대시보드
+            MEDIA: 미디어
+            PAGES: 페이지
+            PLUGINS: 플러그인
+            SETTINGS: 설정
+            SYSTEM: 시스템
+            THEMES: 테마
+            TOOLS: 도구
+            USERS: 사용자
+        NEVER_CACHE_TWIG: 'Twig 캐시 안 함'
+        NEVER_CACHE_TWIG_HELP: '콘텐츠만 캐시하고 페이지별로 매번 Twig를 처리합니다. twig_first 설정을 무시합니다.'
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: '피드 항목 없음'
+        'NO': 아니요
+        NORMAL_MODE: '일반 모드'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: '알림 없음'
+        NO_CHANGES: '저장할 변경 사항 없음'
+        OPTIONS: 옵션
+        ORDER: 순서
+        ORDERING: 정렬
+        ORDER_BY: '정렬 기준'
+        ORDER_DIGITS: '정렬 자릿수'
+        ORDER_DIGITS_HELP: '폴더 이름 앞에 붙여 정렬하는 데 사용되는 자릿수입니다(예: `01.about`, `001.about`).'
+        ORDER_DIR_HELP: '「desc」 또는 「asc」만 유효한 값입니다'
+        OVERRIDES: 재정의
+        OVERRIDE_LOCALE: '로캘 재정의'
+        OVERRIDE_LOCALE_HELP: '현재 언어를 기반으로 PHP의 로캘 설정을 재정의합니다'
+        PAGE: 페이지
+        PAGES:
+            ADD_FOLDER: '폴더 추가'
+            ADD_MENU: '메뉴 추가'
+            ADD_MODULE: '모듈 추가'
+            ADD_PAGE: '페이지 추가'
+            CHUNK_SIZE: 청크
+            CHUNK_SIZE_HELP: '스크롤 시 요청당 가져올 행 수입니다. 값이 클수록 처음 로딩은 느려지지만 이후 요청 횟수는 줄어듭니다.'
+            DELETED: '「{title}」 삭제됨'
+            DELETE_FAILED: '페이지 삭제 실패'
+            DELETE_PAGE: '페이지 삭제'
+            DRAFT: 초안
+            EDIT:
+                CONNECTING_TO_COLLAB: '협업 세션에 연결 중…'
+                COPY_PAGE: '페이지 복사'
+                CREATE_LANGUAGE: '{language} 만들기'
+                DELETE_PAGE: '페이지 삭제'
+                EDIT_PAGE: '페이지 편집'
+                FAILED_TO_CREATE_TRANSLATION: '번역 만들기 실패'
+                FAILED_TO_SYNC_TRANSLATION: '번역 동기화 실패'
+                FALLBACK: (대체)
+                FALLBACK_NOTICE: '{active} 번역이 존재하지 않습니다. {effective} 대체 버전을 보는 중입니다. 편집 가능한 번역을 만들려면 「{active}로 저장」을 사용하세요.'
+                FOLDER_NAME: '폴더 이름'
+                INVALID_YAML_FRONTMATTER: '유효하지 않은 YAML 프론트매터'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: '유효하지 않은 YAML 프론트매터 — 저장하기 전에 구문을 수정하세요'
+                LOADING_PAGE: '페이지 불러오는 중...'
+                NOT_TRANSLATED: '번역되지 않음:'
+                OPEN_IN_NEW_TAB: '새 탭에서 열기'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: '다른 곳에서 페이지가 변경되었습니다. 저장하여 덮어쓰거나 새로고침하세요.'
+                PAGE_COPIED: '페이지가 복사되었습니다.'
+                PAGE_DELETED: '페이지가 삭제되었습니다.'
+                PAGE_PREVIEW: '페이지 미리보기'
+                PAGE_SAVED_AND_MOVED: '페이지가 저장되고 이동되었습니다.'
+                PREVIEW_PAGE: '페이지 미리보기'
+                PUBLISH_ON: '게시일:'
+                RESET_CONTENT_FROM: '다음에서 콘텐츠 초기화:'
+                RESET_FROM: '{language}(으)로 초기화'
+                RESET_TRANSLATION: '번역 초기화'
+                SAVED_BY_PEER: '{user} 님이 이 페이지를 저장했습니다.'
+                SAVED_BY_PEER_ANON: '다른 사용자가 이 페이지를 저장했습니다.'
+                SAVE_AS_LANGUAGE: '{language}(으)로 저장'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: '디스크 상의 폴더 이름 (URL 슬러그)'
+                TOGGLE_PAGE_NAVIGATOR: '페이지 탐색기 전환'
+                UNPUBLISH_ON: '게시 종료일:'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: '마크다운 콘텐츠를 여기에 작성하세요...'
+            EDIT_PAGE: '페이지 편집'
+            FRONTMATTER: 프런트매터
+            HEADER_MODIFIED: 수정됨
+            HEADER_PARENT: 부모
+            HEADER_STATUS: 상태
+            HEADER_TEMPLATE: 템플릿
+            HEADER_TITLE: 제목
+            INFO_DATE: 날짜
+            INFO_LANGUAGE: 언어
+            INFO_MODIFIED: 수정됨
+            INFO_ORDER: 순서
+            INFO_PUBLISHED: 게시됨
+            INFO_PUBLISH_ON: '게시 시작일'
+            INFO_ROUTABLE: '라우팅 가능'
+            INFO_ROUTE: 경로
+            INFO_SLUG: 슬러그
+            INFO_TEMPLATE: 템플릿
+            INFO_UNPUBLISH_ON: '게시 종료일'
+            INFO_VISIBLE: '네비게이션에 표시'
+            LOADED_OF: '{total} 중 {n, plural, one {# 개} other {# 개}} 로드됨'
+            LOADING: '페이지 로딩 중...'
+            LOADING_CHUNK: '{from}–{to} 행 로딩 중…'
+            MODE_EXPERT: 전문가
+            MODE_NORMAL: 일반
+            MOVED: '「{title}」 이동 완료'
+            MOVE_FAILED: '페이지 이동 실패'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: '페이지 추가 — Grav 관리자'
+                CONTINUE: 계속
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: '이 페이지가 네비게이션 메뉴에 표시될지 여부를 제어합니다'
+                FAILED_TO_CREATE: '페이지 생성 실패'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: '페이지 템플릿 로드 실패'
+                FILTER_PAGES: '페이지 필터링...'
+                FOLDER_CREATED: '「{title}」 폴더 생성 완료'
+                FOLDER_DETAILS: '폴더 세부 정보'
+                FOLDER_NAME: '폴더 이름'
+                LOADING_TEMPLATES: '템플릿 불러오는 중...'
+                MODULE_CREATED: '모듈 「{title}」(이)가 생성되었습니다'
+                MY_NEW_PAGE: '새 페이지'
+                ORDERING: 순서
+                ORDERING_HELP_FOLDER: '형제 폴더들 사이에서 이 폴더의 위치를 설정하는 숫자 접두사를 추가합니다.'
+                ORDERING_HELP_MODULE: '모듈 부모 내에서 이 모듈의 위치를 설정하는 숫자 접두사를 추가합니다.'
+                ORDERING_NONE: 없음
+                PAGE_CREATED: '페이지 「{title}」(이)가 생성되었습니다'
+                PAGE_DETAILS: '페이지 세부 정보'
+                PAGE_TEMPLATE: '페이지 템플릿'
+                PAGE_TITLE: '페이지 제목'
+                PARENT_PAGE: '상위 페이지'
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: '이 페이지를 위한 URL 친화적인 폴더 이름'
+                VISIBLE: 표시
+            NO_MATCH: '검색어와 일치하는 페이지가 없습니다'
+            NO_PAGES: '페이지를 찾을 수 없습니다'
+            NO_SEARCH_RESULTS: '검색어와 일치하는 페이지가 없습니다'
+            PAGES_GRAV_ADMIN: '페이지 — Grav 관리자'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: '초안 (게시 안 됨)'
+                DROP_HERE: '여기에 놓으세요'
+                FOLDER_ORDER: '폴더 순서'
+                HAS_CHILDREN: '하위 항목 있음'
+                SUMMARY: 요약
+                VISIBLE: 공개
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: '페이지 재정렬 실패'
+                NO_PAGES_MATCH: '"{query}"와 일치하는 페이지가 없습니다'
+                SEARCHING: '검색 중…'
+            PAGE_COUNT: '{n, plural, other{#개 페이지}}'
+            PAGE_INFO: '페이지 정보'
+            PUBLISH: 게시
+            PUBLISHED: 게시됨
+            RAW_HEADER: '원시 페이지 헤더 (JSON)'
+            REORDERED: '"{title}" 재정렬 완료'
+            REORDER_DONE: 완료
+            REORDER_EXIT_TITLE: '재정렬 모드 종료'
+            REORDER_FAILED: '재정렬 실패'
+            REORDER_LOADING: '전체 목록을 불러오는 중입니다. 잠시 후 다시 시도하세요.'
+            REORDER_LOADING_ALL: '전체 목록 재정렬을 위해 모든 청크를 불러오는 중입니다…'
+            REORDER_MOVE: 이동
+            REORDER_SAME_PARENT: '동일한 상위 페이지 아래의 페이지들만 재정렬할 수 있습니다. 상위 페이지 간 이동은 트리 보기를 사용하세요.'
+            REORDER_START_TITLE: '페이지 재정렬'
+            SAVED: '페이지 저장 성공'
+            SAVE_FAILED: '페이지 저장 실패'
+            SEARCH_PLACEHOLDER: '페이지 검색...'
+            SORT_DATE_NEWEST: '날짜 (최신순)'
+            SORT_NEWEST: 최신순
+            SORT_OLDEST: 오래된순
+            SORT_ORDER: 순서
+            SORT_TITLE_AZ: '제목 오름차순'
+            SORT_TITLE_ZA: '제목 내림차순'
+            STATS_PUBLISHED: '게시된 항목 {n}개'
+            STATS_TOTAL: '총 {n}개'
+            STATS_UNPUBLISHED: '게시되지 않은 항목 {n}개'
+            SUBTITLE: '사이트 콘텐츠 및 구조 관리'
+            TITLE: 페이지
+            UNPUBLISH: '게시 취소'
+            VIEW_COLUMNS: 열
+            VIEW_LIST: 목록
+            VIEW_TREE: 트리
+        PAGES_CONFIGURATION: '페이지 구성'
+        PAGES_FALLBACK_ONLY: '페이지 폴백 전용'
+        PAGES_FALLBACK_ONLY_HELP: "지원되는 언어를 통해 페이지 콘텐츠를 찾기 위해 '폴백'만 사용합니다. 기본 동작은 활성 언어가 없는 경우 발견된 모든 언어를 표시하는 것입니다."
+        PAGES_TYPE: '프론트엔드 페이지 유형'
+        PAGES_TYPE_HELP: '이 옵션은 프론트엔드에서 Flex Object 페이지를 활성화합니다. Admin Flex Pages를 사용하려면 Flex Objects 플러그인이 필요합니다.'
+        PAGE_ACCESS: '페이지 액세스'
+        PAGE_ACCESS_HELP: '다음 액세스 권한이 있는 사용자만 페이지에 액세스할 수 있습니다.'
+        PAGE_AUTHORS: '페이지 작성자'
+        PAGE_AUTHORS_HELP: "페이지 작성자 그룹의 멤버는 특별 '작성자' 페이지 그룹에 정의된 대로 이 페이지에 대한 소유자 수준의 액세스 권한을 갖습니다."
+        PAGE_FILE: '페이지 템플릿'
+        PAGE_FILE_HELP: '페이지 템플릿 파일 이름이며, 기본적으로 이 페이지의 표시 템플릿으로 사용됩니다.'
+        PAGE_GROUPS: '페이지 그룹'
+        PAGE_GROUPS_HELP: '페이지 그룹의 멤버는 이 페이지에 대한 특별 액세스 권한을 갖습니다.'
+        PAGE_INHERIT_PERMISSIONS: '권한 상속'
+        PAGE_INHERIT_PERMISSIONS_HELP: '부모 페이지로부터 ACL을 상속합니다.'
+        PAGE_MEDIA: '페이지 미디어'
+        PAGE_PERMISSIONS: '페이지 권한'
+        PAGE_SUMMARY: '페이지 요약'
+        PAGE_TYPES: '페이지 유형'
+        PAGE_TYPES_HELP: 'Grav에서 지원하는 페이지 유형을 결정하며, 순서에 따라 요청이 모호할 경우 대체할 유형이 결정됩니다.'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: '메뉴 표시 접근 권한 필요'
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: "사용자가 접근할 수 있는 경우에만 메뉴에 페이지를 표시하려면 '예'로 설정하세요."
+        PAGINATION:
+            PAGE_OF: '{total} 페이지 중 {current} 페이지'
+        PARAMETER_SEPARATOR: '매개변수 구분 기호'
+        PARAMETER_SEPARATOR_HELP: 'Windows의 Apache 환경에서 변경 가능한 전달된 매개변수용 구분 기호'
+        PARENT: 상위
+        PASSWORD: 비밀번호
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: '비밀번호 요구 사항'
+            PASSWORD_STRENGTH: '비밀번호 강도'
+            REQUIREMENTS: '요구 사항'
+        PASSWORD_VALIDATION_MESSAGE: '비밀번호는 숫자, 대문자, 소문자를 각각 하나 이상 포함해야 하며, 최소 8자 이상이어야 합니다.'
+        PERMISSIONS: 권한
+        PERMISSIONS_FIELD:
+            ADMIN_LEGACY: '관리자 (레거시)'
+            FAILED_TO_LOAD_PERMISSIONS: '권한을 불러오는 데 실패했습니다.'
+            NOT_SET: '설정되지 않음'
+        PLUGIN:
+            BACK_TO_DASHBOARD: '대시보드로 돌아가기'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: '이 플러그인 페이지에 사용할 수 있는 콘텐츠가 없습니다.'
+        PLUGINS:
+            BACK_TO_PLUGINS: '플러그인으로 돌아가기'
+            CHANGELOG: '변경 내역'
+            CHECK_UPDATES: '업데이트 확인'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: '다른 곳에서 구성이 수정되었습니다. 새로고침해 주세요.'
+            CONFIGURE: 구성
+            ENABLE_PLUGIN: '플러그인 활성화'
+            FAILED_TO_CHECK_FOR_UPDATES: '업데이트 확인 실패'
+            FAILED_TO_LOAD_PLUGINS: '플러그인 불러오기 실패'
+            FAILED_TO_SAVE_CONFIGURATION: '구성 저장 실패.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: '이 플러그인에 사용할 수 있는 구성 옵션이 없습니다.'
+            PAGE_TITLE: '{name} — 플러그인 — Grav 관리자'
+            PLUGINS_GRAV_ADMIN: '플러그인 — Grav 관리자'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: '다른 곳에서 플러그인이 변경되었습니다. 저장하여 덮어쓰거나 새로고침하세요.'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: '플러그인을 구성하려면 활성화해야 합니다.'
+            REMOVE_CONFIRM_MESSAGE: '{name}을(를) 제거하시겠습니까? 이 작업은 플러그인을 제거하고 해당 파일을 삭제합니다. 구성은 유지됩니다.'
+            REMOVE_CONFIRM_TITLE: '플러그인을 제거하시겠습니까?'
+            REMOVE_PLUGIN: '플러그인 제거'
+            SEARCH_PLUGINS: '플러그인 검색...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: '상세 정보를 보려면 플러그인을 선택하세요'
+            SYMLINKED: '심볼릭 링크됨'
+            TITLE: 플러그인
+        PLUGINS_TABLE:
+            NAME: 이름
+            NO_PLUGINS: '설치된 플러그인 없음'
+            PROTECTED_PLUGIN: '관리자 페이지 접근이 차단될 수 있으므로 admin-next에서 이 플러그인을 비활성화할 수 없습니다.'
+            VERSION: 버전
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: '플러그인 페이지 불러오는 중...'
+        PLUGIN_STATUS: '플러그인 상태'
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: '위젯을 불러오지 못했습니다'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: '지난 14일'
+            THIS_MONTH: '이번 달'
+            THIS_WEEK: '이번 주'
+        PREMIUM: 프리미엄
+        PREVIEW: 미리보기
+        PROCESS: 처리
+        PROCESS_HELP: '페이지 처리 방식을 제어합니다. 전역 설정 대신 페이지별로 설정할 수 있습니다'
+        PROXY_CERT: '프록시 인증서 경로'
+        PROXY_CERT_HELP: '프록시 인증서 pem 파일이 포함된 폴더의 로컬 경로'
+        PROXY_URL: '프록시 URL'
+        PROXY_URL_HELP: '프록시 호스트(HOST) 또는 IP와 포트(PORT)를 입력하세요'
+        PUBLISH: 게시
+        PUBLISHED: 게시됨
+        PUBLISHED_DATE: '게시 날짜'
+        PUBLISHED_DATE_HELP: '날짜를 지정하여 게시를 자동으로 트리거할 수 있습니다.'
+        PUBLISHED_HELP: '기본적으로 페이지는 `published: false`로 명시적으로 설정하거나, `publish_date`가 미래이거나 `unpublish_date`가 과거인 경우를 제외하고는 게시됩니다'
+        PUBLISHING: '게시 중'
+        PWD_REGEX: '비밀번호 정규식'
+        PWD_REGEX_HELP: '기본값: 비밀번호는 최소 하나의 숫자, 대문자, 소문자를 포함해야 하며 8자 이상이어야 합니다'
+        PWD_RULES: '비밀번호 규칙'
+        PWD_RULES_HELP: '사용자 지정 비밀번호 유효성 검사 규칙입니다. 각 규칙은 ID, 사용자에게 표시되는 라벨, 그리고 비밀번호가 일치해야 하는 정규식을 가집니다.'
+        PWD_RULES_ID: ID
+        PWD_RULES_LABEL: 라벨
+        PWD_RULES_PATTERN: '정규식 패턴'
+        READ: 읽기
+        READ_FILE_ALLOWED_EXTENSIONS: '허용된 파일 확장자'
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: '<code>read_file()</code>이 읽을 수 있는 파일 확장자 (대소문자 구분 없음, 앞에 점은 제외). 기본값은 텍스트/콘텐츠 형식 전용입니다. 실행 파일 또는 설정 형식(<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code> 등)을 추가하는 것은 위험하며 권장되지 않습니다.'
+        READ_FILE_ALLOWED_STREAMS: '허용된 스트림'
+        READ_FILE_ALLOWED_STREAMS_HELP: '<code>read_file()</code>이 해석할 수 있는 스트림 스킴입니다. 기본값: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> 또는 <code>cache</code>와 같이 범위가 넓은 스트림을 추가하면 중요한 파일이 노출될 수 있으므로 강력히 권장하지 않습니다.'
+        READ_FILE_MAX_SIZE: '최대 파일 크기 (바이트)'
+        READ_FILE_MAX_SIZE_HELP: '이보다 큰 파일은 메모리로 읽어 들이지 않고 <code>false</code>를 반환합니다. 기본값은 <code>1048576</code> (1 MB)입니다. 크기 제한을 비활성화하려면 <code>0</code>으로 설정하십시오.'
+        READ_FILE_SECTION_HELP: 'Twig <code>read_file()</code> 함수에 대한 제약 사항입니다. 읽기 작업은 Grav 스트림 URI를 통해 강제로 수행되며, 경로가 어떻게 작성되었든 간에 인코딩된 경로 탐색이나 심볼릭 링크 탐색은 파일 시스템 계층에서 차단되도록 해결된 스트림 루트에 대해 정식 realpath 포함 검사를 통해 확인됩니다.'
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: '계속하려면 비밀번호를 다시 입력해 주세요. 작업 내용은 보존되었습니다.'
+            SESSION_EXPIRED: '세션 만료'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: '모두 보기'
+        REDIRECT: '페이지 리다이렉트'
+        REDIRECTS_AND_ROUTES: '리다이렉트 및 라우트'
+        REDIRECT_DEFAULT_CODE: '기본 리다이렉트 코드'
+        REDIRECT_DEFAULT_CODE_HELP: '리다이렉트에 사용할 HTTP 상태 코드'
+        REDIRECT_DEFAULT_ROUTE: '기본 라우트 리다이렉트'
+        REDIRECT_DEFAULT_ROUTE_HELP: '페이지의 기본 라우트로 자동 리다이렉트'
+        REDIRECT_HELP: '이 페이지가 리다이렉트될 페이지 라우트나 외부 URL을 입력하세요. 예: `/some/route` 또는 `http://somesite.com`'
+        REDIRECT_OPTION_301: '301 - 영구 이동'
+        REDIRECT_OPTION_302: '302 - 일시 이동'
+        REDIRECT_OPTION_303: '303 - 다른 페이지 참조'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: '기본 리다이렉트 코드 사용'
+        REDIRECT_OPTION_NO_REDIRECT: '리다이렉트 안 함'
+        REDIRECT_TRAILING_SLASH: '후행 슬래시 리디렉션'
+        REDIRECT_TRAILING_SLASH_HELP: '후행 슬래시가 있는 URI를 투명하게 처리하는 대신 301 리디렉션을 수행합니다.'
+        REDIS_DATABASE: 'Redis 데이터베이스 ID'
+        REDIS_DATABASE_HELP: 'Redis 인스턴스 데이터베이스 ID'
+        REDIS_PASSWORD: 'Redis 비밀번호/시크릿'
+        REDIS_PORT: 'Redis 포트'
+        REDIS_PORT_HELP: 'Redis 서버 포트'
+        REDIS_SERVER: 'Redis 서버'
+        REDIS_SERVER_HELP: 'Redis 서버 주소'
+        REDIS_SOCKET: 'Redis 소켓'
+        REDIS_SOCKET_HELP: 'Redis 소켓'
+        REGULAR: 보통
+        REMOVE: 제거
+        RESET:
+            BACK_TO_SIGN_IN: '로그인으로 돌아가기'
+            CONFIRM_PASSWORD: '비밀번호 확인'
+            INVALID_LINK: '유효하지 않은 재설정 링크입니다.'
+            NEW_PASSWORD_FOR: '**{username}**을(를) 위한 새 비밀번호를 선택하세요.'
+            PASSWORDS_DO_NOT_MATCH: '비밀번호가 일치하지 않습니다.'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: '비밀번호가 성공적으로 재설정되었습니다. 로그인하세요.'
+            RESETTING: '재설정 중...'
+            RESET_PASSWORD: '비밀번호 재설정'
+            RESET_PASSWORD_GRAV_ADMIN: '비밀번호 재설정 — Grav 관리자'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: '이 재설정 링크에 필수 매개변수가 누락되었습니다. 비밀번호 찾기 페이지에서 새 링크를 요청하세요.'
+            UNABLE_TO_CONNECT_TO_SERVER: '서버에 연결할 수 없습니다.'
+        REVERSE_PROXY: '리버스 프록시'
+        REVERSE_PROXY_HELP: '리버스 프록시를 사용 중이며 URL에 잘못된 포트가 포함되는 문제가 발생하는 경우 이 옵션을 활성화하세요.'
+        ROOT: 루트
+        ROUTABLE: '라우팅 가능'
+        ROUTABLE_HELP: '이 페이지에 URL로 접근할 수 있는지 여부'
+        ROUTE: 경로
+        ROUTE_ALIASES: '경로 별칭'
+        ROUTE_CANONICAL: '표준 경로'
+        ROUTE_DEFAULT: '기본 경로'
+        ROUTE_OVERRIDES: '경로 재정의'
+        SANITIZE_SVG: 'SVG 정리'
+        SANITIZE_SVG_HELP: 'SVG에서 모든 XSS 코드를 제거합니다.'
+        SAVE: 저장
+        SAVING: '저장 중...'
+        SCHEDULER: 스케줄러
+        SCHEDULER_ACTIVE_TRIGGERS: '활성 트리거'
+        SCHEDULER_ADVANCED_FEATURES: '고급 기능'
+        SCHEDULER_CONCURRENT_WORKERS: '동시 작업자'
+        SCHEDULER_CONCURRENT_WORKERS_HELP: '동시에 실행할 수 있는 작업 수 (1 = 순차적 실행).'
+        SCHEDULER_EMAIL: 이메일
+        SCHEDULER_EMAIL_HELP: '결과를 전송할 이메일 주소입니다. 참고: 출력 파일 설정이 필요합니다.'
+        SCHEDULER_HEALTH_CHECK_CONFIG: '상태 확인 구성'
+        SCHEDULER_HEALTH_CHECK_ENABLED: '상태 확인 활성화'
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: '모니터링을 위한 상태 확인 엔드포인트를 제공합니다.'
+        SCHEDULER_HEALTH_CHECK_PATH: '상태 확인 경로'
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: '상태 확인 엔드포인트에 대한 URL 경로입니다.'
+        SCHEDULER_HEALTH_STATUS: '상태 점검'
+        SCHEDULER_HISTORY: '작업 기록'
+        SCHEDULER_HISTORY_ENABLED: '작업 기록 활성화'
+        SCHEDULER_HISTORY_ENABLED_HELP: '모든 작업에 대한 실행 기록을 추적합니다.'
+        SCHEDULER_HISTORY_RETENTION: '기록 보존 기간(일)'
+        SCHEDULER_HISTORY_RETENTION_HELP: '작업 기록을 보관할 기간입니다.'
+        SCHEDULER_JOBS: '사용자 지정 스케줄러 작업'
+        SCHEDULER_OUTPUT: '출력 파일'
+        SCHEDULER_OUTPUT_HELP: '출력 파일의 경로/파일명 (Grav 설치 루트 기준)'
+        SCHEDULER_OUTPUT_TYPE: '출력 유형'
+        SCHEDULER_OUTPUT_TYPE_HELP: '실행할 때마다 같은 파일에 추가하거나, 매번 파일을 덮어씁니다'
+        SCHEDULER_QUEUE_CONFIG: '큐 설정'
+        SCHEDULER_QUEUE_MAX_SIZE: '최대 큐 크기'
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: '큐에 담을 수 있는 최대 작업 수입니다.'
+        SCHEDULER_QUEUE_PATH: '큐 저장 경로'
+        SCHEDULER_QUEUE_PATH_HELP: '큐에 담긴 작업을 저장할 위치입니다.'
+        SCHEDULER_RETRY_BACKOFF: '재시도 백오프 전략'
+        SCHEDULER_RETRY_BACKOFF_HELP: '재시도 간 지연 시간을 계산하는 방법입니다.'
+        SCHEDULER_RETRY_CONFIG: '재시도 설정'
+        SCHEDULER_RETRY_ENABLED: '작업 재시도 활성화'
+        SCHEDULER_RETRY_ENABLED_HELP: '실패한 작업을 자동으로 재시도합니다.'
+        SCHEDULER_RETRY_MAX_ATTEMPTS: '최대 재시도 횟수'
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: '실패한 작업을 재시도할 최대 횟수입니다.'
+        SCHEDULER_RUNAT: '실행 시간'
+        SCHEDULER_RUNAT_HELP: "Cron 형식의 'at' 구문. 참고: 모든 시간은 UTC 기준입니다!"
+        SCHEDULER_STATUS: '스케줄러 상태'
+        SCHEDULER_USAGE_EXAMPLES: '사용 예시'
+        SCHEDULER_WEBHOOK_CONFIG: '웹훅 구성'
+        SCHEDULER_WEBHOOK_ENABLED: '웹훅 트리거 활성화'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: 'HTTP 웹훅을 통해 스케줄러를 트리거하도록 허용합니다.'
+        SCHEDULER_WEBHOOK_PATH: '웹훅 경로'
+        SCHEDULER_WEBHOOK_PATH_HELP: '웹훅 엔드포인트의 URL 경로입니다.'
+        SCHEDULER_WEBHOOK_TOKEN: '웹훅 보안 토큰'
+        SCHEDULER_WEBHOOK_TOKEN_HELP: '웹훅 요청 인증을 위한 비밀 토큰입니다. 이 토큰을 안전하게 보관하세요!'
+        SCHEDULER_WORKER_CONFIG: '워커 구성'
+        SEARCH: 검색
+        SECURITY: 보안
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'user/data, user/accounts 및 user/config 아래의 파일들은 인증서, 키, 토큰 및 데이터베이스를 포함하여 HTTP를 통해 직접 다운로드할 수 있습니다. 이는 일반적으로 웹 서버가 Grav의 .htaccess 규칙을 적용하지 않고 있음을 의미합니다.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: '웹 서버 보안 설정 방법'
+            USER_FOLDER_EXPOSED_TITLE: '보안 위험: 사용자 데이터 폴더에 웹을 통해 접근할 수 있습니다'
+        SESSION: 세션
+        SESSION_DOMAIN: '세션 도메인'
+        SESSION_DOMAIN_HELP: 'Docker 컨테이너 등에서 사이트 도메인을 재작성(rewrite)하는 경우에만 사용하세요.'
+        SESSION_ENABLED_HELP: 'Grav 내 세션 지원 활성화'
+        SESSION_HTTPONLY: 'HTTP 전용'
+        SESSION_HTTPONLY_HELP: '참으로 설정 시, 쿠키가 HTTP를 통해서만 사용되어야 하며 JavaScript에 의한 수정이 허용되지 않음을 나타냅니다'
+        SESSION_INITIALIZE: '세션 초기화'
+        SESSION_INITIALIZE_HELP: 'Grav가 세션을 시작하게 합니다. 이 기능은 로그인, 양식 등 사용자 상호 작용이 작동하도록 하는 데 필요합니다. Admin 플러그인은 이 설정의 영향을 받지 않습니다.'
+        SESSION_NAME_HELP: '세션 쿠키 이름을 형성하는 데 사용되는 식별자'
+        SESSION_PATH: '세션 경로'
+        SESSION_PATH_HELP: 'Docker 컨테이너 등에서 사이트 경로를 재작성하는 경우에만 사용하세요.'
+        SESSION_SAMESITE: '세션 SameSite 속성'
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None. 자세한 정보는 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite 를 참조하세요.'
+        SESSION_SECURE: 보안(Secure)
+        SESSION_SECURE_HELP: 'true로 설정하면 이 쿠키에 대한 통신이 암호화된 전송을 통해서만 이루어져야 함을 나타냅니다. 경고: HTTPS에서만 독점적으로 실행되는 사이트에서만 활성화하세요.'
+        SESSION_SECURE_HTTPS: 보안(HTTPS)
+        SESSION_SECURE_HTTPS_HELP: "HTTPS에서는 세션을 보안으로 설정하지만 HTTP에서는 설정하지 않습니다. 위 '보안(Secure)' 설정이 true로 되어 있으면 아무런 효과가 없습니다. 사이트가 HTTP와 HTTPS 사이를 전환하는 경우 false로 설정하세요."
+        SESSION_SPLIT: '세션 분할'
+        SESSION_SPLIT_HELP: '사이트와 다른 플러그인(관리자 등) 간의 독립적인 세션 분할'
+        SESSION_UNIQUENESS: '고유 문자열'
+        SESSION_UNIQUENESS_HELP: 'Grav 루트 경로(`GRAV_ROOT` (기본값))의 MD5 해시 또는 임의의 `security.salt` 문자열 기반 값.'
+        SETTINGS:
+            1_SECOND: 1초
+            2_SECONDS: 2초
+            ACCENT_COLOR: '강조 색상'
+            ADD_LINK: '링크 추가'
+            ADMIN_INTERFACE_LANGUAGE: '관리자 인터페이스 언어'
+            ADMIN_LANGUAGE: '관리자 언어'
+            ADMIN_LANGUAGE_DESC: '라벨, 메뉴 및 메시지용 언어 ({count}개의 문자열 로드됨)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: '관리자 기본 설정 및 모양'
+            APPEARANCE: 모양(Appearance)
+            AUTHENTICATED_AS: '인증된 계정'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: '필드를 벗어날 때 자동 저장'
+            AUTO_SAVE: '자동 저장'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: '양식 편집기를 위한 자동 저장 및 실행 취소 동작'
+            BRANDING: 브랜딩
+            BRANDING_DESC: '관리자 페이지 전역에 표시되는 로고 및 브랜드 텍스트입니다.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: '밝은 테마와 어두운 테마 중 선택하세요'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: '로고 표시 방식 선택'
+            COLLAB_DESCRIPTION: '실시간 다중 사용자 편집 및 접속 상태 표시. 서버에 `sync` 플러그인이 필요합니다. 실험적 기능입니다.'
+            COLOR_MODE: '색상 모드'
+            CONNECTION: 연결
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: '사이드바와 로그인 페이지에 표시될 로고를 사용자 지정하세요'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: '관리자 페이지의 디자인과 느낌을 사용자 지정하세요'
+            CUSTOM_IMAGE: '사용자 지정 이미지'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: '상단 메뉴바에 표시될 사용자 지정 바로가기'
+            CUSTOM_TEXT: '사용자 지정 텍스트'
+            DARK: 어둡게
+            DARK_LOGO: '다크 모드 로고'
+            DARK_LOGO_REMOVED: '다크 모드 로고가 제거되었습니다.'
+            DARK_LOGO_UPLOADED: '다크 모드 로고가 업로드되었습니다.'
+            DARK_MODE_LOGO: '다크 모드 로고'
+            DEFAULT_APPEARANCE: '기본 디자인'
+            DEFAULT_COLOR_APPEARANCE_DESC: '신규 사용자를 위한 기본 색상 테마입니다.'
+            DEFAULT_FORM_EDITOR_DENSITY: '기본 폼 편집기 밀도입니다.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: '신규 사용자를 위한 기본 인터페이스 언어입니다.'
+            DEFAULT_LANGUAGE: '기본 언어'
+            DEFAULT_PAGES: '기본 페이지'
+            DEFAULT_PRIMARY_COLOR_DESC: '버튼, 링크 및 강조 표시를 위한 기본 주 색상입니다.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: '페이지 브라우저를 위한 기본 설정'
+            DEFAULT_TEXT_SIZE_DESC: '관리자 UI의 기본 텍스트 크기입니다.'
+            DEFAULT_TYPEFACE_DESC: '관리자 UI의 기본 서체입니다.'
+            DEFAULT_VIEW: '기본 보기'
+            DEUTSCH: 독일어
+            EDITING: '편집 중'
+            EDITOR_HEADING: 편집기
+            EDITOR_HEIGHT: '편집기 높이'
+            EDITOR_HEIGHT_AUTO: 자동
+            EDITOR_HEIGHT_DESC: '콘텐츠에 맞춰 편집기 크기를 자동으로 조절하거나, 고정 높이와 스크롤바를 설정합니다.'
+            EDITOR_HEIGHT_FIXED: 고정
+            EDITOR_MODE: '편집기 모드'
+            EDITOR_SECTION_DESC: '작성 중 Markdown 편집기의 동작 방식입니다.'
+            ENGLISH: 영어
+            ENVIRONMENT: 환경
+            ESPA_OL: 스페인어
+            EXTERNAL: 외부
+            FAILED_TO_REMOVE_LOGO: '로고를 제거하지 못했습니다.'
+            FAILED_TO_RESET_PREFERENCES: '기본 설정을 초기화하지 못했습니다.'
+            FAILED_TO_SAVE_LOGO_MODE: '로고 모드를 저장하지 못했습니다.'
+            FAILED_TO_SAVE_LOGO_TEXT: '로고 텍스트를 저장하지 못했습니다.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: '사이트 기본값을 저장하지 못했습니다.'
+            FOLLOW_OS: 'OS 설정 따름'
+            FONT: 글꼴
+            FONT_SIZE: '글꼴 크기'
+            FONT_SIZE_LARGE: 크게
+            FONT_SIZE_NORMAL: 보통
+            FONT_SIZE_SMALL: 소형
+            FONT_SIZE_XLARGE: 초대형
+            FRAN_AIS: Français
+            GRAV_LOGO: 'Grav 로고'
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: '빠른 필드 변경 사항을 단일 실행 취소 단계로 그룹화'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: '페이지가 기본적으로 표시되는 방식'
+            HUE: 색조
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: '페이지당 항목 수'
+            LANGUAGE_CHANGED: '언어가 {language} (으)로 변경되었습니다.'
+            LIGHT: 밝음
+            LIGHT_LOGO: '밝은 테마 로고'
+            LIGHT_LOGO_REMOVED: '밝은 테마 로고가 삭제되었습니다.'
+            LIGHT_LOGO_UPLOADED: '밝은 테마 로고가 업로드되었습니다.'
+            LIGHT_MODE_LOGO: '라이트 모드 로고'
+            LOGO_TEXT: '로고 텍스트'
+            LOGO_TYPE: '로고 유형'
+            LOGO_UPLOAD_FAILED: '로고 업로드에 실패했습니다.'
+            MENUBAR_LINKS: '메뉴바 링크'
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: '없음 (1 필드 = 1 실행 취소)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: '목록 보기에 표시되는 페이지 수'
+            'OFF': 끄기
+            'ON': 켜기
+            OTHER_LIST_VIEWS: '기타 목록 보기'
+            OTHER_LIST_VIEWS_DESC: '사용자, 플러그인 및 테마 목록을 위한 기본 레이아웃'
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: '서버의 플러그인. 실험적 기능입니다.'
+            PORTUGU_S: 포르투갈어
+            PREFERENCES_RESET_RELOAD_TO_APPLY: '환경 설정이 초기화되었습니다. 적용하려면 새로고침하세요.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: '버튼, 링크 및 강조 표시에 사용되는 기본 색상'
+            REAL_TIME_COLLABORATION: '실시간 공동 작업'
+            REMOVE_LINK: '링크 제거'
+            RESET: 초기화
+            RESET_ALL_PREFERENCES: '모든 환경 설정 초기화'
+            RESET_PREFERENCES: '환경 설정 초기화'
+            RESET_PREFERENCES_MSG: '모든 개인 재정의 설정을 제거하고 사이트 기본값으로 되돌리시겠습니까?'
+            RESET_TO_SITE_DEFAULTS: '환경 설정을 사이트 기본값으로 초기화'
+            REVERT_CHANGES: '변경 사항 되돌리기'
+            SATURATION: 채도
+            SAVED_AUTOMATICALLY: '자동 저장됨'
+            SAVE_SITE_DEFAULTS: '사이트 기본값 저장'
+            SERVER_CONNECTION_DETAILS: '서버 연결 상세 정보'
+            SERVER_URL: '서버 URL'
+            SETTINGS_GRAV_ADMIN: '설정 — Grav 관리자'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: '편집기 도구 모음에 실행 취소 버튼 표시'
+            SITE_DEFAULTS: '사이트 기본값'
+            SITE_DEFAULTS_DESCRIPTION: '아래 설정은 모든 관리자 사용자의 기준값으로 적용됩니다. B 계층 항목(외관, 페이지, 언어, 편집기)은 각 사용자의 개별 환경 설정에서 재정의할 수 있습니다. A 계층 항목(편집, 메뉴바)은 사이트 전체에 적용되며 재정의할 수 없습니다.'
+            SITE_DEFAULTS_SAVED: '사이트 기본값이 저장되었습니다. 모든 사용자는 다음 새로고침 시 이 설정이 적용된 화면을 보게 됩니다.'
+            SITE_SETTINGS_DESC: '신규 사용자를 위한 기본 환경 설정 및 사이트 전체 동작 설정입니다. 변경 사항은 영향받는 사용자의 다음 새로고침 시 적용됩니다.'
+            SITE_SETTINGS_HEADING: '사이트 설정'
+            SITE_WIDE_ONLY: '사이트 전체 전용'
+            STICKY_TOOLBAR: '고정 툴바'
+            STICKY_TOOLBAR_DESC: '스크롤 시 서식 툴바와 미리보기 버튼이 화면에 고정되도록 합니다.'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: '관리자 페이지 전반에서 사용되는 텍스트 크기'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: '첫 글자를 아이콘으로 사용'
+            TOOLBAR_UNDO_BUTTON: '툴바 실행 취소 버튼'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: '관리자 페이지 전반에서 사용되는 서체'
+            UNDO_BATCH_WINDOW: '일괄 실행 취소 창'
+            USED_ON_DARK_BACKGROUNDS: '어두운 배경에 사용'
+            USED_ON_LIGHT_BACKGROUNDS: '밝은 배경에 사용'
+            USERS_MAY_OVERRIDE: '사용자 재정의 허용'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64자: 영문, 숫자, 하이픈, 밑줄'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '관리자 계정이 생성되었습니다 — Grav에 오신 것을 환영합니다'
+            CHECKING_SERVER: '서버 확인 중…'
+            CONFIRM_PASSWORD: '비밀번호 확인'
+            CREATE_ADMINISTRATOR: '관리자 계정 생성'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: '시작하려면 관리자 계정을 생성하세요'
+            CREATING_ACCOUNT: '계정 생성 중...'
+            ENTER_A_VALID_EMAIL_ADDRESS: '유효한 이메일 주소를 입력하세요'
+            ENVIRONMENT: 환경
+            FULL_NAME: '전체 이름'
+            OPTIONAL: '(선택 사항)'
+            PASSWORDS_DO_NOT_MATCH: '비밀번호가 일치하지 않습니다'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: '위의 오류를 수정하고 다시 시도하세요'
+            POWERED_BY_GRAV_CMS: 'Grav CMS 제공'
+            SERVER_CONFIGURATION: '서버 설정'
+            SERVER_URL: '서버 URL'
+            SETUP_GRAV_ADMIN: '설정 — Grav 관리자'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: '설정이 이미 완료되었습니다. 로그인해 주십시오.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: '서버에 연결할 수 없습니다. 서버 URL을 확인하고 다시 시도하십시오.'
+            WELCOME_TO_GRAV: 'Grav에 오신 것을 환영합니다'
+        SHORT: 짧게
+        SHORT_DATE_FORMAT: '짧은 표시 날짜 형식'
+        SHORT_DATE_FORMAT_HELP: '테마에서 사용할 수 있는 짧은 날짜 형식을 설정합니다'
+        SHUTDOWN_CLOSE_CONNECTION: '종료 시 연결 닫기'
+        SHUTDOWN_CLOSE_CONNECTION_HELP: 'onShutdown()을 호출하기 전에 연결을 닫습니다. 디버깅 시에는 false로 설정하십시오'
+        SIGN_OUT: 로그아웃
+        SITE: 사이트
+        SITE_ACCESS: '사이트 액세스'
+        SITE_DEFAULT_LANG: '기본 언어'
+        SITE_DEFAULT_LANG_HELP: '테마의 <HTML> 태그에서 사용할 기본 언어'
+        SITE_DEFAULT_LANG_PLACEHOLDER: '테마의 <HTML> 태그에서 사용할 기본 언어'
+        SITE_TITLE: '사이트 제목'
+        SITE_TITLE_HELP: '테마에서 주로 사용되는 사이트의 기본 제목'
+        SITE_TITLE_PLACEHOLDER: '사이트 전체 제목'
+        SLUG: 슬러그
+        SLUG_HELP: '슬러그 변수를 사용하면 URL에서 페이지 경로 부분을 명시적으로 설정할 수 있습니다'
+        SLUG_VALIDATE_MESSAGE: '슬러그는 소문자 영문자, 숫자, 대시만 포함해야 합니다'
+        SORTABLE_PAGES: '정렬 가능한 페이지:'
+        SSL_ENABLE_PROXY: '프록시 서버 활성화'
+        SSL_VERIFY_HOST: '원격 호스트 확인'
+        SSL_VERIFY_HOST_HELP: '일부 SSL 인증서 확인이 실패할 수 있습니다'
+        SSL_VERIFY_PEER: '원격 피어 확인'
+        SSL_VERIFY_PEER_HELP: '일부 SSL 인증서 확인이 실패할 수 있습니다'
+        STABLE: '안정 버전'
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n}개 활성)'
+            ACTIVE_THEME: '활성 테마'
+            UPDATE_COUNT: '{n, plural, other{#개 업데이트}}'
+        STRICT_BLUEPRINT_COMPAT: '블루프린트 호환성'
+        STRICT_BLUEPRINT_COMPAT_HELP: '블루프린트에 대한 하위 호환 엄격 모드를 활성화합니다. 이 기능을 끄면 블루프린트에 정의되지 않은 추가 데이터가 있을 경우 폼 유효성 검사가 실패하게 됩니다.'
+        STRICT_TWIG_COMPAT: 'Twig 호환성'
+        STRICT_TWIG_COMPAT_HELP: '사용 중단된 Twig 자동 이스케이프 설정을 활성화합니다. 비활성화하면 Twig가 출력을 자동 이스케이프하므로 HTML을 출력하려면 |raw 필터가 필요합니다.'
+        STRICT_YAML_COMPAT: 'YAML 호환성'
+        STRICT_YAML_COMPAT_HELP: 'Native 또는 3.4 파서가 실패할 경우 Symfony 2.4 YAML 파서로 폴백합니다.'
+        SUMMARY_SIZE: '요약 크기'
+        SUMMARY_SIZE_HELP: '콘텐츠 요약으로 사용할 페이지의 문자 수'
+        SUPPORTED: 지원됨
+        SUPPORTED_HELP: "쉼표로 구분된 2자리 언어 코드 목록 (예: 'en,fr,de')"
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: '내장 마크다운 편집기'
+                LOCKED: '읽기 전용 — {owner} 님이 **{editor}** (으)로 편집 중입니다. 서로 다른 편집기 유형은 공동 편집할 수 없습니다. 실시간 공동 작업을 위해 [편집기 환경 설정을 전환]({href})하세요.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: '편집기 환경 설정을 전환'
+                TO_COLLABORATE_LIVE: '실시간 공동 작업을 위해'
+        SYSLOG_FACILITY: 'Syslog 기능'
+        SYSLOG_FACILITY_HELP: '출력을 위한 Syslog 기능'
+        SYSLOG_TAG: 'Syslog 태그'
+        SYSLOG_TAG_HELP: '출력용 Syslog 태그'
+        SYSTEM:
+            COMING_SOON: '곧 출시 예정'
+            SYSTEM_GRAV_ADMIN: '시스템 — Grav 관리자'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} 여유'
+            BYTES_USED: '{size} 사용됨'
+            CACHE: 캐시
+            DISK: 디스크
+            EVERYTHING_UP_TO_DATE: '모두 최신 상태입니다'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav가 심볼릭 링크를 통해 설치되었습니다. 수동으로 업그레이드하세요.'
+            GRAV_UPDATE_AVAILABLE: 'Grav 업데이트 가능'
+            MORE_COUNT: '+ {n} 개 더…'
+            PACKAGES_OUTDATED: '{n, plural, other{# 개의 패키지가 구버전입니다}}'
+            PERCENT_USED: '{percent}% 사용됨'
+            SERVER: 서버
+            UPDATES: 업데이트
+            UPDATES_AVAILABLE_COUNT: '{n} 개 사용 가능'
+            UPDATE_ALL: '모두 업데이트'
+            UPGRADE_GRAV: 'Grav 업그레이드'
+        TAXONOMIES: 분류
+        TAXONOMY: 분류
+        TAXONOMY_TYPES: '분류 유형'
+        TAXONOMY_TYPES_HELP: '페이지에서 사용하려면 분류 유형을 여기서 정의해야 합니다'
+        TESTING: 테스트
+        THEMES:
+            ACTIVATE: 활성화
+            ACTIVATE_CONFIRM_MESSAGE: '활성 사이트 테마를 {name}(으)로 변경하시겠습니까? 프론트엔드 렌더링에 이 테마가 즉시 적용됩니다.'
+            ACTIVATE_CONFIRM_TITLE: '테마를 활성화할까요?'
+            ACTIVATE_THEME: '{name} 활성화'
+            ACTIVE_THEME: '활성 테마'
+            BACK_TO_THEMES: '테마로 돌아가기'
+            CHANGELOG: '변경 로그'
+            CHECK_UPDATES: '업데이트 확인'
+            CLICK_TO_VIEW_FULL_SIZE: '클릭하여 전체 크기로 보기'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: '다른 곳에서 설정이 수정되었습니다. 새로고침해 주세요.'
+            CONFIGURE: 설정
+            DELETE_ACTIVE_WARNING: '현재 활성화되어 있습니다. 삭제하기 전에 먼저 테마를 전환하는 것을 권장합니다.'
+            FAILED_TO_CHECK_FOR_UPDATES: '업데이트 확인 실패'
+            FAILED_TO_LOAD_THEMES: '테마를 불러오는 데 실패했습니다'
+            FAILED_TO_SAVE_CONFIGURATION: '설정을 저장하지 못했습니다.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: '이 테마에 사용할 수 있는 설정 옵션이 없습니다.'
+            PAGE_TITLE: '{name} — 테마 — Grav 관리자'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name}은(는) 현재 활성화된 테마입니다. 이 테마를 삭제하면 다른 테마가 활성화되기 전까지 사이트 테마가 없어집니다. 계속할까요?'
+            REMOVE_CONFIRM_MESSAGE: '{name}을(를) 제거할까요? 이 작업은 테마를 제거하고 관련 파일을 삭제합니다.'
+            REMOVE_CONFIRM_TITLE: '테마를 제거할까요?'
+            REMOVE_THEME: '테마 제거'
+            SEARCH_THEMES: '테마 검색...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: '상세 정보를 보려면 테마를 선택하세요'
+            SYMLINKED: '심볼릭 링크됨'
+            THEMES_GRAV_ADMIN: '테마 — Grav 관리자'
+            TITLE: 테마
+        THEMES_TABLE:
+            NO_THEMES: '설치된 테마 없음'
+        THUMB: 썸네일
+        TIME:
+            DAYS_AGO: '{n}일 전'
+            HOURS_AGO: '{n}시간 전'
+            JUST_NOW: '방금 전'
+            MINUTES_AGO: '{n}분 전'
+        TIMEOUT: 타임아웃
+        TIMEOUT_HELP: '세션 타임아웃을 초 단위로 설정합니다'
+        TIMEZONE: 시간대
+        TIMEZONE_HELP: '서버의 기본 시간대를 재정의합니다'
+        TITLE: 제목
+        TOASTS:
+            ACTIVE_THEME_REMOVE_BLOCK: '활성화된 테마는 제거할 수 없습니다. 먼저 다른 테마로 전환하세요.'
+            API_KEY_REVOKED: 'API 키 「{name}」이(가) 취소되었습니다'
+            BACKUP_CREATED: '백업 생성됨 ({size})'
+            CACHE_CLEARED: '캐시 삭제됨 ({scope})'
+            CONFIG_MODIFIED_ELSEWHERE: '구성이 다른 곳에서 수정되었습니다. 최신 상태를 확인하려면 새로고침하세요'
+            CONFIG_SAVED: '{name} 구성이 저장되었습니다'
+            COPIED: '{label} 복사됨'
+            COPY_FAILED: '복사 실패: {detail}'
+            DEPENDENCY_INSTALLED: '플러그인 {slug} 설치됨 (의존성)'
+            FILES_DELETE_FAILED: '{n, plural, other{#개의 파일을 삭제하지 못했습니다}}'
+            FILES_UPLOADED: '{n, plural, other{#개의 파일이 업로드되었습니다}}'
+            FILE_DELETED: '{name} 삭제됨'
+            FILE_DELETE_FAILED: '{name} 삭제 실패'
+            FOLDER_CREATED: '폴더 「{name}」 생성됨'
+            FORM_LABEL:
+                CONFIGURATION: 구성
+                FLEX_OBJECT: 'Flex 객체'
+                FORM: 폼
+                PAGE: 페이지
+                PLUGIN: 플러그인
+                PLUGIN_PAGE: '플러그인 페이지'
+                THEME: 테마
+                USER: 사용자
+            GPM_REFRESHED: '{n, plural, =0{GPM 새로고침됨 — 사용 가능한 업데이트 없음} one{GPM 새로고침됨 — #개의 업데이트 있음} other{GPM 새로고침됨 — #개의 업데이트 있음}}'
+            GRAV_UPGRADED: 'Grav가 v{version} 버전으로 업그레이드되었습니다.'
+            INSTALL_FAILED: '{slug} 설치 실패: {detail}'
+            ITEM_COPIED: '「{name}」을(를) 「{target}」으로 복사했습니다.'
+            ITEM_DELETED: '「{name}」을(를) 삭제했습니다.'
+            ITEM_DELETE_FAILED: '「{name}」 삭제 실패'
+            ITEM_MOVED: '「{name}」 이동됨'
+            ITEM_REORDERED: '「{name}」 순서 변경됨'
+            ITEM_SAVED: '{name} 저장됨'
+            PACKAGES_UPDATED: '{n, plural, one{#개의 패키지 업데이트됨} other{#개의 패키지 업데이트됨}}'
+            PACKAGE_REMOVED: '{name} 제거됨'
+            PACKAGE_REMOVE_FAILED: '{name} 제거 실패'
+            PACKAGE_UPDATED: '{name} 업데이트됨'
+            PACKAGE_UPDATE_FAILED: '{name} 업데이트 실패: {detail}'
+            PAGE_PUBLISHED: '「{name}」 게시됨'
+            PAGE_PUBLISH_FAILED: '게시 상태 변경 실패: {detail}'
+            PAGE_UNPUBLISHED: '「{name}」 게시 취소됨'
+            PLUGIN_DISABLED: '{name} 비활성화됨'
+            PLUGIN_DISABLE_FAILED: '{name} 비활성화 실패: {detail}'
+            PLUGIN_ENABLED: '{name} 활성화됨'
+            PLUGIN_ENABLE_FAILED: '{name} 활성화 실패: {detail}'
+            PLUGIN_INSTALLED: '플러그인 {name} 설치됨'
+            PLUGIN_LOCKOUT_BLOCK: '{name}은(는) admin-next에서 비활성화할 수 없습니다. 비활성화 시 관리자 페이지에 접속할 수 없게 됩니다.'
+            PLUGIN_REMOVED: '{name} 제거됨'
+            PLUGIN_REMOVE_FAILED: '{name} 제거 실패: {detail}'
+            PLUGIN_REQUIRED_BLOCK: '{name}은(는) admin-next에 필요한 항목이므로 제거할 수 없습니다.'
+            SAVED: 저장됨
+            SAVED_AS_LANGUAGE: '{language}(으)로 저장됨'
+            SAVE_FAILED: '저장 실패'
+            SAVE_FORM_FAILED: '{form} 저장 실패'
+            THEME_ACTIVATED: '{name}이(가) 현재 활성 테마입니다'
+            THEME_ACTIVATE_FAILED: '{name} 활성화 실패: {detail}'
+            THEME_INSTALLED: '테마 {name} 설치됨'
+            THEME_REMOVED: '{name} 제거됨'
+            THEME_REMOVE_BLOCK: '{name}은(는) 제거할 수 없습니다.'
+            THEME_REMOVE_FAILED: '{name} 제거 실패: {detail}'
+            TOTP_CODE_REQUIRED: '인증 앱의 6자리 코드를 입력하세요'
+            TRANSLATION_CREATED: '{language} 번역 생성됨'
+            TRANSLATION_RESET: '{target}이(가) {source}에서 재설정됨'
+            UPDATE_FAILED: '업데이트 실패: {detail}'
+            USER_CREATED: '사용자 {username} 생성됨'
+            USER_DELETED: '사용자 {username} 삭제됨'
+            USER_DELETE_FAILED: '사용자 {username} 삭제 실패'
+            USER_DISABLED: '사용자 {username} 비활성화됨'
+            USER_ENABLED: '사용자 {username} 활성화됨'
+            USER_SAVED: '사용자 {username} 저장됨'
+            USER_STATE_FAILED: '{username}의 상태를 변경하지 못했습니다: {detail}'
+        TOGGLE_DARK_MODE: '다크 모드 전환'
+        TOGGLE_MENU: '메뉴 전환'
+        TOOLS:
+            BACKUPS:
+                ACTION: 작업
+                BACKUP_CREATED_SUCCESSFULLY: '백업이 성공적으로 생성되었습니다'
+                BACKUP_DATE: '백업 날짜'
+                BACKUP_DELETED: '백업 삭제됨'
+                BACKUP_HISTORY: '백업 기록'
+                BACKUP_NOW: '지금 백업'
+                BACKUP_STATISTICS: '백업 통계'
+                CREATING: '생성 중...'
+                DELETE_BACKUP: '백업 삭제'
+                FAILED_TO_CREATE_BACKUP: '백업 생성 실패'
+                FAILED_TO_DELETE_BACKUP: '백업 삭제 실패'
+                FAILED_TO_LOAD_BACKUPS: '백업 로드 실패'
+                LOADING_BACKUPS: '백업 로드 중...'
+                NEWEST_BACKUP: '최신 백업'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: '백업을 찾을 수 없습니다. 하나를 생성하여 시작하세요.'
+                NUMBER_OF_BACKUPS: '백업 수'
+                NUMBER_OF_PROFILES: '프로필 수'
+                OLDEST_BACKUP: '가장 오래된 백업'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: '백업, 스케줄러, 로그 및 진단'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: '.zip 파일을 여기에 끌어다 놓거나 클릭하여 찾아보세요'
+                INSTALL_FROM_FILE: '파일에서 설치'
+                INSTALL_FROM_URL: 'URL에서 설치'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: '.zip 파일만 지원됩니다'
+                PACKAGE_INSTALLED_SUCCESSFULLY: '패키지가 성공적으로 설치되었습니다'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Grav 플러그인 및 테마 패키지를 지원합니다'
+            LOGS:
+                100_LINES: 100줄
+                200_LINES: 200줄
+                25_LINES: 25줄
+                50_LINES: 50줄
+                ALL_LEVELS: '모든 레벨'
+                CRITICAL: 위험(Critical)
+                EMERGENCY: 긴급(Emergency)
+                FAILED_TO_LOAD_LOGS: '로그를 불러오는 데 실패했습니다'
+                FAILED_TO_LOAD_LOG_FILES: '로그 파일을 불러오는 데 실패했습니다'
+                LOADING_LOGS: '로그 불러오는 중...'
+                LOG_FILE: '로그 파일'
+                MESSAGE: 메시지
+                NOTICE: 알림(Notice)
+                REFRESH: 새로고침
+                SEARCH_MESSAGES: '메시지 검색...'
+                WARNING: 경고(Warning)
+            REPORTS:
+                CONTENT_FIELD: '콘텐츠: {field}'
+                FAILED_TO_LOAD_REPORTS: '보고서를 불러오는 데 실패했습니다'
+                LOADING_REPORTS: '보고서 불러오는 중...'
+                NO_REPORTS_AVAILABLE: '사용 가능한 보고서가 없습니다.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: '보고서 구성 요소를 불러오는 중...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: '스케줄러 기능을 활성화하려면 **{user}** 사용자의 시스템 crontab 파일에 **Grav Scheduler**를 추가해야 합니다. 터미널에서 위 명령어를 실행하면 자동으로 추가됩니다. 저장 후 이 페이지를 새로 고침하여 상태를 확인하세요.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: '스케줄러 구성을 불러오지 못했습니다.'
+                FAILED_TO_SAVE: '저장 실패'
+                GRAV_SCHEDULER: 'Grav 스케줄러'
+                INFO_BANNER: '스케줄러는 시스템 crontab이나 웹훅 트리거를 사용하여 명령을 실행할 수 있습니다. 클라우드 환경에서는 웹훅을 사용하는 것이 권장됩니다. 숙련된 사용자만 사용자 지정 작업을 구성해야 합니다. 잘못된 구성이나 오용은 보안 취약점을 초래할 수 있습니다.'
+                LOADING_SCHEDULER: '스케줄러를 불러오는 중...'
+                NOT_ENABLED_FOR_USER: '사용자에게 활성화되지 않음:'
+                SCHEDULER_CONFIGURATION_SAVED: '스케줄러 구성이 저장되었습니다.'
+                SECURITY_WARNING: '숙련된 사용자만 사용자 지정 스케줄러 작업을 구성해야 합니다. 잘못된 구성은 성능 문제나 보안 취약점을 유발할 수 있습니다.'
+                WEBHOOK_ALTERNATIVE: '또는 시스템 crontab에 접근할 수 없는 클라우드 환경에 권장되는 웹훅 기반 cron 실행을 위해 **scheduler-webhook** 플러그인을 설치하세요.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{total} 중 {free} 사용 가능'
+                DISK_USAGE: '디스크 사용량'
+                DRIVER: 드라이버
+                FAILED_TO_LOAD_SYSTEM_INFO: '시스템 정보를 불러오지 못했습니다.'
+                GRAV_VERSION: 'Grav 버전'
+                LOADING_SYSTEM_INFO: '시스템 정보를 불러오는 중...'
+                MAX_EXECUTION: '최대 실행 시간'
+                MAX_POST: '최대 POST 크기'
+                MAX_UPLOAD: '최대 업로드 크기'
+                MEMORY_LIMIT: '메모리 제한'
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: 'PHP 버전'
+            TOOLS_GRAV_ADMIN: '도구 — Grav 관리자'
+        TOP_BANNER:
+            PREVIOUS: 이전
+            SITE_NOTIFICATION: '사이트 알림'
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: '아직 조회된 데이터가 없습니다'
+        TOP_PROGRESS_BAR:
+            WORKING: '처리 중'
+        TRANSLATIONS: 번역
+        TRANSLATIONS_FALLBACK: '번역 폴백'
+        TRANSLATIONS_FALLBACK_HELP: '활성 언어가 존재하지 않을 경우 지원되는 번역을 통해 폴백합니다'
+        TWIG_3_COMPATIBILITY: 'Twig 3 호환성'
+        TWIG_3_COMPATIBILITY_HELP: 'Twig 3에서 작동하지 않는 레거시 Twig 1/2 구문(예: <code>for ... if ...</code> 가드)에 대한 자동 재작성을 활성화합니다.'
+        TWIG_CACHING: 'Twig 캐싱'
+        TWIG_CACHING_HELP: 'Twig 캐싱 메커니즘을 제어합니다. 최상의 성능을 위해 활성화 상태로 두세요.'
+        TWIG_CONTENT: '콘텐츠 내 Twig 사용'
+        TWIG_CONTENT_CONFIG_ACCESS: 'Twig에서 구성 변수 접근 허용'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: '페이지 콘텐츠에서 <code>config</code> Twig 변수를 읽을 수 있는지 여부입니다. 끄면(기본값), 페이지에서 <code>config.system.title</code>을 읽어도 아무것도 반환되지 않습니다. 켜면 <code>config</code>가 노출되지만 여전히 <code>config_denied_paths</code>(아래 Twig 샌드박스 참조)에 의해 필터링되므로 자격 증명 및 기타 민감한 하위 트리는 숨겨진 상태로 유지됩니다.'
+        TWIG_CONTENT_EDITOR_ENABLED: '편집자가 콘텐츠 내 Twig 사용 여부를 전환하도록 허용'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: '끄면(기본값), 페이지 편집기의 고급 탭에 있는 Twig 체크박스는 <code>admin.pages_twig</code> 권한이 있는 사용자에게만 보이며, 이미 Twig가 활성화된 페이지는 해당 사용자만 편집할 수 있습니다. 켜면 페이지 편집 권한이 있는 누구나 개별 페이지에서 Twig를 켜고 끌 수 있습니다.'
+        TWIG_CONTENT_HELP: '페이지 콘텐츠에 포함된 편집자 작성 Twig를 제어합니다. 디스크에 있는 테마 템플릿은 이러한 설정의 영향을 받지 않으며, 작성자가 페이지 본문이나 프론트매터에 넣은 Twig에만 적용됩니다.'
+        TWIG_CONTENT_PROCESS_ENABLED: '콘텐츠 내 Twig 활성화'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: '프론트매터에 <code>process: twig: true</code>가 설정된 페이지(및 사이트 전체 <code>system.pages.frontmatter.process_twig</code> 옵션)가 실제로 Twig를 실행하도록 허용합니다. <strong>Grav 2.0에서 기본적으로 꺼져 있습니다.</strong> 이를 비활성화하면 템플릿 삽입 공격 표면이 줄어들지만, 본문에 Twig가 필요한 모든 페이지가 작동하지 않게 됩니다.'
+        TWIG_DEBUG: 'Twig 디버그'
+        TWIG_DEBUG_HELP: 'Twig 디버거 확장을 로드하지 않는 옵션을 허용합니다'
+        TWIG_FIRST: 'Twig 우선 처리'
+        TWIG_FIRST_HELP: 'Twig 페이지 처리를 활성화한 경우, 마크다운 이전 또는 이후에 Twig를 처리하도록 구성할 수 있습니다'
+        TWIG_SANDBOX: 'Twig 샌드박스'
+        TWIG_SANDBOX_ADMIN_HINT: '관리자 힌트 주석'
+        TWIG_SANDBOX_ADMIN_HINT_HELP: '샌드박스가 표현식을 차단할 때, 렌더링된 페이지에 한 줄짜리 HTML 주석을 추가하여 소스를 확인하는 슈퍼 관리자가 차단된 내용을 확인할 수 있도록 합니다. 방문자와 일반 관리자에게는 아무것도 보이지 않습니다.'
+        TWIG_SANDBOX_ALLOWED_FILTERS: '허용된 필터'
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: '페이지 콘텐츠에 적용할 수 있는 Twig 필터입니다.'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: '허용된 함수'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: '페이지 콘텐츠가 호출할 수 있는 Twig 함수입니다.'
+        TWIG_SANDBOX_ALLOWED_METHODS: '허용된 메서드'
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: '페이지 콘텐츠가 호출할 수 있는 클래스별 객체 메서드 목록입니다.'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: '허용된 속성'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: '페이지 콘텐츠가 읽을 수 있는 클래스별 객체 속성 목록입니다.'
+        TWIG_SANDBOX_ALLOWED_TAGS: '허용된 태그'
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: '페이지 콘텐츠가 사용할 수 있는 Twig 태그입니다. 작성자에게 노출해도 안전한 태그만 추가하십시오.'
+        TWIG_SANDBOX_CLASS: 클래스
+        TWIG_SANDBOX_ENABLED: 'Twig 샌드박스 활성화'
+        TWIG_SANDBOX_ENABLED_HELP: '허용 목록 기반의 Twig 보안 정책(SecurityPolicy) 내에서 편집기가 작성한 페이지 콘텐츠를 렌더링합니다. <strong>비활성화하면 페이지 콘텐츠를 통한 템플릿 주입 공격에 대한 유일한 보호 장치가 제거됩니다.</strong> 편집자 수준의 액세스 권한이 있는 계정(또는 파일 시스템이 손상된 경우)은 Twig를 통해 임의의 PHP를 실행할 수 있습니다. 사이트에서 페이지 콘텐츠의 컨테이너 액세스가 반드시 필요하고 모든 작성자를 완전히 신뢰하는 경우에만 비활성화하십시오.'
+        TWIG_SANDBOX_HELP: '페이지 콘텐츠 템플릿이 사용할 수 있는 Twig 태그, 필터, 함수, 메서드 및 속성의 허용 목록입니다. 편집기가 작성한 콘텐츠는 이 샌드박스를 통해 렌더링되므로, 권한이 탈취된 작성자나 템플릿 주입 버그가 더 넓은 범위의 컨테이너에 접근할 수 없습니다.'
+        TWIG_SANDBOX_LOGGING: '위반 사항 기록'
+        TWIG_SANDBOX_LOGGING_HELP: '차단된 모든 표현식을 <code>logs/twig-sandbox.log</code>에 기록합니다. 허용 목록을 조정하는 동안 유용하며, 프로덕션 환경에서는 로그 기록을 최소화하기 위해 끄는 것이 좋습니다.'
+        TWIG_SANDBOX_METHODS: 메서드
+        TWIG_SANDBOX_PROPERTIES: 속성
+        TWIG_TEMPLATING: 'Twig 템플릿'
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA 비활성화됨'
+            2FA_ENABLED: '2FA 활성화됨'
+            2FA_IS_ENABLED: '2FA가 활성화되어 있습니다'
+            2FA_QR_CODE: '2FA QR 코드'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: '로그인 시 일회용 코드를 요구하여 보안을 한층 더 강화합니다.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: '이 계정으로 로그인할 때마다 일회용 코드가 필요합니다.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: '보안상의 이유로 비밀 코드가 이미 생성되었지만 표시되지 않습니다.'
+            CONFIRM_DISABLE: '비활성화 확인'
+            ENABLE_2FA: '2단계 인증 활성화'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: '인증 앱의 6자리 코드를 입력하세요'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: '확인을 위해 현재 6자리 코드를 입력하세요'
+            FAILED_TO_GENERATE_2FA_SECRET: '2단계 인증 비밀 코드 생성 실패'
+            FINISH_ENABLING_2FA: '2단계 인증 활성화 완료'
+            FORCE_DISABLE: '강제 비활성화'
+            FORCE_DISABLE_PROMPT: '**{username}**님의 2단계 인증을 강제로 비활성화하시겠습니까? 기기 분실 복구 시에만 사용하세요.'
+            REGENERATE_AND_SHOW_QR: 'QR 코드 재생성 및 표시'
+            SCAN_THE_QR_CODE_WITH_YOUR: '인증 앱으로 QR 코드를 스캔하세요'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: '인증 앱으로 QR 코드를 스캔한 후, 6자리 코드를 입력하여 인증하고 활성화하세요.'
+            SECRET_FOR_MANUAL_ENTRY: '비밀 코드 (수동 입력용):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: '2단계 인증이 꺼져 있습니다'
+            VERIFICATION_CODE: '인증 코드'
+            VERIFY_ENABLE: '인증 및 활성화'
+        TYPE: 유형
+        UNPUBLISHED_DATE: '게시 중단 날짜'
+        UNPUBLISHED_DATE_HELP: '자동으로 게시를 중단할 날짜를 지정할 수 있습니다.'
+        UNSAVED_CHANGES: '저장되지 않은 변경 사항'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: '변경 사항 저장 중…'
+            SAVING_CHANGES_2: '변경 사항 저장 중'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: "저장되지 않은 변경 사항 — 유지하려면 '저장'을 클릭하세요"
+            YOU_HAVE_UNSAVED_CHANGES: '저장되지 않은 변경 사항이 있습니다'
+        UPDATE: 업데이트
+        UPDATE_AVAILABLE_VERSION: '사용 가능한 업데이트: v{version}'
+        UPDATE_TO_VERSION: 'v{version} 버전으로 업데이트'
+        UPLOAD: 업로드
+        UPLOADS_DANGEROUS_EXTENSIONS: '위험한 확장자'
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: '허용된 MIME 유형과 상관없이 해당 확장자의 업로드를 차단합니다'
+        UPLOADS_SECURITY: '업로드 보안'
+        USERNAME: '사용자 이름'
+        USERNAME_HELP: '사용자 이름은 소문자, 숫자, 밑줄, 하이픈을 포함하여 3자에서 16자 사이여야 합니다. 대문자, 공백, 특수 문자는 사용할 수 없습니다'
+        USERNAME_REGEX: '사용자 이름 정규식'
+        USERNAME_REGEX_HELP: '기본값: 소문자, 숫자, 대시, 밑줄만 가능. 3 ~ 16자'
+        USERS:
+            2_FACTOR_AUTHENTICATION: '2단계 인증'
+            ADD_USER: '사용자 추가'
+            BACK_TO_USERS: '사용자 목록으로 돌아가기'
+            CONFIRM_DELETE_USER: "'{username}' 사용자를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+            CREATED: 생성일
+            DELETE_USER: '사용자 삭제'
+            FAILED_TO_LOAD_USERS: '사용자 목록을 불러오는 데 실패했습니다'
+            FAILED_TO_SAVE_USER: '사용자 저장에 실패했습니다.'
+            NEW:
+                ACCOUNT: 계정
+                CREATE: 생성
+                FULL_NAME: '전체 이름'
+                LOWERCASE_3_64_CHARS: '3-64자: 영문자, 숫자, . - _'
+                NEW_USER: '새 사용자'
+                NEW_USER_GRAV_ADMIN: '새 사용자 — Grav 관리자'
+                PERMISSIONS: 권한
+            PAGE_TITLE: '{name} — 사용자 — Grav 관리자'
+            PERMISSIONS: 권한
+            SEARCH_USERS: '사용자 검색...'
+            SELECT_A_USER_TO_VIEW_DETAILS: '상세 정보를 보려면 사용자를 선택하세요'
+            STATUS: 상태
+            STATUS_HELP: '비활성화된 계정은 로그인하거나 API를 사용할 수 없습니다.'
+            SUPER_ADMIN: '슈퍼 관리자'
+            TITLE: 사용자
+            USERS_GRAV_ADMIN: '사용자 — Grav 관리자'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: '다른 곳에서 사용자가 변경되었습니다. 저장하여 덮어쓰거나 새로고침하세요'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: '다른 곳에서 사용자가 수정되었습니다. 새로고침하세요.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: '본인의 계정은 삭제할 수 없습니다.'
+        USERS_FILTER:
+            BACKEND_ACCESS: '백엔드 액세스'
+            CLEAR: 지우기
+            CLEAR_ALL: '필터 지우기'
+            FILTER_BY_GROUP: '이 그룹으로 필터링'
+            FILTER_BY_PERMISSION: '이 권한으로 필터링'
+            GROUP: 그룹
+            GROUPS: 그룹
+            LOADING: '불러오는 중…'
+            NO_MATCHES: '일치하는 항목 없음'
+            NO_MATCHES_FILTERS: '필터에 일치하는 사용자가 없습니다'
+            PERMISSION: 권한
+            TYPE_TO_FILTER: '입력하여 필터링…'
+        USERS_NAV:
+            CONFIGURATION: 설정
+            GROUPS: 그룹
+            INVITATIONS: 초대
+            USERS: 사용자
+        USERS_TABLE:
+            ACTIONS: 작업
+            CARDS: 카드
+            DELETE: 삭제
+            DISABLED: 비활성화됨
+            EDIT: 편집
+            EMAIL: 이메일
+            ENABLED: 활성화됨
+            FULL_NAME: '전체 이름'
+            NO_USERS: '사용자를 찾을 수 없습니다'
+            'OFF': 꺼짐
+            'ON': 켜짐
+            PERMISSIONS: 권한
+            STATUS: 상태
+            TABLE: 표
+            USERNAME: '사용자 이름'
+        USER_ACCOUNTS: '사용자 계정'
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: '아바타가 제거되었습니다'
+            AVATAR_UPDATED: '아바타가 업데이트되었습니다'
+            FAILED_TO_REMOVE_AVATAR: '아바타 제거에 실패했습니다'
+            FAILED_TO_UPLOAD_AVATAR: '아바타 업로드에 실패했습니다'
+            UPLOAD_AVATAR: '아바타 업로드'
+        USE_GLOBAL: '전역 설정 사용'
+        VALIDATION:
+            FIELD_REQUIRED: '{label}은(는) 필수 항목입니다'
+            FORM_HAS_ERRORS: '{count, plural, one {# 개의 필드를 확인해야 합니다} other {# 개의 필드를 확인해야 합니다}}'
+            REQUIRED_GENERIC: '이 필드는 필수입니다'
+        VALID_LINK_ATTRIBUTES: '유효한 링크 속성'
+        VALID_LINK_ATTRIBUTES_HELP: '미디어 HTML 요소에 자동으로 추가될 속성'
+        VARY_ACCEPT_ENCODING: 'Vary accept encoding'
+        VARY_ACCEPT_ENCODING_HELP: '프록시 및 CDN 캐싱을 돕기 위해 `Vary: Accept Encoding` 헤더를 설정합니다'
+        VERSION: 버전
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: '새 탭에서 사이트 프론트엔드 열기'
+            VIEW_SITE: '사이트 보기'
+        VISIBLE: 표시
+        VISIBLE_HELP: '페이지를 탐색 메뉴에 표시할지 여부를 결정합니다.'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: '알 수 없는 위젯: {id}'
+        WRAPPED_SITE: '래핑된 사이트'
+        WRAPPED_SITE_HELP: '테마/플러그인이 Grav가 다른 플랫폼에 의해 래핑되었는지 알 수 있도록 합니다'
+        XSS_DANGEROUS_TAGS: '위험한 HTML 태그 필터링'
+        XSS_DANGEROUS_TAGS_LIST: '위험한 HTML 태그 목록'
+        XSS_HTML_INLINE_STYLES: 'HTML 인라인 스타일 필터링'
+        XSS_INVALID_PROTOCOLS: '유효하지 않은 프로토콜 필터링'
+        XSS_INVALID_PROTOCOLS_LIST: '유효하지 않은 프로토콜 목록'
+        XSS_MOZ_BINDINGS: 'Moz 바인딩 필터링'
+        XSS_ON_EVENTS: 'On-이벤트 필터링'
+        XSS_SECURITY: '콘텐츠에 대한 XSS 보안'
+        XSS_WHITELIST_PERMISSIONS: '허용 권한 목록'
+        XSS_WHITELIST_PERMISSIONS_HELP: '이 권한을 가진 사용자는 콘텐츠를 저장할 때 XSS 규칙을 건너뜁니다.'
+        'YES': 예
+        YUBIKEY_HELP: '컴퓨터에 YubiKey를 삽입하고 버튼을 클릭하여 OTP를 생성하세요. 처음 12자리가 클라이언트 ID이며 저장됩니다.'
+        YUBIKEY_ID: 'YubiKey ID'

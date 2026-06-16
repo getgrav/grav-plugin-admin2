@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: '"{title}" unter {route} löschen?'
         COPY_BUTTON:
             COPIED: Kopiert!
+            COPY: Kopieren
         CUSTOM: Benutzerdefiniert
         DASHBOARD:
             ADD_WIDGET: 'Widget hinzufügen'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objekt wurde anderswo geändert. Bitte neu laden.'
             PREVIOUS: Zurück
             SEARCH: Suchen...
+            INFO:
+                DIRECTORY: Verzeichnis
+                ID: ID
+                LOCATION: Speicherort
+                SHOW_INFO: 'Objektinformationen anzeigen'
+                STORAGE_KEY: Speicherschlüssel
+                TITLE: Objektinformationen
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Widget-Menü schließen'
         FORGOT:
@@ -707,6 +715,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Benutzer können überschreiben'
             OTHER_LIST_VIEWS: 'Andere Listenansichten'
             OTHER_LIST_VIEWS_DESC: 'Standardlayout für die Listen von Benutzern, Plugins und Themes'
+            EDITOR_HEIGHT: Editor-Höhe
+            EDITOR_HEIGHT_AUTO: Automatisch
+            EDITOR_HEIGHT_DESC: 'Lassen Sie den Editor mit Ihrem Inhalt wachsen oder begrenzen Sie ihn auf eine feste Höhe mit eigener Bildlaufleiste.'
+            EDITOR_HEIGHT_FIXED: Fest
+            EDITOR_SECTION_DESC: 'Wie sich der Markdown-Editor während des Schreibens verhält.'
+            STICKY_TOOLBAR: 'Fixierte Symbolleiste'
+            STICKY_TOOLBAR_DESC: 'Behalten Sie die Formatierungs-Symbolleiste und die Vorschau-Schaltfläche beim Scrollen im Blickfeld.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -1008,6 +1023,8 @@ ICU:
             CARDS: Karten
             FULL_NAME: 'Vollständiger Name'
             PERMISSIONS: Berechtigungen
+            'OFF': Aus
+            'ON': An
         ACCOUNTS_CONFIG:
             FAILED_TO_LOAD: 'Fehler beim Laden der Kontenkonfiguration'
             FAILED_TO_SAVE: 'Fehler beim Speichern der Kontenkonfiguration'
@@ -1839,3 +1856,7 @@ ICU:
         'YES': Ja
         YUBIKEY_HELP: 'Stecken Sie Ihren YubiKey in Ihren Computer ein und klicken Sie auf die Schaltfläche, um ein OTP zu generieren. Die ersten 12 Zeichen sind Ihre Client-ID und werden gespeichert.'
         YUBIKEY_ID: YubiKey-ID
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Dateien unter user/data, user/accounts und user/config können direkt über HTTP heruntergeladen werden — einschließlich Zertifikaten, Schlüsseln, Token und Datenbanken. Dies bedeutet normalerweise, dass Ihr Webserver die .htaccess-Regeln von Grav nicht anwendet.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Wie Sie Ihren Webserver absichern'
+            USER_FOLDER_EXPOSED_TITLE: 'Sicherheitsrisiko: Ihre Benutzerdaten-Ordner sind über das Web erreichbar'

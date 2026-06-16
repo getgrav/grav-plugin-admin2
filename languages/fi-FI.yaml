@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: 'Poista „{title}" kohteesta {route}?'
         COPY_BUTTON:
             COPIED: Kopioitu!
+            COPY: Kopioi
         CUSTOM: Mukautettu
         DASHBOARD:
             ADD_WIDGET: 'Lisää widget'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objektia muokattiin muualla. Lataa sivu uudelleen.'
             PREVIOUS: Edellinen
             SEARCH: Haku...
+            INFO:
+                DIRECTORY: Hakemisto
+                ID: ID
+                LOCATION: Sijainti
+                SHOW_INFO: 'Näytä objektin tiedot'
+                STORAGE_KEY: Tallennusavain
+                TITLE: 'Objektin tiedot'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Sulje widgetien valikko'
         FORGOT:
@@ -707,6 +715,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Käyttäjät voivat ohittaa'
             OTHER_LIST_VIEWS: 'Muut luettelonäkymät'
             OTHER_LIST_VIEWS_DESC: 'Käyttäjien, laajennuksien ja teemojen luetteloiden oletusasettelu'
+            EDITOR_HEIGHT: 'Editorin korkeus'
+            EDITOR_HEIGHT_AUTO: Automaattinen
+            EDITOR_HEIGHT_DESC: 'Anna editorin kasvaa sisällön mukana tai rajoita se kiinteään korkeuteen, jossa on oma vierityspalkki.'
+            EDITOR_HEIGHT_FIXED: Kiinteä
+            EDITOR_SECTION_DESC: 'Kuinka Markdown-editori käyttäytyy kirjoittaessasi.'
+            STICKY_TOOLBAR: 'Kiinnittyvä työkalupalkki'
+            STICKY_TOOLBAR_DESC: 'Pidä muotoilutyökalupalkki ja Esikatselu-painike näkyvissä selaamisen aikana.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
@@ -1083,6 +1098,8 @@ ICU:
             TABLE: Taulukko
             USERNAME: Käyttäjänimi
             PERMISSIONS: Käyttöoikeudet
+            'OFF': Pois
+            'ON': Päällä
         2FA_ENABLED: '2-tekijäisen todentamisen käytössä'
         2FA_SECRET: '2-tekijäisen todentamisen salaisuus'
         2FA_SECRET_HELP: 'Skannaa tämä QR-koodi [Authenticator-sovellukseen](https://learn.getgrav.org/admin-panel/2fa#apps). On myös hyvä idea varmuuskopioida salaisuus turvalliseen paikkaan siinä tapauksessa, että joudut asentamaan sovelluksen uudelleen. Lisätietoja löydät [Gravin dokumentaatiosta](https://learn.getgrav.org/admin-panel/2fa)'
@@ -1839,3 +1856,7 @@ ICU:
         'YES': Kyllä
         YUBIKEY_HELP: 'Liitä YubiKey tietokoneeseen ja napsauta painiketta luodaksesi OTP-koodin. Ensimmäiset 12 merkkiä ovat asiakastunnuksesi ja ne tallennetaan.'
         YUBIKEY_ID: YubiKey-tunnus
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Kansioiden user/data, user/accounts ja user/config tiedostot ovat ladattavissa suoraan HTTP-yhteyden yli — mukaan lukien varmenteet, avaimet, tunnisteet ja tietokannat. Tämä tarkoittaa yleensä sitä, että verkkopalvelimesi ei käytä Gravin .htaccess-sääntöjä.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Kuinka suojata verkkopalvelimesi'
+            USER_FOLDER_EXPOSED_TITLE: 'Tietoturvariski: käyttäjätietokansiosi ovat saavutettavissa verkosta'

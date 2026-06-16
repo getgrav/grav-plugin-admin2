@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: '¿Eliminar "{title}" en {route}?'
         COPY_BUTTON:
             COPIED: ¡Copiado!
+            COPY: Copiar
         CUSTOM: Personalizado
         DASHBOARD:
             ADD_WIDGET: 'Agregar un widget'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'El objeto fue modificado en otro lugar. Por favor recarga.'
             PREVIOUS: Anterior
             SEARCH: Buscar...
+            INFO:
+                DIRECTORY: Directorio
+                ID: ID
+                LOCATION: Ubicación
+                SHOW_INFO: 'Mostrar información del objeto'
+                STORAGE_KEY: 'Clave de almacenamiento'
+                TITLE: 'Información del objeto'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Cerrar menú de widgets'
         FORGOT:
@@ -707,6 +715,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Los usuarios pueden anular'
             OTHER_LIST_VIEWS: 'Otras vistas de lista'
             OTHER_LIST_VIEWS_DESC: 'Diseño predeterminado para las listas de usuarios, complementos y temas'
+            EDITOR_HEIGHT: 'Altura del editor'
+            EDITOR_HEIGHT_AUTO: Automático
+            EDITOR_HEIGHT_DESC: 'Permite que el editor crezca con tu contenido, o límitalo a una altura fija con su propia barra de desplazamiento.'
+            EDITOR_HEIGHT_FIXED: Fijo
+            EDITOR_SECTION_DESC: 'Cómo se comporta el editor de Markdown mientras escribes.'
+            STICKY_TOOLBAR: 'Barra de herramientas fija'
+            STICKY_TOOLBAR_DESC: 'Mantén la barra de herramientas de formato y el botón de vista previa anclados a la vista mientras te desplazas.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, guiones, guiones bajos'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Cuenta de administrador creada — bienvenido a Grav'
@@ -1083,6 +1098,8 @@ ICU:
             TABLE: Tabla
             USERNAME: 'Nombre de usuario'
             PERMISSIONS: Permisos
+            'OFF': Apagado
+            'ON': Encendido
         2FA_ENABLED: '2FA Habilitada'
         2FA_SECRET: 'Secreto 2FA'
         2FA_SECRET_HELP: 'Escanea este código QR en tu [Aplicación de Autenticación](https://learn.getgrav.org/admin-panel/2fa#apps). También es una buena idea hacer una copia de seguridad del secreto en un lugar seguro, en caso de que necesites reinstalar tu aplicación. Consulta la [documentación de Grav](https://learn.getgrav.org/admin-panel/2fa) para más información '
@@ -1839,3 +1856,7 @@ ICU:
         'YES': Sí
         YUBIKEY_HELP: 'Inserta tu YubiKey en tu computadora y haz clic en el botón para generar un OTP. Los primeros 12 caracteres son tu ID de cliente y se guardarán.'
         YUBIKEY_ID: 'ID de YubiKey'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Los archivos bajo user/data, user/accounts y user/config se pueden descargar directamente a través de HTTP, incluyendo certificados, llaves, tokens y bases de datos. Esto usualmente significa que tu servidor web no está aplicando las reglas .htaccess de Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Cómo asegurar tu servidor web'
+            USER_FOLDER_EXPOSED_TITLE: 'Riesgo de seguridad: tus carpetas de datos de usuario son accesibles desde la web'

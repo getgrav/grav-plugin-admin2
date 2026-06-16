@@ -1,3 +1,28 @@
+# v2.0.0-rc.15
+## 06/16/2026
+
+1. [](#new)
+    * The Markdown editor can now keep its toolbar pinned in view as you scroll, and optionally hold a fixed height with its own scrollbar, both configurable in Settings ([#37](https://github.com/getgrav/grav-plugin-admin2/issues/37)).
+    * The Dashboard now shows a prominent warning when your `user/data`, `user/accounts` and `user/config` folders are downloadable over the web, catching a misconfigured webserver before it leaks certificates, keys or databases.
+    * Plugin settings pages can now show a custom save notification supplied by the plugin, including longer-lived or dismiss-required messages, instead of always the generic saved message ([#38](https://github.com/getgrav/grav-plugin-admin2/issues/38)).
+    * Plugin sidebar items can now show a live count badge that refreshes on its own, instead of only a fixed number set when the page loads ([#42](https://github.com/getgrav/grav-plugin-admin2/issues/42)).
+    * Flex object editors now have an info button that reveals the object's id, directory and storage location in a small copyable panel, so you can reference an object in code without hunting for its id ([getgrav/grav#4130](https://github.com/getgrav/grav/issues/4130)).
+    * File upload fields now honor their blueprint's `random_name`, `avoid_overwriting`, `accept`, and `filesize` settings, matching the classic admin.
+2. [](#bugfix)
+    * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
+    * **Required custom fields provided by plugins now block saving while they are empty too**, the same as the built-in fields ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
+    * Required custom fields now show the same inline "field is required" message as built-in fields when you empty them ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).
+    * The inline error on a required field now uses the custom `validate.message` from the blueprint when one is set, instead of the generic text ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
+    * Dragging an image from the Page Media panel into the markdown editor now inserts a single valid image tag instead of a doubled, corrupted one ([#4123](https://github.com/getgrav/grav/issues/4123)).
+    * The Folder Numeric Prefix toggle in a page's Advanced tab now reflects whether the folder actually has a numeric prefix instead of always showing Enabled, and toggling it adds or removes the prefix on save.
+    * Turning the Folder Numeric Prefix on now places the page last in its folder by giving it a prefix one past the highest among its siblings.
+    * The page editor's Page Info panel now shows the page's folder name, making numeric-prefix and ordering issues easier to spot.
+    * Uploading a file or image to a flex object now saves it to that object instead of failing with a Method Not Allowed error ([flex-objects#216](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/216)).
+    * A plugin page built as a custom component can now control its own Save button, which previously stayed greyed out and unusable ([#40](https://github.com/getgrav/grav-plugin-admin2/issues/40)).
+    * Custom fields shipped by a theme now load in the editor instead of failing with a "Failed to load custom field" error ([#3](https://github.com/getgrav/grav-admin-next/issues/3)). Requires grav-plugin-api ≥ 1.0.0-rc.15.
+    * Required fields now show their asterisk marker again, which had gone missing for every field shown in the two-column label layout ([getgrav/grav#4130](https://github.com/getgrav/grav/issues/4130)).
+    * The flex object "After Save" control no longer shows its label twice and its radio buttons now line up properly.
+
 # v2.0.0-rc.14
 ## 06/09/2026
 

@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: '"{title}" op {route} verwijderen?'
         COPY_BUTTON:
             COPIED: Gekopieerd!
+            COPY: Kopiëren
         CUSTOM: Aangepast
         DASHBOARD:
             ADD_WIDGET: 'Een widget toevoegen'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Object is elders gewijzigd. Gelieve opnieuw in te laden.'
             PREVIOUS: Vorige
             SEARCH: Zoeken...
+            INFO:
+                DIRECTORY: Map
+                ID: ID
+                LOCATION: Locatie
+                SHOW_INFO: 'Toon objectinformatie'
+                STORAGE_KEY: Opslagsleutel
+                TITLE: Objectinformatie
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Widgetsmenu sluiten'
         FORGOT:
@@ -707,6 +715,13 @@ ICU:
             USERS_MAY_OVERRIDE: 'Gebruikers kunnen dit overschrijven'
             OTHER_LIST_VIEWS: 'Andere lijstweergaven'
             OTHER_LIST_VIEWS_DESC: 'Standaardindeling voor de lijsten met gebruikers, plug-ins en thema’s'
+            EDITOR_HEIGHT: Editorhoogte
+            EDITOR_HEIGHT_AUTO: Auto
+            EDITOR_HEIGHT_DESC: 'Laat de editor meegroeien met je inhoud, of beperk deze tot een vaste hoogte met een eigen scrollbalk.'
+            EDITOR_HEIGHT_FIXED: Vast
+            EDITOR_SECTION_DESC: 'Hoe de Markdown-editor zich gedraagt tijdens het schrijven.'
+            STICKY_TOOLBAR: 'Vaste werkbalk'
+            STICKY_TOOLBAR_DESC: 'Houd de werkbalk voor opmaak en de knop Voorbeeld in beeld terwijl je scrolt.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
@@ -1083,6 +1098,8 @@ ICU:
             TABLE: Tabel
             USERNAME: Gebruikersnaam
             PERMISSIONS: Machtigingen
+            'OFF': Uit
+            'ON': Aan
         2FA_ENABLED: '2FA ingeschakeld'
         2FA_SECRET: 2FA-geheim
         2FA_SECRET_HELP: 'Scan deze QR-code in uw [Authenticator-app](https://learn.getgrav.org/admin-panel/2fa#apps). Het is ook een goed idee om het geheim op een veilige plaats op te slaan, voor het geval u uw app opnieuw moet installeren. Controleer de [Grav-documentatie](https://learn.getgrav.org/admin-panel/2fa) voor meer informatie'
@@ -1839,3 +1856,7 @@ ICU:
         'YES': Ja
         YUBIKEY_HELP: 'Plaats uw YubiKey in uw computer en klik op de knop om een OTP te genereren. De eerste 12 tekens zijn uw client-ID en worden opgeslagen.'
         YUBIKEY_ID: YubiKey-ID
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Bestanden in user/data, user/accounts en user/config kunnen direct via HTTP worden gedownload — inclusief certificaten, sleutels, tokens en databases. Dit betekent meestal dat je webserver de .htaccess-regels van Grav niet toepast.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Hoe beveilig je je webserver'
+            USER_FOLDER_EXPOSED_TITLE: 'Beveiligingsrisico: je gebruikersgegevensmappen zijn bereikbaar via het web'

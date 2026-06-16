@@ -665,6 +665,13 @@ ICU:
                 OBJECT_CREATED: 'האובייקט נוצר'
                 BACK_TO_LIST: 'חזור לרשימה'
                 CREATE: צור
+            INFO:
+                DIRECTORY: ספרייה
+                ID: מזהה
+                LOCATION: מיקום
+                SHOW_INFO: 'הצג פרטי אובייקט'
+                STORAGE_KEY: 'מפתח אחסון'
+                TITLE: 'פרטי אובייקט'
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: 'לא ניתן להתחבר לשרת.'
             FORGOT_PASSWORD_GRAV_ADMIN: 'שכחת סיסמה — Grav Admin'
@@ -858,6 +865,13 @@ ICU:
             FAILED_TO_RESET_PREFERENCES: 'איפוס ההעדפות נכשל.'
             OTHER_LIST_VIEWS: 'תצוגות רשימה אחרות'
             OTHER_LIST_VIEWS_DESC: 'פריסת ברירת מחדל לרשימות משתמשים, תוספים וערכות עיצוב'
+            EDITOR_HEIGHT: 'גובה העורך'
+            EDITOR_HEIGHT_AUTO: אוטומטי
+            EDITOR_HEIGHT_DESC: 'אפשר לעורך לגדול יחד עם התוכן שלך, או להגביל אותו לגובה קבוע עם פס גלילה משלו.'
+            EDITOR_HEIGHT_FIXED: קבוע
+            EDITOR_SECTION_DESC: 'כיצד עורך ה-Markdown מתנהג בזמן הכתיבה.'
+            STICKY_TOOLBAR: 'סרגל כלים דביק'
+            STICKY_TOOLBAR_DESC: 'השאר את סרגל כלי העיצוב וכפתור התצוגה המקדימה מקובעים בתצוגה בזמן הגלילה.'
         CUSTOM: 'מותאם אישית'
         PREVIEW: 'תצוגה מקדימה'
         SETUP:
@@ -946,6 +960,7 @@ ICU:
         INSTALL: התקן
         COPY_BUTTON:
             COPIED: הועתק!
+            COPY: העתק
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'ווידג׳ט לא ידוע: {id}'
         UPDATE_AVAILABLE_VERSION: 'עדכון זמין: v{version}'
@@ -1082,6 +1097,9 @@ ICU:
             STATUS: מצב
             TABLE: טבלה
             USERNAME: 'שם משתמש'
+            'OFF': כבוי
+            'ON': פעיל
+            PERMISSIONS: הרשאות
         2FA_ENABLED: '2FA מופעל'
         2FA_SECRET: 'סוד 2FA'
         2FA_SECRET_HELP: 'סרוק את קוד QR זה ל[אפליקציית הקוד של כניסה](https://learn.getgrav.org/admin-panel/2fa#apps). כדאי גם לגבות את הסוד במקום בטוח, במקרה שתצטרך להתקין מחדש את האפליקציה שלך. בדוק את [תיעוד Grav](https://learn.getgrav.org/admin-panel/2fa) לקבלת מידע נוסף '
@@ -1784,6 +1802,64 @@ ICU:
         TWIG_SANDBOX_ENABLED_HELP: 'הציג תוכן דף שנכתב על ידי עורכים בתוך SecurityPolicy של Twig המבוסס על רשימת הקבלה. <strong>ההשבתה מסירה את ההגנה היחידה נגד התקפות template-injection דרך תוכן הדף</strong>: כל חשבון עם גישת עורך (או כל מי שפוגע במערכת הקבצים) יכול להוציא Python שרירותי דרך Twig. השבת רק אם אתר זקוק באמת לגישת מכולה מתוכן הדף ואתה סומך לחלוטין על כל מחבר.'
         TWIG_SANDBOX_HELP: 'רשימת הקבלה של תגיות Twig, מסננים, פונקציות, שיטות ומאפיינים שתבניות תוכן-עמוד עשויות להשתמש בהן. תוכן שנכתב על ידי עורכים עובר רינדור דרך sandbox זה כדי שמחבר פגום או באג template-injection לא יוכל להגיע לקונטיינר הרחב יותר.'
         TWIG_SANDBOX_LOGGING: 'רישום הפרות'
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'ניתן להוריד קבצים תחת user/data, user/accounts ו-user/config ישירות דרך HTTP — כולל תעודות, מפתחות, אסימונים ומסדי נתונים. משמעות הדבר היא ששרת האינטרנט שלך ככל הנראה לא מחיל את כללי ה- .htaccess של Grav.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'כיצד לאבטח את שרת האינטרנט שלך'
+            USER_FOLDER_EXPOSED_TITLE: 'סיכון אבטחה: תיקיות נתוני המשתמש שלך נגישות מהרשת'
+        TWIG_SANDBOX_LOGGING_HELP: 'רשום כל ביטוי חסום ל-<code>logs/twig-sandbox.log</code>. שימושי בזמן התאמת רשימת ההיתרים (allowlist); כבה בסביבת ייצור כדי לשמור על יומנים שקטים.'
+        TWIG_SANDBOX_METHODS: מתודות
+        TWIG_SANDBOX_PROPERTIES: מאפיינים
+        TWIG_TEMPLATING: 'תבניות Twig'
+        TYPE: סוג
+        UNPUBLISHED_DATE: 'תאריך הסרה מפרסום'
+        UNPUBLISHED_DATE_HELP: 'ניתן לספק תאריך להסרה אוטומטית מפרסום.'
+        UPDATE: עדכן
+        UPLOADS_DANGEROUS_EXTENSIONS: 'סיומות מסוכנות'
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: 'חסום סיומות אלו מהעלאה ללא קשר לסוגי ה-MIME המאושרים'
+        UPLOADS_SECURITY: 'אבטחת העלאות'
+        USERNAME_HELP: 'שם המשתמש צריך להיות באורך של 3 עד 16 תווים, כולל אותיות קטנות (באנגלית), מספרים, קווים תחתונים ומקפים. אותיות גדולות, רווחים ותווים מיוחדים אינם מורשים'
+        USERNAME_REGEX: 'ביטוי רגולרי (Regex) לשם משתמש'
+        USERNAME_REGEX_HELP: 'כברירת מחדל: רק אותיות קטנות, ספרות, מקפים וקווים תחתונים. 3 - 16 תווים'
+        USERS_FILTER:
+            BACKEND_ACCESS: 'גישת Backend'
+            CLEAR: נקה
+            CLEAR_ALL: 'נקה מסננים'
+            FILTER_BY_GROUP: 'סנן לפי קבוצה זו'
+            FILTER_BY_PERMISSION: 'סנן לפי הרשאה זו'
+            GROUP: קבוצה
+            GROUPS: קבוצות
+            LOADING: טוען...
+            NO_MATCHES: 'אין התאמות'
+            NO_MATCHES_FILTERS: 'אין משתמשים התואמים למסננים אלו'
+            PERMISSION: הרשאה
+            TYPE_TO_FILTER: 'הקלד כדי לסנן...'
+        USER_ACCOUNTS: 'חשבונות משתמש'
+        USE_GLOBAL: 'השתמש בהגדרות כלליות'
+        VALIDATION:
+            FIELD_REQUIRED: '{label} הוא שדה חובה'
+            FORM_HAS_ERRORS: '{count, plural, one {שדה # דורש את תשומת לבך} other {# שדות דורשים את תשומת לבך}}'
+            REQUIRED_GENERIC: 'שדה זה הוא חובה'
+        VALID_LINK_ATTRIBUTES: 'מאפייני קישור תקפים'
+        VALID_LINK_ATTRIBUTES_HELP: 'מאפיינים שיתווספו אוטומטית לרכיב ה-HTML של המדיה'
+        VARY_ACCEPT_ENCODING: 'Vary accept encoding'
+        VARY_ACCEPT_ENCODING_HELP: 'מגדיר את כותרת ה-`Vary: Accept Encoding` כדי לסייע במטמון של פרוקסי ו-CDN'
+        VISIBLE: גלוי
+        VISIBLE_HELP: 'קובע אם דף יופיע בניווט.'
+        WRAPPED_SITE: 'אתר עטוף'
+        WRAPPED_SITE_HELP: 'עבור ערכות נושא/תוספים כדי לדעת אם Grav עטוף על ידי פלטפורמה אחרת'
+        XSS_DANGEROUS_TAGS: 'סינון תגיות HTML מסוכנות'
+        XSS_DANGEROUS_TAGS_LIST: 'רשימת תגיות HTML מסוכנות'
+        XSS_HTML_INLINE_STYLES: 'סינון עיצובים מוטמעים (Inline styles) ב-HTML'
+        XSS_INVALID_PROTOCOLS: 'סינון פרוטוקולים לא חוקיים'
+        XSS_INVALID_PROTOCOLS_LIST: 'רשימת פרוטוקולים לא חוקיים'
+        XSS_MOZ_BINDINGS: 'סינון קישוריות (Bindings) של Moz'
+        XSS_ON_EVENTS: 'סינון אירועי On-events'
+        XSS_SECURITY: 'אבטחת XSS לתוכן'
+        XSS_WHITELIST_PERMISSIONS: 'הרשאות ברשימה לבנה'
+        XSS_WHITELIST_PERMISSIONS_HELP: 'משתמשים עם הרשאות אלו ידלגו על חוקי ה-XSS בעת שמירת תוכן'
+        'YES': כן
+        YUBIKEY_HELP: 'הכנס את ה-YubiKey למחשב ולחץ על הכפתור כדי ליצור OTP. 12 התווים הראשונים הם מזהה הלקוח שלך והם יישמרו.'
+        YUBIKEY_ID: 'מזהה YubiKey'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA מופעל'
         2FA_SECRET: 'סוד 2FA'
