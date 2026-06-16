@@ -684,6 +684,13 @@ ICU:
       FAILED_TO_SAVE: Failed to save.
       OBJECT_CHANGED_ELSEWHERE_SAVE_TO: Object changed elsewhere — save to overwrite or reload
       BACK_TO_LIST: Back to List
+      INFO:
+        TITLE: Object info
+        ID: ID
+        DIRECTORY: Directory
+        STORAGE_KEY: Storage key
+        LOCATION: Location
+        SHOW_INFO: Show object info
       NEW:
         OBJECT_CREATED: Object created
         BACK_TO_LIST: Back to List
@@ -1128,6 +1135,7 @@ ICU:
     INSTALL: Install
     COPY_BUTTON:
       COPIED: Copied!
+      COPY: Copy
     WIDGET_HOST:
       UNKNOWN_WIDGET: "Unknown widget: {id}"
     UPDATE_AVAILABLE_VERSION: "Update available: v{version}"
