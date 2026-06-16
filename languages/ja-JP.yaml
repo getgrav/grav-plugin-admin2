@@ -666,6 +666,13 @@ ICU:
                 OBJECT_CREATED: オブジェクトを作成しました
                 BACK_TO_LIST: 一覧へ戻る
                 CREATE: 作成
+            INFO:
+                DIRECTORY: ディレクトリ
+                ID: ID
+                LOCATION: 場所
+                SHOW_INFO: オブジェクト情報を表示
+                STORAGE_KEY: ストレージキー
+                TITLE: オブジェクト情報
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
             FORGOT_PASSWORD_GRAV_ADMIN: 'パスワードをお忘れの方 — Grav Admin'
@@ -1023,6 +1030,7 @@ ICU:
         INSTALL: インストール
         COPY_BUTTON:
             COPIED: コピーしました！
+            COPY: コピー
         WIDGET_HOST:
             UNKNOWN_WIDGET: '不明なウィジェット: {id}'
         UPDATE_AVAILABLE_VERSION: '更新が利用可能: v{version}'
