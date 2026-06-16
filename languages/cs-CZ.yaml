@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: 'Smazat „{title}" na {route}?'
         COPY_BUTTON:
             COPIED: Zkopírováno!
+            COPY: Kopírovat
         CUSTOM: Vlastní
         DASHBOARD:
             ADD_WIDGET: 'Přidat widget'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objekt byl změněn jinde. Prosím načtěte znovu.'
             PREVIOUS: Předchozí
             SEARCH: Hledat...
+            INFO:
+                DIRECTORY: Adresář
+                ID: ID
+                LOCATION: Umístění
+                SHOW_INFO: 'Zobrazit informace o objektu'
+                STORAGE_KEY: 'Klíč úložiště'
+                TITLE: 'Informace o objektu'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Zavřít nabídku widgetů'
         FORGOT:

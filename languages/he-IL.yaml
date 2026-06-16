@@ -665,6 +665,13 @@ ICU:
                 OBJECT_CREATED: 'האובייקט נוצר'
                 BACK_TO_LIST: 'חזור לרשימה'
                 CREATE: צור
+            INFO:
+                DIRECTORY: ספרייה
+                ID: מזהה
+                LOCATION: מיקום
+                SHOW_INFO: 'הצג פרטי אובייקט'
+                STORAGE_KEY: 'מפתח אחסון'
+                TITLE: 'פרטי אובייקט'
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: 'לא ניתן להתחבר לשרת.'
             FORGOT_PASSWORD_GRAV_ADMIN: 'שכחת סיסמה — Grav Admin'
@@ -953,6 +960,7 @@ ICU:
         INSTALL: התקן
         COPY_BUTTON:
             COPIED: הועתק!
+            COPY: העתק
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'ווידג׳ט לא ידוע: {id}'
         UPDATE_AVAILABLE_VERSION: 'עדכון זמין: v{version}'

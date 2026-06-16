@@ -665,6 +665,13 @@ ICU:
                 OBJECT_CREATED: 'تم إنشاء الكائن'
                 BACK_TO_LIST: 'العودة إلى القائمة'
                 CREATE: إنشاء
+            INFO:
+                DIRECTORY: المجلد
+                ID: 'المُعرّف (ID)'
+                LOCATION: الموقع
+                SHOW_INFO: 'عرض معلومات الكائن'
+                STORAGE_KEY: 'مفتاح التخزين'
+                TITLE: 'معلومات الكائن'
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: 'تعذّر الاتصال بالخادم.'
             FORGOT_PASSWORD_GRAV_ADMIN: 'نسيت كلمة المرور — Grav Admin'
@@ -953,6 +960,7 @@ ICU:
         INSTALL: تثبيت
         COPY_BUTTON:
             COPIED: 'تم النسخ!'
+            COPY: نسخ
         WIDGET_HOST:
             UNKNOWN_WIDGET: 'عنصر غير معروف: {id}'
         UPDATE_AVAILABLE_VERSION: 'تحديث متاح: الإصدار {version}'

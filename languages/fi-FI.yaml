@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: 'Poista „{title}" kohteesta {route}?'
         COPY_BUTTON:
             COPIED: Kopioitu!
+            COPY: Kopioi
         CUSTOM: Mukautettu
         DASHBOARD:
             ADD_WIDGET: 'Lisää widget'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objektia muokattiin muualla. Lataa sivu uudelleen.'
             PREVIOUS: Edellinen
             SEARCH: Haku...
+            INFO:
+                DIRECTORY: Hakemisto
+                ID: ID
+                LOCATION: Sijainti
+                SHOW_INFO: 'Näytä objektin tiedot'
+                STORAGE_KEY: Tallennusavain
+                TITLE: 'Objektin tiedot'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Sulje widgetien valikko'
         FORGOT:

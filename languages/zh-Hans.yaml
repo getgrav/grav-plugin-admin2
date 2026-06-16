@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: '删除 "{title}" 在 {route}？'
         COPY_BUTTON:
             COPIED: 已复制！
+            COPY: 复制
         CUSTOM: 自定义
         DASHBOARD:
             ADD_WIDGET: 添加小部件
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 对象已在其他地方修改。请重新加载。
             PREVIOUS: 上一个
             SEARCH: 搜索...
+            INFO:
+                DIRECTORY: 目录
+                ID: ID
+                LOCATION: 位置
+                SHOW_INFO: 显示对象信息
+                STORAGE_KEY: 存储键
+                TITLE: 对象信息
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 关闭小部件菜单
         FORGOT:
