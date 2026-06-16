@@ -7,6 +7,7 @@
     * Plugin settings pages can now show a custom save notification supplied by the plugin, including longer-lived or dismiss-required messages, instead of always the generic saved message ([#38](https://github.com/getgrav/grav-plugin-admin2/issues/38)).
     * Plugin sidebar items can now show a live count badge that refreshes on its own, instead of only a fixed number set when the page loads ([#42](https://github.com/getgrav/grav-plugin-admin2/issues/42)).
     * Flex object editors now have an info button that reveals the object's id, directory and storage location in a small copyable panel, so you can reference an object in code without hunting for its id ([getgrav/grav#4130](https://github.com/getgrav/grav/issues/4130)).
+    * File upload fields now honor their blueprint's `random_name`, `avoid_overwriting`, `accept`, and `filesize` settings, matching the classic admin.
 2. [](#bugfix)
     * **The Save button now disables again the moment you empty a required field**, and the unsaved-changes indicator clears with it, instead of the button staying active ([#34](https://github.com/getgrav/grav-plugin-admin2/issues/34)).
     * **Required custom fields provided by plugins now block saving while they are empty too**, the same as the built-in fields ([#35](https://github.com/getgrav/grav-plugin-admin2/issues/35)).

@@ -291,6 +291,8 @@ ICU:
       FILE_PICKER:
         NO_MEDIA_UPLOADED: No media files uploaded yet
         NO_MATCHING_FILES: No matching files
+      FILE:
+        LIMIT_REACHED: "This field accepts at most {limit} file(s)."
     NAV:
       DASHBOARD: Dashboard
       CONFIGURATION: Configuration
