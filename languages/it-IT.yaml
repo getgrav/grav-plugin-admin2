@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: 'Eliminare "{title}" in {route}?'
         COPY_BUTTON:
             COPIED: Copiato!
+            COPY: Copia
         CUSTOM: Personalizzato
         DASHBOARD:
             ADD_WIDGET: 'Aggiungi un widget'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: "L'oggetto è stato modificato altrove. Ricarica per favore."
             PREVIOUS: Precedente
             SEARCH: Cerca...
+            INFO:
+                DIRECTORY: Directory
+                ID: ID
+                LOCATION: Posizione
+                SHOW_INFO: 'Mostra informazioni oggetto'
+                STORAGE_KEY: 'Chiave di archiviazione'
+                TITLE: 'Informazioni oggetto'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Chiudi menu widget'
         FORGOT:
