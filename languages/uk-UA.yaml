@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: 'Видалити „{title}" за адресою {route}?'
         COPY_BUTTON:
             COPIED: Скопійовано!
+            COPY: Копіювати
         CUSTOM: Користувацький
         DASHBOARD:
             ADD_WIDGET: 'Додати віджет'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: "Об'єкт був змінено в іншому місці. Будь ласка, перезавантажте."
             PREVIOUS: Назад
             SEARCH: Пошук...
+            INFO:
+                DIRECTORY: Каталог
+                ID: ID
+                LOCATION: Розташування
+                SHOW_INFO: "Показати інформацію про об'єкт"
+                STORAGE_KEY: 'Ключ сховища'
+                TITLE: "Інформація про об'єкт"
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Закрити меню віджетів'
         FORGOT:
