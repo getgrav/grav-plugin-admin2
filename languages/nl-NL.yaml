@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: '"{title}" op {route} verwijderen?'
         COPY_BUTTON:
             COPIED: Gekopieerd!
+            COPY: Kopiëren
         CUSTOM: Aangepast
         DASHBOARD:
             ADD_WIDGET: 'Een widget toevoegen'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Object is elders gewijzigd. Gelieve opnieuw in te laden.'
             PREVIOUS: Vorige
             SEARCH: Zoeken...
+            INFO:
+                DIRECTORY: Map
+                ID: ID
+                LOCATION: Locatie
+                SHOW_INFO: 'Toon objectinformatie'
+                STORAGE_KEY: Opslagsleutel
+                TITLE: Objectinformatie
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Widgetsmenu sluiten'
         FORGOT:
