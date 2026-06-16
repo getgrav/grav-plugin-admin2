@@ -107,6 +107,7 @@ ICU:
         CONFIRM_DELETE: 'Удалить „{title}" по адресу {route}?'
         COPY_BUTTON:
             COPIED: Скопировано!
+            COPY: Копировать
         CUSTOM: Пользовательский
         DASHBOARD:
             ADD_WIDGET: 'Добавить виджет'
@@ -275,6 +276,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Объект был изменен в другом месте. Пожалуйста, перезагрузите.'
             PREVIOUS: Назад
             SEARCH: Поиск...
+            INFO:
+                DIRECTORY: Каталог
+                ID: ID
+                LOCATION: Расположение
+                SHOW_INFO: 'Показать информацию об объекте'
+                STORAGE_KEY: 'Ключ хранилища'
+                TITLE: 'Информация об объекте'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Закрыть меню виджетов'
         FORGOT:
