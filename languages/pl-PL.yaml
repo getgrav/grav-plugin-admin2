@@ -220,6 +220,7 @@ ICU:
         COPY: Kopiuj
         COPY_BUTTON:
             COPIED: Skopiowano!
+            COPY: Kopiuj
         CREATE: Utwórz
         CSS_ASSETS: 'Zasoby CSS'
         CSS_MINIFY: 'Minifikacja CSS'
@@ -501,6 +502,13 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Obiekt został zmodyfikowany w innym miejscu. Proszę przeładować.'
             PREVIOUS: Poprzedni
             SEARCH: Szukaj...
+            INFO:
+                DIRECTORY: Katalog
+                ID: ID
+                LOCATION: Lokalizacja
+                SHOW_INFO: 'Pokaż informacje o obiekcie'
+                STORAGE_KEY: 'Klucz pamięci'
+                TITLE: 'Informacje o obiekcie'
         FLEX_OBJECT_CACHE_ENABLED: 'Włącz buforowanie obiektów'
         FLEX_OBJECT_CACHE_LIFETIME: 'Czas życia pamięci podręcznej obiektów (sekundy)'
         FLEX_RENDER_CACHE_ENABLED: 'Włącz buforowanie renderowania'
