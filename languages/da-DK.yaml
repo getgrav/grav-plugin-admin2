@@ -1,0 +1,1864 @@
+ICU:
+    ADMIN_NEXT:
+        2FA_ENABLED: '2FA aktiveret'
+        2FA_SECRET: 2FA-hemmelighed
+        2FA_SECRET_HELP: 'Scan denne QR-kode ind i din [Authenticator-app](https://learn.getgrav.org/admin-panel/2fa#apps). Det er også en god idé at tage backup af hemmeligheden et sikkert sted, hvis du får brug for at geninstallere din app. Tjek [Grav-dokumentationen](https://learn.getgrav.org/admin-panel/2fa) for yderligere information.'
+        2FA_TITLE: 2-faktor-autentificering
+        ABSOLUTE_URLS: "Absolutte URL'er"
+        ABSOLUTE_URLS_HELP: "Absolutte eller relative URL'er til `base_url`"
+        ACCESS: Adgang
+        ACCESS_DENIED:
+            ACCESS_DENIED: 'Adgang nægtet'
+        ACCESS_LEVELS: Adgangsniveauer
+        ACCOUNT: Konto
+        ACCOUNTS: Konti
+        ACCOUNTS_CONFIG:
+            FAILED_TO_LOAD: 'Kunne ikke indlæse kontokonfiguration'
+            FAILED_TO_SAVE: 'Kunne ikke gemme kontokonfiguration'
+            MODIFIED_ELSEWHERE: 'Konfigurationen blev ændret et andet sted. Genindlæs venligst.'
+            NO_FIELDS: 'Ingen konfigurationsmuligheder tilgængelige.'
+            PAGE_TITLE: 'Kontokonfiguration — Grav Admin'
+            SAVED: 'Konfiguration gemt'
+            TITLE: Kontokonfiguration
+        ACCOUNTS_CONFIGURATION: Kontokonfiguration
+        ACCOUNTS_STORAGE: Kontolagring
+        ACCOUNTS_STORAGE_HELP: 'Lagringsmekanismen, der skal bruges til Flex Object-kontotypen. Filer er den traditionelle tilgang, hvor konti gemmes i en YAML-fil i en enkelt mappe, mens Mappe opretter en ny mappe til hver konto'
+        ACCOUNTS_TYPE: Kontotype
+        ACCOUNTS_TYPE_HELP: 'Flex Object-system til lagring af brugerkonti'
+        ACTIVATE: Aktivér
+        ACTIVE: Aktiv
+        ACTIVE_LANGUAGE_IN_SESSION: 'Aktivt sprog i session'
+        ACTIVE_LANGUAGE_IN_SESSION_HELP: 'Gem det aktive sprog i sessionen'
+        ADD: Tilføj
+        ADD_ACCOUNT: 'Tilføj konto'
+        ADD_PAGE: 'Tilføj side'
+        ADD_PLUGIN_MODAL:
+            ADD_PLUGIN: 'Tilføj plugin'
+            FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: 'Kunne ikke indlæse tilgængelige plugins fra GPM'
+            FILTER_PLUGINS: 'Filtrér plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Vælg et plugin for at se detaljer'
+        ADD_THEME_MODAL:
+            ADD_THEME: 'Tilføj tema'
+            FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: 'Kunne ikke indlæse tilgængelige temaer fra GPM'
+            FILTER_THEMES: 'Filtrér temaer...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Vælg et tema for at se detaljer'
+        ADMIN_CHILDREN_DISPLAY_ORDER: 'Visningsrækkefølge for undersider'
+        ADMIN_CHILDREN_DISPLAY_ORDER_HELP: "Den rækkefølge, som undersider for denne side skal vises i under 'Sider'-visningen i Admin-pluginnet"
+        ADMIN_SPECIFIC_OVERRIDES: 'Admin-specifikke overskrivninger'
+        ADVANCED: Avanceret
+        ALLOWED: Tilladt
+        ALLOW_URL_TAXONOMY_FILTERS: URL-taksonomifiltre
+        ALLOW_URL_TAXONOMY_FILTERS_HELP: 'Sidebaserede samlinger giver dig mulighed for at filtrere via `/taksonomi:værdi`.'
+        ALLOW_WEBSERVER_GZIP: 'Tillad webserver-Gzip'
+        ALLOW_WEBSERVER_GZIP_HELP: 'Som standard deaktiveret. Når aktiveret, vil webserver-konfigureret Gzip/Deflate-komprimering virke, men HTTP-forbindelsen vil ikke blive lukket før onShutDown()-hændelsen, hvilket resulterer i langsommere indlæsning af sider'
+        ALL_CHANGES_SAVED: 'Alle ændringer gemt'
+        API_KEYS_FIELD:
+            API_KEYS: API-nøgler
+            API_KEY_GENERATED: 'API-nøgle genereret'
+            BLANK_NEVER: '(tom = aldrig)'
+            COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: 'Kopiér denne nøgle nu – den bliver ikke vist igen.'
+            CREATED: Oprettet
+            EXPIRES: Udløber
+            EXPIRY: Udløb
+            E_G_MY_CLI_TOOL: 'f.eks. Mit CLI-værktøj'
+            FAILED_TO_COPY_TO_CLIPBOARD: 'Kunne ikke kopiere til udklipsholder'
+            FAILED_TO_GENERATE_API_KEY: 'Kunne ikke generere API-nøgle'
+            FAILED_TO_LOAD_API_KEYS: 'Kunne ikke indlæse API-nøgler'
+            FAILED_TO_REVOKE_API_KEY: 'Kunne ikke tilbagekalde API-nøgle'
+            GENERATE_KEY: 'Generér nøgle'
+            GENERATING: Genererer...
+            KEY_NAME: Nøglenavn
+            KEY_PREFIX: Nøglepræfiks
+            LAST_USED: 'Sidst brugt'
+            NO_API_KEYS_HAVE_BEEN_GENERATED_YET: 'Der er endnu ikke genereret nogen API-nøgler.'
+            PLEASE_ENTER_A_KEY_NAME: 'Indtast venligst et nøglenavn'
+            REVOKE_API_KEY: 'Tilbagekald API-nøgle'
+            REVOKE_KEY: 'Tilbagekald nøgle'
+        APP:
+            CREATING_BACKUP: 'Opretter sikkerhedskopi...'
+            DASHBOARD_GRAV_ADMIN: 'Kontrolpanel — Grav Admin'
+            PAGE_TITLE: '{name} — Grav Admin'
+            REFRESH: Opdatér
+            WELCOME_BACK: 'Velkommen tilbage, {name}'
+        APPEND_URL_EXT: 'Tilføj URL-endelse'
+        APPEND_URL_EXT_HELP: 'Tilføjer en tilpasset filendelse til sidens URL. Bemærk, dette betyder at Grav vil lede efter `<template>.<extension>.twig` skabeloner'
+        APP_SHELL:
+            ADMIN_VERSION: 'Admin v{version}'
+            CLOSE_MENU: 'Luk menu'
+            GRAV_VERSION: 'Grav v{version}'
+        ARE_YOU_SURE: 'Er du sikker?'
+        ASCENDING: Stigende
+        ASSETS: Aktiver
+        AUTHOR: Forfatter
+        AUTO: Auto
+        AUTOESCAPE_VARIABLES: 'Autoescape variable'
+        AUTOESCAPE_VARIABLES_HELP: 'Autoescaper alle variable. Dette vil højst sandsynligt ødelægge dit websted'
+        AUTO_LINE_BREAKS: 'Automatiske linjeskift'
+        AUTO_LINE_BREAKS_HELP: 'Aktivér understøttelse af automatiske linjeskift i markdown'
+        AUTO_URL_LINKS: 'Auto URL-links'
+        AUTO_URL_LINKS_HELP: "Aktivér automatisk konvertering af URL'er til HTML-hyperlinks"
+        AVATAR: Avatar-generator
+        AVATAR_HASH: "BEMÆRK: Valgfri tilpasset 'hash'-streng til avatar"
+        AVATAR_HELP: 'Multiavatar er en lokalt genereret avatar. Gravatar er en ekstern tjeneste, der bruger din e-mailadresse til at hente en forudkonfigureret avatar fjernstyret'
+        BACK: Tilbage
+        BACKUPS: Backups
+        BACKUPS_HISTORY: Backup-historik
+        BACKUPS_MAX_COUNT: 'Maksimalt antal backups'
+        BACKUPS_MAX_RETENTION_TIME: 'Maksimal opbevaringstid'
+        BACKUPS_MAX_RETENTION_TIME_APPEND: 'i dage'
+        BACKUPS_MAX_SPACE: 'Maksimal plads til backups'
+        BACKUPS_PROFILES: Backupprofiler
+        BACKUPS_PROFILE_ENVIRONMENT: Miljø
+        BACKUPS_PROFILE_ENVIRONMENT_HELP: 'Grav-miljøkontekst som den planlagte backup kører som.'
+        BACKUPS_PROFILE_EXCLUDE_FILES: 'Udelad filer'
+        BACKUPS_PROFILE_EXCLUDE_FILES_HELP: 'Specifikke filer eller mapper der skal udelades, én pr. linje'
+        BACKUPS_PROFILE_EXCLUDE_PATHS: 'Udelad stier'
+        BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: 'Absolutte stier der skal udelades, én pr. linje'
+        BACKUPS_PROFILE_NAME: Backupnavn
+        BACKUPS_PROFILE_ROOT_FOLDER: Rodmappe
+        BACKUPS_PROFILE_ROOT_FOLDER_HELP: 'Kan være en absolut sti eller et stream'
+        BACKUPS_PROFILE_SCHEDULE: 'Aktivér planlagt opgave'
+        BACKUPS_PROFILE_SCHEDULE_AT: 'Kør planlagt opgave'
+        BACKUPS_PURGE_CONFIG: 'Konfiguration for sletning af backup'
+        BACKUPS_STORAGE_PURGE_TRIGGER: 'Udløser for sletning af backup-lager'
+        BACKUPS_WIDGET:
+            BACKING_UP: 'Tager backup...'
+            BACKUP_NOW: Ny
+            CREATE_A_NEW_BACKUP_NOW: 'Opret en ny backup nu'
+            DOWNLOAD_FILE: 'Download {filename}'
+            NO_BACKUPS_FOUND: 'Ingen backups fundet'
+        BODY_CLASSES: Body-klasser
+        CACHE_ALL: 'Cache alle billeder'
+        CACHE_ALL_HELP: 'Kør alle billeder gennem Gravs cachesystem, selvom de ikke har nogen medie-manipulationer'
+        CACHE_CHECK_INTERVAL: 'Interval for cache-tjek'
+        CACHE_CHECK_INTERVAL_HELP: 'Sekunder før det tidligere beregnede filsystem-hash genbruges, før der tjekkes igen. Nul bevarer eksisterende tjek pr. forespørgsel.'
+        CACHE_CHECK_METHOD: 'Metode til cache-tjek'
+        CACHE_CHECK_METHOD_HELP: 'Vælg den metode, som Grav bruger til at kontrollere, om sidefiler er blevet ændret.'
+        CACHE_CLEAR_BUTTON:
+            CACHE_OPTIONS: Cache-indstillinger
+            CLEAR_CACHE: 'Ryd cache'
+            FAILED_TO_CLEAR_CACHE: 'Kunne ikke rydde cache'
+        CACHE_CLEAR_JOB: 'Kør planlagt rydningsjob'
+        CACHE_CLEAR_JOB_HELP: 'Med planlæggeren kan du periodisk rydde Grav-cachen'
+        CACHE_CONTROL: 'HTTP Cache-Control'
+        CACHE_CONTROL_HELP: 'Indstil til en gyldig cache-control værdi såsom `no-cache, no-store, must-revalidate`'
+        CACHE_DRIVER: Cache-driver
+        CACHE_DRIVER_HELP: "Vælg hvilken cache-driver Grav skal bruge. 'Auto-detekter' forsøger at finde den bedste til dig"
+        CACHE_JOB_TYPE: Cache-jobtype
+        CACHE_JOB_TYPE_HELP: "Ryd enten med 'standard' mapper-cache-rydning eller med 'alle' mapper"
+        CACHE_PERMS: Cache-tilladelser
+        CACHE_PERMS_HELP: 'Standard cache-mappetilladelser. Normalt 0755 eller 0775 afhængigt af opsætning'
+        CACHE_PREFIX: Cache-præfiks
+        CACHE_PREFIX_HELP: 'En identifikator for en del af Grav-nøglen. Skift den ikke, medmindre du ved, hvad du gør.'
+        CACHE_PREFIX_PLACEHOLDER: 'Afledt fra base-URL (overskriv ved at indtaste en tilfældig streng)'
+        CACHE_PURGE_AGE: Cache-sletningsalder
+        CACHE_PURGE_AGE_HELP: 'Slet alle cache-elementer, der er ældre end denne alder (i sekunder)'
+        CACHE_PURGE_JOB: 'Kør planlagt sletningsjob'
+        CACHE_PURGE_JOB_HELP: 'Med planlæggeren kan du periodisk rydde gamle Doctrine-filcache-mapper med dette job'
+        CACHING: Caching
+        CACHING_HELP: 'Global TIL/FRA-kontakt til at aktivere/deaktivere Grav-caching'
+        CANCEL: Annuller
+        CHARACTERS: tegn
+        CLEAR_IMAGES_BY_DEFAULT: 'Ryd billed-cache som standard'
+        CLEAR_IMAGES_BY_DEFAULT_HELP: 'Som standard ryddes behandlede billeder ved alle cache-tømninger; dette kan deaktiveres'
+        CLEAR_SEARCH: 'Ryd søgning'
+        CLI_COMPATIBILITY: CLI-kompatibilitet
+        CLI_COMPATIBILITY_HELP: 'Sikrer at kun ikke-flygtige cache-drivere anvendes (fil, redis, memcache, osv.)'
+        CLOSE: Luk
+        COLLAPSE_ALL: 'Klap alt sammen'
+        COLLAPSE_SIDEBAR: 'Klap sidebar sammen'
+        COLLECTIONS: Samlinger
+        COMMAND: Kommando
+        COMPATIBILITY: Kompatibilitet
+        CONFIG:
+            CLEAR_FILTER: 'Ryd filter'
+            CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: 'Konfiguration er ændret et andet sted — gem for at overskrive eller genindlæs'
+            CONFIGURATION_RELOADED: 'Konfiguration genindlæst'
+            CONFIGURATION_SAVED_SUCCESSFULLY: 'Konfiguration blev gemt korrekt'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurationen er blevet ændret et andet sted. Genindlæs for at se de nyeste ændringer.'
+            FAILED_TO_SAVE_CONFIGURATION: 'Kunne ikke gemme konfiguration'
+            FILTER_FIELDS: 'Filtrér felter...'
+            LOADING_CONFIGURATION: 'Indlæser konfiguration...'
+            NO_CONFIGURATION_BLUEPRINT_AVAILABLE: 'Ingen konfigurations-blueprint tilgængelig for dette område.'
+            NO_MATCHES_FOUND: 'Ingen resultater fundet'
+            OVERRIDE:
+                DEFAULT_EMPTY: tom
+                RESET_BUTTON: 'Nulstil tilsidesættelser'
+                RESET_CONFIRM: Nulstil
+                RESET_DONE: 'Tilsidesættelser nulstillet'
+                RESET_MESSAGE: 'Dette fjerner alle overskrivelser af {scope} og gendanner de nedarvede værdier. Dette kan ikke fortrydes.'
+                RESET_TITLE: 'Nulstil alle overskrivelser?'
+                RESET_TOOLTIP: 'Fjern alle overskrivelser og gendan nedarvede værdier'
+                REVERTED: 'Gendannet til den nedarvede værdi'
+                REVERT_FAILED: 'Kunne ikke gendanne'
+                REVERT_TOOLTIP: 'Overskriver standard ({value}). Klik for at gendanne.'
+            PAGE_TITLE: 'Konfiguration: {scope} — Grav Admin'
+            RELOAD: Genindlæs
+            TITLE: Konfiguration
+            TITLE_SCROLLED: 'Konfiguration: {scope}'
+        CONFIGURATION: Konfiguration
+        CONFIG_INFO_PAGE:
+            ENVIRONMENT: Miljø
+            EXPORT_YAML: 'Eksporter YAML'
+            GRAV_VERSION: Grav-version
+            LOADING_SYSTEM_INFORMATION: 'Indlæser systeminformation...'
+            PHP_CONFIGURATION: PHP-konfiguration
+            PHP_EXTENSIONS: PHP-udvidelser
+            PHP_VERSION: PHP-version
+            SERVER: Server
+            SERVER_SOFTWARE: Serversoftware
+        CONFIRM_ACTION: 'Bekræft handling'
+        CONFIRM_DELETE: 'Slet »{title}« ved {route}?'
+        CONTENT: Indhold
+        CONTENT_EDITOR: Indholdsredigering
+        CONTENT_EDITOR_HELP: 'Brugerdefinerede editorer kan foretrækkes til redigering af indhold'
+        CONTENT_FALLBACK_LANGUAGE_HELP: 'Angiv den sprogkode, du ønsker at tilpasse.'
+        CONTENT_LANGUAGE_FALLBACK: Fallback-sprog
+        CONTENT_LANGUAGE_FALLBACKS: 'Fallback for indholdssprog'
+        CONTENT_LANGUAGE_FALLBACKS_HELP: 'Som standard vil Grav vise indhold på standardsproget, hvis indholdet ikke er oversat. Brug denne indstilling til at tilsidesætte denne adfærd for hvert sprog.'
+        CONTENT_LANGUAGE_FALLBACK_HELP: 'Indtast venligst en liste med sprogkoder. Bemærk at hvis du udelader standardsprogkoden, vil den ikke blive brugt.'
+        COPY: Kopiér
+        COPY_BUTTON:
+            COPIED: Kopieret!
+            COPY: Kopiér
+        CREATE: Opret
+        CSS_ASSETS: CSS-aktiver
+        CSS_MINIFY: CSS-minificering
+        CSS_MINIFY_HELP: 'Minificer CSS under pipelining'
+        CSS_MINIFY_WINDOWS_OVERRIDE: 'CSS-minificering Windows-tilsidesættelse'
+        CSS_MINIFY_WINDOWS_OVERRIDE_HELP: 'Tilsidesættelse af minificering for Windows-platforme. Som standard er denne sat til false grundet ThreadStackSize'
+        CSS_PIPELINE: CSS-pipeline
+        CSS_PIPELINE_BEFORE_EXCLUDES: 'CSS-pipeline render først'
+        CSS_PIPELINE_BEFORE_EXCLUDES_HELP: 'Render CSS-pipelinen før andre CSS-referencer, der ikke er inkluderet'
+        CSS_PIPELINE_HELP: 'CSS-pipelinen er samlingen af flere CSS-ressourcer til én fil'
+        CSS_PIPELINE_INCLUDE_EXTERNALS: 'Inkluder eksterne filer i CSS-pipeline'
+        CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: "Eksterne URL'er har nogle gange relative filreferencer og bør ikke pipelines"
+        CSS_REWRITE: CSS-omskrivning
+        CSS_REWRITE_HELP: "Omskriv alle relative CSS-URL'er under pipelining"
+        CURL: cURL
+        CUSTOM: Brugerdefineret
+        CUSTOM_BASE_URL: 'Brugerdefineret base-URL'
+        CUSTOM_BASE_URL_HELP: 'Brug dette, hvis du vil omskrive webstedets domæne eller bruge en anden undermappe end den, Grav bruger. Eksempel: http://localhost'
+        CUSTOM_REDIRECTS: 'Brugerdefinerede viderestillinger'
+        CUSTOM_REDIRECTS_HELP: 'ruter der skal viderestilles til andre sider. Standard Regex-erstatning er gyldig'
+        CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /dit/alias
+        CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /din/viderestilling
+        CUSTOM_ROUTES: 'Brugerdefinerede ruter'
+        CUSTOM_ROUTES_HELP: 'ruter der skal aliaseres til andre sider. Standard Regex-erstatning er gyldig'
+        CUSTOM_ROUTES_PLACEHOLDER_KEY: /dit/alias
+        CUSTOM_ROUTES_PLACEHOLDER_VALUE: /din/rute
+        DASHBOARD:
+            ADD_WIDGET: 'Tilføj et widget'
+            CUSTOMIZE: Tilpas
+            CUSTOMIZE_TITLE: 'Tilpas betjeningspanel'
+            EDIT_HINT: 'Tilpasningstilstand — træk, ændr størrelse, skjul widgets, og gem derefter.'
+            EMPTY: 'Dit betjeningspanel er tomt'
+            EMPTY_HINT: 'Klik på blyantsikonet ovenfor for at tilføje widgets'
+            HIDE_WIDGET: 'Skjul widget'
+            LAYOUT_RESET: 'Layout nulstillet til standard'
+            LAYOUT_SAVED: 'Layout for betjeningspanel gemt'
+            PICKER_EMPTY: 'Alle tilgængelige widgets er allerede på dit betjeningspanel.'
+            PICKER_SUBTITLE: 'Vælg et widget, der skal føjes tilbage til dit betjeningspanel.'
+            PICKER_TITLE: 'Tilføj et widget'
+            PRESETS: Forudindstillinger
+            PRESET_COMPACT: Kompakt
+            PRESET_COMPACT_DESC: 'Alle widgets i den mindste størrelse, de hver især understøtter.'
+            PRESET_DEFAULT: Standard
+            PRESET_DEFAULT_DESC: 'Server-anbefalet layout — rydder dine tilpasninger.'
+            PRESET_MINIMAL: Minimal
+            PRESET_MINIMAL_DESC: 'Kun statistik og nylige sider.'
+            RESET_LAYOUT: 'Nulstil mit layout'
+            SAVE_SITE_DEFAULT: 'Gem som webstedsstandard'
+            SITE_LAYOUT_SAVED: 'Webstedsstandard gemt'
+            TITLE: Kontrolpanel
+            WIDGETS:
+                BACKUPS: Backups
+                NEWS_FEED: Nyhedsfeed
+                NOTIFICATIONS: Notifikationer
+                POPULARITY: Sidevisninger
+                RECENT_PAGES: 'Nylige sider'
+                STATS: Webstedsstatistik
+                SYSTEM_HEALTH: Systemstatus
+                TOP_PAGES: 'Mest populære sider'
+        DASHBOARD_GRID:
+            DRAG_TO_REORDER: 'Træk for at omarrangere'
+        DATE: Dato
+        DATE_BASED_PUBLISHING: 'Datobaseret udgivelse'
+        DATE_BASED_PUBLISHING_HELP: 'Udgiv/fjern automatisk indlæg baseret på deres dato'
+        DATE_HELP: 'Dato-variablen giver dig mulighed for specifikt at angive en dato tilknyttet denne side.'
+        DEBUGGER: Debugger
+        DEBUGGER_CENSORED: 'Censurer følsomme data'
+        DEBUGGER_CENSORED_HELP: 'Kun Clockwork Provider: Hvis Ja, censurer potentielt følsomme oplysninger (POST-parametre, cookies, filer, konfiguration og det meste array/objekt-data i logbeskeder)'
+        DEBUGGER_CLOCKWORK: 'Clockwork browserudvidelse'
+        DEBUGGER_DEBUGBAR: 'PHP Debug Bar'
+        DEBUGGER_HELP: 'Aktivér Grav-debuggeren og følgende indstillinger'
+        DEBUGGER_PROVIDER: Debugger-udbyder
+        DEBUGGER_PROVIDER_HELP: 'Standard er PHP Debug Bar, men Clockwork-browserudvidelsen giver en mindre påtrængende tilgang'
+        DEFAULT: Standard
+        DEFAULTS: Standardindstillinger
+        DEFAULT_AUTHOR: Standardforfatter
+        DEFAULT_AUTHOR_HELP: 'Et standardforfatternavn, som ofte bruges i temaer eller sideindhold'
+        DEFAULT_CHILD_TYPE: 'Standard undertype'
+        DEFAULT_DATE_FORMAT: Sidedatoformat
+        DEFAULT_DATE_FORMAT_HELP: "Sidedatoformat brugt af Grav. Som standard forsøger Grav at gætte dit datoformat, men du kan angive et format ved hjælp af PHP's dato-syntaks (f.eks.: Y-m-d H:i)"
+        DEFAULT_DATE_FORMAT_PLACEHOLDER: 'Gæt automatisk'
+        DEFAULT_EMAIL: Standard-e-mail
+        DEFAULT_EMAIL_HELP: 'En standard-e-mail, der skal refereres til i temaer eller sider'
+        DEFAULT_IMAGE_QUALITY: 'Standard billedkvalitet'
+        DEFAULT_IMAGE_QUALITY_HELP: 'Standard billedkvalitet, der skal bruges ved resampling eller caching af billeder (85%)'
+        DEFAULT_LANG: 'Tilsidesæt standardsprog'
+        DEFAULT_LANG_HELP: 'Standard er det første understøttede sprog. Dette kan tilsidesættes ved at vælge denne indstilling, men det skal være et af de understøttede sprog'
+        DEFAULT_ORDERING: Standardsortering
+        DEFAULT_ORDERING_DATE: 'Dato - baseret på datofeltet i headeren'
+        DEFAULT_ORDERING_DEFAULT: 'Standard - baseret på mappenavn'
+        DEFAULT_ORDERING_FOLDER: 'Mappe - baseret på mappenavn uden præfiks'
+        DEFAULT_ORDERING_HELP: 'Sider på en liste vil blive vist i denne rækkefølge, medmindre den tilsidesættes'
+        DEFAULT_ORDERING_TITLE: 'Titel - baseret på titelfeltet i headeren'
+        DEFAULT_ORDER_DIRECTION: 'Standard sorteringsrækkefølge'
+        DEFAULT_ORDER_DIRECTION_HELP: 'Rækkefølgen af sider på en liste'
+        DEFAULT_PAGE_COUNT: 'Standard sideantal'
+        DEFAULT_PAGE_COUNT_HELP: 'Standard maksimum antal sider i en liste'
+        DEFAULT_THEME: 'Standard tema'
+        DEFAULT_THEME_HELP: 'Angiv standardtemaet som Grav skal bruge (standard er Antimatter)'
+        DELETE: Slet
+        DELIMITER: Afgrænser
+        DELIMITER_HELP: "Resume-afgrænser (standard '===')"
+        DENIED: Nægtet
+        DEPENDENCIES: Afhængigheder
+        DESCENDING: Faldende
+        DESCRIPTION: Beskrivelse
+        DETAILS: Detaljer
+        DETECT_CHANGES: 'Registrér ændringer'
+        DETECT_CHANGES_HELP: 'Twig vil automatisk genkompilere Twig-cachen, hvis den registrerer ændringer i Twig-skabeloner'
+        DISABLE: Deaktivér
+        DISABLED: Deaktiveret
+        DISMISS: Afvis
+        DISPLAY_ERRORS: 'Vis fejl'
+        DISPLAY_ERRORS_HELP: 'Vis komplet fejlside med backtrace'
+        DISPLAY_NAME: Visningsnavn
+        DISPLAY_TEMPLATE: 'Vis skabelon'
+        DONE: Udført
+        DOWNLOAD: Download
+        EDIT: Redigér
+        EDIT_MODE_TOOLBAR:
+            LAYOUT_PRESETS: Layout-forudindstillinger
+            SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: 'Gem som webstedsstandard for alle brugere'
+        EMAIL: E-mail
+        EMAIL_VALIDATION_MESSAGE: 'Skal være en gyldig e-mailadresse'
+        ENABLED: Aktiveret
+        ENABLED_HELP: 'Aktiver sidesammendrag (sammendraget returnerer det samme som sideindholdet)'
+        ENABLED_SRI_ON_ASSETS: 'Aktiver SRI på aktiver'
+        ENABLED_SRI_ON_ASSETS_HELP: 'Aktiver SRI for aktiver'
+        ENABLED_TIMESTAMPS_ON_ASSETS: 'Aktiver tidsstempler på aktiver'
+        ENABLED_TIMESTAMPS_ON_ASSETS_HELP: 'Aktiver tidsstempler for aktiver'
+        ENABLE_AUTO_METADATA: 'Auto-metadata fra Exif'
+        ENABLE_AUTO_METADATA_HELP: 'Generer automatisk metadatafiler for billeder med Exif-information'
+        ENABLE_MEDIA_TIMESTAMP: 'Aktiver tidsstempler på medier'
+        ENABLE_MEDIA_TIMESTAMP_HELP: 'Tilføjer et tidsstempel baseret på dato for seneste ændring til hvert medieelement'
+        ENVIRONMENT_SWITCHER:
+            CONFIRM_DELETE: 'Slet {name}?'
+            CONFIRM_DELETE_WITH_OVERRIDES: 'Slet {name} og alle dens konfigurationsoverstyringer?'
+            CREATE: Opret
+            CREATES_PATH: 'Opretter user/env/{name}/config/'
+            CREATE_ENVIRONMENT: 'Opret miljø...'
+            CREATE_ENV_NAMED: 'Opret miljø „{name}“...'
+            DEFAULT: Standard
+            DELETE: Slet
+            DELETE_ENV_TOOLTIP: 'Slet miljøet {name}'
+            ENV_CREATED: 'Miljø {name} oprettet og valgt'
+            ENV_DELETED: 'Miljø {name} slettet'
+            FAILED_TO_CREATE: 'Kunne ikke oprette miljø'
+            FAILED_TO_DELETE: 'Kunne ikke slette miljø'
+            HAS_OVERRIDES: 'har tilsidesættelser'
+            NO_LONGER_EXISTS_PICK_ANOTHER: 'eksisterer ikke længere. Vælg en anden.'
+            SAVE_CONFIG_TO: 'Aktivt miljø'
+            SAVING_TO_DEFAULT: 'Gemmer til standard (user/config)'
+            SAVING_TO_ENV: 'Gemmer til miljø: {name}'
+            SELECTED_ENV: 'Valgt miljø'
+            SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Vælg det aktive miljø — styrer hvilken konfiguration du ser, og hvor gemte data placeres'
+            SWITCH_AND_RELOAD: 'Skift & genindlæs'
+            SWITCH_DISCARDS_UNSAVED: 'Skift af miljø genindlæser administratoren og kasserer ikke-gemte ændringer. Fortsæt?'
+        ERROR_FULL_BACKTRACE: 'Fuld backtrace-fejl'
+        ERROR_HANDLER: Fejlhåndtering
+        ERROR_SIMPLE: 'Simpel fejl'
+        ERROR_SYSTEM: Systemfejl
+        ESCAPE_MARKUP: 'Escape markup'
+        ESCAPE_MARKUP_HELP: 'Escape markup-tags til HTML-entiteter'
+        ETAG: ETag
+        ETAG_HELP: 'Sætter etag-headeren for at hjælpe med at identificere, hvornår en side er blevet ændret'
+        EVENTS: Hændelser
+        EVENTS_HELP: 'Aktiver eller deaktiver specifikke hændelser. Deaktivering af disse kan ødelægge plugins'
+        EXPAND_ALL: 'Udvid alle'
+        EXPAND_SIDEBAR: 'Udvid sidebar'
+        EXPERIMENTAL: Eksperimentel
+        EXPERT_MODE: Ekspert-tilstand
+        EXPIRES: Udløber
+        EXPIRES_HELP: 'Angiver expires-headeren. Værdien er i sekunder.'
+        EXTERNAL: 'Ekstern side'
+        EXTERNAL_URL: 'Ekstern URL'
+        EXTRA_ARGUMENTS: 'Ekstra argumenter'
+        FALLBACK_TYPES: 'Tilladte fallback-typer'
+        FALLBACK_TYPES_HELP: 'Tilladte filtyper der kan findes, hvis der tilgås via sideruten. Standard er alle understøttede medietyper.'
+        FIELDS:
+            ADD_ENTRY: 'Tilføj post'
+            CLEAR_DATE: 'Ryd dato'
+            CRON:
+                AT_MINUTE: 'Ved minut'
+                CRON: 'Cron:'
+                MIN_HR_DOM_MON_DOW: 'min t dom m uge'
+                ON_DAY: 'På dag'
+            CRON_STATUS:
+                ACTIVE_TRIGGERS: 'Aktive triggere'
+                CRON: 'Cron:'
+                FAILED_TO_LOAD_SCHEDULER_STATUS: 'Kunne ikke indlæse planlægger-status'
+                FAILED_TO_RUN_SCHEDULER: 'Kunne ikke køre planlægger'
+                HEALTH_STATUS: Sundhedsstatus
+                JOB_ID: Job-ID
+                LAST_RUN: 'Sidste kørsel'
+                LOADING_SCHEDULER_STATUS: 'Indlæser planlægger-status...'
+                NOT_CONFIGURED: 'IKKE KONFIGURERET'
+                NOT_ENABLED: 'IKKE AKTIVERET'
+                NOT_INSTALLED: 'IKKE INSTALLERET'
+                NO_SCHEDULED_JOBS_REGISTERED: 'Ingen planlagte jobs registreret.'
+                NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'Ingen aktive triggere! Aktivér webhooks eller konfigurer cron.'
+                QUEUE_SIZE: 'Kø-størrelse:'
+                RUNNING: Kører...
+                RUN_ALL: 'Kør alle'
+                SCHEDULED_JOBS: 'Planlagte job'
+                SCHEDULER_RUN_COMPLETED: 'Planlægger-kørsel fuldført'
+                SCHEDULER_STATUS: Planlægger-status
+                STATUS: 'Status:'
+                WEBHOOK: 'Webhook:'
+            CUSTOM_FIELD_WRAPPER:
+                LOADING_CUSTOM_FIELD: 'Indlæser brugerdefineret felt...'
+            DATE_FORMAT:
+                FORMAT_STRING: 'Format-streng:'
+                SELECT_FORMAT: '— Vælg format —'
+            FILE:
+                LIMIT_REACHED: 'Dette felt accepterer højst {limit} fil(er).'
+            FILE_PICKER:
+                NO_MATCHING_FILES: 'Ingen matchende filer'
+                NO_MEDIA_UPLOADED: 'Ingen mediefiler uploadet endnu'
+            FILE_PICKER_SOON: 'Filvælger — kommer snart'
+            ICON_PICKER:
+                NO_ICONS_FOUND: 'Ingen ikoner fundet'
+                SEARCH_ICONS: 'Søg efter ikoner...'
+                SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Viser de første 200 resultater — skriv for at indsnævre'
+            NO_TAXONOMY_TYPES: 'Ingen taksonomityper konfigureret'
+            PAGES:
+                FILTER_PAGES: 'Filtrer sider...'
+                ROOT: '/ (rod)'
+            PAGE_EXISTS:
+                CHECKING_PAGE: 'Kontrollerer side...'
+            PAGE_MEDIA:
+                PAGE_MEDIA_UNAVAILABLE: 'Sidemedier ikke tilgængelige'
+            PERMISSIONS:
+                NOT_SET: 'Ikke angivet'
+                NO_PERMISSIONS_CONFIGURED: 'Ingen rettigheder konfigureret'
+            REGENERATE_SLUG: 'Generér automatisk fra sidetitel'
+            TABS:
+                NO_FIELDS_MATCH_YOUR_FILTER: 'Ingen felter matcher dit filter'
+            THEME_SELECT:
+                LOADING_THEMES: 'Indlæser temaer...'
+                SELECT_THEME: '— Vælg tema —'
+            WEBHOOK_EXAMPLES:
+                CHECK_HEALTH_STATUS: 'Tjek sundhedsstatus:'
+                FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Kør specifikt job med tvang (ignorerer tidsplan):'
+                GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions eksempel:'
+                HOW_TO_USE_WEBHOOKS: 'Sådan bruges webhooks:'
+                TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Udløs alle forfaldne jobs (respekterer tidsplan):'
+            WEBHOOK_STATUS:
+                BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: 'bin/gpm install scheduler-webhook'
+                CHECKING_WEBHOOK_PLUGIN_STATUS: 'Tjekker status for webhook-plugin...'
+                INSTALL_PLUGIN_NOW: 'Installér plugin nu'
+                OR_RUN: 'eller kør:'
+                PLUGIN_IS_INSTALLED_AND_ENABLED: 'plugin er installeret og aktiveret.'
+                PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin er installeret. Aktivér Webhook-udløsere nedenfor for at aktivere.'
+                PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin er påkrævet for webhook-funktionalitet.'
+                WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin påkrævet'
+        FILE: Fil
+        FILE_EXTENSION: Filendelse
+        FILE_STREAMS: Filstrømme
+        FLEX: 'Flex Object (EKSPERIMENTEL)'
+        FLEX_ADMIN_EVENT_COMPAT: Admin-begivenhedskompatibilitet
+        FLEX_ADMIN_EVENT_COMPAT_HELP: 'Aktiverer onAdminSave og onAdminAfterSave begivenheder for plugins.'
+        FLEX_CACHING: Flex-caching
+        FLEX_INDEX_CACHE_ENABLED: 'Aktivér indeks-caching'
+        FLEX_INDEX_CACHE_LIFETIME: 'Indeks-cachelevetid (sekunder)'
+        FLEX_OBJECTS:
+            ACTIONS: Handlinger
+            BACK_TO_LIST: 'Tilbage til liste'
+            DELETE_OBJECT: 'Slet objekt'
+            EXPORT: Eksportér
+            EXPORT_FAILED: 'Eksport mislykkedes'
+            FAILED_TO_DELETE_OBJECT: 'Kunne ikke slette objekt'
+            FAILED_TO_LOAD_DIRECTORY: 'Kunne ikke indlæse mappe'
+            FAILED_TO_LOAD_OBJECTS: 'Kunne ikke indlæse objekter'
+            FAILED_TO_SAVE: 'Kunne ikke gemme.'
+            INFO:
+                DIRECTORY: Mappe
+                ID: ID
+                LOCATION: Placering
+                SHOW_INFO: 'Vis objektinfo'
+                STORAGE_KEY: Lagringsnøgle
+                TITLE: Objektinfo
+            NEW:
+                BACK_TO_LIST: 'Tilbage til liste'
+                CREATE: Opret
+                OBJECT_CREATED: 'Objekt oprettet'
+            OBJECT_CHANGED_ELSEWHERE_SAVE_TO: 'Objektet er ændret et andet sted – gem for at overskrive eller genindlæs'
+            OBJECT_DELETED: 'Objekt slettet'
+            OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objektet blev ændret et andet sted. Genindlæs venligst.'
+            PREVIOUS: Forrige
+            SEARCH: Søg...
+        FLEX_OBJECT_CACHE_ENABLED: 'Aktivér objektcaching'
+        FLEX_OBJECT_CACHE_LIFETIME: 'Levetid for objekt-cache (sekunder)'
+        FLEX_RENDER_CACHE_ENABLED: 'Aktivér rendering-cache'
+        FLEX_RENDER_CACHE_LIFETIME: 'Levetid for rendering-cache (sekunder)'
+        FLOATING_WIDGET_LOADER:
+            CLOSE_WIDGETS_MENU: 'Luk widget-menu'
+        FOLDER: Mappe
+        FOLDER_NAME: Mappenavn
+        FOLDER_NUMERIC_PREFIX: 'Numerisk mappepræfiks'
+        FOLDER_NUMERIC_PREFIX_HELP: 'Numerisk præfiks som giver manuel sortering og angiver synlighed'
+        FOPEN: fopen
+        FORCE_LOWERCASE_URLS: "Gennemtving små bogstaver i URL'er"
+        FORCE_LOWERCASE_URLS_HELP: 'Som standard vil Grav sætte alle slugs og ruter til små bogstaver. Hvis denne er sat til false, kan store bogstaver anvendes i slugs og ruter'
+        FORCE_SSL: 'Gennemtving SSL'
+        FORCE_SSL_HELP: 'Gennemtving SSL globalt. Hvis aktiveret, vil Grav viderestille til HTTPS, hvis siden besøges via HTTP'
+        FORGOT:
+            BACK_TO_SIGN_IN: 'Tilbage til login'
+            CHECK_INBOX: 'Tjek din indbakke for et link til nulstilling.'
+            EMAIL_ADDRESS: E-mailadresse
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Indtast en gyldig e-mailadresse'
+            FORGOT_PASSWORD: 'Glemt adgangskode'
+            FORGOT_PASSWORD_GRAV_ADMIN: 'Glemt adgangskode — Grav Admin'
+            IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: 'Hvis der findes en konto til denne e-mail, er der sendt et link til nulstilling.'
+            SENDING: Sender...
+            SEND_RESET_LINK: 'Send link til nulstilling'
+            SUBTITLE: 'Indtast din e-mail, så sender vi et link til nulstilling.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Kunne ikke oprette forbindelse til serveren.'
+        FORMAT: Format
+        FORMAT_HELP: 'short = brug den første forekomst af skilletegnet eller størrelsen; long = resume-skilletegnet ignoreres'
+        FRONTMATTER_IGNORE_FIELDS: 'Ignorer frontmatter-felter'
+        FRONTMATTER_IGNORE_FIELDS_HELP: "Visse frontmatter-felter kan indeholde Twig, men bør ikke behandles, såsom 'forms'"
+        FRONTMATTER_PROCESS_TWIG: 'Behandl frontmatter Twig'
+        FRONTMATTER_PROCESS_TWIG_HELP: 'Når aktiveret, kan du bruge Twig-konfigurationsvariable i sidens frontmatter'
+        FULL_NAME: 'Fulde navn'
+        GENERAL_CONFIG: 'Generel aktivkonfiguration'
+        GPM_METHOD: 'Metode til hentning fra ekstern kilde'
+        GPM_METHOD_HELP: 'Når sat til Auto, vil Grav bestemme, om fopen er tilgængelig og bruge den, ellers vil den falde tilbage på cURL. For at gennemtvinge brugen af den ene eller den anden, skift indstillingen.'
+        GPM_OFFICIAL_ONLY: 'Kun officielt GPM'
+        GPM_OFFICIAL_ONLY_HELP: 'Tillad kun direkte installationer fra det officielle GPM-arkiv.'
+        GPM_RELEASES: GPM-udgivelser
+        GPM_RELEASES_HELP: "Vælg 'Testing' for at installere beta- eller testversioner"
+        GPM_SECTION: GPM-sektion
+        GROUPS:
+            ADD_GROUP: 'Tilføj gruppe'
+            BACK_TO_GROUPS: 'Tilbage til grupper'
+            CONFIRM_DELETE_GROUP: "Slet gruppen '{name}'? Dette kan ikke fortrydes."
+            CREATE: Opret
+            DELETE_GROUP: 'Slet gruppe'
+            DESCRIPTION: Beskrivelse
+            DISPLAY_NAME: Visningsnavn
+            FAILED_TO_CREATE_GROUP: 'Kunne ikke oprette gruppe.'
+            FAILED_TO_LOAD_GROUP: "Kunne ikke indlæse gruppen '{name}'."
+            FAILED_TO_LOAD_GROUPS: 'Kunne ikke indlæse grupper'
+            FAILED_TO_SAVE_GROUP: 'Kunne ikke gemme gruppen.'
+            GROUPS: Grupper
+            GROUPS_GRAV_ADMIN: 'Grupper — Grav Admin'
+            GROUP_COUNT_ONE: '{n} gruppe'
+            GROUP_COUNT_OTHER: '{n} grupper'
+            GROUP_CREATED: "Gruppe '{name}' oprettet"
+            GROUP_DELETED: "Gruppe '{name}' slettet"
+            GROUP_DELETE_FAILED: "Kunne ikke slette gruppen '{name}'"
+            GROUP_MODIFIED_ELSEWHERE: 'Gruppen blev ændret et andet sted. Genindlæs venligst.'
+            GROUP_NAME: Gruppenavn
+            GROUP_NAME_HELP: '1–200 tegn bestående af bogstaver, tal, bindestreger eller understregninger. Bruges som lagringsnøgle.'
+            GROUP_NAME_PLACEHOLDER: 'f.eks. redaktører'
+            GROUP_PAGE_TITLE: '{name} — Grupper — Grav Admin'
+            GROUP_SAVED: "Gruppe '{name}' gemt"
+            NEW_GROUP: 'Ny gruppe'
+            NEW_GROUP_GRAV_ADMIN: 'Ny gruppe — Grav Admin'
+            NO_GROUPS: 'Ingen grupper fundet'
+            NO_GROUPS_MATCH_SEARCH: 'Ingen grupper matcher din søgning'
+            SEARCH_GROUPS: 'Søg i grupper...'
+            SELECT_A_GROUP_TO_VIEW_DETAILS: 'Vælg en gruppe for at se detaljer'
+        GROUPS_HELP: 'Liste over grupper som brugeren er medlem af'
+        GROUP_NAME: Gruppenavn
+        GZIP_COMPRESSION: Gzip-komprimering
+        GZIP_COMPRESSION_HELP: 'Aktivér GZip-komprimering af Grav-siden for øget ydeevne.'
+        HIDE_EMPTY_FOLDERS: 'Skjul tomme mapper'
+        HIDE_EMPTY_FOLDERS_HELP: 'Hvis mappen ikke indeholder nogen .md-fil, skal den så skjules i navigationen samt gøres utilgængelig'
+        HIDE_HOME_IN_URLS: "Skjul hjemme-rute i URL'er"
+        HIDE_HOME_IN_URLS_HELP: 'Vil sikre at standard-ruter for alle sider under hjemme ikke refererer til hjemmes normale rute'
+        HOMEPAGE: Forside
+        HOME_PAGE: Forside
+        HOME_PAGE_HELP: 'Den side som Grav vil bruge som standard landingsside'
+        HTTP_ACCEPT_LANGUAGE: 'Indstil sprog ud fra browser'
+        HTTP_ACCEPT_LANGUAGE_HELP: 'Du kan vælge at forsøge at indstille sproget baseret på `http_accept_language` header-tagget i browseren'
+        HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP Aktiveret'
+        HTTP_CF_CONNECTING_IP_HELP: 'Stol på <code>CF-Connecting-IP</code> request-headeren, når klientens IP skal findes. Aktivér kun hvis sitet reelt ligger bag Cloudflare; ellers kan klienter forfalske deres IP. For fuld sikkerhed bør du også begrænse adgang til kilden til Cloudflares IP-intervaller på webserveren.'
+        HTTP_CLIENT_IP_ENABLED: 'HTTP_CLIENT_IP Aktiveret'
+        HTTP_CLIENT_IP_HELP: 'Stol på <code>Client-IP</code> request-headeren, når klientens IP skal findes. Sjældent; indstilles normalt kun af specifikke load balancere. Lad den være deaktiveret, medmindre du ved, at din proxy indstiller og overskriver denne header.'
+        HTTP_CONNECTIONS: HTTP-forbindelser
+        HTTP_CONNECTIONS_HELP: 'Antallet af samtidige HTTP-forbindelser under multipleksede anmodninger'
+        HTTP_HEADERS: HTTP-headere
+        HTTP_SECTION: HTTP-sektion
+        HTTP_X_FORWARDED_HOST_ENABLED: 'HTTP_X_FORWARDED_HOST Aktiveret'
+        HTTP_X_FORWARDED_HOST_HELP: 'Stol på <code>X-Forwarded-Host</code> request-headeren. Aktivér kun, når sitet reelt ligger bag en reverse proxy, der indstiller og overskriver denne header; ellers kan klienter forfalske den host, som Grav ser.'
+        HTTP_X_FORWARDED_IP_ENABLED: 'HTTP_X_FORWARDED IP Aktiveret'
+        HTTP_X_FORWARDED_IP_HELP: 'Stol på <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> headere, når klientens IP skal findes. Aktivér kun, når sitet reelt ligger bag en reverse proxy, der indstiller og overskriver disse headere; ellers kan klienter forfalske deres IP og omgå hastighedsbegrænsning, IP-blokeringer og revisionslogning.'
+        HTTP_X_FORWARDED_PORT_ENABLED: 'HTTP_X_FORWARDED_PORT Aktiveret'
+        HTTP_X_FORWARDED_PORT_HELP: 'Stol på <code>X-Forwarded-Port</code> request-headeren. Aktivér kun, når sitet reelt ligger bag en reverse proxy, der indstiller og overskriver denne header.'
+        HTTP_X_FORWARDED_PROTO_ENABLED: 'HTTP_X_FORWARDED_PROTO Aktiveret'
+        HTTP_X_FORWARDED_PROTO_HELP: 'Stol på <code>X-Forwarded-Proto</code> request-headeren (bruges typisk til at detektere HTTPS bag en TLS-terminerende proxy). Aktivér kun, når sitet reelt ligger bag en reverse proxy, der indstiller og overskriver denne header.'
+        ICON: Ikon
+        ID: ID
+        IGNORE_FILES: 'Ignorer filer'
+        IGNORE_FILES_HELP: 'Specifikke filer der skal ignoreres ved behandling af sider'
+        IGNORE_FOLDERS: 'Ignorer mapper'
+        IGNORE_FOLDERS_HELP: 'Specifikke mapper der skal ignoreres ved behandling af sider'
+        IGNORE_HIDDEN: 'Ignorer skjulte'
+        IGNORE_HIDDEN_HELP: 'Ignorer alle filer og mapper der starter med et punktum'
+        IMAGES_AUTO_FIX_ORIENTATION: 'Ret orientering automatisk'
+        IMAGES_AUTO_FIX_ORIENTATION_HELP: 'Ret automatisk billedorienteringen baseret på Exif-data'
+        IMAGES_CLS_ASPECT_RATIO: 'Aktiver billedformat (Aspect Ratio)'
+        IMAGES_CLS_ASPECT_RATIO_HELP: "Valgfri CSS-variabel der anvendes via et 'style'-attribut, som kan bruges i CSS til tilpasset styling"
+        IMAGES_CLS_AUTO_SIZES: 'Aktiver autosize'
+        IMAGES_CLS_AUTO_SIZES_HELP: "Tilføj automatisk 'width' og 'height'-attributter til billeder for at adressere CLS"
+        IMAGES_CLS_RETINA_SCALE: Retina-skaleringsfaktor
+        IMAGES_CLS_RETINA_SCALE_HELP: 'Vil tage den beregnede størrelse og dividere med skaleringsfaktoren for at vise et billede med højere opløsning ved en mindre pixelstørrelse for bedre håndtering af HiDPI-opløsninger'
+        IMAGES_CLS_TITLE: 'Cumulative Layout Shift (CLS)'
+        IMAGES_DEBUG: 'Billed-debug vandmærke'
+        IMAGES_DEBUG_HELP: 'Vis et overlay over billeder der angiver billedets pixeldybde, når der for eksempel arbejdes med retina'
+        IMAGES_DECODING: Billed-dekodningsadfærd
+        IMAGES_DECODING_HELP: 'Dekodningsattributten tillader en browser at udskyde dekodning af billeder uden for skærmen, indtil brugerne scroller nær dem. dekodning understøtter tre værdier: auto, sync, async'
+        IMAGES_FETCHPRIORITY: 'Billed-fetchpriority egenskab'
+        IMAGES_FETCHPRIORITY_HELP: 'Fetchpriority-egenskaben i HTML er et attribut, der angiver prioriteten for indlæsning af visse ressourcer, såsom billeder eller iframes, for at optimere ydeevnen. Mulige værdier er high, low eller auto.'
+        IMAGES_LOADING: Billed-indlæsningsadfærd
+        IMAGES_LOADING_HELP: 'Indlæsningsattributten tillader en browser at udskyde indlæsning af billeder og iframes uden for skærmen, indtil brugerne scroller nær dem. indlæsning understøtter tre værdier: auto, lazy, eager'
+        IMAGES_MAX_PIXELS: 'Maksimum antal billedpixels'
+        IMAGES_MAX_PIXELS_HELP: 'Grænse for total-pixels (bredde x højde) for URL-baserede ændringer af størrelse. Anmodninger over denne grænse afvises. Sæt til 0 for at deaktivere tjekket.'
+        IMAGES_SEOFRIENDLY: 'SEO-venlige billednavne'
+        IMAGES_SEOFRIENDLY_HELP: 'Når aktiveret, vises billednavnet først, efterfulgt af et mindre hash for at afspejle behandlede operationer'
+        IMAGES_URL_ACTIONS: 'Tillad URL-baserede billedhandlinger'
+        IMAGES_URL_ACTIONS_HELP: 'Tillad billedtransformering via URL-forespørgselsparametre (f.eks. `image.jpg?resize=600,400`). Deaktiveret som standard; normal Twig- og Markdown-billedtilpasning påvirkes ikke.'
+        IMAGE_ADAPTER: Billedadapter
+        IMAGE_ADAPTER_HELP: "Den billedadapter, der skal bruges til billedmanipulation. 'GD' er standard, 'Imagick' er et alternativ"
+        IMAGE_OPTIONS: Billedindstillinger
+        INCLUDE_DEFAULT_LANG: 'Inkluder standardsprog'
+        INCLUDE_DEFAULT_LANG_FILE_EXTENSION: 'Inkluder standardsprog i filendelse'
+        INCLUDE_DEFAULT_LANG_HELP: "Dette vil tilføje standardsproget foran alle URL'er på standardsproget. f.eks. `/en/blog/my-post`"
+        INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: 'Hvis aktiveret, vil det tilføje standardsproget foran filendelsen (f.eks. `.en.md`). Deaktiver for at bevare standardsproget ved brug af `.md` filendelse.'
+        INFO: Info
+        INLINE_ICON_PICKER:
+            NO_ICONS_FOUND: 'Ingen ikoner fundet'
+            SEARCH_ICONS: 'Søg efter ikoner...'
+            TYPE_TO_NARROW_RESULTS: 'Skriv for at indsnævre resultaterne'
+        INLINE_TYPES: 'Inline fallback-typer'
+        INLINE_TYPES_HELP: 'En liste over filtyper, der skal vises inline i stedet for at blive downloadet'
+        INSTALL: Installer
+        INSTALLING: Installerer...
+        INTL_ENABLED: Intl-modulintegration
+        INTL_ENABLED_HELP: 'Brug Intl PHP-modulet og collate til at sortere UTF8-baserede samlinger'
+        INVITATIONS:
+            ACCEPT_FAILED: 'Kunne ikke oprette din konto.'
+            ACCEPT_HEADING: 'Accepter invitation'
+            ACCEPT_SUBHEADING: 'Opsæt din konto for at komme i gang.'
+            ACCEPT_SUCCESS: 'Konto oprettet. Velkommen!'
+            ACCEPT_TITLE: 'Accepter invitation — Grav Admin'
+            CHECKING_INVITE: 'Tjekker din invitation...'
+            CHOOSE_PASSWORD: 'Vælg en adgangskode'
+            CONFIRM_REVOKE: 'Vil du tilbagekalde invitationen til {email}? Linket vil holde op med at virke.'
+            COPIED: Kopieret
+            COPY: Kopiér
+            COPY_FAILED: 'Kunne ikke kopiere linket.'
+            CREATED_NO_EMAIL_TOAST: 'Invitation oprettet. E-mail er ikke konfigureret, så del linket manuelt.'
+            CREATE_ACCOUNT: 'Opret konto'
+            CREATING_ACCOUNT: 'Opretter konto...'
+            EMAIL: E-mail
+            EMAIL_SENT_TO: 'En invitations-e-mail blev sendt til {email}.'
+            EXPIRED: Udløbet
+            EXPIRED_INVITE: 'Denne invitation er udløbet.'
+            EXPIRED_INVITE_BODY: 'Denne invitation er udløbet. Bed en administrator om at sende en ny.'
+            EXPIRES_AFTER: 'Invitationen udløber efter'
+            EXPIRES_IN_DAYS: '{count, plural, one {Udløber om # dag} other {Udløber om # dage}}'
+            EXPIRES_IN_HOURS: '{count, plural, one {Udløber om # time} other {Udløber om # timer}}'
+            EXPIRY_14_DAYS: '14 dage'
+            EXPIRY_1_DAY: '1 dag'
+            EXPIRY_30_DAYS: '30 dage'
+            EXPIRY_3_DAYS: '3 dage'
+            EXPIRY_7_DAYS: '7 dage'
+            FULL_NAME_OPTIONAL: 'Fulde navn (valgfrit)'
+            GROUPS: Grupper
+            GROUPS_HINT: 'Grupper den inviterede bruger vil blive tilføjet til.'
+            INVALID_INVITE: 'Denne invitation er ikke gyldig.'
+            INVALID_INVITE_BODY: 'Dette invitationslink er ugyldigt eller er allerede blevet brugt.'
+            INVITE: Invitér
+            INVITED_BY: 'Inviteret af {name}'
+            INVITE_ANOTHER: 'Invitér en anden'
+            INVITE_LINK: Invitationslink
+            INVITE_READY: 'Invitation klar'
+            INVITE_USER: 'Invitér bruger'
+            LOADING_GROUPS: 'Indlæser grupper...'
+            LOAD_FAILED: 'Kunne ikke indlæse invitationer.'
+            MESSAGE_OPTIONAL: 'Personlig besked (valgfri)'
+            NONE_PENDING: 'Ingen ventende invitationer'
+            NONE_PENDING_HINT: 'Invitér nogen til at deltage, så vil deres ventende invitation fremgå her.'
+            NO_GROUPS: 'Ingen grupper defineret endnu.'
+            PASSWORD_POLICY: 'Adgangskoden opfylder ikke den krævede politik'
+            PENDING_COUNT: '{count, plural, =0 {Ingen ventende invitationer} one {# ventende invitation} other {# ventende invitationer}}'
+            PERMISSIONS: Tilladelser
+            PERMISSIONS_HINT: 'Tilladelser som den inviterede bruger vil modtage. De kan ikke give sig selv flere end dem, du angiver her.'
+            RECIPIENT: Modtager
+            RECIPIENT_HINT: 'De vælger deres eget brugernavn og adgangskode, når de accepterer.'
+            RESEND: 'Send igen'
+            RESEND_FAILED: 'Kunne ikke gensende invitation.'
+            RESENT_TOAST: 'Invitation gensendt til {email}.'
+            REVOKE: Tilbagekald
+            REVOKED_TOAST: 'Invitation tilbagekaldt.'
+            REVOKE_FAILED: 'Kunne ikke tilbagekalde invitation.'
+            REVOKE_TITLE: 'Tilbagekald invitation'
+            SEND_FAILED: 'Kunne ikke sende invitation.'
+            SEND_INVITE: 'Send invitation'
+            SENT_TOAST: 'Invitation sendt til {email}.'
+            TITLE_OPTIONAL: 'Titel (valgfri)'
+            USERNAME_INVALID: 'Brugernavnet skal være 3-64 tegn langt.'
+            USERNAME_TAKEN: 'Dette brugernavn er allerede optaget.'
+            VIEW_PENDING: 'Vis afventende'
+        ITEMS: Elementer
+        JAVASCRIPT_MINIFY: JavaScript-minificering
+        JAVASCRIPT_MINIFY_HELP: 'Minificér JS under pipelining'
+        JAVASCRIPT_MODULE_PIPELINE: JavaScript-modul-pipeline
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: 'JS-modul-pipeline renderes først'
+        JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: 'Render JS-pipelinen før andre JS-referencer, der ikke er inkluderet'
+        JAVASCRIPT_MODULE_PIPELINE_HELP: 'JS-modul-pipelinen er samlingen af flere JS-ressourcer til én fil'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: 'Inkluder eksterne i JS-modul-pipeline'
+        JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: "Eksterne URL'er har nogle gange relative filreferencer og bør ikke pipelines"
+        JAVASCRIPT_PIPELINE: JavaScript-pipeline
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: 'JS-pipeline renderes først'
+        JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: 'Render JS-pipelinen før andre JS-referencer, der ikke er inkluderet'
+        JAVASCRIPT_PIPELINE_HELP: 'JS-pipelinen er samlingen af flere JS-ressourcer til én fil'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: 'Inkluder eksterne i JS-pipeline'
+        JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: "Eksterne URL'er har nogle gange relative filreferencer og bør ikke pipelines"
+        JS_ASSETS: JavaScript-aktiver
+        JS_MODULE_ASSETS: JavaScript-modulaktiver
+        KEYWORDS: Nøgleord
+        LANG:
+            CREATE_TRANSLATION: 'Opret {language}-oversættelse'
+            CURRENT: nuværende
+            DEFAULT: standard
+            DELETE_TRANSLATION: 'Slet {language}-oversættelse'
+            FALLBACK_NOTICE: 'Ingen {language}-oversættelse. Viser standardindhold.'
+            NOT_TRANSLATED: 'Ikke oversat'
+            SAVE_AS: 'Gem som {language}'
+            SWITCH_LANGUAGE: 'Skift indholdssprog'
+            SYNC_FROM: 'Nulstil fra {language}'
+            TRANSLATED: Oversat
+            TRANSLATIONS: Oversættelser
+            TRANSLATION_CREATED: '{language}-oversættelse oprettet'
+        LANGUAGE: Sprog
+        LANGUAGES: Sprog
+        LANGUAGE_DEBUG: 'Fejlfinding af sprog'
+        LANGUAGE_DEBUG_HELP: 'Aktivér fejlfinding af sprog, der bruger |t-twig-filteret, ved at tilføje et span omkring dem, som kan styles for at hjælpe med at diagnosticere problemer'
+        LANGUAGE_HELP: 'Indstil favoritsprog'
+        LANGUAGE_TRANSLATIONS: Oversættelser
+        LANGUAGE_TRANSLATIONS_HELP: 'Hvis falsk, bruges oversættelsesnøgler i stedet for oversatte strenge. Denne funktion kan bruges til at hjælpe med at rette dårlige oversættelser eller finde hardcodede engelske strenge.'
+        LAST_MODIFIED: 'Sidst ændret'
+        LAST_MODIFIED_HELP: 'Indstiller overskriften for sidst ændret, hvilket kan hjælpe med at optimere proxy- og browsercaching'
+        LIFETIME: Levetid
+        LIFETIME_HELP: 'Angiver cachens levetid i sekunder. 0 = uendelig'
+        LIST: Liste
+        LOADING: Indlæser...
+        LOGIN:
+            AUTHENTICATION_CODE: Godkendelseskode
+            AUTH_CODE_PROMPT: 'Åbn din godkendelses-app og indtast den 6-cifrede kode for **{username}**.'
+            BACK_TO_SIGN_IN: 'Tilbage til login'
+            ENTER_A_VALID_6_DIGIT_CODE: 'Indtast en gyldig 6-cifret kode'
+            ENVIRONMENT: Miljø
+            FORGOT_PASSWORD: 'Glemt adgangskode?'
+            GRAV_ADMIN: 'Grav Admin'
+            INVALID_USERNAME_OR_PASSWORD: 'Ugyldigt brugernavn eller adgangskode'
+            LOGIN_GRAV_ADMIN: 'Login — Grav Admin'
+            PASSWORD_IS_REQUIRED: 'Adgangskode er påkrævet'
+            PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: 'Udfyld venligst alle påkrævede felter'
+            POWERED_BY_GRAV_CMS: 'Drevet af Grav CMS'
+            SERVER_CONFIGURATION: Serverkonfiguration
+            SERVER_URL: Server-URL
+            SIGNED_IN_SUCCESSFULLY: 'Logget ind'
+            SIGNING_IN: 'Logger ind...'
+            SIGN_IN: 'Log ind'
+            SUBTITLE: 'Log ind for at administrere dit websted'
+            TWOFA_SUBTITLE: 'Indtast din godkendelseskode for at fortsætte'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Kunne ikke oprette forbindelse til serveren. Tjek din server-URL og prøv igen.'
+            UNABLE_TO_VERIFY_CODE_CHECK_YOUR: 'Kunne ikke verificere koden. Tjek din forbindelse og prøv igen.'
+            USERNAME_IS_REQUIRED: 'Brugernavn er påkrævet'
+            VERIFY: Bekræft
+            VERIFYING: Bekræfter...
+        LOG_ERRORS: 'Log fejl'
+        LOG_ERRORS_HELP: 'Log fejl til /logs mappen'
+        LOG_HANDLER: Log-håndtering
+        LOG_HANDLER_HELP: 'Hvor logs skal sendes hen'
+        LONG: Lang
+        LONG_DATE_FORMAT: 'Langt datoformat for visning'
+        LONG_DATE_FORMAT_HELP: 'Angiv det lange datoformat, der kan bruges af temaer'
+        MARKDOWN: Markdown
+        MARKDOWN_EDITOR:
+            NOTHING_TO_PREVIEW: 'Intet at forhåndsvise'
+        MARKDOWN_EXTRA: 'Markdown Extra'
+        MARKDOWN_EXTRA_HELP: 'Aktivér standardunderstøttelse af Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
+        MEDIA:
+            MANAGE_SITE_WIDE_MEDIA_FILES: 'Administrér mediefiler for hele websitet'
+            MEDIA_GRAV_ADMIN: 'Medier — Grav Admin'
+            MEDIA_INSPECTOR:
+                DIMENSIONS: Dimensioner
+                FAILED_TO_COPY: 'Kunne ikke kopiere'
+                FILE_RENAMED: 'Fil omdøbt'
+                NEXT_FILE: 'Næste fil'
+                PREVIOUS_FILE: 'Forrige fil'
+                RENAME: Omdøb
+            MEDIA_MANAGER:
+                CREATE: Opret
+                FILES_DELETED: 'Filer slettet'
+                FOLDER_NAME: Mappenavn
+                NEW_FOLDER: 'Ny mappe'
+                UPLOAD_FILES: 'Upload filer'
+            MEDIA_TOOLBAR:
+                FOLDER: Mappe
+                GRID_VIEW: Gittervisning
+                LIST_VIEW: Listevisning
+                NEW_FOLDER: 'Ny mappe'
+                SEARCH_MEDIA: 'Søg i medier...'
+            PAGE_MEDIA:
+                DRAG_INTO_EDITOR: 'Træk ind i editoren'
+                PAGE_MEDIA: Sidemedier
+        MEDIA_TYPES: Medietyper
+        MEMCACHED_PORT: Memcached-port
+        MEMCACHED_PORT_HELP: Memcached-serverporten
+        MEMCACHED_SERVER: Memcached-server
+        MEMCACHED_SERVER_HELP: Memcached-serveradressen
+        MENU: Menu
+        MENU_HELP: 'Strengen der skal bruges i en menu. Hvis den ikke er angivet, bruges titlen.'
+        METADATA: Metadata
+        METADATA_HELP: 'Standard-metadataværdier, der vises på hver side, medmindre de overstyres af siden'
+        METADATA_KEY: "Nøgle (f.eks. 'Keywords')"
+        METADATA_VALUE: "Værdi (f.eks. 'Blog, Grav')"
+        MIME_TYPE: Mime-type
+        MISC_SECTION: Diverse-sektion
+        MODULE: Modul
+        MODULE_SETUP: Modulopsætning
+        MOVE: Flyt
+        NAME: Navn
+        NAV:
+            CONFIGURATION: Konfiguration
+            DASHBOARD: Kontrolpanel
+            MEDIA: Medier
+            PAGES: Sider
+            PLUGINS: Plugins
+            SETTINGS: Indstillinger
+            SYSTEM: System
+            THEMES: Temaer
+            TOOLS: Værktøjer
+            USERS: Brugere
+        NEVER_CACHE_TWIG: 'Cache aldrig Twig'
+        NEVER_CACHE_TWIG_HELP: 'Cache kun indhold og behandl Twig hver gang for sider. Ignorerer twig_first indstillingen.'
+        NEWS_FEED_WIDGET:
+            NO_FEED_ITEMS: 'Ingen feed-elementer'
+        'NO': Nej
+        NORMAL_MODE: 'Normal tilstand'
+        NOTIFICATIONS_WIDGET:
+            NO_NOTIFICATIONS: 'Ingen meddelelser'
+        NO_CHANGES: 'Ingen ændringer at gemme'
+        OPTIONS: Valgmuligheder
+        ORDER: Rækkefølge
+        ORDERING: Sortering
+        ORDER_BY: 'Sorter efter'
+        ORDER_DIGITS: Sorteringscifre
+        ORDER_DIGITS_HELP: 'Antal cifre der bruges som præfiks til mappenavne for rækkefølge (f.eks. `01.om`, `001.om`).'
+        ORDER_DIR_HELP: '„desc“ eller „asc“ er gyldige værdier'
+        OVERRIDES: Tilsidesættelser
+        OVERRIDE_LOCALE: 'Tilsidesæt lokalisering'
+        OVERRIDE_LOCALE_HELP: 'Tilsidesæt lokaliseringsindstillingen i PHP baseret på det aktuelle sprog'
+        PAGE: Side
+        PAGES:
+            ADD_FOLDER: 'Tilføj mappe'
+            ADD_MENU: 'Tilføj menu'
+            ADD_MODULE: 'Tilføj modul'
+            ADD_PAGE: 'Tilføj side'
+            CHUNK_SIZE: Klump
+            CHUNK_SIZE_HELP: 'Rækker der hentes pr. anmodning, mens du ruller. Større værdier indlæses langsommere første gang, men reducerer efterfølgende anmodninger.'
+            DELETED: 'Slettede „{title}“'
+            DELETE_FAILED: 'Kunne ikke slette side'
+            DELETE_PAGE: 'Slet side'
+            DRAFT: Kladde
+            EDIT:
+                CONNECTING_TO_COLLAB: 'Opretter forbindelse til samarbejdssession…'
+                COPY_PAGE: 'Kopiér side'
+                CREATE_LANGUAGE: 'Opret {language}'
+                DELETE_PAGE: 'Slet side'
+                EDIT_PAGE: 'Rediger side'
+                FAILED_TO_CREATE_TRANSLATION: 'Kunne ikke oprette oversættelse'
+                FAILED_TO_SYNC_TRANSLATION: 'Kunne ikke synkronisere oversættelse'
+                FALLBACK: (fallback)
+                FALLBACK_NOTICE: 'Der findes ingen {active} oversættelse. Viser {effective} fallback. Brug „Gem som {active}“ for at oprette en oversættelse, du kan redigere.'
+                FOLDER_NAME: Mappenavn
+                INVALID_YAML_FRONTMATTER: 'Ugyldig YAML-frontmatter'
+                INVALID_YAML_FRONTMATTER_FIX_SYNTAX: 'Ugyldig YAML-frontmatter — ret syntaksen før du gemmer'
+                LOADING_PAGE: 'Indlæser side...'
+                NOT_TRANSLATED: 'Ikke oversat:'
+                OPEN_IN_NEW_TAB: 'Åbn i ny fane'
+                PAGE_CHANGED_ELSEWHERE_SAVE_TO: 'Siden er ændret andetsteds — gem for at overskrive eller genindlæs'
+                PAGE_COPIED: 'Side kopieret'
+                PAGE_DELETED: 'Side slettet'
+                PAGE_PREVIEW: Sideeksempel
+                PAGE_SAVED_AND_MOVED: 'Side gemt og flyttet'
+                PREVIEW_PAGE: 'Forhåndsvis side'
+                PUBLISH_ON: 'Publicer d.'
+                RESET_CONTENT_FROM: 'Nulstil indhold fra:'
+                RESET_FROM: 'Nulstil fra {language}'
+                RESET_TRANSLATION: 'Nulstil oversættelse'
+                SAVED_BY_PEER: '{user} gemte denne side'
+                SAVED_BY_PEER_ANON: 'En anden bruger gemte denne side'
+                SAVE_AS_LANGUAGE: 'Gem som {language}'
+                THE_FOLDER_NAME_ON_DISK_URL_SLUG: 'Mappenavnet på disken (URL slug)'
+                TOGGLE_PAGE_NAVIGATOR: 'Skift sidenavigering'
+                UNPUBLISH_ON: 'Afpublicer d.'
+                WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Skriv dit markdown-indhold her...'
+            EDIT_PAGE: 'Rediger side'
+            FRONTMATTER: Frontmatter
+            HEADER_MODIFIED: Ændret
+            HEADER_PARENT: Forælder
+            HEADER_STATUS: Status
+            HEADER_TEMPLATE: Skabelon
+            HEADER_TITLE: Titel
+            INFO_DATE: Dato
+            INFO_LANGUAGE: Sprog
+            INFO_MODIFIED: Ændret
+            INFO_ORDER: Rækkefølge
+            INFO_PUBLISHED: Udgivet
+            INFO_PUBLISH_ON: 'Udgiv den'
+            INFO_ROUTABLE: Routable
+            INFO_ROUTE: Rute
+            INFO_SLUG: Slug
+            INFO_TEMPLATE: Skabelon
+            INFO_UNPUBLISH_ON: 'Fjern udgivelse den'
+            INFO_VISIBLE: 'Synlig i navigation'
+            LOADED_OF: '{n, plural, one {# indlæst} other {# indlæst}} af {total}'
+            LOADING: 'Indlæser sider...'
+            LOADING_CHUNK: 'Indlæser rækker {from}–{to}…'
+            MODE_EXPERT: Ekspert
+            MODE_NORMAL: Normal
+            MOVED: 'Flyttede „{title}“'
+            MOVE_FAILED: 'Kunne ikke flytte siden'
+            NEW:
+                ADD_PAGE_GRAV_ADMIN: 'Tilføj side — Grav Admin'
+                CONTINUE: Fortsæt
+                CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: 'Styrer om denne side vises i navigationsmenuer'
+                FAILED_TO_CREATE: 'Kunne ikke oprette side'
+                FAILED_TO_LOAD_PAGE_TEMPLATES: 'Kunne ikke indlæse skabeloner for siden'
+                FILTER_PAGES: 'Filtrér sider...'
+                FOLDER_CREATED: 'Mappen »{title}« er oprettet'
+                FOLDER_DETAILS: Mappeoplysninger
+                FOLDER_NAME: Mappenavn
+                LOADING_TEMPLATES: 'Indlæser skabeloner...'
+                MODULE_CREATED: 'Modulet »{title}« er oprettet'
+                MY_NEW_PAGE: 'Min nye side'
+                ORDERING: Sortering
+                ORDERING_HELP_FOLDER: 'Tilføjer et numerisk præfiks, der angiver denne mppes placering blandt dens søskende.'
+                ORDERING_HELP_MODULE: 'Tilføjer et numerisk præfiks, der angiver dette moduls placering i dens modulære forælder.'
+                ORDERING_NONE: Ingen
+                PAGE_CREATED: 'Siden »{title}« er oprettet'
+                PAGE_DETAILS: Sideoplysninger
+                PAGE_TEMPLATE: Sideskabelon
+                PAGE_TITLE: Sidetitel
+                PARENT_PAGE: Forældreside
+                ROOT: '<root> /'
+                URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-sikkert mappenavn for denne side'
+                VISIBLE: Synlig
+            NO_MATCH: 'Ingen sider matcher din søgning'
+            NO_PAGES: 'Ingen sider fundet'
+            NO_SEARCH_RESULTS: 'Ingen sider matcher din søgning'
+            PAGES_GRAV_ADMIN: 'Sider — Grav Admin'
+            PAGES_MILLER_VIEW:
+                DRAFT_UNPUBLISHED: 'Kladde (ikke udgivet)'
+                DROP_HERE: 'Slip her'
+                FOLDER_ORDER: Mappe-rækkefølge
+                HAS_CHILDREN: 'Har undersider'
+                SUMMARY: Resumé
+                VISIBLE: Synlig
+            PAGES_TREE_VIEW:
+                FAILED_TO_REORGANIZE_PAGES: 'Kunne ikke omorganisere sider'
+                NO_PAGES_MATCH: 'Ingen sider matcher „{query}“'
+                SEARCHING: Søger…
+            PAGE_COUNT: '{n, plural, one{# side} other{# sider}}'
+            PAGE_INFO: Sideinformation
+            PUBLISH: Udgiv
+            PUBLISHED: Udgivet
+            RAW_HEADER: 'Rå side-header (JSON)'
+            REORDERED: 'Omorganiseret „{title}“'
+            REORDER_DONE: Udført
+            REORDER_EXIT_TITLE: 'Afslut omorganiserings-tilstand'
+            REORDER_FAILED: 'Kunne ikke omorganisere'
+            REORDER_LOADING: 'Indlæser stadig hele listen — prøv igen om et øjeblik.'
+            REORDER_LOADING_ALL: 'Indlæser alle bidder, så omorganisering kan påvirke hele listen…'
+            REORDER_MOVE: Flyt
+            REORDER_SAME_PARENT: 'Kan kun omorganisere sider under samme forælder. Brug træ-visning til at flytte på tværs af forældre.'
+            REORDER_START_TITLE: 'Omorganiser sider'
+            SAVED: 'Side gemt'
+            SAVE_FAILED: 'Kunne ikke gemme siden'
+            SEARCH_PLACEHOLDER: 'Søg efter sider...'
+            SORT_DATE_NEWEST: 'Dato (nyeste)'
+            SORT_NEWEST: Nyeste
+            SORT_OLDEST: Ældste
+            SORT_ORDER: Rækkefølge
+            SORT_TITLE_AZ: 'Titel A-Å'
+            SORT_TITLE_ZA: 'Titel Å-A'
+            STATS_PUBLISHED: '{n} udgivet'
+            STATS_TOTAL: '{n} i alt'
+            STATS_UNPUBLISHED: '{n} ikke udgivet'
+            SUBTITLE: 'Administrer dit websteds indhold og struktur'
+            TITLE: Sider
+            UNPUBLISH: 'Fjern udgivelse'
+            VIEW_COLUMNS: Kolonner
+            VIEW_LIST: Liste
+            VIEW_TREE: Træ
+        PAGES_CONFIGURATION: Sidekonfiguration
+        PAGES_FALLBACK_ONLY: 'Kun fallback for sider'
+        PAGES_FALLBACK_ONLY_HELP: "Kun 'fallback' for at finde sideindhold gennem understøttede sprog. Standardadfærd er at vise ethvert fundet sprog, hvis det aktive sprog mangler"
+        PAGES_TYPE: Frontend-sidetype
+        PAGES_TYPE_HELP: 'Denne indstilling aktiverer Flex Object-sider på frontenden. Admin Flex Pages kræver Flex Objects-pluginnet'
+        PAGE_ACCESS: Sideadgang
+        PAGE_ACCESS_HELP: 'Brugere med følgende adgangstilladelser kan få adgang til siden.'
+        PAGE_AUTHORS: Sideforfattere
+        PAGE_AUTHORS_HELP: "Medlemmer af Sideforfattere har adgang på ejerniveau til denne side, som defineret i den særlige 'Forfattere'-sidegruppe."
+        PAGE_FILE: Sidetemplate
+        PAGE_FILE_HELP: 'Sidetemplets filnavn, og som standard visningsskabelonen for denne side'
+        PAGE_GROUPS: Sidegrupper
+        PAGE_GROUPS_HELP: 'Medlemmer af sidegrupper har særlig adgang til denne side.'
+        PAGE_INHERIT_PERMISSIONS: 'Arv tilladelser'
+        PAGE_INHERIT_PERMISSIONS_HELP: 'Arv ACL fra forældresiden.'
+        PAGE_MEDIA: Sidemedier
+        PAGE_PERMISSIONS: Sidetilladelser
+        PAGE_SUMMARY: 'Resumé af side'
+        PAGE_TYPES: Sidetyper
+        PAGE_TYPES_HELP: 'Bestemmer hvilke sidetyper Grav understøtter, og rækkefølgen bestemmer, hvilken type der skal faldes tilbage på, hvis anmodningen er tvetydig'
+        PAGE_VISIBILITY_REQUIRES_ACCESS: 'Menu-synlighed kræver adgang'
+        PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: 'Sæt til Ja hvis siden kun skal vises i menuer, hvis brugeren har adgang til dem.'
+        PAGINATION:
+            PAGE_OF: 'Side {current} af {total}'
+        PARAMETER_SEPARATOR: Parameter-separator
+        PARAMETER_SEPARATOR_HELP: 'Separator for overførte parametre, som kan ændres til Apache på Windows'
+        PARENT: Forælder
+        PASSWORD: Adgangskode
+        PASSWORD_FIELD:
+            PASSWORD_REQUIREMENTS: 'Krav til adgangskode'
+            PASSWORD_STRENGTH: Adgangskodestyrke
+            REQUIREMENTS: Krav
+        PASSWORD_VALIDATION_MESSAGE: 'Adgangskoden skal indeholde mindst ét tal samt ét stort og ét lille bogstav, og bestå af mindst 8 tegn'
+        PERMISSIONS: Tilladelser
+        PERMISSIONS_FIELD:
+            ADMIN_LEGACY: 'Admin (legacy)'
+            FAILED_TO_LOAD_PERMISSIONS: 'Kunne ikke indlæse tilladelser'
+            NOT_SET: 'Ikke angivet'
+        PLUGIN:
+            BACK_TO_DASHBOARD: 'Tilbage til kontrolpanel'
+            NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Intet indhold tilgængeligt for denne pluginside.'
+        PLUGINS:
+            BACK_TO_PLUGINS: 'Tilbage til plugins'
+            CHANGELOG: Ændringslog
+            CHECK_UPDATES: 'Søg efter opdateringer'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurationen blev ændret andetsteds. Genindlæs venligst.'
+            CONFIGURE: Konfigurer
+            ENABLE_PLUGIN: 'Aktiver plugin'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Kunne ikke søge efter opdateringer'
+            FAILED_TO_LOAD_PLUGINS: 'Kunne ikke indlæse plugins'
+            FAILED_TO_SAVE_CONFIGURATION: 'Kunne ikke gemme konfiguration.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Ingen konfigurationsmuligheder tilgængelige for dette plugin.'
+            PAGE_TITLE: '{name} — Plugins — Grav Admin'
+            PLUGINS_GRAV_ADMIN: 'Plugins — Grav Admin'
+            PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: 'Plugin ændret andetsteds — gem for at overskrive eller genindlæs'
+            PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: 'Plugin skal være aktiveret for at konfigurere.'
+            REMOVE_CONFIRM_MESSAGE: "Fjern {name}? Dette vil afinstallere plugin'et og slette dets filer. Konfigurationen bliver bevaret."
+            REMOVE_CONFIRM_TITLE: 'Fjern plugin?'
+            REMOVE_PLUGIN: 'Fjern plugin'
+            SEARCH_PLUGINS: 'Søg i plugins...'
+            SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Vælg et plugin for at se detaljer'
+            SYMLINKED: 'Symbolsk linket'
+            TITLE: Plugins
+        PLUGINS_TABLE:
+            NAME: Navn
+            NO_PLUGINS: 'Ingen plugins installeret'
+            PROTECTED_PLUGIN: 'Dette plugin kan ikke deaktiveres fra admin-next uden at låse dig selv ude.'
+            VERSION: Version
+        PLUGIN_PAGE_COMPONENT:
+            LOADING_PLUGIN_PAGE: 'Indlæser plugin-side...'
+        PLUGIN_STATUS: Plugin-status
+        PLUGIN_WIDGET_LOADER:
+            WIDGET_FAILED_TO_LOAD: 'Kunne ikke indlæse widget'
+        POPULARITY_WIDGET:
+            LAST_14_DAYS: 'Sidste 14 dage'
+            THIS_MONTH: 'Denne måned'
+            THIS_WEEK: 'Denne uge'
+        PREMIUM: Premium
+        PREVIEW: Forhåndsvisning
+        PROCESS: Behandling
+        PROCESS_HELP: 'Styr hvordan sider behandles. Kan indstilles pr. side i stedet for globalt'
+        PROXY_CERT: 'Sti til proxy-certifikat'
+        PROXY_CERT_HELP: 'Lokal sti til mappen, der indeholder proxy-certifikatets pem-fil'
+        PROXY_URL: Proxy-URL
+        PROXY_URL_HELP: 'Indtast proxy-VÆRT eller IP og PORT'
+        PUBLISH: Udgiv
+        PUBLISHED: Udgivet
+        PUBLISHED_DATE: Udgivelsesdato
+        PUBLISHED_DATE_HELP: 'Kan angive en dato for automatisk udgivelse.'
+        PUBLISHED_HELP: 'Som standard er en side udgivet, medmindre du eksplicit indstiller published: false, eller via en publish_date i fremtiden, eller unpublish_date i fortiden'
+        PUBLISHING: Udgivelse
+        PWD_REGEX: Adgangskode-regex
+        PWD_REGEX_HELP: 'Som standard: Adgangskoden skal indeholde mindst ét tal, ét stort og ét lille bogstav, samt mindst 8 eller flere tegn'
+        PWD_RULES: 'Regler for adgangskode'
+        PWD_RULES_HELP: 'Brugerdefinerede valideringsregler for adgangskoder. Hver regel har et ID, en brugervenlig etiket og et regulært udtryk, som adgangskoden skal matche.'
+        PWD_RULES_ID: ID
+        PWD_RULES_LABEL: Etiket
+        PWD_RULES_PATTERN: Regex-mønster
+        READ: Læs
+        READ_FILE_ALLOWED_EXTENSIONS: 'Tilladte filendelser'
+        READ_FILE_ALLOWED_EXTENSIONS_HELP: 'Filendelser som <code>read_file()</code> kan læse (forskel på store og små bogstaver ignoreres, intet punktum foran). Standardindstillinger er kun for tekst/indholdsformater. Tilføjelse af eksekverbare eller konfigurationsformater (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) er risikabelt og anbefales ikke.'
+        READ_FILE_ALLOWED_STREAMS: 'Tilladte streams'
+        READ_FILE_ALLOWED_STREAMS_HELP: 'Stream-skemaer som <code>read_file()</code> kan løse. Standard: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. Tilføjelse af brede streams som <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> eller <code>cache</code> eksponerer følsomme filer og frarådes kraftigt.'
+        READ_FILE_MAX_SIZE: 'Maks. filstørrelse (bytes)'
+        READ_FILE_MAX_SIZE_HELP: 'Filer større end dette returnerer <code>false</code> i stedet for at blive indlæst i hukommelsen. Standard er <code>1048576</code> (1 MB). Sæt til <code>0</code> for at deaktivere grænsen.'
+        READ_FILE_SECTION_HELP: "Begrænsninger for Twig-funktionen <code>read_file()</code>. Læsninger tvinges gennem Grav stream-URI'er og verificeres af et kanonisk-realpath-tjek mod de løste stream-rødder, så kodet eller symlinket traversal blokeres på filsystemlaget, uanset hvordan stien skrives."
+        READ_FILE_SECTION_TITLE: 'Twig read_file()'
+        REAUTH_MODAL:
+            PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Indtast venligst din adgangskode igen for at fortsætte. Dit arbejde er blevet gemt.'
+            SESSION_EXPIRED: 'Session udløbet'
+        RECENT_PAGES_WIDGET:
+            VIEW_ALL: 'Se alle'
+        REDIRECT: Side-omdirigering
+        REDIRECTS_AND_ROUTES: 'Omdirigeringer & Ruter'
+        REDIRECT_DEFAULT_CODE: 'Standard omdirigeringskode'
+        REDIRECT_DEFAULT_CODE_HELP: 'HTTP-statuskoden der skal bruges til omdirigeringer'
+        REDIRECT_DEFAULT_ROUTE: 'Omdiriger standardrute'
+        REDIRECT_DEFAULT_ROUTE_HELP: 'Omdiriger automatisk til en sides standardrute'
+        REDIRECT_HELP: 'Indtast en siderute eller ekstern URL som siden skal omdirigere til. f.eks. `/some/route` eller `http://somesite.com`'
+        REDIRECT_OPTION_301: '301 - Flyttet permanent'
+        REDIRECT_OPTION_302: '302 - Flyttet midlertidigt'
+        REDIRECT_OPTION_303: '303 - Se anden'
+        REDIRECT_OPTION_DEFAULT_REDIRECT: 'Brug standard omdirigeringskode'
+        REDIRECT_OPTION_NO_REDIRECT: 'Ingen omdirigering'
+        REDIRECT_TRAILING_SLASH: 'Omdiriger skråstreg til sidst'
+        REDIRECT_TRAILING_SLASH_HELP: "Udfør en 301-omdirigering i stedet for transparent håndtering af URI'er med skråstreg til sidst."
+        REDIS_DATABASE: 'Redis Database-ID'
+        REDIS_DATABASE_HELP: 'Redis-instansens database-ID'
+        REDIS_PASSWORD: 'Redis adgangskode/hemmelighed'
+        REDIS_PORT: 'Redis port'
+        REDIS_PORT_HELP: 'Redis-serverens port'
+        REDIS_SERVER: Redis-server
+        REDIS_SERVER_HELP: 'Redis-serverens adresse'
+        REDIS_SOCKET: Redis-socket
+        REDIS_SOCKET_HELP: Redis-socketen
+        REGULAR: Almindelig
+        REMOVE: Fjern
+        RESET:
+            BACK_TO_SIGN_IN: 'Tilbage til log ind'
+            CONFIRM_PASSWORD: 'Bekræft adgangskode'
+            INVALID_LINK: 'Ugyldigt nulstillingslink.'
+            NEW_PASSWORD_FOR: 'Vælg en ny adgangskode til **{username}**.'
+            PASSWORDS_DO_NOT_MATCH: 'Adgangskoderne er ikke ens'
+            PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'Adgangskode nulstillet. Log venligst ind.'
+            RESETTING: Nulstiller...
+            RESET_PASSWORD: 'Nulstil adgangskode'
+            RESET_PASSWORD_GRAV_ADMIN: 'Nulstil adgangskode — Grav Admin'
+            THIS_RESET_LINK_IS_MISSING_REQUIRED: 'Dette nulstillingslink mangler påkrævede parametre. Anmod om et nyt fra siden til glemt adgangskode.'
+            UNABLE_TO_CONNECT_TO_SERVER: 'Kunne ikke oprette forbindelse til serveren.'
+        REVERSE_PROXY: 'Reverse Proxy'
+        REVERSE_PROXY_HELP: "Aktivér dette, hvis du er bag en reverse proxy, og du oplever problemer med URL'er, der indeholder forkerte porte"
+        ROOT: Rod
+        ROUTABLE: Routbar
+        ROUTABLE_HELP: 'Hvis denne side kan tilgås via en URL'
+        ROUTE: Route
+        ROUTE_ALIASES: Route-aliasser
+        ROUTE_CANONICAL: 'Kanonisk route'
+        ROUTE_DEFAULT: Standard-route
+        ROUTE_OVERRIDES: Route-overskrivninger
+        SANITIZE_SVG: 'Rens SVG'
+        SANITIZE_SVG_HELP: 'Fjerner al XSS-kode fra SVG'
+        SAVE: Gem
+        SAVING: Gemmer...
+        SCHEDULER: Scheduler
+        SCHEDULER_ACTIVE_TRIGGERS: 'Aktive triggere'
+        SCHEDULER_ADVANCED_FEATURES: 'Avancerede funktioner'
+        SCHEDULER_CONCURRENT_WORKERS: 'Samtidige processer'
+        SCHEDULER_CONCURRENT_WORKERS_HELP: 'Antal opgaver der kan køre samtidigt (1 = sekventiel).'
+        SCHEDULER_EMAIL: E-mail
+        SCHEDULER_EMAIL_HELP: 'E-mail som output skal sendes til. BEMÆRK: kræver at output-fil er angivet'
+        SCHEDULER_HEALTH_CHECK_CONFIG: 'Konfiguration af sundhedstjek'
+        SCHEDULER_HEALTH_CHECK_ENABLED: 'Aktivér sundhedstjek'
+        SCHEDULER_HEALTH_CHECK_ENABLED_HELP: 'Angiv et sundhedsstatus-endepunkt til overvågning.'
+        SCHEDULER_HEALTH_CHECK_PATH: 'Sti til sundhedstjek'
+        SCHEDULER_HEALTH_CHECK_PATH_HELP: 'URL-sti til endepunktet for sundhedstjek.'
+        SCHEDULER_HEALTH_STATUS: Sundhedsstatus
+        SCHEDULER_HISTORY: Jobhistorik
+        SCHEDULER_HISTORY_ENABLED: 'Aktivér jobhistorik'
+        SCHEDULER_HISTORY_ENABLED_HELP: 'Spor udførelseshistorik for alle jobs.'
+        SCHEDULER_HISTORY_RETENTION: 'Opbevaring af historik (dage)'
+        SCHEDULER_HISTORY_RETENTION_HELP: 'Hvor længe jobhistorik skal gemmes.'
+        SCHEDULER_JOBS: 'Brugerdefinerede scheduler-jobs'
+        SCHEDULER_OUTPUT: Outputfil
+        SCHEDULER_OUTPUT_HELP: 'Stien/filnavnet på outputfilen (fra roden af Grav-installationen)'
+        SCHEDULER_OUTPUT_TYPE: Outputtype
+        SCHEDULER_OUTPUT_TYPE_HELP: 'Enten tilføj til samme fil ved hver kørsel, eller overskriv filen ved hver kørsel'
+        SCHEDULER_QUEUE_CONFIG: Køkonfiguration
+        SCHEDULER_QUEUE_MAX_SIZE: 'Maksimal køstørrelse'
+        SCHEDULER_QUEUE_MAX_SIZE_HELP: 'Maksimalt antal jobs, der kan køes.'
+        SCHEDULER_QUEUE_PATH: 'Sti til kø-lagring'
+        SCHEDULER_QUEUE_PATH_HELP: 'Hvor køede jobs skal gemmes.'
+        SCHEDULER_RETRY_BACKOFF: 'Strategi for tilbagegang ved genforsøg'
+        SCHEDULER_RETRY_BACKOFF_HELP: 'Hvordan forsinkelsen mellem genforsøg beregnes.'
+        SCHEDULER_RETRY_CONFIG: 'Konfiguration af genforsøg'
+        SCHEDULER_RETRY_ENABLED: 'Aktivér genforsøg for job'
+        SCHEDULER_RETRY_ENABLED_HELP: 'Genforsøg automatisk fejlede jobs.'
+        SCHEDULER_RETRY_MAX_ATTEMPTS: 'Maksimalt antal genforsøg'
+        SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: 'Maksimalt antal forsøg på at genstarte et mislykket job.'
+        SCHEDULER_RUNAT: 'Kør ved'
+        SCHEDULER_RUNAT_HELP: "Cron-formateret 'at' syntaks. BEMÆRK: Alle tider er UTC!"
+        SCHEDULER_STATUS: Scheduler-status
+        SCHEDULER_USAGE_EXAMPLES: Brugseksempler
+        SCHEDULER_WEBHOOK_CONFIG: Webhook-konfiguration
+        SCHEDULER_WEBHOOK_ENABLED: 'Aktivér webhook-udløsere'
+        SCHEDULER_WEBHOOK_ENABLED_HELP: 'Tillad udløsning af scheduler via HTTP-webhook.'
+        SCHEDULER_WEBHOOK_PATH: Webhook-sti
+        SCHEDULER_WEBHOOK_PATH_HELP: 'URL-sti til webhook-endpointet.'
+        SCHEDULER_WEBHOOK_TOKEN: Webhook-sikkerhedstoken
+        SCHEDULER_WEBHOOK_TOKEN_HELP: 'Hemmelig token til godkendelse af webhook-anmodninger. Hold denne hemmelig!'
+        SCHEDULER_WORKER_CONFIG: Worker-konfiguration
+        SEARCH: Søg
+        SECURITY: Sikkerhed
+        SECURITY_CHECK:
+            USER_FOLDER_EXPOSED_BODY: 'Filer under user/data, user/accounts og user/config kan downloades direkte over HTTP — inklusive certifikater, nøgler, tokens og databaser. Dette betyder normalt, at din webserver ikke anvender Gravs .htaccess-regler.'
+            USER_FOLDER_EXPOSED_LEARN_MORE: 'Sådan sikrer du din webserver'
+            USER_FOLDER_EXPOSED_TITLE: 'Sikkerhedsrisiko: dine brugerdatamapper er tilgængelige fra nettet'
+        SESSION: Session
+        SESSION_DOMAIN: Sessionsdomæne
+        SESSION_DOMAIN_HELP: 'Brug kun hvis du omskriver websitets domæne, for eksempel i en Docker-container.'
+        SESSION_ENABLED_HELP: 'Aktivér sessionsunderstøttelse i Grav'
+        SESSION_HTTPONLY: 'Kun HTTP'
+        SESSION_HTTPONLY_HELP: 'Hvis sand, angiver det, at cookies kun skal bruges over HTTP, og at ændring via JavaScript ikke er tilladt'
+        SESSION_INITIALIZE: 'Initialisér session'
+        SESSION_INITIALIZE_HELP: 'Får Grav til at starte en session. Denne funktion er nødvendig for at brugerinteraktion kan fungere, såsom login, formularer osv. Admin-pluginnet påvirkes ikke af denne indstilling.'
+        SESSION_NAME_HELP: 'En identifikator der bruges til at danne navnet på sessions-cookien'
+        SESSION_PATH: Sessions-sti
+        SESSION_PATH_HELP: 'Brug kun denne hvis du omskriver webstedets sti, for eksempel i en Docker-container.'
+        SESSION_SAMESITE: 'Session SameSite-attribut'
+        SESSION_SAMESITE_HELP: 'Lax|Strict|None. Se https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite for mere info'
+        SESSION_SECURE: Sikker
+        SESSION_SECURE_HELP: 'Hvis sand, angiver det at kommunikation for denne cookie skal ske over en krypteret transmission. ADVARSEL: Aktivér kun dette på websteder der udelukkende kører over HTTPS'
+        SESSION_SECURE_HTTPS: 'Sikker (HTTPS)'
+        SESSION_SECURE_HTTPS_HELP: "Sæt sessionen til sikker på HTTPS men ikke på HTTP. Har ingen effekt hvis ovenstående 'Sikker'-indstilling er sat til sand. Sæt til falsk hvis dit websted hopper mellem HTTP og HTTPS."
+        SESSION_SPLIT: Sessionsopdeling
+        SESSION_SPLIT_HELP: 'Uafhængig opdeling af sessioner mellem webstedet og andre plugins (f.eks. admin)'
+        SESSION_UNIQUENESS: 'Unik streng'
+        SESSION_UNIQUENESS_HELP: 'MD5-hash af Gravs rodsti, dvs. `GRAV_ROOT` (standard) eller baseret på den tilfældige `security.salt`-streng.'
+        SETTINGS:
+            1_SECOND: '1 sekund'
+            2_SECONDS: '2 sekunder'
+            ACCENT_COLOR: Accentfarve
+            ADD_LINK: 'Tilføj link'
+            ADMIN_INTERFACE_LANGUAGE: 'Sprog til admin-grænseflade'
+            ADMIN_LANGUAGE: Admin-sprog
+            ADMIN_LANGUAGE_DESC: 'Sprog til labels, menuer og beskeder ({count} strenge indlæst)'
+            ADMIN_PREFERENCES_AND_APPEARANCE: 'Admin-præferencer og udseende'
+            APPEARANCE: Udseende
+            AUTHENTICATED_AS: 'Godkendt som'
+            AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: 'Gem automatisk når du forlader et felt'
+            AUTO_SAVE: 'Automatisk gem'
+            AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: 'Automatisk gem og fortryd-adfærd for formularredigeringsfelter'
+            BRANDING: Branding
+            BRANDING_DESC: 'Logo og brandtekst vist overalt i administratoren.'
+            CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: 'Vælg mellem lyst og mørkt udseende'
+            CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: 'Vælg hvordan logoet skal vises'
+            COLLAB_DESCRIPTION: 'Live redigering med flere brugere og tilstedeværelsesstatus. Kræver `sync`-plugin på serveren. Eksperimentel.'
+            COLOR_MODE: Farvetilstand
+            CONNECTION: Forbindelse
+            CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: 'Tilpas logoet, der vises i sidepanelet og på login-siden'
+            CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: 'Tilpas administratorens udseende og fornemmelse'
+            CUSTOM_IMAGE: 'Brugerdefineret billede'
+            CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: 'Brugerdefinerede genveje vist i den øverste menulinje'
+            CUSTOM_TEXT: 'Brugerdefineret tekst'
+            DARK: Mørk
+            DARK_LOGO: 'Mørkt logo'
+            DARK_LOGO_REMOVED: 'Mørkt logo fjernet.'
+            DARK_LOGO_UPLOADED: 'Mørkt logo uploadet.'
+            DARK_MODE_LOGO: 'Logo til mørk tilstand'
+            DEFAULT_APPEARANCE: Standardudseende
+            DEFAULT_COLOR_APPEARANCE_DESC: 'Standardfarveudseende for nye brugere.'
+            DEFAULT_FORM_EDITOR_DENSITY: 'Standardtæthed for formularredigering.'
+            DEFAULT_INTERFACE_LANGUAGE_DESC: 'Standard-grænsefladesprog for nye brugere.'
+            DEFAULT_LANGUAGE: Standardsprog
+            DEFAULT_PAGES: Standardsider
+            DEFAULT_PRIMARY_COLOR_DESC: 'Standard primærfarve til knapper, links og fremhævninger.'
+            DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: 'Standardindstillinger for sidebrowseren'
+            DEFAULT_TEXT_SIZE_DESC: 'Standardtekststørrelse for admin-brugerfladen.'
+            DEFAULT_TYPEFACE_DESC: 'Standardskrifttype for admin-brugerfladen.'
+            DEFAULT_VIEW: Standardvisning
+            DEUTSCH: Tysk
+            EDITING: Redigering
+            EDITOR_HEADING: Editor
+            EDITOR_HEIGHT: Editor-højde
+            EDITOR_HEIGHT_AUTO: Auto
+            EDITOR_HEIGHT_DESC: 'Lad editoren vokse med dit indhold, eller begræns den til en fast højde med sin egen rullebjælke.'
+            EDITOR_HEIGHT_FIXED: Fast
+            EDITOR_MODE: Editortilstand
+            EDITOR_SECTION_DESC: 'Hvordan Markdown-editoren opfører sig, mens du skriver.'
+            ENGLISH: Engelsk
+            ENVIRONMENT: Miljø
+            ESPA_OL: Spansk
+            EXTERNAL: Ekstern
+            FAILED_TO_REMOVE_LOGO: 'Kunne ikke fjerne logo.'
+            FAILED_TO_RESET_PREFERENCES: 'Kunne ikke nulstille præferencer.'
+            FAILED_TO_SAVE_LOGO_MODE: 'Kunne ikke gemme logotilstand.'
+            FAILED_TO_SAVE_LOGO_TEXT: 'Kunne ikke gemme logotekst.'
+            FAILED_TO_SAVE_SITE_DEFAULTS: 'Kunne ikke gemme webstedsstandarder.'
+            FOLLOW_OS: 'Følg operativsystem'
+            FONT: Skrifttype
+            FONT_SIZE: Skriftstørrelse
+            FONT_SIZE_LARGE: Stor
+            FONT_SIZE_NORMAL: Normal
+            FONT_SIZE_SMALL: Lille
+            FONT_SIZE_XLARGE: 'Ekstra stor'
+            FRAN_AIS: Français
+            GRAV_LOGO: Grav-logo
+            GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: 'Gruppér hurtige feltændringer til ét enkelt fortryd-trin'
+            HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: 'Hvordan sider vises som standard'
+            HUE: Farvetone
+            ITALIANO: Italiano
+            ITEMS_PER_PAGE: 'Elementer pr. side'
+            LANGUAGE_CHANGED: 'Sprog ændret til {language}'
+            LIGHT: Lys
+            LIGHT_LOGO: 'Lyst logo'
+            LIGHT_LOGO_REMOVED: 'Lyst logo fjernet.'
+            LIGHT_LOGO_UPLOADED: 'Lyst logo uploadet.'
+            LIGHT_MODE_LOGO: 'Logo til lys tilstand'
+            LOGO_TEXT: Logotekst
+            LOGO_TYPE: Logotype
+            LOGO_UPLOAD_FAILED: 'Logo-upload mislykkedes.'
+            MENUBAR_LINKS: Menulinje-links
+            NEDERLANDS: Nederlands
+            NONE_1_FIELD_1_UNDO: 'Ingen (1 felt = 1 fortryd)'
+            NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: 'Antal sider vist i listevisning'
+            'OFF': Fra
+            'ON': Til
+            OTHER_LIST_VIEWS: 'Andre listevisninger'
+            OTHER_LIST_VIEWS_DESC: 'Standardlayout for bruger-, plugin- og temalister'
+            PLUGIN_ON_THE_SERVER_EXPERIMENTAL: 'plugin på serveren. Eksperimentelt.'
+            PORTUGU_S: Português
+            PREFERENCES_RESET_RELOAD_TO_APPLY: 'Indstillinger nulstillet. Genindlæs for at anvende.'
+            PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: 'Primær farve brugt til knapper, links og highlights'
+            REAL_TIME_COLLABORATION: 'Samarbejde i realtid'
+            REMOVE_LINK: 'Fjern link'
+            RESET: Nulstil
+            RESET_ALL_PREFERENCES: 'Nulstil alle indstillinger'
+            RESET_PREFERENCES: 'Nulstil indstillinger'
+            RESET_PREFERENCES_MSG: 'Fjern alle dine personlige overskrivninger og vend tilbage til sidens standardindstillinger?'
+            RESET_TO_SITE_DEFAULTS: 'Nulstil mine indstillinger til sidens standard'
+            REVERT_CHANGES: 'Fortryd ændringer'
+            SATURATION: Mætning
+            SAVED_AUTOMATICALLY: 'Gemt automatisk'
+            SAVE_SITE_DEFAULTS: 'Gem sidens standardindstillinger'
+            SERVER_CONNECTION_DETAILS: 'Server forbindelsesdetaljer'
+            SERVER_URL: Server-URL
+            SETTINGS_GRAV_ADMIN: 'Indstillinger — Grav Admin'
+            SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: 'Vis en fortryd-knap i editorens værktøjslinje'
+            SITE_DEFAULTS: 'Sidens standardindstillinger'
+            SITE_DEFAULTS_DESCRIPTION: 'Indstillingerne nedenfor gælder for alle administratorbrugere som baseline. Tier B-elementer (udseende, sider, sprog, editor) kan overskrives i hver brugers egne indstillinger ovenfor. Tier A-elementer (redigering, menulinje) er for hele sitet og kan ikke overskrives.'
+            SITE_DEFAULTS_SAVED: 'Webstedsstandarder gemt. Alle brugere vil se disse ved næste genindlæsning.'
+            SITE_SETTINGS_DESC: 'Standardpræferencer for nye brugere samt webstedsomfattende adfærd. Ændringer træder i kraft ved næste genindlæsning for de berørte brugere.'
+            SITE_SETTINGS_HEADING: Webstedsindstillinger
+            SITE_WIDE_ONLY: 'Kun for hele webstedet'
+            STICKY_TOOLBAR: 'Fastgjort værktøjslinje'
+            STICKY_TOOLBAR_DESC: 'Hold formateringsværktøjslinjen og knappen Vis eksempel fastgjort i visningen, mens du ruller.'
+            TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: 'Tekststørrelse anvendt i hele administratormodulet'
+            THE_FIRST_LETTER_BECOMES_THE_ICON: 'Det første bogstav bliver ikonet'
+            TOOLBAR_UNDO_BUTTON: 'Fortryd-knap i værktøjslinjen'
+            TYPEFACE_USED_THROUGHOUT_THE_ADMIN: 'Skrifttype anvendt i hele administratormodulet'
+            UNDO_BATCH_WINDOW: 'Vindue for batch-fortrydelse'
+            USED_ON_DARK_BACKGROUNDS: 'Anvendes på mørke baggrunde'
+            USED_ON_LIGHT_BACKGROUNDS: 'Anvendes på lyse baggrunde'
+            USERS_MAY_OVERRIDE: 'Brugere må tilsidesætte'
+        SETUP:
+            3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tegn: bogstaver, tal, bindestreger, understregninger'
+            ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto oprettet — velkommen til Grav'
+            CHECKING_SERVER: 'Kontrollerer server…'
+            CONFIRM_PASSWORD: 'Bekræft adgangskode'
+            CREATE_ADMINISTRATOR: 'Opret administrator'
+            CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: 'Opret din administratorkonto for at komme i gang'
+            CREATING_ACCOUNT: 'Opretter konto...'
+            ENTER_A_VALID_EMAIL_ADDRESS: 'Indtast en gyldig e-mailadresse'
+            ENVIRONMENT: Miljø
+            FULL_NAME: 'Fulde navn'
+            OPTIONAL: (valgfri)
+            PASSWORDS_DO_NOT_MATCH: 'Adgangskoderne stemmer ikke overens'
+            PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: 'Ret fejlene ovenfor og prøv igen'
+            POWERED_BY_GRAV_CMS: 'Drevet af Grav CMS'
+            SERVER_CONFIGURATION: Serverkonfiguration
+            SERVER_URL: Server-URL
+            SETUP_GRAV_ADMIN: 'Opsætning — Grav Admin'
+            SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: 'Opsætningen er allerede gennemført. Log venligst ind.'
+            UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: 'Kunne ikke oprette forbindelse til serveren. Kontroller din server-URL og prøv igen.'
+            WELCOME_TO_GRAV: 'Velkommen til Grav'
+        SHORT: Kort
+        SHORT_DATE_FORMAT: 'Kort datoformat'
+        SHORT_DATE_FORMAT_HELP: 'Indstil det korte datoformat, der kan bruges af temaer'
+        SHUTDOWN_CLOSE_CONNECTION: 'Luk forbindelse ved nedlukning'
+        SHUTDOWN_CLOSE_CONNECTION_HELP: 'Luk forbindelsen før der kaldes på onShutdown(). false til fejlfinding'
+        SIGN_OUT: 'Log ud'
+        SITE: Side
+        SITE_ACCESS: Webstedsadgang
+        SITE_DEFAULT_LANG: Standardsprog
+        SITE_DEFAULT_LANG_HELP: 'Standardsprog der skal bruges af temaets <HTML>-tag'
+        SITE_DEFAULT_LANG_PLACEHOLDER: 'Standardsprog der skal bruges af temaets <HTML>-tag'
+        SITE_TITLE: Webstedstitel
+        SITE_TITLE_HELP: 'Standardtitel for dit websted, ofte brugt i temaer'
+        SITE_TITLE_PLACEHOLDER: 'Webstedets overordnede titel'
+        SLUG: Slug
+        SLUG_HELP: "Slug-variablen giver dig mulighed for specifikt at indstille sidens del af URL'en"
+        SLUG_VALIDATE_MESSAGE: 'Et slug må kun indeholde små alfanumeriske tegn og bindestreger'
+        SORTABLE_PAGES: 'Sorterbare sider:'
+        SSL_ENABLE_PROXY: 'Aktivér proxy-server'
+        SSL_VERIFY_HOST: 'Fjern-bekræft vært'
+        SSL_VERIFY_HOST_HELP: 'Nogle kan fejle ved bekræftelse af SSL-certifikater'
+        SSL_VERIFY_PEER: 'Fjern-bekræft peer'
+        SSL_VERIFY_PEER_HELP: 'Nogle kan fejle ved bekræftelse af SSL-certifikater'
+        STABLE: Stabil
+        STATS_WIDGET:
+            ACTIVE_COUNT: '({n} aktiv)'
+            ACTIVE_THEME: 'Aktivt tema'
+            UPDATE_COUNT: '{n, plural, one{# opdatering} other{# opdateringer}}'
+        STRICT_BLUEPRINT_COMPAT: Blueprint-kompatibilitet
+        STRICT_BLUEPRINT_COMPAT_HELP: 'Aktiverer bagudkompatibel streng understøttelse af blueprints. Hvis slået fra, vil den nye adfærd medføre, at formularvalidering fejler, hvis der findes ekstra data, som ikke er defineret i blueprintet.'
+        STRICT_TWIG_COMPAT: Twig-kompatibilitet
+        STRICT_TWIG_COMPAT_HELP: 'Aktiverer forældet Twig autoescape-indstilling. Når den er deaktiveret, kræves |raw-filteret for at udskrive HTML, da Twig automatisk vil escape output'
+        STRICT_YAML_COMPAT: YAML-kompatibilitet
+        STRICT_YAML_COMPAT_HELP: 'Falder tilbage til Symfony 2.4 YAML-parser, hvis Native eller 3.4-parseren fejler'
+        SUMMARY_SIZE: Resumé-størrelse
+        SUMMARY_SIZE_HELP: 'Antallet af tegn fra en side, der skal bruges som indholdsresumé'
+        SUPPORTED: Understøttet
+        SUPPORTED_HELP: "Kommasepareret liste med 2-bogstavs sprogkoder (for eksempel 'en,fr,de')"
+        SYNC:
+            EDITOR_LOCK_NOTICE:
+                BUILTIN_MARKDOWN_EDITOR: 'den indbyggede markdown-editor'
+                LOCKED: 'Skrivebeskyttet — {owner} redigerer med **{editor}**. Blandede editortyper kan ikke redigere samtidigt; [skift din editor-præference]({href}) for at samarbejde live.'
+                SWITCH_YOUR_EDITOR_PREFERENCE: 'skift din editor-præference'
+                TO_COLLABORATE_LIVE: 'for at samarbejde live.'
+        SYSLOG_FACILITY: Syslog-facilitet
+        SYSLOG_FACILITY_HELP: 'Syslog-facilitet til output'
+        SYSLOG_TAG: Syslog-tag
+        SYSLOG_TAG_HELP: 'Syslog-tag til output'
+        SYSTEM:
+            COMING_SOON: 'Kommer snart'
+            SYSTEM_GRAV_ADMIN: 'System — Grav Admin'
+        SYSTEM_HEALTH_WIDGET:
+            BYTES_FREE: '{size} fri'
+            BYTES_USED: '{size} brugt'
+            CACHE: Cache
+            DISK: Disk
+            EVERYTHING_UP_TO_DATE: 'Alt er opdateret'
+            GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: 'Grav er installeret via symlink — opgrader manuelt.'
+            GRAV_UPDATE_AVAILABLE: 'Grav-opdatering tilgængelig'
+            MORE_COUNT: '+ {n} flere…'
+            PACKAGES_OUTDATED: '{n, plural, one{# pakke forældet} other{# pakker forældede}}'
+            PERCENT_USED: '{percent}% brugt'
+            SERVER: Server
+            UPDATES: Opdateringer
+            UPDATES_AVAILABLE_COUNT: '{n} tilgængelig'
+            UPDATE_ALL: 'Opdater alle'
+            UPGRADE_GRAV: 'Opgrader Grav'
+        TAXONOMIES: Taksonomier
+        TAXONOMY: Taksonomi
+        TAXONOMY_TYPES: Taksonomityper
+        TAXONOMY_TYPES_HELP: 'Taksonomityper skal defineres her, hvis du ønsker at bruge dem på sider'
+        TESTING: Tester
+        THEMES:
+            ACTIVATE: Aktiver
+            ACTIVATE_CONFIRM_MESSAGE: 'Vil du skifte det aktive webstedstema til {name}? Frontend-rendering vil bruge dette tema med det samme.'
+            ACTIVATE_CONFIRM_TITLE: 'Aktiver tema?'
+            ACTIVATE_THEME: 'Aktiver {name}'
+            ACTIVE_THEME: 'Aktivt tema'
+            BACK_TO_THEMES: 'Tilbage til temaer'
+            CHANGELOG: Ændringslog
+            CHECK_UPDATES: 'Søg efter opdateringer'
+            CLICK_TO_VIEW_FULL_SIZE: 'Klik for at se i fuld størrelse'
+            CONFIGURATION_WAS_MODIFIED_ELSEWHERE: 'Konfigurationen er blevet ændret et andet sted. Genindlæs venligst.'
+            CONFIGURE: Konfigurer
+            DELETE_ACTIVE_WARNING: 'I øjeblikket aktivt. Det anbefales at skifte tema først, før det slettes.'
+            FAILED_TO_CHECK_FOR_UPDATES: 'Kunne ikke søge efter opdateringer'
+            FAILED_TO_LOAD_THEMES: 'Kunne ikke indlæse temaer'
+            FAILED_TO_SAVE_CONFIGURATION: 'Kunne ikke gemme konfigurationen.'
+            NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: 'Ingen konfigurationsmuligheder tilgængelige for dette tema.'
+            PAGE_TITLE: '{name} — Temaer — Grav Admin'
+            REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} er det nuværende aktive tema. Hvis du fjerner det, vil webstedet stå uden et tema, indtil et andet aktiveres. Vil du fortsætte?'
+            REMOVE_CONFIRM_MESSAGE: 'Fjern {name}? Dette vil afinstallere temaet og slette dets filer.'
+            REMOVE_CONFIRM_TITLE: 'Fjern tema?'
+            REMOVE_THEME: 'Fjern tema'
+            SEARCH_THEMES: 'Søg i temaer...'
+            SELECT_A_THEME_TO_VIEW_DETAILS: 'Vælg et tema for at se detaljer'
+            SYMLINKED: Symlinket
+            THEMES_GRAV_ADMIN: 'Temaer — Grav Admin'
+            TITLE: Temaer
+        THEMES_TABLE:
+            NO_THEMES: 'Ingen temaer installeret'
+        THUMB: Miniature
+        TIME:
+            DAYS_AGO: 'for {n} dag siden'
+            HOURS_AGO: 'for {n}t siden'
+            JUST_NOW: 'lige nu'
+            MINUTES_AGO: 'for {n}m siden'
+        TIMEOUT: Timeout
+        TIMEOUT_HELP: 'Indstiller sessionens timeout i sekunder'
+        TIMEZONE: Tidszone
+        TIMEZONE_HELP: 'Overskriv serverens standard-tidszone'
+        TITLE: Titel
+        TOASTS:
+            ACTIVE_THEME_REMOVE_BLOCK: 'Kan ikke fjerne det aktive tema. Skift til et andet tema først.'
+            API_KEY_REVOKED: 'API-nøgle »{name}« er tilbagekaldt'
+            BACKUP_CREATED: 'Sikkerhedskopi oprettet ({size})'
+            CACHE_CLEARED: 'Cache ryddet ({scope})'
+            CONFIG_MODIFIED_ELSEWHERE: 'Konfigurationen er blevet ændret andetsteds — genindlæs for at se den seneste version'
+            CONFIG_SAVED: '{name} konfiguration gemt'
+            COPIED: '{label} kopieret'
+            COPY_FAILED: 'Kopiering mislykkedes: {detail}'
+            DEPENDENCY_INSTALLED: 'Plugin {slug} installeret (afhængighed)'
+            FILES_DELETE_FAILED: '{n, plural, one{Kunne ikke slette # fil} other{Kunne ikke slette # filer}}'
+            FILES_UPLOADED: '{n, plural, one{Uploadede # fil} other{Uploadede # filer}}'
+            FILE_DELETED: 'Slettede {name}'
+            FILE_DELETE_FAILED: 'Kunne ikke slette {name}'
+            FOLDER_CREATED: 'Mappe „{name}“ oprettet'
+            FORM_LABEL:
+                CONFIGURATION: Konfiguration
+                FLEX_OBJECT: 'Flex Objekt'
+                FORM: Formular
+                PAGE: Side
+                PLUGIN: Plugin
+                PLUGIN_PAGE: Plugin-side
+                THEME: Tema
+                USER: Bruger
+            GPM_REFRESHED: '{n, plural, =0{GPM opdateret — ingen opdateringer tilgængelige} one{GPM opdateret — # opdatering tilgængelig} other{GPM opdateret — # opdateringer tilgængelige}}'
+            GRAV_UPGRADED: 'Grav opgraderet til v{version}'
+            INSTALL_FAILED: 'Kunne ikke installere {slug}: {detail}'
+            ITEM_COPIED: 'Kopierede „{name}“ til „{target}“'
+            ITEM_DELETED: 'Slettede „{name}“'
+            ITEM_DELETE_FAILED: 'Kunne ikke slette „{name}“'
+            ITEM_MOVED: 'Flyttede „{name}“'
+            ITEM_REORDERED: 'Omarrangerede „{name}“'
+            ITEM_SAVED: '{name} gemt'
+            PACKAGES_UPDATED: '{n, plural, one{Opdaterede # pakke} other{Opdaterede # pakker}}'
+            PACKAGE_REMOVED: '{name} fjernet'
+            PACKAGE_REMOVE_FAILED: 'Kunne ikke fjerne {name}'
+            PACKAGE_UPDATED: '{name} opdateret'
+            PACKAGE_UPDATE_FAILED: 'Kunne ikke opdatere {name}: {detail}'
+            PAGE_PUBLISHED: '„{name}“ udgivet'
+            PAGE_PUBLISH_FAILED: 'Kunne ikke ændre udgivelsesstatus: {detail}'
+            PAGE_UNPUBLISHED: '„{name}“ afpubliceret'
+            PLUGIN_DISABLED: '{name} deaktiveret'
+            PLUGIN_DISABLE_FAILED: 'Kunne ikke deaktivere {name}: {detail}'
+            PLUGIN_ENABLED: '{name} aktiveret'
+            PLUGIN_ENABLE_FAILED: 'Kunne ikke aktivere {name}: {detail}'
+            PLUGIN_INSTALLED: 'Plugin {name} installeret'
+            PLUGIN_LOCKOUT_BLOCK: '{name} kan ikke deaktiveres fra admin-next — det ville låse dig ude.'
+            PLUGIN_REMOVED: '{name} fjernet'
+            PLUGIN_REMOVE_FAILED: 'Kunne ikke fjerne {name}: {detail}'
+            PLUGIN_REQUIRED_BLOCK: '{name} kan ikke fjernes — det kræves af admin-next.'
+            SAVED: Gemt
+            SAVED_AS_LANGUAGE: 'Gemt som {language}'
+            SAVE_FAILED: 'Kunne ikke gemme'
+            SAVE_FORM_FAILED: 'Kunne ikke gemme {form}'
+            THEME_ACTIVATED: '{name} er nu det aktive tema'
+            THEME_ACTIVATE_FAILED: 'Kunne ikke aktivere {name}: {detail}'
+            THEME_INSTALLED: 'Tema {name} installeret'
+            THEME_REMOVED: '{name} fjernet'
+            THEME_REMOVE_BLOCK: '{name} kan ikke fjernes.'
+            THEME_REMOVE_FAILED: 'Kunne ikke fjerne {name}: {detail}'
+            TOTP_CODE_REQUIRED: 'Indtast den 6-cifrede kode fra din authenticator'
+            TRANSLATION_CREATED: '{language} oversættelse oprettet'
+            TRANSLATION_RESET: '{target} nulstillet fra {source}'
+            UPDATE_FAILED: 'Opdatering fejlede: {detail}'
+            USER_CREATED: 'Bruger {username} oprettet'
+            USER_DELETED: 'Bruger {username} slettet'
+            USER_DELETE_FAILED: 'Kunne ikke slette bruger {username}'
+            USER_DISABLED: 'Bruger {username} deaktiveret'
+            USER_ENABLED: 'Bruger {username} aktiveret'
+            USER_SAVED: 'Bruger {username} gemt'
+            USER_STATE_FAILED: 'Kunne ikke ændre status for {username}: {detail}'
+        TOGGLE_DARK_MODE: 'Skift mørk tilstand'
+        TOGGLE_MENU: 'Skift menu'
+        TOOLS:
+            BACKUPS:
+                ACTION: Handling
+                BACKUP_CREATED_SUCCESSFULLY: 'Sikkerhedskopi oprettet'
+                BACKUP_DATE: 'Dato for sikkerhedskopi'
+                BACKUP_DELETED: 'Sikkerhedskopi slettet'
+                BACKUP_HISTORY: 'Historik over sikkerhedskopier'
+                BACKUP_NOW: 'Sikkerhedskopiér nu'
+                BACKUP_STATISTICS: 'Statistik for sikkerhedskopier'
+                CREATING: Opretter...
+                DELETE_BACKUP: 'Slet sikkerhedskopi'
+                FAILED_TO_CREATE_BACKUP: 'Kunne ikke oprette sikkerhedskopi'
+                FAILED_TO_DELETE_BACKUP: 'Kunne ikke slette sikkerhedskopi'
+                FAILED_TO_LOAD_BACKUPS: 'Kunne ikke indlæse sikkerhedskopier'
+                LOADING_BACKUPS: 'Indlæser sikkerhedskopier...'
+                NEWEST_BACKUP: 'Nyeste sikkerhedskopi'
+                NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: 'Ingen sikkerhedskopier fundet. Opret en for at komme i gang.'
+                NUMBER_OF_BACKUPS: 'Antal sikkerhedskopier'
+                NUMBER_OF_PROFILES: 'Antal profiler'
+                OLDEST_BACKUP: 'Ældste sikkerhedskopi'
+            BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'Sikkerhedskopier, planlægger, logfiler og diagnosticering'
+            DIRECT_INSTALL:
+                DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: 'Slip en .zip-fil her eller klik for at gennemse'
+                INSTALL_FROM_FILE: 'Installer fra fil'
+                INSTALL_FROM_URL: 'Installer fra URL'
+                ONLY_ZIP_FILES_ARE_SUPPORTED: 'Kun .zip-filer understøttes'
+                PACKAGE_INSTALLED_SUCCESSFULLY: 'Pakke blev installeret korrekt'
+                SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: 'Understøtter Grav-plugin- og temapakker'
+            LOGS:
+                100_LINES: '100 linjer'
+                200_LINES: '200 linjer'
+                25_LINES: '25 linjer'
+                50_LINES: '50 linjer'
+                ALL_LEVELS: 'Alle niveauer'
+                CRITICAL: Kritisk
+                EMERGENCY: Nød
+                FAILED_TO_LOAD_LOGS: 'Kunne ikke indlæse logfiler'
+                FAILED_TO_LOAD_LOG_FILES: 'Kunne ikke indlæse logfiler'
+                LOADING_LOGS: 'Indlæser logfiler...'
+                LOG_FILE: Logfil
+                MESSAGE: Besked
+                NOTICE: Bemærkning
+                REFRESH: Opdater
+                SEARCH_MESSAGES: 'Søg i beskeder...'
+                WARNING: Advarsel
+            REPORTS:
+                CONTENT_FIELD: 'indhold: {field}'
+                FAILED_TO_LOAD_REPORTS: 'Kunne ikke indlæse rapporter'
+                LOADING_REPORTS: 'Indlæser rapporter...'
+                NO_REPORTS_AVAILABLE: 'Ingen rapporter tilgængelige.'
+            REPORT_COMPONENT_WRAPPER:
+                LOADING_REPORT_COMPONENT: 'Indlæser rapportkomponent...'
+            SCHEDULER:
+                CRONTAB_INSTRUCTIONS: 'For at aktivere Scheduler-funktionaliteten skal du tilføje **Grav Scheduler** til dit systems crontab-fil for brugeren **{user}**. Kør kommandoen ovenfor fra terminalen for at tilføje den automatisk. Når den er gemt, skal du opdatere denne side for at se status.'
+                FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Kunne ikke indlæse scheduler-konfiguration.'
+                FAILED_TO_SAVE: 'Kunne ikke gemme'
+                GRAV_SCHEDULER: 'Grav Scheduler'
+                INFO_BANNER: 'Scheduler kan enten bruge systemets crontab eller webhook-udløsere til at udføre kommandoer. Webhooks anbefales til cloud-miljøer. Kun avancerede brugere bør konfigurere brugerdefinerede jobs. Fejlkonfiguration eller misbrug kan føre til sikkerhedssårbarheder.'
+                LOADING_SCHEDULER: 'Indlæser scheduler...'
+                NOT_ENABLED_FOR_USER: 'Ikke aktiveret for bruger:'
+                SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-konfiguration gemt'
+                SECURITY_WARNING: 'Kun avancerede brugere bør konfigurere brugerdefinerede scheduler-jobs. Forkert konfiguration kan forårsage ydelsesproblemer eller sikkerhedssårbarheder.'
+                WEBHOOK_ALTERNATIVE: 'Alternativt kan du installere **scheduler-webhook**-pluginet for at bruge webhook-baseret cron-afvikling, hvilket anbefales til cloud-miljøer, hvor adgang til systemets crontab ikke er tilgængelig.'
+            SYSTEM_INFO:
+                DISK_FREE_OF: '{free} ledig af {total}'
+                DISK_USAGE: Diskforbrug
+                DRIVER: Driver
+                FAILED_TO_LOAD_SYSTEM_INFO: 'Kunne ikke indlæse systeminformation'
+                GRAV_VERSION: Grav-version
+                LOADING_SYSTEM_INFO: 'Indlæser systeminformation...'
+                MAX_EXECUTION: 'Maks. eksekvering'
+                MAX_POST: 'Maks. POST'
+                MAX_UPLOAD: 'Maks. upload'
+                MEMORY_LIMIT: Hukommelsesgrænse
+                PHP_SAPI: 'PHP SAPI'
+                PHP_VERSION: PHP-version
+            TOOLS_GRAV_ADMIN: 'Værktøjer — Grav Admin'
+        TOP_BANNER:
+            PREVIOUS: Forrige
+            SITE_NOTIFICATION: Webstedsnotifikation
+        TOP_PAGES_WIDGET:
+            NO_VIEW_DATA_YET: 'Ingen visningsdata endnu'
+        TOP_PROGRESS_BAR:
+            WORKING: Arbejder
+        TRANSLATIONS: Oversættelser
+        TRANSLATIONS_FALLBACK: Oversættelses-fallback
+        TRANSLATIONS_FALLBACK_HELP: 'Fallback gennem understøttede oversættelser, hvis det aktive sprog ikke findes'
+        TWIG_3_COMPATIBILITY: 'Twig 3-kompatibilitet'
+        TWIG_3_COMPATIBILITY_HELP: 'Aktiver automatisk omskrivning til forældet Twig 1/2-syntaks, som ikke fungerer i Twig 3 (f.eks. <code>for ... if ...</code> guards).'
+        TWIG_CACHING: Twig-caching
+        TWIG_CACHING_HELP: 'Styr Twig-caching-mekanismen. Behold dette aktiveret for den bedste ydeevne.'
+        TWIG_CONTENT: 'Twig i indhold'
+        TWIG_CONTENT_CONFIG_ACCESS: 'Tillad adgang til konfigurationsvariabler i Twig'
+        TWIG_CONTENT_CONFIG_ACCESS_HELP: 'Om <code>config</code> Twig-variablen kan læses fra sideindhold. Når den er slået fra (standard), returnerer læsning af <code>config.system.title</code> fra en side intet. Når den er slået til, eksponeres <code>config</code>, men filtreres stadig af <code>config_denied_paths</code> (se Twig Sandbox nedenfor), så legitimationsoplysninger og andre følsomme undertræer forbliver skjulte.'
+        TWIG_CONTENT_EDITOR_ENABLED: 'Tillad redaktører at slå Twig i indhold til/fra'
+        TWIG_CONTENT_EDITOR_ENABLED_HELP: 'Når den er slået fra (standard), er Twig-afkrydsningsfeltet på siden Avanceret i sideeditoren kun synligt for brugere med <code>admin.pages_twig</code>-rettigheder, og sider, hvor Twig allerede er aktiveret, kan kun redigeres af disse brugere. Når den er slået til, kan alle med adgang til at redigere sider slå Twig til for enkelte sider.'
+        TWIG_CONTENT_HELP: 'Kontrolelementer til Twig indlejret i sideindhold af redaktører. Skabeloner på disken påvirkes ikke af disse indstillinger; de gælder kun for Twig, som forfattere indsætter i sidekroppe eller frontmatter.'
+        TWIG_CONTENT_PROCESS_ENABLED: 'Aktiver Twig i indhold'
+        TWIG_CONTENT_PROCESS_ENABLED_HELP: 'Tillad sider med <code>process: twig: true</code> i deres frontmatter (og det webstedsdækkende <code>system.pages.frontmatter.process_twig</code>-valg) faktisk at køre Twig. <strong>Slået fra som standard i Grav 2.0.</strong> Hvis dette forbliver deaktiveret, reduceres angrebsfladen for skabelon-injektion, men det ødelægger alle sider, der kræver Twig i deres indhold.'
+        TWIG_DEBUG: Twig-debug
+        TWIG_DEBUG_HELP: 'Giver mulighed for ikke at indlæse Twig Debugger-udvidelsen'
+        TWIG_FIRST: 'Behandl Twig først'
+        TWIG_FIRST_HELP: 'Hvis du har aktiveret Twig-sidebehandling, kan du konfigurere Twig til at behandle før eller efter markdown'
+        TWIG_SANDBOX: 'Twig Sandbox'
+        TWIG_SANDBOX_ADMIN_HINT: 'Admin hint-kommentar'
+        TWIG_SANDBOX_ADMIN_HINT_HELP: 'Når sandkassen blokerer et udtryk, tilføjes en HTML-kommentar på én linje til den renderede side, så super-administratorer, der ser kilden, kan se, at noget er blevet filtreret. Besøgende og ikke-administratorer ser intet.'
+        TWIG_SANDBOX_ALLOWED_FILTERS: 'Tilladte filtre'
+        TWIG_SANDBOX_ALLOWED_FILTERS_HELP: 'Twig-filtre som sideindhold må anvende.'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS: 'Tilladte funktioner'
+        TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: 'Twig-funktioner som sideindhold må kalde.'
+        TWIG_SANDBOX_ALLOWED_METHODS: 'Tilladte metoder'
+        TWIG_SANDBOX_ALLOWED_METHODS_HELP: 'Klasse-specifikke lister over objektmetoder som sideindhold må påkalde.'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES: 'Tilladte egenskaber'
+        TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: 'Klasse-specifikke lister over objektegenskaber som sideindhold må læse.'
+        TWIG_SANDBOX_ALLOWED_TAGS: 'Tilladte tags'
+        TWIG_SANDBOX_ALLOWED_TAGS_HELP: 'Twig-tags som sideindhold må bruge. Tilføj kun tags, hvis virkninger du ønsker at eksponere for forfattere.'
+        TWIG_SANDBOX_CLASS: Klasse
+        TWIG_SANDBOX_ENABLED: 'Aktivér Twig-sandkasse'
+        TWIG_SANDBOX_ENABLED_HELP: 'Render sideindhold skrevet af redaktøren inde i en allowlist-baseret Twig SecurityPolicy. <strong>Deaktivering fjerner den eneste beskyttelse mod skabelon-injektionsangreb via sideindhold</strong>: enhver konto med redaktør-adgang (eller enhver, der kompromitterer filsystemet) kan udføre vilkårlig PHP via Twig. Slå det kun fra, hvis et websted reelt har brug for containeradgang fra sideindhold, og du fuldt ud stoler på alle forfattere.'
+        TWIG_SANDBOX_HELP: 'Allowlist over Twig-tags, filtre, funktioner, metoder og egenskaber som skabeloner til sideindhold må bruge. Sideindhold skrevet af redaktører renderes gennem denne sandkasse, så en kompromitteret forfatter eller en fejl i skabelon-injektion ikke kan nå ud i den bredere container.'
+        TWIG_SANDBOX_LOGGING: 'Log overtrædelser'
+        TWIG_SANDBOX_LOGGING_HELP: 'Skriv hvert blokeret udtryk til <code>logs/twig-sandbox.log</code>. Nyttigt under finjustering af allowlisten; slå det fra i produktion for at holde logfilerne rene.'
+        TWIG_SANDBOX_METHODS: Metoder
+        TWIG_SANDBOX_PROPERTIES: Egenskaber
+        TWIG_TEMPLATING: 'Twig Templating'
+        TWO_FACTOR_FIELD:
+            2FA_DISABLED: '2FA deaktiveret'
+            2FA_ENABLED: '2FA aktiveret'
+            2FA_IS_ENABLED: '2FA er aktiveret'
+            2FA_QR_CODE: '2FA QR-kode'
+            ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: 'Tilføj et ekstra lag sikkerhed ved at kræve en engangskode ved login.'
+            A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: 'En engangskode kræves, hver gang denne konto logger ind.'
+            A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: 'En hemmelig nøgle er allerede genereret, men vises ikke af sikkerhedshensyn.'
+            CONFIRM_DISABLE: 'Bekræft deaktivering'
+            ENABLE_2FA: 'Aktiver 2FA'
+            ENTER_THE_6_DIGIT_CODE_FROM_YOUR: 'Indtast den 6-cifrede kode fra din godkendelsesapp'
+            ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: 'Indtast din nuværende 6-cifrede kode for at bekræfte'
+            FAILED_TO_GENERATE_2FA_SECRET: 'Kunne ikke generere 2FA-hemmelighed'
+            FINISH_ENABLING_2FA: 'Afslut aktivering af 2FA'
+            FORCE_DISABLE: 'Tving deaktivering'
+            FORCE_DISABLE_PROMPT: 'Tving deaktivering af 2FA for **{username}**? Brug kun dette ved gendannelse af mistet enhed.'
+            REGENERATE_AND_SHOW_QR: 'Generer og vis QR igen'
+            SCAN_THE_QR_CODE_WITH_YOUR: 'Scan QR-koden med din godkendelsesapp'
+            SCAN_THE_QR_CODE_WITH_YOUR_2: 'Scan QR-koden med din godkendelsesapp, og indtast derefter den 6-cifrede kode for at verificere og aktivere.'
+            SECRET_FOR_MANUAL_ENTRY: 'Hemmelighed (til manuel indtastning):'
+            TWO_FACTOR_AUTHENTICATION_IS_OFF: 'To-faktor-godkendelse er slået fra'
+            VERIFICATION_CODE: Verificeringskode
+            VERIFY_ENABLE: 'Verificer & Aktiver'
+        TYPE: Type
+        UNPUBLISHED_DATE: Upubliceringsdato
+        UNPUBLISHED_DATE_HELP: 'Kan angive en dato for automatisk at udløse upublicering.'
+        UNSAVED_CHANGES: 'Ikke-gemte ændringer'
+        UNSAVED_INDICATOR:
+            SAVING_CHANGES: 'Gemmer ændringer…'
+            SAVING_CHANGES_2: 'Gemmer ændringer'
+            UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: 'Ugemte ændringer — klik på Gem for at bevare dem'
+            YOU_HAVE_UNSAVED_CHANGES: 'Du har ugemte ændringer'
+        UPDATE: Opdater
+        UPDATE_AVAILABLE_VERSION: 'Opdatering tilgængelig: v{version}'
+        UPDATE_TO_VERSION: 'Opdater til v{version}'
+        UPLOAD: Upload
+        UPLOADS_DANGEROUS_EXTENSIONS: 'Farlige udvidelser'
+        UPLOADS_DANGEROUS_EXTENSIONS_HELP: 'Bloker disse udvidelser fra at blive uploadet uanset de accepterede MIME-typer'
+        UPLOADS_SECURITY: Upload-sikkerhed
+        USERNAME: Brugernavn
+        USERNAME_HELP: 'Brugernavn skal være mellem 3 og 16 tegn, inklusive små bogstaver, tal, understregninger og bindestreger. Store bogstaver, mellemrum og specialtegn er ikke tilladt'
+        USERNAME_REGEX: 'Brugernavn Regex'
+        USERNAME_REGEX_HELP: 'Som standard: Kun små bogstaver, tal, bindestreger og understregninger. 3 - 16 tegn'
+        USERS:
+            2_FACTOR_AUTHENTICATION: 2-faktor-godkendelse
+            ADD_USER: 'Tilføj bruger'
+            BACK_TO_USERS: 'Tilbage til brugere'
+            CONFIRM_DELETE_USER: "Slet brugeren '{username}'? Dette kan ikke fortrydes."
+            CREATED: Oprettet
+            DELETE_USER: 'Slet bruger'
+            FAILED_TO_LOAD_USERS: 'Kunne ikke indlæse brugere'
+            FAILED_TO_SAVE_USER: 'Kunne ikke gemme bruger.'
+            NEW:
+                ACCOUNT: Konto
+                CREATE: Opret
+                FULL_NAME: 'Fulde navn'
+                LOWERCASE_3_64_CHARS: '3-64 tegn: bogstaver, tal, . - _'
+                NEW_USER: 'Ny bruger'
+                NEW_USER_GRAV_ADMIN: 'Ny bruger — Grav Admin'
+                PERMISSIONS: Tilladelser
+            PAGE_TITLE: '{name} — Brugere — Grav Admin'
+            PERMISSIONS: Tilladelser
+            SEARCH_USERS: 'Søg efter brugere...'
+            SELECT_A_USER_TO_VIEW_DETAILS: 'Vælg en bruger for at se detaljer'
+            STATUS: Status
+            STATUS_HELP: "Deaktiverede konti kan ikke logge ind eller bruge API'et."
+            SUPER_ADMIN: 'Super Admin'
+            TITLE: Brugere
+            USERS_GRAV_ADMIN: 'Brugere — Grav Admin'
+            USER_CHANGED_ELSEWHERE_SAVE_TO: 'Brugeren er ændret et andet sted – gem for at overskrive eller genindlæs'
+            USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Brugeren blev ændret et andet sted. Venligst genindlæs.'
+            YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Du kan ikke slette din egen konto.'
+        USERS_FILTER:
+            BACKEND_ACCESS: Backend-adgang
+            CLEAR: Ryd
+            CLEAR_ALL: 'Ryd filtre'
+            FILTER_BY_GROUP: 'Filtrer efter denne gruppe'
+            FILTER_BY_PERMISSION: 'Filtrer efter denne tilladelse'
+            GROUP: Gruppe
+            GROUPS: Grupper
+            LOADING: Indlæser…
+            NO_MATCHES: 'Ingen resultater'
+            NO_MATCHES_FILTERS: 'Ingen brugere matcher disse filtre'
+            PERMISSION: Tilladelse
+            TYPE_TO_FILTER: 'Skriv for at filtrere…'
+        USERS_NAV:
+            CONFIGURATION: Konfiguration
+            GROUPS: Grupper
+            INVITATIONS: Invitationer
+            USERS: Brugere
+        USERS_TABLE:
+            ACTIONS: Handlinger
+            CARDS: Kort
+            DELETE: Slet
+            DISABLED: Deaktiveret
+            EDIT: Rediger
+            EMAIL: E-mail
+            ENABLED: Aktiveret
+            FULL_NAME: 'Fulde navn'
+            NO_USERS: 'Ingen brugere fundet'
+            'OFF': Fra
+            'ON': Til
+            PERMISSIONS: Tilladelser
+            STATUS: Status
+            TABLE: Tabel
+            USERNAME: Brugernavn
+        USER_ACCOUNTS: Brugerkonti
+        USER_AVATAR_CARD:
+            AVATAR_REMOVED: 'Avatar fjernet'
+            AVATAR_UPDATED: 'Avatar opdateret'
+            FAILED_TO_REMOVE_AVATAR: 'Kunne ikke fjerne avatar'
+            FAILED_TO_UPLOAD_AVATAR: 'Kunne ikke uploade avatar'
+            UPLOAD_AVATAR: 'Upload avatar'
+        USE_GLOBAL: 'Brug global'
+        VALIDATION:
+            FIELD_REQUIRED: '{label} er påkrævet'
+            FORM_HAS_ERRORS: '{count, plural, one {# felt kræver din opmærksomhed} other {# felter kræver din opmærksomhed}}'
+            REQUIRED_GENERIC: 'Dette felt er påkrævet'
+        VALID_LINK_ATTRIBUTES: 'Gyldige link-attributter'
+        VALID_LINK_ATTRIBUTES_HELP: 'Attributter der automatisk tilføjes til medie-HTML-elementet'
+        VARY_ACCEPT_ENCODING: 'Variér accept-encoding'
+        VARY_ACCEPT_ENCODING_HELP: 'Indstiller `Vary: Accept Encoding`-headeren for at hjælpe med proxy- og CDN-caching'
+        VERSION: Version
+        VIEW_SITE_BUTTON:
+            OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'Åbn websitets forside i en ny fane'
+            VIEW_SITE: 'Vis website'
+        VISIBLE: Synlig
+        VISIBLE_HELP: 'Bestemmer om en side er synlig i navigationen.'
+        WIDGET_HOST:
+            UNKNOWN_WIDGET: 'Ukendt widget: {id}'
+        WRAPPED_SITE: 'Wrapped site'
+        WRAPPED_SITE_HELP: 'For at temaer/plugins kan vide, om Grav er pakket ind af en anden platform'
+        XSS_DANGEROUS_TAGS: 'Filtrér farlige HTML-tags'
+        XSS_DANGEROUS_TAGS_LIST: 'Liste over farlige HTML-tags'
+        XSS_HTML_INLINE_STYLES: 'Filtrér inline HTML-styles'
+        XSS_INVALID_PROTOCOLS: 'Filtrér ugyldige protokoller'
+        XSS_INVALID_PROTOCOLS_LIST: 'Liste over ugyldige protokoller'
+        XSS_MOZ_BINDINGS: 'Filtrér Moz-bindings'
+        XSS_ON_EVENTS: 'Filtrér On-events'
+        XSS_SECURITY: 'XSS-sikkerhed for indhold'
+        XSS_WHITELIST_PERMISSIONS: 'Tilladelser til whitelisting'
+        XSS_WHITELIST_PERMISSIONS_HELP: 'Brugere med disse tilladelser vil springe XSS-reglerne over, når de gemmer indhold'
+        'YES': Ja
+        YUBIKEY_HELP: 'Indsæt din YubiKey i din computer og klik på knappen for at generere en OTP. De første 12 tegn er dit klient-ID, som vil blive gemt.'
+        YUBIKEY_ID: YubiKey-ID
