@@ -1,7 +1,10 @@
 # v2.0.0-rc.16
 ## 06/18/2026
 
-1. [](#bugfix)
+1. [](#new)
+    * Plugins can now open admin modals, either a quick form built from inline field definitions or their own custom modal component ([#44](https://github.com/getgrav/grav-plugin-admin2/issues/44)).
+    * Toolbar buttons added by plugins can now jump straight to a screen, including the new-page form with the parent and template pre-filled ([#44](https://github.com/getgrav/grav-plugin-admin2/issues/44)).
+2. [](#bugfix)
     * Sites whose accounts use Flex or custom nested storage no longer get the frontend wrongly redirected to the admin as if no users existed ([#7](https://github.com/getgrav/grav-plugin-api/issues/7)).
     * The page template selector in Expert mode now lists the correct templates for modular pages instead of showing an empty selector ([#41](https://github.com/getgrav/grav-plugin-admin2/issues/41)).
 
