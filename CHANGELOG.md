@@ -1,7 +1,8 @@
 # v2.0.0-rc.16
-## 06/17/2026
+## 06/18/2026
 
 1. [](#bugfix)
+    * Sites whose accounts use Flex or custom nested storage no longer get the frontend wrongly redirected to the admin as if no users existed ([#7](https://github.com/getgrav/grav-plugin-api/issues/7)).
     * The page template selector in Expert mode now lists the correct templates for modular pages instead of showing an empty selector ([#41](https://github.com/getgrav/grav-plugin-admin2/issues/41)).
 
 # v2.0.0-rc.15
