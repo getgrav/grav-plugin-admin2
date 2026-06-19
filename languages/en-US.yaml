@@ -38,9 +38,9 @@ ICU:
       REQUIRED_GENERIC: This field is required
       FORM_HAS_ERRORS: '{count, plural, one {# field needs your attention} other {# fields need your attention}}'
     SECURITY_CHECK:
-      USER_FOLDER_EXPOSED_TITLE: 'Security risk: your user data folders are reachable from the web'
-      USER_FOLDER_EXPOSED_BODY: 'Files under user/data, user/accounts and user/config can be downloaded directly over HTTP — including certificates, keys, tokens and databases. This usually means your webserver is not applying Grav''s .htaccess rules.'
-      USER_FOLDER_EXPOSED_LEARN_MORE: How to secure your webserver
+      USER_FOLDER_EXPOSED_TITLE: 'Your web server is not applying Grav''s access rules'
+      USER_FOLDER_EXPOSED_BODY: 'Your web server is not applying Grav''s recommended access rules, so files in user/ can be reached directly over the web. It is worth tightening up, since some plugins do store data here.'
+      USER_FOLDER_EXPOSED_LEARN_MORE: How to fix this
     DASHBOARD:
       TITLE: Dashboard
       CUSTOMIZE: Customize
