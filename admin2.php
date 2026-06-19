@@ -380,6 +380,20 @@ class Admin2Plugin extends Plugin
      */
     private function anyUsersExist(): bool
     {
+        // Count through the same account backend the Users page uses, so the
+        // check stays accurate across regular flat-file, Flex, and custom
+        // nested layouts. A raw glob of account://*.yaml only sees top-level
+        // flat files and misses nested accounts like user/accounts/<name>/user.yaml.
+        try {
+            $accounts = $this->grav['accounts'] ?? null;
+            if ($accounts) {
+                return $accounts->count() > 0;
+            }
+        } catch (\Throwable) {
+            // Fall through to the flat-file scan below if the accounts
+            // service is unavailable this early in the bootstrap.
+        }
+
         $locator = $this->grav['locator'];
         $accountsDir = $locator->findResource('account://', true);
         if (!$accountsDir || !is_dir($accountsDir)) {
