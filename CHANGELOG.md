@@ -7,6 +7,7 @@
 2. [](#improved)
     * Reworded the user-folder exposure warning to be clearer and less alarming, and linked it to a dedicated documentation page that explains the risk and how to fix it on each web server.
 3. [](#bugfix)
+    * Links inside dashboard notifications, such as the trusted-host warning's "How to fix this", now appear as visible underlined links instead of looking like plain text.
     * Sites whose accounts use Flex or custom nested storage no longer get the frontend wrongly redirected to the admin as if no users existed ([#7](https://github.com/getgrav/grav-plugin-api/issues/7)).
     * The page template selector in Expert mode now lists the correct templates for modular pages instead of showing an empty selector ([#41](https://github.com/getgrav/grav-plugin-admin2/issues/41)).
 
