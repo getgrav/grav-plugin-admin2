@@ -1,3 +1,9 @@
+# v2.0.1
+## 06/21/2026
+
+1. [](#bugfix)
+    * Saving a configuration twice in a row without reloading no longer fails with a conflict error on Apache servers that use Brotli or gzip compression.
+
 # v2.0.0
 ## 06/20/2026
 
