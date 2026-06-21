@@ -1,3 +1,13 @@
+# v2.0.0
+## 06/20/2026
+
+1. [](#new)
+    * Version 2.0 stable release for Grav 2.x
+1. [](#bugfix)
+    * Links inside dashboard notifications, such as the trusted-host warning's "How to fix this", now appear as visible underlined links instead of looking like plain text.
+    * Flex object list views now show formatted dates and select option labels instead of raw timestamps and stored keys ([flex-objects#220](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/220)).
+    * Flex object list views now honor a directory's configured default page size and sort order ([flex-objects#221](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/221)).
+
 # v2.0.0-rc.16
 ## 06/19/2026
 
