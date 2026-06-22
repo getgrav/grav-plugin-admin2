@@ -373,6 +373,14 @@ ICU:
       NOT_SET: Not set
       FAILED_TO_LOAD_PERMISSIONS: Failed to load permissions
       ADMIN_LEGACY: Admin (legacy)
+      INHERITED_ALLOWED: 'Allowed via group: {groups}'
+      INHERITED_DENIED: 'Denied via group: {groups}'
+      OVERRIDES_GROUP: 'Your direct setting overrides the group: {groups}'
+      LEGEND_INTRO: 'Faint toggles come from group membership and are shown for reference. Set one to make it a direct permission on this user.'
+      LEGEND_DIRECT: Set directly
+      LEGEND_INHERITED: Inherited from a group
+      LEGEND_OVERRIDE: Overrides a group
+      LEGEND_SUPER: Granted by super admin
     TWO_FACTOR_FIELD:
       2FA_QR_CODE: 2FA QR Code
       SCAN_THE_QR_CODE_WITH_YOUR: Scan the QR code with your authenticator app
@@ -462,6 +470,8 @@ ICU:
       SERVER: Server
       UPGRADE_GRAV: Upgrade Grav
       UPDATE_ALL: Update All
+      UPDATE_ALL_CONFIRM_TITLE: Update all packages?
+      UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# package will be updated:} other{# packages will be updated:}}'
       PERCENT_USED: "{percent}% used"
       UPDATES_AVAILABLE_COUNT: "{n} available"
       PACKAGES_OUTDATED: "{n, plural, one{# package outdated} other{# packages outdated}}"
@@ -758,6 +768,11 @@ ICU:
       PAGE_TITLE: "{name} — Plugins — Grav Admin"
       REMOVE_CONFIRM_TITLE: Remove plugin?
       REMOVE_CONFIRM_MESSAGE: 'Remove {name}? This will uninstall the plugin and delete its files. Configuration will be preserved.'
+      UPDATE_CONFIRM_TITLE: Update plugin?
+      UPDATE_CONFIRM_MESSAGE: 'Update {name} to v{version}?'
+      UPDATE_ALL_CONFIRM_TITLE: Update plugins?
+      UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# plugin will be updated:} other{# plugins will be updated:}}'
+      UPDATE_ALL: Update All
       TITLE: Plugins
     RESET:
       PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: Password reset successfully. Please sign in.
@@ -948,6 +963,9 @@ ICU:
       ACTIVATE_CONFIRM_MESSAGE: 'Switch the active site theme to {name}? Frontend rendering will use this theme immediately.'
       REMOVE_CONFIRM_TITLE: Remove theme?
       REMOVE_CONFIRM_MESSAGE: 'Remove {name}? This will uninstall the theme and delete its files.'
+      UPDATE_ALL_CONFIRM_TITLE: Update themes?
+      UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# theme will be updated:} other{# themes will be updated:}}'
+      UPDATE_ALL: Update All
       REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} is the currently active theme. Removing it will leave the site without a theme until another one is activated. Continue?'
       DELETE_ACTIVE_WARNING: 'Currently active. Switching themes first is recommended before deleting.'
     ACTIVE: Active
