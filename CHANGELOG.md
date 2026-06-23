@@ -1,3 +1,9 @@
+# v2.0.3
+## 06/22/2026
+
+1. [](#improved)
+    * Corrected the route-override instructions in the README to point at the right config file.
+
 # v2.0.2
 ## 06/22/2026
 
