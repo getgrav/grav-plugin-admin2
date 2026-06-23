@@ -462,19 +462,32 @@ class Admin2Plugin extends Plugin
         $uri = $this->grav['uri'];
         $serverUrl = rtrim($uri->rootUrl(true), '/');
 
-        $config = json_encode([
+        // Boot-critical fields the SPA needs before login to render the sign-in
+        // screen and reach the auth API.
+        $config = [
             'serverUrl' => $serverUrl,
             'apiPrefix' => '/' . trim($apiRoute, '/') . '/' . trim($apiVersion, '/'),
             'basePath' => $this->routeBase,
-            'environment' => $uri->environment(),
-            'grav' => [
-                'version' => GRAV_VERSION,
-            ],
             'admin' => [
                 'name' => $this->getBlueprint()->get('name'),
-                'version' => $this->getBlueprint()->get('version'),
             ],
-        ], JSON_UNESCAPED_SLASHES);
+        ];
+
+        // Exact Grav/Admin versions and the environment type are a free
+        // technology fingerprint for an unauthenticated visitor (it served on
+        // the pre-login shell and every admin subroute), letting an attacker
+        // pick version-specific exploits with no reconnaissance. Only expose
+        // them once the request is authenticated; the SPA reads these fields
+        // defensively and pulls authoritative values from the API after login.
+        // GHSA-pfjq-chp8-3vgh.
+        $user = $this->grav['user'] ?? null;
+        if ($user && $user->authenticated) {
+            $config['environment'] = $uri->environment();
+            $config['grav'] = ['version' => GRAV_VERSION];
+            $config['admin']['version'] = $this->getBlueprint()->get('version');
+        }
+
+        $config = json_encode($config, JSON_UNESCAPED_SLASHES);
 
         $configScript = "<script>window.__GRAV_CONFIG__ = {$config};</script>";
         $html = str_replace('<head>', '<head>' . "\n    " . $configScript, $html);

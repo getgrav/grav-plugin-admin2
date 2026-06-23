@@ -1,3 +1,9 @@
+# v2.0.4
+## 06/22/2026
+
+1. [](#bugfix)
+    * [security] The admin no longer includes the exact Grav and Admin version numbers or the environment type in the page served to visitors who are not logged in, removing a fingerprint that made it easier to pick version-specific exploits (GHSA-pfjq-chp8-3vgh).
+
 # v2.0.3
 ## 06/22/2026
 
