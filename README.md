@@ -53,14 +53,14 @@ Then ensure both plugins are enabled in their respective config files (or via th
 
 ## Configuration
 
-Default config (`user/config/plugins/admin2.yaml`):
+Default config (`user/plugins/admin2/admin2.yaml`):
 
 ```yaml
 enabled: true
 route: /admin2
 ```
 
-Override the route to anything you like (e.g. `/manager`) — the PHP wrapper and the pre-built SPA must agree on the base path. If you change the route, you must rebuild the SPA with a matching `ADMIN2_BASE` (see **Building from source** below) so the SvelteKit asset paths resolve correctly.
+Override the route to anything you like (e.g. set route to `/manager`) in the `user/config/plugins/admin2.yaml` file, the PHP wrapper and the pre-built SPA must agree on the base path. If you change the route, you must rebuild the SPA with a matching `ADMIN2_BASE` (see **Building from source** below) so the SvelteKit asset paths resolve correctly.
 
 ## Accessing Admin2
 
