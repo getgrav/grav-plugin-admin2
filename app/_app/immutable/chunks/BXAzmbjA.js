@@ -1,1 +1,0 @@
-import{p as r,u as t}from"./Drh7Cdbe.js";import{s as e}from"./tg1vhtt9.js";const a={get error(){return r.error},get params(){return r.params},get status(){return r.status},get url(){return r.url}},s={get current(){return t.current},check:e.updated.check},o=a,n=s;export{o as p,n as u};

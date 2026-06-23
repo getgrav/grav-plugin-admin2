@@ -3,6 +3,8 @@
 
 1. [](#bugfix)
     * [security] The admin no longer includes the exact Grav and Admin version numbers or the environment type in the page served to visitors who are not logged in, removing a fingerprint that made it easier to pick version-specific exploits (GHSA-pfjq-chp8-3vgh).
+    * The user and group permissions editor no longer reports unsaved changes after you set a permission and then switch it back to Not set ([#50](https://github.com/getgrav/grav-plugin-admin2/issues/50)).
+    * Denying or allowing one sub-permission no longer silently removes the access granted by its parent permission group ([#50](https://github.com/getgrav/grav-plugin-admin2/issues/50)).
 
 # v2.0.3
 ## 06/22/2026
