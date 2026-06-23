@@ -1,1 +1,0 @@
-import{i as o,m as n,j as s,g as r}from"./BDQdxUHx.js";let e=o(n({}));const l={get types(){return r(e)},register(t,g,i="plugins"){for(const u of Object.keys(g))r(e)[u]={slug:t,kind:i};s(e,{...r(e)},!0)},has(t){return t in r(e)},getProvider(t){return r(e)[t]},getPluginSlug(t){return r(e)[t]?.slug},clear(){s(e,{},!0)}};export{l as c};

@@ -1,3 +1,13 @@
+# v2.0.4
+## 06/23/2026
+
+1. [](#bugfix)
+    * [security] The admin no longer includes the exact Grav and Admin version numbers or the environment type in the page served to visitors who are not logged in, removing a fingerprint that made it easier to pick version-specific exploits (GHSA-pfjq-chp8-3vgh).
+    * The user and group permissions editor no longer reports unsaved changes after you set a permission and then switch it back to Not set ([#50](https://github.com/getgrav/grav-plugin-admin2/issues/50)).
+    * Denying or allowing one sub-permission no longer silently removes the access granted by its parent permission group ([#50](https://github.com/getgrav/grav-plugin-admin2/issues/50)).
+    * Enabling a toggleable option such as Visible or Routable now saves a real value instead of a blank one, so a page no longer disappears from navigation after saving ([getgrav/grav#4153](https://github.com/getgrav/grav/issues/4153)).
+    * Fieldsets in the page and configuration editors now honour their collapsible, collapsed and icon settings, showing a working collapse toggle and the chosen icon ([#52](https://github.com/getgrav/grav-plugin-admin2/issues/52)).
+
 # v2.0.3
 ## 06/22/2026
 
