@@ -1,3 +1,13 @@
+# v2.0.2
+## 06/22/2026
+
+1. [](#new)
+    * The user editor now shows which permissions a user inherits from their groups, naming the group that grants each one, so you can see a user's effective access at a glance without changing it. Thanks to @Keyskeeper for the report.
+1. [](#improved)
+    * The update confirmation dialog now lists the actual plugins and themes that will be updated, along with their new versions, instead of only showing a count. Thanks to @Sogl for the report.
+1. [](#bugfix)
+    * Logging in now works when the API plugin's route has been changed from the default `/api`, instead of failing because requests still went to the old route ([api#8](https://github.com/getgrav/grav-plugin-api/issues/8)). Thanks to @hasancemcerit for the report.
+
 # v2.0.1
 ## 06/21/2026
 
