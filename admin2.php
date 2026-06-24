@@ -460,7 +460,18 @@ class Admin2Plugin extends Plugin
 
         /** @var \Grav\Common\Uri $uri */
         $uri = $this->grav['uri'];
-        $serverUrl = rtrim($uri->rootUrl(true), '/');
+
+        // Path-only site root (e.g. '' or '/grav-api'), never the host. The SPA
+        // prefixes this onto every API/asset request, so a relative value keeps
+        // those requests same-origin with whatever host actually served this
+        // shell. Using the absolute rootUrl(true) instead would bake in the
+        // canonical host from system.custom_base_url: visiting the admin on an
+        // alternate host (e.g. www.example.com when the base is example.com)
+        // would then fire every request cross-origin, where the auth token and
+        // session cookie aren't sent — so login fails and even the pre-login
+        // translations never load, leaving raw keys like "subtitle" on screen
+        // (#56).
+        $serverUrl = rtrim($uri->rootUrl(false), '/');
 
         // Boot-critical fields the SPA needs before login to render the sign-in
         // screen and reach the auth API.
@@ -472,6 +483,21 @@ class Admin2Plugin extends Plugin
                 'name' => $this->getBlueprint()->get('name'),
             ],
         ];
+
+        // Site branding + admin language, exposed pre-auth so the sign-in screen
+        // renders the configured logo, title and language on first visit (e.g. a
+        // fresh incognito window) instead of falling back to the stock Grav logo
+        // and English until the user logs in once. Unlike versions/environment,
+        // none of this is a security-relevant fingerprint — it's the same public
+        // branding the operator deliberately put on the login page.
+        $branding = $this->resolveBrandingForBoot();
+        if ($branding !== null) {
+            $config['branding'] = $branding['branding'];
+            $config['brandingUrls'] = $branding['brandingUrls'];
+            if ($branding['language'] !== '') {
+                $config['language'] = $branding['language'];
+            }
+        }
 
         // Exact Grav/Admin versions and the environment type are a free
         // technology fingerprint for an unauthenticated visitor (it served on
@@ -495,6 +521,44 @@ class Admin2Plugin extends Plugin
         header('Content-Type: text/html; charset=UTF-8');
         echo $html;
         exit;
+    }
+
+    /**
+     * Resolve site branding + admin language for the pre-auth boot config.
+     *
+     * Reuses the API plugin's PreferencesResolver so the shape and storage
+     * (user/config/admin-next.yaml) stay identical to the post-auth
+     * /admin-next/preferences payload. Best-effort: any failure (API plugin
+     * absent, config unreadable) returns null and the SPA falls back to its
+     * built-in defaults.
+     *
+     * @return array{branding: array<string, mixed>, brandingUrls: array<string, string>, language: string}|null
+     */
+    private function resolveBrandingForBoot(): ?array
+    {
+        $resolverClass = \Grav\Plugin\Api\Services\PreferencesResolver::class;
+        if (!class_exists($resolverClass)) {
+            return null;
+        }
+
+        try {
+            $resolver = new $resolverClass($this->grav);
+            $branding = $resolver->siteBranding();
+            $sitePrefs = $resolver->sitePreferences();
+            $language = is_string($sitePrefs['adminLanguage'] ?? null) ? $sitePrefs['adminLanguage'] : '';
+
+            return [
+                'branding' => $branding,
+                'brandingUrls' => [
+                    'light' => $resolver->brandingMediaUrl((string) ($branding['logoLight'] ?? '')),
+                    'dark' => $resolver->brandingMediaUrl((string) ($branding['logoDark'] ?? '')),
+                    'favicon' => $resolver->brandingMediaUrl((string) ($branding['favicon'] ?? '')),
+                ],
+                'language' => $language,
+            ];
+        } catch (\Throwable) {
+            return null;
+        }
     }
 
 }
