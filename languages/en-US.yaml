@@ -873,7 +873,7 @@ ICU:
       SITE_DEFAULTS: Site Defaults
       SITE_DEFAULTS_DESCRIPTION: Settings below apply to every admin user as the baseline. Tier B items (appearance, pages, language, editor) can be overridden in each user's own preferences above. Tier A items (editing, menubar) are site-wide and not overridable.
       BRANDING: Branding
-      BRANDING_DESC: Logo and brand text shown everywhere in the admin.
+      BRANDING_DESC: Logo, title, favicon and sign-in screen shown across the admin.
       SAVED_AUTOMATICALLY: Saved automatically
       SITE_SETTINGS_HEADING: Site Settings
       SITE_SETTINGS_DESC: Default preferences for new users plus site-wide behavior. Changes apply on next reload for affected users.
@@ -909,6 +909,17 @@ ICU:
       LIGHT_LOGO_REMOVED: Light logo removed.
       DARK_LOGO_REMOVED: Dark logo removed.
       FAILED_TO_REMOVE_LOGO: Failed to remove logo.
+      FAILED_TO_SAVE_BRANDING: Failed to save branding.
+      ADMIN_TITLE: Admin title
+      ADMIN_TITLE_DESC: Shown as the sign-in heading and in the browser tab. Leave blank for "Grav Admin".
+      LOGIN_SUBTITLE: Sign-in subtitle
+      LOGIN_SUBTITLE_DESC: Optional line shown under the sign-in heading.
+      SHOW_POWERED_BY: Show "Powered by Grav"
+      SHOW_POWERED_BY_DESC: Show the "Powered by Grav CMS" line on the sign-in and setup screens.
+      FAVICON: Favicon
+      FAVICON_DESC: Custom browser-tab icon (SVG, PNG, WebP, or ICO). Leave blank for the generated icon.
+      FAVICON_UPLOADED: Favicon uploaded.
+      FAVICON_REMOVED: Favicon removed.
       SITE_DEFAULTS_SAVED: Site defaults saved. All users will see these on next reload.
       FAILED_TO_SAVE_SITE_DEFAULTS: Failed to save site defaults.
       FAILED_TO_RESET_PREFERENCES: Failed to reset preferences.
