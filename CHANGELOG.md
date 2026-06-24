@@ -11,6 +11,8 @@
     * New pages now have their date filled in with the current time when the page template includes a date field, matching the behaviour of the previous admin ([#49](https://github.com/getgrav/grav-plugin-admin2/issues/49)).
     * The admin now works when opened on an alternate host such as www, instead of failing to log in and showing untranslated labels because requests were being sent to the site's canonical address ([#56](https://github.com/getgrav/grav-plugin-admin2/issues/56)).
     * Reopening the admin after closing the browser now keeps you signed in until your session actually expires, instead of sending you back to the sign-in screen while time still remained ([#55](https://github.com/getgrav/grav-plugin-admin2/issues/55)).
+    * Signing in now works on a site served from the web root with no subfolder, instead of failing because the admin was sending its requests to the wrong address ([#58](https://github.com/getgrav/grav-plugin-admin2/issues/58)).
+    * User and group permissions can now be edited when they start out empty, instead of the toggles doing nothing and the change refusing to save ([#58](https://github.com/getgrav/grav-plugin-admin2/issues/58)).
 
 # v2.0.4
 ## 06/23/2026
