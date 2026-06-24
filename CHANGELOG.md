@@ -1,3 +1,9 @@
+# v2.0.5
+## 06/23/2026
+
+1. [](#bugfix)
+    * New pages now have their date filled in with the current time when the page template includes a date field, matching the behaviour of the previous admin ([#49](https://github.com/getgrav/grav-plugin-admin2/issues/49)).
+
 # v2.0.4
 ## 06/23/2026
 
