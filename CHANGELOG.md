@@ -10,6 +10,7 @@
     * The sign-in screen now shows the configured logo and admin language on a first or incognito visit, instead of only after signing in once ([#54](https://github.com/getgrav/grav-plugin-admin2/issues/54)).
     * New pages now have their date filled in with the current time when the page template includes a date field, matching the behaviour of the previous admin ([#49](https://github.com/getgrav/grav-plugin-admin2/issues/49)).
     * The admin now works when opened on an alternate host such as www, instead of failing to log in and showing untranslated labels because requests were being sent to the site's canonical address ([#56](https://github.com/getgrav/grav-plugin-admin2/issues/56)).
+    * Reopening the admin after closing the browser now keeps you signed in until your session actually expires, instead of sending you back to the sign-in screen while time still remained ([#55](https://github.com/getgrav/grav-plugin-admin2/issues/55)).
 
 # v2.0.4
 ## 06/23/2026
