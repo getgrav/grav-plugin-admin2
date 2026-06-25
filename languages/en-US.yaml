@@ -610,6 +610,13 @@ ICU:
           EVENT_SANDBOX_FUNCTION: "Sandbox blocked function"
           EVENT_SANDBOX_METHOD: "Sandbox blocked method"
           EVENT_SANDBOX_PROPERTY: "Sandbox blocked property"
+          SCAN_INTRO: Scan all page content for Twig the sandbox would block.
+          SCAN_CONTENT: Scan content
+          SCAN_FAILED: Content scan failed
+          SCAN_CLEAN: No content uses Twig outside the current allowlists.
+          SCAN_TAGS: Blocked tags in content
+          SCAN_FILTERS: Blocked filters in content
+          SCAN_FUNCTIONS: Blocked functions in content
       SCHEDULER:
         FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
