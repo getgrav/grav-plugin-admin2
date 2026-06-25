@@ -257,6 +257,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'le plugin est installé. Activez les déclencheurs Webhook ci-dessous pour activer.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'le plugin est requis pour la fonctionnalité webhook.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Plugin Webhook requis'
+            FILE:
+                LIMIT_REACHED: "Ce champ accepte jusqu'à {limit} fichier(s)."
         FLEX_OBJECTS:
             ACTIONS: Actions
             BACK_TO_LIST: 'Retour à la liste'
@@ -540,6 +542,7 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Impossible de charger les permissions'
             NOT_SET: 'Non défini'
             ADMIN_LEGACY: 'Admin (ancien)'
+            INHERITED_ALLOWED: 'Autorisé via le groupe: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Retour au tableau de bord'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Aucun contenu disponible pour cette page de plugin.'
@@ -1857,6 +1860,6 @@ ICU:
         YUBIKEY_HELP: 'Insérez votre YubiKey dans votre ordinateur et cliquez sur le bouton pour générer un OTP. Les 12 premiers caractères sont votre ID client et seront enregistrés.'
         YUBIKEY_ID: 'ID YubiKey'
         SECURITY_CHECK:
-            USER_FOLDER_EXPOSED_BODY: "Les fichiers situés dans user/data, user/accounts et user/config peuvent être téléchargés directement via HTTP, y compris les certificats, les clés, les jetons et les bases de données. Cela signifie généralement que votre serveur web n'applique pas les règles .htaccess de Grav."
+            USER_FOLDER_EXPOSED_BODY: "Votre serveur web n'applique pas les règles d'accès recommandés par Grav, les fichiers dans le dossier user/ sont accessibles sur le web. Il est préférable de remédier à cela, car certains plugins stockent des fichiers dans ce dossier."
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Comment sécuriser votre serveur web'
-            USER_FOLDER_EXPOSED_TITLE: 'Risque de sécurité : vos dossiers de données utilisateur sont accessibles depuis le web'
+            USER_FOLDER_EXPOSED_TITLE: "Votre serveur web n'applique pas les règles d'accès de Grav."
