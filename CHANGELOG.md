@@ -1,3 +1,15 @@
+# v2.0.7
+## 06/25/2026
+
+1. [](#new)
+    * Plugin toolbar buttons can now show a text label, a larger size, and a color such as primary, success, or danger, so custom actions are no longer easy to miss ([#67](https://github.com/getgrav/grav-plugin-admin2/issues/67)).
+    * A built-in API debug panel, shown when Grav's debugger is enabled, lists recent admin requests with their timing, a cross-request message console, and a per-request timeline ([#66](https://github.com/getgrav/grav-plugin-admin2/issues/66)).
+1. [](#bugfix)
+    * The Markdown editor now starts editing when you click anywhere in its box, not only on the existing text ([#61](https://github.com/getgrav/grav-plugin-admin2/issues/61)).
+    * The unsaved-changes indicator now clears when you undo your edits back to the saved content, matching the Save button ([#62](https://github.com/getgrav/grav-plugin-admin2/issues/62)).
+    * Refreshing a page with unsaved changes now shows a single confirmation prompt instead of two ([#63](https://github.com/getgrav/grav-plugin-admin2/issues/63)).
+    * The cache purge age setting's help text now correctly refers to days instead of seconds ([#64](https://github.com/getgrav/grav-plugin-admin2/issues/64)).
+
 # v2.0.6
 ## 06/24/2026
 
