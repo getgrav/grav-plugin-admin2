@@ -1,3 +1,9 @@
+# v2.0.6
+## 06/24/2026
+
+1. [](#bugfix)
+    * The Server URL on the sign-in and setup screens no longer doubles up its address after signing out and back in ([#58](https://github.com/getgrav/grav-plugin-admin2/issues/58)).
+
 # v2.0.5
 ## 06/24/2026
 
