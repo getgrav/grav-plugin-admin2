@@ -580,6 +580,31 @@ ICU:
         LOADING_REPORTS: Loading reports...
         NO_REPORTS_AVAILABLE: No reports available.
         CONTENT_FIELD: "content: {field}"
+        TWIG_CONTENT:
+          GATE_ON: Twig in content enabled
+          GATE_OFF: Twig in content disabled
+          SANDBOX_ON: Sandbox on
+          SANDBOX_OFF: Sandbox off
+          XSS_SCAN_ON: XSS output scan on
+          XSS_SCAN_OFF: XSS output scan off
+          SECTION_LEAKS: Pages leaking raw Twig
+          SECTION_EVENTS: Recent blocks
+          LEAK_GATE_OFF: "The site gate is off, so this page's Twig markup renders as raw text to visitors."
+          LEAK_PAGE_OFF: "Twig is turned off for this page, so its Twig markup renders as raw text to visitors."
+          ADD_TO_ALLOWLIST: Add to allowlist
+          ADDED_TO_ALLOWLIST: "Added ''{token}'' to {key}"
+          ADD_FAILED: Could not update the allowlist
+          CLEAR_EVENTS: Clear blocks
+          CLEARED_EVENTS: Cleared recent blocks
+          CLEAR_FAILED: Could not clear blocks
+          OPEN_SECURITY_SETTINGS: Open Security settings
+          EVENT_GATE_BLOCKED: Gate blocked Twig in this page's content
+          EVENT_XSS_BLANKED: Output blanked by the XSS scan
+          EVENT_SANDBOX_TAG: "Sandbox blocked tag"
+          EVENT_SANDBOX_FILTER: "Sandbox blocked filter"
+          EVENT_SANDBOX_FUNCTION: "Sandbox blocked function"
+          EVENT_SANDBOX_METHOD: "Sandbox blocked method"
+          EVENT_SANDBOX_PROPERTY: "Sandbox blocked property"
       SCHEDULER:
         FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
@@ -1251,7 +1276,7 @@ ICU:
     CACHE_PREFIX_HELP: An identifier for part of the Grav key.  Don't change unless you know what your doing.
     CACHE_PREFIX_PLACEHOLDER: Derived from base URL (override by entering random string)
     CACHE_PURGE_AGE: Cache Purge Age
-    CACHE_PURGE_AGE_HELP: Purge all cache items older than this age (in seconds)
+    CACHE_PURGE_AGE_HELP: Purge all cache items older than this age (in days)
     CACHE_PURGE_JOB: Run Scheduled Purge Job
     CACHE_PURGE_JOB_HELP: With the scheduler you can periodically clear out old Doctrine file cache folders with this job
     CACHING: Caching
