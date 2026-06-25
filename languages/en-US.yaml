@@ -127,6 +127,11 @@ ICU:
       MODE_NORMAL: Normal
       MODE_EXPERT: Expert
       FRONTMATTER: Frontmatter
+      TWIG_BANNER:
+        LEAK_GATE_OFF: This page contains Twig markup, but Twig in content is turned off site-wide, so it renders as raw text to visitors.
+        LEAK_PAGE_OFF: This page contains Twig markup, but Twig is turned off for this page, so it renders as raw text to visitors.
+        RECENT_BLOCKS: "{n, plural, one {# Twig construct on this page was recently blocked} other {# Twig constructs on this page were recently blocked}}."
+        VIEW_REPORT: View report
       INFO_PUBLISHED: Published
       INFO_VISIBLE: Visible in nav
       INFO_ROUTABLE: Routable
