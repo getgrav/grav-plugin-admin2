@@ -617,6 +617,8 @@ ICU:
           SCAN_TAGS: Blocked tags in content
           SCAN_FILTERS: Blocked filters in content
           SCAN_FUNCTIONS: Blocked functions in content
+          GLOBAL_REQUEST_GATED: "system.pages.process.twig is on, but Twig in content is disabled site-wide, so those pages render raw. Pick a profile above to enable it, or remove the global flag."
+          FRONTMATTER_REQUEST_GATED: "Frontmatter Twig is requested (pages.frontmatter.process_twig), but Twig in content is disabled site-wide, so it won't run. Pick a profile above to enable it."
       SCHEDULER:
         FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
