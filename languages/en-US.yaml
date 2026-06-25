@@ -689,6 +689,17 @@ ICU:
       TITLE: Configuration
       TITLE_SCROLLED: "Configuration: {scope}"
       LOADING_CONFIGURATION: Loading configuration...
+      TWIG_PROFILE:
+        LABEL: Twig in Content
+        HELP: Choose who can run Twig inside page content. This sets the advanced toggles below.
+        OFF: 'Off'
+        TRUSTED: Trusted roles only
+        ALL: All editors
+        CUSTOM: Custom
+        OFF_DESC: Twig in page content is disabled. Markup is shown as written.
+        TRUSTED_DESC: Only super users and holders of the "pages twig" permission can enable Twig on a page.
+        ALL_DESC: Any editor can enable Twig on the pages they edit.
+        CUSTOM_DESC: The current settings don't match a named profile. Adjust the advanced toggles below, or pick a profile to reset them.
       FILTER_FIELDS: Filter fields...
       CLEAR_FILTER: Clear filter
       NO_MATCHES_FOUND: No matches found
