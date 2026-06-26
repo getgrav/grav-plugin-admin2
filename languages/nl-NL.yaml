@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Teruggezet naar de overgenomen waarde'
                 REVERT_FAILED: 'Kon niet terugzetten'
                 REVERT_TOOLTIP: 'Overschrijft standaard ({value}). Klik om terug te zetten.'
+            TWIG_PROFILE:
+                ALL: 'Alle editors'
+                ALL_DESC: "Elke editor kan Twig inschakelen op de pagina's die zij bewerken."
+                CUSTOM: Aangepast
+                CUSTOM_DESC: 'De huidige instellingen komen niet overeen met een benoemd profiel. Pas de geavanceerde schakelaars hieronder aan of kies een profiel om ze opnieuw in te stellen.'
+                HELP: 'Kies wie Twig mag uitvoeren in paginainhoud. Dit stelt de geavanceerde schakelaars hieronder in.'
+                LABEL: 'Twig in inhoud'
+                'OFF': Uit
+                OFF_DESC: 'Twig in paginainhoud is uitgeschakeld. Markup wordt getoond zoals geschreven.'
+                TRUSTED: 'Alleen vertrouwde rollen'
+                TRUSTED_DESC: 'Alleen superusers en bezitters van de "pages twig"-toestemming kunnen Twig op een pagina inschakelen.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Omgeving
             EXPORT_YAML: 'YAML exporteren'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin is geïnstalleerd. Schakel Webhook-triggers hieronder in om te activeren.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin is vereist voor webhook-functionaliteit.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin vereist'
+            FILE:
+                LIMIT_REACHED: 'Dit veld accepteert maximaal {limit} bestand(en).'
         FLEX_OBJECTS:
             ACTIONS: Acties
             BACK_TO_LIST: 'Terug naar lijst'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} totaal'
             STATS_UNPUBLISHED: '{n} gepubliceerd'
             UNPUBLISH: 'Niet publiceren'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Deze pagina bevat Twig-markup, maar Twig in inhoud is site-breed uitgeschakeld, waardoor het als platte tekst aan bezoekers wordt getoond.'
+                LEAK_PAGE_OFF: 'Deze pagina bevat Twig-markup, maar Twig is uitgeschakeld voor deze pagina, waardoor het als platte tekst aan bezoekers wordt getoond.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig-constructie op deze pagina is onlangs geblokkeerd} other {# Twig-constructies op deze pagina zijn onlangs geblokkeerd}}.'
+                VIEW_REPORT: 'Bekijk rapport'
         PASSWORD: Wachtwoord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Wachtwoordvereisten
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Machtigingen kunnen niet worden geladen'
             NOT_SET: 'Niet ingesteld'
             ADMIN_LEGACY: 'Beheer (oude versie)'
+            INHERITED_ALLOWED: 'Toegestaan via groep: {groups}'
+            INHERITED_DENIED: 'Geweigerd via groep: {groups}'
+            LEGEND_DIRECT: 'Direct ingesteld'
+            LEGEND_INHERITED: 'Overgenomen van een groep'
+            LEGEND_INTRO: 'Vage schakelaars zijn afkomstig van groepslidmaatschap en worden getoond ter referentie. Stel er een in om er een directe toestemming voor deze gebruiker van te maken.'
+            LEGEND_OVERRIDE: 'Overschrijft een groep'
+            LEGEND_SUPER: 'Verleend door super admin'
+            OVERRIDES_GROUP: 'Uw directe instelling overschrijft de groep: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Terug naar Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Geen inhoud beschikbaar voor deze pluginpagina.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: '{name} verwijderen? Hiermee wordt de plug-in verwijderd en worden de bijbehorende bestanden gewist. De instellingen blijven behouden.'
             REMOVE_CONFIRM_TITLE: 'Plug-in verwijderen?'
             TITLE: Plug-ins
+            UPDATE_ALL: 'Alles bijwerken'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# plugin wordt bijgewerkt:} other{# plugins worden bijgewerkt:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Plugins bijwerken?'
+            UPDATE_CONFIRM_MESSAGE: '{name} bijwerken naar v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Plugin bijwerken?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Pluginpagina laden...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Hoe de Markdown-editor zich gedraagt tijdens het schrijven.'
             STICKY_TOOLBAR: 'Vaste werkbalk'
             STICKY_TOOLBAR_DESC: 'Houd de werkbalk voor opmaak en de knop Voorbeeld in beeld terwijl je scrolt.'
+            ADMIN_TITLE: 'Admin titel'
+            ADMIN_TITLE_DESC: 'Wordt getoond als de koptekst bij het inloggen en in het browsertabblad. Laat leeg voor „Grav Admin”.'
+            FAILED_TO_SAVE_BRANDING: 'Opslaan van branding mislukt.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Aangepast icoon voor browsertabbladen (SVG, PNG, WebP of ICO). Laat leeg voor het gegenereerde icoon.'
+            FAVICON_REMOVED: 'Favicon verwijderd.'
+            FAVICON_UPLOADED: 'Favicon geüpload.'
+            LOGIN_SUBTITLE: 'Ondertitel inlogscherm'
+            LOGIN_SUBTITLE_DESC: 'Optionele regel die onder de koptekst bij het inloggen wordt getoond.'
+            SHOW_POWERED_BY: 'Toon „Powered by Grav”'
+            SHOW_POWERED_BY_DESC: 'Toon de regel „Powered by Grav CMS” op de inlog- en configuratieschermen.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} beschikbaar'
             UPDATE_ALL: 'Alles bijwerken'
             UPGRADE_GRAV: 'Grav upgraden'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# pakket wordt bijgewerkt:} other{# pakketten worden bijgewerkt:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Alle pakketten bijwerken?'
         THEMES:
             ACTIVE_THEME: 'Actief thema'
             BACK_TO_THEMES: "Terug naar thema's"
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: '{name} verwijderen? Hiermee wordt het thema verwijderd en worden de bijbehorende bestanden gewist.'
             REMOVE_CONFIRM_TITLE: 'Thema verwijderen?'
             TITLE: "Thema's"
+            UPDATE_ALL: 'Alles bijwerken'
+            UPDATE_ALL_CONFIRM_MESSAGE: "{n, plural, one{# thema wordt bijgewerkt:} other{# thema's worden bijgewerkt:}}"
+            UPDATE_ALL_CONFIRM_TITLE: "Thema's bijwerken?"
         TIME:
             DAYS_AGO: '{n}d geleden'
             HOURS_AGO: '{n}u geleden'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Rapporten konden niet worden geladen'
                 LOADING_REPORTS: 'Rapporten laden...'
                 NO_REPORTS_AVAILABLE: 'Geen rapporten beschikbaar.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: "''{token}'' toegevoegd aan {key}"
+                    ADD_FAILED: 'Kon de allowlist niet bijwerken'
+                    ADD_TO_ALLOWLIST: 'Toevoegen aan allowlist'
+                    CLEARED_EVENTS: 'Recente blokkades gewist'
+                    CLEAR_EVENTS: 'Blokkades wissen'
+                    CLEAR_FAILED: 'Kon blokkades niet wissen'
+                    EVENT_GATE_BLOCKED: 'Gate heeft Twig in de inhoud van deze pagina geblokkeerd'
+                    EVENT_SANDBOX_FILTER: 'Sandbox heeft filter geblokkeerd'
+                    EVENT_SANDBOX_FUNCTION: 'Sandbox heeft functie geblokkeerd'
+                    EVENT_SANDBOX_METHOD: 'Sandbox heeft methode geblokkeerd'
+                    EVENT_SANDBOX_PROPERTY: 'Sandbox heeft eigenschap geblokkeerd'
+                    EVENT_SANDBOX_TAG: 'Sandbox geblokkeerde tag'
+                    EVENT_XSS_BLANKED: 'Output gewist door de XSS-scan'
+                    FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig is aangevraagd (pages.frontmatter.process_twig), maar Twig in content is globaal uitgeschakeld, dus het zal niet worden uitgevoerd. Kies hierboven een profiel om het in te schakelen.'
+                    GATE_OFF: 'Twig in content uitgeschakeld'
+                    GATE_ON: 'Twig in content ingeschakeld'
+                    GLOBAL_REQUEST_GATED: "system.pages.process.twig staat aan, maar Twig in content is globaal uitgeschakeld, dus die pagina's worden als onbewerkte tekst weergegeven. Kies hierboven een profiel om het in te schakelen, of verwijder de globale vlag."
+                    LEAK_GATE_OFF: 'De site-beveiliging staat uit, dus de Twig-markup van deze pagina wordt als onbewerkte tekst aan bezoekers getoond.'
+                    LEAK_PAGE_OFF: 'Twig is uitgeschakeld voor deze pagina, dus de Twig-markup wordt als onbewerkte tekst aan bezoekers getoond.'
+                    OPEN_SECURITY_SETTINGS: 'Open beveiligingsinstellingen'
+                    SANDBOX_OFF: 'Sandbox uit'
+                    SANDBOX_ON: 'Sandbox aan'
+                    SCAN_CLEAN: 'Geen inhoud gebruikt Twig buiten de huidige toegestane lijsten.'
+                    SCAN_CONTENT: 'Inhoud scannen'
+                    SCAN_FAILED: 'Inhoudsscan mislukt'
+                    SCAN_FILTERS: 'Geblokkeerde filters in inhoud'
+                    SCAN_FUNCTIONS: 'Geblokkeerde functies in inhoud'
+                    SCAN_INTRO: 'Scan alle pagina-inhoud op Twig die de sandbox zou blokkeren.'
+                    SCAN_TAGS: 'Geblokkeerde tags in inhoud'
+                    SECTION_EVENTS: 'Recente blokkades'
+                    SECTION_LEAKS: "Pagina's die onbewerkte Twig lekken"
+                    XSS_SCAN_OFF: 'XSS-outputscan uit'
+                    XSS_SCAN_ON: 'XSS-outputscan aan'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Rapportcomponent laden...'
             SCHEDULER:
