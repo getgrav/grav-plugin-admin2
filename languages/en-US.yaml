@@ -127,6 +127,11 @@ ICU:
       MODE_NORMAL: Normal
       MODE_EXPERT: Expert
       FRONTMATTER: Frontmatter
+      TWIG_BANNER:
+        LEAK_GATE_OFF: This page contains Twig markup, but Twig in content is turned off site-wide, so it renders as raw text to visitors.
+        LEAK_PAGE_OFF: This page contains Twig markup, but Twig is turned off for this page, so it renders as raw text to visitors.
+        RECENT_BLOCKS: "{n, plural, one {# Twig construct on this page was recently blocked} other {# Twig constructs on this page were recently blocked}}."
+        VIEW_REPORT: View report
       INFO_PUBLISHED: Published
       INFO_VISIBLE: Visible in nav
       INFO_ROUTABLE: Routable
@@ -500,6 +505,9 @@ ICU:
         UPLOAD_FILES: Upload Files
         NEW_FOLDER: New Folder
         CREATE: Create
+        CUSTOM_ORDER: Custom order
+        REORDER: Drag to reorder
+        ORDER_SAVE_FAILED: Failed to save the new order
       MEDIA_TOOLBAR:
         SEARCH_MEDIA: Search media...
         GRID_VIEW: Grid view
@@ -511,6 +519,7 @@ ICU:
       PAGE_MEDIA:
         PAGE_MEDIA: Page Media
         DRAG_INTO_EDITOR: Drag into editor
+        REORDER: Drag to reorder
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache
@@ -580,6 +589,40 @@ ICU:
         LOADING_REPORTS: Loading reports...
         NO_REPORTS_AVAILABLE: No reports available.
         CONTENT_FIELD: "content: {field}"
+        TWIG_CONTENT:
+          GATE_ON: Twig in content enabled
+          GATE_OFF: Twig in content disabled
+          SANDBOX_ON: Sandbox on
+          SANDBOX_OFF: Sandbox off
+          XSS_SCAN_ON: XSS output scan on
+          XSS_SCAN_OFF: XSS output scan off
+          SECTION_LEAKS: Pages leaking raw Twig
+          SECTION_EVENTS: Recent blocks
+          LEAK_GATE_OFF: "The site gate is off, so this page's Twig markup renders as raw text to visitors."
+          LEAK_PAGE_OFF: "Twig is turned off for this page, so its Twig markup renders as raw text to visitors."
+          ADD_TO_ALLOWLIST: Add to allowlist
+          ADDED_TO_ALLOWLIST: "Added ''{token}'' to {key}"
+          ADD_FAILED: Could not update the allowlist
+          CLEAR_EVENTS: Clear blocks
+          CLEARED_EVENTS: Cleared recent blocks
+          CLEAR_FAILED: Could not clear blocks
+          OPEN_SECURITY_SETTINGS: Open Security settings
+          EVENT_GATE_BLOCKED: Gate blocked Twig in this page's content
+          EVENT_XSS_BLANKED: Output blanked by the XSS scan
+          EVENT_SANDBOX_TAG: "Sandbox blocked tag"
+          EVENT_SANDBOX_FILTER: "Sandbox blocked filter"
+          EVENT_SANDBOX_FUNCTION: "Sandbox blocked function"
+          EVENT_SANDBOX_METHOD: "Sandbox blocked method"
+          EVENT_SANDBOX_PROPERTY: "Sandbox blocked property"
+          SCAN_INTRO: Scan all page content for Twig the sandbox would block.
+          SCAN_CONTENT: Scan content
+          SCAN_FAILED: Content scan failed
+          SCAN_CLEAN: No content uses Twig outside the current allowlists.
+          SCAN_TAGS: Blocked tags in content
+          SCAN_FILTERS: Blocked filters in content
+          SCAN_FUNCTIONS: Blocked functions in content
+          GLOBAL_REQUEST_GATED: "system.pages.process.twig is on, but Twig in content is disabled site-wide, so those pages render raw. Pick a profile above to enable it, or remove the global flag."
+          FRONTMATTER_REQUEST_GATED: "Frontmatter Twig is requested (pages.frontmatter.process_twig), but Twig in content is disabled site-wide, so it won't run. Pick a profile above to enable it."
       SCHEDULER:
         FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
@@ -659,6 +702,17 @@ ICU:
       TITLE: Configuration
       TITLE_SCROLLED: "Configuration: {scope}"
       LOADING_CONFIGURATION: Loading configuration...
+      TWIG_PROFILE:
+        LABEL: Twig in Content
+        HELP: Choose who can run Twig inside page content. This sets the advanced toggles below.
+        OFF: 'Off'
+        TRUSTED: Trusted roles only
+        ALL: All editors
+        CUSTOM: Custom
+        OFF_DESC: Twig in page content is disabled. Markup is shown as written.
+        TRUSTED_DESC: Only super users and holders of the "pages twig" permission can enable Twig on a page.
+        ALL_DESC: Any editor can enable Twig on the pages they edit.
+        CUSTOM_DESC: The current settings don't match a named profile. Adjust the advanced toggles below, or pick a profile to reset them.
       FILTER_FIELDS: Filter fields...
       CLEAR_FILTER: Clear filter
       NO_MATCHES_FOUND: No matches found
@@ -1251,7 +1305,7 @@ ICU:
     CACHE_PREFIX_HELP: An identifier for part of the Grav key.  Don't change unless you know what your doing.
     CACHE_PREFIX_PLACEHOLDER: Derived from base URL (override by entering random string)
     CACHE_PURGE_AGE: Cache Purge Age
-    CACHE_PURGE_AGE_HELP: Purge all cache items older than this age (in seconds)
+    CACHE_PURGE_AGE_HELP: Purge all cache items older than this age (in days)
     CACHE_PURGE_JOB: Run Scheduled Purge Job
     CACHE_PURGE_JOB_HELP: With the scheduler you can periodically clear out old Doctrine file cache folders with this job
     CACHING: Caching

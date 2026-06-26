@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Auf den geerbten Wert zurückgesetzt'
                 REVERT_FAILED: 'Konnte nicht zurückgesetzt werden'
                 REVERT_TOOLTIP: 'Übersteuert Standard ({value}). Klicken zum Zurücksetzen.'
+            TWIG_PROFILE:
+                ALL: 'Alle Editoren'
+                ALL_DESC: 'Jeder Editor kann Twig auf den von ihm bearbeiteten Seiten aktivieren.'
+                CUSTOM: Benutzerdefiniert
+                CUSTOM_DESC: 'Die aktuellen Einstellungen entsprechen keinem benannten Profil. Passen Sie die erweiterten Optionen unten an oder wählen Sie ein Profil, um diese zurückzusetzen.'
+                HELP: 'Wählen Sie, wer Twig innerhalb von Seiteninhalten ausführen darf. Dies legt die erweiterten Optionen unten fest.'
+                LABEL: 'Twig in Inhalten'
+                'OFF': Aus
+                OFF_DESC: 'Twig in Seiteninhalten ist deaktiviert. Markup wird so angezeigt, wie es geschrieben wurde.'
+                TRUSTED: 'Nur vertrauenswürdige Rollen'
+                TRUSTED_DESC: 'Nur Superuser und Benutzer mit der Berechtigung „pages twig“ können Twig auf einer Seite aktivieren.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Umgebung
             EXPORT_YAML: 'YAML exportieren'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'Plugin ist installiert. Aktivieren Sie Webhook-Trigger unten, um die Funktion zu aktivieren.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'Plugin ist für die Webhook-Funktionalität erforderlich.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-Plugin erforderlich'
+            FILE:
+                LIMIT_REACHED: 'Dieses Feld akzeptiert höchstens {limit} Datei(en).'
         FLEX_OBJECTS:
             ACTIONS: Aktionen
             BACK_TO_LIST: 'Zurück zur Liste'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} insgesamt'
             STATS_UNPUBLISHED: '{n} nicht veröffentlicht'
             UNPUBLISH: 'Veröffentlichung aufheben'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Diese Seite enthält Twig-Markup, aber Twig in Inhalten ist seitenweit deaktiviert, sodass es für Besucher als reiner Text dargestellt wird.'
+                LEAK_PAGE_OFF: 'Diese Seite enthält Twig-Markup, aber Twig ist für diese Seite deaktiviert, sodass es für Besucher als reiner Text dargestellt wird.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig-Konstrukt wurde kürzlich auf dieser Seite blockiert} other {# Twig-Konstrukte wurden kürzlich auf dieser Seite blockiert}}.'
+                VIEW_REPORT: 'Bericht ansehen'
         PASSWORD: Passwort
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Passwortanforderungen
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Berechtigungen konnten nicht geladen werden'
             NOT_SET: 'Nicht gesetzt'
             ADMIN_LEGACY: 'Admin (Legacy)'
+            INHERITED_ALLOWED: 'Erlaubt über Gruppe: {groups}'
+            INHERITED_DENIED: 'Verweigert über Gruppe: {groups}'
+            LEGEND_DIRECT: 'Direkt festgelegt'
+            LEGEND_INHERITED: 'Von einer Gruppe geerbt'
+            LEGEND_INTRO: 'Blasse Umschalter stammen aus der Gruppenzugehörigkeit und dienen nur zur Information. Ändern Sie einen, um ihn als direkte Berechtigung für diesen Benutzer festzulegen.'
+            LEGEND_OVERRIDE: 'Überschreibt eine Gruppe'
+            LEGEND_SUPER: 'Gewährt durch Super-Admin'
+            OVERRIDES_GROUP: 'Ihre direkte Einstellung überschreibt die Gruppe: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Zurück zum Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Für diese Plugin-Seite ist kein Inhalt verfügbar.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: '{name} entfernen? Dies deinstalliert das Plugin und löscht seine Dateien. Die Konfiguration bleibt erhalten.'
             REMOVE_CONFIRM_TITLE: 'Plugin entfernen?'
             TITLE: Plugins
+            UPDATE_ALL: 'Alle aktualisieren'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# Plugin wird aktualisiert:} other{# Plugins werden aktualisiert:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Plugins aktualisieren?'
+            UPDATE_CONFIRM_MESSAGE: '{name} auf v{version} aktualisieren?'
+            UPDATE_CONFIRM_TITLE: 'Plugin aktualisieren?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Plugin-Seite wird geladen...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Wie sich der Markdown-Editor während des Schreibens verhält.'
             STICKY_TOOLBAR: 'Fixierte Symbolleiste'
             STICKY_TOOLBAR_DESC: 'Behalten Sie die Formatierungs-Symbolleiste und die Vorschau-Schaltfläche beim Scrollen im Blickfeld.'
+            ADMIN_TITLE: Admin-Titel
+            ADMIN_TITLE_DESC: 'Wird als Anmeldeüberschrift und im Browser-Tab angezeigt. Leer lassen für „Grav Admin“.'
+            FAILED_TO_SAVE_BRANDING: 'Speichern des Brandings fehlgeschlagen.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Benutzerdefiniertes Browser-Tab-Symbol (SVG, PNG, WebP oder ICO). Leer lassen für das generierte Symbol.'
+            FAVICON_REMOVED: 'Favicon entfernt.'
+            FAVICON_UPLOADED: 'Favicon hochgeladen.'
+            LOGIN_SUBTITLE: Anmelde-Untertitel
+            LOGIN_SUBTITLE_DESC: 'Optionale Zeile, die unter der Anmeldeüberschrift angezeigt wird.'
+            SHOW_POWERED_BY: '„Powered by Grav“ anzeigen'
+            SHOW_POWERED_BY_DESC: 'Zeigen Sie die Zeile „Powered by Grav CMS“ auf den Anmelde- und Einrichtungsbildschirmen an.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} verfügbar'
             UPDATE_ALL: 'Alles aktualisieren'
             UPGRADE_GRAV: 'Grav aktualisieren'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# Paket wird aktualisiert:} other{# Pakete werden aktualisiert:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Alle Pakete aktualisieren?'
         THEMES:
             ACTIVE_THEME: 'Aktives Design'
             BACK_TO_THEMES: 'Zurück zu Designs'
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: '{name} entfernen? Dies deinstalliert das Theme und löscht seine Dateien.'
             REMOVE_CONFIRM_TITLE: 'Theme entfernen?'
             TITLE: Themes
+            UPDATE_ALL: 'Alle aktualisieren'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# Theme wird aktualisiert:} other{# Themes werden aktualisiert:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Themes aktualisieren?'
         TIME:
             DAYS_AGO: 'vor {n}T'
             HOURS_AGO: 'vor {n}h'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Berichte konnten nicht geladen werden'
                 LOADING_REPORTS: 'Berichte werden geladen...'
                 NO_REPORTS_AVAILABLE: 'Keine Berichte verfügbar.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: '„{token}“ wurde zu {key} hinzugefügt'
+                    ADD_FAILED: 'Die Whitelist konnte nicht aktualisiert werden'
+                    ADD_TO_ALLOWLIST: 'Zur Whitelist hinzufügen'
+                    CLEARED_EVENTS: 'Kürzliche Blockierungen gelöscht'
+                    CLEAR_EVENTS: 'Blockierungen löschen'
+                    CLEAR_FAILED: 'Blockierungen konnten nicht gelöscht werden'
+                    EVENT_GATE_BLOCKED: 'Gate hat Twig im Inhalt dieser Seite blockiert'
+                    EVENT_SANDBOX_FILTER: 'Sandbox hat Filter blockiert'
+                    EVENT_SANDBOX_FUNCTION: 'Sandbox hat Funktion blockiert'
+                    EVENT_SANDBOX_METHOD: 'Sandbox hat Methode blockiert'
+                    EVENT_SANDBOX_PROPERTY: 'Sandbox hat Eigenschaft blockiert'
+                    EVENT_SANDBOX_TAG: 'Vom Sandbox-Modus blockiertes Tag'
+                    EVENT_XSS_BLANKED: 'Ausgabe durch XSS-Scan bereinigt'
+                    FRONTMATTER_REQUEST_GATED: 'Frontmatter-Twig wurde angefordert (pages.frontmatter.process_twig), aber Twig im Inhalt ist systemweit deaktiviert, daher wird es nicht ausgeführt. Wähle oben ein Profil, um es zu aktivieren.'
+                    GATE_OFF: 'Twig im Inhalt deaktiviert'
+                    GATE_ON: 'Twig im Inhalt aktiviert'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig ist aktiviert, aber Twig im Inhalt ist systemweit deaktiviert, daher werden diese Seiten als Rohdaten gerendert. Wähle oben ein Profil, um es zu aktivieren, oder entferne das globale Flag.'
+                    LEAK_GATE_OFF: 'Die Seitensperre ist deaktiviert, daher wird das Twig-Markup dieser Seite für Besucher als reiner Text gerendert.'
+                    LEAK_PAGE_OFF: 'Twig ist für diese Seite deaktiviert, daher wird das Twig-Markup als reiner Text für Besucher gerendert.'
+                    OPEN_SECURITY_SETTINGS: 'Sicherheitseinstellungen öffnen'
+                    SANDBOX_OFF: 'Sandbox aus'
+                    SANDBOX_ON: 'Sandbox an'
+                    SCAN_CLEAN: 'Kein Inhalt verwendet Twig außerhalb der aktuellen Positivlisten.'
+                    SCAN_CONTENT: 'Inhalt scannen'
+                    SCAN_FAILED: 'Inhaltsscan fehlgeschlagen'
+                    SCAN_FILTERS: 'Blockierte Filter im Inhalt'
+                    SCAN_FUNCTIONS: 'Blockierte Funktionen im Inhalt'
+                    SCAN_INTRO: 'Gesamten Seiteninhalt auf Twig scannen, das von der Sandbox blockiert würde.'
+                    SCAN_TAGS: 'Blockierte Tags im Inhalt'
+                    SECTION_EVENTS: 'Kürzlich blockiert'
+                    SECTION_LEAKS: 'Seiten, die rohes Twig anzeigen'
+                    XSS_SCAN_OFF: 'XSS-Ausgabe-Scan aus'
+                    XSS_SCAN_ON: 'XSS-Ausgabe-Scan an'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Berichtskomponente wird geladen...'
             SCHEDULER:
@@ -1857,6 +1938,6 @@ ICU:
         YUBIKEY_HELP: 'Stecken Sie Ihren YubiKey in Ihren Computer ein und klicken Sie auf die Schaltfläche, um ein OTP zu generieren. Die ersten 12 Zeichen sind Ihre Client-ID und werden gespeichert.'
         YUBIKEY_ID: YubiKey-ID
         SECURITY_CHECK:
-            USER_FOLDER_EXPOSED_BODY: 'Dateien unter user/data, user/accounts und user/config können direkt über HTTP heruntergeladen werden — einschließlich Zertifikaten, Schlüsseln, Token und Datenbanken. Dies bedeutet normalerweise, dass Ihr Webserver die .htaccess-Regeln von Grav nicht anwendet.'
+            USER_FOLDER_EXPOSED_BODY: 'Dein Webserver wendet nicht die von Grav empfohlenen Zugriffsregeln an, sodass Dateien in user/ direkt über das Web erreicht werden können. Es lohnt sich es zu verschärfen, da einige Plugins hier Daten speichern.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Wie Sie Ihren Webserver absichern'
-            USER_FOLDER_EXPOSED_TITLE: 'Sicherheitsrisiko: Ihre Benutzerdaten-Ordner sind über das Web erreichbar'
+            USER_FOLDER_EXPOSED_TITLE: 'Dein Webserver wendet die Zugriffsregeln von Grav nicht an'

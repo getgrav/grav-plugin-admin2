@@ -193,6 +193,11 @@ ICU:
             STATS_TOTAL: '{n} إجمالي'
             STATS_UNPUBLISHED: '{n} غير منشور'
             UNPUBLISH: 'إلغاء النشر'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'تحتوي هذه الصفحة على ترميز Twig، ولكن تم إيقاف Twig في المحتوى على مستوى الموقع، لذا يتم عرضه كنص خام للزوار.'
+                LEAK_PAGE_OFF: 'تحتوي هذه الصفحة على ترميز Twig، ولكن تم إيقاف Twig لهذه الصفحة، لذا يتم عرضه كنص خام للزوار.'
+                RECENT_BLOCKS: '{n, plural, one {تم حظر # بناء Twig على هذه الصفحة مؤخراً} other {تم حظر # بنيات Twig على هذه الصفحة مؤخراً}}.'
+                VIEW_REPORT: 'عرض التقرير'
         FIELDS:
             CLEAR_DATE: 'مسح التاريخ'
             REGENERATE_SLUG: 'إعادة التوليد التلقائي من عنوان الصفحة'
@@ -268,6 +273,8 @@ ICU:
             FILE_PICKER:
                 NO_MEDIA_UPLOADED: 'لم يتم رفع أي ملفات وسائط بعد'
                 NO_MATCHING_FILES: 'لا توجد ملفات مطابقة'
+            FILE:
+                LIMIT_REACHED: 'هذا الحقل يقبل {limit} ملف(ات) كحد أقصى.'
         NAV:
             DASHBOARD: 'لوحة التحكم'
             CONFIGURATION: الإعدادات
@@ -348,6 +355,14 @@ ICU:
             NOT_SET: 'غير مُعيَّن'
             FAILED_TO_LOAD_PERMISSIONS: 'فشل تحميل الأذونات'
             ADMIN_LEGACY: 'المسؤول (الإصدار القديم)'
+            INHERITED_ALLOWED: 'مسموح عبر المجموعة: {groups}'
+            INHERITED_DENIED: 'ممنوع عبر المجموعة: {groups}'
+            LEGEND_DIRECT: 'تعيين مباشر'
+            LEGEND_INHERITED: 'موروث من مجموعة'
+            LEGEND_INTRO: 'أدوات التبديل الباهتة تأتي من عضوية المجموعة ويتم عرضها كمرجع. قم بتعيين واحدة منها لجعلها صلاحية مباشرة لهذا المستخدم.'
+            LEGEND_OVERRIDE: 'يتجاوز المجموعة'
+            LEGEND_SUPER: 'ممنوح من قبل المسؤول العام'
+            OVERRIDES_GROUP: 'إعدادك المباشر يتجاوز المجموعة: {groups}'
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: 'رمز QR لـ 2FA'
             SCAN_THE_QR_CODE_WITH_YOUR: 'امسح رمز QR بتطبيق المُصادِق الخاص بك'
@@ -445,6 +460,8 @@ ICU:
             DISK: القرص
             BYTES_USED: '{size} مستخدَم'
             BYTES_FREE: '{size} متاح'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{سيتم تحديث حزمة واحدة:} other{سيتم تحديث {n} حزم:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'تحديث جميع الحزم؟'
         TOP_PAGES_WIDGET:
             NO_VIEW_DATA_YET: 'لا توجد بيانات مشاهدات بعد'
         MARKDOWN_EDITOR:
@@ -545,6 +562,40 @@ ICU:
                 LOADING_REPORTS: 'جارٍ تحميل التقارير...'
                 NO_REPORTS_AVAILABLE: 'لا توجد تقارير متاحة.'
                 CONTENT_FIELD: 'content: {field}'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'تمت إضافة «{token}» إلى {key}'
+                    ADD_FAILED: 'تعذر تحديث قائمة السماح'
+                    ADD_TO_ALLOWLIST: 'إضافة إلى قائمة السماح'
+                    CLEARED_EVENTS: 'تم مسح عمليات الحظر الأخيرة'
+                    CLEAR_EVENTS: 'مسح عمليات الحظر'
+                    CLEAR_FAILED: 'تعذر مسح عمليات الحظر'
+                    EVENT_GATE_BLOCKED: 'قام Gate بحظر Twig في محتوى هذه الصفحة'
+                    EVENT_SANDBOX_FILTER: 'قام Sandbox بحظر الفلتر'
+                    EVENT_SANDBOX_FUNCTION: 'قام Sandbox بحظر الدالة'
+                    EVENT_SANDBOX_METHOD: 'قام Sandbox بحظر الطريقة'
+                    EVENT_SANDBOX_PROPERTY: 'قام Sandbox بحظر الخاصية'
+                    EVENT_SANDBOX_TAG: 'وسم محظور في وضع الحماية (Sandbox)'
+                    EVENT_XSS_BLANKED: 'تم مسح المخرجات بواسطة فحص XSS'
+                    FRONTMATTER_REQUEST_GATED: 'تم طلب معالجة Twig في الترويسة (pages.frontmatter.process_twig)، ولكن ميزة Twig في المحتوى معطلة على مستوى الموقع، لذا لن تعمل. اختر ملف تعريف من الأعلى لتفعيلها.'
+                    GATE_OFF: 'ميزة Twig في المحتوى معطلة'
+                    GATE_ON: 'ميزة Twig في المحتوى مفعلة'
+                    GLOBAL_REQUEST_GATED: 'إعداد system.pages.process.twig قيد التشغيل، ولكن ميزة Twig في المحتوى معطلة على مستوى الموقع، لذا تظهر تلك الصفحات ككود خام. اختر ملف تعريف من الأعلى لتفعيلها، أو أزل العلامة العامة.'
+                    LEAK_GATE_OFF: 'بوابة الموقع مغلقة، لذا يظهر كود Twig لهذه الصفحة كنص خام للزوار.'
+                    LEAK_PAGE_OFF: 'ميزة Twig معطلة لهذه الصفحة، لذا يظهر كود Twig الخاص بها كنص خام للزوار.'
+                    OPEN_SECURITY_SETTINGS: 'فتح إعدادات الأمان'
+                    SANDBOX_OFF: 'وضع الحماية (Sandbox) معطل'
+                    SANDBOX_ON: 'وضع الحماية (Sandbox) مفعل'
+                    SCAN_CLEAN: 'لا يوجد محتوى يستخدم Twig خارج قوائم السماح الحالية.'
+                    SCAN_CONTENT: 'فحص المحتوى'
+                    SCAN_FAILED: 'فشل فحص المحتوى'
+                    SCAN_FILTERS: 'عوامل تصفية (Filters) محظورة في المحتوى'
+                    SCAN_FUNCTIONS: 'دوال (Functions) محظورة في المحتوى'
+                    SCAN_INTRO: 'فحص محتوى جميع الصفحات بحثاً عن كود Twig الذي قد يحظره وضع الحماية.'
+                    SCAN_TAGS: 'وسوم محظورة في المحتوى'
+                    SECTION_EVENTS: 'عمليات الحظر الأخيرة'
+                    SECTION_LEAKS: 'صفحات تعرض كود Twig الخام'
+                    XSS_SCAN_OFF: 'فحص مخرجات XSS معطل'
+                    XSS_SCAN_ON: 'فحص مخرجات XSS مفعل'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'فشل تحميل إعدادات المُجدوِل.'
                 SCHEDULER_CONFIGURATION_SAVED: 'تم حفظ إعدادات المُجدوِل'
@@ -646,6 +697,17 @@ ICU:
                 REVERTED: 'تم الرجوع إلى القيمة الموروثة'
                 REVERT_FAILED: 'تعذر الرجوع'
                 REVERT_TOOLTIP: 'يتجاوز الإعداد الافتراضي ({value}). انقر للرجوع.'
+            TWIG_PROFILE:
+                ALL: 'جميع المحررين'
+                ALL_DESC: 'يمكن لأي محرر تفعيل Twig على الصفحات التي يقوم بتحريرها.'
+                CUSTOM: مخصص
+                CUSTOM_DESC: 'الإعدادات الحالية لا تطابق ملف تعريف مسمى. اضبط المفاتيح المتقدمة أدناه، أو اختر ملف تعريف لإعادة تعيينها.'
+                HELP: 'اختر من يمكنه تشغيل Twig داخل محتوى الصفحة. هذا يضبط المفاتيح المتقدمة أدناه.'
+                LABEL: 'Twig في المحتوى'
+                'OFF': إيقاف
+                OFF_DESC: 'تم تعطيل Twig في محتوى الصفحة. سيتم عرض الترميز كما هو مكتوب.'
+                TRUSTED: 'الأدوار الموثوقة فقط'
+                TRUSTED_DESC: 'المستخدمون المتميزون فقط وحاملو إذن «pages twig» يمكنهم تفعيل Twig في الصفحة.'
         FLEX_OBJECTS:
             SEARCH: بحث...
             PREVIOUS: السابق
@@ -734,6 +796,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'إزالة {name}؟ سيؤدي هذا إلى إلغاء تثبيت المكون الإضافي وحذف ملفاته. سيتم الاحتفاظ بالإعدادات.'
             REMOVE_CONFIRM_TITLE: 'إزالة المكون الإضافي؟'
             TITLE: 'المكونات الإضافية'
+            UPDATE_ALL: 'تحديث الكل'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# إضافة سيتم تحديثها:} other{# إضافات سيتم تحديثها:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'تحديث الإضافات؟'
+            UPDATE_CONFIRM_MESSAGE: 'تحديث {name} إلى الإصدار {version}؟'
+            UPDATE_CONFIRM_TITLE: 'تحديث الإضافة؟'
         RESET:
             PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'تمت إعادة تعيين كلمة المرور بنجاح. يُرجى تسجيل الدخول.'
             UNABLE_TO_CONNECT_TO_SERVER: 'تعذّر الاتصال بالخادم.'
@@ -872,6 +939,17 @@ ICU:
             EDITOR_SECTION_DESC: 'كيفية عمل محرر Markdown أثناء الكتابة.'
             STICKY_TOOLBAR: 'شريط الأدوات الثابت'
             STICKY_TOOLBAR_DESC: 'احتفظ بشريط أدوات التنسيق وزر المعاينة مثبتاً في العرض أثناء التمرير.'
+            ADMIN_TITLE: 'عنوان لوحة التحكم'
+            ADMIN_TITLE_DESC: 'يظهر كعنوان لتسجيل الدخول وفي علامة تبويب المتصفح. اتركه فارغاً لـ «Grav Admin».'
+            FAILED_TO_SAVE_BRANDING: 'فشل حفظ العلامة التجارية.'
+            FAVICON: 'أيقونة المفضلة (Favicon)'
+            FAVICON_DESC: 'أيقونة مخصصة لعلامة تبويب المتصفح (SVG أو PNG أو WebP أو ICO). اتركها فارغة لاستخدام الأيقونة المُنشأة تلقائياً.'
+            FAVICON_REMOVED: 'تمت إزالة أيقونة المفضلة.'
+            FAVICON_UPLOADED: 'تم رفع أيقونة المفضلة.'
+            LOGIN_SUBTITLE: 'العنوان الفرعي لتسجيل الدخول'
+            LOGIN_SUBTITLE_DESC: 'سطر اختياري يظهر تحت عنوان تسجيل الدخول.'
+            SHOW_POWERED_BY: 'إظهار «مدعوم بواسطة Grav»'
+            SHOW_POWERED_BY_DESC: 'إظهار سطر «مدعوم بواسطة Grav CMS» في شاشات تسجيل الدخول والإعداد.'
         CUSTOM: مخصص
         PREVIEW: معاينة
         SETUP:
@@ -925,6 +1003,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'إزالة {name}؟ سيؤدي هذا إلى إلغاء تثبيت الموضوع وحذف ملفاته.'
             REMOVE_CONFIRM_TITLE: 'إزالة الموضوع؟'
             TITLE: المواضيع
+            UPDATE_ALL: 'تحديث الكل'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{سيتم تحديث سمة واحدة:} other{سيتم تحديث {n} سمات:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'تحديث السمات؟'
         ACTIVE: نشط
         ACTIVATE: تنشيط
         USERS:

@@ -196,6 +196,17 @@ ICU:
             RELOAD: Genindlæs
             TITLE: Konfiguration
             TITLE_SCROLLED: 'Konfiguration: {scope}'
+            TWIG_PROFILE:
+                ALL: 'Alle redaktører'
+                ALL_DESC: 'Enhver redaktør kan aktivere Twig på de sider, de redigerer.'
+                CUSTOM: Brugerdefineret
+                CUSTOM_DESC: 'De nuværende indstillinger matcher ikke en navngiven profil. Juster de avancerede til/fra-knapper nedenfor, eller vælg en profil for at nulstille dem.'
+                HELP: 'Vælg hvem der kan køre Twig i sideindhold. Dette indstiller de avancerede til/fra-knapper nedenfor.'
+                LABEL: 'Twig i indhold'
+                'OFF': Fra
+                OFF_DESC: 'Twig i sideindhold er deaktiveret. Markup vises som skrevet.'
+                TRUSTED: 'Kun betroede roller'
+                TRUSTED_DESC: 'Kun superbrugere og indehavere af rettigheden „pages twig“ kan aktivere Twig på en side.'
         CONFIGURATION: Konfiguration
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljø
@@ -1023,6 +1034,11 @@ ICU:
             VIEW_COLUMNS: Kolonner
             VIEW_LIST: Liste
             VIEW_TREE: Træ
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Denne side indeholder Twig-markup, men Twig i indhold er slået fra på hele webstedet, så det vises som rå tekst for besøgende.'
+                LEAK_PAGE_OFF: 'Denne side indeholder Twig-markup, men Twig er slået fra for denne side, så det vises som rå tekst for besøgende.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig-konstrukt på denne side blev for nylig blokeret} other {# Twig-konstrukter på denne side blev for nylig blokeret}}.'
+                VIEW_REPORT: 'Se rapport'
         PAGES_CONFIGURATION: Sidekonfiguration
         PAGES_FALLBACK_ONLY: 'Kun fallback for sider'
         PAGES_FALLBACK_ONLY_HELP: "Kun 'fallback' for at finde sideindhold gennem understøttede sprog. Standardadfærd er at vise ethvert fundet sprog, hvis det aktive sprog mangler"
@@ -1061,6 +1077,14 @@ ICU:
             ADMIN_LEGACY: 'Admin (legacy)'
             FAILED_TO_LOAD_PERMISSIONS: 'Kunne ikke indlæse tilladelser'
             NOT_SET: 'Ikke angivet'
+            INHERITED_ALLOWED: 'Tilladt via gruppe: {groups}'
+            INHERITED_DENIED: 'Nægtet via gruppe: {groups}'
+            LEGEND_DIRECT: 'Angivet direkte'
+            LEGEND_INHERITED: 'Arvet fra en gruppe'
+            LEGEND_INTRO: 'Svage knapper kommer fra gruppemedlemskab og vises som reference. Angiv en for at gøre det til en direkte tilladelse for denne bruger.'
+            LEGEND_OVERRIDE: 'Overskriver en gruppe'
+            LEGEND_SUPER: 'Tildelt af super-administrator'
+            OVERRIDES_GROUP: 'Din direkte indstilling overskriver gruppen: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Tilbage til kontrolpanel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Intet indhold tilgængeligt for denne pluginside.'
@@ -1086,6 +1110,11 @@ ICU:
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Vælg et plugin for at se detaljer'
             SYMLINKED: 'Symbolsk linket'
             TITLE: Plugins
+            UPDATE_ALL: 'Opdater alle'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# plugin vil blive opdateret:} other{# plugins vil blive opdateret:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Opdater plugins?'
+            UPDATE_CONFIRM_MESSAGE: 'Opdater {name} til v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Opdater plugin?'
         PLUGINS_TABLE:
             NAME: Navn
             NO_PLUGINS: 'Ingen plugins installeret'
@@ -1386,6 +1415,17 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Anvendes på mørke baggrunde'
             USED_ON_LIGHT_BACKGROUNDS: 'Anvendes på lyse baggrunde'
             USERS_MAY_OVERRIDE: 'Brugere må tilsidesætte'
+            ADMIN_TITLE: Admin-titel
+            ADMIN_TITLE_DESC: 'Vises som overskrift ved log-ind og i browserfanen. Efterlad tom for «Grav Admin».'
+            FAILED_TO_SAVE_BRANDING: 'Kunne ikke gemme branding.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Brugerdefineret browserfane-ikon (SVG, PNG, WebP eller ICO). Efterlad tom for det genererede ikon.'
+            FAVICON_REMOVED: 'Favicon fjernet.'
+            FAVICON_UPLOADED: 'Favicon uploadet.'
+            LOGIN_SUBTITLE: 'Undertitel til log-ind'
+            LOGIN_SUBTITLE_DESC: 'Valgfri linje der vises under overskriften ved log-ind.'
+            SHOW_POWERED_BY: 'Vis «Powered by Grav»'
+            SHOW_POWERED_BY_DESC: 'Vis linjen «Powered by Grav CMS» på log-ind- og konfigurationsskærmene.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tegn: bogstaver, tal, bindestreger, understregninger'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto oprettet — velkommen til Grav'
@@ -1474,6 +1514,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} tilgængelig'
             UPDATE_ALL: 'Opdater alle'
             UPGRADE_GRAV: 'Opgrader Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# pakke vil blive opdateret:} other{# pakker vil blive opdateret:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Opdatér alle pakker?'
         TAXONOMIES: Taksonomier
         TAXONOMY: Taksonomi
         TAXONOMY_TYPES: Taksonomityper
@@ -1506,6 +1548,9 @@ ICU:
             SYMLINKED: Symlinket
             THEMES_GRAV_ADMIN: 'Temaer — Grav Admin'
             TITLE: Temaer
+            UPDATE_ALL: 'Opdatér alle'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema bliver opdateret:} other{# temaer bliver opdateret:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Opdatér temaer?'
         THEMES_TABLE:
             NO_THEMES: 'Ingen temaer installeret'
         THUMB: Miniature
@@ -1642,6 +1687,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Kunne ikke indlæse rapporter'
                 LOADING_REPORTS: 'Indlæser rapporter...'
                 NO_REPORTS_AVAILABLE: 'Ingen rapporter tilgængelige.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'Tilføjede „{token}“ til {key}'
+                    ADD_FAILED: 'Kunne ikke opdatere tilladelseslisten'
+                    ADD_TO_ALLOWLIST: 'Tilføj til tilladelsesliste'
+                    CLEARED_EVENTS: 'Rydde nylige blokeringer'
+                    CLEAR_EVENTS: 'Ryd blokeringer'
+                    CLEAR_FAILED: 'Kunne ikke rydde blokeringer'
+                    EVENT_GATE_BLOCKED: 'Gate blokerede Twig i denne sides indhold'
+                    EVENT_SANDBOX_FILTER: 'Sandbox blokerede filter'
+                    EVENT_SANDBOX_FUNCTION: 'Sandbox blokerede funktion'
+                    EVENT_SANDBOX_METHOD: 'Sandbox blokerede metode'
+                    EVENT_SANDBOX_PROPERTY: 'Sandbox blokerede egenskab'
+                    EVENT_SANDBOX_TAG: 'Sandbox-blokeret tag'
+                    EVENT_XSS_BLANKED: 'Output slettet af XSS-scanningen'
+                    FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig er anmodet (pages.frontmatter.process_twig), men Twig i indhold er deaktiveret på hele websitet, så det vil ikke blive kørt. Vælg en profil ovenfor for at aktivere det.'
+                    GATE_OFF: 'Twig i indhold deaktiveret'
+                    GATE_ON: 'Twig i indhold aktiveret'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig er slået til, men Twig i indhold er deaktiveret på hele websitet, så disse sider vises som råtekst. Vælg en profil ovenfor for at aktivere det, eller fjern det globale flag.'
+                    LEAK_GATE_OFF: 'Webstedets gate er slået fra, så denne sides Twig-markup vises som råtekst for besøgende.'
+                    LEAK_PAGE_OFF: 'Twig er slået fra for denne side, så dens Twig-markup vises som råtekst for besøgende.'
+                    OPEN_SECURITY_SETTINGS: 'Åbn sikkerhedsindstillinger'
+                    SANDBOX_OFF: 'Sandbox fra'
+                    SANDBOX_ON: 'Sandbox til'
+                    SCAN_CLEAN: 'Intet indhold bruger Twig uden for de nuværende tilladelseslister.'
+                    SCAN_CONTENT: 'Scan indhold'
+                    SCAN_FAILED: 'Indholdsscanning mislykkedes'
+                    SCAN_FILTERS: 'Blokerede filtre i indhold'
+                    SCAN_FUNCTIONS: 'Blokerede funktioner i indhold'
+                    SCAN_INTRO: 'Scan alt sideindhold for Twig, som sandkassen ville blokere.'
+                    SCAN_TAGS: 'Blokerede tags i indhold'
+                    SECTION_EVENTS: 'Seneste blokeringer'
+                    SECTION_LEAKS: 'Sider der lækker rå Twig'
+                    XSS_SCAN_OFF: 'XSS-outputscanning fra'
+                    XSS_SCAN_ON: 'XSS-outputscanning til'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Indlæser rapportkomponent...'
             SCHEDULER:

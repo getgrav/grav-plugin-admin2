@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Palautettu perittyyn arvoon'
                 REVERT_FAILED: 'Palautus epäonnistui'
                 REVERT_TOOLTIP: 'Ohittaa oletusarvon ({value}). Napsauta palautukseen.'
+            TWIG_PROFILE:
+                ALL: 'Kaikki muokkaajat'
+                ALL_DESC: 'Kuka tahansa muokkaaja voi ottaa Twigin käyttöön muokkaamillaan sivuilla.'
+                CUSTOM: Mukautettu
+                CUSTOM_DESC: 'Nykyiset asetukset eivät vastaa nimettyä profiilia. Säädä alla olevia lisäasetuksia tai valitse profiili nollataksesi ne.'
+                HELP: 'Valitse, kuka voi suorittaa Twigiä sivun sisällössä. Tämä määrittää alla olevat lisäasetukset.'
+                LABEL: 'Twig sisällössä'
+                'OFF': 'Pois päältä'
+                OFF_DESC: 'Twig sivun sisällössä on poistettu käytöstä. Merkintätapa näytetään sellaisenaan.'
+                TRUSTED: 'Vain luotetut roolit'
+                TRUSTED_DESC: 'Vain pääkäyttäjät ja ne, joilla on ”pages twig” -oikeus, voivat ottaa Twigin käyttöön sivulla.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ympäristö
             EXPORT_YAML: 'Vie YAML'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'laajennus on asennettu. Ota alla olevat Webhook-liipaisut käyttöön aktivoidaksesi.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'laajennus vaaditaan webhook-toiminnallisuudelle.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-laajennus vaaditaan'
+            FILE:
+                LIMIT_REACHED: 'Tämä kenttä sallii enintään {limit} tiedostoa.'
         FLEX_OBJECTS:
             ACTIONS: Toiminnot
             BACK_TO_LIST: 'Takaisin luetteloon'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} yhteensä'
             STATS_UNPUBLISHED: '{n} julkaisematon'
             UNPUBLISH: 'Peruuta julkaiseminen'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Tämä sivu sisältää Twig-merkintöjä, mutta Twig sisällössä on poistettu käytöstä koko sivustolla, joten se näkyy vierailijoille raakatekstinä.'
+                LEAK_PAGE_OFF: 'Tämä sivu sisältää Twig-merkintöjä, mutta Twig on poistettu käytöstä tältä sivulta, joten se näkyy vierailijoille raakatekstinä.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig-rakenne tällä sivulla estettiin äskettäin} other {# Twig-rakennetta tällä sivulla estettiin äskettäin}}.'
+                VIEW_REPORT: 'Näytä raportti'
         PASSWORD: Salasana
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Salasanavaatimukset
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Käyttöoikeuksien lataaminen epäonnistui'
             NOT_SET: 'Ei asetettu'
             ADMIN_LEGACY: 'Admin (perintö)'
+            INHERITED_ALLOWED: 'Sallittu ryhmän kautta: {groups}'
+            INHERITED_DENIED: 'Evätty ryhmän kautta: {groups}'
+            LEGEND_DIRECT: 'Asetettu suoraan'
+            LEGEND_INHERITED: 'Peritty ryhmältä'
+            LEGEND_INTRO: 'Harmaat valitsimet tulevat ryhmäjäsenyyden kautta ja ne näytetään viitteenä. Aseta jokin niistä tehdäksesi siitä suoran käyttöoikeuden tälle käyttäjälle.'
+            LEGEND_OVERRIDE: 'Ohittaa ryhmän'
+            LEGEND_SUPER: 'Pääkäyttäjän myöntämä'
+            OVERRIDES_GROUP: 'Suora asetuksesi ohittaa ryhmän: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Takaisin kojelautaan'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Tälle liitännäissivulle ei ole saatavilla sisältöä.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Poistetaanko {name}? Tämä poistaa laajennuksen asennuksen ja poistaa sen tiedostot. Määritykset säilytetään.'
             REMOVE_CONFIRM_TITLE: 'Poistetaanko laajennus?'
             TITLE: Laajennukset
+            UPDATE_ALL: 'Päivitä kaikki'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# liitännäinen päivitetään:} other{# liitännäistä päivitetään:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Päivitetäänkö liitännäiset?'
+            UPDATE_CONFIRM_MESSAGE: 'Päivitetäänkö {name} versioon v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Päivitetäänkö liitännäinen?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Ladataan liitännäisen sivua...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Kuinka Markdown-editori käyttäytyy kirjoittaessasi.'
             STICKY_TOOLBAR: 'Kiinnittyvä työkalupalkki'
             STICKY_TOOLBAR_DESC: 'Pidä muotoilutyökalupalkki ja Esikatselu-painike näkyvissä selaamisen aikana.'
+            ADMIN_TITLE: 'Hallinnan otsikko'
+            ADMIN_TITLE_DESC: 'Näytetään kirjautumisotsikkona ja selaimen välilehdessä. Jätä tyhjäksi, jos haluat käyttää nimeä „Grav Admin“.'
+            FAILED_TO_SAVE_BRANDING: 'Brändäyksen tallennus epäonnistui.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Mukautettu selaimen välilehden kuvake (SVG, PNG, WebP tai ICO). Jätä tyhjäksi, jos haluat käyttää luotua kuvaketta.'
+            FAVICON_REMOVED: 'Favicon poistettu.'
+            FAVICON_UPLOADED: 'Favicon ladattu.'
+            LOGIN_SUBTITLE: 'Kirjautumisen alaotsikko'
+            LOGIN_SUBTITLE_DESC: 'Valinnainen rivi, joka näkyy kirjautumisotsikon alla.'
+            SHOW_POWERED_BY: 'Näytä „Powered by Grav“'
+            SHOW_POWERED_BY_DESC: 'Näytä „Powered by Grav CMS“ -rivi kirjautumis- ja asennusnäytöillä.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} saatavilla'
             UPDATE_ALL: 'Päivitä kaikki'
             UPGRADE_GRAV: 'Päivitä Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# paketti päivitetään:} other{# pakettia päivitetään:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Päivitetäänkö kaikki paketit?'
         THEMES:
             ACTIVE_THEME: 'Aktiivinen teema'
             BACK_TO_THEMES: 'Takaisin teemoihin'
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Poistetaanko {name}? Tämä poistaa teeman ja sen tiedostot.'
             REMOVE_CONFIRM_TITLE: 'Poistetaanko teema?'
             TITLE: Teemat
+            UPDATE_ALL: 'Päivitä kaikki'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# teema päivitetään:} other{# teemaa päivitetään:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Päivitetäänkö teemat?'
         TIME:
             DAYS_AGO: '{n}pv sitten'
             HOURS_AGO: '{n}h sitten'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Raporttien lataaminen epäonnistui'
                 LOADING_REPORTS: 'Ladataan raportteja...'
                 NO_REPORTS_AVAILABLE: 'Raportteja ei ole saatavilla.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'Lisätty ”{token}” kohteeseen {key}'
+                    ADD_FAILED: 'Sallittujen luettelon päivittäminen epäonnistui'
+                    ADD_TO_ALLOWLIST: 'Lisää sallittujen luetteloon'
+                    CLEARED_EVENTS: 'Viimeisimmät estot tyhjennetty'
+                    CLEAR_EVENTS: 'Tyhjennä estot'
+                    CLEAR_FAILED: 'Estojen tyhjentäminen epäonnistui'
+                    EVENT_GATE_BLOCKED: 'Gate esti Twigin tämän sivun sisällössä'
+                    EVENT_SANDBOX_FILTER: 'Hiekkalaatikko esti suodattimen'
+                    EVENT_SANDBOX_FUNCTION: 'Hiekkalaatikko esti funktion'
+                    EVENT_SANDBOX_METHOD: 'Hiekkalaatikko esti metodin'
+                    EVENT_SANDBOX_PROPERTY: 'Hiekkalaatikko esti ominaisuuden'
+                    EVENT_SANDBOX_TAG: 'Hiekkalaatikon estämä tunniste'
+                    EVENT_XSS_BLANKED: 'XSS-skannaus tyhjensi tulosteen'
+                    FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig on pyydetty (pages.frontmatter.process_twig), mutta Twig on poistettu käytöstä koko sivustolla, joten se ei toimi. Valitse profiili ylhäältä ottaaksesi sen käyttöön.'
+                    GATE_OFF: 'Twig sisällössä pois käytöstä'
+                    GATE_ON: 'Twig sisällössä käytössä'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig on päällä, mutta Twig on poistettu käytöstä koko sivustolla, joten nämä sivut näkyvät raakatekstinä. Valitse profiili ylhäältä ottaaksesi sen käyttöön tai poista yleinen asetus.'
+                    LEAK_GATE_OFF: 'Sivuston portti on kiinni, joten tämän sivun Twig-merkintä näkyy vierailijoille raakatekstinä.'
+                    LEAK_PAGE_OFF: 'Twig on poistettu käytöstä tältä sivulta, joten sen Twig-merkintä näkyy vierailijoille raakatekstinä.'
+                    OPEN_SECURITY_SETTINGS: 'Avaa suojausasetukset'
+                    SANDBOX_OFF: 'Hiekkalaatikko pois päältä'
+                    SANDBOX_ON: 'Hiekkalaatikko päällä'
+                    SCAN_CLEAN: 'Mikään sisältö ei käytä Twigiä sallittujen luetteloiden ulkopuolella.'
+                    SCAN_CONTENT: 'Skannaa sisältö'
+                    SCAN_FAILED: 'Sisällön skannaus epäonnistui'
+                    SCAN_FILTERS: 'Estetyt suodattimet sisällössä'
+                    SCAN_FUNCTIONS: 'Estetyt funktiot sisällössä'
+                    SCAN_INTRO: 'Skannaa kaikki sivun sisältö Twigin varalta, jonka hiekkalaatikko estäisi.'
+                    SCAN_TAGS: 'Estetyt tunnisteet sisällössä'
+                    SECTION_EVENTS: 'Viimeaikaiset estot'
+                    SECTION_LEAKS: 'Sivut, jotka vuotavat raakaa Twigiä'
+                    XSS_SCAN_OFF: 'XSS-tulosteen skannaus pois päältä'
+                    XSS_SCAN_ON: 'XSS-tulosteen skannaus päällä'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Ladataan raportin komponenttia...'
             SCHEDULER:

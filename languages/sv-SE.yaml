@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Återställd till det ärvda värdet'
                 REVERT_FAILED: 'Kunde inte återställa'
                 REVERT_TOOLTIP: 'Åsidosätter standard ({value}). Klicka för att återställa.'
+            TWIG_PROFILE:
+                ALL: 'Alla redigerare'
+                ALL_DESC: 'Alla redigerare kan aktivera Twig på de sidor de redigerar.'
+                CUSTOM: Anpassad
+                CUSTOM_DESC: 'De aktuella inställningarna matchar inte en namngiven profil. Justera de avancerade inställningarna nedan, eller välj en profil för att återställa dem.'
+                HELP: 'Välj vem som kan köra Twig i sidinnehåll. Detta ställer in de avancerade inställningarna nedan.'
+                LABEL: 'Twig i innehåll'
+                'OFF': Av
+                OFF_DESC: 'Twig i sidinnehåll är inaktiverat. Markup visas som den är skriven.'
+                TRUSTED: 'Endast betrodda roller'
+                TRUSTED_DESC: 'Endast superanvändare och innehavare av behörigheten "pages twig" kan aktivera Twig på en sida.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljö
             EXPORT_YAML: 'Exportera YAML'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin är installerat. Aktivera Webhook-utlösare nedan för att aktivera.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin krävs för webhook-funktionalitet.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin krävs'
+            FILE:
+                LIMIT_REACHED: 'Detta fält accepterar som mest {limit} fil(er).'
         FLEX_OBJECTS:
             ACTIONS: Åtgärder
             BACK_TO_LIST: 'Tillbaka till lista'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} totalt'
             STATS_UNPUBLISHED: '{n} opublicerad'
             UNPUBLISH: Avpublicera
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Den här sidan innehåller Twig-markup, men Twig i innehåll är avstängt på hela webbplatsen, så det renderas som råtext för besökare.'
+                LEAK_PAGE_OFF: 'Den här sidan innehåller Twig-markup, men Twig är avstängt för den här sidan, så det renderas som råtext för besökare.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig-konstruktion på den här sidan har nyligen blockerats} other {# Twig-konstruktioner på den här sidan har nyligen blockerats}}.'
+                VIEW_REPORT: 'Visa rapport'
         PASSWORD: Lösenord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Lösenordskrav
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Det gick inte att läsa in behörigheter'
             NOT_SET: 'Inte inställd'
             ADMIN_LEGACY: 'Admin (äldre)'
+            INHERITED_ALLOWED: 'Tillåten via grupp: {groups}'
+            INHERITED_DENIED: 'Nekad via grupp: {groups}'
+            LEGEND_DIRECT: 'Satt direkt'
+            LEGEND_INHERITED: 'Ärvd från en grupp'
+            LEGEND_INTRO: 'Dova reglage kommer från gruppmedlemskap och visas som referens. Ställ in ett för att göra det till en direkt behörighet för denna användare.'
+            LEGEND_OVERRIDE: 'Åsidosätter en grupp'
+            LEGEND_SUPER: 'Beviljad av superadministratör'
+            OVERRIDES_GROUP: 'Din direkta inställning åsidosätter gruppen: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Tillbaka till instrumentpanel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Inget innehål tillgängligt för denna plugin-sida.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Ta bort {name}? Det avinstallerar insticksprogrammet och tar bort dess filer. Konfigurationen bevaras.'
             REMOVE_CONFIRM_TITLE: 'Ta bort insticksprogram?'
             TITLE: Insticksprogram
+            UPDATE_ALL: 'Uppdatera alla'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# plugin kommer att uppdateras:} other{# plugins kommer att uppdateras:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Uppdatera plugins?'
+            UPDATE_CONFIRM_MESSAGE: 'Uppdatera {name} till v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Uppdatera plugin?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Läser in plugin-sida...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Hur Markdown-redigeraren beter sig medan du skriver.'
             STICKY_TOOLBAR: 'Fäst verktygsfält'
             STICKY_TOOLBAR_DESC: 'Behåll formateringsverktygsfältet och förhandsgranskningsknappen synliga när du rullar.'
+            ADMIN_TITLE: Admin-titel
+            ADMIN_TITLE_DESC: 'Visas som rubrik vid inloggning och på webbläsarfliken. Lämna tomt för „Grav Admin“.'
+            FAILED_TO_SAVE_BRANDING: 'Kunde inte spara varumärkesprofilering.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Anpassad ikon för webbläsarfliken (SVG, PNG, WebP eller ICO). Lämna tomt för den genererade ikonen.'
+            FAVICON_REMOVED: 'Favicon borttagen.'
+            FAVICON_UPLOADED: 'Favicon uppladdad.'
+            LOGIN_SUBTITLE: 'Underrubrik för inloggning'
+            LOGIN_SUBTITLE_DESC: 'Valfri rad som visas under inloggningsrubriken.'
+            SHOW_POWERED_BY: 'Visa „Powered by Grav“'
+            SHOW_POWERED_BY_DESC: 'Visa raden „Powered by Grav CMS“ på inloggnings- och konfigurationsskärmarna.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} tillgängliga'
             UPDATE_ALL: 'Uppdatera alla'
             UPGRADE_GRAV: 'Uppgradera Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# paket kommer att uppdateras:} other{# paket kommer att uppdateras:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Uppdatera alla paket?'
         THEMES:
             ACTIVE_THEME: 'Aktivt tema'
             BACK_TO_THEMES: 'Tillbaka till teman'
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Ta bort {name}? Detta kommer att avinstallera temat och ta bort dess filer.'
             REMOVE_CONFIRM_TITLE: 'Ta bort tema?'
             TITLE: Teman
+            UPDATE_ALL: 'Uppdatera alla'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema kommer att uppdateras:} other{# teman kommer att uppdateras:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Uppdatera teman?'
         TIME:
             DAYS_AGO: 'för {n}d sedan'
             HOURS_AGO: 'för {n}h sedan'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Kunde inte ladda rapporter'
                 LOADING_REPORTS: 'Laddar rapporter...'
                 NO_REPORTS_AVAILABLE: 'Inga rapporter tillgängliga.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: "Lade till ''{token}'' i {key}"
+                    ADD_FAILED: 'Kunde inte uppdatera tillåtelselistan'
+                    ADD_TO_ALLOWLIST: 'Lägg till i tillåtelselistan'
+                    CLEARED_EVENTS: 'Rensade senaste blockeringar'
+                    CLEAR_EVENTS: 'Rensa blockeringar'
+                    CLEAR_FAILED: 'Kunde inte rensa blockeringar'
+                    EVENT_GATE_BLOCKED: 'Gate blockerade Twig i sidans innehåll'
+                    EVENT_SANDBOX_FILTER: 'Sandbox blockerade filter'
+                    EVENT_SANDBOX_FUNCTION: 'Sandbox blockerade funktion'
+                    EVENT_SANDBOX_METHOD: 'Sandbox blockerade metod'
+                    EVENT_SANDBOX_PROPERTY: 'Sandbox blockerade egenskap'
+                    EVENT_SANDBOX_TAG: 'Sandbox-blockad tagg'
+                    EVENT_XSS_BLANKED: 'Utmatning rensad av XSS-skanning'
+                    FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig efterfrågas (pages.frontmatter.process_twig), men Twig i innehåll är inaktiverat globalt för webbplatsen, så det kommer inte att köras. Välj en profil ovan för att aktivera det.'
+                    GATE_OFF: 'Twig i innehåll inaktiverat'
+                    GATE_ON: 'Twig i innehåll aktiverat'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig är aktiverat, men Twig i innehåll är inaktiverat globalt för webbplatsen, så dessa sidor renderas som råtext. Välj en profil ovan för att aktivera det, eller ta bort den globala inställningen.'
+                    LEAK_GATE_OFF: 'Webbplatsens spärr är avstängd, så denna sidas Twig-markering renderas som råtext för besökare.'
+                    LEAK_PAGE_OFF: 'Twig är avstängt för denna sida, så dess Twig-markering renderas som råtext för besökare.'
+                    OPEN_SECURITY_SETTINGS: 'Öppna säkerhetsinställningar'
+                    SANDBOX_OFF: 'Sandbox av'
+                    SANDBOX_ON: 'Sandbox på'
+                    SCAN_CLEAN: 'Inget innehåll använder Twig utanför de nuvarande tillåtelselistorna.'
+                    SCAN_CONTENT: 'Skanna innehåll'
+                    SCAN_FAILED: 'Innehållsskanning misslyckades'
+                    SCAN_FILTERS: 'Blockerade filter i innehåll'
+                    SCAN_FUNCTIONS: 'Blockerade funktioner i innehåll'
+                    SCAN_INTRO: 'Skanna allt sidinnehåll efter Twig som sandlådan skulle blockera.'
+                    SCAN_TAGS: 'Blockerade taggar i innehåll'
+                    SECTION_EVENTS: 'Senaste blockeringar'
+                    SECTION_LEAKS: 'Sidor som läcker rå Twig'
+                    XSS_SCAN_OFF: 'XSS-utmatningsskanning av'
+                    XSS_SCAN_ON: 'XSS-utmatningsskanning på'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Laddar rapportkomponent...'
             SCHEDULER:
