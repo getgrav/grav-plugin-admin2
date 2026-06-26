@@ -194,6 +194,11 @@ ICU:
             SUBTITLE: サイトのコンテンツと構造を管理
             PUBLISH: 公開
             UNPUBLISH: 非公開
+            TWIG_BANNER:
+                LEAK_GATE_OFF: このページにはTwigマークアップが含まれていますが、サイト全体でコンテンツ内のTwigがオフになっているため、訪問者にはプレーンテキストとして表示されます。
+                LEAK_PAGE_OFF: このページにはTwigマークアップが含まれていますが、このページでTwigがオフになっているため、訪問者にはプレーンテキストとして表示されます。
+                RECENT_BLOCKS: '{n, plural, other {このページ内の # 個のTwig構成要素が最近ブロックされました}}。'
+                VIEW_REPORT: レポートを表示
         FIELDS:
             CLEAR_DATE: 日付をクリア
             REGENERATE_SLUG: ページタイトルから自動再生成
@@ -269,6 +274,8 @@ ICU:
             FILE_PICKER:
                 NO_MEDIA_UPLOADED: メディアファイルがまだアップロードされていません
                 NO_MATCHING_FILES: 一致するファイルはありません
+            FILE:
+                LIMIT_REACHED: 'このフィールドは最大 {limit} 個のファイルをアップロードできます。'
         NAV:
             DASHBOARD: ダッシュボード
             CONFIGURATION: 設定
@@ -349,6 +356,14 @@ ICU:
             NOT_SET: 未設定
             FAILED_TO_LOAD_PERMISSIONS: 権限の読み込みに失敗しました
             ADMIN_LEGACY: 'Admin (legacy)'
+            INHERITED_ALLOWED: 'グループ経由で許可: {groups}'
+            INHERITED_DENIED: 'グループ経由で拒否: {groups}'
+            LEGEND_DIRECT: 直接設定
+            LEGEND_INHERITED: グループから継承
+            LEGEND_INTRO: 薄く表示されているトグルはグループメンバーシップに基づく設定であり、参照用です。直接的な権限を設定するには、それらをクリックしてください。
+            LEGEND_OVERRIDE: グループ設定を上書き
+            LEGEND_SUPER: スーパー管理者によって付与
+            OVERRIDES_GROUP: '直接設定がグループ設定を上書きしています: {groups}'
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: '2FA QR コード'
             SCAN_THE_QR_CODE_WITH_YOUR: '認証アプリで QR コードをスキャンしてください'
@@ -446,6 +461,8 @@ ICU:
             DISK: ディスク
             BYTES_USED: '{size} 使用'
             BYTES_FREE: '{size} 空き'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, other{# 個のパッケージが更新されます：}}'
+            UPDATE_ALL_CONFIRM_TITLE: すべてのパッケージを更新しますか？
         TOP_PAGES_WIDGET:
             NO_VIEW_DATA_YET: ビューデータがまだありません
         MARKDOWN_EDITOR:
@@ -546,6 +563,40 @@ ICU:
                 LOADING_REPORTS: レポートを読み込み中...
                 NO_REPORTS_AVAILABLE: 利用可能なレポートはありません。
                 CONTENT_FIELD: 'content: {field}'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: '「{token}」を {key} に追加しました'
+                    ADD_FAILED: 許可リストを更新できませんでした
+                    ADD_TO_ALLOWLIST: 許可リストに追加
+                    CLEARED_EVENTS: 最近のブロックをクリアしました
+                    CLEAR_EVENTS: ブロックをクリア
+                    CLEAR_FAILED: ブロックをクリアできませんでした
+                    EVENT_GATE_BLOCKED: ゲートがこのページのコンテンツ内のTwigをブロックしました
+                    EVENT_SANDBOX_FILTER: サンドボックスがフィルターをブロックしました
+                    EVENT_SANDBOX_FUNCTION: サンドボックスが関数をブロックしました
+                    EVENT_SANDBOX_METHOD: サンドボックスがメソッドをブロックしました
+                    EVENT_SANDBOX_PROPERTY: サンドボックスがプロパティをブロックしました
+                    EVENT_SANDBOX_TAG: サンドボックスでブロックされたタグ
+                    EVENT_XSS_BLANKED: XSSスキャンにより出力が空白化されました
+                    FRONTMATTER_REQUEST_GATED: フロントマターでのTwig処理（pages.frontmatter.process_twig）が要求されていますが、サイト全体でコンテンツ内のTwigが無効になっているため実行されません。上記からプロファイルを選択して有効にしてください。
+                    GATE_OFF: コンテンツ内のTwigが無効
+                    GATE_ON: コンテンツ内のTwigが有効
+                    GLOBAL_REQUEST_GATED: system.pages.process.twigはオンですが、サイト全体でコンテンツ内のTwigが無効になっているため、それらのページはそのままレンダリングされます。上記からプロファイルを選択して有効にするか、グローバル設定を解除してください。
+                    LEAK_GATE_OFF: サイトゲートがオフになっているため、このページのTwigマークアップはそのまま訪問者にプレーンテキストとして表示されます。
+                    LEAK_PAGE_OFF: このページではTwigが無効になっているため、Twigマークアップはそのまま訪問者にプレーンテキストとして表示されます。
+                    OPEN_SECURITY_SETTINGS: セキュリティ設定を開く
+                    SANDBOX_OFF: サンドボックスオフ
+                    SANDBOX_ON: サンドボックスオン
+                    SCAN_CLEAN: 現在の許可リスト外でTwigを使用しているコンテンツはありません。
+                    SCAN_CONTENT: コンテンツをスキャン
+                    SCAN_FAILED: コンテンツスキャンに失敗しました
+                    SCAN_FILTERS: コンテンツ内でブロックされたフィルター
+                    SCAN_FUNCTIONS: コンテンツ内でブロックされた関数
+                    SCAN_INTRO: サンドボックスでブロックされる可能性のあるTwigがないか、すべてのページコンテンツをスキャンします。
+                    SCAN_TAGS: コンテンツ内でブロックされたタグ
+                    SECTION_EVENTS: 最近のブロック
+                    SECTION_LEAKS: 生のTwigが漏洩しているページ
+                    XSS_SCAN_OFF: XSS出力スキャンオフ
+                    XSS_SCAN_ON: XSS出力スキャンオン
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: スケジューラ設定の読み込みに失敗しました。
                 SCHEDULER_CONFIGURATION_SAVED: スケジューラ設定を保存しました
@@ -647,6 +698,17 @@ ICU:
                 REVERTED: 継承された値に戻す
                 REVERT_FAILED: 元に戻せませんでした
                 REVERT_TOOLTIP: 'デフォルト（{value}）を上書きします。クリックで取り消します。'
+            TWIG_PROFILE:
+                ALL: すべてのエディター
+                ALL_DESC: どのエディターでも、編集するページでTwigを有効にできます。
+                CUSTOM: カスタム
+                CUSTOM_DESC: 現在の設定は名前付きプロファイルと一致しません。以下の詳細トグルを調整するか、プロファイルを選択してリセットしてください。
+                HELP: ページコンテンツ内でTwigを実行できるユーザーを選択します。これは以下の詳細トグルを設定します。
+                LABEL: コンテンツ内のTwig
+                'OFF': オフ
+                OFF_DESC: ページコンテンツ内のTwigは無効になっています。マークアップは記述された通りに表示されます。
+                TRUSTED: 信頼されたロールのみ
+                TRUSTED_DESC: 'スーパーユーザーおよび「pages twig」権限を持つユーザーのみが、ページでTwigを有効にできます。'
         FLEX_OBJECTS:
             SEARCH: 検索...
             PREVIOUS: 前へ
@@ -735,6 +797,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: '{name} を削除しますか？ この操作により、プラグインはアンインストールされ、ファイルは削除されます。設定は残ります。'
             REMOVE_CONFIRM_TITLE: プラグインを削除しますか？
             TITLE: プラグイン
+            UPDATE_ALL: すべて更新
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# 個のプラグインが更新されます:} other{# 個のプラグインが更新されます:}}'
+            UPDATE_ALL_CONFIRM_TITLE: プラグインを更新しますか？
+            UPDATE_CONFIRM_MESSAGE: '{name} を v{version} に更新しますか？'
+            UPDATE_CONFIRM_TITLE: プラグインを更新しますか？
         RESET:
             PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: パスワードを正常にリセットしました。サインインしてください。
             UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
@@ -873,6 +940,17 @@ ICU:
             EDITOR_SECTION_DESC: Markdownエディターの記述中の挙動を設定します。
             STICKY_TOOLBAR: スティッキーツールバー
             STICKY_TOOLBAR_DESC: スクロール中もフォーマットツールバーとプレビューボタンを画面上部に固定します。
+            ADMIN_TITLE: 管理画面のタイトル
+            ADMIN_TITLE_DESC: 'サインイン画面の見出しおよびブラウザのタブに表示されます。空欄にすると「Grav Admin」になります。'
+            FAILED_TO_SAVE_BRANDING: ブランディングの保存に失敗しました。
+            FAVICON: ファビコン
+            FAVICON_DESC: 'ブラウザタブ用のカスタムアイコン (SVG, PNG, WebP, ICO)。空欄にするとデフォルトのアイコンが使用されます。'
+            FAVICON_REMOVED: ファビコンを削除しました。
+            FAVICON_UPLOADED: ファビコンをアップロードしました。
+            LOGIN_SUBTITLE: サインイン画面のサブタイトル
+            LOGIN_SUBTITLE_DESC: サインイン画面の見出しの下に表示されるオプションの文字列です。
+            SHOW_POWERED_BY: '「Powered by Grav」を表示'
+            SHOW_POWERED_BY_DESC: 'サインイン画面およびセットアップ画面に「Powered by Grav CMS」を表示します。'
         CUSTOM: カスタム
         PREVIEW: プレビュー
         SETUP:
@@ -926,6 +1004,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: '{name} を削除しますか？ この操作により、テーマがアンインストールされ、ファイルが削除されます。'
             REMOVE_CONFIRM_TITLE: テーマを削除しますか？
             TITLE: テーマ
+            UPDATE_ALL: すべて更新
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, other{# 個のテーマが更新されます：}}'
+            UPDATE_ALL_CONFIRM_TITLE: テーマを更新しますか？
         ACTIVE: アクティブ
         ACTIVATE: 有効化
         USERS:
