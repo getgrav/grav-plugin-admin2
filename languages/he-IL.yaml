@@ -193,6 +193,11 @@ ICU:
             STATS_TOTAL: '{n} בסך הכל'
             STATS_UNPUBLISHED: '{n} לא פורסם'
             UNPUBLISH: 'הסר הפרסום'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'דף זה מכיל תגיות Twig, אך Twig בתוכן מושבת ברמת האתר, לכן הוא מוצג למבקרים כטקסט גולמי.'
+                LEAK_PAGE_OFF: 'דף זה מכיל תגיות Twig, אך Twig מושבת עבור דף זה, לכן הוא מוצג למבקרים כטקסט גולמי.'
+                RECENT_BLOCKS: '{n, plural, one {מבנה Twig אחד בדף זה נחסם לאחרונה} other {# מבני Twig בדף זה נחסמו לאחרונה}}.'
+                VIEW_REPORT: 'צפה בדוח'
         FIELDS:
             CLEAR_DATE: 'נקה תאריך'
             REGENERATE_SLUG: 'צור מחדש אוטומטית מכותרת העמוד'
@@ -268,6 +273,8 @@ ICU:
             FILE_PICKER:
                 NO_MEDIA_UPLOADED: 'עדיין לא הועלו קבצי מדיה'
                 NO_MATCHING_FILES: 'אין קבצים תואמים'
+            FILE:
+                LIMIT_REACHED: 'שדה זה מקבל לכל היותר {limit} קובץ/קבצים.'
         NAV:
             DASHBOARD: 'לוח בקרה'
             CONFIGURATION: הגדרות
@@ -348,6 +355,14 @@ ICU:
             NOT_SET: 'לא מוגדר'
             FAILED_TO_LOAD_PERMISSIONS: 'נכשל בטעינת הרשאות'
             ADMIN_LEGACY: 'מנהל (מורשת)'
+            INHERITED_ALLOWED: 'מאושר דרך קבוצה: {groups}'
+            INHERITED_DENIED: 'נחסם דרך קבוצה: {groups}'
+            LEGEND_DIRECT: 'מוגדר ישירות'
+            LEGEND_INHERITED: 'בירושה מקבוצה'
+            LEGEND_INTRO: 'מתגים עמומים מגיעים מחברות בקבוצה ומוצגים לצורך התייחסות. הגדר אחד כדי להפוך אותו להרשאה ישירה על משתמש זה.'
+            LEGEND_OVERRIDE: 'עוקף קבוצה'
+            LEGEND_SUPER: 'ניתן על ידי מנהל על (Super Admin)'
+            OVERRIDES_GROUP: 'ההגדרה הישירה שלך עוקפת את הקבוצה: {groups}'
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: 'קוד QR ל-2FA'
             SCAN_THE_QR_CODE_WITH_YOUR: 'סרוק את קוד ה-QR עם אפליקציית האימות שלך'
@@ -445,6 +460,8 @@ ICU:
             DISK: דיסק
             BYTES_USED: '{size} בשימוש'
             BYTES_FREE: '{size} פנויים'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{חבילה # תעודכן:} other{# חבילות יעודכנו:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'לעדכן את כל החבילות?'
         TOP_PAGES_WIDGET:
             NO_VIEW_DATA_YET: 'אין עדיין נתוני צפייה'
         MARKDOWN_EDITOR:
@@ -545,6 +562,40 @@ ICU:
                 LOADING_REPORTS: 'טוען דוחות...'
                 NO_REPORTS_AVAILABLE: 'אין דוחות זמינים.'
                 CONTENT_FIELD: 'תוכן: {field}'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: "התווסף ''{token}'' ל-{key}"
+                    ADD_FAILED: 'לא ניתן היה לעדכן את הרשימה המותרת'
+                    ADD_TO_ALLOWLIST: 'הוסף לרשימה המותרת'
+                    CLEARED_EVENTS: 'חסימות אחרונות נוקו'
+                    CLEAR_EVENTS: 'נקה חסימות'
+                    CLEAR_FAILED: 'לא ניתן היה לנקות חסימות'
+                    EVENT_GATE_BLOCKED: 'Gate חסם Twig בתוכן דף זה'
+                    EVENT_SANDBOX_FILTER: 'Sandbox חסם פילטר'
+                    EVENT_SANDBOX_FUNCTION: 'Sandbox חסם פונקציה'
+                    EVENT_SANDBOX_METHOD: 'Sandbox חסם מתודה'
+                    EVENT_SANDBOX_PROPERTY: 'Sandbox חסם מאפיין'
+                    EVENT_SANDBOX_TAG: 'תגית חסומה בארגז חול'
+                    EVENT_XSS_BLANKED: 'הפלט הוסתר על ידי סריקת XSS'
+                    FRONTMATTER_REQUEST_GATED: 'התבקש שימוש ב-Twig ב-Frontmatter (pages.frontmatter.process_twig), אך Twig בתוכן מושבת ברמת האתר כולו, לכן הוא לא יפעל. בחר פרופיל למעלה כדי להפעיל אותו.'
+                    GATE_OFF: 'Twig בתוכן מושבת'
+                    GATE_ON: 'Twig בתוכן מופעל'
+                    GLOBAL_REQUEST_GATED: 'ההגדרה system.pages.process.twig פעילה, אך Twig בתוכן מושבת ברמת האתר כולו, לכן דפים אלו יוצגו כטקסט גולמי. בחר פרופיל למעלה כדי להפעיל אותו, או הסר את הדגל הגלובלי.'
+                    LEAK_GATE_OFF: 'מחסום האתר כבוי, לכן סימון ה-Twig של דף זה יוצג כטקסט גולמי למבקרים.'
+                    LEAK_PAGE_OFF: 'Twig כבוי עבור דף זה, לכן סימון ה-Twig שלו יוצג כטקסט גולמי למבקרים.'
+                    OPEN_SECURITY_SETTINGS: 'פתח את הגדרות האבטחה'
+                    SANDBOX_OFF: 'ארגז חול כבוי'
+                    SANDBOX_ON: 'ארגז חול מופעל'
+                    SCAN_CLEAN: 'אין תוכן המשתמש ב-Twig מחוץ לרשימות ההיתרים הנוכחיות.'
+                    SCAN_CONTENT: 'סרוק תוכן'
+                    SCAN_FAILED: 'סריקת התוכן נכשלה'
+                    SCAN_FILTERS: 'מסננים חסומים בתוכן'
+                    SCAN_FUNCTIONS: 'פונקציות חסומות בתוכן'
+                    SCAN_INTRO: 'סרוק את כל תוכן הדף עבור Twig שארגז החול עשוי לחסום.'
+                    SCAN_TAGS: 'תגיות חסומות בתוכן'
+                    SECTION_EVENTS: 'חסימות אחרונות'
+                    SECTION_LEAKS: 'דפים הדולפים Twig גולמי'
+                    XSS_SCAN_OFF: 'סריקת פלט XSS כבויה'
+                    XSS_SCAN_ON: 'סריקת פלט XSS מופעלת'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'נכשל בטעינת הגדרות המתזמן.'
                 SCHEDULER_CONFIGURATION_SAVED: 'הגדרות המתזמן נשמרו'
@@ -646,6 +697,17 @@ ICU:
                 REVERTED: 'חזרה לערך המורשה'
                 REVERT_FAILED: 'לא היה ניתן להשוב'
                 REVERT_TOOLTIP: 'משדרג את ברירת המחדל ({value}). לחץ כדי להשוב.'
+            TWIG_PROFILE:
+                ALL: 'כל העורכים'
+                ALL_DESC: 'כל עורך יכול להפעיל Twig בדפים שהוא עורך.'
+                CUSTOM: 'מותאם אישית'
+                CUSTOM_DESC: 'ההגדרות הנוכחיות אינן תואמות לפרופיל בעל שם. ניתן להתאים את האפשרויות המתקדמות למטה, או לבחור פרופיל כדי לאפס אותן.'
+                HELP: 'בחר מי יכול להריץ Twig בתוך תוכן הדף. פעולה זו מגדירה את האפשרויות המתקדמות למטה.'
+                LABEL: 'Twig בתוך תוכן'
+                'OFF': כבוי
+                OFF_DESC: 'Twig בתוך תוכן הדף מושבת. התגיות יוצגו כפי שנכתבו.'
+                TRUSTED: 'תפקידים מורשים בלבד'
+                TRUSTED_DESC: 'רק משתמשי-על ובעלי הרשאת "pages twig" יכולים להפעיל Twig בדף.'
         FLEX_OBJECTS:
             SEARCH: חיפוש...
             PREVIOUS: הקודם
@@ -734,6 +796,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'הסר את {name}? פעולה זו תסיר את התוסף וכתיבת דיסק שלו. תצורה תישמר.'
             REMOVE_CONFIRM_TITLE: 'הסר תוסף?'
             TITLE: תוספים
+            UPDATE_ALL: 'עדכן הכל'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# תוסף יעודכן:} other{# תוספים יעודכנו:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'לעדכן תוספים?'
+            UPDATE_CONFIRM_MESSAGE: 'לעדכן את {name} לגרסה {version}?'
+            UPDATE_CONFIRM_TITLE: 'לעדכן תוסף?'
         RESET:
             PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: 'הסיסמה אופסה בהצלחה. אנא התחבר.'
             UNABLE_TO_CONNECT_TO_SERVER: 'לא ניתן להתחבר לשרת.'
@@ -872,6 +939,17 @@ ICU:
             EDITOR_SECTION_DESC: 'כיצד עורך ה-Markdown מתנהג בזמן הכתיבה.'
             STICKY_TOOLBAR: 'סרגל כלים דביק'
             STICKY_TOOLBAR_DESC: 'השאר את סרגל כלי העיצוב וכפתור התצוגה המקדימה מקובעים בתצוגה בזמן הגלילה.'
+            ADMIN_TITLE: 'כותרת ה-Admin'
+            ADMIN_TITLE_DESC: 'מוצג ככותרת ההתחברות ובלשונית הדפדפן. השאר ריק עבור "Grav Admin".'
+            FAILED_TO_SAVE_BRANDING: 'שמירת המיתוג נכשלה.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'אייקון מותאם אישית ללשונית הדפדפן (SVG, PNG, WebP, או ICO). השאר ריק עבור האייקון שנוצר כברירת מחדל.'
+            FAVICON_REMOVED: 'ה-Favicon הוסר.'
+            FAVICON_UPLOADED: 'ה-Favicon הועלה.'
+            LOGIN_SUBTITLE: 'כותרת משנה להתחברות'
+            LOGIN_SUBTITLE_DESC: 'שורה אופציונלית המוצגת מתחת לכותרת ההתחברות.'
+            SHOW_POWERED_BY: 'הצג "Powered by Grav"'
+            SHOW_POWERED_BY_DESC: 'הצג את השורה "Powered by Grav CMS" במסכי ההתחברות וההגדרה.'
         CUSTOM: 'מותאם אישית'
         PREVIEW: 'תצוגה מקדימה'
         SETUP:
@@ -925,6 +1003,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'להסיר את {name}? זה יהסיר את ההתקנה של הנושא וימחק את הקבצים שלו.'
             REMOVE_CONFIRM_TITLE: 'להסיר את הנושא?'
             TITLE: נושאים
+            UPDATE_ALL: 'עדכן הכל'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{ערכת עיצוב # תעודכן:} other{# ערכות עיצוב יעודכנו:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'לעדכן את ערכות העיצוב?'
         ACTIVE: פעיל
         ACTIVATE: הפעל
         USERS:
