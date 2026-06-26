@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Vráceno na zděděnou hodnotu'
                 REVERT_FAILED: 'Nepodařilo se vrátit'
                 REVERT_TOOLTIP: 'Přepisuje výchozí hodnotu ({value}). Kliknutím vrátíte.'
+            TWIG_PROFILE:
+                ALL: 'Všichni editoři'
+                ALL_DESC: 'Každý editor může povolit Twig na stránkách, které upravuje.'
+                CUSTOM: Vlastní
+                CUSTOM_DESC: 'Aktuální nastavení neodpovídá žádnému pojmenovanému profilu. Upravte pokročilé přepínače níže, nebo vyberte profil pro jejich resetování.'
+                HELP: 'Vyberte, kdo může spouštět Twig v obsahu stránek. Toto nastavení upraví pokročilé přepínače níže.'
+                LABEL: 'Twig v obsahu'
+                'OFF': Vypnuto
+                OFF_DESC: 'Twig v obsahu stránek je zakázán. Značky jsou zobrazeny tak, jak jsou napsány.'
+                TRUSTED: 'Pouze důvěryhodné role'
+                TRUSTED_DESC: 'Pouze superuživatelé a držitelé oprávnění „pages twig“ mohou povolit Twig na stránce.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Prostředí
             EXPORT_YAML: 'Exportovat YAML'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin je nainstalován. Povolte níže Webhook Triggers pro aktivaci.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin je vyžadován pro funkcionalitu webhoku.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook plugin vyžadován'
+            FILE:
+                LIMIT_REACHED: 'Toto pole přijímá maximálně {limit} soubor(ů).'
         FLEX_OBJECTS:
             ACTIONS: Akce
             BACK_TO_LIST: 'Zpět na seznam'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} celkem'
             STATS_UNPUBLISHED: '{n} nepublikováno'
             UNPUBLISH: 'Zrušit publikování'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Tato stránka obsahuje Twig značky, ale Twig v obsahu je celoplošně vypnut, takže se návštěvníkům zobrazuje jako prostý text.'
+                LEAK_PAGE_OFF: 'Tato stránka obsahuje Twig značky, ale Twig je pro tuto stránku vypnut, takže se návštěvníkům zobrazuje jako prostý text.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig konstrukce na této stránce byla nedávno zablokována} few {# Twig konstrukce na této stránce byly nedávno zablokovány} other {# Twig konstrukcí na této stránce bylo nedávno zablokováno}}.'
+                VIEW_REPORT: 'Zobrazit přehled'
         PASSWORD: Heslo
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Požadavky na heslo'
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Selhání načtení oprávnění'
             NOT_SET: Nenastaveno
             ADMIN_LEGACY: 'Admin (starší verze)'
+            INHERITED_ALLOWED: 'Povoleno přes skupinu: {groups}'
+            INHERITED_DENIED: 'Zamítnuto přes skupinu: {groups}'
+            LEGEND_DIRECT: 'Nastavit přímo'
+            LEGEND_INHERITED: 'Zděděno ze skupiny'
+            LEGEND_INTRO: 'Slabě zobrazené přepínače pocházejí ze členství ve skupině a jsou zde pouze pro referenci. Nastavením jednoho z nich vytvoříte přímé oprávnění pro tohoto uživatele.'
+            LEGEND_OVERRIDE: 'Přepisuje skupinu'
+            LEGEND_SUPER: 'Uděleno super administrátorem'
+            OVERRIDES_GROUP: 'Vaše přímé nastavení přepisuje skupinu: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Zpět na Řídicí panel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Žádný obsah není dostupný pro tuto stránku modulu plug-in.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Odebrat {name}? Tím se plugin odinstaluje a smažou se jeho soubory. Konfigurace bude zachována.'
             REMOVE_CONFIRM_TITLE: 'Odebrat plugin?'
             TITLE: Pluginy
+            UPDATE_ALL: 'Aktualizovat vše'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# plugin bude aktualizován:} few{# pluginy budou aktualizovány:} other{# pluginů bude aktualizováno:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Aktualizovat pluginy?'
+            UPDATE_CONFIRM_MESSAGE: 'Aktualizovat {name} na verzi {version}?'
+            UPDATE_CONFIRM_TITLE: 'Aktualizovat plugin?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Načítání stránky pluginu...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Jak se editor Markdownu chová při psaní.'
             STICKY_TOOLBAR: 'Ukotvený panel nástrojů'
             STICKY_TOOLBAR_DESC: 'Ponechat panel nástrojů formátování a tlačítko Náhled viditelné při posouvání stránky.'
+            ADMIN_TITLE: 'Název administrace'
+            ADMIN_TITLE_DESC: 'Zobrazeno jako nadpis při přihlášení a na kartě prohlížeče. Ponechte prázdné pro „Grav Admin“.'
+            FAILED_TO_SAVE_BRANDING: 'Uložení brandingu se nezdařilo.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Vlastní ikona pro kartu prohlížeče (SVG, PNG, WebP nebo ICO). Ponechte prázdné pro generovanou ikonu.'
+            FAVICON_REMOVED: 'Favicon byl odebrán.'
+            FAVICON_UPLOADED: 'Favicon byl nahrán.'
+            LOGIN_SUBTITLE: 'Podnadpis při přihlášení'
+            LOGIN_SUBTITLE_DESC: 'Volitelný řádek zobrazený pod nadpisem přihlášení.'
+            SHOW_POWERED_BY: 'Zobrazit „Powered by Grav“'
+            SHOW_POWERED_BY_DESC: 'Zobrazit řádek „Powered by Grav CMS“ na přihlašovací obrazovce a obrazovce nastavení.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} dostupných'
             UPDATE_ALL: 'Aktualizovat vše'
             UPGRADE_GRAV: 'Upgradovat Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# balíček bude aktualizován:} few{# balíčky budou aktualizovány:} other{# balíčků bude aktualizováno:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Aktualizovat všechny balíčky?'
         THEMES:
             ACTIVE_THEME: 'Aktivní motiv'
             BACK_TO_THEMES: 'Zpět na motivy'
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Odebrat {name}? Tím se motiv odinstaluje a smažou se jeho soubory.'
             REMOVE_CONFIRM_TITLE: 'Odebrat motiv?'
             TITLE: Motivy
+            UPDATE_ALL: 'Aktualizovat vše'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# šablona bude aktualizována:} few{# šablony budou aktualizovány:} other{# šablon bude aktualizováno:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Aktualizovat šablony?'
         TIME:
             DAYS_AGO: 'před {n} dny'
             HOURS_AGO: 'před {n} hodinami'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Nepodařilo se načíst zprávy'
                 LOADING_REPORTS: 'Načítání zpráv...'
                 NO_REPORTS_AVAILABLE: 'Žádné dostupné zprávy.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'Přidáno „{token}“ do {key}'
+                    ADD_FAILED: 'Aktualizace seznamu povolených položek selhala'
+                    ADD_TO_ALLOWLIST: 'Přidat do seznamu povolených'
+                    CLEARED_EVENTS: 'Nedávná blokování vymazána'
+                    CLEAR_EVENTS: 'Vymazat blokování'
+                    CLEAR_FAILED: 'Blokování nebylo možné vymazat'
+                    EVENT_GATE_BLOCKED: 'Brána zablokovala Twig v obsahu této stránky'
+                    EVENT_SANDBOX_FILTER: 'Sandbox zablokoval filtr'
+                    EVENT_SANDBOX_FUNCTION: 'Sandbox zablokoval funkci'
+                    EVENT_SANDBOX_METHOD: 'Sandbox zablokoval metodu'
+                    EVENT_SANDBOX_PROPERTY: 'Sandbox zablokoval vlastnost'
+                    EVENT_SANDBOX_TAG: 'Blokovaná značka v sandboxu'
+                    EVENT_XSS_BLANKED: 'Výstup byl vymazán kvůli kontrole XSS'
+                    FRONTMATTER_REQUEST_GATED: 'Je vyžadován Twig ve frontmatteru (pages.frontmatter.process_twig), ale Twig v obsahu je globálně zakázán, takže nebude spuštěn. Vyberte výše profil, který jej povolí.'
+                    GATE_OFF: 'Twig v obsahu zakázán'
+                    GATE_ON: 'Twig v obsahu povolen'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig je zapnuto, ale Twig v obsahu je globálně zakázán, takže se tyto stránky vykreslují jako surový text. Vyberte výše profil, který jej povolí, nebo odstraňte globální příznak.'
+                    LEAK_GATE_OFF: 'Brána webu je vypnutá, takže se Twig značky této stránky návštěvníkům vykreslují jako surový text.'
+                    LEAK_PAGE_OFF: 'Twig je pro tuto stránku vypnutý, takže se její Twig značky návštěvníkům vykreslují jako surový text.'
+                    OPEN_SECURITY_SETTINGS: 'Otevřít nastavení zabezpečení'
+                    SANDBOX_OFF: 'Sandbox vypnut'
+                    SANDBOX_ON: 'Sandbox zapnut'
+                    SCAN_CLEAN: 'Žádný obsah nepoužívá Twig mimo aktuální povolené seznamy.'
+                    SCAN_CONTENT: 'Skenovat obsah'
+                    SCAN_FAILED: 'Skenování obsahu selhalo'
+                    SCAN_FILTERS: 'Blokované filtry v obsahu'
+                    SCAN_FUNCTIONS: 'Blokované funkce v obsahu'
+                    SCAN_INTRO: 'Prohledat veškerý obsah stránek na přítomnost Twigu, který by sandbox zablokoval.'
+                    SCAN_TAGS: 'Blokované značky v obsahu'
+                    SECTION_EVENTS: 'Nedávná blokování'
+                    SECTION_LEAKS: 'Stránky propouštějící surový Twig'
+                    XSS_SCAN_OFF: 'Kontrola výstupu XSS vypnuta'
+                    XSS_SCAN_ON: 'Kontrola výstupu XSS zapnuta'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Načítání komponenty zpráv...'
             SCHEDULER:
