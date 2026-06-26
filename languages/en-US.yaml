@@ -505,6 +505,9 @@ ICU:
         UPLOAD_FILES: Upload Files
         NEW_FOLDER: New Folder
         CREATE: Create
+        CUSTOM_ORDER: Custom order
+        REORDER: Drag to reorder
+        ORDER_SAVE_FAILED: Failed to save the new order
       MEDIA_TOOLBAR:
         SEARCH_MEDIA: Search media...
         GRID_VIEW: Grid view
@@ -516,6 +519,7 @@ ICU:
       PAGE_MEDIA:
         PAGE_MEDIA: Page Media
         DRAG_INTO_EDITOR: Drag into editor
+        REORDER: Drag to reorder
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache
