@@ -196,6 +196,17 @@ ICU:
             RELOAD: Odśwież
             TITLE: Konfiguracja
             TITLE_SCROLLED: 'Konfiguracja: {scope}'
+            TWIG_PROFILE:
+                ALL: 'Wszyscy redaktorzy'
+                ALL_DESC: 'Każdy redaktor może włączyć Twig na stronach, które edytuje.'
+                CUSTOM: Niestandardowe
+                CUSTOM_DESC: 'Bieżące ustawienia nie pasują do żadnego profilu. Dostosuj zaawansowane przełączniki poniżej lub wybierz profil, aby je zresetować.'
+                HELP: 'Wybierz, kto może uruchamiać Twig wewnątrz treści strony. To ustawienie dostosuje zaawansowane przełączniki poniżej.'
+                LABEL: 'Twig w treści'
+                'OFF': Wyłączone
+                OFF_DESC: 'Twig w treści strony jest wyłączony. Znaczniki są wyświetlane w postaci tekstowej.'
+                TRUSTED: 'Tylko zaufane role'
+                TRUSTED_DESC: 'Tylko superużytkownicy oraz osoby posiadające uprawnienie „pages twig” mogą włączyć Twig na stronie.'
         CONFIGURATION: Konfiguracja
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Środowisko
@@ -474,6 +485,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'wtyczka jest zainstalowana. Włącz Wyzwalacze Webhook poniżej, aby aktywować.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'wtyczka jest wymagana do działania webhooków.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Wymagana wtyczka Webhook'
+            FILE:
+                LIMIT_REACHED: 'To pole akceptuje maksymalnie {limit} plik(ów).'
         FILE: Plik
         FILE_EXTENSION: 'Rozszerzenie pliku'
         FILE_STREAMS: 'Strumienie plików'
@@ -1021,6 +1034,11 @@ ICU:
             VIEW_COLUMNS: Kolumny
             VIEW_LIST: Lista
             VIEW_TREE: Drzewo
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Ta strona zawiera znaczniki Twig, ale obsługa Twig w treści jest wyłączona w całej witrynie, więc dla odwiedzających wyświetlany jest surowy tekst.'
+                LEAK_PAGE_OFF: 'Ta strona zawiera znaczniki Twig, ale obsługa Twig jest wyłączona dla tej strony, więc dla odwiedzających wyświetlany jest surowy tekst.'
+                RECENT_BLOCKS: '{n, plural, one {# element Twig na tej stronie został niedawno zablokowany} few {# elementy Twig na tej stronie zostały niedawno zablokowane} many {# elementów Twig na tej stronie zostało niedawno zablokowanych} other {# element Twig na tej stronie został niedawno zablokowany}}.'
+                VIEW_REPORT: 'Zobacz raport'
         PAGES_CONFIGURATION: 'Konfiguracja stron'
         PAGES_FALLBACK_ONLY: 'Tylko strony zapasowe (fallback)'
         PAGES_FALLBACK_ONLY_HELP: '„Fallback” pozwala znaleźć treść strony w obsługiwanych językach. Domyślnym zachowaniem jest wyświetlenie jakiegokolwiek znalezionego języka, jeśli brak jest aktywnego języka.'
@@ -1059,6 +1077,14 @@ ICU:
             ADMIN_LEGACY: 'Admin (starsza wersja)'
             FAILED_TO_LOAD_PERMISSIONS: 'Nie udało się załadować uprawnień'
             NOT_SET: Nieustawione
+            INHERITED_ALLOWED: 'Dozwolone przez grupę: {groups}'
+            INHERITED_DENIED: 'Odmówione przez grupę: {groups}'
+            LEGEND_DIRECT: 'Ustawione bezpośrednio'
+            LEGEND_INHERITED: 'Dziedziczone z grupy'
+            LEGEND_INTRO: 'Przygaszone przełączniki pochodzą z członkostwa w grupie i są wyświetlane w celach informacyjnych. Ustaw jeden, aby nadać bezpośrednie uprawnienie temu użytkownikowi.'
+            LEGEND_OVERRIDE: 'Nadpisuje grupę'
+            LEGEND_SUPER: 'Przyznane przez super administratora'
+            OVERRIDES_GROUP: 'Twoje bezpośrednie ustawienie nadpisuje grupę: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Powrót do panelu'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Brak dostępnej zawartości dla tej strony wtyczki.'
@@ -1084,6 +1110,11 @@ ICU:
             SELECT_A_PLUGIN_TO_VIEW_DETAILS: 'Wybierz wtyczkę, aby zobaczyć szczegóły'
             SYMLINKED: 'Dowiązanie symboliczne'
             TITLE: Wtyczki
+            UPDATE_ALL: 'Aktualizuj wszystko'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# wtyczka zostanie zaktualizowana:} few{# wtyczki zostaną zaktualizowane:} many{# wtyczek zostanie zaktualizowanych:} other{# wtyczki zostanie zaktualizowanych:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Aktualizować wtyczki?'
+            UPDATE_CONFIRM_MESSAGE: 'Zaktualizować {name} do wersji v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Aktualizować wtyczkę?'
         PLUGINS_TABLE:
             NAME: Nazwa
             NO_PLUGINS: 'Brak zainstalowanych wtyczek'
@@ -1384,6 +1415,17 @@ ICU:
             USED_ON_DARK_BACKGROUNDS: 'Używane na ciemnym tle'
             USED_ON_LIGHT_BACKGROUNDS: 'Używane na jasnym tle'
             USERS_MAY_OVERRIDE: 'Użytkownicy mogą nadpisać'
+            ADMIN_TITLE: 'Tytuł panelu administracyjnego'
+            ADMIN_TITLE_DESC: 'Wyświetlany jako nagłówek logowania oraz na karcie przeglądarki. Pozostaw puste dla „Grav Admin”.'
+            FAILED_TO_SAVE_BRANDING: 'Zapisywanie brandingu nie powiodło się.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Niestandardowa ikona karty przeglądarki (SVG, PNG, WebP lub ICO). Pozostaw puste, aby użyć wygenerowanej ikony.'
+            FAVICON_REMOVED: 'Favicon usunięty.'
+            FAVICON_UPLOADED: 'Favicon przesłany.'
+            LOGIN_SUBTITLE: 'Podtytuł logowania'
+            LOGIN_SUBTITLE_DESC: 'Opcjonalna linia wyświetlana pod nagłówkiem logowania.'
+            SHOW_POWERED_BY: 'Pokaż „Powered by Grav”'
+            SHOW_POWERED_BY_DESC: 'Pokaż linię „Powered by Grav CMS” na ekranach logowania i konfiguracji.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaki: litery, cyfry, myślniki, podkreślenia'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Konto administratora utworzone — witaj w Grav'
@@ -1472,6 +1514,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: 'Dostępne {n}'
             UPDATE_ALL: 'Aktualizuj wszystko'
             UPGRADE_GRAV: 'Aktualizuj Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# pakiet zostanie zaktualizowany:} few{# pakiety zostaną zaktualizowane:} other{# pakietów zostanie zaktualizowanych:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Zaktualizować wszystkie pakiety?'
         TAXONOMIES: Taksonomie
         TAXONOMY: Taksonomia
         TAXONOMY_TYPES: 'Typy taksonomii'
@@ -1504,6 +1548,9 @@ ICU:
             SYMLINKED: 'Dowiązanie symboliczne'
             THEMES_GRAV_ADMIN: 'Motywy — Grav Admin'
             TITLE: Motywy
+            UPDATE_ALL: 'Aktualizuj wszystko'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# motyw zostanie zaktualizowany:} few{# motywy zostaną zaktualizowane:} other{# motywów zostanie zaktualizowanych:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Zaktualizować motywy?'
         THEMES_TABLE:
             NO_THEMES: 'Brak zainstalowanych motywów'
         THUMB: Miniatura
@@ -1640,6 +1687,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Nie udało się wczytać raportów'
                 LOADING_REPORTS: 'Wczytywanie raportów...'
                 NO_REPORTS_AVAILABLE: 'Brak dostępnych raportów.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'Dodano „{token}” do {key}'
+                    ADD_FAILED: 'Nie udało się zaktualizować białej listy'
+                    ADD_TO_ALLOWLIST: 'Dodaj do białej listy'
+                    CLEARED_EVENTS: 'Wyczyszczono ostatnie blokady'
+                    CLEAR_EVENTS: 'Wyczyść blokady'
+                    CLEAR_FAILED: 'Nie udało się wyczyścić blokad'
+                    EVENT_GATE_BLOCKED: 'Brama zablokowała Twig w treści tej strony'
+                    EVENT_SANDBOX_FILTER: 'Piaskownica zablokowała filtr'
+                    EVENT_SANDBOX_FUNCTION: 'Piaskownica zablokowała funkcję'
+                    EVENT_SANDBOX_METHOD: 'Piaskownica zablokowała metodę'
+                    EVENT_SANDBOX_PROPERTY: 'Piaskownica zablokowała właściwość'
+                    EVENT_SANDBOX_TAG: 'Zablokowany tag piaskownicy'
+                    EVENT_XSS_BLANKED: 'Dane wyjściowe wyczyszczone przez skaner XSS'
+                    FRONTMATTER_REQUEST_GATED: 'Wymagane jest przetwarzanie Twig w frontmatter (pages.frontmatter.process_twig), ale obsługa Twig w treści jest wyłączona w całej witrynie, więc nie zostanie uruchomione. Wybierz profil powyżej, aby je włączyć.'
+                    GATE_OFF: 'Twig w treści wyłączony'
+                    GATE_ON: 'Twig w treści włączony'
+                    GLOBAL_REQUEST_GATED: 'Opcja system.pages.process.twig jest włączona, ale obsługa Twig w treści jest wyłączona w całej witrynie, więc te strony wyświetlają surowy kod. Wybierz profil powyżej, aby je włączyć lub usuń globalną flagę.'
+                    LEAK_GATE_OFF: 'Brama witryny jest wyłączona, więc znaczniki Twig na tej stronie są wyświetlane odwiedzającym jako surowy tekst.'
+                    LEAK_PAGE_OFF: 'Twig jest wyłączony dla tej strony, więc jej znaczniki Twig są wyświetlane odwiedzającym jako surowy tekst.'
+                    OPEN_SECURITY_SETTINGS: 'Otwórz ustawienia bezpieczeństwa'
+                    SANDBOX_OFF: 'Piaskownica wyłączona'
+                    SANDBOX_ON: 'Piaskownica włączona'
+                    SCAN_CLEAN: 'Żadna treść nie korzysta z Twig poza aktualnymi listami dozwolonych.'
+                    SCAN_CONTENT: 'Skanuj treść'
+                    SCAN_FAILED: 'Skanowanie treści nie powiodło się'
+                    SCAN_FILTERS: 'Zablokowane filtry w treści'
+                    SCAN_FUNCTIONS: 'Zablokowane funkcje w treści'
+                    SCAN_INTRO: 'Przeskanuj całą zawartość strony pod kątem znaczników Twig, które zostałyby zablokowane przez piaskownicę.'
+                    SCAN_TAGS: 'Zablokowane tagi w treści'
+                    SECTION_EVENTS: 'Ostatnie blokady'
+                    SECTION_LEAKS: 'Strony ujawniające surowy kod Twig'
+                    XSS_SCAN_OFF: 'Skanowanie danych wyjściowych XSS wyłączone'
+                    XSS_SCAN_ON: 'Skanowanie danych wyjściowych XSS włączone'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Wczytywanie komponentu raportu...'
             SCHEDULER:
