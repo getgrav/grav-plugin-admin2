@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Revertido para o valor herdado'
                 REVERT_FAILED: 'Não foi possível reverter'
                 REVERT_TOOLTIP: 'Substitui o padrão ({value}). Clique para reverter.'
+            TWIG_PROFILE:
+                ALL: 'Todos os editores'
+                ALL_DESC: 'Qualquer editor pode ativar o Twig nas páginas que edita.'
+                CUSTOM: Personalizado
+                CUSTOM_DESC: 'As definições atuais não correspondem a um perfil nomeado. Ajuste os interruptores avançados abaixo ou escolha um perfil para os repor.'
+                HELP: 'Escolha quem pode executar Twig dentro do conteúdo da página. Isto define os interruptores avançados abaixo.'
+                LABEL: 'Twig no Conteúdo'
+                'OFF': Desligado
+                OFF_DESC: 'O Twig no conteúdo da página está desativado. A marcação é apresentada conforme escrita.'
+                TRUSTED: 'Apenas funções fidedignas'
+                TRUSTED_DESC: 'Apenas superutilizadores e detentores da permissão «pages twig» podem ativar o Twig numa página.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ambiente
             EXPORT_YAML: 'Exportar YAML'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin está instalado. Ative Webhook Triggers abaixo para ativar.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin é necessário para a funcionalidade de webhook.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Plugin Webhook Necessário'
+            FILE:
+                LIMIT_REACHED: 'Este campo aceita, no máximo, {limit} ficheiro(s).'
         FLEX_OBJECTS:
             ACTIONS: Ações
             BACK_TO_LIST: 'Voltar para a Lista'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} total'
             STATS_UNPUBLISHED: '{n} não publicadas'
             UNPUBLISH: 'Anular publicação'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Esta página contém marcação Twig, mas o Twig no conteúdo está desativado em todo o site, pelo que é apresentado como texto não formatado aos visitantes.'
+                LEAK_PAGE_OFF: 'Esta página contém marcação Twig, mas o Twig está desativado para esta página, pelo que é apresentado como texto não formatado aos visitantes.'
+                RECENT_BLOCKS: '{n, plural, one {# construção Twig nesta página foi bloqueada recentemente} other {# construções Twig nesta página foram bloqueadas recentemente}}.'
+                VIEW_REPORT: 'Ver relatório'
         PASSWORD: Senha
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisitos de senha'
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Falha ao carregar permissões'
             NOT_SET: 'Não definido'
             ADMIN_LEGACY: 'Admin (legado)'
+            INHERITED_ALLOWED: 'Permitido através do grupo: {groups}'
+            INHERITED_DENIED: 'Negado através do grupo: {groups}'
+            LEGEND_DIRECT: 'Definido diretamente'
+            LEGEND_INHERITED: 'Herdado de um grupo'
+            LEGEND_INTRO: 'Os interruptores esbatidos provêm da pertença a um grupo e são mostrados como referência. Defina um para torná-lo uma permissão direta neste utilizador.'
+            LEGEND_OVERRIDE: 'Sobrepõe-se a um grupo'
+            LEGEND_SUPER: 'Concedido por super administrador'
+            OVERRIDES_GROUP: 'A sua definição direta sobrepõe-se ao grupo: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Voltar ao Painel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Nenhum conteúdo disponível para esta página de plugin.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Remover {name}? Esta ação desinstalará o plugin e eliminará os seus ficheiros. A configuração será preservada.'
             REMOVE_CONFIRM_TITLE: 'Remover plugin?'
             TITLE: Plugins
+            UPDATE_ALL: 'Atualizar tudo'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# plugin será atualizado:} other{# plugins serão atualizados:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Atualizar plugins?'
+            UPDATE_CONFIRM_MESSAGE: 'Atualizar {name} para a v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Atualizar plugin?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Carregando página do plugin...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Como o editor de Markdown se comporta enquanto escreve.'
             STICKY_TOOLBAR: 'Barra de ferramentas fixa'
             STICKY_TOOLBAR_DESC: 'Mantenha a barra de ferramentas de formatação e o botão de Pré-visualização visíveis enquanto percorre a página.'
+            ADMIN_TITLE: 'Título de administração'
+            ADMIN_TITLE_DESC: 'Apresentado como o título de início de sessão e no separador do navegador. Deixe em branco para "Grav Admin".'
+            FAILED_TO_SAVE_BRANDING: 'Falha ao guardar a personalização da marca.'
+            FAVICON: Favicon
+            FAVICON_DESC: 'Ícone personalizado para o separador do navegador (SVG, PNG, WebP ou ICO). Deixe em branco para utilizar o ícone gerado.'
+            FAVICON_REMOVED: 'Favicon removido.'
+            FAVICON_UPLOADED: 'Favicon carregado.'
+            LOGIN_SUBTITLE: 'Subtítulo de início de sessão'
+            LOGIN_SUBTITLE_DESC: 'Linha opcional apresentada sob o título de início de sessão.'
+            SHOW_POWERED_BY: 'Mostrar «Powered by Grav»'
+            SHOW_POWERED_BY_DESC: 'Mostrar a linha «Powered by Grav CMS» nos ecrãs de início de sessão e de configuração.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, hífens, sublinhados'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Conta de administrador criada — bem-vindo ao Grav'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} disponíveis'
             UPDATE_ALL: 'Atualizar Tudo'
             UPGRADE_GRAV: 'Atualizar Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# pacote será atualizado:} other{# pacotes serão atualizados:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Atualizar todos os pacotes?'
         THEMES:
             ACTIVE_THEME: 'Tema Ativo'
             BACK_TO_THEMES: 'Voltar para Temas'
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Remover {name}? Isto irá desinstalar o tema e eliminar os seus ficheiros.'
             REMOVE_CONFIRM_TITLE: 'Remover tema?'
             TITLE: Temas
+            UPDATE_ALL: 'Atualizar Tudo'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema será atualizado:} other{# temas serão atualizados:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Atualizar temas?'
         TIME:
             DAYS_AGO: '{n}d atrás'
             HOURS_AGO: '{n}h atrás'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Falha ao carregar relatórios'
                 LOADING_REPORTS: 'Carregando relatórios...'
                 NO_REPORTS_AVAILABLE: 'Nenhum relatório disponível.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'Adicionado «{token}» a {key}'
+                    ADD_FAILED: 'Não foi possível atualizar a lista de permissões'
+                    ADD_TO_ALLOWLIST: 'Adicionar à lista de permissões'
+                    CLEARED_EVENTS: 'Bloqueios recentes limpos'
+                    CLEAR_EVENTS: 'Limpar bloqueios'
+                    CLEAR_FAILED: 'Não foi possível limpar os bloqueios'
+                    EVENT_GATE_BLOCKED: 'O Gate bloqueou o Twig no conteúdo desta página'
+                    EVENT_SANDBOX_FILTER: 'O Sandbox bloqueou o filtro'
+                    EVENT_SANDBOX_FUNCTION: 'O Sandbox bloqueou a função'
+                    EVENT_SANDBOX_METHOD: 'O Sandbox bloqueou o método'
+                    EVENT_SANDBOX_PROPERTY: 'O Sandbox bloqueou a propriedade'
+                    EVENT_SANDBOX_TAG: 'Tag bloqueada pelo Sandbox'
+                    EVENT_XSS_BLANKED: 'Resultado ocultado pela análise de XSS'
+                    FRONTMATTER_REQUEST_GATED: 'Twig no frontmatter foi solicitado (pages.frontmatter.process_twig), mas o Twig no conteúdo está desativado globalmente, pelo que não será executado. Escolha um perfil acima para o ativar.'
+                    GATE_OFF: 'Twig no conteúdo desativado'
+                    GATE_ON: 'Twig no conteúdo ativado'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig está ativo, mas o Twig no conteúdo está desativado globalmente, pelo que essas páginas são apresentadas em bruto. Escolha um perfil acima para o ativar ou remova a opção global.'
+                    LEAK_GATE_OFF: 'O acesso ao site está desativado, pelo que a marcação Twig desta página é apresentada como texto simples aos visitantes.'
+                    LEAK_PAGE_OFF: 'O Twig está desativado para esta página, pelo que a sua marcação Twig é apresentada como texto simples aos visitantes.'
+                    OPEN_SECURITY_SETTINGS: 'Abrir definições de segurança'
+                    SANDBOX_OFF: 'Sandbox desativado'
+                    SANDBOX_ON: 'Sandbox ativado'
+                    SCAN_CLEAN: 'Nenhum conteúdo utiliza Twig fora das listas de permissões atuais.'
+                    SCAN_CONTENT: 'Analisar conteúdo'
+                    SCAN_FAILED: 'A análise de conteúdo falhou'
+                    SCAN_FILTERS: 'Filtros bloqueados no conteúdo'
+                    SCAN_FUNCTIONS: 'Funções bloqueadas no conteúdo'
+                    SCAN_INTRO: 'Analisar todo o conteúdo da página à procura de Twig que o sandbox bloquearia.'
+                    SCAN_TAGS: 'Tags bloqueadas no conteúdo'
+                    SECTION_EVENTS: 'Bloqueios recentes'
+                    SECTION_LEAKS: 'Páginas com Twig exposto'
+                    XSS_SCAN_OFF: 'Análise de resultado XSS desativada'
+                    XSS_SCAN_ON: 'Análise de resultado XSS ativada'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Carregando componente de relatório...'
             SCHEDULER:
