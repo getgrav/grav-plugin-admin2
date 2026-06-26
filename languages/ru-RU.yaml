@@ -93,6 +93,17 @@ ICU:
                 REVERTED: 'Восстановлено унаследованное значение'
                 REVERT_FAILED: 'Не удалось восстановить'
                 REVERT_TOOLTIP: 'Переопределяет значение по умолчанию ({value}). Нажмите для восстановления.'
+            TWIG_PROFILE:
+                ALL: 'Все редакторы'
+                ALL_DESC: 'Любой редактор может включить Twig на страницах, которые он редактирует.'
+                CUSTOM: Пользовательские
+                CUSTOM_DESC: 'Текущие настройки не соответствуют именованному профилю. Настройте расширенные параметры ниже или выберите профиль для их сброса.'
+                HELP: 'Выберите, кто может использовать Twig внутри контента страницы. Это установит расширенные параметры ниже.'
+                LABEL: 'Twig в контенте'
+                'OFF': Выкл.
+                OFF_DESC: 'Twig в контенте страницы отключен. Разметка отображается в том виде, в котором она написана.'
+                TRUSTED: 'Только доверенные роли'
+                TRUSTED_DESC: 'Только суперпользователи и владельцы права «pages twig» могут включить Twig на странице.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Окружение
             EXPORT_YAML: 'Экспортировать YAML'
@@ -257,6 +268,8 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'плагин установлен. Включите триггеры Webhook ниже для активации.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'плагин требуется для функциональности webhook.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Требуется плагин Webhook'
+            FILE:
+                LIMIT_REACHED: 'Это поле принимает не более {limit} файла(ов).'
         FLEX_OBJECTS:
             ACTIONS: Действия
             BACK_TO_LIST: 'Вернуться к списку'
@@ -531,6 +544,11 @@ ICU:
             STATS_TOTAL: '{n} всего'
             STATS_UNPUBLISHED: '{n} не опубликовано'
             UNPUBLISH: 'Снять с публикации'
+            TWIG_BANNER:
+                LEAK_GATE_OFF: 'Эта страница содержит разметку Twig, но Twig в контенте отключен на всем сайте, поэтому для посетителей он отображается как обычный текст.'
+                LEAK_PAGE_OFF: 'Эта страница содержит разметку Twig, но Twig отключен для этой страницы, поэтому для посетителей он отображается как обычный текст.'
+                RECENT_BLOCKS: '{n, plural, one {# Twig-конструкция на этой странице была недавно заблокирована} few {# Twig-конструкции на этой странице были недавно заблокированы} other {# Twig-конструкций на этой странице были недавно заблокированы}}.'
+                VIEW_REPORT: 'Просмотреть отчет'
         PASSWORD: Пароль
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Требования к паролю'
@@ -540,6 +558,14 @@ ICU:
             FAILED_TO_LOAD_PERMISSIONS: 'Не удалось загрузить разрешения'
             NOT_SET: 'Не установлено'
             ADMIN_LEGACY: 'Admin (legacy)'
+            INHERITED_ALLOWED: 'Разрешено через группу: {groups}'
+            INHERITED_DENIED: 'Запрещено через группу: {groups}'
+            LEGEND_DIRECT: 'Установлено напрямую'
+            LEGEND_INHERITED: 'Унаследовано от группы'
+            LEGEND_INTRO: 'Бледные переключатели означают, что права получены через группу, и показаны для справки. Установите переключатель, чтобы задать прямое разрешение для этого пользователя.'
+            LEGEND_OVERRIDE: 'Переопределяет группу'
+            LEGEND_SUPER: 'Предоставлено супер-администратором'
+            OVERRIDES_GROUP: 'Ваша настройка переопределяет группу: {groups}'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Вернуться на панель управления'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Для этой страницы плагина нет доступного содержимого.'
@@ -565,6 +591,11 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Удалить {name}? Это приведет к удалению плагина и его файлов. Конфигурация будет сохранена.'
             REMOVE_CONFIRM_TITLE: 'Удалить плагин?'
             TITLE: Плагины
+            UPDATE_ALL: 'Обновить все'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# плагин будет обновлен:} few{# плагина будет обновлено:} many{# плагинов будет обновлено:} other{# плагин будет обновлен:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Обновить плагины?'
+            UPDATE_CONFIRM_MESSAGE: 'Обновить {name} до версии {version}?'
+            UPDATE_CONFIRM_TITLE: 'Обновить плагин?'
         PLUGIN_PAGE_COMPONENT:
             LOADING_PLUGIN_PAGE: 'Загрузка страницы плагина...'
         PLUGIN_WIDGET_LOADER:
@@ -722,6 +753,17 @@ ICU:
             EDITOR_SECTION_DESC: 'Поведение Markdown-редактора во время написания текста.'
             STICKY_TOOLBAR: 'Закрепленная панель инструментов'
             STICKY_TOOLBAR_DESC: 'Оставлять панель инструментов форматирования и кнопку предварительного просмотра на виду во время прокрутки.'
+            ADMIN_TITLE: 'Заголовок админ-панели'
+            ADMIN_TITLE_DESC: 'Отображается как заголовок при входе и на вкладке браузера. Оставьте пустым для «Grav Admin».'
+            FAILED_TO_SAVE_BRANDING: 'Не удалось сохранить брендинг.'
+            FAVICON: Фавикон
+            FAVICON_DESC: 'Пользовательский значок вкладки браузера (SVG, PNG, WebP или ICO). Оставьте пустым для использования стандартного значка.'
+            FAVICON_REMOVED: 'Фавикон удален.'
+            FAVICON_UPLOADED: 'Фавикон загружен.'
+            LOGIN_SUBTITLE: 'Подзаголовок при входе'
+            LOGIN_SUBTITLE_DESC: 'Необязательная строка, отображаемая под заголовком при входе.'
+            SHOW_POWERED_BY: 'Показывать «Powered by Grav»'
+            SHOW_POWERED_BY_DESC: 'Показывать строку «Powered by Grav CMS» на экранах входа и настройки.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 символа: буквы, цифры, дефисы, подчеркивания'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Учетная запись администратора создана — добро пожаловать в Grav'
@@ -773,6 +815,8 @@ ICU:
             UPDATES_AVAILABLE_COUNT: '{n} доступно'
             UPDATE_ALL: 'Обновить всё'
             UPGRADE_GRAV: 'Обновить Grav'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# пакет будет обновлен:} few{# пакета будут обновлены:} many{# пакетов будут обновлены:} other{# пакета будут обновлены:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Обновить все пакеты?'
         THEMES:
             ACTIVE_THEME: 'Активная тема'
             BACK_TO_THEMES: 'Вернуться к темам'
@@ -800,6 +844,9 @@ ICU:
             REMOVE_CONFIRM_MESSAGE: 'Удалить {name}? Это деинсталлирует тему и удалит её файлы.'
             REMOVE_CONFIRM_TITLE: 'Удалить тему?'
             TITLE: Темы
+            UPDATE_ALL: 'Обновить всё'
+            UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# тема будет обновлена:} few{# темы будут обновлены:} many{# тем будут обновлены:} other{# темы будут обновлены:}}'
+            UPDATE_ALL_CONFIRM_TITLE: 'Обновить темы?'
         TIME:
             DAYS_AGO: '{n}д назад'
             HOURS_AGO: '{n}ч назад'
@@ -857,6 +904,40 @@ ICU:
                 FAILED_TO_LOAD_REPORTS: 'Не удалось загрузить отчеты'
                 LOADING_REPORTS: 'Загрузка отчетов...'
                 NO_REPORTS_AVAILABLE: 'Отчеты недоступны.'
+                TWIG_CONTENT:
+                    ADDED_TO_ALLOWLIST: 'Добавлено «{token}» в {key}'
+                    ADD_FAILED: 'Не удалось обновить белый список'
+                    ADD_TO_ALLOWLIST: 'Добавить в белый список'
+                    CLEARED_EVENTS: 'Недавние блокировки очищены'
+                    CLEAR_EVENTS: 'Очистить блокировки'
+                    CLEAR_FAILED: 'Не удалось очистить блокировки'
+                    EVENT_GATE_BLOCKED: 'Шлюз заблокировал Twig в контенте этой страницы'
+                    EVENT_SANDBOX_FILTER: 'Песочница заблокировала фильтр'
+                    EVENT_SANDBOX_FUNCTION: 'Песочница заблокировала функцию'
+                    EVENT_SANDBOX_METHOD: 'Песочница заблокировала метод'
+                    EVENT_SANDBOX_PROPERTY: 'Песочница заблокировала свойство'
+                    EVENT_SANDBOX_TAG: 'Заблокированный тег песочницы'
+                    EVENT_XSS_BLANKED: 'Вывод скрыт из-за XSS-сканирования'
+                    FRONTMATTER_REQUEST_GATED: 'Запрошен Twig во frontmatter (pages.frontmatter.process_twig), но Twig в контенте отключен глобально, поэтому он не будет выполняться. Выберите профиль выше, чтобы включить его.'
+                    GATE_OFF: 'Twig в контенте отключен'
+                    GATE_ON: 'Twig в контенте включен'
+                    GLOBAL_REQUEST_GATED: 'system.pages.process.twig включен, но Twig в контенте отключен глобально, поэтому эти страницы отображаются в исходном виде. Выберите профиль выше, чтобы включить его, или удалите глобальный флаг.'
+                    LEAK_GATE_OFF: 'Шлюз сайта выключен, поэтому Twig-разметка этой страницы отображается посетителям как обычный текст.'
+                    LEAK_PAGE_OFF: 'Twig отключен для этой страницы, поэтому её Twig-разметка отображается посетителям как обычный текст.'
+                    OPEN_SECURITY_SETTINGS: 'Открыть настройки безопасности'
+                    SANDBOX_OFF: 'Песочница выключена'
+                    SANDBOX_ON: 'Песочница включена'
+                    SCAN_CLEAN: 'Никакой контент не использует Twig вне текущих списков разрешенных.'
+                    SCAN_CONTENT: 'Сканировать контент'
+                    SCAN_FAILED: 'Ошибка сканирования контента'
+                    SCAN_FILTERS: 'Заблокированные фильтры в контенте'
+                    SCAN_FUNCTIONS: 'Заблокированные функции в контенте'
+                    SCAN_INTRO: 'Сканировать весь контент страниц на наличие Twig, который заблокировала бы песочница.'
+                    SCAN_TAGS: 'Заблокированные теги в контенте'
+                    SECTION_EVENTS: 'Недавние блокировки'
+                    SECTION_LEAKS: 'Страницы, отображающие необработанный Twig'
+                    XSS_SCAN_OFF: 'XSS-сканирование вывода выключено'
+                    XSS_SCAN_ON: 'XSS-сканирование вывода включено'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Загрузка компонента отчета...'
             SCHEDULER:
