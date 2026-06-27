@@ -520,6 +520,9 @@ ICU:
         PAGE_MEDIA: Page Media
         DRAG_INTO_EDITOR: Drag into editor
         REORDER: Drag to reorder
+        REORDER_MODE: Reorder
+        REORDER_DONE: Done
+        REORDER_HINT: Drag images to set their order.
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache

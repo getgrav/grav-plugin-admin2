@@ -1,3 +1,10 @@
+# v2.0.8
+## 06/26/2026
+
+1. [](#improved)
+    * Page media reordering is now a clear Reorder toggle in the Page Media panel, so you drag the images themselves to set their order instead of a small grip handle ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
+    * Media-manager list rows can now be dragged from anywhere on the row to reorder, instead of only from the grip handle.
+
 # v2.0.7
 ## 06/25/2026
 
