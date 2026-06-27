@@ -803,6 +803,9 @@ ICU:
       TWOFA_SUBTITLE: Enter your authenticator code to continue
       SUBTITLE: Sign in to manage your site
       AUTH_CODE_PROMPT: Open your authenticator app and enter the 6-digit code for **{username}**.
+      OR_CONTINUE_WITH: Or continue with
+      CONTINUE_WITH: Continue with {provider}
+      SSO_FAILED: Could not sign in with that provider. Please try again.
     PLUGIN:
       BACK_TO_DASHBOARD: Back to Dashboard
       NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: No content available for this plugin page.
