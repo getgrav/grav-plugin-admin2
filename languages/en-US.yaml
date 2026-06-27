@@ -507,6 +507,8 @@ ICU:
         CREATE: Create
         CUSTOM_ORDER: Custom order
         REORDER: Drag to reorder
+        REORDER_MODE: Reorder
+        REORDER_DONE: Done
         ORDER_SAVE_FAILED: Failed to save the new order
       MEDIA_TOOLBAR:
         SEARCH_MEDIA: Search media...
