@@ -4,6 +4,11 @@
 1. [](#improved)
     * Page media reordering is now a clear Reorder toggle in the Page Media panel, so you drag the images themselves to set their order instead of a small grip handle ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
     * Media-manager list rows can now be dragged from anywhere on the row to reorder, instead of only from the grip handle.
+    * Plugin menubar items can now be external links that open in a new tab, not just actions.
+1. [](#bugfix)
+    * Long environment names no longer wrap onto multiple lines in the environment switcher ([#72](https://github.com/getgrav/grav-plugin-admin2/issues/72)).
+    * List fields with a single named sub-field, such as an image picker, no longer reload empty after being saved ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
+    * The editor no longer keeps retrying collaboration requests on sites without the Sync plugin, which had been flooding the network with 404s ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
 
 # v2.0.7
 ## 06/25/2026
