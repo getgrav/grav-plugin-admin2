@@ -587,6 +587,30 @@ ICU:
         REFRESH: Refresh
         LOADING_LOGS: Loading logs...
         MESSAGE: Message
+      AUDIT:
+        DESCRIPTION: "A record of API activity: logins, content, user, configuration, and package changes. Admin Next routes through the API, so this covers the admin plus any external API clients."
+        COVERAGE_DETAILED: Detailed
+        SEARCH_PLACEHOLDER: Search actor, target, event, IP...
+        EVENT: Event
+        ALL_EVENTS: All events
+        SEVERITY: Severity
+        ALL_SEVERITIES: All severities
+        FROM: From
+        TO: To
+        REFRESH: Refresh
+        FAILED_TO_LOAD: Failed to load audit trail
+        LOADING: Loading audit trail...
+        NO_ENTRIES: No audit entries found.
+        WHEN: When
+        ACTOR: Actor
+        TARGET: Target
+        IP: IP
+        EVENT_CODE: Event code
+        AUTH_METHOD: Auth method
+        USER_AGENT: User agent
+        CHANGES: Changes
+        DETAILS: Details
+        SHOWING: Showing
       REPORT_COMPONENT_WRAPPER:
         LOADING_REPORT_COMPONENT: Loading report component...
       REPORTS:

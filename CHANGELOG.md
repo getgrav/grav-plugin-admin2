@@ -2,6 +2,8 @@
 ## 06/27/2026
 
 1. [](#new)
+    * Tools now has an optional Audit Trail that lists who changed what and when, with a colored before-and-after diff for edits, shown to super admins once it is turned on in the API plugin.
+    * The Markdown editor toolbar can now show buttons that plugins add to it.
     * The login screen now shows OAuth sign-in buttons such as GitHub or Google when the Login OAuth2 plugin is set up for the admin, so you can sign in without a password ([getgrav/grav-plugin-login-oauth2#52](https://github.com/trilbymedia/grav-plugin-login-oauth2/issues/52)).
 1. [](#improved)
     * Page media reordering is now a clear Reorder toggle in the Page Media panel, so you drag the images themselves to set their order instead of a small grip handle ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
