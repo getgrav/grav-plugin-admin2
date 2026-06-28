@@ -14,6 +14,7 @@
     * List fields with a single named sub-field, such as an image picker, no longer reload empty after being saved ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
     * The editor no longer keeps retrying collaboration requests on sites without the Sync plugin, which had been flooding the network with 404s ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
     * A rejected configuration save now points to the specific field that failed and names it, instead of showing a generic validation error ([getgrav/grav#4176](https://github.com/getgrav/grav/issues/4176)).
+    * The page editor no longer loses unsaved work to a background session check: while you are editing content or a configuration form, automatic preference syncs and pending app-update reloads hold off until you save or leave ([#83](https://github.com/getgrav/grav-plugin-admin2/issues/83)).
 
 # v2.0.7
 ## 06/25/2026
