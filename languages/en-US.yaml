@@ -748,6 +748,7 @@ ICU:
       CONFIGURATION_SAVED_SUCCESSFULLY: Configuration saved successfully
       CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Reload to see the latest changes.
       FAILED_TO_SAVE_CONFIGURATION: Failed to save configuration
+      VALIDATION_FAILED_FOR_FIELDS: "Couldn't save — these fields are invalid: {fields}"
       CONFIGURATION_RELOADED: Configuration reloaded
       CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: Configuration changed elsewhere — save to overwrite or reload
       RELOAD: Reload

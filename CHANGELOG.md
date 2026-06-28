@@ -1,5 +1,5 @@
 # v2.0.8
-## 06/27/2026
+## 06/28/2026
 
 1. [](#new)
     * Tools now has an optional Audit Trail that lists who changed what and when, with a colored before-and-after diff for edits, shown to super admins once it is turned on in the API plugin.
@@ -13,6 +13,7 @@
     * Long environment names no longer wrap onto multiple lines in the environment switcher ([#72](https://github.com/getgrav/grav-plugin-admin2/issues/72)).
     * List fields with a single named sub-field, such as an image picker, no longer reload empty after being saved ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
     * The editor no longer keeps retrying collaboration requests on sites without the Sync plugin, which had been flooding the network with 404s ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
+    * A rejected configuration save now points to the specific field that failed and names it, instead of showing a generic validation error ([getgrav/grav#4176](https://github.com/getgrav/grav/issues/4176)).
 
 # v2.0.7
 ## 06/25/2026
