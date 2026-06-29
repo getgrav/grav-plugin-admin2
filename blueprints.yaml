@@ -1,14 +1,13 @@
 name: Admin2
 slug: admin2
 type: plugin
-version: 2.0.7
-testing: false
+version: 2.0.8
 description: Modern administration panel for Grav CMS. A redesigned admin experience.
 icon: black-tie
 author:
-  name: Trilby Media
-  email: hello@trilby.media
-  url: https://trilby.media
+  name: Team Grav
+  email: devs@getgrav.org
+  url: https://getgrav.org
 homepage: https://github.com/getgrav/grav-plugin-admin2
 keywords: admin, panel, dashboard, management
 bugs: https://github.com/getgrav/grav-plugin-admin2/issues
@@ -18,9 +17,7 @@ compatibility:
   grav: ["2.0"]
 
 dependencies:
-  - { name: grav, version: ">=2.0.0" }
-  - { name: api, version: ">=1.0.5" }
-  - { name: login, version: ">=3.8.2" }
+  - { name: api, version: ">=1.0.6" }
 
 form:
   validation: loose

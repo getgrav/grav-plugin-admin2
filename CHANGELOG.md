@@ -1,3 +1,30 @@
+# v2.0.8
+## 06/29/2026
+
+1. [](#new)
+    * Tools now has an optional Audit Trail that lists who changed what and when, with a colored before-and-after diff for edits, shown to super admins once it is turned on in the API plugin.
+    * The Markdown editor toolbar can now show buttons that plugins add to it.
+    * The login screen now shows OAuth sign-in buttons such as GitHub or Google when the Login OAuth2 plugin is set up for the admin, so you can sign in without a password ([getgrav/grav-plugin-login-oauth2#52](https://github.com/trilbymedia/grav-plugin-login-oauth2/issues/52)).
+1. [](#improved)
+    * Page media reordering is now a clear Reorder toggle in the Page Media panel, so you drag the images themselves to set their order instead of a small grip handle ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
+    * The Media manager now has the same Reorder toggle, so you drag whole cards or rows to set a folder's order and the grip handles are gone ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
+    * Plugin menubar items can now be external links that open in a new tab, not just actions.
+    * Plugin menubar buttons now sit in the open space on the left of the toolbar, set apart from the system actions by a divider, so everyday plugin actions are no longer crowded against Clear Cache ([#81](https://github.com/getgrav/grav-plugin-admin2/issues/81)).
+    * Plugins can now choose whether a menubar button sits in the left zone or beside the core actions, and set the order buttons appear in ([#81](https://github.com/getgrav/grav-plugin-admin2/issues/81)).
+    * The page editor now limits how many requests it makes at once, so opening a page with many panels and fields no longer overwhelms the server.
+    * Each plugin's custom field scripts are now downloaded as a single bundle and cached, so the page editor opens with fewer downloads and reuses them on the next visit.
+1. [](#bugfix)
+    * The page editor no longer loads the page, its blueprint, and its media twice when it opens.
+    * Custom fields and the editor no longer occasionally fail to appear when a page opens, now retrying automatically and falling back to a cached copy if the server is briefly busy.
+    * Long environment names no longer wrap onto multiple lines in the environment switcher ([#72](https://github.com/getgrav/grav-plugin-admin2/issues/72)).
+    * List fields with a single named sub-field, such as an image picker, no longer reload empty after being saved ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
+    * The editor no longer keeps retrying collaboration requests on sites without the Sync plugin, which had been flooding the network with 404s ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
+    * A rejected configuration save now points to the specific field that failed and names it, instead of showing a generic validation error ([getgrav/grav#4176](https://github.com/getgrav/grav/issues/4176)).
+    * The page editor no longer loses unsaved work to a background session check: while you are editing content or a configuration form, automatic preference syncs and pending app-update reloads hold off until you save or leave ([#83](https://github.com/getgrav/grav-plugin-admin2/issues/83)).
+    * A custom branding title is now applied to the browser tab on the login page on a cold load, such as in a private window, instead of only after signing in once ([#84](https://github.com/getgrav/grav-plugin-admin2/issues/84)).
+    * The "Add to allowlist" button in the Twig-in-Content report now removes the resolved block from the recent-blocks list straight away, so the action no longer looks like it did nothing ([#85](https://github.com/getgrav/grav-plugin-admin2/issues/85)).
+    * A page that fails to save now flags the specific field that was rejected and why, instead of showing a generic "did not pass blueprint validation" message ([getgrav/grav#4178](https://github.com/getgrav/grav/issues/4178)).
+
 # v2.0.7
 ## 06/25/2026
 

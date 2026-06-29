@@ -96,6 +96,7 @@ ICU:
       DELETE_FAILED: Failed to delete page
       SAVED: Page saved successfully
       SAVE_FAILED: Failed to save page
+      VALIDATION_FAILED_FOR_FIELDS: "Couldn't save — these fields are invalid: {fields}"
       VIEW_TREE: Tree
       VIEW_LIST: List
       VIEW_COLUMNS: Columns
@@ -507,6 +508,8 @@ ICU:
         CREATE: Create
         CUSTOM_ORDER: Custom order
         REORDER: Drag to reorder
+        REORDER_MODE: Reorder
+        REORDER_DONE: Done
         ORDER_SAVE_FAILED: Failed to save the new order
       MEDIA_TOOLBAR:
         SEARCH_MEDIA: Search media...
@@ -520,6 +523,9 @@ ICU:
         PAGE_MEDIA: Page Media
         DRAG_INTO_EDITOR: Drag into editor
         REORDER: Drag to reorder
+        REORDER_MODE: Reorder
+        REORDER_DONE: Done
+        REORDER_HINT: Drag images to set their order.
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache
@@ -582,6 +588,30 @@ ICU:
         REFRESH: Refresh
         LOADING_LOGS: Loading logs...
         MESSAGE: Message
+      AUDIT:
+        DESCRIPTION: "A record of API activity: logins, content, user, configuration, and package changes. Admin Next routes through the API, so this covers the admin plus any external API clients."
+        COVERAGE_DETAILED: Detailed
+        SEARCH_PLACEHOLDER: Search actor, target, event, IP...
+        EVENT: Event
+        ALL_EVENTS: All events
+        SEVERITY: Severity
+        ALL_SEVERITIES: All severities
+        FROM: From
+        TO: To
+        REFRESH: Refresh
+        FAILED_TO_LOAD: Failed to load audit trail
+        LOADING: Loading audit trail...
+        NO_ENTRIES: No audit entries found.
+        WHEN: When
+        ACTOR: Actor
+        TARGET: Target
+        IP: IP
+        EVENT_CODE: Event code
+        AUTH_METHOD: Auth method
+        USER_AGENT: User agent
+        CHANGES: Changes
+        DETAILS: Details
+        SHOWING: Showing
       REPORT_COMPONENT_WRAPPER:
         LOADING_REPORT_COMPONENT: Loading report component...
       REPORTS:
@@ -719,6 +749,7 @@ ICU:
       CONFIGURATION_SAVED_SUCCESSFULLY: Configuration saved successfully
       CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Configuration was modified elsewhere. Reload to see the latest changes.
       FAILED_TO_SAVE_CONFIGURATION: Failed to save configuration
+      VALIDATION_FAILED_FOR_FIELDS: "Couldn't save — these fields are invalid: {fields}"
       CONFIGURATION_RELOADED: Configuration reloaded
       CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: Configuration changed elsewhere — save to overwrite or reload
       RELOAD: Reload
@@ -798,6 +829,9 @@ ICU:
       TWOFA_SUBTITLE: Enter your authenticator code to continue
       SUBTITLE: Sign in to manage your site
       AUTH_CODE_PROMPT: Open your authenticator app and enter the 6-digit code for **{username}**.
+      OR_CONTINUE_WITH: Or continue with
+      CONTINUE_WITH: Continue with {provider}
+      SSO_FAILED: Could not sign in with that provider. Please try again.
     PLUGIN:
       BACK_TO_DASHBOARD: Back to Dashboard
       NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: No content available for this plugin page.
