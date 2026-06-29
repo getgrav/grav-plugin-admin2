@@ -1,5 +1,5 @@
 # v2.0.8
-## 06/28/2026
+## 06/29/2026
 
 1. [](#new)
     * Tools now has an optional Audit Trail that lists who changed what and when, with a colored before-and-after diff for edits, shown to super admins once it is turned on in the API plugin.
