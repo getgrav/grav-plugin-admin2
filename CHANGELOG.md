@@ -21,6 +21,7 @@
     * The editor no longer keeps retrying collaboration requests on sites without the Sync plugin, which had been flooding the network with 404s ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
     * A rejected configuration save now points to the specific field that failed and names it, instead of showing a generic validation error ([getgrav/grav#4176](https://github.com/getgrav/grav/issues/4176)).
     * The page editor no longer loses unsaved work to a background session check: while you are editing content or a configuration form, automatic preference syncs and pending app-update reloads hold off until you save or leave ([#83](https://github.com/getgrav/grav-plugin-admin2/issues/83)).
+    * A custom branding title is now applied to the browser tab on the login page on a cold load, such as in a private window, instead of only after signing in once ([#84](https://github.com/getgrav/grav-plugin-admin2/issues/84)).
 
 # v2.0.7
 ## 06/25/2026
