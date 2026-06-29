@@ -11,7 +11,11 @@
     * Plugin menubar items can now be external links that open in a new tab, not just actions.
     * Plugin menubar buttons now sit in the open space on the left of the toolbar, set apart from the system actions by a divider, so everyday plugin actions are no longer crowded against Clear Cache ([#81](https://github.com/getgrav/grav-plugin-admin2/issues/81)).
     * Plugins can now choose whether a menubar button sits in the left zone or beside the core actions, and set the order buttons appear in ([#81](https://github.com/getgrav/grav-plugin-admin2/issues/81)).
+    * The page editor now limits how many requests it makes at once, so opening a page with many panels and fields no longer overwhelms the server.
+    * Each plugin's custom field scripts are now downloaded as a single bundle and cached, so the page editor opens with fewer downloads and reuses them on the next visit.
 1. [](#bugfix)
+    * The page editor no longer loads the page, its blueprint, and its media twice when it opens.
+    * Custom fields and the editor no longer occasionally fail to appear when a page opens, now retrying automatically and falling back to a cached copy if the server is briefly busy.
     * Long environment names no longer wrap onto multiple lines in the environment switcher ([#72](https://github.com/getgrav/grav-plugin-admin2/issues/72)).
     * List fields with a single named sub-field, such as an image picker, no longer reload empty after being saved ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
     * The editor no longer keeps retrying collaboration requests on sites without the Sync plugin, which had been flooding the network with 404s ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
