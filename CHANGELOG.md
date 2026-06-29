@@ -9,6 +9,8 @@
     * Page media reordering is now a clear Reorder toggle in the Page Media panel, so you drag the images themselves to set their order instead of a small grip handle ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
     * The Media manager now has the same Reorder toggle, so you drag whole cards or rows to set a folder's order and the grip handles are gone ([#74](https://github.com/getgrav/grav-plugin-admin2/issues/74)).
     * Plugin menubar items can now be external links that open in a new tab, not just actions.
+    * Plugin menubar buttons now sit in the open space on the left of the toolbar, set apart from the system actions by a divider, so everyday plugin actions are no longer crowded against Clear Cache ([#81](https://github.com/getgrav/grav-plugin-admin2/issues/81)).
+    * Plugins can now choose whether a menubar button sits in the left zone or beside the core actions, and set the order buttons appear in ([#81](https://github.com/getgrav/grav-plugin-admin2/issues/81)).
 1. [](#bugfix)
     * Long environment names no longer wrap onto multiple lines in the environment switcher ([#72](https://github.com/getgrav/grav-plugin-admin2/issues/72)).
     * List fields with a single named sub-field, such as an image picker, no longer reload empty after being saved ([#73](https://github.com/getgrav/grav-plugin-admin2/issues/73)).
