@@ -96,6 +96,7 @@ ICU:
       DELETE_FAILED: Failed to delete page
       SAVED: Page saved successfully
       SAVE_FAILED: Failed to save page
+      VALIDATION_FAILED_FOR_FIELDS: "Couldn't save — these fields are invalid: {fields}"
       VIEW_TREE: Tree
       VIEW_LIST: List
       VIEW_COLUMNS: Columns

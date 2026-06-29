@@ -23,6 +23,7 @@
     * The page editor no longer loses unsaved work to a background session check: while you are editing content or a configuration form, automatic preference syncs and pending app-update reloads hold off until you save or leave ([#83](https://github.com/getgrav/grav-plugin-admin2/issues/83)).
     * A custom branding title is now applied to the browser tab on the login page on a cold load, such as in a private window, instead of only after signing in once ([#84](https://github.com/getgrav/grav-plugin-admin2/issues/84)).
     * The "Add to allowlist" button in the Twig-in-Content report now removes the resolved block from the recent-blocks list straight away, so the action no longer looks like it did nothing ([#85](https://github.com/getgrav/grav-plugin-admin2/issues/85)).
+    * A page that fails to save now flags the specific field that was rejected and why, instead of showing a generic "did not pass blueprint validation" message ([getgrav/grav#4178](https://github.com/getgrav/grav/issues/4178)).
 
 # v2.0.7
 ## 06/25/2026
