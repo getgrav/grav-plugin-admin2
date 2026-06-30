@@ -1,3 +1,9 @@
+# v2.0.10
+## 06/30/2026
+
+1. [](#improved)
+    * The Backups settings now appear in the Configuration area with their own icon, with the archive list left out of that form since it already lives under Tools → Backups.
+
 # v2.0.9
 ## 06/29/2026
 
