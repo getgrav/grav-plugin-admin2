@@ -1,3 +1,9 @@
+# v2.0.9
+## 06/29/2026
+
+1. [](#bugfix)
+    * The page editor no longer gets stuck on "Connecting to collaboration session…" on the second page opened in a session on a site without the Sync plugin ([#87](https://github.com/getgrav/grav-plugin-admin2/issues/87)).
+
 # v2.0.8
 ## 06/29/2026
 
