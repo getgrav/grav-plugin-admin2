@@ -260,6 +260,9 @@ ICU:
       DATE_FORMAT:
         SELECT_FORMAT: — Select format —
         FORMAT_STRING: "Format string:"
+        CUSTOM: Custom…
+        CUSTOM_PLACEHOLDER: "e.g. Y-m-d H:i"
+        PREVIEW: "Preview:"
       ICON_PICKER:
         SEARCH_ICONS: Search icons...
         NO_ICONS_FOUND: No icons found

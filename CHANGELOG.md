@@ -7,6 +7,7 @@
 1. [](#bugfix)
     * Opening a page preview no longer logs out a visitor signed in to the public site in the same browser, because the preview now renders the page without disturbing the shared front-end session ([#88](https://github.com/getgrav/grav-plugin-admin2/issues/88), [#79](https://github.com/getgrav/grav-plugin-admin2/issues/79)).
     * A spacer field now shows its text again, matching the classic admin ([#91](https://github.com/getgrav/grav-plugin-admin2/issues/91)).
+    * The date format fields now offer a Custom option for entering any PHP date format, and show a saved custom format instead of appearing blank ([#92](https://github.com/getgrav/grav-plugin-admin2/issues/92)).
 
 # v2.0.10
 ## 06/30/2026
