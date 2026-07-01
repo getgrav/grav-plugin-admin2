@@ -1,3 +1,9 @@
+# v2.0.11
+## 07/01/2026
+
+1. [](#bugfix)
+    * Opening a page preview no longer logs out a visitor signed in to the public site in the same browser, because the preview now renders the page without disturbing the shared front-end session ([#88](https://github.com/getgrav/grav-plugin-admin2/issues/88), [#79](https://github.com/getgrav/grav-plugin-admin2/issues/79)).
+
 # v2.0.10
 ## 06/30/2026
 
