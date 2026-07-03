@@ -2,7 +2,7 @@
 ## 07/02/2026
 
 1. [](#new)
-    * You can now edit media metadata such as alt text, title, caption, and description from both the page media field and the site media manager, with the editable fields configurable in the API plugin settings (requires API plugin 1.0.8) ([#99](https://github.com/getgrav/grav-plugin-admin2/issues/99)).
+    * You can now edit media metadata such as alt text, title, caption, description, and tags from both the page media field and the site media manager, with the editable fields configurable in the API plugin settings (requires API plugin 1.0.8) ([#99](https://github.com/getgrav/grav-plugin-admin2/issues/99)).
     * The Markdown and code editors now offer optional Vim keybindings, turned on per user in Settings and remembered on your account ([#95](https://github.com/getgrav/grav-plugin-admin2/issues/95)).
     * The page editor's preview now shows an unpublished page instead of a 404, so you can preview drafts without a separate plugin (requires API plugin 1.0.8) ([#100](https://github.com/getgrav/grav-plugin-admin2/issues/100)).
 1. [](#improved)

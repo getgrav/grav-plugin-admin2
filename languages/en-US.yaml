@@ -539,6 +539,7 @@ ICU:
         LOAD_FAILED: Could not load metadata
         EMPTY: No editable metadata fields are configured.
         STORED: Stored metadata
+        TAGS_PLACEHOLDER: Add tag…
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache
