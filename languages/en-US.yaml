@@ -529,6 +529,16 @@ ICU:
         REORDER_MODE: Reorder
         REORDER_DONE: Done
         REORDER_HINT: Drag images to set their order.
+      METADATA:
+        TITLE: Metadata
+        EDIT: Edit metadata
+        SAVING: Saving…
+        RESET: Reset
+        SAVED: Metadata saved
+        SAVE_FAILED: Could not save metadata
+        LOAD_FAILED: Could not load metadata
+        EMPTY: No editable metadata fields are configured.
+        STORED: Stored metadata
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache
