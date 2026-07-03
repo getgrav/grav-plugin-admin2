@@ -980,6 +980,10 @@ ICU:
       EDITOR_MODE: Editor mode
       DEFAULT_FORM_EDITOR_DENSITY: Default form editor density.
       EDITOR_SECTION_DESC: How the Markdown editor behaves while you write.
+      EDITOR_KEYMAP: Keybindings
+      EDITOR_KEYMAP_DESC: Use Vim keybindings in the Markdown and code editors. Default keeps standard editing.
+      EDITOR_KEYMAP_DEFAULT: Default
+      EDITOR_KEYMAP_VIM: Vim
       STICKY_TOOLBAR: Sticky toolbar
       STICKY_TOOLBAR_DESC: Keep the formatting toolbar and Preview button pinned in view as you scroll.
       EDITOR_HEIGHT: Editor height

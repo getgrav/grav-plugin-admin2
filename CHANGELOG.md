@@ -1,6 +1,9 @@
 # v2.0.11
 ## 07/02/2026
 
+1. [](#new)
+    * The Markdown and code editors now offer optional Vim keybindings, turned on per user in Settings and remembered on your account ([#95](https://github.com/getgrav/grav-plugin-admin2/issues/95)).
+    * The page editor's preview now shows an unpublished page instead of a 404, so you can preview drafts without a separate plugin (requires API plugin 1.0.8) ([#100](https://github.com/getgrav/grav-plugin-admin2/issues/100)).
 1. [](#improved)
     * The Users list now opens on the filter tab named in the address bar, or a plugin's chosen default, and keeps the address bar updated as you switch tabs so a filtered view survives a refresh and can be bookmarked or shared ([#51](https://github.com/getgrav/grav-plugin-admin2/issues/51)).
     * Filter tabs on the Users list now show their icon, and a plugin can hide the built-in "All Users" tab when it isn't a useful default ([#51](https://github.com/getgrav/grav-plugin-admin2/issues/51)).
