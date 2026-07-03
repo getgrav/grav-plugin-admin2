@@ -1,5 +1,5 @@
 # v2.0.11
-## 07/02/2026
+## 07/03/2026
 
 1. [](#new)
     * You can now edit media metadata such as alt text, title, caption, description, and tags from both the page media field and the site media manager, with the editable fields configurable in the API plugin settings (requires API plugin 1.0.8) ([#99](https://github.com/getgrav/grav-plugin-admin2/issues/99)).
@@ -14,6 +14,7 @@
     * A spacer field now shows its text again, matching the classic admin ([#91](https://github.com/getgrav/grav-plugin-admin2/issues/91)).
     * The date format fields now offer a Custom option for entering any PHP date format, and show a saved custom format instead of appearing blank ([#92](https://github.com/getgrav/grav-plugin-admin2/issues/92)).
     * The admin now bundles all its fonts locally instead of loading them from Google Fonts, so it runs fully offline and makes no external network requests ([#97](https://github.com/getgrav/grav-plugin-admin2/issues/97)).
+    * Plugin descriptions in the list preview now show special characters such as apostrophes correctly instead of their raw HTML codes ([#103](https://github.com/getgrav/grav-plugin-admin2/issues/103)).
 
 # v2.0.10
 ## 06/30/2026
