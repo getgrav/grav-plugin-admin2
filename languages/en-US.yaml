@@ -260,6 +260,9 @@ ICU:
       DATE_FORMAT:
         SELECT_FORMAT: — Select format —
         FORMAT_STRING: "Format string:"
+        CUSTOM: Custom…
+        CUSTOM_PLACEHOLDER: "e.g. Y-m-d H:i"
+        PREVIEW: "Preview:"
       ICON_PICKER:
         SEARCH_ICONS: Search icons...
         NO_ICONS_FOUND: No icons found
@@ -526,6 +529,17 @@ ICU:
         REORDER_MODE: Reorder
         REORDER_DONE: Done
         REORDER_HINT: Drag images to set their order.
+      METADATA:
+        TITLE: Metadata
+        EDIT: Edit metadata
+        SAVING: Saving…
+        RESET: Reset
+        SAVED: Metadata saved
+        SAVE_FAILED: Could not save metadata
+        LOAD_FAILED: Could not load metadata
+        EMPTY: No editable metadata fields are configured.
+        STORED: Stored metadata
+        TAGS_PLACEHOLDER: Add tag…
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       CLEAR_CACHE: Clear cache
@@ -977,6 +991,10 @@ ICU:
       EDITOR_MODE: Editor mode
       DEFAULT_FORM_EDITOR_DENSITY: Default form editor density.
       EDITOR_SECTION_DESC: How the Markdown editor behaves while you write.
+      EDITOR_KEYMAP: Keybindings
+      EDITOR_KEYMAP_DESC: Use Vim keybindings in the Markdown and code editors. Default keeps standard editing.
+      EDITOR_KEYMAP_DEFAULT: Default
+      EDITOR_KEYMAP_VIM: Vim
       STICKY_TOOLBAR: Sticky toolbar
       STICKY_TOOLBAR_DESC: Keep the formatting toolbar and Preview button pinned in view as you scroll.
       EDITOR_HEIGHT: Editor height
