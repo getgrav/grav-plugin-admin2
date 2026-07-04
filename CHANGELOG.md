@@ -9,6 +9,8 @@
     * The Users list now opens on the filter tab named in the address bar, or a plugin's chosen default, and keeps the address bar updated as you switch tabs so a filtered view survives a refresh and can be bookmarked or shared ([#51](https://github.com/getgrav/grav-plugin-admin2/issues/51)).
     * Filter tabs on the Users list now show their icon, and a plugin can hide the built-in "All Users" tab when it isn't a useful default ([#51](https://github.com/getgrav/grav-plugin-admin2/issues/51)).
     * The bundled default font files are now compressed to woff2, shrinking them by about two thirds for faster loading.
+    * Large request bursts, such as opening a long pages list, now flow through the same request limiter as the rest of the admin, avoiding momentary server overload errors.
+    * Sidebar badge counts from plugins now load together instead of one after another, so they appear sooner after signing in.
 1. [](#bugfix)
     * Opening a page preview no longer logs out a visitor signed in to the public site in the same browser, because the preview now renders the page without disturbing the shared front-end session ([#88](https://github.com/getgrav/grav-plugin-admin2/issues/88), [#79](https://github.com/getgrav/grav-plugin-admin2/issues/79)).
     * A spacer field now shows its text again, matching the classic admin ([#91](https://github.com/getgrav/grav-plugin-admin2/issues/91)).
