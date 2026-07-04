@@ -1,5 +1,5 @@
 # v2.0.11
-## 07/03/2026
+## 07/04/2026
 
 1. [](#new)
     * You can now edit media metadata such as alt text, title, caption, description, and tags from both the page media field and the site media manager, with the editable fields configurable in the API plugin settings (requires API plugin 1.0.8) ([#99](https://github.com/getgrav/grav-plugin-admin2/issues/99)).
