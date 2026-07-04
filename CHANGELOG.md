@@ -17,6 +17,7 @@
     * The date format fields now offer a Custom option for entering any PHP date format, and show a saved custom format instead of appearing blank ([#92](https://github.com/getgrav/grav-plugin-admin2/issues/92)).
     * The admin now bundles all its fonts locally instead of loading them from Google Fonts, so it runs fully offline and makes no external network requests ([#97](https://github.com/getgrav/grav-plugin-admin2/issues/97)).
     * Plugin descriptions in the list preview now show special characters such as apostrophes correctly instead of their raw HTML codes ([#103](https://github.com/getgrav/grav-plugin-admin2/issues/103)).
+    * A date field now shows its current value again instead of appearing empty when the stored date is a timestamp ([#106](https://github.com/getgrav/grav-plugin-admin2/issues/106)).
 
 # v2.0.10
 ## 06/30/2026
