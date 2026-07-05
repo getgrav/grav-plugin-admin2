@@ -5,6 +5,8 @@
     * The Plugins and Themes lists now show a banner when a Grav update is available, with a one-click button to upgrade Grav without returning to the dashboard ([#113](https://github.com/getgrav/grav-plugin-admin2/issues/113)).
     * The plugin and theme lists now include a Changelog link, in both the card preview and the table row, so you can see what changed without opening the configure page ([#108](https://github.com/getgrav/grav-plugin-admin2/issues/108)).
     * The dashboard's Grav update notice now has a Changelog button that shows what changed in the new Grav version before you upgrade (requires API plugin 1.0.9) ([#109](https://github.com/getgrav/grav-plugin-admin2/issues/109)).
+    * Plugins can now add custom columns to the Users list, showing their own per-user data through a set of safe built-in formatters (requires API plugin 1.0.9) ([#111](https://github.com/getgrav/grav-plugin-admin2/issues/111)).
+    * Plugins that provide an icon to the admin can now use a shared icon format covering Font Awesome, other loaded icon sets, and safe custom SVG glyphs ([getgrav/grav-admin-next#7](https://github.com/getgrav/grav-admin-next/pull/7)).
 1. [](#bugfix)
     * The page list summary preview now shows plain text instead of a slice of raw Markdown, so links and images at the start of a page no longer leave broken fragments (requires API plugin 1.0.9) ([#110](https://github.com/getgrav/grav-plugin-admin2/issues/110)).
 
