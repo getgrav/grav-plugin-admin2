@@ -7,8 +7,13 @@
     * The dashboard's Grav update notice now has a Changelog button that shows what changed in the new Grav version before you upgrade (requires API plugin 1.0.9) ([#109](https://github.com/getgrav/grav-plugin-admin2/issues/109)).
     * Plugins can now add custom columns to the Users list, showing their own per-user data through a set of safe built-in formatters (requires API plugin 1.0.9) ([#111](https://github.com/getgrav/grav-plugin-admin2/issues/111)).
     * Plugins that provide an icon to the admin can now use a shared icon format covering Font Awesome, other loaded icon sets, and safe custom SVG glyphs ([getgrav/grav-admin-next#7](https://github.com/getgrav/grav-admin-next/pull/7)).
+1. [](#improved)
+    * The clear-cache button in the top bar now shows a "Cache" label and a refresh icon, styled to match the other top-bar buttons.
+    * The environment switcher is now labelled "Env:" so it is clear what the button controls.
+    * The Accounts Configuration panel now shows a subtitle, so its tab row lines up with the other Users tabs.
 1. [](#bugfix)
     * The page list summary preview now shows plain text instead of a slice of raw Markdown, so links and images at the start of a page no longer leave broken fragments (requires API plugin 1.0.9) ([#110](https://github.com/getgrav/grav-plugin-admin2/issues/110)).
+    * The Invitations tab in the Users section now highlights while you are viewing pending invitations.
 
 # v2.0.11
 ## 07/04/2026
