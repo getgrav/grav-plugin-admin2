@@ -1,3 +1,10 @@
+# v2.0.12
+## 07/05/2026
+
+1. [](#new)
+    * The plugin and theme lists now include a Changelog link, in both the card preview and the table row, so you can see what changed without opening the configure page ([#108](https://github.com/getgrav/grav-plugin-admin2/issues/108)).
+    * The dashboard's Grav update notice now has a Changelog button that shows what changed in the new Grav version before you upgrade (requires API plugin 1.0.9) ([#109](https://github.com/getgrav/grav-plugin-admin2/issues/109)).
+
 # v2.0.11
 ## 07/04/2026
 
