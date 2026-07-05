@@ -2,6 +2,7 @@
 ## 07/05/2026
 
 1. [](#new)
+    * The Plugins and Themes lists now show a banner when a Grav update is available, with a one-click button to upgrade Grav without returning to the dashboard ([#113](https://github.com/getgrav/grav-plugin-admin2/issues/113)).
     * The plugin and theme lists now include a Changelog link, in both the card preview and the table row, so you can see what changed without opening the configure page ([#108](https://github.com/getgrav/grav-plugin-admin2/issues/108)).
     * The dashboard's Grav update notice now has a Changelog button that shows what changed in the new Grav version before you upgrade (requires API plugin 1.0.9) ([#109](https://github.com/getgrav/grav-plugin-admin2/issues/109)).
 1. [](#bugfix)
