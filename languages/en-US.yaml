@@ -496,6 +496,7 @@ ICU:
       IMAGE_INSERT:
         TITLE: Insert image
         PAGE_MEDIA: Page media
+        SITE_MEDIA: Site media
         NO_MEDIA: No images are attached to this page yet.
         FROM_URL: Insert from URL
         URL_LABEL: Image URL
@@ -514,6 +515,7 @@ ICU:
         FILE_RENAMED: File renamed
         DIMENSIONS: Dimensions
       MEDIA_MANAGER:
+        ROOT: Media
         FOLDER_NAME: Folder name
         FILES_DELETED: Files deleted
         UPLOAD_FILES: Upload Files

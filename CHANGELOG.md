@@ -3,6 +3,7 @@
 
 1. [](#new)
     * The Markdown editor's image button now opens a picker to insert one of the page's images or an image URL with alt text, instead of dropping placeholder text ([#114](https://github.com/getgrav/grav-plugin-admin2/issues/114)).
+    * The image picker can now browse the site media library by folder and insert a chosen image as a `media://` link ([#114](https://github.com/getgrav/grav-plugin-admin2/issues/114)).
     * Page media items now have a "+" button that inserts them at the editor's cursor, so you no longer have to drag them into a long document ([#114](https://github.com/getgrav/grav-plugin-admin2/issues/114)).
     * The Plugins and Themes lists now show a banner when a Grav update is available, with a one-click button to upgrade Grav without returning to the dashboard ([#113](https://github.com/getgrav/grav-plugin-admin2/issues/113)).
     * The plugin and theme lists now include a Changelog link, in both the card preview and the table row, so you can see what changed without opening the configure page ([#108](https://github.com/getgrav/grav-plugin-admin2/issues/108)).
