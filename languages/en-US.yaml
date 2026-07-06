@@ -493,6 +493,17 @@ ICU:
       NO_VIEW_DATA_YET: No view data yet
     MARKDOWN_EDITOR:
       NOTHING_TO_PREVIEW: Nothing to preview
+      IMAGE_INSERT:
+        TITLE: Insert image
+        PAGE_MEDIA: Page media
+        SITE_MEDIA: Site media
+        NO_MEDIA: No images are attached to this page yet.
+        FROM_URL: Insert from URL
+        URL_LABEL: Image URL
+        URL_PLACEHOLDER: https://example.com/image.jpg or media://file.jpg
+        ALT_LABEL: Alt text
+        ALT_PLACEHOLDER: Describe the image
+        INSERT: Insert
     FLOATING_WIDGET_LOADER:
       CLOSE_WIDGETS_MENU: Close widgets menu
     MEDIA:
@@ -504,6 +515,7 @@ ICU:
         FILE_RENAMED: File renamed
         DIMENSIONS: Dimensions
       MEDIA_MANAGER:
+        ROOT: Media
         FOLDER_NAME: Folder name
         FILES_DELETED: Files deleted
         UPLOAD_FILES: Upload Files
@@ -529,6 +541,8 @@ ICU:
         REORDER_MODE: Reorder
         REORDER_DONE: Done
         REORDER_HINT: Drag images to set their order.
+        INSERT_AT_CURSOR: Insert at cursor
+        INSERTED: Inserted {filename}
       METADATA:
         TITLE: Metadata
         EDIT: Edit metadata
@@ -542,6 +556,7 @@ ICU:
         TAGS_PLACEHOLDER: Add tag…
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
+      LABEL: Cache
       CLEAR_CACHE: Clear cache
       CACHE_OPTIONS: Cache options
       FAILED_TO_CLEAR_CACHE: Failed to clear cache
@@ -698,6 +713,7 @@ ICU:
       ACCESS_DENIED: Access Denied
     ARE_YOU_SURE: Are you sure?
     ENVIRONMENT_SWITCHER:
+      PREFIX: 'Env:'
       SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: Select the active environment — controls which config you see and where saves go
       HAS_OVERRIDES: has overrides
       SELECTED_ENV: Selected env
@@ -1260,6 +1276,7 @@ ICU:
       GROUP_COUNT_OTHER: "{n} groups"
     ACCOUNTS_CONFIG:
       TITLE: Accounts Configuration
+      SUBTITLE: Default settings for user accounts and registration
       PAGE_TITLE: Accounts Configuration — Grav Admin
       SAVED: Configuration saved
       FAILED_TO_LOAD: Failed to load accounts configuration
