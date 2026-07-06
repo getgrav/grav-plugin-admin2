@@ -493,6 +493,16 @@ ICU:
       NO_VIEW_DATA_YET: No view data yet
     MARKDOWN_EDITOR:
       NOTHING_TO_PREVIEW: Nothing to preview
+      IMAGE_INSERT:
+        TITLE: Insert image
+        PAGE_MEDIA: Page media
+        NO_MEDIA: No images are attached to this page yet.
+        FROM_URL: Insert from URL
+        URL_LABEL: Image URL
+        URL_PLACEHOLDER: https://example.com/image.jpg or media://file.jpg
+        ALT_LABEL: Alt text
+        ALT_PLACEHOLDER: Describe the image
+        INSERT: Insert
     FLOATING_WIDGET_LOADER:
       CLOSE_WIDGETS_MENU: Close widgets menu
     MEDIA:
@@ -529,6 +539,8 @@ ICU:
         REORDER_MODE: Reorder
         REORDER_DONE: Done
         REORDER_HINT: Drag images to set their order.
+        INSERT_AT_CURSOR: Insert at cursor
+        INSERTED: Inserted {filename}
       METADATA:
         TITLE: Metadata
         EDIT: Edit metadata
