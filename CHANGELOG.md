@@ -1,3 +1,9 @@
+# v2.0.13
+## 07/06/2026
+
+1. [](#bugfix)
+    * The backup storage bar now fills correctly when backups are limited by count or age, instead of always showing an almost-empty bar.
+
 # v2.0.12
 ## 07/06/2026
 
