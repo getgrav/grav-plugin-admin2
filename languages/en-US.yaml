@@ -559,6 +559,10 @@ ICU:
         EMPTY: No editable metadata fields are configured.
         STORED: Stored metadata
         TAGS_PLACEHOLDER: Add tag…
+        BATCH_EDITING: 'Editing {n} selected files — changed fields apply to all.'
+        APPLY_TO_N: 'Apply to {n} files'
+        BATCH_SAVED: 'Updated {n} files'
+        BATCH_PARTIAL: 'Updated {saved} files, {failed} failed'
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       LABEL: Cache

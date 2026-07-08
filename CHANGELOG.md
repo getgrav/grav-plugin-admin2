@@ -3,7 +3,10 @@
 
 1. [](#new)
     * The admin now shows a "Demo Mode" banner and turns read-only when signed in with a demo account, hiding save, upload, and delete controls while keeping everything browsable (requires API plugin 1.0.10).
+1. [](#improved)
+    * Plugin link columns in the Users list can now show separate visible text from the link they point to, so a phone number can link to a chat URL while still reading as the number (requires API plugin 1.0.10) ([#111](https://github.com/getgrav/grav-plugin-admin2/issues/111)).
 1. [](#bugfix)
+    * Editing metadata with more than one media file selected now applies your change to every selected file, not just the last one you clicked (requires API plugin 1.0.10) ([#117](https://github.com/getgrav/grav-plugin-admin2/issues/117)).
     * The backup storage bar now fills correctly when backups are limited by count or age, instead of always showing an almost-empty bar.
 
 # v2.0.12
