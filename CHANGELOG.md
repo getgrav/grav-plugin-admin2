@@ -1,6 +1,8 @@
 # v2.0.13
-## 07/06/2026
+## 07/08/2026
 
+1. [](#new)
+    * The admin now shows a "Demo Mode" banner and turns read-only when signed in with a demo account, hiding save, upload, and delete controls while keeping everything browsable (requires API plugin 1.0.10).
 1. [](#bugfix)
     * The backup storage bar now fills correctly when backups are limited by count or age, instead of always showing an almost-empty bar.
 

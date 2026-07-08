@@ -471,6 +471,11 @@ ICU:
       ACTIVE_THEME: Active Theme
       UPDATE_COUNT: "{n, plural, one{# update} other{# updates}}"
       ACTIVE_COUNT: "({n} active)"
+    DEMO:
+      BANNER_LABEL: Demo Mode
+      BANNER_READONLY: "Read-only demo — changes are disabled"
+      BANNER_MESSAGE: "Demo Mode — changes reset every {minutes, plural, one{# minute} other{# minutes}}"
+      BANNER_COUNTDOWN: "Next reset in {time}"
     SYSTEM_HEALTH_WIDGET:
       UPDATES: Updates
       EVERYTHING_UP_TO_DATE: Everything up to date
@@ -1966,6 +1971,7 @@ ICU:
       CONFIG_SAVED: "{name} configuration saved"
       CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
       SAVE_FAILED: Failed to save
+      DEMO_MODE_BLOCKED: This is a read-only demo — changes are disabled.
       DEPENDENCY_INSTALLED: "Plugin {slug} installed (dependency)"
       PACKAGE_UPDATED: "{name} updated"
       PACKAGE_UPDATE_FAILED: "Failed to update {name}: {detail}"
