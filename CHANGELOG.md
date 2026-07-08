@@ -9,6 +9,7 @@
     * File and media picker fields set to allow multiple selections now let you choose several files instead of only one ([#119](https://github.com/getgrav/grav-plugin-admin2/issues/119)).
     * Editing metadata with more than one media file selected now applies your change to every selected file, not just the last one you clicked (requires API plugin 1.0.10) ([#117](https://github.com/getgrav/grav-plugin-admin2/issues/117)).
     * The backup storage bar now fills correctly when backups are limited by count or age, instead of always showing an almost-empty bar.
+    * The page preview popup no longer hides its link and close button when the preview URL is very long; the URL now truncates so the controls stay visible ([#120](https://github.com/getgrav/grav-plugin-admin2/issues/120)).
 
 # v2.0.12
 ## 07/06/2026
