@@ -2045,6 +2045,7 @@ ICU:
       USER_SAVED: "User {username} saved"
       USER_DELETED: "User {username} deleted"
       USER_DELETE_FAILED: "Failed to delete user {username}"
+      USER_ROW_ACTION_FAILED: "Could not complete action: {label}"
       API_KEY_REVOKED: 'API key "{name}" revoked'
       PLUGIN_INSTALLED: "Plugin {name} installed"
       THEME_INSTALLED: "Theme {name} installed"

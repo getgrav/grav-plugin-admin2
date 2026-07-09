@@ -4,6 +4,8 @@
 1. [](#new)
     * The Pages screen has a new Filter control to narrow the list by published, visible, and routable status or by template, working across the tree, list, and columns views (requires API plugin 1.0.10) ([#121](https://github.com/getgrav/grav-plugin-admin2/issues/121)).
     * The admin now shows a "Demo Mode" banner and turns read-only when signed in with a demo account, hiding save, upload, and delete controls while keeping everything browsable (requires API plugin 1.0.10).
+    * Plugins can add action buttons to each row of the Users list, running an operation against that account and showing the result without leaving the page (requires API plugin 1.0.10) ([#115](https://github.com/getgrav/grav-plugin-admin2/issues/115)).
+    * Plugin widgets that enhance a specific admin screen now load only on that screen instead of on every page (requires API plugin 1.0.10) ([#116](https://github.com/getgrav/grav-plugin-admin2/issues/116)).
 1. [](#improved)
     * Plugin and theme details now show Documentation and Report an Issue links taken from the extension's own blueprint, so they point at the project instead of only offering a changelog (requires API plugin 1.0.10) ([#49](https://github.com/trilbymedia/grav-plugin-page-toc/issues/49)).
     * The homepage link on plugin and theme details now shows the site's actual address instead of a generic "Visit" label.
