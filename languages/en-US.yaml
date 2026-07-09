@@ -353,6 +353,9 @@ ICU:
     PREMIUM: Premium
     AUTHOR: Author
     HOMEPAGE: Homepage
+    README: README
+    DOCUMENTATION: Documentation
+    REPORT_ISSUE: Report an Issue
     VERSION: Version
     KEYWORDS: Keywords
     DEPENDENCIES: Dependencies
