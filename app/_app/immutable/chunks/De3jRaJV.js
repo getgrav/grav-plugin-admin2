@@ -1,0 +1,1 @@
+import{b as e}from"./DUl1H2ZM.js";function t(i){return e.isSuperAdmin?!0:e.access[i]===!0}function n(i){const r={config:"api.config.write",pages:"api.pages.write",users:"api.users.write",media:"api.media.write",gpm:"api.gpm.write",system:"api.system.write"}[i];return!(!t(r)||e.demoMode&&!e.demoWritable.includes(r))}export{t as a,n as c};

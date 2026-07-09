@@ -100,6 +100,18 @@ ICU:
       VIEW_TREE: Tree
       VIEW_LIST: List
       VIEW_COLUMNS: Columns
+      FILTER:
+        BUTTON: Filter
+        TITLE: Filter pages
+        PUBLISHED: Published
+        VISIBLE: Visible
+        ROUTABLE: Routable
+        TEMPLATE: Template
+        ALL: All
+        YES: 'Yes'
+        NO: 'No'
+        ALL_TEMPLATES: All templates
+        CLEAR: Clear
       CHUNK_SIZE: Chunk
       CHUNK_SIZE_HELP: Rows to fetch per request as you scroll. Larger values load slower the first time but reduce follow-up requests.
       LOADING_CHUNK: Loading rows {from}–{to}…
