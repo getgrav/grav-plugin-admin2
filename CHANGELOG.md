@@ -1,5 +1,5 @@
 # v2.0.13
-## 07/08/2026
+## 07/09/2026
 
 1. [](#new)
     * The Pages screen has a new Filter control to narrow the list by published, visible, and routable status or by template, working across the tree, list, and columns views (requires API plugin 1.0.10) ([#121](https://github.com/getgrav/grav-plugin-admin2/issues/121)).
@@ -13,6 +13,7 @@
     * Editing metadata with more than one media file selected now applies your change to every selected file, not just the last one you clicked (requires API plugin 1.0.10) ([#117](https://github.com/getgrav/grav-plugin-admin2/issues/117)).
     * The backup storage bar now fills correctly when backups are limited by count or age, instead of always showing an almost-empty bar.
     * The page preview popup now keeps its link and close button visible with long preview URLs and shows a clean page URL in the header instead of the internal preview parameters ([#120](https://github.com/getgrav/grav-plugin-admin2/issues/120)).
+    * The page editor's Page Info panel now translates the Published, Visible, and Routable values instead of always showing them in English ([#122](https://github.com/getgrav/grav-plugin-admin2/issues/122)).
 
 # v2.0.12
 ## 07/06/2026
