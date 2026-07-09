@@ -100,6 +100,18 @@ ICU:
       VIEW_TREE: Tree
       VIEW_LIST: List
       VIEW_COLUMNS: Columns
+      FILTER:
+        BUTTON: Filter
+        TITLE: Filter pages
+        PUBLISHED: Published
+        VISIBLE: Visible
+        ROUTABLE: Routable
+        TEMPLATE: Template
+        ALL: All
+        YES: 'Yes'
+        NO: 'No'
+        ALL_TEMPLATES: All templates
+        CLEAR: Clear
       CHUNK_SIZE: Chunk
       CHUNK_SIZE_HELP: Rows to fetch per request as you scroll. Larger values load slower the first time but reduce follow-up requests.
       LOADING_CHUNK: Loading rows {from}–{to}…
@@ -300,6 +312,8 @@ ICU:
       FILE_PICKER:
         NO_MEDIA_UPLOADED: No media files uploaded yet
         NO_MATCHING_FILES: No matching files
+        SELECT_FILE: Select a file…
+        SELECT_FILES: Select files…
       FILE:
         LIMIT_REACHED: "This field accepts at most {limit} file(s)."
     NAV:
@@ -339,6 +353,9 @@ ICU:
     PREMIUM: Premium
     AUTHOR: Author
     HOMEPAGE: Homepage
+    README: README
+    DOCUMENTATION: Documentation
+    REPORT_ISSUE: Report an Issue
     VERSION: Version
     KEYWORDS: Keywords
     DEPENDENCIES: Dependencies
@@ -471,6 +488,11 @@ ICU:
       ACTIVE_THEME: Active Theme
       UPDATE_COUNT: "{n, plural, one{# update} other{# updates}}"
       ACTIVE_COUNT: "({n} active)"
+    DEMO:
+      BANNER_LABEL: Demo Mode
+      BANNER_READONLY: "Read-only demo — changes are disabled"
+      BANNER_MESSAGE: "Demo Mode — changes reset every {minutes, plural, one{# minute} other{# minutes}}"
+      BANNER_COUNTDOWN: "Next reset in {time}"
     SYSTEM_HEALTH_WIDGET:
       UPDATES: Updates
       EVERYTHING_UP_TO_DATE: Everything up to date
@@ -554,6 +576,10 @@ ICU:
         EMPTY: No editable metadata fields are configured.
         STORED: Stored metadata
         TAGS_PLACEHOLDER: Add tag…
+        BATCH_EDITING: 'Editing {n} selected files — changed fields apply to all.'
+        APPLY_TO_N: 'Apply to {n} files'
+        BATCH_SAVED: 'Updated {n} files'
+        BATCH_PARTIAL: 'Updated {saved} files, {failed} failed'
     UPLOAD: Upload
     CACHE_CLEAR_BUTTON:
       LABEL: Cache
@@ -1966,6 +1992,7 @@ ICU:
       CONFIG_SAVED: "{name} configuration saved"
       CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
       SAVE_FAILED: Failed to save
+      DEMO_MODE_BLOCKED: This is a read-only demo — changes are disabled.
       DEPENDENCY_INSTALLED: "Plugin {slug} installed (dependency)"
       PACKAGE_UPDATED: "{name} updated"
       PACKAGE_UPDATE_FAILED: "Failed to update {name}: {detail}"
@@ -2018,6 +2045,7 @@ ICU:
       USER_SAVED: "User {username} saved"
       USER_DELETED: "User {username} deleted"
       USER_DELETE_FAILED: "Failed to delete user {username}"
+      USER_ROW_ACTION_FAILED: "Could not complete action: {label}"
       API_KEY_REVOKED: 'API key "{name}" revoked'
       PLUGIN_INSTALLED: "Plugin {name} installed"
       THEME_INSTALLED: "Theme {name} installed"

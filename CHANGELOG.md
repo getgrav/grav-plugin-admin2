@@ -1,3 +1,22 @@
+# v2.0.13
+## 07/09/2026
+
+1. [](#new)
+    * The Pages screen has a new Filter control to narrow the list by published, visible, and routable status or by template, working across the tree, list, and columns views (requires API plugin 1.0.10) ([#121](https://github.com/getgrav/grav-plugin-admin2/issues/121)).
+    * The admin now shows a "Demo Mode" banner and turns read-only when signed in with a demo account, hiding save, upload, and delete controls while keeping everything browsable (requires API plugin 1.0.10).
+    * Plugins can add action buttons to each row of the Users list, running an operation against that account and showing the result without leaving the page (requires API plugin 1.0.10) ([#115](https://github.com/getgrav/grav-plugin-admin2/issues/115)).
+    * Plugin widgets that enhance a specific admin screen now load only on that screen instead of on every page (requires API plugin 1.0.10) ([#116](https://github.com/getgrav/grav-plugin-admin2/issues/116)).
+1. [](#improved)
+    * Plugin and theme details now show Documentation and Report an Issue links taken from the extension's own blueprint, so they point at the project instead of only offering a changelog (requires API plugin 1.0.10) ([#49](https://github.com/trilbymedia/grav-plugin-page-toc/issues/49)).
+    * The homepage link on plugin and theme details now shows the site's actual address instead of a generic "Visit" label.
+    * Plugin link columns in the Users list can now show separate visible text from the link they point to, so a phone number can link to a chat URL while still reading as the number (requires API plugin 1.0.10) ([#111](https://github.com/getgrav/grav-plugin-admin2/issues/111)).
+1. [](#bugfix)
+    * File and media picker fields set to allow multiple selections now let you choose several files instead of only one ([#119](https://github.com/getgrav/grav-plugin-admin2/issues/119)).
+    * Editing metadata with more than one media file selected now applies your change to every selected file, not just the last one you clicked (requires API plugin 1.0.10) ([#117](https://github.com/getgrav/grav-plugin-admin2/issues/117)).
+    * The backup storage bar now fills correctly when backups are limited by count or age, instead of always showing an almost-empty bar.
+    * The page preview popup now keeps its link and close button visible with long preview URLs and shows a clean page URL in the header instead of the internal preview parameters ([#120](https://github.com/getgrav/grav-plugin-admin2/issues/120)).
+    * The page editor's Page Info panel now translates the Published, Visible, and Routable values instead of always showing them in English ([#122](https://github.com/getgrav/grav-plugin-admin2/issues/122)).
+
 # v2.0.12
 ## 07/06/2026
 

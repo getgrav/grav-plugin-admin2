@@ -1,0 +1,1 @@
+function c(r){const e=(r??"").trim();if(!e)return"";try{return new URL(e).hostname.replace(/^www\./,"")}catch{return e.replace(/^https?:\/\//,"").replace(/^www\./,"").replace(/\/.*$/,"")}}function s(r,e){const t=a=>(a??"").trim().replace(/^https?:\/\//,"").replace(/\/+$/,"").toLowerCase(),n=t(r);return n!==""&&n===t(e)}export{c as h,s};
