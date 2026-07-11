@@ -1,3 +1,9 @@
+# v2.0.14
+## 07/11/2026
+
+1. [](#bugfix)
+    * Buttons and links no longer show a stray focus outline after you click them, so the interface and screenshots stay clean.
+
 # v2.0.13
 ## 07/09/2026
 
