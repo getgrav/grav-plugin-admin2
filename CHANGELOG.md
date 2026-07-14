@@ -4,7 +4,7 @@
 1. [](#new)
     * The Plugins and Themes items in the sidebar now show a badge with the number of available updates alongside the installed count, so outdated extensions stay visible from anywhere in the admin (requires API plugin 1.0.11) ([#124](https://github.com/getgrav/grav-plugin-admin2/issues/124)).
 1. [](#bugfix)
-    * The dashboard cards now count plugin and theme updates separately instead of adding theme updates to the plugin card's count.
+    * The dashboard's plugin and theme cards now each show their own update status, and the active-theme card only flags an update when the active theme itself is outdated, instead of lumping every update onto the plugin card.
     * Buttons and links no longer show a stray focus outline after you click them, so the interface and screenshots stay clean.
     * Image uploads on a Flex object's file field no longer fail when the field stores files in the object's own folder.
     * The first image uploaded to a Flex object's file field now records immediately and enables Save, instead of only taking effect after a second upload.
