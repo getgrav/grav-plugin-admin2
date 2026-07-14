@@ -9,6 +9,7 @@
     * Image uploads on a Flex object's file field no longer fail when the field stores files in the object's own folder.
     * The first image uploaded to a Flex object's file field now records immediately and enables Save, instead of only taking effect after a second upload.
     * Images on a Flex object's file field now stay visible when you reopen the object, instead of vanishing from the field.
+    * The message shown after updating all plugins or themes now counts extensions that were brought up to date as a shared dependency, so the total matches the number you asked to update instead of being one short ([#127](https://github.com/getgrav/grav-plugin-admin2/issues/127)).
 
 # v2.0.13
 ## 07/09/2026
