@@ -1,6 +1,8 @@
 # v2.0.14
-## 07/11/2026
+## 07/13/2026
 
+1. [](#new)
+    * The Plugins and Themes items in the sidebar now show a badge with the number of available updates alongside the installed count, so outdated extensions stay visible from anywhere in the admin (requires API plugin 1.0.11) ([#124](https://github.com/getgrav/grav-plugin-admin2/issues/124)).
 1. [](#bugfix)
     * Buttons and links no longer show a stray focus outline after you click them, so the interface and screenshots stay clean.
 

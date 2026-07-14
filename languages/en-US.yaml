@@ -327,6 +327,7 @@ ICU:
       TOOLS: Tools
       SYSTEM: System
       SETTINGS: Settings
+      UPDATES_AVAILABLE: "{count} update(s) available"
     LANG:
       SWITCH_LANGUAGE: Switch content language
       TRANSLATIONS: Translations
