@@ -6,6 +6,9 @@
 1. [](#bugfix)
     * The dashboard cards now count plugin and theme updates separately instead of adding theme updates to the plugin card's count.
     * Buttons and links no longer show a stray focus outline after you click them, so the interface and screenshots stay clean.
+    * Image uploads on a Flex object's file field no longer fail when the field stores files in the object's own folder.
+    * The first image uploaded to a Flex object's file field now records immediately and enables Save, instead of only taking effect after a second upload.
+    * Images on a Flex object's file field now stay visible when you reopen the object, instead of vanishing from the field.
 
 # v2.0.13
 ## 07/09/2026
