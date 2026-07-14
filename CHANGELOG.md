@@ -1,9 +1,10 @@
 # v2.0.14
-## 07/13/2026
+## 07/14/2026
 
 1. [](#new)
     * The Plugins and Themes items in the sidebar now show a badge with the number of available updates alongside the installed count, so outdated extensions stay visible from anywhere in the admin (requires API plugin 1.0.11) ([#124](https://github.com/getgrav/grav-plugin-admin2/issues/124)).
 1. [](#bugfix)
+    * Inserting a Page Media image with its "+" button now adds it only to the editor you were working in, instead of dropping the same image into every Markdown field on the page such as both Content and Description ([#128](https://github.com/getgrav/grav-plugin-admin2/issues/128)).
     * The dashboard's plugin and theme cards now each show their own update status, and the active-theme card only flags an update when the active theme itself is outdated, instead of lumping every update onto the plugin card.
     * Buttons and links no longer show a stray focus outline after you click them, so the interface and screenshots stay clean.
     * Image uploads on a Flex object's file field no longer fail when the field stores files in the object's own folder.
