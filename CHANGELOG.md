@@ -1,3 +1,18 @@
+# v2.0.14
+## 07/14/2026
+
+1. [](#new)
+    * The Plugins and Themes items in the sidebar now show a badge with the number of available updates alongside the installed count, so outdated extensions stay visible from anywhere in the admin (requires API plugin 1.0.11) ([#124](https://github.com/getgrav/grav-plugin-admin2/issues/124)).
+1. [](#bugfix)
+    * Inserting a Page Media image with its "+" button now adds it only to the editor you were working in, instead of dropping the same image into every Markdown field on the page such as both Content and Description ([#128](https://github.com/getgrav/grav-plugin-admin2/issues/128)).
+    * The dashboard's plugin and theme cards now each show their own update status, and the active-theme card only flags an update when the active theme itself is outdated, instead of lumping every update onto the plugin card.
+    * Buttons and links no longer show a stray focus outline after you click them, so the interface and screenshots stay clean.
+    * Image uploads on a Flex object's file field no longer fail when the field stores files in the object's own folder.
+    * The first image uploaded to a Flex object's file field now records immediately and enables Save, instead of only taking effect after a second upload.
+    * Images on a Flex object's file field now stay visible when you reopen the object, instead of vanishing from the field.
+    * The message shown after updating all plugins or themes now counts extensions that were brought up to date as a shared dependency, so the total matches the number you asked to update instead of being one short ([#127](https://github.com/getgrav/grav-plugin-admin2/issues/127)).
+    * The title shown when editing a Flex object now honors its blueprint's title template even when it uses a translation filter, instead of printing the raw template text ([flex-objects#233](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/233)).
+
 # v2.0.13
 ## 07/09/2026
 
