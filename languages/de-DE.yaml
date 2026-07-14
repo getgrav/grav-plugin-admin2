@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: Cache-Optionen
             CLEAR_CACHE: 'Cache löschen'
             FAILED_TO_CLEAR_CACHE: 'Cache konnte nicht geleert werden'
+            LABEL: Cache
         CANCEL: Abbrechen
         CLEAR_SEARCH: 'Suche löschen'
         CLOSE: Schließen
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig in Seiteninhalten ist deaktiviert. Markup wird so angezeigt, wie es geschrieben wurde.'
                 TRUSTED: 'Nur vertrauenswürdige Rollen'
                 TRUSTED_DESC: 'Nur Superuser und Benutzer mit der Berechtigung „pages twig“ können Twig auf einer Seite aktivieren.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Das Speichern war nicht erfolgreich. Die folgenden Felder sind fehlerhaft: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Umgebung
             EXPORT_YAML: 'YAML exportieren'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Konnte Umgebung nicht löschen'
             SWITCH_AND_RELOAD: 'Wechseln & neu laden'
             SWITCH_DISCARDS_UNSAVED: 'Das Wechseln der Umgebung lädt den Admin neu und verwirft ungespeicherte Änderungen. Fortfahren?'
+            PREFIX: 'Umgebung:'
         EXPAND_ALL: 'Alle ausklappen'
         EXPAND_SIDEBAR: 'Seitenleiste ausklappen'
         EXPERT_MODE: Expertenmodus
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Formatzeichenfolge:'
                 SELECT_FORMAT: '— Format auswählen —'
+                CUSTOM: Benutzerdefiniert...
+                CUSTOM_PLACEHOLDER: 'z.B. Y-m-d H:i'
+                PREVIEW: 'Vorschau:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Keine übereinstimmenden Dateien'
                 NO_MEDIA_UPLOADED: 'Noch keine Mediendateien hochgeladen'
+                SELECT_FILE: 'Wählen Sie eine Datei aus...'
+                SELECT_FILES: 'Wählen Sie Dateien aus...'
             FILE_PICKER_SOON: 'Dateiauswahl — in Kürze verfügbar'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Keine Icons gefunden'
@@ -358,8 +366,22 @@ ICU:
             USERNAME_IS_REQUIRED: 'Benutzername erforderlich'
             VERIFY: Überprüfen
             VERIFYING: 'Wird überprüft...'
+            CONTINUE_WITH: 'Fortfahren mit {provider}'
+            OR_CONTINUE_WITH: 'Oder fortfahren mit'
+            SSO_FAILED: 'Die Anmeldung mit diesem Anbieter ist fehlgeschlagen. Bitte versuchen Sie es erneut.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Keine Vorschau verfügbar'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Alternativer Text'
+                ALT_PLACEHOLDER: 'Beschreiben Sie das Bild'
+                FROM_URL: 'Von einer Url einfügen'
+                INSERT: Einfügen
+                NO_MEDIA: 'Zu dieser Seite wurden bisher keine Bilder hochgeladen.'
+                PAGE_MEDIA: Seitenmedien
+                SITE_MEDIA: 'Medien der Website'
+                TITLE: 'Bild einfügen'
+                URL_LABEL: 'Bild Url'
+                URL_PLACEHOLDER: 'https://example.com/bildname.jpg oder media://bildname.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Website-weite Mediendateien verwalten'
             MEDIA_GRAV_ADMIN: 'Medien — Grav Admin'
@@ -376,6 +398,12 @@ ICU:
                 FOLDER_NAME: Ordnername
                 NEW_FOLDER: 'Neuer Ordner'
                 UPLOAD_FILES: 'Dateien hochladen'
+                CUSTOM_ORDER: 'Angepasste Sortierung'
+                ORDER_SAVE_FAILED: 'Das Speichern der neuen Sortierung ist fehlgeschlagen'
+                REORDER: 'Zum Neuanordnen ziehen'
+                REORDER_DONE: Fertig
+                REORDER_MODE: 'Neu sortieren'
+                ROOT: Medien
             MEDIA_TOOLBAR:
                 FOLDER: Ordner
                 GRID_VIEW: Rasteransicht
@@ -385,6 +413,27 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'In Editor ziehen'
                 PAGE_MEDIA: Seiten-Medien
+                INSERTED: '{filename} eingefügt'
+                INSERT_AT_CURSOR: 'An der Cursorposition einfügen'
+                REORDER: 'Zum Neuanordnen ziehen'
+                REORDER_DONE: Erledigt
+                REORDER_HINT: 'Bilder verschieben um die Reihenfolge zu bearbeiten.'
+                REORDER_MODE: Neuanordnung
+            METADATA:
+                APPLY_TO_N: 'Auf {n} Dateien anwenden'
+                BATCH_EDITING: '{n} ausgewählte Dateien editieren - geänderte Felder werden auf alle angewendet.'
+                BATCH_PARTIAL: '{saved} Dateien wurden aktualisiert, {failed} sind fehlgeschlagen'
+                BATCH_SAVED: '{n} Dateien wurden aktualisiert'
+                EDIT: 'Metadaten bearbeiten'
+                EMPTY: 'Es sind keine editierbaren Metadaten konfiguriert.'
+                LOAD_FAILED: 'Metadaten konnten nicht geladen werden.'
+                RESET: Zurücksetzen
+                SAVED: 'Metadaten wurden gespeichert'
+                SAVE_FAILED: 'Metadaten konnten nicht gespeichert werden'
+                SAVING: Speichern...
+                STORED: 'Gespeicherte Metadaten'
+                TAGS_PLACEHOLDER: 'Tag hinzufügen...'
+                TITLE: Metadaten
         NAV:
             CONFIGURATION: Konfiguration
             DASHBOARD: Dashboard
@@ -549,6 +598,17 @@ ICU:
                 LEAK_PAGE_OFF: 'Diese Seite enthält Twig-Markup, aber Twig ist für diese Seite deaktiviert, sodass es für Besucher als reiner Text dargestellt wird.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig-Konstrukt wurde kürzlich auf dieser Seite blockiert} other {# Twig-Konstrukte wurden kürzlich auf dieser Seite blockiert}}.'
                 VIEW_REPORT: 'Bericht ansehen'
+            FILTER:
+                ALL: Alle
+                ALL_TEMPLATES: 'Alle Vorlagen'
+                BUTTON: Filter
+                CLEAR: 'Filter zurücksetzen'
+                'NO': 'Kein Filter'
+                PUBLISHED: Veröffentlicht
+                TEMPLATE: Vorlagen
+                TITLE: 'Seiten filtern'
+                VISIBLE: Sichtbar
+            VALIDATION_FAILED_FOR_FIELDS: 'Speichern war nicht erfolgreich - diese Felder sind ungültig: {fields}'
         PASSWORD: Passwort
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Passwortanforderungen
@@ -764,6 +824,8 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Optionale Zeile, die unter der Anmeldeüberschrift angezeigt wird.'
             SHOW_POWERED_BY: '„Powered by Grav“ anzeigen'
             SHOW_POWERED_BY_DESC: 'Zeigen Sie die Zeile „Powered by Grav CMS“ auf den Anmelde- und Einrichtungsbildschirmen an.'
+            EDITOR_KEYMAP: Tastenbelegungen
+            EDITOR_KEYMAP_DEFAULT: Standard
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -1114,6 +1176,7 @@ ICU:
             PAGE_TITLE: 'Kontenkonfiguration — Grav Admin'
             SAVED: 'Konfiguration gespeichert'
             TITLE: Kontenkonfiguration
+            SUBTITLE: 'Standardeinstellungen für Benutzerkonten und Registrierung'
         INVITATIONS:
             ACCEPT_FAILED: 'Konto konnte nicht erstellt werden.'
             ACCEPT_HEADING: 'Einladung annehmen'
@@ -1938,6 +2001,13 @@ ICU:
         YUBIKEY_HELP: 'Stecken Sie Ihren YubiKey in Ihren Computer ein und klicken Sie auf die Schaltfläche, um ein OTP zu generieren. Die ersten 12 Zeichen sind Ihre Client-ID und werden gespeichert.'
         YUBIKEY_ID: YubiKey-ID
         SECURITY_CHECK:
-            USER_FOLDER_EXPOSED_BODY: 'Dein Webserver wendet nicht die von Grav empfohlenen Zugriffsregeln an, sodass Dateien in user/ direkt über das Web erreicht werden können. Es lohnt sich es zu verschärfen, da einige Plugins hier Daten speichern.'
+            USER_FOLDER_EXPOSED_BODY: 'Dateien unter user/data, user/accounts und user/config können direkt über HTTP heruntergeladen werden — einschließlich Zertifikaten, Schlüsseln, Token und Datenbanken. Dies bedeutet normalerweise, dass Ihr Webserver die .htaccess-Regeln von Grav nicht anwendet.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Wie Sie Ihren Webserver absichern'
-            USER_FOLDER_EXPOSED_TITLE: 'Dein Webserver wendet die Zugriffsregeln von Grav nicht an'
+            USER_FOLDER_EXPOSED_TITLE: 'Sicherheitsrisiko: Ihre Benutzerdaten-Ordner sind über das Web erreichbar'
+        DEMO:
+            BANNER_COUNTDOWN: 'Nächster Reset in {time}'
+            BANNER_LABEL: Demo-Modus
+            BANNER_READONLY: 'Demo im schreibgeschützten Modus – Änderungen sind nicht möglich'
+        DOCUMENTATION: Dokumentation
+        README: README
+        REPORT_ISSUE: 'Ein Problem melden'
