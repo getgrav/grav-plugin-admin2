@@ -1,3 +1,16 @@
+# v2.0.15
+## 07/15/2026
+
+1. [](#improved)
+    * Text a language has not translated yet now reads in English, instead of showing a mangled version of the key name such as "Label" where it should say "Cache" (requires API plugin 1.0.12) ([#129](https://github.com/getgrav/grav-plugin-admin2/issues/129)).
+1. [](#bugfix)
+    * Confirmation dialogs now translate their title and buttons instead of always showing them in English.
+    * The prompt shown when leaving a screen with unsaved changes is now translated instead of always appearing in English.
+    * Add buttons, list and picker placeholders, and the media drop zone messages are now translated instead of always appearing in English ([grav-admin-next#13](https://github.com/getgrav/grav-admin-next/issues/13)).
+    * An `elements` field now shows its options when nested inside a list ([#130](https://github.com/getgrav/grav-plugin-admin2/issues/130)).
+    * The create screen for a Flex object now uses the title configured for that object type ([flex-objects#233](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/233)).
+    * Toggle-able fields now show their on/off checkbox when placed inside columns ([#131](https://github.com/getgrav/grav-plugin-admin2/issues/131)).
+
 # v2.0.14
 ## 07/14/2026
 
