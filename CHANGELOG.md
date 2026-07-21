@@ -1,5 +1,5 @@
 # v2.0.15
-## 07/17/2026
+## 07/20/2026
 
 1. [](#improved)
     * Text a language has not translated yet now reads in English, instead of showing a mangled version of the key name such as "Label" where it should say "Cache" (requires API plugin 1.0.12) ([#129](https://github.com/getgrav/grav-plugin-admin2/issues/129)).
