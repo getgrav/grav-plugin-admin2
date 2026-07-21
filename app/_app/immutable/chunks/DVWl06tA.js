@@ -1,0 +1,1 @@
+import{i}from"./DUl1H2ZM.js";function l(t,n){return t.replace(/\{\{\s*object\.(\w+)\s*(?:\?\?\s*'([^']*)')?\s*(?:\|\s*\w+)*\s*\}\}/g,(o,s,e)=>{const r=n?.[s];return r!=null&&r!==""?String(r):e?i.tMaybe(e):""})}export{l as r};

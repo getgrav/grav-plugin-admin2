@@ -20,6 +20,7 @@ ICU:
     CLOSE: Close
     COLLAPSE_SIDEBAR: Collapse sidebar
     EXPAND_SIDEBAR: Expand sidebar
+    CONFIRM: Confirm
     CONFIRM_DELETE: Delete "{title}" at {route}?
     DELETE: Delete
     DONE: Done
@@ -33,6 +34,12 @@ ICU:
     TOGGLE_DARK_MODE: Toggle dark mode
     TOGGLE_MENU: Toggle menu
     UNSAVED_CHANGES: Unsaved changes
+    UNSAVED_CHANGES_DIALOG:
+      LEAVE_MESSAGE: You have unsaved changes. Leave anyway?
+      LEAVE: Leave
+      STAY: Stay
+      SWITCH_LANGUAGE_MESSAGE: You have unsaved changes. Switch language anyway?
+      SWITCH_LANGUAGE: Switch
     VALIDATION:
       FIELD_REQUIRED: '{label} is required'
       REQUIRED_GENERIC: This field is required
@@ -238,6 +245,10 @@ ICU:
       CLEAR_DATE: Clear date
       REGENERATE_SLUG: Auto-regenerate from page title
       ADD_ENTRY: Add entry
+      ADD_ITEM: Add item
+      SELECTIZE_PLACEHOLDER: Type and press Enter...
+      SELECT_A_PAGE: Select a page...
+      SELECT_AN_ICON: Select an icon...
       NO_TAXONOMY_TYPES: No taxonomy types configured
       FILE_PICKER_SOON: File picker — coming soon
       CRON:
@@ -539,6 +550,14 @@ ICU:
         DIMENSIONS: Dimensions
       MEDIA_MANAGER:
         ROOT: Media
+        NO_RESULTS_FOUND: No results found
+        TRY_A_DIFFERENT_SEARCH_TERM: Try a different search term
+        FOLDER_IS_EMPTY: This folder is empty
+        DROP_FILES_OR_CLICK_UPLOAD: Drop files here or click Upload to get started
+        DROP_FILES_TO_UPLOAD: Drop files to upload
+        # Rendered with tHtml so the path can be emphasised without splitting the
+        # sentence into fragments translators can't reorder.
+        DROP_FILES_TO_UPLOAD_TO_PATH: Drop files to upload to **{path}**
         FOLDER_NAME: Folder name
         FILES_DELETED: Files deleted
         UPLOAD_FILES: Upload Files
@@ -559,6 +578,9 @@ ICU:
       MANAGE_SITE_WIDE_MEDIA_FILES: Manage site-wide media files
       PAGE_MEDIA:
         PAGE_MEDIA: Page Media
+        DROP_FILES_HERE: Drop files here
+        DROP_OR_CLICK_TO_ADD_MORE: Drop or click to add more
+        DROP_FILES_OR_CLICK_TO_UPLOAD: Drop files or click to upload
         DRAG_INTO_EDITOR: Drag into editor
         REORDER: Drag to reorder
         REORDER_MODE: Reorder
@@ -824,6 +846,7 @@ ICU:
         RESET_CONFIRM: Reset
         RESET_DONE: Overrides reset
     FLEX_OBJECTS:
+      ADD: Add
       SEARCH: Search...
       PREVIOUS: Previous
       DELETE_OBJECT: Delete Object
@@ -1573,6 +1596,11 @@ ICU:
     HOME_PAGE_HELP: The page that Grav will use as the default landing page
     HTTP_ACCEPT_LANGUAGE: Set language from browser
     HTTP_ACCEPT_LANGUAGE_HELP: You can opt to try to set the language based on `http_accept_language` header tag in the browser
+    HTTP_ACCEPT_LANGUAGE_FALLBACK: Browser Language Fallbacks
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: Map unsupported browser languages to supported languages when setting the language from the `http_accept_language` header. This does not add supported languages or create language routes.
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: Specify an unsupported browser language code, e.g. `hr` or `sr-Latn`.
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Fallback Languages
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: Please enter a list of supported language codes. The first supported language will be used.
     HTTP_CONNECTIONS: HTTP Connections
     HTTP_CONNECTIONS_HELP: The number of concurrent HTTP connections during multiplexed requests
     HTTP_HEADERS: HTTP Headers

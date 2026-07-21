@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: 'Opciones de caché'
             CLEAR_CACHE: 'Limpiar caché'
             FAILED_TO_CLEAR_CACHE: 'Error al limpiar el caché'
+            LABEL: Caché
         CANCEL: Cancelar
         CLEAR_SEARCH: 'Limpiar búsqueda'
         CLOSE: Cerrar
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig en el contenido de la página está deshabilitado. El marcado se muestra tal como está escrito.'
                 TRUSTED: 'Solo roles de confianza'
                 TRUSTED_DESC: 'Solo los superusuarios y los titulares del permiso «pages twig» pueden habilitar Twig en una página.'
+            VALIDATION_FAILED_FOR_FIELDS: 'No se pudo guardar: estos campos no son válidos: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Entorno
             EXPORT_YAML: 'Exportar YAML'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Error al eliminar el entorno'
             SWITCH_AND_RELOAD: 'Cambiar y recargar'
             SWITCH_DISCARDS_UNSAVED: 'Cambiar el entorno recarga el administrador y descarta los cambios sin guardar. ¿Continuar?'
+            PREFIX: 'Entorno:'
         EXPAND_ALL: 'Expandir todo'
         EXPAND_SIDEBAR: 'Expandir barra lateral'
         EXPERT_MODE: 'Modo experto'
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Cadena de formato:'
                 SELECT_FORMAT: '— Seleccionar formato —'
+                CUSTOM: Personalizado…
+                CUSTOM_PLACEHOLDER: 'Ej.: Y-m-d H:i'
+                PREVIEW: 'Vista previa:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'No hay archivos coincidentes'
                 NO_MEDIA_UPLOADED: 'Aún no hay archivos multimedia cargados'
+                SELECT_FILE: 'Selecciona un archivo…'
+                SELECT_FILES: 'Selecciona archivos…'
             FILE_PICKER_SOON: 'Selector de archivos — próximamente'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'No se encontraron iconos'
@@ -358,8 +366,22 @@ ICU:
             USERNAME_IS_REQUIRED: 'El nombre de usuario es obligatorio'
             VERIFY: Verificar
             VERIFYING: Verificando...
+            CONTINUE_WITH: 'Continuar con {provider}'
+            OR_CONTINUE_WITH: 'O continuar con'
+            SSO_FAILED: 'No se pudo iniciar sesión con ese proveedor. Inténtalo de nuevo.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nada que previsualizar'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Texto alternativo'
+                ALT_PLACEHOLDER: 'Describe la imagen'
+                FROM_URL: 'Insertar desde una URL'
+                INSERT: Insertar
+                NO_MEDIA: 'Todavía no hay imágenes adjuntas a esta página.'
+                PAGE_MEDIA: 'Multimedia de la página'
+                SITE_MEDIA: 'Multimedia del sitio'
+                TITLE: 'Insertar imagen'
+                URL_LABEL: 'URL de la imagen'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg o media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Gestionar archivos multimedia de todo el sitio'
             MEDIA_GRAV_ADMIN: 'Multimedia — Grav Admin'
@@ -376,6 +398,12 @@ ICU:
                 FOLDER_NAME: 'Nombre de la carpeta'
                 NEW_FOLDER: 'Nueva carpeta'
                 UPLOAD_FILES: 'Subir archivos'
+                CUSTOM_ORDER: 'Orden personalizado'
+                ORDER_SAVE_FAILED: 'No se pudo guardar el nuevo orden'
+                REORDER: 'Arrastra para reordenar'
+                REORDER_DONE: Listo
+                REORDER_MODE: Reordenar
+                ROOT: Multimedia
             MEDIA_TOOLBAR:
                 FOLDER: Carpeta
                 GRID_VIEW: 'Vista de cuadrícula'
@@ -385,6 +413,27 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Arrastra al editor'
                 PAGE_MEDIA: 'Medios de página'
+                INSERTED: 'Se insertó {filename}'
+                INSERT_AT_CURSOR: 'Insertar en el cursor'
+                REORDER: 'Arrastra para reordenar'
+                REORDER_DONE: Listo
+                REORDER_HINT: 'Arrastra las imágenes para establecer su orden.'
+                REORDER_MODE: Reordenar
+            METADATA:
+                APPLY_TO_N: 'Aplicar a {n} archivos'
+                BATCH_EDITING: 'Editando {n} archivos seleccionados: los cambios en los campos se aplicarán a todos.'
+                BATCH_PARTIAL: 'Se actualizaron {saved} archivos; {failed} no se pudieron actualizar.'
+                BATCH_SAVED: 'Se actualizaron {n} archivos'
+                EDIT: 'Editar metadatos'
+                EMPTY: 'No hay campos de metadatos editables configurados.'
+                LOAD_FAILED: 'No se pudieron cargar los metadatos.'
+                RESET: Restablecer
+                SAVED: 'Metadatos guardados'
+                SAVE_FAILED: 'No se pudieron guardar los metadatos.'
+                SAVING: Guardando…
+                STORED: 'Metadatos almacenados'
+                TAGS_PLACEHOLDER: 'Añadir etiqueta…'
+                TITLE: Metadatos
         NAV:
             CONFIGURATION: Configuración
             DASHBOARD: 'Panel de control'
@@ -396,6 +445,7 @@ ICU:
             THEMES: Temas
             TOOLS: Herramientas
             USERS: Usuarios
+            UPDATES_AVAILABLE: '{count, plural, one{# actualización disponible} other{# actualizaciones disponibles}}'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Sin elementos de feed'
         NORMAL_MODE: 'Modo normal'
@@ -549,6 +599,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Esta página contiene marcado Twig, pero Twig está desactivado para esta página, por lo que se representa como texto sin formato para los visitantes.'
                 RECENT_BLOCKS: '{n, plural, one {# construcción de Twig en esta página fue bloqueada recientemente} other {# construcciones de Twig en esta página fueron bloqueadas recientemente}}.'
                 VIEW_REPORT: 'Ver informe'
+            FILTER:
+                ALL: Todos
+                ALL_TEMPLATES: 'Todas las plantillas'
+                BUTTON: Filtrar
+                CLEAR: Limpiar
+                'NO': 'No'
+                PUBLISHED: Publicado
+                ROUTABLE: Enrutable
+                TEMPLATE: Plantilla
+                TITLE: 'Filtrar páginas'
+                VISIBLE: Visible
+                'YES': Si
+            VALIDATION_FAILED_FOR_FIELDS: 'No se pudo guardar: estos campos no son válidos: {fields}'
         PASSWORD: Contraseña
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisitos de contraseña'
@@ -764,6 +827,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Línea opcional que se muestra debajo del encabezado de inicio de sesión.'
             SHOW_POWERED_BY: 'Mostrar «Powered by Grav»'
             SHOW_POWERED_BY_DESC: 'Mostrar la línea «Powered by Grav CMS» en las pantallas de inicio de sesión y configuración.'
+            EDITOR_KEYMAP: 'Atajos de teclado'
+            EDITOR_KEYMAP_DEFAULT: Predeterminado
+            EDITOR_KEYMAP_DESC: 'Usa los atajos de teclado de Vim en los editores de Markdown y código. La opción predeterminada mantiene los atajos estándar del editor.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, guiones, guiones bajos'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Cuenta de administrador creada — bienvenido a Grav'
@@ -965,6 +1032,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'Versión de PHP'
             TOOLS_GRAV_ADMIN: 'Herramientas — Grav Admin'
+            AUDIT:
+                ACTOR: Actor
+                ALL_EVENTS: 'Todos los eventos'
+                ALL_SEVERITIES: 'Todas las severidades'
+                AUTH_METHOD: 'Método de autenticación'
+                CHANGES: Cambios
+                COVERAGE_DETAILED: Detallado
+                DESCRIPTION: 'Un registro de la actividad de la API: inicios de sesión, contenido, usuarios, configuración y cambios en los paquetes.'
+                DETAILS: Detalles
+                EVENT: Evento
+                EVENT_CODE: 'Código del evento'
+                FAILED_TO_LOAD: 'No se pudo cargar el registro de auditoría'
+                FROM: Desde
+                IP: IP
+                LOADING: 'Cargando el registro de auditoría...'
+                NO_ENTRIES: 'No se encontraron registros de auditoría.'
+                REFRESH: Actualizar
+                SEARCH_PLACEHOLDER: 'Buscar por actor, destino, evento, IP...'
+                SEVERITY: Severidad
+                SHOWING: Mostrando
+                TARGET: Destino
+                TO: Hasta
+                USER_AGENT: 'Agente de usuario'
+                WHEN: Cuándo
         TOP_BANNER:
             PREVIOUS: Anterior
             SITE_NOTIFICATION: 'Notificación del sitio'
@@ -1054,6 +1145,7 @@ ICU:
             PAGE_TITLE: 'Configuración de Cuentas — Grav Admin'
             SAVED: 'Configuración guardada'
             TITLE: 'Configuración de Cuentas'
+            SUBTITLE: 'Configuración predeterminada para cuentas de usuario y registro'
         EDIT: Editar
         GROUPS:
             ADD_GROUP: 'Añadir Grupo'
@@ -1846,6 +1938,8 @@ ICU:
             USER_ENABLED: 'Usuario {username} habilitado'
             USER_SAVED: 'Usuario {username} guardado'
             USER_STATE_FAILED: 'Error al cambiar el estado de {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Ésta es una demostración de solo lectura: los cambios están deshabilitados.'
+            USER_ROW_ACTION_FAILED: 'No se pudo completar la acción: {label}'
         TRANSLATIONS: Traducciones
         TRANSLATIONS_FALLBACK: 'Alternativa de traducciones'
         TRANSLATIONS_FALLBACK_HELP: 'Utilizar traducciones soportadas si el idioma activo no existe'
@@ -1941,3 +2035,11 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Los archivos ubicados en user/data, user/accounts y user/config se pueden descargar directamente a través de HTTP, incluidos certificados, claves, tokens y bases de datos. Esto generalmente significa que su servidor web no está aplicando las reglas .htaccess de Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Cómo proteger su servidor web'
             USER_FOLDER_EXPOSED_TITLE: 'Riesgo de seguridad: sus carpetas de datos de usuario son accesibles desde la web.'
+        DEMO:
+            BANNER_COUNTDOWN: 'Próximo reinicio en {time}'
+            BANNER_LABEL: 'Modo de demostración'
+            BANNER_MESSAGE: 'Modo de demostración: los cambios se restablecen cada {minutes, plural, one{# minuto} other{# minutos}}'
+            BANNER_READONLY: 'Demostración de solo lectura: los cambios están deshabilitados'
+        DOCUMENTATION: Documentación
+        README: README
+        REPORT_ISSUE: 'Informar de un problema'
