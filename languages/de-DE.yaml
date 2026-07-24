@@ -278,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-Plugin erforderlich'
             FILE:
                 LIMIT_REACHED: 'Dieses Feld akzeptiert höchstens {limit} Datei(en).'
+            ADD_ITEM: 'Element hinzufügen'
+            SELECTIZE_PLACEHOLDER: 'Eingeben und Enter drücken...'
+            SELECT_AN_ICON: 'Symbol auswählen...'
+            SELECT_A_PAGE: 'Seite auswählen...'
         FLEX_OBJECTS:
             ACTIONS: Aktionen
             BACK_TO_LIST: 'Zurück zur Liste'
@@ -304,6 +308,7 @@ ICU:
                 SHOW_INFO: 'Objektinformationen anzeigen'
                 STORAGE_KEY: Speicherschlüssel
                 TITLE: Objektinformationen
+            ADD: Hinzufügen
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Widget-Menü schließen'
         FORGOT:
@@ -404,6 +409,12 @@ ICU:
                 REORDER_DONE: Fertig
                 REORDER_MODE: 'Neu sortieren'
                 ROOT: Medien
+                DROP_FILES_OR_CLICK_UPLOAD: 'Dateien hierher ziehen oder auf Hochladen klicken, um zu beginnen'
+                DROP_FILES_TO_UPLOAD: 'Dateien zum Hochladen hierher ziehen'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Dateien hierher ziehen, um sie nach **{path}** hochzuladen'
+                FOLDER_IS_EMPTY: 'Dieser Ordner ist leer'
+                NO_RESULTS_FOUND: 'Keine Ergebnisse gefunden'
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Versuchen Sie einen anderen Suchbegriff'
             MEDIA_TOOLBAR:
                 FOLDER: Ordner
                 GRID_VIEW: Rasteransicht
@@ -419,6 +430,9 @@ ICU:
                 REORDER_DONE: Erledigt
                 REORDER_HINT: 'Bilder verschieben um die Reihenfolge zu bearbeiten.'
                 REORDER_MODE: Neuanordnung
+                DROP_FILES_HERE: 'Dateien hierher ziehen'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Dateien ziehen oder zum Hochladen klicken'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Ziehen oder klicken, um weitere hinzuzufügen'
             METADATA:
                 APPLY_TO_N: 'Auf {n} Dateien anwenden'
                 BATCH_EDITING: '{n} ausgewählte Dateien editieren - geänderte Felder werden auf alle angewendet.'
@@ -442,9 +456,10 @@ ICU:
             PLUGINS: Plugins
             SETTINGS: Einstellungen
             SYSTEM: System
-            THEMES: Designs
+            THEMES: Themes
             TOOLS: Werkzeuge
             USERS: Benutzer
+            UPDATES_AVAILABLE: '{count} Update(s) verfügbar'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Keine Feed-Einträge'
         NORMAL_MODE: Normalmodus
@@ -608,6 +623,8 @@ ICU:
                 TEMPLATE: Vorlagen
                 TITLE: 'Seiten filtern'
                 VISIBLE: Sichtbar
+                ROUTABLE: Routbar
+                'YES': Ja
             VALIDATION_FAILED_FOR_FIELDS: 'Speichern war nicht erfolgreich - diese Felder sind ungültig: {fields}'
         PASSWORD: Passwort
         PASSWORD_FIELD:
@@ -826,6 +843,8 @@ ICU:
             SHOW_POWERED_BY_DESC: 'Zeigen Sie die Zeile „Powered by Grav CMS“ auf den Anmelde- und Einrichtungsbildschirmen an.'
             EDITOR_KEYMAP: Tastenbelegungen
             EDITOR_KEYMAP_DEFAULT: Standard
+            EDITOR_KEYMAP_DESC: 'Vim-Tastenkombinationen in den Markdown- und Code-Editoren verwenden. Die Standardeinstellung behält die normale Bearbeitung bei.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -1027,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: PHP-Version
             TOOLS_GRAV_ADMIN: 'Tools — Grav Admin'
+            AUDIT:
+                ACTOR: Akteur
+                ALL_EVENTS: 'Alle Ereignisse'
+                ALL_SEVERITIES: 'Alle Schweregrade'
+                AUTH_METHOD: Authentifizierungsmethode
+                CHANGES: Änderungen
+                COVERAGE_DETAILED: Detailliert
+                DESCRIPTION: 'Ein Protokoll der API-Aktivitäten: Logins, Inhalte, Benutzer, Konfigurationen und Paketänderungen. Admin Next kommuniziert über die API, daher umfasst dies sowohl den Admin-Bereich als auch externe API-Clients.'
+                DETAILS: Details
+                EVENT: Ereignis
+                EVENT_CODE: Ereigniscode
+                FAILED_TO_LOAD: 'Audit-Trail konnte nicht geladen werden'
+                FROM: Von
+                IP: IP
+                LOADING: 'Lade Audit-Trail...'
+                NO_ENTRIES: 'Keine Audit-Einträge gefunden.'
+                REFRESH: Aktualisieren
+                SEARCH_PLACEHOLDER: 'Suche nach Akteur, Ziel, Ereignis, IP...'
+                SEVERITY: Schweregrad
+                SHOWING: Anzeige
+                TARGET: Ziel
+                TO: Bis
+                USER_AGENT: User-Agent
+                WHEN: Wann
         TOP_BANNER:
             PREVIOUS: Zurück
             SITE_NOTIFICATION: Website-Benachrichtigung
@@ -1909,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Benutzer {username} aktiviert'
             USER_SAVED: 'Benutzer {username} gespeichert'
             USER_STATE_FAILED: 'Fehler beim Ändern des Status für {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Dies ist eine schreibgeschützte Demo — Änderungen sind deaktiviert.'
+            USER_ROW_ACTION_FAILED: 'Aktion konnte nicht abgeschlossen werden: {label}'
         TRANSLATIONS: Übersetzungen
         TRANSLATIONS_FALLBACK: Fallback-Übersetzungen
         TRANSLATIONS_FALLBACK_HELP: 'Fallback durch unterstützte Übersetzungen, wenn die aktive Sprache nicht vorhanden ist'
@@ -2008,6 +2053,19 @@ ICU:
             BANNER_COUNTDOWN: 'Nächster Reset in {time}'
             BANNER_LABEL: Demo-Modus
             BANNER_READONLY: 'Demo im schreibgeschützten Modus – Änderungen sind nicht möglich'
+            BANNER_MESSAGE: 'Demo-Modus — Änderungen werden alle {minutes, plural, one{# Minute} other{# Minuten}} zurückgesetzt'
         DOCUMENTATION: Dokumentation
         README: README
         REPORT_ISSUE: 'Ein Problem melden'
+        CONFIRM: Bestätigen
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Ausweichsprachen des Browsers'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Ordnen Sie nicht unterstützte Browsersprachen unterstützten Sprachen zu, wenn die Sprache über den `http_accept_language`-Header festgelegt wird. Dies fügt keine unterstützten Sprachen hinzu und erstellt keine Sprach-Routen.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Geben Sie einen nicht unterstützten Browsersprachencode an, z. B. `hr` oder `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Ausweichsprachen
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Bitte geben Sie eine Liste der unterstützten Sprachcodes ein. Die erste unterstützte Sprache wird verwendet.'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Verlassen
+            LEAVE_MESSAGE: 'Sie haben ungespeicherte Änderungen. Trotzdem verlassen?'
+            STAY: Bleiben
+            SWITCH_LANGUAGE: Wechseln
+            SWITCH_LANGUAGE_MESSAGE: 'Sie haben ungespeicherte Änderungen. Trotzdem Sprache wechseln?'
