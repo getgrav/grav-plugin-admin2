@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: 'Možnosti mezipaměti'
             CLEAR_CACHE: 'Vymazat mezipaměť'
             FAILED_TO_CLEAR_CACHE: 'Vymazání mezipaměti selhalo'
+            LABEL: Mezipaměť
         CANCEL: Zrušit
         CLEAR_SEARCH: 'Vymazat hledání'
         CLOSE: Zavřít
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig v obsahu stránek je zakázán. Značky jsou zobrazeny tak, jak jsou napsány.'
                 TRUSTED: 'Pouze důvěryhodné role'
                 TRUSTED_DESC: 'Pouze superuživatelé a držitelé oprávnění „pages twig“ mohou povolit Twig na stránce.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Uložení se nezdařilo — tato pole jsou neplatná: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Prostředí
             EXPORT_YAML: 'Exportovat YAML'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Nepodařilo se odstranit prostředí'
             SWITCH_AND_RELOAD: 'Přepnout a obnovit'
             SWITCH_DISCARDS_UNSAVED: 'Přepnutí prostředí znovu načte administraci a zruší neuložené změny. Pokračovat?'
+            PREFIX: 'Prostředí:'
         EXPAND_ALL: 'Rozbalit vše'
         EXPAND_SIDEBAR: 'Rozbalit postranní panel'
         EXPERT_MODE: 'Režim expert'
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Formátovací řetězec:'
                 SELECT_FORMAT: '— Vybrat formát —'
+                CUSTOM: Vlastní...
+                CUSTOM_PLACEHOLDER: 'např. Y-m-d H:i'
+                PREVIEW: 'Náhled:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Žádné vyhovující soubory'
                 NO_MEDIA_UPLOADED: 'Žádné mediální soubory dosud nahráno'
+                SELECT_FILE: 'Vybrat soubor...'
+                SELECT_FILES: 'Vybrat soubory...'
             FILE_PICKER_SOON: 'Výběr souboru — již brzy'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Žádné ikony nenalezeny'
@@ -270,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook plugin vyžadován'
             FILE:
                 LIMIT_REACHED: 'Toto pole přijímá maximálně {limit} soubor(ů).'
+            ADD_ITEM: 'Přidat položku'
+            SELECTIZE_PLACEHOLDER: 'Napište a stiskněte Enter...'
+            SELECT_AN_ICON: 'Vybrat ikonu...'
+            SELECT_A_PAGE: 'Vybrat stránku...'
         FLEX_OBJECTS:
             ACTIONS: Akce
             BACK_TO_LIST: 'Zpět na seznam'
@@ -296,6 +308,7 @@ ICU:
                 SHOW_INFO: 'Zobrazit informace o objektu'
                 STORAGE_KEY: 'Klíč úložiště'
                 TITLE: 'Informace o objektu'
+            ADD: Přidat
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Zavřít nabídku widgetů'
         FORGOT:
@@ -358,8 +371,22 @@ ICU:
             USERNAME_IS_REQUIRED: 'Uživatelské jméno je povinné'
             VERIFY: Ověřit
             VERIFYING: Ověřování...
+            CONTINUE_WITH: 'Pokračovat pomocí {provider}'
+            OR_CONTINUE_WITH: 'Nebo pokračovat pomocí'
+            SSO_FAILED: 'Nepodařilo se přihlásit pomocí tohoto poskytovatele. Prosím, zkuste to znovu.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nic k náhledu'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Alternativní text'
+                ALT_PLACEHOLDER: 'Popište obrázek'
+                FROM_URL: 'Vložit z URL'
+                INSERT: Vložit
+                NO_MEDIA: 'Tato stránka zatím neobsahuje žádné připojené obrázky.'
+                PAGE_MEDIA: 'Média stránky'
+                SITE_MEDIA: 'Média webu'
+                TITLE: 'Vložit obrázek'
+                URL_LABEL: 'URL obrázku'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg nebo media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Správa mediálních souborů v celém webu'
             MEDIA_GRAV_ADMIN: 'Média — Grav Admin'
@@ -376,6 +403,18 @@ ICU:
                 FOLDER_NAME: 'Název složky'
                 NEW_FOLDER: 'Nová složka'
                 UPLOAD_FILES: 'Nahrát soubory'
+                CUSTOM_ORDER: 'Vlastní pořadí'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Přetáhněte soubory sem nebo klikněte na Nahrát pro zahájení'
+                DROP_FILES_TO_UPLOAD: 'Přetáhněte soubory pro nahrání'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Přetáhněte soubory pro nahrání do **{path}**'
+                FOLDER_IS_EMPTY: 'Tato složka je prázdná'
+                NO_RESULTS_FOUND: 'Nebyly nalezeny žádné výsledky'
+                ORDER_SAVE_FAILED: 'Uložení nového pořadí se nezdařilo'
+                REORDER: 'Přetažením změňte pořadí'
+                REORDER_DONE: Hotovo
+                REORDER_MODE: 'Změnit pořadí'
+                ROOT: Média
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Zkuste jiný vyhledávací dotaz'
             MEDIA_TOOLBAR:
                 FOLDER: Složka
                 GRID_VIEW: 'Zobrazení mřížky'
@@ -385,6 +424,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Přetáhnout do editoru'
                 PAGE_MEDIA: 'Média stránky'
+                DROP_FILES_HERE: 'Přetáhněte soubory sem'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Přetáhněte soubory nebo klikněte pro nahrání'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Přetáhněte nebo klikněte pro přidání dalších'
+                INSERTED: 'Vložen {filename}'
+                INSERT_AT_CURSOR: 'Vložit na pozici kurzoru'
+                REORDER: 'Přetažením změníte pořadí'
+                REORDER_DONE: Hotovo
+                REORDER_HINT: 'Přetažením obrázků změníte jejich pořadí.'
+                REORDER_MODE: 'Změnit pořadí'
+            METADATA:
+                APPLY_TO_N: 'Použít pro {n} souborů'
+                BATCH_EDITING: 'Úprava {n} vybraných souborů — změněná pole se použijí na všechny.'
+                BATCH_PARTIAL: 'Aktualizováno {saved} souborů, {failed} selhalo'
+                BATCH_SAVED: 'Aktualizováno {n} souborů'
+                EDIT: 'Upravit metadata'
+                EMPTY: 'Nejsou nakonfigurována žádná editovatelná pole metadat.'
+                LOAD_FAILED: 'Metadata se nepodařilo načíst'
+                RESET: Obnovit
+                SAVED: 'Metadata uložena'
+                SAVE_FAILED: 'Metadata se nepodařilo uložit'
+                SAVING: Ukládání…
+                STORED: 'Uložená metadata'
+                TAGS_PLACEHOLDER: 'Přidat štítek…'
+                TITLE: Metadata
         NAV:
             CONFIGURATION: Konfigurace
             DASHBOARD: Přehled
@@ -396,6 +459,7 @@ ICU:
             THEMES: Motivy
             TOOLS: Nástroje
             USERS: Uživatelé
+            UPDATES_AVAILABLE: 'Je k dispozici {count} aktualizace'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Žádné položky informačního kanálu'
         NORMAL_MODE: 'Normální režim'
@@ -549,6 +613,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Tato stránka obsahuje Twig značky, ale Twig je pro tuto stránku vypnut, takže se návštěvníkům zobrazuje jako prostý text.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig konstrukce na této stránce byla nedávno zablokována} few {# Twig konstrukce na této stránce byly nedávno zablokovány} other {# Twig konstrukcí na této stránce bylo nedávno zablokováno}}.'
                 VIEW_REPORT: 'Zobrazit přehled'
+            FILTER:
+                ALL: Vše
+                ALL_TEMPLATES: 'Všechny šablony'
+                BUTTON: Filtr
+                CLEAR: Vymazat
+                'NO': Ne
+                PUBLISHED: Publikováno
+                ROUTABLE: Směrovatelné
+                TEMPLATE: Šablona
+                TITLE: 'Filtrovat stránky'
+                VISIBLE: Viditelné
+                'YES': Ano
+            VALIDATION_FAILED_FOR_FIELDS: 'Uložení se nezdařilo — tato pole jsou neplatná: {fields}'
         PASSWORD: Heslo
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Požadavky na heslo'
@@ -764,6 +841,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Volitelný řádek zobrazený pod nadpisem přihlášení.'
             SHOW_POWERED_BY: 'Zobrazit „Powered by Grav“'
             SHOW_POWERED_BY_DESC: 'Zobrazit řádek „Powered by Grav CMS“ na přihlašovací obrazovce a obrazovce nastavení.'
+            EDITOR_KEYMAP: 'Klávesové zkratky'
+            EDITOR_KEYMAP_DEFAULT: Výchozí
+            EDITOR_KEYMAP_DESC: 'Použít klávesové zkratky Vim v editoru Markdownu a kódu. Výchozí nastavení zachovává standardní úpravy.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
@@ -965,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'Verze PHP'
             TOOLS_GRAV_ADMIN: 'Nástroje — Grav Admin'
+            AUDIT:
+                ACTOR: Aktér
+                ALL_EVENTS: 'Všechny události'
+                ALL_SEVERITIES: 'Všechny úrovně závažnosti'
+                AUTH_METHOD: 'Metoda ověření'
+                CHANGES: Změny
+                COVERAGE_DETAILED: Podrobné
+                DESCRIPTION: 'Záznam aktivity API: přihlášení, obsah, uživatel, konfigurace a změny balíčků. Admin Next komunikuje přes API, takže tento záznam zahrnuje jak administraci, tak všechny externí klienty API.'
+                DETAILS: Podrobnosti
+                EVENT: Událost
+                EVENT_CODE: 'Kód události'
+                FAILED_TO_LOAD: 'Nepodařilo se načíst záznam auditu'
+                FROM: Od
+                IP: IP
+                LOADING: 'Načítání záznamu událostí...'
+                NO_ENTRIES: 'Nebyly nalezeny žádné záznamy.'
+                REFRESH: Obnovit
+                SEARCH_PLACEHOLDER: 'Hledat subjekt, cíl, událost, IP...'
+                SEVERITY: Závažnost
+                SHOWING: Zobrazuji
+                TARGET: Cíl
+                TO: Do
+                USER_AGENT: 'Uživatelský agent'
+                WHEN: Kdy
         TOP_BANNER:
             PREVIOUS: Předchozí
             SITE_NOTIFICATION: 'Upozornění webu'
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'Konfigurace účtů — Grav Admin'
             SAVED: 'Konfigurace uložena'
             TITLE: 'Konfigurace účtů'
+            SUBTITLE: 'Výchozí nastavení pro uživatelské účty a registraci'
         EDIT: Upravit
         GROUPS:
             ADD_GROUP: 'Přidat skupinu'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Uživatel {username} povolen'
             USER_SAVED: 'Uživatel {username} uložen'
             USER_STATE_FAILED: 'Změna stavu pro {username} selhala: {detail}'
+            DEMO_MODE_BLOCKED: 'Toto je demo pouze pro čtení — změny jsou zakázány.'
+            USER_ROW_ACTION_FAILED: 'Akci se nepodařilo dokončit: {label}'
         TRANSLATIONS: Překlady
         TRANSLATIONS_FALLBACK: 'Záloha překladů'
         TRANSLATIONS_FALLBACK_HELP: 'Vrátit se na podporované překlady, pokud aktivní jazyk neexistuje'
@@ -1941,3 +2049,23 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Soubory ve složkách user/data, user/accounts a user/config lze stahovat přímo přes HTTP — včetně certifikátů, klíčů, tokenů a databází. To obvykle znamená, že váš webový server neaplikuje pravidla .htaccess systému Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Jak zabezpečit váš webový server'
             USER_FOLDER_EXPOSED_TITLE: 'Bezpečnostní riziko: vaše složky s uživatelskými daty jsou přístupné z webu'
+        CONFIRM: Potvrdit
+        DEMO:
+            BANNER_COUNTDOWN: 'Další reset za {time}'
+            BANNER_LABEL: 'Režim demo'
+            BANNER_MESSAGE: 'Režim demo — změny se resetují každých {minutes, plural, one{# minutu} few{# minuty} other{# minut}}'
+            BANNER_READONLY: 'Demo režim pouze pro čtení — změny jsou zakázány'
+        DOCUMENTATION: Dokumentace
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Náhradní jazyky prohlížeče'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Mapuje nepodporované jazyky prohlížeče na podporované jazyky při nastavování jazyka z hlavičky `http_accept_language`. Toto nastavení nepřidává podporované jazyky ani nevytváří jazykové cesty.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Zadejte kód nepodporovaného jazyka prohlížeče, např. `hr` nebo `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'Náhradní jazyky'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Zadejte seznam kódů podporovaných jazyků. Bude použit první podporovaný jazyk.'
+        README: README
+        REPORT_ISSUE: 'Nahlásit problém'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Odejít
+            LEAVE_MESSAGE: 'Máte neuložené změny. Opravdu chcete odejít?'
+            STAY: Zůstat
+            SWITCH_LANGUAGE: Přepnout
+            SWITCH_LANGUAGE_MESSAGE: 'Máte neuložené změny. Opravdu chcete přepnout jazyk?'
