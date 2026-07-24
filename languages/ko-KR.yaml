@@ -20,6 +20,7 @@ ICU:
             PAGE_TITLE: '계정 구성 — Grav 관리자'
             SAVED: '구성이 저장되었습니다'
             TITLE: '계정 구성'
+            SUBTITLE: '사용자 계정 및 등록을 위한 기본 설정'
         ACCOUNTS_CONFIGURATION: '계정 구성'
         ACCOUNTS_STORAGE: '계정 저장소'
         ACCOUNTS_STORAGE_HELP: "Flex Object 계정 유형에 사용할 저장 메커니즘입니다. 'Files'는 계정이 단일 폴더 내의 YAML 파일에 저장되는 전통적인 방식이며, 'Folder'는 각 계정마다 새 폴더를 생성하는 방식입니다."
@@ -138,6 +139,7 @@ ICU:
             CACHE_OPTIONS: '캐시 옵션'
             CLEAR_CACHE: '캐시 지우기'
             FAILED_TO_CLEAR_CACHE: '캐시 지우기 실패'
+            LABEL: 캐시
         CACHE_CLEAR_JOB: '예약된 지우기 작업 실행'
         CACHE_CLEAR_JOB_HELP: '스케줄러를 사용하여 주기적으로 Grav 캐시를 지울 수 있습니다.'
         CACHE_CONTROL: 'HTTP Cache-Control'
@@ -207,6 +209,7 @@ ICU:
                 OFF_DESC: '페이지 콘텐츠 내 Twig가 비활성화되었습니다. 마크업이 작성된 그대로 표시됩니다.'
                 TRUSTED: '신뢰할 수 있는 역할만'
                 TRUSTED_DESC: '슈퍼 유저와 「pages twig」 권한을 가진 사용자만 페이지에서 Twig를 활성화할 수 있습니다.'
+            VALIDATION_FAILED_FOR_FIELDS: '저장할 수 없습니다 — 다음 필드가 유효하지 않습니다: {fields}'
         CONFIGURATION: 설정
         CONFIG_INFO_PAGE:
             ENVIRONMENT: 환경
@@ -389,6 +392,7 @@ ICU:
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: '활성 환경 선택 — 표시되는 설정과 저장 위치를 제어합니다'
             SWITCH_AND_RELOAD: '전환 및 새로 고침'
             SWITCH_DISCARDS_UNSAVED: '환경을 전환하면 관리자가 새로 고쳐지고 저장되지 않은 변경 사항이 삭제됩니다. 계속하시겠습니까?'
+            PREFIX: '환경:'
         ERROR_FULL_BACKTRACE: '전체 백트레이스 오류'
         ERROR_HANDLER: '오류 핸들러'
         ERROR_SIMPLE: '단순 오류'
@@ -445,9 +449,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: '형식 문자열:'
                 SELECT_FORMAT: '— 형식 선택 —'
+                CUSTOM: '사용자 지정…'
+                CUSTOM_PLACEHOLDER: '예: Y-m-d H:i'
+                PREVIEW: '미리보기:'
             FILE_PICKER:
                 NO_MATCHING_FILES: '일치하는 파일 없음'
                 NO_MEDIA_UPLOADED: '업로드된 미디어 파일 없음'
+                SELECT_FILE: '파일 선택…'
+                SELECT_FILES: '파일 선택…'
             FILE_PICKER_SOON: '파일 선택기 — 곧 제공 예정'
             ICON_PICKER:
                 NO_ICONS_FOUND: '아이콘을 찾을 수 없음'
@@ -487,6 +496,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: '웹훅 플러그인 필수'
             FILE:
                 LIMIT_REACHED: '이 필드는 최대 {limit}개의 파일만 허용합니다.'
+            ADD_ITEM: '항목 추가'
+            SELECTIZE_PLACEHOLDER: '입력 후 Enter 키를 누르세요...'
+            SELECT_AN_ICON: '아이콘 선택…'
+            SELECT_A_PAGE: '페이지 선택…'
         FILE: 파일
         FILE_EXTENSION: '파일 확장자'
         FILE_STREAMS: '파일 스트림'
@@ -522,6 +535,7 @@ ICU:
                 SHOW_INFO: '객체 정보 표시'
                 STORAGE_KEY: '스토리지 키'
                 TITLE: '객체 정보'
+            ADD: 추가
         FLEX_OBJECT_CACHE_ENABLED: '객체 캐싱 활성화'
         FLEX_OBJECT_CACHE_LIFETIME: '객체 캐시 유지 시간(초)'
         FLEX_RENDER_CACHE_ENABLED: '렌더 캐싱 활성화'
@@ -807,6 +821,9 @@ ICU:
             USERNAME_IS_REQUIRED: '사용자 이름이 필요합니다'
             VERIFY: 확인
             VERIFYING: '확인 중...'
+            CONTINUE_WITH: '{provider}(으)로 계속하기'
+            OR_CONTINUE_WITH: '또는 다음으로 계속하기'
+            SSO_FAILED: '해당 제공업체로 로그인할 수 없습니다. 다시 시도해 주세요.'
         LOG_ERRORS: '오류 기록'
         LOG_ERRORS_HELP: '/logs 폴더에 오류 기록'
         LOG_HANDLER: '로그 핸들러'
@@ -817,6 +834,17 @@ ICU:
         MARKDOWN: Markdown
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: '미리보기할 내용이 없습니다'
+            IMAGE_INSERT:
+                ALT_LABEL: '대체 텍스트'
+                ALT_PLACEHOLDER: '이미지 설명'
+                FROM_URL: 'URL에서 삽입'
+                INSERT: 삽입
+                NO_MEDIA: '이 페이지에 첨부된 이미지가 없습니다.'
+                PAGE_MEDIA: '페이지 미디어'
+                SITE_MEDIA: '사이트 미디어'
+                TITLE: '이미지 삽입'
+                URL_LABEL: '이미지 URL'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg 또는 media://file.jpg'
         MARKDOWN_EXTRA: 'Markdown Extra'
         MARKDOWN_EXTRA_HELP: 'Markdown Extra에 대한 기본 지원 활성화 - https://michelf.ca/projects/php-markdown/extra/'
         MEDIA:
@@ -835,6 +863,18 @@ ICU:
                 FOLDER_NAME: '폴더 이름'
                 NEW_FOLDER: '새 폴더'
                 UPLOAD_FILES: '파일 업로드'
+                CUSTOM_ORDER: '사용자 지정 순서'
+                DROP_FILES_OR_CLICK_UPLOAD: "파일을 여기로 드래그하거나 '업로드'를 클릭하여 시작하세요"
+                DROP_FILES_TO_UPLOAD: '업로드할 파일을 드래그하세요'
+                DROP_FILES_TO_UPLOAD_TO_PATH: '**{path}**(으)로 업로드할 파일을 드래그하세요'
+                FOLDER_IS_EMPTY: '이 폴더는 비어 있습니다'
+                NO_RESULTS_FOUND: '검색 결과가 없습니다'
+                ORDER_SAVE_FAILED: '새 순서를 저장하지 못했습니다'
+                REORDER: '드래그하여 순서 변경'
+                REORDER_DONE: 완료
+                REORDER_MODE: '순서 변경'
+                ROOT: 미디어
+                TRY_A_DIFFERENT_SEARCH_TERM: '다른 검색어를 시도해 보세요'
             MEDIA_TOOLBAR:
                 FOLDER: 폴더
                 GRID_VIEW: '그리드 보기'
@@ -844,6 +884,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: '에디터로 드래그'
                 PAGE_MEDIA: '페이지 미디어'
+                DROP_FILES_HERE: '여기에 파일을 드롭하세요'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: '파일을 드롭하거나 클릭하여 업로드'
+                DROP_OR_CLICK_TO_ADD_MORE: '드롭하거나 클릭하여 추가'
+                INSERTED: '{filename} 삽입됨'
+                INSERT_AT_CURSOR: '커서 위치에 삽입'
+                REORDER: '드래그하여 순서 변경'
+                REORDER_DONE: 완료
+                REORDER_HINT: '이미지를 드래그하여 순서를 설정하세요.'
+                REORDER_MODE: '순서 변경'
+            METADATA:
+                APPLY_TO_N: '{n}개의 파일에 적용'
+                BATCH_EDITING: '선택된 {n}개의 파일 편집 중 — 변경된 필드는 모두에게 적용됩니다.'
+                BATCH_PARTIAL: '{saved}개의 파일 업데이트 완료, {failed}개의 파일 업데이트 실패'
+                BATCH_SAVED: '{n}개의 파일이 업데이트되었습니다'
+                EDIT: '메타데이터 편집'
+                EMPTY: '편집 가능한 메타데이터 필드가 구성되지 않았습니다.'
+                LOAD_FAILED: '메타데이터를 불러올 수 없습니다'
+                RESET: 재설정
+                SAVED: '메타데이터가 저장되었습니다'
+                SAVE_FAILED: '메타데이터를 저장할 수 없습니다'
+                SAVING: '저장 중...'
+                STORED: '저장된 메타데이터'
+                TAGS_PLACEHOLDER: '태그 추가...'
+                TITLE: 메타데이터
         MEDIA_TYPES: '미디어 유형'
         MEMCACHED_PORT: 'Memcached 포트'
         MEMCACHED_PORT_HELP: 'Memcached 서버 포트'
@@ -872,6 +936,7 @@ ICU:
             THEMES: 테마
             TOOLS: 도구
             USERS: 사용자
+            UPDATES_AVAILABLE: '{count}개의 업데이트 사용 가능'
         NEVER_CACHE_TWIG: 'Twig 캐시 안 함'
         NEVER_CACHE_TWIG_HELP: '콘텐츠만 캐시하고 페이지별로 매번 Twig를 처리합니다. twig_first 설정을 무시합니다.'
         NEWS_FEED_WIDGET:
@@ -1039,6 +1104,19 @@ ICU:
                 LEAK_PAGE_OFF: '이 페이지에는 Twig 마크업이 포함되어 있지만 이 페이지에 대해 Twig가 꺼져 있어 방문자에게 원시 텍스트로 렌더링됩니다.'
                 RECENT_BLOCKS: '{n, plural, one {최근 이 페이지에서 #개의 Twig 구문이 차단되었습니다} other {최근 이 페이지에서 #개의 Twig 구문이 차단되었습니다}}.'
                 VIEW_REPORT: '보고서 보기'
+            FILTER:
+                ALL: 전체
+                ALL_TEMPLATES: '모든 템플릿'
+                BUTTON: 필터
+                CLEAR: 지우기
+                'NO': 아니요
+                PUBLISHED: 게시됨
+                ROUTABLE: '라우팅 가능'
+                TEMPLATE: 템플릿
+                TITLE: '페이지 필터링'
+                VISIBLE: 표시됨
+                'YES': 예
+            VALIDATION_FAILED_FOR_FIELDS: '저장할 수 없습니다. 다음 필드가 유효하지 않습니다: {fields}'
         PAGES_CONFIGURATION: '페이지 구성'
         PAGES_FALLBACK_ONLY: '페이지 폴백 전용'
         PAGES_FALLBACK_ONLY_HELP: "지원되는 언어를 통해 페이지 콘텐츠를 찾기 위해 '폴백'만 사용합니다. 기본 동작은 활성 언어가 없는 경우 발견된 모든 언어를 표시하는 것입니다."
@@ -1426,6 +1504,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: '로그인 제목 아래에 표시되는 선택적 문구입니다.'
             SHOW_POWERED_BY: '「Powered by Grav」 표시'
             SHOW_POWERED_BY_DESC: '로그인 및 설정 화면에 「Powered by Grav CMS」 문구를 표시합니다.'
+            EDITOR_KEYMAP: '키 바인딩'
+            EDITOR_KEYMAP_DEFAULT: 기본값
+            EDITOR_KEYMAP_DESC: 'Markdown 및 코드 편집기에서 Vim 키 바인딩을 사용합니다. 기본값은 표준 편집 방식을 유지합니다.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64자: 영문, 숫자, 하이픈, 밑줄'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '관리자 계정이 생성되었습니다 — Grav에 오신 것을 환영합니다'
@@ -1635,6 +1717,8 @@ ICU:
             USER_ENABLED: '사용자 {username} 활성화됨'
             USER_SAVED: '사용자 {username} 저장됨'
             USER_STATE_FAILED: '{username}의 상태를 변경하지 못했습니다: {detail}'
+            DEMO_MODE_BLOCKED: '읽기 전용 데모입니다. 변경 사항이 비활성화되었습니다.'
+            USER_ROW_ACTION_FAILED: '작업을 완료할 수 없습니다: {label}'
         TOGGLE_DARK_MODE: '다크 모드 전환'
         TOGGLE_MENU: '메뉴 전환'
         TOOLS:
@@ -1748,6 +1832,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'PHP 버전'
             TOOLS_GRAV_ADMIN: '도구 — Grav 관리자'
+            AUDIT:
+                ACTOR: 액터
+                ALL_EVENTS: '모든 이벤트'
+                ALL_SEVERITIES: '모든 심각도'
+                AUTH_METHOD: '인증 방식'
+                CHANGES: '변경 사항'
+                COVERAGE_DETAILED: 상세
+                DESCRIPTION: 'API 활동 기록: 로그인, 콘텐츠, 사용자, 설정 및 패키지 변경 사항. Admin Next는 API를 통해 라우팅되므로 관리자 활동과 외부 API 클라이언트의 활동이 모두 포함됩니다.'
+                DETAILS: '세부 정보'
+                EVENT: 이벤트
+                EVENT_CODE: '이벤트 코드'
+                FAILED_TO_LOAD: '감사 추적을 불러오지 못했습니다'
+                FROM: '시작 날짜'
+                IP: IP
+                LOADING: '감사 추적 불러오는 중...'
+                NO_ENTRIES: '감사 항목을 찾을 수 없습니다.'
+                REFRESH: '새로 고침'
+                SEARCH_PLACEHOLDER: '액터, 대상, 이벤트, IP 검색...'
+                SEVERITY: 심각도
+                SHOWING: '표시 중'
+                TARGET: 대상
+                TO: '종료 날짜'
+                USER_AGENT: '사용자 에이전트'
+                WHEN: 일시
         TOP_BANNER:
             PREVIOUS: 이전
             SITE_NOTIFICATION: '사이트 알림'
@@ -1941,3 +2049,23 @@ ICU:
         'YES': 예
         YUBIKEY_HELP: '컴퓨터에 YubiKey를 삽입하고 버튼을 클릭하여 OTP를 생성하세요. 처음 12자리가 클라이언트 ID이며 저장됩니다.'
         YUBIKEY_ID: 'YubiKey ID'
+        CONFIRM: 확인
+        DEMO:
+            BANNER_COUNTDOWN: '다음 초기화까지 {time}'
+            BANNER_LABEL: '데모 모드'
+            BANNER_MESSAGE: '데모 모드 — 변경 사항은 {minutes, plural, one{#분} other{#분}}마다 초기화됩니다'
+            BANNER_READONLY: '읽기 전용 데모 — 변경이 비활성화되었습니다'
+        DOCUMENTATION: 문서
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: '브라우저 언어 대체 설정'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: '`http_accept_language` 헤더에서 언어를 설정할 때 지원되지 않는 브라우저 언어를 지원되는 언어로 매핑합니다. 이 설정은 지원되는 언어를 추가하거나 언어 경로를 생성하지 않습니다.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: '지원되지 않는 브라우저 언어 코드를 지정하세요(예: `hr` 또는 `sr-Latn`).'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: '대체 언어'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: '지원되는 언어 코드 목록을 입력하세요. 첫 번째 지원 언어가 사용됩니다.'
+        README: README
+        REPORT_ISSUE: '문제 신고'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: 나가기
+            LEAVE_MESSAGE: '저장되지 않은 변경 사항이 있습니다. 정말 나가시겠습니까?'
+            STAY: 머무르기
+            SWITCH_LANGUAGE: 전환
+            SWITCH_LANGUAGE_MESSAGE: '저장되지 않은 변경 사항이 있습니다. 정말 언어를 전환하시겠습니까?'
