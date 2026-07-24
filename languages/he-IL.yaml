@@ -198,6 +198,19 @@ ICU:
                 LEAK_PAGE_OFF: 'דף זה מכיל תגיות Twig, אך Twig מושבת עבור דף זה, לכן הוא מוצג למבקרים כטקסט גולמי.'
                 RECENT_BLOCKS: '{n, plural, one {מבנה Twig אחד בדף זה נחסם לאחרונה} other {# מבני Twig בדף זה נחסמו לאחרונה}}.'
                 VIEW_REPORT: 'צפה בדוח'
+            FILTER:
+                ALL: הכל
+                ALL_TEMPLATES: 'כל התבניות'
+                BUTTON: סינון
+                CLEAR: נקה
+                'NO': לא
+                PUBLISHED: פורסם
+                ROUTABLE: 'ניתן לניתוב'
+                TEMPLATE: תבנית
+                TITLE: 'סנן דפים'
+                VISIBLE: גלוי
+                'YES': כן
+            VALIDATION_FAILED_FOR_FIELDS: 'לא ניתן היה לשמור — השדות הבאים אינם תקינים: {fields}'
         FIELDS:
             CLEAR_DATE: 'נקה תאריך'
             REGENERATE_SLUG: 'צור מחדש אוטומטית מכותרת העמוד'
@@ -236,6 +249,9 @@ ICU:
             DATE_FORMAT:
                 SELECT_FORMAT: '— בחר פורמט —'
                 FORMAT_STRING: 'מחרוזת פורמט:'
+                CUSTOM: 'מותאם אישית…'
+                CUSTOM_PLACEHOLDER: 'לדוגמה: Y-m-d H:i'
+                PREVIEW: 'תצוגה מקדימה:'
             ICON_PICKER:
                 SEARCH_ICONS: 'חפש סמלים...'
                 NO_ICONS_FOUND: 'לא נמצאו סמלים'
@@ -273,8 +289,14 @@ ICU:
             FILE_PICKER:
                 NO_MEDIA_UPLOADED: 'עדיין לא הועלו קבצי מדיה'
                 NO_MATCHING_FILES: 'אין קבצים תואמים'
+                SELECT_FILE: 'בחר קובץ…'
+                SELECT_FILES: 'בחר קבצים…'
             FILE:
                 LIMIT_REACHED: 'שדה זה מקבל לכל היותר {limit} קובץ/קבצים.'
+            ADD_ITEM: 'הוסף פריט'
+            SELECTIZE_PLACEHOLDER: 'הקלד ולחץ על Enter...'
+            SELECT_AN_ICON: 'בחר סמל...'
+            SELECT_A_PAGE: 'בחר עמוד...'
         NAV:
             DASHBOARD: 'לוח בקרה'
             CONFIGURATION: הגדרות
@@ -286,6 +308,7 @@ ICU:
             TOOLS: כלים
             SYSTEM: מערכת
             SETTINGS: הגדרות
+            UPDATES_AVAILABLE: '{count} עדכון/ים זמינים'
         LANG:
             SWITCH_LANGUAGE: 'החלף שפת תוכן'
             TRANSLATIONS: תרגומים
@@ -466,6 +489,17 @@ ICU:
             NO_VIEW_DATA_YET: 'אין עדיין נתוני צפייה'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'אין מה להציג בתצוגה מקדימה'
+            IMAGE_INSERT:
+                ALT_LABEL: 'טקסט חלופי (Alt text)'
+                ALT_PLACEHOLDER: 'תאר את התמונה'
+                FROM_URL: 'הוספה מכתובת URL'
+                INSERT: הוספה
+                NO_MEDIA: 'טרם צורפו תמונות לדף זה.'
+                PAGE_MEDIA: 'מדיה של הדף'
+                SITE_MEDIA: 'מדיה של האתר'
+                TITLE: 'הוספת תמונה'
+                URL_LABEL: 'כתובת URL של התמונה'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg או media://file.jpg'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'סגור תפריט ווידג׳טים'
         MEDIA:
@@ -482,6 +516,18 @@ ICU:
                 UPLOAD_FILES: 'העלה קבצים'
                 NEW_FOLDER: 'תיקייה חדשה'
                 CREATE: צור
+                CUSTOM_ORDER: 'סדר מותאם אישית'
+                DROP_FILES_OR_CLICK_UPLOAD: "גרור קבצים לכאן או לחץ על 'העלאה' כדי להתחיל"
+                DROP_FILES_TO_UPLOAD: 'גרור קבצים כדי להעלות'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'גרור קבצים כדי להעלות אל **{path}**'
+                FOLDER_IS_EMPTY: 'התיקייה הזו ריקה'
+                NO_RESULTS_FOUND: 'לא נמצאו תוצאות'
+                ORDER_SAVE_FAILED: 'שמירת הסדר החדש נכשלה'
+                REORDER: 'גרור כדי לשנות סדר'
+                REORDER_DONE: בוצע
+                REORDER_MODE: 'שינוי סדר'
+                ROOT: מדיה
+                TRY_A_DIFFERENT_SEARCH_TERM: 'נסה מונח חיפוש אחר'
             MEDIA_TOOLBAR:
                 SEARCH_MEDIA: 'חיפוש מדיה...'
                 GRID_VIEW: 'תצוגת רשת'
@@ -493,11 +539,36 @@ ICU:
             PAGE_MEDIA:
                 PAGE_MEDIA: 'מדיית עמוד'
                 DRAG_INTO_EDITOR: 'גרור לתוך העורך'
+                DROP_FILES_HERE: 'גרור קבצים לכאן'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'גרור קבצים לכאן או לחץ כדי להעלות'
+                DROP_OR_CLICK_TO_ADD_MORE: 'גרור או לחץ כדי להוסיף נוספים'
+                INSERTED: '{filename} הוכנס'
+                INSERT_AT_CURSOR: 'הכנס במיקום הסמן'
+                REORDER: 'גרור כדי לשנות סדר'
+                REORDER_DONE: בוצע
+                REORDER_HINT: 'גרור תמונות כדי לקבוע את סדרן.'
+                REORDER_MODE: 'שינוי סדר'
+            METADATA:
+                APPLY_TO_N: 'החל על {n} קבצים'
+                BATCH_EDITING: 'עריכת {n} קבצים שנבחרו — השדות ששונו יחולו על כולם.'
+                BATCH_PARTIAL: '{saved} קבצים עודכנו, {failed} נכשלו'
+                BATCH_SAVED: '{n} קבצים עודכנו'
+                EDIT: 'עריכת מטא-נתונים'
+                EMPTY: 'לא הוגדרו שדות מטא-דאטה הניתנים לעריכה.'
+                LOAD_FAILED: 'לא ניתן היה לטעון מטא-דאטה'
+                RESET: איפוס
+                SAVED: 'המטא-דאטה נשמר'
+                SAVE_FAILED: 'לא ניתן היה לשמור מטא-דאטה'
+                SAVING: שומר...
+                STORED: 'מטא-דאטה מאוחסן'
+                TAGS_PLACEHOLDER: 'הוספת תגית...'
+                TITLE: מטא-דאטה
         UPLOAD: העלאה
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: 'נקה מטמון'
             CACHE_OPTIONS: 'אפשרויות מטמון'
             FAILED_TO_CLEAR_CACHE: 'נכשל בניקוי המטמון'
+            LABEL: 'מטמון (Cache)'
         CONFIRM_ACTION: 'אשר פעולה'
         VIEW_SITE_BUTTON:
             OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'פתח את חזית האתר בלשונית חדשה'
@@ -622,6 +693,30 @@ ICU:
                 DISK_FREE_OF: '{free} פנוי מתוך {total}'
             TOOLS_GRAV_ADMIN: 'כלים — Grav Admin'
             BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'גיבויים, מתזמן, יומנים ואבחון'
+            AUDIT:
+                ACTOR: 'מבצע הפעולה'
+                ALL_EVENTS: 'כל האירועים'
+                ALL_SEVERITIES: 'כל רמות החומרה'
+                AUTH_METHOD: 'שיטת אימות'
+                CHANGES: שינויים
+                COVERAGE_DETAILED: מפורט
+                DESCRIPTION: 'תיעוד של פעילות ה-API: התחברויות, תוכן, משתמשים, הגדרות ושינויי חבילות. Admin Next פועל דרך ה-API, לכן תיעוד זה מכסה את אזור הניהול וכל לקוח API חיצוני.'
+                DETAILS: פרטים
+                EVENT: אירוע
+                EVENT_CODE: 'קוד אירוע'
+                FAILED_TO_LOAD: 'טעינת נתיב הביקורת נכשלה'
+                FROM: מאת
+                IP: IP
+                LOADING: 'טוען את יומן הביקורת...'
+                NO_ENTRIES: 'לא נמצאו רשומות ביקורת.'
+                REFRESH: רענן
+                SEARCH_PLACEHOLDER: 'חיפוש גורם, יעד, אירוע, IP...'
+                SEVERITY: חומרה
+                SHOWING: מציג
+                TARGET: יעד
+                TO: אל
+                USER_AGENT: 'סוכן משתמש'
+                WHEN: מתי
         INSTALLING: מתקין...
         ACCESS_DENIED:
             ACCESS_DENIED: 'הגישה נדחתה'
@@ -649,6 +744,7 @@ ICU:
             FAILED_TO_DELETE: 'מחיקת הסביבה נכשלה'
             SWITCH_AND_RELOAD: 'הערה והטען מחדש'
             SWITCH_DISCARDS_UNSAVED: 'החלפת הסביבה טוענת מחדש את מערכת הניהול ומוחקת שינויים שלא נשמרו. להמשיך?'
+            PREFIX: 'סביבה:'
         INLINE_ICON_PICKER:
             SEARCH_ICONS: 'חפש סמלים...'
             NO_ICONS_FOUND: 'לא נמצאו סמלים'
@@ -708,6 +804,7 @@ ICU:
                 OFF_DESC: 'Twig בתוך תוכן הדף מושבת. התגיות יוצגו כפי שנכתבו.'
                 TRUSTED: 'תפקידים מורשים בלבד'
                 TRUSTED_DESC: 'רק משתמשי-על ובעלי הרשאת "pages twig" יכולים להפעיל Twig בדף.'
+            VALIDATION_FAILED_FOR_FIELDS: 'לא ניתן לשמור — השדות הבאים אינם תקינים: {fields}'
         FLEX_OBJECTS:
             SEARCH: חיפוש...
             PREVIOUS: הקודם
@@ -734,6 +831,7 @@ ICU:
                 SHOW_INFO: 'הצג פרטי אובייקט'
                 STORAGE_KEY: 'מפתח אחסון'
                 TITLE: 'פרטי אובייקט'
+            ADD: הוסף
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: 'לא ניתן להתחבר לשרת.'
             FORGOT_PASSWORD_GRAV_ADMIN: 'שכחת סיסמה — Grav Admin'
@@ -771,6 +869,9 @@ ICU:
             TWOFA_SUBTITLE: 'הזן את קוד האימות שלך כדי להמשיך'
             SUBTITLE: 'התחבר כדי לנהל את האתר שלך'
             AUTH_CODE_PROMPT: 'פתח את אפליקציית האימות שלך והזן את הקוד בן 6 הספרות עבור **{username}**.'
+            CONTINUE_WITH: 'המשך עם {provider}'
+            OR_CONTINUE_WITH: 'או המשך עם'
+            SSO_FAILED: 'לא ניתן היה להתחבר באמצעות ספק זה. אנא נסה שנית.'
         PLUGIN:
             BACK_TO_DASHBOARD: 'חזור ללוח הבקרה'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'אין תוכן זמין עבור עמוד התוסף הזה.'
@@ -950,6 +1051,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'שורה אופציונלית המוצגת מתחת לכותרת ההתחברות.'
             SHOW_POWERED_BY: 'הצג "Powered by Grav"'
             SHOW_POWERED_BY_DESC: 'הצג את השורה "Powered by Grav CMS" במסכי ההתחברות וההגדרה.'
+            EDITOR_KEYMAP: 'קיצורי מקלדת'
+            EDITOR_KEYMAP_DEFAULT: 'ברירת מחדל'
+            EDITOR_KEYMAP_DESC: 'השתמש בקיצורי המקלדת של Vim בעורכי ה-Markdown והקוד. ברירת המחדל שומרת על עריכה סטנדרטית.'
+            EDITOR_KEYMAP_VIM: Vim
         CUSTOM: 'מותאם אישית'
         PREVIEW: 'תצוגה מקדימה'
         SETUP:
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'תצורת חשבונות — Grav Admin'
             SAVED: 'התצורה נשמרה'
             TITLE: 'תצורת חשבונות'
+            SUBTITLE: 'הגדרות ברירת מחדל עבור חשבונות משתמש ורישום'
         EDIT: עריכה
         GROUPS:
             ADD_GROUP: 'הוסף קבוצה'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'משתמש {username} הוזן'
             USER_SAVED: 'משתמש {username} נשמר'
             USER_STATE_FAILED: 'שינוי המצב עבור {username} נכשל: {detail}'
+            DEMO_MODE_BLOCKED: 'זוהי גרסת הדגמה לקריאה בלבד — השינויים מושבתים.'
+            USER_ROW_ACTION_FAILED: 'לא ניתן היה להשלים את הפעולה: {label}'
         TRANSLATIONS: תרגומים
         TRANSLATIONS_FALLBACK: 'חזרה לתרגומים'
         TRANSLATIONS_FALLBACK_HELP: 'חזרה דרך תרגומים תומכים אם השפה הפעילה אינה קיימת'
@@ -1941,6 +2049,26 @@ ICU:
         'YES': כן
         YUBIKEY_HELP: 'הכנס את ה-YubiKey למחשב ולחץ על הכפתור כדי ליצור OTP. 12 התווים הראשונים הם מזהה הלקוח שלך והם יישמרו.'
         YUBIKEY_ID: 'מזהה YubiKey'
+        CONFIRM: אישור
+        DEMO:
+            BANNER_COUNTDOWN: 'איפוס הבא בעוד {time}'
+            BANNER_LABEL: 'מצב הדגמה (Demo)'
+            BANNER_MESSAGE: 'מצב הדגמה — שינויים מתאפסים כל {minutes, plural, one{# דקה} other{# דקות}}'
+            BANNER_READONLY: 'הדגמה לקריאה בלבד — שינויים מושבתים'
+        DOCUMENTATION: תיעוד
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'חלופות שפת דפדפן'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'מיפוי שפות דפדפן שאינן נתמכות לשפות נתמכות בעת הגדרת השפה מתוך כותרת ה-`http_accept_language`. פעולה זו אינה מוסיפה שפות נתמכות או יוצרת נתיבי שפה.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'ציין קוד שפת דפדפן שאינה נתמכת, למשל `hr` או `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'שפות חלופיות'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'נא להזין רשימה של קודי שפה נתמכים. השפה הנתמכת הראשונה תשמש כברירת מחדל.'
+        README: 'קובץ README'
+        REPORT_ISSUE: 'דווח על בעיה'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: עזוב
+            LEAVE_MESSAGE: 'יש לך שינויים שלא נשמרו. לעזוב בכל זאת?'
+            STAY: הישאר
+            SWITCH_LANGUAGE: החלף
+            SWITCH_LANGUAGE_MESSAGE: 'יש לך שינויים שלא נשמרו. להחליף שפה בכל זאת?'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA מופעל'
         2FA_SECRET: 'סוד 2FA'
