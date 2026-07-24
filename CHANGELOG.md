@@ -1,3 +1,10 @@
+# v2.0.16
+## 07/24/2026
+
+1. [](#bugfix)
+    * Removing the last category or tag from a page now sticks instead of the old value reappearing after you save ([#140](https://github.com/getgrav/grav-plugin-admin2/issues/140)).
+    * The invitation-accept page now loads its translations, so its wording can be customized and it no longer briefly shows raw text like "Accept Heading" on a fresh browser ([#139](https://github.com/getgrav/grav-plugin-admin2/issues/139)).
+
 # v2.0.15
 ## 07/20/2026
 
