@@ -198,6 +198,19 @@ ICU:
                 LEAK_PAGE_OFF: 'تحتوي هذه الصفحة على ترميز Twig، ولكن تم إيقاف Twig لهذه الصفحة، لذا يتم عرضه كنص خام للزوار.'
                 RECENT_BLOCKS: '{n, plural, one {تم حظر # بناء Twig على هذه الصفحة مؤخراً} other {تم حظر # بنيات Twig على هذه الصفحة مؤخراً}}.'
                 VIEW_REPORT: 'عرض التقرير'
+            FILTER:
+                ALL: الكل
+                ALL_TEMPLATES: 'كل القوالب'
+                BUTTON: تصفية
+                CLEAR: مسح
+                'NO': لا
+                PUBLISHED: منشور
+                ROUTABLE: 'قابل للتوجيه'
+                TEMPLATE: القالب
+                TITLE: 'تصفية الصفحات'
+                VISIBLE: مرئي
+                'YES': نعم
+            VALIDATION_FAILED_FOR_FIELDS: 'تعذر الحفظ — هذه الحقول غير صالحة: {fields}'
         FIELDS:
             CLEAR_DATE: 'مسح التاريخ'
             REGENERATE_SLUG: 'إعادة التوليد التلقائي من عنوان الصفحة'
@@ -236,6 +249,9 @@ ICU:
             DATE_FORMAT:
                 SELECT_FORMAT: '— اختر الصيغة —'
                 FORMAT_STRING: 'نص الصيغة:'
+                CUSTOM: مخصص...
+                CUSTOM_PLACEHOLDER: 'مثال: Y-m-d H:i'
+                PREVIEW: 'معاينة:'
             ICON_PICKER:
                 SEARCH_ICONS: 'ابحث عن أيقونات...'
                 NO_ICONS_FOUND: 'لم يُعثر على أيقونات'
@@ -273,8 +289,14 @@ ICU:
             FILE_PICKER:
                 NO_MEDIA_UPLOADED: 'لم يتم رفع أي ملفات وسائط بعد'
                 NO_MATCHING_FILES: 'لا توجد ملفات مطابقة'
+                SELECT_FILE: 'اختر ملفاً...'
+                SELECT_FILES: 'اختر ملفات...'
             FILE:
                 LIMIT_REACHED: 'هذا الحقل يقبل {limit} ملف(ات) كحد أقصى.'
+            ADD_ITEM: 'إضافة عنصر'
+            SELECTIZE_PLACEHOLDER: 'اكتب واضغط Enter...'
+            SELECT_AN_ICON: 'اختر أيقونة...'
+            SELECT_A_PAGE: 'اختر صفحة...'
         NAV:
             DASHBOARD: 'لوحة التحكم'
             CONFIGURATION: الإعدادات
@@ -286,6 +308,7 @@ ICU:
             TOOLS: الأدوات
             SYSTEM: النظام
             SETTINGS: الإعدادات
+            UPDATES_AVAILABLE: '{count} تحديث(ات) متاح'
         LANG:
             SWITCH_LANGUAGE: 'تبديل لغة المحتوى'
             TRANSLATIONS: الترجمات
@@ -466,6 +489,17 @@ ICU:
             NO_VIEW_DATA_YET: 'لا توجد بيانات مشاهدات بعد'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'لا شيء للمعاينة'
+            IMAGE_INSERT:
+                ALT_LABEL: 'النص البديل'
+                ALT_PLACEHOLDER: 'صف الصورة'
+                FROM_URL: 'إدراج من رابط'
+                INSERT: إدراج
+                NO_MEDIA: 'لا توجد صور مرفقة بهذه الصفحة بعد.'
+                PAGE_MEDIA: 'وسائط الصفحة'
+                SITE_MEDIA: 'وسائط الموقع'
+                TITLE: 'إدراج صورة'
+                URL_LABEL: 'رابط الصورة'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg أو media://file.jpg'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'إغلاق قائمة العناصر'
         MEDIA:
@@ -482,6 +516,18 @@ ICU:
                 UPLOAD_FILES: 'رفع ملفات'
                 NEW_FOLDER: 'مجلد جديد'
                 CREATE: إنشاء
+                CUSTOM_ORDER: 'ترتيب مخصص'
+                DROP_FILES_OR_CLICK_UPLOAD: "أفلت الملفات هنا أو انقر فوق 'رفع' للبدء"
+                DROP_FILES_TO_UPLOAD: 'أفلت الملفات للرفع'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'أفلت الملفات لرفعها إلى **{path}**'
+                FOLDER_IS_EMPTY: 'هذا المجلد فارغ'
+                NO_RESULTS_FOUND: 'لم يتم العثور على نتائج'
+                ORDER_SAVE_FAILED: 'فشل حفظ الترتيب الجديد'
+                REORDER: 'اسحب لإعادة الترتيب'
+                REORDER_DONE: تم
+                REORDER_MODE: 'إعادة ترتيب'
+                ROOT: الوسائط
+                TRY_A_DIFFERENT_SEARCH_TERM: 'جرب مصطلح بحث مختلف'
             MEDIA_TOOLBAR:
                 SEARCH_MEDIA: 'ابحث في الوسائط...'
                 GRID_VIEW: 'عرض الشبكة'
@@ -493,11 +539,36 @@ ICU:
             PAGE_MEDIA:
                 PAGE_MEDIA: 'وسائط الصفحة'
                 DRAG_INTO_EDITOR: 'اسحب إلى المحرر'
+                DROP_FILES_HERE: 'أفلت الملفات هنا'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'أفلت الملفات أو انقر للرفع'
+                DROP_OR_CLICK_TO_ADD_MORE: 'أفلت الملفات أو انقر لإضافة المزيد'
+                INSERTED: 'تم إدراج {filename}'
+                INSERT_AT_CURSOR: 'إدراج عند المؤشر'
+                REORDER: 'اسحب لإعادة الترتيب'
+                REORDER_DONE: تم
+                REORDER_HINT: 'اسحب الصور لضبط ترتيبها.'
+                REORDER_MODE: 'إعادة ترتيب'
+            METADATA:
+                APPLY_TO_N: 'تطبيق على {n} من الملفات'
+                BATCH_EDITING: 'تحرير {n} من الملفات المحددة — الحقول التي تم تغييرها ستطبق على الجميع.'
+                BATCH_PARTIAL: 'تم تحديث {saved} ملفات، وفشل {failed} ملفات'
+                BATCH_SAVED: 'تم تحديث {n} من الملفات'
+                EDIT: 'تحرير البيانات الوصفية'
+                EMPTY: 'لم يتم تكوين أي حقول بيانات وصفية قابلة للتحرير.'
+                LOAD_FAILED: 'تعذر تحميل البيانات الوصفية'
+                RESET: 'إعادة تعيين'
+                SAVED: 'تم حفظ البيانات الوصفية'
+                SAVE_FAILED: 'تعذر حفظ البيانات الوصفية'
+                SAVING: 'جاري الحفظ...'
+                STORED: 'البيانات الوصفية المخزنة'
+                TAGS_PLACEHOLDER: 'إضافة وسم...'
+                TITLE: 'البيانات الوصفية'
         UPLOAD: رفع
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: 'مسح الذاكرة المؤقتة'
             CACHE_OPTIONS: 'خيارات الذاكرة المؤقتة'
             FAILED_TO_CLEAR_CACHE: 'فشل مسح الذاكرة المؤقتة'
+            LABEL: 'الذاكرة المؤقتة'
         CONFIRM_ACTION: 'تأكيد الإجراء'
         VIEW_SITE_BUTTON:
             OPEN_SITE_FRONTEND_IN_A_NEW_TAB: 'فتح واجهة الموقع في علامة تبويب جديدة'
@@ -622,6 +693,30 @@ ICU:
                 DISK_FREE_OF: '{free} متاح من أصل {total}'
             TOOLS_GRAV_ADMIN: 'الأدوات — Grav Admin'
             BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: 'النسخ الاحتياطية والمُجدوِل والسجلات والتشخيصات'
+            AUDIT:
+                ACTOR: الفاعل
+                ALL_EVENTS: 'جميع الأحداث'
+                ALL_SEVERITIES: 'جميع مستويات الخطورة'
+                AUTH_METHOD: 'طريقة المصادقة'
+                CHANGES: التغييرات
+                COVERAGE_DETAILED: تفصيلي
+                DESCRIPTION: 'سجل لنشاط واجهة برمجة التطبيقات (API): عمليات تسجيل الدخول، المحتوى، المستخدم، التكوين، وتغييرات الحزم. يمر Admin Next عبر واجهة برمجة التطبيقات، لذا يغطي هذا السجل الإدارة بالإضافة إلى أي عملاء خارجيين لواجهة برمجة التطبيقات.'
+                DETAILS: التفاصيل
+                EVENT: الحدث
+                EVENT_CODE: 'رمز الحدث'
+                FAILED_TO_LOAD: 'فشل تحميل سجل التدقيق'
+                FROM: من
+                IP: 'عنوان IP'
+                LOADING: 'جاري تحميل سجل التدقيق...'
+                NO_ENTRIES: 'لم يتم العثور على سجلات تدقيق.'
+                REFRESH: تحديث
+                SEARCH_PLACEHOLDER: 'ابحث عن الفاعل، الهدف، الحدث، عنوان IP...'
+                SEVERITY: الخطورة
+                SHOWING: عرض
+                TARGET: الهدف
+                TO: إلى
+                USER_AGENT: 'وكيل المستخدم'
+                WHEN: متى
         INSTALLING: 'جارٍ التثبيت...'
         ACCESS_DENIED:
             ACCESS_DENIED: 'الوصول مرفوض'
@@ -649,6 +744,7 @@ ICU:
             FAILED_TO_DELETE: 'فشل حذف البيئة'
             SWITCH_AND_RELOAD: 'التبديل وإعادة التحميل'
             SWITCH_DISCARDS_UNSAVED: 'تبديل البيئة سيعيد تحميل لوحة التحكم وسيتجاهل التغييرات غير المحفوظة. هل تريد المتابعة؟'
+            PREFIX: 'البيئة:'
         INLINE_ICON_PICKER:
             SEARCH_ICONS: 'ابحث عن أيقونات...'
             NO_ICONS_FOUND: 'لم يُعثر على أيقونات'
@@ -708,6 +804,7 @@ ICU:
                 OFF_DESC: 'تم تعطيل Twig في محتوى الصفحة. سيتم عرض الترميز كما هو مكتوب.'
                 TRUSTED: 'الأدوار الموثوقة فقط'
                 TRUSTED_DESC: 'المستخدمون المتميزون فقط وحاملو إذن «pages twig» يمكنهم تفعيل Twig في الصفحة.'
+            VALIDATION_FAILED_FOR_FIELDS: 'تعذر الحفظ — هذه الحقول غير صالحة: {fields}'
         FLEX_OBJECTS:
             SEARCH: بحث...
             PREVIOUS: السابق
@@ -734,6 +831,7 @@ ICU:
                 SHOW_INFO: 'عرض معلومات الكائن'
                 STORAGE_KEY: 'مفتاح التخزين'
                 TITLE: 'معلومات الكائن'
+            ADD: إضافة
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: 'تعذّر الاتصال بالخادم.'
             FORGOT_PASSWORD_GRAV_ADMIN: 'نسيت كلمة المرور — Grav Admin'
@@ -771,6 +869,9 @@ ICU:
             TWOFA_SUBTITLE: 'أدخل رمز المُصادِق للمتابعة'
             SUBTITLE: 'سجّل الدخول لإدارة موقعك'
             AUTH_CODE_PROMPT: 'افتح تطبيق المُصادِق وأدخل الرمز المؤلف من 6 أرقام للمستخدم **{username}**.'
+            CONTINUE_WITH: 'المتابعة باستخدام {provider}'
+            OR_CONTINUE_WITH: 'أو المتابعة باستخدام'
+            SSO_FAILED: 'تعذر تسجيل الدخول باستخدام هذا المزود. يرجى المحاولة مجدداً.'
         PLUGIN:
             BACK_TO_DASHBOARD: 'العودة إلى لوحة التحكم'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'لا يوجد محتوى متاح لصفحة هذه الإضافة.'
@@ -950,6 +1051,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'سطر اختياري يظهر تحت عنوان تسجيل الدخول.'
             SHOW_POWERED_BY: 'إظهار «مدعوم بواسطة Grav»'
             SHOW_POWERED_BY_DESC: 'إظهار سطر «مدعوم بواسطة Grav CMS» في شاشات تسجيل الدخول والإعداد.'
+            EDITOR_KEYMAP: 'اختصارات لوحة المفاتيح'
+            EDITOR_KEYMAP_DEFAULT: افتراضي
+            EDITOR_KEYMAP_DESC: 'استخدام اختصارات Vim في محررات Markdown والبرمجة. الخيار الافتراضي يحافظ على التحرير القياسي.'
+            EDITOR_KEYMAP_VIM: Vim
         CUSTOM: مخصص
         PREVIEW: معاينة
         SETUP:
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'تكوين الحسابات — Grav Admin'
             SAVED: 'تم حفظ التكوين'
             TITLE: 'تكوين الحسابات'
+            SUBTITLE: 'الإعدادات الافتراضية لحسابات المستخدمين والتسجيل'
         EDIT: تحرير
         GROUPS:
             ADD_GROUP: 'إضافة مجموعة'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'تم تفعيل المستخدم {username}'
             USER_SAVED: 'تم حفظ المستخدم {username}'
             USER_STATE_FAILED: 'فشل تغيير الحالة للمستخدم {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'هذه نسخة تجريبية للقراءة فقط — التغييرات معطلة.'
+            USER_ROW_ACTION_FAILED: 'تعذر إكمال الإجراء: {label}'
         TRANSLATIONS: الترجمات
         TRANSLATIONS_FALLBACK: 'بديل الترجمات'
         TRANSLATIONS_FALLBACK_HELP: 'الرجوع إلى الترجمات المدعومة إذا لم تكن اللغة النشطة موجودة'
@@ -1941,6 +2049,26 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'يمكن تنزيل الملفات الموجودة تحت user/data و user/accounts و user/config مباشرة عبر HTTP — بما في ذلك الشهادات والمفاتيح والرموز وقواعد البيانات. هذا يعني عادةً أن خادم الويب الخاص بك لا يطبق قواعد .htaccess الخاصة بـ Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'كيفية تأمين خادم الويب الخاص بك'
             USER_FOLDER_EXPOSED_TITLE: 'خطر أمني: مجلدات بيانات المستخدم الخاصة بك يمكن الوصول إليها من الويب'
+        CONFIRM: تأكيد
+        DEMO:
+            BANNER_COUNTDOWN: 'إعادة الضبط القادمة خلال {time}'
+            BANNER_LABEL: 'وضع العرض التجريبي'
+            BANNER_MESSAGE: 'وضع العرض التجريبي — يتم إعادة ضبط التغييرات كل {minutes, plural, one{# دقيقة} other{# دقيقة}}'
+            BANNER_READONLY: 'وضع تجريبي للقراءة فقط — التغييرات معطلة'
+        DOCUMENTATION: التوثيق
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'لغات المتصفح البديلة'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'قم بتعيين لغات المتصفح غير المدعومة إلى لغات مدعومة عند ضبط اللغة من ترويسة `http_accept_language`. هذا لا يضيف لغات مدعومة أو ينشئ مسارات لغات.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'حدد رمز لغة متصفح غير مدعوم، على سبيل المثال `hr` أو `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'اللغات البديلة'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'يرجى إدخال قائمة برموز اللغات المدعومة. سيتم استخدام أول لغة مدعومة.'
+        README: 'ملف README'
+        REPORT_ISSUE: 'الإبلاغ عن مشكلة'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: مغادرة
+            LEAVE_MESSAGE: 'لديك تغييرات لم يتم حفظها. هل ترغب في المغادرة على أي حال؟'
+            STAY: بقاء
+            SWITCH_LANGUAGE: تبديل
+            SWITCH_LANGUAGE_MESSAGE: 'لديك تغييرات لم يتم حفظها. هل ترغب في تبديل اللغة على أي حال؟'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA مُفعَّل'
         2FA_SECRET: 'سرّ 2FA'
