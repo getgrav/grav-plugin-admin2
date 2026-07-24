@@ -4,6 +4,7 @@
 1. [](#bugfix)
     * Removing the last category or tag from a page now sticks instead of the old value reappearing after you save ([#140](https://github.com/getgrav/grav-plugin-admin2/issues/140)).
     * The invitation-accept page now loads its translations, so its wording can be customized and it no longer briefly shows raw text like "Accept Heading" on a fresh browser ([#139](https://github.com/getgrav/grav-plugin-admin2/issues/139)).
+    * A feature switched on by a plugin, such as the Downloads panel in Downloads Pro, now stays switched on when you reopen the page instead of reverting to off and hiding its settings ([grav-premium-issues#609](https://github.com/getgrav/grav-premium-issues/issues/609)).
 
 # v2.0.15
 ## 07/20/2026
