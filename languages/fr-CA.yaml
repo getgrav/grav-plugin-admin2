@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: 'Options du cache'
             CLEAR_CACHE: 'Effacer le cache'
             FAILED_TO_CLEAR_CACHE: "Impossible d'effacer le cache"
+            LABEL: Cache
         CANCEL: Annuler
         CLEAR_SEARCH: 'Effacer la recherche'
         CLOSE: Fermer
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: "Twig dans le contenu des pages est désactivé. Le balisage s'affiche tel qu'il est écrit."
                 TRUSTED: 'Rôles de confiance uniquement'
                 TRUSTED_DESC: 'Seuls les superutilisateurs et les détenteurs de la permission « pages twig » peuvent activer Twig sur une page.'
+            VALIDATION_FAILED_FOR_FIELDS: "Impossible d'enregistrer — ces champs sont invalides : {fields}"
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Environnement
             EXPORT_YAML: 'Exporter en YAML'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: "La suppression de l'environnement a échoué"
             SWITCH_AND_RELOAD: "Changer l'environnement et recharger"
             SWITCH_DISCARDS_UNSAVED: "Le changement d'environnement recharge l'admin et abandonne les modifications non enregistrées. Continuer ?"
+            PREFIX: 'Env :'
         EXPAND_ALL: 'Développer tout'
         EXPAND_SIDEBAR: 'Développer la barre latérale'
         EXPERT_MODE: 'Mode expert'
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Chaîne de format :'
                 SELECT_FORMAT: '— Sélectionner un format —'
+                CUSTOM: Personnalisé…
+                CUSTOM_PLACEHOLDER: 'p. ex. Y-m-d H:i'
+                PREVIEW: 'Aperçu :'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Aucun fichier correspondant'
                 NO_MEDIA_UPLOADED: 'Aucun fichier média téléchargé pour le moment'
+                SELECT_FILE: 'Sélectionner un fichier…'
+                SELECT_FILES: 'Sélectionner des fichiers…'
             FILE_PICKER_SOON: 'Sélecteur de fichiers — à venir bientôt'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Aucune icône trouvée'
@@ -270,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Plugin Webhook requis'
             FILE:
                 LIMIT_REACHED: 'Ce champ accepte au plus {limit} fichier(s).'
+            ADD_ITEM: 'Ajouter un élément'
+            SELECTIZE_PLACEHOLDER: 'Tapez et appuyez sur Entrée…'
+            SELECT_AN_ICON: 'Sélectionner une icône…'
+            SELECT_A_PAGE: 'Sélectionner une page…'
         FLEX_OBJECTS:
             ACTIONS: Actions
             BACK_TO_LIST: 'Retour à la liste'
@@ -296,6 +308,7 @@ ICU:
                 SHOW_INFO: "Afficher les informations de l'objet"
                 STORAGE_KEY: 'Clé de stockage'
                 TITLE: "Informations de l'objet"
+            ADD: Ajouter
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Fermer le menu des widgets'
         FORGOT:
@@ -358,8 +371,22 @@ ICU:
             USERNAME_IS_REQUIRED: "Le nom d'utilisateur est requis"
             VERIFY: Vérifier
             VERIFYING: 'Vérification en cours...'
+            CONTINUE_WITH: 'Continuer avec {provider}'
+            OR_CONTINUE_WITH: 'Ou continuer avec'
+            SSO_FAILED: 'Impossible de se connecter avec ce fournisseur. Veuillez réessayer.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Rien à prévisualiser'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Texte alternatif'
+                ALT_PLACEHOLDER: "Décrire l'image"
+                FROM_URL: 'Insérer depuis une URL'
+                INSERT: Insérer
+                NO_MEDIA: "Aucune image n'est jointe à cette page pour l'instant."
+                PAGE_MEDIA: 'Média de la page'
+                SITE_MEDIA: 'Média du site'
+                TITLE: 'Insérer une image'
+                URL_LABEL: "URL de l'image"
+                URL_PLACEHOLDER: 'https://example.com/image.jpg ou media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Gérer les fichiers médias du site'
             MEDIA_GRAV_ADMIN: 'Médias — Grav Admin'
@@ -376,6 +403,18 @@ ICU:
                 FOLDER_NAME: 'Nom du dossier'
                 NEW_FOLDER: 'Nouveau dossier'
                 UPLOAD_FILES: 'Télécharger des fichiers'
+                CUSTOM_ORDER: 'Ordre personnalisé'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Déposez vos fichiers ici ou cliquez sur Téléverser pour commencer'
+                DROP_FILES_TO_UPLOAD: 'Déposez les fichiers à téléverser'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Déposez les fichiers à téléverser vers **{path}**'
+                FOLDER_IS_EMPTY: 'Ce dossier est vide'
+                NO_RESULTS_FOUND: 'Aucun résultat trouvé'
+                ORDER_SAVE_FAILED: "Impossible d'enregistrer le nouvel ordre"
+                REORDER: 'Faites glisser pour réorganiser'
+                REORDER_DONE: Terminé
+                REORDER_MODE: Réorganiser
+                ROOT: Média
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Essayez un terme de recherche différent'
             MEDIA_TOOLBAR:
                 FOLDER: Dossier
                 GRID_VIEW: 'Affichage en grille'
@@ -385,6 +424,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: "Glisser dans l'éditeur"
                 PAGE_MEDIA: 'Médias de la page'
+                DROP_FILES_HERE: 'Déposez les fichiers ici'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Déposez les fichiers ou cliquez pour téléverser'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Déposez ou cliquez pour en ajouter davantage'
+                INSERTED: '{filename} inséré'
+                INSERT_AT_CURSOR: 'Insérer au curseur'
+                REORDER: 'Glisser pour réorganiser'
+                REORDER_DONE: Terminé
+                REORDER_HINT: 'Glissez les images pour définir leur ordre.'
+                REORDER_MODE: Réorganiser
+            METADATA:
+                APPLY_TO_N: 'Appliquer à {n} fichiers'
+                BATCH_EDITING: "Modification de {n} fichiers sélectionnés — les champs modifiés s'appliqueront à tous."
+                BATCH_PARTIAL: '{saved} fichiers mis à jour, {failed} ont échoué'
+                BATCH_SAVED: '{n} fichiers mis à jour'
+                EDIT: 'Modifier les métadonnées'
+                EMPTY: "Aucun champ de métadonnées modifiable n'est configuré."
+                LOAD_FAILED: 'Impossible de charger les métadonnées'
+                RESET: Réinitialiser
+                SAVED: 'Métadonnées enregistrées'
+                SAVE_FAILED: "Impossible d'enregistrer les métadonnées"
+                SAVING: 'Enregistrement en cours…'
+                STORED: 'Métadonnées stockées'
+                TAGS_PLACEHOLDER: 'Ajouter une étiquette…'
+                TITLE: Métadonnées
         NAV:
             CONFIGURATION: Configuration
             DASHBOARD: 'Tableau de bord'
@@ -396,6 +459,7 @@ ICU:
             THEMES: Thèmes
             TOOLS: Outils
             USERS: Utilisateurs
+            UPDATES_AVAILABLE: '{count} mise(s) à jour disponible(s)'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Aucun élément de flux'
         NORMAL_MODE: 'Mode normal'
@@ -549,6 +613,19 @@ ICU:
                 LEAK_PAGE_OFF: "Cette page contient du balisage Twig, mais Twig est désactivé pour cette page, il s'affiche donc sous forme de texte brut pour les visiteurs."
                 RECENT_BLOCKS: '{n, plural, one {# construction Twig sur cette page a été récemment bloquée} other {# constructions Twig sur cette page ont été récemment bloquées}}.'
                 VIEW_REPORT: 'Voir le rapport'
+            FILTER:
+                ALL: Tout
+                ALL_TEMPLATES: 'Tous les modèles'
+                BUTTON: Filtrer
+                CLEAR: Effacer
+                'NO': Non
+                PUBLISHED: Publié
+                ROUTABLE: Routable
+                TEMPLATE: Modèle
+                TITLE: 'Filtrer les pages'
+                VISIBLE: Visible
+                'YES': Oui
+            VALIDATION_FAILED_FOR_FIELDS: "Impossible d'enregistrer — ces champs sont invalides : {fields}"
         PASSWORD: 'Mot de passe'
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Exigences du mot de passe'
@@ -764,6 +841,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: "Ligne facultative affichée sous l'en-tête de connexion."
             SHOW_POWERED_BY: 'Afficher « Propulsé par Grav »'
             SHOW_POWERED_BY_DESC: 'Afficher la ligne « Propulsé par Grav CMS » sur les écrans de connexion et de configuration.'
+            EDITOR_KEYMAP: 'Raccourcis clavier'
+            EDITOR_KEYMAP_DEFAULT: 'Par défaut'
+            EDITOR_KEYMAP_DESC: "Utiliser les raccourcis clavier Vim dans les éditeurs Markdown et de code. « Par défaut » conserve l'édition standard."
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: "3 à 64 caractères : lettres, chiffres, traits d'union, tirets bas"
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Compte administrateur créé — bienvenue dans Grav'
@@ -965,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'Version de PHP'
             TOOLS_GRAV_ADMIN: 'Outils — Grav Admin'
+            AUDIT:
+                ACTOR: Acteur
+                ALL_EVENTS: 'Tous les événements'
+                ALL_SEVERITIES: 'Toutes les gravités'
+                AUTH_METHOD: "Méthode d'authentification"
+                CHANGES: Modifications
+                COVERAGE_DETAILED: Détaillé
+                DESCRIPTION: "Un registre de l'activité de l'API : connexions, contenu, utilisateur, configuration et modifications de paquets. Admin Next utilise l'API, donc cela couvre l'administration ainsi que tout client API externe."
+                DETAILS: Détails
+                EVENT: Événement
+                EVENT_CODE: "Code d'événement"
+                FAILED_TO_LOAD: "Échec du chargement de la piste d'audit"
+                FROM: De
+                IP: IP
+                LOADING: "Chargement de la piste d'audit..."
+                NO_ENTRIES: "Aucune entrée d'audit trouvée."
+                REFRESH: Actualiser
+                SEARCH_PLACEHOLDER: 'Rechercher un acteur, une cible, un événement, une IP...'
+                SEVERITY: Gravité
+                SHOWING: Affichage
+                TARGET: Cible
+                TO: À
+                USER_AGENT: 'Agent utilisateur'
+                WHEN: Quand
         TOP_BANNER:
             PREVIOUS: Précédent
             SITE_NOTIFICATION: 'Notification du site'
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'Configuration des comptes — Grav Admin'
             SAVED: 'Configuration enregistrée'
             TITLE: 'Configuration des comptes'
+            SUBTITLE: "Paramètres par défaut pour les comptes utilisateurs et l'inscription"
         EDIT: Modifier
         GROUPS:
             ADD_GROUP: 'Ajouter groupe'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Utilisateur {username} activé'
             USER_SAVED: 'Utilisateur {username} enregistré'
             USER_STATE_FAILED: "Échec du changement d'état pour {username} : {detail}"
+            DEMO_MODE_BLOCKED: "Il s'agit d'une démo en lecture seule — les modifications sont désactivées."
+            USER_ROW_ACTION_FAILED: "Impossible de terminer l'action : {label}"
         TRANSLATIONS: Traductions
         TRANSLATIONS_FALLBACK: 'Secours des traductions'
         TRANSLATIONS_FALLBACK_HELP: "Recourir aux traductions supportées si la langue active n'existe pas"
@@ -1941,3 +2049,23 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: "Les fichiers dans user/data, user/accounts et user/config peuvent être téléchargés directement via HTTP — y compris les certificats, les clés, les jetons et les bases de données. Cela signifie généralement que votre serveur Web n'applique pas les règles .htaccess de Grav."
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Comment sécuriser votre serveur Web'
             USER_FOLDER_EXPOSED_TITLE: 'Risque de sécurité : vos dossiers de données utilisateur sont accessibles depuis le Web'
+        CONFIRM: Confirmer
+        DEMO:
+            BANNER_COUNTDOWN: 'Prochaine réinitialisation dans {time}'
+            BANNER_LABEL: 'Mode démo'
+            BANNER_MESSAGE: 'Mode démo — les modifications sont réinitialisées toutes les {minutes, plural, one{# minute} other{# minutes}}'
+            BANNER_READONLY: 'Démo en lecture seule — les modifications sont désactivées'
+        DOCUMENTATION: Documentation
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Langues de secours du navigateur'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: "Associer les langues de navigateur non prises en charge aux langues prises en charge lors de la définition de la langue à partir de l'en-tête `http_accept_language`. Cela n'ajoute pas de langues prises en charge ni ne crée de routes linguistiques."
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Spécifiez un code de langue de navigateur non pris en charge, par ex. `hr` ou `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'Langues de secours'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Veuillez saisir une liste de codes de langue pris en charge. La première langue prise en charge sera utilisée.'
+        README: README
+        REPORT_ISSUE: 'Signaler un problème'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Quitter
+            LEAVE_MESSAGE: 'Vous avez des modifications non enregistrées. Quitter quand même?'
+            STAY: Rester
+            SWITCH_LANGUAGE: Changer
+            SWITCH_LANGUAGE_MESSAGE: 'Vous avez des modifications non enregistrées. Changer de langue quand même?'
