@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: Cachealternativ
             CLEAR_CACHE: 'Rensa cache'
             FAILED_TO_CLEAR_CACHE: 'Det gick inte att rensa cache'
+            LABEL: Cache
         CANCEL: Avbryt
         CLEAR_SEARCH: 'Rensa sökning'
         CLOSE: Stäng
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig i sidinnehåll är inaktiverat. Markup visas som den är skriven.'
                 TRUSTED: 'Endast betrodda roller'
                 TRUSTED_DESC: 'Endast superanvändare och innehavare av behörigheten "pages twig" kan aktivera Twig på en sida.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Kunde inte spara — dessa fält är ogiltiga: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljö
             EXPORT_YAML: 'Exportera YAML'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Misslyckades att ta bort miljö'
             SWITCH_AND_RELOAD: 'Byt och ladda om'
             SWITCH_DISCARDS_UNSAVED: 'Miljöväxling startar om admin och förkastar osparade ändringar. Fortsätta?'
+            PREFIX: 'Miljö:'
         EXPAND_ALL: 'Expandera alla'
         EXPAND_SIDEBAR: 'Expandera sidofält'
         EXPERT_MODE: Expertläge
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Formatstränq:'
                 SELECT_FORMAT: '— Välj format —'
+                CUSTOM: Anpassad…
+                CUSTOM_PLACEHOLDER: 't.ex. Y-m-d H:i'
+                PREVIEW: 'Förhandsgranskning:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Inga matchande filer'
                 NO_MEDIA_UPLOADED: 'Inga mediefiler har laddats upp än'
+                SELECT_FILE: 'Välj en fil…'
+                SELECT_FILES: 'Välj filer…'
             FILE_PICKER_SOON: 'Filväljare — kommer snart'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Inga ikoner hittades'
@@ -270,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin krävs'
             FILE:
                 LIMIT_REACHED: 'Detta fält accepterar som mest {limit} fil(er).'
+            ADD_ITEM: 'Lägg till objekt'
+            SELECTIZE_PLACEHOLDER: 'Skriv och tryck på Retur...'
+            SELECT_AN_ICON: 'Välj en ikon...'
+            SELECT_A_PAGE: 'Välj en sida...'
         FLEX_OBJECTS:
             ACTIONS: Åtgärder
             BACK_TO_LIST: 'Tillbaka till lista'
@@ -296,6 +308,7 @@ ICU:
                 SHOW_INFO: 'Visa objektinformation'
                 STORAGE_KEY: Lagringsnyckel
                 TITLE: Objektinformation
+            ADD: 'Lägg till'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Stäng widgetmeny'
         FORGOT:
@@ -358,8 +371,22 @@ ICU:
             USERNAME_IS_REQUIRED: 'Användarnamn är obligatoriskt'
             VERIFY: Verifiera
             VERIFYING: Verifierar...
+            CONTINUE_WITH: 'Fortsätt med {provider}'
+            OR_CONTINUE_WITH: 'Eller fortsätt med'
+            SSO_FAILED: 'Det gick inte att logga in med den leverantören. Vänligen försök igen.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Inget att förhandsgranska'
+            IMAGE_INSERT:
+                ALT_LABEL: Alt-text
+                ALT_PLACEHOLDER: 'Beskriv bilden'
+                FROM_URL: 'Infoga från URL'
+                INSERT: Infoga
+                NO_MEDIA: 'Inga bilder är bifogade till den här sidan än.'
+                PAGE_MEDIA: Sidmedia
+                SITE_MEDIA: Webbplatsmedia
+                TITLE: 'Infoga bild'
+                URL_LABEL: Bild-URL
+                URL_PLACEHOLDER: 'https://example.com/image.jpg eller media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Hantera mediafiler för hela webbplatsen'
             MEDIA_GRAV_ADMIN: 'Media — Grav Admin'
@@ -376,6 +403,18 @@ ICU:
                 FOLDER_NAME: Mappnamn
                 NEW_FOLDER: 'Ny mapp'
                 UPLOAD_FILES: 'Ladda upp filer'
+                CUSTOM_ORDER: 'Anpassad ordning'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Släpp filer här eller klicka på Ladda upp för att komma igång'
+                DROP_FILES_TO_UPLOAD: 'Släpp filer för att ladda upp'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Släpp filer för att ladda upp till **{path}**'
+                FOLDER_IS_EMPTY: 'Den här mappen är tom'
+                NO_RESULTS_FOUND: 'Inga resultat hittades'
+                ORDER_SAVE_FAILED: 'Det gick inte att spara den nya ordningen'
+                REORDER: 'Dra för att sortera om'
+                REORDER_DONE: Klar
+                REORDER_MODE: 'Sortera om'
+                ROOT: Media
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Prova en annan sökterm'
             MEDIA_TOOLBAR:
                 FOLDER: Mapp
                 GRID_VIEW: Rutnätsvy
@@ -385,6 +424,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Dra till redigerare'
                 PAGE_MEDIA: Sidmedia
+                DROP_FILES_HERE: 'Släpp filer här'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Släpp filer eller klicka för att ladda upp'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Släpp eller klicka för att lägga till fler'
+                INSERTED: 'Infogade {filename}'
+                INSERT_AT_CURSOR: 'Infoga vid markören'
+                REORDER: 'Dra för att ändra ordning'
+                REORDER_DONE: Klar
+                REORDER_HINT: 'Dra bilder för att ändra ordning.'
+                REORDER_MODE: 'Ändra ordning'
+            METADATA:
+                APPLY_TO_N: 'Applicera på {n} filer'
+                BATCH_EDITING: 'Redigerar {n} valda filer — ändrade fält appliceras på alla.'
+                BATCH_PARTIAL: 'Uppdaterade {saved} filer, {failed} misslyckades'
+                BATCH_SAVED: 'Uppdaterade {n} filer'
+                EDIT: 'Redigera metadata'
+                EMPTY: 'Inga redigerbara metadatafält är konfigurerade.'
+                LOAD_FAILED: 'Kunde inte läsa in metadata'
+                RESET: Återställ
+                SAVED: 'Metadata sparades'
+                SAVE_FAILED: 'Kunde inte spara metadata'
+                SAVING: Sparar…
+                STORED: 'Lagrad metadata'
+                TAGS_PLACEHOLDER: 'Lägg till tagg…'
+                TITLE: Metadata
         NAV:
             CONFIGURATION: Konfiguration
             DASHBOARD: Instrumentpanel
@@ -396,6 +459,7 @@ ICU:
             THEMES: Teman
             TOOLS: Verktyg
             USERS: Användare
+            UPDATES_AVAILABLE: '{count} uppdatering(ar) tillgängliga'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Inga flödesobjekt'
         NORMAL_MODE: Normalläge
@@ -549,6 +613,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Den här sidan innehåller Twig-markup, men Twig är avstängt för den här sidan, så det renderas som råtext för besökare.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig-konstruktion på den här sidan har nyligen blockerats} other {# Twig-konstruktioner på den här sidan har nyligen blockerats}}.'
                 VIEW_REPORT: 'Visa rapport'
+            FILTER:
+                ALL: Alla
+                ALL_TEMPLATES: 'Alla mallar'
+                BUTTON: Filtrera
+                CLEAR: Rensa
+                'NO': Nej
+                PUBLISHED: Publicerad
+                ROUTABLE: Routbar
+                TEMPLATE: Mall
+                TITLE: 'Filtrera sidor'
+                VISIBLE: Synlig
+                'YES': Ja
+            VALIDATION_FAILED_FOR_FIELDS: 'Kunde inte spara — dessa fält är ogiltiga: {fields}'
         PASSWORD: Lösenord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Lösenordskrav
@@ -764,6 +841,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Valfri rad som visas under inloggningsrubriken.'
             SHOW_POWERED_BY: 'Visa „Powered by Grav“'
             SHOW_POWERED_BY_DESC: 'Visa raden „Powered by Grav CMS“ på inloggnings- och konfigurationsskärmarna.'
+            EDITOR_KEYMAP: Tangentbordsgenvägar
+            EDITOR_KEYMAP_DEFAULT: Standard
+            EDITOR_KEYMAP_DESC: 'Använd Vim-tangentbordsgenvägar i Markdown- och kodredigerarna. Standard behåller vanlig redigering.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
@@ -965,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: PHP-version
             TOOLS_GRAV_ADMIN: 'Verktyg — Grav Admin'
+            AUDIT:
+                ACTOR: Aktör
+                ALL_EVENTS: 'Alla händelser'
+                ALL_SEVERITIES: 'Alla allvarlighetsgrader'
+                AUTH_METHOD: Autentiseringsmetod
+                CHANGES: Ändringar
+                COVERAGE_DETAILED: Detaljerad
+                DESCRIPTION: 'En logg över API-aktivitet: inloggningar, innehåll, användare, konfiguration och paketändringar. Admin Next dirigeras via API:et, så detta omfattar administratörspanelen samt alla externa API-klienter.'
+                DETAILS: Detaljer
+                EVENT: Händelse
+                EVENT_CODE: Händelsekod
+                FAILED_TO_LOAD: 'Det gick inte att läsa in granskningsloggen'
+                FROM: Från
+                IP: IP-adress
+                LOADING: 'Läser in granskningslogg...'
+                NO_ENTRIES: 'Inga granskningsposter hittades.'
+                REFRESH: Uppdatera
+                SEARCH_PLACEHOLDER: 'Sök efter aktör, mål, händelse, IP...'
+                SEVERITY: Allvarlighetsgrad
+                SHOWING: Visar
+                TARGET: Mål
+                TO: Till
+                USER_AGENT: Användaragent
+                WHEN: När
         TOP_BANNER:
             PREVIOUS: Föregående
             SITE_NOTIFICATION: Webbplatsnotifiering
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'Kontokonfiguration — Grav Admin'
             SAVED: 'Konfiguration sparad'
             TITLE: Kontokonfiguration
+            SUBTITLE: 'Standardinställningar för användarkonton och registrering'
         EDIT: Redigera
         GROUPS:
             ADD_GROUP: 'Lägg till grupp'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Användare {username} aktiverad'
             USER_SAVED: 'Användare {username} sparad'
             USER_STATE_FAILED: 'Det gick inte att ändra tillstånd för {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Detta är en skrivskyddad demo — ändringar är inaktiverade.'
+            USER_ROW_ACTION_FAILED: 'Kunde inte slutföra åtgärden: {label}'
         TRANSLATIONS: Översättningar
         TRANSLATIONS_FALLBACK: 'Reserv för översättningar'
         TRANSLATIONS_FALLBACK_HELP: 'Använd reservöversättningar om det aktiva språket inte finns'
@@ -1941,3 +2049,23 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Filer under user/data, user/accounts och user/config kan laddas ner direkt via HTTP — inklusive certifikat, nycklar, tokens och databaser. Detta innebär vanligtvis att din webbserver inte tillämpar Gravs .htaccess-regler.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Hur du säkrar din webbserver'
             USER_FOLDER_EXPOSED_TITLE: 'Säkerhetsrisk: dina användardatamappar är åtkomliga från webben'
+        CONFIRM: Bekräfta
+        DEMO:
+            BANNER_COUNTDOWN: 'Nästa återställning om {time}'
+            BANNER_LABEL: Demoläge
+            BANNER_MESSAGE: 'Demoläge — ändringar återställs var {minutes, plural, one{# minut} other{#:e minut}}'
+            BANNER_READONLY: 'Skrivskyddat demoläge — ändringar är inaktiverade'
+        DOCUMENTATION: Dokumentation
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Fallback-språk för webbläsare'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Mappa språk som webbläsaren inte stöder till språk som stöds när språket ställs in från `http_accept_language`-headern. Detta lägger inte till språk som stöds eller skapar språk-rutter.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Ange en språkkod för en webbläsare som inte stöds, t.ex. `hr` eller `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Fallback-språk
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Vänligen ange en lista över språkkoder som stöds. Det första språket som stöds kommer att användas.'
+        README: README
+        REPORT_ISSUE: 'Rapportera ett problem'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Lämna
+            LEAVE_MESSAGE: 'Du har osparade ändringar. Vill du lämna sidan ändå?'
+            STAY: Stanna
+            SWITCH_LANGUAGE: Växla
+            SWITCH_LANGUAGE_MESSAGE: 'Du har osparade ändringar. Vill du byta språk ändå?'
