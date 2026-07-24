@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: Cache-opties
             CLEAR_CACHE: 'Cache wissen'
             FAILED_TO_CLEAR_CACHE: 'Cache wissen mislukt'
+            LABEL: Cache
         CANCEL: Annuleren
         CLEAR_SEARCH: 'Zoekopdracht wissen'
         CLOSE: Sluiten
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig in paginainhoud is uitgeschakeld. Markup wordt getoond zoals geschreven.'
                 TRUSTED: 'Alleen vertrouwde rollen'
                 TRUSTED_DESC: 'Alleen superusers en bezitters van de "pages twig"-toestemming kunnen Twig op een pagina inschakelen.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Opslaan mislukt — deze velden zijn ongeldig: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Omgeving
             EXPORT_YAML: 'YAML exporteren'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Het verwijderen van deze omgeving mislukt.'
             SWITCH_AND_RELOAD: 'Omgeving wisselen en herladen'
             SWITCH_DISCARDS_UNSAVED: 'Het wisselen van omgeving herlaadt de beheerdersinterface en verwijdert niet-opgeslagen wijzigingen. Doorgaan?'
+            PREFIX: 'Omgeving:'
         EXPAND_ALL: 'Alles uitvouwen'
         EXPAND_SIDEBAR: 'Zijbalk uitvouwen'
         EXPERT_MODE: Expertmodus
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Opmaakstring:'
                 SELECT_FORMAT: '— Selecteer formaat —'
+                CUSTOM: Aangepast…
+                CUSTOM_PLACEHOLDER: 'bijv. Y-m-d H:i'
+                PREVIEW: 'Voorbeeld:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Geen overeenkomende bestanden'
                 NO_MEDIA_UPLOADED: 'Nog geen mediabestanden geüpload'
+                SELECT_FILE: 'Selecteer een bestand…'
+                SELECT_FILES: 'Selecteer bestanden…'
             FILE_PICKER_SOON: 'Bestandenkiezer — binnenkort beschikbaar'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Geen pictogrammen gevonden'
@@ -270,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin vereist'
             FILE:
                 LIMIT_REACHED: 'Dit veld accepteert maximaal {limit} bestand(en).'
+            ADD_ITEM: 'Item toevoegen'
+            SELECTIZE_PLACEHOLDER: 'Typ en druk op Enter...'
+            SELECT_AN_ICON: 'Selecteer een icoon...'
+            SELECT_A_PAGE: 'Selecteer een pagina...'
         FLEX_OBJECTS:
             ACTIONS: Acties
             BACK_TO_LIST: 'Terug naar lijst'
@@ -296,6 +308,7 @@ ICU:
                 SHOW_INFO: 'Toon objectinformatie'
                 STORAGE_KEY: Opslagsleutel
                 TITLE: Objectinformatie
+            ADD: Toevoegen
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Widgetsmenu sluiten'
         FORGOT:
@@ -358,8 +371,22 @@ ICU:
             USERNAME_IS_REQUIRED: 'Gebruikersnaam is vereist'
             VERIFY: Verifiëren
             VERIFYING: Verifiëren...
+            CONTINUE_WITH: 'Ga door met {provider}'
+            OR_CONTINUE_WITH: 'Of ga door met'
+            SSO_FAILED: 'Kon niet aanmelden met die provider. Probeer het opnieuw.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Niets om voor te bekijken'
+            IMAGE_INSERT:
+                ALT_LABEL: Alt-tekst
+                ALT_PLACEHOLDER: 'Beschrijf de afbeelding'
+                FROM_URL: 'Invoegen van URL'
+                INSERT: Invoegen
+                NO_MEDIA: 'Er zijn nog geen afbeeldingen aan deze pagina toegevoegd.'
+                PAGE_MEDIA: Pagina-media
+                SITE_MEDIA: Site-media
+                TITLE: 'Afbeelding invoegen'
+                URL_LABEL: Afbeeldings-URL
+                URL_PLACEHOLDER: 'https://example.com/image.jpg of media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Beheer mediabestanden voor de hele site'
             MEDIA_GRAV_ADMIN: 'Media — Grav Admin'
@@ -376,6 +403,18 @@ ICU:
                 FOLDER_NAME: Mapnaam
                 NEW_FOLDER: 'Nieuwe map'
                 UPLOAD_FILES: 'Bestanden uploaden'
+                CUSTOM_ORDER: 'Aangepaste volgorde'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Sleep bestanden hierheen of klik op Uploaden om te beginnen'
+                DROP_FILES_TO_UPLOAD: 'Sleep bestanden hierheen om te uploaden'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Sleep bestanden hierheen om te uploaden naar **{path}**'
+                FOLDER_IS_EMPTY: 'Deze map is leeg'
+                NO_RESULTS_FOUND: 'Geen resultaten gevonden'
+                ORDER_SAVE_FAILED: 'Kon de nieuwe volgorde niet opslaan'
+                REORDER: 'Sleep om te herordenen'
+                REORDER_DONE: Klaar
+                REORDER_MODE: Herordenen
+                ROOT: Media
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Probeer een andere zoekterm'
             MEDIA_TOOLBAR:
                 FOLDER: Map
                 GRID_VIEW: Rasterweergave
@@ -385,6 +424,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Sleep in editor'
                 PAGE_MEDIA: Paginamedia
+                DROP_FILES_HERE: 'Sleep bestanden hierheen'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Sleep bestanden hierheen of klik om te uploaden'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Sleep bestanden hierheen of klik om meer toe te voegen'
+                INSERTED: '{filename} ingevoegd'
+                INSERT_AT_CURSOR: 'Invoegen op cursorpositie'
+                REORDER: 'Sleep om te herordenen'
+                REORDER_DONE: Klaar
+                REORDER_HINT: 'Sleep afbeeldingen om de volgorde te bepalen.'
+                REORDER_MODE: Herordenen
+            METADATA:
+                APPLY_TO_N: 'Toepassen op {n} bestanden'
+                BATCH_EDITING: '{n} geselecteerde bestanden bewerken — gewijzigde velden worden op alle bestanden toegepast.'
+                BATCH_PARTIAL: '{saved} bestanden bijgewerkt, {failed} mislukt'
+                BATCH_SAVED: '{n} bestanden bijgewerkt'
+                EDIT: 'Metadata bewerken'
+                EMPTY: 'Er zijn geen bewerkbare metadatavelden geconfigureerd.'
+                LOAD_FAILED: 'Kon metadata niet laden'
+                RESET: Herstellen
+                SAVED: 'Metadata opgeslagen'
+                SAVE_FAILED: 'Kon metadata niet opslaan'
+                SAVING: Opslaan...
+                STORED: 'Opgeslagen metadata'
+                TAGS_PLACEHOLDER: 'Tag toevoegen...'
+                TITLE: Metadata
         NAV:
             CONFIGURATION: Configuratie
             DASHBOARD: Dashboard
@@ -396,6 +459,7 @@ ICU:
             THEMES: "Thema's"
             TOOLS: Hulpmiddelen
             USERS: Gebruikers
+            UPDATES_AVAILABLE: '{count} update(s) beschikbaar'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Geen feeditems'
         NORMAL_MODE: 'Normale modus'
@@ -549,6 +613,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Deze pagina bevat Twig-markup, maar Twig is uitgeschakeld voor deze pagina, waardoor het als platte tekst aan bezoekers wordt getoond.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig-constructie op deze pagina is onlangs geblokkeerd} other {# Twig-constructies op deze pagina zijn onlangs geblokkeerd}}.'
                 VIEW_REPORT: 'Bekijk rapport'
+            FILTER:
+                ALL: Alles
+                ALL_TEMPLATES: 'Alle sjablonen'
+                BUTTON: Filter
+                CLEAR: Wissen
+                'NO': Nee
+                PUBLISHED: Gepubliceerd
+                ROUTABLE: Routeerbaar
+                TEMPLATE: Sjabloon
+                TITLE: "Filter pagina's"
+                VISIBLE: Zichtbaar
+                'YES': Ja
+            VALIDATION_FAILED_FOR_FIELDS: 'Opslaan mislukt — deze velden zijn ongeldig: {fields}'
         PASSWORD: Wachtwoord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Wachtwoordvereisten
@@ -764,6 +841,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Optionele regel die onder de koptekst bij het inloggen wordt getoond.'
             SHOW_POWERED_BY: 'Toon „Powered by Grav”'
             SHOW_POWERED_BY_DESC: 'Toon de regel „Powered by Grav CMS” op de inlog- en configuratieschermen.'
+            EDITOR_KEYMAP: Sneltoetsen
+            EDITOR_KEYMAP_DEFAULT: Standaard
+            EDITOR_KEYMAP_DESC: 'Gebruik Vim-sneltoetsen in de Markdown- en code-editors. Standaard behoudt de standaard bewerking.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
@@ -965,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: PHP-versie
             TOOLS_GRAV_ADMIN: 'Tools — Grav Admin'
+            AUDIT:
+                ACTOR: Actor
+                ALL_EVENTS: 'Alle gebeurtenissen'
+                ALL_SEVERITIES: 'Alle ernstniveaus'
+                AUTH_METHOD: Auth-methode
+                CHANGES: Wijzigingen
+                COVERAGE_DETAILED: Gedetailleerd
+                DESCRIPTION: 'Een overzicht van API-activiteit: inlogpogingen, wijzigingen in content, gebruikers, configuratie en pakketten. Admin Next loopt via de API, dus dit omvat zowel de beheeromgeving als externe API-clients.'
+                DETAILS: Details
+                EVENT: Gebeurtenis
+                EVENT_CODE: Gebeurteniscode
+                FAILED_TO_LOAD: 'Kon auditlogboek niet laden'
+                FROM: Van
+                IP: IP
+                LOADING: 'Auditlogboek laden...'
+                NO_ENTRIES: 'Geen audit-items gevonden.'
+                REFRESH: Vernieuwen
+                SEARCH_PLACEHOLDER: 'Zoek op actor, doel, gebeurtenis, IP...'
+                SEVERITY: Ernst
+                SHOWING: Toont
+                TARGET: Doel
+                TO: Tot
+                USER_AGENT: User-agent
+                WHEN: Wanneer
         TOP_BANNER:
             PREVIOUS: Vorige
             SITE_NOTIFICATION: Sitemelding
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'Accounts configuratie — Grav Admin'
             SAVED: 'Configuratie opgeslagen'
             TITLE: 'Accounts configuratie'
+            SUBTITLE: 'Standaardinstellingen voor gebruikersaccounts en registratie'
         EDIT: Bewerken
         GROUPS:
             ADD_GROUP: 'Groep toevoegen'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Gebruiker {username} ingeschakeld'
             USER_SAVED: 'Gebruiker {username} opgeslagen'
             USER_STATE_FAILED: 'Kon status niet wijzigen voor {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Dit is een alleen-lezen demo — wijzigingen zijn uitgeschakeld.'
+            USER_ROW_ACTION_FAILED: 'Actie kon niet worden voltooid: {label}'
         TRANSLATIONS: Vertalingen
         TRANSLATIONS_FALLBACK: 'Terugval voor vertalingen'
         TRANSLATIONS_FALLBACK_HELP: 'Terugvallen op ondersteunde vertalingen als de actieve taal niet bestaat'
@@ -1941,3 +2049,23 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Bestanden in user/data, user/accounts en user/config kunnen direct via HTTP worden gedownload — inclusief certificaten, sleutels, tokens en databases. Dit betekent meestal dat je webserver de .htaccess-regels van Grav niet toepast.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Hoe beveilig je je webserver'
             USER_FOLDER_EXPOSED_TITLE: 'Beveiligingsrisico: je gebruikersgegevensmappen zijn bereikbaar via het web'
+        CONFIRM: Bevestigen
+        DEMO:
+            BANNER_COUNTDOWN: 'Volgende reset over {time}'
+            BANNER_LABEL: Demo-modus
+            BANNER_MESSAGE: 'Demo-modus — wijzigingen worden elke {minutes, plural, one{# minuut} other{# minuten}} gereset'
+            BANNER_READONLY: 'Alleen-lezen demo — wijzigingen zijn uitgeschakeld'
+        DOCUMENTATION: Documentatie
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Browser-taal fallbacks'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Koppel niet-ondersteunde browser-talen aan ondersteunde talen bij het instellen van de taal vanuit de `http_accept_language` header. Dit voegt geen ondersteunde talen toe of creëert geen taalroutes.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Specificeer een niet-ondersteunde browser-taalcode, bijv. `hr` of `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Fallback-talen
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Voer een lijst met ondersteunde taalcodes in. De eerste ondersteunde taal zal worden gebruikt.'
+        README: README
+        REPORT_ISSUE: 'Meld een probleem'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Verlaten
+            LEAVE_MESSAGE: 'Je hebt niet-opgeslagen wijzigingen. Toch verlaten?'
+            STAY: Blijven
+            SWITCH_LANGUAGE: Wisselen
+            SWITCH_LANGUAGE_MESSAGE: 'Je hebt niet-opgeslagen wijzigingen. Toch van taal wisselen?'
