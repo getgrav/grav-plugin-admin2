@@ -20,6 +20,7 @@ ICU:
             PAGE_TITLE: 'Kontokonfiguration — Grav Admin'
             SAVED: 'Konfiguration gemt'
             TITLE: Kontokonfiguration
+            SUBTITLE: 'Standardindstillinger for brugerkonti og registrering'
         ACCOUNTS_CONFIGURATION: Kontokonfiguration
         ACCOUNTS_STORAGE: Kontolagring
         ACCOUNTS_STORAGE_HELP: 'Lagringsmekanismen, der skal bruges til Flex Object-kontotypen. Filer er den traditionelle tilgang, hvor konti gemmes i en YAML-fil i en enkelt mappe, mens Mappe opretter en ny mappe til hver konto'
@@ -138,6 +139,7 @@ ICU:
             CACHE_OPTIONS: Cache-indstillinger
             CLEAR_CACHE: 'Ryd cache'
             FAILED_TO_CLEAR_CACHE: 'Kunne ikke rydde cache'
+            LABEL: Cache
         CACHE_CLEAR_JOB: 'Kør planlagt rydningsjob'
         CACHE_CLEAR_JOB_HELP: 'Med planlæggeren kan du periodisk rydde Grav-cachen'
         CACHE_CONTROL: 'HTTP Cache-Control'
@@ -207,6 +209,7 @@ ICU:
                 OFF_DESC: 'Twig i sideindhold er deaktiveret. Markup vises som skrevet.'
                 TRUSTED: 'Kun betroede roller'
                 TRUSTED_DESC: 'Kun superbrugere og indehavere af rettigheden „pages twig“ kan aktivere Twig på en side.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Kunne ikke gemme — disse felter er ugyldige: {fields}'
         CONFIGURATION: Konfiguration
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljø
@@ -389,6 +392,7 @@ ICU:
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Vælg det aktive miljø — styrer hvilken konfiguration du ser, og hvor gemte data placeres'
             SWITCH_AND_RELOAD: 'Skift & genindlæs'
             SWITCH_DISCARDS_UNSAVED: 'Skift af miljø genindlæser administratoren og kasserer ikke-gemte ændringer. Fortsæt?'
+            PREFIX: 'Miljø:'
         ERROR_FULL_BACKTRACE: 'Fuld backtrace-fejl'
         ERROR_HANDLER: Fejlhåndtering
         ERROR_SIMPLE: 'Simpel fejl'
@@ -445,11 +449,16 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Format-streng:'
                 SELECT_FORMAT: '— Vælg format —'
+                CUSTOM: Brugerdefineret…
+                CUSTOM_PLACEHOLDER: 'f.eks. Y-m-d H:i'
+                PREVIEW: 'Eksempel:'
             FILE:
                 LIMIT_REACHED: 'Dette felt accepterer højst {limit} fil(er).'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Ingen matchende filer'
                 NO_MEDIA_UPLOADED: 'Ingen mediefiler uploadet endnu'
+                SELECT_FILE: 'Vælg en fil…'
+                SELECT_FILES: 'Vælg filer…'
             FILE_PICKER_SOON: 'Filvælger — kommer snart'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Ingen ikoner fundet'
@@ -487,6 +496,10 @@ ICU:
                 PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: 'plugin er installeret. Aktivér Webhook-udløsere nedenfor for at aktivere.'
                 PLUGIN_IS_REQUIRED_FOR_WEBHOOK: 'plugin er påkrævet for webhook-funktionalitet.'
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-plugin påkrævet'
+            ADD_ITEM: 'Tilføj element'
+            SELECTIZE_PLACEHOLDER: 'Skriv og tryk Enter...'
+            SELECT_AN_ICON: 'Vælg et ikon...'
+            SELECT_A_PAGE: 'Vælg en side...'
         FILE: Fil
         FILE_EXTENSION: Filendelse
         FILE_STREAMS: Filstrømme
@@ -522,6 +535,7 @@ ICU:
             OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Objektet blev ændret et andet sted. Genindlæs venligst.'
             PREVIOUS: Forrige
             SEARCH: Søg...
+            ADD: Tilføj
         FLEX_OBJECT_CACHE_ENABLED: 'Aktivér objektcaching'
         FLEX_OBJECT_CACHE_LIFETIME: 'Levetid for objekt-cache (sekunder)'
         FLEX_RENDER_CACHE_ENABLED: 'Aktivér rendering-cache'
@@ -807,6 +821,9 @@ ICU:
             USERNAME_IS_REQUIRED: 'Brugernavn er påkrævet'
             VERIFY: Bekræft
             VERIFYING: Bekræfter...
+            CONTINUE_WITH: 'Fortsæt med {provider}'
+            OR_CONTINUE_WITH: 'Eller fortsæt med'
+            SSO_FAILED: 'Kunne ikke logge ind med den udbyder. Prøv venligst igen.'
         LOG_ERRORS: 'Log fejl'
         LOG_ERRORS_HELP: 'Log fejl til /logs mappen'
         LOG_HANDLER: Log-håndtering
@@ -817,6 +834,17 @@ ICU:
         MARKDOWN: Markdown
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Intet at forhåndsvise'
+            IMAGE_INSERT:
+                ALT_LABEL: Alt-tekst
+                ALT_PLACEHOLDER: 'Beskriv billedet'
+                FROM_URL: 'Indsæt fra URL'
+                INSERT: Indsæt
+                NO_MEDIA: 'Der er endnu ingen billeder tilknyttet denne side.'
+                PAGE_MEDIA: Sidemedier
+                SITE_MEDIA: Sitemedier
+                TITLE: 'Indsæt billede'
+                URL_LABEL: Billed-URL
+                URL_PLACEHOLDER: 'https://example.com/image.jpg eller media://file.jpg'
         MARKDOWN_EXTRA: 'Markdown Extra'
         MARKDOWN_EXTRA_HELP: 'Aktivér standardunderstøttelse af Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
         MEDIA:
@@ -835,6 +863,18 @@ ICU:
                 FOLDER_NAME: Mappenavn
                 NEW_FOLDER: 'Ny mappe'
                 UPLOAD_FILES: 'Upload filer'
+                CUSTOM_ORDER: 'Brugerdefineret rækkefølge'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Træk filer hertil eller klik på Upload for at komme i gang'
+                DROP_FILES_TO_UPLOAD: 'Træk filer herover for at uploade'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Træk filer herover for at uploade til **{path}**'
+                FOLDER_IS_EMPTY: 'Denne mappe er tom'
+                NO_RESULTS_FOUND: 'Ingen resultater fundet'
+                ORDER_SAVE_FAILED: 'Kunne ikke gemme den nye rækkefølge'
+                REORDER: 'Træk for at ændre rækkefølge'
+                REORDER_DONE: Udført
+                REORDER_MODE: Omarranger
+                ROOT: Medier
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Prøv et andet søgeord'
             MEDIA_TOOLBAR:
                 FOLDER: Mappe
                 GRID_VIEW: Gittervisning
@@ -844,6 +884,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Træk ind i editoren'
                 PAGE_MEDIA: Sidemedier
+                DROP_FILES_HERE: 'Slip filer her'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Slip filer eller klik for at uploade'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Slip eller klik for at tilføje flere'
+                INSERTED: 'Indsat {filename}'
+                INSERT_AT_CURSOR: 'Indsæt ved markør'
+                REORDER: 'Træk for at omarrangere'
+                REORDER_DONE: Færdig
+                REORDER_HINT: 'Træk billeder for at angive deres rækkefølge.'
+                REORDER_MODE: Omarranger
+            METADATA:
+                APPLY_TO_N: 'Anvend på {n} filer'
+                BATCH_EDITING: 'Redigerer {n} valgte filer — ændrede felter gælder for alle.'
+                BATCH_PARTIAL: 'Opdaterede {saved} filer, {failed} mislykkedes'
+                BATCH_SAVED: 'Opdaterede {n} filer'
+                EDIT: 'Rediger metadata'
+                EMPTY: 'Der er ikke konfigureret nogen redigerbare metadatafelter.'
+                LOAD_FAILED: 'Kunne ikke indlæse metadata'
+                RESET: Nulstil
+                SAVED: 'Metadata gemt'
+                SAVE_FAILED: 'Kunne ikke gemme metadata'
+                SAVING: Gemmer…
+                STORED: 'Gemte metadata'
+                TAGS_PLACEHOLDER: 'Tilføj tag…'
+                TITLE: Metadata
         MEDIA_TYPES: Medietyper
         MEMCACHED_PORT: Memcached-port
         MEMCACHED_PORT_HELP: Memcached-serverporten
@@ -872,6 +936,7 @@ ICU:
             THEMES: Temaer
             TOOLS: Værktøjer
             USERS: Brugere
+            UPDATES_AVAILABLE: '{count} opdatering(er) tilgængelig(e)'
         NEVER_CACHE_TWIG: 'Cache aldrig Twig'
         NEVER_CACHE_TWIG_HELP: 'Cache kun indhold og behandl Twig hver gang for sider. Ignorerer twig_first indstillingen.'
         NEWS_FEED_WIDGET:
@@ -1039,6 +1104,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Denne side indeholder Twig-markup, men Twig er slået fra for denne side, så det vises som rå tekst for besøgende.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig-konstrukt på denne side blev for nylig blokeret} other {# Twig-konstrukter på denne side blev for nylig blokeret}}.'
                 VIEW_REPORT: 'Se rapport'
+            FILTER:
+                ALL: Alle
+                ALL_TEMPLATES: 'Alle skabeloner'
+                BUTTON: Filtrer
+                CLEAR: Ryd
+                'NO': Nej
+                PUBLISHED: Udgivet
+                ROUTABLE: Routable
+                TEMPLATE: Skabelon
+                TITLE: 'Filtrér sider'
+                VISIBLE: Synlig
+                'YES': Ja
+            VALIDATION_FAILED_FOR_FIELDS: 'Kunne ikke gemme — disse felter er ugyldige: {fields}'
         PAGES_CONFIGURATION: Sidekonfiguration
         PAGES_FALLBACK_ONLY: 'Kun fallback for sider'
         PAGES_FALLBACK_ONLY_HELP: "Kun 'fallback' for at finde sideindhold gennem understøttede sprog. Standardadfærd er at vise ethvert fundet sprog, hvis det aktive sprog mangler"
@@ -1426,6 +1504,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Valgfri linje der vises under overskriften ved log-ind.'
             SHOW_POWERED_BY: 'Vis «Powered by Grav»'
             SHOW_POWERED_BY_DESC: 'Vis linjen «Powered by Grav CMS» på log-ind- og konfigurationsskærmene.'
+            EDITOR_KEYMAP: Genvejstaster
+            EDITOR_KEYMAP_DEFAULT: Standard
+            EDITOR_KEYMAP_DESC: 'Brug Vim-genvejstaster i Markdown- og kodeditorerne. Standard bevarer almindelig redigering.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tegn: bogstaver, tal, bindestreger, understregninger'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto oprettet — velkommen til Grav'
@@ -1635,6 +1717,8 @@ ICU:
             USER_ENABLED: 'Bruger {username} aktiveret'
             USER_SAVED: 'Bruger {username} gemt'
             USER_STATE_FAILED: 'Kunne ikke ændre status for {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Dette er en skrivebeskyttet demo — ændringer er deaktiveret.'
+            USER_ROW_ACTION_FAILED: 'Kunne ikke udføre handlingen: {label}'
         TOGGLE_DARK_MODE: 'Skift mørk tilstand'
         TOGGLE_MENU: 'Skift menu'
         TOOLS:
@@ -1748,6 +1832,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: PHP-version
             TOOLS_GRAV_ADMIN: 'Værktøjer — Grav Admin'
+            AUDIT:
+                ACTOR: Aktør
+                ALL_EVENTS: 'Alle begivenheder'
+                ALL_SEVERITIES: 'Alle alvorlighedsgrader'
+                AUTH_METHOD: Godkendelsesmetode
+                CHANGES: Ændringer
+                COVERAGE_DETAILED: Detaljeret
+                DESCRIPTION: "En oversigt over API-aktivitet: logins, indhold, bruger-, konfigurations- og pakkeændringer. Admin Next kører gennem API'et, så dette dækker administratoren samt eventuelle eksterne API-klienter."
+                DETAILS: Detaljer
+                EVENT: Begivenhed
+                EVENT_CODE: Begivenhedskode
+                FAILED_TO_LOAD: 'Kunne ikke indlæse revisionsspor'
+                FROM: Fra
+                IP: IP
+                LOADING: 'Indlæser revisionsspor...'
+                NO_ENTRIES: 'Ingen revisionsposter fundet.'
+                REFRESH: Opdater
+                SEARCH_PLACEHOLDER: 'Søg efter aktør, mål, hændelse, IP...'
+                SEVERITY: Alvorlighedsgrad
+                SHOWING: Viser
+                TARGET: Mål
+                TO: Til
+                USER_AGENT: Brugeragent
+                WHEN: Hvornår
         TOP_BANNER:
             PREVIOUS: Forrige
             SITE_NOTIFICATION: Webstedsnotifikation
@@ -1941,3 +2049,23 @@ ICU:
         'YES': Ja
         YUBIKEY_HELP: 'Indsæt din YubiKey i din computer og klik på knappen for at generere en OTP. De første 12 tegn er dit klient-ID, som vil blive gemt.'
         YUBIKEY_ID: YubiKey-ID
+        CONFIRM: Bekræft
+        DEMO:
+            BANNER_COUNTDOWN: 'Næste nulstilling om {time}'
+            BANNER_LABEL: Demo-tilstand
+            BANNER_MESSAGE: 'Demo-tilstand — ændringer nulstilles hvert {minutes, plural, one{# minut} other{# minutter}}'
+            BANNER_READONLY: 'Skrivebeskyttet demo — ændringer er deaktiveret'
+        DOCUMENTATION: Dokumentation
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Alternativer for browsersprog'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Knyt ikke-understøttede browsersprog til understøttede sprog, når sproget indstilles fra `http_accept_language`-headeren. Dette tilføjer ikke understøttede sprog eller opretter sprogruter.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Angiv en ikke-understøttet browsersprogkode, f.eks. `hr` eller `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Fallback-sprog
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Indtast venligst en liste over understøttede sprogkoder. Det første understøttede sprog vil blive anvendt.'
+        README: README
+        REPORT_ISSUE: 'Rapportér et problem'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Forlad
+            LEAVE_MESSAGE: 'Du har ikke-gemte ændringer. Vil du forlade siden alligevel?'
+            STAY: Bliv
+            SWITCH_LANGUAGE: Skift
+            SWITCH_LANGUAGE_MESSAGE: 'Du har ikke-gemte ændringer. Vil du skifte sprog alligevel?'
