@@ -199,6 +199,19 @@ ICU:
                 LEAK_PAGE_OFF: このページにはTwigマークアップが含まれていますが、このページでTwigがオフになっているため、訪問者にはプレーンテキストとして表示されます。
                 RECENT_BLOCKS: '{n, plural, other {このページ内の # 個のTwig構成要素が最近ブロックされました}}。'
                 VIEW_REPORT: レポートを表示
+            FILTER:
+                ALL: すべて
+                ALL_TEMPLATES: すべてのテンプレート
+                BUTTON: フィルター
+                CLEAR: クリア
+                'NO': いいえ
+                PUBLISHED: 公開済み
+                ROUTABLE: ルーティング可能
+                TEMPLATE: テンプレート
+                TITLE: ページをフィルター
+                VISIBLE: 表示中
+                'YES': はい
+            VALIDATION_FAILED_FOR_FIELDS: '保存できませんでした — 以下のフィールドが不正です: {fields}'
         FIELDS:
             CLEAR_DATE: 日付をクリア
             REGENERATE_SLUG: ページタイトルから自動再生成
@@ -237,6 +250,9 @@ ICU:
             DATE_FORMAT:
                 SELECT_FORMAT: '— フォーマットを選択 —'
                 FORMAT_STRING: 'フォーマット文字列:'
+                CUSTOM: カスタム…
+                CUSTOM_PLACEHOLDER: '例: Y-m-d H:i'
+                PREVIEW: 'プレビュー:'
             ICON_PICKER:
                 SEARCH_ICONS: アイコンを検索...
                 NO_ICONS_FOUND: アイコンが見つかりません
@@ -274,8 +290,14 @@ ICU:
             FILE_PICKER:
                 NO_MEDIA_UPLOADED: メディアファイルがまだアップロードされていません
                 NO_MATCHING_FILES: 一致するファイルはありません
+                SELECT_FILE: ファイルを選択…
+                SELECT_FILES: ファイルを選択…
             FILE:
                 LIMIT_REACHED: 'このフィールドは最大 {limit} 個のファイルをアップロードできます。'
+            ADD_ITEM: アイテムを追加
+            SELECTIZE_PLACEHOLDER: 入力してEnterキーを押してください...
+            SELECT_AN_ICON: アイコンを選択...
+            SELECT_A_PAGE: ページを選択...
         NAV:
             DASHBOARD: ダッシュボード
             CONFIGURATION: 設定
@@ -287,6 +309,7 @@ ICU:
             TOOLS: ツール
             SYSTEM: システム
             SETTINGS: 設定
+            UPDATES_AVAILABLE: '{count} 件のアップデートが利用可能です'
         LANG:
             SWITCH_LANGUAGE: コンテンツ言語を切り替え
             TRANSLATIONS: 翻訳
@@ -467,6 +490,17 @@ ICU:
             NO_VIEW_DATA_YET: ビューデータがまだありません
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: プレビューする内容がありません
+            IMAGE_INSERT:
+                ALT_LABEL: 代替テキスト
+                ALT_PLACEHOLDER: 画像の説明
+                FROM_URL: URLから挿入
+                INSERT: 挿入
+                NO_MEDIA: このページにはまだ画像が添付されていません。
+                PAGE_MEDIA: ページメディア
+                SITE_MEDIA: サイトメディア
+                TITLE: 画像を挿入
+                URL_LABEL: 画像URL
+                URL_PLACEHOLDER: 'https://example.com/image.jpg または media://file.jpg'
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: ウィジェットメニューを閉じる
         MEDIA:
@@ -483,6 +517,18 @@ ICU:
                 UPLOAD_FILES: ファイルをアップロード
                 NEW_FOLDER: 新しいフォルダー
                 CREATE: 作成
+                CUSTOM_ORDER: カスタム順序
+                DROP_FILES_OR_CLICK_UPLOAD: ここにファイルをドロップするか、「アップロード」をクリックして開始します
+                DROP_FILES_TO_UPLOAD: ファイルをドロップしてアップロード
+                DROP_FILES_TO_UPLOAD_TO_PATH: '**{path}** にアップロードするにはファイルをドロップしてください'
+                FOLDER_IS_EMPTY: このフォルダーは空です
+                NO_RESULTS_FOUND: 結果が見つかりません
+                ORDER_SAVE_FAILED: 新しい順序の保存に失敗しました
+                REORDER: ドラッグして並べ替え
+                REORDER_DONE: 完了
+                REORDER_MODE: 並べ替え
+                ROOT: メディア
+                TRY_A_DIFFERENT_SEARCH_TERM: 別の検索ワードを試してください
             MEDIA_TOOLBAR:
                 SEARCH_MEDIA: メディアを検索...
                 GRID_VIEW: グリッド表示
@@ -494,11 +540,36 @@ ICU:
             PAGE_MEDIA:
                 PAGE_MEDIA: ページメディア
                 DRAG_INTO_EDITOR: エディターにドラッグ
+                DROP_FILES_HERE: ファイルをここにドロップ
+                DROP_FILES_OR_CLICK_TO_UPLOAD: ファイルをドロップするか、クリックしてアップロード
+                DROP_OR_CLICK_TO_ADD_MORE: ドロップするか、クリックして追加
+                INSERTED: '{filename} を挿入しました'
+                INSERT_AT_CURSOR: カーソル位置に挿入
+                REORDER: ドラッグして並べ替え
+                REORDER_DONE: 完了
+                REORDER_HINT: 画像をドラッグして順序を設定します。
+                REORDER_MODE: 並べ替え
+            METADATA:
+                APPLY_TO_N: '{n} 個のファイルに適用'
+                BATCH_EDITING: '{n} 個のファイルを選択して編集中 — 変更されたフィールドはすべてに適用されます。'
+                BATCH_PARTIAL: '{saved} 個のファイルを更新、{failed} 個の更新に失敗しました'
+                BATCH_SAVED: '{n} 個のファイルを更新しました'
+                EDIT: メタデータの編集
+                EMPTY: 編集可能なメタデータフィールドが設定されていません。
+                LOAD_FAILED: メタデータを読み込めませんでした
+                RESET: リセット
+                SAVED: メタデータを保存しました
+                SAVE_FAILED: メタデータを保存できませんでした
+                SAVING: 保存中…
+                STORED: 保存されたメタデータ
+                TAGS_PLACEHOLDER: タグを追加…
+                TITLE: メタデータ
         UPLOAD: アップロード
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: キャッシュをクリア
             CACHE_OPTIONS: キャッシュオプション
             FAILED_TO_CLEAR_CACHE: キャッシュのクリアに失敗しました
+            LABEL: キャッシュ
         CONFIRM_ACTION: 操作を確認
         VIEW_SITE_BUTTON:
             OPEN_SITE_FRONTEND_IN_A_NEW_TAB: サイトのフロントエンドを新しいタブで開く
@@ -623,6 +694,30 @@ ICU:
                 DISK_FREE_OF: '{total} 中 {free} 空き'
             TOOLS_GRAV_ADMIN: 'ツール — Grav Admin'
             BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: バックアップ、スケジューラ、ログ、診断
+            AUDIT:
+                ACTOR: アクター
+                ALL_EVENTS: すべてのイベント
+                ALL_SEVERITIES: すべての重要度
+                AUTH_METHOD: 認証方法
+                CHANGES: 変更点
+                COVERAGE_DETAILED: 詳細
+                DESCRIPTION: 'APIアクティビティの記録です：ログイン、コンテンツ、ユーザー、構成、パッケージの変更。Admin NextはAPI経由でルーティングされるため、管理画面に加え、外部のAPIクライアントによる操作も含まれます。'
+                DETAILS: 詳細
+                EVENT: イベント
+                EVENT_CODE: イベントコード
+                FAILED_TO_LOAD: 監査証跡の読み込みに失敗しました
+                FROM: 開始日時
+                IP: IPアドレス
+                LOADING: 監査証跡を読み込み中...
+                NO_ENTRIES: 監査エントリが見つかりません。
+                REFRESH: 更新
+                SEARCH_PLACEHOLDER: アクター、ターゲット、イベント、IPで検索...
+                SEVERITY: 重要度
+                SHOWING: 表示中
+                TARGET: ターゲット
+                TO: 終了日時
+                USER_AGENT: ユーザーエージェント
+                WHEN: 日時
         INSTALLING: インストール中...
         ACCESS_DENIED:
             ACCESS_DENIED: アクセスが拒否されました
@@ -650,6 +745,7 @@ ICU:
             CONFIRM_DELETE_WITH_OVERRIDES: '{name} とそのすべての設定上書きを削除しますか？'
             SWITCH_AND_RELOAD: '切り替え & 再読み込み'
             SWITCH_DISCARDS_UNSAVED: 環境を切り替えると、管理パネルが再読み込みされ、保存されていない変更は破棄されます。続行しますか？
+            PREFIX: '環境:'
         INLINE_ICON_PICKER:
             SEARCH_ICONS: アイコンを検索...
             NO_ICONS_FOUND: アイコンが見つかりません
@@ -709,6 +805,7 @@ ICU:
                 OFF_DESC: ページコンテンツ内のTwigは無効になっています。マークアップは記述された通りに表示されます。
                 TRUSTED: 信頼されたロールのみ
                 TRUSTED_DESC: 'スーパーユーザーおよび「pages twig」権限を持つユーザーのみが、ページでTwigを有効にできます。'
+            VALIDATION_FAILED_FOR_FIELDS: '保存できませんでした。以下のフィールドが正しくありません: {fields}'
         FLEX_OBJECTS:
             SEARCH: 検索...
             PREVIOUS: 前へ
@@ -735,6 +832,7 @@ ICU:
                 SHOW_INFO: オブジェクト情報を表示
                 STORAGE_KEY: ストレージキー
                 TITLE: オブジェクト情報
+            ADD: 追加
         FORGOT:
             UNABLE_TO_CONNECT_TO_SERVER: サーバーに接続できません。
             FORGOT_PASSWORD_GRAV_ADMIN: 'パスワードをお忘れの方 — Grav Admin'
@@ -772,6 +870,9 @@ ICU:
             TWOFA_SUBTITLE: 続行するには認証アプリのコードを入力してください
             SUBTITLE: サインインしてサイトを管理
             AUTH_CODE_PROMPT: '認証アプリを開き、**{username}** の 6 桁コードを入力してください。'
+            CONTINUE_WITH: '{provider} で続ける'
+            OR_CONTINUE_WITH: または以下で続ける
+            SSO_FAILED: そのプロバイダーではサインインできませんでした。もう一度やり直してください。
         PLUGIN:
             BACK_TO_DASHBOARD: ダッシュボードへ戻る
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: このプラグインページに利用可能なコンテンツはありません。
@@ -951,6 +1052,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: サインイン画面の見出しの下に表示されるオプションの文字列です。
             SHOW_POWERED_BY: '「Powered by Grav」を表示'
             SHOW_POWERED_BY_DESC: 'サインイン画面およびセットアップ画面に「Powered by Grav CMS」を表示します。'
+            EDITOR_KEYMAP: キーバインディング
+            EDITOR_KEYMAP_DEFAULT: デフォルト
+            EDITOR_KEYMAP_DESC: MarkdownおよびコードエディタでVimキーバインディングを使用します。デフォルトでは標準の編集機能が維持されます。
+            EDITOR_KEYMAP_VIM: Vim
         CUSTOM: カスタム
         PREVIEW: プレビュー
         SETUP:
@@ -1105,6 +1210,7 @@ ICU:
             FAILED_TO_SAVE: アカウント設定の保存に失敗しました
             MODIFIED_ELSEWHERE: 設定が別の場所で変更されました。再読み込みしてください。
             NO_FIELDS: 利用可能な設定オプションはありません。
+            SUBTITLE: ユーザーアカウントおよび登録のデフォルト設定
         PAGINATION:
             PAGE_OF: '{total} ページ中 {current} ページ目'
         INFO: 情報
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'ユーザー {username} が有効化されました'
             USER_SAVED: 'ユーザー {username} が保存されました'
             USER_STATE_FAILED: '{username} の状態変更に失敗しました: {detail}'
+            DEMO_MODE_BLOCKED: 'これは読み取り専用のデモです — 変更は無効になっています。'
+            USER_ROW_ACTION_FAILED: 'アクションを完了できませんでした: {label}'
         TRANSLATIONS: 翻訳
         TRANSLATIONS_FALLBACK: 翻訳フォールバック
         TRANSLATIONS_FALLBACK_HELP: アクティブな言語が存在しない場合、サポートされている翻訳を通じてフォールバックします
@@ -1941,6 +2049,26 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'user/data、user/accounts、user/config 配下のファイル（証明書、キー、トークン、データベースを含む）が、HTTP経由で直接ダウンロード可能な状態です。これは通常、お使いのWebサーバーでGravの.htaccessルールが適用されていないことを示しています。'
             USER_FOLDER_EXPOSED_LEARN_MORE: Webサーバーのセキュリティ対策について
             USER_FOLDER_EXPOSED_TITLE: 'セキュリティリスク: ユーザーデータフォルダーがWebからアクセス可能な状態です'
+        CONFIRM: 確認
+        DEMO:
+            BANNER_COUNTDOWN: '次のリセットまで {time}'
+            BANNER_LABEL: デモモード
+            BANNER_MESSAGE: 'デモモード — {minutes, plural, one{#分} other{#分}}ごとに変更がリセットされます'
+            BANNER_READONLY: '読み取り専用デモ — 変更は無効化されています'
+        DOCUMENTATION: ドキュメント
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: ブラウザ言語のフォールバック
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: '`http_accept_language`ヘッダーから言語を設定する際、サポートされていないブラウザ言語をサポートされている言語にマッピングします。これによりサポート対象の言語が追加されたり、言語ルートが作成されたりすることはありません。'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'サポートされていないブラウザの言語コード（例: `hr` や `sr-Latn`）を指定します。'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: フォールバック言語
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: サポートされている言語コードのリストを入力してください。最初に指定したサポート言語が使用されます。
+        README: README
+        REPORT_ISSUE: 問題を報告
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: 離れる
+            LEAVE_MESSAGE: 保存されていない変更があります。このまま離れますか？
+            STAY: 留まる
+            SWITCH_LANGUAGE: 切り替え
+            SWITCH_LANGUAGE_MESSAGE: 保存されていない変更があります。このまま言語を切り替えますか？
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA 有効'
         2FA_SECRET: '2FA シークレット'
