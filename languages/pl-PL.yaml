@@ -20,6 +20,7 @@ ICU:
             PAGE_TITLE: 'Konfiguracja kont — Grav Admin'
             SAVED: 'Konfiguracja została zapisana'
             TITLE: 'Konfiguracja kont'
+            SUBTITLE: 'Domyślne ustawienia kont użytkowników i rejestracji'
         ACCOUNTS_CONFIGURATION: 'Konfiguracja kont'
         ACCOUNTS_STORAGE: 'Przechowywanie kont'
         ACCOUNTS_STORAGE_HELP: 'Mechanizm przechowywania używany dla typu Flex Object Account. Pliki to tradycyjne podejście, w którym konta są przechowywane w pliku YAML w jednym folderze, podczas gdy Folder tworzy nowy folder dla każdego konta.'
@@ -138,6 +139,7 @@ ICU:
             CACHE_OPTIONS: 'Opcje pamięci podręcznej'
             CLEAR_CACHE: 'Wyczyść pamięć podręczną'
             FAILED_TO_CLEAR_CACHE: 'Nie udało się wyczyścić pamięci podręcznej'
+            LABEL: 'Pamięć podręczna'
         CACHE_CLEAR_JOB: 'Uruchom zaplanowane zadanie czyszczenia'
         CACHE_CLEAR_JOB_HELP: 'Dzięki harmonogramowi możesz okresowo czyścić pamięć podręczną Grav'
         CACHE_CONTROL: 'HTTP Cache-Control'
@@ -207,6 +209,7 @@ ICU:
                 OFF_DESC: 'Twig w treści strony jest wyłączony. Znaczniki są wyświetlane w postaci tekstowej.'
                 TRUSTED: 'Tylko zaufane role'
                 TRUSTED_DESC: 'Tylko superużytkownicy oraz osoby posiadające uprawnienie „pages twig” mogą włączyć Twig na stronie.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Nie można zapisać — te pola są nieprawidłowe: {fields}'
         CONFIGURATION: Konfiguracja
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Środowisko
@@ -389,6 +392,7 @@ ICU:
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Wybierz aktywne środowisko — steruje tym, którą konfigurację widzisz i gdzie trafiają zapisy'
             SWITCH_AND_RELOAD: 'Przełącz i przeładuj'
             SWITCH_DISCARDS_UNSAVED: 'Przełączenie środowiska spowoduje przeładowanie panelu administracyjnego i utratę niezapisanych zmian. Kontynuować?'
+            PREFIX: 'Środowisko:'
         ERROR_FULL_BACKTRACE: 'Pełny błąd śledzenia (backtrace)'
         ERROR_HANDLER: 'Program obsługi błędów'
         ERROR_SIMPLE: 'Prosty błąd'
@@ -445,9 +449,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Ciąg formatujący:'
                 SELECT_FORMAT: '— Wybierz format —'
+                CUSTOM: Niestandardowe…
+                CUSTOM_PLACEHOLDER: 'np. Y-m-d H:i'
+                PREVIEW: 'Podgląd:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Brak pasujących plików'
                 NO_MEDIA_UPLOADED: 'Nie przesłano jeszcze żadnych plików multimedialnych'
+                SELECT_FILE: 'Wybierz plik…'
+                SELECT_FILES: 'Wybierz pliki…'
             FILE_PICKER_SOON: 'Wybór plików — wkrótce'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Nie znaleziono ikon'
@@ -487,6 +496,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Wymagana wtyczka Webhook'
             FILE:
                 LIMIT_REACHED: 'To pole akceptuje maksymalnie {limit} plik(ów).'
+            ADD_ITEM: 'Dodaj element'
+            SELECTIZE_PLACEHOLDER: 'Wpisz i naciśnij Enter...'
+            SELECT_AN_ICON: 'Wybierz ikonę...'
+            SELECT_A_PAGE: 'Wybierz stronę...'
         FILE: Plik
         FILE_EXTENSION: 'Rozszerzenie pliku'
         FILE_STREAMS: 'Strumienie plików'
@@ -522,6 +535,7 @@ ICU:
                 SHOW_INFO: 'Pokaż informacje o obiekcie'
                 STORAGE_KEY: 'Klucz pamięci'
                 TITLE: 'Informacje o obiekcie'
+            ADD: Dodaj
         FLEX_OBJECT_CACHE_ENABLED: 'Włącz buforowanie obiektów'
         FLEX_OBJECT_CACHE_LIFETIME: 'Czas życia pamięci podręcznej obiektów (sekundy)'
         FLEX_RENDER_CACHE_ENABLED: 'Włącz buforowanie renderowania'
@@ -807,6 +821,9 @@ ICU:
             USERNAME_IS_REQUIRED: 'Nazwa użytkownika jest wymagana'
             VERIFY: Weryfikuj
             VERIFYING: Weryfikowanie...
+            CONTINUE_WITH: 'Kontynuuj przez {provider}'
+            OR_CONTINUE_WITH: 'Lub kontynuuj przez'
+            SSO_FAILED: 'Nie udało się zalogować przy użyciu tego dostawcy. Spróbuj ponownie.'
         LOG_ERRORS: 'Rejestruj błędy'
         LOG_ERRORS_HELP: 'Zapisuj błędy w folderze /logs'
         LOG_HANDLER: 'Procedura obsługi logów'
@@ -817,6 +834,17 @@ ICU:
         MARKDOWN: Markdown
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Brak podglądu'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Tekst alternatywny'
+                ALT_PLACEHOLDER: 'Opisz obraz'
+                FROM_URL: 'Wstaw z URL'
+                INSERT: Wstaw
+                NO_MEDIA: 'Brak obrazów załączonych do tej strony.'
+                PAGE_MEDIA: 'Media strony'
+                SITE_MEDIA: 'Media witryny'
+                TITLE: 'Wstaw obraz'
+                URL_LABEL: 'URL obrazu'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg lub media://file.jpg'
         MARKDOWN_EXTRA: 'Markdown extra'
         MARKDOWN_EXTRA_HELP: 'Włącz domyślną obsługę Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
         MEDIA:
@@ -835,6 +863,18 @@ ICU:
                 FOLDER_NAME: 'Nazwa folderu'
                 NEW_FOLDER: 'Nowy folder'
                 UPLOAD_FILES: 'Prześlij pliki'
+                CUSTOM_ORDER: 'Kolejność niestandardowa'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Upuść pliki tutaj lub kliknij Prześlij, aby rozpocząć'
+                DROP_FILES_TO_UPLOAD: 'Upuść pliki, aby przesłać'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Upuść pliki, aby przesłać do **{path}**'
+                FOLDER_IS_EMPTY: 'Ten folder jest pusty'
+                NO_RESULTS_FOUND: 'Nie znaleziono wyników'
+                ORDER_SAVE_FAILED: 'Nie udało się zapisać nowej kolejności'
+                REORDER: 'Przeciągnij, aby zmienić kolejność'
+                REORDER_DONE: Gotowe
+                REORDER_MODE: 'Zmień kolejność'
+                ROOT: Media
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Spróbuj użyć innego wyszukiwanego hasła'
             MEDIA_TOOLBAR:
                 FOLDER: Folder
                 GRID_VIEW: 'Widok siatki'
@@ -844,6 +884,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Przeciągnij do edytora'
                 PAGE_MEDIA: 'Multimedia strony'
+                DROP_FILES_HERE: 'Upuść pliki tutaj'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Upuść pliki lub kliknij, aby przesłać'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Upuść lub kliknij, aby dodać więcej'
+                INSERTED: 'Wstawiono {filename}'
+                INSERT_AT_CURSOR: 'Wstaw w miejscu kursora'
+                REORDER: 'Przeciągnij, aby zmienić kolejność'
+                REORDER_DONE: Gotowe
+                REORDER_HINT: 'Przeciągnij obrazy, aby ustawić ich kolejność.'
+                REORDER_MODE: 'Zmień kolejność'
+            METADATA:
+                APPLY_TO_N: 'Zastosuj do {n} plików'
+                BATCH_EDITING: 'Edycja {n} wybranych plików — zmienione pola zostaną zastosowane do wszystkich.'
+                BATCH_PARTIAL: 'Zaktualizowano {saved} plików, {failed} nieudanych'
+                BATCH_SAVED: 'Zaktualizowano {n} plików'
+                EDIT: 'Edytuj metadane'
+                EMPTY: 'Nie skonfigurowano żadnych pól metadanych do edycji.'
+                LOAD_FAILED: 'Nie można było wczytać metadanych'
+                RESET: Resetuj
+                SAVED: 'Metadane zapisane'
+                SAVE_FAILED: 'Nie można było zapisać metadanych'
+                SAVING: Zapisywanie…
+                STORED: 'Zapisane metadane'
+                TAGS_PLACEHOLDER: 'Dodaj tag…'
+                TITLE: Metadane
         MEDIA_TYPES: 'Typy mediów'
         MEMCACHED_PORT: 'Port Memcached'
         MEMCACHED_PORT_HELP: 'Port serwera Memcached'
@@ -872,6 +936,7 @@ ICU:
             THEMES: Motywy
             TOOLS: Narzędzia
             USERS: Użytkownicy
+            UPDATES_AVAILABLE: 'Dostępna/e {count} aktualizacja/e'
         NEVER_CACHE_TWIG: 'Nigdy nie buforuj Twig'
         NEVER_CACHE_TWIG_HELP: 'Buforuj tylko zawartość i przetwarzaj Twig przy każdym żądaniu strony. Ignoruje ustawienie twig_first.'
         NEWS_FEED_WIDGET:
@@ -1039,6 +1104,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Ta strona zawiera znaczniki Twig, ale obsługa Twig jest wyłączona dla tej strony, więc dla odwiedzających wyświetlany jest surowy tekst.'
                 RECENT_BLOCKS: '{n, plural, one {# element Twig na tej stronie został niedawno zablokowany} few {# elementy Twig na tej stronie zostały niedawno zablokowane} many {# elementów Twig na tej stronie zostało niedawno zablokowanych} other {# element Twig na tej stronie został niedawno zablokowany}}.'
                 VIEW_REPORT: 'Zobacz raport'
+            FILTER:
+                ALL: Wszystkie
+                ALL_TEMPLATES: 'Wszystkie szablony'
+                BUTTON: Filtruj
+                CLEAR: Wyczyść
+                'NO': Nie
+                PUBLISHED: Opublikowano
+                ROUTABLE: Routable
+                TEMPLATE: Szablon
+                TITLE: 'Filtruj strony'
+                VISIBLE: Widoczne
+                'YES': Tak
+            VALIDATION_FAILED_FOR_FIELDS: 'Nie można zapisać — te pola są nieprawidłowe: {fields}'
         PAGES_CONFIGURATION: 'Konfiguracja stron'
         PAGES_FALLBACK_ONLY: 'Tylko strony zapasowe (fallback)'
         PAGES_FALLBACK_ONLY_HELP: '„Fallback” pozwala znaleźć treść strony w obsługiwanych językach. Domyślnym zachowaniem jest wyświetlenie jakiegokolwiek znalezionego języka, jeśli brak jest aktywnego języka.'
@@ -1426,6 +1504,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Opcjonalna linia wyświetlana pod nagłówkiem logowania.'
             SHOW_POWERED_BY: 'Pokaż „Powered by Grav”'
             SHOW_POWERED_BY_DESC: 'Pokaż linię „Powered by Grav CMS” na ekranach logowania i konfiguracji.'
+            EDITOR_KEYMAP: 'Skróty klawiszowe'
+            EDITOR_KEYMAP_DEFAULT: Domyślne
+            EDITOR_KEYMAP_DESC: 'Użyj skrótów Vim w edytorach Markdown i kodu. Ustawienie domyślne zachowuje standardową edycję.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaki: litery, cyfry, myślniki, podkreślenia'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Konto administratora utworzone — witaj w Grav'
@@ -1635,6 +1717,8 @@ ICU:
             USER_ENABLED: 'Włączono użytkownika {username}'
             USER_SAVED: 'Zapisano użytkownika {username}'
             USER_STATE_FAILED: 'Nie udało się zmienić stanu użytkownika {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'To jest wersja demonstracyjna tylko do odczytu — zmiany są wyłączone.'
+            USER_ROW_ACTION_FAILED: 'Nie można wykonać akcji: {label}'
         TOGGLE_DARK_MODE: 'Przełącz tryb ciemny'
         TOGGLE_MENU: 'Przełącz menu'
         TOOLS:
@@ -1748,6 +1832,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'Wersja PHP'
             TOOLS_GRAV_ADMIN: 'Narzędzia — Grav Admin'
+            AUDIT:
+                ACTOR: Podmiot
+                ALL_EVENTS: 'Wszystkie zdarzenia'
+                ALL_SEVERITIES: 'Wszystkie poziomy istotności'
+                AUTH_METHOD: 'Metoda autoryzacji'
+                CHANGES: Zmiany
+                COVERAGE_DETAILED: Szczegółowe
+                DESCRIPTION: 'Rejestr aktywności API: logowania, zmiany treści, użytkowników, konfiguracji oraz pakietów. Admin Next korzysta z API, więc obejmuje to działania w panelu administracyjnym, jak i zewnętrznych klientów API.'
+                DETAILS: Szczegóły
+                EVENT: Zdarzenie
+                EVENT_CODE: 'Kod zdarzenia'
+                FAILED_TO_LOAD: 'Nie udało się załadować ścieżki audytu'
+                FROM: Od
+                IP: IP
+                LOADING: 'Ładowanie ścieżki audytu...'
+                NO_ENTRIES: 'Nie znaleziono wpisów w ścieżce audytu.'
+                REFRESH: Odśwież
+                SEARCH_PLACEHOLDER: 'Szukaj aktora, obiektu, zdarzenia, IP...'
+                SEVERITY: Waga
+                SHOWING: Wyświetlanie
+                TARGET: Obiekt
+                TO: Do
+                USER_AGENT: 'User agent'
+                WHEN: Kiedy
         TOP_BANNER:
             PREVIOUS: Poprzedni
             SITE_NOTIFICATION: 'Powiadomienie witryny'
@@ -1941,3 +2049,23 @@ ICU:
         'YES': Tak
         YUBIKEY_HELP: 'Włóż swój klucz YubiKey do komputera i kliknij przycisk, aby wygenerować kod OTP. Pierwsze 12 znaków to Twój identyfikator klienta, który zostanie zapisany.'
         YUBIKEY_ID: 'Identyfikator YubiKey'
+        CONFIRM: Potwierdź
+        DEMO:
+            BANNER_COUNTDOWN: 'Następny reset za {time}'
+            BANNER_LABEL: 'Tryb demo'
+            BANNER_MESSAGE: 'Tryb demo — zmiany są resetowane co {minutes, plural, one{# minutę} few{# minuty} other{# minut}}'
+            BANNER_READONLY: 'Wersja demo tylko do odczytu — zmiany są wyłączone'
+        DOCUMENTATION: Dokumentacja
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Zapasowe języki przeglądarki'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Mapuj nieobsługiwane języki przeglądarki na języki obsługiwane podczas ustawiania języka z nagłówka `http_accept_language`. Nie dodaje to obsługiwanych języków ani nie tworzy tras językowych.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Podaj nieobsługiwany kod języka przeglądarki, np. `hr` lub `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'Języki zapasowe'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Wprowadź listę obsługiwanych kodów języków. Użyty zostanie pierwszy obsługiwany język.'
+        README: README
+        REPORT_ISSUE: 'Zgłoś problem'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Opuść
+            LEAVE_MESSAGE: 'Masz niezapisane zmiany. Opuścić stronę?'
+            STAY: Zostań
+            SWITCH_LANGUAGE: Przełącz
+            SWITCH_LANGUAGE_MESSAGE: 'Masz niezapisane zmiany. Przełączyć język mimo to?'

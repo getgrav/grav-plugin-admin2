@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: 'Параметри кешу'
             CLEAR_CACHE: 'Очистити кеш'
             FAILED_TO_CLEAR_CACHE: 'Не вдалося очистити кеш'
+            LABEL: Кеш
         CANCEL: Скасувати
         CLEAR_SEARCH: 'Очистити пошук'
         CLOSE: Закрити
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig у вмісті сторінки вимкнено. Розмітка відображається як звичайний текст.'
                 TRUSTED: 'Лише довірені ролі'
                 TRUSTED_DESC: 'Тільки суперкористувачі та власники дозволу «pages twig» можуть увімкнути Twig на сторінці.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Не вдалося зберегти — ці поля недійсні: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Середовище
             EXPORT_YAML: 'Експортувати YAML'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Не вдалося видалити середовище'
             SWITCH_AND_RELOAD: 'Перемкнути та перезавантажити'
             SWITCH_DISCARDS_UNSAVED: 'Переключення середовища перезавантажує адміністратор і відкидає незбережені зміни. Продовжити?'
+            PREFIX: 'Середовище:'
         EXPAND_ALL: 'Розгорнути все'
         EXPAND_SIDEBAR: 'Розгорнути бічну панель'
         EXPERT_MODE: 'Експертний режим'
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Рядок формату:'
                 SELECT_FORMAT: '— Виберіть формат —'
+                CUSTOM: Власне…
+                CUSTOM_PLACEHOLDER: 'напр. Y-m-d H:i'
+                PREVIEW: 'Попередній перегляд:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Немає відповідних файлів'
                 NO_MEDIA_UPLOADED: 'Жодних файлів медіа ще не завантажено'
+                SELECT_FILE: 'Вибрати файл…'
+                SELECT_FILES: 'Вибрати файли…'
             FILE_PICKER_SOON: 'Вибір файлів — найближчим часом'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Іконок не знайдено'
@@ -270,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Потрібен плагін Webhook'
             FILE:
                 LIMIT_REACHED: 'Це поле приймає щонайбільше {limit} файлів.'
+            ADD_ITEM: 'Додати елемент'
+            SELECTIZE_PLACEHOLDER: 'Введіть і натисніть Enter...'
+            SELECT_AN_ICON: 'Виберіть іконку...'
+            SELECT_A_PAGE: 'Виберіть сторінку...'
         FLEX_OBJECTS:
             ACTIONS: Дії
             BACK_TO_LIST: 'Повернутися до списку'
@@ -296,6 +308,7 @@ ICU:
                 SHOW_INFO: "Показати інформацію про об'єкт"
                 STORAGE_KEY: 'Ключ сховища'
                 TITLE: "Інформація про об'єкт"
+            ADD: Додати
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Закрити меню віджетів'
         FORGOT:
@@ -358,8 +371,22 @@ ICU:
             USERNAME_IS_REQUIRED: "Ім'я користувача обов'язкове"
             VERIFY: Перевірити
             VERIFYING: Перевірка...
+            CONTINUE_WITH: 'Продовжити через {provider}'
+            OR_CONTINUE_WITH: 'Або продовжити через'
+            SSO_FAILED: 'Не вдалося увійти за допомогою цього провайдера. Будь ласка, спробуйте ще раз.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Нічого для попереднього перегляду'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Альтернативний текст'
+                ALT_PLACEHOLDER: 'Опишіть зображення'
+                FROM_URL: 'Вставити за посиланням'
+                INSERT: Вставити
+                NO_MEDIA: 'До цієї сторінки ще не додано жодного зображення.'
+                PAGE_MEDIA: 'Медіа сторінки'
+                SITE_MEDIA: 'Медіа сайту'
+                TITLE: 'Вставити зображення'
+                URL_LABEL: 'URL зображення'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg або media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Керування медіафайлами всього сайту'
             MEDIA_GRAV_ADMIN: 'Медіа — Grav Admin'
@@ -376,6 +403,18 @@ ICU:
                 FOLDER_NAME: 'Назва папки'
                 NEW_FOLDER: 'Нова папка'
                 UPLOAD_FILES: 'Завантажити файли'
+                CUSTOM_ORDER: 'Власний порядок'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Перетягніть файли сюди або натисніть «Завантажити», щоб почати'
+                DROP_FILES_TO_UPLOAD: 'Перетягніть файли для завантаження'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Перетягніть файли для завантаження в **{path}**'
+                FOLDER_IS_EMPTY: 'Ця папка порожня'
+                NO_RESULTS_FOUND: 'Нічого не знайдено'
+                ORDER_SAVE_FAILED: 'Не вдалося зберегти новий порядок'
+                REORDER: 'Перетягніть, щоб змінити порядок'
+                REORDER_DONE: Готово
+                REORDER_MODE: 'Змінити порядок'
+                ROOT: Медіа
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Спробуйте інший пошуковий запит'
             MEDIA_TOOLBAR:
                 FOLDER: Папка
                 GRID_VIEW: 'Режим сітки'
@@ -385,6 +424,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Перетягніть в редактор'
                 PAGE_MEDIA: 'Медіа сторінки'
+                DROP_FILES_HERE: 'Перетягніть файли сюди'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Перетягніть файли або клацніть для завантаження'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Перетягніть або клацніть, щоб додати ще'
+                INSERTED: 'Вставлено {filename}'
+                INSERT_AT_CURSOR: 'Вставити в позиції курсора'
+                REORDER: 'Перетягніть для зміни порядку'
+                REORDER_DONE: Готово
+                REORDER_HINT: 'Перетягуйте зображення, щоб змінити їх порядок.'
+                REORDER_MODE: 'Змінити порядок'
+            METADATA:
+                APPLY_TO_N: 'Застосувати до {n} файлів'
+                BATCH_EDITING: 'Редагування {n} вибраних файлів — змінені поля застосовуються до всіх.'
+                BATCH_PARTIAL: 'Оновлено {saved} файлів, {failed} не вдалося'
+                BATCH_SAVED: 'Оновлено {n} файлів'
+                EDIT: 'Редагувати метадані'
+                EMPTY: 'Не налаштовано жодного поля метаданих для редагування.'
+                LOAD_FAILED: 'Не вдалося завантажити метадані'
+                RESET: Скинути
+                SAVED: 'Метадані збережено'
+                SAVE_FAILED: 'Не вдалося зберегти метадані'
+                SAVING: Збереження…
+                STORED: 'Збережені метадані'
+                TAGS_PLACEHOLDER: 'Додати тег…'
+                TITLE: Метадані
         NAV:
             CONFIGURATION: Конфігурація
             DASHBOARD: 'Панель керування'
@@ -396,6 +459,7 @@ ICU:
             THEMES: Теми
             TOOLS: Інструменти
             USERS: Користувачі
+            UPDATES_AVAILABLE: '{count} оновлення(ь) доступно'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Немає елементів потоку'
         NORMAL_MODE: 'Звичайний режим'
@@ -549,6 +613,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Ця сторінка містить розмітку Twig, але Twig вимкнено для цієї сторінки, тому вона відображається відвідувачам як звичайний текст.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig-конструкцію на цій сторінці було нещодавно заблоковано} few {# Twig-конструкції на цій сторінці було нещодавно заблоковано} other {# Twig-конструкцій на цій сторінці було нещодавно заблоковано}}.'
                 VIEW_REPORT: 'Переглянути звіт'
+            FILTER:
+                ALL: Усі
+                ALL_TEMPLATES: 'Усі шаблони'
+                BUTTON: Фільтр
+                CLEAR: Очистити
+                'NO': Ні
+                PUBLISHED: Опубліковано
+                ROUTABLE: Маршрутизовано
+                TEMPLATE: Шаблон
+                TITLE: 'Фільтрувати сторінки'
+                VISIBLE: Видимо
+                'YES': Так
+            VALIDATION_FAILED_FOR_FIELDS: 'Не вдалося зберегти — ці поля недійсні: {fields}'
         PASSWORD: Пароль
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Вимоги до пароля'
@@ -764,6 +841,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: "Необов'язковий рядок, що відображається під заголовком входу."
             SHOW_POWERED_BY: 'Показувати «Powered by Grav»'
             SHOW_POWERED_BY_DESC: 'Показувати рядок «Powered by Grav CMS» на екранах входу та налаштування.'
+            EDITOR_KEYMAP: 'Гарячі клавіші'
+            EDITOR_KEYMAP_DEFAULT: Стандартно
+            EDITOR_KEYMAP_DESC: 'Використовувати гарячі клавіші Vim у редакторах Markdown та коду. «Стандартно» зберігає звичайне редагування.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 символи: букви, цифри, дефіси, підкреслення'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Обліковий запис адміністратора створено — ласкаво просимо до Grav'
@@ -965,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'Версія PHP'
             TOOLS_GRAV_ADMIN: 'Інструменти — Адміністрація Grav'
+            AUDIT:
+                ACTOR: Виконавець
+                ALL_EVENTS: 'Усі події'
+                ALL_SEVERITIES: 'Усі рівні серйозності'
+                AUTH_METHOD: 'Метод автентифікації'
+                CHANGES: Зміни
+                COVERAGE_DETAILED: Детально
+                DESCRIPTION: 'Запис активності API: входи в систему, контент, користувачі, конфігурація та зміни пакетів. Admin Next працює через API, тому це охоплює як адміністративну панель, так і будь-які зовнішні API-клієнти.'
+                DETAILS: Деталі
+                EVENT: Подія
+                EVENT_CODE: 'Код події'
+                FAILED_TO_LOAD: 'Не вдалося завантажити журнал аудиту'
+                FROM: Від
+                IP: IP
+                LOADING: 'Завантаження журналу аудиту...'
+                NO_ENTRIES: 'Записи аудиту не знайдено.'
+                REFRESH: Оновити
+                SEARCH_PLACEHOLDER: "Пошук за суб'єктом, ціллю, подією, IP..."
+                SEVERITY: 'Рівень важливості'
+                SHOWING: Показано
+                TARGET: Ціль
+                TO: До
+                USER_AGENT: 'Агент користувача'
+                WHEN: Коли
         TOP_BANNER:
             PREVIOUS: Попередня
             SITE_NOTIFICATION: 'Сповіщення сайту'
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'Конфігурація облікових записів — Grav Admin'
             SAVED: 'Конфігурація збережена'
             TITLE: 'Конфігурація облікових записів'
+            SUBTITLE: 'Типові налаштування для облікових записів користувачів та реєстрації'
         EDIT: Редагувати
         GROUPS:
             ADD_GROUP: 'Додати групу'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Користувач {username} активований'
             USER_SAVED: 'Користувач {username} збережений'
             USER_STATE_FAILED: 'Не вдалося змінити стан для {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Це демонстраційна версія лише для читання — зміни вимкнено.'
+            USER_ROW_ACTION_FAILED: 'Не вдалося виконати дію: {label}'
         TRANSLATIONS: Переклади
         TRANSLATIONS_FALLBACK: 'Резервні переклади'
         TRANSLATIONS_FALLBACK_HELP: 'Резервне використання підтримуваних перекладів, якщо активна мова не існує'
@@ -1941,3 +2049,23 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Файли в директоріях user/data, user/accounts та user/config можуть бути завантажені безпосередньо через HTTP — включаючи сертифікати, ключі, токени та бази даних. Зазвичай це означає, що ваш веб-сервер не застосовує правила .htaccess від Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Як убезпечити ваш веб-сервер'
             USER_FOLDER_EXPOSED_TITLE: 'Загроза безпеці: ваші папки з даними користувача доступні з інтернету'
+        CONFIRM: Підтвердити
+        DEMO:
+            BANNER_COUNTDOWN: 'Наступне скидання через {time}'
+            BANNER_LABEL: 'Демонстраційний режим'
+            BANNER_MESSAGE: 'Демонстраційний режим — зміни скидаються кожні {minutes, plural, one{# хвилину} few{# хвилини} other{# хвилин}}'
+            BANNER_READONLY: 'Демонстрація лише для читання — зміни вимкнено'
+        DOCUMENTATION: Документація
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Резервні мови браузера'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Зіставляйте непідтримувані мови браузера з підтримуваними мовами під час встановлення мови з заголовка `http_accept_language`. Це не додає підтримувані мови та не створює мовні маршрути.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Вкажіть код непідтримуваної мови браузера, наприклад `hr` або `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'Резервні мови'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Будь ласка, введіть список підтримуваних мовних кодів. Буде використана перша підтримувана мова.'
+        README: README
+        REPORT_ISSUE: 'Повідомити про проблему'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Вийти
+            LEAVE_MESSAGE: 'Ви маєте незбережені зміни. Вийти в будь-якому разі?'
+            STAY: Залишитися
+            SWITCH_LANGUAGE: Перемкнути
+            SWITCH_LANGUAGE_MESSAGE: 'Ви маєте незбережені зміни. Перемкнути мову в будь-якому разі?'

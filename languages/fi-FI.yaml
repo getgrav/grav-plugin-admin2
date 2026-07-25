@@ -61,6 +61,7 @@ ICU:
             CACHE_OPTIONS: 'Välimuistin asetukset'
             CLEAR_CACHE: 'Tyhjennä välimuisti'
             FAILED_TO_CLEAR_CACHE: 'Välimuistin tyhjentäminen epäonnistui'
+            LABEL: Välimuisti
         CANCEL: Peruuta
         CLEAR_SEARCH: 'Tyhjennä haku'
         CLOSE: Sulje
@@ -104,6 +105,7 @@ ICU:
                 OFF_DESC: 'Twig sivun sisällössä on poistettu käytöstä. Merkintätapa näytetään sellaisenaan.'
                 TRUSTED: 'Vain luotetut roolit'
                 TRUSTED_DESC: 'Vain pääkäyttäjät ja ne, joilla on ”pages twig” -oikeus, voivat ottaa Twigin käyttöön sivulla.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Tallennus epäonnistui — seuraavat kentät ovat virheellisiä: {fields}'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ympäristö
             EXPORT_YAML: 'Vie YAML'
@@ -190,6 +192,7 @@ ICU:
             FAILED_TO_DELETE: 'Ympäristön poistaminen epäonnistui'
             SWITCH_AND_RELOAD: 'Vaihda ja lataa uudelleen'
             SWITCH_DISCARDS_UNSAVED: 'Ympäristön vaihtaminen lataa hallinnon uudelleen ja hylkää tallentamattomat muutokset. Jatketaanko?'
+            PREFIX: 'Ympäristö:'
         EXPAND_ALL: 'Laajenna kaikki'
         EXPAND_SIDEBAR: 'Laajenna sivupalkki'
         EXPERT_MODE: Asiantuntijamoodi
@@ -228,9 +231,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'Muotoilumerkkijono:'
                 SELECT_FORMAT: '— Valitse muoto —'
+                CUSTOM: Mukautettu…
+                CUSTOM_PLACEHOLDER: 'esim. Y-m-d H:i'
+                PREVIEW: 'Esikatselu:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Ei vastaavia tiedostoja'
                 NO_MEDIA_UPLOADED: 'Mediatiedostoja ei ole ladattu vielä'
+                SELECT_FILE: 'Valitse tiedosto…'
+                SELECT_FILES: 'Valitse tiedostot…'
             FILE_PICKER_SOON: 'Tiedostoselain — tulossa pian'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Kuvakkeita ei löytynyt'
@@ -270,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Webhook-laajennus vaaditaan'
             FILE:
                 LIMIT_REACHED: 'Tämä kenttä sallii enintään {limit} tiedostoa.'
+            ADD_ITEM: 'Lisää kohde'
+            SELECTIZE_PLACEHOLDER: 'Kirjoita ja paina Enter...'
+            SELECT_AN_ICON: 'Valitse kuvake...'
+            SELECT_A_PAGE: 'Valitse sivu...'
         FLEX_OBJECTS:
             ACTIONS: Toiminnot
             BACK_TO_LIST: 'Takaisin luetteloon'
@@ -296,6 +308,7 @@ ICU:
                 SHOW_INFO: 'Näytä objektin tiedot'
                 STORAGE_KEY: Tallennusavain
                 TITLE: 'Objektin tiedot'
+            ADD: Lisää
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Sulje widgetien valikko'
         FORGOT:
@@ -358,8 +371,22 @@ ICU:
             USERNAME_IS_REQUIRED: 'Käyttäjänimi vaaditaan'
             VERIFY: Vahvista
             VERIFYING: Vahvistetaan...
+            CONTINUE_WITH: 'Jatka palvelulla {provider}'
+            OR_CONTINUE_WITH: 'Tai jatka palvelulla'
+            SSO_FAILED: 'Kirjautuminen kyseisellä palvelulla epäonnistui. Yritä uudelleen.'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Ei mitään esikatseltavaksi'
+            IMAGE_INSERT:
+                ALT_LABEL: Alt-teksti
+                ALT_PLACEHOLDER: 'Kuvaile kuvaa'
+                FROM_URL: 'Lisää URL-osoitteesta'
+                INSERT: Lisää
+                NO_MEDIA: 'Tälle sivulle ei ole vielä liitetty kuvia.'
+                PAGE_MEDIA: 'Sivun mediatiedostot'
+                SITE_MEDIA: 'Sivuston mediatiedostot'
+                TITLE: 'Lisää kuva'
+                URL_LABEL: 'Kuvan URL-osoite'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg tai media://file.jpg'
         MEDIA:
             MANAGE_SITE_WIDE_MEDIA_FILES: 'Hallinnoi sivustolaajuisia mediatiedostoja'
             MEDIA_GRAV_ADMIN: 'Media — Grav Admin'
@@ -376,6 +403,18 @@ ICU:
                 FOLDER_NAME: 'Kansion nimi'
                 NEW_FOLDER: 'Uusi kansio'
                 UPLOAD_FILES: 'Lataa tiedostoja'
+                CUSTOM_ORDER: 'Mukautettu järjestys'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Pudota tiedostot tähän tai napsauta Lataa aloittaaksesi'
+                DROP_FILES_TO_UPLOAD: 'Pudota tiedostot ladataksesi'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Pudota tiedostot ladataksesi kohteeseen **{path}**'
+                FOLDER_IS_EMPTY: 'Tämä kansio on tyhjä'
+                NO_RESULTS_FOUND: 'Tuloksia ei löytynyt'
+                ORDER_SAVE_FAILED: 'Uuden järjestyksen tallennus epäonnistui'
+                REORDER: 'Muuta järjestystä vetämällä'
+                REORDER_DONE: Valmis
+                REORDER_MODE: 'Järjestä uudelleen'
+                ROOT: Media
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Kokeile eri hakusanaa'
             MEDIA_TOOLBAR:
                 FOLDER: Kansio
                 GRID_VIEW: Ruudukkonäkymä
@@ -385,6 +424,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Vedä editoriin'
                 PAGE_MEDIA: 'Sivun media'
+                DROP_FILES_HERE: 'Pudota tiedostot tähän'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Pudota tiedostot tai klikkaa ladataksesi'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Pudota tai klikkaa lisätäksesi lisää'
+                INSERTED: '{filename} lisätty'
+                INSERT_AT_CURSOR: 'Lisää kohdistimen kohdalle'
+                REORDER: 'Järjestä raahaamalla'
+                REORDER_DONE: Valmis
+                REORDER_HINT: 'Järjestä kuvat raahaamalla.'
+                REORDER_MODE: 'Järjestä uudelleen'
+            METADATA:
+                APPLY_TO_N: 'Käytä {n} tiedostoon'
+                BATCH_EDITING: 'Muokataan {n} valittua tiedostoa — muutetut kentät koskevat kaikkia.'
+                BATCH_PARTIAL: 'Päivitetty {saved} tiedostoa, {failed} epäonnistui'
+                BATCH_SAVED: 'Päivitetty {n} tiedostoa'
+                EDIT: 'Muokkaa metatietoja'
+                EMPTY: 'Muokattavia metatietokenttiä ei ole määritetty.'
+                LOAD_FAILED: 'Metatietoja ei voitu ladata'
+                RESET: Palauta
+                SAVED: 'Metatiedot tallennettu'
+                SAVE_FAILED: 'Metatietoja ei voitu tallentaa'
+                SAVING: Tallennetaan…
+                STORED: 'Tallennetut metatiedot'
+                TAGS_PLACEHOLDER: 'Lisää tunniste…'
+                TITLE: Metatiedot
         NAV:
             CONFIGURATION: Kokoonpano
             DASHBOARD: Koontinäyttö
@@ -396,6 +459,7 @@ ICU:
             THEMES: Teemat
             TOOLS: Työkalut
             USERS: Käyttäjät
+            UPDATES_AVAILABLE: '{count} päivitys/päivitystä saatavilla'
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Ei syötteen kohteita'
         NORMAL_MODE: 'Normaali tila'
@@ -549,6 +613,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Tämä sivu sisältää Twig-merkintöjä, mutta Twig on poistettu käytöstä tältä sivulta, joten se näkyy vierailijoille raakatekstinä.'
                 RECENT_BLOCKS: '{n, plural, one {# Twig-rakenne tällä sivulla estettiin äskettäin} other {# Twig-rakennetta tällä sivulla estettiin äskettäin}}.'
                 VIEW_REPORT: 'Näytä raportti'
+            FILTER:
+                ALL: Kaikki
+                ALL_TEMPLATES: 'Kaikki sivupohjat'
+                BUTTON: Suodatin
+                CLEAR: Tyhjennä
+                'NO': Ei
+                PUBLISHED: Julkaistu
+                ROUTABLE: Reititettävä
+                TEMPLATE: Sivupohja
+                TITLE: 'Suodata sivuja'
+                VISIBLE: Näkyvä
+                'YES': Kyllä
+            VALIDATION_FAILED_FOR_FIELDS: 'Tallennus epäonnistui — nämä kentät ovat virheellisiä: {fields}'
         PASSWORD: Salasana
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Salasanavaatimukset
@@ -764,6 +841,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Valinnainen rivi, joka näkyy kirjautumisotsikon alla.'
             SHOW_POWERED_BY: 'Näytä „Powered by Grav“'
             SHOW_POWERED_BY_DESC: 'Näytä „Powered by Grav CMS“ -rivi kirjautumis- ja asennusnäytöillä.'
+            EDITOR_KEYMAP: Pikanäppäimet
+            EDITOR_KEYMAP_DEFAULT: Oletus
+            EDITOR_KEYMAP_DESC: 'Käytä Vim-pikanäppäimiä Markdown- ja koodieditoreissa. Oletus säilyttää tavallisen muokkauksen.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
@@ -965,6 +1046,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: PHP-versio
             TOOLS_GRAV_ADMIN: 'Työkalut — Gravin hallinta'
+            AUDIT:
+                ACTOR: Toimija
+                ALL_EVENTS: 'Kaikki tapahtumat'
+                ALL_SEVERITIES: 'Kaikki vakavuustasot'
+                AUTH_METHOD: Tunnistautumistapa
+                CHANGES: Muutokset
+                COVERAGE_DETAILED: Yksityiskohtainen
+                DESCRIPTION: 'Lokitiedot API-toiminnoista: kirjautumiset, sisältö-, käyttäjä-, konfiguraatio- ja pakettimuutokset. Admin Next kulkee API:n kautta, joten tämä kattaa hallintapaneelin sekä kaikki ulkoiset API-asiakasohjelmat.'
+                DETAILS: Yksityiskohdat
+                EVENT: Tapahtuma
+                EVENT_CODE: Tapahtumakoodi
+                FAILED_TO_LOAD: 'Audit trail -lokien lataaminen epäonnistui'
+                FROM: Alkaen
+                IP: IP
+                LOADING: 'Ladataan tarkastuslokia...'
+                NO_ENTRIES: 'Tarkastusmerkintöjä ei löytynyt.'
+                REFRESH: Päivitä
+                SEARCH_PLACEHOLDER: 'Etsi toimijaa, kohdetta, tapahtumaa, IP:tä...'
+                SEVERITY: Vakavuus
+                SHOWING: Näytetään
+                TARGET: Kohde
+                TO: Päättyen
+                USER_AGENT: Käyttäjäagentti
+                WHEN: Milloin
         TOP_BANNER:
             PREVIOUS: Edellinen
             SITE_NOTIFICATION: 'Sivun ilmoitus'
@@ -1054,6 +1159,7 @@ ICU:
             PAGE_TITLE: 'Tilejä koskevat asetukset — Grav Admin'
             SAVED: 'Asetukset tallennettu'
             TITLE: 'Tilejä koskevat asetukset'
+            SUBTITLE: 'Käyttäjätilien ja rekisteröinnin oletusasetukset'
         EDIT: Muokkaa
         GROUPS:
             ADD_GROUP: 'Lisää ryhmä'
@@ -1846,6 +1952,8 @@ ICU:
             USER_ENABLED: 'Käyttäjä {username} otettu käyttöön'
             USER_SAVED: 'Käyttäjä {username} tallennettu'
             USER_STATE_FAILED: 'Käyttäjän {username} tilan muuttaminen epäonnistui: {detail}'
+            DEMO_MODE_BLOCKED: 'Tämä on vain luku -demo — muutokset on poistettu käytöstä.'
+            USER_ROW_ACTION_FAILED: 'Toiminnon suorittaminen epäonnistui: {label}'
         TRANSLATIONS: Käännökset
         TRANSLATIONS_FALLBACK: 'Käännösten varaversio'
         TRANSLATIONS_FALLBACK_HELP: 'Käytä tuettuja käännöksiä varaversiona, jos aktiivinen kieli ei ole olemassa'
@@ -1941,3 +2049,23 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Kansioiden user/data, user/accounts ja user/config tiedostot ovat ladattavissa suoraan HTTP-yhteyden yli — mukaan lukien varmenteet, avaimet, tunnisteet ja tietokannat. Tämä tarkoittaa yleensä sitä, että verkkopalvelimesi ei käytä Gravin .htaccess-sääntöjä.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Kuinka suojata verkkopalvelimesi'
             USER_FOLDER_EXPOSED_TITLE: 'Tietoturvariski: käyttäjätietokansiosi ovat saavutettavissa verkosta'
+        CONFIRM: Vahvista
+        DEMO:
+            BANNER_COUNTDOWN: 'Seuraava nollaus {time}'
+            BANNER_LABEL: Demotila
+            BANNER_MESSAGE: 'Demotila — muutokset nollataan {minutes, plural, one{# minuutin} other{# minuutin}} välein'
+            BANNER_READONLY: 'Vain luku -demo — muutokset on poistettu käytöstä'
+        DOCUMENTATION: Dokumentaatio
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Selaimen kielivaihtoehdot'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Määritä tuetut kielet kielille, joita selain ei tue, kun kieli asetetaan `http_accept_language` -otsikosta. Tämä ei lisää tuettuja kieliä tai luo kielireittejä.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Määritä tuen ulkopuolinen selaimen kielikoodi, esim. `hr` tai `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Varakielet
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Kirjoita lista tuetuista kielikoodeista. Ensimmäistä tuettua kieltä käytetään ensisijaisesti.'
+        README: 'LUE MINUT'
+        REPORT_ISSUE: 'Ilmoita ongelmasta'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Poistu
+            LEAVE_MESSAGE: 'Sinulla on tallentamattomia muutoksia. Haluatko varmasti poistua?'
+            STAY: 'Pysy tässä'
+            SWITCH_LANGUAGE: Vaihda
+            SWITCH_LANGUAGE_MESSAGE: 'Sinulla on tallentamattomia muutoksia. Haluatko varmasti vaihtaa kieltä?'

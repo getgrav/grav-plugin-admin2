@@ -278,6 +278,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Complemento Webhook Requerido'
             FILE:
                 LIMIT_REACHED: 'Este campo acepta como máximo {limit} archivo(s).'
+            ADD_ITEM: 'Añadir elemento'
+            SELECTIZE_PLACEHOLDER: 'Escriba y pulse Intro...'
+            SELECT_AN_ICON: 'Seleccionar un icono...'
+            SELECT_A_PAGE: 'Seleccionar una página...'
         FLEX_OBJECTS:
             ACTIONS: Acciones
             BACK_TO_LIST: 'Volver a la Lista'
@@ -304,6 +308,7 @@ ICU:
                 SHOW_INFO: 'Mostrar información del objeto'
                 STORAGE_KEY: 'Clave de almacenamiento'
                 TITLE: 'Información del objeto'
+            ADD: Añadir
         FLOATING_WIDGET_LOADER:
             CLOSE_WIDGETS_MENU: 'Cerrar menú de widgets'
         FORGOT:
@@ -404,6 +409,12 @@ ICU:
                 REORDER_DONE: Listo
                 REORDER_MODE: Reordenar
                 ROOT: Multimedia
+                DROP_FILES_OR_CLICK_UPLOAD: 'Arrastre los archivos aquí o haga clic en Subir para empezar'
+                DROP_FILES_TO_UPLOAD: 'Arrastre los archivos para subirlos'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Arrastre los archivos para subirlos a **{path}**'
+                FOLDER_IS_EMPTY: 'Esta carpeta está vacía'
+                NO_RESULTS_FOUND: 'No se encontraron resultados'
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Pruebe con un término de búsqueda diferente'
             MEDIA_TOOLBAR:
                 FOLDER: Carpeta
                 GRID_VIEW: 'Vista de cuadrícula'
@@ -419,6 +430,9 @@ ICU:
                 REORDER_DONE: Listo
                 REORDER_HINT: 'Arrastra las imágenes para establecer su orden.'
                 REORDER_MODE: Reordenar
+                DROP_FILES_HERE: 'Arrastre los archivos aquí'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Arrastre los archivos o haga clic para subir'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Arrastre o haga clic para añadir más'
             METADATA:
                 APPLY_TO_N: 'Aplicar a {n} archivos'
                 BATCH_EDITING: 'Editando {n} archivos seleccionados: los cambios en los campos se aplicarán a todos.'
@@ -2043,3 +2057,15 @@ ICU:
         DOCUMENTATION: Documentación
         README: README
         REPORT_ISSUE: 'Informar de un problema'
+        CONFIRM: Confirmar
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Alternativas de idioma del navegador'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Asignar idiomas de navegador no admitidos a idiomas admitidos al establecer el idioma desde la cabecera `http_accept_language`. Esto no añade idiomas admitidos ni crea rutas de idioma.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Especifique un código de idioma de navegador no admitido, por ejemplo, `hr` o `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'Idiomas de reserva'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Por favor, introduzca una lista de códigos de idioma admitidos. Se utilizará el primer idioma admitido.'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Salir
+            LEAVE_MESSAGE: 'Tiene cambios sin guardar. ¿Desea salir de todos modos?'
+            STAY: Permanecer
+            SWITCH_LANGUAGE: Cambiar
+            SWITCH_LANGUAGE_MESSAGE: 'Tiene cambios sin guardar. ¿Desea cambiar el idioma de todos modos?'

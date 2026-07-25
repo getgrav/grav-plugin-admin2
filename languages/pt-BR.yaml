@@ -20,6 +20,7 @@ ICU:
             PAGE_TITLE: 'Configuração de Contas — Grav Admin'
             SAVED: 'Configuração salva'
             TITLE: 'Configuração de Contas'
+            SUBTITLE: 'Configurações padrão para contas de usuário e registro'
         ACCOUNTS_CONFIGURATION: 'Configuração de Contas'
         ACCOUNTS_STORAGE: 'Armazenamento de Contas'
         ACCOUNTS_STORAGE_HELP: "O mecanismo de armazenamento a ser usado para o tipo de Conta Flex Object. 'Arquivos' é a abordagem tradicional onde as contas são armazenadas em um arquivo YAML em uma única pasta, enquanto 'Pasta' cria uma nova pasta para cada conta"
@@ -138,6 +139,7 @@ ICU:
             CACHE_OPTIONS: 'Opções de cache'
             CLEAR_CACHE: 'Limpar cache'
             FAILED_TO_CLEAR_CACHE: 'Falha ao limpar o cache'
+            LABEL: Cache
         CACHE_CLEAR_JOB: 'Executar tarefa de limpeza agendada'
         CACHE_CLEAR_JOB_HELP: 'Com o agendador, você pode limpar periodicamente o cache do Grav'
         CACHE_CONTROL: 'HTTP Cache-Control'
@@ -207,6 +209,7 @@ ICU:
                 OFF_DESC: 'Twig no conteúdo da página está desativado. A marcação é exibida como escrita.'
                 TRUSTED: 'Apenas funções confiáveis'
                 TRUSTED_DESC: 'Apenas superusuários e detentores da permissão «pages twig» podem habilitar Twig em uma página.'
+            VALIDATION_FAILED_FOR_FIELDS: 'Não foi possível salvar — estes campos são inválidos: {fields}'
         CONFIGURATION: Configuração
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ambiente
@@ -389,6 +392,7 @@ ICU:
             SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: 'Selecione o ambiente ativo — controla qual configuração você vê e para onde as alterações são salvas'
             SWITCH_AND_RELOAD: 'Alternar e recarregar'
             SWITCH_DISCARDS_UNSAVED: 'Alternar o ambiente recarrega o admin e descarta alterações não salvas. Continuar?'
+            PREFIX: 'Amb:'
         ERROR_FULL_BACKTRACE: 'Rastreamento completo do erro'
         ERROR_HANDLER: 'Manipulador de erros'
         ERROR_SIMPLE: 'Erro simples'
@@ -445,9 +449,14 @@ ICU:
             DATE_FORMAT:
                 FORMAT_STRING: 'String de formato:'
                 SELECT_FORMAT: '— Selecione o formato —'
+                CUSTOM: Personalizado…
+                CUSTOM_PLACEHOLDER: 'ex: Y-m-d H:i'
+                PREVIEW: 'Visualização:'
             FILE_PICKER:
                 NO_MATCHING_FILES: 'Nenhum arquivo correspondente'
                 NO_MEDIA_UPLOADED: 'Nenhum arquivo de mídia enviado ainda'
+                SELECT_FILE: 'Selecione um arquivo…'
+                SELECT_FILES: 'Selecione arquivos…'
             FILE_PICKER_SOON: 'Seletor de arquivos — em breve'
             ICON_PICKER:
                 NO_ICONS_FOUND: 'Nenhum ícone encontrado'
@@ -487,6 +496,10 @@ ICU:
                 WEBHOOK_PLUGIN_REQUIRED: 'Plugin de Webhook Necessário'
             FILE:
                 LIMIT_REACHED: 'Este campo aceita no máximo {limit} arquivo(s).'
+            ADD_ITEM: 'Adicionar item'
+            SELECTIZE_PLACEHOLDER: 'Digite e pressione Enter...'
+            SELECT_AN_ICON: 'Selecione um ícone...'
+            SELECT_A_PAGE: 'Selecione uma página...'
         FILE: Arquivo
         FILE_EXTENSION: 'Extensão de Arquivo'
         FILE_STREAMS: 'Streams de Arquivo'
@@ -522,6 +535,7 @@ ICU:
                 SHOW_INFO: 'Mostrar informações do objeto'
                 STORAGE_KEY: 'Chave de armazenamento'
                 TITLE: 'Informações do objeto'
+            ADD: Adicionar
         FLEX_OBJECT_CACHE_ENABLED: 'Ativar cache de objeto'
         FLEX_OBJECT_CACHE_LIFETIME: 'Tempo de vida do cache de objeto (segundos)'
         FLEX_RENDER_CACHE_ENABLED: 'Ativar cache de renderização'
@@ -807,6 +821,9 @@ ICU:
             USERNAME_IS_REQUIRED: 'O nome de usuário é obrigatório'
             VERIFY: Verificar
             VERIFYING: Verificando...
+            CONTINUE_WITH: 'Continuar com {provider}'
+            OR_CONTINUE_WITH: 'Ou continue com'
+            SSO_FAILED: 'Não foi possível iniciar sessão com esse provedor. Por favor, tente novamente.'
         LOG_ERRORS: 'Registrar erros'
         LOG_ERRORS_HELP: 'Registrar erros na pasta /logs'
         LOG_HANDLER: 'Manipulador de logs'
@@ -817,6 +834,17 @@ ICU:
         MARKDOWN: Markdown
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nada para visualizar'
+            IMAGE_INSERT:
+                ALT_LABEL: 'Texto alternativo'
+                ALT_PLACEHOLDER: 'Descreva a imagem'
+                FROM_URL: 'Inserir via URL'
+                INSERT: Inserir
+                NO_MEDIA: 'Ainda não há imagens anexadas a esta página.'
+                PAGE_MEDIA: 'Mídia da página'
+                SITE_MEDIA: 'Mídia do site'
+                TITLE: 'Inserir imagem'
+                URL_LABEL: 'URL da imagem'
+                URL_PLACEHOLDER: 'https://example.com/image.jpg ou media://file.jpg'
         MARKDOWN_EXTRA: 'Markdown extra'
         MARKDOWN_EXTRA_HELP: 'Habilitar suporte padrão para Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
         MEDIA:
@@ -835,6 +863,18 @@ ICU:
                 FOLDER_NAME: 'Nome da pasta'
                 NEW_FOLDER: 'Nova pasta'
                 UPLOAD_FILES: 'Enviar arquivos'
+                CUSTOM_ORDER: 'Ordem personalizada'
+                DROP_FILES_OR_CLICK_UPLOAD: 'Solte os arquivos aqui ou clique em Upload para começar'
+                DROP_FILES_TO_UPLOAD: 'Solte os arquivos para fazer upload'
+                DROP_FILES_TO_UPLOAD_TO_PATH: 'Solte os arquivos para fazer upload para **{path}**'
+                FOLDER_IS_EMPTY: 'Esta pasta está vazia'
+                NO_RESULTS_FOUND: 'Nenhum resultado encontrado'
+                ORDER_SAVE_FAILED: 'Falha ao salvar a nova ordem'
+                REORDER: 'Arraste para reordenar'
+                REORDER_DONE: Concluído
+                REORDER_MODE: Reordenar
+                ROOT: Mídia
+                TRY_A_DIFFERENT_SEARCH_TERM: 'Tente um termo de busca diferente'
             MEDIA_TOOLBAR:
                 FOLDER: Pasta
                 GRID_VIEW: 'Visualização em grade'
@@ -844,6 +884,30 @@ ICU:
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Arraste para o editor'
                 PAGE_MEDIA: 'Mídia da página'
+                DROP_FILES_HERE: 'Solte os arquivos aqui'
+                DROP_FILES_OR_CLICK_TO_UPLOAD: 'Solte arquivos ou clique para enviar'
+                DROP_OR_CLICK_TO_ADD_MORE: 'Solte ou clique para adicionar mais'
+                INSERTED: '{filename} inserido'
+                INSERT_AT_CURSOR: 'Inserir no cursor'
+                REORDER: 'Arraste para reordenar'
+                REORDER_DONE: Concluído
+                REORDER_HINT: 'Arraste as imagens para definir a ordem.'
+                REORDER_MODE: Reordenar
+            METADATA:
+                APPLY_TO_N: 'Aplicar a {n} arquivos'
+                BATCH_EDITING: 'Editando {n} arquivos selecionados — os campos alterados serão aplicados a todos.'
+                BATCH_PARTIAL: '{saved} arquivos atualizados, {failed} falharam'
+                BATCH_SAVED: '{n} arquivos atualizados'
+                EDIT: 'Editar metadados'
+                EMPTY: 'Nenhum campo de metadado editável está configurado.'
+                LOAD_FAILED: 'Não foi possível carregar os metadados'
+                RESET: Redefinir
+                SAVED: 'Metadados salvos'
+                SAVE_FAILED: 'Não foi possível salvar os metadados'
+                SAVING: Salvando…
+                STORED: 'Metadados armazenados'
+                TAGS_PLACEHOLDER: 'Adicionar etiqueta…'
+                TITLE: Metadados
         MEDIA_TYPES: 'Tipos de Mídia'
         MEMCACHED_PORT: 'Porta do Memcached'
         MEMCACHED_PORT_HELP: 'A porta do servidor Memcached'
@@ -872,6 +936,7 @@ ICU:
             THEMES: Temas
             TOOLS: Ferramentas
             USERS: Usuários
+            UPDATES_AVAILABLE: '{count} atualização(ões) disponível(is)'
         NEVER_CACHE_TWIG: 'Nunca armazenar Twig em cache'
         NEVER_CACHE_TWIG_HELP: 'Armazena apenas o conteúdo e processa o Twig toda vez para as páginas. Ignora a configuração twig_first.'
         NEWS_FEED_WIDGET:
@@ -1039,6 +1104,19 @@ ICU:
                 LEAK_PAGE_OFF: 'Esta página contém marcação Twig, mas o Twig está desativado para esta página, portanto, ele é renderizado como texto bruto para os visitantes.'
                 RECENT_BLOCKS: '{n, plural, one {# construção Twig nesta página foi bloqueada recentemente} other {# construções Twig nesta página foram bloqueadas recentemente}}.'
                 VIEW_REPORT: 'Ver relatório'
+            FILTER:
+                ALL: Todos
+                ALL_TEMPLATES: 'Todos os templates'
+                BUTTON: Filtrar
+                CLEAR: Limpar
+                'NO': Não
+                PUBLISHED: Publicado
+                ROUTABLE: Roteável
+                TEMPLATE: Template
+                TITLE: 'Filtrar páginas'
+                VISIBLE: Visível
+                'YES': Sim
+            VALIDATION_FAILED_FOR_FIELDS: 'Não foi possível salvar — estes campos são inválidos: {fields}'
         PAGES_CONFIGURATION: 'Configuração de Páginas'
         PAGES_FALLBACK_ONLY: 'Apenas fallback de páginas'
         PAGES_FALLBACK_ONLY_HELP: "Apenas usa 'fallback' para encontrar o conteúdo da página através de idiomas suportados; o comportamento padrão é exibir qualquer idioma encontrado caso o idioma ativo esteja ausente"
@@ -1426,6 +1504,10 @@ ICU:
             LOGIN_SUBTITLE_DESC: 'Linha opcional exibida sob o cabeçalho de login.'
             SHOW_POWERED_BY: 'Mostrar «Powered by Grav»'
             SHOW_POWERED_BY_DESC: 'Exibir a linha «Powered by Grav CMS» nas telas de login e configuração.'
+            EDITOR_KEYMAP: 'Atalhos de teclado'
+            EDITOR_KEYMAP_DEFAULT: Padrão
+            EDITOR_KEYMAP_DESC: 'Use atalhos de teclado do Vim nos editores de Markdown e código. O padrão mantém a edição normal.'
+            EDITOR_KEYMAP_VIM: Vim
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, hifens, sublinhados'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Conta de administrador criada — bem-vindo ao Grav'
@@ -1635,6 +1717,8 @@ ICU:
             USER_ENABLED: 'Usuário {username} ativado'
             USER_SAVED: 'Usuário {username} salvo'
             USER_STATE_FAILED: 'Falha ao alterar o estado de {username}: {detail}'
+            DEMO_MODE_BLOCKED: 'Esta é uma demonstração apenas de leitura — as alterações estão desativadas.'
+            USER_ROW_ACTION_FAILED: 'Não foi possível completar a ação: {label}'
         TOGGLE_DARK_MODE: 'Alternar modo escuro'
         TOGGLE_MENU: 'Alternar menu'
         TOOLS:
@@ -1748,6 +1832,30 @@ ICU:
                 PHP_SAPI: 'PHP SAPI'
                 PHP_VERSION: 'Versão do PHP'
             TOOLS_GRAV_ADMIN: 'Ferramentas — Grav Admin'
+            AUDIT:
+                ACTOR: Ator
+                ALL_EVENTS: 'Todos os eventos'
+                ALL_SEVERITIES: 'Todas as severidades'
+                AUTH_METHOD: 'Método de autenticação'
+                CHANGES: Alterações
+                COVERAGE_DETAILED: Detalhado
+                DESCRIPTION: 'Um registro da atividade da API: logins, conteúdo, usuário, configuração e alterações de pacotes. O Admin Next faz o roteamento através da API, portanto, isso cobre o administrador e quaisquer clientes de API externos.'
+                DETAILS: Detalhes
+                EVENT: Evento
+                EVENT_CODE: 'Código do evento'
+                FAILED_TO_LOAD: 'Falha ao carregar o rastro de auditoria'
+                FROM: De
+                IP: IP
+                LOADING: 'Carregando rastro de auditoria...'
+                NO_ENTRIES: 'Nenhuma entrada de auditoria encontrada.'
+                REFRESH: Atualizar
+                SEARCH_PLACEHOLDER: 'Pesquisar ator, alvo, evento, IP...'
+                SEVERITY: Gravidade
+                SHOWING: Exibindo
+                TARGET: Alvo
+                TO: Para
+                USER_AGENT: 'User agent'
+                WHEN: Quando
         TOP_BANNER:
             PREVIOUS: Anterior
             SITE_NOTIFICATION: 'Notificação do site'
@@ -1941,3 +2049,23 @@ ICU:
         'YES': Sim
         YUBIKEY_HELP: 'Insira sua YubiKey no seu computador e clique no botão para gerar um OTP. Os primeiros 12 caracteres são seu ID de cliente e serão salvos.'
         YUBIKEY_ID: 'ID da YubiKey'
+        CONFIRM: Confirmar
+        DEMO:
+            BANNER_COUNTDOWN: 'Próximo reset em {time}'
+            BANNER_LABEL: 'Modo de demonstração'
+            BANNER_MESSAGE: 'Modo de demonstração — as alterações são redefinidas a cada {minutes, plural, one{# minuto} other{# minutos}}'
+            BANNER_READONLY: 'Demonstração somente leitura — as alterações estão desativadas'
+        DOCUMENTATION: Documentação
+        HTTP_ACCEPT_LANGUAGE_FALLBACK: 'Fallbacks de idioma do navegador'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: 'Mapeie idiomas de navegador não suportados para idiomas suportados ao definir o idioma a partir do cabeçalho `http_accept_language`. Isso não adiciona idiomas suportados nem cria rotas de idioma.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Especifique um código de idioma de navegador não suportado, ex: `hr` ou `sr-Latn`.'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: 'Idiomas de fallback'
+        HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: 'Por favor, insira uma lista de códigos de idioma suportados. O primeiro idioma suportado será utilizado.'
+        README: README
+        REPORT_ISSUE: 'Relatar um problema'
+        UNSAVED_CHANGES_DIALOG:
+            LEAVE: Sair
+            LEAVE_MESSAGE: 'Você tem alterações não salvas. Sair mesmo assim?'
+            STAY: Permanecer
+            SWITCH_LANGUAGE: Trocar
+            SWITCH_LANGUAGE_MESSAGE: 'Você tem alterações não salvas. Trocar de idioma mesmo assim?'
