@@ -1,9 +1,10 @@
 # v2.0.17
-## 07/26/2026
+## 07/27/2026
 
 1. [](#bugfix)
     * Custom fields added to the account form by extending the account blueprint now keep showing their saved value, instead of coming back empty right after you save (requires API plugin 1.0.14) ([#138](https://github.com/getgrav/grav-plugin-admin2/issues/138)).
     * The Parent picker now shows the correct page as selected on sites whose home page is a real folder such as `/blog`, so saving a post no longer moves it to the top level ([#143](https://github.com/getgrav/grav-plugin-admin2/issues/143)).
+    * The Parent picker can now be opened into a home page that is hidden from URLs, and lists the pages inside it instead of the top-level ones ([#143](https://github.com/getgrav/grav-plugin-admin2/issues/143)).
 
 # v2.0.16
 ## 07/25/2026
