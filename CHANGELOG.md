@@ -1,5 +1,5 @@
 # v2.0.17
-## 07/27/2026
+## 07/30/2026
 
 1. [](#bugfix)
     * Custom fields added to the account form by extending the account blueprint now keep showing their saved value, instead of coming back empty right after you save (requires API plugin 1.0.14) ([#138](https://github.com/getgrav/grav-plugin-admin2/issues/138)).
