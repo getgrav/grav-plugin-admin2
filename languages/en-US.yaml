@@ -1260,7 +1260,7 @@ ICU:
     USERS_TABLE:
       USERNAME: Username
       EMAIL: Email
-      FULL_NAME: Full name
+      FULL_NAME: Full Name
       STATUS: Status
       PERMISSIONS: Permissions
       ACTIONS: Actions
@@ -1299,10 +1299,10 @@ ICU:
       ADD_GROUP: Add Group
       NEW_GROUP: New Group
       NEW_GROUP_GRAV_ADMIN: New Group — Grav Admin
-      GROUP_NAME: Group name
+      GROUP_NAME: Group Name
       GROUP_NAME_PLACEHOLDER: e.g. editors
       GROUP_NAME_HELP: 1–200 characters of letters, numbers, hyphens or underscores. Used as the storage key.
-      DISPLAY_NAME: Display name
+      DISPLAY_NAME: Display Name
       DESCRIPTION: Description
       SEARCH_GROUPS: Search groups...
       NO_GROUPS: No groups found
