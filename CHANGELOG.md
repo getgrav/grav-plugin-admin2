@@ -1,6 +1,8 @@
 # v2.0.18
 ## 07/30/2026
 
+1. [](#new)
+    * Added a Clear log button to Tools → Logs, so a log can be emptied out without going to the filesystem. Super admins only, and it asks for confirmation first.
 1. [](#improved)
     * The tab you were last working in is now reopened on the next page you edit, so changing the same field across many pages no longer means picking that tab every time ([#144](https://github.com/getgrav/grav-plugin-admin2/issues/144)).
     * Table column headings now read in title case throughout, instead of some appearing in capitals and others not.

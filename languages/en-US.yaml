@@ -666,6 +666,10 @@ ICU:
         REFRESH: Refresh
         LOADING_LOGS: Loading logs...
         MESSAGE: Message
+        CLEAR_LOG: Clear log
+        CLEAR_LOG_CONFIRM: 'Permanently delete every entry in {file}? This cannot be undone, and any record of what went wrong before now goes with it.'
+        LOG_CLEARED: Cleared {file}
+        FAILED_TO_CLEAR_LOG: Failed to clear log
       AUDIT:
         DESCRIPTION: "A record of API activity: logins, content, user, configuration, and package changes. Admin Next routes through the API, so this covers the admin plus any external API clients."
         COVERAGE_DETAILED: Detailed
