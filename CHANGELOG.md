@@ -1,5 +1,5 @@
 # v2.0.18
-## 07/30/2026
+## 08/03/2026
 
 1. [](#new)
     * Added a Clear log button to Tools → Logs, so a log can be emptied out without going to the filesystem. Super admins only, and it asks for confirmation first.
