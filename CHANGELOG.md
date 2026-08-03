@@ -12,6 +12,7 @@
     * The Title and Modified column headings on the Pages list are now translated instead of always appearing in English.
     * Text fields inside a list or array field now put the cursor where you click in Firefox, instead of jumping to the end of the value ([#146](https://github.com/getgrav/grav-plugin-admin2/issues/146)).
     * List and array rows are now dragged by their grip handle only, rather than from anywhere in the row.
+    * The Parent field now shows the real parent of a page that sits under a home page hidden from URLs, instead of falling back to the site root when the API plugin is older than 1.0.12 ([#143](https://github.com/getgrav/grav-plugin-admin2/issues/143)).
 
 # v2.0.17
 ## 07/30/2026
