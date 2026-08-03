@@ -1,3 +1,19 @@
+# v2.0.18
+## 08/03/2026
+
+1. [](#new)
+    * Added a Clear log button to Tools → Logs, so a log can be emptied out without going to the filesystem. Super admins only, and it asks for confirmation first.
+1. [](#improved)
+    * The tab you were last working in is now reopened on the next page you edit, so changing the same field across many pages no longer means picking that tab every time ([#144](https://github.com/getgrav/grav-plugin-admin2/issues/144)).
+    * Table column headings now read in title case throughout, instead of some appearing in capitals and others not.
+    * The sidebar badge counting available updates now uses the accent colour rather than a warning amber, since an update is something to act on rather than a problem.
+1. [](#bugfix)
+    * Cmd+Click, middle-click and "Open Link in New Tab" now work on page, user, group, plugin and theme names, instead of opening the item in the current tab ([#144](https://github.com/getgrav/grav-plugin-admin2/issues/144)).
+    * The Title and Modified column headings on the Pages list are now translated instead of always appearing in English.
+    * Text fields inside a list or array field now put the cursor where you click in Firefox, instead of jumping to the end of the value ([#146](https://github.com/getgrav/grav-plugin-admin2/issues/146)).
+    * List and array rows are now dragged by their grip handle only, rather than from anywhere in the row.
+    * The Parent field now shows the real parent of a page that sits under a home page hidden from URLs, instead of falling back to the site root when the API plugin is older than 1.0.12 ([#143](https://github.com/getgrav/grav-plugin-admin2/issues/143)).
+
 # v2.0.17
 ## 07/30/2026
 
