@@ -1,3 +1,11 @@
+# v2.0.19
+## 08/05/2026
+
+1. [](#new)
+    * The Save, Copy and Delete buttons on a page, and the copy, delete and publish actions in the pages list, now follow the permissions set on that page rather than only the account's site-wide page permissions ([#150](https://github.com/getgrav/grav-plugin-admin2/issues/150)).
+    * A page whose permissions grant editing to a group is now editable by that group even without site-wide page write access.
+    * A page whose permissions deny editing now shows no editing actions at all.
+
 # v2.0.18
 ## 08/03/2026
 
