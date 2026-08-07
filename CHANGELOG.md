@@ -1,3 +1,15 @@
+# v2.0.19
+## 08/07/2026
+
+1. [](#bugfix)
+    * Creating a Flex object no longer saves a nested field's default onto a top-level field of the same name, which left the record with a value that field could not hold and made it disappear from any list that filtered on it ([#151](https://github.com/getgrav/grav-plugin-admin2/issues/151)).
+    * Creating a Flex object no longer adds a stray top-level property for every field nested inside a list.
+    * Adding a row to a list now saves the default values it shows on screen, instead of dropping any the user did not type into.
+1. [](#new)
+    * The Save, Copy and Delete buttons on a page, and the copy, delete and publish actions in the pages list, now follow the permissions set on that page rather than only the account's site-wide page permissions ([#150](https://github.com/getgrav/grav-plugin-admin2/issues/150)).
+    * A page whose permissions grant editing to a group is now editable by that group even without site-wide page write access.
+    * A page whose permissions deny editing now shows no editing actions at all.
+
 # v2.0.18
 ## 08/03/2026
 
