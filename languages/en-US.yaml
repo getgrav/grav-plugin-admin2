@@ -258,6 +258,7 @@ ICU:
         MIN_HR_DOM_MON_DOW: min hr dom mon dow
       CRON_STATUS:
         FAILED_TO_LOAD_SCHEDULER_STATUS: Failed to load scheduler status
+        PROCESS_UNAVAILABLE: "Jobs cannot be run from here on this host, because PHP's proc_open function is disabled. They still run whenever your scheduler is triggered by cron or a webhook."
         SCHEDULER_RUN_COMPLETED: Scheduler run completed
         FAILED_TO_RUN_SCHEDULER: Failed to run scheduler
         LOADING_SCHEDULER_STATUS: Loading scheduler status...
@@ -737,6 +738,10 @@ ICU:
           FRONTMATTER_REQUEST_GATED: "Frontmatter Twig is requested (pages.frontmatter.process_twig), but Twig in content is disabled site-wide, so it won't run. Pick a profile above to enable it."
       SCHEDULER:
         FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
+        STATUS_UNAVAILABLE: Scheduler status could not be read on this host. Your jobs are still listed below and can be edited as usual.
+        PROCESS_UNAVAILABLE: "This host has PHP's proc_open function disabled, so jobs cannot be started from the admin. They still run whenever your scheduler is triggered by cron or a webhook."
+        CRON_UNDETERMINED: Grav cannot inspect this server's crontab, so it cannot confirm how the scheduler is being triggered.
+        LAST_TRIGGERED: Last triggered
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
         FAILED_TO_SAVE: Failed to save
         LOADING_SCHEDULER: Loading scheduler...

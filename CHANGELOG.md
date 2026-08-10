@@ -1,3 +1,14 @@
+# v2.0.20
+## 08/10/2026
+
+1. [](#bugfix)
+    * [security] Markdown shown in the admin -- page previews, plugin changelogs, field descriptions and notifications -- is now sanitized before it is rendered, closing a cross-site scripting hole ([GHSA-752r-88j4-vxm3](https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3)).
+    * [security] User display names and the password-reset link no longer allow markup to run in an administrator's browser ([GHSA-96xm-c5hr-59rx](https://github.com/getgrav/grav/security/advisories/GHSA-96xm-c5hr-59rx)).
+    * The Scheduler page no longer comes up empty when the server cannot report its cron status, and lists and edits jobs as usual [getgrav/grav-admin-next#16](https://github.com/getgrav/grav-admin-next/issues/16)
+    * The job table now appears even when the status panel above it cannot be filled in
+1. [](#improved)
+    * The Scheduler page now says plainly when jobs cannot be started on this host, and stops claiming cron is missing when it simply could not check
+
 # v2.0.19
 ## 08/07/2026
 
