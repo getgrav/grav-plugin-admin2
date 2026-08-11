@@ -1,5 +1,5 @@
 # v2.0.20
-## 08/10/2026
+## 08/11/2026
 
 1. [](#bugfix)
     * [security] Markdown shown in the admin -- page previews, plugin changelogs, field descriptions and notifications -- is now sanitized before it is rendered, closing a cross-site scripting hole ([GHSA-752r-88j4-vxm3](https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3)).
