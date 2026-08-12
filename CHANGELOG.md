@@ -3,6 +3,8 @@
 
 1. [](#new)
     * The "Twig in Content" report can now show the effective sandbox policy, listing the built-in defaults with any additions or restrictions this site has made.
+1. [](#bugfix)
+    * Remote collaborators' cursors and selections now stay visible and correctly positioned while co-editing, and no longer disappear right after a save.
 
 # v2.0.21
 ## 08/12/2026
