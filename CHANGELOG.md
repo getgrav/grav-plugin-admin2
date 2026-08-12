@@ -1,3 +1,9 @@
+# v2.0.21
+## 08/12/2026
+
+1. [](#bugfix)
+    * [security] A site title or subtitle containing markup can no longer break out of the admin page's boot data and run in a visitor's browser.
+
 # v2.0.20
 ## 08/11/2026
 

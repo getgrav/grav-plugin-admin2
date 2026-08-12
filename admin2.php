@@ -513,7 +513,22 @@ class Admin2Plugin extends Plugin
             $config['admin']['version'] = $this->getBlueprint()->get('version');
         }
 
-        $config = json_encode($config, JSON_UNESCAPED_SLASHES);
+        // JSON_HEX_TAG/JSON_HEX_AMP are what make this safe to drop inside a
+        // <script> block. An HTML parser does not understand JavaScript string
+        // context: a literal `</script>` anywhere in this JSON closes the block
+        // early and everything after it is parsed as page markup. Branding title
+        // and subtitle are operator-supplied free text, so without escaping the
+        // angle brackets a value of `</script><img src=x onerror=...>` breaks out
+        // and executes on the pre-auth login page.
+        //
+        // Escaping the TAGS rather than relying on JSON_UNESCAPED_SLASHES being
+        // absent is deliberate: the `\/` form only protects the closing tag by
+        // accident, so anyone re-adding JSON_UNESCAPED_SLASHES for URL
+        // readability would silently reopen the hole. Here the slashes stay
+        // readable and the brackets are neutralised directly, which is the part
+        // that actually matters. The escapes decode back to the identical string,
+        // so the SPA still sees exactly what the operator typed.
+        $config = json_encode($config, JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
 
         $configScript = "<script>window.__GRAV_CONFIG__ = {$config};</script>";
         $html = str_replace('<head>', '<head>' . "\n    " . $configScript, $html);
