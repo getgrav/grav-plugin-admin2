@@ -1,3 +1,9 @@
+# v2.0.22
+## 08/12/2026
+
+1. [](#new)
+    * The "Twig in Content" report can now show the effective sandbox policy, listing the built-in defaults with any additions or restrictions this site has made.
+
 # v2.0.21
 ## 08/12/2026
 

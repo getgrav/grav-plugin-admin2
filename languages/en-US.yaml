@@ -734,6 +734,20 @@ ICU:
           SCAN_TAGS: Blocked tags in content
           SCAN_FILTERS: Blocked filters in content
           SCAN_FUNCTIONS: Blocked functions in content
+          POLICY_INTRO: "The sandbox baseline ships in code; your config only widens or tightens it."
+          POLICY_VIEW: View effective policy
+          POLICY_HIDE: Hide effective policy
+          POLICY_FAILED: Could not load the sandbox policy
+          POLICY_TAGS: Tags
+          POLICY_FILTERS: Filters
+          POLICY_FUNCTIONS: Functions
+          POLICY_METHODS: Methods
+          POLICY_PROPERTIES: Properties
+          POLICY_EFFECTIVE_COUNT: "{count} effective"
+          POLICY_CLASS_COUNT: "{count, plural, one {# class} other {# classes}}"
+          POLICY_ADDED: "+{count} added"
+          POLICY_DENIED: "−{count} denied"
+          POLICY_ALL_DEFAULTS: All defaults, unchanged
           GLOBAL_REQUEST_GATED: "system.pages.process.twig is on, but Twig in content is disabled site-wide, so those pages render raw. Pick a profile above to enable it, or remove the global flag."
           FRONTMATTER_REQUEST_GATED: "Frontmatter Twig is requested (pages.frontmatter.process_twig), but Twig in content is disabled site-wide, so it won't run. Pick a profile above to enable it."
       SCHEDULER:
