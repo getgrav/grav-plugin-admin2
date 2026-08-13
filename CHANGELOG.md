@@ -1,10 +1,12 @@
 # v2.0.22
-## 08/12/2026
+## 08/13/2026
 
 1. [](#new)
     * The "Twig in Content" report can now show the effective sandbox policy, listing the built-in defaults with any additions or restrictions this site has made.
 1. [](#bugfix)
     * Remote collaborators' cursors and selections now stay visible and correctly positioned while co-editing, and no longer disappear right after a save.
+    * Messages that quote a name back to you, such as the one confirming a new group, now show the name instead of the literal `{name}` [#159](https://github.com/getgrav/grav-plugin-admin2/issues/159)
+    * The French Canadian page-loading counter no longer displays its own template text.
 
 # v2.0.21
 ## 08/12/2026

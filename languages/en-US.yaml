@@ -1189,7 +1189,7 @@ ICU:
       PERMISSIONS: Permissions
       SELECT_A_USER_TO_VIEW_DETAILS: Select a user to view details
       DELETE_USER: Delete User
-      CONFIRM_DELETE_USER: "Delete user '{username}'? This cannot be undone."
+      CONFIRM_DELETE_USER: "Delete user ''{username}''? This cannot be undone."
       USER_WAS_MODIFIED_ELSEWHERE_PLEASE: User was modified elsewhere. Please reload.
       FAILED_TO_SAVE_USER: Failed to save user.
       YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: You cannot delete your own account.
@@ -1334,15 +1334,15 @@ ICU:
       BACK_TO_GROUPS: Back to Groups
       CREATE: Create
       DELETE_GROUP: Delete Group
-      CONFIRM_DELETE_GROUP: "Delete group '{name}'? This cannot be undone."
+      CONFIRM_DELETE_GROUP: "Delete group ''{name}''? This cannot be undone."
       FAILED_TO_LOAD_GROUPS: Failed to load groups
-      FAILED_TO_LOAD_GROUP: "Failed to load group '{name}'."
+      FAILED_TO_LOAD_GROUP: "Failed to load group ''{name}''."
       FAILED_TO_SAVE_GROUP: Failed to save group.
       FAILED_TO_CREATE_GROUP: Failed to create group.
-      GROUP_SAVED: "Group '{name}' saved"
-      GROUP_CREATED: "Group '{name}' created"
-      GROUP_DELETED: "Group '{name}' deleted"
-      GROUP_DELETE_FAILED: "Failed to delete group '{name}'"
+      GROUP_SAVED: "Group ''{name}'' saved"
+      GROUP_CREATED: "Group ''{name}'' created"
+      GROUP_DELETED: "Group ''{name}'' deleted"
+      GROUP_DELETE_FAILED: "Failed to delete group ''{name}''"
       GROUP_MODIFIED_ELSEWHERE: Group was modified elsewhere. Please reload.
       GROUP_PAGE_TITLE: "{name} — Groups — Grav Admin"
       GROUP_COUNT_ONE: "{n} group"

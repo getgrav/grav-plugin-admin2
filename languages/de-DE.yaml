@@ -1137,7 +1137,7 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Benutzer wurde anderswo geändert — speichern zum Überschreiben oder neuladen'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Benutzer wurde anderswo geändert. Bitte neuladen.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Sie können Ihr eigenes Konto nicht löschen.'
-            CONFIRM_DELETE_USER: "Benutzer '{username}' löschen? Dies kann nicht rückgängig gemacht werden."
+            CONFIRM_DELETE_USER: "Benutzer ''{username}'' löschen? Dies kann nicht rückgängig gemacht werden."
             TITLE: Benutzer
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar entfernt'

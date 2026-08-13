@@ -581,28 +581,28 @@ ICU:
         GROUPS:
             ADD_GROUP: '그룹 추가'
             BACK_TO_GROUPS: '그룹으로 돌아가기'
-            CONFIRM_DELETE_GROUP: "'{name}' 그룹을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+            CONFIRM_DELETE_GROUP: "''{name}'' 그룹을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
             CREATE: 생성
             DELETE_GROUP: '그룹 삭제'
             DESCRIPTION: 설명
             DISPLAY_NAME: '표시 이름'
             FAILED_TO_CREATE_GROUP: '그룹 생성에 실패했습니다.'
-            FAILED_TO_LOAD_GROUP: "'{name}' 그룹을 불러오는 데 실패했습니다."
+            FAILED_TO_LOAD_GROUP: "''{name}'' 그룹을 불러오는 데 실패했습니다."
             FAILED_TO_LOAD_GROUPS: '그룹을 불러오는 데 실패했습니다'
             FAILED_TO_SAVE_GROUP: '그룹 저장에 실패했습니다.'
             GROUPS: 그룹
             GROUPS_GRAV_ADMIN: '그룹 — Grav Admin'
             GROUP_COUNT_ONE: '{n}개의 그룹'
             GROUP_COUNT_OTHER: '그룹 {n}개'
-            GROUP_CREATED: "그룹 '{name}' 생성됨"
-            GROUP_DELETED: "그룹 '{name}' 삭제됨"
-            GROUP_DELETE_FAILED: "그룹 '{name}' 삭제 실패"
+            GROUP_CREATED: "그룹 ''{name}'' 생성됨"
+            GROUP_DELETED: "그룹 ''{name}'' 삭제됨"
+            GROUP_DELETE_FAILED: "그룹 ''{name}'' 삭제 실패"
             GROUP_MODIFIED_ELSEWHERE: '다른 곳에서 그룹이 수정되었습니다. 새로 고침하세요.'
             GROUP_NAME: '그룹 이름'
             GROUP_NAME_HELP: '1~200자의 문자, 숫자, 하이픈 또는 밑줄. 저장 키로 사용됩니다.'
             GROUP_NAME_PLACEHOLDER: '예: editors'
             GROUP_PAGE_TITLE: '{name} — 그룹 — Grav 관리자'
-            GROUP_SAVED: "그룹 '{name}' 저장됨"
+            GROUP_SAVED: "그룹 ''{name}'' 저장됨"
             NEW_GROUP: '새 그룹'
             NEW_GROUP_GRAV_ADMIN: '새 그룹 — Grav 관리자'
             NO_GROUPS: '그룹을 찾을 수 없습니다'
@@ -1951,7 +1951,7 @@ ICU:
             2_FACTOR_AUTHENTICATION: '2단계 인증'
             ADD_USER: '사용자 추가'
             BACK_TO_USERS: '사용자 목록으로 돌아가기'
-            CONFIRM_DELETE_USER: "'{username}' 사용자를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+            CONFIRM_DELETE_USER: "''{username}'' 사용자를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
             CREATED: 생성일
             DELETE_USER: '사용자 삭제'
             FAILED_TO_LOAD_USERS: '사용자 목록을 불러오는 데 실패했습니다'

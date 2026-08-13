@@ -581,28 +581,28 @@ ICU:
         GROUPS:
             ADD_GROUP: 'Tilføj gruppe'
             BACK_TO_GROUPS: 'Tilbage til grupper'
-            CONFIRM_DELETE_GROUP: "Slet gruppen '{name}'? Dette kan ikke fortrydes."
+            CONFIRM_DELETE_GROUP: "Slet gruppen ''{name}''? Dette kan ikke fortrydes."
             CREATE: Opret
             DELETE_GROUP: 'Slet gruppe'
             DESCRIPTION: Beskrivelse
             DISPLAY_NAME: Visningsnavn
             FAILED_TO_CREATE_GROUP: 'Kunne ikke oprette gruppe.'
-            FAILED_TO_LOAD_GROUP: "Kunne ikke indlæse gruppen '{name}'."
+            FAILED_TO_LOAD_GROUP: "Kunne ikke indlæse gruppen ''{name}''."
             FAILED_TO_LOAD_GROUPS: 'Kunne ikke indlæse grupper'
             FAILED_TO_SAVE_GROUP: 'Kunne ikke gemme gruppen.'
             GROUPS: Grupper
             GROUPS_GRAV_ADMIN: 'Grupper — Grav Admin'
             GROUP_COUNT_ONE: '{n} gruppe'
             GROUP_COUNT_OTHER: '{n} grupper'
-            GROUP_CREATED: "Gruppe '{name}' oprettet"
-            GROUP_DELETED: "Gruppe '{name}' slettet"
-            GROUP_DELETE_FAILED: "Kunne ikke slette gruppen '{name}'"
+            GROUP_CREATED: "Gruppe ''{name}'' oprettet"
+            GROUP_DELETED: "Gruppe ''{name}'' slettet"
+            GROUP_DELETE_FAILED: "Kunne ikke slette gruppen ''{name}''"
             GROUP_MODIFIED_ELSEWHERE: 'Gruppen blev ændret et andet sted. Genindlæs venligst.'
             GROUP_NAME: Gruppenavn
             GROUP_NAME_HELP: '1–200 tegn bestående af bogstaver, tal, bindestreger eller understregninger. Bruges som lagringsnøgle.'
             GROUP_NAME_PLACEHOLDER: 'f.eks. redaktører'
             GROUP_PAGE_TITLE: '{name} — Grupper — Grav Admin'
-            GROUP_SAVED: "Gruppe '{name}' gemt"
+            GROUP_SAVED: "Gruppe ''{name}'' gemt"
             NEW_GROUP: 'Ny gruppe'
             NEW_GROUP_GRAV_ADMIN: 'Ny gruppe — Grav Admin'
             NO_GROUPS: 'Ingen grupper fundet'
@@ -1951,7 +1951,7 @@ ICU:
             2_FACTOR_AUTHENTICATION: 2-faktor-godkendelse
             ADD_USER: 'Tilføj bruger'
             BACK_TO_USERS: 'Tilbage til brugere'
-            CONFIRM_DELETE_USER: "Slet brugeren '{username}'? Dette kan ikke fortrydes."
+            CONFIRM_DELETE_USER: "Slet brugeren ''{username}''? Dette kan ikke fortrydes."
             CREATED: Oprettet
             DELETE_USER: 'Slet bruger'
             FAILED_TO_LOAD_USERS: 'Kunne ikke indlæse brugere'

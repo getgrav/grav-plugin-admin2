@@ -1951,7 +1951,7 @@ ICU:
             2_FACTOR_AUTHENTICATION: 'Autenticação de 2 Fatores'
             ADD_USER: 'Adicionar Usuário'
             BACK_TO_USERS: 'Voltar para Usuários'
-            CONFIRM_DELETE_USER: "Excluir o usuário '{username}'? Isso não pode ser desfeito."
+            CONFIRM_DELETE_USER: "Excluir o usuário ''{username}''? Isso não pode ser desfeito."
             CREATED: Criado
             DELETE_USER: 'Excluir Usuário'
             FAILED_TO_LOAD_USERS: 'Falha ao carregar usuários'
