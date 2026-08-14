@@ -336,6 +336,7 @@ ICU:
       USERS: Users
       PLUGINS: Plugins
       THEMES: Themes
+      TRANSLATIONS: Translations
       TOOLS: Tools
       SYSTEM: System
       SETTINGS: Settings
@@ -623,6 +624,117 @@ ICU:
         LOCKED: Read-only — {owner} is editing with **{editor}**. Mixed editor types can't co-edit; [switch your editor preference]({href}) to collaborate live.
         BUILTIN_MARKDOWN_EDITOR: the built-in markdown editor
     DOWNLOAD: Download
+    TRANSLATIONS:
+      TITLE: Translations
+      DESCRIPTION: "Reword any string this site displays, in any language. Changes are stored as overrides in user/languages and never touch a plugin or theme's own files, so an update can't wipe them."
+      IMPORT_TITLE: Overrides waiting in the Translation Strings plugin
+      IMPORT_BODY: "{count, plural, one {# override is still stored inside the Translation Strings plugin. Import it to manage it here.} other {# overrides across {languages, plural, one {# language} other {# languages}} are still stored inside the Translation Strings plugin. Import them to manage them here.}}"
+      IMPORT_CONFLICTS: "{count, plural, one {# key is} other {# keys are}} set in both places with different wording. The plugin's version wins, because that is what your site shows today."
+      IMPORT_ACTION: Import overrides
+      IMPORT_DONE: "Imported {count, plural, one {# override} other {# overrides}}"
+      IMPORT_FAILED: Import failed
+      IMPORT_UNKNOWN_WARNING: "{count, plural, one {# imported key names a string} other {# imported keys name strings}} nothing on this site provides. Find them with the Unknown filter."
+      IMPORT_UNKNOWN_NOTE: "{count, plural, one {# key names a string no plugin, theme or core file provides. It is kept so you can review it, but it has no effect.} other {# keys name strings no plugin, theme or core file provides. They are kept so you can review them, but they have no effect.}}"
+      IMPORT_ALREADY_DONE: "All {count, plural, one {# override is} other {# overrides are}} already here"
+      IMPORT_STILL_ENABLED_TITLE: The Translation Strings plugin is still enabled
+      IMPORT_STILL_ENABLED_BODY: It applies its strings after this editor does, so it still overrides anything you change here. Check the site reads correctly, then disable it to finish the switch. Its settings are left in place, so this is reversible.
+      IMPORT_DISABLE_ACTION: Disable the plugin
+      IMPORT_DISABLE_BLOCKED: Import the overrides first, or they will drop off the site.
+      IMPORT_DISABLE_FAILED: Could not disable the plugin
+      IMPORT_PLUGIN_DISABLED: Translation Strings disabled. This editor is now in charge.
+      IMPORT_SHOW_DETAIL: Show what will be imported
+      IMPORT_HIDE_DETAIL: Hide detail
+      IMPORT_COL_LANGUAGE: Language
+      IMPORT_COL_NEW: New
+      IMPORT_COL_CONFLICT: Conflicting
+      IMPORT_COL_ALREADY: Already here
+      IMPORT_COL_SHIPPED: Same as original
+      IMPORT_COL_UNKNOWN: Unknown
+      IMPORT_LEGEND: Strings marked "same as original" match what the plugin or theme already ships, so they are dropped rather than stored as overrides that do nothing.
+      IMPORT_NO_PERMISSION: You do not have permission to write translation overrides, so the import is unavailable.
+      IMPORT_NO_CONFIG_PERMISSION: You do not have permission to change plugin settings, so the plugin has to be disabled by an administrator.
+      TRANSLATE_UNAVAILABLE_NOT_INSTALLED: AI-powered translation of missing strings is available with the AI Translate premium plugin.
+      TRANSLATE_UNAVAILABLE_NOT_ENABLED: AI Translate is installed but switched off, so machine translation is unavailable.
+      TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: AI Translate has no translation provider set up yet, so machine translation is unavailable.
+      TRANSLATE_UNAVAILABLE_FIND_IT: Get the plugin
+      TRANSLATE_UNAVAILABLE_OPEN_IT: Open its settings
+      SUPERSEDED_TITLE: Built into Grav 2.0
+      SUPERSEDED_BODY: The Translations section does everything this plugin does, and adds search across every string on the site, per-language coverage, machine translation and a report of keys nothing provides any more. This plugin stays supported on Grav 1.7.
+      SUPERSEDED_PENDING: "{count, plural, one {# override is} other {# overrides are}} still stored here and can be imported."
+      SUPERSEDED_ACTION: Open Translations
+      SEARCH_PLACEHOLDER: Search text or key...
+      SOURCE_LANGUAGE: Source
+      SOURCE: source
+      LANGUAGES: Languages
+      FILTER_LANGUAGES: Filter languages
+      EDITED: edited
+      KEY: Key
+      ALL_SOURCES: All sources
+      KIND_SYSTEM: Core
+      KIND_PLUGINS: Plugins
+      KIND_THEMES: Themes
+      KIND_USER: This site
+      INACTIVE: inactive
+      INACTIVE_HELP: This plugin is disabled or this theme is not the active one, so its strings are not used on the site.
+      STATUS_ALL: All
+      STATUS_MISSING: Missing
+      STATUS_OVERRIDDEN: Overridden
+      STATUS_UNKNOWN: Unknown
+      STATE_OVERRIDDEN: overridden
+      STATE_MISSING: missing
+      STATE_MISSING_FALLBACK: falling back
+      UNKNOWN_KEY_HELP: No plugin, theme or core file provides this key. It is probably a typo, or left over from something no longer installed.
+      SHIPPED_VALUE: "Originally: {value}"
+      REVERT: Revert
+      REVERT_HELP: Remove this override and go back to what the plugin or theme provides.
+      REVERTED_TO_SHIPPED: Reverted to the original wording
+      OVERRIDE_REMOVED: Override removed
+      SAVED_UNKNOWN_KEY: "Saved, but nothing provides {key} — check the spelling"
+      EDIT_HINT: Enter to save, Escape to cancel, Shift+Enter for a new line. Clear the box to remove your override.
+      REFRESH: Refresh
+      LOADING: Loading translations...
+      NO_RESULTS: No strings match these filters.
+      NO_RESULTS_FILTERED: "You are looking inside: {filters}"
+      FILTERED_BY: Showing only
+      REMOVE_FILTER: Remove this filter
+      CLEAR_ALL_FILTERS: Clear filters
+      FAILED_TO_LOAD: Failed to load translations
+      FAILED_TO_SAVE: Failed to save that change
+      SHOWING: "Showing {from}–{to} of {total}"
+      PREVIOUS: Previous
+      NEXT: Next
+      EDIT_AS_YAML: Edit as YAML
+      EDIT_AS_GRID: Back to grid
+      EDITING_LANGUAGE: Editing
+      SCOPED_TO: "Only {namespace}"
+      SCOPE_WHOLE_FILE: Editing every override for this language
+      SAVE: Save
+      SAVING: Saving...
+      YAML_SAVED: "{count, plural, =0 {No overrides left in {lang}} one {# override saved in {lang}} other {# overrides saved in {lang}}}"
+      YAML_PLACEHOLDER: "MY_PLUGIN:\n  SOME_KEY: Your wording here"
+      YAML_HELP: Paste or edit overrides directly. Values matching what the plugin or theme already provides are dropped, so the file only ever holds real changes.
+      UNKNOWN_KEYS_SAVED: Saved, but nothing provides these keys
+      TRANSLATE_MISSING: Translate missing
+      TRANSLATING: Translating...
+      TRANSLATE_FAILED: Translation failed
+      PICK_A_TARGET_LANGUAGE: Add a language column first — there is nothing to translate into.
+      NOTHING_TO_TRANSLATE: Nothing on this page is missing a translation.
+      PROPOSALS_PENDING: "{count, plural, one {# suggestion to review} other {# suggestions to review}}"
+      SKIPPED_COUNT: "{count, plural, one {# skipped} other {# skipped}}"
+      ACCEPT_ALL: Accept all
+      DISCARD_ALL: Discard
+      ACCEPTED_ALL: "{count, plural, one {# translation saved} other {# translations saved}}"
+      SUGGESTED: Suggested
+      ACCEPT: Accept
+      DISCARD: Discard
+      TRANSLATE_THIS: Suggest a translation for this string
+      TRANSLATE_ROW: Suggest translations for this string in every language shown
+      SKIP_NO_SOURCE: There is no wording in the source language to translate from.
+      SKIP_ICU: This message changes with a number or a choice, and each language needs its own set of forms. Write this one by hand.
+      SKIP_NOTHING: This string is only placeholders, so there are no words to translate.
+      SKIP_EMPTY: The translation service returned nothing for this string.
+      SKIP_PLACEHOLDERS: The translation came back with its placeholders altered, so it was discarded rather than saved.
+
     TOOLS:
       BACKUPS:
         DELETE_BACKUP: Delete Backup
@@ -2030,7 +2142,6 @@ ICU:
     SCHEDULER_WEBHOOK_TOKEN: Webhook Security Token
     SCHEDULER_WEBHOOK_TOKEN_HELP: Secret token for authenticating webhook requests. Keep this secret!
     SCHEDULER_WORKER_CONFIG: Worker Configuration
-    TRANSLATIONS: Translations
     USER_ACCOUNTS: User Accounts
     TWIG_CONTENT: Twig in Content
     TWIG_CONTENT_HELP: Controls for editor-authored Twig embedded in page content. Theme templates on disk are not affected by these settings; they only apply to Twig that authors put into page bodies or frontmatter.
