@@ -595,7 +595,7 @@ ICU:
             VIEW_TREE: Arborescence
             CHUNK_SIZE: Bloc
             CHUNK_SIZE_HELP: 'Nombre de lignes à récupérer par requête lors du défilement. Des valeurs plus élevées ralentissent le chargement initial, mais réduisent le nombre de requêtes suivantes.'
-            LOADED_OF: '{n, pluriel, un {# loaded} autre {# loaded}} sur {total}'
+            LOADED_OF: '{n, plural, one {# chargé} other {# chargés}} sur {total}'
             LOADING_CHUNK: 'Chargement des lignes {from}–{to}…'
             NO_MATCH: 'Aucune page ne correspond à votre recherche'
             PUBLISH: Publier

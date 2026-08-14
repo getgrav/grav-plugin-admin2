@@ -1137,7 +1137,7 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Gebruiker is elders gewijzigd — opslaan om te overschrijven of herlaad'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Gebruiker is elders gewijzigd. Laad alstublieft opnieuw.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'U kunt uw eigen account niet verwijderen.'
-            CONFIRM_DELETE_USER: "Gebruiker '{username}' verwijderen? Dit kan niet ongedaan worden gemaakt."
+            CONFIRM_DELETE_USER: "Gebruiker ''{username}'' verwijderen? Dit kan niet ongedaan worden gemaakt."
             TITLE: Gebruikers
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar verwijderd'
@@ -1164,28 +1164,28 @@ ICU:
         GROUPS:
             ADD_GROUP: 'Groep toevoegen'
             BACK_TO_GROUPS: 'Terug naar overzicht groepen'
-            CONFIRM_DELETE_GROUP: "Groep '{name}' verwijderen? Dit kan niet ongedaan worden gemaakt."
+            CONFIRM_DELETE_GROUP: "Groep ''{name}'' verwijderen? Dit kan niet ongedaan worden gemaakt."
             CREATE: Aanmaken
             DELETE_GROUP: 'Groep verwijderen'
             DESCRIPTION: Omschrijving
             DISPLAY_NAME: 'Toon naam'
             FAILED_TO_CREATE_GROUP: 'Aanmaken groep is mislukt'
-            FAILED_TO_LOAD_GROUP: "Laden van groep '{name}' is mislukt"
+            FAILED_TO_LOAD_GROUP: "Laden van groep ''{name}'' is mislukt"
             FAILED_TO_LOAD_GROUPS: 'Laden van groepen is mislukt'
             FAILED_TO_SAVE_GROUP: 'Bewaren groep is mislukt'
             GROUPS: Groepen
             GROUPS_GRAV_ADMIN: 'Groepen — Grav Admin'
             GROUP_COUNT_ONE: '{n} groep'
             GROUP_COUNT_OTHER: '{n} groepen'
-            GROUP_CREATED: "Groep '{name}' aangemaakt"
-            GROUP_DELETED: "Groep '{name}' verwijderd"
-            GROUP_DELETE_FAILED: "Kan groep '{name}' niet verwijderen"
+            GROUP_CREATED: "Groep ''{name}'' aangemaakt"
+            GROUP_DELETED: "Groep ''{name}'' verwijderd"
+            GROUP_DELETE_FAILED: "Kan groep ''{name}'' niet verwijderen"
             GROUP_MODIFIED_ELSEWHERE: 'Groep is elders gewijzigd. Laad de pagina opnieuw.'
             GROUP_NAME: 'Naam groep'
             GROUP_NAME_HELP: '1–200 tekens, bestaande uit letters, cijfers, koppeltekens of onderstrepingstekens. Wordt gebruikt als opslagcode.'
             GROUP_NAME_PLACEHOLDER: 'bijv. redacteuren'
             GROUP_PAGE_TITLE: '{name} — Groepen — Grav Admin'
-            GROUP_SAVED: "Groep '{name}' opgeslagen"
+            GROUP_SAVED: "Groep ''{name}'' opgeslagen"
             NEW_GROUP: 'Nieuwe groep'
             NEW_GROUP_GRAV_ADMIN: 'Nieuw groep — Grav Admin'
             NO_GROUPS: 'Geen groepen gevonden'

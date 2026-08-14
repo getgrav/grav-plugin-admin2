@@ -1164,28 +1164,28 @@ ICU:
         GROUPS:
             ADD_GROUP: 'Lisää ryhmä'
             BACK_TO_GROUPS: 'Takaisin ryhmiin'
-            CONFIRM_DELETE_GROUP: "Poista ryhmä '{name}'? Tätä ei voi kumota."
+            CONFIRM_DELETE_GROUP: "Poista ryhmä ''{name}''? Tätä ei voi kumota."
             CREATE: Luo
             DELETE_GROUP: 'Poista ryhmä'
             DESCRIPTION: Kuvaus
             DISPLAY_NAME: Näyttönimi
             FAILED_TO_CREATE_GROUP: 'Ryhmän luominen epäonnistui.'
-            FAILED_TO_LOAD_GROUP: "Ryhmän '{name}' lataaminen epäonnistui."
+            FAILED_TO_LOAD_GROUP: "Ryhmän ''{name}'' lataaminen epäonnistui."
             FAILED_TO_LOAD_GROUPS: 'Ryhmien lataaminen epäonnistui'
             FAILED_TO_SAVE_GROUP: 'Ryhmän tallentaminen epäonnistui.'
             GROUPS: Ryhmät
             GROUPS_GRAV_ADMIN: 'Ryhmät — Grav Admin'
             GROUP_COUNT_ONE: '{n} ryhmä'
             GROUP_COUNT_OTHER: '{n} ryhmää'
-            GROUP_CREATED: "Ryhmä '{name}' luotu"
-            GROUP_DELETED: "Ryhmä '{name}' poistettu"
-            GROUP_DELETE_FAILED: "Ryhmän '{name}' poistaminen epäonnistui"
+            GROUP_CREATED: "Ryhmä ''{name}'' luotu"
+            GROUP_DELETED: "Ryhmä ''{name}'' poistettu"
+            GROUP_DELETE_FAILED: "Ryhmän ''{name}'' poistaminen epäonnistui"
             GROUP_MODIFIED_ELSEWHERE: 'Ryhmää on muokattu muualla. Lataa sivu uudelleen.'
             GROUP_NAME: 'Ryhmän nimi'
             GROUP_NAME_HELP: '1–200 merkkiä kirjaimia, numeroita, tavuviivoja tai alaviivoja sisältävä. Käytetään tallennusavaimena.'
             GROUP_NAME_PLACEHOLDER: 'esim. toimittajat'
             GROUP_PAGE_TITLE: '{name} — Ryhmät — Grav Admin'
-            GROUP_SAVED: "Ryhmä '{name}' tallennettu"
+            GROUP_SAVED: "Ryhmä ''{name}'' tallennettu"
             NEW_GROUP: 'Uusi ryhmä'
             NEW_GROUP_GRAV_ADMIN: 'Uusi ryhmä – Grav Admin'
             NO_GROUPS: 'Ryhmiä ei löytynyt'

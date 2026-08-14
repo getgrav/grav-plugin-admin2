@@ -1,1 +1,0 @@
-import{j as t,g as r,h as o}from"./Dyk1ealw.js";let s=o(null),g=o(null);const n={get presence(){return r(s)},get modeToggle(){return r(g)},setPresence(e){t(s,e,!0)},setModeToggle(e){t(g,e,!0)}};export{n as p};

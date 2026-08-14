@@ -1,3 +1,20 @@
+# v2.1.0
+## 08/14/2026
+
+1. [](#new)
+    * Added a Translations section for rewording any string the site displays, in any language, without editing a plugin or theme's own files.
+    * Translations can be browsed by the plugin or theme that provides them, or found by searching for the wording you see on screen rather than the key behind it.
+    * Every string shows whether it comes from a plugin or theme, has been changed here, or has no translation yet and is falling back to another language.
+    * Missing translations can be filled in by the AI Translate plugin, with each suggestion shown for approval before it is saved.
+    * Added a YAML view for editing many strings at once, which warns about keys that nothing on the site actually provides.
+    * Sites using the Translation Strings plugin are offered a one-click import of everything stored in it, with a breakdown of what will change shown first, and are then offered to switch that plugin off.
+    * Every language now reads down the page rather than across it, so opening several no longer squeezes the text into unreadable columns.
+    * The "Twig in Content" report can now show the effective sandbox policy, listing the built-in defaults with any additions or restrictions this site has made.
+1. [](#bugfix)
+    * Remote collaborators' cursors and selections now stay visible and correctly positioned while co-editing, and no longer disappear right after a save.
+    * Messages that quote a name back to you, such as the one confirming a new group, now show the name instead of the literal `{name}` [#159](https://github.com/getgrav/grav-plugin-admin2/issues/159)
+    * The French Canadian page-loading counter no longer displays its own template text.
+
 # v2.0.21
 ## 08/12/2026
 

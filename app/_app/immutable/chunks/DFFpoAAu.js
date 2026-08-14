@@ -1,0 +1,1 @@
+import{H as t,I as i,J as c,ad as f}from"./qex-fw8l.js";import{B as y}from"./_nglP7Ha.js";const l=Symbol("NaN");function h(r,e,n){i&&c();var o=new y(r),s=!f();t(()=>{var a=e();a!==a&&(a=l),s&&a!==null&&typeof a=="object"&&(a={}),o.ensure(a,n)})}export{h as k};
