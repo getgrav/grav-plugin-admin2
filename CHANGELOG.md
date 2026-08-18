@@ -9,6 +9,8 @@
     * The Ctrl+B and Ctrl+I shortcuts the toolbar advertises now work; Ctrl+I previously selected the surrounding paragraph instead [#163](https://github.com/getgrav/grav-plugin-admin2/issues/163)
     * Blueprint fields now show their `description`, `sublabel`, `labelclasses` and `outerclasses`, and `display_label: false` hides the label as documented [#18](https://github.com/getgrav/grav-admin-next/issues/18)
     * The Twig in Content report no longer shows an "XSS output scan" status, which always read "off" because it described a check Grav replaced in 2.0.11 [#4241](https://github.com/getgrav/grav/issues/4241)
+    * Choosing an After Save option on a Flex object no longer marks the record as changed, which with auto-save turned on was saving the record on the spot [#160](https://github.com/getgrav/grav-plugin-admin2/issues/160)
+    * The After Save choice is now remembered between saves, and "Create New" works when editing an existing record instead of doing nothing [#160](https://github.com/getgrav/grav-plugin-admin2/issues/160)
 
 # v2.1.0
 ## 08/14/2026
