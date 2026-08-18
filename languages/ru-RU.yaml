@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Песочница заблокировала метод'
                     EVENT_SANDBOX_PROPERTY: 'Песочница заблокировала свойство'
                     EVENT_SANDBOX_TAG: 'Заблокированный тег песочницы'
-                    EVENT_XSS_BLANKED: 'Вывод скрыт из-за XSS-сканирования'
                     FRONTMATTER_REQUEST_GATED: 'Запрошен Twig во frontmatter (pages.frontmatter.process_twig), но Twig в контенте отключен глобально, поэтому он не будет выполняться. Выберите профиль выше, чтобы включить его.'
                     GATE_OFF: 'Twig в контенте отключен'
                     GATE_ON: 'Twig в контенте включен'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Заблокированные теги в контенте'
                     SECTION_EVENTS: 'Недавние блокировки'
                     SECTION_LEAKS: 'Страницы, отображающие необработанный Twig'
-                    XSS_SCAN_OFF: 'XSS-сканирование вывода выключено'
-                    XSS_SCAN_ON: 'XSS-сканирование вывода включено'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Загрузка компонента отчета...'
             SCHEDULER:

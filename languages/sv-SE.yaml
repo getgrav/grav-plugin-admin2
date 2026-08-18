@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Sandbox blockerade metod'
                     EVENT_SANDBOX_PROPERTY: 'Sandbox blockerade egenskap'
                     EVENT_SANDBOX_TAG: 'Sandbox-blockad tagg'
-                    EVENT_XSS_BLANKED: 'Utmatning rensad av XSS-skanning'
                     FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig efterfrågas (pages.frontmatter.process_twig), men Twig i innehåll är inaktiverat globalt för webbplatsen, så det kommer inte att köras. Välj en profil ovan för att aktivera det.'
                     GATE_OFF: 'Twig i innehåll inaktiverat'
                     GATE_ON: 'Twig i innehåll aktiverat'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Blockerade taggar i innehåll'
                     SECTION_EVENTS: 'Senaste blockeringar'
                     SECTION_LEAKS: 'Sidor som läcker rå Twig'
-                    XSS_SCAN_OFF: 'XSS-utmatningsskanning av'
-                    XSS_SCAN_ON: 'XSS-utmatningsskanning på'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Laddar rapportkomponent...'
             SCHEDULER:

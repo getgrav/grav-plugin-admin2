@@ -819,8 +819,6 @@ ICU:
           GATE_OFF: Twig in content disabled
           SANDBOX_ON: Sandbox on
           SANDBOX_OFF: Sandbox off
-          XSS_SCAN_ON: XSS output scan on
-          XSS_SCAN_OFF: XSS output scan off
           SECTION_LEAKS: Pages leaking raw Twig
           SECTION_EVENTS: Recent blocks
           LEAK_GATE_OFF: "The site gate is off, so this page's Twig markup renders as raw text to visitors."
@@ -833,7 +831,6 @@ ICU:
           CLEAR_FAILED: Could not clear blocks
           OPEN_SECURITY_SETTINGS: Open Security settings
           EVENT_GATE_BLOCKED: Gate blocked Twig in this page's content
-          EVENT_XSS_BLANKED: Output blanked by the XSS scan
           EVENT_SANDBOX_TAG: "Sandbox blocked tag"
           EVENT_SANDBOX_FILTER: "Sandbox blocked filter"
           EVENT_SANDBOX_FUNCTION: "Sandbox blocked function"

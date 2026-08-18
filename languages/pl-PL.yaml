@@ -1784,7 +1784,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Piaskownica zablokowała metodę'
                     EVENT_SANDBOX_PROPERTY: 'Piaskownica zablokowała właściwość'
                     EVENT_SANDBOX_TAG: 'Zablokowany tag piaskownicy'
-                    EVENT_XSS_BLANKED: 'Dane wyjściowe wyczyszczone przez skaner XSS'
                     FRONTMATTER_REQUEST_GATED: 'Wymagane jest przetwarzanie Twig w frontmatter (pages.frontmatter.process_twig), ale obsługa Twig w treści jest wyłączona w całej witrynie, więc nie zostanie uruchomione. Wybierz profil powyżej, aby je włączyć.'
                     GATE_OFF: 'Twig w treści wyłączony'
                     GATE_ON: 'Twig w treści włączony'
@@ -1803,8 +1802,6 @@ ICU:
                     SCAN_TAGS: 'Zablokowane tagi w treści'
                     SECTION_EVENTS: 'Ostatnie blokady'
                     SECTION_LEAKS: 'Strony ujawniające surowy kod Twig'
-                    XSS_SCAN_OFF: 'Skanowanie danych wyjściowych XSS wyłączone'
-                    XSS_SCAN_ON: 'Skanowanie danych wyjściowych XSS włączone'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Wczytywanie komponentu raportu...'
             SCHEDULER:

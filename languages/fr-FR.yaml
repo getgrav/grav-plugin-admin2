@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Le bac à sable a bloqué la méthode'
                     EVENT_SANDBOX_PROPERTY: 'Le bac à sable a bloqué la propriété'
                     EVENT_SANDBOX_TAG: 'Balise bloquée par le bac à sable'
-                    EVENT_XSS_BLANKED: "Sortie masquée par l'analyse XSS"
                     FRONTMATTER_REQUEST_GATED: "Le Twig dans le frontmatter est demandé (pages.frontmatter.process_twig), mais le Twig dans le contenu est désactivé sur l'ensemble du site, il ne sera donc pas exécuté. Choisissez un profil ci-dessus pour l'activer."
                     GATE_OFF: 'Twig dans le contenu désactivé'
                     GATE_ON: 'Twig dans le contenu activé'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Balises bloquées dans le contenu'
                     SECTION_EVENTS: 'Blocages récents'
                     SECTION_LEAKS: 'Pages laissant fuiter du Twig brut'
-                    XSS_SCAN_OFF: 'Analyse de sortie XSS désactivée'
-                    XSS_SCAN_ON: 'Analyse de sortie XSS activée'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Chargement du composant de rapport...'
             SCHEDULER:

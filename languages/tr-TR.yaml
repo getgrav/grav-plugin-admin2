@@ -1,0 +1,2202 @@
+ICU:
+  ADMIN_NEXT:
+    ADD_PAGE: Sayfa Ekle
+    CANCEL: İptal
+    CLEAR_SEARCH: Aramayı Temizle
+    CLOSE: Kapat
+    COLLAPSE_SIDEBAR: Kenar çubuğunu daralt
+    EXPAND_SIDEBAR: Kenar çubuğunu genişlet
+    CONFIRM: Onayla
+    CONFIRM_DELETE: '{route} yolundaki "{title}" silinsin mi?'
+    DELETE: Sil
+    DONE: Bitti
+    EDIT: Düzenle
+    LOADING: Yükleniyor...
+    NO_CHANGES: Kaydedilecek değişiklik yok
+    SAVE: Kaydet
+    SAVING: Kaydediliyor...
+    SEARCH: Ara
+    SIGN_OUT: Çıkış Yap
+    TOGGLE_DARK_MODE: Karanlık modu değiştir
+    TOGGLE_MENU: Menüyü değiştir
+    UNSAVED_CHANGES: Kaydedilmemiş değişiklikler
+    UNSAVED_CHANGES_DIALOG:
+      LEAVE_MESSAGE: Kaydedilmemiş değişiklikleriniz var. Yine de ayrılmak istiyor musunuz?
+      LEAVE: Ayrıl
+      STAY: Kal
+      SWITCH_LANGUAGE_MESSAGE: Kaydedilmemiş değişiklikleriniz var. Yine de dili değiştirmek istiyor musunuz?
+      SWITCH_LANGUAGE: Değiştir
+    VALIDATION:
+      FIELD_REQUIRED: '{label} alanı zorunludur'
+      REQUIRED_GENERIC: Bu alan zorunludur
+      FORM_HAS_ERRORS: '{count, plural, one {# alanın dikkatinize ihtiyacı var} other {# alanın dikkatinize ihtiyacı var}}'
+    SECURITY_CHECK:
+      USER_FOLDER_EXPOSED_TITLE: Web sunucunuz Grav'ın erişim kurallarını uygulamıyor
+      USER_FOLDER_EXPOSED_BODY: Web sunucunuz Grav'ın önerilen erişim kurallarını uygulamıyor, bu nedenle user/ içindeki dosyalara doğrudan web üzerinden erişilebilir. Bazı eklentiler verileri burada depoladığı için bu durumu düzeltmeniz önerilir.
+      USER_FOLDER_EXPOSED_LEARN_MORE: Bunu nasıl düzeltebilirim?
+    DASHBOARD:
+      TITLE: Gösterge Paneli
+      CUSTOMIZE: Özelleştir
+      CUSTOMIZE_TITLE: Gösterge panelini özelleştir
+      EDIT_HINT: Özelleştirme modu — bileşenleri sürükleyin, yeniden boyutlandırın, gizleyin ve ardından kaydedin.
+      PRESETS: Ön Ayarlar
+      SAVE_SITE_DEFAULT: Site varsayılanı olarak kaydet
+      RESET_LAYOUT: Düzenimi sıfırla
+      ADD_WIDGET: Bileşen ekle
+      HIDE_WIDGET: Bileşeni gizle
+      PICKER_TITLE: Bileşen ekle
+      PICKER_SUBTITLE: Gösterge panelinize eklemek için bir bileşen seçin.
+      PICKER_EMPTY: Kullanılabilir tüm bileşenler zaten gösterge panelinizde bulunuyor.
+      EMPTY: Gösterge paneliniz boş
+      EMPTY_HINT: Bileşen eklemek için yukarıdaki kalem simgesine tıklayın
+      LAYOUT_SAVED: Gösterge paneli düzeni kaydedildi
+      SITE_LAYOUT_SAVED: Site varsayılanı kaydedildi
+      LAYOUT_RESET: Düzen varsayılana sıfırlandı
+      WIDGETS:
+        STATS: Site İstatistikleri
+        POPULARITY: Sayfa Görüntülemeleri
+        SYSTEM_HEALTH: Sistem Sağlığı
+        RECENT_PAGES: Son Sayfalar
+        TOP_PAGES: En İyi Sayfalar
+        BACKUPS: Yedekler
+        NOTIFICATIONS: Bildirimler
+        NEWS_FEED: Haber Akışı
+      PRESET_DEFAULT: Varsayılan
+      PRESET_DEFAULT_DESC: Sunucu tarafından önerilen düzen — özelleştirmelerinizi temizler.
+      PRESET_MINIMAL: Minimal
+      PRESET_MINIMAL_DESC: Sadece istatistikler ve son sayfalar.
+      PRESET_COMPACT: Kompakt
+      PRESET_COMPACT_DESC: Tüm bileşenler destekledikleri en küçük boyuttadır.
+    PAGES:
+      TITLE: Sayfalar
+      SEARCH_PLACEHOLDER: Sayfalarda ara...
+      NO_PAGES: Sayfa bulunamadı
+      NO_SEARCH_RESULTS: Aramanızla eşleşen sayfa yok
+      LOADING: Sayfalar yükleniyor...
+      REORDER_MOVE: Taşı
+      REORDER_DONE: Bitti
+      REORDER_EXIT_TITLE: Yeniden sıralama modundan çık
+      REORDER_START_TITLE: Sayfaları yeniden sırala
+      STATS_TOTAL: 'Toplam {n}'
+      STATS_PUBLISHED: '{n} yayımlandı'
+      STATS_UNPUBLISHED: '{n} yayımlanmadı'
+      REORDER_SAME_PARENT: Sadece aynı üst öğe altındaki sayfaları yeniden sıralayabilirsiniz. Üst öğeler arası taşıma için Ağaç (Tree) görünümünü kullanın.
+      MOVED: '"{title}" taşındı'
+      REORDERED: '"{title}" yeniden sıralandı'
+      MOVE_FAILED: Sayfa taşınamadı
+      REORDER_FAILED: Yeniden sıralama başarısız oldu
+      DELETED: '"{title}" silindi'
+      DELETE_FAILED: Sayfa silinemedi
+      SAVED: Sayfa başarıyla kaydedildi
+      SAVE_FAILED: Sayfa kaydedilemedi
+      VALIDATION_FAILED_FOR_FIELDS: 'Kaydedilemedi — şu alanlar geçersiz: {fields}'
+      VIEW_TREE: Ağaç
+      VIEW_LIST: Liste
+      VIEW_COLUMNS: Sütunlar
+      FILTER:
+        BUTTON: Filtrele
+        TITLE: Sayfaları filtrele
+        PUBLISHED: Yayımlandı
+        VISIBLE: Görünür
+        ROUTABLE: Yönlendirilebilir
+        TEMPLATE: Şablon
+        ALL: Tümü
+        'YES': Evet
+        'NO': Hayır
+        ALL_TEMPLATES: Tüm şablonlar
+        CLEAR: Temizle
+      CHUNK_SIZE: Yığın (Chunk)
+      CHUNK_SIZE_HELP: Kaydırdıkça istek başına getirilecek satır sayısı. Büyük değerler ilk seferde daha yavaş yüklenir ancak sonraki istekleri azaltır.
+      LOADING_CHUNK: '{from}–{to} arası satırlar yükleniyor…'
+      LOADED_OF: '{n, plural, one {# / {total} yüklendi} other {# / {total} yüklendi}}'
+      REORDER_LOADING: Tüm liste halen yükleniyor — birazdan tekrar deneyin.
+      REORDER_LOADING_ALL: Yeniden sıralamanın tüm listeyi etkileyebilmesi için her yığın (chunk) yükleniyor…
+      NO_MATCH: Aramanızla eşleşen sayfa yok
+      HEADER_TITLE: Başlık
+      HEADER_TEMPLATE: Şablon
+      HEADER_STATUS: Durum
+      HEADER_MODIFIED: Değiştirildi
+      HEADER_PARENT: Üst Öğe
+      PUBLISHED: Yayımlandı
+      DRAFT: Taslak
+      PUBLISH: Yayımla
+      UNPUBLISH: Yayından Kaldır
+      SORT_ORDER: Sıra
+      SORT_TITLE_AZ: Başlık A-Z
+      SORT_TITLE_ZA: Başlık Z-A
+      SORT_NEWEST: En Yeni
+      SORT_OLDEST: En Eski
+      SORT_DATE_NEWEST: Tarih (En Yeni)
+      RAW_HEADER: Ham Sayfa Üst Bilgisi (JSON)
+      PAGE_INFO: Sayfa Bilgisi
+      EDIT_PAGE: Sayfayı Düzenle
+      MODE_NORMAL: Normal
+      MODE_EXPERT: Uzman
+      FRONTMATTER: Ön Bölüm
+      TWIG_BANNER:
+        LEAK_GATE_OFF: Bu sayfa Twig biçimlendirmesi içeriyor, ancak içerikte Twig site genelinde kapalı olduğundan ziyaretçilere ham metin olarak gösterilir.
+        LEAK_PAGE_OFF: Bu sayfa Twig biçimlendirmesi içeriyor, ancak Twig bu sayfa için kapatıldığından ziyaretçilere ham metin olarak gösterilir.
+        RECENT_BLOCKS: '{n, plural, one {Bu sayfadaki # Twig yapısı yakın zamanda engellendi} other {Bu sayfadaki # Twig yapısı yakın zamanda engellendi}}.'
+        VIEW_REPORT: Raporu görüntüle
+      INFO_PUBLISHED: Yayımlandı
+      INFO_VISIBLE: Gezinmede görünür
+      INFO_ROUTABLE: Yönlendirilebilir
+      INFO_ROUTE: Rota
+      INFO_SLUG: Kısa Ad (Slug)
+      INFO_TEMPLATE: Şablon
+      INFO_LANGUAGE: Dil
+      INFO_ORDER: Sıra
+      INFO_DATE: Tarih
+      INFO_MODIFIED: Değiştirildi
+      INFO_PUBLISH_ON: Yayımlanma Tarihi
+      INFO_UNPUBLISH_ON: Yayından Kaldırılma Tarihi
+      PAGES_MILLER_VIEW:
+        DRAFT_UNPUBLISHED: Taslak (yayımlanmadı)
+        FOLDER_ORDER: Klasör Sırası
+        VISIBLE: Görünür
+        HAS_CHILDREN: Alt sayfaları var
+        SUMMARY: Özet
+        DROP_HERE: Buraya bırakın
+      PAGES_TREE_VIEW:
+        FAILED_TO_REORGANIZE_PAGES: Sayfalar yeniden düzenlenemedi
+        SEARCHING: Aranıyor…
+        NO_PAGES_MATCH: '"{query}" ile eşleşen sayfa yok'
+      DELETE_PAGE: Sayfayı Sil
+      PAGES_GRAV_ADMIN: Sayfalar — Grav Yönetim
+      ADD_PAGE: Sayfa Ekle
+      ADD_FOLDER: Klasör Ekle
+      ADD_MODULE: Modül Ekle
+      ADD_MENU: Menü Ekle
+      EDIT:
+        TOGGLE_PAGE_NAVIGATOR: Sayfa gezginini aç/kapat
+        PREVIEW_PAGE: Sayfayı önizle
+        COPY_PAGE: Sayfayı kopyala
+        DELETE_PAGE: Sayfayı Sil
+        WRITE_YOUR_MARKDOWN_CONTENT_HERE: Markdown içeriğinizi buraya yazın...
+        CONNECTING_TO_COLLAB: İşbirliği oturumuna bağlanılıyor…
+        RESET_TRANSLATION: Çeviriyi Sıfırla
+        PAGE_PREVIEW: Sayfa Önizleme
+        INVALID_YAML_FRONTMATTER: Geçersiz YAML Ön Bölümü
+        INVALID_YAML_FRONTMATTER_FIX_SYNTAX: Geçersiz YAML ön bölümü — kaydetmeden önce sözdizimini (syntax) düzeltin
+        PAGE_SAVED_AND_MOVED: Sayfa kaydedildi ve taşındı
+        SAVED_BY_PEER: '{user} bu sayfayı kaydetti'
+        SAVED_BY_PEER_ANON: Başka bir kullanıcı bu sayfayı kaydetti
+        FAILED_TO_CREATE_TRANSLATION: Çeviri oluşturulamadı
+        FAILED_TO_SYNC_TRANSLATION: Çeviri senkronize edilemedi
+        PAGE_DELETED: Sayfa silindi
+        PAGE_COPIED: Sayfa kopyalandı
+        PAGE_CHANGED_ELSEWHERE_SAVE_TO: Sayfa başka bir yerde değiştirildi — üzerine yazmak için kaydedin veya yeniden yükleyin
+        LOADING_PAGE: Sayfa yükleniyor...
+        FOLDER_NAME: Klasör Adı
+        THE_FOLDER_NAME_ON_DISK_URL_SLUG: Diskteki klasör adı (URL kısa adı)
+        FALLBACK: (yedek)
+        NOT_TRANSLATED: 'Çevrilmedi:'
+        RESET_CONTENT_FROM: 'İçeriği şuradan sıfırla:'
+        OPEN_IN_NEW_TAB: Yeni Sekmede Aç
+        SAVE_AS_LANGUAGE: '{language} olarak kaydet'
+        CREATE_LANGUAGE: '{language} oluştur'
+        EDIT_PAGE: Sayfayı Düzenle
+        FALLBACK_NOTICE: Hiçbir {active} çeviri bulunmuyor. {effective} yedeği görüntüleniyor. Düzenleyebileceğiniz bir çeviri oluşturmak için "{active} olarak kaydet" seçeneğini kullanın.
+        PUBLISH_ON: Yayımlanma tarihi
+        UNPUBLISH_ON: Yayından kaldırılma tarihi
+        RESET_FROM: '{language} dilinden sıfırla'
+      NEW:
+        MY_NEW_PAGE: Yeni Sayfam
+        FILTER_PAGES: Sayfaları filtrele...
+        FAILED_TO_LOAD_PAGE_TEMPLATES: Sayfa şablonları yüklenemedi
+        ADD_PAGE_GRAV_ADMIN: Sayfa Ekle — Grav Yönetim
+        PAGE_DETAILS: Sayfa Ayrıntıları
+        PAGE_TITLE: Sayfa Başlığı
+        FOLDER_NAME: Klasör Adı
+        URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: Bu sayfa için URL'ye uygun klasör adı
+        PARENT_PAGE: Üst Sayfa
+        ROOT: <kök> /
+        PAGE_TEMPLATE: Sayfa Şablonu
+        LOADING_TEMPLATES: Şablonlar yükleniyor...
+        VISIBLE: Görünür
+        CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: Bu sayfanın gezinme menülerinde görünüp görünmeyeceğini denetler
+        CONTINUE: Devam Et
+        PAGE_CREATED: '"{title}" sayfası oluşturuldu'
+        FOLDER_CREATED: '"{title}" klasörü oluşturuldu'
+        MODULE_CREATED: '"{title}" modülü oluşturuldu'
+        FAILED_TO_CREATE: Sayfa oluşturulamadı
+        ORDERING: Sıralama
+        ORDERING_HELP_MODULE: Bu modülün modüler üst öğesi içindeki konumunu belirleyen sayısal bir önek ekler.
+        ORDERING_HELP_FOLDER: Bu klasörün kardeşleri arasındaki konumunu belirleyen sayısal bir önek ekler.
+        ORDERING_NONE: Yok
+        FOLDER_DETAILS: Klasör Ayrıntıları
+      PAGE_COUNT: '{n, plural, one{# sayfa} other{# sayfa}}'
+      SUBTITLE: Site içeriğinizi ve yapınızı yönetin
+    FIELDS:
+      CLEAR_DATE: Tarihi temizle
+      REGENERATE_SLUG: Sayfa başlığından otomatik oluştur
+      ADD_ENTRY: Girdi ekle
+      ADD_ITEM: Öğe ekle
+      SELECTIZE_PLACEHOLDER: Yazın ve Enter'a basın...
+      SELECT_A_PAGE: Bir sayfa seçin...
+      SELECT_AN_ICON: Bir simge seçin...
+      NO_TAXONOMY_TYPES: Yapılandırılmış Taksonomi Türü Yok
+      FILE_PICKER_SOON: Dosya seçici — çok yakında
+      CRON:
+        AT_MINUTE: Dakikada
+        ON_DAY: Günde
+        CRON: 'Cron:'
+        MIN_HR_DOM_MON_DOW: dk sa gün ay haf.gün.
+      CRON_STATUS:
+        FAILED_TO_LOAD_SCHEDULER_STATUS: Zamanlayıcı durumu yüklenemedi
+        PROCESS_UNAVAILABLE: PHP'nin proc_open işlevi devre dışı bırakıldığı için işler bu sunucuda buradan çalıştırılamaz. Ancak zamanlayıcınız cron veya bir web kancası tarafından tetiklendiğinde çalışmaya devam ederler.
+        SCHEDULER_RUN_COMPLETED: Zamanlayıcı çalıştırması tamamlandı
+        FAILED_TO_RUN_SCHEDULER: Zamanlayıcı çalıştırılamadı
+        LOADING_SCHEDULER_STATUS: Zamanlayıcı durumu yükleniyor...
+        SCHEDULER_STATUS: Zamanlayıcı Durumu
+        NO_SCHEDULED_JOBS_REGISTERED: Kayıtlı zamanlanmış iş yok.
+        JOB_ID: İş Kimliği
+        HEALTH_STATUS: Sağlık Durumu
+        STATUS: 'Durum:'
+        LAST_RUN: Son Çalıştırma
+        SCHEDULED_JOBS: Zamanlanmış İşler
+        QUEUE_SIZE: 'Kuyruk Boyutu:'
+        ACTIVE_TRIGGERS: Aktif Tetikleyiciler
+        CRON: 'Cron:'
+        NOT_CONFIGURED: YAPILANDIRILMADI
+        WEBHOOK: 'Web Kancası (Webhook):'
+        NOT_INSTALLED: YÜKLÜ DEĞİL
+        NOT_ENABLED: ETKİN DEĞİL
+        NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: Aktif tetikleyici yok! Web kancalarını etkinleştirin veya cron'u yapılandırın.
+        RUNNING: Çalışıyor...
+        RUN_ALL: Tümünü Çalıştır
+      CUSTOM_FIELD_WRAPPER:
+        LOADING_CUSTOM_FIELD: Özel alan yükleniyor...
+      DATE_FORMAT:
+        SELECT_FORMAT: — Biçim seçin —
+        FORMAT_STRING: 'Biçim dizesi:'
+        CUSTOM: Özel…
+        CUSTOM_PLACEHOLDER: Örn. Y-m-d H:i
+        PREVIEW: 'Önizleme:'
+      ICON_PICKER:
+        SEARCH_ICONS: Simgelerde ara...
+        NO_ICONS_FOUND: Simge Bulunamadı
+        SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: İlk 200 sonuç gösteriliyor — daraltmak için yazın
+      PAGE_EXISTS:
+        CHECKING_PAGE: Sayfa kontrol ediliyor...
+      PAGE_MEDIA:
+        PAGE_MEDIA_UNAVAILABLE: Sayfa medyası kullanılamıyor
+      PAGES:
+        FILTER_PAGES: Sayfaları filtrele...
+        ROOT: / (Kök)
+      PERMISSIONS:
+        NO_PERMISSIONS_CONFIGURED: Yapılandırılmış izin yok
+        NOT_SET: Ayarlanmadı
+      TABS:
+        NO_FIELDS_MATCH_YOUR_FILTER: Filtrenizle eşleşen alan yok
+      THEME_SELECT:
+        LOADING_THEMES: Temalar yükleniyor...
+        SELECT_THEME: — Tema Seçin —
+      WEBHOOK_EXAMPLES:
+        HOW_TO_USE_WEBHOOKS: 'Web kancaları (webhooks) nasıl kullanılır:'
+        TRIGGER_ALL_DUE_JOBS_RESPECTS_SCHEDULE: 'Zamanı gelmiş tüm işleri tetikle (zamanlamaya uyar):'
+        FORCE_RUN_SPECIFIC_JOB_IGNORES_SCHEDULE: 'Belirli bir işi zorla çalıştır (zamanlamayı yoksayar):'
+        CHECK_HEALTH_STATUS: 'Sağlık durumunu kontrol et:'
+        GITHUB_ACTIONS_EXAMPLE: 'GitHub Actions örneği:'
+      WEBHOOK_STATUS:
+        CHECKING_WEBHOOK_PLUGIN_STATUS: Web kancası eklenti durumu kontrol ediliyor...
+        PLUGIN_IS_INSTALLED_AND_ENABLED: Eklenti yüklü ve etkin.
+        PLUGIN_IS_INSTALLED_ENABLE_WEBHOOK: Eklenti yüklü. Etkinleştirmek için aşağıdaki Web Kancası Tetikleyicilerini açın.
+        WEBHOOK_PLUGIN_REQUIRED: Web Kancası Eklentisi Gerekli
+        PLUGIN_IS_REQUIRED_FOR_WEBHOOK: Web kancası işlevselliği için eklenti gereklidir.
+        INSTALL_PLUGIN_NOW: Eklentiyi Şimdi Yükle
+        OR_RUN: 'veya çalıştırın:'
+        BIN_GPM_INSTALL_SCHEDULER_WEBHOOK: bin/gpm install scheduler-webhook
+      FILE_PICKER:
+        NO_MEDIA_UPLOADED: Henüz medya dosyası yüklenmedi
+        NO_MATCHING_FILES: Eşleşen dosya yok
+        SELECT_FILE: Bir dosya seçin…
+        SELECT_FILES: Dosyaları seçin…
+      FILE:
+        LIMIT_REACHED: 'Bu alan en fazla {limit} dosya kabul edebilir.'
+    NAV:
+      DASHBOARD: Gösterge Paneli
+      CONFIGURATION: Yapılandırma
+      PAGES: Sayfalar
+      MEDIA: Medya
+      USERS: Kullanıcılar
+      PLUGINS: Eklentiler
+      THEMES: Temalar
+      TRANSLATIONS: Çeviriler
+      TOOLS: Araçlar
+      SYSTEM: Sistem
+      SETTINGS: Ayarlar
+      UPDATES_AVAILABLE: '{count} güncelleme mevcut'
+    LANG:
+      SWITCH_LANGUAGE: İçerik dilini değiştir
+      TRANSLATIONS: Çeviriler
+      TRANSLATED: Çevrildi
+      NOT_TRANSLATED: Çevrilmedi
+      SAVE_AS: '{language} olarak kaydet'
+      CREATE_TRANSLATION: '{language} çevirisi oluştur'
+      FALLBACK_NOTICE: '{language} çevirisi bulunmuyor. Varsayılan içerik gösteriliyor.'
+      SYNC_FROM: '{language} dilinden sıfırla'
+      TRANSLATION_CREATED: '{language} çevirisi oluşturuldu'
+      DELETE_TRANSLATION: '{language} çevirisini sil'
+      CURRENT: mevcut
+      DEFAULT: varsayılan
+    TIME:
+      JUST_NOW: az önce
+      MINUTES_AGO: '{n}d önce'
+      HOURS_AGO: '{n}s önce'
+      DAYS_AGO: '{n}g önce'
+    ADD_PLUGIN_MODAL:
+      FILTER_PLUGINS: Eklentileri filtrele...
+      FAILED_TO_LOAD_AVAILABLE_PLUGINS_FROM: Mevcut eklentiler GPM'den yüklenemedi
+      ADD_PLUGIN: Eklenti Ekle
+      SELECT_A_PLUGIN_TO_VIEW_DETAILS: Ayrıntıları görüntülemek için bir eklenti seçin
+    PREMIUM: Premium
+    AUTHOR: Yazar
+    HOMEPAGE: Ana Sayfa
+    README: BENİOKU (README)
+    DOCUMENTATION: Belgelendirme
+    REPORT_ISSUE: Sorun Bildir
+    VERSION: Sürüm
+    KEYWORDS: Anahtar Kelimeler
+    DEPENDENCIES: Bağımlılıklar
+    COMPATIBILITY: Uyumluluk
+    ADD_THEME_MODAL:
+      FILTER_THEMES: Temaları filtrele...
+      FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: Mevcut temalar GPM'den yüklenemedi
+      ADD_THEME: Tema Ekle
+      SELECT_A_THEME_TO_VIEW_DETAILS: Ayrıntıları görüntülemek için bir tema seçin
+    API_KEYS_FIELD:
+      REVOKE_KEY: Anahtarı iptal et
+      E_G_MY_CLI_TOOL: Örn. Benim CLI Aracım
+      REVOKE_API_KEY: API Anahtarını İptal Et
+      FAILED_TO_LOAD_API_KEYS: API anahtarları yüklenemedi
+      PLEASE_ENTER_A_KEY_NAME: Lütfen bir anahtar adı girin
+      API_KEY_GENERATED: API Anahtarı oluşturuldu
+      FAILED_TO_GENERATE_API_KEY: API anahtarı oluşturulamadı
+      FAILED_TO_REVOKE_API_KEY: API anahtarı iptal edilemedi
+      FAILED_TO_COPY_TO_CLIPBOARD: Panoya kopyalanamadı
+      API_KEYS: API Anahtarları
+      NO_API_KEYS_HAVE_BEEN_GENERATED_YET: Henüz hiçbir API anahtarı oluşturulmadı.
+      KEY_PREFIX: Anahtar Öneki
+      CREATED: Oluşturuldu
+      EXPIRES: Sona Erme
+      LAST_USED: Son Kullanım
+      COPY_THIS_KEY_NOW_IT_WILL_NOT_BE_SHOWN: Bu anahtarı şimdi kopyalayın — bir daha gösterilmeyecektir.
+      KEY_NAME: Anahtar Adı
+      EXPIRY: Bitiş Süresi
+      BLANK_NEVER: (boş bırakılırsa = asla)
+      GENERATING: Oluşturuluyor...
+      GENERATE_KEY: Anahtar Oluştur
+    APP_SHELL:
+      CLOSE_MENU: Menüyü kapat
+      GRAV_VERSION: Grav v{version}
+      ADMIN_VERSION: Yönetim v{version}
+    NORMAL_MODE: Normal mod
+    EXPERT_MODE: Uzman modu
+    ALLOWED: İzin Verildi
+    DENIED: Reddedildi
+    PERMISSIONS_FIELD:
+      NOT_SET: Ayarlanmadı
+      FAILED_TO_LOAD_PERMISSIONS: İzinler yüklenemedi
+      ADMIN_LEGACY: Yönetim (eski sistem)
+      INHERITED_ALLOWED: 'Şu grup üzerinden izin verildi: {groups}'
+      INHERITED_DENIED: 'Şu grup üzerinden reddedildi: {groups}'
+      OVERRIDES_GROUP: 'Doğrudan ayarınız şu grubu ezer (geçersiz kılar): {groups}'
+      LEGEND_INTRO: Soluk geçişler (toggles) grup üyeliğinden gelir ve referans amaçlı gösterilir. Bunu bu kullanıcı üzerinde doğrudan bir izin yapmak için birini ayarlayın.
+      LEGEND_DIRECT: Doğrudan ayarla
+      LEGEND_INHERITED: Bir gruptan devralınan
+      LEGEND_OVERRIDE: Bir grubu geçersiz kılan (ezen)
+      LEGEND_SUPER: Süper yönetici tarafından verilen
+    TWO_FACTOR_FIELD:
+      2FA_QR_CODE: 2FA QR Kodu
+      SCAN_THE_QR_CODE_WITH_YOUR: Doğrulama (Authenticator) uygulamanızla QR kodunu tarayın
+      FAILED_TO_GENERATE_2FA_SECRET: 2FA gizli anahtarı oluşturulamadı
+      ENTER_THE_6_DIGIT_CODE_FROM_YOUR: Doğrulayıcınızdan gelen 6 haneli kodu girin
+      2FA_ENABLED: 2FA Etkin
+      2FA_DISABLED: 2FA Devre Dışı
+      TWO_FACTOR_AUTHENTICATION_IS_OFF: İki faktörlü kimlik doğrulama kapalı
+      ADD_AN_EXTRA_LAYER_OF_SECURITY_BY: Oturum açarken tek seferlik bir kod isteyerek ek bir güvenlik katmanı ekleyin.
+      FINISH_ENABLING_2FA: 2FA etkinleştirmeyi tamamla
+      SCAN_THE_QR_CODE_WITH_YOUR_2: Doğrulama uygulamanızla QR kodunu tarayın, ardından doğrulamak ve etkinleştirmek için 6 haneli kodu girin.
+      SECRET_FOR_MANUAL_ENTRY: 'Gizli Anahtar (manuel giriş için):'
+      A_SECRET_IS_ALREADY_GENERATED_BUT_NOT: Güvenlik nedeniyle daha önce oluşturulmuş bir gizli anahtar gösterilmiyor.
+      REGENERATE_AND_SHOW_QR: Yeniden oluştur ve QR'yi göster
+      VERIFICATION_CODE: Doğrulama Kodu
+      2FA_IS_ENABLED: 2FA Etkin
+      A_ONE_TIME_CODE_IS_REQUIRED_WHENEVER: Bu hesap oturum açtığında tek seferlik bir kod gerekir.
+      ENTER_YOUR_CURRENT_6_DIGIT_CODE_TO: Onaylamak için mevcut 6 haneli kodunuzu girin
+      ENABLE_2FA: 2FA'yı Etkinleştir
+      VERIFY_ENABLE: Doğrula & Etkinleştir
+      FORCE_DISABLE: Zorla devre dışı bırak
+      CONFIRM_DISABLE: Devre dışı bırakmayı onayla
+      FORCE_DISABLE_PROMPT: '**{username}** için 2FA zorla devre dışı bırakılsın mı? Bunu yalnızca cihaz kaybolduğunda kurtarma amacıyla kullanın.'
+    DISABLE: Devre Dışı Bırak
+    USER_AVATAR_CARD:
+      AVATAR_UPDATED: Avatar güncellendi
+      FAILED_TO_UPLOAD_AVATAR: Avatar yüklenemedi
+      AVATAR_REMOVED: Avatar kaldırıldı
+      FAILED_TO_REMOVE_AVATAR: Avatar kaldırılamadı
+      UPLOAD_AVATAR: Avatar Yükle
+    REAUTH_MODAL:
+      SESSION_EXPIRED: Oturum süresi doldu
+      PLEASE_RE_ENTER_YOUR_PASSWORD_TO: Devam etmek için lütfen şifrenizi yeniden girin. Yaptığınız değişiklikler korunmuştur.
+    USERNAME: Kullanıcı Adı
+    PASSWORD: Şifre
+    REMOVE: Kaldır
+    ENABLED: Etkin
+    DISABLED: Devre Dışı
+    EXPAND_ALL: Tümünü Genişlet
+    COLLAPSE_ALL: Tümünü Daralt
+    CONFIG_INFO_PAGE:
+      LOADING_SYSTEM_INFORMATION: Sistem bilgileri yükleniyor...
+      EXPORT_YAML: YAML Olarak Dışa Aktar
+      SERVER: Sunucu
+      GRAV_VERSION: Grav Sürümü
+      PHP_VERSION: PHP Sürümü
+      SERVER_SOFTWARE: Sunucu Yazılımı
+      ENVIRONMENT: Ortam
+      PHP_EXTENSIONS: PHP Uzantıları
+      PHP_CONFIGURATION: PHP Yapılandırması
+    DASHBOARD_GRID:
+      DRAG_TO_REORDER: Yeniden sıralamak için sürükleyin
+    EDIT_MODE_TOOLBAR:
+      SAVE_AS_SITE_DEFAULT_FOR_ALL_USERS: Tüm kullanıcılar için site varsayılanı olarak kaydet
+      LAYOUT_PRESETS: Düzen Ön Ayarları
+    PLUGIN_WIDGET_LOADER:
+      WIDGET_FAILED_TO_LOAD: Bileşen yüklenemedi
+    TOP_BANNER:
+      SITE_NOTIFICATION: Site Bildirimi
+      PREVIOUS: Önceki
+    DISMISS: Kapat
+    BACKUPS_WIDGET:
+      CREATE_A_NEW_BACKUP_NOW: Şimdi yeni bir yedek oluştur
+      NO_BACKUPS_FOUND: Yedek bulunamadı
+      BACKING_UP: Yedekleniyor…
+      BACKUP_NOW: Yeni Yedek Al
+      DOWNLOAD_FILE: 'İndir: {filename}'
+    NEWS_FEED_WIDGET:
+      NO_FEED_ITEMS: Akış öğesi yok
+    NOTIFICATIONS_WIDGET:
+      NO_NOTIFICATIONS: Bildirim yok
+    POPULARITY_WIDGET:
+      LAST_14_DAYS: Son 14 Gün
+      THIS_WEEK: Bu Hafta
+      THIS_MONTH: Bu Ay
+    RECENT_PAGES_WIDGET:
+      VIEW_ALL: Tümünü Görüntüle
+    STATS_WIDGET:
+      ACTIVE_THEME: Aktif Tema
+      UPDATE_COUNT: '{n, plural, one{# güncelleme} other{# güncelleme}}'
+      ACTIVE_COUNT: '({n} aktif)'
+    DEMO:
+      BANNER_LABEL: Demo Modu
+      BANNER_READONLY: 'Salt okunur demo — değişiklikler devre dışı bırakıldı'
+      BANNER_MESSAGE: 'Demo Modu — değişiklikler her {minutes, plural, one {# dakikada} other {# dakikada}} bir sıfırlanır'
+      BANNER_COUNTDOWN: 'Sonraki sıfırlamaya: {time}'
+    SYSTEM_HEALTH_WIDGET:
+      UPDATES: Güncellemeler
+      EVERYTHING_UP_TO_DATE: Her şey güncel
+      GRAV_UPDATE_AVAILABLE: Grav Güncellemesi Mevcut
+      GRAV_IS_INSTALLED_VIA_SYMLINK_UPGRADE: Grav sembolik bağlantı (symlink) üzerinden kurulmuş — manuel olarak yükseltin.
+      SERVER: Sunucu
+      UPGRADE_GRAV: Grav'ı Yükselt
+      UPDATE_ALL: Tümünü Güncelle
+      UPDATE_ALL_CONFIRM_TITLE: Tüm paketler güncellensin mi?
+      UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one {# paket güncellenecek:} other {# paket güncellenecek:}}'
+      PERCENT_USED: '%{percent} kullanıldı'
+      UPDATES_AVAILABLE_COUNT: '{n} mevcut'
+      PACKAGES_OUTDATED: '{n, plural, one {# paket güncel değil} other {# paket güncel değil}}'
+      MORE_COUNT: '+ {n} daha…'
+      CACHE: Önbellek
+      DISK: Disk
+      BYTES_USED: '{size} kullanıldı'
+      BYTES_FREE: '{size} boş'
+    TOP_PAGES_WIDGET:
+      NO_VIEW_DATA_YET: Henüz görüntüleme verisi yok
+    MARKDOWN_EDITOR:
+      NOTHING_TO_PREVIEW: Önizlenecek bir şey yok
+      IMAGE_INSERT:
+        TITLE: Görsel Ekle
+        PAGE_MEDIA: Sayfa Medyası
+        SITE_MEDIA: Site Medyası
+        NO_MEDIA: Bu sayfaya henüz görsel eklenmedi.
+        FROM_URL: URL'den Ekle
+        URL_LABEL: Görsel URL'si
+        URL_PLACEHOLDER: https://ornek.com/gorsel.jpg veya media://dosya.jpg
+        ALT_LABEL: Alternatif Metin (Alt text)
+        ALT_PLACEHOLDER: Görseli açıklayın
+        INSERT: Ekle
+    FLOATING_WIDGET_LOADER:
+      CLOSE_WIDGETS_MENU: Bileşenler menüsünü kapat
+    MEDIA:
+      MEDIA_INSPECTOR:
+        PREVIOUS_FILE: Önceki dosya
+        NEXT_FILE: Sonraki dosya
+        RENAME: Yeniden Adlandır
+        FAILED_TO_COPY: Kopyalanamadı
+        FILE_RENAMED: Dosya yeniden adlandırıldı
+        DIMENSIONS: Boyutlar
+      MEDIA_MANAGER:
+        ROOT: Medya
+        NO_RESULTS_FOUND: Sonuç bulunamadı
+        TRY_A_DIFFERENT_SEARCH_TERM: Farklı bir arama terimi deneyin
+        FOLDER_IS_EMPTY: Bu klasör boş
+        DROP_FILES_OR_CLICK_UPLOAD: Başlamak için dosyaları buraya bırakın veya Yükle'ye tıklayın
+        DROP_FILES_TO_UPLOAD: Yüklemek için dosyaları bırakın
+        DROP_FILES_TO_UPLOAD_TO_PATH: 'Yüklemek için dosyaları buraya bırakın: **{path}**'
+        FOLDER_NAME: Klasör Adı
+        FILES_DELETED: Dosyalar silindi
+        UPLOAD_FILES: Dosyaları Yükle
+        NEW_FOLDER: Yeni Klasör
+        CREATE: Oluştur
+        CUSTOM_ORDER: Özel Sıra
+        REORDER: Yeniden sıralamak için sürükleyin
+        REORDER_MODE: Yeniden Sırala
+        REORDER_DONE: Bitti
+        ORDER_SAVE_FAILED: Yeni sıra kaydedilemedi
+      MEDIA_TOOLBAR:
+        SEARCH_MEDIA: Medyalarda ara...
+        GRID_VIEW: Izgara Görünümü
+        LIST_VIEW: Liste Görünümü
+        NEW_FOLDER: Yeni Klasör
+        FOLDER: Klasör
+      MEDIA_GRAV_ADMIN: Medya — Grav Yönetim
+      MANAGE_SITE_WIDE_MEDIA_FILES: Site genelindeki medya dosyalarını yönetin
+      PAGE_MEDIA:
+        PAGE_MEDIA: Sayfa Medyası
+        DROP_FILES_HERE: Dosyaları buraya bırakın
+        DROP_OR_CLICK_TO_ADD_MORE: Daha fazla eklemek için bırakın veya tıklayın
+        DROP_FILES_OR_CLICK_TO_UPLOAD: Yüklemek için dosyaları bırakın veya tıklayın
+        DRAG_INTO_EDITOR: Editöre sürükleyin
+        REORDER: Yeniden sıralamak için sürükleyin
+        REORDER_MODE: Yeniden Sırala
+        REORDER_DONE: Bitti
+        REORDER_HINT: Sıralamayı ayarlamak için görselleri sürükleyin.
+        INSERT_AT_CURSOR: İmlecin bulunduğu yere ekle
+        INSERTED: '{filename} eklendi'
+      METADATA:
+        TITLE: Meta Verileri (Metadata)
+        EDIT: Meta verilerini düzenle
+        SAVING: Kaydediliyor…
+        RESET: Sıfırla
+        SAVED: Meta verileri kaydedildi
+        SAVE_FAILED: Meta verileri kaydedilemedi
+        LOAD_FAILED: Meta verileri yüklenemedi
+        EMPTY: Yapılandırılmış düzenlenebilir meta verisi alanı yok.
+        STORED: Kayıtlı meta verileri
+        TAGS_PLACEHOLDER: Etiket ekle…
+        BATCH_EDITING: '{n} seçili dosya düzenleniyor — değiştirilen alanlar tümüne uygulanır.'
+        APPLY_TO_N: '{n} dosyaya uygula'
+        BATCH_SAVED: '{n} dosya güncellendi'
+        BATCH_PARTIAL: '{saved} dosya güncellendi, {failed} başarısız'
+    UPLOAD: Yükle
+    CACHE_CLEAR_BUTTON:
+      LABEL: Önbellek
+      CLEAR_CACHE: Önbelleği Temizle
+      CACHE_OPTIONS: Önbellek Seçenekleri
+      FAILED_TO_CLEAR_CACHE: Önbellek temizlenemedi
+    CONFIRM_ACTION: İşlemi Onayla
+    VIEW_SITE_BUTTON:
+      OPEN_SITE_FRONTEND_IN_A_NEW_TAB: Sitenin ön yüzünü yeni sekmede aç
+      VIEW_SITE: Siteyi Görüntüle
+    PLUGIN_PAGE_COMPONENT:
+      LOADING_PLUGIN_PAGE: Eklenti sayfası yükleniyor...
+    SYNC:
+      EDITOR_LOCK_NOTICE:
+        SWITCH_YOUR_EDITOR_PREFERENCE: editör tercihinizi değiştirin
+        TO_COLLABORATE_LIVE: ve canlı işbirliği yapın.
+        LOCKED: Salt okunur — {owner}, **{editor}** kullanarak düzenliyor. Farklı editör türleri birlikte düzenleme yapamaz; canlı işbirliği yapmak için [editör tercihinizi değiştirin]({href}).
+        BUILTIN_MARKDOWN_EDITOR: yerleşik markdown editörü
+    DOWNLOAD: İndir
+    TRANSLATIONS:
+      TITLE: Çeviriler
+      DESCRIPTION: Bu sitenin görüntülediği herhangi bir metni, istediğiniz dilde yeniden yazın. Değişiklikler user/languages içinde geçersiz kılmalar (overrides) olarak saklanır ve bir eklenti veya temanın kendi dosyalarına dokunulmaz, böylece güncellemeler onları silmez.
+      IMPORT_TITLE: Çeviri Dizeleri (Translation Strings) eklentisinde bekleyen geçersiz kılmalar var
+      IMPORT_BODY: '{count, plural, one {# geçersiz kılma (override) hala Çeviri Dizeleri (Translation Strings) eklentisinde saklanıyor. Buradan yönetmek için içe aktarın.} other {{languages} dildeki # geçersiz kılma hala Çeviri Dizeleri eklentisinde saklanıyor. Buradan yönetmek için içe aktarın.}}'
+      IMPORT_CONFLICTS: '{count, plural, one {# anahtar} other {# anahtar}}, her iki yerde de farklı ifadelerle ayarlanmış. Sitenizin şu an gösterdiği metinler olduğu için eklentinin sürümü önceliklidir.'
+      IMPORT_ACTION: Geçersiz kılmaları (overrides) içe aktar
+      IMPORT_DONE: 'İçe aktarıldı: {count, plural, one {# geçersiz kılma} other {# geçersiz kılma}}'
+      IMPORT_FAILED: İçe aktarma başarısız
+      IMPORT_UNKNOWN_WARNING: '{count, plural, one {# içe aktarılan anahtar,} other {# içe aktarılan anahtar,}} bu sitenin sağlamadığı bir dizgeyi adlandırıyor. Bilinmeyen (Unknown) filtresini kullanarak bunları bulabilirsiniz.'
+      IMPORT_UNKNOWN_NOTE: '{count, plural, one {# anahtar, hiçbir eklenti, tema veya çekirdek dosyanın sağlamadığı bir dizgeyi adlandırıyor. İnceleyebilmeniz için tutuluyor ancak hiçbir etkisi yok.} other {# anahtar, hiçbir eklenti, tema veya çekirdek dosyanın sağlamadığı dizgeleri adlandırıyor. İnceleyebilmeniz için tutuluyor ancak hiçbir etkileri yok.}}'
+      IMPORT_ALREADY_DONE: '{count, plural, one {Tüm # geçersiz kılma} other {Tüm # geçersiz kılma}} zaten burada mevcut'
+      IMPORT_STILL_ENABLED_TITLE: Çeviri Dizeleri (Translation Strings) eklentisi hala etkin
+      IMPORT_STILL_ENABLED_BODY: Eklenti, dizgelerini bu düzenleyiciden sonra uygular, bu nedenle burada yaptığınız değişiklikleri geçersiz kılmaya devam eder. Sitenin düzgün çalıştığını kontrol edin ve geçişi tamamlamak için eklentiyi devre dışı bırakın. Ayarları olduğu gibi kalacağı için bu işlem geri alınabilir.
+      IMPORT_DISABLE_ACTION: Eklentiyi devre dışı bırak
+      IMPORT_DISABLE_BLOCKED: Önce geçersiz kılmaları içe aktarın, aksi takdirde siteden silinirler.
+      IMPORT_DISABLE_FAILED: Eklenti devre dışı bırakılamadı
+      IMPORT_PLUGIN_DISABLED: Çeviri Dizeleri devre dışı. Artık kontrol bu düzenleyicide.
+      IMPORT_SHOW_DETAIL: Nelerin içe aktarılacağını göster
+      IMPORT_HIDE_DETAIL: Ayrıntıları gizle
+      IMPORT_COL_LANGUAGE: Dil
+      IMPORT_COL_NEW: Yeni
+      IMPORT_COL_CONFLICT: Çakışan
+      IMPORT_COL_ALREADY: Zaten Burada
+      IMPORT_COL_SHIPPED: Orijinali ile aynı
+      IMPORT_COL_UNKNOWN: Bilinmeyen
+      IMPORT_LEGEND: '"Orijinali ile aynı" olarak işaretlenen metinler, eklentinin veya temanın halihazırda sunduğu metinlerle eşleşir; bu nedenle hiçbir işe yaramayan bir geçersiz kılma (override) olarak saklanmak yerine atılırlar.'
+      IMPORT_NO_PERMISSION: Çeviri geçersiz kılmaları (overrides) yazma izniniz yok, bu nedenle içe aktarma kullanılamıyor.
+      IMPORT_NO_CONFIG_PERMISSION: Eklenti ayarlarını değiştirme izniniz yok, bu nedenle eklentinin bir yönetici tarafından devre dışı bırakılması gerekiyor.
+      TRANSLATE_UNAVAILABLE_NOT_INSTALLED: Eksik metinlerin yapay zeka (AI) destekli çevirisi, AI Translate premium eklentisi ile kullanılabilir.
+      TRANSLATE_UNAVAILABLE_NOT_ENABLED: AI Translate yüklü ancak kapalı, bu nedenle makine çevirisi kullanılamıyor.
+      TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: AI Translate için henüz hiçbir çeviri sağlayıcısı ayarlanmamış, bu nedenle makine çevirisi kullanılamıyor.
+      TRANSLATE_UNAVAILABLE_FIND_IT: Eklentiyi edin
+      TRANSLATE_UNAVAILABLE_OPEN_IT: Ayarlarını aç
+      SUPERSEDED_TITLE: Grav 2.0'a yerleşik olarak eklendi
+      SUPERSEDED_BODY: Çeviriler bölümü, bu eklentinin yaptığı her şeyi yapar ve sitedeki her dize üzerinde arama, dil başına kapsama, makine çevirisi ve artık hiçbir şey sağlamayan anahtarların raporunu ekler. Bu eklenti Grav 1.7 üzerinde desteklenmeye devam etmektedir.
+      SUPERSEDED_PENDING: '{count, plural, one {# geçersiz kılma (override) hala burada saklanıyor ve içe aktarılabilir.} other {# geçersiz kılma hala burada saklanıyor ve içe aktarılabilir.}}'
+      SUPERSEDED_ACTION: Çevirileri Aç
+      SEARCH_PLACEHOLDER: Metin veya anahtar kelime arayın...
+      SOURCE_LANGUAGE: Kaynak
+      SOURCE: kaynak
+      LANGUAGES: Diller
+      FILTER_LANGUAGES: Dilleri filtrele
+      EDITED: düzenlendi
+      KEY: Anahtar
+      ALL_SOURCES: Tüm kaynaklar
+      KIND_SYSTEM: Çekirdek
+      KIND_PLUGINS: Eklentiler
+      KIND_THEMES: Temalar
+      KIND_USER: Bu site
+      INACTIVE: etkin değil
+      INACTIVE_HELP: Bu eklenti devre dışı veya bu tema aktif olan tema değil, bu nedenle metinleri sitede kullanılmıyor.
+      STATUS_ALL: Tümü
+      STATUS_MISSING: Eksik
+      STATUS_OVERRIDDEN: Geçersiz kılındı (üzerine yazıldı)
+      STATUS_UNKNOWN: Bilinmeyen
+      STATE_OVERRIDDEN: geçersiz kılındı
+      STATE_MISSING: eksik
+      STATE_MISSING_FALLBACK: yedeğe düşüyor
+      UNKNOWN_KEY_HELP: Hiçbir eklenti, tema veya çekirdek dosya bu anahtarı sağlamıyor. Muhtemelen bir yazım hatası veya artık yüklü olmayan bir şeyden arta kalan bir kalıntı.
+      SHIPPED_VALUE: 'Orijinal hali: {value}'
+      REVERT: Geri Al
+      REVERT_HELP: Bu geçersiz kılmayı kaldırın ve eklentinin veya temanın sağladığı orijinaline dönün.
+      REVERTED_TO_SHIPPED: Orijinal ifadeye geri dönüldü
+      OVERRIDE_REMOVED: Geçersiz kılma (override) kaldırıldı
+      SAVED_UNKNOWN_KEY: 'Kaydedildi, ancak {key} anahtarını sağlayan bir şey yok — yazılışını kontrol edin'
+      EDIT_HINT: Kaydetmek için Enter, iptal etmek için Esc, yeni bir satır için Shift+Enter tuşlarına basın. Geçersiz kılmayı kaldırmak için kutuyu temizleyin.
+      REFRESH: Yenile
+      LOADING: Çeviriler yükleniyor...
+      NO_RESULTS: Bu filtrelerle eşleşen metin yok.
+      NO_RESULTS_FILTERED: 'Şu an şurada arıyorsunuz: {filters}'
+      FILTERED_BY: Yalnızca gösterilenler
+      REMOVE_FILTER: Bu filtreyi kaldır
+      CLEAR_ALL_FILTERS: Filtreleri temizle
+      FAILED_TO_LOAD: Çeviriler yüklenemedi
+      FAILED_TO_SAVE: Bu değişiklik kaydedilemedi
+      SHOWING: Toplam {total} öğeden {from}–{to} arası gösteriliyor
+      PREVIOUS: Önceki
+      NEXT: Sonraki
+      EDIT_AS_YAML: YAML Olarak Düzenle
+      EDIT_AS_GRID: Izgaraya geri dön
+      EDITING_LANGUAGE: Düzenlenen Dil
+      SCOPED_TO: 'Sadece {namespace}'
+      SCOPE_WHOLE_FILE: Bu dil için her bir geçersiz kılma düzenleniyor
+      SAVE: Kaydet
+      SAVING: Kaydediliyor...
+      YAML_SAVED: '{count, plural, =0 {{lang} dilinde geçersiz kılma kalmadı} one {{lang} dilinde # geçersiz kılma kaydedildi} other {{lang} dilinde # geçersiz kılma kaydedildi}}'
+      YAML_PLACEHOLDER: "BENIM_EKLENTIM:\n  BAZI_ANAHTARLAR: Sizin ifadeniz burada"
+      YAML_HELP: Geçersiz kılmaları (overrides) doğrudan yapıştırın veya düzenleyin. Eklentinin veya temanın sunduğu özelliklerle eşleşen değerler atılır, böylece dosya yalnızca gerçek değişiklikleri tutar.
+      UNKNOWN_KEYS_SAVED: Kaydedildi, ancak bu anahtarları sağlayan hiçbir şey yok
+      TRANSLATE_MISSING: Eksikleri çevir
+      TRANSLATING: Çevriliyor...
+      TRANSLATE_FAILED: Çeviri başarısız
+      PICK_A_TARGET_LANGUAGE: Önce bir dil sütunu ekleyin — çeviri yapılacak bir dil seçilmemiş.
+      NOTHING_TO_TRANSLATE: Bu sayfada çevirisi eksik olan hiçbir şey yok.
+      PROPOSALS_PENDING: '{count, plural, one {İncelenecek # öneri var} other {İncelenecek # öneri var}}'
+      SKIPPED_COUNT: '{count, plural, one {# öğe atlandı} other {# öğe atlandı}}'
+      ACCEPT_ALL: Tümünü kabul et
+      DISCARD_ALL: At
+      ACCEPTED_ALL: '{count, plural, one {# çeviri kaydedildi} other {# çeviri kaydedildi}}'
+      SUGGESTED: Önerilen
+      ACCEPT: Kabul Et
+      DISCARD: At (Vazgeç)
+      TRANSLATE_THIS: Bu metin için bir çeviri önerin
+      TRANSLATE_ROW: Gösterilen her dilde bu metin için çeviriler önerin
+      SKIP_NO_SOURCE: Çevrilecek kaynak dilde bir ifade bulunmuyor.
+      SKIP_ICU: Bu mesaj bir sayı veya seçeneğe göre değişir ve her dilin kendi biçim kurallarına ihtiyacı vardır. Bunu manuel olarak çevirin.
+      SKIP_NOTHING: Bu dize sadece yer tutuculardan ibaret, çevrilecek bir kelime yok.
+      SKIP_EMPTY: Çeviri hizmeti bu dize için hiçbir sonuç döndürmedi.
+      SKIP_PLACEHOLDERS: Çeviri, yer tutucuları (placeholders) değiştirilmiş olarak geri döndü, bu nedenle kaydedilmek yerine atıldı.
+
+    TOOLS:
+      BACKUPS:
+        DELETE_BACKUP: Yedeği Sil
+        FAILED_TO_LOAD_BACKUPS: Yedekler yüklenemedi
+        BACKUP_CREATED_SUCCESSFULLY: Yedek başarıyla oluşturuldu
+        FAILED_TO_CREATE_BACKUP: Yedek oluşturulamadı
+        BACKUP_DELETED: Yedek silindi
+        FAILED_TO_DELETE_BACKUP: Yedek silinemedi
+        BACKUP_STATISTICS: Yedekleme İstatistikleri
+        NUMBER_OF_BACKUPS: Yedek Sayısı
+        NUMBER_OF_PROFILES: Profil Sayısı
+        NEWEST_BACKUP: En Yeni Yedek
+        OLDEST_BACKUP: En Eski Yedek
+        BACKUP_HISTORY: Yedekleme Geçmişi
+        LOADING_BACKUPS: Yedekler yükleniyor...
+        NO_BACKUPS_FOUND_CREATE_ONE_TO_GET: Yedek bulunamadı. Başlamak için bir tane oluşturun.
+        BACKUP_DATE: Yedekleme Tarihi
+        ACTION: İşlem
+        CREATING: Oluşturuluyor...
+        BACKUP_NOW: Şimdi Yedekle
+      DIRECT_INSTALL:
+        PACKAGE_INSTALLED_SUCCESSFULLY: Paket başarıyla yüklendi
+        ONLY_ZIP_FILES_ARE_SUPPORTED: Yalnızca .zip dosyaları desteklenir
+        INSTALL_FROM_FILE: Dosyadan Yükle
+        DROP_A_ZIP_FILE_HERE_OR_CLICK_TO_BROWSE: Gözatmak veya yüklemek için buraya bir .zip dosyası bırakın
+        SUPPORTS_GRAV_PLUGIN_AND_THEME_PACKAGES: Grav eklenti ve tema paketlerini destekler
+        INSTALL_FROM_URL: URL'den Yükle
+      LOGS:
+        SEARCH_MESSAGES: Mesajlarda ara...
+        FAILED_TO_LOAD_LOGS: Günlükler (loglar) yüklenemedi
+        FAILED_TO_LOAD_LOG_FILES: Günlük dosyaları yüklenemedi
+        LOG_FILE: Günlük dosyası
+        ALL_LEVELS: Tüm Seviyeler
+        EMERGENCY: Acil (Emergency)
+        CRITICAL: Kritik (Critical)
+        WARNING: Uyarı (Warning)
+        NOTICE: Bilgi (Notice)
+        25_LINES: 25 Satır
+        50_LINES: 50 Satır
+        100_LINES: 100 Satır
+        200_LINES: 200 Satır
+        REFRESH: Yenile
+        LOADING_LOGS: Günlükler yükleniyor...
+        MESSAGE: Mesaj
+        CLEAR_LOG: Günlüğü temizle
+        CLEAR_LOG_CONFIRM: '{file} içindeki tüm kayıtlar kalıcı olarak silinsin mi? Bu işlem geri alınamaz; geçmişte neyin yanlış gittiğine dair tüm kayıtlar silinir.'
+        LOG_CLEARED: '{file} temizlendi'
+        FAILED_TO_CLEAR_LOG: Günlük temizlenemedi
+      AUDIT:
+        DESCRIPTION: 'API etkinliğinin (oturum açmalar, içerik, kullanıcı, yapılandırma ve paket değişiklikleri) bir kaydı. Admin Next rotaları API üzerinden geçtiği için, bu hem yönetim panelini hem de herhangi bir harici API istemcisini kapsar.'
+        COVERAGE_DETAILED: Detaylı
+        SEARCH_PLACEHOLDER: Aktör, hedef, olay, IP vb. arayın...
+        EVENT: Olay
+        ALL_EVENTS: Tüm Olaylar
+        SEVERITY: Önem Derecesi (Severity)
+        ALL_SEVERITIES: Tüm Önem Dereceleri
+        FROM: Başlangıç
+        TO: Bitiş
+        REFRESH: Yenile
+        FAILED_TO_LOAD: Denetim izi (audit trail) yüklenemedi
+        LOADING: Denetim izi yükleniyor...
+        NO_ENTRIES: Denetim kaydı bulunamadı.
+        WHEN: Ne Zaman
+        ACTOR: Aktör
+        TARGET: Hedef
+        IP: IP
+        EVENT_CODE: Olay Kodu
+        AUTH_METHOD: Doğrulama (Auth) Yöntemi
+        USER_AGENT: Kullanıcı Aracısı (User Agent)
+        CHANGES: Değişiklikler
+        DETAILS: Ayrıntılar
+        SHOWING: Gösterilen
+      REPORT_COMPONENT_WRAPPER:
+        LOADING_REPORT_COMPONENT: Rapor bileşeni yükleniyor...
+      REPORTS:
+        FAILED_TO_LOAD_REPORTS: Raporlar yüklenemedi
+        LOADING_REPORTS: Raporlar yükleniyor...
+        NO_REPORTS_AVAILABLE: Rapor bulunmuyor.
+        CONTENT_FIELD: 'içerik: {field}'
+        TWIG_CONTENT:
+          GATE_ON: İçerikte Twig etkin
+          GATE_OFF: İçerikte Twig devre dışı
+          SANDBOX_ON: Korumalı alan (Sandbox) açık
+          SANDBOX_OFF: Korumalı alan (Sandbox) kapalı
+          SECTION_LEAKS: Ham Twig sızdıran sayfalar
+          SECTION_EVENTS: Son engellemeler
+          LEAK_GATE_OFF: "Site genelinde Twig kapalı, bu nedenle bu sayfanın Twig biçimlendirmesi ziyaretçilere ham metin olarak gösterilir."
+          LEAK_PAGE_OFF: "Bu sayfa için Twig kapatıldı, bu nedenle Twig biçimlendirmesi ziyaretçilere ham metin olarak gösterilir."
+          ADD_TO_ALLOWLIST: İzin listesine (allowlist) ekle
+          ADDED_TO_ALLOWLIST: "''{token}'' {key} için izin listesine eklendi"
+          ADD_FAILED: İzin listesi güncellenemedi
+          CLEAR_EVENTS: Blokları temizle
+          CLEARED_EVENTS: Son engellemeler temizlendi
+          CLEAR_FAILED: Bloklar temizlenemedi
+          OPEN_SECURITY_SETTINGS: Güvenlik ayarlarını aç
+          EVENT_GATE_BLOCKED: Bu sayfanın içeriğindeki Twig engellendi
+          EVENT_SANDBOX_TAG: Korumalı alan (Sandbox) engellenmiş etiket
+          EVENT_SANDBOX_FILTER: Korumalı alan engellenmiş filtre
+          EVENT_SANDBOX_FUNCTION: Korumalı alan engellenmiş fonksiyon
+          EVENT_SANDBOX_METHOD: Korumalı alan engellenmiş metod
+          EVENT_SANDBOX_PROPERTY: Korumalı alan engellenmiş özellik (property)
+          SCAN_INTRO: Korumalı alanın engelleyeceği Twig yapıları için tüm sayfa içeriğini tarayın.
+          SCAN_CONTENT: İçeriği Tara
+          SCAN_FAILED: İçerik tarama başarısız oldu
+          SCAN_CLEAN: Mevcut izin listeleri dışında Twig kullanan hiçbir içerik yok.
+          SCAN_TAGS: İçerikte engellenen etiketler
+          SCAN_FILTERS: İçerikte engellenen filtreler
+          SCAN_FUNCTIONS: İçerikte engellenen fonksiyonlar
+          POLICY_INTRO: Korumalı alan temeli (sandbox baseline) kod içinde gelir; yapılandırmanız bunu yalnızca genişletir veya daraltır.
+          POLICY_VIEW: Geçerli politikayı görüntüle
+          POLICY_HIDE: Geçerli politikayı gizle
+          POLICY_FAILED: Korumalı alan politikası yüklenemedi
+          POLICY_TAGS: Etiketler
+          POLICY_FILTERS: Filtreler
+          POLICY_FUNCTIONS: Fonksiyonlar
+          POLICY_METHODS: Metodlar
+          POLICY_PROPERTIES: Özellikler (Properties)
+          POLICY_EFFECTIVE_COUNT: '{count} etkin'
+          POLICY_CLASS_COUNT: '{count, plural, one {# sınıf} other {# sınıf}}'
+          POLICY_ADDED: +{count} eklendi
+          POLICY_DENIED: −{count} reddedildi
+          POLICY_ALL_DEFAULTS: Tüm varsayılanlar, değiştirilmedi
+          GLOBAL_REQUEST_GATED: "system.pages.process.twig açık, ancak Twig site genelinde devre dışı bırakılmış, bu nedenle bu sayfalar ham metin olarak işlenir. Etkinleştirmek için yukarıdan bir profil seçin veya genel işareti kaldırın."
+          FRONTMATTER_REQUEST_GATED: "Ön Bölüm (Frontmatter) Twig'i istendi (pages.frontmatter.process_twig), ancak içerikte Twig site genelinde devre dışı, bu yüzden çalışmayacak. Etkinleştirmek için yukarıdan bir profil seçin."
+      SCHEDULER:
+        FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Zamanlayıcı yapılandırması yüklenemedi.
+        STATUS_UNAVAILABLE: Zamanlayıcı durumu bu sunucudan okunamadı. İşleriniz aşağıda listelenmiştir ve her zamanki gibi düzenlenebilir.
+        PROCESS_UNAVAILABLE: Bu sunucuda PHP'nin proc_open işlevi devre dışı bırakılmış, bu nedenle işler yönetim panelinden başlatılamaz. Ancak zamanlayıcınız cron veya bir web kancası (webhook) tarafından tetiklendiğinde çalışmaya devam ederler.
+        CRON_UNDETERMINED: Grav bu sunucunun crontab dosyasını inceleyemiyor, bu nedenle zamanlayıcının nasıl tetiklendiğini doğrulayamıyor.
+        LAST_TRIGGERED: Son tetiklenme
+        SCHEDULER_CONFIGURATION_SAVED: Zamanlayıcı yapılandırması kaydedildi
+        FAILED_TO_SAVE: Kaydedilemedi
+        LOADING_SCHEDULER: Zamanlayıcı yükleniyor...
+        NOT_ENABLED_FOR_USER: 'Kullanıcı için etkin değil:'
+        GRAV_SCHEDULER: Grav Zamanlayıcı
+        INFO_BANNER: Zamanlayıcı, komutları yürütmek için sistem crontab'ı veya web kancası (webhook) tetikleyicilerini kullanabilir. Bulut ortamları için web kancaları önerilir. Sadece gelişmiş kullanıcılar özel işler yapılandırmalıdır. Yanlış yapılandırma veya kötüye kullanım güvenlik açıklarına yol açabilir.
+        CRONTAB_INSTRUCTIONS: Zamanlayıcının işlevselliğini etkinleştirmek için, **Grav Zamanlayıcı**'yı **{user}** kullanıcısının sistem crontab dosyasına eklemelisiniz. Otomatik olarak eklemek için terminalden yukarıdaki komutu çalıştırın. Kaydettikten sonra durumu görmek için bu sayfayı yenileyin.
+        WEBHOOK_ALTERNATIVE: Alternatif olarak, sistem crontab erişiminin bulunmadığı bulut ortamları için önerilen, web kancası tabanlı cron çalıştırması için **scheduler-webhook** eklentisini yükleyebilirsiniz.
+        SECURITY_WARNING: Yalnızca ileri düzey kullanıcılar özel zamanlayıcı işleri yapılandırmalıdır. Yanlış yapılandırma performans sorunlarına veya güvenlik açıklarına neden olabilir.
+      SYSTEM_INFO:
+        FAILED_TO_LOAD_SYSTEM_INFO: Sistem bilgisi yüklenemedi
+        LOADING_SYSTEM_INFO: Sistem bilgisi yükleniyor...
+        GRAV_VERSION: Grav Sürümü
+        PHP_VERSION: PHP Sürümü
+        PHP_SAPI: PHP SAPI
+        MEMORY_LIMIT: Bellek Sınırı
+        MAX_EXECUTION: Maks. Çalıştırma (Execution)
+        MAX_UPLOAD: Maks. Yükleme
+        MAX_POST: Maks. POST
+        DISK_USAGE: Disk Kullanımı
+        DRIVER: Sürücü
+        DISK_FREE_OF: '{total} üzerinden {free} boş'
+      TOOLS_GRAV_ADMIN: Araçlar — Grav Yönetim
+      BACKUPS_SCHEDULER_LOGS_AND_DIAGNOSTICS: Yedekler, zamanlayıcı, günlükler ve tanılama (diagnostics)
+    INSTALLING: Kuruluyor...
+    ACCESS_DENIED:
+      ACCESS_DENIED: Erişim Reddedildi
+    ARE_YOU_SURE: Emin misiniz?
+    ENVIRONMENT_SWITCHER:
+      PREFIX: 'Ortam:'
+      SELECT_WHERE_CONFIG_WRITES_ARE_SAVED: Aktif ortamı seçin — hangi yapılandırmayı göreceğinizi ve kayıtların nereye gideceğini belirler.
+      HAS_OVERRIDES: üzerine yazmalar (overrides) içeriyor
+      SELECTED_ENV: Seçili Ortam
+      NO_LONGER_EXISTS_PICK_ANOTHER: artık mevcut değil. Başka bir tane seçin.
+      SAVE_CONFIG_TO: Aktif ortam
+      SWITCH_DISCARDS_UNSAVED: Ortamı değiştirmek yönetim panelini yeniden yükler ve kaydedilmemiş değişiklikleri atar. Devam edilsin mi?
+      SWITCH_AND_RELOAD: Değiştir ve yeniden yükle
+      CREATES_PATH: user/env/{name}/config/ yolunu oluşturur
+      DEFAULT: Varsayılan
+      SAVING_TO_DEFAULT: Varsayılana kaydediliyor (user/config)
+      SAVING_TO_ENV: 'Ortama kaydediliyor: {name}'
+      ENV_CREATED: '{name} ortamı oluşturuldu ve seçildi'
+      ENV_DELETED: '{name} ortamı silindi'
+      FAILED_TO_CREATE: Ortam oluşturulamadı
+      FAILED_TO_DELETE: Ortam silinemedi
+      CREATE_ENVIRONMENT: 'Ortam oluştur…'
+      CREATE_ENV_NAMED: '"{name}" adlı ortamı oluştur…'
+      CREATE: Oluştur
+      DELETE: Sil
+      DELETE_ENV_TOOLTIP: '{name} ortamını sil'
+      CONFIRM_DELETE: '{name} silinsin mi?'
+      CONFIRM_DELETE_WITH_OVERRIDES: '{name} ve tüm yapılandırma geçersiz kılmaları (overrides) silinsin mi?'
+    INLINE_ICON_PICKER:
+      SEARCH_ICONS: Simgelerde ara...
+      NO_ICONS_FOUND: Simge bulunamadı
+      TYPE_TO_NARROW_RESULTS: Sonuçları daraltmak için yazın
+    PASSWORD_FIELD:
+      PASSWORD_REQUIREMENTS: Şifre Gereksinimleri
+      PASSWORD_STRENGTH: Şifre Gücü
+      REQUIREMENTS: Gereksinimler
+    TOP_PROGRESS_BAR:
+      WORKING: İşleniyor
+    UNSAVED_INDICATOR:
+      SAVING_CHANGES: Değişiklikler kaydediliyor…
+      SAVING_CHANGES_2: Değişiklikler Kaydediliyor
+      UNSAVED_CHANGES_CLICK_SAVE_TO_PERSIST: Kaydedilmemiş değişiklikler — kalıcı hale getirmek için Kaydet'e tıklayın
+      YOU_HAVE_UNSAVED_CHANGES: Kaydedilmemiş değişiklikleriniz var
+    ALL_CHANGES_SAVED: Tüm değişiklikler kaydedildi
+    APP:
+      CREATING_BACKUP: Yedek oluşturuluyor…
+      DASHBOARD_GRAV_ADMIN: Gösterge Paneli — Grav Yönetim
+      REFRESH: Yenile
+      WELCOME_BACK: Tekrar hoş geldiniz, {name}
+      PAGE_TITLE: '{name} — Grav Yönetim'
+    CONFIG:
+      TITLE: Yapılandırma
+      TITLE_SCROLLED: 'Yapılandırma: {scope}'
+      LOADING_CONFIGURATION: Yapılandırma yükleniyor...
+      TWIG_PROFILE:
+        LABEL: İçerikte Twig
+        HELP: Sayfa içeriğinde Twig'i kimlerin çalıştırabileceğini seçin. Bu, aşağıdaki gelişmiş geçişleri (toggles) belirler.
+        'OFF': Kapalı
+        TRUSTED: Sadece güvenilen roller
+        ALL: Tüm editörler
+        CUSTOM: Özel
+        OFF_DESC: Sayfa içeriğindeki Twig devre dışı. İşaretleme (markup) yazıldığı gibi gösterilir.
+        TRUSTED_DESC: Yalnızca süper kullanıcılar ve 'pages twig' iznine sahip kullanıcılar bir sayfada Twig'i etkinleştirebilir.
+        ALL_DESC: Tüm editörler, düzenledikleri sayfalarda Twig'i etkinleştirebilir.
+        CUSTOM_DESC: Mevcut ayarlar isimlendirilmiş bir profille eşleşmiyor. Aşağıdaki gelişmiş geçişleri (toggles) ayarlayın veya sıfırlamak için bir profil seçin.
+      FILTER_FIELDS: Alanları filtrele...
+      CLEAR_FILTER: Filtreyi temizle
+      NO_MATCHES_FOUND: Eşleşme bulunamadı
+      CONFIGURATION_SAVED_SUCCESSFULLY: Yapılandırma başarıyla kaydedildi
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Yapılandırma başka bir yerde değiştirilmiş. En son değişiklikleri görmek için yeniden yükleyin.
+      FAILED_TO_SAVE_CONFIGURATION: Yapılandırma kaydedilemedi
+      VALIDATION_FAILED_FOR_FIELDS: 'Kaydedilemedi — şu alanlar geçersiz: {fields}'
+      CONFIGURATION_RELOADED: Yapılandırma yeniden yüklendi
+      CONFIGURATION_CHANGED_ELSEWHERE_SAVE_TO: Yapılandırma başka bir yerde değiştirildi — üzerine yazmak için kaydedin veya yeniden yükleyin
+      RELOAD: Yeniden Yükle
+      NO_CONFIGURATION_BLUEPRINT_AVAILABLE: Bu kapsam için yapılandırma şeması (blueprint) bulunmuyor.
+      PAGE_TITLE: 'Yapılandırma: {scope} — Grav Yönetim'
+      OVERRIDE:
+        REVERT_TOOLTIP: 'Varsayılanı eziyor (geçersiz kılıyor) ({value}). Geri almak için tıklayın.'
+        DEFAULT_EMPTY: boş
+        REVERTED: Devralınan değere geri dönüldü
+        REVERT_FAILED: Geri alınamadı
+        RESET_BUTTON: Ezilen (Geçersiz Kılınan) ayarları sıfırla
+        RESET_TOOLTIP: Her bir geçersiz kılmayı (override) kaldırır ve devralınan (inherited) değerleri geri yükler.
+        RESET_TITLE: Tüm geçersiz kılmalar (overrides) sıfırlansın mı?
+        RESET_MESSAGE: 'Bu işlem, {scope} üzerindeki her bir geçersiz kılmayı kaldırır ve devralınan değerleri geri yükler. Bu işlem geri alınamaz.'
+        RESET_CONFIRM: Sıfırla
+        RESET_DONE: Geçersiz kılmalar (Overrides) sıfırlandı
+    FLEX_OBJECTS:
+      ADD: Ekle
+      SEARCH: Ara...
+      PREVIOUS: Önceki
+      DELETE_OBJECT: Nesneyi Sil
+      FAILED_TO_LOAD_DIRECTORY: Dizin (directory) yüklenemedi
+      FAILED_TO_LOAD_OBJECTS: Nesneler yüklenemedi
+      OBJECT_DELETED: Nesne silindi
+      FAILED_TO_DELETE_OBJECT: Nesne silinemedi
+      EXPORT_FAILED: Dışa aktarma başarısız oldu
+      EXPORT: Dışa Aktar
+      ACTIONS: İşlemler
+      OBJECT_WAS_MODIFIED_ELSEWHERE_PLEASE: Nesne başka bir yerde değiştirildi. Lütfen yeniden yükleyin.
+      FAILED_TO_SAVE: Kaydedilemedi.
+      OBJECT_CHANGED_ELSEWHERE_SAVE_TO: Nesne başka bir yerde değiştirildi — üzerine yazmak için kaydedin veya yeniden yükleyin
+      BACK_TO_LIST: Listeye Geri Dön
+      INFO:
+        TITLE: Nesne bilgisi
+        ID: Kimlik (ID)
+        DIRECTORY: Dizin
+        STORAGE_KEY: Depolama anahtarı
+        LOCATION: Konum
+        SHOW_INFO: Nesne bilgisini göster
+      NEW:
+        OBJECT_CREATED: Nesne oluşturuldu
+        BACK_TO_LIST: Listeye Geri Dön
+        CREATE: Oluştur
+    FORGOT:
+      UNABLE_TO_CONNECT_TO_SERVER: Sunucuya bağlanılamadı.
+      FORGOT_PASSWORD_GRAV_ADMIN: Şifremi unuttum — Grav Yönetim
+      FORGOT_PASSWORD: Şifremi unuttum
+      EMAIL_ADDRESS: E-posta adresi
+      ENTER_A_VALID_EMAIL_ADDRESS: Geçerli bir e-posta adresi girin
+      IF_AN_ACCOUNT_EXISTS_FOR_THAT_EMAIL_A: O e-posta adresine ait bir hesap varsa, bir sıfırlama bağlantısı gönderilmiştir.
+      BACK_TO_SIGN_IN: Giriş ekranına dön
+      SENDING: Gönderiliyor...
+      SEND_RESET_LINK: Sıfırlama bağlantısını gönder
+      CHECK_INBOX: Sıfırlama bağlantısı için gelen kutunuzu kontrol edin.
+      SUBTITLE: E-posta adresinizi girin, size bir sıfırlama bağlantısı gönderelim.
+    LOGIN:
+      SIGNED_IN_SUCCESSFULLY: Başarıyla oturum açıldı
+      PLEASE_FILL_IN_ALL_REQUIRED_FIELDS: Lütfen tüm zorunlu alanları doldurun
+      INVALID_USERNAME_OR_PASSWORD: Geçersiz kullanıcı adı veya şifre
+      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: Sunucuya bağlanılamadı. Sunucu URL'nizi kontrol edin ve tekrar deneyin.
+      UNABLE_TO_VERIFY_CODE_CHECK_YOUR: Kod doğrulanamadı. Bağlantınızı kontrol edin ve tekrar deneyin.
+      LOGIN_GRAV_ADMIN: Oturum aç — Grav Yönetim
+      GRAV_ADMIN: Grav Yönetimi
+      SERVER_CONFIGURATION: Sunucu Yapılandırması
+      SERVER_URL: Sunucu URL'si
+      ENVIRONMENT: Ortam
+      USERNAME_IS_REQUIRED: Kullanıcı Adı Zorunludur
+      PASSWORD_IS_REQUIRED: Şifre Zorunludur
+      FORGOT_PASSWORD: Şifrenizi mi unuttunuz?
+      AUTHENTICATION_CODE: Kimlik Doğrulama Kodu
+      ENTER_A_VALID_6_DIGIT_CODE: Geçerli bir 6 haneli kod girin
+      BACK_TO_SIGN_IN: Giriş ekranına dön
+      POWERED_BY_GRAV_CMS: Grav CMS Altyapısıyla Sunulmaktadır
+      SIGNING_IN: Oturum açılıyor...
+      SIGN_IN: Oturum Aç
+      VERIFYING: Doğrulanıyor...
+      VERIFY: Doğrula
+      TWOFA_SUBTITLE: Devam etmek için doğrulayıcı kodunuzu girin
+      SUBTITLE: Sitenizi yönetmek için oturum açın
+      AUTH_CODE_PROMPT: Kimlik doğrulama uygulamanızı açın ve **{username}** için 6 haneli kodu girin.
+      OR_CONTINUE_WITH: Veya şununla devam et
+      CONTINUE_WITH: '{provider} ile devam et'
+      SSO_FAILED: Bu sağlayıcıyla oturum açılamadı. Lütfen tekrar deneyin.
+    PLUGIN:
+      BACK_TO_DASHBOARD: Gösterge Paneline Geri Dön
+      NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: Bu eklenti sayfası için içerik bulunmuyor.
+    PLUGINS:
+      SEARCH_PLUGINS: Eklentilerde ara...
+      SYMLINKED: Sembolik Bağlantılı (Symlinked)
+      FAILED_TO_LOAD_PLUGINS: Eklentiler yüklenemedi
+      FAILED_TO_CHECK_FOR_UPDATES: Güncellemeler kontrol edilemedi
+      PLUGINS_GRAV_ADMIN: Eklentiler — Grav Yönetim
+      CHECK_UPDATES: Güncellemeleri Kontrol Et
+      CONFIGURE: Yapılandır
+      SELECT_A_PLUGIN_TO_VIEW_DETAILS: Ayrıntıları görüntülemek için bir eklenti seçin
+      REMOVE_PLUGIN: Eklentiyi Kaldır
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Yapılandırma başka bir yerde değiştirildi. Lütfen yeniden yükleyin.
+      FAILED_TO_SAVE_CONFIGURATION: Yapılandırma kaydedilemedi.
+      PLUGIN_CHANGED_ELSEWHERE_SAVE_TO: Eklenti başka bir yerde değiştirildi — üzerine yazmak için kaydedin veya yeniden yükleyin
+      BACK_TO_PLUGINS: Eklentilere Geri Dön
+      CHANGELOG: Değişiklik Günlüğü (Changelog)
+      PLUGIN_MUST_BE_ENABLED_TO_CONFIGURE: Eklentiyi yapılandırmak için etkinleştirilmesi gerekir.
+      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: Bu eklenti için yapılandırma seçeneği bulunmuyor.
+      ENABLE_PLUGIN: Eklentiyi Etkinleştir
+      PAGE_TITLE: '{name} — Eklentiler — Grav Yönetim'
+      REMOVE_CONFIRM_TITLE: Eklenti kaldırılsın mı?
+      REMOVE_CONFIRM_MESSAGE: '{name} kaldırılsın mı? Bu işlem eklentiyi kaldıracak ve dosyalarını silecektir. Yapılandırma korunacaktır.'
+      UPDATE_CONFIRM_TITLE: Eklenti güncellensin mi?
+      UPDATE_CONFIRM_MESSAGE: '{name}, v{version} sürümüne güncellensin mi?'
+      UPDATE_ALL_CONFIRM_TITLE: Eklentiler güncellensin mi?
+      UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one {# eklenti güncellenecek:} other {# eklenti güncellenecek:}}'
+      UPDATE_ALL: Tümünü Güncelle
+      TITLE: Eklentiler
+    RESET:
+      PASSWORD_RESET_SUCCESSFULLY_PLEASE_SIGN: Şifre başarıyla sıfırlandı. Lütfen oturum açın.
+      UNABLE_TO_CONNECT_TO_SERVER: Sunucuya bağlanılamadı.
+      RESET_PASSWORD_GRAV_ADMIN: Şifreyi sıfırla — Grav Yönetim
+      RESET_PASSWORD: Şifreyi Sıfırla
+      THIS_RESET_LINK_IS_MISSING_REQUIRED: Bu sıfırlama bağlantısında gerekli parametreler eksik. Şifremi unuttum sayfasından yeni bir tane isteyin.
+      CONFIRM_PASSWORD: Şifreyi Onayla
+      PASSWORDS_DO_NOT_MATCH: Şifreler eşleşmiyor
+      BACK_TO_SIGN_IN: Giriş ekranına dön
+      RESETTING: Sıfırlanıyor...
+      INVALID_LINK: Geçersiz sıfırlama bağlantısı.
+      NEW_PASSWORD_FOR: '**{username}** için yeni bir şifre seçin.'
+    SETTINGS:
+      LIGHT_LOGO: Açık (Light) Logo
+      DARK_LOGO: Koyu (Dark) Logo
+      REMOVE_LINK: Bağlantıyı kaldır
+      RESET_PREFERENCES: Tercihleri Sıfırla
+      PREFERENCES_RESET_RELOAD_TO_APPLY: Tercihler sıfırlandı. Uygulamak için yeniden yükleyin.
+      SETTINGS_GRAV_ADMIN: Ayarlar — Grav Yönetim
+      ADMIN_PREFERENCES_AND_APPEARANCE: Yönetim tercihleri ve görünümü
+      CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: Kenar çubuğunda ve giriş sayfasında gösterilen logoyu özelleştirin
+      LOGO_TYPE: Logo Türü
+      CHOOSE_HOW_THE_LOGO_IS_DISPLAYED: Logonun nasıl görüntüleneceğini seçin
+      GRAV_LOGO: Grav Logosu
+      CUSTOM_TEXT: Özel Metin
+      CUSTOM_IMAGE: Özel Görsel
+      LOGO_TEXT: Logo Metni
+      THE_FIRST_LETTER_BECOMES_THE_ICON: İlk harf simge olur
+      LIGHT_MODE_LOGO: Açık Mod Logosu
+      USED_ON_LIGHT_BACKGROUNDS: Açık renkli arka planlarda kullanılır
+      DARK_MODE_LOGO: Koyu Mod Logosu
+      USED_ON_DARK_BACKGROUNDS: Koyu renkli arka planlarda kullanılır
+      APPEARANCE: Görünüm
+      CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: Yönetim panelinin görünümünü ve hissini özelleştirin
+      COLOR_MODE: Renk Modu
+      CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: Açık ve koyu görünüm arasında seçim yapın
+      ACCENT_COLOR: Vurgu Rengi
+      PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: Düğmeler, bağlantılar ve vurgulamalar için kullanılan birincil renk
+      SATURATION: Doygunluk (Saturation)
+      TYPEFACE_USED_THROUGHOUT_THE_ADMIN: Yönetim panelinde kullanılan yazı tipi (Typeface)
+      FONT_SIZE: Yazı Tipi Boyutu
+      TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: Yönetim panelinde kullanılan metin boyutu
+      FONT_SIZE_SMALL: Küçük
+      FONT_SIZE_NORMAL: Normal
+      FONT_SIZE_LARGE: Büyük
+      FONT_SIZE_XLARGE: Çok Büyük
+      DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: Sayfa tarayıcısı için varsayılan ayarlar
+      DEFAULT_VIEW: Varsayılan Görünüm
+      HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: Sayfaların varsayılan olarak nasıl görüntülendiği
+      OTHER_LIST_VIEWS: Diğer Liste Görünümleri
+      OTHER_LIST_VIEWS_DESC: Kullanıcılar, eklentiler ve temalar listesi için varsayılan düzen
+      ITEMS_PER_PAGE: Sayfa Başına Öğe
+      NUMBER_OF_PAGES_SHOWN_IN_LIST_VIEW: Liste görünümünde gösterilen sayfa sayısı
+      EDITING: Düzenleme
+      AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: Form editörleri için otomatik kaydetme ve geri alma davranışı
+      AUTO_SAVE: Otomatik Kaydet
+      AUTOMATICALLY_SAVE_WHEN_YOU_LEAVE_A: Bir alandan ayrıldığınızda otomatik olarak kaydet
+      TOOLBAR_UNDO_BUTTON: Araç Çubuğu Geri Al Düğmesi
+      SHOW_AN_UNDO_BUTTON_IN_THE_EDITOR: Editör araç çubuğunda bir geri al düğmesi göster
+      UNDO_BATCH_WINDOW: Geri Alma Toplu İşlem Süresi (Window)
+      GROUP_RAPID_FIELD_CHANGES_INTO_A_SINGLE: Hızlı alan değişikliklerini tek bir geri alma adımında grupla
+      NONE_1_FIELD_1_UNDO: Hiçbiri (1 alan = 1 geri alma)
+      1_SECOND: 1 Saniye
+      2_SECONDS: 2 Saniye
+      REAL_TIME_COLLABORATION: Gerçek Zamanlı İşbirliği
+      PLUGIN_ON_THE_SERVER_EXPERIMENTAL: eklentisini gerektirir. Deneysel.
+      ADMIN_INTERFACE_LANGUAGE: Yönetim paneli arayüz dili
+      ADMIN_LANGUAGE: Yönetim Dili
+      ENGLISH: English
+      FRAN_AIS: Français
+      DEUTSCH: Deutsch
+      ESPA_OL: Español
+      ITALIANO: Italiano
+      PORTUGU_S: Português
+      NEDERLANDS: Nederlands
+      MENUBAR_LINKS: Menü Çubuğu Bağlantıları
+      CUSTOM_SHORTCUTS_SHOWN_IN_THE_TOP: Üst menü çubuğunda gösterilen özel kısayollar
+      EXTERNAL: Harici
+      ADD_LINK: Bağlantı Ekle
+      CONNECTION: Bağlantı
+      SERVER_CONNECTION_DETAILS: Sunucu bağlantı detayları
+      SERVER_URL: Sunucu URL'si
+      ENVIRONMENT: Ortam
+      AUTHENTICATED_AS: Kimlik doğrulandı (Kullanıcı)
+      RESET_ALL_PREFERENCES: Tüm Tercihleri Sıfırla
+      COLLAB_DESCRIPTION: Canlı çok kullanıcılı (multi-user) düzenleme. Sunucuda `sync` eklentisini gerektirir. Deneysel.
+      ADMIN_LANGUAGE_DESC: Etiketler, menüler ve mesajlar için dil ({count} dize yüklendi)
+      LANGUAGE_CHANGED: Dil {language} olarak değiştirildi.
+      HUE: Ton (Hue)
+      FONT: Yazı Tipi
+      LIGHT: Açık
+      DARK: Koyu
+      FOLLOW_OS: Sistemi İzle (OS)
+      'ON': Açık
+      'OFF': Kapalı
+      RESET_TO_SITE_DEFAULTS: Tercihlerimi site varsayılanlarına sıfırla
+      SITE_DEFAULTS: Site Varsayılanları
+      SITE_DEFAULTS_DESCRIPTION: Aşağıdaki ayarlar, tüm yönetim paneli kullanıcıları için temel varsayılanları belirler. Katman B öğeleri (görünüm, sayfalar, dil, editör) her kullanıcının kendi kişisel tercihlerinde geçersiz kılınabilir (overridden). Katman A öğeleri (düzenleme, menü çubuğu) site genelindedir ve geçersiz kılınamaz.
+      BRANDING: Markalama (Branding)
+      BRANDING_DESC: Yönetim panelinde gösterilen logo, başlık, favicon ve giriş ekranı.
+      SAVED_AUTOMATICALLY: Otomatik olarak kaydedildi
+      SITE_SETTINGS_HEADING: Site Ayarları
+      SITE_SETTINGS_DESC: Yeni kullanıcılar için varsayılan tercihler ve site genelindeki davranış. Değişiklikler, etkilenen kullanıcılar için bir sonraki yeniden yüklemede uygulanır.
+      DEFAULT_APPEARANCE: Varsayılan Görünüm
+      DEFAULT_COLOR_APPEARANCE_DESC: Yeni kullanıcılar için varsayılan renk görünümü.
+      DEFAULT_PRIMARY_COLOR_DESC: Düğmeler, bağlantılar ve vurgular için varsayılan birincil renk.
+      DEFAULT_TYPEFACE_DESC: Yönetim arayüzü (UI) için varsayılan yazı tipi (typeface).
+      DEFAULT_TEXT_SIZE_DESC: Yönetim arayüzü (UI) için varsayılan metin boyutu.
+      DEFAULT_PAGES: Varsayılan Sayfalar
+      DEFAULT_LANGUAGE: Varsayılan Dil
+      DEFAULT_INTERFACE_LANGUAGE_DESC: Yeni kullanıcılar için varsayılan arayüz dili.
+      EDITOR_HEADING: Editör
+      EDITOR_MODE: Editör modu
+      DEFAULT_FORM_EDITOR_DENSITY: Varsayılan form editörü yoğunluğu.
+      EDITOR_SECTION_DESC: Markdown editörünün yazarken nasıl davranacağını belirler.
+      EDITOR_KEYMAP: Tuş Atamaları (Keybindings)
+      EDITOR_KEYMAP_DESC: Markdown ve kod editörlerinde Vim tuş atamalarını kullanın. Varsayılan ayar, standart düzenlemeyi korur.
+      EDITOR_KEYMAP_DEFAULT: Varsayılan
+      EDITOR_KEYMAP_VIM: Vim
+      STICKY_TOOLBAR: Sabit Araç Çubuğu
+      STICKY_TOOLBAR_DESC: Kaydırırken biçimlendirme araç çubuğunu ve Önizleme düğmesini görünür halde sabit tutar.
+      EDITOR_HEIGHT: Editör Yüksekliği
+      EDITOR_HEIGHT_DESC: Editörün içeriğinizle birlikte büyümesine izin verin veya kendi kaydırma çubuğuna sahip sabit bir yükseklikte sınırlandırın.
+      EDITOR_HEIGHT_AUTO: Otomatik
+      EDITOR_HEIGHT_FIXED: Sabit
+      USERS_MAY_OVERRIDE: Kullanıcılar geçersiz kılabilir (ezebilir)
+      SITE_WIDE_ONLY: Sadece site geneli
+      REVERT_CHANGES: Değişiklikleri geri al
+      SAVE_SITE_DEFAULTS: Site varsayılanlarını kaydet
+      RESET_PREFERENCES_MSG: Tüm kişisel geçersiz kılmalarınızı (overrides) kaldırıp site varsayılanlarına dönmek istiyor musunuz?
+      RESET: Sıfırla
+      FAILED_TO_SAVE_LOGO_MODE: Logo modu kaydedilemedi.
+      FAILED_TO_SAVE_LOGO_TEXT: Logo metni kaydedilemedi.
+      LIGHT_LOGO_UPLOADED: Açık renk logo yüklendi.
+      DARK_LOGO_UPLOADED: Koyu renk logo yüklendi.
+      LOGO_UPLOAD_FAILED: Logo yüklemesi başarısız oldu.
+      LIGHT_LOGO_REMOVED: Açık renk logo kaldırıldı.
+      DARK_LOGO_REMOVED: Koyu renk logo kaldırıldı.
+      FAILED_TO_REMOVE_LOGO: Logo kaldırılamadı.
+      FAILED_TO_SAVE_BRANDING: Markalama (branding) kaydedilemedi.
+      ADMIN_TITLE: Yönetim Paneli Başlığı
+      ADMIN_TITLE_DESC: Giriş ekranı başlığı ve tarayıcı sekmesinde gösterilir. "Grav Yönetim" (Grav Admin) için boş bırakın.
+      LOGIN_SUBTITLE: Giriş ekranı alt başlığı
+      LOGIN_SUBTITLE_DESC: Giriş başlığının altında gösterilen isteğe bağlı satır.
+      SHOW_POWERED_BY: '"Powered by Grav" göster'
+      SHOW_POWERED_BY_DESC: Giriş ve kurulum ekranlarında "Powered by Grav CMS" satırını gösterir.
+      FAVICON: Favicon
+      FAVICON_DESC: Özel tarayıcı sekmesi simgesi (SVG, PNG, WebP veya ICO). Otomatik oluşturulan simge için boş bırakın.
+      FAVICON_UPLOADED: Favicon yüklendi.
+      FAVICON_REMOVED: Favicon kaldırıldı.
+      SITE_DEFAULTS_SAVED: Site varsayılanları kaydedildi. Tüm kullanıcılar bir sonraki yeniden yüklemede bunları görecektir.
+      FAILED_TO_SAVE_SITE_DEFAULTS: Site varsayılanları kaydedilemedi.
+      FAILED_TO_RESET_PREFERENCES: Tercihler sıfırlanamadı.
+    CUSTOM: Özel
+    PREVIEW: Önizleme
+    SETUP:
+      PLEASE_FIX_THE_ERRORS_ABOVE_AND_TRY: Lütfen yukarıdaki hataları düzeltin ve tekrar deneyin
+      ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: Yönetici hesabı oluşturuldu — Grav'a hoş geldiniz
+      SETUP_HAS_ALREADY_BEEN_COMPLETED_PLEASE: Kurulum zaten tamamlanmış. Lütfen oturum açın.
+      UNABLE_TO_CONNECT_TO_SERVER_CHECK_YOUR: Sunucuya bağlanılamadı. Sunucu URL'nizi kontrol edin ve tekrar deneyin.
+      SETUP_GRAV_ADMIN: Kurulum — Grav Yönetim
+      WELCOME_TO_GRAV: Grav'a Hoş Geldiniz
+      CREATE_YOUR_ADMINISTRATOR_ACCOUNT_TO: Başlamak için yönetici hesabınızı oluşturun
+      CHECKING_SERVER: Sunucu kontrol ediliyor…
+      SERVER_CONFIGURATION: Sunucu Yapılandırması
+      SERVER_URL: Sunucu URL'si
+      ENVIRONMENT: Ortam
+      3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 Karakter: Harfler, sayılar, kısa çizgiler (-), alt çizgiler (_)'
+      FULL_NAME: Tam Ad
+      OPTIONAL: (İsteğe bağlı)
+      ENTER_A_VALID_EMAIL_ADDRESS: Geçerli bir e-posta adresi girin
+      CONFIRM_PASSWORD: Şifreyi Onayla
+      PASSWORDS_DO_NOT_MATCH: Şifreler eşleşmiyor
+      POWERED_BY_GRAV_CMS: Grav CMS Altyapısıyla Sunulmaktadır
+      CREATING_ACCOUNT: Hesap oluşturuluyor...
+      CREATE_ADMINISTRATOR: Yönetici Oluştur
+    SYSTEM:
+      SYSTEM_GRAV_ADMIN: Sistem — Grav Yönetim
+      COMING_SOON: Çok Yakında
+    THEMES:
+      SEARCH_THEMES: Temalarda ara...
+      SYMLINKED: Sembolik Bağlantılı (Symlinked)
+      FAILED_TO_LOAD_THEMES: Temalar yüklenemedi
+      FAILED_TO_CHECK_FOR_UPDATES: Güncellemeler kontrol edilemedi
+      THEMES_GRAV_ADMIN: Temalar — Grav Yönetim
+      CHECK_UPDATES: Güncellemeleri Kontrol Et
+      CONFIGURE: Yapılandır
+      SELECT_A_THEME_TO_VIEW_DETAILS: Ayrıntıları görüntülemek için bir tema seçin
+      ACTIVE_THEME: Aktif Tema
+      CLICK_TO_VIEW_FULL_SIZE: Tam boyutta görüntülemek için tıklayın
+      REMOVE_THEME: Temayı Kaldır
+      CONFIGURATION_WAS_MODIFIED_ELSEWHERE: Yapılandırma başka bir yerde değiştirildi. Lütfen yeniden yükleyin.
+      FAILED_TO_SAVE_CONFIGURATION: Yapılandırma kaydedilemedi.
+      BACK_TO_THEMES: Temalara Geri Dön
+      CHANGELOG: Değişiklik Günlüğü (Changelog)
+      NO_CONFIGURATION_OPTIONS_AVAILABLE_FOR: Bu tema için yapılandırma seçeneği bulunmuyor.
+      PAGE_TITLE: '{name} — Temalar — Grav Yönetim'
+      TITLE: Temalar
+      ACTIVATE: Etkinleştir
+      ACTIVATE_THEME: '{name} temasını etkinleştir'
+      ACTIVATE_CONFIRM_TITLE: Tema etkinleştirilsin mi?
+      ACTIVATE_CONFIRM_MESSAGE: 'Sitenin aktif teması {name} olarak değiştirilsin mi? Sitenin ön yüzü bu temayı hemen kullanmaya başlayacaktır.'
+      REMOVE_CONFIRM_TITLE: Tema kaldırılsın mı?
+      REMOVE_CONFIRM_MESSAGE: '{name} kaldırılsın mı? Bu işlem temayı kaldıracak ve dosyalarını silecektir.'
+      UPDATE_ALL_CONFIRM_TITLE: Temalar güncellensin mi?
+      UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema güncellenecek:} other{# tema güncellenecek:}}'
+      UPDATE_ALL: Tümünü Güncelle
+      REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} şu anda aktif olan tema. Bu temayı kaldırmak, başka bir tema etkinleştirilene kadar siteyi temasız bırakacaktır. Devam edilsin mi?'
+      DELETE_ACTIVE_WARNING: Şu anda aktif. Silmeden önce farklı bir temaya geçilmesi önerilir.
+    ACTIVE: Aktif
+    ACTIVATE: Etkinleştir
+    USERS:
+      TITLE: Kullanıcılar
+      STATUS: Durum
+      STATUS_HELP: Devre dışı bırakılmış hesaplar oturum açamaz veya API'yi kullanamaz.
+      SEARCH_USERS: Kullanıcılarda ara...
+      FAILED_TO_LOAD_USERS: Kullanıcılar yüklenemedi
+      USERS_GRAV_ADMIN: Kullanıcılar — Grav Yönetim
+      ADD_USER: Kullanıcı Ekle
+      SUPER_ADMIN: Süper Yönetici
+      CREATED: Oluşturuldu
+      PERMISSIONS: İzinler
+      SELECT_A_USER_TO_VIEW_DETAILS: Ayrıntıları görüntülemek için bir kullanıcı seçin
+      DELETE_USER: Kullanıcıyı Sil
+      CONFIRM_DELETE_USER: "''{username}'' kullanıcısı silinsin mi? Bu işlem geri alınamaz."
+      USER_WAS_MODIFIED_ELSEWHERE_PLEASE: Kullanıcı başka bir yerde değiştirildi. Lütfen yeniden yükleyin.
+      FAILED_TO_SAVE_USER: Kullanıcı kaydedilemedi.
+      YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: Kendi hesabınızı silemezsiniz.
+      USER_CHANGED_ELSEWHERE_SAVE_TO: Kullanıcı başka bir yerde değiştirildi — üzerine yazmak için kaydedin veya yeniden yükleyin
+      BACK_TO_USERS: Kullanıcılara Geri Dön
+      2_FACTOR_AUTHENTICATION: İki Faktörlü Kimlik Doğrulama
+      NEW:
+        LOWERCASE_3_64_CHARS: '3-64 Karakter: küçük harfler, sayılar, . - _'
+        NEW_USER_GRAV_ADMIN: Yeni Kullanıcı — Grav Yönetim
+        NEW_USER: Yeni Kullanıcı
+        ACCOUNT: Hesap
+        FULL_NAME: Tam Ad
+        PERMISSIONS: İzinler
+        CREATE: Oluştur
+      PAGE_TITLE: '{name} — Kullanıcılar — Grav Yönetim'
+    USERS_NAV:
+      USERS: Kullanıcılar
+      GROUPS: Gruplar
+      INVITATIONS: Davetiyeler
+      CONFIGURATION: Yapılandırma
+    INVITATIONS:
+      INVITE: Davet Et
+      INVITE_USER: Kullanıcı Davet Et
+      SEND_INVITE: Davetiye Gönder
+      RECIPIENT: Alıcı
+      RECIPIENT_HINT: Daveti kabul ettiklerinde kendi kullanıcı adı ve şifrelerini seçecekler.
+      EMAIL: E-posta
+      FULL_NAME_OPTIONAL: Tam Ad (İsteğe Bağlı)
+      MESSAGE_OPTIONAL: Kişisel mesaj (isteğe bağlı)
+      EXPIRES_AFTER: Davetiyenin geçerlilik süresi
+      EXPIRY_1_DAY: 1 gün
+      EXPIRY_3_DAYS: 3 gün
+      EXPIRY_7_DAYS: 7 gün
+      EXPIRY_14_DAYS: 14 gün
+      EXPIRY_30_DAYS: 30 gün
+      GROUPS: Gruplar
+      GROUPS_HINT: Davet edilen kullanıcının ekleneceği gruplar.
+      LOADING_GROUPS: Gruplar yükleniyor...
+      NO_GROUPS: Henüz tanımlanmış bir grup yok.
+      PERMISSIONS: İzinler
+      PERMISSIONS_HINT: Davet edilen kullanıcının alacağı izinler. Kendilerine burada belirlediğinizden daha fazlasını veremezler.
+      INVITE_READY: Davetiye hazır
+      EMAIL_SENT_TO: '{email} adresine bir davetiye e-postası gönderildi.'
+      INVITE_LINK: Davetiye bağlantısı
+      COPY: Kopyala
+      COPIED: Kopyalandı
+      INVITE_ANOTHER: Başkasını davet et
+      VIEW_PENDING: Bekleyenleri görüntüle
+      SENT_TOAST: '{email} adresine davetiye gönderildi.'
+      CREATED_NO_EMAIL_TOAST: Davetiye oluşturuldu. E-posta yapılandırılmadığı için bağlantıyı manuel olarak paylaşın.
+      RESENT_TOAST: 'Davetiye {email} adresine yeniden gönderildi.'
+      REVOKED_TOAST: Davetiye iptal edildi.
+      SEND_FAILED: Davetiye gönderilemedi.
+      RESEND_FAILED: Davetiye yeniden gönderilemedi.
+      REVOKE_FAILED: Davetiye iptal edilemedi.
+      LOAD_FAILED: Davetiyeler yüklenemedi.
+      COPY_FAILED: Bağlantı kopyalanamadı.
+      PENDING_COUNT: '{count, plural, =0 {Bekleyen davetiye yok} one {# bekleyen davetiye} other {# bekleyen davetiye}}'
+      NONE_PENDING: Bekleyen Davetiye Yok
+      NONE_PENDING_HINT: Katılması için birini davet ettiğinizde bekleyen davetiyeleri burada görünecektir.
+      INVITED_BY: '{name} tarafından davet edildi'
+      EXPIRED: Süresi Doldu
+      EXPIRES_IN_DAYS: '{count, plural, one {# gün içinde sona eriyor} other {# gün içinde sona eriyor}}'
+      EXPIRES_IN_HOURS: '{count, plural, one {# saat içinde sona eriyor} other {# saat içinde sona eriyor}}'
+      RESEND: Yeniden Gönder
+      REVOKE: İptal Et
+      REVOKE_TITLE: Davetiyeyi İptal Et
+      CONFIRM_REVOKE: '{email} için davetiye iptal edilsin mi? Bağlantı artık çalışmayacak.'
+      ACCEPT_TITLE: Davetiyeyi Kabul Et — Grav Yönetim
+      ACCEPT_HEADING: Davetiyeyi Kabul Et
+      ACCEPT_SUBHEADING: Başlamak için hesabınızı ayarlayın.
+      CHECKING_INVITE: Davetiyeniz kontrol ediliyor...
+      INVALID_INVITE: Bu davetiye geçerli değil.
+      INVALID_INVITE_BODY: Bu davetiye bağlantısı geçersiz veya daha önce kullanılmış.
+      EXPIRED_INVITE: Bu davetiyenin süresi dolmuş.
+      EXPIRED_INVITE_BODY: Bu davetiyenin süresi dolmuş. Yeni bir tane göndermesi için yöneticinizden talepte bulunun.
+      TITLE_OPTIONAL: Başlık (İsteğe Bağlı)
+      CHOOSE_PASSWORD: Bir şifre seçin
+      PASSWORD_POLICY: Şifre, gerekli politikayı (kuralları) karşılamıyor.
+      USERNAME_INVALID: Kullanıcı adı 3-64 karakter arasında olmalıdır.
+      USERNAME_TAKEN: Bu kullanıcı adı çoktan alınmış.
+      CREATE_ACCOUNT: Hesap Oluştur
+      CREATING_ACCOUNT: Hesap oluşturuluyor...
+      ACCEPT_SUCCESS: Hesap oluşturuldu. Hoş geldiniz!
+      ACCEPT_FAILED: Hesabınız oluşturulamadı.
+    USERS_TABLE:
+      USERNAME: Kullanıcı Adı
+      EMAIL: E-posta
+      FULL_NAME: Tam Ad
+      STATUS: Durum
+      PERMISSIONS: İzinler
+      ACTIONS: İşlemler
+      ENABLED: Etkin
+      DISABLED: Devre Dışı
+      'ON': Açık
+      'OFF': Kapalı
+      EDIT: Düzenle
+      DELETE: Sil
+      NO_USERS: Kullanıcı bulunamadı
+      CARDS: Kartlar
+      TABLE: Tablo
+    USERS_FILTER:
+      PERMISSION: İzin
+      GROUP: Grup
+      GROUPS: Gruplar
+      BACKEND_ACCESS: Yönetim Paneli (Backend) Erişimi
+      CLEAR: Temizle
+      CLEAR_ALL: Filtreleri temizle
+      TYPE_TO_FILTER: Filtrelemek için yazın…
+      LOADING: Yükleniyor…
+      NO_MATCHES: Eşleşme Yok
+      NO_MATCHES_FILTERS: Bu filtrelerle eşleşen kullanıcı yok
+      FILTER_BY_PERMISSION: Bu izne göre filtrele
+      FILTER_BY_GROUP: Bu gruba göre filtrele
+    PLUGINS_TABLE:
+      NAME: Ad
+      VERSION: Sürüm
+      NO_PLUGINS: Yüklü Eklenti Yok
+      PROTECTED_PLUGIN: Bu eklenti admin-next üzerinden devre dışı bırakılamaz çünkü sistem dışında kalmanıza (kilitlenmenize) neden olur.
+    THEMES_TABLE:
+      NO_THEMES: Yüklü Tema Yok
+    GROUPS:
+      GROUPS: Gruplar
+      GROUPS_GRAV_ADMIN: Gruplar — Grav Yönetim
+      ADD_GROUP: Grup Ekle
+      NEW_GROUP: Yeni Grup
+      NEW_GROUP_GRAV_ADMIN: Yeni Grup — Grav Yönetim
+      GROUP_NAME: Grup Adı
+      GROUP_NAME_PLACEHOLDER: Örn. Editörler
+      GROUP_NAME_HELP: Harfler, sayılar, kısa çizgiler veya alt çizgilerden oluşan 1-200 karakter. Depolama anahtarı (storage key) olarak kullanılır.
+      DISPLAY_NAME: Görünen Ad
+      DESCRIPTION: Açıklama
+      SEARCH_GROUPS: Gruplarda ara...
+      NO_GROUPS: Grup bulunamadı
+      NO_GROUPS_MATCH_SEARCH: Aramanızla eşleşen grup yok
+      SELECT_A_GROUP_TO_VIEW_DETAILS: Ayrıntıları görüntülemek için bir grup seçin
+      BACK_TO_GROUPS: Gruplara Geri Dön
+      CREATE: Oluştur
+      DELETE_GROUP: Grubu Sil
+      CONFIRM_DELETE_GROUP: "''{name}'' grubu silinsin mi? Bu işlem geri alınamaz."
+      FAILED_TO_LOAD_GROUPS: Gruplar yüklenemedi
+      FAILED_TO_LOAD_GROUP: "''{name}'' grubu yüklenemedi."
+      FAILED_TO_SAVE_GROUP: Grup kaydedilemedi.
+      FAILED_TO_CREATE_GROUP: Grup oluşturulamadı.
+      GROUP_SAVED: "''{name}'' grubu kaydedildi"
+      GROUP_CREATED: "''{name}'' grubu oluşturuldu"
+      GROUP_DELETED: "''{name}'' grubu silindi"
+      GROUP_DELETE_FAILED: "''{name}'' grubu silinemedi"
+      GROUP_MODIFIED_ELSEWHERE: Grup başka bir yerde değiştirildi. Lütfen yeniden yükleyin.
+      GROUP_PAGE_TITLE: '{name} — Gruplar — Grav Yönetim'
+      GROUP_COUNT_ONE: '{n} grup'
+      GROUP_COUNT_OTHER: '{n} grup'
+    ACCOUNTS_CONFIG:
+      TITLE: Hesaplar Yapılandırması
+      SUBTITLE: Kullanıcı hesapları ve kayıt işlemleri için varsayılan ayarlar
+      PAGE_TITLE: Hesaplar Yapılandırması — Grav Yönetim
+      SAVED: Yapılandırma kaydedildi
+      FAILED_TO_LOAD: Hesaplar yapılandırması yüklenemedi
+      FAILED_TO_SAVE: Hesaplar yapılandırması kaydedilemedi
+      MODIFIED_ELSEWHERE: Yapılandırma başka bir yerde değiştirildi. Lütfen yeniden yükleyin.
+      NO_FIELDS: Kullanılabilir yapılandırma seçeneği bulunmuyor.
+    PAGINATION:
+      PAGE_OF: 'Sayfa {current} / {total}'
+    INFO: Bilgi
+    INSTALL: Yükle
+    COPY_BUTTON:
+      COPIED: Kopyalandı!
+      COPY: Kopyala
+    WIDGET_HOST:
+      UNKNOWN_WIDGET: 'Bilinmeyen bileşen: {id}'
+    UPDATE_AVAILABLE_VERSION: 'Güncelleme mevcut: v{version}'
+    UPDATE_TO_VERSION: v{version} sürümüne güncelle
+    2FA_ENABLED: 2FA Etkin
+    2FA_SECRET: 2FA Gizli Anahtarı
+    2FA_SECRET_HELP: 'Bu QR kodunu [Doğrulama Uygulamanızla (Authenticator App)](https://learn.getgrav.org/admin-panel/2fa#apps) tarayın. Ayrıca, uygulamanızı yeniden yüklemeniz gerekmesine karşı, gizli anahtarı güvenli bir konuma yedeklemek iyi bir fikirdir. Daha fazla bilgi için [Grav belgelerini](https://learn.getgrav.org/admin-panel/2fa) inceleyin.'
+    2FA_TITLE: İki Faktörlü Kimlik Doğrulama
+    ABSOLUTE_URLS: Mutlak URL'ler (Absolute URLs)
+    ABSOLUTE_URLS_HELP: '`base_url` için mutlak veya göreli URL''ler'
+    ACCESS: Erişim
+    ACCESS_LEVELS: Erişim Seviyeleri
+    ACCOUNT: Hesap
+    ACCOUNTS: Hesaplar
+    ACCOUNTS_STORAGE: Hesap Depolaması
+    ACCOUNTS_STORAGE_HELP: 'Esnek Nesne (Flex Object) Hesap türü için kullanılacak depolama mekanizması. "Dosyalar" (Files), hesapların tek bir klasördeki YAML dosyasında depolandığı geleneksel yaklaşımdır; "Klasör" (Folder) ise her hesap için yeni bir klasör oluşturur.'
+    ACCOUNTS_TYPE: Hesap Türü
+    ACCOUNTS_TYPE_HELP: Kullanıcı hesaplarını depolayacak Esnek Nesne (Flex Object) sistemi
+    ACTIVE_LANGUAGE_IN_SESSION: Oturumdaki aktif dil
+    ACTIVE_LANGUAGE_IN_SESSION_HELP: Aktif dili oturuma kaydet
+    ADD: Ekle
+    ADD_ACCOUNT: Hesap Ekle
+    ADMIN_CHILDREN_DISPLAY_ORDER: Alt Sayfa Görüntüleme Sırası
+    ADMIN_CHILDREN_DISPLAY_ORDER_HELP: Bu sayfanın alt sayfalarının, Yönetim eklentisindeki 'Sayfalar' (Pages) görünümünde hangi sırayla görüntüleneceğini belirler.
+    ADMIN_SPECIFIC_OVERRIDES: Yöneticiye Özel Geçersiz Kılmalar (Overrides)
+    ADVANCED: Gelişmiş
+    ALLOW_URL_TAXONOMY_FILTERS: URL Taksonomi Filtreleri
+    ALLOW_URL_TAXONOMY_FILTERS_HELP: 'Sayfa tabanlı koleksiyonlar, `/taxonomy:value` üzerinden filtreleme yapmanıza olanak tanır.'
+    ALLOW_WEBSERVER_GZIP: Web Sunucusu Gzip Sıkıştırmasına İzin Ver
+    ALLOW_WEBSERVER_GZIP_HELP: Varsayılan olarak kapalıdır. Etkinleştirildiğinde, Web Sunucusu yapılandırmalı Gzip/Deflate sıkıştırması çalışır, ancak onShutDown() olayından önce http bağlantısı kapatılmaz, bu da sayfanın daha yavaş yüklenmesine neden olabilir.
+    APPEND_URL_EXT: URL uzantısı ekle
+    APPEND_URL_EXT_HELP: 'Sayfanın URL''sine özel bir uzantı ekler. Not: Bu, Grav''ın `<şablon>.<uzantı>.twig` şablonunu arayacağı anlamına gelir.'
+    ASCENDING: Artan (Ascending)
+    ASSETS: Varlıklar (Assets)
+    AUTO: Otomatik
+    AUTO_LINE_BREAKS: Otomatik satır sonları (line breaks)
+    AUTO_LINE_BREAKS_HELP: Markdown'da otomatik satır sonları (line breaks) desteğini etkinleştir
+    AUTO_URL_LINKS: Otomatik URL Bağlantıları
+    AUTO_URL_LINKS_HELP: URL'lerin otomatik olarak HTML köprülerine (hyperlink) dönüştürülmesini etkinleştir
+    AUTOESCAPE_VARIABLES: Değişkenleri otomatik kaçır (Autoescape variables)
+    AUTOESCAPE_VARIABLES_HELP: Tüm değişkenleri otomatik olarak kaçırır (autoescapes). Bu büyük ihtimalle sitenizi bozacaktır.
+    AVATAR: Avatar Oluşturucu
+    AVATAR_HASH: 'Not: İsteğe bağlı Avatar özel "hash" dizesi'
+    AVATAR_HELP: Multiavatar, yerel olarak oluşturulmuş bir avatardır. Gravatar, daha önceden yapılandırılmış bir Avatarı uzaktan çekmek için e-posta adresinizi kullanan harici bir hizmettir.
+    BACK: Geri
+    BACKUPS: Yedekler
+    BACKUPS_HISTORY: Yedekleme Geçmişi
+    BACKUPS_MAX_COUNT: Maksimum Yedek Sayısı
+    BACKUPS_MAX_RETENTION_TIME: Maksimum Saklama Süresi
+    BACKUPS_MAX_RETENTION_TIME_APPEND: Gün Olarak
+    BACKUPS_MAX_SPACE: Maksimum Yedekleme Alanı
+    BACKUPS_PROFILE_ENVIRONMENT: Ortam
+    BACKUPS_PROFILE_ENVIRONMENT_HELP: Zamanlanmış yedeğin içinde çalıştırılacağı Grav ortam (environment) bağlamı.
+    BACKUPS_PROFILE_EXCLUDE_FILES: Dosyaları Hariç Tut
+    BACKUPS_PROFILE_EXCLUDE_FILES_HELP: Hariç tutulacak belirli Dosyalar veya Klasörler (her satıra bir tane)
+    BACKUPS_PROFILE_EXCLUDE_PATHS: Yolları Hariç Tut
+    BACKUPS_PROFILE_EXCLUDE_PATHS_HELP: Hariç tutulacak mutlak yollar (her satıra bir tane)
+    BACKUPS_PROFILE_NAME: Yedek Adı
+    BACKUPS_PROFILE_ROOT_FOLDER: Kök Klasör
+    BACKUPS_PROFILE_ROOT_FOLDER_HELP: Mutlak bir yol (absolute path) veya bir akış (stream) olabilir
+    BACKUPS_PROFILE_SCHEDULE: Zamanlanmış İşi Etkinleştir
+    BACKUPS_PROFILE_SCHEDULE_AT: Zamanlanmış İşi Çalıştır
+    BACKUPS_PROFILES: Yedekleme Profilleri
+    BACKUPS_PURGE_CONFIG: Yedekleme Temizleme (Purge) Yapılandırması
+    BACKUPS_STORAGE_PURGE_TRIGGER: Yedek Depolama Temizleme Tetikleyicisi
+    BODY_CLASSES: Body Sınıfları (Body Classes)
+    CACHE_ALL: Tüm görselleri önbelleğe al
+    CACHE_ALL_HELP: Hiçbir medya manipülasyonu (media manipulation) içermeseler bile tüm görselleri Grav'ın önbellek sisteminden geçirin
+    CACHE_CHECK_METHOD: Önbellek kontrol yöntemi
+    CACHE_CHECK_METHOD_HELP: Grav'ın sayfa dosyalarının değiştirilip değiştirilmediğini kontrol etmek için kullanacağı yöntemi seçin.
+    CACHE_CLEAR_JOB: Zamanlanmış Temizleme İşini (Clear Job) Çalıştır
+    CACHE_CLEAR_JOB_HELP: Zamanlayıcı ile Grav Önbelleğini periyodik olarak temizleyebilirsiniz
+    CACHE_CONTROL: HTTP Cache-Control
+    CACHE_CONTROL_HELP: '`no-cache, no-store, must-revalidate` gibi geçerli bir cache-control (önbellek kontrolü) değerine ayarlayın'
+    CACHE_DRIVER: Önbellek Sürücüsü (Cache Driver)
+    CACHE_DRIVER_HELP: Grav'ın hangi önbellek sürücüsünü kullanacağını seçin. 'Otomatik Algıla' sizin için en iyisini bulmaya çalışır
+    CACHE_JOB_TYPE: Önbellek İş Türü
+    CACHE_JOB_TYPE_HELP: Ya 'standart' klasör önbellek temizlemesiyle ya da 'tüm' klasörlerle temizleyin
+    CACHE_PERMS: Önbellek İzinleri
+    CACHE_PERMS_HELP: Varsayılan önbellek klasör izinleri. Kuruluma bağlı olarak genellikle 0755 veya 0775'tir
+    CACHE_PREFIX: Önbellek Öneki
+    CACHE_PREFIX_HELP: Grav anahtarının bir kısmı için bir tanımlayıcı. Ne yaptığınızı bilmiyorsanız değiştirmeyin.
+    CACHE_PREFIX_PLACEHOLDER: Temel URL'den türetilmiştir (rastgele bir dize girerek geçersiz kılın)
+    CACHE_PURGE_AGE: Önbellek Temizleme Yaşı (Purge Age)
+    CACHE_PURGE_AGE_HELP: Bu yaştan (gün olarak) daha eski tüm önbellek öğelerini temizleyin (purge)
+    CACHE_PURGE_JOB: Zamanlanmış Arındırma İşini (Purge Job) Çalıştır
+    CACHE_PURGE_JOB_HELP: Zamanlayıcı ile eski Doctrine dosya önbellek klasörlerini bu iş (job) ile periyodik olarak temizleyebilirsiniz
+    CACHING: Önbelleğe Alma (Caching)
+    CACHING_HELP: Grav önbelleğe almayı (caching) etkinleştirmek/devre dışı bırakmak için genel AÇ/KAPAT anahtarı
+    CHARACTERS: karakter
+    CLEAR_IMAGES_BY_DEFAULT: Varsayılan olarak görsel önbelleğini temizle
+    CLEAR_IMAGES_BY_DEFAULT_HELP: Varsayılan olarak, işlenmiş görseller tüm önbellek temizlemelerinde silinir; isterseniz bu özellik devre dışı bırakılabilir.
+    CLI_COMPATIBILITY: CLI Uyumluluğu
+    CLI_COMPATIBILITY_HELP: Yalnızca uçucu olmayan (non-volatile) Önbellek sürücülerinin (file, redis, memcache vb.) kullanılmasını sağlar
+    COLLECTIONS: Koleksiyonlar (Collections)
+    COMMAND: Komut
+    CONFIGURATION: Yapılandırma
+    CONTENT: İçerik
+    CONTENT_EDITOR: İçerik Editörü
+    CONTENT_EDITOR_HELP: İçerik düzenleme için özel editörler tercih edilebilir
+    CONTENT_FALLBACK_LANGUAGE_HELP: Özelleştirmek istediğiniz dil kodunu belirtin.
+    CONTENT_LANGUAGE_FALLBACK: Yedek Diller (Fallback Languages)
+    CONTENT_LANGUAGE_FALLBACK_HELP: Lütfen dil kodlarının bir listesini girin. Varsayılan dil kodunu atlarsanız, kullanılmayacağını unutmayın.
+    CONTENT_LANGUAGE_FALLBACKS: İçerik Dili Yedeği
+    CONTENT_LANGUAGE_FALLBACKS_HELP: Varsayılan olarak, eğer içerik çevrilmemişse Grav içeriği varsayılan dilde görüntüler. Bu davranışı her dil için ayrı ayrı geçersiz kılmak için bu ayarı kullanın.
+    COPY: Kopyala
+    CREATE: Oluştur
+    CSS_ASSETS: CSS Varlıkları (Assets)
+    CSS_MINIFY: CSS Küçült (Minify)
+    CSS_MINIFY_HELP: İşlem hattı (pipelining) sırasında CSS'yi küçült
+    CSS_MINIFY_WINDOWS_OVERRIDE: CSS Küçültme (Minify) Windows Geçersiz Kılması
+    CSS_MINIFY_WINDOWS_OVERRIDE_HELP: Windows platformları için küçültme (minify) geçersiz kılması. ThreadStackSize nedeniyle varsayılan olarak yanlıştır (false)
+    CSS_PIPELINE: CSS İşlem Hattı (Pipeline)
+    CSS_PIPELINE_BEFORE_EXCLUDES: İlk olarak CSS işlem hattını oluştur
+    CSS_PIPELINE_BEFORE_EXCLUDES_HELP: Dahil edilmeyen diğer CSS referanslarından önce CSS işlem hattını oluşturun
+    CSS_PIPELINE_HELP: CSS işlem hattı, birden çok CSS kaynağının tek bir dosyada birleştirilmesidir
+    CSS_PIPELINE_INCLUDE_EXTERNALS: Harici (external) dosyaları CSS işlem hattına dahil et
+    CSS_PIPELINE_INCLUDE_EXTERNALS_HELP: Harici URL'ler bazen göreli (relative) dosya referanslarına sahiptir ve işlem hattına (pipelining) dahil edilmemelidir
+    CSS_REWRITE: CSS Yeniden Yaz (Rewrite)
+    CSS_REWRITE_HELP: İşlem hattı (pipelining) sırasında tüm CSS göreli (relative) URL'lerini yeniden yaz
+    CURL: cURL
+    CUSTOM_BASE_URL: Özel Temel URL
+    CUSTOM_BASE_URL_HELP: 'Site alan adını yeniden yazmak veya Grav tarafından kullanılandan farklı bir alt klasör kullanmak isterseniz kullanın. Örnek: http://localhost'
+    CUSTOM_REDIRECTS: Özel Yönlendirmeler
+    CUSTOM_REDIRECTS_HELP: Diğer sayfalara yönlendirilecek rotalar (routes). Standart Regex (Düzenli İfade) değiştirmeleri geçerlidir
+    CUSTOM_REDIRECTS_PLACEHOLDER_KEY: /sizin/kisayolunuz
+    CUSTOM_REDIRECTS_PLACEHOLDER_VALUE: /sizin/yonlendirmeniz
+    CUSTOM_ROUTES: Özel Rotalar
+    CUSTOM_ROUTES_HELP: Diğer sayfalara takma ad (alias) verilecek rotalar. Standart Regex (Düzenli İfade) değiştirmeleri geçerlidir
+    CUSTOM_ROUTES_PLACEHOLDER_KEY: /sizin/kisayolunuz
+    CUSTOM_ROUTES_PLACEHOLDER_VALUE: /sizin/rotaniz
+    DATE: Tarih
+    DATE_BASED_PUBLISHING: Tarih tabanlı yayımlama
+    DATE_BASED_PUBLISHING_HELP: Gönderileri (posts) tarihlerine göre otomatik olarak yayımla / yayından kaldır
+    DATE_HELP: Tarih değişkeni, bu sayfa ile ilişkilendirilmiş bir tarihi özel olarak ayarlamanıza olanak tanır.
+    DEBUGGER: Hata Ayıklayıcı (Debugger)
+    DEBUGGER_CENSORED: Hassas Verileri Sansürle
+    DEBUGGER_CENSORED_HELP: 'SADECE Clockwork Sağlayıcısı (Provider): Eğer Evet (Yes) ise, potansiyel olarak hassas olan bilgileri (POST parametreleri, çerezler, dosyalar, yapılandırma ve günlük (log) mesajlarındaki dizi/nesne verilerinin çoğunu) sansürler'
+    DEBUGGER_CLOCKWORK: Clockwork Tarayıcı Uzantısı
+    DEBUGGER_DEBUGBAR: PHP Debug Bar
+    DEBUGGER_HELP: Grav hata ayıklayıcısını (debugger) ve aşağıdaki ayarları etkinleştir
+    DEBUGGER_PROVIDER: Hata Ayıklayıcı Sağlayıcısı
+    DEBUGGER_PROVIDER_HELP: Varsayılan sağlayıcı PHP Debug Bar'dır, ancak Clockwork tarayıcı uzantısı daha az müdahaleci bir yaklaşım sunar
+    DEFAULT: Varsayılan
+    DEFAULT_AUTHOR: Varsayılan Yazar
+    DEFAULT_AUTHOR_HELP: Temalarda veya sayfa içeriğinde sıklıkla kullanılan varsayılan yazar adı
+    DEFAULT_CHILD_TYPE: Varsayılan Alt Sayfa Türü (Child Type)
+    DEFAULT_DATE_FORMAT: Sayfa tarih biçimi
+    DEFAULT_DATE_FORMAT_HELP: 'Grav tarafından kullanılan sayfa tarih biçimi. Varsayılan olarak Grav tarih biçiminizi tahmin etmeye çalışır; ancak PHP''nin tarih sözdizimini (syntax) (örn. Y-m-d H:i) kullanarak bir biçim belirtebilirsiniz'
+    DEFAULT_DATE_FORMAT_PLACEHOLDER: Otomatik olarak tahmin et
+    DEFAULT_EMAIL: Varsayılan E-posta
+    DEFAULT_EMAIL_HELP: Temalarda veya sayfalarda referans gösterilecek varsayılan bir e-posta
+    DEFAULT_IMAGE_QUALITY: Varsayılan görsel kalitesi
+    DEFAULT_IMAGE_QUALITY_HELP: Görselleri yeniden örneklendirirken (resampling) veya önbelleğe alırken kullanılacak varsayılan görsel kalitesi (%85)
+    DEFAULT_LANG: Varsayılan Dili Geçersiz Kıl (Ez)
+    DEFAULT_LANG_HELP: Varsayılan dil, desteklenen ilk dildir. Bu ayar, bu seçenek ayarlanarak geçersiz kılınabilir (overridden) ancak desteklenen dillerden biri olmalıdır
+    DEFAULT_ORDER_DIRECTION: Varsayılan sıralama yönü
+    DEFAULT_ORDER_DIRECTION_HELP: Bir listedeki sayfaların yönü
+    DEFAULT_ORDERING: Varsayılan sıralama
+    DEFAULT_ORDERING_DATE: Tarih - üst bilgideki (header) tarih alanına göre
+    DEFAULT_ORDERING_DEFAULT: Varsayılan - klasör adına göre
+    DEFAULT_ORDERING_FOLDER: Klasör - önek (prefix) içermeyen klasör adına göre
+    DEFAULT_ORDERING_HELP: Bir listedeki sayfalar, geçersiz kılınmadıkça (overridden) bu sıralamayı kullanarak oluşturulur
+    DEFAULT_ORDERING_TITLE: Başlık - üst bilgideki (header) başlık alanına göre
+    DEFAULT_PAGE_COUNT: Varsayılan sayfa sayısı
+    DEFAULT_PAGE_COUNT_HELP: Bir listedeki varsayılan maksimum sayfa sayısı
+    DEFAULT_THEME: Varsayılan tema
+    DEFAULT_THEME_HELP: Grav'ın kullanacağı varsayılan temayı ayarlayın (varsayılan Antimatter'dır)
+    DEFAULTS: Varsayılanlar
+    DELIMITER: Ayırıcı (Delimiter)
+    DELIMITER_HELP: 'Özet ayırıcı (varsayılan ''==='')'
+    DESCENDING: Azalan (Descending)
+    DESCRIPTION: Açıklama
+    DETAILS: Ayrıntılar
+    DETECT_CHANGES: Değişiklikleri algıla
+    DETECT_CHANGES_HELP: Twig, Twig şablonlarında herhangi bir değişiklik algılarsa Twig önbelleğini otomatik olarak yeniden derler
+    DISPLAY_ERRORS: Hataları göster
+    DISPLAY_ERRORS_HELP: Tam bir backtrace tarzı hata sayfası görüntüle
+    DISPLAY_NAME: Görünen Ad
+    DISPLAY_TEMPLATE: Görüntüleme Şablonu
+    EMAIL: E-posta
+    EMAIL_VALIDATION_MESSAGE: Geçerli bir e-posta adresi olmalıdır
+    ENABLE_AUTO_METADATA: Exif'ten otomatik meta verisi
+    ENABLE_AUTO_METADATA_HELP: Exif bilgisine sahip görseller için otomatik olarak meta veri dosyaları oluştur
+    ENABLE_MEDIA_TIMESTAMP: Medya üzerinde zaman damgalarını (timestamps) etkinleştir
+    ENABLE_MEDIA_TIMESTAMP_HELP: Her medya öğesine, son değiştirilme tarihine dayanan bir zaman damgası (timestamp) ekler
+    ENABLED_HELP: Sayfa özetini etkinleştir (özet, sayfa içeriğiyle aynı sonucu döndürür)
+    ENABLED_SRI_ON_ASSETS: Varlıklar (Assets) üzerinde SRI'yi etkinleştir
+    ENABLED_SRI_ON_ASSETS_HELP: Varlık (Asset) SRI'sini etkinleştir
+    ENABLED_TIMESTAMPS_ON_ASSETS: Varlıklar (Assets) üzerinde zaman damgalarını etkinleştir
+    ENABLED_TIMESTAMPS_ON_ASSETS_HELP: Varlık (Asset) zaman damgalarını etkinleştir
+    ERROR_FULL_BACKTRACE: Tam Backtrace Hatası
+    ERROR_HANDLER: Hata Yakalayıcı (Error handler)
+    ERROR_SIMPLE: Basit Hata
+    ERROR_SYSTEM: Sistem Hatası
+    ESCAPE_MARKUP: İşaretlemeyi kaçır (Escape markup)
+    ESCAPE_MARKUP_HELP: İşaretleme (markup) etiketlerini HTML varlıklarına (entities) dönüştürerek (escape) korur
+    ETAG: ETag
+    ETAG_HELP: Bir sayfanın ne zaman değiştirildiğini belirlemeye yardımcı olmak için etag üst bilgisini (header) ayarlar
+    EVENTS: Olaylar (Events)
+    EVENTS_HELP: Belirli olayları (events) etkinleştirin veya devre dışı bırakın. Bunları devre dışı bırakmak eklentileri bozabilir
+    EXPERIMENTAL: Deneysel
+    EXPIRES: Sona Erme
+    EXPIRES_HELP: Expires (sona erme) üst bilgisini (header) ayarlar. Değer saniye cinsindendir.
+    EXTERNAL: Harici Sayfa
+    EXTERNAL_URL: Harici URL
+    EXTRA_ARGUMENTS: Ek Argümanlar
+    FALLBACK_TYPES: İzin verilen yedek (fallback) türleri
+    FALLBACK_TYPES_HELP: Sayfa rotası (route) üzerinden erişildiğinde bulunabilecek izin verilen dosya türleri. Varsayılan olarak desteklenen herhangi bir medya türüdür.
+    FILE: Dosya
+    FILE_EXTENSION: Dosya Uzantısı
+    FILE_STREAMS: Dosya Akışları (File Streams)
+    FLEX: Esnek Nesne (Flex Object) (DENEYSEL)
+    FLEX_CACHING: Esnek (Flex) Önbelleğe Alma
+    FLEX_INDEX_CACHE_ENABLED: Dizin (Index) Önbelleğe Almayı Etkinleştir
+    FLEX_INDEX_CACHE_LIFETIME: Dizin (Index) Önbelleği Geçerlilik Süresi (saniye)
+    FLEX_OBJECT_CACHE_ENABLED: Nesne Önbelleğe Almayı Etkinleştir
+    FLEX_OBJECT_CACHE_LIFETIME: Nesne Önbelleği Geçerlilik Süresi (saniye)
+    FLEX_RENDER_CACHE_ENABLED: Oluşturma (Render) Önbelleğe Almayı Etkinleştir
+    FLEX_RENDER_CACHE_LIFETIME: Oluşturma (Render) Önbelleği Geçerlilik Süresi (saniye)
+    FOLDER: Klasör
+    FOLDER_NAME: Klasör Adı
+    FOLDER_NUMERIC_PREFIX: Klasör Sayısal Öneki (Numeric Prefix)
+    FOLDER_NUMERIC_PREFIX_HELP: Manuel sıralama sağlayan ve görünürlük anlamına gelen sayısal önek (prefix)
+    FOPEN: fopen
+    FORCE_LOWERCASE_URLS: URL'leri küçük harfe zorla
+    FORCE_LOWERCASE_URLS_HELP: Varsayılan olarak Grav, tüm kısa adları (slugs) ve rotaları küçük harf olarak ayarlar. Bu ayar kapalı (false) konumdayken, Büyük harfli kısa adlar ve rotalar kullanılabilir
+    FORCE_SSL: SSL'e Zorla
+    FORCE_SSL_HELP: Küresel olarak SSL kullanımına zorlar; etkinleştirilirse siteye HTTP üzerinden ulaşıldığında, Grav HTTPS sayfasına bir yönlendirme (redirect) gönderir
+    FORMAT: Biçim
+    FORMAT_HELP: 'kısa (short) = ayırıcının (delimiter) veya boyutun ilk geçtiği yeri kullan; uzun (long) = özet ayırıcısı (summary delimiter) göz ardı edilecek'
+    FRONTMATTER_IGNORE_FIELDS: Ön Bölüm (Frontmatter) alanlarını yoksay
+    FRONTMATTER_IGNORE_FIELDS_HELP: Belirli ön bölüm alanları ('forms' gibi) Twig içerebilir ancak işlenmemelidir
+    FRONTMATTER_PROCESS_TWIG: Ön Bölüm Twig'ini İşle
+    FRONTMATTER_PROCESS_TWIG_HELP: Etkinleştirildiğinde, sayfanın ön bölümünde (front matter) Twig yapılandırma değişkenlerini kullanabilirsiniz
+    FULL_NAME: Tam ad
+    GENERAL_CONFIG: Genel Varlık (Asset) Yapılandırması
+    GPM_METHOD: Uzaktan Getirme (Remote Fetch) Yöntemi
+    GPM_METHOD_HELP: Otomatik (Auto) olarak ayarlandığında, Grav fopen'ın mevcut olup olmadığını belirler ve onu kullanır, aksi takdirde cURL'e geri döner (fallback). Birini veya diğerini kullanmaya zorlamak için ayarı değiştirin.
+    GPM_OFFICIAL_ONLY: Sadece Resmi GPM
+    GPM_OFFICIAL_ONLY_HELP: Yalnızca resmi GPM deposundan doğrudan yüklemelere izin verin.
+    GPM_RELEASES: GPM Sürümleri
+    GPM_RELEASES_HELP: Beta veya test sürümlerini yüklemek için 'Test'i (Testing) seçin
+    GPM_SECTION: GPM Bölümü
+    GROUP_NAME: Grup Adı
+    GROUPS_HELP: Kullanıcının üyesi olduğu grupların listesi
+    GZIP_COMPRESSION: Gzip sıkıştırması
+    GZIP_COMPRESSION_HELP: Artırılmış performans için Grav sayfasının GZip sıkıştırmasını etkinleştirin.
+    HIDE_EMPTY_FOLDERS: Boş klasörleri gizle
+    HIDE_EMPTY_FOLDERS_HELP: Eğer klasörün içinde bir .md dosyası yoksa, yönlendirilemez (unroutable) olmasının yanı sıra gezinme (navigation) menüsünde de gizlenmeli midir?
+    HIDE_HOME_IN_URLS: URL'lerde ana sayfa rotasını gizle
+    HIDE_HOME_IN_URLS_HELP: Ana sayfa (home) altındaki herhangi bir sayfa için varsayılan rotaların, ana sayfanın normal rotasına referans vermemesini sağlayacaktır
+    HOME_PAGE: Ana sayfa
+    HOME_PAGE_HELP: Grav'ın varsayılan açılış sayfası olarak kullanacağı sayfa
+    HTTP_ACCEPT_LANGUAGE: Dili tarayıcıdan ayarla
+    HTTP_ACCEPT_LANGUAGE_HELP: Tarayıcıdaki `http_accept_language` üst bilgi etiketine dayanarak dili ayarlamayı seçebilirsiniz
+    HTTP_ACCEPT_LANGUAGE_FALLBACK: Tarayıcı Dili Yedekleri (Fallbacks)
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_HELP: Dili `http_accept_language` üst bilgisinden (header) ayarlarken, desteklenmeyen tarayıcı dillerini desteklenen dillerle eşleştirin. Bu ayar, desteklenen dilleri eklemez veya dil rotaları oluşturmaz.
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_SOURCE_HELP: 'Desteklenmeyen bir tarayıcı dil kodu belirtin, örn. `hr` veya `sr-Latn`.'
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS: Yedek Diller (Fallback Languages)
+    HTTP_ACCEPT_LANGUAGE_FALLBACK_TARGETS_HELP: Lütfen desteklenen dil kodlarının bir listesini girin. İlk desteklenen dil kullanılacaktır.
+    HTTP_CONNECTIONS: HTTP Bağlantıları
+    HTTP_CONNECTIONS_HELP: Çoğullanmış (multiplexed) istekler sırasında eşzamanlı (concurrent) HTTP bağlantılarının sayısı
+    HTTP_HEADERS: HTTP Üst Bilgileri (Headers)
+    HTTP_SECTION: HTTP Bölümü
+    ICON: Simge
+    IGNORE_FILES: Dosyaları yoksay
+    IGNORE_FILES_HELP: Sayfaları işlerken yoksayılacak belirli dosyalar
+    IGNORE_FOLDERS: Klasörleri yoksay
+    IGNORE_FOLDERS_HELP: Sayfaları işlerken yoksayılacak belirli klasörler
+    IGNORE_HIDDEN: Gizli olanları yoksay
+    IGNORE_HIDDEN_HELP: Nokta (DOT) ile başlayan tüm dosya ve klasörleri yoksay
+    IMAGE_ADAPTER: Görsel Adaptörü
+    IMAGE_ADAPTER_HELP: Görsel manipülasyonu için kullanılacak görsel adaptörü. 'GD' varsayılandır, 'Imagick' bir alternatiftir
+    IMAGE_OPTIONS: Görsel seçenekleri
+    IMAGES_AUTO_FIX_ORIENTATION: Yönü otomatik olarak düzelt
+    IMAGES_AUTO_FIX_ORIENTATION_HELP: Görsel yönünü Exif verilerine dayanarak otomatik olarak düzelt
+    IMAGES_CLS_ASPECT_RATIO: En Boy Oranını (Aspect Ratio) Etkinleştir
+    IMAGES_CLS_ASPECT_RATIO_HELP: Özel biçimlendirme için CSS'de kullanılabilecek bir 'style' niteliği üzerinden uygulanan isteğe bağlı CSS değişkeni
+    IMAGES_CLS_AUTO_SIZES: Otomatik Boyutları (Auto Sizes) Etkinleştir
+    IMAGES_CLS_AUTO_SIZES_HELP: CLS sorununu gidermek için görsellere 'width' ve 'height' niteliklerini (attributes) otomatik olarak ekler
+    IMAGES_CLS_RETINA_SCALE: Retina Ölçek Faktörü (Scale Factor)
+    IMAGES_CLS_RETINA_SCALE_HELP: HiDPI çözünürlüklerinin daha iyi işlenmesi için, daha küçük bir piksel boyutunda daha yüksek çözünürlüklü bir görüntü görüntülemek üzere hesaplanan boyutu alır ve ölçek faktörüne böler
+    IMAGES_CLS_TITLE: Kümülatif Düzen Kayması (CLS - Cumulative Layout Shift)
+    IMAGES_DEBUG: Görsel hata ayıklama (debug) filigranı
+    IMAGES_DEBUG_HELP: Örneğin retina ile çalışırken görselin piksel derinliğini gösteren, görsellerin üzerinde bir katman (overlay) gösterir
+    IMAGES_DECODING: Görsel kod çözme (decoding) davranışı
+    IMAGES_DECODING_HELP: 'Decoding niteliği, bir tarayıcının ekran dışı (offscreen) görsellerin kod çözümünü (decoding), kullanıcılar onların yakınına kaydırana kadar ertelemesine olanak tanır. Decoding üç değeri destekler: auto, sync, async'
+    IMAGES_FETCHPRIORITY: Görsel Fetchpriority (Getirme Önceliği) Özelliği
+    IMAGES_FETCHPRIORITY_HELP: 'HTML''deki fetchpriority özelliği, performansı optimize etmek için görseller veya iframe''ler gibi belirli kaynakların yüklenme önceliğini belirten bir niteliktir (attribute). Olası değerler: high (yüksek), low (düşük) veya auto (otomatik).'
+    IMAGES_LOADING: Görsel yükleme (loading) davranışı
+    IMAGES_LOADING_HELP: 'Loading niteliği (attribute), bir tarayıcının ekran dışı görsellerin ve iframe''lerin yüklenmesini, kullanıcılar onların yakınına kaydırana kadar ertelemesine olanak tanır. Loading üç değeri destekler: auto, lazy, eager'
+    IMAGES_MAX_PIXELS: Maksimum görsel pikseli
+    IMAGES_MAX_PIXELS_HELP: 'URL tabanlı yeniden boyutlandırma işlemleri için toplam piksel tavanı (genişlik x yükseklik). Bu sınırın üzerindeki istekler reddedilir. Kontrolü devre dışı bırakmak için 0 olarak ayarlayın.'
+    IMAGES_SEOFRIENDLY: SEO Uyumlu Görsel İsimleri
+    IMAGES_SEOFRIENDLY_HELP: Etkinleştirildiğinde, önce görsel adı görüntülenir, ardından işlenmiş işlemleri yansıtmak için daha küçük bir hash eklenir
+    IMAGES_URL_ACTIONS: URL tabanlı görsel işlemlerine izin ver
+    IMAGES_URL_ACTIONS_HELP: 'URL sorgu parametreleri üzerinden görsel dönüştürmelerine izin ver (örn. `image.jpg?resize=600,400`). Varsayılan olarak devre dışıdır; normal Twig ve Markdown görsel yeniden boyutlandırması etkilenmez.'
+    INCLUDE_DEFAULT_LANG: Varsayılan dili dahil et
+    INCLUDE_DEFAULT_LANG_FILE_EXTENSION: Varsayılan dili dosya uzantısına dahil et
+    INCLUDE_DEFAULT_LANG_HELP: Bu, varsayılan dildeki tüm URL'lerin başına varsayılan dili ekleyecektir. Örn. `/tr/blog/benim-gonderim`
+    INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION: Etkinleştirilirse, varsayılan dil dosya uzantısının önüne eklenir (örn. `.tr.md`). Varsayılan dilin `.md` dosya uzantısını kullanmaya devam etmesi için bunu devre dışı bırakın.
+    INLINE_TYPES: Satır içi (Inline) yedek (fallback) türleri
+    INLINE_TYPES_HELP: İndirilmek yerine satır içi olarak görüntülenmesi gereken dosya türlerinin bir listesi
+    INTL_ENABLED: Intl modül entegrasyonu
+    INTL_ENABLED_HELP: UTF-8 tabanlı koleksiyonları sıralamak için Intl PHP modülünü ve karşılaştırmasını (collate) kullan
+    ITEMS: Öğeler
+    JAVASCRIPT_MINIFY: JavaScript Küçült (Minify)
+    JAVASCRIPT_MINIFY_HELP: İşlem hattı (pipelining) sırasında JS'yi küçült
+    JAVASCRIPT_MODULE_PIPELINE: JavaScript Modül İşlem Hattı (Pipeline)
+    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES: İlk olarak JS Modül işlem hattını oluştur
+    JAVASCRIPT_MODULE_PIPELINE_BEFORE_EXCLUDES_HELP: Dahil edilmeyen diğer JS referanslarından önce JS işlem hattını oluşturun
+    JAVASCRIPT_MODULE_PIPELINE_HELP: JS Modül işlem hattı, birden çok JS kaynağının tek bir dosyada birleştirilmesidir
+    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS: Harici (external) dosyaları JS Modül işlem hattına dahil et
+    JAVASCRIPT_MODULE_PIPELINE_INCLUDE_EXTERNALS_HELP: Harici URL'ler bazen göreli dosya referanslarına sahiptir ve işlem hattına (pipelining) dahil edilmemelidir
+    JAVASCRIPT_PIPELINE: JavaScript İşlem Hattı (Pipeline)
+    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES: İlk olarak JS işlem hattını oluştur
+    JAVASCRIPT_PIPELINE_BEFORE_EXCLUDES_HELP: Dahil edilmeyen diğer JS referanslarından önce JS işlem hattını oluşturun
+    JAVASCRIPT_PIPELINE_HELP: JS işlem hattı, birden çok JS kaynağının tek bir dosyada birleştirilmesidir
+    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS: Harici dosyaları JS işlem hattına dahil et
+    JAVASCRIPT_PIPELINE_INCLUDE_EXTERNALS_HELP: Harici URL'ler bazen göreli dosya referanslarına sahiptir ve işlem hattına dahil edilmemelidir
+    JS_ASSETS: JavaScript Varlıkları (Assets)
+    JS_MODULE_ASSETS: JavaScript Modül Varlıkları (Assets)
+    LANGUAGE: Dil
+    LANGUAGE_DEBUG: Dil Hata Ayıklama (Debug)
+    LANGUAGE_DEBUG_HELP: Sorunları teşhis etmeye yardımcı olmak üzere biçimlendirilebilen, |t twig filtresini kullanan dillerin etrafına bir "span" ekleyerek hata ayıklamasını (debug) etkinleştirin
+    LANGUAGE_HELP: Favori Dili Ayarlayın
+    LANGUAGE_TRANSLATIONS: Çeviriler
+    LANGUAGE_TRANSLATIONS_HELP: Yanlış (False) ise, çevrilmiş metinler yerine çeviri anahtarları kullanılır. Bu özellik, hatalı çevirileri düzeltmeye veya kod içine gömülmüş (hardcoded) İngilizce metinleri bulmaya yardımcı olmak için kullanılabilir.
+    LANGUAGES: Diller
+    LAST_MODIFIED: Son değiştirilme
+    LAST_MODIFIED_HELP: Proxy ve tarayıcı önbelleğe almayı optimize etmeye yardımcı olabilecek last modified (son değiştirilme) üst bilgisini (header) ayarlar
+    LIFETIME: Geçerlilik Süresi (Lifetime)
+    LIFETIME_HELP: Önbellek geçerlilik süresini saniye cinsinden ayarlar. 0 = sonsuz
+    LIST: Liste
+    LOG_ERRORS: Hataları günlüğe kaydet (Log errors)
+    LOG_ERRORS_HELP: Hataları /logs klasörüne günlüğe kaydet (log)
+    LOG_HANDLER: Günlük Yakalayıcı (Log handler)
+    LOG_HANDLER_HELP: Günlüklerin (logların) nereye çıkarılacağı
+    LONG: Uzun
+    LONG_DATE_FORMAT: Uzun gösterimli tarih biçimi
+    LONG_DATE_FORMAT_HELP: Temalar tarafından kullanılabilecek uzun tarih biçimini ayarlayın
+    MARKDOWN: Markdown
+    MARKDOWN_EXTRA_HELP: Markdown Extra için varsayılan desteği etkinleştir - https://michelf.ca/projects/php-markdown/extra/
+    MEDIA_TYPES: Medya Türleri
+    MEMCACHED_PORT: Memcached bağlantı noktası (port)
+    MEMCACHED_PORT_HELP: Memcached sunucu bağlantı noktası
+    MEMCACHED_SERVER: Memcached sunucusu
+    MEMCACHED_SERVER_HELP: Memcached sunucu adresi
+    MENU: Menü
+    MENU_HELP: Bir menüde kullanılacak metin. Ayarlanmazsa, Başlık (Title) kullanılacaktır.
+    METADATA: Meta Verileri (Metadata)
+    METADATA_HELP: Sayfa tarafından geçersiz kılınmadıkça (overridden) her sayfada görüntülenecek varsayılan meta veri değerleri
+    METADATA_KEY: Anahtar (Örn. 'Keywords')
+    METADATA_VALUE: Değer (Örn. 'Blog, Grav')
+    MIME_TYPE: Mime Türü
+    MISC_SECTION: Çeşitli Bölümü
+    MODULE: Modül
+    MODULE_SETUP: Modül Kurulumu
+    MOVE: Taşı
+    NAME: Ad
+    NEVER_CACHE_TWIG: Twig'i Asla Önbelleğe Alma
+    NEVER_CACHE_TWIG_HELP: Sayfalar için her seferinde yalnızca içeriği önbelleğe alır ve Twig'i işler. twig_first ayarını yok sayar.
+    'NO': Hayır
+    OPTIONS: Seçenekler
+    ORDER: Sıra
+    ORDER_BY: Şuna Göre Sırala
+    ORDER_DIGITS: Sıralama Basamakları (Digits)
+    ORDER_DIGITS_HELP: Sıralama için klasör isimlerine önek olarak kullanılan basamak sayısı (örn. `01.hakkimizda`, `001.hakkimizda`).
+    ORDERING: Sıralama
+    OVERRIDE_LOCALE: Yereli (Locale) Geçersiz Kıl
+    OVERRIDE_LOCALE_HELP: Geçerli dile göre PHP'deki yerel (locale) ayarını geçersiz kıl
+    OVERRIDES: Geçersiz Kılmalar (Overrides)
+    PAGE: Sayfa
+    PAGE_ACCESS: Sayfa Erişimi
+    PAGE_ACCESS_HELP: Aşağıdaki erişim izinlerine sahip kullanıcılar sayfaya erişebilir.
+    PAGE_AUTHORS: Sayfa Yazarları
+    PAGE_AUTHORS_HELP: Özel 'Yazarlar' (Authors) sayfa grubunda tanımlanan Page Authors (Sayfa Yazarları) üyeleri bu sayfaya sahip seviyesinde erişebilir.
+    PAGE_FILE: Sayfa Şablonu
+    PAGE_FILE_HELP: Sayfa şablonu dosya adı ve bu sayfa için varsayılan görüntüleme şablonu
+    PAGE_GROUPS: Sayfa Grupları
+    PAGE_GROUPS_HELP: Sayfa Grupları üyelerinin bu sayfaya özel erişimi vardır.
+    PAGE_INHERIT_PERMISSIONS: İzinleri Devral (Inherit)
+    PAGE_INHERIT_PERMISSIONS_HELP: ACL'yi üst sayfadan devralır.
+    PAGE_MEDIA: Sayfa Medyası
+    PAGE_SUMMARY: Sayfa Özeti
+    PAGE_TYPES: Sayfa Türleri
+    PAGE_TYPES_HELP: Grav'ın desteklediği sayfa türlerini ve isteğin belirsiz olması durumunda hangi türe geri dönüleceğini belirleyen sırayı belirler
+    PAGE_VISIBILITY_REQUIRES_ACCESS: Menü Görünürlüğü Erişim Gerektirir
+    PAGE_VISIBILITY_REQUIRES_ACCESS_HELP: Eğer sayfanın menülerde yalnızca kullanıcının onlara erişebilmesi durumunda gösterilmesi gerekiyorsa 'Evet' olarak ayarlayın.
+    PAGES_FALLBACK_ONLY: Yalnızca yedek sayfalar (Pages fallback only)
+    PAGES_FALLBACK_ONLY_HELP: Yalnızca desteklenen diller üzerinden sayfa içeriğini bulmak için 'yedek' (fallback) kullanılır; varsayılan davranış, aktif dilin eksik olması durumunda bulunan herhangi bir dili görüntülemektir
+    PAGES_TYPE: Ön Yüz (Frontend) Sayfa Türü
+    PAGES_TYPE_HELP: Bu seçenek ön yüzde Esnek Nesne (Flex Object) sayfalarını etkinleştirir. Yönetim paneli (Admin) Esnek Sayfaları, Flex Objects eklentisini gerektirir
+    PARAMETER_SEPARATOR: Parametre ayırıcı (separator)
+    PARAMETER_SEPARATOR_HELP: İletilen parametreler için ayırıcı (separator), Windows üzerinde Apache için değiştirilebilir
+    PARENT: Üst Öğe (Parent)
+    PASSWORD_VALIDATION_MESSAGE: Şifre en az bir sayı, bir büyük ve bir küçük harf içermeli ve en az 8 veya daha fazla karakter uzunluğunda olmalıdır
+    PERMISSIONS: İzinler
+    PLUGIN_STATUS: Eklenti Durumu
+    PROCESS: İşleme (Process)
+    PROCESS_HELP: Sayfaların nasıl işlendiğini denetler. Bunu genel olarak değil, sayfa bazında ayarlayabilirsiniz.
+    PROXY_CERT: Proxy Sertifika Yolu
+    PROXY_CERT_HELP: Proxy sertifikası pem dosyasını içeren klasörün yerel yolu
+    PROXY_URL: Proxy URL'si
+    PROXY_URL_HELP: Proxy SUNUCUSUNU (HOST) veya IP ve BAĞLANTI NOKTASI (PORT) bilgilerini girin
+    PUBLISH: Yayımla
+    PUBLISHED: Yayımlandı
+    PUBLISHED_DATE: Yayımlanma Tarihi
+    PUBLISHED_DATE_HELP: Yayımı otomatik olarak tetiklemek için bir tarih sağlayabilirsiniz.
+    PUBLISHED_HELP: 'Varsayılan olarak, siz açıkça published (yayımlandı): false olarak ayarlamadıkça, yayımlanma tarihi (publish_date) gelecekte olmadıkça veya yayından kaldırma tarihi (unpublish_date) geçmişte kalmadıkça bir sayfa yayımlanmış sayılır.'
+    PUBLISHING: Yayımlama
+    PWD_REGEX: Şifre Düzenli İfadesi (Regex)
+    PWD_REGEX_HELP: 'Varsayılan olarak: Şifre en az bir sayı, bir büyük ve bir küçük harf içermeli ve en az 8 veya daha fazla karakter uzunluğunda olmalıdır'
+    PWD_RULES: Şifre Kuralları
+    PWD_RULES_HELP: Özel şifre doğrulama kuralları. Her kuralın bir Kimliği (ID), kullanıcı dostu bir etiketi (label) ve şifrenin eşleşmesi gereken bir düzenli ifadesi (regex) vardır.
+    PWD_RULES_ID: Kimlik (ID)
+    PWD_RULES_LABEL: Etiket (Label)
+    PWD_RULES_PATTERN: Regex Deseni (Pattern)
+    READ: Oku
+    READ_FILE_ALLOWED_EXTENSIONS: İzin verilen dosya uzantıları
+    READ_FILE_ALLOWED_EXTENSIONS_HELP: <code>read_file()</code> fonksiyonunun okuyacağı dosya uzantıları (büyük/küçük harfe duyarsız, baştaki nokta hariç). Varsayılanlar yalnızca metin/içerik formatlarıdır. Yürütülebilir (executable) veya yapılandırma formatları (<code>php</code>, <code>yaml</code>, <code>env</code>, <code>htaccess</code>, …) eklemek tehlikeli bir hatadır ve önerilmez.
+    READ_FILE_ALLOWED_STREAMS: İzin verilen akışlar (streams)
+    READ_FILE_ALLOWED_STREAMS_HELP: '<code>read_file()</code> fonksiyonunun çözümleyebileceği akış şemaları (stream schemes). Varsayılanlar: <code>theme</code>, <code>themes</code>, <code>page</code>, <code>user-data</code>. <code>user</code>, <code>system</code>, <code>config</code>, <code>account</code>, <code>log</code> veya <code>cache</code> gibi geniş akışların eklenmesi hassas dosyaları açığa çıkarır ve kesinlikle önerilmez.'
+    READ_FILE_MAX_SIZE: Maksimum dosya boyutu (Bayt)
+    READ_FILE_MAX_SIZE_HELP: Bundan daha büyük dosyalar, belleğe yüklenmek yerine <code>false</code> değeri döndürür. Varsayılan <code>1048576</code> (1 MB)'dir. Boyut sınırını devre dışı bırakmak için <code>0</code> olarak ayarlayın.
+    READ_FILE_SECTION_HELP: Twig <code>read_file()</code> işlevi üzerindeki kısıtlamalar. Okuma işlemleri Grav akış (stream) URI'leri üzerinden zorunlu tutulur ve çözümlenen akış köklerine karşı standart gerçek yol (canonical-realpath) kapsama denetimiyle doğrulanır; böylece kodlanmış veya sembolik bağlantı üzerinden yapılan geçişler, yolun dosya sistemi katmanında nasıl yazıldığından bağımsız olarak engellenir.
+    READ_FILE_SECTION_TITLE: Twig read_file()
+    REDIRECT: Sayfa yönlendirmesi (Redirect)
+    REDIRECT_DEFAULT_CODE: Varsayılan yönlendirme kodu
+    REDIRECT_DEFAULT_CODE_HELP: Yönlendirmeler (redirects) için kullanılacak HTTP durum kodu
+    REDIRECT_DEFAULT_ROUTE: Varsayılan rotaya yönlendir (Redirect default route)
+    REDIRECT_DEFAULT_ROUTE_HELP: Bir sayfanın varsayılan rotasına otomatik olarak yönlendir
+    REDIRECT_HELP: Bu sayfanın yönlendirileceği (redirect) bir sayfa rotası veya harici URL girin. Örn. `/baska/rota` veya `http://baskasite.com`
+    REDIRECT_OPTION_301: 301 - Kalıcı olarak taşındı
+    REDIRECT_OPTION_302: 302 - Geçici olarak taşındı
+    REDIRECT_OPTION_303: 303 - Diğerine Bak (See Other)
+    REDIRECT_OPTION_DEFAULT_REDIRECT: Varsayılan yönlendirme kodunu kullan
+    REDIRECT_OPTION_NO_REDIRECT: Yönlendirme yok
+    REDIRECT_TRAILING_SLASH: Sondaki eğik çizgiyi (trailing slash) yönlendir
+    REDIRECT_TRAILING_SLASH_HELP: Sondaki eğik çizgiyi şeffaf bir şekilde işlemek yerine 301 yönlendirmesi gerçekleştir.
+    REDIRECTS_AND_ROUTES: Yönlendirmeler (Redirects) ve Rotalar
+    REDIS_DATABASE: Redis Veritabanı Kimliği (ID)
+    REDIS_DATABASE_HELP: Redis bulutu (instance) veritabanı kimliği
+    REDIS_PASSWORD: Redis şifresi/gizli anahtarı
+    REDIS_PORT: Redis bağlantı noktası (Port)
+    REDIS_PORT_HELP: Redis Sunucu Bağlantı Noktası
+    REDIS_SERVER: Redis sunucusu
+    REDIS_SERVER_HELP: Redis Sunucu Adresi
+    REDIS_SOCKET: Redis Soketi
+    REDIS_SOCKET_HELP: Redis Soketi
+    REGULAR: Düzenli (Regular)
+    REVERSE_PROXY: Ters Proxy (Reverse Proxy)
+    REVERSE_PROXY_HELP: Bir ters proxy (reverse proxy) arkasındaysanız ve hatalı bağlantı noktaları içeren URL'lerle ilgili sorun yaşıyorsanız bunu etkinleştirin
+    ROOT: Kök (Root)
+    ROUTABLE: Yönlendirilebilir (Routable)
+    ROUTABLE_HELP: Bu sayfaya bir URL ile erişilebiliyorsa
+    ROUTE_ALIASES: Rota Takma Adları (Route Aliases)
+    ROUTE_CANONICAL: Standart (Canonical) Rota
+    ROUTE_DEFAULT: Varsayılan Rota
+    ROUTE_OVERRIDES: Rota Geçersiz Kılmaları (Route Overrides)
+    SANITIZE_SVG: SVG'yi temizle (Sanitize)
+    SANITIZE_SVG_HELP: SVG içindeki her türlü XSS kodunu kaldırır
+    SCHEDULER: Zamanlayıcı (Scheduler)
+    SCHEDULER_EMAIL: E-posta
+    SCHEDULER_EMAIL_HELP: 'Çıktının gönderileceği e-posta. NOT: çıktı dosyasının ayarlanmış olmasını gerektirir'
+    SCHEDULER_JOBS: Özel Zamanlayıcı İşleri
+    SCHEDULER_OUTPUT: Çıktı Dosyası
+    SCHEDULER_OUTPUT_HELP: 'Çıktı dosyasının yolu/dosya adı (Grav kurulumunun kök dizininden itibaren)'
+    SCHEDULER_OUTPUT_TYPE: Çıktı Türü
+    SCHEDULER_OUTPUT_TYPE_HELP: Ya her çalıştırmada aynı dosyanın sonuna ekleyin ya da her çalıştırmada dosyanın üzerine yazın
+    SCHEDULER_RUNAT: Çalışma Zamanı (Run At)
+    SCHEDULER_RUNAT_HELP: 'Cron formatlı ''at'' sözdizimi. NOT: Tüm saatler UTC''dir!'
+    SCHEDULER_STATUS: Zamanlayıcı Durumu
+    SECURITY: Güvenlik
+    SESSION: Oturum (Session)
+    SESSION_DOMAIN: Oturum alan adı
+    SESSION_DOMAIN_HELP: Yalnızca örneğin bir Docker Kapsayıcısında (Container) site alan adını yeniden yazıyorsanız kullanın.
+    SESSION_ENABLED_HELP: Grav içinde oturum desteğini etkinleştir
+    SESSION_HTTPONLY: Yalnızca HTTP (HTTP Only)
+    SESSION_HTTPONLY_HELP: True (doğru) ise, çerezlerin (cookies) yalnızca HTTP üzerinden kullanılması gerektiğini ve JavaScript ile değiştirilmesine izin verilmediğini belirtir
+    SESSION_INITIALIZE: Oturumu Başlat
+    SESSION_INITIALIZE_HELP: Grav'ın bir oturum başlatmasını sağlar. Oturum açma, formlar vb. gibi herhangi bir kullanıcı etkileşiminin çalışması için bu özelliğe ihtiyaç vardır. Yönetim (Admin) eklentisi bu ayardan etkilenmez.
+    SESSION_NAME_HELP: Oturum çerezinin (cookie) adını oluşturmak için kullanılan bir tanımlayıcı
+    SESSION_PATH: Oturum yolu
+    SESSION_PATH_HELP: Yalnızca örneğin bir Docker Kapsayıcısında site yolunu (path) yeniden yazıyorsanız kullanın.
+    SESSION_SAMESITE: Oturum SameSite Niteliği (Attribute)
+    SESSION_SAMESITE_HELP: Lax|Strict|None. Daha fazla bilgi için https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite adresini ziyaret edin.
+    SESSION_SECURE: Güvenli (Secure)
+    SESSION_SECURE_HELP: 'True (doğru) ise, bu çerez için iletişimin şifrelenmiş bir iletim üzerinden olması gerektiğini belirtir. UYARI: Bunu yalnızca tamamen HTTPS üzerinde çalışan sitelerde etkinleştirin'
+    SESSION_SECURE_HTTPS: Güvenli (HTTPS)
+    SESSION_SECURE_HTTPS_HELP: Oturumu HTTP'de değil HTTPS üzerinde güvenli olarak ayarlayın. Yukarıdaki Güvenli (Secure) ayarını true olarak ayarladıysanız hiçbir etkisi olmaz. Siteniz HTTP ve HTTPS arasında gidip geliyorsa false olarak ayarlayın.
+    SESSION_SPLIT: Oturumları Ayır (Session Split)
+    SESSION_SPLIT_HELP: Site ile diğer eklentiler (örneğin yönetim paneli) arasındaki oturumları bağımsız olarak ayırın
+    SESSION_UNIQUENESS: Benzersiz Dize
+    SESSION_UNIQUENESS_HELP: Grav'ın kök yolunun MD5 karması, yani `GRAV_ROOT` (varsayılan) veya rastgele `security.salt` dizesine dayalıdır.
+    SHORT: Kısa
+    SHORT_DATE_FORMAT: Kısa gösterimli tarih biçimi
+    SHORT_DATE_FORMAT_HELP: Temalar tarafından kullanılabilecek kısa tarih biçimini ayarlayın
+    SHUTDOWN_CLOSE_CONNECTION: Kapatmada bağlantıyı kes (Shutdown close connection)
+    SHUTDOWN_CLOSE_CONNECTION_HELP: onShutdown() çağrılmadan önce bağlantıyı kapat. Hata ayıklama (debugging) için false
+    SITE: Site
+    SITE_ACCESS: Site Erişimi
+    SITE_DEFAULT_LANG: Varsayılan dil
+    SITE_DEFAULT_LANG_HELP: Temanın <HTML> etiketi tarafından kullanılacak varsayılan dil
+    SITE_DEFAULT_LANG_PLACEHOLDER: Temanın <HTML> etiketi tarafından kullanılacak varsayılan dil
+    SITE_TITLE: Site Başlığı
+    SITE_TITLE_HELP: Genellikle temalarda kullanılan siteniz için varsayılan başlık
+    SITE_TITLE_PLACEHOLDER: Site geneli başlığı
+    SLUG: Kısa Ad (Slug)
+    SLUG_HELP: Kısa ad (slug) değişkeni, URL'nin sayfaya ait olan kısmını özel olarak ayarlamanıza olanak tanır
+    SLUG_VALIDATE_MESSAGE: Kısa ad yalnızca küçük harfli alfasayısal karakterler ve kısa çizgiler içermelidir
+    SORTABLE_PAGES: 'Sıralanabilir Sayfalar:'
+    SSL_ENABLE_PROXY: Proxy Sunucusunu Etkinleştir
+    SSL_VERIFY_HOST: Uzak Sunucuyu Doğrula (Remote Verify Host)
+    SSL_VERIFY_HOST_HELP: Bazıları SSL sertifikalarını doğrularken başarısız olabilir
+    SSL_VERIFY_PEER: Uzak Eşi Doğrula (Remote Verify Peer)
+    SSL_VERIFY_PEER_HELP: Bazıları SSL sertifikalarını doğrularken başarısız olabilir
+    STABLE: Kararlı (Stable)
+    STRICT_BLUEPRINT_COMPAT: Şema (Blueprint) Uyumluluğu
+    STRICT_BLUEPRINT_COMPAT_HELP: Şemalar (blueprints) için geriye dönük uyumlu katı (strict) desteği etkinleştirir. Kapatılırsa yeni davranış, şemada tanımlanmamış fazladan veri varsa form doğrulamasının başarısız olmasına neden olur.
+    STRICT_TWIG_COMPAT: Twig Uyumluluğu
+    STRICT_TWIG_COMPAT_HELP: Kullanımdan kaldırılan (deprecated) Twig autoescape (otomatik kaçırma) ayarını etkinleştirir. Devre dışı bırakıldığında, Twig çıktıyı otomatik olarak kaçıracağı için HTML çıkışı üretmek üzere |raw filtresi gereklidir
+    STRICT_YAML_COMPAT: YAML Uyumluluğu
+    STRICT_YAML_COMPAT_HELP: Native veya 3.4 ayrıştırıcısı başarısız olursa Symfony 2.4 YAML ayrıştırıcısına geri döner
+    SUMMARY_SIZE: Özet Boyutu
+    SUMMARY_SIZE_HELP: Bir içerik özeti olarak kullanılacak sayfa karakter miktarı
+    SUPPORTED: Desteklenen
+    SUPPORTED_HELP: Virgülle ayrılmış 2 harfli dil kodları listesi (örneğin 'tr,en,fr,de')
+    SYSLOG_FACILITY: Syslog Tesisi (Facility)
+    SYSLOG_FACILITY_HELP: Çıktı için Syslog tesisi
+    SYSLOG_TAG: Syslog Etiketi
+    SYSLOG_TAG_HELP: Çıktı için Syslog etiketi
+    TAXONOMIES: Taksonomiler
+    TAXONOMY: Taksonomi
+    TAXONOMY_TYPES: Taksonomi Türleri
+    TAXONOMY_TYPES_HELP: Sayfalarda kullanmak isterseniz Taksonomi türlerinin burada tanımlanması gerekir
+    TESTING: Test
+    THUMB: Küçük Resim (Thumb)
+    TIMEOUT: Zaman Aşımı (Timeout)
+    TIMEOUT_HELP: Oturum zaman aşımını saniye cinsinden ayarlar
+    TIMEZONE: Saat Dilimi (Timezone)
+    TIMEZONE_HELP: Sunucunun varsayılan saat dilimini geçersiz kıl (ez)
+    TITLE: Başlık
+    TRANSLATIONS_FALLBACK: Çeviri yedeği (Translations fallback)
+    TRANSLATIONS_FALLBACK_HELP: Aktif dil yoksa, desteklenen çeviriler üzerinden yedeğe dön (fallback)
+    TWIG_CACHING: Twig önbelleğe alma
+    TWIG_CACHING_HELP: Twig önbelleğe alma mekanizmasını kontrol edin. En iyi performans için bunu etkin bırakın.
+    TWIG_DEBUG: Twig Hata Ayıklama (Debug)
+    TWIG_DEBUG_HELP: Twig Debugger (Hata Ayıklayıcı) uzantısını yüklememe seçeneğine izin verir
+    TWIG_FIRST: Önce Twig'i İşle
+    TWIG_FIRST_HELP: Twig sayfa işlemeyi etkinleştirdiyseniz, Twig'in markdowndan önce veya sonra işleneceğini yapılandırabilirsiniz
+    TWIG_SANDBOX: Twig Korumalı Alan (Sandbox)
+    TWIG_SANDBOX_ADMIN_HINT: Yönetici ipucu yorumu
+    TWIG_SANDBOX_ALLOWED_FILTERS: İzin verilen filtreler
+    TWIG_SANDBOX_ALLOWED_FILTERS_HELP: Sayfa içeriğinin uygulayabileceği Twig filtreleri.
+    TWIG_SANDBOX_ALLOWED_FUNCTIONS: İzin verilen fonksiyonlar
+    TWIG_SANDBOX_ALLOWED_FUNCTIONS_HELP: Sayfa içeriğinin çağırabileceği Twig fonksiyonları.
+    TWIG_SANDBOX_ALLOWED_METHODS: İzin verilen metodlar
+    TWIG_SANDBOX_ALLOWED_METHODS_HELP: Sayfa içeriğinin çağırabileceği, sınıf başına (per-class) nesne metodu listeleri.
+    TWIG_SANDBOX_ALLOWED_PROPERTIES: İzin verilen özellikler
+    TWIG_SANDBOX_ALLOWED_PROPERTIES_HELP: Sayfa içeriğinin okuyabileceği, sınıf başına (per-class) nesne özelliği listeleri.
+    TWIG_SANDBOX_ALLOWED_TAGS: İzin verilen etiketler
+    TWIG_SANDBOX_ALLOWED_TAGS_HELP: Sayfa içeriğinin kullanabileceği Twig etiketleri. Yalnızca yazarlara açmak istediğiniz etkilere sahip etiketleri ekleyin.
+    TWIG_SANDBOX_CLASS: Sınıf
+    TWIG_SANDBOX_ENABLED: Twig korumalı alanını (sandbox) etkinleştir
+    TWIG_SANDBOX_HELP: Sayfa içerik şablonlarının kullanabileceği Twig etiketleri, filtreleri, fonksiyonları, yöntemleri ve özelliklerinden oluşan izin listesi (allowlist). Editör tarafından oluşturulan içerik, bu korumalı alan üzerinden işlenir, böylece ele geçirilmiş bir yazar veya şablon enjeksiyonu hatası (template-injection bug) daha geniş kapsayıcıya ulaşamaz.
+    TWIG_SANDBOX_LOGGING: İhlalleri (violations) günlüğe kaydet
+    TWIG_SANDBOX_LOGGING_HELP: Engellenen her ifadeyi <code>logs/twig-sandbox.log</code> dosyasına yazar. İzin listesini (allowlist) ayarlarken yararlıdır; üretim (production) aşamasında günlükleri (logs) sessiz tutmak için kapatın.
+    TWIG_SANDBOX_METHODS: Metodlar
+    TWIG_SANDBOX_PROPERTIES: Özellikler
+    TWIG_TEMPLATING: Twig Şablonlama (Templating)
+    TYPE: Tür
+    UNPUBLISHED_DATE: Yayından Kaldırılma Tarihi
+    UNPUBLISHED_DATE_HELP: Yayından kaldırmayı otomatik olarak tetiklemek için bir tarih sağlayabilirsiniz.
+    UPDATE: Güncelle
+    UPLOADS_DANGEROUS_EXTENSIONS: Tehlikeli Uzantılar
+    UPLOADS_DANGEROUS_EXTENSIONS_HELP: Kabul edilen MIME türleri ne olursa olsun bu uzantıların yüklenmesini engeller
+    UPLOADS_SECURITY: Yüklemeler Güvenliği
+    USE_GLOBAL: Genel Kullan (Use Global)
+    USERNAME_HELP: Kullanıcı adı küçük harfler, sayılar, alt çizgiler ve kısa çizgiler dahil olmak üzere 3 ile 16 karakter arasında olmalıdır. Büyük harfler, boşluklar ve özel karakterlere izin verilmez
+    USERNAME_REGEX: Kullanıcı Adı Düzenli İfadesi (Regex)
+    USERNAME_REGEX_HELP: 'Varsayılan olarak: Yalnızca küçük harfler, sayılar, kısa çizgiler ve alt çizgiler. 3 - 16 karakter'
+    VALID_LINK_ATTRIBUTES: Geçerli Bağlantı Nitelikleri (Attributes)
+    VALID_LINK_ATTRIBUTES_HELP: Medya HTML öğesine (element) otomatik olarak eklenecek nitelikler
+    VARY_ACCEPT_ENCODING: Vary accept encoding
+    VARY_ACCEPT_ENCODING_HELP: 'Proxy ve CDN önbelleğe alımına yardımcı olması için `Vary: Accept Encoding` üst bilgisini ayarlar'
+    VISIBLE: Görünür
+    VISIBLE_HELP: Sayfanın gezinme (navigation) menüsünde görünüp görünmeyeceğini belirler.
+    WRAPPED_SITE: Sarmalanmış (Wrapped) Site
+    WRAPPED_SITE_HELP: Temaların/eklentilerin Grav'ın başka bir platformla sarılıp sarılmadığını (wrapped) bilmeleri içindir
+    XSS_DANGEROUS_TAGS: Tehlikeli HTML etiketlerini filtrele
+    XSS_DANGEROUS_TAGS_LIST: Tehlikeli HTML etiketleri listesi
+    XSS_HTML_INLINE_STYLES: HTML satır içi stillerini filtrele
+    XSS_INVALID_PROTOCOLS: Geçersiz protokolleri filtrele
+    XSS_INVALID_PROTOCOLS_LIST: Geçersiz protokoller listesi
+    XSS_MOZ_BINDINGS: Moz bağlantılarını (bindings) filtrele
+    XSS_ON_EVENTS: On-events olaylarını filtrele
+    XSS_SECURITY: İçerik için XSS Güvenliği
+    XSS_WHITELIST_PERMISSIONS: İzin Verilen (Whitelist) İzinler
+    XSS_WHITELIST_PERMISSIONS_HELP: Bu izinlere sahip kullanıcılar, içerik kaydederken XSS kurallarını atlayacaktır
+    'YES': Evet
+    YUBIKEY_HELP: YubiKey'inizi bilgisayarınıza takın ve bir OTP (Tek Kullanımlık Şifre) oluşturmak için düğmeye tıklayın. İlk 12 karakter istemci kimliğinizdir (client ID) ve kaydedilecektir.
+    YUBIKEY_ID: YubiKey Kimliği (ID)
+    CACHE_CHECK_INTERVAL: Önbellek Kontrol Aralığı
+    CACHE_CHECK_INTERVAL_HELP: Yeniden kontrol etmeden önce daha önceden hesaplanmış dosya sistemi hash değerini (karmasını) yeniden kullanmak için saniye cinsinden süre. Sıfır değeri, mevcut "istek başına (per-request)" kontrollerini korur.
+    HTTP_X_FORWARDED_HOST_ENABLED: HTTP_X_FORWARDED_HOST Etkin
+    HTTP_X_FORWARDED_HOST_HELP: '<code>X-Forwarded-Host</code> istek başlığına güvenin. Yalnızca site, bu üst bilgiyi ayarlayan ve üzerine yazan bir ters proxy (reverse proxy) arkasında olduğunda etkinleştirin; aksi takdirde istemciler Grav''ın gördüğü sunucuyu yanıltabilir.'
+    HTTP_X_FORWARDED_IP_ENABLED: HTTP_X_FORWARDED IP Etkin
+    HTTP_X_FORWARDED_IP_HELP: 'İstemci IP''sini çözümlerken <code>X-Forwarded-For</code> / <code>X-Forwarded</code> / <code>Forwarded</code> üst bilgilerine güvenin. Yalnızca site, bu üst bilgileri ayarlayan ve üzerine yazan bir ters proxy arkasında olduğunda etkinleştirin; aksi takdirde istemciler IP''lerini taklit edebilir ve oran sınırlamasını, IP yasaklarını ve denetim günlüğünü (audit log) atlatabilir.'
+    HTTP_X_FORWARDED_PORT_ENABLED: HTTP_X_FORWARDED_PORT Etkin
+    HTTP_X_FORWARDED_PORT_HELP: '<code>X-Forwarded-Port</code> istek üst bilgisine güvenin. Yalnızca site, bu üst bilgiyi ayarlayan ve üzerine yazan bir ters proxy arkasında olduğunda etkinleştirin.'
+    HTTP_X_FORWARDED_PROTO_ENABLED: HTTP_X_FORWARDED_PROTO Etkin
+    HTTP_X_FORWARDED_PROTO_HELP: '<code>X-Forwarded-Proto</code> istek üst bilgisine güvenin (genellikle TLS sonlandıran (TLS-terminating) bir proxy arkasındaki HTTPS''i tespit etmek için kullanılır). Yalnızca site, bu üst bilgiyi ayarlayan ve üzerine yazan bir ters proxy arkasında olduğunda etkinleştirin.'
+    HTTP_CLIENT_IP_ENABLED: HTTP_CLIENT_IP Etkin
+    HTTP_CLIENT_IP_HELP: 'İstemci IP''sini çözümlerken <code>Client-IP</code> istek üst bilgisine güvenin. Nadirdir; genellikle yalnızca belirli yük dengeleyiciler (load balancers) tarafından ayarlanır. Proxy''nizin bu üst bilgiyi ayarladığını ve üzerine yazdığını bilmiyorsanız kapalı bırakın.'
+    HTTP_CF_CONNECTING_IP_ENABLED: HTTP_CF_CONNECTING_IP Etkin
+    HTTP_CF_CONNECTING_IP_HELP: 'İstemci IP''sini çözümlerken <code>CF-Connecting-IP</code> istek üst bilgisine güvenin. Site gerçekten Cloudflare arkasında olduğunda etkinleştirin; aksi takdirde istemciler IP''lerini taklit edebilir. Tam güvenlik için, web sunucusundaki orijinal erişimi de Cloudflare IP aralıklarıyla sınırlandırın.'
+    MARKDOWN_EXTRA: Markdown ekstra
+    ORDER_DIR_HELP: '"desc" veya "asc" geçerli değerlerdir'
+    TWIG_3_COMPATIBILITY: Twig 3 Uyumluluğu
+    TWIG_3_COMPATIBILITY_HELP: 'Twig 3 üzerinde bozulan (örneğin <code>for ... if ...</code> korumaları) eski Twig 1/2 sözdizimi için otomatik yeniden yazımları etkinleştirin.'
+    TWIG_SANDBOX_ADMIN_HINT_HELP: 'Korumalı alan (sandbox) bir ifadeyi engellediğinde, oluşturulan sayfaya tek satırlık bir HTML yorumu ekler, böylece kaynağı görüntüleyen süper yöneticiler (super-admins) bir şeyin filtrelendiğini görür. Ziyaretçiler ve yönetici olmayanlar hiçbir şey görmez.'
+    TWIG_SANDBOX_ENABLED_HELP: 'Editör tarafından yazılan sayfa içeriğini, izin listesi tabanlı (allowlist-based) bir Twig Güvenlik Politikası içinde oluşturur. <strong>Bunun devre dışı bırakılması, sayfa içeriği aracılığıyla gerçekleştirilebilecek şablon enjeksiyonu (template-injection) saldırılarına karşı tek korumayı kaldırır</strong>: Editör düzeyinde erişimi olan herhangi bir hesap (veya dosya sistemini ele geçiren herhangi biri), Twig aracılığıyla keyfi PHP yürütebilir. Yalnızca bir site, sayfa içeriğinden kapsayıcı erişimine gerçekten ihtiyaç duyuyorsa ve her yazara tamamen güveniyorsanız kapatın.'
+    ACCOUNTS_CONFIGURATION: Hesaplar Yapılandırması
+    FLEX_ADMIN_EVENT_COMPAT: Yönetici olayı (event) uyumluluğu
+    FLEX_ADMIN_EVENT_COMPAT_HELP: Eklentiler için onAdminSave ve onAdminAfterSave olaylarını etkinleştirir.
+    ID: Kimlik (ID)
+    PAGE_PERMISSIONS: Sayfa İzinleri
+    PAGES_CONFIGURATION: Sayfalar Yapılandırması
+    ROUTE: Rota
+    SCHEDULER_ACTIVE_TRIGGERS: Aktif Tetikleyiciler
+    SCHEDULER_ADVANCED_FEATURES: Gelişmiş Özellikler
+    SCHEDULER_CONCURRENT_WORKERS: Eşzamanlı Çalışanlar (Concurrent Workers)
+    SCHEDULER_CONCURRENT_WORKERS_HELP: Aynı anda çalışabilecek iş sayısı (1 = sıralı).
+    SCHEDULER_HEALTH_CHECK_CONFIG: Sağlık Kontrolü (Health Check) Yapılandırması
+    SCHEDULER_HEALTH_CHECK_ENABLED: Sağlık Kontrolünü Etkinleştir
+    SCHEDULER_HEALTH_CHECK_ENABLED_HELP: İzleme (monitoring) için bir sağlık durumu uç noktası (endpoint) sağlayın.
+    SCHEDULER_HEALTH_CHECK_PATH: Sağlık Kontrolü Yolu
+    SCHEDULER_HEALTH_CHECK_PATH_HELP: Sağlık kontrolü uç noktası (endpoint) için URL yolu.
+    SCHEDULER_HEALTH_STATUS: Sağlık Durumu
+    SCHEDULER_HISTORY: İş Geçmişi
+    SCHEDULER_HISTORY_ENABLED: İş Geçmişini Etkinleştir
+    SCHEDULER_HISTORY_ENABLED_HELP: Tüm işler için yürütme geçmişini izleyin.
+    SCHEDULER_HISTORY_RETENTION: Geçmiş Saklama Süresi (Gün)
+    SCHEDULER_HISTORY_RETENTION_HELP: İş geçmişinin ne kadar süreyle tutulacağı.
+    SCHEDULER_QUEUE_CONFIG: Kuyruk (Queue) Yapılandırması
+    SCHEDULER_QUEUE_MAX_SIZE: Maksimum Kuyruk Boyutu
+    SCHEDULER_QUEUE_MAX_SIZE_HELP: Kuyruğa alınabilecek maksimum iş sayısı.
+    SCHEDULER_QUEUE_PATH: Kuyruk Depolama Yolu
+    SCHEDULER_QUEUE_PATH_HELP: Kuyruğa alınan işlerin nerede saklanacağı.
+    SCHEDULER_RETRY_BACKOFF: Yeniden Deneme Geciktirme Stratejisi (Retry Backoff)
+    SCHEDULER_RETRY_BACKOFF_HELP: Yeniden denemeler (retries) arasındaki gecikmenin nasıl hesaplanacağı.
+    SCHEDULER_RETRY_CONFIG: Yeniden Deneme (Retry) Yapılandırması
+    SCHEDULER_RETRY_ENABLED: İş Yeniden Denemesini Etkinleştir
+    SCHEDULER_RETRY_ENABLED_HELP: Başarısız işleri otomatik olarak yeniden dener.
+    SCHEDULER_RETRY_MAX_ATTEMPTS: Maksimum Yeniden Deneme Sayısı
+    SCHEDULER_RETRY_MAX_ATTEMPTS_HELP: Başarısız olan bir işin maksimum yeniden denenme sayısı.
+    SCHEDULER_USAGE_EXAMPLES: Kullanım Örnekleri
+    SCHEDULER_WEBHOOK_CONFIG: Web Kancası (Webhook) Yapılandırması
+    SCHEDULER_WEBHOOK_ENABLED: Web Kancası Tetikleyicilerini Etkinleştir
+    SCHEDULER_WEBHOOK_ENABLED_HELP: HTTP web kancası aracılığıyla zamanlayıcının tetiklenmesine izin verir.
+    SCHEDULER_WEBHOOK_PATH: Web Kancası Yolu
+    SCHEDULER_WEBHOOK_PATH_HELP: Web kancası uç noktası (endpoint) için URL yolu.
+    SCHEDULER_WEBHOOK_TOKEN: Web Kancası Güvenlik Belirteci (Token)
+    SCHEDULER_WEBHOOK_TOKEN_HELP: Web kancası isteklerini doğrulamak için gizli belirteç (token). Bunu gizli tutun!
+    SCHEDULER_WORKER_CONFIG: Çalışan (Worker) Yapılandırması
+    USER_ACCOUNTS: Kullanıcı Hesapları
+    TWIG_CONTENT: İçerikte Twig (Twig in Content)
+    TWIG_CONTENT_HELP: Sayfa içeriğine gömülü, editör tarafından yazılan Twig için kontrolleri içerir. Diskteki tema şablonları bu ayarlardan etkilenmez; ayarlar yalnızca yazarların sayfa gövdelerine veya ön bölüme (frontmatter) eklediği Twig'ler için geçerlidir.
+    TWIG_CONTENT_PROCESS_ENABLED: İçerikte Twig'i Etkinleştir
+    TWIG_CONTENT_PROCESS_ENABLED_HELP: "Ön bölümlerinde (frontmatter) <code>process: twig: true</code> olan sayfaların (ve site geneli <code>system.pages.frontmatter.process_twig</code> seçeneğinin) Twig'i gerçekten çalıştırmasına izin ver. <strong>Grav 2.0'da varsayılan olarak kapalıdır.</strong> Bunu devre dışı bırakmak, şablon enjeksiyonu saldırı yüzeyini azaltır, ancak gövdesinde Twig gerektiren tüm sayfaları bozar."
+    TWIG_CONTENT_EDITOR_ENABLED: Editörlerin içerikte Twig'i açıp kapatmasına izin ver
+    TWIG_CONTENT_EDITOR_ENABLED_HELP: "Kapalıyken (varsayılan), sayfa editörünün Gelişmiş (Advanced) sekmesindeki Twig onay kutusu yalnızca <code>admin.pages_twig</code> izni verilen kullanıcılara görünür ve halihazırda Twig'in etkin olduğu sayfalar yalnızca o kullanıcılar tarafından düzenlenebilir. Açıkken, sayfa düzenleme erişimi olan herhangi biri tekil sayfalar üzerinde Twig'i açıp kapatabilir."
+    TWIG_CONTENT_CONFIG_ACCESS: Twig içinde yapılandırma değişkenlerine erişime izin ver
+    TWIG_CONTENT_CONFIG_ACCESS_HELP: "<code>config</code> Twig değişkeninin sayfa içeriğinden okunabilir olup olmadığıdır. Kapalıyken (varsayılan), bir sayfadan <code>config.system.title</code> değerini okumak hiçbir şey döndürmez. Açıkken, <code>config</code> görünür durumdadır ancak kimlik bilgileri ve diğer hassas alt ağaçların gizli kalması için hala <code>config_denied_paths</code> (aşağıdaki Twig Korumalı Alanına bakın) ile filtrelenir."
+    TOASTS:
+      CONFIG_SAVED: '{name} yapılandırması kaydedildi'
+      CONFIG_MODIFIED_ELSEWHERE: Yapılandırma başka bir yerde değiştirildi — en son sürümü görmek için yeniden yükleyin
+      SAVE_FAILED: Kaydedilemedi
+      DEMO_MODE_BLOCKED: Bu salt okunur bir demodur — değişiklikler devre dışı bırakıldı.
+      DEPENDENCY_INSTALLED: '{slug} eklentisi yüklendi (bağımlılık)'
+      PACKAGE_UPDATED: '{name} güncellendi'
+      PACKAGE_UPDATE_FAILED: '{name} güncellenemedi: {detail}'
+      PACKAGE_REMOVED: '{name} kaldırıldı'
+      PACKAGE_REMOVE_FAILED: '{name} kaldırılamadı'
+      PACKAGES_UPDATED: '{n, plural, one{# paket güncellendi} other{# paket güncellendi}}'
+      UPDATE_FAILED: 'Güncelleme başarısız oldu: {detail}'
+      PLUGIN_ENABLED: '{name} etkinleştirildi'
+      PLUGIN_DISABLED: '{name} devre dışı bırakıldı'
+      PLUGIN_ENABLE_FAILED: '{name} etkinleştirilemedi: {detail}'
+      PLUGIN_DISABLE_FAILED: '{name} devre dışı bırakılamadı: {detail}'
+      PLUGIN_LOCKOUT_BLOCK: '{name}, sistem dışında kalmanıza neden olacağı için admin-next üzerinden devre dışı bırakılamaz.'
+      PLUGIN_REQUIRED_BLOCK: '{name} admin-next tarafından gerektiği için kaldırılamaz.'
+      PLUGIN_REMOVED: '{name} kaldırıldı'
+      PLUGIN_REMOVE_FAILED: '{name} kaldırılamadı: {detail}'
+      THEME_ACTIVATED: '{name} artık aktif tema'
+      THEME_ACTIVATE_FAILED: '{name} etkinleştirilemedi: {detail}'
+      THEME_REMOVED: '{name} kaldırıldı'
+      THEME_REMOVE_FAILED: '{name} kaldırılamadı: {detail}'
+      THEME_REMOVE_BLOCK: '{name} kaldırılamaz.'
+      ACTIVE_THEME_REMOVE_BLOCK: Aktif tema kaldırılamaz. Önce başka bir temaya geçiş yapın.
+      PAGE_PUBLISHED: '"{name}" yayımlandı'
+      PAGE_UNPUBLISHED: '"{name}" yayından kaldırıldı'
+      PAGE_PUBLISH_FAILED: 'Yayımlanma durumu değiştirilemedi: {detail}'
+      USER_ENABLED: '{username} adlı kullanıcı etkinleştirildi'
+      USER_DISABLED: '{username} adlı kullanıcı devre dışı bırakıldı'
+      USER_STATE_FAILED: '{username} için durum değiştirilemedi: {detail}'
+      GPM_REFRESHED: '{n, plural, =0{GPM yenilendi — hiç güncelleme yok} one{GPM yenilendi — # güncelleme mevcut} other{GPM yenilendi — # güncelleme mevcut}}'
+      GRAV_UPGRADED: 'Grav, v{version} sürümüne yükseltildi'
+      BACKUP_CREATED: 'Yedek oluşturuldu ({size})'
+      CACHE_CLEARED: 'Önbellek temizlendi ({scope})'
+      FILES_UPLOADED: '{n, plural, one{# dosya yüklendi} other{# dosya yüklendi}}'
+      FOLDER_CREATED: '"{name}" klasörü oluşturuldu'
+      FILE_DELETED: '{name} silindi'
+      FILE_DELETE_FAILED: '{name} silinemedi'
+      FILES_DELETE_FAILED: '{n, plural, one{# dosya silinemedi} other{# dosya silinemedi}}'
+      COPIED: '{label} kopyalandı'
+      COPY_FAILED: 'Kopyalama başarısız oldu: {detail}'
+      SAVED_AS_LANGUAGE: '{language} olarak kaydedildi'
+      TRANSLATION_CREATED: '{language} çevirisi oluşturuldu'
+      TRANSLATION_RESET: '{target}, {source} dilinden sıfırlandı'
+      SAVED: Kaydedildi
+      ITEM_SAVED: '{name} kaydedildi'
+      ITEM_DELETED: '"{name}" silindi'
+      ITEM_DELETE_FAILED: '"{name}" silinemedi'
+      ITEM_COPIED: '"{name}", "{target}" hedefine kopyalandı'
+      ITEM_MOVED: '"{name}" taşındı'
+      ITEM_REORDERED: '"{name}" yeniden sıralandı'
+      USER_CREATED: '{username} adlı kullanıcı oluşturuldu'
+      USER_SAVED: '{username} adlı kullanıcı kaydedildi'
+      USER_DELETED: '{username} adlı kullanıcı silindi'
+      USER_DELETE_FAILED: '{username} adlı kullanıcı silinemedi'
+      USER_ROW_ACTION_FAILED: 'İşlem tamamlanamadı: {label}'
+      API_KEY_REVOKED: '"{name}" API anahtarı iptal edildi'
+      PLUGIN_INSTALLED: '{name} eklentisi yüklendi'
+      THEME_INSTALLED: '{name} teması yüklendi'
+      INSTALL_FAILED: '{slug} yüklenemedi: {detail}'
+      TOTP_CODE_REQUIRED: Doğrulayıcınızdan gelen 6 haneli kodu girin
+      SAVE_FORM_FAILED: '{form} kaydedilemedi'
+      FORM_LABEL:
+        FORM: Form
+        CONFIGURATION: Yapılandırma
+        PLUGIN: Eklenti
+        PLUGIN_PAGE: Eklenti Sayfası
+        FLEX_OBJECT: Esnek Nesne (Flex Object)
+        USER: Kullanıcı
+        THEME: Tema
+        PAGE: Sayfa

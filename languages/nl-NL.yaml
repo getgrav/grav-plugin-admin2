@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Sandbox heeft methode geblokkeerd'
                     EVENT_SANDBOX_PROPERTY: 'Sandbox heeft eigenschap geblokkeerd'
                     EVENT_SANDBOX_TAG: 'Sandbox geblokkeerde tag'
-                    EVENT_XSS_BLANKED: 'Output gewist door de XSS-scan'
                     FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig is aangevraagd (pages.frontmatter.process_twig), maar Twig in content is globaal uitgeschakeld, dus het zal niet worden uitgevoerd. Kies hierboven een profiel om het in te schakelen.'
                     GATE_OFF: 'Twig in content uitgeschakeld'
                     GATE_ON: 'Twig in content ingeschakeld'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Geblokkeerde tags in inhoud'
                     SECTION_EVENTS: 'Recente blokkades'
                     SECTION_LEAKS: "Pagina's die onbewerkte Twig lekken"
-                    XSS_SCAN_OFF: 'XSS-outputscan uit'
-                    XSS_SCAN_ON: 'XSS-outputscan aan'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Rapportcomponent laden...'
             SCHEDULER:

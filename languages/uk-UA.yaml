@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Пісочниця заблокувала метод'
                     EVENT_SANDBOX_PROPERTY: 'Пісочниця заблокувала властивість'
                     EVENT_SANDBOX_TAG: 'Тег, заблокований у «пісочниці»'
-                    EVENT_XSS_BLANKED: 'Вивід очищено внаслідок XSS-сканування'
                     FRONTMATTER_REQUEST_GATED: 'Запитується Frontmatter Twig (pages.frontmatter.process_twig), але Twig у вмісті вимкнено в налаштуваннях сайту, тому він не працюватиме. Виберіть профіль вище, щоб увімкнути його.'
                     GATE_OFF: 'Twig у вмісті вимкнено'
                     GATE_ON: 'Twig у вмісті ввімкнено'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Заблоковані теги у вмісті'
                     SECTION_EVENTS: 'Нещодавні блокування'
                     SECTION_LEAKS: 'Сторінки, що «виточують» необроблений Twig'
-                    XSS_SCAN_OFF: 'XSS-сканування виводу вимкнено'
-                    XSS_SCAN_ON: 'XSS-сканування виводу ввімкнено'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Завантаження компонента звіту...'
             SCHEDULER:

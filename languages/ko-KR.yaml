@@ -1784,7 +1784,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Sandbox가 메서드를 차단했습니다'
                     EVENT_SANDBOX_PROPERTY: 'Sandbox가 속성을 차단했습니다'
                     EVENT_SANDBOX_TAG: '샌드박스 차단된 태그'
-                    EVENT_XSS_BLANKED: 'XSS 스캔으로 인해 출력이 비워졌습니다'
                     FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig가 요청되었지만(pages.frontmatter.process_twig), 사이트 전체에서 콘텐츠 내 Twig가 비활성화되어 실행되지 않습니다. 이를 활성화하려면 위에서 프로필을 선택하세요.'
                     GATE_OFF: '콘텐츠 내 Twig 비활성화됨'
                     GATE_ON: '콘텐츠 내 Twig 활성화됨'
@@ -1803,8 +1802,6 @@ ICU:
                     SCAN_TAGS: '콘텐츠 내 차단된 태그'
                     SECTION_EVENTS: '최근 차단 기록'
                     SECTION_LEAKS: '원시 Twig가 노출되는 페이지'
-                    XSS_SCAN_OFF: 'XSS 출력 스캔 끄기'
-                    XSS_SCAN_ON: 'XSS 출력 스캔 켜기'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: '보고서 구성 요소를 불러오는 중...'
             SCHEDULER:
