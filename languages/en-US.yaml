@@ -865,6 +865,7 @@ ICU:
         PROCESS_UNAVAILABLE: "This host has PHP's proc_open function disabled, so jobs cannot be started from the admin. They still run whenever your scheduler is triggered by cron or a webhook."
         CRON_UNDETERMINED: Grav cannot inspect this server's crontab, so it cannot confirm how the scheduler is being triggered.
         LAST_TRIGGERED: Last triggered
+        ENVIRONMENT_MISMATCH: "The scheduler last ran under the **{last}** environment, but this site is using **{current}**, which has its own configuration in user/env/{current}/config. Custom jobs and settings defined only there never run from that trigger. Update the bin/grav scheduler line in your crontab to the command below (it passes --env={current}), or export GRAV_ENVIRONMENT={current} before it runs."
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
         FAILED_TO_SAVE: Failed to save
         LOADING_SCHEDULER: Loading scheduler...
