@@ -11,6 +11,8 @@
     * The Twig in Content report no longer shows an "XSS output scan" status, which always read "off" because it described a check Grav replaced in 2.0.11 [#4241](https://github.com/getgrav/grav/issues/4241)
     * Choosing an After Save option on a Flex object no longer marks the record as changed, which with auto-save turned on was saving the record on the spot [#160](https://github.com/getgrav/grav-plugin-admin2/issues/160)
     * The Scheduler page now warns, with the corrected cron command, when the scheduler last ran under a different environment than the site, which left jobs defined in `user/env/<host>/` silently never running [#4248](https://github.com/getgrav/grav/issues/4248)
+    * Inserting a media file whose name contains spaces now writes a link that renders on the site, for images and other files alike [#4197](https://github.com/getgrav/grav/issues/4197) [#4251](https://github.com/getgrav/grav/issues/4251)
+    * Clicking anywhere inside the Markdown editor box now focuses it and places the cursor, not only on existing text [#61](https://github.com/getgrav/grav-plugin-admin2/issues/61)
     * The After Save choice is now remembered between saves, and "Create New" works when editing an existing record instead of doing nothing [#160](https://github.com/getgrav/grav-plugin-admin2/issues/160)
 
 # v2.1.0
