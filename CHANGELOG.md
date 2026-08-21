@@ -1,5 +1,5 @@
 # v2.1.1
-## 08/18/2026
+## 08/21/2026
 
 1. [](#new)
     * Added a Turkish (tr-TR) translation, contributed and tested by @kazakherif.
