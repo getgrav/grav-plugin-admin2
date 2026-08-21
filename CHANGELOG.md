@@ -1,3 +1,20 @@
+# v2.1.1
+## 08/21/2026
+
+1. [](#new)
+    * Added a Turkish (tr-TR) translation, contributed and tested by @kazakherif.
+1. [](#bugfix)
+    * The Markdown editor's Bold, Italic, Strikethrough and Inline Code buttons now remove their formatting when clicked a second time, instead of wrapping the text again [#161](https://github.com/getgrav/grav-plugin-admin2/issues/161)
+    * The Bullet List and Ordered List buttons now apply to every line you have selected rather than only the first [#162](https://github.com/getgrav/grav-plugin-admin2/issues/162)
+    * The Ctrl+B and Ctrl+I shortcuts the toolbar advertises now work; Ctrl+I previously selected the surrounding paragraph instead [#163](https://github.com/getgrav/grav-plugin-admin2/issues/163)
+    * Blueprint fields now show their `description`, `sublabel`, `labelclasses` and `outerclasses`, and `display_label: false` hides the label as documented [#18](https://github.com/getgrav/grav-admin-next/issues/18)
+    * The Twig in Content report no longer shows an "XSS output scan" status, which always read "off" because it described a check Grav replaced in 2.0.11 [#4241](https://github.com/getgrav/grav/issues/4241)
+    * Choosing an After Save option on a Flex object no longer marks the record as changed, which with auto-save turned on was saving the record on the spot [#160](https://github.com/getgrav/grav-plugin-admin2/issues/160)
+    * The Scheduler page now warns, with the corrected cron command, when the scheduler last ran under a different environment than the site, which left jobs defined in `user/env/<host>/` silently never running [#4248](https://github.com/getgrav/grav/issues/4248)
+    * Inserting a media file whose name contains spaces now writes a link that renders on the site, for images and other files alike [#4197](https://github.com/getgrav/grav/issues/4197) [#4251](https://github.com/getgrav/grav/issues/4251)
+    * Clicking anywhere inside the Markdown editor box now focuses it and places the cursor, not only on existing text [#61](https://github.com/getgrav/grav-plugin-admin2/issues/61)
+    * The After Save choice is now remembered between saves, and "Create New" works when editing an existing record instead of doing nothing [#160](https://github.com/getgrav/grav-plugin-admin2/issues/160)
+
 # v2.1.0
 ## 08/14/2026
 

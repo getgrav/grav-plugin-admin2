@@ -646,7 +646,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'قام Sandbox بحظر الطريقة'
                     EVENT_SANDBOX_PROPERTY: 'قام Sandbox بحظر الخاصية'
                     EVENT_SANDBOX_TAG: 'وسم محظور في وضع الحماية (Sandbox)'
-                    EVENT_XSS_BLANKED: 'تم مسح المخرجات بواسطة فحص XSS'
                     FRONTMATTER_REQUEST_GATED: 'تم طلب معالجة Twig في الترويسة (pages.frontmatter.process_twig)، ولكن ميزة Twig في المحتوى معطلة على مستوى الموقع، لذا لن تعمل. اختر ملف تعريف من الأعلى لتفعيلها.'
                     GATE_OFF: 'ميزة Twig في المحتوى معطلة'
                     GATE_ON: 'ميزة Twig في المحتوى مفعلة'
@@ -665,8 +664,6 @@ ICU:
                     SCAN_TAGS: 'وسوم محظورة في المحتوى'
                     SECTION_EVENTS: 'عمليات الحظر الأخيرة'
                     SECTION_LEAKS: 'صفحات تعرض كود Twig الخام'
-                    XSS_SCAN_OFF: 'فحص مخرجات XSS معطل'
-                    XSS_SCAN_ON: 'فحص مخرجات XSS مفعل'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'فشل تحميل إعدادات المُجدوِل.'
                 SCHEDULER_CONFIGURATION_SAVED: 'تم حفظ إعدادات المُجدوِل'

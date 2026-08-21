@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Sandbox zablokoval metodu'
                     EVENT_SANDBOX_PROPERTY: 'Sandbox zablokoval vlastnost'
                     EVENT_SANDBOX_TAG: 'Blokovaná značka v sandboxu'
-                    EVENT_XSS_BLANKED: 'Výstup byl vymazán kvůli kontrole XSS'
                     FRONTMATTER_REQUEST_GATED: 'Je vyžadován Twig ve frontmatteru (pages.frontmatter.process_twig), ale Twig v obsahu je globálně zakázán, takže nebude spuštěn. Vyberte výše profil, který jej povolí.'
                     GATE_OFF: 'Twig v obsahu zakázán'
                     GATE_ON: 'Twig v obsahu povolen'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Blokované značky v obsahu'
                     SECTION_EVENTS: 'Nedávná blokování'
                     SECTION_LEAKS: 'Stránky propouštějící surový Twig'
-                    XSS_SCAN_OFF: 'Kontrola výstupu XSS vypnuta'
-                    XSS_SCAN_ON: 'Kontrola výstupu XSS zapnuta'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Načítání komponenty zpráv...'
             SCHEDULER:

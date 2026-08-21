@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 沙盒拦截了方法
                     EVENT_SANDBOX_PROPERTY: 沙盒拦截了属性
                     EVENT_SANDBOX_TAG: 沙盒已拦截标签
-                    EVENT_XSS_BLANKED: '输出被 XSS 扫描清空'
                     FRONTMATTER_REQUEST_GATED: '已请求 Frontmatter Twig (pages.frontmatter.process_twig)，但全站已禁用内容中的 Twig，因此它不会运行。请在上方选择一个配置以启用它。'
                     GATE_OFF: '内容中的 Twig 已禁用'
                     GATE_ON: '内容中的 Twig 已启用'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 内容中被拦截的标签
                     SECTION_EVENTS: 最近的拦截记录
                     SECTION_LEAKS: '泄露原始 Twig 的页面'
-                    XSS_SCAN_OFF: 'XSS 输出扫描已关闭'
-                    XSS_SCAN_ON: 'XSS 输出扫描已开启'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 加载报告组件中...
             SCHEDULER:

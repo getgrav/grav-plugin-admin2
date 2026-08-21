@@ -646,7 +646,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Sandbox חסם מתודה'
                     EVENT_SANDBOX_PROPERTY: 'Sandbox חסם מאפיין'
                     EVENT_SANDBOX_TAG: 'תגית חסומה בארגז חול'
-                    EVENT_XSS_BLANKED: 'הפלט הוסתר על ידי סריקת XSS'
                     FRONTMATTER_REQUEST_GATED: 'התבקש שימוש ב-Twig ב-Frontmatter (pages.frontmatter.process_twig), אך Twig בתוכן מושבת ברמת האתר כולו, לכן הוא לא יפעל. בחר פרופיל למעלה כדי להפעיל אותו.'
                     GATE_OFF: 'Twig בתוכן מושבת'
                     GATE_ON: 'Twig בתוכן מופעל'
@@ -665,8 +664,6 @@ ICU:
                     SCAN_TAGS: 'תגיות חסומות בתוכן'
                     SECTION_EVENTS: 'חסימות אחרונות'
                     SECTION_LEAKS: 'דפים הדולפים Twig גולמי'
-                    XSS_SCAN_OFF: 'סריקת פלט XSS כבויה'
-                    XSS_SCAN_ON: 'סריקת פלט XSS מופעלת'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'נכשל בטעינת הגדרות המתזמן.'
                 SCHEDULER_CONFIGURATION_SAVED: 'הגדרות המתזמן נשמרו'

@@ -647,7 +647,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: サンドボックスがメソッドをブロックしました
                     EVENT_SANDBOX_PROPERTY: サンドボックスがプロパティをブロックしました
                     EVENT_SANDBOX_TAG: サンドボックスでブロックされたタグ
-                    EVENT_XSS_BLANKED: XSSスキャンにより出力が空白化されました
                     FRONTMATTER_REQUEST_GATED: フロントマターでのTwig処理（pages.frontmatter.process_twig）が要求されていますが、サイト全体でコンテンツ内のTwigが無効になっているため実行されません。上記からプロファイルを選択して有効にしてください。
                     GATE_OFF: コンテンツ内のTwigが無効
                     GATE_ON: コンテンツ内のTwigが有効
@@ -666,8 +665,6 @@ ICU:
                     SCAN_TAGS: コンテンツ内でブロックされたタグ
                     SECTION_EVENTS: 最近のブロック
                     SECTION_LEAKS: 生のTwigが漏洩しているページ
-                    XSS_SCAN_OFF: XSS出力スキャンオフ
-                    XSS_SCAN_ON: XSS出力スキャンオン
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: スケジューラ設定の読み込みに失敗しました。
                 SCHEDULER_CONFIGURATION_SAVED: スケジューラ設定を保存しました

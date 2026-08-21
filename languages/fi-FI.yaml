@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'Hiekkalaatikko esti metodin'
                     EVENT_SANDBOX_PROPERTY: 'Hiekkalaatikko esti ominaisuuden'
                     EVENT_SANDBOX_TAG: 'Hiekkalaatikon estämä tunniste'
-                    EVENT_XSS_BLANKED: 'XSS-skannaus tyhjensi tulosteen'
                     FRONTMATTER_REQUEST_GATED: 'Frontmatter Twig on pyydetty (pages.frontmatter.process_twig), mutta Twig on poistettu käytöstä koko sivustolla, joten se ei toimi. Valitse profiili ylhäältä ottaaksesi sen käyttöön.'
                     GATE_OFF: 'Twig sisällössä pois käytöstä'
                     GATE_ON: 'Twig sisällössä käytössä'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Estetyt tunnisteet sisällössä'
                     SECTION_EVENTS: 'Viimeaikaiset estot'
                     SECTION_LEAKS: 'Sivut, jotka vuotavat raakaa Twigiä'
-                    XSS_SCAN_OFF: 'XSS-tulosteen skannaus pois päältä'
-                    XSS_SCAN_ON: 'XSS-tulosteen skannaus päällä'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Ladataan raportin komponenttia...'
             SCHEDULER:

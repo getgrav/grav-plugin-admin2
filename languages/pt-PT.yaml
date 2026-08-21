@@ -998,7 +998,6 @@ ICU:
                     EVENT_SANDBOX_METHOD: 'O Sandbox bloqueou o método'
                     EVENT_SANDBOX_PROPERTY: 'O Sandbox bloqueou a propriedade'
                     EVENT_SANDBOX_TAG: 'Tag bloqueada pelo Sandbox'
-                    EVENT_XSS_BLANKED: 'Resultado ocultado pela análise de XSS'
                     FRONTMATTER_REQUEST_GATED: 'Twig no frontmatter foi solicitado (pages.frontmatter.process_twig), mas o Twig no conteúdo está desativado globalmente, pelo que não será executado. Escolha um perfil acima para o ativar.'
                     GATE_OFF: 'Twig no conteúdo desativado'
                     GATE_ON: 'Twig no conteúdo ativado'
@@ -1017,8 +1016,6 @@ ICU:
                     SCAN_TAGS: 'Tags bloqueadas no conteúdo'
                     SECTION_EVENTS: 'Bloqueios recentes'
                     SECTION_LEAKS: 'Páginas com Twig exposto'
-                    XSS_SCAN_OFF: 'Análise de resultado XSS desativada'
-                    XSS_SCAN_ON: 'Análise de resultado XSS ativada'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Carregando componente de relatório...'
             SCHEDULER:
