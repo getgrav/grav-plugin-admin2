@@ -1,3 +1,10 @@
+# v2.1.2
+## 08/21/2026
+
+1. [](#new)
+    * The sign-in form can now show a captcha when the site has one enabled, including the built-in challenge that solves itself in the background while you type [#4254](https://github.com/getgrav/grav/issues/4254)
+    * The forgotten-password and first-run setup forms can show the same captcha
+
 # v2.1.1
 ## 08/21/2026
 

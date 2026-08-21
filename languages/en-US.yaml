@@ -1045,6 +1045,10 @@ ICU:
       OR_CONTINUE_WITH: Or continue with
       CONTINUE_WITH: Continue with {provider}
       SSO_FAILED: Could not sign in with that provider. Please try again.
+      CAPTCHA_VERIFYING: Checking you're human...
+      CAPTCHA_VERIFIED: Verified you're human
+      CAPTCHA_NOT_COMPLETED: Please complete the challenge to continue
+      CAPTCHA_FAILED_TO_LOAD: The challenge could not be loaded. Reload the page and try again.
     PLUGIN:
       BACK_TO_DASHBOARD: Back to Dashboard
       NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: No content available for this plugin page.
