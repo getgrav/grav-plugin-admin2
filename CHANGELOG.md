@@ -4,6 +4,7 @@
 1. [](#new)
     * The sign-in form can now show a captcha when the site has one enabled, including the built-in challenge that solves itself in the background while you type [#4254](https://github.com/getgrav/grav/issues/4254)
     * The forgotten-password and first-run setup forms can show the same captcha
+    * Blueprints can use a `media` field type, which picks a file from the page's own media, the site library, or a URL you type, and can take several in a set order
 1. [](#bugfix)
     * Field descriptions in blueprints now render HTML again, matching the old admin and matching how field help text already behaved. They were being shown as plain text, so any markup appeared literally [#19](https://github.com/getgrav/grav-admin-next/issues/19)
     * The icon picker now includes brand icons such as WhatsApp, GitHub and Facebook, along with the outline "regular" icons, and can be filtered by family. Only solid icons were listed before [#20](https://github.com/getgrav/grav-admin-next/issues/20)
