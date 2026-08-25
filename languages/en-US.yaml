@@ -291,6 +291,10 @@ ICU:
         SEARCH_ICONS: Search icons...
         NO_ICONS_FOUND: No icons found
         SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: Showing first 200 results — type to narrow
+        FAMILY_ALL: All
+        FAMILY_SOLID: Solid
+        FAMILY_REGULAR: Regular
+        FAMILY_BRANDS: Brands
       PAGE_EXISTS:
         CHECKING_PAGE: Checking page...
       PAGE_MEDIA:
@@ -328,6 +332,16 @@ ICU:
         SELECT_FILES: Select files…
       FILE:
         LIMIT_REACHED: "This field accepts at most {limit} file(s)."
+      MEDIA:
+        TITLE: Select media
+        SELECT: Select media…
+        ADD: Add media…
+        CHANGE: Change
+        REMOVE: Remove
+        MOVE_EARLIER: Move earlier
+        MOVE_LATER: Move later
+        DONE: Done
+        SELECTED_COUNT: "{count, plural, =0 {Nothing selected} one {# selected} other {# selected}}"
     NAV:
       DASHBOARD: Dashboard
       CONFIGURATION: Configuration
