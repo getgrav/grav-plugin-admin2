@@ -1,3 +1,17 @@
+# v2.1.2
+## 08/27/2026
+
+1. [](#new)
+    * The sign-in form can now show a captcha when the site has one enabled, including the built-in challenge that solves itself in the background while you type [#4254](https://github.com/getgrav/grav/issues/4254)
+    * The forgotten-password and first-run setup forms can show the same captcha
+    * Blueprints can use a `media` field type, which picks a file from the page's own media, the site library, or a URL you type, and can take several in a set order
+1. [](#bugfix)
+    * Field descriptions in blueprints now render HTML again, matching the old admin and matching how field help text already behaved. They were being shown as plain text, so any markup appeared literally [#19](https://github.com/getgrav/grav-admin-next/issues/19)
+    * The icon picker now includes brand icons such as WhatsApp, GitHub and Facebook, along with the outline "regular" icons, and can be filtered by family. Only solid icons were listed before [#20](https://github.com/getgrav/grav-admin-next/issues/20)
+    * Icons now display in the family they belong to wherever the admin shows one, so a brand icon set in a blueprint, a menubar link or a plugin's sidebar entry renders instead of coming up blank [#20](https://github.com/getgrav/grav-admin-next/issues/20)
+    * The "Session expired" prompt now offers single sign-on, and asks for a two-factor code when the account uses one. Anyone signing in with a provider had no way through it, and a two-factor account was left with a session that looked signed in but was not [#21](https://github.com/getgrav/grav-admin-next/issues/21)
+    * The "Session expired" prompt now shows the captcha when one is enabled, instead of failing every attempt [#21](https://github.com/getgrav/grav-admin-next/issues/21)
+
 # v2.1.1
 ## 08/21/2026
 

@@ -291,6 +291,10 @@ ICU:
         SEARCH_ICONS: Search icons...
         NO_ICONS_FOUND: No icons found
         SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: Showing first 200 results — type to narrow
+        FAMILY_ALL: All
+        FAMILY_SOLID: Solid
+        FAMILY_REGULAR: Regular
+        FAMILY_BRANDS: Brands
       PAGE_EXISTS:
         CHECKING_PAGE: Checking page...
       PAGE_MEDIA:
@@ -328,6 +332,16 @@ ICU:
         SELECT_FILES: Select files…
       FILE:
         LIMIT_REACHED: "This field accepts at most {limit} file(s)."
+      MEDIA:
+        TITLE: Select media
+        SELECT: Select media…
+        ADD: Add media…
+        CHANGE: Change
+        REMOVE: Remove
+        MOVE_EARLIER: Move earlier
+        MOVE_LATER: Move later
+        DONE: Done
+        SELECTED_COUNT: "{count, plural, =0 {Nothing selected} one {# selected} other {# selected}}"
     NAV:
       DASHBOARD: Dashboard
       CONFIGURATION: Configuration
@@ -454,6 +468,7 @@ ICU:
     REAUTH_MODAL:
       SESSION_EXPIRED: Session expired
       PLEASE_RE_ENTER_YOUR_PASSWORD_TO: Please re-enter your password to continue. Your work has been preserved.
+      SIGN_IN_AGAIN_TO_CONTINUE: Sign in again to continue. Your work has been preserved.
     USERNAME: Username
     PASSWORD: Password
     REMOVE: Remove
@@ -1045,6 +1060,11 @@ ICU:
       OR_CONTINUE_WITH: Or continue with
       CONTINUE_WITH: Continue with {provider}
       SSO_FAILED: Could not sign in with that provider. Please try again.
+      INVALID_AUTHENTICATION_CODE: Invalid authentication code
+      CAPTCHA_VERIFYING: Checking you're human...
+      CAPTCHA_VERIFIED: Verified you're human
+      CAPTCHA_NOT_COMPLETED: Please complete the challenge to continue
+      CAPTCHA_FAILED_TO_LOAD: The challenge could not be loaded. Reload the page and try again.
     PLUGIN:
       BACK_TO_DASHBOARD: Back to Dashboard
       NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: No content available for this plugin page.
