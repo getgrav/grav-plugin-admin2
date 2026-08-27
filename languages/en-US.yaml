@@ -468,6 +468,7 @@ ICU:
     REAUTH_MODAL:
       SESSION_EXPIRED: Session expired
       PLEASE_RE_ENTER_YOUR_PASSWORD_TO: Please re-enter your password to continue. Your work has been preserved.
+      SIGN_IN_AGAIN_TO_CONTINUE: Sign in again to continue. Your work has been preserved.
     USERNAME: Username
     PASSWORD: Password
     REMOVE: Remove
@@ -1059,6 +1060,7 @@ ICU:
       OR_CONTINUE_WITH: Or continue with
       CONTINUE_WITH: Continue with {provider}
       SSO_FAILED: Could not sign in with that provider. Please try again.
+      INVALID_AUTHENTICATION_CODE: Invalid authentication code
       CAPTCHA_VERIFYING: Checking you're human...
       CAPTCHA_VERIFIED: Verified you're human
       CAPTCHA_NOT_COMPLETED: Please complete the challenge to continue

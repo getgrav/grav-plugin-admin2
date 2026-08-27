@@ -9,6 +9,8 @@
     * Field descriptions in blueprints now render HTML again, matching the old admin and matching how field help text already behaved. They were being shown as plain text, so any markup appeared literally [#19](https://github.com/getgrav/grav-admin-next/issues/19)
     * The icon picker now includes brand icons such as WhatsApp, GitHub and Facebook, along with the outline "regular" icons, and can be filtered by family. Only solid icons were listed before [#20](https://github.com/getgrav/grav-admin-next/issues/20)
     * Icons now display in the family they belong to wherever the admin shows one, so a brand icon set in a blueprint, a menubar link or a plugin's sidebar entry renders instead of coming up blank [#20](https://github.com/getgrav/grav-admin-next/issues/20)
+    * The "Session expired" prompt now offers single sign-on, and asks for a two-factor code when the account uses one. Anyone signing in with a provider had no way through it, and a two-factor account was left with a session that looked signed in but was not [#21](https://github.com/getgrav/grav-admin-next/issues/21)
+    * The "Session expired" prompt now shows the captcha when one is enabled, instead of failing every attempt [#21](https://github.com/getgrav/grav-admin-next/issues/21)
 
 # v2.1.1
 ## 08/21/2026
