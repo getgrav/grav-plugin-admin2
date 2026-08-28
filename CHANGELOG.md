@@ -7,6 +7,7 @@
 1. [](#bugfix)
     * The Page Date Format setting under System, Content now saves. It was being shown as a multi-pick tag box instead of a single choice, so the value it sent back was discarded and the field reverted to "Guess automatically". The same field on a page's Overrides tab was affected [#166](https://github.com/getgrav/grav-plugin-admin2/issues/166)
     * Date and time fields now put their day, month and year boxes in the order the admin's own language writes them, rather than always the American month-day-year. Typing a day above the twelfth into the first box no longer lands it in the month [#166](https://github.com/getgrav/grav-plugin-admin2/issues/166)
+    * The "After Save" heading on a Flex Objects record now appears in the admin's own language. The three choices under it were already being translated, but the heading itself was always shown in English [#236](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/236)
 
 # v2.1.2
 ## 08/27/2026
