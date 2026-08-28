@@ -1,0 +1,55 @@
+# Admin2 (admin-next) UI translations — British English.
+#
+# This file is deliberately tiny. It is NOT a copy of en-US.yaml and must
+# never become one.
+#
+# The API's translations endpoint backfills every key it does not find here
+# from en-US (see SystemController::translations()), so this file only needs
+# the strings that genuinely differ. A request for en-GB returns the same key
+# count as en-US; the entries below are the only ones that override it.
+#
+# That has two consequences worth knowing before editing:
+#
+#   1. Adding a key here that matches en-US exactly is pure duplication. It
+#      will be silently correct and permanently wasteful. Don't.
+#   2. When a new US-spelled string lands in en-US.yaml, it appears here in
+#      American spelling automatically. Only add an entry once a word actually
+#      needs changing.
+#
+# This locale is also what gives British admins day-month-year in date fields,
+# since the picker takes its segment order from the admin language.
+#
+# Do NOT enrol en-GB as a target language in the translation service. It is a
+# spelling variant of the source, not a translation, and enrolling it would
+# report it as 0% translated forever and invite an AI pass that would fill it
+# with 6,000 near-identical strings.
+
+ICU:
+  ADMIN_NEXT:
+    CONTENT_FALLBACK_LANGUAGE_HELP: Specify language code which you want to customise.
+    CONTENT_LANGUAGE_FALLBACKS_HELP: By default if the content isn't translated, Grav will display content in the default language. Use this setting to override that behaviour per language basis.
+    IMAGES_DECODING: Image decoding behaviour
+    IMAGES_FETCHPRIORITY_HELP: The fetchpriority property in HTML is an attribute that specifies the priority for loading certain resources, such as images or iframes, to optimise performance. Possible values are high, low, or auto.
+    IMAGES_LOADING: Image loading behaviour
+    LANGUAGE_HELP: Set the favourite language
+    LAST_MODIFIED_HELP: Sets the last modified header that can help optimise proxy and browser caching
+    PAGES_FALLBACK_ONLY_HELP: Only 'fallback' to find page content through supported languages, default behaviour is to display any language found if active language is missing
+    SESSION_INITIALIZE: Initialise Session
+    STRICT_BLUEPRINT_COMPAT_HELP: Enables backward compatible strict support for blueprints. If turned off, the new behaviour makes the form validation to fail if there is extra data which is not defined in the blueprint.
+
+    DASHBOARD:
+      CUSTOMIZE: Customise
+      CUSTOMIZE_TITLE: Customise dashboard
+      EDIT_HINT: Customise mode — drag, resize, hide widgets, then save.
+      PRESET_DEFAULT_DESC: Server-recommended layout — clears your customisations.
+
+    SETTINGS:
+      ACCENT_COLOR: Accent Colour
+      AUTO_SAVE_AND_UNDO_BEHAVIOR_FOR_FORM: Auto-save and undo behaviour for form editors
+      COLOR_MODE: Colour Mode
+      CUSTOMIZE_THE_LOGO_SHOWN_IN_THE_SIDEBAR: Customise the logo shown in the sidebar and login page
+      CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: Customise the look and feel of the admin
+      DEFAULT_COLOR_APPEARANCE_DESC: Default colour appearance for new users.
+      DEFAULT_PRIMARY_COLOR_DESC: Default primary colour for buttons, links, and highlights.
+      PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: Primary colour used for buttons, links, and highlights
+      SITE_SETTINGS_DESC: Default preferences for new users plus site-wide behaviour. Changes apply on next reload for affected users.
