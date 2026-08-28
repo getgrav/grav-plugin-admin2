@@ -1,3 +1,11 @@
+# v2.1.3
+## 08/28/2026
+
+1. [](#new)
+    * Date and time fields now have a "now" button that fills in the current date and time in one click, covering a page's date as well as its published and unpublished dates [#167](https://github.com/getgrav/grav-plugin-admin2/issues/167)
+1. [](#bugfix)
+    * The Page Date Format setting under System, Content now saves. It was being shown as a multi-pick tag box instead of a single choice, so the value it sent back was discarded and the field reverted to "Guess automatically". The same field on a page's Overrides tab was affected [#166](https://github.com/getgrav/grav-plugin-admin2/issues/166)
+
 # v2.1.2
 ## 08/27/2026
 

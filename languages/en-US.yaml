@@ -243,6 +243,7 @@ ICU:
       SUBTITLE: Manage your site content and structure
     FIELDS:
       CLEAR_DATE: Clear date
+      SET_DATE_NOW: Set to now
       REGENERATE_SLUG: Auto-regenerate from page title
       ADD_ENTRY: Add entry
       ADD_ITEM: Add item
