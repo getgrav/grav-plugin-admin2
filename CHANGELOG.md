@@ -1,3 +1,17 @@
+# v2.1.3
+## 08/31/2026
+
+1. [](#new)
+    * Date and time fields now have a "now" button that fills in the current date and time in one click, covering a page's date as well as its published and unpublished dates [#167](https://github.com/getgrav/grav-plugin-admin2/issues/167)
+    * A British English admin language. It is a small overrides file rather than a copy of the American one, so it inherits every string it does not change, and it also gives date fields day-month-year [#166](https://github.com/getgrav/grav-plugin-admin2/issues/166)
+1. [](#bugfix)
+    * Text a plugin or theme supplies for its settings form — field labels, help text, section and spacer copy — is now cleaned before it is shown, so a package cannot put working HTML into the admin's own pages. The same now applies to the description shown on a plugin or theme's detail panel. Thanks to @alham-rizvi
+    * A blueprint `display` field's text is now cleaned before it is shown, the same as labels and help text. A plugin-supplied toolbar button in the markdown editor is too, and the Page File help text under a page's Advanced tab renders its formatting instead of printing the tags
+    * Dropdown lists, date pickers, scrollbars and other controls the browser draws itself now follow the admin's dark or light theme instead of the desktop's. On a dark admin with a light desktop, an open dropdown was drawn light and could be unreadable [#168](https://github.com/getgrav/grav-plugin-admin2/issues/168)
+    * The Page Date Format setting under System, Content now saves. It was being shown as a multi-pick tag box instead of a single choice, so the value it sent back was discarded and the field reverted to "Guess automatically". The same field on a page's Overrides tab was affected [#166](https://github.com/getgrav/grav-plugin-admin2/issues/166)
+    * Date and time fields now put their day, month and year boxes in the order the admin's own language writes them, rather than always the American month-day-year. Typing a day above the twelfth into the first box no longer lands it in the month [#166](https://github.com/getgrav/grav-plugin-admin2/issues/166)
+    * The "After Save" heading on a Flex Objects record now appears in the admin's own language. The three choices under it were already being translated, but the heading itself was always shown in English [#236](https://github.com/trilbymedia/grav-plugin-flex-objects/issues/236)
+
 # v2.1.2
 ## 08/27/2026
 
@@ -5,6 +19,8 @@
     * The sign-in form can now show a captcha when the site has one enabled, including the built-in challenge that solves itself in the background while you type [#4254](https://github.com/getgrav/grav/issues/4254)
     * The forgotten-password and first-run setup forms can show the same captcha
     * Blueprints can use a `media` field type, which picks a file from the page's own media, the site library, or a URL you type, and can take several in a set order
+    * The Scheduler page can now run jobs on demand: **Run Pending** picks up everything that has missed its scheduled time, **Run All** runs every job regardless of schedule, and each row can be run on its own. Useful on a site with no cron entry set up
+    * The job list now shows when each job last ran, whether that run was started by hand, and which jobs are pending, and a run reports what it did and what each job printed
 1. [](#bugfix)
     * Field descriptions in blueprints now render HTML again, matching the old admin and matching how field help text already behaved. They were being shown as plain text, so any markup appeared literally [#19](https://github.com/getgrav/grav-admin-next/issues/19)
     * The icon picker now includes brand icons such as WhatsApp, GitHub and Facebook, along with the outline "regular" icons, and can be filtered by family. Only solid icons were listed before [#20](https://github.com/getgrav/grav-admin-next/issues/20)

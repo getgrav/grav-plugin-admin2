@@ -243,6 +243,7 @@ ICU:
       SUBTITLE: Manage your site content and structure
     FIELDS:
       CLEAR_DATE: Clear date
+      SET_DATE_NOW: Set to now
       REGENERATE_SLUG: Auto-regenerate from page title
       ADD_ENTRY: Add entry
       ADD_ITEM: Add item
@@ -279,6 +280,13 @@ ICU:
         NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: No triggers active! Enable webhooks or configure cron.
         RUNNING: Running...
         RUN_ALL: Run All
+        RUN_ALL_HELP: Run every enabled job now, whatever its schedule says.
+        RUN_PENDING: Run Pending
+        RUN_NOW: Run this job now
+        PENDING: Pending
+        NEVER: Never
+        BY_HAND: by hand
+        MANUAL_RUN_HELP: "Run Pending runs the jobs that have missed their last scheduled time, which is what you want on a site with no cron entry. Runs you start here are recorded as manual, and do not count towards the cron status above."
       CUSTOM_FIELD_WRAPPER:
         LOADING_CUSTOM_FIELD: Loading custom field...
       DATE_FORMAT:
@@ -880,6 +888,7 @@ ICU:
         PROCESS_UNAVAILABLE: "This host has PHP's proc_open function disabled, so jobs cannot be started from the admin. They still run whenever your scheduler is triggered by cron or a webhook."
         CRON_UNDETERMINED: Grav cannot inspect this server's crontab, so it cannot confirm how the scheduler is being triggered.
         LAST_TRIGGERED: Last triggered
+        LAST_MANUAL_RUN: Last run by hand
         ENVIRONMENT_MISMATCH: "The scheduler last ran under the **{last}** environment, but this site is using **{current}**, which has its own configuration in user/env/{current}/config. Custom jobs and settings defined only there never run from that trigger. Update the bin/grav scheduler line in your crontab to the command below (it passes --env={current}), or export GRAV_ENVIRONMENT={current} before it runs."
         SCHEDULER_CONFIGURATION_SAVED: Scheduler configuration saved
         FAILED_TO_SAVE: Failed to save
