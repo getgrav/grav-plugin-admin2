@@ -1,5 +1,5 @@
 # v2.1.3
-## 08/28/2026
+## 08/31/2026
 
 1. [](#new)
     * Date and time fields now have a "now" button that fills in the current date and time in one click, covering a page's date as well as its published and unpublished dates [#167](https://github.com/getgrav/grav-plugin-admin2/issues/167)
