@@ -1,3 +1,11 @@
+# v2.1.4
+## 09/01/2026
+
+1. [](#new)
+    * New pages can now be created as a draft or published straight from the Add Page form, and start as a draft by default. Thanks to @runnergeek [#22](https://github.com/getgrav/grav-admin-next/pull/22)
+1. [](#bugfix)
+    * Dropdown lists on the Admin Settings page and the Pages toolbars now follow the admin's dark or light theme. The fix in 2.1.3 covered the lists drawn from a settings form but missed the flat ones, which on Windows and Linux could still open as white text on a white background [#168](https://github.com/getgrav/grav-plugin-admin2/issues/168)
+
 # v2.1.3
 ## 08/31/2026
 

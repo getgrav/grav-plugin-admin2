@@ -227,6 +227,7 @@ ICU:
         ROOT: <root> /
         PAGE_TEMPLATE: Page Template
         LOADING_TEMPLATES: Loading templates...
+        STATUS_HELP: Drafts are saved but not visible on the site until you publish them
         VISIBLE: Visible
         CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: Controls whether this page appears in navigation menus
         CONTINUE: Continue
