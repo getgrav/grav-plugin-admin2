@@ -9,6 +9,7 @@
     * Albert Sans is now one of the font choices under Settings, self-hosted like the others. Pair it with grav-plugin-api 1.0.23, which accepts the value as a site default.
     * New pages can now be created as a draft or published straight from the Add Page form, and start as a draft by default. Thanks to @runnergeek [#22](https://github.com/getgrav/grav-admin-next/pull/22)
 1. [](#bugfix)
+    * Spell checking works in the page content editor again. The editor library switches it off by default, which suits the YAML and raw-file editors but not the field you write your page text in. Thanks to @3e33 [#169](https://github.com/getgrav/grav-plugin-admin2/issues/169)
     * The settings filter treats hyphens, underscores and spaces as the same thing, so `order-number`, `order_number` and `order number` all find the field, and the highlight covers what matched.
     * A highlighted match in a field label had a gap either side of it, because the label is an inline-flex row and the highlight became its own item in it. The label text now sits in one span, and a `<code>` in the help text keeps its formatting under a filter.
     * The sign-in screen, and a browser that had never signed in, showed the stock purple accent and font until the first login even when the site had its own defaults. The boot config now carries the site's default colour mode, accent, font and font size, so a first visit paints with them.
