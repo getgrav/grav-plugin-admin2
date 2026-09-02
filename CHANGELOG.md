@@ -6,6 +6,7 @@
     * Albert Sans is now one of the font choices under Settings, self-hosted like the others. Pair it with grav-plugin-api 1.0.23, which accepts the value as a site default.
     * New pages can now be created as a draft or published straight from the Add Page form, and start as a draft by default. Thanks to @runnergeek [#22](https://github.com/getgrav/grav-admin-next/pull/22)
 1. [](#bugfix)
+    * The environment chip in the top bar was hard to read in dark mode. It now uses the same size and accent tint as the active sidebar item, so it is legible in both colour modes.
     * Dropdown lists on the Admin Settings page and the Pages toolbars now follow the admin's dark or light theme. The fix in 2.1.3 covered the lists drawn from a settings form but missed the flat ones, which on Windows and Linux could still open as white text on a white background [#168](https://github.com/getgrav/grav-plugin-admin2/issues/168)
 
 # v2.1.3
