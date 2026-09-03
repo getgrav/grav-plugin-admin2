@@ -1,3 +1,9 @@
+# v2.1.6
+## 09/03/2026
+
+1. [](#bugfix)
+    * Collaborative editing now checks in less often after repeated failures instead of retrying at full speed, so an editor that hits the API's rate limit recovers on its own rather than staying stuck until you reload [getgrav/grav-admin-next#23](https://github.com/getgrav/grav-admin-next/issues/23)
+
 # v2.1.5
 ## 09/03/2026
 
