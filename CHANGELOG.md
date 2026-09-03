@@ -4,6 +4,7 @@
 1. [](#bugfix)
     * Changing a page's template no longer leaves the editor stuck reloading until it gives up. Thanks to @Gleydar [getgrav/grav-plugin-sync#3](https://github.com/getgrav/grav-plugin-sync/issues/3)
     * When someone else saves the page you have open, you are told about it again — the notice had never been arriving
+    * Collaborative editing now checks in less often after repeated failures instead of retrying at full speed, so an editor that hits the API's rate limit recovers on its own rather than staying stuck until you reload [getgrav/grav-admin-next#23](https://github.com/getgrav/grav-admin-next/issues/23)
     * Added the label for Grav's new Progressive JPEGs setting under Media
 
 # v2.1.4
