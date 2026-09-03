@@ -227,6 +227,7 @@ ICU:
         ROOT: <root> /
         PAGE_TEMPLATE: Page Template
         LOADING_TEMPLATES: Loading templates...
+        STATUS_HELP: Drafts are saved but not visible on the site until you publish them
         VISIBLE: Visible
         CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: Controls whether this page appears in navigation menus
         CONTINUE: Continue
@@ -1143,6 +1144,8 @@ ICU:
       ACCENT_COLOR: Accent Color
       PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: Primary color used for buttons, links, and highlights
       SATURATION: Saturation
+      CURRENT_COLOR: Color
+      COPY_COLOR: Copy this color
       TYPEFACE_USED_THROUGHOUT_THE_ADMIN: Typeface used throughout the admin
       FONT_SIZE: Font Size
       TEXT_SIZE_USED_THROUGHOUT_THE_ADMIN: Text size used throughout the admin

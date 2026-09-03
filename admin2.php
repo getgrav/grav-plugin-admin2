@@ -494,6 +494,10 @@ class Admin2Plugin extends Plugin
         if ($branding !== null) {
             $config['branding'] = $branding['branding'];
             $config['brandingUrls'] = $branding['brandingUrls'];
+            // The site's default look, so the sign-in screen and a first visit
+            // paint with the operator's accent, font and colour mode rather
+            // than the stock purple until the user has signed in once.
+            $config['appearance'] = $branding['appearance'];
             if ($branding['language'] !== '') {
                 $config['language'] = $branding['language'];
             }
@@ -547,7 +551,7 @@ class Admin2Plugin extends Plugin
      * absent, config unreadable) returns null and the SPA falls back to its
      * built-in defaults.
      *
-     * @return array{branding: array<string, mixed>, brandingUrls: array<string, string>, language: string}|null
+     * @return array{branding: array<string, mixed>, appearance: array<string, mixed>, brandingUrls: array<string, string>, language: string}|null
      */
     private function resolveBrandingForBoot(): ?array
     {
@@ -561,9 +565,16 @@ class Admin2Plugin extends Plugin
             $branding = $resolver->siteBranding();
             $sitePrefs = $resolver->sitePreferences();
             $language = is_string($sitePrefs['adminLanguage'] ?? null) ? $sitePrefs['adminLanguage'] : '';
+            $appearance = [];
+            foreach (['colorMode', 'accentHue', 'accentSaturation', 'fontFamily', 'fontSize'] as $key) {
+                if (array_key_exists($key, $sitePrefs)) {
+                    $appearance[$key] = $sitePrefs[$key];
+                }
+            }
 
             return [
                 'branding' => $branding,
+                'appearance' => $appearance,
                 'brandingUrls' => [
                     'light' => $resolver->brandingMediaUrl((string) ($branding['logoLight'] ?? '')),
                     'dark' => $resolver->brandingMediaUrl((string) ($branding['logoDark'] ?? '')),

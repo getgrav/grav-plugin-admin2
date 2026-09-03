@@ -1,3 +1,22 @@
+# v2.1.4
+## 09/02/2026
+
+1. [](#new)
+    * **Plugin and theme settings get the search box Configuration has had all along.** Type in it and every field that does not match folds away, with the match highlighted and the tabs and sections that are left empty folded away too. It sits where Configuration puts its own box, and works the same way.
+    * **A plugin can now render its own settings on its own page.** `<grav-blueprint-form plugin="my-plugin">` is the admin's real settings form as a custom element, so a plugin whose admin page is a web component can put its settings on one of its own screens rather than sending people out to `/plugins/my-plugin`. It is the same blueprint, the same field types, the same required-field checks, the same save and the same per-field revert. It takes a live `filter` attribute so the page can put its own search box above it, a `hide-toolbar` attribute for a page that would rather drive `save()` from its own header button, and a `hide-fields` attribute to leave out a blueprint field that only makes sense on the admin's own settings page. It reports `blueprint-ready`, `blueprint-dirty`, `blueprint-saved` and `blueprint-error` so the page can react. A page definition that names a `settings_route` sends `/plugins/<slug>` and the Configure button on the Plugins list to that screen instead, so there is one set of settings rather than two. A disabled plugin still opens the admin's own page, which is the one with the Enable button on it. Needs grav-plugin-api 1.0.23. See `docs/blueprint-form-element.md` in grav-admin-next.
+    * A field filter that matches nothing now says so instead of leaving the form blank, which read as a screen that had failed to load. Same words the Configuration page's Info tab already used.
+    * The custom accent picker shows the colour it makes: a swatch, the `hsl()` value for the current colour mode, the hex, and a copy button, so a colour can be shared or written into a site default without guessing.
+    * Albert Sans is now one of the font choices under Settings, self-hosted like the others. Pair it with grav-plugin-api 1.0.23, which accepts the value as a site default.
+    * New pages can now be created as a draft or published straight from the Add Page form, and start as a draft by default. Thanks to @runnergeek [#22](https://github.com/getgrav/grav-admin-next/pull/22)
+1. [](#bugfix)
+    * Spell checking works in the page content editor again. The editor library switches it off by default, which suits the YAML and raw-file editors but not the field you write your page text in. Thanks to @3e33 [#169](https://github.com/getgrav/grav-plugin-admin2/issues/169)
+    * The settings filter treats hyphens, underscores and spaces as the same thing, so `order-number`, `order_number` and `order number` all find the field, and the highlight covers what matched.
+    * A highlighted match in a field label had a gap either side of it, because the label is an inline-flex row and the highlight became its own item in it. The label text now sits in one span, and a `<code>` in the help text keeps its formatting under a filter.
+    * The sign-in screen, and a browser that had never signed in, showed the stock purple accent and font until the first login even when the site had its own defaults. The boot config now carries the site's default colour mode, accent, font and font size, so a first visit paints with them.
+    * With text branding, the browser tab icon still showed the Grav spaceman. It now shows the same initial as the sidebar chip, in white on the accent colour. A custom favicon still takes precedence.
+    * The environment chip in the top bar was hard to read in dark mode. It now uses the same size and accent tint as the active sidebar item, so it is legible in both colour modes.
+    * Dropdown lists on the Admin Settings page and the Pages toolbars now follow the admin's dark or light theme. The fix in 2.1.3 covered the lists drawn from a settings form but missed the flat ones, which on Windows and Linux could still open as white text on a white background [#168](https://github.com/getgrav/grav-plugin-admin2/issues/168)
+
 # v2.1.3
 ## 08/31/2026
 

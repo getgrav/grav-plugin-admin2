@@ -41,15 +41,27 @@ This means the PHP footprint here is small and the UI ships as a pre-built stati
 
 ## Installation
 
-Admin2 is not yet available in GPM. Install manually alongside its dependency:
+From the root of your Grav install:
 
+```bash
+bin/gpm install admin2
 ```
+
+Admin2 depends on the [API plugin](https://github.com/getgrav/grav-plugin-api), which in turn depends on Login, Form, Email and Shortcode Core. GPM resolves that whole chain and prompts once to install the dependencies, so this single command is all you need.
+
+Then open `/admin`. On a site with no user accounts yet, Admin2 walks you through creating the first administrator.
+
+Grav 2.0 core with `api` and `admin2` already bundled is also available as a download: <https://getgrav.org/download/core/grav-admin/latest>.
+
+### Manual
+
+```bash
 cd user/plugins
 git clone https://github.com/getgrav/grav-plugin-api.git api
 git clone https://github.com/getgrav/grav-plugin-admin2.git admin2
 ```
 
-Then ensure both plugins are enabled in their respective config files (or via the classic admin).
+Then enable both plugins in their config files under `user/config/plugins/`.
 
 ## Configuration
 
