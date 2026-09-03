@@ -1,3 +1,11 @@
+# v2.1.5
+## 09/03/2026
+
+1. [](#bugfix)
+    * Changing a page's template no longer leaves the editor stuck reloading until it gives up. Thanks to @Gleydar [getgrav/grav-plugin-sync#3](https://github.com/getgrav/grav-plugin-sync/issues/3)
+    * When someone else saves the page you have open, you are told about it again — the notice had never been arriving
+    * Added the label for Grav's new Progressive JPEGs setting under Media
+
 # v2.1.4
 ## 09/02/2026
 
