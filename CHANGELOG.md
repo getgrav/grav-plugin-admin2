@@ -6,6 +6,7 @@
 
 2. [](#bugfix)
     * **A hosted form's tabs no longer touch the page hash.** The tab strip read the hash to pick a tab and wrote it back on every click, which is right on the admin's own settings page and wrong inside a plugin page whose router owns that hash: clicking a tab replaced `#/section/newsletter/settings` with `#providers_tab`, and a reload landed on the plugin's front screen. Inside `<grav-blueprint-form>` the tabs now read only the `tab` attribute and the remembered tab, and write nothing
+    * **The last white edge is gone from the dropdowns on Settings, in the dark theme on Windows and Linux.** 2.1.4 coloured the rows of an open dropdown, which fixed the white-on-white text, but left a white frame, white padding and a white scrollbar around them. Those are painted from the dropdown control itself rather than from its rows, and the flat controls on Settings and the Pages toolbars had no colour of their own to give. They have one now, and so does any dropdown added later that forgets to set one
 
 # v2.1.7
 ## 09/05/2026
