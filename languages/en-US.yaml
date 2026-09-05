@@ -1639,6 +1639,8 @@ ICU:
     DATE: Date
     DATE_BASED_PUBLISHING: Date-based publishing
     DATE_BASED_PUBLISHING_HELP: Automatically (un)publish posts based on their date
+    PAGE_MEDIA_ROUTE_URLS: Page media through page route
+    PAGE_MEDIA_ROUTE_URLS_HELP: "Link a page's media by its page route instead of its path on disk, so plugins can apply the page's <code>access</code> rules to it. Required before the <code>user/pages</code> deny rule in .htaccess (or your webserver-configs equivalent) can be enabled; enabling that rule without this makes every media URL a 403. Resized images keep serving from the image cache."
     DATE_HELP: The date variable allows you to specifically set a date associated with this page.
     DEBUGGER: Debugger
     DEBUGGER_CENSORED: Censor Sensitive Data
