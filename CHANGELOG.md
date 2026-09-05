@@ -1,3 +1,9 @@
+# v2.1.7
+## 09/05/2026
+
+1. [](#new)
+    * **A plugin's settings can now be drawn on another plugin's page.** A page definition that names a `settings_page` beside its `settings_route` sends `/plugins/<slug>` and the Configure button on the Plugins list to `/plugin/<settings_page><settings_route>` instead of the plugin's own page. That is how an add-on with no admin page of its own — a payment provider, a connector — is configured inside the page of the plugin it extends, rather than off on the Plugins list on its own. Needs grav-plugin-api 1.0.26. See `docs/blueprint-form-element.md` in grav-admin-next.
+
 # v2.1.6
 ## 09/03/2026
 
