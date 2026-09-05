@@ -1,3 +1,12 @@
+# v2.1.8
+## 09/05/2026
+
+1. [](#new)
+    * **`<grav-blueprint-form>` takes a `tab` attribute.** The tab the form opens on, and switches to whenever the attribute changes: a tab's blueprint name with or without its `_tab` suffix, so `tab="sending"` opens `sending_tab`. It wins over the tab the form was last left on. It is for a host page that routes to a settings tab, such as an alert's "Set the From address" button that has to land on the tab with the From address rather than on whichever tab the form was left on
+
+2. [](#bugfix)
+    * **A hosted form's tabs no longer touch the page hash.** The tab strip read the hash to pick a tab and wrote it back on every click, which is right on the admin's own settings page and wrong inside a plugin page whose router owns that hash: clicking a tab replaced `#/section/newsletter/settings` with `#providers_tab`, and a reload landed on the plugin's front screen. Inside `<grav-blueprint-form>` the tabs now read only the `tab` attribute and the remembered tab, and write nothing
+
 # v2.1.7
 ## 09/05/2026
 
