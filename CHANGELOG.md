@@ -1,3 +1,9 @@
+# v2.1.9
+## 09/05/2026
+
+1. [](#improved)
+    * **The standing notices on Tools → Scheduler are behind a collapsible panel now.** There were up to nine of them stacked above the jobs list, and they say the same thing on every visit, so on a site whose cron has been working for a year they were four hundred pixels of things to scroll past. They are now one row — **Notices**, with a count — that opens when you want them and stays shut when you don't, remembered per browser. Nothing is dismissed and nothing is hidden: a notice that stops being true stops appearing, and while the panel is shut the row takes the colour of the most serious thing inside it, so a red count still says something needs doing
+
 # v2.1.8
 ## 09/05/2026
 
