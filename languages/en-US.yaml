@@ -34,6 +34,10 @@ ICU:
     TOGGLE_DARK_MODE: Toggle dark mode
     TOGGLE_MENU: Toggle menu
     UNSAVED_CHANGES: Unsaved changes
+    NOTICES:
+      HEADING: '{count, plural, one {Notice} other {Notices}}'
+      SHOW: Show notices
+      HIDE: Hide notices
     UNSAVED_CHANGES_DIALOG:
       LEAVE_MESSAGE: You have unsaved changes. Leave anyway?
       LEAVE: Leave
