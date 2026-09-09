@@ -2139,7 +2139,6 @@ ICU:
     HTTP_CLIENT_IP_HELP: 'Доверять заголовку запроса <code>Client-IP</code> при определении IP-адреса клиента. Редко используется; обычно устанавливается только определенными балансировщиками нагрузки. Оставьте отключенным, если вы не знаете, что ваш прокси устанавливает и перезаписывает этот заголовок.'
     HTTP_CF_CONNECTING_IP_ENABLED: 'HTTP_CF_CONNECTING_IP включен'
     HTTP_CF_CONNECTING_IP_HELP: 'Доверять заголовку запроса <code>CF-Connecting-IP</code> при определении IP-адреса клиента. Включайте только если сайт находится за Cloudflare; в противном случае клиенты могут подделать свой IP. Для полной безопасности также ограничьте доступ по источникам на диапазонах IP-адресов Cloudflare на веб-сервере.'
-    MARKDOWN_EXTRA: 'Markdown extra'
     ORDER_DIR_HELP: '"desc" или "asc" — допустимые значения'
     TWIG_3_COMPATIBILITY: 'Совместимость Twig 3'
     TWIG_3_COMPATIBILITY_HELP: 'Включить автоматические переписы для унаследованного синтаксиса Twig 1/2, который нарушает работу на Twig 3 (например <code>for ... if ...</code> guards).'
@@ -2149,7 +2148,6 @@ ICU:
     ID: ID
     PAGE_PERMISSIONS: 'Разрешения страницы'
     PAGES_CONFIGURATION: 'Конфигурация страниц'
-    ROUTE: Маршрут
     SCHEDULER_ACTIVE_TRIGGERS: 'Активные триггеры'
     SCHEDULER_ADVANCED_FEATURES: 'Дополнительные возможности'
     SCHEDULER_CONCURRENT_WORKERS: 'Параллельные рабочие процессы'
