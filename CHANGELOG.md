@@ -1,3 +1,9 @@
+# v2.1.11
+## 09/09/2026
+
+1. [](#improved)
+    * Previewing a modular child page now shows the page it lives in, with the module in place, instead of the module's template on its own. A module is only ever a section inside its parent, so previewing one directly produced a bare, doubled fragment with no theme styling. An unpublished module shows up too, and the preview header says when the URL you are looking at is the parent rather than the page being edited. Needs API plugin 1.0.29 or later. Thanks to @onetrev [#170](https://github.com/getgrav/grav-plugin-admin2/issues/170)
+
 # v2.1.10
 ## 09/08/2026
 

@@ -194,6 +194,7 @@ ICU:
         CONNECTING_TO_COLLAB: Connecting to collaboration session…
         RESET_TRANSLATION: Reset Translation
         PAGE_PREVIEW: Page Preview
+        PREVIEW_SHOWING_HOST_PAGE: shown in its parent page
         INVALID_YAML_FRONTMATTER: Invalid YAML frontmatter
         INVALID_YAML_FRONTMATTER_FIX_SYNTAX: Invalid YAML frontmatter — fix syntax before saving
         PAGE_SAVED_AND_MOVED: Page saved and moved
