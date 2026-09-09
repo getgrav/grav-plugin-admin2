@@ -900,7 +900,7 @@ ICU:
         LOADING_SCHEDULER: Loading scheduler...
         NOT_ENABLED_FOR_USER: "Not Enabled for user:"
         GRAV_SCHEDULER: Grav Scheduler
-        INFO_BANNER: The scheduler can use either system crontab or webhook triggers to execute commands. Webhooks are recommended for cloud environments. Only advanced users should configure custom jobs. Misconfiguration or abuse can lead to security vulnerabilities.
+        INFO_BANNER: The scheduler can use either system crontab or webhook triggers to execute commands. Webhooks are recommended for cloud environments.
         CRONTAB_INSTRUCTIONS: To enable the Scheduler's functionality, you must add the **Grav Scheduler** to your system's crontab file for the **{user}** user. Run the command above from the terminal to add it automatically. Once saved, refresh this page to see the status.
         WEBHOOK_ALTERNATIVE: Alternatively, install the **scheduler-webhook** plugin to use webhook-based cron firing, which is recommended for cloud environments where system crontab access is not available.
         SECURITY_WARNING: Only advanced users should configure custom scheduler jobs. Incorrect configuration can cause performance issues or security vulnerabilities.

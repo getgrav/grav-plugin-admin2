@@ -1,3 +1,9 @@
+# v2.1.10
+## 09/08/2026
+
+1. [](#improved)
+    * **The scheduler's information banner no longer repeats the security warning printed below it.** Both said that only advanced users should configure custom jobs, so the notices panel counted the same advice twice. The English wording is trimmed; other languages keep the longer sentence until they are translated again
+
 # v2.1.9
 ## 09/05/2026
 
