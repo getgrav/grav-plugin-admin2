@@ -1898,6 +1898,19 @@ ICU:
     PAGE_INHERIT_PERMISSIONS_HELP: Inherit ACL from parent page.
     PAGE_MEDIA: Page Media
     PAGE_SUMMARY: Page Summary
+    MARKDOWN_OUTPUT: Markdown Output
+    MARKDOWN_OUTPUT_ENABLED: Serve Pages as Markdown
+    MARKDOWN_OUTPUT_ENABLED_HELP: Any page can be fetched as Markdown by adding `.md` to its URL, or by sending an `Accept:&nbsp;text/markdown` request header. Built for AI agents and other text clients, and the output is the rendered page converted back to Markdown, so shortcodes, modules and resolved links all come through.
+    MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter Block
+    MARKDOWN_OUTPUT_FRONTMATTER_HELP: Start the Markdown with a YAML block holding the title, URL, date, description and taxonomy.
+    MARKDOWN_OUTPUT_LINKS: Navigation Links
+    MARKDOWN_OUTPUT_LINKS_HELP: End the Markdown with links to the parent, neighbouring and child pages, so an agent can walk the site without leaving Markdown.
+    MARKDOWN_OUTPUT_MAX_LINKS: Most Child Links
+    MARKDOWN_OUTPUT_MAX_LINKS_HELP: The most child pages listed in the navigation section. Zero lists them all.
+    MARKDOWN_OUTPUT_ABSOLUTE_URLS: Absolute URLs
+    MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: Turn root-relative links and images into full URLs, so they still work once the Markdown has left the site.
+    MARKDOWN_OUTPUT_TOKEN_HEADER: Token Count Header
+    MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: Send an `X-Markdown-Tokens` response header with an estimated token count, the same header Cloudflare's Markdown for Agents uses.
     PAGE_TYPES: Page Types
     PAGE_TYPES_HELP: Determines the page types that Grav supports and the order determines which type to fall back to if the request is ambiguous
     PAGE_VISIBILITY_REQUIRES_ACCESS: Menu Visibility Requires Access
