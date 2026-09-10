@@ -4,6 +4,13 @@
 1. [](#new)
     * Labels for the new **Flex Render Hints** debugger setting that arrives with Grav 2.1.0
 
+1. [](#bugfix)
+    * The Install Plugin and Install Theme pickers show what went wrong, with a Retry button, when the server's reply can't be read, instead of spinning forever. The browser console logs the start and end of the reply, so stray output from PHP is easy to find. Thanks to @sandymac [#173](https://github.com/getgrav/grav-plugin-admin2/issues/173)
+    * Configuration pages say a request failed, with a Retry button, instead of claiming there is no configuration to show
+    * A user group without a display name shows up under its own name in a user's Groups field, instead of as a blank entry that can't be picked. Thanks to @Keyskeeper [#172](https://github.com/getgrav/grav-plugin-admin2/issues/172)
+    * A lost connection is reported as a network error again, instead of as an error nothing could read
+    * The Clear button in the Twig-in-Content report only shows for accounts that can change system settings, the permission API plugin 1.0.30 now asks for [getgrav/grav-plugin-api#35](https://github.com/getgrav/grav-plugin-api/issues/35)
+
 # v2.1.11
 ## 09/09/2026
 

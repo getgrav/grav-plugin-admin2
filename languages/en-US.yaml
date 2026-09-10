@@ -27,6 +27,7 @@ ICU:
     EDIT: Edit
     LOADING: Loading...
     NO_CHANGES: No changes to save
+    RETRY: Retry
     SAVE: Save
     SAVING: Saving...
     SEARCH: Search
@@ -407,6 +408,11 @@ ICU:
       FAILED_TO_LOAD_AVAILABLE_THEMES_FROM_GPM: Failed to load available themes from GPM
       ADD_THEME: Add Theme
       SELECT_A_THEME_TO_VIEW_DETAILS: Select a theme to view details
+    API_CLIENT:
+      INVALID_JSON_TITLE: Unexpected response from the server
+      INVALID_JSON_DETAIL: "The server's reply could not be read because it is not valid JSON. Something on the server may be printing extra output, such as a PHP warning, alongside the API response. The browser console has the details."
+      UNEXPECTED_RESPONSE_TITLE: Unexpected response from the server
+      UNEXPECTED_RESPONSE_DETAIL: The server replied with data in a format this screen does not expect. The browser console has the details.
     API_KEYS_FIELD:
       REVOKE_KEY: Revoke key
       E_G_MY_CLI_TOOL: e.g. My CLI Tool
@@ -974,6 +980,8 @@ ICU:
       TITLE: Configuration
       TITLE_SCROLLED: "Configuration: {scope}"
       LOADING_CONFIGURATION: Loading configuration...
+      FAILED_TO_LOAD_CONFIGURATION: Failed to load configuration.
+      SCOPE_NOT_FOUND: No configuration scope named {scope} was found.
       TWIG_PROFILE:
         LABEL: Twig in Content
         HELP: Choose who can run Twig inside page content. This sets the advanced toggles below.
