@@ -1,3 +1,9 @@
+# v2.1.12
+## 09/10/2026
+
+1. [](#new)
+    * Labels for the new **Flex Render Hints** debugger setting that arrives with Grav 2.1.0
+
 # v2.1.11
 ## 09/09/2026
 

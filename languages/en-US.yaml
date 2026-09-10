@@ -1650,6 +1650,8 @@ ICU:
     DEBUGGER_CENSORED_HELP: "Clockwork Provider ONLY: If Yes, censor potentially sensitive information (POST parameters, cookies, files, configuration and most array/object data in log messages)"
     DEBUGGER_CLOCKWORK: Clockwork Browser Extension
     DEBUGGER_DEBUGBAR: PHP Debug Bar
+    DEBUGGER_FLEX_RENDER_HINTS: Flex Render Hints
+    DEBUGGER_FLEX_RENDER_HINTS_HELP: Wrap every rendered Flex object and collection in an HTML comment naming it, so the source of a block can be found in the page markup. Only applies to HTML pages
     DEBUGGER_HELP: Enable Grav debugger and following settings
     DEBUGGER_PROVIDER: Debugger Provider
     DEBUGGER_PROVIDER_HELP: Default is PHP Debug Bar, but Clockwork browser extension provides for a less intrusive approach
