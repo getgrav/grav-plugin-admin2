@@ -1901,6 +1901,10 @@ ICU:
     MARKDOWN_OUTPUT: Markdown Output
     MARKDOWN_OUTPUT_ENABLED: Serve Pages as Markdown
     MARKDOWN_OUTPUT_ENABLED_HELP: Any page can be fetched as Markdown by adding `.md` to its URL, or by sending an `Accept:&nbsp;text/markdown` request header. Built for AI agents and other text clients, and the output is the rendered page converted back to Markdown, so shortcodes, modules and resolved links all come through.
+    MARKDOWN_OUTPUT_SOURCE: Markdown Source
+    MARKDOWN_OUTPUT_SOURCE_HELP: What gets converted. **Rendered page** takes the main content region of the page as the theme renders it, so listings, shops and other template-driven pages read as they display. **Page content** converts only the page's own content and modules, which is cleaner and can be cached, but misses anything the template adds.
+    MARKDOWN_OUTPUT_SOURCE_PAGE: Rendered page
+    MARKDOWN_OUTPUT_SOURCE_CONTENT: Page content only
     MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter Block
     MARKDOWN_OUTPUT_FRONTMATTER_HELP: Start the Markdown with a YAML block holding the title, URL, date, description and taxonomy.
     MARKDOWN_OUTPUT_LINKS: Navigation Links
