@@ -2211,6 +2211,17 @@ ICU:
     TWIG_CONTENT_EDITOR_ENABLED_HELP: "When off (default), the Twig checkbox in the page editor's Advanced tab is only visible to users granted the <code>admin.pages_twig</code> permission, and pages that already have Twig enabled can only be edited by those users. When on, anyone with page-edit access can toggle Twig on individual pages."
     TWIG_CONTENT_CONFIG_ACCESS: Allow config variable access in Twig
     TWIG_CONTENT_CONFIG_ACCESS_HELP: "Whether the <code>config</code> Twig variable is readable from page content. When off (default), reading <code>config.system.title</code> from a page returns nothing. When on, <code>config</code> is exposed but still filtered by <code>config_denied_paths</code> (see Twig Sandbox below) so credentials and other sensitive subtrees stay hidden."
+    GRAV_UPGRADE:
+      CONFIRM_TITLE: "Upgrade Grav core?"
+      CONFIRM_MESSAGE: "This will upgrade Grav from v{current} to v{target}. The site may be briefly unavailable during the upgrade."
+      UPGRADING: "Upgrading Grav to v{version}…"
+      FAILED: "Grav upgrade failed: {detail}"
+      NO_DETAIL: "the server gave no reason"
+      PREFLIGHT_TITLE: "Grav can't upgrade to v{version} yet"
+      PREFLIGHT_MESSAGE: "The checks that run before an upgrade stopped it for these reasons. Fix them and try again, or upgrade anyway if you know these plugins and themes work with the new version."
+      INCOMPATIBLE_PACKAGE: "{name} {version} is marked compatible with Grav {compatible}"
+      UPGRADE_ANYWAY: "Upgrade anyway"
+      STILL_BLOCKED: "Grav upgrade is still blocked: {detail}"
     TOASTS:
       CONFIG_SAVED: "{name} configuration saved"
       CONFIG_MODIFIED_ELSEWHERE: Configuration was modified elsewhere — reload to see latest
