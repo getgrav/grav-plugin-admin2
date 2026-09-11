@@ -1,3 +1,9 @@
+# v2.1.14
+## 09/11/2026
+
+1. [](#improved)
+    * When the checks that run before a Grav upgrade stop it, the dashboard now lists the reasons and the plugins and themes involved, with an option to upgrade anyway, instead of a bare "Grav upgrade failed" [getgrav/grav#4299](https://github.com/getgrav/grav/issues/4299)
+
 # v2.1.13
 ## 09/11/2026
 
