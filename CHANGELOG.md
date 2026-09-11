@@ -10,6 +10,7 @@
     * A user group without a display name shows up under its own name in a user's Groups field, instead of as a blank entry that can't be picked. Thanks to @Keyskeeper [#172](https://github.com/getgrav/grav-plugin-admin2/issues/172)
     * A lost connection is reported as a network error again, instead of as an error nothing could read
     * The Clear button in the Twig-in-Content report only shows for accounts that can change system settings, the permission API plugin 1.0.30 now asks for [getgrav/grav-plugin-api#35](https://github.com/getgrav/grav-plugin-api/issues/35)
+    * Saving a page field that sits inside a list in the page's frontmatter, such as `header.paneles.0.kicker`, no longer replaces the whole list with that one entry. The other entries were deleted from the page. Thanks to @gioxxr [#174](https://github.com/getgrav/grav-plugin-admin2/issues/174)
 
 # v2.1.11
 ## 09/09/2026
