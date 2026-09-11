@@ -1,3 +1,9 @@
+# v2.1.13
+## 09/11/2026
+
+1. [](#bugfix)
+    * On a new site with no accounts yet, coming back to the admin before creating the first one shows the account setup screen again, instead of a sign-in form nobody can use. It only affected sites installed at the root of their domain
+
 # v2.1.12
 ## 09/10/2026
 
