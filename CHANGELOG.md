@@ -1,3 +1,9 @@
+# v2.1.15
+## 09/12/2026
+
+1. [](#bugfix)
+    * The session-expired prompt no longer interrupts a session that is still valid. Returning to an admin tab left open in the background, or working with several admin tabs at once, could ask for a password that reloading the page proved was never needed
+
 # v2.1.14
 ## 09/11/2026
 
