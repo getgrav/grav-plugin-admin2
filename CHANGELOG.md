@@ -1,3 +1,9 @@
+# v2.1.17
+## 09/14/2026
+
+1. [](#bugfix)
+    * The Info and Plugins pages no longer go blank on a site that has a plugin or theme whose `blueprints.yaml` gives its version as a plain number, such as `version: 1.0`.
+
 # v2.1.16
 ## 09/13/2026
 
