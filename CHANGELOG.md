@@ -1,3 +1,12 @@
+# v2.1.17
+## 09/14/2026
+
+1. [](#new)
+    * **Two promo banners can share a row on the dashboard.** A `promo` notification in the getgrav.org feed may now carry a `layout`: consecutive `half` promos sit side by side with a gap, and consecutive `joined` promos form one banner divided by a hairline, which is how Grav Premium and KahunaCart share the Notifications widget. Both stack back to one column when the widget is narrow. The widget also reads a second feed location, `dashboard-row`, after `dashboard`, so the second half of a banner can be published without older admins, which read `dashboard` alone, stacking two banners. A promo can also ask for its logo to be drawn taller than the 28px default with `image_height`, 20 to 48 pixels, so a tall mark sits level with a wide one. A promo without a layout is a banner of its own as before
+
+1. [](#bugfix)
+    * The Info and Plugins pages no longer go blank on a site that has a plugin or theme whose `blueprints.yaml` gives its version as a plain number, such as `version: 1.0`.
+
 # v2.1.16
 ## 09/13/2026
 
