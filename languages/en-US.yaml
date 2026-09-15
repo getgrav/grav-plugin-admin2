@@ -578,6 +578,15 @@ ICU:
     FLOATING_WIDGET_LOADER:
       CLOSE_WIDGETS_MENU: Close widgets menu
     MEDIA:
+      FILE_DETAILS:
+        TITLE: File details
+        PATH: Path
+        TYPE: Type
+        SIZE: Size
+        URL: URL
+        MEDIA_PATH: Media path
+        MARKDOWN: Markdown
+        OPEN: Open
       MEDIA_INSPECTOR:
         PREVIOUS_FILE: Previous file
         NEXT_FILE: Next file

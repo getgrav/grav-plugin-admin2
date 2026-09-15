@@ -1,3 +1,9 @@
+# v2.1.18
+## 09/14/2026
+
+1. [](#new)
+    * The metadata dialog in a page's Media panel now shows the same file details as the Media manager's side panel: a preview, the path, type, size, dimensions and last-modified date, and copyable rows for the file's URL and markdown snippet. It also opens for accounts without media write access, which can read the details but not change them.
+
 # v2.1.17
 ## 09/14/2026
 
