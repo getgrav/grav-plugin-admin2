@@ -140,6 +140,12 @@ ICU:
       DRAFT: Draft
       PUBLISH: Publish
       UNPUBLISH: Unpublish
+      STATUS:
+        SCHEDULED: Scheduled
+        EXPIRED: Expired
+        SCHEDULED_FOR: 'Scheduled to publish on {date}'
+        EXPIRED_ON: 'Unpublished since {date}'
+        TOGGLE_TITLE: '{action} ({status})'
       SORT_ORDER: Order
       SORT_TITLE_AZ: Title A-Z
       SORT_TITLE_ZA: Title Z-A
@@ -233,6 +239,7 @@ ICU:
         ROOT: <root> /
         PAGE_TEMPLATE: Page Template
         LOADING_TEMPLATES: Loading templates...
+        CHILD_TYPE_HINT: 'The parent page suggests "{template}" for its children. You can still choose a different template.'
         STATUS_HELP: Drafts are saved but not visible on the site until you publish them
         VISIBLE: Visible
         CONTROLS_WHETHER_THIS_PAGE_APPEARS_IN: Controls whether this page appears in navigation menus

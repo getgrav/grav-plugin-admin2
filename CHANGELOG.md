@@ -6,6 +6,11 @@
 
 1. [](#improved)
     * Thumbnails in a page's Media panel no longer grow with the panel. The grid was three columns wide whatever the space, so a few files on a wide screen became huge tiles; it now adds columns instead, and a tile stops at 176px.
+    * The page list now tells apart four publication states instead of two: published, draft, scheduled and expired. Each has its own icon as well as its own colour, so they stay readable in greyscale and for colourblind readers, and hovering a scheduled or expired page names the date it is waiting on. Requires the API plugin 1.0.35 or later; against an older API the list reads published and draft as before. [getgrav/grav-plugin-admin#2523](https://github.com/getgrav/grav-plugin-admin/issues/2523)
+    * The tree, list and column views of the page list now share one status marker, so all three read the same and the labels are translatable.
+
+1. [](#bugfix)
+    * Adding a page under a parent that declares a `child_type` now preselects that template, the way the old admin did. A blog built on Quark, whose `blog` template asks for `item` children, created plain default pages instead. The template is only preselected, not locked, so a different one can still be chosen, and a `?template=` link still wins. Thanks to @onetrev [getgrav/grav-plugin-admin2#175](https://github.com/getgrav/grav-plugin-admin2/issues/175)
 
 # v2.1.17
 ## 09/14/2026
