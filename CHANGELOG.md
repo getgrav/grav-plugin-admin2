@@ -2,7 +2,10 @@
 ## 09/14/2026
 
 1. [](#new)
-    * The metadata dialog in a page's Media panel now shows the same file details as the Media manager's side panel: a preview, the path, type, size, dimensions and last-modified date, and copyable rows for the file's URL and markdown snippet. It also opens for accounts without media write access, which can read the details but not change them.
+    * The metadata dialog in a page's Media panel now shows the same file details as the Media manager's side panel: a preview, the path, type, size, dimensions and last-modified date, and copyable rows for the file's URL and markdown snippet. The details sit beside the metadata fields where the screen is wide enough, and stack on a narrow one. It also opens for accounts without media write access, which can read the details but not change them.
+
+1. [](#improved)
+    * Thumbnails in a page's Media panel no longer grow with the panel. The grid was three columns wide whatever the space, so a few files on a wide screen became huge tiles; it now adds columns instead, and a tile stops at 176px.
 
 # v2.1.17
 ## 09/14/2026
