@@ -1,3 +1,9 @@
+# v2.1.19
+## 09/15/2026
+
+1. [](#bugfix)
+    * A page's template name no longer wraps onto two or three lines in the page list and tree views. The column it sits in was fixed at a width narrower than most template names, so anything longer than about twelve characters broke across lines and could run under the status marker beside it, while the space it needed sat empty next to the title. The column is now wide enough for a normal template name, and an unusually long one is shortened with an ellipsis rather than wrapped.
+
 # v2.1.18
 ## 09/15/2026
 
