@@ -1,3 +1,19 @@
+# v2.1.18
+## 09/15/2026
+
+1. [](#new)
+    * The metadata dialog in a page's Media panel now shows the same file details as the Media manager's side panel: a preview, the path, type, size, dimensions and last-modified date, and copyable rows for the file's URL and markdown snippet. The details sit beside the metadata fields where the screen is wide enough, and stack on a narrow one. It also opens for accounts without media write access, which can read the details but not change them.
+
+1. [](#improved)
+    * **Oversized images are shrunk before they are uploaded again.** The old admin has always been able to cap uploaded images to a maximum size and refuse ones outside a resolution range, set under Configuration, and those settings were being ignored here. They now work the same way on every upload in the new admin: page media, the Media manager and file fields in a form [getgrav/grav-plugin-api#41](https://github.com/getgrav/grav-plugin-api/issues/41)
+    * **The Pages screen opens in Columns by default.** That was the default in Grav 1.7 and it suits how most sites are organised better than the tree does. Anyone who has already chosen a view keeps it.
+    * Thumbnails in a page's Media panel no longer grow with the panel. The grid was three columns wide whatever the space, so a few files on a wide screen became huge tiles; it now adds columns instead, and a tile stops at 176px.
+    * The page list now tells apart four publication states instead of two: published, draft, scheduled and expired. Each has its own icon as well as its own colour, so they stay readable in greyscale and for colourblind readers, and hovering a scheduled or expired page names the date it is waiting on. Requires the API plugin 1.0.35 or later; against an older API the list reads published and draft as before. [getgrav/grav-plugin-admin#2523](https://github.com/getgrav/grav-plugin-admin/issues/2523)
+    * The tree, list and column views of the page list now share one status marker, so all three read the same and the labels are translatable.
+
+1. [](#bugfix)
+    * Adding a page under a parent that declares a `child_type` now preselects that template, the way the old admin did. A blog built on Quark, whose `blog` template asks for `item` children, created plain default pages instead. The template is only preselected, not locked, so a different one can still be chosen, and a `?template=` link still wins. Thanks to @onetrev [getgrav/grav-plugin-admin2#175](https://github.com/getgrav/grav-plugin-admin2/issues/175)
+
 # v2.1.17
 ## 09/14/2026
 
