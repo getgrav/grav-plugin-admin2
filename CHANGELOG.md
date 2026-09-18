@@ -5,6 +5,7 @@
     * The dashboard now reports exposed file types in data, backup and temporary directories, using the expanded API exposure probe. HTTP errors and unrelated response pages are treated as inconclusive instead of evidence that access is blocked. Requires API 1.0.36 for the additional probes. [getgrav/grav#4316](https://github.com/getgrav/grav/issues/4316)
     * **The dashboard's Refresh button now re-runs that check.** It only ran when the dashboard was first opened, so after fixing your server's access rules the warning stayed on screen until a full page reload — which reads as the fix not having worked. Refresh now re-checks; the background refresh that runs every minute deliberately does not, so the site isn't probed on a timer.
     * A page's template name no longer wraps onto two or three lines in the page list and tree views. The column it sits in was fixed at a width narrower than most template names, so anything longer than about twelve characters broke across lines and could run under the status marker beside it, while the space it needed sat empty next to the title. The column is now wide enough for a normal template name, and an unusually long one is shortened with an ellipsis rather than wrapped.
+    * Admin2 now loads its scripts and styles from wherever Grav finds the plugin, so it works when the user folder or plugins live outside the default `user/plugins` location, such as in multisite setups.
 
 # v2.1.18
 ## 09/15/2026
