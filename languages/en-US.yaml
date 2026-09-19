@@ -54,6 +54,16 @@ ICU:
       USER_FOLDER_EXPOSED_BODY: 'Your web server is not applying Grav''s recommended access rules, so files in user/ can be reached directly over the web. It is worth tightening up, since some plugins do store data here.'
       STORAGE_EXPOSED_BODY: 'The web server served test files from directories that should be private. The file types listed below may expose stored submissions, backups or temporary files. Ask your host to block direct access, or move private storage outside the web root.'
       USER_FOLDER_EXPOSED_LEARN_MORE: How to fix this
+      STORAGE_EXPOSED_TITLE: 'Files that should be private can be downloaded from this site'
+      STORAGE_EXPOSED_COUNT: '{n, plural, one {# file type} other {# file types}}'
+      STORAGE_EXPOSED_TMP: 'Test files in tmp/ could be downloaded, while the other folders were blocked. Your server rules probably date from before Grav 2.1.7, which added tmp/ to the list of blocked folders. Add tmp to that list in your .htaccess, or in your nginx, Caddy or IIS configuration, to match the rules Grav ships.'
+      STORAGE_EXPOSED_BY_TYPE: 'Some file types were blocked in these folders while others could be downloaded. That usually means something in front of Grav''s rules, such as nginx serving static files ahead of Apache, answers for common file types like .zip before the rules are checked. Block these folders in that layer''s configuration as well.'
+      STORAGE_EXPOSED_ALL: 'Every test file could be downloaded, so your web server is not applying Grav''s access rules at all. On Apache, check that AllowOverride lets the site''s .htaccess take effect. On nginx, Caddy or IIS, add the security rules from Grav''s webserver-configs folder.'
+      STORAGE_EXPOSED_CDN: 'If the site is behind a CDN such as Cloudflare, purge its cache after fixing this. Copies it already stored stay downloadable until you do.'
+      COLLAPSE: Collapse
+      SHOW_DETAILS: Show details
+      SNOOZE: Snooze
+      SNOOZE_HINT: 'Hide this warning for 24 hours. It comes back sooner if different files are found.'
     DASHBOARD:
       TITLE: Dashboard
       CUSTOMIZE: Customize
