@@ -52,6 +52,7 @@ ICU:
     SECURITY_CHECK:
       USER_FOLDER_EXPOSED_TITLE: 'Your web server is not applying Grav''s access rules'
       USER_FOLDER_EXPOSED_BODY: 'Your web server is not applying Grav''s recommended access rules, so files in user/ can be reached directly over the web. It is worth tightening up, since some plugins do store data here.'
+      STORAGE_EXPOSED_BODY: 'The web server served test files from directories that should be private. The file types listed below may expose stored submissions, backups or temporary files. Ask your host to block direct access, or move private storage outside the web root.'
       USER_FOLDER_EXPOSED_LEARN_MORE: How to fix this
     DASHBOARD:
       TITLE: Dashboard

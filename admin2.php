@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Grav\Plugin;
 
 use Grav\Common\Plugin;
+use Grav\Common\Utils;
 use Grav\Events\PermissionsRegisterEvent;
 use Grav\Framework\Acl\PermissionsReader;
 
@@ -280,7 +281,8 @@ class Admin2Plugin extends Plugin
         // not from a config knob: if a host relocates plugins (e.g. via a
         // custom stream override) the URL stays consistent with the files
         // Apache will actually be serving.
-        $this->assetsPath = $rootPath . '/user/plugins/' . $this->name . '/app';
+        $this->assetsPath = Utils::url('plugins://' . $this->name . '/app')
+            ?: $rootPath . '/user/plugins/' . $this->name . '/app';
 
         // Grav core strips known "page" extensions (html, json, xml, rss…)
         // from $uri->route(), per system.pages.types. Reattach the
