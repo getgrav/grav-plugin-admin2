@@ -1,3 +1,9 @@
+# v2.1.20
+## 09/18/2026
+
+1. [](#bugfix)
+    * The dashboard's storage check now bypasses CDN caches such as Cloudflare. It could keep reporting exposed files after the server was fixed, because the CDN was still answering with a copy cached before the change.
+
 # v2.1.19
 ## 09/18/2026
 
