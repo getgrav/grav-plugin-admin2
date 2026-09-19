@@ -1,3 +1,13 @@
+# v2.1.20
+## 09/18/2026
+
+1. [](#new)
+    * The storage warning can now be collapsed to a single line while you work, or snoozed for 24 hours. Either comes back in full if a different set of files is found.
+
+1. [](#bugfix)
+    * The dashboard's storage check now bypasses CDN caches such as Cloudflare. It could keep reporting exposed files after the server was fixed, because the CDN was still answering with a copy cached before the change.
+    * The storage warning now explains the likely cause from which files could be downloaded: server rules from before `tmp/` was blocked, a static-file layer such as nginx serving some file types ahead of Grav's rules, or rules not applied at all. It also reminds you to purge a CDN's cache after fixing, and checks `.json` files too with API 1.0.37.
+
 # v2.1.19
 ## 09/18/2026
 
