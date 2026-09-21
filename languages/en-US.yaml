@@ -1176,6 +1176,10 @@ ICU:
       LIGHT_MODE_LOGO: Light Mode Logo
       USED_ON_LIGHT_BACKGROUNDS: Used on light backgrounds
       DARK_MODE_LOGO: Dark Mode Logo
+      SIDEBAR_LOGO_HEIGHT: Sidebar Logo Height
+      SIDEBAR_LOGO_HEIGHT_DESC: How tall your logo appears at the top of the sidebar.
+      LOGO_HEIGHT_DEFAULT: Default
+      LOGO_HEIGHT_CUSTOM: Custom
       USED_ON_DARK_BACKGROUNDS: Used on dark backgrounds
       APPEARANCE: Appearance
       CUSTOMIZE_THE_LOOK_AND_FEEL_OF_THE_ADMIN: Customize the look and feel of the admin

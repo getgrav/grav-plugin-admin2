@@ -1,3 +1,13 @@
+# v2.1.21
+## 09/21/2026
+
+1. [](#new)
+    * A custom logo can now be made taller in the sidebar. Choose **Custom** under **Settings → Branding → Sidebar Logo Height** and drag the slider.
+1. [](#bugfix)
+    * On a brand-new site, opening the admin no longer flashes the sign-in form with placeholder labels such as "Subtitle" before the account setup screen appears. The sign-in and setup screens now wait until they know which one to show and have their text loaded.
+    * The environment switcher now only shows the delete button to super admins, the only accounts the API lets delete an environment.
+    * File fields now tell the API which field an upload or delete belongs to, so a field that allows `.css` or `.md` files with `allow_extensions` in its blueprint works again (requires API 1.0.38).
+
 # v2.1.20
 ## 09/18/2026
 
