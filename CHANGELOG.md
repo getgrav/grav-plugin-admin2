@@ -1,3 +1,11 @@
+# v2.1.22
+## 09/22/2026
+
+1. [](#bugfix)
+    * The media manager now loads every file in a folder, instead of stopping at the first 200. Sorting, searching and reordering now cover the whole folder rather than just the files that happened to load. [getgrav/grav-plugin-admin2#178](https://github.com/getgrav/grav-plugin-admin2/issues/178)
+    * The media picker in a form field now lists every file in a folder too, so a picture further down a large folder can be chosen. [getgrav/grav-plugin-admin2#178](https://github.com/getgrav/grav-plugin-admin2/issues/178)
+    * Opening the admin with an extra slash in the address, such as `//admin`, no longer loads forever. The browser is now sent to the correct address. [getgrav/grav-plugin-admin2#177](https://github.com/getgrav/grav-plugin-admin2/issues/177)
+
 # v2.1.21
 ## 09/21/2026
 
