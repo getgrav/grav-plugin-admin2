@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Grav\Plugin;
 
 use Grav\Common\Plugin;
+use Grav\Common\Uri;
 use Grav\Common\Utils;
 use Grav\Events\PermissionsRegisterEvent;
 use Grav\Framework\Acl\PermissionsReader;
@@ -351,6 +352,16 @@ class Admin2Plugin extends Plugin
 
         if (!$this->isAdmin2Route) {
             return;
+        }
+
+        // Core collapses doubled slashes when it matches the route, so `//admin`
+        // lands here too, but the browser keeps the raw path. The SPA router then
+        // sees a path outside its base and reloads the page forever (#177). Send
+        // the browser to the clean URL instead.
+        $requested = (string) $this->grav['uri']->uri(false);
+        [$path, $query] = array_pad(explode('?', $requested, 2), 2, null);
+        if (str_contains($path, '//')) {
+            $this->grav->redirect(Uri::cleanPath($path) . ($query !== null ? '?' . $query : ''));
         }
 
         $this->enable([
