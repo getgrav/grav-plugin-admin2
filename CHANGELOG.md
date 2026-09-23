@@ -1,3 +1,38 @@
+# v2.1.23
+## 09/22/2026
+
+1. [](#improved)
+    * The system configuration has a new toggle for fast frontmatter parsing, with help text that explains what it changes.
+    * The admin now downloads much less code when it first opens, because the form fields, editors and uploader load only when a screen needs them.
+    * The icon search list used by the icon picker no longer loads on every screen, only when a picker is opened.
+    * Icons that plugins add to the dashboard banner and page panels now load one small group at a time instead of the whole icon set.
+    * The admin's translations are now checked against the server on each visit and only downloaded again when they have changed (requires the matching API update).
+    * The admin no longer waits for your preferences to load before fetching its translations, and no longer fetches them more than once after signing in.
+    * Saving a page, including autosave, no longer refreshes the sidebar counts, which are now only refreshed when something is added, removed, moved or copied.
+    * Saving a page no longer makes the page tree and page lists reload twice.
+    * Page searches now show the first 100 matches with a **Show more** button for the rest.
+    * The Columns view's "no matches" and "empty" labels can now be translated, and the no-match message already shows in every language the admin ships with.
+    * An open dashboard now checks the server for new notifications once a minute instead of reloading every widget, and refreshes the other widgets only when something they show has changed or when you press Refresh.
+    * The dashboard, the sidebar counts and the pages list now share one request for site statistics instead of each asking for them.
+    * The storage exposure check now runs once per browser session, or when you press Refresh on the dashboard, so it no longer fills the browser console with blocked requests on every visit.
+    * The admin font is now split by alphabet, so the browser downloads about 66 KB for English and other Latin-script languages instead of 1.4 MB.
+    * Your preferences are now checked every two minutes instead of every 30 seconds, are applied only when they have actually changed, and open tabs in the same browser share one check.
+    * A page being edited in a background tab no longer checks for other people's changes every few seconds. It keeps its place in the editing session and catches up as soon as you return.
+    * Page blueprints, page types and field options are now reused for a short time instead of being downloaded again on every visit to the editor, and several fields asking for the same list at once now share one request.
+    * The page tree, list, columns, search results and page pickers now load a lighter version of each page (requires the matching API update).
+    * The page navigator now asks the server only for the pages next to the one being edited instead of loading the whole folder (requires the matching API update; older versions keep working as before).
+    * The admin now starts with a single request for your preferences, profile, menus, plugin panels and languages instead of eight separate ones, and skips downloading its translations when the ones it already has are current (requires the matching API update; older versions keep working as before).
+    * Large forms such as the page editor and system configuration now build each tab the first time you open it instead of building every tab up front.
+    * The pages list now keeps only the rows near what you are looking at on screen, so scrolling through thousands of pages stays smooth.
+    * Opening a page, or moving to another page in the editor, now loads its media list once instead of twice.
+    * The check for a newer version of the admin now pauses while the tab is in the background.
+    * A page being edited in a background tab now times its "still here" signal from the collaboration plugin's own settings.
+1. [](#bugfix)
+    * Searching in the Columns view now finds pages across the whole site. It only looked at the first 500 pages and could show results from before an edit.
+    * Typing quickly in a page search no longer lets the results of an earlier search replace the results of the latest one.
+    * The sidebar keeps the last known update counts when the server cannot tell whether updates are available, instead of dropping them.
+    * Saving a form with a missing required field now switches to the tab that holds the field, so the message about it is visible.
+
 # v2.1.22
 ## 09/22/2026
 
