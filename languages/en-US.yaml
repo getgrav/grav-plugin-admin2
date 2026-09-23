@@ -1788,6 +1788,8 @@ ICU:
     FORMAT_HELP: short = use the first occurrence of delimiter or size; long = summary delimiter will be ignored
     FRONTMATTER_IGNORE_FIELDS: Ignore frontmatter fields
     FRONTMATTER_IGNORE_FIELDS_HELP: Certain frontmatter fields may contain Twig but should not be processed, such as 'forms'
+    FRONTMATTER_NATIVE_YAML: Fast frontmatter parsing
+    FRONTMATTER_NATIVE_YAML_HELP: Read page frontmatter with the libyaml PHP extension when it is installed, which makes rebuilding the pages cache faster. It reads a few values differently, so check your pages first. An unquoted date stays text instead of becoming a timestamp, and unquoted yes, no, on and off become true or false.
     FRONTMATTER_PROCESS_TWIG: Process frontmatter Twig
     FRONTMATTER_PROCESS_TWIG_HELP: When enabled you can use Twig config variables in page front matter
     FULL_NAME: Full name
