@@ -1790,6 +1790,12 @@ ICU:
     FRONTMATTER_IGNORE_FIELDS_HELP: Certain frontmatter fields may contain Twig but should not be processed, such as 'forms'
     FRONTMATTER_NATIVE_YAML: Fast frontmatter parsing
     FRONTMATTER_NATIVE_YAML_HELP: Read page frontmatter with the libyaml PHP extension when it is installed, which makes rebuilding the pages cache faster. It reads a few values differently, so check your pages first. An unquoted date stays text instead of becoming a timestamp, and unquoted yes, no, on and off become true or false.
+    PAGES_LAZY_INDEX: Lazy page index
+    PAGES_LAZY_INDEX_HELP: Load pages, routes and taxonomy on demand from a per-page SQLite index instead of one large cache file. Auto uses it on sites with 1,000 pages or more. Falls back to the classic cache when no database engine is available.
+    SESSION_LAZY: Start sessions only when needed
+    SESSION_LAZY_HELP: Visitors without a session cookie get a session only when something is stored in it, such as a login, a form or a message, so anonymous page views can be cached by a proxy or CDN. Plugins that store data on every page view still start one.
+    CACHE_MODULES: Cache module output
+    CACHE_MODULES_HELP: Cache the rendered output of this page's modules. Use it only when the modules show the same content to every visitor. Modules with their own Twig or a form, logged-in visitors and form submissions are always rendered fresh. Editing only a partial template needs a cache clear.
     FRONTMATTER_PROCESS_TWIG: Process frontmatter Twig
     FRONTMATTER_PROCESS_TWIG_HELP: When enabled you can use Twig config variables in page front matter
     FULL_NAME: Full name

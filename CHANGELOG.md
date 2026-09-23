@@ -21,10 +21,17 @@
     * Page blueprints, page types and field options are now reused for a short time instead of being downloaded again on every visit to the editor, and several fields asking for the same list at once now share one request.
     * The page tree, list, columns, search results and page pickers now load a lighter version of each page (requires the matching API update).
     * The page navigator now asks the server only for the pages next to the one being edited instead of loading the whole folder (requires the matching API update; older versions keep working as before).
+    * The admin now starts with a single request for your preferences, profile, menus, plugin panels and languages instead of eight separate ones, and skips downloading its translations when the ones it already has are current (requires the matching API update; older versions keep working as before).
+    * Large forms such as the page editor and system configuration now build each tab the first time you open it instead of building every tab up front.
+    * The pages list now keeps only the rows near what you are looking at on screen, so scrolling through thousands of pages stays smooth.
+    * Opening a page, or moving to another page in the editor, now loads its media list once instead of twice.
+    * The check for a newer version of the admin now pauses while the tab is in the background.
+    * A page being edited in a background tab now times its "still here" signal from the collaboration plugin's own settings.
 1. [](#bugfix)
     * Searching in the Columns view now finds pages across the whole site. It only looked at the first 500 pages and could show results from before an edit.
     * Typing quickly in a page search no longer lets the results of an earlier search replace the results of the latest one.
     * The sidebar keeps the last known update counts when the server cannot tell whether updates are available, instead of dropping them.
+    * Saving a form with a missing required field now switches to the tab that holds the field, so the message about it is visible.
 
 # v2.1.22
 ## 09/22/2026
