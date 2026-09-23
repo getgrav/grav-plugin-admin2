@@ -142,6 +142,10 @@ ICU:
       REORDER_LOADING: Still loading the full list — try again in a moment.
       REORDER_LOADING_ALL: Loading every chunk so reorder can affect the whole list…
       NO_MATCH: No pages match your search
+      SEARCH_MATCH_COUNT: '{n, plural, one {# match} other {# matches}} across all pages'
+      SEARCH_SHOWING: Showing {shown} of {total} matches
+      SEARCH_SHOW_MORE: Show more
+      COLUMN_EMPTY: Empty
       HEADER_TITLE: Title
       HEADER_TEMPLATE: Template
       HEADER_STATUS: Status

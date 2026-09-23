@@ -1,3 +1,21 @@
+# v2.1.23
+## 09/22/2026
+
+1. [](#improved)
+    * The admin now downloads much less code when it first opens, because the form fields, editors and uploader load only when a screen needs them.
+    * The icon search list used by the icon picker no longer loads on every screen, only when a picker is opened.
+    * Icons that plugins add to the dashboard banner and page panels now load one small group at a time instead of the whole icon set.
+    * The admin's translations are now checked against the server on each visit and only downloaded again when they have changed (requires the matching API update).
+    * The admin no longer waits for your preferences to load before fetching its translations, and no longer fetches them more than once after signing in.
+    * Saving a page, including autosave, no longer refreshes the sidebar counts, which are now only refreshed when something is added, removed, moved or copied.
+    * Saving a page no longer makes the page tree and page lists reload twice.
+    * Page searches now show the first 100 matches with a **Show more** button for the rest.
+    * The Columns view's "no matches" and "empty" labels can now be translated, and the no-match message already shows in every language the admin ships with.
+1. [](#bugfix)
+    * Searching in the Columns view now finds pages across the whole site. It only looked at the first 500 pages and could show results from before an edit.
+    * Typing quickly in a page search no longer lets the results of an earlier search replace the results of the latest one.
+    * The sidebar keeps the last known update counts when the server cannot tell whether updates are available, instead of dropping them.
+
 # v2.1.22
 ## 09/22/2026
 
