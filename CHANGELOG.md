@@ -1,5 +1,5 @@
 # v2.1.23
-## 09/22/2026
+## 09/24/2026
 
 1. [](#improved)
     * The system configuration has a new toggle for fast frontmatter parsing, with help text that explains what it changes.
