@@ -1,3 +1,9 @@
+# v2.1.24
+## 09/26/2026
+
+1. [](#improved)
+    * A plugin's settings shown on its own admin screen (`<grav-blueprint-form>`) now put the Save button at the end of the settings tab strip, instead of alone on a row between the plugin's navigation and the tabs. Forms without tabs, or with side tabs, keep the Save row above them.
+
 # v2.1.23
 ## 09/24/2026
 
