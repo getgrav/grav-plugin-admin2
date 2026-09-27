@@ -9,81 +9,95 @@
 		<!-- All fonts are self-hosted; no external requests. Google Sans (default) is
 		     declared in layout.css; alternate families are bundled via @fontsource-variable
 		     imports in +layout.svelte. See getgrav/grav-plugin-admin2#97. -->
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/entry/start.BJPLQgm-.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BX72K7MR.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CWP93cYK.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/C6H7qr3G.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/E_osfr2P.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DY983mS_.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/entry/app.D5HOac5M.js" rel="modulepreload">
+		<script>
+			// Recover when a boot chunk fails to load (admin2#181): a host's proxy
+			// rate-limits the burst and answers one file with a 503 or 429. Safari
+			// then keeps that failure and replays it on every normal reload without
+			// asking the server again, so first re-fetch each failed file with
+			// `cache: 'reload'` to replace the stored failure, then reload. Only
+			// before the app has mounted (+layout.svelte sets __GRAV_BOOTED__), so
+			// it never reloads under someone's work, and at most twice per tab. With
+			// no sessionStorage there is no counter, so it never reloads at all.
+			(function () {
+				var KEY = 'grav-admin2-boot-retry';
+				var failed = [];
+				var timer = 0;
+				function note(url) {
+					if (typeof url !== 'string' || url.indexOf('/_app/immutable/') === -1) return;
+					if (failed.indexOf(url) === -1) failed.push(url);
+					clearTimeout(timer);
+					timer = setTimeout(recover, 300);
+				}
+				function refetch(url, tries) {
+					return fetch(url, { cache: 'reload', credentials: 'same-origin' })
+						.then(function (res) { if (!res.ok) throw res.status; })
+						.catch(function () {
+							if (tries <= 1) return;
+							return new Promise(function (r) { setTimeout(r, 1000); }).then(function () {
+								return refetch(url, tries - 1);
+							});
+						});
+				}
+				function recover() {
+					var urls = failed.splice(0);
+					Promise.all(urls.map(function (u) { return refetch(u, 3); })).then(function () {
+						if (window.__GRAV_BOOTED__) return;
+						try {
+							var n = Number(sessionStorage.getItem(KEY)) || 0;
+							if (n >= 2) return;
+							sessionStorage.setItem(KEY, String(n + 1));
+						} catch (e) {
+							return;
+						}
+						location.reload();
+					});
+				}
+				// modulepreload links and module scripts: `error` does not bubble.
+				document.addEventListener('error', function (e) {
+					var t = e.target;
+					if (t && (t.tagName === 'LINK' || t.tagName === 'SCRIPT')) note(t.href || t.src);
+				}, true);
+				// Vite's preload helper; Safari's message carries no URL, the link does.
+				window.addEventListener('vite:preloadError', function (e) {
+					var m = String(e.payload && e.payload.message).match(/https?:\/\/\S+/);
+					if (m) note(m[0]);
+				});
+			})();
+		</script>
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/entry/start.rvr1KL0k.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BPfdO7hQ.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BpPGAKSP.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/C1YewXog.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/entry/app.DlweKnHj.js" rel="modulepreload">
 		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/PPVm8Dsz.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DsnmJJEf.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DWeG-lPw.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CFCqWEKN.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Mx0M45Jn.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/QRo6GRB4.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/3Z5-Py4D.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/nodes/0.DLmnDs6W.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BU-a85Rf.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BybzEztl.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Bu4se_jJ.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CE09yvLY.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DO3T6jLd.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Sy7n75qU.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CICOIkx1.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/NLYq1IW8.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/C0q3fxzX.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Dsb0asaW.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/sVExxKMy.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CnrNNo8J.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DbfdJs1N.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DaRZcdC_.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/nodes/0.CuhR04S-.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/D3dvX_Hg.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CGKvh8LR.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BNsMOUiF.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/C95kWWzn.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BRtT8gVI.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CgYj5TnQ.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/D7z0WedY.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DL9yQynY.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/IY9NCEqI.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/fMd_IJ9A.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/xFkyfJ8h.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DK3OMANV.js" rel="modulepreload">
 		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DVLyXNXr.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CN5Cl9jl.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CNM2qiuF.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CBNbu0ws.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BvN1jKtH.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/dKPDjx_y.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/B17QsYr_.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/-Jub0-J0.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/v8ghVXFK.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/T9OaAgJJ.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Bats63cD.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CpKo2D1A.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CxTQ5AVG.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/nRfKwl4Q.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DShYaQ9u.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DLDS7l_u.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/4dWYgzQt.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DSS6APfS.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CBwj22qR.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DcN1JI4y.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DBRXxiwu.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DLUv3ZVn.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/C7_x3xBO.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/ByT5ePWh.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Nk81W93u.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Q4D-OgM0.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/pPl0Sxwo.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/B4enP3Ih.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DWCBFK6d.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/C9qSm_8o.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DkD1vznG.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/D7CbHT9f.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Blne6Uos.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BnMve6YO.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Bdoy0uJU.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/Db0IfKZ2.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/SyIqjJO4.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/D14pq08a.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/lUvlzBdN.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BwUTKwdn.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/o4q-VLBt.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BGdBaNOP.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CT1s39Mp.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CYS-zcW5.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/fbZjRrgE.js" rel="modulepreload">
-		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BKr3_q1I.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BKC1DkA-.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CEQa7ABV.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CwPD-zeU.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/slIIpscY.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DGcuuHoN.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BuA51j4M.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/D67QuKvZ.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/uiR3LR9_.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/D4gbFz--.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/uyk8NZCr.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DCIUOjFb.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/BJc4my_t.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/DS1soC5Q.js" rel="modulepreload">
+		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/chunks/CGq9VRgI.js" rel="modulepreload">
 		
 		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/assets/LoginCaptcha.BTaygdew.css" rel="stylesheet">
 		<link href="/__GRAV_ADMIN2_BASE__/_app/immutable/assets/0.B0Q_4rj8.css" rel="stylesheet">
@@ -92,7 +106,7 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_4wchb2 = {
+					__sveltekit_1iffd01 = {
 						base: "/__GRAV_ADMIN2_BASE__",
 						assets: "/__GRAV_ADMIN2_BASE__"
 					};
@@ -100,8 +114,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/__GRAV_ADMIN2_BASE__/_app/immutable/entry/start.BJPLQgm-.js"),
-						import("/__GRAV_ADMIN2_BASE__/_app/immutable/entry/app.D5HOac5M.js")
+						import("/__GRAV_ADMIN2_BASE__/_app/immutable/entry/start.rvr1KL0k.js"),
+						import("/__GRAV_ADMIN2_BASE__/_app/immutable/entry/app.DlweKnHj.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
