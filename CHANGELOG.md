@@ -5,6 +5,7 @@
     * In tag fields such as a page's taxonomy, Tab now adds the existing tag that best matches what you typed, and existing tags are listed alphabetically.
     * Pasting a comma-separated list into a tag field adds each item as its own tag.
 2. [](#bugfix)
+    * Your own account no longer shows an Enable/Disable toggle or a Status field, since disabling yourself locked you out of the admin [getgrav/grav-plugin-api#49](https://github.com/getgrav/grav-plugin-api/issues/49)
     * Adding a tag that was already on the page no longer leaves the typed text in the box, where the next word was added onto it [#180](https://github.com/getgrav/grav-plugin-admin2/issues/180)
     * Tag fields no longer act on Enter while an input method is still composing a word, and Backspace no longer removes a tag while text is showing in the box.
 
