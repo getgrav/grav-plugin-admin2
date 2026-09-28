@@ -4,6 +4,7 @@
 1. [](#improved)
     * In tag fields such as a page's taxonomy, Tab now adds the existing tag that best matches what you typed, and existing tags are listed alphabetically.
     * Pasting a comma-separated list into a tag field adds each item as its own tag.
+    * The "Update All" dialogs now show each package's installed version next to the new one. Thanks @abesnier [grav-admin-next#25](https://github.com/getgrav/grav-admin-next/pull/25)
 2. [](#bugfix)
     * The admin no longer fails to load with a blank page or an error when a host briefly refuses one of its files, which some shared hosts do when many files are requested at once. It now loads about half as many files, fetches a failed one again and reloads once [#181](https://github.com/getgrav/grav-plugin-admin2/issues/181)
     * Your own account no longer shows an Enable/Disable toggle or a Status field, since disabling yourself locked you out of the admin [getgrav/grav-plugin-api#49](https://github.com/getgrav/grav-plugin-api/issues/49)
