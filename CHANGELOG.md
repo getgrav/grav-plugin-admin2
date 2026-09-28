@@ -1,5 +1,5 @@
 # v2.1.25
-## 09/27/2026
+## 09/28/2026
 
 1. [](#improved)
     * In tag fields such as a page's taxonomy, Tab now adds the existing tag that best matches what you typed, and existing tags are listed alphabetically.
