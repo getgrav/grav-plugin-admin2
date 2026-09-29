@@ -1,3 +1,12 @@
+# v2.1.26
+## 09/29/2026
+
+1. [](#improved)
+    * On sites with many languages, page rows in the column view now show the current language and a translated count, such as 3/7, instead of one badge per language that squeezed the page title out of view.
+    * The column view's page preview has a Translations section listing which languages a page is translated into and which are still missing, and clicking a language switches to it.
+    * The Page Info and Translations cards in the page editor sidebar can be collapsed, and the admin remembers your choice on that device.
+    * The check that sends visitors to first-run setup when a site has no accounts is now much cheaper on every frontend page. It stops as soon as it finds one account file and only asks the accounts service for a full count when there is none, which matters on sites where a plugin also keeps accounts in a database. The answer is also worked out once per request.
+
 # v2.1.25
 ## 09/28/2026
 
