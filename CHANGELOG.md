@@ -1,3 +1,9 @@
+# v2.1.26
+## 09/29/2026
+
+1. [](#improved)
+    * The check that sends visitors to first-run setup when a site has no accounts is now much cheaper on every frontend page. It stops as soon as it finds one account file and only asks the accounts service for a full count when there is none, which matters on sites where a plugin also keeps accounts in a database. The answer is also worked out once per request.
+
 # v2.1.25
 ## 09/28/2026
 
