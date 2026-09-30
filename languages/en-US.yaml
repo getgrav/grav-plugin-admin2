@@ -638,10 +638,21 @@ ICU:
         ORDER_SAVE_FAILED: Failed to save the new order
       MEDIA_TOOLBAR:
         SEARCH_MEDIA: Search media...
+        SEARCHING_FOR: 'Search: "{query}"'
         GRID_VIEW: Grid view
         LIST_VIEW: List view
         NEW_FOLDER: New folder
         FOLDER: Folder
+        FILTER_ALL: All
+        FILTER_IMAGES: Images
+        FILTER_VIDEO: Video
+        FILTER_AUDIO: Audio
+        FILTER_DOCS: Docs
+        SORT_NAME: Name
+        SORT_SIZE: Size
+        SORT_DATE: Date
+        SORT_TYPE: Type
+        DELETE_SELECTED: '{count, plural, one {Delete # file} other {Delete # files}}'
       MEDIA_GRAV_ADMIN: Media — Grav Admin
       MANAGE_SITE_WIDE_MEDIA_FILES: Manage site-wide media files
       PAGE_MEDIA:
