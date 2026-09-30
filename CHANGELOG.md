@@ -1,8 +1,12 @@
 # v2.1.27
-## 09/29/2026
+## 09/30/2026
 
 1. [](#improved)
     * The dashboard's Page Views chart now shows the views and date for any day you point at, anywhere in the chart rather than only on its small dots, and the arrow keys step through the days.
+    * The media manager's filter buttons, sort menu and column headers, root breadcrumb, search label and Delete button now follow the admin language. Thanks @pmoreno-rodriguez [getgrav/grav-admin-next#26](https://github.com/getgrav/grav-admin-next/pull/26)
+2. [](#bugfix)
+    * Users can now generate and revoke their own API keys on their profile page, as the API already allowed [#182](https://github.com/getgrav/grav-plugin-admin2/issues/182)
+    * Custom fields from plugins and themes now show the new value after a save or revert on the Configuration page, instead of keeping their old one [#184](https://github.com/getgrav/grav-plugin-admin2/issues/184)
 
 # v2.1.26
 ## 09/29/2026
