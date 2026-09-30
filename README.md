@@ -2,7 +2,7 @@
 
 **Admin2** is a modern, redesigned administration panel for [Grav CMS](https://github.com/getgrav/grav). It is a ground-up rewrite of the classic admin plugin, built as a [SvelteKit](https://svelte.dev/docs/kit/introduction) single-page application that communicates with Grav exclusively through the [Grav API plugin](https://github.com/getgrav/grav-plugin-api).
 
-> **Status: Alpha.** Admin2 is under active development. It is not yet a drop-in replacement for the standard admin plugin and is intended for evaluation and contributor use.
+> **Status: Stable.** Admin2 is the administration panel for Grav 2.0 and is released through GPM like any other package. It replaces the classic admin plugin, which is not supported on Grav 2.0.
 
 ## Architecture
 
@@ -132,7 +132,7 @@ During SvelteKit development you can run `npm run dev:plugin` in `grav-admin-nex
 
 **Admin2 is the successor to `grav-plugin-admin` in Grav 2.0.** The classic admin plugin will not be supported on Grav 2.0 — Admin2 replaces it, and Grav 2.0 represents a clean break. We are moving on from the classic admin.
 
-While it is technically possible to run both plugins at the same time during the alpha (each on its own route), doing so is not supported and should be reserved for short-term contributor testing only.
+While it is technically possible to run both plugins at the same time while you migrate (each on its own route), doing so is not supported and should be reserved for short-term contributor testing only.
 
 The two admins do not share UI code, events, or templates. Admin2 does not fire the `onAdmin*` event family that the classic admin exposes, because it does not run Grav's admin lifecycle — all data operations go through the API plugin instead. Plugins that integrate with the classic admin via Twig templates or admin-specific events will need to be updated to work with Admin2 and the API plugin.
 
