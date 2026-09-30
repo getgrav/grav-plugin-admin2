@@ -551,6 +551,9 @@ ICU:
       NO_NOTIFICATIONS: No notifications
     POPULARITY_WIDGET:
       LAST_14_DAYS: Last 14 days
+      TODAY: Today
+      VIEWS: '{count, plural, one {# view} other {# views}}'
+      CHART_LABEL: Page views per day for the last 14 days
       THIS_WEEK: This Week
       THIS_MONTH: This Month
     RECENT_PAGES_WIDGET:

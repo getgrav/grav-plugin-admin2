@@ -1,3 +1,9 @@
+# v2.1.27
+## 09/29/2026
+
+1. [](#improved)
+    * The dashboard's Page Views chart now shows the views and date for any day you point at, anywhere in the chart rather than only on its small dots, and the arrow keys step through the days.
+
 # v2.1.26
 ## 09/29/2026
 
