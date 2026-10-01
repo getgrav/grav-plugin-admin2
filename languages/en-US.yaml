@@ -25,6 +25,8 @@ ICU:
     DELETE: Delete
     DONE: Done
     EDIT: Edit
+    HELP: Help
+    HELP_FOR_LABEL: Help for {label}
     LOADING: Loading...
     NO_CHANGES: No changes to save
     RETRY: Retry
@@ -1205,6 +1207,11 @@ ICU:
       CHOOSE_BETWEEN_LIGHT_AND_DARK_APPEARANCE: Choose between light and dark appearance
       ACCENT_COLOR: Accent Color
       PRIMARY_COLOR_USED_FOR_BUTTONS_LINKS: Primary color used for buttons, links, and highlights
+      DARK_SHADE: Dark Shade
+      DARK_SHADE_DESC: How dark mode looks. It only takes effect while dark mode is on.
+      DARK_SHADE_GRAPHITE: Graphite
+      DARK_SHADE_ZINC: Onyx
+      DARK_SHADE_MIDNIGHT: Midnight
       SATURATION: Saturation
       CURRENT_COLOR: Color
       COPY_COLOR: Copy this color
@@ -1215,6 +1222,10 @@ ICU:
       FONT_SIZE_NORMAL: Normal
       FONT_SIZE_LARGE: Large
       FONT_SIZE_XLARGE: X-Large
+      HELP_TEXT: Help Text
+      HELP_TEXT_DESC: Where the short explanation for each field goes. In a tooltip, hover the info icon next to a label, or tap it on a phone, to read it.
+      HELP_MODE_INLINE: Below the label
+      HELP_MODE_TOOLTIP: In a tooltip
       DEFAULT_SETTINGS_FOR_THE_PAGE_BROWSER: Default settings for the page browser
       DEFAULT_VIEW: Default View
       HOW_PAGES_ARE_DISPLAYED_BY_DEFAULT: How pages are displayed by default
@@ -1275,8 +1286,10 @@ ICU:
       DEFAULT_APPEARANCE: Default Appearance
       DEFAULT_COLOR_APPEARANCE_DESC: Default color appearance for new users.
       DEFAULT_PRIMARY_COLOR_DESC: Default primary color for buttons, links, and highlights.
+      DEFAULT_DARK_SHADE_DESC: Default dark shade for new users. It only takes effect while dark mode is on.
       DEFAULT_TYPEFACE_DESC: Default typeface for the admin UI.
       DEFAULT_TEXT_SIZE_DESC: Default text size for the admin UI.
+      DEFAULT_HELP_TEXT_DESC: Default place for field help text for new users, below the label or in a tooltip.
       DEFAULT_PAGES: Default Pages
       DEFAULT_LANGUAGE: Default Language
       DEFAULT_INTERFACE_LANGUAGE_DESC: Default interface language for new users.

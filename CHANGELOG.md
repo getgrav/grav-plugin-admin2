@@ -2,6 +2,8 @@
 ## 09/30/2026
 
 1. [](#improved)
+    * Dark mode now uses dark greys instead of near-black by default, which is easier on the eyes. A new Dark shade setting under Appearance, for each user and as a site default, lets you keep the previous near-black look (Onyx) or pick Midnight, a deep blue-black.
+    * A new Help text setting under Appearance, for each user and as a site default, lets you show field help below the label (as before) or in a tooltip behind a small info icon next to it. Plugins can follow the setting with a new `<grav-help>` element, described in the admin-next docs
     * The dashboard's Page Views chart now shows the views and date for any day you point at, anywhere in the chart rather than only on its small dots, and the arrow keys step through the days.
     * The media manager's filter buttons, sort menu and column headers, root breadcrumb, search label and Delete button now follow the admin language. Thanks @pmoreno-rodriguez [getgrav/grav-admin-next#26](https://github.com/getgrav/grav-admin-next/pull/26)
 2. [](#bugfix)
