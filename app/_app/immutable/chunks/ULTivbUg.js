@@ -1,0 +1,1 @@
+import{K as t,q as r,I as g}from"./Bt9RipWV.js";let s=g(null),o=g(null);const n={get presence(){return r(s)},get modeToggle(){return r(o)},setPresence(e){t(s,e,!0)},setModeToggle(e){t(o,e,!0)}};export{n as p};
