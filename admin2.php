@@ -659,7 +659,7 @@ class Admin2Plugin extends Plugin
             $sitePrefs = $resolver->sitePreferences();
             $language = is_string($sitePrefs['adminLanguage'] ?? null) ? $sitePrefs['adminLanguage'] : '';
             $appearance = [];
-            foreach (['colorMode', 'accentHue', 'accentSaturation', 'fontFamily', 'fontSize'] as $key) {
+            foreach (['colorMode', 'accentHue', 'accentSaturation', 'darkShade', 'fontFamily', 'fontSize', 'helpMode'] as $key) {
                 if (array_key_exists($key, $sitePrefs)) {
                     $appearance[$key] = $sitePrefs[$key];
                 }

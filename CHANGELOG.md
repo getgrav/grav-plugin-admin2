@@ -1,3 +1,18 @@
+# v2.1.27
+## 10/01/2026
+
+1. [](#improved)
+    * Dark mode now uses dark greys instead of near-black by default, which is easier on the eyes. A new Dark shade setting under Appearance, for each user and as a site default, lets you keep the previous near-black look (Onyx) or pick Midnight, a deep blue-black.
+    * A new Help text setting under Appearance, for each user and as a site default, lets you show field help in a tooltip behind a small info icon next to the label (the default) or below the label. Plugins can follow the setting with a new `<grav-help>` element, described in the admin-next docs
+    * The dashboard's Page Views chart now shows the views and date for any day you point at, anywhere in the chart rather than only on its small dots, and the arrow keys step through the days.
+    * The media manager's filter buttons, sort menu and column headers, root breadcrumb, search label and Delete button now follow the admin language. Thanks @pmoreno-rodriguez [getgrav/grav-admin-next#26](https://github.com/getgrav/grav-admin-next/pull/26)
+    * A Changelog link beside "Update available" on plugins and themes shows what the new version changes before you update. Thanks @pmoreno-rodriguez [getgrav/grav-admin-next#27](https://github.com/getgrav/grav-admin-next/issues/27)
+2. [](#bugfix)
+    * Users can now generate and revoke their own API keys on their profile page, as the API already allowed [#182](https://github.com/getgrav/grav-plugin-admin2/issues/182)
+    * Custom fields from plugins and themes now show the new value after a save or revert on the Configuration page, instead of keeping their old one [#184](https://github.com/getgrav/grav-plugin-admin2/issues/184)
+    * The Taxonomy field in the page editor no longer stays blank on sites that use a number, such as a year, as a tag or category, which includes every site running the Archives plugin [#186](https://github.com/getgrav/grav-plugin-admin2/issues/186)
+    * Editing one taxonomy type no longer rewrites the others, so a single value such as `category: blog` stays as written
+
 # v2.1.26
 ## 09/29/2026
 
