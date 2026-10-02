@@ -1583,6 +1583,7 @@ ICU:
     WIDGET_HOST:
       UNKNOWN_WIDGET: "Unknown widget: {id}"
     UPDATE_AVAILABLE_VERSION: "Update available: v{version}"
+    UPDATE_CHANGELOG_TITLE: "Changes in v{version}"
     UPDATE_TO_VERSION: Update to v{version}
     2FA_ENABLED: 2FA Enabled
     2FA_SECRET: 2FA Secret
