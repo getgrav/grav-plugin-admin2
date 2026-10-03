@@ -241,6 +241,7 @@ ICU:
         EDIT_PAGE: Edit Page
         FALLBACK_NOTICE: No {active} translation exists. Viewing {effective} fallback. Use "Save as {active}" to create a translation you can edit.
         FALLBACK_NOTICE_UNRESOLVED: The server returned the {effective} version of this page instead of {active}, and did not report {active} as missing. Saving is off here so the {effective} file is not overwritten. If every page does this, the web server is probably not passing query strings on to Grav.
+        TEMPLATE_MISSING_NOTICE: The template **{template}** for this module wasn't found in the theme, so the page it belongs to shows a "template not found" error. Pick a template under **Page Template** on the Advanced tab, or add the template to the theme.
         PUBLISH_ON: Publish on
         UNPUBLISH_ON: Unpublish on
         RESET_FROM: Reset from {language}

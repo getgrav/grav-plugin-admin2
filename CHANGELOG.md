@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * Updated Spanish translation, with about 140 new strings from the Translation Portal. Thanks @pmoreno-rodriguez [#187](https://github.com/getgrav/grav-plugin-admin2/issues/187)
+    * The page editor now warns when a module's template isn't in the theme, since the page it belongs to shows a "template not found" error until the template exists [getgrav/grav-plugin-api#55](https://github.com/getgrav/grav-plugin-api/issues/55)
     * Custom fields from plugins and themes can read other values in the form with `getValue()`, scoped to their own row inside a list, and can be told when a value they watch changes, so a field's options can follow a sibling field. See the custom field docs for `watch` and `formChanged()`. Thanks @Sogl [getgrav/grav-admin-next#29](https://github.com/getgrav/grav-admin-next/issues/29)
 2. [](#bugfix)
     * Previewing a page in a language other than the default now opens that translation at its own address, such as `/fr/typographie`, instead of the default language or a 404, and previewing the home page in another language works too. Thanks @fdruide [#188](https://github.com/getgrav/grav-plugin-admin2/issues/188)
