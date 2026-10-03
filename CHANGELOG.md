@@ -1,7 +1,9 @@
 # v2.1.28
 ## 10/02/2026
 
-1. [](#bugfix)
+1. [](#improved)
+    * Updated Spanish translation, with about 140 new strings from the Translation Portal. Thanks @pmoreno-rodriguez [#187](https://github.com/getgrav/grav-plugin-admin2/issues/187)
+2. [](#bugfix)
     * Previewing a page in a language other than the default now opens that translation at its own address, such as `/fr/typographie`, instead of the default language or a 404, and previewing the home page in another language works too. Thanks @fdruide [#188](https://github.com/getgrav/grav-plugin-admin2/issues/188)
     * A `selectunique` field in a plugin or theme blueprint now shows as a select that leaves out the values other rows of the list already use, instead of a plain text box [getgrav/grav-admin-next#30](https://github.com/getgrav/grav-admin-next/issues/30)
     * When the server sends back a page in another language than the one selected, the editor now explains that and keeps Save off, instead of pointing at a "Save as" button that isn't there [getgrav/grav#4338](https://github.com/getgrav/grav/discussions/4338)
