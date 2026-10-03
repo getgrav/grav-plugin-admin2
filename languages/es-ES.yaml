@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Solo roles de confianza'
                 TRUSTED_DESC: 'Solo los superusuarios y los titulares del permiso «pages twig» pueden habilitar Twig en una página.'
             VALIDATION_FAILED_FOR_FIELDS: 'No se pudo guardar: estos campos no son válidos: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'No se pudo cargar la configuración.'
+            SCOPE_NOT_FOUND: 'No se encontró ningún ámbito de configuración llamado {scope}.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Entorno
             EXPORT_YAML: 'Exportar YAML'
@@ -227,6 +229,13 @@ ICU:
                 STATUS: 'Estado:'
                 WEBHOOK: 'Webhook:'
                 PROCESS_UNAVAILABLE: 'Los trabajos no se pueden ejecutar desde aquí porque la función proc_open de PHP está deshabilitada en este servidor. Seguirán ejecutándose cuando el programador de tareas se active mediante cron o un webhook.'
+                BY_HAND: manualmente
+                MANUAL_RUN_HELP: 'Ejecutar Pendientes ejecuta los trabajos que han perdido su última hora programada, que es lo que quieres en un sitio sin entrada de cron. Las ejecuciones que inicies aquí se registran como manuales, y no cuentan para el estado del cron de arriba.'
+                NEVER: Nunca
+                PENDING: Pendiente
+                RUN_ALL_HELP: 'Ejecutar ahora todos los trabajos habilitados, sin importar lo que diga su programación.'
+                RUN_NOW: 'Ejecutar este trabajo ahora'
+                RUN_PENDING: 'Ejecutar pendientes'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Cargando campo personalizado...'
             DATE_FORMAT:
@@ -245,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'No se encontraron iconos'
                 SEARCH_ICONS: 'Buscar iconos...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Mostrando los primeros 200 resultados — escribe para filtrar'
+                FAMILY_ALL: Todos
+                FAMILY_BRANDS: Marcas
+                FAMILY_REGULAR: Regulares
+                FAMILY_SOLID: Sólidos
             NO_TAXONOMY_TYPES: 'No hay tipos de taxonomía configurados'
             PAGES:
                 FILTER_PAGES: 'Filtrar páginas...'
@@ -283,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Escriba y pulse Intro...'
             SELECT_AN_ICON: 'Seleccionar un icono...'
             SELECT_A_PAGE: 'Seleccionar una página...'
+            MEDIA:
+                ADD: 'Añadir multimedia...'
+                CHANGE: Cambiar
+                DONE: Hecho
+                MOVE_EARLIER: 'Mover antes'
+                MOVE_LATER: 'Mover despues'
+                REMOVE: Eliminar
+                SELECT: 'Seleccionar multimedia'
+                SELECTED_COUNT: '{count, plural, =0 {No ha seleccionado nada} one {# seleccionado} other {# seleccionados}}'
+                TITLE: 'Seleccionar multimedia'
+            SET_DATE_NOW: 'Establecer ahora'
         FLEX_OBJECTS:
             ACTIONS: Acciones
             BACK_TO_LIST: 'Volver a la Lista'
@@ -375,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Continuar con {provider}'
             OR_CONTINUE_WITH: 'O continuar con'
             SSO_FAILED: 'No se pudo iniciar sesión con ese proveedor. Inténtalo de nuevo.'
+            CAPTCHA_FAILED_TO_LOAD: 'El CAPTCHA no se ha podido cargar. Vuelve a cargar la página e inténtalo de nuevo.'
+            CAPTCHA_NOT_COMPLETED: 'Completa el CAPTCHA para continuar'
+            CAPTCHA_VERIFIED: 'Se ha verificado que eres una persona'
+            CAPTCHA_VERIFYING: 'Comprobando que eres una persona…'
+            INVALID_AUTHENTICATION_CODE: 'Código de autenticación no válido'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nada que previsualizar'
             IMAGE_INSERT:
@@ -422,9 +451,20 @@ ICU:
                 LIST_VIEW: 'Vista de lista'
                 NEW_FOLDER: 'Nueva carpeta'
                 SEARCH_MEDIA: 'Buscar multimedia...'
+                DELETE_SELECTED: '{count, plural, one {Eliminar # archivo} other {Eliminar # archivos}}'
+                FILTER_ALL: Todo
+                FILTER_AUDIO: Audio
+                FILTER_DOCS: Documentos
+                FILTER_IMAGES: Imágenes
+                FILTER_VIDEO: Vídeo
+                SEARCHING_FOR: 'Buscar: "{query}"'
+                SORT_DATE: Fecha
+                SORT_NAME: Nombre
+                SORT_SIZE: Tamaño
+                SORT_TYPE: Tipo
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Arrastra al editor'
-                PAGE_MEDIA: 'Medios de página'
+                PAGE_MEDIA: 'Multimedia de la página'
                 INSERTED: 'Se insertó {filename}'
                 INSERT_AT_CURSOR: 'Insertar en el cursor'
                 REORDER: 'Arrastra para reordenar'
@@ -449,10 +489,19 @@ ICU:
                 STORED: 'Metadatos almacenados'
                 TAGS_PLACEHOLDER: 'Añadir etiqueta…'
                 TITLE: Metadatos
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: 'Ruta de multimedia'
+                OPEN: Abrir
+                PATH: Ruta
+                SIZE: Tamaño
+                TITLE: 'Detalles del archivo'
+                TYPE: Tipo
+                URL: URL
         NAV:
             CONFIGURATION: Configuración
             DASHBOARD: 'Panel de control'
-            MEDIA: Medios
+            MEDIA: Multimedia
             PAGES: Páginas
             PLUGINS: Plugins
             SETTINGS: Configuración
@@ -510,6 +559,7 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Escribe tu contenido markdown aquí...'
                 SAVED_BY_PEER: '{user} guardó esta página'
                 SAVED_BY_PEER_ANON: 'Otro usuario guardó esta página'
+                PREVIEW_SHOWING_HOST_PAGE: 'mostrada en su página padre'
             EDIT_PAGE: 'Editar página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -559,6 +609,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'Nombre de carpeta seguro para URL para esta página'
                 VISIBLE: Visible
+                CHILD_TYPE_HINT: 'La página padre sugiere utilizar la plantilla " {template} " para sus páginas hijas. Aun así, puedes elegir una plantilla diferente.'
+                STATUS_HELP: 'Los borradores se guardan, pero no son visibles en el sitio hasta que los publiques.'
             NO_PAGES: 'No se encontraron páginas'
             NO_SEARCH_RESULTS: 'Ninguna página coincide con tu búsqueda'
             PAGES_GRAV_ADMIN: 'Páginas — Grav Admin'
@@ -628,6 +680,16 @@ ICU:
                 VISIBLE: Visible
                 'YES': Si
             VALIDATION_FAILED_FOR_FIELDS: 'No se pudo guardar: estos campos no son válidos: {fields}'
+            COLUMN_EMPTY: Vacío
+            SEARCH_MATCH_COUNT: '{n, plural, one {# coincidencia} other {# coincidencias}} en todas las páginas'
+            SEARCH_SHOWING: 'Mostrando {shown} de {total} coincidencias'
+            SEARCH_SHOW_MORE: 'Mostrar más'
+            STATUS:
+                EXPIRED: Caducado
+                EXPIRED_ON: 'No publicado desde el {date}'
+                SCHEDULED: Programado
+                SCHEDULED_FOR: 'Programado para publicarse el {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Contraseña
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisitos de contraseña'
@@ -683,11 +745,15 @@ ICU:
             LAST_14_DAYS: 'Últimos 14 días'
             THIS_MONTH: 'Este mes'
             THIS_WEEK: 'Esta semana'
+            CHART_LABEL: 'Visualizaciones de la página por día durante los últimos 14 días'
+            TODAY: Hoy
+            VIEWS: '{count, plural, one {# visualización} other {# visualizaciones}}'
         PREMIUM: Premium
         PREVIEW: 'Vista previa'
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Por favor, vuelve a ingresar tu contraseña para continuar. Tu trabajo ha sido guardado.'
             SESSION_EXPIRED: 'Sesión expirada'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Vuelve a iniciar sesión para continuar. Tu trabajo se ha conservado.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Ver todo'
         REMOVE: Eliminar
@@ -847,6 +913,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Predeterminado
             EDITOR_KEYMAP_DESC: 'Usa los atajos de teclado de Vim en los editores de Markdown y código. La opción predeterminada mantiene los atajos estándar del editor.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Copiar este color'
+            CURRENT_COLOR: Color
+            DARK_SHADE: 'Tono oscuro'
+            DARK_SHADE_DESC: 'Aspecto del modo oscuro. Solo se aplica cuando el modo oscuro está activado.'
+            DARK_SHADE_GRAPHITE: Grafito
+            DARK_SHADE_MIDNIGHT: Medianoche
+            DARK_SHADE_ZINC: Ónix
+            DEFAULT_DARK_SHADE_DESC: 'Tono oscuro predeterminado para los usuarios nuevos. Solo se aplica cuando el modo oscuro está activado.'
+            DEFAULT_HELP_TEXT_DESC: 'Lugar predeterminado para mostrar el texto de ayuda de los campos a los usuarios nuevos, debajo de la etiqueta o en un mensaje emergente.'
+            HELP_MODE_INLINE: 'Debajo de la etiqueta'
+            HELP_MODE_TOOLTIP: 'En un mensaje emergente'
+            HELP_TEXT: 'Texto de ayuda'
+            HELP_TEXT_DESC: 'Donde se muestra una breve explicación de cada campo. Pasa el cursor sobre el icono de información situado junto a una etiqueta, o tócalo en un teléfono, para leerla.'
+            LOGO_HEIGHT_CUSTOM: Personalizado
+            LOGO_HEIGHT_DEFAULT: Predeterminado
+            SIDEBAR_LOGO_HEIGHT: 'Altura del logotipo de la barra lateral'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'La altura con la que aparece tu logotipo en la parte superior de la barra lateral.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, guiones, guiones bajos'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Cuenta de administrador creada — bienvenido a Grav'
@@ -1043,7 +1126,7 @@ ICU:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Error al cargar la configuración del programador.'
                 FAILED_TO_SAVE: 'Error al guardar'
                 GRAV_SCHEDULER: 'Grav Scheduler'
-                INFO_BANNER: 'El programador puede usar crontab del sistema o activadores de webhook para ejecutar comandos. Los webhooks se recomiendan para entornos en la nube. Solo los usuarios avanzados deben configurar trabajos personalizados. La configuración incorrecta o el abuso pueden generar vulnerabilidades de seguridad.'
+                INFO_BANNER: 'El planificador puede usar tanto el crontab del sistema como disparadores webhook para ejecutar comandos. Se recomiendan los webhooks para entornos en la nube.'
                 LOADING_SCHEDULER: 'Cargando programador...'
                 NOT_ENABLED_FOR_USER: 'No habilitado para el usuario:'
                 SCHEDULER_CONFIGURATION_SAVED: 'Configuración del programador guardada'
@@ -1053,6 +1136,8 @@ ICU:
                 LAST_TRIGGERED: 'Última activación'
                 PROCESS_UNAVAILABLE: 'Este servidor tiene deshabilitada la función proc_open de PHP, por lo que los trabajos no pueden iniciarse desde el administrador. Aun así, se ejecutan cada vez que tu planificador se activa mediante cron o un webhook.'
                 STATUS_UNAVAILABLE: 'No se ha podido leer el estado del planificador en este servidor. Tus trabajos se muestran a continuación y pueden editarse como siempre.'
+                ENVIRONMENT_MISMATCH: 'El planificador se ejecutó por última vez en el entorno **{last}**, pero este sitio está usando **{current}**, que tiene su propia configuración en user/env/{current}/config. Los trabajos y ajustes personalizados definidos solo allí nunca se ejecutan desde ese disparador. Actualiza la línea del planificador de bin/grav en tu crontab al comando que aparece a continuación (pasa --env={current}), o exporta GRAV_ENVIRONMENT={current} antes de que se ejecute.'
+                LAST_MANUAL_RUN: 'Última ejecución manual'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} libre de {total}'
                 DISK_USAGE: 'Uso de disco'
@@ -1372,7 +1457,7 @@ ICU:
         BACKUPS_STORAGE_PURGE_TRIGGER: 'Desencadenante de purga de almacenamiento de copia de seguridad'
         BODY_CLASSES: 'Clases del cuerpo'
         CACHE_ALL: 'Cachear todas las imágenes'
-        CACHE_ALL_HELP: 'Ejecutar todas las imágenes a través del sistema de caché de Grav incluso si no tienen manipulaciones de medios'
+        CACHE_ALL_HELP: 'Procesar todas las imágenes mediante el sistema de caché de Grav, incluso si no tienen manipulaciones multimedia'
         CACHE_CHECK_INTERVAL: 'Intervalo de verificación de caché'
         CACHE_CHECK_INTERVAL_HELP: 'Segundos para reutilizar el hash del sistema de archivos calculado anteriormente antes de verificar nuevamente. Cero mantiene las verificaciones existentes por solicitud.'
         CACHE_CHECK_METHOD: 'Método de verificación de caché'
@@ -1496,7 +1581,7 @@ ICU:
         ENABLED_TIMESTAMPS_ON_ASSETS_HELP: 'Habilitar marcas de tiempo en recursos'
         ENABLE_AUTO_METADATA: 'Metadatos automáticos de Exif'
         ENABLE_AUTO_METADATA_HELP: 'Generar automáticamente archivos de metadatos para imágenes con información exif'
-        ENABLE_MEDIA_TIMESTAMP: 'Habilitar marcas de tiempo en medios'
+        ENABLE_MEDIA_TIMESTAMP: 'Habilitar marcas de tiempo en archivos multimedia'
         ENABLE_MEDIA_TIMESTAMP_HELP: 'Añade una marca de tiempo basada en la fecha de última modificación a cada elemento multimedia'
         ERROR_FULL_BACKTRACE: 'Error con seguimiento completo'
         ERROR_HANDLER: 'Gestor de errores'
@@ -1662,7 +1747,7 @@ ICU:
         MARKDOWN: Markdown
         MARKDOWN_EXTRA: 'Markdown extra'
         MARKDOWN_EXTRA_HELP: 'Habilitar soporte predeterminado para Markdown Extra - https://michelf.ca/projects/php-markdown/extra/'
-        MEDIA_TYPES: 'Tipos de medios'
+        MEDIA_TYPES: 'Tipos de archivos multimedia'
         MEMCACHED_PORT: 'Puerto de Memcached'
         MEMCACHED_PORT_HELP: 'El puerto del servidor Memcached'
         MEMCACHED_SERVER: 'Servidor Memcached'
@@ -1708,7 +1793,7 @@ ICU:
         PAGE_GROUPS_HELP: 'Los miembros de Grupos de página tienen acceso especial a esta página.'
         PAGE_INHERIT_PERMISSIONS: 'Heredar permisos'
         PAGE_INHERIT_PERMISSIONS_HELP: 'Heredar ACL de la página principal.'
-        PAGE_MEDIA: 'Medios de página'
+        PAGE_MEDIA: 'Multimedia de la página'
         PAGE_PERMISSIONS: 'Permisos de página'
         PAGE_SUMMARY: 'Resumen de página'
         PAGE_TYPES: 'Tipos de página'
@@ -2188,6 +2273,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Los archivos ubicados en user/data, user/accounts y user/config se pueden descargar directamente a través de HTTP, incluidos certificados, claves, tokens y bases de datos. Esto generalmente significa que su servidor web no está aplicando las reglas .htaccess de Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Cómo proteger su servidor web'
             USER_FOLDER_EXPOSED_TITLE: 'Riesgo de seguridad: sus carpetas de datos de usuario son accesibles desde la web.'
+            COLLAPSE: Contraer
+            SHOW_DETAILS: 'Mostrar detalles'
+            SNOOZE: Posponer
+            SNOOZE_HINT: 'Ocultar esta advertencia durante 24 horas. Volverá a mostrarse antes si se detectan archivos diferentes.'
+            STORAGE_EXPOSED_ALL: 'Todos los archivos de prueba se podían descargar, por lo que tu servidor web no está aplicando las reglas de acceso de Grav. En Apache, comprueba que AllowOverride permita que se aplique el archivo .htaccess del sitio. En nginx, Caddy o IIS, añade las reglas de seguridad de la carpeta webserver-configs de Grav.'
+            STORAGE_EXPOSED_BODY: 'El servidor web sirvió archivos de prueba desde directorios que deberían ser privados. Los tipos de archivo listados a continuación pueden exponer envíos almacenados, copias de seguridad o archivos temporales. Pide a tu proveedor de hosting que bloquee el acceso directo, o mueve el almacenamiento privado fuera de la raíz web.'
+            STORAGE_EXPOSED_BY_TYPE: 'Algunos tipos de archivo estaban bloqueados en estas carpetas, mientras que otros se podían descargar. Eso normalmente significa que algo por delante de las reglas de Grav, como nginx sirviendo archivos estáticos antes que Apache, responde a tipos de archivo comunes como .zip antes de que se comprueben las reglas. Bloquea también estas carpetas en la configuración de esa capa.'
+            STORAGE_EXPOSED_CDN: 'Si el sitio está detrás de una CDN como Cloudflare, purga su caché después de corregir esto. Las copias que ya haya almacenado seguirán siendo descargables hasta que lo hagas.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# tipo de archivo} other {# tipos de archivo}}'
+            STORAGE_EXPOSED_TITLE: 'Los archivos que deberían ser privados se pueden descargar desde este sitio'
+            STORAGE_EXPOSED_TMP: 'Los archivos de prueba en tmp/ se podían descargar, mientras que las otras carpetas estaban bloqueadas. Es probable que las reglas de tu servidor sean anteriores a Grav 2.1.7, que añadió tmp/ a la lista de carpetas bloqueadas. Añade tmp a esa lista en tu .htaccess, o en tu configuración de nginx, Caddy o IIS, para que coincida con las reglas que incluye Grav.'
         DEMO:
             BANNER_COUNTDOWN: 'Próximo reinicio en {time}'
             BANNER_LABEL: 'Modo de demostración'
@@ -2208,3 +2304,52 @@ ICU:
             STAY: Permanecer
             SWITCH_LANGUAGE: Cambiar
             SWITCH_LANGUAGE_MESSAGE: 'Tiene cambios sin guardar. ¿Desea cambiar el idioma de todos modos?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'La respuesta del servidor no se pudo leer porque no es JSON válido. Puede que algo en el servidor esté imprimiendo salida adicional, como una advertencia de PHP, junto con la respuesta de la API. La consola del navegador tiene los detalles.'
+            INVALID_JSON_TITLE: 'Respuesta inesperada del servidor'
+            UNEXPECTED_RESPONSE_DETAIL: 'El servidor respondió con datos en un formato que esta pantalla no espera. La consola del navegador tiene los detalles.'
+            UNEXPECTED_RESPONSE_TITLE: 'Respuesta inesperada del servidor'
+        CACHE_MODULES: 'Almacenar en caché la salida del módulo'
+        CACHE_MODULES_HELP: 'Almacena en caché el contenido renderizado de los módulos de esta página. Úsalo solo cuando los módulos muestren el mismo contenido a todos los visitantes. Los módulos con su propio Twig o un formulario, los visitantes que hayan iniciado sesión y los envíos de formularios siempre se renderizan de nuevo. Si solo editas una plantilla parcial, es necesario borrar la caché.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Sugerencias de renderizado de Flex'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Envuelve cada objeto y colección de Flex renderizado en un comentario HTML que lo nombre, para que se pueda encontrar el origen de un bloque en el marcado de la página. Solo se aplica a páginas HTML'
+        FRONTMATTER_NATIVE_YAML: 'Análisis rápido del frontmatter'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Lee el frontmatter de las páginas mediante la extensión PHP libyaml cuando está instalada, lo que hace que la reconstrucción de la caché de páginas sea más rápida. Lee algunos valores de forma diferente, así que comprueba primero tus páginas. Una fecha sin comillas se mantiene como texto en lugar de convertirse en una marca de tiempo, y yes, no, on y off sin comillas se convierten en true o false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Esto actualizará Grav de la v{current} a la v{target}. El sitio puede estar brevemente no disponible durante la actualización.'
+            CONFIRM_TITLE: '¿Actualizar el núcleo de Grav?'
+            FAILED: 'La actualización de Grav falló: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} está marcado como compatible con Grav {compatible}'
+            NO_DETAIL: 'el servidor no dio ninguna razón'
+            PREFLIGHT_MESSAGE: 'Las comprobaciones que se ejecutan antes de una actualización lo detuvieron por estos motivos. Corrígelos e inténtalo de nuevo, o actualiza de todos modos si sabes que estos plugins y temas funcionan con la nueva versión.'
+            PREFLIGHT_TITLE: 'Grav aún no puede actualizarse a la v{version}'
+            STILL_BLOCKED: 'La actualización de Grav sigue bloqueada: {detail}'
+            UPGRADE_ANYWAY: 'Actualizar de todos modos'
+            UPGRADING: 'Actualizando Grav a la v{version}…'
+        HELP: Ayuda
+        HELP_FOR_LABEL: 'Ayuda para {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'JPEG progesivos'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Guardar los JPEG redimensionados y en caché como progresivos, para que aparezcan como una imagen borrosa completa que se va enfocando en lugar de rellenarse desde arriba. Normalmente también son más pequeños. No afecta a PNG, WebP ni AVIF.'
+        MARKDOWN_OUTPUT: 'Salida en Markdown'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'URLs absolutas'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'Convierte los enlaces y las imágenes relativos a la raíz en URL completas, para que sigan funcionando una vez que el Markdown haya salido del sitio.'
+        MARKDOWN_OUTPUT_ENABLED: 'Servir las páginas como Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Cualquier página se puede obtener como Markdown añadiendo `.md` a su URL o enviando una cabecera de solicitud `Accept:&nbsp;text/markdown`. Está diseñado para agentes de IA y otros clientes de texto. La página se renderiza mediante el tema, se reduce a su región de contenido principal y se convierte, de modo que los listados, las tiendas y las páginas modulares se lean tal como se muestran.'
+        MARKDOWN_OUTPUT_FRONTMATTER: 'Bloque de Frontmatter'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Iniciar el Markdown con un bloque YAML que contenga el título, la URL, la fecha, la descripción y la taxonomía.'
+        MARKDOWN_OUTPUT_LINKS: 'Enlaces de navegación'
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Terminar el Markdown con enlaces a las páginas padre, vecinas e hijas, para que un agente pueda recorrer el sitio sin salir del Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'La mayoría de los enlaces a páginas hijas'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'El número máximo de páginas hijas listadas en la sección de navegación. Cero las lista todas.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Encabezado de recuento de tokens'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Enviar un encabezado de respuesta `X-Markdown-Tokens` con un recuento estimado de tokens, el mismo encabezado que usa Markdown for Agents de Cloudflare.'
+        NOTICES:
+            HEADING: '{count, plural, one {Aviso} other {Avisos}}'
+            HIDE: 'Ocultar avisos'
+            SHOW: 'Mostrar avisos'
+        PAGES_LAZY_INDEX: 'Índice de páginas diferido'
+        PAGES_LAZY_INDEX_HELP: 'Cargar páginas, rutas y taxonomía bajo demanda desde un índice SQLite por página en lugar de un único archivo de caché grande. Auto lo usa en sitios con 1,000 páginas o más. Recurre a la caché clásica cuando no hay disponible ningún motor de base de datos.'
+        RETRY: Reintentar
+        SESSION_LAZY: 'Iniciar sesiones solo cuando sea necesario'
+        SESSION_LAZY_HELP: 'Los visitantes sin cookie de sesión obtienen una sesión solo cuando se almacena algo en ella, como un inicio de sesión, un formulario o un mensaje, para que las visitas anónimas a la página puedan ser cacheadas por un proxy o CDN. Los plugins que almacenan datos en cada visita a la página igualmente inician una sesión.'
+        UPDATE_CHANGELOG_TITLE: 'Cambios en la v{version}'
