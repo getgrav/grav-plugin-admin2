@@ -210,6 +210,8 @@ ICU:
                 TRUSTED: 'Kun betroede roller'
                 TRUSTED_DESC: 'Kun superbrugere og indehavere af rettigheden „pages twig“ kan aktivere Twig på en side.'
             VALIDATION_FAILED_FOR_FIELDS: 'Kunne ikke gemme — disse felter er ugyldige: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Kunne ikke indlæse konfiguration.'
+            SCOPE_NOT_FOUND: 'Intet konfigurationsområde ved navn {scope} blev fundet.'
         CONFIGURATION: Konfiguration
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljø
@@ -444,6 +446,14 @@ ICU:
                 SCHEDULER_STATUS: Planlægger-status
                 STATUS: 'Status:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: manuelt
+                MANUAL_RUN_HELP: 'Kør afventende kører de jobs, der har misset deres seneste planlagte tidspunkt, hvilket er, hvad du ønsker på et websted uden et cron-indlæg. Kørsler du starter her, registreres som manuelle og tæller ikke med i cron-status ovenfor.'
+                NEVER: Aldrig
+                PENDING: Afventer
+                PROCESS_UNAVAILABLE: "Jobs kan ikke køres herfra på denne vært, fordi PHP's proc_open-funktion er deaktiveret. De kører stadig, når din planlægger udløses af cron eller et webhook."
+                RUN_ALL_HELP: 'Kør alle aktiverede jobs nu, uanset hvad deres tidsplan siger.'
+                RUN_NOW: 'Kør dette job nu'
+                RUN_PENDING: 'Kør afventende'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Indlæser brugerdefineret felt...'
             DATE_FORMAT:
@@ -464,6 +474,10 @@ ICU:
                 NO_ICONS_FOUND: 'Ingen ikoner fundet'
                 SEARCH_ICONS: 'Søg efter ikoner...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Viser de første 200 resultater — skriv for at indsnævre'
+                FAMILY_ALL: Alle
+                FAMILY_BRANDS: Brands
+                FAMILY_REGULAR: Regular
+                FAMILY_SOLID: Solid
             NO_TAXONOMY_TYPES: 'Ingen taksonomityper konfigureret'
             PAGES:
                 FILTER_PAGES: 'Filtrer sider...'
@@ -500,6 +514,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Skriv og tryk Enter...'
             SELECT_AN_ICON: 'Vælg et ikon...'
             SELECT_A_PAGE: 'Vælg en side...'
+            MEDIA:
+                ADD: 'Tilføj medier…'
+                CHANGE: Skift
+                DONE: Udført
+                MOVE_EARLIER: 'Flyt tidligere'
+                MOVE_LATER: 'Flyt senere'
+                REMOVE: Fjern
+                SELECT: 'Vælg medie…'
+                SELECTED_COUNT: '{count, plural, =0 {Intet valgt} one {# valgt} other {# valgt}}'
+                TITLE: 'Vælg medie'
+            SET_DATE_NOW: 'Sæt til nu'
         FILE: Fil
         FILE_EXTENSION: Filendelse
         FILE_STREAMS: Filstrømme
@@ -824,6 +849,11 @@ ICU:
             CONTINUE_WITH: 'Fortsæt med {provider}'
             OR_CONTINUE_WITH: 'Eller fortsæt med'
             SSO_FAILED: 'Kunne ikke logge ind med den udbyder. Prøv venligst igen.'
+            CAPTCHA_FAILED_TO_LOAD: 'Udfordringen kunne ikke indlæses. Genindlæs siden og prøv igen.'
+            CAPTCHA_NOT_COMPLETED: 'Udfyld venligst udfordringen for at fortsætte'
+            CAPTCHA_VERIFIED: 'Bekræftet at du er et menneske'
+            CAPTCHA_VERIFYING: 'Tjekker om du er et menneske...'
+            INVALID_AUTHENTICATION_CODE: 'Ugyldig godkendelseskode'
         LOG_ERRORS: 'Log fejl'
         LOG_ERRORS_HELP: 'Log fejl til /logs mappen'
         LOG_HANDLER: Log-håndtering
@@ -881,6 +911,17 @@ ICU:
                 LIST_VIEW: Listevisning
                 NEW_FOLDER: 'Ny mappe'
                 SEARCH_MEDIA: 'Søg i medier...'
+                DELETE_SELECTED: '{count, plural, one {Slet # fil} other {Slet # filer}}'
+                FILTER_ALL: Alle
+                FILTER_AUDIO: Lyd
+                FILTER_DOCS: Dokumenter
+                FILTER_IMAGES: Billeder
+                FILTER_VIDEO: Video
+                SEARCHING_FOR: 'Søg: 「{query}」'
+                SORT_DATE: Dato
+                SORT_NAME: Navn
+                SORT_SIZE: Størrelse
+                SORT_TYPE: Type
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Træk ind i editoren'
                 PAGE_MEDIA: Sidemedier
@@ -908,6 +949,15 @@ ICU:
                 STORED: 'Gemte metadata'
                 TAGS_PLACEHOLDER: 'Tilføj tag…'
                 TITLE: Metadata
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: Mediesti
+                OPEN: Åbn
+                PATH: Sti
+                SIZE: Størrelse
+                TITLE: Fildetaljer
+                TYPE: Type
+                URL: URL
         MEDIA_TYPES: Medietyper
         MEMCACHED_PORT: Memcached-port
         MEMCACHED_PORT_HELP: Memcached-serverporten
@@ -937,6 +987,7 @@ ICU:
             TOOLS: Værktøjer
             USERS: Brugere
             UPDATES_AVAILABLE: '{count} opdatering(er) tilgængelig(e)'
+            TRANSLATIONS: Oversættelser
         NEVER_CACHE_TWIG: 'Cache aldrig Twig'
         NEVER_CACHE_TWIG_HELP: 'Cache kun indhold og behandl Twig hver gang for sider. Ignorerer twig_first indstillingen.'
         NEWS_FEED_WIDGET:
@@ -1001,6 +1052,9 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: 'Skift sidenavigering'
                 UNPUBLISH_ON: 'Afpublicer d.'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Skriv dit markdown-indhold her...'
+                FALLBACK_NOTICE_UNRESOLVED: 'Serveren returnerede den {effective} version af denne side i stedet for {active}, og rapporterede ikke {active} som manglende. Lagring er deaktiveret her, så den {effective} fil ikke overskrives. Hvis alle sider gør dette, sender webserveren sandsynligvis ikke forespørgselsstrenge videre til Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'vist på dens forældreside'
+                TEMPLATE_MISSING_NOTICE: 'Skabelonen **{template}** til dette modul blev ikke fundet i temaet, så siden den tilhører viser en "skabelon ikke fundet"-fejl. Vælg en skabelon under **Sideskabelon** på fanen Avanceret, eller tilføj skabelonen til temaet.'
             EDIT_PAGE: 'Rediger side'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ændret
@@ -1052,6 +1106,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-sikkert mappenavn for denne side'
                 VISIBLE: Synlig
+                CHILD_TYPE_HINT: 'Forældresiden foreslår 「{template}」 for dens underliggende sider. Du kan stadig vælge en anden skabelon.'
+                STATUS_HELP: 'Kladder gemmes, men er ikke synlige på siden, før du publicerer dem'
             NO_MATCH: 'Ingen sider matcher din søgning'
             NO_PAGES: 'Ingen sider fundet'
             NO_SEARCH_RESULTS: 'Ingen sider matcher din søgning'
@@ -1117,6 +1173,16 @@ ICU:
                 VISIBLE: Synlig
                 'YES': Ja
             VALIDATION_FAILED_FOR_FIELDS: 'Kunne ikke gemme — disse felter er ugyldige: {fields}'
+            COLUMN_EMPTY: Tom
+            SEARCH_MATCH_COUNT: '{n, plural, one {# match} other {# matches}} på tværs af alle sider'
+            SEARCH_SHOWING: 'Viser {shown} af {total} resultater'
+            SEARCH_SHOW_MORE: 'Vis mere'
+            STATUS:
+                EXPIRED: Udløbet
+                EXPIRED_ON: 'Ikke udgivet siden {date}'
+                SCHEDULED: Planlagt
+                SCHEDULED_FOR: 'Planlagt til udgivelse den {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PAGES_CONFIGURATION: Sidekonfiguration
         PAGES_FALLBACK_ONLY: 'Kun fallback for sider'
         PAGES_FALLBACK_ONLY_HELP: "Kun 'fallback' for at finde sideindhold gennem understøttede sprog. Standardadfærd er at vise ethvert fundet sprog, hvis det aktive sprog mangler"
@@ -1207,6 +1273,9 @@ ICU:
             LAST_14_DAYS: 'Sidste 14 dage'
             THIS_MONTH: 'Denne måned'
             THIS_WEEK: 'Denne uge'
+            CHART_LABEL: 'Sidevisninger per dag de sidste 14 dage'
+            TODAY: 'I dag'
+            VIEWS: '{count, plural, one {# visning} other {# visninger}}'
         PREMIUM: Premium
         PREVIEW: Forhåndsvisning
         PROCESS: Behandling
@@ -1240,6 +1309,7 @@ ICU:
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Indtast venligst din adgangskode igen for at fortsætte. Dit arbejde er blevet gemt.'
             SESSION_EXPIRED: 'Session udløbet'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Log ind igen for at fortsætte. Dit arbejde er blevet bevaret.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Se alle'
         REDIRECT: Side-omdirigering
@@ -1346,6 +1416,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Filer under user/data, user/accounts og user/config kan downloades direkte over HTTP — inklusive certifikater, nøgler, tokens og databaser. Dette betyder normalt, at din webserver ikke anvender Gravs .htaccess-regler.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Sådan sikrer du din webserver'
             USER_FOLDER_EXPOSED_TITLE: 'Sikkerhedsrisiko: dine brugerdatamapper er tilgængelige fra nettet'
+            COLLAPSE: Skjul
+            SHOW_DETAILS: 'Vis detaljer'
+            SNOOZE: Slumre
+            SNOOZE_HINT: 'Skjul denne advarsel i 24 timer. Den kommer tilbage før, hvis der findes andre filer.'
+            STORAGE_EXPOSED_ALL: 'Hver testfil kunne downloades, så din webserver anvender slet ikke Gravs adgangsregler. På Apache, tjek at AllowOverride tillader sitets .htaccess at træde i kraft. På nginx, Caddy eller IIS, tilføj sikkerhedsreglerne fra Gravs webserver-configs mappe.'
+            STORAGE_EXPOSED_BODY: 'Webserveren serverede testfiler fra mapper, der burde være private. De filtyper, der er anført nedenfor, kan eksponere gemte indsendelser, sikkerhedskopier eller midlertidige filer. Bed din host om at blokere direkte adgang eller flytte privat lager uden for web-roden.'
+            STORAGE_EXPOSED_BY_TYPE: 'Nogle filtyper blev blokeret i disse mapper, mens andre kunne downloades. Det betyder normalt, at noget foran Gravs regler, såsom nginx der serverer statiske filer før Apache, svarer for almindelige filtyper som .zip, før reglerne bliver tjekket. Bloker også disse mapper i det lags konfiguration.'
+            STORAGE_EXPOSED_CDN: 'Hvis sitet er bag et CDN såsom Cloudflare, så tøm dets cache efter at have rettet dette. Kopier, som det allerede har gemt, forbliver downloadbare, indtil du gør det.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# filtype} other {# filtyper}}'
+            STORAGE_EXPOSED_TITLE: 'Filer, der bør være private, kan hentes fra dette websted'
+            STORAGE_EXPOSED_TMP: 'Testfiler i tmp/ kunne hentes, mens de andre mapper var blokerede. Dine serverregler stammer sandsynligvis fra før Grav 2.1.7, som tilføjede tmp/ til listen over blokerede mapper. Tilføj tmp til listen i din .htaccess, eller i din nginx-, Caddy- eller IIS-konfiguration for at matche de regler, som Grav leveres med.'
         SESSION: Session
         SESSION_DOMAIN: Sessionsdomæne
         SESSION_DOMAIN_HELP: 'Brug kun hvis du omskriver websitets domæne, for eksempel i en Docker-container.'
@@ -1508,6 +1589,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Standard
             EDITOR_KEYMAP_DESC: 'Brug Vim-genvejstaster i Markdown- og kodeditorerne. Standard bevarer almindelig redigering.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Kopiér denne farve'
+            CURRENT_COLOR: Farve
+            DARK_SHADE: 'Mørk nuance'
+            DARK_SHADE_DESC: 'Hvordan mørk tilstand ser ud. Det træder kun i kraft, mens mørk tilstand er aktiveret.'
+            DARK_SHADE_GRAPHITE: Grafit
+            DARK_SHADE_MIDNIGHT: Midnat
+            DARK_SHADE_ZINC: Onyx
+            DEFAULT_DARK_SHADE_DESC: 'Standard mørk nuance for nye brugere. Det træder kun i kraft, mens mørk tilstand er aktiveret.'
+            DEFAULT_HELP_TEXT_DESC: 'Standardplacering for felt-hjælpetekst for nye brugere, under etiketten eller i et værktøjstip.'
+            HELP_MODE_INLINE: 'Under etiketten'
+            HELP_MODE_TOOLTIP: 'I et værktøjstip'
+            HELP_TEXT: Hjælpetekst
+            HELP_TEXT_DESC: 'Hvor den korte forklaring for hvert felt placeres. I et værktøjstip skal du føre markøren over info-ikonet ved siden af en etiket, eller trykke på det på en telefon for at læse det.'
+            LOGO_HEIGHT_CUSTOM: Brugerdefineret
+            LOGO_HEIGHT_DEFAULT: Standard
+            SIDEBAR_LOGO_HEIGHT: 'Sidebars-logoets højde'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Hvor højt dit logo vises øverst i sidebaren.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tegn: bogstaver, tal, bindestreger, understregninger'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto oprettet — velkommen til Grav'
@@ -1766,6 +1864,10 @@ ICU:
                 REFRESH: Opdater
                 SEARCH_MESSAGES: 'Søg i beskeder...'
                 WARNING: Advarsel
+                CLEAR_LOG: 'Ryd log'
+                CLEAR_LOG_CONFIRM: 'Slet permanent hver post i {file}? Dette kan ikke fortrydes, og enhver registrering af, hvad der gik galt før nu, forsvinder med den.'
+                FAILED_TO_CLEAR_LOG: 'Kunne ikke rydde loggen'
+                LOG_CLEARED: 'Ryddede {file}'
             REPORTS:
                 CONTENT_FIELD: 'indhold: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Kunne ikke indlæse rapporter'
@@ -1802,6 +1904,20 @@ ICU:
                     SCAN_TAGS: 'Blokerede tags i indhold'
                     SECTION_EVENTS: 'Seneste blokeringer'
                     SECTION_LEAKS: 'Sider der lækker rå Twig'
+                    POLICY_ADDED: '+{count} tilføjet'
+                    POLICY_ALL_DEFAULTS: 'Alle standardindstillinger, uændret'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# klasse} other {# klasser}}'
+                    POLICY_DENIED: '−{count} afvist'
+                    POLICY_EFFECTIVE_COUNT: '{count} effektiv'
+                    POLICY_FAILED: 'Kunne ikke indlæse sandbox-politikken'
+                    POLICY_FILTERS: Filtre
+                    POLICY_FUNCTIONS: Funktioner
+                    POLICY_HIDE: 'Skjul effektiv politik'
+                    POLICY_INTRO: 'Sandbox-baselinjen leveres i koden; din konfiguration udvider eller strammer den blot.'
+                    POLICY_METHODS: Metoder
+                    POLICY_PROPERTIES: Egenskaber
+                    POLICY_TAGS: Tags
+                    POLICY_VIEW: 'Vis effektiv politik'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Indlæser rapportkomponent...'
             SCHEDULER:
@@ -1815,6 +1931,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-konfiguration gemt'
                 SECURITY_WARNING: 'Kun avancerede brugere bør konfigurere brugerdefinerede scheduler-jobs. Forkert konfiguration kan forårsage ydelsesproblemer eller sikkerhedssårbarheder.'
                 WEBHOOK_ALTERNATIVE: 'Alternativt kan du installere **scheduler-webhook**-pluginet for at bruge webhook-baseret cron-afvikling, hvilket anbefales til cloud-miljøer, hvor adgang til systemets crontab ikke er tilgængelig.'
+                CRON_UNDETERMINED: 'Grav kan ikke inspicere denne servers crontab, så det kan ikke bekræfte, hvordan planlæggeren (scheduler) bliver udløst.'
+                ENVIRONMENT_MISMATCH: 'Planlæggeren kørte sidst under **{last}** miljøet, men dette site bruger **{current}**, som har sin egen konfiguration i user/env/{current}/config. Brugerdefinerede jobs og indstillinger defineret kun dér, kører aldrig fra den trigger. Opdater bin/grav scheduler-linjen i din crontab til kommandoen herunder (den sender --env={current}), eller eksporter GRAV_ENVIRONMENT={current}, før den kører.'
+                LAST_MANUAL_RUN: 'Sidst kørt manuelt'
+                LAST_TRIGGERED: 'Sidst udløst'
+                PROCESS_UNAVAILABLE: "Denne vært har PHP's proc_open-funktion deaktiveret, så jobs kan ikke startes fra admin. De kører stadig, hver gang din planlægger udløses af cron eller et webhook."
+                STATUS_UNAVAILABLE: 'Planlæggerens status kunne ikke læses på denne vært. Dine jobs er stadig listet nedenfor og kan redigeres som sædvanlig.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} ledig af {total}'
                 DISK_USAGE: Diskforbrug
@@ -1860,7 +1982,118 @@ ICU:
             NO_VIEW_DATA_YET: 'Ingen visningsdata endnu'
         TOP_PROGRESS_BAR:
             WORKING: Arbejder
-        TRANSLATIONS: Oversættelser
+        TRANSLATIONS:
+            ACCEPT: Accepter
+            ACCEPTED_ALL: '{count, plural, one {# oversættelse gemt} other {# oversættelser gemt}}'
+            ACCEPT_ALL: 'Accepter alle'
+            ALL_SOURCES: 'Alle kilder'
+            CLEAR_ALL_FILTERS: 'Ryd filtre'
+            DESCRIPTION: 'Omskriv enhver streng, som dette websted viser, på ethvert sprog. Ændringer gemmes som tilsidesættelser i user/languages og rører aldrig ved et plugin eller et temas egne filer, så en opdatering kan ikke slette dem.'
+            DISCARD: Kassér
+            DISCARD_ALL: Kassér
+            EDITED: redigeret
+            EDITING_LANGUAGE: Redigerer
+            EDIT_AS_GRID: 'Tilbage til gitter'
+            EDIT_AS_YAML: 'Rediger som YAML'
+            EDIT_HINT: 'Enter for at gemme, Escape for at annullere, Shift+Enter for en ny linje. Tøm feltet for at fjerne din tilsidesættelse.'
+            FAILED_TO_LOAD: 'Kunne ikke indlæse oversættelser'
+            FAILED_TO_SAVE: 'Kunne ikke gemme ændringen'
+            FILTERED_BY: 'Viser kun'
+            FILTER_LANGUAGES: 'Filtrér sprog'
+            IMPORT_ACTION: 'Importér tilsidesættelser'
+            IMPORT_ALREADY_DONE: 'Alle {count, plural, one {# tilsidesættelse er} other {# tilsidesættelser er}} allerede her'
+            IMPORT_BODY: '{count, plural, one {# tilsidesættelse er stadig gemt inde i Translation Strings-pluginet. Importér den for at administrere den her.} other {# tilsidesættelser på tværs af {languages, plural, one {# sprog} other {# sprog}} er stadig gemt inde i Translation Strings-pluginet. Importér dem for at administrere dem her.}}'
+            IMPORT_COL_ALREADY: 'Allerede her'
+            IMPORT_COL_CONFLICT: Konfliktfyldt
+            IMPORT_COL_LANGUAGE: Sprog
+            IMPORT_COL_NEW: Ny
+            IMPORT_COL_SHIPPED: 'Samme som original'
+            IMPORT_COL_UNKNOWN: Ukendt
+            IMPORT_CONFLICTS: '{count, plural, one {# nøgle er} other {# nøgler er}} angivet begge steder med forskellig ordlyd. Pluginets version vinder, da det er hvad dit websted viser i dag.'
+            IMPORT_DISABLE_ACTION: 'Deaktivér pluginet'
+            IMPORT_DISABLE_BLOCKED: 'Importér tilsidesættelserne først, ellers forsvinder de fra webstedet.'
+            IMPORT_DISABLE_FAILED: 'Kunne ikke deaktivere pluginet'
+            IMPORT_DONE: 'Importeret {count, plural, one {# tilsidesættelse} other {# tilsidesættelser}}'
+            IMPORT_FAILED: 'Import mislykkedes'
+            IMPORT_HIDE_DETAIL: 'Skjul detaljer'
+            IMPORT_LEGEND: 'Strenge markeret med „samme som original“ matcher hvad pluginnet eller temaet allerede leverer, så de fjernes i stedet for at blive gemt som tilsidesættelser, der ikke gør noget.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Du har ikke tilladelse til at ændre plugin-indstillinger, så pluginnet skal deaktiveres af en administrator.'
+            IMPORT_NO_PERMISSION: 'Du har ikke tilladelse til at skrive oversættelsestilsidesættelser, så importen er ikke tilgængelig.'
+            IMPORT_PLUGIN_DISABLED: 'Oversættelsesstrenge deaktiveret. Denne editor har nu kontrollen.'
+            IMPORT_SHOW_DETAIL: 'Vis hvad der bliver importeret'
+            IMPORT_STILL_ENABLED_BODY: 'Det anvender sine strenge efter denne editor, så det tilsidesætter stadig alt, hvad du ændrer her. Tjek at siden læses korrekt, og deaktiver derefter pluginnet for at fuldføre skiftet. Dets indstillinger forbliver på plads, så dette kan fortrydes.'
+            IMPORT_STILL_ENABLED_TITLE: 'Pluginnet Oversættelsesstrenge er stadig aktiveret'
+            IMPORT_TITLE: 'Tilsidesættelser der venter i pluginnet Oversættelsesstrenge'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# nøglenavn angiver en streng, som ingen plugin-, tema- eller kernefil leverer. Den beholdes så du kan gennemse den, men den har ingen effekt.} other {# nøglenavne angiver strenge, som ingen plugin-, tema- eller kernefil leverer. De beholdes så du kan gennemse dem, men de har ingen effekt.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# importeret nøglenavn angiver en streng} other {# importerede nøglenavne angiver strenge}}, som intet på dette websted leverer. Find dem med filteret Ukendt.'
+            INACTIVE: inaktiv
+            INACTIVE_HELP: 'Dette plugin er deaktiveret, eller dette tema er ikke det aktive, så dets strenge bruges ikke på webstedet.'
+            KEY: Nøgle
+            KIND_PLUGINS: Plugins
+            KIND_SYSTEM: Kerne
+            KIND_THEMES: Temaer
+            KIND_USER: 'Dette websted'
+            LANGUAGES: Sprog
+            LOADING: 'Indlæser oversættelser...'
+            NEXT: Næste
+            NOTHING_TO_TRANSLATE: 'Intet på denne side mangler en oversættelse.'
+            NO_RESULTS: 'Ingen strenge matcher disse filtre.'
+            NO_RESULTS_FILTERED: 'Du kigger i: {filters}'
+            OVERRIDE_REMOVED: 'Overskrivning fjernet'
+            PICK_A_TARGET_LANGUAGE: 'Tilføj en sprogkolonne først — der er ikke noget at oversætte til.'
+            PREVIOUS: Forrige
+            PROPOSALS_PENDING: '{count, plural, one {# forslag til gennemgang} other {# forslag til gennemgang}}'
+            REFRESH: Opdater
+            REMOVE_FILTER: 'Fjern dette filter'
+            REVERT: Fortryd
+            REVERTED_TO_SHIPPED: 'Gendannet til den oprindelige ordlyd'
+            REVERT_HELP: "Fjern denne overskrivning og vend tilbage til det, som plugin'et eller temaet leverer."
+            SAVE: Gem
+            SAVED_UNKNOWN_KEY: 'Gemt, men intet leverer {key} — tjek stavningen'
+            SAVING: Gemmer...
+            SCOPED_TO: 'Kun {namespace}'
+            SCOPE_WHOLE_FILE: 'Redigerer alle overskrivninger for dette sprog'
+            SEARCH_PLACEHOLDER: 'Søg efter tekst eller nøgle...'
+            SHIPPED_VALUE: 'Oprindeligt: {value}'
+            SHOWING: 'Viser {from}–{to} af {total}'
+            SKIPPED_COUNT: '{count, plural, one {# sprunget over} other {# sprunget over}}'
+            SKIP_EMPTY: 'Oversættelsestjenesten returnerede intet for denne streng.'
+            SKIP_ICU: 'Denne meddelelse ændrer sig med et tal eller et valg, og hvert sprog har brug for sit eget sæt af former. Skriv denne i hånden.'
+            SKIP_NOTHING: 'Denne streng består kun af pladsholdere, så der er ingen ord at oversætte.'
+            SKIP_NO_SOURCE: 'Der er ingen ordlyd på kildesproget at oversætte fra.'
+            SKIP_PLACEHOLDERS: 'Oversættelsen kom tilbage med ændrede pladsholdere, så den blev kasseret i stedet for gemt.'
+            SOURCE: kilde
+            SOURCE_LANGUAGE: Kilde
+            STATE_MISSING: mangler
+            STATE_MISSING_FALLBACK: 'bruger fallback'
+            STATE_OVERRIDDEN: tilsidesat
+            STATUS_ALL: Alle
+            STATUS_MISSING: Manglende
+            STATUS_OVERRIDDEN: Tilsidesat
+            STATUS_UNKNOWN: Ukendt
+            SUGGESTED: Foreslået
+            SUPERSEDED_ACTION: 'Åbn oversættelser'
+            SUPERSEDED_BODY: 'Oversættelsessektionen gør alt, hvad dette plugin gør, og tilføjer søgning på tværs af alle strenge på sitet, dækning per sprog, maskinoversættelse og en rapport over nøgler, som intet længere leverer. Dette plugin forbliver understøttet på Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# tilsidesættelse er} other {# tilsidesættelser er}} stadig gemt her og kan importeres.'
+            SUPERSEDED_TITLE: 'Indbygget i Grav 2.0'
+            TITLE: Oversættelser
+            TRANSLATE_FAILED: 'Oversættelse fejlede'
+            TRANSLATE_MISSING: 'Oversæt manglende'
+            TRANSLATE_ROW: 'Foreslå oversættelser for denne streng på alle viste sprog'
+            TRANSLATE_THIS: 'Foreslå en oversættelse for denne streng'
+            TRANSLATE_UNAVAILABLE_FIND_IT: "Hent plugin'et"
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate har endnu ikke en oversættelsesudbyder konfigureret, så maskinoversættelse er ikke tilgængelig.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate er installeret, men slået fra, så maskinoversættelse er ikke tilgængelig.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: "AI-drevet oversættelse af manglende strenge er tilgængelig med AI Translate premium-plugin'et."
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Åbn dens indstillinger'
+            TRANSLATING: Oversætter...
+            UNKNOWN_KEYS_SAVED: 'Gemt, men intet leverer disse nøgler'
+            UNKNOWN_KEY_HELP: 'Intet plugin, tema eller kernefil leverer denne nøgle. Det er sandsynligvis en tastefejl eller en rest fra noget, der ikke længere er installeret.'
+            YAML_HELP: 'Indsæt eller rediger overskrivninger direkte. Værdier, der matcher hvad pluginnet eller temaet allerede leverer, bliver fjernet, så filen kun indeholder de faktiske ændringer.'
+            YAML_PLACEHOLDER: |-
+                MIT_PLUGIN:
+                  EN_NØGLE: Din tekst her
+            YAML_SAVED: '{count, plural, =0 {Ingen overskrivninger tilbage i {lang}} one {# overskrivning gemt i {lang}} other {# overskrivninger gemt i {lang}}}'
         TRANSLATIONS_FALLBACK: Oversættelses-fallback
         TRANSLATIONS_FALLBACK_HELP: 'Fallback gennem understøttede oversættelser, hvis det aktive sprog ikke findes'
         TWIG_3_COMPATIBILITY: 'Twig 3-kompatibilitet'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: Bliv
             SWITCH_LANGUAGE: Skift
             SWITCH_LANGUAGE_MESSAGE: 'Du har ikke-gemte ændringer. Vil du skifte sprog alligevel?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'Serverens svar kunne ikke læses, fordi det ikke er gyldig JSON. Noget på serveren udskriver muligvis ekstra output, såsom en PHP-advarsel, sammen med API-svaret. Browserkonsollen indeholder detaljerne.'
+            INVALID_JSON_TITLE: 'Uventet svar fra serveren'
+            UNEXPECTED_RESPONSE_DETAIL: 'Serveren svarede med data i et format, som denne skærm ikke forventer. Browserkonsollen indeholder detaljerne.'
+            UNEXPECTED_RESPONSE_TITLE: 'Uventet svar fra serveren'
+        CACHE_MODULES: 'Cache modul-output'
+        CACHE_MODULES_HELP: 'Cache det renderede output fra denne sides moduler. Brug det kun, når modulerne viser det samme indhold til alle besøgende. Moduler med deres egen Twig eller en formular, besøgende der er logget ind, samt formularindsendelser bliver altid renderet friskt. Redigering af kun en del af en skabelon kræver en rydning af cachen.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Flex Render Hints'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Indkapsl hvert renderet Flex-objekt og -samling i en HTML-kommentar, der navngiver det, så kilden til en blok kan findes i sidens markup. Gælder kun HTML-sider.'
+        FRONTMATTER_NATIVE_YAML: 'Hurtig frontmatter-parsing'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Læs side-frontmatter med libyaml PHP-udvidelsen, når den er installeret, hvilket gør genopbygning af side-cachen hurtigere. Den læser visse værdier forskelligt, så tjek dine sider først. En uanført dato forbliver tekst i stedet for at blive et tidsstempel, og uanførte yes, no, on og off bliver til true eller false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Dette vil opgradere Grav fra v{current} til v{target}. Siden kan være kortvarigt utilgængelig under opgraderingen.'
+            CONFIRM_TITLE: 'Opgradér Grav-kerne?'
+            FAILED: 'Grav-opgradering fejlede: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} er markeret som kompatibel med Grav {compatible}'
+            NO_DETAIL: 'serveren gav ingen årsag'
+            PREFLIGHT_MESSAGE: 'De tjek, der kører før en opgradering, stoppede den af disse årsager. Ret dem og prøv igen, eller opgradér alligevel, hvis du ved, at disse plugins og temaer virker med den nye version.'
+            PREFLIGHT_TITLE: 'Grav kan ikke opgradere til v{version} endnu'
+            STILL_BLOCKED: 'Grav-opgradering er stadig blokeret: {detail}'
+            UPGRADE_ANYWAY: 'Opgradér alligevel'
+            UPGRADING: 'Opgraderer Grav til v{version}…'
+        HELP: Hjælp
+        HELP_FOR_LABEL: 'Hjælp til {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'Progressive JPEGs'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Gem ændrede og cachede JPEGs som progressive, så de fremstår som et samlet sløret billede, der bliver skarpt i stedet for at blive udfyldt fra toppen. Normalt også mindre i størrelsen. Påvirker ikke PNG, WebP eller AVIF.'
+        MARKDOWN_OUTPUT: Markdown-output
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: "Absolutte URL'er"
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: "Gør rod-relative links og billeder til fulde URL'er, så de stadig virker, når Markdown-indholdet forlader sitet."
+        MARKDOWN_OUTPUT_ENABLED: 'Vis sider som Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Enhver side kan hentes som Markdown ved at tilføje `.md` til dens URL, eller ved at sende en `Accept:&nbsp;text/markdown` anmodningsheader. Bygget til AI-agenter og andre tekstklienter. Siden gengives gennem temaet, reduceres til sit hovedindholdsområde og konverteres, så lister, butikker og modulære sider læses, som de vises.'
+        MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter-blok
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Start Markdown-indholdet med en YAML-blok, der indeholder titel, URL, dato, beskrivelse og taksonomi.'
+        MARKDOWN_OUTPUT_LINKS: Navigationslinks
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Afslut Markdown-indholdet med links til forældre-, nabo- og undersider, så en agent kan gennemse sitet uden at forlade Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Maksimalt antal undersidelinks'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'Det maksimale antal undersider, der er angivet i navigationssektionen. Nul viser dem alle.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Token-tæller header'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Send en `X-Markdown-Tokens` respons-header med et estimeret token-antal, den samme header som Cloudflares Markdown for Agents bruger.'
+        NOTICES:
+            HEADING: '{count, plural, one {Bemærkning} other {Bemærkninger}}'
+            HIDE: 'Skjul bemærkninger'
+            SHOW: 'Vis bemærkninger'
+        PAGES_LAZY_INDEX: 'Lazy sideindeks'
+        PAGES_LAZY_INDEX_HELP: 'Indlæs sider, ruter og taksonomi ved behov fra et SQLite-indeks per side i stedet for én stor cachefil. Auto bruger det på sider med 1.000 sider eller mere. Falder tilbage på den klassiske cache, når ingen database-motor er tilgængelig.'
+        RETRY: 'Prøv igen'
+        SESSION_LAZY: 'Start kun sessioner ved behov'
+        SESSION_LAZY_HELP: 'Besøgende uden en sessions-cookie får kun en session, når noget gemmes i den, såsom et login, en formular eller en besked, så anonyme sidevisninger kan caches af en proxy eller et CDN. Plugins, der gemmer data ved hver sidevisning, starter stadig en.'
+        UPDATE_CHANGELOG_TITLE: 'Ændringer i v{version}'
