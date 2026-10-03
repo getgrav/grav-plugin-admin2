@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Alleen vertrouwde rollen'
                 TRUSTED_DESC: 'Alleen superusers en bezitters van de "pages twig"-toestemming kunnen Twig op een pagina inschakelen.'
             VALIDATION_FAILED_FOR_FIELDS: 'Opslaan mislukt — deze velden zijn ongeldig: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Configuratie laden mislukt.'
+            SCOPE_NOT_FOUND: 'Geen configuratiebereik genaamd {scope} gevonden.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Omgeving
             EXPORT_YAML: 'YAML exporteren'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: Schedulerstatus
                 STATUS: 'Status:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: handmatig
+                MANUAL_RUN_HELP: '‘Run Pending’ voert de taken uit die hun laatst geplande tijd hebben gemist; dit is wat je wilt op een site zonder cron-entry. Taken die je hier start worden geregistreerd als handmatig en tellen niet mee voor de cron-status hierboven.'
+                NEVER: Nooit
+                PENDING: 'In afwachting'
+                PROCESS_UNAVAILABLE: 'Taken kunnen hier niet worden uitgevoerd op deze host, omdat de PHP-functie proc_open is uitgeschakeld. Ze worden nog steeds uitgevoerd wanneer je scheduler wordt geactiveerd door een cron of een webhook.'
+                RUN_ALL_HELP: 'Voer nu elke ingeschakelde taak uit, ongeacht wat het schema zegt.'
+                RUN_NOW: 'Voer deze taak nu uit'
+                RUN_PENDING: 'Run Pending'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Aangepast veld laden...'
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'Geen pictogrammen gevonden'
                 SEARCH_ICONS: 'Pictogrammen zoeken...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Eerste 200 resultaten weergegeven — typ om in te perken'
+                FAMILY_ALL: Alle
+                FAMILY_BRANDS: Merken
+                FAMILY_REGULAR: Regulier
+                FAMILY_SOLID: Solid
             NO_TAXONOMY_TYPES: 'Geen taxonomietypen geconfigureerd'
             PAGES:
                 FILTER_PAGES: "Pagina's filteren..."
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Typ en druk op Enter...'
             SELECT_AN_ICON: 'Selecteer een icoon...'
             SELECT_A_PAGE: 'Selecteer een pagina...'
+            MEDIA:
+                ADD: 'Media toevoegen…'
+                CHANGE: Wijzigen
+                DONE: Klaar
+                MOVE_EARLIER: 'Naar voren verplaatsen'
+                MOVE_LATER: 'Naar achteren verplaatsen'
+                REMOVE: Verwijderen
+                SELECT: 'Selecteer media…'
+                SELECTED_COUNT: '{count, plural, =0 {Niets geselecteerd} one {# geselecteerd} other {# geselecteerd}}'
+                TITLE: 'Selecteer media'
+            SET_DATE_NOW: 'Instellen op nu'
         FLEX_OBJECTS:
             ACTIONS: Acties
             BACK_TO_LIST: 'Terug naar lijst'
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Ga door met {provider}'
             OR_CONTINUE_WITH: 'Of ga door met'
             SSO_FAILED: 'Kon niet aanmelden met die provider. Probeer het opnieuw.'
+            CAPTCHA_FAILED_TO_LOAD: 'De uitdaging kon niet worden geladen. Herlaad de pagina en probeer het opnieuw.'
+            CAPTCHA_NOT_COMPLETED: 'Voltooi de uitdaging om door te gaan'
+            CAPTCHA_VERIFIED: 'Geverifieerd dat je een mens bent'
+            CAPTCHA_VERIFYING: 'Controleren of je een mens bent...'
+            INVALID_AUTHENTICATION_CODE: 'Ongeldige authenticatiecode'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Niets om voor te bekijken'
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: Lijstweergave
                 NEW_FOLDER: 'Nieuwe map'
                 SEARCH_MEDIA: 'Media zoeken...'
+                DELETE_SELECTED: '{count, plural, one {# bestand verwijderen} other {# bestanden verwijderen}}'
+                FILTER_ALL: Alles
+                FILTER_AUDIO: Audio
+                FILTER_DOCS: Documenten
+                FILTER_IMAGES: Afbeeldingen
+                FILTER_VIDEO: Video
+                SEARCHING_FOR: 'Zoeken: „{query}”'
+                SORT_DATE: Datum
+                SORT_NAME: Naam
+                SORT_SIZE: Grootte
+                SORT_TYPE: Type
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Sleep in editor'
                 PAGE_MEDIA: Paginamedia
@@ -448,6 +489,15 @@ ICU:
                 STORED: 'Opgeslagen metadata'
                 TAGS_PLACEHOLDER: 'Tag toevoegen...'
                 TITLE: Metadata
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: Mediapad
+                OPEN: Openen
+                PATH: Pad
+                SIZE: Grootte
+                TITLE: Bestandsdetails
+                TYPE: Type
+                URL: URL
         NAV:
             CONFIGURATION: Configuratie
             DASHBOARD: Dashboard
@@ -460,6 +510,7 @@ ICU:
             TOOLS: Hulpmiddelen
             USERS: Gebruikers
             UPDATES_AVAILABLE: '{count} update(s) beschikbaar'
+            TRANSLATIONS: Vertalingen
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Geen feeditems'
         NORMAL_MODE: 'Normale modus'
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Schrijf hier uw markdown-inhoud...'
                 SAVED_BY_PEER: 'Gebruiker {user} heeft deze pagina opgeslagen'
                 SAVED_BY_PEER_ANON: 'Een andere gebruiker heeft deze pagina opgeslagen'
+                FALLBACK_NOTICE_UNRESOLVED: 'De server gaf de {effective} versie van deze pagina terug in plaats van {active}, en gaf niet aan dat {active} ontbreekt. Opslaan is hier uitgeschakeld zodat het {effective} bestand niet wordt overschreven. Als dit bij elke pagina gebeurt, geeft de webserver waarschijnlijk geen query-strings door aan Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'getoond in de bovenliggende pagina'
+                TEMPLATE_MISSING_NOTICE: 'Het template **{template}** voor deze module is niet gevonden in het thema, waardoor de pagina waar deze bij hoort een „template not found” foutmelding geeft. Kies een template onder **Pagina-template** op het tabblad Geavanceerd, of voeg het template toe aan het thema.'
             EDIT_PAGE: 'Pagina bewerken'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Gewijzigd
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-veilige mapnaam voor deze pagina'
                 VISIBLE: Zichtbaar
+                CHILD_TYPE_HINT: 'De bovenliggende pagina suggereert „{template}” voor zijn kinderen. Je kunt nog steeds een ander template kiezen.'
+                STATUS_HELP: 'Concepten worden opgeslagen maar zijn niet zichtbaar op de site totdat je ze publiceert'
             NO_PAGES: "Geen pagina's gevonden"
             NO_SEARCH_RESULTS: "Geen pagina's komen overeen met uw zoekopdracht"
             PAGES_GRAV_ADMIN: "Pagina's — Grav Admin"
@@ -626,6 +682,16 @@ ICU:
                 VISIBLE: Zichtbaar
                 'YES': Ja
             VALIDATION_FAILED_FOR_FIELDS: 'Opslaan mislukt — deze velden zijn ongeldig: {fields}'
+            COLUMN_EMPTY: Leeg
+            SEARCH_MATCH_COUNT: "{n, plural, one {# resultaat} other {# resultaten}} op alle pagina's"
+            SEARCH_SHOWING: '{shown} van {total} resultaten getoond'
+            SEARCH_SHOW_MORE: 'Toon meer'
+            STATUS:
+                EXPIRED: Verlopen
+                EXPIRED_ON: 'Ongepubliceerd sinds {date}'
+                SCHEDULED: Gepland
+                SCHEDULED_FOR: 'Publicatie gepland op {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Wachtwoord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Wachtwoordvereisten
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: 'Afgelopen 14 dagen'
             THIS_MONTH: 'Deze maand'
             THIS_WEEK: 'Deze week'
+            CHART_LABEL: 'Paginaweergaven per dag voor de laatste 14 dagen'
+            TODAY: Vandaag
+            VIEWS: '{count, plural, one {# weergave} other {# weergaven}}'
         PREMIUM: Premium
         PREVIEW: Voorbeeld
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Voer uw wachtwoord opnieuw in om door te gaan. Uw werk is behouden gebleven.'
             SESSION_EXPIRED: 'Sessie verlopen'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Meld je opnieuw aan om door te gaan. Je werk is behouden.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Alles weergeven'
         REMOVE: Verwijderen
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Standaard
             EDITOR_KEYMAP_DESC: 'Gebruik Vim-sneltoetsen in de Markdown- en code-editors. Standaard behoudt de standaard bewerking.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Kopieer deze kleur'
+            CURRENT_COLOR: Kleur
+            DARK_SHADE: 'Donkere tint'
+            DARK_SHADE_DESC: 'Hoe de donkere modus eruitziet. Dit is alleen van toepassing wanneer de donkere modus is ingeschakeld.'
+            DARK_SHADE_GRAPHITE: Grafiet
+            DARK_SHADE_MIDNIGHT: Middernacht
+            DARK_SHADE_ZINC: Onyx
+            DEFAULT_DARK_SHADE_DESC: 'Standaard donkere tint voor nieuwe gebruikers. Dit is alleen van toepassing wanneer de donkere modus is ingeschakeld.'
+            DEFAULT_HELP_TEXT_DESC: 'Standaardlocatie voor hulptekst bij velden voor nieuwe gebruikers, onder het label of in een tooltip.'
+            HELP_MODE_INLINE: 'Onder het label'
+            HELP_MODE_TOOLTIP: 'In een tooltip'
+            HELP_TEXT: Hulptekst
+            HELP_TEXT_DESC: 'Waar de korte uitleg voor elk veld komt te staan. Bij een tooltip: zweef met de muis over het info-icoon naast een label, of tik erop op een telefoon, om de tekst te lezen.'
+            LOGO_HEIGHT_CUSTOM: Aangepast
+            LOGO_HEIGHT_DEFAULT: Standaard
+            SIDEBAR_LOGO_HEIGHT: 'Hoogte zijbalklogo'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Hoe groot je logo wordt weergegeven bovenaan de zijbalk.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: Vernieuwen
                 SEARCH_MESSAGES: 'Berichten zoeken...'
                 WARNING: Waarschuwing
+                CLEAR_LOG: 'Logboek wissen'
+                CLEAR_LOG_CONFIRM: 'Alle vermeldingen in {file} permanent verwijderen? Dit kan niet ongedaan worden gemaakt en hiermee gaat elk overzicht van wat er voorheen is misgegaan verloren.'
+                FAILED_TO_CLEAR_LOG: 'Logboek wissen mislukt'
+                LOG_CLEARED: '{file} gewist'
             REPORTS:
                 CONTENT_FIELD: 'content: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Rapporten konden niet worden geladen'
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 'Geblokkeerde tags in inhoud'
                     SECTION_EVENTS: 'Recente blokkades'
                     SECTION_LEAKS: "Pagina's die onbewerkte Twig lekken"
+                    POLICY_ADDED: '+{count} toegevoegd'
+                    POLICY_ALL_DEFAULTS: 'Alle standaarden, ongewijzigd'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# klasse} other {# klassen}}'
+                    POLICY_DENIED: '−{count} geweigerd'
+                    POLICY_EFFECTIVE_COUNT: '{count} effectief'
+                    POLICY_FAILED: 'Kon het sandbox-beleid niet laden'
+                    POLICY_FILTERS: Filters
+                    POLICY_FUNCTIONS: Functies
+                    POLICY_HIDE: 'Verberg effectief beleid'
+                    POLICY_INTRO: 'De sandbox-basislijn wordt meegeleverd in de code; je configuratie verruimt of verstrakt deze alleen.'
+                    POLICY_METHODS: Methoden
+                    POLICY_PROPERTIES: Eigenschappen
+                    POLICY_TAGS: Tags
+                    POLICY_VIEW: 'Toon effectief beleid'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Rapportcomponent laden...'
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-configuratie opgeslagen'
                 SECURITY_WARNING: 'Alleen geavanceerde gebruikers moeten aangepaste scheduler-taken configureren. Onjuiste configuratie kan prestatieproblemen of beveiligingsproblemen veroorzaken.'
                 WEBHOOK_ALTERNATIVE: 'U kunt ook de **scheduler-webhook** plugin installeren voor webhook-gebaseerde cron-activering, wat aanbevolen wordt voor cloudomgevingen waar systeemcrontab-toegang niet beschikbaar is.'
+                CRON_UNDETERMINED: 'Grav kan de crontab van deze server niet inspecteren, dus het kan niet bevestigen hoe de scheduler wordt geactiveerd.'
+                ENVIRONMENT_MISMATCH: 'De scheduler werd voor het laatst uitgevoerd in de **{last}**-omgeving, maar deze site gebruikt **{current}**, die zijn eigen configuratie heeft in user/env/{current}/config. Aangepaste taken en instellingen die alleen daar zijn gedefinieerd, worden nooit uitgevoerd via die trigger. Update de bin/grav scheduler-regel in je crontab naar het onderstaande commando (het geeft --env={current} door), of exporteer GRAV_ENVIRONMENT={current} voordat deze wordt uitgevoerd.'
+                LAST_MANUAL_RUN: 'Laatst handmatig uitgevoerd'
+                LAST_TRIGGERED: 'Laatst geactiveerd'
+                PROCESS_UNAVAILABLE: "Deze host heeft PHP's proc_open-functie uitgeschakeld, dus taken kunnen niet vanuit het admin-paneel worden gestart. Ze worden nog steeds uitgevoerd wanneer je scheduler wordt geactiveerd door cron of een webhook."
+                STATUS_UNAVAILABLE: 'De status van de scheduler kon niet worden gelezen op deze host. Je taken staan hieronder nog steeds vermeld en kunnen zoals gewoonlijk worden bewerkt.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} vrij van {total}'
                 DISK_USAGE: Schijfgebruik
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'Kon status niet wijzigen voor {username}: {detail}'
             DEMO_MODE_BLOCKED: 'Dit is een alleen-lezen demo — wijzigingen zijn uitgeschakeld.'
             USER_ROW_ACTION_FAILED: 'Actie kon niet worden voltooid: {label}'
-        TRANSLATIONS: Vertalingen
+        TRANSLATIONS:
+            ACCEPT: Accepteren
+            ACCEPTED_ALL: '{count, plural, one {# vertaling opgeslagen} other {# vertalingen opgeslagen}}'
+            ACCEPT_ALL: 'Alles accepteren'
+            ALL_SOURCES: 'Alle bronnen'
+            CLEAR_ALL_FILTERS: 'Filters wissen'
+            DESCRIPTION: 'Herschrijf elke string die deze site toont, in elke taal. Wijzigingen worden opgeslagen als overrides in user/languages en raken nooit de eigen bestanden van een plugin of thema aan, dus een update kan ze niet verwijderen.'
+            DISCARD: Negeren
+            DISCARD_ALL: Negeren
+            EDITED: bewerkt
+            EDITING_LANGUAGE: Bewerken
+            EDIT_AS_GRID: 'Terug naar overzicht'
+            EDIT_AS_YAML: 'Bewerken als YAML'
+            EDIT_HINT: 'Enter om op te slaan, Escape om te annuleren, Shift+Enter voor een nieuwe regel. Maak het vak leeg om je override te verwijderen.'
+            FAILED_TO_LOAD: 'Laden van vertalingen mislukt'
+            FAILED_TO_SAVE: 'Opslaan van die wijziging mislukt'
+            FILTERED_BY: 'Toon alleen'
+            FILTER_LANGUAGES: 'Filter talen'
+            IMPORT_ACTION: 'Overrides importeren'
+            IMPORT_ALREADY_DONE: 'Alle {count, plural, one {# override is} other {# overrides zijn}} al aanwezig'
+            IMPORT_BODY: '{count, plural, one {# override staat nog steeds opgeslagen in de Translation Strings plugin. Importeer deze om het hier te beheren.} other {# overrides in {languages, plural, one {# taal} other {# talen}} staan nog steeds opgeslagen in de Translation Strings plugin. Importeer ze om ze hier te beheren.}}'
+            IMPORT_COL_ALREADY: 'Al aanwezig'
+            IMPORT_COL_CONFLICT: Conflicterend
+            IMPORT_COL_LANGUAGE: Taal
+            IMPORT_COL_NEW: Nieuw
+            IMPORT_COL_SHIPPED: 'Gelijk aan origineel'
+            IMPORT_COL_UNKNOWN: Onbekend
+            IMPORT_CONFLICTS: '{count, plural, one {# sleutel is} other {# sleutels zijn}} op beide plaatsen ingesteld met verschillende bewoordingen. De versie van de plugin wint, omdat dat is wat je site vandaag toont.'
+            IMPORT_DISABLE_ACTION: 'Schakel de plugin uit'
+            IMPORT_DISABLE_BLOCKED: 'Importeer eerst de overrides, anders zullen ze van de site verdwijnen.'
+            IMPORT_DISABLE_FAILED: 'Kon de plugin niet uitschakelen'
+            IMPORT_DONE: '{count, plural, one {# overschrijving} other {# overschrijvingen}} geïmporteerd'
+            IMPORT_FAILED: 'Importeren mislukt'
+            IMPORT_HIDE_DETAIL: 'Details verbergen'
+            IMPORT_LEGEND: 'Strings gemarkeerd als „same as original” komen overeen met wat de plugin of het thema al bevat, waardoor ze worden genegeerd in plaats van opgeslagen als overschrijvingen die niets doen.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Je hebt geen toestemming om plugin-instellingen te wijzigen, dus de plugin moet door een beheerder worden uitgeschakeld.'
+            IMPORT_NO_PERMISSION: 'Je hebt geen toestemming om vertalingsoverschrijvingen te schrijven, dus de importfunctie is niet beschikbaar.'
+            IMPORT_PLUGIN_DISABLED: 'Translation Strings uitgeschakeld. Deze editor heeft nu de leiding.'
+            IMPORT_SHOW_DETAIL: 'Toon wat er geïmporteerd zal worden'
+            IMPORT_STILL_ENABLED_BODY: 'Het past zijn strings toe nadat deze editor dat doet, dus het overschrijft nog steeds alles wat je hier wijzigt. Controleer of de site correct wordt weergegeven en schakel het vervolgens uit om de overstap te voltooien. De instellingen blijven behouden, dus dit is omkeerbaar.'
+            IMPORT_STILL_ENABLED_TITLE: 'De Translation Strings-plugin is nog steeds ingeschakeld'
+            IMPORT_TITLE: 'Overschrijvingen wachtend in de Translation Strings-plugin'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# sleutel benoemt een string die door geen enkele plugin, thema of core-bestand wordt geleverd. Deze is bewaard zodat je deze kunt controleren, maar heeft geen effect.} other {# sleutels benoemen strings die door geen enkele plugin, thema of core-bestand worden geleverd. Deze zijn bewaard zodat je ze kunt controleren, maar ze hebben geen effect.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# geïmporteerde sleutel benoemt een string} other {# geïmporteerde sleutels benoemen strings}} die door niets op deze site worden geleverd. Vind ze met het Onbekend-filter.'
+            INACTIVE: inactief
+            INACTIVE_HELP: 'Deze plugin is uitgeschakeld of dit thema is niet het actieve thema, dus de strings worden niet op de site gebruikt.'
+            KEY: Sleutel
+            KIND_PLUGINS: Plugins
+            KIND_SYSTEM: Core
+            KIND_THEMES: "Thema's"
+            KIND_USER: 'Deze site'
+            LANGUAGES: Talen
+            LOADING: 'Vertalingen laden...'
+            NEXT: Volgende
+            NOTHING_TO_TRANSLATE: 'Op deze pagina ontbreken geen vertalingen.'
+            NO_RESULTS: 'Geen strings komen overeen met deze filters.'
+            NO_RESULTS_FILTERED: 'Je kijkt binnen: {filters}'
+            OVERRIDE_REMOVED: 'Overschrijving verwijderd'
+            PICK_A_TARGET_LANGUAGE: 'Voeg eerst een taalkolom toe — er is niets om naar te vertalen.'
+            PREVIOUS: Vorige
+            PROPOSALS_PENDING: '{count, plural, one {# suggestie om te beoordelen} other {# suggesties om te beoordelen}}'
+            REFRESH: Vernieuwen
+            REMOVE_FILTER: 'Dit filter verwijderen'
+            REVERT: Terugdraaien
+            REVERTED_TO_SHIPPED: 'Teruggezet naar de oorspronkelijke tekst'
+            REVERT_HELP: 'Verwijder deze overschrijving en keer terug naar wat de plugin of het thema biedt.'
+            SAVE: Opslaan
+            SAVED_UNKNOWN_KEY: 'Opgeslagen, maar niets bevat {key} — controleer de spelling'
+            SAVING: 'Bezig met opslaan...'
+            SCOPED_TO: 'Alleen {namespace}'
+            SCOPE_WHOLE_FILE: 'Elke overschrijving voor deze taal bewerken'
+            SEARCH_PLACEHOLDER: 'Zoek tekst of sleutel...'
+            SHIPPED_VALUE: 'Oorspronkelijk: {value}'
+            SHOWING: '{from}–{to} van {total} weergeven'
+            SKIPPED_COUNT: '{count, plural, one {# overgeslagen} other {# overgeslagen}}'
+            SKIP_EMPTY: 'De vertaalservice heeft niets geretourneerd voor deze string.'
+            SKIP_ICU: 'Dit bericht verandert met een getal of een keuze, en elke taal heeft zijn eigen set vormen nodig. Schrijf deze met de hand.'
+            SKIP_NOTHING: 'Deze string bevat alleen tijdelijke aanduidingen, dus er zijn geen woorden om te vertalen.'
+            SKIP_NO_SOURCE: 'Er is geen tekst in de brontaal om vanuit te vertalen.'
+            SKIP_PLACEHOLDERS: 'De vertaling kwam terug met gewijzigde tijdelijke aanduidingen, dus deze is genegeerd in plaats van opgeslagen.'
+            SOURCE: bron
+            SOURCE_LANGUAGE: Bron
+            STATE_MISSING: ontbreekt
+            STATE_MISSING_FALLBACK: 'terugvallen op'
+            STATE_OVERRIDDEN: overschreven
+            STATUS_ALL: Alles
+            STATUS_MISSING: Ontbrekend
+            STATUS_OVERRIDDEN: Overschreven
+            STATUS_UNKNOWN: Onbekend
+            SUGGESTED: Voorgesteld
+            SUPERSEDED_ACTION: 'Open vertalingen'
+            SUPERSEDED_BODY: 'De sectie Vertalingen doet alles wat deze plugin doet, en voegt zoeken toe in elke string op de site, dekking per taal, automatische vertaling en een rapport van keys die door niets meer worden aangeleverd. Deze plugin blijft ondersteund op Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# overschrijving is} other {# overschrijvingen zijn}} nog steeds hier opgeslagen en kunnen worden geïmporteerd.'
+            SUPERSEDED_TITLE: 'Ingebouwd in Grav 2.0'
+            TITLE: Vertalingen
+            TRANSLATE_FAILED: 'Vertaling mislukt'
+            TRANSLATE_MISSING: 'Ontbrekende vertalen'
+            TRANSLATE_ROW: 'Stel vertalingen voor voor deze string in elke getoonde taal'
+            TRANSLATE_THIS: 'Stel een vertaling voor voor deze string'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'Verkrijg de plugin'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate heeft nog geen vertalingsprovider ingesteld, dus automatische vertaling is niet beschikbaar.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate is geïnstalleerd maar uitgeschakeld, dus automatische vertaling is niet beschikbaar.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'AI-aangedreven vertaling van ontbrekende strings is beschikbaar met de AI Translate premium plugin.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Open de instellingen'
+            TRANSLATING: Vertalen...
+            UNKNOWN_KEYS_SAVED: 'Opgeslagen, maar niets levert deze keys aan'
+            UNKNOWN_KEY_HELP: 'Geen plugin, thema of core-bestand bevat deze sleutel. Het is waarschijnlijk een typefout of een overblijfsel van iets dat niet langer is geïnstalleerd.'
+            YAML_HELP: 'Plak of bewerk overrides direct. Waarden die overeenkomen met wat de plugin of het thema al aanbiedt, worden verwijderd, zodat het bestand alleen echte wijzigingen bevat.'
+            YAML_PLACEHOLDER: |-
+                MIJN_PLUGIN:
+                  EEN_SLEUTEL: Uw tekst hier
+            YAML_SAVED: '{count, plural, =0 {Geen overrides meer in {lang}} one {# override opgeslagen in {lang}} other {# overrides opgeslagen in {lang}}}'
         TRANSLATIONS_FALLBACK: 'Terugval voor vertalingen'
         TRANSLATIONS_FALLBACK_HELP: 'Terugvallen op ondersteunde vertalingen als de actieve taal niet bestaat'
         TWIG_3_COMPATIBILITY: 'Twig 3-compatibiliteit'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Bestanden in user/data, user/accounts en user/config kunnen direct via HTTP worden gedownload — inclusief certificaten, sleutels, tokens en databases. Dit betekent meestal dat je webserver de .htaccess-regels van Grav niet toepast.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Hoe beveilig je je webserver'
             USER_FOLDER_EXPOSED_TITLE: 'Beveiligingsrisico: je gebruikersgegevensmappen zijn bereikbaar via het web'
+            COLLAPSE: Samenvouwen
+            SHOW_DETAILS: 'Toon details'
+            SNOOZE: Sluimeren
+            SNOOZE_HINT: 'Verberg deze waarschuwing voor 24 uur. Deze verschijnt eerder als er andere bestanden worden gevonden.'
+            STORAGE_EXPOSED_ALL: 'Elk testbestand kon worden gedownload, wat betekent dat je webserver de toegangsregels van Grav helemaal niet toepast. Controleer op Apache of AllowOverride toestaat dat de .htaccess van de site effectief is. Voeg op nginx, Caddy of IIS de beveiligingsregels uit de map webserver-configs van Grav toe.'
+            STORAGE_EXPOSED_BODY: 'De webserver heeft testbestanden geserveerd vanuit mappen die privé zouden moeten zijn. De hieronder vermelde bestandstypen kunnen opgeslagen inzendingen, back-ups of tijdelijke bestanden blootstellen. Vraag je host om directe toegang te blokkeren, of verplaats privé-opslag naar buiten de web-root.'
+            STORAGE_EXPOSED_BY_TYPE: 'Sommige bestandstypen werden geblokkeerd in deze mappen, terwijl andere gedownload konden worden. Dit betekent meestal dat er iets voor de regels van Grav staat, zoals nginx dat statische bestanden vóór Apache serveert en antwoordt voor algemene bestandstypen zoals .zip voordat de regels worden gecontroleerd. Blokkeer deze mappen ook in de configuratie van die laag.'
+            STORAGE_EXPOSED_CDN: 'Als de site achter een CDN zoals Cloudflare staat, leeg dan de cache nadat je dit hebt opgelost. Kopieën die daar al zijn opgeslagen, blijven downloadbaar totdat je dat doet.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# bestandstype} other {# bestandstypen}}'
+            STORAGE_EXPOSED_TITLE: 'Bestanden die privé zouden moeten zijn, kunnen vanaf deze site worden gedownload'
+            STORAGE_EXPOSED_TMP: 'Testbestanden in tmp/ konden worden gedownload, terwijl de overige mappen geblokkeerd waren. Je serverregels dateren waarschijnlijk van vóór Grav 2.1.7, de versie die tmp/ toevoegde aan de lijst met geblokkeerde mappen. Voeg tmp toe aan die lijst in je .htaccess, of in je nginx-, Caddy- of IIS-configuratie, zodat deze overeenkomt met de regels die standaard bij Grav worden meegeleverd.'
         CONFIRM: Bevestigen
         DEMO:
             BANNER_COUNTDOWN: 'Volgende reset over {time}'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: Blijven
             SWITCH_LANGUAGE: Wisselen
             SWITCH_LANGUAGE_MESSAGE: 'Je hebt niet-opgeslagen wijzigingen. Toch van taal wisselen?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'Het antwoord van de server kon niet worden gelezen omdat het geen geldige JSON is. Mogelijk print er iets op de server extra output, zoals een PHP-waarschuwing, naast het API-antwoord. De browserconsole bevat de details.'
+            INVALID_JSON_TITLE: 'Onverwachte reactie van de server'
+            UNEXPECTED_RESPONSE_DETAIL: 'De server antwoordde met gegevens in een formaat dat dit scherm niet verwacht. De browserconsole bevat de details.'
+            UNEXPECTED_RESPONSE_TITLE: 'Onverwachte reactie van de server'
+        CACHE_MODULES: 'Cache module-output'
+        CACHE_MODULES_HELP: 'Cache de gerenderde output van de modules op deze pagina. Gebruik dit alleen wanneer de modules aan iedere bezoeker dezelfde inhoud tonen. Modules met eigen Twig of een formulier, ingelogde bezoekers en formulierinzendingen worden altijd vers gerenderd. Bij het bewerken van slechts een gedeeltelijke template is een cache-opschoning nodig.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Flex Render-hints'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: "Plaats elk gerenderd Flex-object en elke collectie in een HTML-commentaar met de naam ervan, zodat de bron van een blok in de paginamarkup gevonden kan worden. Alleen van toepassing op HTML-pagina's."
+        FRONTMATTER_NATIVE_YAML: 'Snelle frontmatter-parsing'
+        FRONTMATTER_NATIVE_YAML_HELP: "Lees paginadocument-frontmatter met de libyaml PHP-extensie wanneer deze is geïnstalleerd; dit versnelt het opnieuw opbouwen van de paginacache. Het leest sommige waarden anders, dus controleer eerst je pagina's. Een niet-gequote datum blijft tekst in plaats van een timestamp te worden, en niet-gequote yes, no, on en off worden true of false."
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Dit zal Grav upgraden van v{current} naar v{target}. De site is mogelijk kortstondig onbereikbaar tijdens de upgrade.'
+            CONFIRM_TITLE: 'Grav core upgraden?'
+            FAILED: 'Grav-upgrade mislukt: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} is gemarkeerd als compatibel met Grav {compatible}'
+            NO_DETAIL: 'de server gaf geen reden'
+            PREFLIGHT_MESSAGE: "De controles die vóór een upgrade worden uitgevoerd, hebben deze gestopt om deze redenen. Los ze op en probeer het opnieuw, of upgrade toch als je zeker weet dat deze plugins en thema's werken met de nieuwe versie."
+            PREFLIGHT_TITLE: 'Grav kan nog niet upgraden naar v{version}'
+            STILL_BLOCKED: 'Grav-upgrade is nog steeds geblokkeerd: {detail}'
+            UPGRADE_ANYWAY: 'Toch upgraden'
+            UPGRADING: 'Grav aan het upgraden naar v{version}…'
+        HELP: Help
+        HELP_FOR_LABEL: 'Help voor {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'Progressieve JPEGs'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Sla verkleinde en gecachte JPEGs op als progressief, zodat ze verschijnen als een wazig totaalbeeld dat scherp wordt in plaats van van boven naar beneden op te bouwen. Meestal ook kleiner. Heeft geen invloed op PNG, WebP of AVIF.'
+        MARKDOWN_OUTPUT: Markdown-uitvoer
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: "Absolute URL's"
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: "Zet root-relatieve links en afbeeldingen om in volledige URL's, zodat ze blijven werken zodra de Markdown de site heeft verlaten."
+        MARKDOWN_OUTPUT_ENABLED: "Pagina's als Markdown aanbieden"
+        MARKDOWN_OUTPUT_ENABLED_HELP: "Elke pagina kan worden opgehaald als Markdown door `.md` toe te voegen aan de URL, of door een `Accept:&nbsp;text/markdown` request header te verzenden. Gemaakt voor AI-agents en andere tekstclients. De pagina wordt gerenderd via het thema, teruggebracht tot de hoofdinhoud en geconverteerd, zodat lijsten, winkels en modulaire pagina's leesbaar zijn zoals ze worden weergegeven."
+        MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter-blok
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Begin de Markdown met een YAML-blok dat de titel, URL, datum, beschrijving en taxonomie bevat.'
+        MARKDOWN_OUTPUT_LINKS: Navigatiekoppelingen
+        MARKDOWN_OUTPUT_LINKS_HELP: "Beëindig de Markdown met links naar de bovenliggende, aangrenzende en onderliggende pagina's, zodat een agent de site kan doorlopen zonder de Markdown te verlaten."
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Meeste onderliggende links'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: "Het maximum aantal onderliggende pagina's dat in het navigatiegedeelte wordt vermeld. Nul vermeldt ze allemaal."
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Token-aantal header'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: "Verzend een `X-Markdown-Tokens` response header met een geschat aantal tokens, dezelfde header die Cloudflare's Markdown for Agents gebruikt."
+        NOTICES:
+            HEADING: '{count, plural, one {Melding} other {Meldingen}}'
+            HIDE: 'Meldingen verbergen'
+            SHOW: 'Meldingen tonen'
+        PAGES_LAZY_INDEX: 'Lazy page index'
+        PAGES_LAZY_INDEX_HELP: "Laad pagina's, routes en taxonomie op aanvraag vanuit een SQLite-index per pagina in plaats van één groot cachebestand. Auto gebruikt dit op sites met 1.000 pagina's of meer. Valt terug op de klassieke cache wanneer er geen database-engine beschikbaar is."
+        RETRY: 'Opnieuw proberen'
+        SESSION_LAZY: 'Start sessies alleen indien nodig'
+        SESSION_LAZY_HELP: 'Bezoekers zonder sessie-cookie krijgen pas een sessie als er iets in wordt opgeslagen, zoals een aanmelding, een formulier of een bericht. Hierdoor kunnen anonieme paginaweergaven worden gecached door een proxy of CDN. Plugins die gegevens opslaan bij elke paginaweergave starten nog steeds een sessie.'
+        UPDATE_CHANGELOG_TITLE: 'Wijzigingen in v{version}'
