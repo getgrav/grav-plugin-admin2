@@ -151,6 +151,9 @@ ICU:
                 RESET_FROM: 'אפס מ-{language}'
                 SAVED_BY_PEER: '{user} שמר דף זה'
                 SAVED_BY_PEER_ANON: 'משתמש אחר שמר דף זה'
+                FALLBACK_NOTICE_UNRESOLVED: 'השרת החזיר את הגרסה ה-{effective} של דף זה במקום את ה-{active}, ולא דיווח על כך ש-{active} חסר. השמירה כבויה כאן כדי שקובץ ה-{effective} לא יידרס. אם זה קורה בכל דף, ייתכן ששרת האינטרנט לא מעביר מחרוזות שאילתה ל-Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'מוצג בדף ההורה שלו'
+                TEMPLATE_MISSING_NOTICE: "התבנית **{template}** עבור מודול זה לא נמצאה בערכת העיצוב, לכן הדף אליו הוא שייך מציג שגיאת „תבנית לא נמצאה”. יש לבחור תבנית תחת **תבנית דף** בלשונית 'מתקדם', או להוסיף את התבנית לערכת העיצוב."
             NEW:
                 MY_NEW_PAGE: 'העמוד החדש שלי'
                 FILTER_PAGES: 'סנן עמודים...'
@@ -176,6 +179,8 @@ ICU:
                 ORDERING_HELP_FOLDER: 'מוסיף קידומת מספרית הקובעת את מיקום התיקייה בין אחיותיה.'
                 ORDERING_NONE: ללא
                 FOLDER_DETAILS: 'פרטי תיקייה'
+                CHILD_TYPE_HINT: 'דף האב מציע את „{template}” עבור הדפים הבנים שלו. עדיין ניתן לבחור תבנית אחרת.'
+                STATUS_HELP: 'טיוטות נשמרות אך אינן גלויות באתר עד לפרסומן'
             PAGE_COUNT: '{n, plural, one{עמוד אחד} two{שני עמודים} many{# עמודים} other{# עמודים}}'
             SUBTITLE: 'נהל את התוכן והמבנה של האתר שלך'
             CHUNK_SIZE: Chunk
@@ -211,6 +216,16 @@ ICU:
                 VISIBLE: גלוי
                 'YES': כן
             VALIDATION_FAILED_FOR_FIELDS: 'לא ניתן היה לשמור — השדות הבאים אינם תקינים: {fields}'
+            COLUMN_EMPTY: ריק
+            SEARCH_MATCH_COUNT: '{n, plural, one {# התאמה} other {# התאמות}} בכל הדפים'
+            SEARCH_SHOWING: 'מציג {shown} מתוך {total} התאמות'
+            SEARCH_SHOW_MORE: 'הצג עוד'
+            STATUS:
+                EXPIRED: 'פג תוקף'
+                EXPIRED_ON: 'לא פורסם מאז {date}'
+                SCHEDULED: מתוזמן
+                SCHEDULED_FOR: 'מתוזמן לפרסום ב-{date}'
+                TOGGLE_TITLE: '{action} ({status})'
         FIELDS:
             CLEAR_DATE: 'נקה תאריך'
             REGENERATE_SLUG: 'צור מחדש אוטומטית מכותרת העמוד'
@@ -244,6 +259,14 @@ ICU:
                 NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'אין טריגרים פעילים! הפעל webhooks או הגדר cron.'
                 RUNNING: מריץ...
                 RUN_ALL: 'הרץ הכל'
+                BY_HAND: ידנית
+                MANUAL_RUN_HELP: '״הפעל ממתינים״ מריץ את המשימות שפספסו את זמן ההפעלה המתוכנן האחרון שלהן; זהו המצב הרצוי באתר ללא הגדרת cron. הרצות שתפעיל כאן יתועדו כפעולות ידניות ולא יחשבו במצב ה-cron שלעיל.'
+                NEVER: 'לעולם לא'
+                PENDING: ממתין
+                PROCESS_UNAVAILABLE: 'לא ניתן להריץ משימות מכאן במארח זה, מכיוון שהפונקציה proc_open של PHP מושבתת. הן עדיין ירוצו בכל פעם שהמתזמן שלך יופעל על ידי cron או webhook.'
+                RUN_ALL_HELP: 'הפעל את כל המשימות המופעלות כעת, ללא קשר ללוח הזמנים שלהן.'
+                RUN_NOW: 'הפעל משימה זו כעת'
+                RUN_PENDING: 'הפעל ממתינים'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'טוען שדה מותאם אישית...'
             DATE_FORMAT:
@@ -256,6 +279,10 @@ ICU:
                 SEARCH_ICONS: 'חפש סמלים...'
                 NO_ICONS_FOUND: 'לא נמצאו סמלים'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'מציג 200 תוצאות ראשונות — הקלד כדי לצמצם'
+                FAMILY_ALL: הכל
+                FAMILY_BRANDS: מותגים
+                FAMILY_REGULAR: רגיל
+                FAMILY_SOLID: מלא
             PAGE_EXISTS:
                 CHECKING_PAGE: 'בודק עמוד...'
             PAGE_MEDIA:
@@ -297,6 +324,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'הקלד ולחץ על Enter...'
             SELECT_AN_ICON: 'בחר סמל...'
             SELECT_A_PAGE: 'בחר עמוד...'
+            MEDIA:
+                ADD: 'הוסף מדיה...'
+                CHANGE: שנה
+                DONE: בוצע
+                MOVE_EARLIER: 'הזז מוקדם יותר'
+                MOVE_LATER: 'הזז מאוחר יותר'
+                REMOVE: הסר
+                SELECT: 'בחר מדיה...'
+                SELECTED_COUNT: '{count, plural, =0 {לא נבחר דבר} one {# נבחר} other {# נבחרו}}'
+                TITLE: 'בחר מדיה'
+            SET_DATE_NOW: 'קבע לעכשיו'
         NAV:
             DASHBOARD: 'לוח בקרה'
             CONFIGURATION: הגדרות
@@ -309,6 +347,7 @@ ICU:
             SYSTEM: מערכת
             SETTINGS: הגדרות
             UPDATES_AVAILABLE: '{count} עדכון/ים זמינים'
+            TRANSLATIONS: תרגומים
         LANG:
             SWITCH_LANGUAGE: 'החלף שפת תוכן'
             TRANSLATIONS: תרגומים
@@ -419,6 +458,7 @@ ICU:
         REAUTH_MODAL:
             SESSION_EXPIRED: 'הסשן פג'
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'אנא הזן מחדש את הסיסמה שלך כדי להמשיך. העבודה שלך נשמרה.'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'התחבר שוב כדי להמשיך. העבודה שלך נשמרה.'
         USERNAME: 'שם משתמש'
         PASSWORD: סיסמה
         REMOVE: הסר
@@ -461,6 +501,9 @@ ICU:
             LAST_14_DAYS: '14 הימים האחרונים'
             THIS_WEEK: השבוע
             THIS_MONTH: החודש
+            CHART_LABEL: 'צפיות בדף ליום עבור 14 הימים האחרונים'
+            TODAY: היום
+            VIEWS: '{count, plural, one {# צפייה} other {# צפיות}}'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'הצג הכל'
         STATS_WIDGET:
@@ -534,6 +577,17 @@ ICU:
                 LIST_VIEW: 'תצוגת רשימה'
                 NEW_FOLDER: 'תיקייה חדשה'
                 FOLDER: תיקייה
+                DELETE_SELECTED: '{count, plural, one {מחיקת קובץ #} other {מחיקת # קבצים}}'
+                FILTER_ALL: הכל
+                FILTER_AUDIO: אודיו
+                FILTER_DOCS: מסמכים
+                FILTER_IMAGES: תמונות
+                FILTER_VIDEO: וידאו
+                SEARCHING_FOR: 'חיפוש: „{query}”'
+                SORT_DATE: תאריך
+                SORT_NAME: שם
+                SORT_SIZE: גודל
+                SORT_TYPE: סוג
             MEDIA_GRAV_ADMIN: 'מדיה — Grav Admin'
             MANAGE_SITE_WIDE_MEDIA_FILES: 'נהל קבצי מדיה ברחבי האתר'
             PAGE_MEDIA:
@@ -563,6 +617,15 @@ ICU:
                 STORED: 'מטא-דאטה מאוחסן'
                 TAGS_PLACEHOLDER: 'הוספת תגית...'
                 TITLE: מטא-דאטה
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: 'נתיב מדיה'
+                OPEN: פתח
+                PATH: נתיב
+                SIZE: גודל
+                TITLE: 'פרטי קובץ'
+                TYPE: סוג
+                URL: URL
         UPLOAD: העלאה
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: 'נקה מטמון'
@@ -626,6 +689,10 @@ ICU:
                 REFRESH: רענן
                 LOADING_LOGS: 'טוען יומנים...'
                 MESSAGE: הודעה
+                CLEAR_LOG: 'נקה יומן'
+                CLEAR_LOG_CONFIRM: 'למחוק לצמיתות את כל הרשומות ב-{file}? פעולה זו אינה ניתנת לביטול, וכל תיעוד של מה שהשתבש עד כה יימחק.'
+                FAILED_TO_CLEAR_LOG: 'ניקוי היומן נכשל'
+                LOG_CLEARED: 'היומן {file} נוקה'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'טוען רכיב דוח...'
             REPORTS:
@@ -664,6 +731,20 @@ ICU:
                     SCAN_TAGS: 'תגיות חסומות בתוכן'
                     SECTION_EVENTS: 'חסימות אחרונות'
                     SECTION_LEAKS: 'דפים הדולפים Twig גולמי'
+                    POLICY_ADDED: '+{count} נוספו'
+                    POLICY_ALL_DEFAULTS: 'כל ברירות המחדל, ללא שינוי'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# מחלקה} other {# מחלקות}}'
+                    POLICY_DENIED: '−{count} נדחו'
+                    POLICY_EFFECTIVE_COUNT: '{count} בפועל'
+                    POLICY_FAILED: 'לא ניתן היה לטעון את מדיניות ארגז החול (sandbox)'
+                    POLICY_FILTERS: מסננים
+                    POLICY_FUNCTIONS: פונקציות
+                    POLICY_HIDE: 'הסתר מדיניות בפועל'
+                    POLICY_INTRO: 'קו הבסיס של ארגז החול מסופק בקוד; התצורה שלך רק מרחיבה או מצמצמת אותו.'
+                    POLICY_METHODS: מתודות
+                    POLICY_PROPERTIES: מאפיינים
+                    POLICY_TAGS: תגיות
+                    POLICY_VIEW: 'צפה במדיניות בפועל'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'נכשל בטעינת הגדרות המתזמן.'
                 SCHEDULER_CONFIGURATION_SAVED: 'הגדרות המתזמן נשמרו'
@@ -675,6 +756,12 @@ ICU:
                 CRONTAB_INSTRUCTIONS: 'כדי להפעיל את פונקציונליות המתזמן, עליך להוסיף את **מתזמן Grav** לקובץ crontab של המערכת עבור משתמש **{user}**. הרץ את הפקודה למעלה מהטרמינל כדי להוסיף אותה אוטומטית. לאחר השמירה, רענן עמוד זה כדי לראות את הסטטוס.'
                 WEBHOOK_ALTERNATIVE: 'לחלופין, התקן את התוסף **scheduler-webhook** כדי להשתמש בהפעלת cron מבוססת webhook, המומלצת לסביבות ענן שבהן אין גישה ל-crontab של המערכת.'
                 SECURITY_WARNING: 'רק משתמשים מתקדמים צריכים להגדיר משימות מתזמן מותאמות אישית. הגדרה שגויה עלולה לגרום לבעיות ביצועים או לפרצות אבטחה.'
+                CRON_UNDETERMINED: 'Grav לא יכול לבדוק את ה-crontab של שרת זה, לכן לא ניתן לאשר כיצד המתזמן מופעל.'
+                ENVIRONMENT_MISMATCH: 'המתזמן הופעל לאחרונה תחת הסביבה **{last}**, אך אתר זה משתמש ב-**{current}**, שיש לה תצורה משלה ב-user/env/{current}/config. משימות והגדרות מותאמות אישית שהוגדרו שם בלבד לא ירוצו לעולם מהטריגר הזה. עדכן את שורת המתזמן bin/grav ב-crontab שלך לפקודה להלן (היא מעבירה את --env={current}), או בצע export GRAV_ENVIRONMENT={current} לפני שהיא רצה.'
+                LAST_MANUAL_RUN: 'הפעלה ידנית אחרונה'
+                LAST_TRIGGERED: 'הופעל לאחרונה'
+                PROCESS_UNAVAILABLE: 'מארח זה השבית את הפונקציה proc_open של PHP, לכן לא ניתן להפעיל משימות מתוך הממשק הניהולי. הן עדיין ירוצו בכל פעם שהמתזמן שלך יופעל על ידי cron או webhook.'
+                STATUS_UNAVAILABLE: 'לא ניתן היה לקרוא את מצב המתזמן במארח זה. המשימות שלך עדיין מופיעות להלן וניתן לערוך אותן כרגיל.'
             SYSTEM_INFO:
                 FAILED_TO_LOAD_SYSTEM_INFO: 'נכשל בטעינת מידע מערכת'
                 LOADING_SYSTEM_INFO: 'טוען מידע מערכת...'
@@ -802,6 +889,8 @@ ICU:
                 TRUSTED: 'תפקידים מורשים בלבד'
                 TRUSTED_DESC: 'רק משתמשי-על ובעלי הרשאת "pages twig" יכולים להפעיל Twig בדף.'
             VALIDATION_FAILED_FOR_FIELDS: 'לא ניתן לשמור — השדות הבאים אינם תקינים: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'טעינת ההגדרה נכשלה.'
+            SCOPE_NOT_FOUND: 'לא נמצא טווח הגדרות בשם {scope}.'
         FLEX_OBJECTS:
             SEARCH: חיפוש...
             PREVIOUS: הקודם
@@ -869,6 +958,11 @@ ICU:
             CONTINUE_WITH: 'המשך עם {provider}'
             OR_CONTINUE_WITH: 'או המשך עם'
             SSO_FAILED: 'לא ניתן היה להתחבר באמצעות ספק זה. אנא נסה שנית.'
+            CAPTCHA_FAILED_TO_LOAD: 'לא ניתן היה לטעון את האתגר. רענן את הדף ונסה שוב.'
+            CAPTCHA_NOT_COMPLETED: 'אנא השלם את האתגר כדי להמשיך'
+            CAPTCHA_VERIFIED: 'אימות שאתה אנושי'
+            CAPTCHA_VERIFYING: 'בודק אם אתה אנושי...'
+            INVALID_AUTHENTICATION_CODE: 'קוד אימות לא תקין'
         PLUGIN:
             BACK_TO_DASHBOARD: 'חזור ללוח הבקרה'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'אין תוכן זמין עבור עמוד התוסף הזה.'
@@ -1052,6 +1146,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: 'ברירת מחדל'
             EDITOR_KEYMAP_DESC: 'השתמש בקיצורי המקלדת של Vim בעורכי ה-Markdown והקוד. ברירת המחדל שומרת על עריכה סטנדרטית.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'העתק צבע זה'
+            CURRENT_COLOR: צבע
+            DARK_SHADE: 'גוון כהה'
+            DARK_SHADE_DESC: 'כיצד נראה מצב כהה. זה תקף רק כאשר מצב כהה מופעל.'
+            DARK_SHADE_GRAPHITE: גרפיט
+            DARK_SHADE_MIDNIGHT: חצות
+            DARK_SHADE_ZINC: אוניקס
+            DEFAULT_DARK_SHADE_DESC: 'גוון כהה כברירת מחדל למשתמשים חדשים. זה תקף רק כאשר מצב כהה מופעל.'
+            DEFAULT_HELP_TEXT_DESC: 'מיקום ברירת מחדל לטקסט עזרה עבור שדות עבור משתמשים חדשים, מתחת לתווית או בתיאור כלי (tooltip).'
+            HELP_MODE_INLINE: 'מתחת לתווית'
+            HELP_MODE_TOOLTIP: 'בתיאור כלי (tooltip)'
+            HELP_TEXT: 'טקסט עזרה'
+            HELP_TEXT_DESC: 'היכן מופיע ההסבר הקצר לכל שדה. בתיאור כלי, העבר את העכבר מעל סמל המידע לצד תווית, או הקש עליו בטלפון, כדי לקרוא אותו.'
+            LOGO_HEIGHT_CUSTOM: 'מותאם אישית'
+            LOGO_HEIGHT_DEFAULT: 'ברירת מחדל'
+            SIDEBAR_LOGO_HEIGHT: 'גובה לוגו בסרגל הצד'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'מה הגובה שבו הלוגו שלך מופיע בראש סרגל הצד.'
         CUSTOM: 'מותאם אישית'
         PREVIEW: 'תצוגה מקדימה'
         SETUP:
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'שינוי המצב עבור {username} נכשל: {detail}'
             DEMO_MODE_BLOCKED: 'זוהי גרסת הדגמה לקריאה בלבד — השינויים מושבתים.'
             USER_ROW_ACTION_FAILED: 'לא ניתן היה להשלים את הפעולה: {label}'
-        TRANSLATIONS: תרגומים
+        TRANSLATIONS:
+            ACCEPT: קבל
+            ACCEPTED_ALL: '{count, plural, one {# תרגום נשמר} other {# תרגומים נשמרו}}'
+            ACCEPT_ALL: 'קבל הכל'
+            ALL_SOURCES: 'כל המקורות'
+            CLEAR_ALL_FILTERS: 'נקה מסננים'
+            DESCRIPTION: 'ניתן לשכתב כל מחרוזת שהאתר מציג, בכל שפה. השינויים נשמרים כדריסות (overrides) בתוך תיקיית user/languages ולעולם אינם נוגעים בקבצים המקוריים של התוסף או של ערכת העיצוב, כך שעדכון לא ימחק אותם.'
+            DISCARD: בטל
+            DISCARD_ALL: ביטול
+            EDITED: נערך
+            EDITING_LANGUAGE: עורך
+            EDIT_AS_GRID: 'חזרה לרשת'
+            EDIT_AS_YAML: 'ערוך כ-YAML'
+            EDIT_HINT: 'הקש Enter לשמירה, Escape לביטול, Shift+Enter לשורה חדשה. רוקן את התיבה כדי להסיר את הדריסה שלך.'
+            FAILED_TO_LOAD: 'טעינת התרגומים נכשלה'
+            FAILED_TO_SAVE: 'שמירת השינוי נכשלה'
+            FILTERED_BY: 'מציג רק'
+            FILTER_LANGUAGES: 'סנן שפות'
+            IMPORT_ACTION: 'ייבוא דריסות'
+            IMPORT_ALREADY_DONE: '{count, plural, one {דריסה # כבר נמצאת כאן} other {# דריסות כבר נמצאות כאן}}'
+            IMPORT_BODY: '{count, plural, one {דריסה # אחת עדיין מאוחסנת בתוך תוסף Translation Strings. ייבא אותה כדי לנהל אותה כאן.} other {# דריסות מתוך {languages, plural, one {# שפה} other {# שפות}} עדיין מאוחסנות בתוך תוסף Translation Strings. ייבא אותן כדי לנהל אותן כאן.}}'
+            IMPORT_COL_ALREADY: 'כבר נמצא כאן'
+            IMPORT_COL_CONFLICT: בקונפליקט
+            IMPORT_COL_LANGUAGE: שפה
+            IMPORT_COL_NEW: חדש
+            IMPORT_COL_SHIPPED: 'זהה למקור'
+            IMPORT_COL_UNKNOWN: 'לא ידוע'
+            IMPORT_CONFLICTS: '{count, plural, one {מפתח # מוגדר בשני המקומות עם ניסוח שונה. הגרסה של התוסף קובעת, מכיוון שזה מה שהאתר שלך מציג כיום.} other {# מפתחות מוגדרים בשני המקומות עם ניסוח שונה. הגרסה של התוסף קובעת, מכיוון שזה מה שהאתר שלך מציג כיום.}}'
+            IMPORT_DISABLE_ACTION: 'נטרל את התוסף'
+            IMPORT_DISABLE_BLOCKED: 'ייבא את הדריסות תחילה, אחרת הן יוסרו מהאתר.'
+            IMPORT_DISABLE_FAILED: 'לא ניתן היה לנטרל את התוסף'
+            IMPORT_DONE: '{count, plural, one {# דריסה} other {# דריסות}} יובאו'
+            IMPORT_FAILED: 'הייבוא נכשל'
+            IMPORT_HIDE_DETAIL: 'הסתר פרטים'
+            IMPORT_LEGEND: 'מחרוזות המסומנות כ-„זהה למקור” תואמות למה שהתוסף או ערכת העיצוב כבר מספקים, ולכן הן מושמטות במקום להישמר כדריסות שאינן מבצעות דבר.'
+            IMPORT_NO_CONFIG_PERMISSION: 'אין לך הרשאה לשנות הגדרות תוסף, לכן על מנהל מערכת להשבית את התוסף.'
+            IMPORT_NO_PERMISSION: 'אין לך הרשאה לכתוב דריסות תרגום, לכן הייבוא אינו זמין.'
+            IMPORT_PLUGIN_DISABLED: 'מחרוזות תרגום הושבתו. עורך זה כעת אחראי על התרגומים.'
+            IMPORT_SHOW_DETAIL: 'הצג מה יובא'
+            IMPORT_STILL_ENABLED_BODY: 'הוא מחיל את המחרוזות שלו אחרי עורך זה, לכן הוא עדיין דורס כל מה שתשנה כאן. בדוק שהאתר מוצג בצורה נכונה, ואז השבת אותו כדי להשלים את המעבר. ההגדרות שלו נשארות במקומן, כך שניתן לבטל את הפעולה.'
+            IMPORT_STILL_ENABLED_TITLE: 'תוסף ה-Translation Strings עדיין מופעל'
+            IMPORT_TITLE: 'דריסות ממתינות בתוסף Translation Strings'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# מפתח מגדיר מחרוזת שאף תוסף, ערכת עיצוב או קובץ ליבה לא מספקים. הוא נשמר כדי שתוכל לבחון אותו, אך אין לו השפעה.} other {# מפתחות מגדירים מחרוזות שאף תוסף, ערכת עיצוב או קובץ ליבה לא מספקים. הם נשמרים כדי שתוכל לבחון אותם, אך אין להם השפעה.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# מפתח מיובא מגדיר מחרוזת} other {# מפתחות מיובאים מגדירים מחרוזות}} ששום דבר באתר זה לא מספק. ניתן למצוא אותם באמצעות המסנן „לא ידוע”.'
+            INACTIVE: 'לא פעיל'
+            INACTIVE_HELP: 'תוסף זה מושבת או שערכת עיצוב זו אינה הפעילה, לכן המחרוזות שלה לא בשימוש באתר.'
+            KEY: מפתח
+            KIND_PLUGINS: תוספים
+            KIND_SYSTEM: ליבה
+            KIND_THEMES: 'ערכות עיצוב'
+            KIND_USER: 'אתר זה'
+            LANGUAGES: שפות
+            LOADING: 'טוען תרגומים...'
+            NEXT: הבא
+            NOTHING_TO_TRANSLATE: 'לא חסר תרגום לשום דבר בדף זה.'
+            NO_RESULTS: 'אף מחרוזת לא תואמת למסננים אלו.'
+            NO_RESULTS_FILTERED: 'אתה צופה בתוך: {filters}'
+            OVERRIDE_REMOVED: 'הדריסה הוסרה'
+            PICK_A_TARGET_LANGUAGE: 'הוסף תחילה עמודת שפה — אין למה לתרגם.'
+            PREVIOUS: הקודם
+            PROPOSALS_PENDING: '{count, plural, one {# הצעה לבדיקה} other {# הצעות לבדיקה}}'
+            REFRESH: רענון
+            REMOVE_FILTER: 'הסר מסנן זה'
+            REVERT: שחזר
+            REVERTED_TO_SHIPPED: 'שוחזר לניסוח המקורי'
+            REVERT_HELP: 'הסר דריסה זו וחזור למה שהתוסף או ערכת העיצוב מספקים.'
+            SAVE: שמור
+            SAVED_UNKNOWN_KEY: 'נשמר, אך דבר אינו מספק את {key} — בדוק את האיות'
+            SAVING: שומר...
+            SCOPED_TO: 'רק {namespace}'
+            SCOPE_WHOLE_FILE: 'עורך את כל הדריסות עבור שפה זו'
+            SEARCH_PLACEHOLDER: 'חפש טקסט או מפתח...'
+            SHIPPED_VALUE: 'במקור: {value}'
+            SHOWING: 'מציג {from}–{to} מתוך {total}'
+            SKIPPED_COUNT: '{count, plural, one {# דלוג} other {# דילוגים}}'
+            SKIP_EMPTY: 'שירות התרגום לא החזיר דבר עבור מחרוזת זו.'
+            SKIP_ICU: 'הודעה זו משתנה בהתאם למספר או בחירה, וכל שפה זקוקה למערך צורות משלה. כתוב זאת ידנית.'
+            SKIP_NOTHING: 'מחרוזת זו מכילה רק מצייני מיקום, לכן אין מילים לתרגם.'
+            SKIP_NO_SOURCE: 'אין ניסוח בשפת המקור שממנו ניתן לתרגם.'
+            SKIP_PLACEHOLDERS: 'התרגום חזר עם מצייני מיקום ששונו, לכן הוא נדחה במקום להישמר.'
+            SOURCE: מקור
+            SOURCE_LANGUAGE: מקור
+            STATE_MISSING: חסר
+            STATE_MISSING_FALLBACK: 'נסיגה לערך ברירת מחדל'
+            STATE_OVERRIDDEN: דורס
+            STATUS_ALL: הכל
+            STATUS_MISSING: חסר
+            STATUS_OVERRIDDEN: דורס
+            STATUS_UNKNOWN: 'לא ידוע'
+            SUGGESTED: מוצע
+            SUPERSEDED_ACTION: 'פתח תרגומים'
+            SUPERSEDED_BODY: 'מקטע התרגומים מבצע את כל הפעולות שתוסף זה מבצע, ומוסיף חיפוש בכל מחרוזת באתר, כיסוי לכל שפה, תרגום מכונה ודוח של מפתחות שכבר אינם בשימוש. תוסף זה נתמך ב-Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# דריסה} other {# דריסות}} עדיין מאוחסנות כאן וניתן לייבא אותן.'
+            SUPERSEDED_TITLE: 'מובנה בתוך Grav 2.0'
+            TITLE: תרגומים
+            TRANSLATE_FAILED: 'התרגום נכשל'
+            TRANSLATE_MISSING: 'תרגם חסרים'
+            TRANSLATE_ROW: 'הצע תרגומים למחרוזת זו בכל השפות המוצגות'
+            TRANSLATE_THIS: 'הצע תרגום למחרוזת זו'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'השג את התוסף'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'ל-AI Translate אין ספק תרגום מוגדר עדיין, לכן תרגום מכונה אינו זמין.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate מותקן אך כבוי, לכן תרגום מכונה אינו זמין.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'תרגום מבוסס בינה מלאכותית של מחרוזות חסרות זמין באמצעות תוסף הפרימיום AI Translate.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'פתח את ההגדרות שלו'
+            TRANSLATING: מתרגם...
+            UNKNOWN_KEYS_SAVED: 'נשמר, אך אף מקור לא מספק מפתחות אלו'
+            UNKNOWN_KEY_HELP: 'אף תוסף, ערכת עיצוב או קובץ ליבה אינם מספקים מפתח זה. ככל הנראה מדובר בטעות הקלדה, או בשארית של משהו שכבר אינו מותקן.'
+            YAML_HELP: 'הדבק או ערוך דריסות (overrides) ישירות. ערכים התואמים את מה שהתוסף או ערכת העיצוב כבר מספקים יושמטו, כך שהקובץ תמיד יכיל רק שינויים בפועל.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: הניסוח שלך כאן
+            YAML_SAVED: '{count, plural, =0 {לא נותרו דריסות ב-{lang}} one {דריסה אחת נשמרה ב-{lang}} other {# דריסות נשמרו ב-{lang}}}'
         TRANSLATIONS_FALLBACK: 'חזרה לתרגומים'
         TRANSLATIONS_FALLBACK_HELP: 'חזרה דרך תרגומים תומכים אם השפה הפעילה אינה קיימת'
         TWIG_3_COMPATIBILITY: 'תאימות Twig 3'
@@ -1992,6 +2214,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'ניתן להוריד קבצים תחת user/data, user/accounts ו-user/config ישירות דרך HTTP — כולל תעודות, מפתחות, אסימונים ומסדי נתונים. משמעות הדבר היא ששרת האינטרנט שלך ככל הנראה לא מחיל את כללי ה- .htaccess של Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'כיצד לאבטח את שרת האינטרנט שלך'
             USER_FOLDER_EXPOSED_TITLE: 'סיכון אבטחה: תיקיות נתוני המשתמש שלך נגישות מהרשת'
+            COLLAPSE: כווץ
+            SHOW_DETAILS: 'הצג פרטים'
+            SNOOZE: השהה
+            SNOOZE_HINT: 'הסתר אזהרה זו למשך 24 שעות. היא תחזור מוקדם יותר אם יימצאו קבצים שונים.'
+            STORAGE_EXPOSED_ALL: 'ניתן היה להוריד כל קובץ בדיקה, לכן שרת האינטרנט שלך אינו מיישם כלל את חוקי הגישה של Grav. ב-Apache, בדוק ש-AllowOverride מאפשר לקובץ ה-.htaccess של האתר להיכנס לתוקף. ב-nginx, Caddy או IIS, הוסף את חוקי האבטחה מתיקיית webserver-configs של Grav.'
+            STORAGE_EXPOSED_BODY: 'שרת האינטרנט הגיש קבצי בדיקה מתוך ספריות שאמורות להיות פרטיות. סוגי הקבצים הרשומים להלן עלולים לחשוף הגשות מאוחסנות, גיבויים או קבצים זמניים. בקש מהמארח שלך לחסום גישה ישירה, או העבר אחסון פרטי מחוץ לשורש האינטרנט.'
+            STORAGE_EXPOSED_BY_TYPE: 'חלק מסוגי הקבצים נחסמו בתיקיות אלו בעוד שאחרים ניתנים להורדה. זה בדרך כלל אומר שמשהו לפני החוקים של Grav, כגון nginx המגיש קבצים סטטיים לפני Apache, עונה לסוגי קבצים נפוצים כמו .zip לפני שנבדקים החוקים. חסום תיקיות אלו גם בהגדרות של השכבה ההיא.'
+            STORAGE_EXPOSED_CDN: 'אם האתר נמצא מאחורי CDN כמו Cloudflare, נקה את המטמון שלו לאחר תיקון זה. עותקים שהוא כבר אחסן יישארו להורדה עד שתעשה זאת.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# סוג קובץ} other {# סוגי קבצים}}'
+            STORAGE_EXPOSED_TITLE: 'ניתן להוריד מהאתר קבצים שאמורים להיות פרטיים'
+            STORAGE_EXPOSED_TMP: 'ניתן היה להוריד קבצי בדיקה בתוך tmp/, בעוד שתיקיות אחרות נחסמו. חוקי השרת שלך כנראה ישנים מגרסה Grav 2.1.7, שהוסיפה את tmp/ לרשימת התיקיות החסומות. הוסף את tmp לרשימה זו בקובץ ה-.htaccess שלך, או בהגדרות ה-nginx, ה-Caddy או ה-IIS שלך, כדי להתאים לחוקים ש-Grav מספקת.'
         TWIG_SANDBOX_LOGGING_HELP: 'רשום כל ביטוי חסום ל-<code>logs/twig-sandbox.log</code>. שימושי בזמן התאמת רשימת ההיתרים (allowlist); כבה בסביבת ייצור כדי לשמור על יומנים שקטים.'
         TWIG_SANDBOX_METHODS: מתודות
         TWIG_SANDBOX_PROPERTIES: מאפיינים
@@ -2066,6 +2299,55 @@ ICU:
             STAY: הישאר
             SWITCH_LANGUAGE: החלף
             SWITCH_LANGUAGE_MESSAGE: 'יש לך שינויים שלא נשמרו. להחליף שפה בכל זאת?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'לא ניתן היה לקרוא את תשובת השרת מכיוון שאינה בפורמט JSON תקין. ייתכן שמשהו בשרת מדפיס פלט נוסף, כגון אזהרת PHP, לצד תשובת ה-API. פרטים נוספים ניתן למצוא במסוף הדפדפן.'
+            INVALID_JSON_TITLE: 'תשובה בלתי צפויה מהשרת'
+            UNEXPECTED_RESPONSE_DETAIL: 'השרת השיב בנתונים בפורמט שהמסך הזה אינו מצפה לו. פרטים נוספים ניתן למצוא במסוף הדפדפן.'
+            UNEXPECTED_RESPONSE_TITLE: 'תשובה בלתי צפויה מהשרת'
+        CACHE_MODULES: 'פלט מודול מטמון'
+        CACHE_MODULES_HELP: 'שמירה במטמון של פלט המודולים המרונדרים של דף זה. השתמש באפשרות זו רק כאשר המודולים מציגים תוכן זהה לכל המבקרים. מודולים עם Twig משלהם או טופס, מבקרים מחוברים והגשות טפסים תמיד מרונדרים מחדש. עריכת תבנית חלקית בלבד דורשת ניקוי מטמון.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'רמזי רינדור Flex'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'עטוף כל אובייקט ואוסף Flex מרונדר בהערת HTML המציינת את שמו, כדי שניתן יהיה למצוא את מקור הבלוק בסימון הדף. חל על דפי HTML בלבד.'
+        FRONTMATTER_NATIVE_YAML: 'ניתוח מהיר של ה-frontmatter'
+        FRONTMATTER_NATIVE_YAML_HELP: 'קרא את ה-frontmatter של הדף בעזרת סיומת ה-PHP libyaml כאשר היא מותקנת, מה שהופך את בניית המטמון של הדפים למהירה יותר. היא קוראת כמה ערכים בצורה שונה, לכן בדוק את הדפים שלך תחילה. תאריך ללא מרכאות נשאר טקסט במקום להפוך לחותמת זמן, וערכים כמו yes, no, on ו-off ללא מרכאות הופכים ל-true או false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'פעולה זו תשדרג את Grav מגרסה {current} לגרסה {target}. האתר עשוי להיות לא זמין לזמן קצר במהלך השדרוג.'
+            CONFIRM_TITLE: 'לשדרג את ליבת Grav?'
+            FAILED: 'שדרוג Grav נכשל: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} מסומן כתואם ל-Grav {compatible}'
+            NO_DETAIL: 'השרת לא סיפק סיבה'
+            PREFLIGHT_MESSAGE: 'הבדיקות שרצות לפני שדרוג עצרו אותו מהסיבות הללו. תקן אותן ונסה שוב, או בצע שדרוג בכל זאת אם ידוע לך שתוספים וערכות נושא אלו עובדים עם הגרסה החדשה.'
+            PREFLIGHT_TITLE: 'לא ניתן לשדרג את Grav לגרסה {version} עדיין'
+            STILL_BLOCKED: 'שדרוג Grav עדיין חסום: {detail}'
+            UPGRADE_ANYWAY: 'שדרג בכל זאת'
+            UPGRADING: 'משדרג את Grav לגרסה {version}...'
+        HELP: עזרה
+        HELP_FOR_LABEL: 'עזרה עבור {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'קובצי JPEG פרוגרסיביים'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'שמור קובצי JPEG ששונתה רזולוצייתם או אוחסנו במטמון כפרוגרסיביים, כך שהם יופיעו כתמונה מטושטשת שלמה שמתחדדת במקום להיטען מלמעלה למטה. לרוב הם גם קטנים יותר. לא משפיע על PNG, WebP או AVIF.'
+        MARKDOWN_OUTPUT: 'פלט Markdown'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'כתובות URL מוחלטות'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'הפיכת קישורים ותמונות יחסיים לכתובות URL מלאות, כך שימשיכו לעבוד גם מחוץ לאתר.'
+        MARKDOWN_OUTPUT_ENABLED: 'הגשת דפים כ-Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'ניתן למשוך כל דף כ-Markdown על ידי הוספת .md לכתובת ה-URL שלו, או על ידי שליחת כותרת בקשה מסוג Accept:&nbsp;text/markdown. מיועד לסוכני בינה מלאכותית ולקוחות טקסט אחרים. הדף מרונדר דרך ערכת העיצוב, מצומצם לאזור התוכן הראשי ומומר, כך שדפי רשימות, חנויות ודפים מודולריים נקראים כפי שהם מוצגים.'
+        MARKDOWN_OUTPUT_FRONTMATTER: 'בלוק Frontmatter'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'התחל את ה-Markdown עם בלוק YAML המכיל את הכותרת, ה-URL, התאריך, התיאור והטקסונומיה.'
+        MARKDOWN_OUTPUT_LINKS: 'קישורי ניווט'
+        MARKDOWN_OUTPUT_LINKS_HELP: 'סיים את ה-Markdown עם קישורים לדף האב, לדפים השכנים ולדפי הבן, כדי שסוכן יוכל לסייר באתר מבלי לעזוב את ה-Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'מספר מרבי של קישורי בן'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'מספר דפי הבן המרבי שיוצגו בסעיף הניווט. אפס יציג את כולם.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'כותרת ספירת אסימונים (Token Count)'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'שלח כותרת תגובה X-Markdown-Tokens עם הערכת ספירת אסימונים, אותה כותרת שבה משתמש Markdown for Agents של Cloudflare.'
+        NOTICES:
+            HEADING: '{count, plural, one {התראה} other {התראות}}'
+            HIDE: 'הסתר התראות'
+            SHOW: 'הצג התראות'
+        PAGES_LAZY_INDEX: 'אינדקס דפים עצל'
+        PAGES_LAZY_INDEX_HELP: "טען דפים, נתיבים וטקסונומיה לפי דרישה מתוך אינדקס SQLite לכל דף במקום קובץ מטמון אחד גדול. 'אוטומטי' משתמש בזה באתרים עם 1,000 דפים או יותר. חוזר למטמון הקלאסי כאשר אין מנוע מסד נתונים זמין."
+        RETRY: 'נסה שוב'
+        SESSION_LAZY: 'התחל סשנים רק בעת הצורך'
+        SESSION_LAZY_HELP: 'מבקרים ללא עוגיית סשן יקבלו סשן רק כאשר משהו מאוחסן בו, כגון התחברות, טופס או הודעה, כך שניתן לשמור במטמון צפיות בדפים אנונימיים על ידי פרוקסי או CDN. תוספים ששומרים נתונים בכל צפייה בדף עדיין יתחילו סשן.'
+        UPDATE_CHANGELOG_TITLE: 'שינויים ב-v{version}'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA מופעל'
         2FA_SECRET: 'סוד 2FA'
