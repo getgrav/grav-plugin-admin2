@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Nur vertrauenswürdige Rollen'
                 TRUSTED_DESC: 'Nur Superuser und Benutzer mit der Berechtigung „pages twig“ können Twig auf einer Seite aktivieren.'
             VALIDATION_FAILED_FOR_FIELDS: 'Das Speichern war nicht erfolgreich. Die folgenden Felder sind fehlerhaft: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Fehler beim Laden der Konfiguration.'
+            SCOPE_NOT_FOUND: 'Es wurde kein Konfigurationsbereich namens {scope} gefunden.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Umgebung
             EXPORT_YAML: 'YAML exportieren'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: Scheduler-Status
                 STATUS: 'Status:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: manuell
+                MANUAL_RUN_HELP: '„Ausstehende ausführen“ führt die Jobs aus, die ihren letzten geplanten Zeitpunkt verpasst haben. Dies ist nützlich für Websites ohne Cron-Eintrag. Hier gestartete Durchläufe werden als manuell erfasst und zählen nicht zum obigen Cron-Status.'
+                NEVER: Nie
+                PENDING: Ausstehend
+                PROCESS_UNAVAILABLE: 'Jobs können auf diesem Host von hier aus nicht ausgeführt werden, da die PHP-Funktion proc_open deaktiviert ist. Sie werden weiterhin ausgeführt, sobald Ihr Scheduler durch Cron oder einen Webhook ausgelöst wird.'
+                RUN_ALL_HELP: 'Alle aktivierten Jobs jetzt ausführen, ungeachtet ihres Zeitplans.'
+                RUN_NOW: 'Diesen Job jetzt ausführen'
+                RUN_PENDING: 'Ausstehende ausführen'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Benutzerdefinierten Feldwert wird geladen...'
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'Keine Icons gefunden'
                 SEARCH_ICONS: 'Icons durchsuchen...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Zeige erste 200 Ergebnisse — zum Eingrenzen tippen'
+                FAMILY_ALL: Alle
+                FAMILY_BRANDS: Marken
+                FAMILY_REGULAR: Regulär
+                FAMILY_SOLID: Solid
             NO_TAXONOMY_TYPES: 'Keine Taxonomie-Typen konfiguriert'
             PAGES:
                 FILTER_PAGES: 'Seiten filtern...'
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Eingeben und Enter drücken...'
             SELECT_AN_ICON: 'Symbol auswählen...'
             SELECT_A_PAGE: 'Seite auswählen...'
+            MEDIA:
+                ADD: 'Medien hinzufügen…'
+                CHANGE: Ändern
+                DONE: Fertig
+                MOVE_EARLIER: 'Nach vorne verschieben'
+                MOVE_LATER: 'Nach hinten verschieben'
+                REMOVE: Entfernen
+                SELECT: 'Medien auswählen…'
+                SELECTED_COUNT: '{count, plural, =0 {Nichts ausgewählt} one {# ausgewählt} other {# ausgewählt}}'
+                TITLE: 'Medien auswählen'
+            SET_DATE_NOW: 'Auf jetzt setzen'
         FLEX_OBJECTS:
             ACTIONS: Aktionen
             BACK_TO_LIST: 'Zurück zur Liste'
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Fortfahren mit {provider}'
             OR_CONTINUE_WITH: 'Oder fortfahren mit'
             SSO_FAILED: 'Die Anmeldung mit diesem Anbieter ist fehlgeschlagen. Bitte versuchen Sie es erneut.'
+            CAPTCHA_FAILED_TO_LOAD: 'Die Überprüfung konnte nicht geladen werden. Laden Sie die Seite neu und versuchen Sie es erneut.'
+            CAPTCHA_NOT_COMPLETED: 'Bitte schließen Sie die Überprüfung ab, um fortzufahren'
+            CAPTCHA_VERIFIED: 'Bestätigt, dass Sie ein Mensch sind'
+            CAPTCHA_VERIFYING: 'Überprüfung, ob Sie ein Mensch sind...'
+            INVALID_AUTHENTICATION_CODE: 'Ungültiger Authentifizierungscode'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Keine Vorschau verfügbar'
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: Listenansicht
                 NEW_FOLDER: 'Neuer Ordner'
                 SEARCH_MEDIA: 'Medien durchsuchen...'
+                DELETE_SELECTED: '{count, plural, one {# Datei löschen} other {# Dateien löschen}}'
+                FILTER_ALL: Alle
+                FILTER_AUDIO: Audio
+                FILTER_DOCS: Dokumente
+                FILTER_IMAGES: Bilder
+                FILTER_VIDEO: Video
+                SEARCHING_FOR: 'Suche: „{query}“'
+                SORT_DATE: Datum
+                SORT_NAME: Name
+                SORT_SIZE: Größe
+                SORT_TYPE: Typ
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'In Editor ziehen'
                 PAGE_MEDIA: Seiten-Medien
@@ -448,6 +489,15 @@ ICU:
                 STORED: 'Gespeicherte Metadaten'
                 TAGS_PLACEHOLDER: 'Tag hinzufügen...'
                 TITLE: Metadaten
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: Medienpfad
+                OPEN: Öffnen
+                PATH: Pfad
+                SIZE: Größe
+                TITLE: Dateidetails
+                TYPE: Typ
+                URL: URL
         NAV:
             CONFIGURATION: Konfiguration
             DASHBOARD: Dashboard
@@ -460,6 +510,7 @@ ICU:
             TOOLS: Werkzeuge
             USERS: Benutzer
             UPDATES_AVAILABLE: '{count} Update(s) verfügbar'
+            TRANSLATIONS: Übersetzungen
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Keine Feed-Einträge'
         NORMAL_MODE: Normalmodus
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Schreiben Sie hier Ihren Markdown-Inhalt...'
                 SAVED_BY_PEER: '{user} hat diese Seite gespeichert'
                 SAVED_BY_PEER_ANON: 'Ein anderer Benutzer hat diese Seite gespeichert'
+                FALLBACK_NOTICE_UNRESOLVED: 'Der Server hat die {effective}-Version dieser Seite anstelle von {active} zurückgegeben und {active} nicht als fehlend gemeldet. Das Speichern ist hier deaktiviert, damit die {effective}-Datei nicht überschrieben wird. Wenn dies bei jeder Seite auftritt, leitet der Webserver wahrscheinlich keine Query-Strings an Grav weiter.'
+                PREVIEW_SHOWING_HOST_PAGE: 'in der übergeordneten Seite angezeigt'
+                TEMPLATE_MISSING_NOTICE: 'Das Template **{template}** für dieses Modul wurde im Theme nicht gefunden, daher zeigt die zugehörige Seite einen Fehler „Template nicht gefunden“ an. Wählen Sie ein Template unter **Seitenvorlage** im Reiter „Erweitert“ oder fügen Sie das Template dem Theme hinzu.'
             EDIT_PAGE: 'Seite bearbeiten'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Geändert
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-sicherer Ordnername für diese Seite'
                 VISIBLE: Sichtbar
+                CHILD_TYPE_HINT: 'Die übergeordnete Seite schlägt „{template}“ für ihre Unterseiten vor. Sie können dennoch ein anderes Template wählen.'
+                STATUS_HELP: 'Entwürfe werden gespeichert, sind aber erst sichtbar, wenn Sie sie veröffentlichen'
             NO_PAGES: 'Keine Seiten gefunden'
             NO_SEARCH_RESULTS: 'Keine Seiten entsprechen Ihrer Suche'
             PAGES_GRAV_ADMIN: 'Seiten — Grav Admin'
@@ -626,6 +682,16 @@ ICU:
                 ROUTABLE: Routbar
                 'YES': Ja
             VALIDATION_FAILED_FOR_FIELDS: 'Speichern war nicht erfolgreich - diese Felder sind ungültig: {fields}'
+            COLUMN_EMPTY: Leer
+            SEARCH_MATCH_COUNT: '{n, plural, one {# Treffer} other {# Treffer}} auf allen Seiten'
+            SEARCH_SHOWING: 'Zeige {shown} von {total} Ergebnissen'
+            SEARCH_SHOW_MORE: 'Mehr anzeigen'
+            STATUS:
+                EXPIRED: Abgelaufen
+                EXPIRED_ON: 'Unveröffentlicht seit {date}'
+                SCHEDULED: Geplant
+                SCHEDULED_FOR: 'Veröffentlichung geplant für {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Passwort
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Passwortanforderungen
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: 'Letzte 14 Tage'
             THIS_MONTH: 'Dieser Monat'
             THIS_WEEK: 'Diese Woche'
+            CHART_LABEL: 'Seitenaufrufe pro Tag der letzten 14 Tage'
+            TODAY: Heute
+            VIEWS: '{count, plural, one {# Aufruf} other {# Aufrufe}}'
         PREMIUM: Premium
         PREVIEW: Vorschau
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Bitte geben Sie Ihr Passwort erneut ein, um fortzufahren. Ihre Arbeit wurde gespeichert.'
             SESSION_EXPIRED: 'Sitzung abgelaufen'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Melden Sie sich erneut an, um fortzufahren. Ihre Arbeit wurde gespeichert.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Alle anzeigen'
         REMOVE: Entfernen
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Standard
             EDITOR_KEYMAP_DESC: 'Vim-Tastenkombinationen in den Markdown- und Code-Editoren verwenden. Die Standardeinstellung behält die normale Bearbeitung bei.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Diese Farbe kopieren'
+            CURRENT_COLOR: Farbe
+            DARK_SHADE: 'Dunkler Farbton'
+            DARK_SHADE_DESC: 'Wie der Dunkelmodus aussieht. Dies wirkt sich nur aus, wenn der Dunkelmodus aktiviert ist.'
+            DARK_SHADE_GRAPHITE: Graphit
+            DARK_SHADE_MIDNIGHT: Mitternacht
+            DARK_SHADE_ZINC: Onyx
+            DEFAULT_DARK_SHADE_DESC: 'Standardmäßiger dunkler Farbton für neue Benutzer. Dies wirkt sich nur aus, wenn der Dunkelmodus aktiviert ist.'
+            DEFAULT_HELP_TEXT_DESC: 'Standard-Platzierung für Feld-Hilfetexte für neue Benutzer, unter dem Label oder in einem Tooltip.'
+            HELP_MODE_INLINE: 'Unter dem Label'
+            HELP_MODE_TOOLTIP: 'In einem Tooltip'
+            HELP_TEXT: Hilfetext
+            HELP_TEXT_DESC: 'Wo die kurze Erklärung für jedes Feld erscheint. Bei einem Tooltip bewegen Sie den Mauszeiger über das Info-Symbol neben einem Label oder tippen Sie es auf einem Smartphone an, um den Text zu lesen.'
+            LOGO_HEIGHT_CUSTOM: Benutzerdefiniert
+            LOGO_HEIGHT_DEFAULT: Standard
+            SIDEBAR_LOGO_HEIGHT: 'Höhe des Seitenleisten-Logos'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Wie hoch Ihr Logo am oberen Rand der Seitenleiste erscheint.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: Aktualisieren
                 SEARCH_MESSAGES: 'Nachrichten durchsuchen...'
                 WARNING: Warnung
+                CLEAR_LOG: 'Protokoll löschen'
+                CLEAR_LOG_CONFIRM: 'Möchten Sie wirklich jeden Eintrag in {file} dauerhaft löschen? Dies kann nicht rückgängig gemacht werden, und sämtliche Aufzeichnungen darüber, was zuvor schiefgelaufen ist, gehen dabei verloren.'
+                FAILED_TO_CLEAR_LOG: 'Löschen des Protokolls fehlgeschlagen'
+                LOG_CLEARED: '{file} bereinigt'
             REPORTS:
                 CONTENT_FIELD: 'content: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Berichte konnten nicht geladen werden'
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 'Blockierte Tags im Inhalt'
                     SECTION_EVENTS: 'Kürzlich blockiert'
                     SECTION_LEAKS: 'Seiten, die rohes Twig anzeigen'
+                    POLICY_ADDED: '+{count} hinzugefügt'
+                    POLICY_ALL_DEFAULTS: 'Alle Standards, unverändert'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# Klasse} other {# Klassen}}'
+                    POLICY_DENIED: '−{count} abgelehnt'
+                    POLICY_EFFECTIVE_COUNT: '{count} effektiv'
+                    POLICY_FAILED: 'Die Sandbox-Richtlinie konnte nicht geladen werden'
+                    POLICY_FILTERS: Filter
+                    POLICY_FUNCTIONS: Funktionen
+                    POLICY_HIDE: 'Effektive Richtlinie ausblenden'
+                    POLICY_INTRO: 'Die Sandbox-Basislinie ist im Code enthalten; Ihre Konfiguration erweitert oder verschärft diese lediglich.'
+                    POLICY_METHODS: Methoden
+                    POLICY_PROPERTIES: Eigenschaften
+                    POLICY_TAGS: Tags
+                    POLICY_VIEW: 'Effektive Richtlinie anzeigen'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Berichtskomponente wird geladen...'
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-Konfiguration gespeichert'
                 SECURITY_WARNING: 'Nur fortgeschrittene Benutzer sollten benutzerdefinierte Scheduler-Aufträge konfigurieren. Eine fehlerhafte Konfiguration kann zu Leistungsproblemen oder Sicherheitslücken führen.'
                 WEBHOOK_ALTERNATIVE: 'Alternativ können Sie das Plugin **scheduler-webhook** installieren, um webhook-basiertes Cron-Firing zu verwenden. Dies wird für Cloud-Umgebungen empfohlen, in denen kein Zugriff auf die Systemcrontab verfügbar ist.'
+                CRON_UNDETERMINED: 'Grav kann die Crontab dieses Servers nicht untersuchen und daher nicht bestätigen, wie der Scheduler ausgelöst wird.'
+                ENVIRONMENT_MISMATCH: 'Der Scheduler wurde zuletzt unter der **{last}**-Umgebung ausgeführt, aber diese Seite verwendet **{current}**, welche eine eigene Konfiguration unter user/env/{current}/config besitzt. Benutzerdefinierte Jobs und Einstellungen, die nur dort definiert sind, werden von diesem Trigger nie ausgeführt. Aktualisieren Sie die bin/grav scheduler-Zeile in Ihrer Crontab auf den unten stehenden Befehl (er übergibt --env={current}), oder exportieren Sie GRAV_ENVIRONMENT={current}, bevor er ausgeführt wird.'
+                LAST_MANUAL_RUN: 'Zuletzt manuell ausgeführt'
+                LAST_TRIGGERED: 'Zuletzt ausgelöst'
+                PROCESS_UNAVAILABLE: 'Auf diesem Host ist die PHP-Funktion proc_open deaktiviert, daher können Jobs nicht über das Admin-Panel gestartet werden. Sie werden weiterhin ausgeführt, sobald Ihr Scheduler durch Cron oder einen Webhook ausgelöst wird.'
+                STATUS_UNAVAILABLE: 'Der Status des Schedulers konnte auf diesem Host nicht gelesen werden. Ihre Jobs sind unten weiterhin aufgelistet und können wie gewohnt bearbeitet werden.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} frei von {total}'
                 DISK_USAGE: Speichernutzung
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'Fehler beim Ändern des Status für {username}: {detail}'
             DEMO_MODE_BLOCKED: 'Dies ist eine schreibgeschützte Demo — Änderungen sind deaktiviert.'
             USER_ROW_ACTION_FAILED: 'Aktion konnte nicht abgeschlossen werden: {label}'
-        TRANSLATIONS: Übersetzungen
+        TRANSLATIONS:
+            ACCEPT: Akzeptieren
+            ACCEPTED_ALL: '{count, plural, one {# Übersetzung gespeichert} other {# Übersetzungen gespeichert}}'
+            ACCEPT_ALL: 'Alle akzeptieren'
+            ALL_SOURCES: 'Alle Quellen'
+            CLEAR_ALL_FILTERS: 'Filter löschen'
+            DESCRIPTION: 'Formulieren Sie jeden auf dieser Seite angezeigten Text um, in jeder beliebigen Sprache. Änderungen werden als Überschreibungen in user/languages gespeichert und verändern niemals die Dateien eines Plugins oder Themes, sodass sie bei einem Update nicht verloren gehen.'
+            DISCARD: Verwerfen
+            DISCARD_ALL: Verwerfen
+            EDITED: bearbeitet
+            EDITING_LANGUAGE: Bearbeiten
+            EDIT_AS_GRID: 'Zurück zur Übersicht'
+            EDIT_AS_YAML: 'Als YAML bearbeiten'
+            EDIT_HINT: 'Eingabetaste zum Speichern, Escape zum Abbrechen, Umschalt+Eingabetaste für eine neue Zeile. Leeren Sie das Feld, um die Überschreibung zu entfernen.'
+            FAILED_TO_LOAD: 'Übersetzungen konnten nicht geladen werden'
+            FAILED_TO_SAVE: 'Änderung konnte nicht gespeichert werden'
+            FILTERED_BY: 'Zeige nur'
+            FILTER_LANGUAGES: 'Sprachen filtern'
+            IMPORT_ACTION: 'Überschreibungen importieren'
+            IMPORT_ALREADY_DONE: '{count, plural, one {# Überschreibung ist} other {# Überschreibungen sind}} bereits vorhanden'
+            IMPORT_BODY: '{count, plural, one {# Überschreibung ist noch im Translation Strings Plugin gespeichert. Importieren Sie diese, um sie hier zu verwalten.} other {# Überschreibungen in {languages, plural, one {# Sprache} other {# Sprachen}} sind noch im Translation Strings Plugin gespeichert. Importieren Sie diese, um sie hier zu verwalten.}}'
+            IMPORT_COL_ALREADY: 'Bereits vorhanden'
+            IMPORT_COL_CONFLICT: Konflikt
+            IMPORT_COL_LANGUAGE: Sprache
+            IMPORT_COL_NEW: Neu
+            IMPORT_COL_SHIPPED: 'Identisch mit Original'
+            IMPORT_COL_UNKNOWN: Unbekannt
+            IMPORT_CONFLICTS: '{count, plural, one {# Schlüssel ist} other {# Schlüssel sind}} an beiden Stellen mit unterschiedlichem Wortlaut gesetzt. Die Version des Plugins hat Vorrang, da dies der aktuelle Stand Ihrer Website ist.'
+            IMPORT_DISABLE_ACTION: 'Plugin deaktivieren'
+            IMPORT_DISABLE_BLOCKED: 'Importieren Sie zuerst die Überschreibungen, sonst gehen sie auf der Website verloren.'
+            IMPORT_DISABLE_FAILED: 'Plugin konnte nicht deaktiviert werden'
+            IMPORT_DONE: '{count, plural, one {# Überschreibung} other {# Überschreibungen}} importiert'
+            IMPORT_FAILED: 'Import fehlgeschlagen'
+            IMPORT_HIDE_DETAIL: 'Details ausblenden'
+            IMPORT_LEGEND: 'Als „identisch mit dem Original“ markierte Zeichenfolgen entsprechen dem, was das Plugin oder Theme bereits mitliefert, und werden daher verworfen, anstatt sie als wirkungslose Überschreibungen zu speichern.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Sie haben keine Berechtigung, Plugin-Einstellungen zu ändern, daher muss das Plugin von einem Administrator deaktiviert werden.'
+            IMPORT_NO_PERMISSION: 'Sie haben keine Berechtigung, Übersetzungs-Überschreibungen zu schreiben, daher ist der Import nicht verfügbar.'
+            IMPORT_PLUGIN_DISABLED: 'Übersetzungs-Zeichenfolgen deaktiviert. Dieser Editor ist jetzt zuständig.'
+            IMPORT_SHOW_DETAIL: 'Anzeigen, was importiert wird'
+            IMPORT_STILL_ENABLED_BODY: 'Es wendet seine Zeichenfolgen nach diesem Editor an, daher überschreibt es immer noch alles, was Sie hier ändern. Überprüfen Sie, ob die Website korrekt gelesen wird, und deaktivieren Sie es dann, um den Wechsel abzuschließen. Die Einstellungen bleiben erhalten, sodass dies umkehrbar ist.'
+            IMPORT_STILL_ENABLED_TITLE: 'Das Plugin „Translation Strings“ ist noch aktiviert'
+            IMPORT_TITLE: 'Wartende Überschreibungen im Plugin „Translation Strings“'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# Schlüsselname bezeichnet eine Zeichenfolge, die von keinem Plugin, Theme oder Core-Datei bereitgestellt wird. Er wird beibehalten, damit Sie ihn überprüfen können, er hat jedoch keine Auswirkung.} other {# Schlüsselnamen bezeichnen Zeichenfolgen, die von keinem Plugin, Theme oder Core-Datei bereitgestellt werden. Sie werden beibehalten, damit Sie sie überprüfen können, sie haben jedoch keine Auswirkung.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# importierter Schlüssel benennt eine Zeichenfolge} other {# importierte Schlüssel benennen Zeichenfolgen}}, die auf dieser Website nicht bereitgestellt werden. Finden Sie diese mit dem Filter „Unbekannt“.'
+            INACTIVE: inaktiv
+            INACTIVE_HELP: 'Dieses Plugin ist deaktiviert oder dieses Theme ist nicht das aktive, daher werden seine Zeichenfolgen auf der Website nicht verwendet.'
+            KEY: Schlüssel
+            KIND_PLUGINS: Plugins
+            KIND_SYSTEM: Core
+            KIND_THEMES: Themes
+            KIND_USER: 'Diese Website'
+            LANGUAGES: Sprachen
+            LOADING: 'Lade Übersetzungen...'
+            NEXT: Weiter
+            NOTHING_TO_TRANSLATE: 'Auf dieser Seite fehlt nichts an einer Übersetzung.'
+            NO_RESULTS: 'Keine Zeichenfolgen entsprechen diesen Filtern.'
+            NO_RESULTS_FILTERED: 'Sie suchen innerhalb von: {filters}'
+            OVERRIDE_REMOVED: 'Überschreibung entfernt'
+            PICK_A_TARGET_LANGUAGE: 'Fügen Sie zuerst eine Sprachspalte hinzu — es gibt nichts, in das übersetzt werden könnte.'
+            PREVIOUS: Zurück
+            PROPOSALS_PENDING: '{count, plural, one {# Vorschlag zur Überprüfung} other {# Vorschläge zur Überprüfung}}'
+            REFRESH: Aktualisieren
+            REMOVE_FILTER: 'Diesen Filter entfernen'
+            REVERT: Rückgängig
+            REVERTED_TO_SHIPPED: 'Auf den ursprünglichen Wortlaut zurückgesetzt'
+            REVERT_HELP: 'Diese Überschreibung entfernen und zum ursprünglichen Wortlaut des Plugins oder Themes zurückkehren.'
+            SAVE: Speichern
+            SAVED_UNKNOWN_KEY: 'Gespeichert, aber nichts stellt {key} bereit — bitte Rechtschreibung prüfen'
+            SAVING: Speichern...
+            SCOPED_TO: 'Nur {namespace}'
+            SCOPE_WHOLE_FILE: 'Bearbeitung aller Überschreibungen für diese Sprache'
+            SEARCH_PLACEHOLDER: 'Text oder Schlüssel suchen...'
+            SHIPPED_VALUE: 'Ursprünglich: {value}'
+            SHOWING: 'Zeige {from}–{to} von {total}'
+            SKIPPED_COUNT: '{count, plural, one {# übersprungen} other {# übersprungen}}'
+            SKIP_EMPTY: 'Der Übersetzungsdienst hat für diese Zeichenkette nichts zurückgegeben.'
+            SKIP_ICU: 'Diese Nachricht ändert sich je nach Zahl oder Auswahl, daher benötigt jede Sprache ihre eigenen Formen. Bitte manuell verfassen.'
+            SKIP_NOTHING: 'Diese Zeichenkette besteht nur aus Platzhaltern, daher gibt es keine Wörter zu übersetzen.'
+            SKIP_NO_SOURCE: 'Es gibt keinen Wortlaut in der Ausgangssprache, von dem aus übersetzt werden könnte.'
+            SKIP_PLACEHOLDERS: 'Die Übersetzung wurde mit geänderten Platzhaltern zurückgegeben und daher verworfen, anstatt gespeichert zu werden.'
+            SOURCE: Quelle
+            SOURCE_LANGUAGE: Quelle
+            STATE_MISSING: fehlend
+            STATE_MISSING_FALLBACK: 'Ausweichen auf'
+            STATE_OVERRIDDEN: überschrieben
+            STATUS_ALL: Alle
+            STATUS_MISSING: Fehlend
+            STATUS_OVERRIDDEN: Überschrieben
+            STATUS_UNKNOWN: Unbekannt
+            SUGGESTED: Vorgeschlagen
+            SUPERSEDED_ACTION: 'Übersetzungen öffnen'
+            SUPERSEDED_BODY: 'Der Bereich „Übersetzungen“ erledigt alles, was dieses Plugin kann, und bietet zusätzlich eine website-weite Suche über alle Zeichenfolgen, eine Abdeckung nach Sprache, maschinelle Übersetzung sowie einen Bericht über nicht mehr verwendete Schlüssel. Dieses Plugin wird weiterhin für Grav 1.7 unterstützt.'
+            SUPERSEDED_PENDING: '{count, plural, one {# Überschreibung ist} other {# Überschreibungen sind}} hier noch gespeichert und können importiert werden.'
+            SUPERSEDED_TITLE: 'In Grav 2.0 integriert'
+            TITLE: Übersetzungen
+            TRANSLATE_FAILED: 'Übersetzung fehlgeschlagen'
+            TRANSLATE_MISSING: 'Fehlende übersetzen'
+            TRANSLATE_ROW: 'Schlage Übersetzungen für diese Zeichenfolge in allen angezeigten Sprachen vor'
+            TRANSLATE_THIS: 'Schlage eine Übersetzung für diese Zeichenfolge vor'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'Hole dir das Plugin'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'Für AI Translate wurde noch kein Übersetzungsanbieter eingerichtet, daher ist die maschinelle Übersetzung nicht verfügbar.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate ist installiert, aber deaktiviert, daher ist die maschinelle Übersetzung nicht verfügbar.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'KI-gestützte Übersetzung fehlender Zeichenfolgen ist mit dem AI Translate Premium-Plugin verfügbar.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Öffne dessen Einstellungen'
+            TRANSLATING: 'Übersetzung läuft...'
+            UNKNOWN_KEYS_SAVED: 'Gespeichert, aber diese Schlüssel werden von niemandem bereitgestellt'
+            UNKNOWN_KEY_HELP: 'Kein Plugin, Theme oder Kerndatei stellt diesen Schlüssel bereit. Es handelt sich wahrscheinlich um einen Tippfehler oder einen Überrest von etwas, das nicht mehr installiert ist.'
+            YAML_HELP: 'Füge Überschreibungen direkt ein oder bearbeite sie. Werte, die dem entsprechen, was das Plugin oder Theme bereits bereitstellt, werden verworfen, sodass die Datei nur tatsächliche Änderungen enthält.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: Dein Text hier
+            YAML_SAVED: '{count, plural, =0 {Keine Überschreibungen mehr in {lang}} one {# Überschreibung in {lang} gespeichert} other {# Überschreibungen in {lang} gespeichert}}'
         TRANSLATIONS_FALLBACK: Fallback-Übersetzungen
         TRANSLATIONS_FALLBACK_HELP: 'Fallback durch unterstützte Übersetzungen, wenn die aktive Sprache nicht vorhanden ist'
         TWIG_3_COMPATIBILITY: 'Twig 3 Kompatibilität'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Dateien unter user/data, user/accounts und user/config können direkt über HTTP heruntergeladen werden — einschließlich Zertifikaten, Schlüsseln, Token und Datenbanken. Dies bedeutet normalerweise, dass Ihr Webserver die .htaccess-Regeln von Grav nicht anwendet.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Wie Sie Ihren Webserver absichern'
             USER_FOLDER_EXPOSED_TITLE: 'Sicherheitsrisiko: Ihre Benutzerdaten-Ordner sind über das Web erreichbar'
+            COLLAPSE: Einklappen
+            SHOW_DETAILS: 'Details anzeigen'
+            SNOOZE: Zurückstellen
+            SNOOZE_HINT: 'Diese Warnung für 24 Stunden ausblenden. Sie erscheint früher wieder, falls andere Dateien gefunden werden.'
+            STORAGE_EXPOSED_ALL: 'Jede Testdatei konnte heruntergeladen werden, daher wendet Ihr Webserver die Zugriffsregeln von Grav überhaupt nicht an. Überprüfen Sie bei Apache, ob AllowOverride es der .htaccess-Datei der Website ermöglicht, wirksam zu werden. Fügen Sie bei nginx, Caddy oder IIS die Sicherheitsregeln aus dem Ordner webserver-configs von Grav hinzu.'
+            STORAGE_EXPOSED_BODY: 'Der Webserver hat Testdateien aus Verzeichnissen bereitgestellt, die eigentlich privat sein sollten. Die unten aufgelisteten Dateitypen könnten gespeicherte Übermittlungen, Backups oder temporäre Dateien offenlegen. Bitten Sie Ihren Hoster, den direkten Zugriff zu blockieren, oder verschieben Sie private Speicherbereiche außerhalb des Web-Roots.'
+            STORAGE_EXPOSED_BY_TYPE: 'Einige Dateitypen wurden in diesen Ordnern blockiert, während andere heruntergeladen werden konnten. Das bedeutet normalerweise, dass etwas vor den Grav-Regeln liegt, wie z. B. nginx, das statische Dateien vor Apache bereitstellt und bei gängigen Dateitypen wie .zip antwortet, bevor die Regeln geprüft werden. Blockieren Sie diese Ordner auch in der Konfiguration dieser Ebene.'
+            STORAGE_EXPOSED_CDN: 'Wenn sich die Website hinter einem CDN wie Cloudflare befindet, leeren Sie nach der Fehlerbehebung dessen Cache. Bereits zwischengespeicherte Kopien bleiben so lange herunterladbar, bis Sie dies tun.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# Dateityp} other {# Dateitypen}}'
+            STORAGE_EXPOSED_TITLE: 'Dateien, die eigentlich privat sein sollten, können von dieser Website heruntergeladen werden'
+            STORAGE_EXPOSED_TMP: 'Test-Dateien im Ordner tmp/ konnten heruntergeladen werden, während andere Ordner blockiert wurden. Ihre Server-Regeln stammen wahrscheinlich aus einer Zeit vor Grav 2.1.7, das tmp/ zur Liste der blockierten Ordner hinzugefügt hat. Fügen Sie tmp zu dieser Liste in Ihrer .htaccess oder in Ihrer nginx-, Caddy- oder IIS-Konfiguration hinzu, damit sie den von Grav mitgelieferten Regeln entsprechen.'
         DEMO:
             BANNER_COUNTDOWN: 'Nächster Reset in {time}'
             BANNER_LABEL: Demo-Modus
@@ -2066,3 +2299,52 @@ ICU:
             STAY: Bleiben
             SWITCH_LANGUAGE: Wechseln
             SWITCH_LANGUAGE_MESSAGE: 'Sie haben ungespeicherte Änderungen. Trotzdem Sprache wechseln?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'Die Antwort des Servers konnte nicht gelesen werden, da sie kein gültiges JSON ist. Möglicherweise gibt der Server neben der API-Antwort zusätzliche Ausgaben aus, wie z. B. eine PHP-Warnung. Details dazu finden Sie in der Browser-Konsole.'
+            INVALID_JSON_TITLE: 'Unerwartete Antwort vom Server'
+            UNEXPECTED_RESPONSE_DETAIL: 'Der Server hat Daten in einem Format gesendet, das dieser Bildschirm nicht erwartet. Details dazu finden Sie in der Browser-Konsole.'
+            UNEXPECTED_RESPONSE_TITLE: 'Unerwartete Antwort vom Server'
+        CACHE_MODULES: 'Modulausgabe zwischenspeichern'
+        CACHE_MODULES_HELP: 'Speichert die gerenderte Ausgabe der Module dieser Seite zwischen. Nur verwenden, wenn die Module jedem Besucher den gleichen Inhalt anzeigen. Module mit eigenem Twig oder Formularen, eingeloggte Besucher und Formularübermittlungen werden immer frisch gerendert. Bei Änderungen an einem Teil-Template ist ein Cache-Clear erforderlich.'
+        DEBUGGER_FLEX_RENDER_HINTS: Flex-Rendering-Hinweise
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Umschließt jedes gerenderte Flex-Objekt und jede Sammlung mit einem HTML-Kommentar, der es benennt, damit die Quelle eines Blocks im Seiten-Markup gefunden werden kann. Gilt nur für HTML-Seiten.'
+        FRONTMATTER_NATIVE_YAML: 'Schnelles Frontmatter-Parsing'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Liest das Seiten-Frontmatter mit der libyaml PHP-Erweiterung, sofern installiert, was den Neuaufbau des Seitencaches beschleunigt. Es liest einige Werte unterschiedlich, also überprüfen Sie vorher Ihre Seiten. Ein nicht in Anführungszeichen gesetztes Datum bleibt Text, anstatt zu einem Zeitstempel zu werden, und nicht in Anführungszeichen gesetztes yes, no, on und off werden zu true oder false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Dies wird Grav von v{current} auf v{target} aktualisieren. Die Website ist während des Upgrades möglicherweise kurzzeitig nicht erreichbar.'
+            CONFIRM_TITLE: 'Grav-Kern aktualisieren?'
+            FAILED: 'Grav-Upgrade fehlgeschlagen: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} ist als kompatibel mit Grav {compatible} markiert'
+            NO_DETAIL: 'der Server hat keinen Grund angegeben'
+            PREFLIGHT_MESSAGE: 'Die Prüfungen, die vor einem Upgrade ausgeführt werden, haben es aus diesen Gründen gestoppt. Beheben Sie diese und versuchen Sie es erneut, oder führen Sie das Upgrade trotzdem durch, wenn Sie wissen, dass diese Plugins und Themes mit der neuen Version funktionieren.'
+            PREFLIGHT_TITLE: 'Grav kann noch nicht auf v{version} aktualisiert werden'
+            STILL_BLOCKED: 'Grav-Upgrade ist weiterhin blockiert: {detail}'
+            UPGRADE_ANYWAY: 'Trotzdem aktualisieren'
+            UPGRADING: 'Aktualisiere Grav auf v{version}…'
+        HELP: Hilfe
+        HELP_FOR_LABEL: 'Hilfe für {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'Progressive JPEGs'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Speichert skalierte und zwischengespeicherte JPEGs als progressive JPEGs, sodass sie als ein ganzes, unscharfes Bild erscheinen, das sich nach und nach schärft, anstatt von oben nach unten geladen zu werden. Normalerweise sind sie auch kleiner. Dies hat keine Auswirkungen auf PNG, WebP oder AVIF.'
+        MARKDOWN_OUTPUT: Markdown-Ausgabe
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'Absolute URLs'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'Wandelt wurzelrelative Links und Bilder in vollständige URLs um, sodass sie weiterhin funktionieren, sobald das Markdown die Website verlässt.'
+        MARKDOWN_OUTPUT_ENABLED: 'Seiten als Markdown bereitstellen'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Jede Seite kann als Markdown abgerufen werden, indem `.md` an ihre URL angehängt wird oder ein `Accept:&nbsp;text/markdown` Request-Header gesendet wird. Entwickelt für KI-Agenten und andere Text-Clients. Die Seite wird über das Theme gerendert, auf ihren Hauptinhaltsbereich reduziert und konvertiert, sodass Auflistungen, Shops und modulare Seiten so gelesen werden können, wie sie angezeigt werden.'
+        MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter-Block
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Startet das Markdown mit einem YAML-Block, der Titel, URL, Datum, Beschreibung und Taxonomie enthält.'
+        MARKDOWN_OUTPUT_LINKS: Navigationslinks
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Beendet das Markdown mit Links zur übergeordneten, benachbarten und untergeordneten Seiten, damit ein Agent die Website durchlaufen kann, ohne das Markdown zu verlassen.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Maximale Anzahl untergeordneter Links'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'Die maximale Anzahl untergeordneter Seiten, die im Navigationsbereich aufgelistet werden. Null listet alle auf.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: Token-Anzahl-Header
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Sendet einen `X-Markdown-Tokens` Response-Header mit einer geschätzten Token-Anzahl, denselben Header, den Cloudflares Markdown for Agents verwendet.'
+        NOTICES:
+            HEADING: '{count, plural, one {Hinweis} other {Hinweise}}'
+            HIDE: 'Hinweise ausblenden'
+            SHOW: 'Hinweise einblenden'
+        PAGES_LAZY_INDEX: Lazy-Seitenindex
+        PAGES_LAZY_INDEX_HELP: 'Lädt Seiten, Routen und Taxonomie bei Bedarf aus einem seitenbasierten SQLite-Index anstelle einer großen Cache-Datei. „Auto“ verwendet dies bei Websites mit 1.000 oder mehr Seiten. Fällt auf den klassischen Cache zurück, wenn keine Datenbank-Engine verfügbar ist.'
+        RETRY: Wiederholen
+        SESSION_LAZY: 'Sitzungen nur bei Bedarf starten'
+        SESSION_LAZY_HELP: 'Besucher ohne Sitzungs-Cookie erhalten erst dann eine Sitzung, wenn darin etwas gespeichert wird, wie etwa ein Login, ein Formular oder eine Nachricht. Dadurch können anonyme Seitenaufrufe von einem Proxy oder CDN zwischengespeichert werden. Plugins, die bei jedem Seitenaufruf Daten speichern, starten weiterhin eine Sitzung.'
+        UPDATE_CHANGELOG_TITLE: 'Änderungen in v{version}'
