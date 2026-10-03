@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Vain luotetut roolit'
                 TRUSTED_DESC: 'Vain pääkäyttäjät ja ne, joilla on ”pages twig” -oikeus, voivat ottaa Twigin käyttöön sivulla.'
             VALIDATION_FAILED_FOR_FIELDS: 'Tallennus epäonnistui — seuraavat kentät ovat virheellisiä: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Konfiguraation lataaminen epäonnistui.'
+            SCOPE_NOT_FOUND: 'Konfiguraatioskopea nimellä {scope} ei löytynyt.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ympäristö
             EXPORT_YAML: 'Vie YAML'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: 'Ajoittimen tila'
                 STATUS: 'Tila:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: käsin
+                MANUAL_RUN_HELP: 'Suorita odottavat (Run Pending) -toiminto suorittaa työt, jotka ovat myöhästyneet aikataulustaan. Tämä on hyödyllinen sivustoilla, joissa ei ole cron-ajastusta. Täältä käynnistetyt suoritukset tallennetaan manuaalisiksi, eivätkä ne vaikuta yllä olevaan cron-tilaan.'
+                NEVER: 'Ei koskaan'
+                PENDING: Odottavat
+                PROCESS_UNAVAILABLE: 'Töitä ei voi suorittaa täältä tällä palvelimella, koska PHP:n proc_open-funktio on poistettu käytöstä. Työt suoritetaan edelleen aina, kun ajastin käynnistyy cronin tai webhookin kautta.'
+                RUN_ALL_HELP: 'Suorita kaikki käytössä olevat työt nyt, riippumatta niiden aikataulusta.'
+                RUN_NOW: 'Suorita tämä työ nyt'
+                RUN_PENDING: 'Suorita odottavat'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Mukautettua kenttää ladataan...'
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'Kuvakkeita ei löytynyt'
                 SEARCH_ICONS: 'Etsi kuvakkeita...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Näytetään ensimmäiset 200 tulosta — kirjoita rajoittaaksesi'
+                FAMILY_ALL: Kaikki
+                FAMILY_BRANDS: Brändit
+                FAMILY_REGULAR: Tavallinen
+                FAMILY_SOLID: Yhtenäinen
             NO_TAXONOMY_TYPES: 'Taksonomiatyyppejä ei ole määritetty'
             PAGES:
                 FILTER_PAGES: 'Suodata sivuja...'
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Kirjoita ja paina Enter...'
             SELECT_AN_ICON: 'Valitse kuvake...'
             SELECT_A_PAGE: 'Valitse sivu...'
+            MEDIA:
+                ADD: 'Lisää mediaa…'
+                CHANGE: Muuta
+                DONE: Valmis
+                MOVE_EARLIER: 'Siirrä aiemmaksi'
+                MOVE_LATER: 'Siirrä myöhemmäksi'
+                REMOVE: Poista
+                SELECT: 'Valitse media…'
+                SELECTED_COUNT: '{count, plural, =0 {Ei mitään valittu} one {# valittu} other {# valittua}}'
+                TITLE: 'Valitse media'
+            SET_DATE_NOW: 'Aseta nykyhetkeen'
         FLEX_OBJECTS:
             ACTIONS: Toiminnot
             BACK_TO_LIST: 'Takaisin luetteloon'
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Jatka palvelulla {provider}'
             OR_CONTINUE_WITH: 'Tai jatka palvelulla'
             SSO_FAILED: 'Kirjautuminen kyseisellä palvelulla epäonnistui. Yritä uudelleen.'
+            CAPTCHA_FAILED_TO_LOAD: 'Haastetta ei voitu ladata. Lataa sivu uudelleen ja yritä uudelleen.'
+            CAPTCHA_NOT_COMPLETED: 'Suorita haaste jatkaaksesi'
+            CAPTCHA_VERIFIED: 'Vahvistettu, että olet ihminen'
+            CAPTCHA_VERIFYING: 'Tarkistetaan, että olet ihminen...'
+            INVALID_AUTHENTICATION_CODE: 'Virheellinen todennuskoodi'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Ei mitään esikatseltavaksi'
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: Luettelonäkymä
                 NEW_FOLDER: 'Uusi kansio'
                 SEARCH_MEDIA: 'Hae mediaa...'
+                DELETE_SELECTED: '{count, plural, one {Poista # tiedosto} other {Poista # tiedostoa}}'
+                FILTER_ALL: Kaikki
+                FILTER_AUDIO: Audio
+                FILTER_DOCS: Asiakirjat
+                FILTER_IMAGES: Kuvat
+                FILTER_VIDEO: Video
+                SEARCHING_FOR: 'Haku: „{query}“'
+                SORT_DATE: Päivämäärä
+                SORT_NAME: Nimi
+                SORT_SIZE: Koko
+                SORT_TYPE: Tyyppi
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Vedä editoriin'
                 PAGE_MEDIA: 'Sivun media'
@@ -448,6 +489,15 @@ ICU:
                 STORED: 'Tallennetut metatiedot'
                 TAGS_PLACEHOLDER: 'Lisää tunniste…'
                 TITLE: Metatiedot
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: Mediapolku
+                OPEN: Avaa
+                PATH: Polku
+                SIZE: Koko
+                TITLE: 'Tiedoston tiedot'
+                TYPE: Tyyppi
+                URL: URL
         NAV:
             CONFIGURATION: Kokoonpano
             DASHBOARD: Koontinäyttö
@@ -460,6 +510,7 @@ ICU:
             TOOLS: Työkalut
             USERS: Käyttäjät
             UPDATES_AVAILABLE: '{count} päivitys/päivitystä saatavilla'
+            TRANSLATIONS: Käännökset
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Ei syötteen kohteita'
         NORMAL_MODE: 'Normaali tila'
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Kirjoita markdown-sisältösi tähän...'
                 SAVED_BY_PEER: '{user} tallentaa tämän sivun'
                 SAVED_BY_PEER_ANON: 'Toinen käyttäjä tallentaa tämän sivun'
+                FALLBACK_NOTICE_UNRESOLVED: 'Palvelin palautti tästä sivusta version {effective} version {active} sijaan, eikä ilmoittanut {active}-versiota puuttuvaksi. Tallennus on tässä pois päältä, jotta {effective}-tiedostoa ei ylikirjoiteta. Jos tämä tapahtuu jokaisen sivun kohdalla, verkkopalvelin ei todennäköisesti välitä kyselymerkkijonoja Graville.'
+                PREVIEW_SHOWING_HOST_PAGE: 'näytetään ylätason sivulla'
+                TEMPLATE_MISSING_NOTICE: 'Tämän moduulin mallia **{template}** ei löytynyt teemasta, joten sivu, johon se kuuluu, näyttää virheen „mallia ei löytynyt“. Valitse malli Lisäasetukset-välilehden kohdasta **Sivun malli**, tai lisää malli teemaan.'
             EDIT_PAGE: 'Muokkaa sivua'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Muokattu
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '&lt;root&gt; /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-turvallinen kansion nimi tälle sivulle'
                 VISIBLE: Näkyvä
+                CHILD_TYPE_HINT: 'Ylätason sivu ehdottaa lapsisivuilleen mallia „{template}“. Voit silti valita toisen mallin.'
+                STATUS_HELP: 'Luonnokset tallennetaan, mutta ne eivät näy sivustolla ennen kuin julkaiset ne'
             NO_PAGES: 'Sivuja ei löytynyt'
             NO_SEARCH_RESULTS: 'Haullasi ei löytynyt sivuja'
             PAGES_GRAV_ADMIN: 'Sivut — Grav Admin'
@@ -626,6 +682,16 @@ ICU:
                 VISIBLE: Näkyvä
                 'YES': Kyllä
             VALIDATION_FAILED_FOR_FIELDS: 'Tallennus epäonnistui — nämä kentät ovat virheellisiä: {fields}'
+            COLUMN_EMPTY: Tyhjä
+            SEARCH_MATCH_COUNT: '{n, plural, one {# osuma} other {# osumaa}} kaikilla sivuilla'
+            SEARCH_SHOWING: 'Näytetään {shown} / {total} osumasta'
+            SEARCH_SHOW_MORE: 'Näytä lisää'
+            STATUS:
+                EXPIRED: Vanhentunut
+                EXPIRED_ON: 'Julkaisematon alkaen {date}'
+                SCHEDULED: Ajastettu
+                SCHEDULED_FOR: 'Ajastettu julkaistavaksi {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Salasana
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Salasanavaatimukset
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: 'Viimeiset 14 päivää'
             THIS_MONTH: 'Tämä kuukausi'
             THIS_WEEK: 'Tämä viikko'
+            CHART_LABEL: 'Sivun katselukerrat päivässä viimeisen 14 päivän ajalta'
+            TODAY: Tänään
+            VIEWS: '{count, plural, one {# katselukerta} other {# katselukertaa}}'
         PREMIUM: Premium
         PREVIEW: Esikatselu
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Syötä salasanasi uudelleen jatkaaksesi. Työ on tallennettu.'
             SESSION_EXPIRED: 'Istunto on vanhentunut'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Kirjaudu sisään uudelleen jatkaaksesi. Työsi on tallennettu.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Näytä kaikki'
         REMOVE: Poista
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Oletus
             EDITOR_KEYMAP_DESC: 'Käytä Vim-pikanäppäimiä Markdown- ja koodieditoreissa. Oletus säilyttää tavallisen muokkauksen.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Kopioi tämä väri'
+            CURRENT_COLOR: Väri
+            DARK_SHADE: 'Tumma sävy'
+            DARK_SHADE_DESC: 'Miltä tumma tila näyttää. Tämä vaikuttaa vain, kun tumma tila on päällä.'
+            DARK_SHADE_GRAPHITE: Grafiitti
+            DARK_SHADE_MIDNIGHT: Keskiyö
+            DARK_SHADE_ZINC: Onyksi
+            DEFAULT_DARK_SHADE_DESC: 'Uusien käyttäjien oletusarvoinen tumma sävy. Tämä vaikuttaa vain, kun tumma tila on päällä.'
+            DEFAULT_HELP_TEXT_DESC: 'Kentän ohjetekstin oletussijainti uusille käyttäjille, joko selitteen alapuolella tai työkaluvihjeenä.'
+            HELP_MODE_INLINE: 'Selitteen alapuolella'
+            HELP_MODE_TOOLTIP: Työkaluvihjeessä
+            HELP_TEXT: Ohjeteksti
+            HELP_TEXT_DESC: 'Mihin kunkin kentän lyhyt selitys sijoitetaan. Työkaluvihjeessä voit viedä hiiren selitteen vieressä olevan info-kuvakkeen päälle tai napauttaa sitä puhelimella lukeaksesi sen.'
+            LOGO_HEIGHT_CUSTOM: Mukautettu
+            LOGO_HEIGHT_DEFAULT: Oletus
+            SIDEBAR_LOGO_HEIGHT: 'Sivupalkin logon korkeus'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Kuinka korkeana logosi näkyy sivupalkin yläreunassa.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: Päivitä
                 SEARCH_MESSAGES: 'Hae viestejä...'
                 WARNING: Varoitus
+                CLEAR_LOG: 'Tyhjennä loki'
+                CLEAR_LOG_CONFIRM: 'Poistetaanko kaikki tiedoston {file} merkinnät pysyvästi? Tätä ei voi perua, ja kaikki aiemmat virhetiedot häviävät samalla.'
+                FAILED_TO_CLEAR_LOG: 'Lokin tyhjennys epäonnistui'
+                LOG_CLEARED: 'Tiedosto {file} tyhjennetty'
             REPORTS:
                 CONTENT_FIELD: 'sisältö: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Raporttien lataaminen epäonnistui'
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 'Estetyt tunnisteet sisällössä'
                     SECTION_EVENTS: 'Viimeaikaiset estot'
                     SECTION_LEAKS: 'Sivut, jotka vuotavat raakaa Twigiä'
+                    POLICY_ADDED: '+{count} lisätty'
+                    POLICY_ALL_DEFAULTS: 'Kaikki oletusarvot, muuttamattomat'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# luokka} other {# luokkaa}}'
+                    POLICY_DENIED: '−{count} estetty'
+                    POLICY_EFFECTIVE_COUNT: '{count} tehollinen'
+                    POLICY_FAILED: 'Hiekkalaatikon käytäntöä ei voitu ladata'
+                    POLICY_FILTERS: Suodattimet
+                    POLICY_FUNCTIONS: Funktiot
+                    POLICY_HIDE: 'Piilota tehollinen käytäntö'
+                    POLICY_INTRO: 'Hiekkalaatikon perustaso tulee koodin mukana; asetuksesi vain laajentavat tai tiukentavat sitä.'
+                    POLICY_METHODS: Metodit
+                    POLICY_PROPERTIES: Ominaisuudet
+                    POLICY_TAGS: Tunnisteet
+                    POLICY_VIEW: 'Näytä tehollinen käytäntö'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Ladataan raportin komponenttia...'
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Scheduler-konfiguraatio tallennettu'
                 SECURITY_WARNING: 'Vain edistyneet käyttäjät voivat määrittää mukautettuja scheduler-töitä. Väärä määritys voi aiheuttaa suorituskyky-ongelmia tai tietoturva-aukkoihin.'
                 WEBHOOK_ALTERNATIVE: 'Vaihtoehtoisesti asenna **scheduler-webhook**-laajennus, jotta voit käyttää webhook-pohjaista cron-ajoa, mikä on suositeltava järjestelmissä, joissa järjestelmän crontab-pääsy ei ole saatavilla.'
+                CRON_UNDETERMINED: 'Grav ei voi tarkastella tämän palvelimen crontabia, joten se ei voi varmistaa, miten ajastin käynnistyy.'
+                ENVIRONMENT_MISMATCH: 'Ajastin suoritettiin viimeksi **{last}**-ympäristössä, mutta tämä sivusto käyttää **{current}**-ympäristöä, jolla on oma konfiguraationsa tiedostossa user/env/{current}/config. Vain siellä määritetyt mukautetut työt ja asetukset eivät koskaan toimi kyseisestä käynnistimestä. Päivitä crontabisi bin/grav scheduler -rivi alla olevaan komentoon (se välittää --env={current}) tai vie GRAV_ENVIRONMENT={current} ennen sen suorittamista.'
+                LAST_MANUAL_RUN: 'Viimeksi suoritettu käsin'
+                LAST_TRIGGERED: 'Viimeksi käynnistetty'
+                PROCESS_UNAVAILABLE: 'Tämän isännän PHP:n proc_open-funktio on poistettu käytöstä, joten töitä ei voida aloittaa ylläpidon kautta. Ne suoritetaan edelleen aina, kun ajastimesi käynnistetään cronin tai webhookin kautta.'
+                STATUS_UNAVAILABLE: 'Ajastimen tilaa ei voitu lukea tällä isännällä. Työsi on kuitenkin listattu alla ja niitä voi muokata tavalliseen tapaan.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} vapaata {total}:sta'
                 DISK_USAGE: 'Levyn käyttö'
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'Käyttäjän {username} tilan muuttaminen epäonnistui: {detail}'
             DEMO_MODE_BLOCKED: 'Tämä on vain luku -demo — muutokset on poistettu käytöstä.'
             USER_ROW_ACTION_FAILED: 'Toiminnon suorittaminen epäonnistui: {label}'
-        TRANSLATIONS: Käännökset
+        TRANSLATIONS:
+            ACCEPT: Hyväksy
+            ACCEPTED_ALL: '{count, plural, one {# käännös tallennettu} other {# käännöstä tallennettu}}'
+            ACCEPT_ALL: 'Hyväksy kaikki'
+            ALL_SOURCES: 'Kaikki lähteet'
+            CLEAR_ALL_FILTERS: 'Tyhjennä suodattimet'
+            DESCRIPTION: 'Muokkaa mitä tahansa sivustolla näkyvää merkkijonoa millä tahansa kielellä. Muutokset tallennetaan ohituksina kansioon user/languages, eivätkä ne koskaan kosketa liitännäisen tai teeman omia tiedostoja, joten päivitys ei voi pyyhkiä niitä pois.'
+            DISCARD: Hylkää
+            DISCARD_ALL: Hylkää
+            EDITED: muokattu
+            EDITING_LANGUAGE: Muokataan
+            EDIT_AS_GRID: 'Takaisin ruudukkoon'
+            EDIT_AS_YAML: 'Muokkaa YAML-muodossa'
+            EDIT_HINT: 'Paina Enter tallentaaksesi, Escape peruaksesi, Shift+Enter rivinvaihtoon. Tyhjennä kenttä poistaaksesi ohituksen.'
+            FAILED_TO_LOAD: 'Käännösten lataaminen epäonnistui'
+            FAILED_TO_SAVE: 'Muutoksen tallentaminen epäonnistui'
+            FILTERED_BY: 'Näytetään vain'
+            FILTER_LANGUAGES: 'Suodata kielet'
+            IMPORT_ACTION: 'Tuo ohitukset'
+            IMPORT_ALREADY_DONE: 'Kaikki {count, plural, one {# ohitus on} other {# ohitusta ovat}} jo täällä'
+            IMPORT_BODY: '{count, plural, one {# ohitus on yhä tallennettuna Translation Strings -liitännäiseen. Tuo se hallitaksesi sitä täällä.} other {# ohitusta {languages, plural, one {# kielellä} other {# kielellä}}} on yhä tallennettuna Translation Strings -liitännäiseen. Tuo ne hallitaksesi niitä täällä.}'
+            IMPORT_COL_ALREADY: 'Jo täällä'
+            IMPORT_COL_CONFLICT: Ristiriitainen
+            IMPORT_COL_LANGUAGE: Kieli
+            IMPORT_COL_NEW: Uusi
+            IMPORT_COL_SHIPPED: 'Sama kuin alkuperäinen'
+            IMPORT_COL_UNKNOWN: Tuntematon
+            IMPORT_CONFLICTS: '{count, plural, one {# avain on} other {# avainta ovat}} asetettu molempiin paikkoihin eri sanamuodoilla. Liitännäisen versio voittaa, koska se on se, mitä sivustosi näyttää tänään.'
+            IMPORT_DISABLE_ACTION: 'Poista liitännäinen käytöstä'
+            IMPORT_DISABLE_BLOCKED: 'Tuo ohitukset ensin, muuten ne katoavat sivustolta.'
+            IMPORT_DISABLE_FAILED: 'Liitännäistä ei voitu poistaa käytöstä'
+            IMPORT_DONE: 'Tuotu {count, plural, one {# ylitys} other {# ylitystä}}'
+            IMPORT_FAILED: 'Tuonti epäonnistui'
+            IMPORT_HIDE_DETAIL: 'Piilota yksityiskohdat'
+            IMPORT_LEGEND: 'Merkinnällä „sama kuin alkuperäinen“ varustetut merkkijonot vastaavat sitä, mitä liitännäinen tai teema jo sisältää, joten ne jätetään huomiotta sen sijaan, että ne tallennettaisiin tehottomina ylityksinä.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Sinulla ei ole oikeutta muuttaa liitännäisen asetuksia, joten järjestelmänvalvojan on poistettava liitännäinen käytöstä.'
+            IMPORT_NO_PERMISSION: 'Sinulla ei ole oikeutta kirjoittaa käännösylityksiä, joten tuonti ei ole käytettävissä.'
+            IMPORT_PLUGIN_DISABLED: 'Käännösmerkkijonot poistettu käytöstä. Tämä muokkain hallitsee nyt tilannetta.'
+            IMPORT_SHOW_DETAIL: 'Näytä mitä tuodaan'
+            IMPORT_STILL_ENABLED_BODY: 'Se käyttää merkkijonojaan tämän muokkaimen jälkeen, joten se ylittää edelleen kaiken, mitä muutat täällä. Tarkista, että sivusto toimii oikein, ja poista se sitten käytöstä vaihdon viimeistelemiseksi. Sen asetukset säilyvät ennallaan, joten tämä on peruttavissa.'
+            IMPORT_STILL_ENABLED_TITLE: 'Translation Strings -liitännäinen on yhä käytössä'
+            IMPORT_TITLE: 'Translation Strings -liitännäisessä odottavat ylitykset'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# avain nimeää merkkijonon, jota mikään liitännäinen, teema tai ydintiedosto ei tarjoa. Se on säilytetty, jotta voit tarkistaa sen, mutta sillä ei ole vaikutusta.} other {# avainta nimeävät merkkijonoja, joita mikään liitännäinen, teema tai ydintiedosto ei tarjoa. Ne on säilytetty, jotta voit tarkistaa ne, mutta niillä ei ole vaikutusta.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# tuotu avain nimeää merkkijonon, jota mikään tällä sivustolla ei tarjoa.} other {# tuotua avainta nimeävät merkkijonoja, joita mikään tällä sivustolla ei tarjoa.}} Löydät ne Tuntematon-suodattimella.'
+            INACTIVE: 'ei käytössä'
+            INACTIVE_HELP: 'Tämä liitännäinen on pois käytöstä tai tämä teema ei ole aktiivinen, joten sen merkkijonoja ei käytetä sivustolla.'
+            KEY: Avain
+            KIND_PLUGINS: Liitännäiset
+            KIND_SYSTEM: Ydin
+            KIND_THEMES: Teemat
+            KIND_USER: 'Tämä sivusto'
+            LANGUAGES: Kielet
+            LOADING: 'Ladataan käännöksiä...'
+            NEXT: Seuraava
+            NOTHING_TO_TRANSLATE: 'Tältä sivulta ei puutu yhtään käännöstä.'
+            NO_RESULTS: 'Mikään merkkijono ei vastaa näitä suodattimia.'
+            NO_RESULTS_FILTERED: 'Selaat: {filters}'
+            OVERRIDE_REMOVED: 'Ohitus poistettu'
+            PICK_A_TARGET_LANGUAGE: 'Lisää ensin kielisarake — ei ole mitään, mihin kääntää.'
+            PREVIOUS: Edellinen
+            PROPOSALS_PENDING: '{count, plural, one {# ehdotus tarkistettavana} other {# ehdotusta tarkistettavana}}'
+            REFRESH: Päivitä
+            REMOVE_FILTER: 'Poista tämä suodatin'
+            REVERT: Palauta
+            REVERTED_TO_SHIPPED: 'Palautettu alkuperäiseen muotoiluun'
+            REVERT_HELP: 'Poista tämä ohitus ja palaa siihen, mitä laajennus tai teema tarjoaa.'
+            SAVE: Tallenna
+            SAVED_UNKNOWN_KEY: 'Tallennettu, mutta mikään ei tarjoa avainta {key} — tarkista kirjoitusasu'
+            SAVING: Tallennetaan...
+            SCOPED_TO: 'Vain {namespace}'
+            SCOPE_WHOLE_FILE: 'Muokataan kaikkia tämän kielen ohituksia'
+            SEARCH_PLACEHOLDER: 'Etsi tekstiä tai avainta...'
+            SHIPPED_VALUE: 'Alun perin: {value}'
+            SHOWING: 'Näytetään {from}–{to} / {total}'
+            SKIPPED_COUNT: '{count, plural, one {# ohitettu} other {# ohitettu}}'
+            SKIP_EMPTY: 'Käännöspalvelu ei palauttanut mitään tälle merkkijonolle.'
+            SKIP_ICU: 'Tämä viesti muuttuu numeron tai valinnan mukaan, ja jokainen kieli tarvitsee oman sarjan muotoja. Kirjoita tämä käsin.'
+            SKIP_NOTHING: 'Tämä merkkijono sisältää vain paikkamerkkejä, joten siinä ei ole käännettäviä sanoja.'
+            SKIP_NO_SOURCE: 'Lähdekielessä ei ole tekstiä, josta kääntää.'
+            SKIP_PLACEHOLDERS: 'Käännös palautettiin muuttuneilla paikkamerkeillä, joten se hylättiin tallentamisen sijaan.'
+            SOURCE: lähde
+            SOURCE_LANGUAGE: Lähde
+            STATE_MISSING: puuttuu
+            STATE_MISSING_FALLBACK: 'käytetään varajärjestelmää'
+            STATE_OVERRIDDEN: korvattu
+            STATUS_ALL: Kaikki
+            STATUS_MISSING: Puuttuvat
+            STATUS_OVERRIDDEN: Korvatut
+            STATUS_UNKNOWN: Tuntematon
+            SUGGESTED: Ehdotettu
+            SUPERSEDED_ACTION: 'Avaa käännökset'
+            SUPERSEDED_BODY: 'Käännökset-osio sisältää kaiken sen, mitä tämä laajennus tekee, ja lisää hakuominaisuuden jokaiselle sivuston merkkijonolle, kielikohtaisen kattavuuden, konekääntämisen sekä raportin avaimista, joita ei enää käytetä. Tätä laajennusta tuetaan edelleen Grav 1.7 -versiossa.'
+            SUPERSEDED_PENDING: '{count, plural, one {# korvaus on} other {# korvausta on}} edelleen tallennettuna täällä ja ne voidaan tuoda.'
+            SUPERSEDED_TITLE: 'Sisäänrakennettu Grav 2.0 -versioon'
+            TITLE: Käännökset
+            TRANSLATE_FAILED: 'Kääntäminen epäonnistui'
+            TRANSLATE_MISSING: 'Käännä puuttuvat'
+            TRANSLATE_ROW: 'Ehdota käännöksiä tälle merkkijonolle kaikilla näkyvillä kielillä'
+            TRANSLATE_THIS: 'Ehdota käännöstä tälle merkkijonolle'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'Hanki laajennus'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate -laajennukselle ei ole vielä määritetty käännöspalvelua, joten konekääntäminen ei ole käytettävissä.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate on asennettu, mutta se on kytketty pois päältä, joten konekääntäminen ei ole käytettävissä.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'Tekoälypohjainen puuttuvien merkkijonojen kääntäminen on saatavilla AI Translate -premium-laajennuksen avulla.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Avaa sen asetukset'
+            TRANSLATING: Käännetään...
+            UNKNOWN_KEYS_SAVED: 'Tallennettu, mutta mikään ei tarjoa näitä avaimia'
+            UNKNOWN_KEY_HELP: 'Mikään lisäosa, teema tai ydinjärjestelmän tiedosto ei tarjoa tätä avainta. Kyseessä on luultavasti kirjoitusvirhe tai jäänne jostain, mitä ei ole enää asennettuna.'
+            YAML_HELP: 'Liitä tai muokkaa ohituksia suoraan. Arvot, jotka vastaavat lisäosan tai teeman oletusarvoja, hylätään, joten tiedosto sisältää vain todelliset muutokset.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: Sanamuotosi tähän
+            YAML_SAVED: '{count, plural, =0 {Ei ohituksia jäljellä kielessä {lang}} one {# ohitus tallennettu kielelle {lang}} other {# ohitusta tallennettu kielelle {lang}}}'
         TRANSLATIONS_FALLBACK: 'Käännösten varaversio'
         TRANSLATIONS_FALLBACK_HELP: 'Käytä tuettuja käännöksiä varaversiona, jos aktiivinen kieli ei ole olemassa'
         TWIG_3_COMPATIBILITY: 'Twig 3 -yhteensopivuus'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Kansioiden user/data, user/accounts ja user/config tiedostot ovat ladattavissa suoraan HTTP-yhteyden yli — mukaan lukien varmenteet, avaimet, tunnisteet ja tietokannat. Tämä tarkoittaa yleensä sitä, että verkkopalvelimesi ei käytä Gravin .htaccess-sääntöjä.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Kuinka suojata verkkopalvelimesi'
             USER_FOLDER_EXPOSED_TITLE: 'Tietoturvariski: käyttäjätietokansiosi ovat saavutettavissa verkosta'
+            COLLAPSE: Tiivistä
+            SHOW_DETAILS: 'Näytä tiedot'
+            SNOOZE: Torkuta
+            SNOOZE_HINT: 'Piilota tämä varoitus 24 tunniksi. Se palaa näkyviin aiemmin, jos löytyy eri tiedostoja.'
+            STORAGE_EXPOSED_ALL: 'Kaikki testitiedostot voitiin ladata, joten verkkopalvelimesi ei sovella Gravin pääsynvalvontasääntöjä lainkaan. Tarkista Apachella, että AllowOverride sallii sivuston .htaccess-tiedoston vaikuttaa. Lisää nginx-, Caddy- tai IIS-palvelimilla tietoturvasäännöt Gravin webserver-configs-kansiosta.'
+            STORAGE_EXPOSED_BODY: 'Verkkopalvelin tarjoili testitiedostoja kansioista, joiden pitäisi olla yksityisiä. Alla luetellut tiedostotyypit voivat paljastaa tallennettuja lomakevastauksia, varmuuskopioita tai väliaikaistiedostoja. Pyydä palveluntarjoajaasi estämään suora pääsy tai siirtämään yksityinen tallennustila verkkopalvelimen juuren ulkopuolelle.'
+            STORAGE_EXPOSED_BY_TYPE: 'Jotkin tiedostotyypit estettiin näissä kansioissa, kun taas toiset voitiin ladata. Tämä tarkoittaa yleensä sitä, että jokin Gravin sääntöjen edellä – kuten nginx tarjoilemassa staattisia tiedostoja ennen Apachea – vastaa yleisiin tiedostotyyppeihin, kuten .zip, ennen kuin säännöt tarkistetaan. Estä nämä kansiot myös kyseisen kerroksen asetuksissa.'
+            STORAGE_EXPOSED_CDN: 'Jos sivusto on CDN-palvelun (esim. Cloudflare) takana, tyhjennä sen välimuisti tämän korjaamisen jälkeen. Sen jo tallentamat kopiot pysyvät ladattavina, kunnes teet niin.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# tiedostotyyppi} other {# tiedostotyyppiä}}'
+            STORAGE_EXPOSED_TITLE: 'Tiedostot, joiden tulisi olla yksityisiä, ovat ladattavissa tältä sivustolta'
+            STORAGE_EXPOSED_TMP: 'Tiedostoja tmp/-kansiosta voitiin ladata, vaikka muut kansiot oli estetty. Palvelimesi säännöt ovat todennäköisesti ajalta ennen Grav 2.1.7-versiota, jolloin tmp/ lisättiin estettyjen kansioiden listalle. Lisää tmp kyseiselle listalle .htaccess-, nginx-, Caddy- tai IIS-konfiguraatiossasi vastaamaan Gravin vakiosääntöjä.'
         CONFIRM: Vahvista
         DEMO:
             BANNER_COUNTDOWN: 'Seuraava nollaus {time}'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: 'Pysy tässä'
             SWITCH_LANGUAGE: Vaihda
             SWITCH_LANGUAGE_MESSAGE: 'Sinulla on tallentamattomia muutoksia. Haluatko varmasti vaihtaa kieltä?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'Palvelimen vastausta ei voitu lukea, koska se ei ole kelvollista JSON-muotoa. Jokin palvelimella saattaa tulostaa ylimääräistä sisältöä, kuten PHP-varoituksen, API-vastauksen ohella. Selaimen konsoli sisältää lisätiedot.'
+            INVALID_JSON_TITLE: 'Odottamaton vastaus palvelimelta'
+            UNEXPECTED_RESPONSE_DETAIL: 'Palvelin vastasi tiedoilla muodossa, jota tämä näyttö ei odota. Selaimen konsoli sisältää lisätiedot.'
+            UNEXPECTED_RESPONSE_TITLE: 'Odottamaton vastaus palvelimelta'
+        CACHE_MODULES: 'Moduulien välimuistin tuloste'
+        CACHE_MODULES_HELP: 'Välimuistita tämän sivun moduulien renderöity tuloste. Käytä tätä vain, kun moduulit näyttävät saman sisällön jokaiselle kävijälle. Moduulit, joilla on oma Twig-tiedosto tai lomake, kirjautuneet kävijät sekä lomakelähetykset renderöidään aina uudelleen. Vain osittaisen mallin muokkaaminen vaatii välimuistin tyhjennystä.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Flex-renderöinnin vihjeet'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Kääri jokainen renderöity Flex-objekti ja -kokoelma HTML-kommenttiin, joka nimeää sen, jotta lohkon lähde löytyy sivun koodista. Koskee vain HTML-sivuja.'
+        FRONTMATTER_NATIVE_YAML: 'Nopea frontmatter-jäsennys'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Lue sivun frontmatter libyaml-PHP-laajennuksella, kun se on asennettu, mikä nopeuttaa sivujen välimuistin uudelleenrakentamista. Se lukee joitakin arvoja eri tavalla, joten tarkista sivusi ensin. Lainausmerkitsemätön päivämäärä pysyy tekstinä sen sijaan, että siitä tulisi aikaleima, ja lainausmerkitsemättömät yes, no, on ja off muuttuvat totuusarvoiksi true tai false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Tämä päivittää Gravin versiosta v{current} versioon v{target}. Sivusto saattaa olla hetken pois käytöstä päivityksen aikana.'
+            CONFIRM_TITLE: 'Päivitetäänkö Grav-ydin?'
+            FAILED: 'Grav-päivitys epäonnistui: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} on merkitty yhteensopivaksi Grav {compatible} -version kanssa'
+            NO_DETAIL: 'palvelin ei antanut syytä'
+            PREFLIGHT_MESSAGE: 'Tarkistukset, jotka suoritetaan ennen päivitystä, pysäyttivät sen seuraavista syistä. Korjaa ne ja yritä uudelleen, tai päivitä joka tapauksessa, jos tiedät näiden lisäosien ja teemojen toimivan uuden version kanssa.'
+            PREFLIGHT_TITLE: 'Gravia ei voi vielä päivittää versioon v{version}'
+            STILL_BLOCKED: 'Grav-päivitys on yhä estetty: {detail}'
+            UPGRADE_ANYWAY: 'Päivitä joka tapauksessa'
+            UPGRADING: 'Päivitetään Gravia versioon v{version}…'
+        HELP: Ohje
+        HELP_FOR_LABEL: 'Ohje kohteelle {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'Progressiiviset JPEG-kuvat'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Tallenna muutetun kokoiset ja välimuistiin tallennetut JPEG-kuvat progressiivisina, jolloin ne näkyvät ensin sumeina ja tarkentuvat vähitellen sen sijaan, että ne latautuisivat ylhäältä alas. Yleensä myös pienempi tiedostokoko. Ei vaikuta PNG-, WebP- tai AVIF-tiedostoihin.'
+        MARKDOWN_OUTPUT: Markdown-tuloste
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'Absoluuttiset URL-osoitteet'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'Muuta juureen suhteelliset linkit ja kuvat täysiksi URL-osoitteiksi, jotta ne toimivat myös sivuston ulkopuolella.'
+        MARKDOWN_OUTPUT_ENABLED: 'Tarjoile sivut Markdown-muodossa'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Mikä tahansa sivu voidaan hakea Markdown-muodossa lisäämällä `.md` sen URL-osoitteeseen tai lähettämällä `Accept:&nbsp;text/markdown` -pyyntöotsikko. Suunniteltu tekoälyagenteille ja muille tekstipohjaisille asiakasohjelmille. Sivu renderoituu teeman läpi, pelkistetään sen pääsisältöalueeseen ja muunnetaan, jotta listaukset, kaupat ja modulaariset sivut luetaan samalla tavalla kuin ne näytetään.'
+        MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter-lohko
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Aloita Markdown YAML-lohkolla, joka sisältää otsikon, URL-osoitteen, päivämäärän, kuvauksen ja taksonomian.'
+        MARKDOWN_OUTPUT_LINKS: Navigointilinkit
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Päätä Markdown linkkeihin pääsivulle, sisarsivuille ja alasivuille, jotta agentti voi selata sivustoa poistumatta Markdownista.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Enimmäismäärä alasivulinkkejä'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'Navigointiosiossa näytettävien alasivujen enimmäismäärä. Nolla listaa ne kaikki.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Tokenien määrän otsake'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Lähetä `X-Markdown-Tokens` -vastausotsake, joka sisältää arvioidun tokenien määrän – saman otsakkeen kuin Cloudflaren Markdown for Agents käyttää.'
+        NOTICES:
+            HEADING: '{count, plural, one {Ilmoitus} other {Ilmoitukset}}'
+            HIDE: 'Piilota ilmoitukset'
+            SHOW: 'Näytä ilmoitukset'
+        PAGES_LAZY_INDEX: 'Sivun indeksointi tarvittaessa'
+        PAGES_LAZY_INDEX_HELP: 'Lataa sivut, reitit ja taksonomia tarvittaessa sivukohtaisesta SQLite-indeksistä suuren välimuistitiedoston sijaan. Automaattinen valinta käyttää tätä yli 1 000 sivun sivustoilla. Palaa perinteiseen välimuistiin, jos tietokantamoottori ei ole käytettävissä.'
+        RETRY: 'Yritä uudelleen'
+        SESSION_LAZY: 'Käynnistä istunnot vain tarvittaessa'
+        SESSION_LAZY_HELP: 'Kävijät ilman istuntoevästettä saavat istunnon vasta, kun sinne tallennetaan jotain, kuten kirjautuminen, lomake tai viesti, joten välityspalvelin tai CDN voi välimuistittaa anonyymit sivunäkymät. Lisäosat, jotka tallentavat tietoa jokaisella sivun latauksella, käynnistävät istunnon silti.'
+        UPDATE_CHANGELOG_TITLE: 'Muutokset versiossa v{version}'
