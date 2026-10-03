@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 仅限受信任的角色
                 TRUSTED_DESC: '仅超级用户和拥有「pages twig」权限的用户可以在页面上启用 Twig。'
             VALIDATION_FAILED_FOR_FIELDS: '无法保存 — 以下字段无效：{fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 配置加载失败。
+            SCOPE_NOT_FOUND: '未找到名为 {scope} 的配置范围。'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: 环境
             EXPORT_YAML: '导出 YAML'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: 调度程序状态
                 STATUS: '状态:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: 手动
+                MANUAL_RUN_HELP: '“运行待办任务”会执行那些错过了上次预定时间的作业，这适用于没有设置 cron 的站点。在此处启动的运行会被记录为手动执行，且不计入上方的 cron 状态。'
+                NEVER: 从不
+                PENDING: 待处理
+                PROCESS_UNAVAILABLE: '在此主机上无法从此处运行作业，因为 PHP 的 proc_open 函数已被禁用。当您的调度程序由 cron 或 Webhook 触发时，它们仍会运行。'
+                RUN_ALL_HELP: 立即运行所有已启用的作业，无论其调度时间如何。
+                RUN_NOW: 立即运行此作业
+                RUN_PENDING: 运行待办任务
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 正在加载自定义字段...
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 未找到图标
                 SEARCH_ICONS: 搜索图标...
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: '显示前 200 个结果 — 输入内容以缩小范围'
+                FAMILY_ALL: 全部
+                FAMILY_BRANDS: 品牌图标
+                FAMILY_REGULAR: 常规
+                FAMILY_SOLID: 实心
             NO_TAXONOMY_TYPES: 未配置分类类型
             PAGES:
                 FILTER_PAGES: 筛选页面...
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 输入并按回车键...
             SELECT_AN_ICON: 选择图标...
             SELECT_A_PAGE: 选择页面...
+            MEDIA:
+                ADD: 添加媒体……
+                CHANGE: 更改
+                DONE: 完成
+                MOVE_EARLIER: 前移
+                MOVE_LATER: 后移
+                REMOVE: 移除
+                SELECT: 选择媒体……
+                SELECTED_COUNT: '{count, plural, =0 {未选择任何内容} one {已选择 # 个} other {已选择 # 个}}'
+                TITLE: 选择媒体
+            SET_DATE_NOW: 设为当前时间
         FLEX_OBJECTS:
             ACTIONS: 操作
             BACK_TO_LIST: 返回列表
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: '通过 {provider} 继续'
             OR_CONTINUE_WITH: 或通过以下方式继续
             SSO_FAILED: 无法使用该提供商登录。请重试。
+            CAPTCHA_FAILED_TO_LOAD: 无法加载验证码。请刷新页面后重试。
+            CAPTCHA_NOT_COMPLETED: 请完成验证以继续
+            CAPTCHA_VERIFIED: 已验证您是人类
+            CAPTCHA_VERIFYING: 正在验证您是否为人类……
+            INVALID_AUTHENTICATION_CODE: 身份验证码无效
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 没有可预览的内容
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: 列表视图
                 NEW_FOLDER: 新建文件夹
                 SEARCH_MEDIA: 搜索媒体...
+                DELETE_SELECTED: '{count, plural, one {删除 # 个文件} other {删除 # 个文件}}'
+                FILTER_ALL: 全部
+                FILTER_AUDIO: 音频
+                FILTER_DOCS: 文档
+                FILTER_IMAGES: 图像
+                FILTER_VIDEO: 视频
+                SEARCHING_FOR: '搜索：“{query}”'
+                SORT_DATE: 日期
+                SORT_NAME: 名称
+                SORT_SIZE: 大小
+                SORT_TYPE: 类型
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 拖入编辑器
                 PAGE_MEDIA: 页面媒体
@@ -448,6 +489,15 @@ ICU:
                 STORED: 已存储的元数据
                 TAGS_PLACEHOLDER: 添加标签…
                 TITLE: 元数据
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: 媒体路径
+                OPEN: 打开
+                PATH: 路径
+                SIZE: 大小
+                TITLE: 文件详情
+                TYPE: 类型
+                URL: URL
         NAV:
             CONFIGURATION: 配置
             DASHBOARD: 仪表板
@@ -460,6 +510,7 @@ ICU:
             TOOLS: 工具
             USERS: 用户
             UPDATES_AVAILABLE: '{count} 个更新可用'
+            TRANSLATIONS: 翻译
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 无源项目
         NORMAL_MODE: 常规模式
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: '在此输入你的 markdown 内容...'
                 SAVED_BY_PEER: '{user} 保存了此页面'
                 SAVED_BY_PEER_ANON: 另一个用户保存了此页面
+                FALLBACK_NOTICE_UNRESOLVED: '服务器返回了此页面的 {effective} 版本而非 {active} 版本，且未报告 {active} 缺失。此处已关闭保存功能，以防覆盖 {effective} 文件。如果所有页面均出现此情况，则说明 Web 服务器可能未将查询字符串传递给 Grav。'
+                PREVIEW_SHOWING_HOST_PAGE: 显示在父页面中
+                TEMPLATE_MISSING_NOTICE: '在主题中未找到该模块的 **{template}** 模板，因此其所属页面会显示“未找到模板”错误。请在“高级”选项卡下的 **页面模板** 中选择一个模板，或将该模板添加到主题中。'
             EDIT_PAGE: 编辑页面
             FRONTMATTER: 前置元数据
             HEADER_MODIFIED: 修改时间
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 此页面的URL友好文件夹名称
                 VISIBLE: 可见
+                CHILD_TYPE_HINT: '父页面为子页面建议使用“{template}”。你仍然可以选择其他模板。'
+                STATUS_HELP: 草稿已保存，但在发布之前不会在网站上显示
             NO_PAGES: 未找到页面
             NO_SEARCH_RESULTS: 没有页面与您的搜索相符
             PAGES_GRAV_ADMIN: '页面 — Grav Admin'
@@ -626,6 +682,16 @@ ICU:
                 VISIBLE: 可见
                 'YES': 是
             VALIDATION_FAILED_FOR_FIELDS: '无法保存 — 以下字段无效：{fields}'
+            COLUMN_EMPTY: 空
+            SEARCH_MATCH_COUNT: '在所有页面中共有 {n, plural, one {# 个匹配项} other {# 个匹配项}}'
+            SEARCH_SHOWING: '正在显示 {total} 个匹配项中的 {shown} 个'
+            SEARCH_SHOW_MORE: 显示更多
+            STATUS:
+                EXPIRED: 已过期
+                EXPIRED_ON: '自 {date} 起未发布'
+                SCHEDULED: 已预约
+                SCHEDULED_FOR: '计划于 {date} 发布'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: 密码
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 密码要求
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: '过去 14 天'
             THIS_MONTH: 本月
             THIS_WEEK: 本周
+            CHART_LABEL: '过去 14 天的每日页面浏览量'
+            TODAY: 今天
+            VIEWS: '{count, plural, one {# 次浏览} other {# 次浏览}}'
         PREMIUM: 高级
         PREVIEW: 预览
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 请重新输入您的密码以继续。您的工作已被保存。
             SESSION_EXPIRED: 会话已过期
+            SIGN_IN_AGAIN_TO_CONTINUE: 请重新登录以继续。您的工作内容已保留。
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 查看全部
         REMOVE: 移除
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: 默认
             EDITOR_KEYMAP_DESC: '在 Markdown 和代码编辑器中使用 Vim 快捷键。默认保留标准编辑方式。'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 复制此颜色
+            CURRENT_COLOR: 颜色
+            DARK_SHADE: 深色基调
+            DARK_SHADE_DESC: 深色模式的外观设置。仅在启用深色模式时生效。
+            DARK_SHADE_GRAPHITE: 石墨色
+            DARK_SHADE_MIDNIGHT: 午夜蓝
+            DARK_SHADE_ZINC: 玛瑙黑
+            DEFAULT_DARK_SHADE_DESC: 新用户的默认深色基调。仅在启用深色模式时生效。
+            DEFAULT_HELP_TEXT_DESC: 新用户字段帮助文本的默认位置，位于标签下方或工具提示中。
+            HELP_MODE_INLINE: 标签下方
+            HELP_MODE_TOOLTIP: 工具提示中
+            HELP_TEXT: 帮助文本
+            HELP_TEXT_DESC: 各字段简要说明的显示位置。选择工具提示后，将鼠标悬停在标签旁的信息图标上，或在手机上点击它，即可查看。
+            LOGO_HEIGHT_CUSTOM: 自定义
+            LOGO_HEIGHT_DEFAULT: 默认
+            SIDEBAR_LOGO_HEIGHT: '侧边栏 Logo 高度'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Logo 在侧边栏顶部显示的垂直高度。'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 个字符：字母、数字、连字符、下划线'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理员账户已创建 — 欢迎使用 Grav'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: 刷新
                 SEARCH_MESSAGES: 搜索消息...
                 WARNING: 警告
+                CLEAR_LOG: 清除日志
+                CLEAR_LOG_CONFIRM: '永久删除 {file} 中的所有条目？此操作不可撤销，之前所有错误记录都将随之删除。'
+                FAILED_TO_CLEAR_LOG: 清除日志失败
+                LOG_CLEARED: '已清除 {file}'
             REPORTS:
                 CONTENT_FIELD: '内容: {field}'
                 FAILED_TO_LOAD_REPORTS: 加载报告失败
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 内容中被拦截的标签
                     SECTION_EVENTS: 最近的拦截记录
                     SECTION_LEAKS: '泄露原始 Twig 的页面'
+                    POLICY_ADDED: '+{count} 已添加'
+                    POLICY_ALL_DEFAULTS: 所有默认设置，未作更改
+                    POLICY_CLASS_COUNT: '{count, plural, one {# 个类} other {# 个类}}'
+                    POLICY_DENIED: '−{count} 已拒绝'
+                    POLICY_EFFECTIVE_COUNT: '{count} 已生效'
+                    POLICY_FAILED: 无法加载沙盒策略
+                    POLICY_FILTERS: 筛选器
+                    POLICY_FUNCTIONS: 函数
+                    POLICY_HIDE: 隐藏生效策略
+                    POLICY_INTRO: 沙盒基线由代码提供；您的配置仅用于放宽或收紧其限制。
+                    POLICY_METHODS: 方法
+                    POLICY_PROPERTIES: 属性
+                    POLICY_TAGS: 标签
+                    POLICY_VIEW: 查看生效策略
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 加载报告组件中...
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 调度器配置已保存
                 SECURITY_WARNING: 只有高级用户才应配置自定义调度器作业。配置不当可能导致性能问题或安全漏洞。
                 WEBHOOK_ALTERNATIVE: '或者，安装 **scheduler-webhook** 插件来使用基于 webhook 的 cron 触发，这对于无法访问系统 crontab 的云环境推荐使用。'
+                CRON_UNDETERMINED: 'Grav 无法检查此服务器的 crontab，因此无法确认调度程序是如何触发的。'
+                ENVIRONMENT_MISMATCH: '调度程序上次是在 **{last}** 环境下运行的，但当前站点使用的是 **{current}**，它在 user/env/{current}/config 中拥有自己的配置。仅在那里定义的自定义作业和设置不会从该触发器运行。请更新 crontab 中的 bin/grav 调度程序行以匹配下方命令（该命令传递 --env={current} 参数），或者在运行前导出 GRAV_ENVIRONMENT={current}。'
+                LAST_MANUAL_RUN: 上次手动运行
+                LAST_TRIGGERED: 上次触发
+                PROCESS_UNAVAILABLE: '此主机禁用了 PHP 的 proc_open 函数，因此无法从管理后台启动作业。当您的调度程序通过 cron 或 webhook 触发时，它们仍会正常运行。'
+                STATUS_UNAVAILABLE: 无法在此主机上读取调度程序状态。您的作业仍列在下方，并可照常编辑。
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} 可用（共 {total}）'
                 DISK_USAGE: 磁盘使用情况
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: '更改 {username} 的状态失败：{detail}'
             DEMO_MODE_BLOCKED: '这是一个只读演示 — 已禁用更改功能。'
             USER_ROW_ACTION_FAILED: '无法完成操作：{label}'
-        TRANSLATIONS: 翻译
+        TRANSLATIONS:
+            ACCEPT: 接受
+            ACCEPTED_ALL: '{count, plural, one {# 条翻译已保存} other {# 条翻译已保存}}'
+            ACCEPT_ALL: 全部接受
+            ALL_SOURCES: 所有来源
+            CLEAR_ALL_FILTERS: 清除筛选器
+            DESCRIPTION: '修改此网站显示的任何字符串，支持任何语言。更改将作为覆盖存储在 user/languages 目录中，绝不会触动插件或主题的原始文件，因此更新操作不会覆盖这些更改。'
+            DISCARD: 放弃
+            DISCARD_ALL: 放弃
+            EDITED: 已编辑
+            EDITING_LANGUAGE: 正在编辑
+            EDIT_AS_GRID: 返回网格视图
+            EDIT_AS_YAML: '以 YAML 编辑'
+            EDIT_HINT: '回车保存，Esc 取消，Shift+回车换行。清空文本框即可删除覆盖设置。'
+            FAILED_TO_LOAD: 加载翻译失败
+            FAILED_TO_SAVE: 保存更改失败
+            FILTERED_BY: 仅显示
+            FILTER_LANGUAGES: 筛选语言
+            IMPORT_ACTION: 导入覆盖设置
+            IMPORT_ALREADY_DONE: '{count, plural, one {# 条覆盖设置} other {# 条覆盖设置}}已全部在此处'
+            IMPORT_BODY: '{count, plural, one {# 条覆盖设置仍存储在 Translation Strings 插件中。请导入以便在此处管理。} other {# 条覆盖设置（分布在 {languages, plural, one {# 种语言} other {# 种语言}}中）仍存储在 Translation Strings 插件中。请导入以便在此处管理。}}'
+            IMPORT_COL_ALREADY: 已在此处
+            IMPORT_COL_CONFLICT: 冲突
+            IMPORT_COL_LANGUAGE: 语言
+            IMPORT_COL_NEW: 新建
+            IMPORT_COL_SHIPPED: 与原文相同
+            IMPORT_COL_UNKNOWN: 未知
+            IMPORT_CONFLICTS: '{count, plural, one {# 个键} other {# 个键}}在两处设置的内容不同。插件版本将生效，因为这正是您网站目前显示的内容。'
+            IMPORT_DISABLE_ACTION: 禁用该插件
+            IMPORT_DISABLE_BLOCKED: 请先导入覆盖设置，否则它们将从网站上移除。
+            IMPORT_DISABLE_FAILED: 无法禁用该插件
+            IMPORT_DONE: '已导入 {count, plural, one {# 项覆盖} other {# 项覆盖}}'
+            IMPORT_FAILED: 导入失败
+            IMPORT_HIDE_DETAIL: 隐藏详情
+            IMPORT_LEGEND: 标记为「与原始版本相同」的字符串与插件或主题内置的字符串匹配，因此它们会被丢弃，而不会存储为无效的覆盖。
+            IMPORT_NO_CONFIG_PERMISSION: 您没有更改插件设置的权限，因此必须由管理员禁用此插件。
+            IMPORT_NO_PERMISSION: 您没有编写翻译覆盖的权限，因此无法进行导入。
+            IMPORT_PLUGIN_DISABLED: 翻译字符串插件已禁用。此编辑器现已接管。
+            IMPORT_SHOW_DETAIL: 显示将要导入的内容
+            IMPORT_STILL_ENABLED_BODY: 它会在本编辑器之后应用其字符串，因此它仍然会覆盖您在此处进行的任何更改。请检查站点显示是否正确，然后禁用它以完成切换。其设置会被保留，因此此操作是可逆的。
+            IMPORT_STILL_ENABLED_TITLE: 翻译字符串插件仍处于启用状态
+            IMPORT_TITLE: 翻译字符串插件中待处理的覆盖项
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# 个键名对应的字符串在任何插件、主题或核心文件中均不存在。它已被保留以便您查看，但它不产生任何效果。} other {# 个键名对应的字符串在任何插件、主题或核心文件中均不存在。它们已被保留以便您查看，但它们不产生任何效果。}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# 个导入的键名对应的字符串} other {# 个导入的键名对应的字符串}}在本站点中不存在。请使用「未知」过滤器查找它们。'
+            INACTIVE: 未激活
+            INACTIVE_HELP: 此插件已禁用或此主题不是当前活动主题，因此其字符串未在站点中使用。
+            KEY: 键
+            KIND_PLUGINS: 插件
+            KIND_SYSTEM: 核心
+            KIND_THEMES: 主题
+            KIND_USER: 本站点
+            LANGUAGES: 语言
+            LOADING: 正在加载翻译...
+            NEXT: 下一步
+            NOTHING_TO_TRANSLATE: 此页面上没有缺失的翻译。
+            NO_RESULTS: 没有匹配这些过滤器的字符串。
+            NO_RESULTS_FILTERED: '您当前正在查看：{filters}'
+            OVERRIDE_REMOVED: 覆盖已移除
+            PICK_A_TARGET_LANGUAGE: '请先添加语言列 — 当前没有可翻译的内容。'
+            PREVIOUS: 上一页
+            PROPOSALS_PENDING: '{count, plural, one {# 条建议待审核} other {# 条建议待审核}}'
+            REFRESH: 刷新
+            REMOVE_FILTER: 移除此筛选器
+            REVERT: 还原
+            REVERTED_TO_SHIPPED: 已还原至原始措辞
+            REVERT_HELP: 移除此覆盖，恢复使用插件或主题提供的默认设置。
+            SAVE: 保存
+            SAVED_UNKNOWN_KEY: '已保存，但没有来源提供 {key} — 请检查拼写'
+            SAVING: 保存中...
+            SCOPED_TO: '仅 {namespace}'
+            SCOPE_WHOLE_FILE: 正在编辑此语言的所有覆盖内容
+            SEARCH_PLACEHOLDER: 搜索文本或键名...
+            SHIPPED_VALUE: '原始值：{value}'
+            SHOWING: '正在显示第 {from}–{to} 条，共 {total} 条'
+            SKIPPED_COUNT: '{count, plural, one {# 条已跳过} other {# 条已跳过}}'
+            SKIP_EMPTY: 翻译服务未针对此字符串返回任何内容。
+            SKIP_ICU: 此消息会随数字或选项变化，每种语言都需要各自的格式。请手动编写此项。
+            SKIP_NOTHING: 此字符串仅包含占位符，因此没有可翻译的词汇。
+            SKIP_NO_SOURCE: 源语言中没有可供翻译的文字。
+            SKIP_PLACEHOLDERS: 翻译结果的占位符已被更改，因此该内容未被保存，已被丢弃。
+            SOURCE: 源语言
+            SOURCE_LANGUAGE: 来源
+            STATE_MISSING: 缺失
+            STATE_MISSING_FALLBACK: 回退中
+            STATE_OVERRIDDEN: 已覆盖
+            STATUS_ALL: 全部
+            STATUS_MISSING: 缺失
+            STATUS_OVERRIDDEN: 已覆盖
+            STATUS_UNKNOWN: 未知
+            SUGGESTED: 建议
+            SUPERSEDED_ACTION: 打开翻译
+            SUPERSEDED_BODY: '“翻译”部分提供了此插件的所有功能，并增加了站点所有字符串的搜索、多语言覆盖率统计、机器翻译以及无用键名报告。此插件在 Grav 1.7 上保持支持。'
+            SUPERSEDED_PENDING: '{count, plural, one {# 项覆盖仍} other {# 项覆盖仍}}存储于此，并可导入。'
+            SUPERSEDED_TITLE: '内置于 Grav 2.0'
+            TITLE: 翻译
+            TRANSLATE_FAILED: 翻译失败
+            TRANSLATE_MISSING: 翻译缺失项
+            TRANSLATE_ROW: 为显示的所有语言建议此字符串的翻译
+            TRANSLATE_THIS: 为此字符串建议一个翻译
+            TRANSLATE_UNAVAILABLE_FIND_IT: 获取插件
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate 尚未设置翻译提供商，因此无法进行机器翻译。'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate 已安装但已关闭，因此无法进行机器翻译。'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'AI Translate 高级插件支持对缺失的字符串进行 AI 驱动的翻译。'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 打开其设置
+            TRANSLATING: 翻译中...
+            UNKNOWN_KEYS_SAVED: 已保存，但没有任何来源提供这些键名
+            UNKNOWN_KEY_HELP: 没有插件、主题或核心文件提供此键。这可能是一个拼写错误，或者是从已卸载的内容中残留下来的。
+            YAML_HELP: 直接粘贴或编辑覆盖内容。与插件或主题现有值匹配的内容将被丢弃，因此该文件仅包含实际的更改。
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: 在此处填写您的措辞
+            YAML_SAVED: '{count, plural, =0 {{lang} 中没有剩余的覆盖内容} one {{lang} 中已保存 # 条覆盖内容} other {{lang} 中已保存 # 条覆盖内容}}'
         TRANSLATIONS_FALLBACK: 翻译回退
         TRANSLATIONS_FALLBACK_HELP: 如果活动语言不存在，则通过受支持的翻译进行回退
         TWIG_3_COMPATIBILITY: 'Twig 3 兼容性'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: '位于 user/data、user/accounts 和 user/config 下的文件可以直接通过 HTTP 下载，包括证书、密钥、令牌和数据库。这通常意味着您的 Web 服务器没有正确应用 Grav 的 .htaccess 规则。'
             USER_FOLDER_EXPOSED_LEARN_MORE: '如何确保您的 Web 服务器安全'
             USER_FOLDER_EXPOSED_TITLE: '安全风险：您的用户数据文件夹可从 Web 直接访问'
+            COLLAPSE: 折叠
+            SHOW_DETAILS: 显示详情
+            SNOOZE: 忽略（Snooze）
+            SNOOZE_HINT: '隐藏此警告 24 小时。如果发现不同的文件，它会提前再次出现。'
+            STORAGE_EXPOSED_ALL: '每个测试文件都可以被下载，这意味着您的 Web 服务器根本没有应用 Grav 的访问规则。对于 Apache，请检查 AllowOverride 是否允许站点的 .htaccess 生效。对于 nginx、Caddy 或 IIS，请从 Grav 的 webserver-configs 文件夹中添加安全规则。'
+            STORAGE_EXPOSED_BODY: 'Web 服务器从本应私有的目录中提供了测试文件。下面列出的文件类型可能会暴露存储的提交内容、备份或临时文件。请要求您的主机服务商阻止直接访问，或将私有存储移动到 Web 根目录之外。'
+            STORAGE_EXPOSED_BY_TYPE: '这些文件夹中的某些文件类型被阻止，而其他文件类型则可以下载。这通常意味着在 Grav 的规则之前有其他机制生效，例如 nginx 在 Apache 之前提供静态文件，并在规则检查之前响应 .zip 等常见文件类型。请在相应层的配置中也阻止这些文件夹。'
+            STORAGE_EXPOSED_CDN: '如果站点位于 Cloudflare 等 CDN 之后，请在修复此问题后清除其缓存。否则，它已经存储的副本将保持可下载状态。'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# 种文件类型} other {# 种文件类型}}'
+            STORAGE_EXPOSED_TITLE: 应设为私有的文件可被本站点下载
+            STORAGE_EXPOSED_TMP: 'tmp/ 中的测试文件可以被下载，而其他文件夹则被阻止。您的服务器规则可能早于 Grav 2.1.7 版本，该版本已将 tmp/ 添加到受限文件夹列表中。请在您的 .htaccess，或者 nginx、Caddy 或 IIS 配置中将 tmp 添加到该列表，以匹配 Grav 原生的规则。'
         CONFIRM: 确认
         DEMO:
             BANNER_COUNTDOWN: '下次重置于 {time}'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: 停留
             SWITCH_LANGUAGE: 切换
             SWITCH_LANGUAGE_MESSAGE: 您有未保存的更改。确定要切换语言吗？
+        API_CLIENT:
+            INVALID_JSON_DETAIL: '无法读取服务器的回复，因为它不是有效的 JSON。服务器端可能输出了额外内容（例如 PHP 警告）并混入在 API 响应中。浏览器控制台中有详细信息。'
+            INVALID_JSON_TITLE: 服务器响应异常
+            UNEXPECTED_RESPONSE_DETAIL: 服务器返回的数据格式非当前屏幕预期。浏览器控制台中有详细信息。
+            UNEXPECTED_RESPONSE_TITLE: 服务器响应异常
+        CACHE_MODULES: 缓存模块输出
+        CACHE_MODULES_HELP: '缓存此页面模块的渲染输出。仅当模块向所有访问者展示相同内容时使用。包含自定义 Twig 或表单的模块、已登录的访问者以及表单提交始终会重新渲染。仅编辑部分模板时需要清除缓存。'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Flex 渲染提示'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: '用 HTML 注释包裹每一个渲染的 Flex 对象和集合并注明名称，以便在页面标记中找到区块的来源。仅适用于 HTML 页面。'
+        FRONTMATTER_NATIVE_YAML: '快速 Frontmatter 解析'
+        FRONTMATTER_NATIVE_YAML_HELP: '若已安装 libyaml PHP 扩展，则使用其读取页面 Frontmatter，这将加快页面缓存的重建速度。由于其对某些值的读取方式有所不同，请务必先检查您的页面。未加引号的日期将保持为文本，而不会转换为时间戳；未加引号的 yes、no、on 和 off 将被转换为 true 或 false。'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: '这将把 Grav 从 v{current} 升级到 v{target}。升级期间网站可能会短暂不可用。'
+            CONFIRM_TITLE: '升级 Grav 核心程序？'
+            FAILED: 'Grav 升级失败：{detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} 已标记为兼容 Grav {compatible}'
+            NO_DETAIL: 服务器未提供原因
+            PREFLIGHT_MESSAGE: 升级前的检查程序因以下原因阻止了升级。请修复这些问题后再试，或者如果您确定这些插件和主题能兼容新版本，则可强制升级。
+            PREFLIGHT_TITLE: 'Grav 暂时无法升级到 v{version}'
+            STILL_BLOCKED: 'Grav 升级仍被阻止：{detail}'
+            UPGRADE_ANYWAY: 仍然升级
+            UPGRADING: '正在将 Grav 升级到 v{version}……'
+        HELP: 帮助
+        HELP_FOR_LABEL: '{label} 的帮助'
+        IMAGES_PROGRESSIVE_JPEG: '渐进式 JPEG'
+        IMAGES_PROGRESSIVE_JPEG_HELP: '将调整大小和缓存后的 JPEG 保存为渐进式，这样它们会先显示为一张模糊的完整图像，然后再逐渐变清晰，而不是从上到下逐行加载。通常文件也会更小。此设置不影响 PNG、WebP 或 AVIF。'
+        MARKDOWN_OUTPUT: 'Markdown 输出'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: '绝对 URL'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: '将根相对链接和图片转换为完整 URL，以便在 Markdown 离开站点后仍能正常工作。'
+        MARKDOWN_OUTPUT_ENABLED: '将页面作为 Markdown 提供'
+        MARKDOWN_OUTPUT_ENABLED_HELP: '任何页面都可以通过在其 URL 后添加 `.md` 或发送 `Accept:&nbsp;text/markdown` 请求头来获取 Markdown 格式。专为 AI 代理和其他文本客户端构建。页面通过主题渲染，缩减为主要内容区域并进行转换，因此列表、商店和模块化页面会按照其显示方式进行读取。'
+        MARKDOWN_OUTPUT_FRONTMATTER: 'Frontmatter 区块'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: '在 Markdown 开头包含一个 YAML 区块，其中包含标题、URL、日期、描述和分类法。'
+        MARKDOWN_OUTPUT_LINKS: 导航链接
+        MARKDOWN_OUTPUT_LINKS_HELP: '在 Markdown 末尾添加指向父页面、相邻页面和子页面的链接，以便代理可以在不离开 Markdown 的情况下遍历站点。'
+        MARKDOWN_OUTPUT_MAX_LINKS: 子页面链接上限
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 导航部分中列出的最多子页面数量。设置为零则列出所有页面。
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Token 计数请求头'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: '发送包含估计 Token 计数的 `X-Markdown-Tokens` 响应头，与 Cloudflare 的 Markdown for Agents 使用的请求头相同。'
+        NOTICES:
+            HEADING: '{count, plural, one {通知} other {通知}}'
+            HIDE: 隐藏通知
+            SHOW: 显示通知
+        PAGES_LAZY_INDEX: 懒加载页面索引
+        PAGES_LAZY_INDEX_HELP: '按需从每个页面的 SQLite 索引中加载页面、路由和分类，而不是使用一个巨大的缓存文件。在拥有 1000 个或更多页面的站点上会自动启用此功能。当没有可用的数据库引擎时，将回退到传统缓存方式。'
+        RETRY: 重试
+        SESSION_LAZY: 仅在需要时开启会话
+        SESSION_LAZY_HELP: '没有会话 Cookie 的访客仅在向会话中存储内容（如登录、表单或消息）时才会开启会话，因此匿名页面浏览可以被代理或 CDN 缓存。在每次页面浏览时都会存储数据的插件仍会开启一个会话。'
+        UPDATE_CHANGELOG_TITLE: 'v{version} 中的更改'
