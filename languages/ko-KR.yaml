@@ -210,6 +210,8 @@ ICU:
                 TRUSTED: '신뢰할 수 있는 역할만'
                 TRUSTED_DESC: '슈퍼 유저와 「pages twig」 권한을 가진 사용자만 페이지에서 Twig를 활성화할 수 있습니다.'
             VALIDATION_FAILED_FOR_FIELDS: '저장할 수 없습니다 — 다음 필드가 유효하지 않습니다: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: '구성 요소를 불러오지 못했습니다.'
+            SCOPE_NOT_FOUND: '{scope}라는 이름의 구성 범위(scope)를 찾을 수 없습니다.'
         CONFIGURATION: 설정
         CONFIG_INFO_PAGE:
             ENVIRONMENT: 환경
@@ -444,6 +446,14 @@ ICU:
                 SCHEDULER_STATUS: '스케줄러 상태'
                 STATUS: '상태:'
                 WEBHOOK: '웹후크:'
+                BY_HAND: 수동
+                MANUAL_RUN_HELP: '대기 중인 작업 실행(Run Pending)은 예약된 시간을 놓친 작업을 실행하며, cron 항목이 없는 사이트에 유용합니다. 여기서 시작한 작업은 수동으로 기록되며 위 cron 상태에는 포함되지 않습니다.'
+                NEVER: '사용 안 함'
+                PENDING: '대기 중'
+                PROCESS_UNAVAILABLE: 'PHP의 proc_open 함수가 비활성화되어 있어 이 호스트에서는 여기서 작업을 실행할 수 없습니다. 작업은 cron 또는 웹훅에 의해 스케줄러가 트리거될 때마다 계속 실행됩니다.'
+                RUN_ALL_HELP: '일정 여부와 관계없이 활성화된 모든 작업을 지금 실행합니다.'
+                RUN_NOW: '이 작업 지금 실행'
+                RUN_PENDING: '대기 중인 작업 실행'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: '사용자 지정 필드 로딩 중...'
             DATE_FORMAT:
@@ -462,6 +472,10 @@ ICU:
                 NO_ICONS_FOUND: '아이콘을 찾을 수 없음'
                 SEARCH_ICONS: '아이콘 검색...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: '처음 200개 결과 표시 중 — 좁히려면 입력하세요'
+                FAMILY_ALL: 모두
+                FAMILY_BRANDS: 브랜드
+                FAMILY_REGULAR: 일반(Regular)
+                FAMILY_SOLID: 굵게(Solid)
             NO_TAXONOMY_TYPES: '분류 유형이 설정되지 않음'
             PAGES:
                 FILTER_PAGES: '페이지 필터링...'
@@ -500,6 +514,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: '입력 후 Enter 키를 누르세요...'
             SELECT_AN_ICON: '아이콘 선택…'
             SELECT_A_PAGE: '페이지 선택…'
+            MEDIA:
+                ADD: '미디어 추가…'
+                CHANGE: 변경
+                DONE: 완료
+                MOVE_EARLIER: '앞으로 이동'
+                MOVE_LATER: '뒤로 이동'
+                REMOVE: 삭제
+                SELECT: '미디어 선택…'
+                SELECTED_COUNT: '{count, plural, =0 {선택된 항목 없음} one {#개 선택됨} other {#개 선택됨}}'
+                TITLE: '미디어 선택'
+            SET_DATE_NOW: '현재 시간으로 설정'
         FILE: 파일
         FILE_EXTENSION: '파일 확장자'
         FILE_STREAMS: '파일 스트림'
@@ -824,6 +849,11 @@ ICU:
             CONTINUE_WITH: '{provider}(으)로 계속하기'
             OR_CONTINUE_WITH: '또는 다음으로 계속하기'
             SSO_FAILED: '해당 제공업체로 로그인할 수 없습니다. 다시 시도해 주세요.'
+            CAPTCHA_FAILED_TO_LOAD: '챌린지를 불러올 수 없습니다. 페이지를 새로 고침하고 다시 시도하세요.'
+            CAPTCHA_NOT_COMPLETED: '계속하려면 챌린지를 완료해주세요'
+            CAPTCHA_VERIFIED: '사람임을 인증했습니다'
+            CAPTCHA_VERIFYING: '사람인지 확인 중입니다...'
+            INVALID_AUTHENTICATION_CODE: '인증 코드가 올바르지 않습니다'
         LOG_ERRORS: '오류 기록'
         LOG_ERRORS_HELP: '/logs 폴더에 오류 기록'
         LOG_HANDLER: '로그 핸들러'
@@ -881,6 +911,17 @@ ICU:
                 LIST_VIEW: '목록 보기'
                 NEW_FOLDER: '새 폴더'
                 SEARCH_MEDIA: '미디어 검색...'
+                DELETE_SELECTED: '{count, plural, one {파일 #개 삭제} other {파일 #개 삭제}}'
+                FILTER_ALL: 전체
+                FILTER_AUDIO: 오디오
+                FILTER_DOCS: 문서
+                FILTER_IMAGES: 이미지
+                FILTER_VIDEO: 비디오
+                SEARCHING_FOR: '검색: 「{query}」'
+                SORT_DATE: 날짜
+                SORT_NAME: 이름
+                SORT_SIZE: 크기
+                SORT_TYPE: 유형
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: '에디터로 드래그'
                 PAGE_MEDIA: '페이지 미디어'
@@ -908,6 +949,15 @@ ICU:
                 STORED: '저장된 메타데이터'
                 TAGS_PLACEHOLDER: '태그 추가...'
                 TITLE: 메타데이터
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: '미디어 경로'
+                OPEN: 열기
+                PATH: 경로
+                SIZE: 크기
+                TITLE: '파일 세부 정보'
+                TYPE: 유형
+                URL: URL
         MEDIA_TYPES: '미디어 유형'
         MEMCACHED_PORT: 'Memcached 포트'
         MEMCACHED_PORT_HELP: 'Memcached 서버 포트'
@@ -937,6 +987,7 @@ ICU:
             TOOLS: 도구
             USERS: 사용자
             UPDATES_AVAILABLE: '{count}개의 업데이트 사용 가능'
+            TRANSLATIONS: 번역
         NEVER_CACHE_TWIG: 'Twig 캐시 안 함'
         NEVER_CACHE_TWIG_HELP: '콘텐츠만 캐시하고 페이지별로 매번 Twig를 처리합니다. twig_first 설정을 무시합니다.'
         NEWS_FEED_WIDGET:
@@ -1001,6 +1052,9 @@ ICU:
                 TOGGLE_PAGE_NAVIGATOR: '페이지 탐색기 전환'
                 UNPUBLISH_ON: '게시 종료일:'
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: '마크다운 콘텐츠를 여기에 작성하세요...'
+                FALLBACK_NOTICE_UNRESOLVED: '서버가 {active} 대신 이 페이지의 {effective} 버전을 반환했으며, {active}이(가) 누락되었다고 보고하지 않았습니다. 여기서는 저장이 해제되어 있어 {effective} 파일이 덮어쓰이지 않습니다. 모든 페이지에서 이런 현상이 발생한다면, 웹 서버가 쿼리 문자열을 Grav로 전달하지 못하고 있을 가능성이 높습니다.'
+                PREVIEW_SHOWING_HOST_PAGE: '상위 페이지에 표시됨'
+                TEMPLATE_MISSING_NOTICE: '이 모듈에 대한 **{template}** 템플릿을 테마에서 찾을 수 없어, 해당 페이지가 「템플릿을 찾을 수 없음」 오류를 표시합니다. 고급 탭의 **페이지 템플릿**에서 템플릿을 선택하거나, 테마에 해당 템플릿을 추가하세요.'
             EDIT_PAGE: '페이지 편집'
             FRONTMATTER: 프런트매터
             HEADER_MODIFIED: 수정됨
@@ -1052,6 +1106,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: '이 페이지를 위한 URL 친화적인 폴더 이름'
                 VISIBLE: 표시
+                CHILD_TYPE_HINT: '상위 페이지가 하위 페이지에 「{template}」을(를) 제안합니다. 다른 템플릿을 선택할 수도 있습니다.'
+                STATUS_HELP: '초안은 저장되지만 게시하기 전까지 사이트에는 표시되지 않습니다'
             NO_MATCH: '검색어와 일치하는 페이지가 없습니다'
             NO_PAGES: '페이지를 찾을 수 없습니다'
             NO_SEARCH_RESULTS: '검색어와 일치하는 페이지가 없습니다'
@@ -1117,6 +1173,16 @@ ICU:
                 VISIBLE: 표시됨
                 'YES': 예
             VALIDATION_FAILED_FOR_FIELDS: '저장할 수 없습니다. 다음 필드가 유효하지 않습니다: {fields}'
+            COLUMN_EMPTY: '비어 있음'
+            SEARCH_MATCH_COUNT: '모든 페이지에서 {n}건 일치'
+            SEARCH_SHOWING: '전체 {total}개 중 {shown}개 일치 항목 표시'
+            SEARCH_SHOW_MORE: '더 보기'
+            STATUS:
+                EXPIRED: 만료됨
+                EXPIRED_ON: '{date}부터 미발행됨'
+                SCHEDULED: 예약됨
+                SCHEDULED_FOR: '{date}에 게시 예정'
+                TOGGLE_TITLE: '{action} ({status})'
         PAGES_CONFIGURATION: '페이지 구성'
         PAGES_FALLBACK_ONLY: '페이지 폴백 전용'
         PAGES_FALLBACK_ONLY_HELP: "지원되는 언어를 통해 페이지 콘텐츠를 찾기 위해 '폴백'만 사용합니다. 기본 동작은 활성 언어가 없는 경우 발견된 모든 언어를 표시하는 것입니다."
@@ -1207,6 +1273,9 @@ ICU:
             LAST_14_DAYS: '지난 14일'
             THIS_MONTH: '이번 달'
             THIS_WEEK: '이번 주'
+            CHART_LABEL: '지난 14일간 일일 페이지 조회수'
+            TODAY: 오늘
+            VIEWS: '{count, plural, other {#회 조회}}'
         PREMIUM: 프리미엄
         PREVIEW: 미리보기
         PROCESS: 처리
@@ -1240,6 +1309,7 @@ ICU:
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: '계속하려면 비밀번호를 다시 입력해 주세요. 작업 내용은 보존되었습니다.'
             SESSION_EXPIRED: '세션 만료'
+            SIGN_IN_AGAIN_TO_CONTINUE: '계속하려면 다시 로그인하세요. 작업 내용은 보존되었습니다.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: '모두 보기'
         REDIRECT: '페이지 리다이렉트'
@@ -1346,6 +1416,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'user/data, user/accounts 및 user/config 아래의 파일들은 인증서, 키, 토큰 및 데이터베이스를 포함하여 HTTP를 통해 직접 다운로드할 수 있습니다. 이는 일반적으로 웹 서버가 Grav의 .htaccess 규칙을 적용하지 않고 있음을 의미합니다.'
             USER_FOLDER_EXPOSED_LEARN_MORE: '웹 서버 보안 설정 방법'
             USER_FOLDER_EXPOSED_TITLE: '보안 위험: 사용자 데이터 폴더에 웹을 통해 접근할 수 있습니다'
+            COLLAPSE: 접기
+            SHOW_DETAILS: '세부 정보 보기'
+            SNOOZE: '다시 알림'
+            SNOOZE_HINT: '이 경고를 24시간 동안 숨깁니다. 다른 파일이 발견되면 더 일찍 다시 표시될 수 있습니다.'
+            STORAGE_EXPOSED_ALL: '모든 테스트 파일을 다운로드할 수 있는 상태이므로 웹 서버가 Grav의 접근 규칙을 전혀 적용하지 않고 있습니다. Apache의 경우 AllowOverride가 사이트의 .htaccess를 적용하는지 확인하세요. nginx, Caddy 또는 IIS의 경우 Grav의 webserver-configs 폴더에 있는 보안 규칙을 추가하세요.'
+            STORAGE_EXPOSED_BODY: '웹 서버가 비공개여야 할 디렉터리에서 테스트 파일을 제공했습니다. 아래 나열된 파일 유형은 저장된 제출물, 백업 또는 임시 파일을 노출할 수 있습니다. 호스팅 업체에 직접 접근 차단을 요청하거나 비공개 저장소를 웹 루트 외부로 이동하세요.'
+            STORAGE_EXPOSED_BY_TYPE: '일부 파일 유형은 해당 폴더에서 차단되었지만 다른 파일은 다운로드할 수 있었습니다. 이는 일반적으로 nginx가 Apache보다 먼저 정적 파일을 제공하는 등 Grav의 규칙보다 앞선 설정이 있거나, .zip과 같은 일반적인 파일 유형에 대해 규칙 확인 전에 응답이 이루어짐을 의미합니다. 해당 계층 구성에서도 이 폴더들을 차단하세요.'
+            STORAGE_EXPOSED_CDN: '사이트가 Cloudflare와 같은 CDN 뒤에 있는 경우, 문제를 해결한 후 캐시를 삭제하세요. 이미 저장된 복사본은 삭제하기 전까지 다운로드 가능한 상태로 유지됩니다.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, other {#개 파일 유형}}'
+            STORAGE_EXPOSED_TITLE: '비공개여야 할 파일들을 이 사이트에서 다운로드할 수 있습니다'
+            STORAGE_EXPOSED_TMP: 'tmp/ 폴더 내의 테스트 파일은 다운로드할 수 있지만, 다른 폴더들은 차단되었습니다. 서버 규칙이 Grav 2.1.7 이전 버전의 것일 가능성이 높습니다. Grav 2.1.7부터 tmp/가 차단된 폴더 목록에 추가되었습니다. Grav에서 기본으로 제공하는 규칙과 일치하도록 .htaccess 또는 nginx, Caddy, IIS 구성의 차단 목록에 tmp를 추가하세요.'
         SESSION: 세션
         SESSION_DOMAIN: '세션 도메인'
         SESSION_DOMAIN_HELP: 'Docker 컨테이너 등에서 사이트 도메인을 재작성(rewrite)하는 경우에만 사용하세요.'
@@ -1508,6 +1589,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: 기본값
             EDITOR_KEYMAP_DESC: 'Markdown 및 코드 편집기에서 Vim 키 바인딩을 사용합니다. 기본값은 표준 편집 방식을 유지합니다.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: '이 색상 복사'
+            CURRENT_COLOR: 색상
+            DARK_SHADE: '어두운 색조'
+            DARK_SHADE_DESC: '다크 모드가 어떻게 보이는지 설정합니다. 다크 모드가 켜져 있을 때만 적용됩니다.'
+            DARK_SHADE_GRAPHITE: 그라파이트
+            DARK_SHADE_MIDNIGHT: 미드나잇
+            DARK_SHADE_ZINC: 오닉스
+            DEFAULT_DARK_SHADE_DESC: '신규 사용자를 위한 기본 어두운 색조입니다. 다크 모드가 켜져 있을 때만 적용됩니다.'
+            DEFAULT_HELP_TEXT_DESC: '신규 사용자를 위한 필드 도움말 텍스트의 기본 위치를 설정합니다. 레이블 아래 또는 툴팁 중 선택하세요.'
+            HELP_MODE_INLINE: '레이블 아래'
+            HELP_MODE_TOOLTIP: '툴팁 내부'
+            HELP_TEXT: '도움말 텍스트'
+            HELP_TEXT_DESC: '각 필드에 대한 짧은 설명이 표시되는 위치입니다. 툴팁으로 설정하면 레이블 옆의 정보 아이콘에 마우스를 올리거나(모바일의 경우 탭) 내용을 읽을 수 있습니다.'
+            LOGO_HEIGHT_CUSTOM: '사용자 지정'
+            LOGO_HEIGHT_DEFAULT: 기본값
+            SIDEBAR_LOGO_HEIGHT: '사이드바 로고 높이'
+            SIDEBAR_LOGO_HEIGHT_DESC: '사이드바 상단에 표시되는 로고의 높이입니다.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64자: 영문, 숫자, 하이픈, 밑줄'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '관리자 계정이 생성되었습니다 — Grav에 오신 것을 환영합니다'
@@ -1766,6 +1864,10 @@ ICU:
                 REFRESH: 새로고침
                 SEARCH_MESSAGES: '메시지 검색...'
                 WARNING: 경고(Warning)
+                CLEAR_LOG: '로그 지우기'
+                CLEAR_LOG_CONFIRM: '{file}의 모든 항목을 영구적으로 삭제하시겠습니까? 이 작업은 되돌릴 수 없으며, 이전에 발생한 오류 기록도 모두 사라집니다.'
+                FAILED_TO_CLEAR_LOG: '로그 지우기 실패'
+                LOG_CLEARED: '{file} 삭제 완료'
             REPORTS:
                 CONTENT_FIELD: '콘텐츠: {field}'
                 FAILED_TO_LOAD_REPORTS: '보고서를 불러오는 데 실패했습니다'
@@ -1802,6 +1904,20 @@ ICU:
                     SCAN_TAGS: '콘텐츠 내 차단된 태그'
                     SECTION_EVENTS: '최근 차단 기록'
                     SECTION_LEAKS: '원시 Twig가 노출되는 페이지'
+                    POLICY_ADDED: '+{count}개 추가됨'
+                    POLICY_ALL_DEFAULTS: '모두 기본값, 변경 사항 없음'
+                    POLICY_CLASS_COUNT: '{count, plural, other {#개 클래스}}'
+                    POLICY_DENIED: '−{count}개 거부됨'
+                    POLICY_EFFECTIVE_COUNT: '{count}개 적용됨'
+                    POLICY_FAILED: '샌드박스 정책을 불러올 수 없습니다'
+                    POLICY_FILTERS: 필터
+                    POLICY_FUNCTIONS: 함수
+                    POLICY_HIDE: '적용된 정책 숨기기'
+                    POLICY_INTRO: '샌드박스 기준 설정은 코드에 포함되어 제공됩니다. 구성 파일에서는 이를 확장하거나 제한만 할 수 있습니다.'
+                    POLICY_METHODS: 메서드
+                    POLICY_PROPERTIES: 속성
+                    POLICY_TAGS: 태그
+                    POLICY_VIEW: '적용된 정책 보기'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: '보고서 구성 요소를 불러오는 중...'
             SCHEDULER:
@@ -1815,6 +1931,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: '스케줄러 구성이 저장되었습니다.'
                 SECURITY_WARNING: '숙련된 사용자만 사용자 지정 스케줄러 작업을 구성해야 합니다. 잘못된 구성은 성능 문제나 보안 취약점을 유발할 수 있습니다.'
                 WEBHOOK_ALTERNATIVE: '또는 시스템 crontab에 접근할 수 없는 클라우드 환경에 권장되는 웹훅 기반 cron 실행을 위해 **scheduler-webhook** 플러그인을 설치하세요.'
+                CRON_UNDETERMINED: 'Grav가 이 서버의 crontab을 검사할 수 없어 스케줄러가 어떻게 실행되는지 확인할 수 없습니다.'
+                ENVIRONMENT_MISMATCH: '스케줄러가 마지막으로 **{last}** 환경에서 실행되었지만, 이 사이트는 **{current}**를 사용하고 있습니다. 이 환경은 user/env/{current}/config에 고유한 설정을 가지고 있습니다. 해당 위치에만 정의된 사용자 지정 작업 및 설정은 해당 트리거에서 실행되지 않습니다. crontab의 bin/grav 스케줄러 라인을 아래 명령으로 업데이트(--env={current} 옵션 전달)하거나, 실행 전에 GRAV_ENVIRONMENT={current}를 내보내십시오.'
+                LAST_MANUAL_RUN: '마지막 수동 실행'
+                LAST_TRIGGERED: '마지막 트리거'
+                PROCESS_UNAVAILABLE: '이 호스트는 PHP의 proc_open 함수가 비활성화되어 있어 관리자 페이지에서 작업을 시작할 수 없습니다. 작업은 cron 또는 웹훅에 의해 스케줄러가 트리거될 때 정상적으로 실행됩니다.'
+                STATUS_UNAVAILABLE: '이 호스트에서 스케줄러 상태를 읽을 수 없습니다. 작업은 아래에 계속 나열되며 평소와 같이 편집할 수 있습니다.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{total} 중 {free} 사용 가능'
                 DISK_USAGE: '디스크 사용량'
@@ -1860,7 +1982,118 @@ ICU:
             NO_VIEW_DATA_YET: '아직 조회된 데이터가 없습니다'
         TOP_PROGRESS_BAR:
             WORKING: '처리 중'
-        TRANSLATIONS: 번역
+        TRANSLATIONS:
+            ACCEPT: 수락
+            ACCEPTED_ALL: '{count, plural, other {#개의 번역이 저장됨}}'
+            ACCEPT_ALL: '모두 수락'
+            ALL_SOURCES: '모든 소스'
+            CLEAR_ALL_FILTERS: '필터 초기화'
+            DESCRIPTION: '이 사이트에서 표시되는 모든 문자열을 원하는 언어로 수정하세요. 변경 사항은 user/languages 내에 오버라이드로 저장되며 플러그인이나 테마 자체 파일을 수정하지 않으므로 업데이트 시 삭제되지 않습니다.'
+            DISCARD: 취소
+            DISCARD_ALL: 버리기
+            EDITED: 편집됨
+            EDITING_LANGUAGE: '편집 중'
+            EDIT_AS_GRID: '그리드로 돌아가기'
+            EDIT_AS_YAML: 'YAML로 편집'
+            EDIT_HINT: 'Enter를 눌러 저장, Escape를 눌러 취소, Shift+Enter를 눌러 줄 바꿈하세요. 상자를 비우면 오버라이드가 제거됩니다.'
+            FAILED_TO_LOAD: '번역을 불러오지 못했습니다'
+            FAILED_TO_SAVE: '변경 사항을 저장하지 못했습니다'
+            FILTERED_BY: '표시 대상:'
+            FILTER_LANGUAGES: '언어 필터링'
+            IMPORT_ACTION: '오버라이드 가져오기'
+            IMPORT_ALREADY_DONE: '{count, plural, one {오버라이드 #개가} other {오버라이드 #개가}} 이미 여기에 있습니다.'
+            IMPORT_BODY: '{count, plural, one {오버라이드 #개가 아직 Translation Strings 플러그인 내에 저장되어 있습니다. 여기서 관리하려면 가져오세요.} other {총 {languages, plural, one {#개 언어} other {#개 언어}}에 걸친 오버라이드 #개가 아직 Translation Strings 플러그인 내에 저장되어 있습니다. 여기서 관리하려면 가져오세요.}}'
+            IMPORT_COL_ALREADY: '이미 존재함'
+            IMPORT_COL_CONFLICT: 충돌함
+            IMPORT_COL_LANGUAGE: 언어
+            IMPORT_COL_NEW: 신규
+            IMPORT_COL_SHIPPED: '원본과 동일'
+            IMPORT_COL_UNKNOWN: '알 수 없음'
+            IMPORT_CONFLICTS: '{count, plural, one {키 #개가} other {키 #개가}} 양쪽 모두에 서로 다른 문구로 설정되어 있습니다. 현재 사이트에 표시되는 내용을 우선시하여 플러그인 버전을 적용합니다.'
+            IMPORT_DISABLE_ACTION: '플러그인 비활성화'
+            IMPORT_DISABLE_BLOCKED: '먼저 오버라이드를 가져오지 않으면 사이트에서 삭제될 수 있습니다.'
+            IMPORT_DISABLE_FAILED: '플러그인을 비활성화할 수 없습니다'
+            IMPORT_DONE: '{count, plural, one {# 개의 재정의가 가져와졌습니다} other {# 개의 재정의가 가져와졌습니다}}'
+            IMPORT_FAILED: '가져오기 실패'
+            IMPORT_HIDE_DETAIL: '상세 숨기기'
+            IMPORT_LEGEND: '「원본과 동일」으로 표시된 문자열은 플러그인이나 테마에 이미 포함되어 있으므로, 아무런 역할을 하지 않는 재정의로 저장되는 대신 삭제됩니다.'
+            IMPORT_NO_CONFIG_PERMISSION: '플러그인 설정을 변경할 권한이 없으므로 관리자가 플러그인을 비활성화해야 합니다.'
+            IMPORT_NO_PERMISSION: '번역 재정의를 작성할 권한이 없으므로 가져오기 기능을 사용할 수 없습니다.'
+            IMPORT_PLUGIN_DISABLED: '번역 문자열(Translation Strings)이 비활성화되었습니다. 이제 이 편집기가 담당합니다.'
+            IMPORT_SHOW_DETAIL: '가져올 항목 보기'
+            IMPORT_STILL_ENABLED_BODY: '이 편집기보다 나중에 문자열을 적용하므로 여기서 변경하는 모든 내용을 여전히 덮어씁니다. 사이트가 올바르게 읽히는지 확인한 후, 비활성화하여 전환을 완료하십시오. 설정은 그대로 유지되므로 언제든지 되돌릴 수 있습니다.'
+            IMPORT_STILL_ENABLED_TITLE: 'Translation Strings 플러그인이 여전히 활성화되어 있습니다'
+            IMPORT_TITLE: 'Translation Strings 플러그인에서 대기 중인 재정의'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# 개의 키는 플러그인, 테마 또는 코어 파일에서 제공하지 않는 문자열입니다. 검토할 수 있도록 유지되지만 아무런 효과가 없습니다.} other {# 개의 키는 플러그인, 테마 또는 코어 파일에서 제공하지 않는 문자열입니다. 검토할 수 있도록 유지되지만 아무런 효과가 없습니다.}}'
+            IMPORT_UNKNOWN_WARNING: "{count, plural, one {# 개의 가져온 키는 사이트에서 제공하지 않는 문자열입니다.} other {# 개의 가져온 키는 사이트에서 제공하지 않는 문자열입니다.}} '알 수 없음(Unknown)' 필터로 찾을 수 있습니다."
+            INACTIVE: 비활성
+            INACTIVE_HELP: '이 플러그인이 비활성화되었거나 이 테마가 활성 상태가 아니므로, 해당 문자열은 사이트에서 사용되지 않습니다.'
+            KEY: 키
+            KIND_PLUGINS: 플러그인
+            KIND_SYSTEM: 코어
+            KIND_THEMES: 테마
+            KIND_USER: '이 사이트'
+            LANGUAGES: 언어
+            LOADING: '번역 불러오는 중...'
+            NEXT: 다음
+            NOTHING_TO_TRANSLATE: '이 페이지에 번역이 누락된 항목이 없습니다.'
+            NO_RESULTS: '필터와 일치하는 문자열이 없습니다.'
+            NO_RESULTS_FILTERED: '현재 검색 위치: {filters}'
+            OVERRIDE_REMOVED: '재정의가 삭제되었습니다'
+            PICK_A_TARGET_LANGUAGE: '먼저 언어 열을 추가하십시오. 번역할 대상이 없습니다.'
+            PREVIOUS: 이전
+            PROPOSALS_PENDING: '{count, plural, other {#개의 검토할 제안}}'
+            REFRESH: '새로 고침'
+            REMOVE_FILTER: '이 필터 제거'
+            REVERT: 되돌리기
+            REVERTED_TO_SHIPPED: '원래 문구로 되돌렸습니다'
+            REVERT_HELP: '이 재정의를 삭제하고 플러그인 또는 테마에서 제공하는 기본값으로 돌아갑니다.'
+            SAVE: 저장
+            SAVED_UNKNOWN_KEY: '저장되었으나 {key}을(를) 제공하는 항목이 없습니다. 철자를 확인하십시오.'
+            SAVING: '저장 중...'
+            SCOPED_TO: '{namespace}만'
+            SCOPE_WHOLE_FILE: '이 언어에 대한 모든 재정의 편집 중'
+            SEARCH_PLACEHOLDER: '텍스트 또는 키 검색...'
+            SHIPPED_VALUE: '원래 값: {value}'
+            SHOWING: '{total}개 중 {from}–{to} 표시 중'
+            SKIPPED_COUNT: '{count, plural, other {#개 건너뜀}}'
+            SKIP_EMPTY: '번역 서비스가 이 문자열에 대해 아무것도 반환하지 않았습니다.'
+            SKIP_ICU: '이 메시지는 숫자나 선택 항목에 따라 변경되며, 각 언어마다 고유한 형식 세트가 필요합니다. 직접 작성해 주십시오.'
+            SKIP_NOTHING: '이 문자열은 플레이스홀더로만 구성되어 있어 번역할 단어가 없습니다.'
+            SKIP_NO_SOURCE: '번역할 원본 언어의 문구가 없습니다.'
+            SKIP_PLACEHOLDERS: '번역 결과가 플레이스홀더가 변경된 상태로 반환되어 저장되지 않고 삭제되었습니다.'
+            SOURCE: 원본
+            SOURCE_LANGUAGE: 소스
+            STATE_MISSING: 누락됨
+            STATE_MISSING_FALLBACK: '대체 중'
+            STATE_OVERRIDDEN: 재정의됨
+            STATUS_ALL: 모두
+            STATUS_MISSING: 누락됨
+            STATUS_OVERRIDDEN: 재정의됨
+            STATUS_UNKNOWN: '알 수 없음'
+            SUGGESTED: 제안됨
+            SUPERSEDED_ACTION: '번역 열기'
+            SUPERSEDED_BODY: 'Translations 섹션은 이 플러그인이 수행하는 모든 작업을 수행하며, 사이트 내 모든 문자열 검색, 언어별 커버리지, 기계 번역, 더 이상 사용되지 않는 키에 대한 보고서 기능을 추가합니다. 이 플러그인은 Grav 1.7에서 계속 지원됩니다.'
+            SUPERSEDED_PENDING: '{count, plural, one {#개의 재정의가} other {#개의 재정의가}} 여기에 저장되어 있으며 가져오기가 가능합니다.'
+            SUPERSEDED_TITLE: 'Grav 2.0에 내장됨'
+            TITLE: 번역
+            TRANSLATE_FAILED: '번역 실패'
+            TRANSLATE_MISSING: '누락된 항목 번역'
+            TRANSLATE_ROW: '표시된 모든 언어로 이 문자열에 대한 번역을 제안하세요'
+            TRANSLATE_THIS: '이 문자열에 대한 번역을 제안하세요'
+            TRANSLATE_UNAVAILABLE_FIND_IT: '플러그인 가져오기'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate에 설정된 번역 제공자가 없으므로 기계 번역을 사용할 수 없습니다.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate가 설치되어 있지만 꺼져 있으므로 기계 번역을 사용할 수 없습니다.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'AI Translate 프리미엄 플러그인을 사용하면 누락된 문자열을 AI 기반으로 번역할 수 있습니다.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: '설정 열기'
+            TRANSLATING: '번역 중...'
+            UNKNOWN_KEYS_SAVED: '저장되었으나, 이 키들을 제공하는 항목이 없습니다'
+            UNKNOWN_KEY_HELP: '이 키를 제공하는 플러그인, 테마 또는 코어 파일이 없습니다. 오타이거나 더 이상 설치되지 않은 항목의 잔재일 가능성이 큽니다.'
+            YAML_HELP: '재정의 내용을 직접 붙여넣거나 편집하세요. 플러그인이나 테마에서 이미 제공하는 값과 일치하는 항목은 삭제되므로, 파일에는 실제 변경 사항만 저장됩니다.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: 여기에 문구를 입력하세요
+            YAML_SAVED: '{count, plural, =0 {{lang}에 남은 재정의 없음} one {{lang}에 #개의 재정의 저장됨} other {{lang}에 #개의 재정의 저장됨}}'
         TRANSLATIONS_FALLBACK: '번역 폴백'
         TRANSLATIONS_FALLBACK_HELP: '활성 언어가 존재하지 않을 경우 지원되는 번역을 통해 폴백합니다'
         TWIG_3_COMPATIBILITY: 'Twig 3 호환성'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: 머무르기
             SWITCH_LANGUAGE: 전환
             SWITCH_LANGUAGE_MESSAGE: '저장되지 않은 변경 사항이 있습니다. 정말 언어를 전환하시겠습니까?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: '서버의 응답이 유효한 JSON이 아니어서 읽을 수 없습니다. API 응답과 함께 PHP 경고와 같은 추가 출력이 서버에서 생성되고 있을 수 있습니다. 자세한 내용은 브라우저 콘솔을 확인하세요.'
+            INVALID_JSON_TITLE: '서버에서 예상치 못한 응답이 왔습니다'
+            UNEXPECTED_RESPONSE_DETAIL: '이 화면에서 예상하지 못한 형식의 데이터가 서버로부터 응답되었습니다. 자세한 내용은 브라우저 콘솔을 확인하세요.'
+            UNEXPECTED_RESPONSE_TITLE: '서버에서 예상치 못한 응답이 왔습니다'
+        CACHE_MODULES: '모듈 출력 캐시'
+        CACHE_MODULES_HELP: '이 페이지 모듈의 렌더링된 출력을 캐시합니다. 모든 방문자에게 동일한 콘텐츠를 보여주는 모듈에만 사용하세요. 자체 Twig이나 폼을 가진 모듈, 로그인한 방문자 및 폼 제출은 항상 최신 상태로 렌더링됩니다. 일부 템플릿만 수정할 경우 캐시를 삭제해야 합니다.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Flex 렌더링 힌트'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: '렌더링된 모든 Flex 객체와 컬렉션을 해당 이름을 포함한 HTML 주석으로 감싸 페이지 마크업에서 블록의 출처를 확인할 수 있게 합니다. HTML 페이지에만 적용됩니다.'
+        FRONTMATTER_NATIVE_YAML: '빠른 프런트매터 파싱'
+        FRONTMATTER_NATIVE_YAML_HELP: 'libyaml PHP 확장 기능이 설치된 경우 해당 기능을 사용하여 페이지 프런트매터를 읽음으로써 페이지 캐시 재구축 속도를 높입니다. 일부 값을 읽는 방식이 다르므로 먼저 페이지를 확인하세요. 따옴표가 없는 날짜는 타임스탬프가 아닌 텍스트로 유지되며, 따옴표가 없는 yes, no, on, off는 true 또는 false로 처리됩니다.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Grav를 v{current}에서 v{target} 버전으로 업그레이드합니다. 업그레이드 중에는 사이트를 잠시 이용할 수 없을 수 있습니다.'
+            CONFIRM_TITLE: 'Grav 코어를 업그레이드하시겠습니까?'
+            FAILED: 'Grav 업그레이드 실패: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} 버전은 Grav {compatible} 버전과 호환되는 것으로 표시되어 있습니다.'
+            NO_DETAIL: '서버에서 이유를 제공하지 않았습니다'
+            PREFLIGHT_MESSAGE: '업그레이드 전 실행되는 검사 항목으로 인해 업그레이드가 중단되었습니다. 문제를 해결한 후 다시 시도하거나, 해당 플러그인과 테마가 새 버전에서 작동함을 알고 있다면 무시하고 업그레이드를 진행하세요.'
+            PREFLIGHT_TITLE: '아직 v{version} 버전으로 Grav를 업그레이드할 수 없습니다'
+            STILL_BLOCKED: 'Grav 업그레이드가 여전히 차단됨: {detail}'
+            UPGRADE_ANYWAY: '무시하고 업그레이드'
+            UPGRADING: 'Grav를 v{version} 버전으로 업그레이드하는 중…'
+        HELP: 도움말
+        HELP_FOR_LABEL: '{label} 도움말'
+        IMAGES_PROGRESSIVE_JPEG: '프로그레시브 JPEG'
+        IMAGES_PROGRESSIVE_JPEG_HELP: '크기를 조정하고 캐시된 JPEG를 프로그레시브 형식으로 저장하여, 이미지가 위에서부터 순차적으로 채워지는 대신 전체적인 흐릿한 이미지에서 점차 선명해지도록 합니다. 일반적으로 용량도 더 작습니다. PNG, WebP 또는 AVIF에는 영향을 주지 않습니다.'
+        MARKDOWN_OUTPUT: 'Markdown 출력'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: '절대 URL'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: '루트 상대 링크 및 이미지를 전체 URL로 변경하여 Markdown이 사이트를 벗어난 후에도 작동하도록 합니다.'
+        MARKDOWN_OUTPUT_ENABLED: '페이지를 Markdown으로 제공'
+        MARKDOWN_OUTPUT_ENABLED_HELP: '모든 페이지는 URL에 `.md`를 추가하거나 `Accept: text/markdown` 요청 헤더를 보내 Markdown으로 가져올 수 있습니다. AI 에이전트 및 기타 텍스트 클라이언트를 위해 구축되었습니다. 페이지는 테마를 통해 렌더링되고 기본 콘텐츠 영역으로 축소된 후 변환되므로, 목록, 상점 및 모듈식 페이지가 표시되는 방식 그대로 읽힙니다.'
+        MARKDOWN_OUTPUT_FRONTMATTER: '프론트매터 블록'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: '제목, URL, 날짜, 설명 및 분류를 포함하는 YAML 블록으로 Markdown을 시작합니다.'
+        MARKDOWN_OUTPUT_LINKS: '탐색 링크'
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Markdown 끝에 상위, 주변 및 하위 페이지에 대한 링크를 추가하여 에이전트가 Markdown을 떠나지 않고도 사이트를 탐색할 수 있도록 합니다.'
+        MARKDOWN_OUTPUT_MAX_LINKS: '최대 하위 링크 수'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: '탐색 섹션에 나열할 최대 하위 페이지 수입니다. 0은 모두 나열합니다.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: '토큰 수 헤더'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: "Cloudflare의 'Markdown for Agents'가 사용하는 것과 동일한 헤더인 예상 토큰 수가 포함된 `X-Markdown-Tokens` 응답 헤더를 보냅니다."
+        NOTICES:
+            HEADING: '{count, plural, one {알림} other {알림 {count}개}}'
+            HIDE: '알림 숨기기'
+            SHOW: '알림 표시'
+        PAGES_LAZY_INDEX: '지연 페이지 인덱스'
+        PAGES_LAZY_INDEX_HELP: '하나의 대용량 캐시 파일 대신 페이지별 SQLite 인덱스를 사용하여 필요할 때 페이지, 경로 및 분류를 불러옵니다. 1,000개 이상의 페이지가 있는 사이트에서 자동으로 사용됩니다. 데이터베이스 엔진을 사용할 수 없는 경우 기존 캐시 방식으로 돌아갑니다.'
+        RETRY: 재시도
+        SESSION_LAZY: '필요할 때만 세션 시작'
+        SESSION_LAZY_HELP: '세션 쿠키가 없는 방문자는 로그인, 양식, 메시지 등 세션에 저장할 데이터가 생길 때만 세션이 생성되므로, 익명 페이지 조회는 프록시나 CDN에 의해 캐시될 수 있습니다. 모든 페이지 조회 시 데이터를 저장하는 플러그인은 여전히 세션을 시작합니다.'
+        UPDATE_CHANGELOG_TITLE: 'v{version}의 변경 사항'
