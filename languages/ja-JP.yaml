@@ -165,6 +165,9 @@ ICU:
                 RESET_FROM: '{language} からリセット'
                 SAVED_BY_PEER: '{user} がこのページを保存しました'
                 SAVED_BY_PEER_ANON: 他のユーザーがこのページを保存しました
+                FALLBACK_NOTICE_UNRESOLVED: 'サーバーが {active} の代わりにこのページの {effective} バージョンを返しましたが、{active} が欠落しているという報告はありませんでした。ここで保存を行うと {effective} ファイルが上書きされてしまうため、保存機能は無効になっています。すべてのページでこの現象が発生する場合、Webサーバーがクエリ文字列をGravに渡していない可能性があります。'
+                PREVIEW_SHOWING_HOST_PAGE: 親ページ内に表示
+                TEMPLATE_MISSING_NOTICE: 'このモジュールのテンプレート **{template}** がテーマ内に見つかりません。そのため、このページが属する場所には「テンプレートが見つかりません」というエラーが表示されます。「詳細」タブの **ページテンプレート** からテンプレートを選択するか、テーマにテンプレートを追加してください。'
             NEW:
                 MY_NEW_PAGE: 新しいページ
                 FILTER_PAGES: ページを絞り込み...
@@ -190,6 +193,8 @@ ICU:
                 ORDERING_HELP_FOLDER: 兄弟フォルダー内でのこのフォルダーの位置を決定する数値プレフィックスを追加します。
                 ORDERING_NONE: なし
                 FOLDER_DETAILS: フォルダー詳細
+                CHILD_TYPE_HINT: '親ページは子ページに対して「{template}」を推奨しています。別のテンプレートを選択することも可能です。'
+                STATUS_HELP: 下書きは保存されますが、公開するまでサイトには表示されません
             PAGE_COUNT: '{n, plural, one{# ページ} other{# ページ}}'
             SUBTITLE: サイトのコンテンツと構造を管理
             PUBLISH: 公開
@@ -212,6 +217,16 @@ ICU:
                 VISIBLE: 表示中
                 'YES': はい
             VALIDATION_FAILED_FOR_FIELDS: '保存できませんでした — 以下のフィールドが不正です: {fields}'
+            COLUMN_EMPTY: 空
+            SEARCH_MATCH_COUNT: 'すべてのページで {n, plural, other {# 件が一致}}'
+            SEARCH_SHOWING: '{total}件中{shown}件を表示中'
+            SEARCH_SHOW_MORE: さらに表示
+            STATUS:
+                EXPIRED: 期限切れ
+                EXPIRED_ON: '{date}から非公開'
+                SCHEDULED: 予約済み
+                SCHEDULED_FOR: '{date}に公開予定'
+                TOGGLE_TITLE: '{action} ({status})'
         FIELDS:
             CLEAR_DATE: 日付をクリア
             REGENERATE_SLUG: ページタイトルから自動再生成
@@ -245,6 +260,14 @@ ICU:
                 NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'アクティブなトリガーがありません。Webhook を有効にするか cron を設定してください。'
                 RUNNING: 実行中...
                 RUN_ALL: すべて実行
+                BY_HAND: 手動
+                MANUAL_RUN_HELP: 「保留中のジョブを実行」は、前回のスケジュール時刻を過ぎたジョブを実行します。これはcronエントリがないサイトで有効です。ここで開始された実行は手動として記録され、上記のcronステータスにはカウントされません。
+                NEVER: なし
+                PENDING: 保留中
+                PROCESS_UNAVAILABLE: このホストではPHPのproc_open関数が無効になっているため、ここからジョブを実行できません。スケジューラーがcronやWebhookによってトリガーされた場合は、引き続き実行されます。
+                RUN_ALL_HELP: スケジュールに関係なく、有効なすべてのジョブを今すぐ実行します。
+                RUN_NOW: このジョブを今すぐ実行
+                RUN_PENDING: 保留中のジョブを実行
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: カスタムフィールドを読み込み中...
             DATE_FORMAT:
@@ -257,6 +280,10 @@ ICU:
                 SEARCH_ICONS: アイコンを検索...
                 NO_ICONS_FOUND: アイコンが見つかりません
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: '最初の 200 件を表示 — 入力して絞り込んでください'
+                FAMILY_ALL: すべて
+                FAMILY_BRANDS: ブランド
+                FAMILY_REGULAR: レギュラー
+                FAMILY_SOLID: ソリッド
             PAGE_EXISTS:
                 CHECKING_PAGE: ページを確認中...
             PAGE_MEDIA:
@@ -298,6 +325,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 入力してEnterキーを押してください...
             SELECT_AN_ICON: アイコンを選択...
             SELECT_A_PAGE: ページを選択...
+            MEDIA:
+                ADD: メディアを追加…
+                CHANGE: 変更
+                DONE: 完了
+                MOVE_EARLIER: 前に移動
+                MOVE_LATER: 後に移動
+                REMOVE: 削除
+                SELECT: メディアを選択…
+                SELECTED_COUNT: '{count, plural, =0 {選択されていません} other {# 件選択中}}'
+                TITLE: メディアを選択
+            SET_DATE_NOW: 現在時刻に設定
         NAV:
             DASHBOARD: ダッシュボード
             CONFIGURATION: 設定
@@ -310,6 +348,7 @@ ICU:
             SYSTEM: システム
             SETTINGS: 設定
             UPDATES_AVAILABLE: '{count} 件のアップデートが利用可能です'
+            TRANSLATIONS: 翻訳
         LANG:
             SWITCH_LANGUAGE: コンテンツ言語を切り替え
             TRANSLATIONS: 翻訳
@@ -420,6 +459,7 @@ ICU:
         REAUTH_MODAL:
             SESSION_EXPIRED: セッションが期限切れです
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 続行するにはパスワードを再入力してください。作業内容は保持されています。
+            SIGN_IN_AGAIN_TO_CONTINUE: 作業を続行するには再度サインインしてください。現在の作業内容は保存されています。
         USERNAME: ユーザー名
         PASSWORD: パスワード
         REMOVE: 削除
@@ -462,6 +502,9 @@ ICU:
             LAST_14_DAYS: '過去 14 日間'
             THIS_WEEK: 今週
             THIS_MONTH: 今月
+            CHART_LABEL: 過去14日間の1日あたりのページビュー数
+            TODAY: 今日
+            VIEWS: '{count, plural, other {# ビュー}}'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: すべて表示
         STATS_WIDGET:
@@ -535,6 +578,17 @@ ICU:
                 LIST_VIEW: リスト表示
                 NEW_FOLDER: 新しいフォルダー
                 FOLDER: フォルダー
+                DELETE_SELECTED: '{count, plural, other {# 個のファイルを削除}}'
+                FILTER_ALL: すべて
+                FILTER_AUDIO: オーディオ
+                FILTER_DOCS: ドキュメント
+                FILTER_IMAGES: 画像
+                FILTER_VIDEO: ビデオ
+                SEARCHING_FOR: '検索: 「{query}」'
+                SORT_DATE: 日付
+                SORT_NAME: 名前
+                SORT_SIZE: サイズ
+                SORT_TYPE: タイプ
             MEDIA_GRAV_ADMIN: 'メディア — Grav Admin'
             MANAGE_SITE_WIDE_MEDIA_FILES: サイト全体のメディアファイルを管理
             PAGE_MEDIA:
@@ -564,6 +618,15 @@ ICU:
                 STORED: 保存されたメタデータ
                 TAGS_PLACEHOLDER: タグを追加…
                 TITLE: メタデータ
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: メディアパス
+                OPEN: 開く
+                PATH: パス
+                SIZE: サイズ
+                TITLE: ファイル詳細
+                TYPE: タイプ
+                URL: URL
         UPLOAD: アップロード
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: キャッシュをクリア
@@ -627,6 +690,10 @@ ICU:
                 REFRESH: 更新
                 LOADING_LOGS: ログを読み込み中...
                 MESSAGE: メッセージ
+                CLEAR_LOG: ログを消去
+                CLEAR_LOG_CONFIRM: '{file} 内のすべてのエントリを完全に削除しますか？この操作は元に戻すことができず、これまでに発生した問題の記録もすべて削除されます。'
+                FAILED_TO_CLEAR_LOG: ログの消去に失敗しました
+                LOG_CLEARED: '{file} を消去しました'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: レポートコンポーネントを読み込み中...
             REPORTS:
@@ -665,6 +732,20 @@ ICU:
                     SCAN_TAGS: コンテンツ内でブロックされたタグ
                     SECTION_EVENTS: 最近のブロック
                     SECTION_LEAKS: 生のTwigが漏洩しているページ
+                    POLICY_ADDED: '+{count}件追加'
+                    POLICY_ALL_DEFAULTS: すべてデフォルト（変更なし）
+                    POLICY_CLASS_COUNT: '{count, plural, one {# クラス} other {# クラス}}'
+                    POLICY_DENIED: '−{count}件拒否'
+                    POLICY_EFFECTIVE_COUNT: '{count}件が有効'
+                    POLICY_FAILED: サンドボックスポリシーを読み込めませんでした
+                    POLICY_FILTERS: フィルター
+                    POLICY_FUNCTIONS: 関数
+                    POLICY_HIDE: 有効なポリシーを非表示
+                    POLICY_INTRO: サンドボックスのベースラインはコードに含まれており、設定により緩和または制限のみが可能です。
+                    POLICY_METHODS: メソッド
+                    POLICY_PROPERTIES: プロパティ
+                    POLICY_TAGS: タグ
+                    POLICY_VIEW: 有効なポリシーを表示
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: スケジューラ設定の読み込みに失敗しました。
                 SCHEDULER_CONFIGURATION_SAVED: スケジューラ設定を保存しました
@@ -676,6 +757,12 @@ ICU:
                 CRONTAB_INSTRUCTIONS: 'スケジューラ機能を有効にするには、**{user}** ユーザーのシステム crontab に **Grav スケジューラ** を追加する必要があります。上記のコマンドをターミナルから実行すると自動的に追加されます。保存後、このページを更新してステータスを確認してください。'
                 WEBHOOK_ALTERNATIVE: 'あるいは、**scheduler-webhook** プラグインをインストールして Webhook ベースの cron 発火を使用することもできます。これはシステム crontab にアクセスできないクラウド環境で推奨されます。'
                 SECURITY_WARNING: カスタムスケジューラジョブは上級ユーザーのみが設定するようにしてください。誤設定はパフォーマンス問題やセキュリティ脆弱性の原因となります。
+                CRON_UNDETERMINED: Gravはこのサーバーのcrontabを調査できないため、スケジューラーがどのようにトリガーされているかを確認できません。
+                ENVIRONMENT_MISMATCH: 'スケジューラーは最後に **{last}** 環境で実行されましたが、このサイトは **{current}** を使用しており、user/env/{current}/config に独自の設定を持っています。そこにのみ定義されたカスタムジョブや設定は、そのトリガーからは実行されません。crontabのbin/grav scheduler行を以下のコマンドに更新する（--env={current}を渡す）か、実行前に GRAV_ENVIRONMENT={current} をエクスポートしてください。'
+                LAST_MANUAL_RUN: 最後に手動で実行
+                LAST_TRIGGERED: 最後にトリガー
+                PROCESS_UNAVAILABLE: 'このホストではPHPの proc_open 関数が無効になっているため、管理画面からジョブを開始できません。cronやWebhookによってスケジューラーがトリガーされる際は、通常通り実行されます。'
+                STATUS_UNAVAILABLE: このホストではスケジューラーのステータスを読み取れませんでした。ジョブは以下に一覧表示されており、通常通り編集可能です。
             SYSTEM_INFO:
                 FAILED_TO_LOAD_SYSTEM_INFO: システム情報の読み込みに失敗しました
                 LOADING_SYSTEM_INFO: システム情報を読み込み中...
@@ -803,6 +890,8 @@ ICU:
                 TRUSTED: 信頼されたロールのみ
                 TRUSTED_DESC: 'スーパーユーザーおよび「pages twig」権限を持つユーザーのみが、ページでTwigを有効にできます。'
             VALIDATION_FAILED_FOR_FIELDS: '保存できませんでした。以下のフィールドが正しくありません: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 設定の読み込みに失敗しました。
+            SCOPE_NOT_FOUND: '「{scope}」という名前の設定スコープは見つかりませんでした。'
         FLEX_OBJECTS:
             SEARCH: 検索...
             PREVIOUS: 前へ
@@ -870,6 +959,11 @@ ICU:
             CONTINUE_WITH: '{provider} で続ける'
             OR_CONTINUE_WITH: または以下で続ける
             SSO_FAILED: そのプロバイダーではサインインできませんでした。もう一度やり直してください。
+            CAPTCHA_FAILED_TO_LOAD: チャレンジを読み込めませんでした。ページを再読み込みして、もう一度やり直してください。
+            CAPTCHA_NOT_COMPLETED: 続行するにはチャレンジを完了してください
+            CAPTCHA_VERIFIED: 人間であることを確認しました
+            CAPTCHA_VERIFYING: 人間であることを確認中...
+            INVALID_AUTHENTICATION_CODE: 無効な認証コードです
         PLUGIN:
             BACK_TO_DASHBOARD: ダッシュボードへ戻る
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: このプラグインページに利用可能なコンテンツはありません。
@@ -1053,6 +1147,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: デフォルト
             EDITOR_KEYMAP_DESC: MarkdownおよびコードエディタでVimキーバインディングを使用します。デフォルトでは標準の編集機能が維持されます。
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: この色をコピーする
+            CURRENT_COLOR: カラー
+            DARK_SHADE: ダークシェード
+            DARK_SHADE_DESC: ダークモードの外観です。ダークモードが有効な場合にのみ適用されます。
+            DARK_SHADE_GRAPHITE: グラファイト
+            DARK_SHADE_MIDNIGHT: ミッドナイト
+            DARK_SHADE_ZINC: オニキス
+            DEFAULT_DARK_SHADE_DESC: 新規ユーザーのデフォルトのダークシェードです。ダークモードが有効な場合にのみ適用されます。
+            DEFAULT_HELP_TEXT_DESC: 新規ユーザー向けのフィールドヘルプテキストのデフォルト表示場所（ラベルの下、またはツールチップ）です。
+            HELP_MODE_INLINE: ラベルの下
+            HELP_MODE_TOOLTIP: ツールチップ内
+            HELP_TEXT: ヘルプテキスト
+            HELP_TEXT_DESC: 各フィールドの短い説明の表示場所です。ツールチップを選択した場合、ラベルの横にある情報アイコンにマウスを合わせる（スマホの場合はタップする）ことで表示されます。
+            LOGO_HEIGHT_CUSTOM: カスタム
+            LOGO_HEIGHT_DEFAULT: デフォルト
+            SIDEBAR_LOGO_HEIGHT: サイドバーロゴの高さ
+            SIDEBAR_LOGO_HEIGHT_DESC: サイドバー上部に表示されるロゴの高さです。
         CUSTOM: カスタム
         PREVIEW: プレビュー
         SETUP:
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: '{username} の状態変更に失敗しました: {detail}'
             DEMO_MODE_BLOCKED: 'これは読み取り専用のデモです — 変更は無効になっています。'
             USER_ROW_ACTION_FAILED: 'アクションを完了できませんでした: {label}'
-        TRANSLATIONS: 翻訳
+        TRANSLATIONS:
+            ACCEPT: 承諾
+            ACCEPTED_ALL: '{count, plural, one {# 件の翻訳を保存しました} other {# 件の翻訳を保存しました}}'
+            ACCEPT_ALL: すべて承諾
+            ALL_SOURCES: すべてのソース
+            CLEAR_ALL_FILTERS: フィルターをクリア
+            DESCRIPTION: 'このサイトに表示されるあらゆる文字列を、言語を問わず書き換えることができます。変更内容は `user/languages` へのオーバーライドとして保存されるため、プラグインやテーマの元ファイルを直接触ることはありません。そのため、アップデートによって変更が消去されることはありません。'
+            DISCARD: 破棄
+            DISCARD_ALL: 破棄
+            EDITED: 編集済み
+            EDITING_LANGUAGE: 編集中
+            EDIT_AS_GRID: グリッドに戻る
+            EDIT_AS_YAML: YAMLとして編集
+            EDIT_HINT: Enterで保存、Escでキャンセル、Shift+Enterで改行します。ボックスを空にするとオーバーライドが削除されます。
+            FAILED_TO_LOAD: 翻訳の読み込みに失敗しました
+            FAILED_TO_SAVE: 変更の保存に失敗しました
+            FILTERED_BY: '表示対象:'
+            FILTER_LANGUAGES: 言語をフィルタリング
+            IMPORT_ACTION: オーバーライドをインポート
+            IMPORT_ALREADY_DONE: '{count, plural, one {# 件のオーバーライドは} other {# 件のオーバーライドは}} すでに存在します'
+            IMPORT_BODY: '{count, plural, one {# 件のオーバーライドが Translation Strings プラグイン内に残っています。ここで管理するためにインポートしてください。} other {# 件のオーバーライド（{languages} 言語分）が Translation Strings プラグイン内に残っています。ここで管理するためにインポートしてください。}}'
+            IMPORT_COL_ALREADY: 存在済み
+            IMPORT_COL_CONFLICT: 競合
+            IMPORT_COL_LANGUAGE: 言語
+            IMPORT_COL_NEW: 新規
+            IMPORT_COL_SHIPPED: オリジナルと同じ
+            IMPORT_COL_UNKNOWN: 不明
+            IMPORT_CONFLICTS: '{count, plural, one {# 件のキーが} other {# 件のキーが}} 両方の場所で異なる内容に設定されています。現在サイトに表示されているプラグイン側のバージョンが優先されます。'
+            IMPORT_DISABLE_ACTION: プラグインを無効化
+            IMPORT_DISABLE_BLOCKED: 先にオーバーライドをインポートしてください。そうしないとサイトから削除されてしまいます。
+            IMPORT_DISABLE_FAILED: プラグインを無効化できませんでした
+            IMPORT_DONE: '{count, plural, one {# 件のオーバーライドをインポートしました} other {# 件のオーバーライドをインポートしました}}'
+            IMPORT_FAILED: インポートに失敗しました
+            IMPORT_HIDE_DETAIL: 詳細を隠す
+            IMPORT_LEGEND: 「オリジナルと同じ」とマークされた文字列は、プラグインやテーマがすでに提供している内容と一致するため、何の効果もないオーバーライドとして保存されることなく削除されます。
+            IMPORT_NO_CONFIG_PERMISSION: プラグイン設定を変更する権限がないため、管理者によってプラグインを無効化する必要があります。
+            IMPORT_NO_PERMISSION: 翻訳オーバーライドを書き込む権限がないため、インポートは利用できません。
+            IMPORT_PLUGIN_DISABLED: 'Translation Strings は無効化されました。以降はこのエディターが管理します。'
+            IMPORT_SHOW_DETAIL: インポート内容を表示する
+            IMPORT_STILL_ENABLED_BODY: これはこのエディターよりも後に文字列を適用するため、ここでの変更よりも優先されます。サイトが正しく表示されていることを確認してから、プラグインを無効化して切り替えを完了してください。設定はそのまま残されるため、元に戻すことが可能です。
+            IMPORT_STILL_ENABLED_TITLE: 'Translation Strings プラグインがまだ有効になっています'
+            IMPORT_TITLE: 'Translation Strings プラグインで待機中のオーバーライド'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# つのキーは、どのプラグイン、テーマ、コアファイルも提供していない文字列を指しています。確認のために保持されますが、効果はありません。} other {# つのキーは、どのプラグイン、テーマ、コアファイルも提供していない文字列を指しています。確認のために保持されますが、効果はありません。}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# つのインポートされたキーは、このサイト上の何にも提供されていない文字列を指しています。「不明」フィルターで検索してください。} other {# つのインポートされたキーは、このサイト上の何にも提供されていない文字列を指しています。「不明」フィルターで検索してください。}}'
+            INACTIVE: 無効
+            INACTIVE_HELP: このプラグインは無効であるか、またはこのテーマがアクティブではないため、その文字列はサイトで使用されていません。
+            KEY: キー
+            KIND_PLUGINS: プラグイン
+            KIND_SYSTEM: コア
+            KIND_THEMES: テーマ
+            KIND_USER: このサイト
+            LANGUAGES: 言語
+            LOADING: 翻訳を読み込み中...
+            NEXT: 次へ
+            NOTHING_TO_TRANSLATE: このページには翻訳が欠落している箇所はありません。
+            NO_RESULTS: フィルターに一致する文字列はありません。
+            NO_RESULTS_FILTERED: '現在の表示範囲: {filters}'
+            OVERRIDE_REMOVED: オーバーライドを削除しました
+            PICK_A_TARGET_LANGUAGE: 先に言語カラムを追加してください。翻訳先が存在しません。
+            PREVIOUS: 前へ
+            PROPOSALS_PENDING: '{count, plural, other {# 件の提案を確認中}}'
+            REFRESH: 更新
+            REMOVE_FILTER: このフィルターを削除
+            REVERT: 元に戻す
+            REVERTED_TO_SHIPPED: 元の文言に戻しました
+            REVERT_HELP: このオーバーライドを削除し、プラグインまたはテーマで提供されている内容に戻します。
+            SAVE: 保存
+            SAVED_UNKNOWN_KEY: '保存されましたが、{key} を提供する項目がありません。スペルを確認してください。'
+            SAVING: 保存中...
+            SCOPED_TO: '{namespace} のみ'
+            SCOPE_WHOLE_FILE: この言語のすべてのオーバーライドを編集しています
+            SEARCH_PLACEHOLDER: テキストまたはキーを検索...
+            SHIPPED_VALUE: '元の値: {value}'
+            SHOWING: '{total} 件中 {from}–{to} 件を表示'
+            SKIPPED_COUNT: '{count, plural, other {# 件スキップ}}'
+            SKIP_EMPTY: 翻訳サービスからこの文字列に対する結果が返されませんでした。
+            SKIP_ICU: このメッセージは数値や選択肢によって変化するため、各言語で個別の形式が必要です。手動で記述してください。
+            SKIP_NOTHING: この文字列はプレースホルダーのみで構成されているため、翻訳する単語がありません。
+            SKIP_NO_SOURCE: 翻訳元の言語に翻訳対象の文言が存在しません。
+            SKIP_PLACEHOLDERS: 翻訳結果のプレースホルダーが変更されていたため、保存されずに破棄されました。
+            SOURCE: ソース
+            SOURCE_LANGUAGE: ソース
+            STATE_MISSING: 欠落
+            STATE_MISSING_FALLBACK: フォールバック中
+            STATE_OVERRIDDEN: オーバーライド済み
+            STATUS_ALL: すべて
+            STATUS_MISSING: 欠落
+            STATUS_OVERRIDDEN: オーバーライド済み
+            STATUS_UNKNOWN: 不明
+            SUGGESTED: 推奨
+            SUPERSEDED_ACTION: 翻訳を開く
+            SUPERSEDED_BODY: '「翻訳」セクションには、このプラグインの全機能に加え、サイト内の全文字列に対する検索、言語ごとの網羅率、機械翻訳、および使用されなくなったキーのレポート機能が備わっています。このプラグインはGrav 1.7で引き続きサポートされます。'
+            SUPERSEDED_PENDING: '{count, plural, one {# 件のオーバーライドが} other {# 件のオーバーライドが}}ここに保存されており、インポート可能です。'
+            SUPERSEDED_TITLE: 'Grav 2.0に組み込み済み'
+            TITLE: 翻訳
+            TRANSLATE_FAILED: 翻訳に失敗しました
+            TRANSLATE_MISSING: 欠落している翻訳を翻訳する
+            TRANSLATE_ROW: 表示されているすべての言語で、この文字列の翻訳を提案する
+            TRANSLATE_THIS: この文字列の翻訳を提案する
+            TRANSLATE_UNAVAILABLE_FIND_IT: プラグインを入手
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translateの翻訳プロバイダーが設定されていないため、機械翻訳は利用できません。'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translateはインストールされていますがオフになっているため、機械翻訳は利用できません。'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'AI Translateプレミアムプラグインを使用すると、欠落している文字列のAIによる翻訳が可能になります。'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 設定を開く
+            TRANSLATING: 翻訳中...
+            UNKNOWN_KEYS_SAVED: 保存されましたが、これらのキーを提供するものはありません
+            UNKNOWN_KEY_HELP: このキーを提供するプラグイン、テーマ、コアファイルはありません。タイプミスの可能性があるか、既にアンインストールされたものの残骸である可能性があります。
+            YAML_HELP: オーバーライドを直接貼り付けたり編集したりします。プラグインやテーマが既に提供している値と一致するものは削除されるため、ファイルには実際の変更点のみが保持されます。
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: ここに文章を入力
+            YAML_SAVED: '{count, plural, =0 {{lang} にオーバーライドはありません} one {{lang} に {count} 件のオーバーライドが保存されました} other {{lang} に {count} 件のオーバーライドが保存されました}}'
         TRANSLATIONS_FALLBACK: 翻訳フォールバック
         TRANSLATIONS_FALLBACK_HELP: アクティブな言語が存在しない場合、サポートされている翻訳を通じてフォールバックします
         TWIG_3_COMPATIBILITY: 'Twig 3 互換性'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'user/data、user/accounts、user/config 配下のファイル（証明書、キー、トークン、データベースを含む）が、HTTP経由で直接ダウンロード可能な状態です。これは通常、お使いのWebサーバーでGravの.htaccessルールが適用されていないことを示しています。'
             USER_FOLDER_EXPOSED_LEARN_MORE: Webサーバーのセキュリティ対策について
             USER_FOLDER_EXPOSED_TITLE: 'セキュリティリスク: ユーザーデータフォルダーがWebからアクセス可能な状態です'
+            COLLAPSE: 折りたたむ
+            SHOW_DETAILS: 詳細を表示
+            SNOOZE: スヌーズ
+            SNOOZE_HINT: この警告を24時間非表示にします。異なるファイルが検出された場合は、それよりも早く再表示されます。
+            STORAGE_EXPOSED_ALL: すべてのテストファイルをダウンロードできたため、WebサーバーがGravのアクセスルールを全く適用していません。Apacheの場合、AllowOverride設定でサイトの.htaccessが有効になっていることを確認してください。nginx、Caddy、IISの場合は、Gravのwebserver-configsフォルダーにあるセキュリティルールを追加してください。
+            STORAGE_EXPOSED_BODY: Webサーバーが非公開であるべきディレクトリからテストファイルを配信しました。以下にリストされたファイルタイプは、保存された送信データ、バックアップ、一時ファイルなどを公開してしまう可能性があります。ホスティング業者に直接アクセスをブロックするよう依頼するか、非公開ストレージをWebルートの外に移動してください。
+            STORAGE_EXPOSED_BY_TYPE: これらのフォルダー内の一部のファイルタイプはブロックされましたが、他はダウンロード可能でした。これは通常、nginxがApacheよりも先に静的ファイルを配信しているなど、Gravのルールよりも前段で処理が行われており、ルールがチェックされる前に.zipなどの一般的なファイルタイプが応答してしまっていることを意味します。その層の設定でもこれらのフォルダーをブロックしてください。
+            STORAGE_EXPOSED_CDN: サイトがCloudflareなどのCDNの背後にある場合は、修正後にキャッシュをパージ（削除）してください。パージするまで、CDNに保存されたコピーはダウンロード可能なままとなります。
+            STORAGE_EXPOSED_COUNT: '{n, plural, other {# ファイルタイプ}}'
+            STORAGE_EXPOSED_TITLE: プライベートであるべきファイルがこのサイトからダウンロードされる可能性があります
+            STORAGE_EXPOSED_TMP: 'tmp/ 内のテストファイルがダウンロードできてしまいます（他のフォルダーはブロックされています）。ご利用のサーバー設定は、ブロック対象フォルダーのリストに tmp/ が追加された Grav 2.1.7 より前のもののようです。Grav が提供するルールに合わせるため、.htaccess、または nginx、Caddy、IIS の設定において、そのリストに tmp を追加してください。'
         CONFIRM: 確認
         DEMO:
             BANNER_COUNTDOWN: '次のリセットまで {time}'
@@ -2066,6 +2299,55 @@ ICU:
             STAY: 留まる
             SWITCH_LANGUAGE: 切り替え
             SWITCH_LANGUAGE_MESSAGE: 保存されていない変更があります。このまま言語を切り替えますか？
+        API_CLIENT:
+            INVALID_JSON_DETAIL: サーバーからの応答が有効なJSONではないため、読み取ることができませんでした。サーバー側でAPI応答とともにPHPの警告などの余分な出力が行われている可能性があります。詳細はブラウザのコンソールを確認してください。
+            INVALID_JSON_TITLE: サーバーからの予期せぬ応答
+            UNEXPECTED_RESPONSE_DETAIL: この画面が想定していない形式のデータがサーバーから返されました。詳細はブラウザのコンソールを確認してください。
+            UNEXPECTED_RESPONSE_TITLE: サーバーからの予期せぬ応答
+        CACHE_MODULES: キャッシュモジュールの出力
+        CACHE_MODULES_HELP: このページのモジュールのレンダリング済み出力をキャッシュします。すべての訪問者に対して同じコンテンツを表示するモジュールでのみ使用してください。独自のTwigを持つモジュールやフォームを含むモジュール、ログイン中の訪問者、フォーム送信は常に最新の状態でレンダリングされます。部分的なテンプレートのみを編集した場合は、キャッシュのクリアが必要です。
+        DEBUGGER_FLEX_RENDER_HINTS: Flexレンダリングヒント
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: レンダリングされたすべてのFlexオブジェクトおよびコレクションを、名前付きのHTMLコメントで囲むことで、ページマークアップ内のブロックのソースを特定できるようにします。HTMLページにのみ適用されます。
+        FRONTMATTER_NATIVE_YAML: 高速フロントマター解析
+        FRONTMATTER_NATIVE_YAML_HELP: 'libyaml PHP拡張機能がインストールされている場合、それを使用してページフロントマターを読み込みます。これによりページキャッシュの再構築が高速化されます。一部の値の読み取り方が異なるため、事前にページを確認してください。引用符で囲まれていない日付はタイムスタンプではなくテキストとして保持され、引用符で囲まれていない yes、no、on、off は true または false になります。'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'これにより、Gravは v{current} から v{target} へアップグレードされます。アップグレード中、サイトが一時的に利用できなくなる可能性があります。'
+            CONFIRM_TITLE: Gravコアをアップグレードしますか？
+            FAILED: 'Gravのアップグレードに失敗しました: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} は Grav {compatible} と互換性があるとマークされています'
+            NO_DETAIL: サーバーから理由は提示されませんでした
+            PREFLIGHT_MESSAGE: アップグレード前に実行されるチェックにより、以下の理由で中断されました。これらを修正してから再試行するか、これらのプラグインやテーマが新しいバージョンで動作することを確認している場合は、そのままアップグレードしてください。
+            PREFLIGHT_TITLE: 'Gravを v{version} にアップグレードできません'
+            STILL_BLOCKED: 'Gravのアップグレードはまだブロックされています: {detail}'
+            UPGRADE_ANYWAY: 強制的にアップグレード
+            UPGRADING: 'Gravを v{version} にアップグレード中…'
+        HELP: ヘルプ
+        HELP_FOR_LABEL: '{label} のヘルプ'
+        IMAGES_PROGRESSIVE_JPEG: プログレッシブJPEG
+        IMAGES_PROGRESSIVE_JPEG_HELP: リサイズおよびキャッシュされたJPEGをプログレッシブ形式で保存します。これにより、画像が上から順に描画されるのではなく、全体がぼやけた状態から徐々に鮮明になるように表示されます。通常、ファイルサイズも小さくなります。PNG、WebP、AVIFには影響しません。
+        MARKDOWN_OUTPUT: Markdown出力
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 絶対URL
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: ルート相対リンクと画像を完全なURLに変換します。これにより、Markdownがサイト外に出ても機能し続けます。
+        MARKDOWN_OUTPUT_ENABLED: ページをMarkdownとして配信
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'どのページでも、URLに「.md」を追加するか、「Accept:&nbsp;text/markdown」リクエストヘッダーを送信することでMarkdownとして取得できます。AIエージェントやその他のテキストクライアント向けに構築されています。ページはテーマを通してレンダリングされ、メインコンテンツ領域に縮小されて変換されるため、リスト、ショップ、モジュール式ページなどが表示通りに読み取れます。'
+        MARKDOWN_OUTPUT_FRONTMATTER: フロントマターブロック
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: Markdownの先頭に、タイトル、URL、日付、説明、タクソノミーを含むYAMLブロックを配置します。
+        MARKDOWN_OUTPUT_LINKS: ナビゲーションリンク
+        MARKDOWN_OUTPUT_LINKS_HELP: Markdownの末尾に親、隣接、子ページへのリンクを追加します。これにより、エージェントはMarkdownから離れることなくサイト内を移動できます。
+        MARKDOWN_OUTPUT_MAX_LINKS: 子リンクの最大数
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: ナビゲーションセクションにリストされる子ページの最大数です。0にするとすべて表示されます。
+        MARKDOWN_OUTPUT_TOKEN_HEADER: トークンカウントヘッダー
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: '推定トークン数を含む「X-Markdown-Tokens」レスポンスヘッダーを送信します。これはCloudflareの「Markdown for Agents」で使用されているものと同じヘッダーです。'
+        NOTICES:
+            HEADING: '{count, plural, one {通知} other {通知}}'
+            HIDE: 通知を隠す
+            SHOW: 通知を表示する
+        PAGES_LAZY_INDEX: 遅延ページインデックス
+        PAGES_LAZY_INDEX_HELP: '巨大なキャッシュファイルを使用する代わりに、ページごとのSQLiteインデックスから要求に応じてページ、ルート、タクソノミーを読み込みます。1,000ページ以上のサイトでは自動的に使用されます。データベースエンジンが利用できない場合は、従来のキャッシュにフォールバックします。'
+        RETRY: 再試行
+        SESSION_LAZY: 必要な時のみセッションを開始する
+        SESSION_LAZY_HELP: 'セッションクッキーを持たない訪問者は、ログイン、フォーム、メッセージなど、セッションに何かを保存する必要がある場合のみセッションが開始されます。これにより、匿名ユーザーのページビューはプロキシや CDN でキャッシュ可能になります。ページビューごとにデータを保存するプラグインを使用している場合は、引き続きセッションが開始されます。'
+        UPDATE_CHANGELOG_TITLE: 'v{version} での変更点'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA 有効'
         2FA_SECRET: '2FA シークレット'

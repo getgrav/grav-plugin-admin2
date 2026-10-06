@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Apenas funções fidedignas'
                 TRUSTED_DESC: 'Apenas superutilizadores e detentores da permissão «pages twig» podem ativar o Twig numa página.'
             VALIDATION_FAILED_FOR_FIELDS: 'Não foi possível guardar — estes campos são inválidos: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Falha ao carregar a configuração.'
+            SCOPE_NOT_FOUND: 'Não foi encontrado nenhum âmbito de configuração com o nome {scope}.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ambiente
             EXPORT_YAML: 'Exportar YAML'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: 'Status do Agendador'
                 STATUS: 'Status:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: manualmente
+                MANUAL_RUN_HELP: '«Executar Pendentes» corre os trabalhos que perderam a sua última hora agendada, o que é o pretendido num site sem entrada cron. As execuções iniciadas aqui são registadas como manuais e não contam para o estado do cron acima.'
+                NEVER: Nunca
+                PENDING: Pendente
+                PROCESS_UNAVAILABLE: 'Os trabalhos não podem ser executados a partir daqui neste hospedeiro, porque a função proc_open do PHP está desativada. Eles continuam a ser executados sempre que o seu agendador é acionado por cron ou um webhook.'
+                RUN_ALL_HELP: 'Executar todos os trabalhos ativados agora, independentemente do que o agendamento diz.'
+                RUN_NOW: 'Executar este trabalho agora'
+                RUN_PENDING: 'Executar Pendentes'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Carregando campo personalizado...'
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'Nenhum ícone encontrado'
                 SEARCH_ICONS: 'Pesquisar ícones...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Mostrando os primeiros 200 resultados — digite para refinar'
+                FAMILY_ALL: Tudo
+                FAMILY_BRANDS: Marcas
+                FAMILY_REGULAR: Regular
+                FAMILY_SOLID: Sólido
             NO_TAXONOMY_TYPES: 'Nenhum tipo de taxonomia configurado'
             PAGES:
                 FILTER_PAGES: 'Filtrar páginas...'
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Escreva e prima Enter...'
             SELECT_AN_ICON: 'Selecionar um ícone...'
             SELECT_A_PAGE: 'Selecionar uma página...'
+            MEDIA:
+                ADD: 'Adicionar multimédia…'
+                CHANGE: Alterar
+                DONE: Concluído
+                MOVE_EARLIER: 'Mover para anterior'
+                MOVE_LATER: 'Mover para posterior'
+                REMOVE: Remover
+                SELECT: 'Selecionar multimédia…'
+                SELECTED_COUNT: '{count, plural, =0 {Nada selecionado} one {# selecionado} other {# selecionados}}'
+                TITLE: 'Selecionar multimédia'
+            SET_DATE_NOW: 'Definir para agora'
         FLEX_OBJECTS:
             ACTIONS: Ações
             BACK_TO_LIST: 'Voltar para a Lista'
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Continuar com {provider}'
             OR_CONTINUE_WITH: 'Ou continuar com'
             SSO_FAILED: 'Não foi possível iniciar sessão com esse fornecedor. Por favor, tente novamente.'
+            CAPTCHA_FAILED_TO_LOAD: 'O desafio não pôde ser carregado. Recarregue a página e tente novamente.'
+            CAPTCHA_NOT_COMPLETED: 'Por favor, complete o desafio para continuar'
+            CAPTCHA_VERIFIED: 'Verificado que é humano'
+            CAPTCHA_VERIFYING: 'A verificar que é humano...'
+            INVALID_AUTHENTICATION_CODE: 'Código de autenticação inválido'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nada a pré-visualizar'
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: 'Visualização em lista'
                 NEW_FOLDER: 'Nova pasta'
                 SEARCH_MEDIA: 'Pesquisar mídia...'
+                DELETE_SELECTED: '{count, plural, one {Eliminar # ficheiro} other {Eliminar # ficheiros}}'
+                FILTER_ALL: Todos
+                FILTER_AUDIO: Áudio
+                FILTER_DOCS: Documentos
+                FILTER_IMAGES: Imagens
+                FILTER_VIDEO: Vídeo
+                SEARCHING_FOR: 'Pesquisar: «{query}»'
+                SORT_DATE: Data
+                SORT_NAME: Nome
+                SORT_SIZE: Tamanho
+                SORT_TYPE: Tipo
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Arrastar para o editor'
                 PAGE_MEDIA: 'Mídia da Página'
@@ -448,6 +489,15 @@ ICU:
                 STORED: 'Metadados armazenados'
                 TAGS_PLACEHOLDER: 'Adicionar etiqueta...'
                 TITLE: Metadados
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: 'Caminho de media'
+                OPEN: Abrir
+                PATH: Caminho
+                SIZE: Tamanho
+                TITLE: 'Detalhes do ficheiro'
+                TYPE: Tipo
+                URL: URL
         NAV:
             CONFIGURATION: Configuração
             DASHBOARD: Painel
@@ -460,6 +510,7 @@ ICU:
             TOOLS: Ferramentas
             USERS: Usuários
             UPDATES_AVAILABLE: '{count} atualização(ões) disponível(eis)'
+            TRANSLATIONS: Traduções
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Nenhum item de feed'
         NORMAL_MODE: 'Modo normal'
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Escreva seu conteúdo markdown aqui...'
                 SAVED_BY_PEER: '{user} guardou esta página'
                 SAVED_BY_PEER_ANON: 'Outro utilizador guardou esta página'
+                FALLBACK_NOTICE_UNRESOLVED: 'O servidor devolveu a versão {effective} desta página em vez da {active}, e não reportou a {active} como inexistente. A gravação está desativada aqui para que o ficheiro {effective} não seja substituído. Se todas as páginas apresentarem este comportamento, o servidor web provavelmente não está a passar as query strings para o Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'apresentado na sua página ascendente'
+                TEMPLATE_MISSING_NOTICE: 'O template **{template}** para este módulo não foi encontrado no tema, por isso a página à qual pertence apresenta um erro de «template não encontrado». Escolha um template em **Modelo de Página** no separador Avançado, ou adicione o template ao tema.'
             EDIT_PAGE: 'Editar Página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'Nome de pasta seguro para URL desta página'
                 VISIBLE: Visível
+                CHILD_TYPE_HINT: 'A página ascendente sugere «{template}» para os seus descendentes. Ainda pode escolher um template diferente.'
+                STATUS_HELP: 'Os rascunhos são guardados mas não ficam visíveis no site até serem publicados'
             NO_PAGES: 'Nenhuma página encontrada'
             NO_SEARCH_RESULTS: 'Nenhuma página corresponde à sua pesquisa'
             PAGES_GRAV_ADMIN: 'Páginas — Grav Admin'
@@ -626,6 +682,16 @@ ICU:
                 VISIBLE: Visível
                 'YES': Sim
             VALIDATION_FAILED_FOR_FIELDS: 'Não foi possível guardar — estes campos são inválidos: {fields}'
+            COLUMN_EMPTY: Vazio
+            SEARCH_MATCH_COUNT: '{n, plural, one {# correspondência} other {# correspondências}} em todas as páginas'
+            SEARCH_SHOWING: 'A mostrar {shown} de {total} resultados'
+            SEARCH_SHOW_MORE: 'Mostrar mais'
+            STATUS:
+                EXPIRED: Expirado
+                EXPIRED_ON: 'Não publicado desde {date}'
+                SCHEDULED: Agendado
+                SCHEDULED_FOR: 'Agendado para publicação em {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Senha
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisitos de senha'
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: 'Últimos 14 dias'
             THIS_MONTH: 'Este Mês'
             THIS_WEEK: 'Esta Semana'
+            CHART_LABEL: 'Visualizações de página por dia nos últimos 14 dias'
+            TODAY: Hoje
+            VIEWS: '{count, plural, one {# visualização} other {# visualizações}}'
         PREMIUM: Premium
         PREVIEW: Visualizar
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Digite novamente sua senha para continuar. Seu trabalho foi preservado.'
             SESSION_EXPIRED: 'Sessão expirada'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Inicie sessão novamente para continuar. O seu trabalho foi preservado.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Ver todos'
         REMOVE: Remover
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Predefinido
             EDITOR_KEYMAP_DESC: 'Utilizar atalhos de teclado Vim nos editores de Markdown e código. O modo predefinido mantém a edição padrão.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Copiar esta cor'
+            CURRENT_COLOR: Cor
+            DARK_SHADE: 'Tom Escuro'
+            DARK_SHADE_DESC: 'Como o modo escuro aparece. Apenas tem efeito enquanto o modo escuro estiver ativo.'
+            DARK_SHADE_GRAPHITE: Grafite
+            DARK_SHADE_MIDNIGHT: Meia-noite
+            DARK_SHADE_ZINC: Ónix
+            DEFAULT_DARK_SHADE_DESC: 'Tom escuro predefinido para novos utilizadores. Apenas tem efeito enquanto o modo escuro estiver ativo.'
+            DEFAULT_HELP_TEXT_DESC: 'Localização predefinida do texto de ajuda do campo para novos utilizadores, abaixo do rótulo ou numa dica de ferramenta (tooltip).'
+            HELP_MODE_INLINE: 'Abaixo do rótulo'
+            HELP_MODE_TOOLTIP: 'Numa dica de ferramenta'
+            HELP_TEXT: 'Texto de Ajuda'
+            HELP_TEXT_DESC: 'Onde aparece a breve explicação para cada campo. Numa dica de ferramenta, passe o rato sobre o ícone de informação junto a um rótulo, ou toque nele num telemóvel, para o ler.'
+            LOGO_HEIGHT_CUSTOM: Personalizado
+            LOGO_HEIGHT_DEFAULT: Predefinido
+            SIDEBAR_LOGO_HEIGHT: 'Altura do Logótipo da Barra Lateral'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'A altura a que o seu logótipo aparece no topo da barra lateral.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, hífens, sublinhados'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Conta de administrador criada — bem-vindo ao Grav'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: Atualizar
                 SEARCH_MESSAGES: 'Pesquisar mensagens...'
                 WARNING: Aviso
+                CLEAR_LOG: 'Limpar registo'
+                CLEAR_LOG_CONFIRM: 'Eliminar permanentemente todas as entradas em {file}? Isto não pode ser anulado, e qualquer registo do que correu mal anteriormente será perdido.'
+                FAILED_TO_CLEAR_LOG: 'Falha ao limpar o registo'
+                LOG_CLEARED: 'Limpo {file}'
             REPORTS:
                 CONTENT_FIELD: 'conteúdo: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Falha ao carregar relatórios'
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 'Tags bloqueadas no conteúdo'
                     SECTION_EVENTS: 'Bloqueios recentes'
                     SECTION_LEAKS: 'Páginas com Twig exposto'
+                    POLICY_ADDED: '+{count} adicionado'
+                    POLICY_ALL_DEFAULTS: 'Todas as predefinições, inalteradas'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# classe} other {# classes}}'
+                    POLICY_DENIED: '−{count} recusado'
+                    POLICY_EFFECTIVE_COUNT: '{count} efetivo'
+                    POLICY_FAILED: 'Não foi possível carregar a política de sandbox'
+                    POLICY_FILTERS: Filtros
+                    POLICY_FUNCTIONS: Funções
+                    POLICY_HIDE: 'Ocultar política efetiva'
+                    POLICY_INTRO: 'A linha de base da sandbox vem no código; a sua configuração apenas a alarga ou restringe.'
+                    POLICY_METHODS: Métodos
+                    POLICY_PROPERTIES: Propriedades
+                    POLICY_TAGS: Tags
+                    POLICY_VIEW: 'Ver política efetiva'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Carregando componente de relatório...'
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Configuração do agendador salva'
                 SECURITY_WARNING: 'Apenas usuários avançados devem configurar trabalhos do agendador personalizados. A configuração incorreta pode causar problemas de desempenho ou vulnerabilidades de segurança.'
                 WEBHOOK_ALTERNATIVE: 'Alternativamente, instale o plugin **scheduler-webhook** para usar disparo de cron baseado em webhook, recomendado para ambientes em nuvem onde o acesso ao crontab do sistema não está disponível.'
+                CRON_UNDETERMINED: 'O Grav não consegue inspecionar o crontab deste servidor, pelo que não pode confirmar como o agendador está a ser acionado.'
+                ENVIRONMENT_MISMATCH: 'O agendador foi executado pela última vez no ambiente **{last}**, mas este site está a utilizar o **{current}**, que tem a sua própria configuração em user/env/{current}/config. Tarefas e definições personalizadas apenas definidas lá nunca são executadas a partir desse acionador. Atualize a linha do agendador bin/grav no seu crontab para o comando abaixo (este passa --env={current}), ou exporte GRAV_ENVIRONMENT={current} antes de ser executado.'
+                LAST_MANUAL_RUN: 'Última execução manual'
+                LAST_TRIGGERED: 'Último acionamento'
+                PROCESS_UNAVAILABLE: 'Este anfitrião tem a função proc_open do PHP desativada, pelo que as tarefas não podem ser iniciadas a partir da administração. Elas continuam a ser executadas sempre que o seu agendador for acionado pelo cron ou por um webhook.'
+                STATUS_UNAVAILABLE: 'O estado do agendador não pôde ser lido neste anfitrião. As suas tarefas continuam listadas abaixo e podem ser editadas como habitualmente.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} livre de {total}'
                 DISK_USAGE: 'Uso de Disco'
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'Falha ao alterar o estado de {username}: {detail}'
             DEMO_MODE_BLOCKED: 'Esta é uma demonstração apenas de leitura — as alterações estão desativadas.'
             USER_ROW_ACTION_FAILED: 'Não foi possível completar a ação: {label}'
-        TRANSLATIONS: Traduções
+        TRANSLATIONS:
+            ACCEPT: Aceitar
+            ACCEPTED_ALL: '{count, plural, one {# tradução guardada} other {# traduções guardadas}}'
+            ACCEPT_ALL: 'Aceitar tudo'
+            ALL_SOURCES: 'Todas as fontes'
+            CLEAR_ALL_FILTERS: 'Limpar filtros'
+            DESCRIPTION: 'Reescreva qualquer texto que este site apresente, em qualquer idioma. As alterações são guardadas como substituições em user/languages e nunca tocam nos ficheiros próprios de um plugin ou tema, pelo que uma atualização não os pode apagar.'
+            DISCARD: Descartar
+            DISCARD_ALL: Descartar
+            EDITED: editado
+            EDITING_LANGUAGE: 'A editar'
+            EDIT_AS_GRID: 'Voltar à grelha'
+            EDIT_AS_YAML: 'Editar como YAML'
+            EDIT_HINT: 'Enter para guardar, Escape para cancelar, Shift+Enter para uma nova linha. Limpe a caixa para remover a sua substituição.'
+            FAILED_TO_LOAD: 'Falha ao carregar as traduções'
+            FAILED_TO_SAVE: 'Falha ao guardar essa alteração'
+            FILTERED_BY: 'A mostrar apenas'
+            FILTER_LANGUAGES: 'Filtrar idiomas'
+            IMPORT_ACTION: 'Importar substituições'
+            IMPORT_ALREADY_DONE: '{count, plural, one {# substituição já está aqui} other {# substituições já estão aqui}}'
+            IMPORT_BODY: '{count, plural, one {# substituição ainda está guardada no plugin Translation Strings. Importe-a para a gerir aqui.} other {# substituições em {languages, plural, one {# idioma} other {# idiomas}} ainda estão guardadas no plugin Translation Strings. Importe-as para as gerir aqui.}}'
+            IMPORT_COL_ALREADY: 'Já aqui'
+            IMPORT_COL_CONFLICT: 'Em conflito'
+            IMPORT_COL_LANGUAGE: Idioma
+            IMPORT_COL_NEW: Novo
+            IMPORT_COL_SHIPPED: 'Igual ao original'
+            IMPORT_COL_UNKNOWN: Desconhecido
+            IMPORT_CONFLICTS: '{count, plural, one {# chave está} other {# chaves estão}} definida(s) em ambos os locais com texto diferente. A versão do plugin prevalece, porque é essa que o seu site apresenta atualmente.'
+            IMPORT_DISABLE_ACTION: 'Desativar o plugin'
+            IMPORT_DISABLE_BLOCKED: 'Importe primeiro as substituições, ou estas serão removidas do site.'
+            IMPORT_DISABLE_FAILED: 'Não foi possível desativar o plugin'
+            IMPORT_DONE: 'Importado {count, plural, one {# substituição} other {# substituições}}'
+            IMPORT_FAILED: 'Falha na importação'
+            IMPORT_HIDE_DETAIL: 'Ocultar detalhes'
+            IMPORT_LEGEND: 'As strings marcadas como «igual ao original» correspondem às que o plugin ou tema já inclui, pelo que são ignoradas em vez de armazenadas como substituições sem efeito.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Não tem permissão para alterar as definições do plugin, pelo que o plugin tem de ser desativado por um administrador.'
+            IMPORT_NO_PERMISSION: 'Não tem permissão para escrever substituições de tradução, pelo que a importação não está disponível.'
+            IMPORT_PLUGIN_DISABLED: 'Strings de tradução desativadas. Este editor está agora no comando.'
+            IMPORT_SHOW_DETAIL: 'Mostrar o que será importado'
+            IMPORT_STILL_ENABLED_BODY: 'Aplica as suas strings após este editor, por isso continua a substituir qualquer coisa que altere aqui. Verifique se o site é apresentado corretamente e, em seguida, desative-o para concluir a transição. As suas definições são mantidas, pelo que este processo é reversível.'
+            IMPORT_STILL_ENABLED_TITLE: 'O plugin Translation Strings ainda está ativado'
+            IMPORT_TITLE: 'Substituições pendentes no plugin Translation Strings'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# nome de chave refere uma string que nenhum plugin, tema ou ficheiro principal fornece. É mantida para que a possa rever, mas não tem qualquer efeito.} other {# nomes de chaves referem strings que nenhum plugin, tema ou ficheiro principal fornece. São mantidos para que os possa rever, mas não têm qualquer efeito.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# chave importada refere uma string} other {# chaves importadas referem strings}} que nada neste site fornece. Encontre-as com o filtro Desconhecido.'
+            INACTIVE: inativo
+            INACTIVE_HELP: 'Este plugin está desativado ou este tema não é o ativo, pelo que as suas strings não são utilizadas no site.'
+            KEY: Chave
+            KIND_PLUGINS: Plugins
+            KIND_SYSTEM: Núcleo
+            KIND_THEMES: Temas
+            KIND_USER: 'Este site'
+            LANGUAGES: Idiomas
+            LOADING: 'A carregar traduções...'
+            NEXT: Seguinte
+            NOTHING_TO_TRANSLATE: 'Nenhum elemento nesta página tem falta de tradução.'
+            NO_RESULTS: 'Nenhuma string corresponde a estes filtros.'
+            NO_RESULTS_FILTERED: 'Está a visualizar: {filters}'
+            OVERRIDE_REMOVED: 'Substituição removida'
+            PICK_A_TARGET_LANGUAGE: 'Adicione primeiro uma coluna de idioma — não existe nada para traduzir.'
+            PREVIOUS: Anterior
+            PROPOSALS_PENDING: '{count, plural, one {# sugestão para rever} other {# sugestões para rever}}'
+            REFRESH: Atualizar
+            REMOVE_FILTER: 'Remover este filtro'
+            REVERT: Reverter
+            REVERTED_TO_SHIPPED: 'Revertido para a redação original'
+            REVERT_HELP: 'Remover esta substituição e voltar ao que o plugin ou tema fornece.'
+            SAVE: Guardar
+            SAVED_UNKNOWN_KEY: 'Guardado, mas nada fornece {key} — verifique a grafia'
+            SAVING: 'A guardar...'
+            SCOPED_TO: 'Apenas {namespace}'
+            SCOPE_WHOLE_FILE: 'A editar todas as substituições para este idioma'
+            SEARCH_PLACEHOLDER: 'Pesquisar texto ou chave...'
+            SHIPPED_VALUE: 'Originalmente: {value}'
+            SHOWING: 'A mostrar {from}–{to} de {total}'
+            SKIPPED_COUNT: '{count, plural, one {# ignorada} other {# ignoradas}}'
+            SKIP_EMPTY: 'O serviço de tradução não devolveu nada para esta cadeia.'
+            SKIP_ICU: 'Esta mensagem altera-se com um número ou uma escolha, e cada idioma precisa do seu próprio conjunto de formas. Escreva esta manualmente.'
+            SKIP_NOTHING: 'Esta cadeia contém apenas marcadores de posição, por isso não há palavras para traduzir.'
+            SKIP_NO_SOURCE: 'Não existe redação no idioma de origem para traduzir.'
+            SKIP_PLACEHOLDERS: 'A tradução foi devolvida com os seus marcadores de posição alterados, pelo que foi descartada em vez de guardada.'
+            SOURCE: origem
+            SOURCE_LANGUAGE: Origem
+            STATE_MISSING: 'em falta'
+            STATE_MISSING_FALLBACK: 'a recorrer a'
+            STATE_OVERRIDDEN: substituído
+            STATUS_ALL: Tudo
+            STATUS_MISSING: 'Em falta'
+            STATUS_OVERRIDDEN: Substituído
+            STATUS_UNKNOWN: Desconhecido
+            SUGGESTED: Sugerido
+            SUPERSEDED_ACTION: 'Abrir Traduções'
+            SUPERSEDED_BODY: 'A secção Traduções faz tudo o que este plugin faz, acrescentando a pesquisa em todas as cadeias de texto do site, cobertura por idioma, tradução automática e um relatório de chaves que já não são utilizadas por nada. Este plugin continua a ser suportado no Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# substituição está} other {# substituições estão}} ainda guardadas aqui e podem ser importadas.'
+            SUPERSEDED_TITLE: 'Integrado no Grav 2.0'
+            TITLE: Traduções
+            TRANSLATE_FAILED: 'Tradução falhou'
+            TRANSLATE_MISSING: 'Traduzir o que falta'
+            TRANSLATE_ROW: 'Sugerir traduções para esta cadeia em todos os idiomas apresentados'
+            TRANSLATE_THIS: 'Sugerir uma tradução para esta cadeia'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'Obter o plugin'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'O AI Translate ainda não tem um fornecedor de tradução configurado, pelo que a tradução automática não está disponível.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'O AI Translate está instalado, mas desligado, pelo que a tradução automática não está disponível.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'A tradução de cadeias em falta com tecnologia de IA está disponível com o plugin premium AI Translate.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Abrir as suas definições'
+            TRANSLATING: 'A traduzir...'
+            UNKNOWN_KEYS_SAVED: 'Guardado, mas nada fornece estas chaves'
+            UNKNOWN_KEY_HELP: 'Nenhum plugin, tema ou ficheiro principal fornece esta chave. Trata-se provavelmente de um erro de digitação ou de um resquício de algo que já não está instalado.'
+            YAML_HELP: 'Cole ou edite substituições diretamente. Os valores que correspondem ao que o plugin ou o tema já fornece são descartados, para que o ficheiro contenha apenas alterações reais.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: O seu texto aqui
+            YAML_SAVED: '{count, plural, =0 {Nenhuma substituição restante em {lang}} one {# substituição guardada em {lang}} other {# substituições guardadas em {lang}}}'
         TRANSLATIONS_FALLBACK: 'Retorno automático de traduções'
         TRANSLATIONS_FALLBACK_HELP: 'Retorna automaticamente a traduções suportadas se o idioma ativo não existir'
         TWIG_3_COMPATIBILITY: 'Compatibilidade Twig 3'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Ficheiros em user/data, user/accounts e user/config podem ser descarregados diretamente via HTTP — incluindo certificados, chaves, tokens e bases de dados. Isto significa, normalmente, que o seu servidor web não está a aplicar as regras .htaccess do Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Como proteger o seu servidor web'
             USER_FOLDER_EXPOSED_TITLE: 'Risco de segurança: as suas pastas de dados de utilizador estão acessíveis a partir da web'
+            COLLAPSE: Recolher
+            SHOW_DETAILS: 'Mostrar detalhes'
+            SNOOZE: Adiar
+            SNOOZE_HINT: 'Ocultar este aviso durante 24 horas. Voltará a aparecer mais cedo se forem encontrados ficheiros diferentes.'
+            STORAGE_EXPOSED_ALL: 'Foi possível descarregar todos os ficheiros de teste, pelo que o seu servidor web não está a aplicar as regras de acesso do Grav. No Apache, verifique se o AllowOverride permite que o .htaccess do site entre em vigor. No nginx, Caddy ou IIS, adicione as regras de segurança da pasta webserver-configs do Grav.'
+            STORAGE_EXPOSED_BODY: 'O servidor web serviu ficheiros de teste a partir de diretórios que deveriam ser privados. Os tipos de ficheiros listados abaixo podem expor submissões armazenadas, cópias de segurança ou ficheiros temporários. Peça ao seu alojamento para bloquear o acesso direto ou mova o armazenamento privado para fora da raiz web.'
+            STORAGE_EXPOSED_BY_TYPE: 'Alguns tipos de ficheiros foram bloqueados nestas pastas enquanto outros puderam ser descarregados. Isso geralmente significa que algo precede as regras do Grav, como o nginx a servir ficheiros estáticos antes do Apache, respondendo por tipos de ficheiros comuns como .zip antes das regras serem verificadas. Bloqueie estas pastas também na configuração dessa camada.'
+            STORAGE_EXPOSED_CDN: 'Se o site estiver atrás de uma CDN, como a Cloudflare, limpe a sua cache depois de corrigir isto. As cópias que já foram armazenadas continuam a poder ser descarregadas até que o faça.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# tipo de ficheiro} other {# tipos de ficheiro}}'
+            STORAGE_EXPOSED_TITLE: 'Ficheiros que deveriam ser privados podem ser descarregados a partir deste site'
+            STORAGE_EXPOSED_TMP: 'Ficheiros de teste em tmp/ podem ser descarregados, enquanto as outras pastas foram bloqueadas. As regras do seu servidor datam provavelmente de antes do Grav 2.1.7, que adicionou tmp/ à lista de pastas bloqueadas. Adicione tmp a essa lista no seu .htaccess, ou na sua configuração nginx, Caddy ou IIS, para corresponder às regras fornecidas pelo Grav.'
         CONFIRM: Confirmar
         DEMO:
             BANNER_COUNTDOWN: 'Próximo reinício em {time}'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: Permanecer
             SWITCH_LANGUAGE: Mudar
             SWITCH_LANGUAGE_MESSAGE: 'Tem alterações não guardadas. Mudar de idioma mesmo assim?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'A resposta do servidor não pôde ser lida porque não é um JSON válido. Algo no servidor poderá estar a imprimir saída adicional, como um aviso PHP, juntamente com a resposta da API. A consola do navegador contém os detalhes.'
+            INVALID_JSON_TITLE: 'Resposta inesperada do servidor'
+            UNEXPECTED_RESPONSE_DETAIL: 'O servidor respondeu com dados num formato que este ecrã não espera. A consola do navegador contém os detalhes.'
+            UNEXPECTED_RESPONSE_TITLE: 'Resposta inesperada do servidor'
+        CACHE_MODULES: 'Cache de saída dos módulos'
+        CACHE_MODULES_HELP: 'Colocar em cache a saída renderizada dos módulos desta página. Utilize apenas quando os módulos apresentam o mesmo conteúdo a todos os visitantes. Módulos com Twig próprio ou um formulário, visitantes autenticados e submissões de formulários são sempre renderizados de novo. Editar apenas um modelo parcial requer uma limpeza de cache.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Sugestões de Renderização Flex'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Envolver cada objeto e coleção Flex renderizados num comentário HTML que o identifica, para que a origem de um bloco possa ser encontrada no código da página. Aplica-se apenas a páginas HTML.'
+        FRONTMATTER_NATIVE_YAML: 'Processamento rápido de frontmatter'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Ler o frontmatter da página com a extensão PHP libyaml quando instalada, o que torna a reconstrução da cache de páginas mais rápida. Lê alguns valores de forma diferente, por isso verifique as suas páginas primeiro. Uma data sem aspas permanece texto em vez de se tornar um carimbo de data/hora, e os valores yes, no, on e off sem aspas tornam-se true ou false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Isto irá atualizar o Grav da v{current} para a v{target}. O site poderá ficar brevemente indisponível durante a atualização.'
+            CONFIRM_TITLE: 'Atualizar o núcleo do Grav?'
+            FAILED: 'A atualização do Grav falhou: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} está marcado como compatível com Grav {compatible}'
+            NO_DETAIL: 'o servidor não deu qualquer motivo'
+            PREFLIGHT_MESSAGE: 'As verificações executadas antes de uma atualização impediram-na pelos seguintes motivos. Corrija-os e tente novamente, ou atualize mesmo assim se souber que estes plugins e temas funcionam com a nova versão.'
+            PREFLIGHT_TITLE: 'O Grav ainda não pode ser atualizado para a v{version}'
+            STILL_BLOCKED: 'A atualização do Grav continua bloqueada: {detail}'
+            UPGRADE_ANYWAY: 'Atualizar mesmo assim'
+            UPGRADING: 'A atualizar o Grav para a v{version}…'
+        HELP: Ajuda
+        HELP_FOR_LABEL: 'Ajuda para {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'JPEGs progressivos'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Guardar JPEGs redimensionados e em cache como progressivos, para que apareçam como uma imagem desfocada completa que se torna nítida em vez de carregar do topo para baixo. Geralmente também são mais pequenos. Não afeta PNG, WebP ou AVIF.'
+        MARKDOWN_OUTPUT: 'Saída de Markdown'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'URLs absolutos'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'Transforma links e imagens relativos à raiz em URLs completos, para que continuem a funcionar depois de o Markdown sair do site.'
+        MARKDOWN_OUTPUT_ENABLED: 'Servir páginas como Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Qualquer página pode ser obtida como Markdown adicionando `.md` ao seu URL, ou enviando um cabeçalho de pedido `Accept:&nbsp;text/markdown`. Criado para agentes de IA e outros clientes de texto. A página é renderizada através do tema, reduzida à sua região de conteúdo principal e convertida, para que listagens, lojas e páginas modulares sejam lidas da forma como são apresentadas.'
+        MARKDOWN_OUTPUT_FRONTMATTER: 'Bloco de Frontmatter'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Inicie o Markdown com um bloco YAML contendo o título, URL, data, descrição e taxonomia.'
+        MARKDOWN_OUTPUT_LINKS: 'Links de navegação'
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Termine o Markdown com links para a página pai, páginas vizinhas e páginas filhas, para que um agente possa percorrer o site sem sair do Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Máximo de links para páginas filhas'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'O número máximo de páginas filhas listadas na secção de navegação. Zero lista-as todas.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Cabeçalho de contagem de tokens'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Enviar um cabeçalho de resposta `X-Markdown-Tokens` com uma estimativa da contagem de tokens, o mesmo cabeçalho que o Markdown for Agents da Cloudflare utiliza.'
+        NOTICES:
+            HEADING: '{count, plural, one {Aviso} other {Avisos}}'
+            HIDE: 'Ocultar avisos'
+            SHOW: 'Mostrar avisos'
+        PAGES_LAZY_INDEX: 'Índice de páginas preguiçoso (Lazy index)'
+        PAGES_LAZY_INDEX_HELP: 'Carrega páginas, rotas e taxonomia a pedido a partir de um índice SQLite por página em vez de um ficheiro de cache grande. O modo automático utiliza-o em sites com 1.000 páginas ou mais. Recorre à cache clássica quando não está disponível nenhum motor de base de dados.'
+        RETRY: 'Tentar novamente'
+        SESSION_LAZY: 'Iniciar sessões apenas quando necessário'
+        SESSION_LAZY_HELP: 'Visitantes sem um cookie de sessão apenas iniciam uma sessão quando algo é armazenado nela, tal como um login, um formulário ou uma mensagem, para que as visualizações de páginas anónimas possam ser armazenadas em cache por um proxy ou CDN. Plugins que armazenam dados em cada visualização de página continuam a iniciar uma.'
+        UPDATE_CHANGELOG_TITLE: 'Alterações na v{version}'

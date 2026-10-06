@@ -1,3 +1,20 @@
+# v2.1.28
+## 10/06/2026
+
+1. [](#improved)
+    * Updated Spanish translation, with about 140 new strings from the Translation Portal. Thanks @pmoreno-rodriguez [#187](https://github.com/getgrav/grav-plugin-admin2/issues/187)
+    * The page editor now warns when a module's template isn't in the theme, since the page it belongs to shows a "template not found" error until the template exists [getgrav/grav-plugin-api#55](https://github.com/getgrav/grav-plugin-api/issues/55)
+    * Custom fields from plugins and themes can read other values in the form with `getValue()`, scoped to their own row inside a list, and can be told when a value they watch changes, so a field's options can follow a sibling field. See the custom field docs for `watch` and `formChanged()`. Thanks @Sogl [getgrav/grav-admin-next#29](https://github.com/getgrav/grav-admin-next/issues/29)
+2. [](#bugfix)
+    * Saving a page that was changed elsewhere after you opened it, by an API client, an AI agent or another admin, now stops with "Page was modified elsewhere" instead of silently overwriting those changes. Thanks @onetrev [#189](https://github.com/getgrav/grav-plugin-admin2/issues/189)
+    * A file field whose blueprint allows any file with `accept: ['*']` uploads again, and a file the field refuses now shows a message instead of doing nothing [#192](https://github.com/getgrav/grav-plugin-admin2/issues/192)
+    * Clicking a checkbox's label in a section now toggles the box, and the box lines up with its label [#191](https://github.com/getgrav/grav-plugin-admin2/issues/191)
+    * A collapsed list item is titled by its first field in blueprint order, instead of whichever field happened to be filled first, and a closed collapsible section's header is evenly padded. Thanks @onetrev [#190](https://github.com/getgrav/grav-plugin-admin2/issues/190)
+    * In page media reorder mode, dropping an item past the last one, or in the gap between two, now moves it there [getgrav/grav-admin-next#31](https://github.com/getgrav/grav-admin-next/issues/31)
+    * Previewing a page in a language other than the default now opens that translation at its own address, such as `/fr/typographie`, instead of the default language or a 404, and previewing the home page in another language works too. Thanks @fdruide [#188](https://github.com/getgrav/grav-plugin-admin2/issues/188)
+    * A `selectunique` field in a plugin or theme blueprint now shows as a select that leaves out the values other rows of the list already use, instead of a plain text box [getgrav/grav-admin-next#30](https://github.com/getgrav/grav-admin-next/issues/30)
+    * When the server sends back a page in another language than the one selected, the editor now explains that and keeps Save off, instead of pointing at a "Save as" button that isn't there [getgrav/grav#4338](https://github.com/getgrav/grav/discussions/4338)
+
 # v2.1.27
 ## 10/01/2026
 

@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Endast betrodda roller'
                 TRUSTED_DESC: 'Endast superanvändare och innehavare av behörigheten "pages twig" kan aktivera Twig på en sida.'
             VALIDATION_FAILED_FOR_FIELDS: 'Kunde inte spara — dessa fält är ogiltiga: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Det gick inte att läsa in konfigurationen.'
+            SCOPE_NOT_FOUND: 'Ingen konfigurationsomfattning med namnet {scope} hittades.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljö
             EXPORT_YAML: 'Exportera YAML'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: Schemaläggarstatus
                 STATUS: 'Status:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: manuellt
+                MANUAL_RUN_HELP: '«Kör väntande» utför de jobb som har missat sin senaste schemalagda tid, vilket är vad du vill ha på en webbplats utan cron-post. Körningar som du startar här registreras som manuella och räknas inte in i cron-statusen ovan.'
+                NEVER: Aldrig
+                PENDING: Väntande
+                PROCESS_UNAVAILABLE: 'Jobb kan inte köras härifrån på denna host, eftersom PHP-funktionen proc_open är inaktiverad. De körs fortfarande när din schemaläggare utlöses av cron eller en webhook.'
+                RUN_ALL_HELP: 'Kör alla aktiverade jobb nu, oavsett vad schemat säger.'
+                RUN_NOW: 'Kör detta jobb nu'
+                RUN_PENDING: 'Kör väntande'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Laddar anpassat fält...'
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'Inga ikoner hittades'
                 SEARCH_ICONS: 'Sök ikoner...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Visar första 200 resultaten — skriv för att begränsa'
+                FAMILY_ALL: Alla
+                FAMILY_BRANDS: Varumärken
+                FAMILY_REGULAR: Vanlig
+                FAMILY_SOLID: Solid
             NO_TAXONOMY_TYPES: 'Inga taxonomityper konfigurerade'
             PAGES:
                 FILTER_PAGES: 'Filtrera sidor...'
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Skriv och tryck på Retur...'
             SELECT_AN_ICON: 'Välj en ikon...'
             SELECT_A_PAGE: 'Välj en sida...'
+            MEDIA:
+                ADD: 'Lägg till media…'
+                CHANGE: Ändra
+                DONE: Klar
+                MOVE_EARLIER: 'Flytta tidigare'
+                MOVE_LATER: 'Flytta senare'
+                REMOVE: 'Ta bort'
+                SELECT: 'Välj media…'
+                SELECTED_COUNT: '{count, plural, =0 {Inget valt} one {# vald} other {# valda}}'
+                TITLE: 'Välj media'
+            SET_DATE_NOW: 'Sätt till nu'
         FLEX_OBJECTS:
             ACTIONS: Åtgärder
             BACK_TO_LIST: 'Tillbaka till lista'
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Fortsätt med {provider}'
             OR_CONTINUE_WITH: 'Eller fortsätt med'
             SSO_FAILED: 'Det gick inte att logga in med den leverantören. Vänligen försök igen.'
+            CAPTCHA_FAILED_TO_LOAD: 'Utmaningen kunde inte laddas. Ladda om sidan och försök igen.'
+            CAPTCHA_NOT_COMPLETED: 'Vänligen slutför utmaningen för att fortsätta'
+            CAPTCHA_VERIFIED: 'Bekräftad att du är människa'
+            CAPTCHA_VERIFYING: 'Kontrollerar att du är människa...'
+            INVALID_AUTHENTICATION_CODE: 'Ogiltig autentiseringskod'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Inget att förhandsgranska'
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: Listvy
                 NEW_FOLDER: 'Ny mapp'
                 SEARCH_MEDIA: 'Sök media...'
+                DELETE_SELECTED: '{count, plural, one {Ta bort # fil} other {Ta bort # filer}}'
+                FILTER_ALL: Alla
+                FILTER_AUDIO: Ljud
+                FILTER_DOCS: Dokument
+                FILTER_IMAGES: Bilder
+                FILTER_VIDEO: Video
+                SEARCHING_FOR: 'Sök: ”{query}”'
+                SORT_DATE: Datum
+                SORT_NAME: Namn
+                SORT_SIZE: Storlek
+                SORT_TYPE: Typ
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Dra till redigerare'
                 PAGE_MEDIA: Sidmedia
@@ -448,6 +489,15 @@ ICU:
                 STORED: 'Lagrad metadata'
                 TAGS_PLACEHOLDER: 'Lägg till tagg…'
                 TITLE: Metadata
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: Mediesökväg
+                OPEN: Öppna
+                PATH: Sökväg
+                SIZE: Storlek
+                TITLE: Fildetaljer
+                TYPE: Typ
+                URL: URL
         NAV:
             CONFIGURATION: Konfiguration
             DASHBOARD: Instrumentpanel
@@ -460,6 +510,7 @@ ICU:
             TOOLS: Verktyg
             USERS: Användare
             UPDATES_AVAILABLE: '{count} uppdatering(ar) tillgängliga'
+            TRANSLATIONS: Översättningar
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Inga flödesobjekt'
         NORMAL_MODE: Normalläge
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Skriv ditt markdown-innehål här...'
                 SAVED_BY_PEER: '{user} sparade denna sida'
                 SAVED_BY_PEER_ANON: 'En annan användare sparade denna sida'
+                FALLBACK_NOTICE_UNRESOLVED: 'Servern returnerade versionen {effective} av den här sidan istället för {active}, och rapporterade inte {active} som saknad. Sparande är inaktiverat här så att filen {effective} inte skrivs över. Om varje sida gör detta skickar webbservern förmodligen inte vidare frågesträngar till Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'visas på sin föräldrasida'
+                TEMPLATE_MISSING_NOTICE: 'Mallen **{template}** för denna modul hittades inte i temat, så sidan den tillhör visar felet ”mall saknas”. Välj en mall under **Sidmall** på fliken Avancerat, eller lägg till mallen i temat.'
             EDIT_PAGE: 'Redigera sida'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ändrad
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '<root> /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'URL-säker mappnamn för denna sida'
                 VISIBLE: Synlig
+                CHILD_TYPE_HINT: 'Föräldrasidan föreslår ”{template}” för sina underordnade sidor. Du kan fortfarande välja en annan mall.'
+                STATUS_HELP: 'Utkast sparas men syns inte på webbplatsen förrän du publicerar dem'
             NO_PAGES: 'Inga sidor hittades'
             NO_SEARCH_RESULTS: 'Inga sidor matchar din sökning'
             PAGES_GRAV_ADMIN: 'Sidor — Grav Admin'
@@ -626,6 +682,16 @@ ICU:
                 VISIBLE: Synlig
                 'YES': Ja
             VALIDATION_FAILED_FOR_FIELDS: 'Kunde inte spara — dessa fält är ogiltiga: {fields}'
+            COLUMN_EMPTY: Tom
+            SEARCH_MATCH_COUNT: '{n, plural, one {# träff} other {# träffar}} på alla sidor'
+            SEARCH_SHOWING: 'Visar {shown} av {total} träffar'
+            SEARCH_SHOW_MORE: 'Visa fler'
+            STATUS:
+                EXPIRED: Utgången
+                EXPIRED_ON: 'Opublicerad sedan {date}'
+                SCHEDULED: Schemalagd
+                SCHEDULED_FOR: 'Schemalagd att publiceras {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Lösenord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Lösenordskrav
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: 'Senaste 14 dagarna'
             THIS_MONTH: 'Den här månaden'
             THIS_WEEK: 'Den här veckan'
+            CHART_LABEL: 'Sidvisningar per dag under de senaste 14 dagarna'
+            TODAY: Idag
+            VIEWS: '{count, plural, one {# visning} other {# visningar}}'
         PREMIUM: Premium
         PREVIEW: Förhandsvisning
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Ange ditt lösenord igen för att fortsätta. Ditt arbete har sparats.'
             SESSION_EXPIRED: 'Sessionen har upphört'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Logga in igen för att fortsätta. Ditt arbete har bevarats.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Visa alla'
         REMOVE: 'Ta bort'
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Standard
             EDITOR_KEYMAP_DESC: 'Använd Vim-tangentbordsgenvägar i Markdown- och kodredigerarna. Standard behåller vanlig redigering.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Kopiera denna färg'
+            CURRENT_COLOR: Färg
+            DARK_SHADE: 'Mörk nyans'
+            DARK_SHADE_DESC: 'Hur mörkt läge ser ut. Det träder endast i kraft när mörkt läge är aktiverat.'
+            DARK_SHADE_GRAPHITE: Grafit
+            DARK_SHADE_MIDNIGHT: Midnatt
+            DARK_SHADE_ZINC: Onyx
+            DEFAULT_DARK_SHADE_DESC: 'Standard mörk nyans för nya användare. Det träder endast i kraft när mörkt läge är aktiverat.'
+            DEFAULT_HELP_TEXT_DESC: 'Standardplacering för hjälptext för fält för nya användare, under etiketten eller i ett verktygstips.'
+            HELP_MODE_INLINE: 'Under etiketten'
+            HELP_MODE_TOOLTIP: 'I ett verktygstips'
+            HELP_TEXT: Hjälptext
+            HELP_TEXT_DESC: 'Var den korta förklaringen för varje fält hamnar. I ett verktygstips, för muspekaren över info-ikonen bredvid en etikett, eller tryck på den på en mobil, för att läsa den.'
+            LOGO_HEIGHT_CUSTOM: Anpassad
+            LOGO_HEIGHT_DEFAULT: Standard
+            SIDEBAR_LOGO_HEIGHT: 'Höjd på logotyp i sidomeny'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Hur hög din logotyp visas högst upp i sidomenyn.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: Uppdatera
                 SEARCH_MESSAGES: 'Sök meddelanden...'
                 WARNING: Varning
+                CLEAR_LOG: 'Rensa logg'
+                CLEAR_LOG_CONFIRM: 'Radera permanent varje post i {file}? Detta kan inte ångras, och varje historik över vad som gått fel innan nu försvinner med den.'
+                FAILED_TO_CLEAR_LOG: 'Kunde inte rensa loggen'
+                LOG_CLEARED: 'Rensade {file}'
             REPORTS:
                 CONTENT_FIELD: 'content: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Kunde inte ladda rapporter'
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 'Blockerade taggar i innehåll'
                     SECTION_EVENTS: 'Senaste blockeringar'
                     SECTION_LEAKS: 'Sidor som läcker rå Twig'
+                    POLICY_ADDED: '+{count} tillagd'
+                    POLICY_ALL_DEFAULTS: 'Alla standardvärden, oförändrade'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# klass} other {# klasser}}'
+                    POLICY_DENIED: '−{count} nekad'
+                    POLICY_EFFECTIVE_COUNT: '{count} effektiv'
+                    POLICY_FAILED: 'Kunde inte läsa in sandbox-policyn'
+                    POLICY_FILTERS: Filter
+                    POLICY_FUNCTIONS: Funktioner
+                    POLICY_HIDE: 'Dölj effektiv policy'
+                    POLICY_INTRO: 'Sandbox-baslinjen levereras i koden; din konfiguration utökar eller begränsar den bara.'
+                    POLICY_METHODS: Metoder
+                    POLICY_PROPERTIES: Egenskaper
+                    POLICY_TAGS: Taggar
+                    POLICY_VIEW: 'Visa effektiv policy'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Laddar rapportkomponent...'
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Schedulerkonfiguration sparad'
                 SECURITY_WARNING: 'Endast avancerade användare bör konfigurera anpassade scheduler-jobb. Felaktig konfiguration kan orsaka prestandaproblem eller säkerhetssårbarheter.'
                 WEBHOOK_ALTERNATIVE: 'Alternativt kan du installera pluginen **scheduler-webhook** för att använda webhook-baserad cron-utlösning, vilket rekommenderas för molnmiljöer där systemcrontab-åtkomst inte är tillgänglig.'
+                CRON_UNDETERMINED: 'Grav kan inte inspektera serverns crontab och kan därför inte bekräfta hur schemaläggaren körs.'
+                ENVIRONMENT_MISMATCH: 'Schemaläggaren kördes senast under miljön **{last}**, men den här webbplatsen använder **{current}**, som har sin egen konfiguration i user/env/{current}/config. Anpassade jobb och inställningar som definierats där körs aldrig från den triggern. Uppdatera raden för bin/grav scheduler i din crontab till kommandot nedan (det skickar med --env={current}), eller exportera GRAV_ENVIRONMENT={current} innan det körs.'
+                LAST_MANUAL_RUN: 'Senast körd manuellt'
+                LAST_TRIGGERED: 'Senast triggad'
+                PROCESS_UNAVAILABLE: 'Den här värden har PHP-funktionen proc_open inaktiverad, så jobb kan inte startas från admin. De körs fortfarande när din schemaläggare triggas av cron eller en webhook.'
+                STATUS_UNAVAILABLE: 'Schemaläggarstatus kunde inte läsas på den här värden. Dina jobb listas fortfarande nedan och kan redigeras som vanligt.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} ledigt av {total}'
                 DISK_USAGE: Diskutrymme
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'Det gick inte att ändra tillstånd för {username}: {detail}'
             DEMO_MODE_BLOCKED: 'Detta är en skrivskyddad demo — ändringar är inaktiverade.'
             USER_ROW_ACTION_FAILED: 'Kunde inte slutföra åtgärden: {label}'
-        TRANSLATIONS: Översättningar
+        TRANSLATIONS:
+            ACCEPT: Acceptera
+            ACCEPTED_ALL: '{count, plural, one {# översättning sparad} other {# översättningar sparade}}'
+            ACCEPT_ALL: 'Acceptera alla'
+            ALL_SOURCES: 'Alla källor'
+            CLEAR_ALL_FILTERS: 'Rensa filter'
+            DESCRIPTION: 'Omformulera alla strängar som denna webbplats visar, på vilket språk som helst. Ändringar lagras som åsidosättanden i user/languages och rör aldrig ett plugin- eller temas egna filer, så en uppdatering kan inte radera dem.'
+            DISCARD: Förkasta
+            DISCARD_ALL: Förkasta
+            EDITED: redigerad
+            EDITING_LANGUAGE: Redigerar
+            EDIT_AS_GRID: 'Tillbaka till rutnät'
+            EDIT_AS_YAML: 'Redigera som YAML'
+            EDIT_HINT: 'Enter för att spara, Escape för att avbryta, Shift+Enter för en ny rad. Töm rutan för att ta bort ditt åsidosättande.'
+            FAILED_TO_LOAD: 'Misslyckades med att ladda översättningar'
+            FAILED_TO_SAVE: 'Misslyckades med att spara ändringen'
+            FILTERED_BY: 'Visar endast'
+            FILTER_LANGUAGES: 'Filtrera språk'
+            IMPORT_ACTION: 'Importera åsidosättanden'
+            IMPORT_ALREADY_DONE: 'Alla {count, plural, one {# åsidosättande finns} other {# åsidosättanden finns}} redan här'
+            IMPORT_BODY: '{count, plural, one {# åsidosättande är fortfarande lagrat i pluginet Translation Strings. Importera det för att hantera det här.} other {# åsidosättanden över {languages, plural, one {# språk} other {# språk}} är fortfarande lagrade i pluginet Translation Strings. Importera dem för att hantera dem här.}}'
+            IMPORT_COL_ALREADY: 'Redan här'
+            IMPORT_COL_CONFLICT: Konflikt
+            IMPORT_COL_LANGUAGE: Språk
+            IMPORT_COL_NEW: Ny
+            IMPORT_COL_SHIPPED: 'Samma som originalet'
+            IMPORT_COL_UNKNOWN: Okänd
+            IMPORT_CONFLICTS: '{count, plural, one {# nyckel är} other {# nycklar är}} inställda på båda ställena med olika formulering. Pluginets version vinner, eftersom det är vad din webbplats visar idag.'
+            IMPORT_DISABLE_ACTION: 'Inaktivera pluginet'
+            IMPORT_DISABLE_BLOCKED: 'Importera åsidosättandena först, annars kommer de att försvinna från webbplatsen.'
+            IMPORT_DISABLE_FAILED: 'Kunde inte inaktivera pluginet'
+            IMPORT_DONE: 'Importerade {count, plural, one {# överskrivning} other {# överskrivningar}}'
+            IMPORT_FAILED: 'Import misslyckades'
+            IMPORT_HIDE_DETAIL: 'Dölj detaljer'
+            IMPORT_LEGEND: 'Strängar markerade med „samma som originalet” matchar vad pluginet eller temat redan innehåller, så de tas bort istället för att lagras som överskrivningar som inte gör något.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Du har inte behörighet att ändra inställningar för plugins, så pluginet måste inaktiveras av en administratör.'
+            IMPORT_NO_PERMISSION: 'Du har inte behörighet att skriva översättningsöverskrivningar, så importen är inte tillgänglig.'
+            IMPORT_PLUGIN_DISABLED: 'Översättningssträngar inaktiverade. Denna redigerare har nu kontrollen.'
+            IMPORT_SHOW_DETAIL: 'Visa vad som kommer att importeras'
+            IMPORT_STILL_ENABLED_BODY: 'Det tillämpar sina strängar efter denna redigerare, så det åsidosätter fortfarande allt du ändrar här. Kontrollera att webbplatsen ser korrekt ut och inaktivera det sedan för att slutföra bytet. Dess inställningar finns kvar, så detta är reversibelt.'
+            IMPORT_STILL_ENABLED_TITLE: 'Pluginet Translation Strings är fortfarande aktiverat'
+            IMPORT_TITLE: 'Överskrivningar väntar i pluginet Translation Strings'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# nyckel anger en sträng som inget plugin, tema eller kärnfil tillhandahåller. Den sparas så att du kan granska den, men den har ingen effekt.} other {# nycklar anger strängar som inget plugin, tema eller kärnfil tillhandahåller. De sparas så att du kan granska dem, men de har ingen effekt.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# importerad nyckel anger en sträng} other {# importerade nycklar anger strängar}} som inget på denna webbplats tillhandahåller. Hitta dem med filtret Okänd.'
+            INACTIVE: inaktiv
+            INACTIVE_HELP: 'Detta plugin är inaktiverat eller detta tema är inte det aktiva, så dess strängar används inte på webbplatsen.'
+            KEY: Nyckel
+            KIND_PLUGINS: Plugins
+            KIND_SYSTEM: Kärna
+            KIND_THEMES: Teman
+            KIND_USER: 'Denna webbplats'
+            LANGUAGES: Språk
+            LOADING: 'Läser in översättningar...'
+            NEXT: Nästa
+            NOTHING_TO_TRANSLATE: 'Inget på denna sida saknar översättning.'
+            NO_RESULTS: 'Inga strängar matchar dessa filter.'
+            NO_RESULTS_FILTERED: 'Du tittar inuti: {filters}'
+            OVERRIDE_REMOVED: 'Åsidosättning borttagen'
+            PICK_A_TARGET_LANGUAGE: 'Lägg till en språkkolumn först – det finns inget att översätta till.'
+            PREVIOUS: Föregående
+            PROPOSALS_PENDING: '{count, plural, one {# förslag att granska} other {# förslag att granska}}'
+            REFRESH: Uppdatera
+            REMOVE_FILTER: 'Ta bort detta filter'
+            REVERT: Återställ
+            REVERTED_TO_SHIPPED: 'Återställd till den ursprungliga formuleringen'
+            REVERT_HELP: 'Ta bort denna åsidosättning och gå tillbaka till vad insticksprogrammet eller temat tillhandahåller.'
+            SAVE: Spara
+            SAVED_UNKNOWN_KEY: 'Sparad, men inget tillhandahåller {key} – kontrollera stavningen'
+            SAVING: Sparar...
+            SCOPED_TO: 'Endast {namespace}'
+            SCOPE_WHOLE_FILE: 'Redigerar varje åsidosättning för detta språk'
+            SEARCH_PLACEHOLDER: 'Sök text eller nyckel...'
+            SHIPPED_VALUE: 'Ursprungligen: {value}'
+            SHOWING: 'Visar {from}–{to} av {total}'
+            SKIPPED_COUNT: '{count, plural, one {# hoppade över} other {# hoppades över}}'
+            SKIP_EMPTY: 'Översättningstjänsten returnerade ingenting för denna sträng.'
+            SKIP_ICU: 'Detta meddelande ändras med ett nummer eller ett val, och varje språk behöver sin egen uppsättning former. Skriv denna för hand.'
+            SKIP_NOTHING: 'Denna sträng består endast av platshållare, så det finns inga ord att översätta.'
+            SKIP_NO_SOURCE: 'Det finns ingen text på källspråket att översätta från.'
+            SKIP_PLACEHOLDERS: 'Översättningen kom tillbaka med ändrade platshållare, så den kasserades istället för att sparas.'
+            SOURCE: källa
+            SOURCE_LANGUAGE: Källa
+            STATE_MISSING: saknas
+            STATE_MISSING_FALLBACK: 'använder reservalternativ'
+            STATE_OVERRIDDEN: åsidosatt
+            STATUS_ALL: Alla
+            STATUS_MISSING: Saknas
+            STATUS_OVERRIDDEN: Åsidosatta
+            STATUS_UNKNOWN: Okänd
+            SUGGESTED: Föreslagen
+            SUPERSEDED_ACTION: 'Öppna översättningar'
+            SUPERSEDED_BODY: 'Sektionen Översättningar gör allt som detta plugin gör, och lägger till sökning över varje sträng på webbplatsen, täckning per språk, maskinöversättning och en rapport över nycklar som inte längre tillhandahålls av något. Detta plugin förblir understött på Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# åsidosättande är} other {# åsidosättanden är}} fortfarande lagrade här och kan importeras.'
+            SUPERSEDED_TITLE: 'Inbyggt i Grav 2.0'
+            TITLE: Översättningar
+            TRANSLATE_FAILED: 'Översättning misslyckades'
+            TRANSLATE_MISSING: 'Översätt saknade'
+            TRANSLATE_ROW: 'Föreslå översättningar för denna sträng på varje språk som visas'
+            TRANSLATE_THIS: 'Föreslå en översättning för denna sträng'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'Hämta pluginet'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate har ingen översättningsleverantör konfigurerad än, så maskinöversättning är inte tillgänglig.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate är installerat men avstängt, så maskinöversättning är inte tillgänglig.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'AI-driven översättning av saknade strängar är tillgänglig med premium-pluginet AI Translate.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Öppna dess inställningar'
+            TRANSLATING: Översätter...
+            UNKNOWN_KEYS_SAVED: 'Sparat, men ingenting tillhandahåller dessa nycklar'
+            UNKNOWN_KEY_HELP: 'Inget plugin, tema eller kärnfil tillhandahåller denna nyckel. Det är förmodligen ett skrivfel eller en rest från något som inte längre är installerat.'
+            YAML_HELP: 'Klistra in eller redigera åsidosättningar direkt. Värden som matchar vad pluginet eller temat redan tillhandahåller tas bort, så att filen bara innehåller faktiska ändringar.'
+            YAML_PLACEHOLDER: |-
+                MITT_PLUGIN:
+                  NÅGON_NYCKEL: Din text här
+            YAML_SAVED: '{count, plural, =0 {Inga åsidosättningar kvar i {lang}} one {# åsidosättning sparad i {lang}} other {# åsidosättningar sparade i {lang}}}'
         TRANSLATIONS_FALLBACK: 'Reserv för översättningar'
         TRANSLATIONS_FALLBACK_HELP: 'Använd reservöversättningar om det aktiva språket inte finns'
         TWIG_3_COMPATIBILITY: 'Twig 3-kompatibilitet'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Filer under user/data, user/accounts och user/config kan laddas ner direkt via HTTP — inklusive certifikat, nycklar, tokens och databaser. Detta innebär vanligtvis att din webbserver inte tillämpar Gravs .htaccess-regler.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Hur du säkrar din webbserver'
             USER_FOLDER_EXPOSED_TITLE: 'Säkerhetsrisk: dina användardatamappar är åtkomliga från webben'
+            COLLAPSE: 'Fäll ihop'
+            SHOW_DETAILS: 'Visa detaljer'
+            SNOOZE: Pausa
+            SNOOZE_HINT: 'Dölj den här varningen i 24 timmar. Den visas tidigare om andra filer hittas.'
+            STORAGE_EXPOSED_ALL: 'Varje testfil kunde laddas ner, så din webbserver tillämpar inte Gravs åtkomstregler alls. På Apache, kontrollera att AllowOverride tillåter att webbplatsens .htaccess-fil träder i kraft. På nginx, Caddy eller IIS, lägg till säkerhetsreglerna från Gravs webserver-configs-mapp.'
+            STORAGE_EXPOSED_BODY: 'Webbservern serverade testfiler från kataloger som borde vara privata. Filtyperna som listas nedan kan exponera lagrade bidrag, säkerhetskopior eller temporära filer. Be din värd att blockera direkt åtkomst, eller flytta privat lagring utanför webbrotkatalogen.'
+            STORAGE_EXPOSED_BY_TYPE: 'Vissa filtyper blockerades i dessa mappar medan andra kunde laddas ner. Det betyder vanligtvis att något ligger framför Gravs regler, till exempel nginx som serverar statiska filer före Apache, och svarar för vanliga filtyper som .zip innan reglerna kontrolleras. Blockera dessa mappar i det lagrets konfiguration också.'
+            STORAGE_EXPOSED_CDN: 'Om webbplatsen ligger bakom ett CDN som Cloudflare, rensa dess cache efter att ha åtgärdat detta. Kopior som redan lagrats förblir nedladdningsbara tills du gör det.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# filtyp} other {# filtyper}}'
+            STORAGE_EXPOSED_TITLE: 'Filer som bör vara privata kan laddas ner från denna webbplats'
+            STORAGE_EXPOSED_TMP: 'Testfiler i tmp/ kunde laddas ner, medan övriga mappar var blockerade. Dina serverregler är antagligen äldre än Grav 2.1.7, som lade till tmp/ i listan över blockerade mappar. Lägg till tmp i den listan i din .htaccess, eller i din nginx-, Caddy- eller IIS-konfiguration, för att matcha reglerna som Grav levereras med.'
         CONFIRM: Bekräfta
         DEMO:
             BANNER_COUNTDOWN: 'Nästa återställning om {time}'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: Stanna
             SWITCH_LANGUAGE: Växla
             SWITCH_LANGUAGE_MESSAGE: 'Du har osparade ändringar. Vill du byta språk ändå?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'Serverns svar kunde inte läsas eftersom det inte är giltig JSON. Något på servern kan skriva ut extra output, såsom en PHP-varning, tillsammans med API-svaret. Webbläsarens konsol innehåller detaljerna.'
+            INVALID_JSON_TITLE: 'Oväntat svar från servern'
+            UNEXPECTED_RESPONSE_DETAIL: 'Servern svarade med data i ett format som den här vyn inte förväntar sig. Webbläsarens konsol innehåller detaljerna.'
+            UNEXPECTED_RESPONSE_TITLE: 'Oväntat svar från servern'
+        CACHE_MODULES: 'Cache för modulutdata'
+        CACHE_MODULES_HELP: 'Cacha den renderade utdatan för sidans moduler. Använd endast när modulerna visar samma innehåll för alla besökare. Moduler med egen Twig eller formulär, inloggade besökare och formulärinlämningar renderas alltid på nytt. Om du redigerar en partiell mall krävs en tömning av cachen.'
+        DEBUGGER_FLEX_RENDER_HINTS: Flex-renderingsledtrådar
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Omge varje renderat Flex-objekt och varje samling med en HTML-kommentar som namnger det, så att källan till ett block kan hittas i sidans kod. Gäller endast HTML-sidor.'
+        FRONTMATTER_NATIVE_YAML: 'Snabb frontmatter-tolkning'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Läs sidans frontmatter med PHP-tillägget libyaml när det är installerat, vilket gör att sidcachen byggs upp snabbare. Det läser vissa värden annorlunda, så kontrollera dina sidor först. Ett citatteckenlöst datum förblir text istället för att bli en tidsstämpel, och citatteckenlösa yes, no, on och off blir true eller false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Detta kommer att uppgradera Grav från v{current} till v{target}. Webbplatsen kan vara otillgänglig en kort stund under uppgraderingen.'
+            CONFIRM_TITLE: 'Uppgradera Grav-kärnan?'
+            FAILED: 'Grav-uppgradering misslyckades: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} är markerad som kompatibel med Grav {compatible}'
+            NO_DETAIL: 'servern angav ingen anledning'
+            PREFLIGHT_MESSAGE: 'Kontrollerna som körs före en uppgradering stoppade processen av dessa anledningar. Åtgärda dem och försök igen, eller uppgradera ändå om du vet att dessa insticksprogram och teman fungerar med den nya versionen.'
+            PREFLIGHT_TITLE: 'Grav kan inte uppgradera till v{version} än'
+            STILL_BLOCKED: 'Grav-uppgradering är fortfarande blockerad: {detail}'
+            UPGRADE_ANYWAY: 'Uppgradera ändå'
+            UPGRADING: 'Uppgraderar Grav till v{version}…'
+        HELP: Hjälp
+        HELP_FOR_LABEL: 'Hjälp för {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'Progressiva JPEG-filer'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Spara storleksändrade och cachade JPEG-filer som progressiva, så att de visas som en oskarp helbild som skärps istället för att fyllas i uppifrån och ned. Oftast mindre filstorlek också. Påverkar inte PNG, WebP eller AVIF.'
+        MARKDOWN_OUTPUT: Markdown-utdata
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'Absoluta webbadresser'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'Gör om rot-relativa länkar och bilder till fullständiga webbadresser, så att de fortfarande fungerar när Markdown har lämnat webbplatsen.'
+        MARKDOWN_OUTPUT_ENABLED: 'Servera sidor som Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Alla sidor kan hämtas som Markdown genom att lägga till `.md` i dess webbadress, eller genom att skicka en `Accept:&nbsp;text/markdown` request header. Byggd för AI-agenter och andra textklienter. Sidan renderas genom temat, reduceras till dess huvudsakliga innehållsregion och konverteras, så att listor, butiker och modulära sidor läses som de visas.'
+        MARKDOWN_OUTPUT_FRONTMATTER: Frontmatter-block
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Starta Markdown med ett YAML-block som innehåller titel, webbadress, datum, beskrivning och taxonomi.'
+        MARKDOWN_OUTPUT_LINKS: Navigeringslänkar
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Avsluta Markdown med länkar till föräldra-, grann- och undersidor, så att en agent kan navigera på webbplatsen utan att lämna Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Flest underlänkar'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'Det högsta antalet undersidor som listas i navigeringssektionen. Noll listar alla.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Huvud för token-antal'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Skicka en `X-Markdown-Tokens` response header med ett uppskattat token-antal, samma huvud som Cloudflares Markdown for Agents använder.'
+        NOTICES:
+            HEADING: '{count, plural, one {Notis} other {Notiser}}'
+            HIDE: 'Dölj notiser'
+            SHOW: 'Visa notiser'
+        PAGES_LAZY_INDEX: 'Lat sidindexering'
+        PAGES_LAZY_INDEX_HELP: 'Läs in sidor, rutter och taxonomi vid behov från ett SQLite-index per sida istället för en stor cachefil. Auto använder det på webbplatser med 1 000 sidor eller fler. Återgår till den klassiska cachen när ingen databasmotor är tillgänglig.'
+        RETRY: 'Försök igen'
+        SESSION_LAZY: 'Starta endast sessioner vid behov'
+        SESSION_LAZY_HELP: 'Besökare utan sessionscookie får en session först när något lagras i den, som t.ex. en inloggning, ett formulär eller ett meddelande, vilket gör att anonyma sidvisningar kan cachelagras av en proxy eller ett CDN. Insticksprogram som lagrar data vid varje sidvisning startar fortfarande en.'
+        UPDATE_CHANGELOG_TITLE: 'Ändringar i v{version}'

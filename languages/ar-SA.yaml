@@ -151,6 +151,9 @@ ICU:
                 RESET_FROM: 'إعادة تعيين من {language}'
                 SAVED_BY_PEER: '{user} حفظ هذه الصفحة'
                 SAVED_BY_PEER_ANON: 'مستخدم آخر حفظ هذه الصفحة'
+                FALLBACK_NOTICE_UNRESOLVED: 'قام الخادم بإرجاع الإصدار {effective} من هذه الصفحة بدلاً من {active}، ولم يبلغ عن فقدان {active}. تم إيقاف الحفظ هنا حتى لا يتم الكتابة فوق ملف {effective}. إذا حدث هذا مع كل الصفحات، فمن المحتمل أن خادم الويب لا يمرر سلاسل الاستعلام إلى Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'معروضة في صفحتها الأصلية'
+                TEMPLATE_MISSING_NOTICE: 'لم يتم العثور على القالب **{template}** الخاص بهذه الوحدة في السمة، لذا تعرض الصفحة التابعة لها خطأ «قالب غير موجود». اختر قالباً من **قالب الصفحة** في علامة التبويب المتقدمة، أو أضف القالب إلى السمة.'
             NEW:
                 MY_NEW_PAGE: 'صفحتي الجديدة'
                 FILTER_PAGES: 'تصفية الصفحات...'
@@ -176,6 +179,8 @@ ICU:
                 ORDERING_HELP_FOLDER: 'يضيف بادئة رقمية تحدد موضع هذا المجلد بين الأخوة.'
                 ORDERING_NONE: بدون
                 FOLDER_DETAILS: 'تفاصيل المجلد'
+                CHILD_TYPE_HINT: 'تقترح الصفحة الأصلية «{template}» لصفحاتها الفرعية. لا يزال بإمكانك اختيار قالب مختلف.'
+                STATUS_HELP: 'يتم حفظ المسودات ولكنها لا تظهر على الموقع إلا بعد نشرها'
             PAGE_COUNT: '{n, plural, zero{لا صفحات} one{صفحة واحدة} two{صفحتان} few{# صفحات} many{# صفحة} other{# صفحة}}'
             SUBTITLE: 'إدارة محتوى موقعك وبنيته'
             CHUNK_SIZE: الكتلة
@@ -211,6 +216,16 @@ ICU:
                 VISIBLE: مرئي
                 'YES': نعم
             VALIDATION_FAILED_FOR_FIELDS: 'تعذر الحفظ — هذه الحقول غير صالحة: {fields}'
+            COLUMN_EMPTY: فارغ
+            SEARCH_MATCH_COUNT: '{n, plural, one {# نتيجة} other {# نتائج}} عبر جميع الصفحات'
+            SEARCH_SHOWING: 'عرض {shown} من {total} نتائج'
+            SEARCH_SHOW_MORE: 'عرض المزيد'
+            STATUS:
+                EXPIRED: 'منتهي الصلاحية'
+                EXPIRED_ON: 'غير منشور منذ {date}'
+                SCHEDULED: مجدول
+                SCHEDULED_FOR: 'مجدول للنشر في {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         FIELDS:
             CLEAR_DATE: 'مسح التاريخ'
             REGENERATE_SLUG: 'إعادة التوليد التلقائي من عنوان الصفحة'
@@ -244,6 +259,14 @@ ICU:
                 NO_TRIGGERS_ACTIVE_ENABLE_WEBHOOKS_OR: 'لا توجد مُحفِّزات نشطة! فعِّل webhooks أو اضبط cron.'
                 RUNNING: 'جارٍ التشغيل...'
                 RUN_ALL: 'تشغيل الكل'
+                BY_HAND: يدويًا
+                MANUAL_RUN_HELP: 'يقوم خيار «تشغيل المعلق» (Run Pending) بتنفيذ المهام التي فاتها آخر وقت مجدول لها، وهو ما تحتاجه في موقع لا يحتوي على إدخال cron. المهام التي تبدأها من هنا يتم تسجيلها كمهام يدوية، ولا تُحتسب ضمن حالة cron المذكورة أعلاه.'
+                NEVER: أبدًا
+                PENDING: معلق
+                PROCESS_UNAVAILABLE: 'لا يمكن تشغيل المهام من هنا على هذا المضيف، لأن وظيفة proc_open في PHP معطلة. لا تزال المهام تعمل متى تم تشغيل المجدول الخاص بك بواسطة cron أو خطاف ويب (webhook).'
+                RUN_ALL_HELP: 'تشغيل كل المهام الممكنة الآن، بغض النظر عما يمليه جدولها الزمني.'
+                RUN_NOW: 'تشغيل هذه المهمة الآن'
+                RUN_PENDING: 'تشغيل المعلق'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'جارٍ تحميل الحقل المخصص...'
             DATE_FORMAT:
@@ -256,6 +279,10 @@ ICU:
                 SEARCH_ICONS: 'ابحث عن أيقونات...'
                 NO_ICONS_FOUND: 'لم يُعثر على أيقونات'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'عرض أول 200 نتيجة — اكتب لتضييق النتائج'
+                FAMILY_ALL: الكل
+                FAMILY_BRANDS: 'العلامات التجارية'
+                FAMILY_REGULAR: عادي
+                FAMILY_SOLID: مصمت
             PAGE_EXISTS:
                 CHECKING_PAGE: 'جارٍ فحص الصفحة...'
             PAGE_MEDIA:
@@ -297,6 +324,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'اكتب واضغط Enter...'
             SELECT_AN_ICON: 'اختر أيقونة...'
             SELECT_A_PAGE: 'اختر صفحة...'
+            MEDIA:
+                ADD: 'إضافة وسائط…'
+                CHANGE: تغيير
+                DONE: تم
+                MOVE_EARLIER: 'تحريك للأسبق'
+                MOVE_LATER: 'تحريك للاحق'
+                REMOVE: إزالة
+                SELECT: 'اختيار وسائط…'
+                SELECTED_COUNT: '{count, plural, =0 {لم يتم اختيار شيء} one {تم اختيار #} other {تم اختيار #}}'
+                TITLE: 'اختيار وسائط'
+            SET_DATE_NOW: 'ضبط على الآن'
         NAV:
             DASHBOARD: 'لوحة التحكم'
             CONFIGURATION: الإعدادات
@@ -309,6 +347,7 @@ ICU:
             SYSTEM: النظام
             SETTINGS: الإعدادات
             UPDATES_AVAILABLE: '{count} تحديث(ات) متاح'
+            TRANSLATIONS: الترجمات
         LANG:
             SWITCH_LANGUAGE: 'تبديل لغة المحتوى'
             TRANSLATIONS: الترجمات
@@ -419,6 +458,7 @@ ICU:
         REAUTH_MODAL:
             SESSION_EXPIRED: 'انتهت صلاحية الجلسة'
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'يُرجى إعادة إدخال كلمة المرور للمتابعة. تم الاحتفاظ بعملك.'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'سجل الدخول مجدداً للمتابعة. تم حفظ عملك.'
         USERNAME: 'اسم المستخدم'
         PASSWORD: 'كلمة المرور'
         REMOVE: إزالة
@@ -461,6 +501,9 @@ ICU:
             LAST_14_DAYS: 'آخر 14 يوماً'
             THIS_WEEK: 'هذا الأسبوع'
             THIS_MONTH: 'هذا الشهر'
+            CHART_LABEL: 'مشاهدات الصفحة في اليوم خلال آخر 14 يوماً'
+            TODAY: اليوم
+            VIEWS: '{count, plural, one {# مشاهدة} other {# مشاهدات}}'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'عرض الكل'
         STATS_WIDGET:
@@ -534,6 +577,17 @@ ICU:
                 LIST_VIEW: 'عرض القائمة'
                 NEW_FOLDER: 'مجلد جديد'
                 FOLDER: مجلد
+                DELETE_SELECTED: '{count, plural, one {حذف # ملف} other {حذف # ملفات}}'
+                FILTER_ALL: الكل
+                FILTER_AUDIO: صوتيات
+                FILTER_DOCS: وثائق
+                FILTER_IMAGES: صور
+                FILTER_VIDEO: فيديو
+                SEARCHING_FOR: 'بحث: «{query}»'
+                SORT_DATE: التاريخ
+                SORT_NAME: الاسم
+                SORT_SIZE: الحجم
+                SORT_TYPE: النوع
             MEDIA_GRAV_ADMIN: 'الوسائط — Grav Admin'
             MANAGE_SITE_WIDE_MEDIA_FILES: 'إدارة ملفات الوسائط على مستوى الموقع'
             PAGE_MEDIA:
@@ -563,6 +617,15 @@ ICU:
                 STORED: 'البيانات الوصفية المخزنة'
                 TAGS_PLACEHOLDER: 'إضافة وسم...'
                 TITLE: 'البيانات الوصفية'
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: 'مسار الوسائط'
+                OPEN: فتح
+                PATH: المسار
+                SIZE: الحجم
+                TITLE: 'تفاصيل الملف'
+                TYPE: النوع
+                URL: 'رابط URL'
         UPLOAD: رفع
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: 'مسح الذاكرة المؤقتة'
@@ -626,6 +689,10 @@ ICU:
                 REFRESH: تحديث
                 LOADING_LOGS: 'جارٍ تحميل السجلات...'
                 MESSAGE: الرسالة
+                CLEAR_LOG: 'مسح السجل'
+                CLEAR_LOG_CONFIRM: 'هل تريد حذف كل إدخال في {file} بشكل دائم؟ لا يمكن التراجع عن هذا، وسيتم فقدان أي سجل لما حدث من أخطاء قبل الآن.'
+                FAILED_TO_CLEAR_LOG: 'فشل مسح السجل'
+                LOG_CLEARED: 'تم مسح {file}'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'جارٍ تحميل مكوّن التقرير...'
             REPORTS:
@@ -664,6 +731,20 @@ ICU:
                     SCAN_TAGS: 'وسوم محظورة في المحتوى'
                     SECTION_EVENTS: 'عمليات الحظر الأخيرة'
                     SECTION_LEAKS: 'صفحات تعرض كود Twig الخام'
+                    POLICY_ADDED: '+{count} تمت إضافتها'
+                    POLICY_ALL_DEFAULTS: 'كافة الافتراضيات، بدون تغيير'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# فئة} other {# فئات}}'
+                    POLICY_DENIED: '−{count} مرفوضة'
+                    POLICY_EFFECTIVE_COUNT: '{count} فعّالة'
+                    POLICY_FAILED: 'تعذر تحميل سياسة وضع الحماية (sandbox)'
+                    POLICY_FILTERS: 'عوامل التصفية'
+                    POLICY_FUNCTIONS: الدوال
+                    POLICY_HIDE: 'إخفاء السياسة الفعّالة'
+                    POLICY_INTRO: 'يأتي خط أساس وضع الحماية مضمناً في الكود؛ إعداداتك تقوم فقط بتوسيع أو تضييق نطاقه.'
+                    POLICY_METHODS: 'الطرق (Methods)'
+                    POLICY_PROPERTIES: الخصائص
+                    POLICY_TAGS: الوسوم
+                    POLICY_VIEW: 'عرض السياسة الفعّالة'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'فشل تحميل إعدادات المُجدوِل.'
                 SCHEDULER_CONFIGURATION_SAVED: 'تم حفظ إعدادات المُجدوِل'
@@ -675,6 +756,12 @@ ICU:
                 CRONTAB_INSTRUCTIONS: 'لتفعيل وظيفة المُجدوِل، يجب إضافة **مُجدوِل Grav** إلى ملف crontab الخاص بنظامك للمستخدم **{user}**. شغّل الأمر أعلاه من الطرفية لإضافته تلقائياً. بعد الحفظ، حدّث هذه الصفحة لرؤية الحالة.'
                 WEBHOOK_ALTERNATIVE: 'بدلاً من ذلك، ثبّت إضافة **scheduler-webhook** لاستخدام تشغيل cron عبر webhook، وهو موصى به للبيئات السحابية حيث لا يتوفر الوصول إلى crontab النظام.'
                 SECURITY_WARNING: 'لا يجب على المستخدمين سوى المتقدمين منهم إعداد مهام مُجدوِل مخصصة. الإعداد الخاطئ قد يسبب مشاكل في الأداء أو ثغرات أمنية.'
+                CRON_UNDETERMINED: 'لا يمكن لـ Grav فحص crontab الخاص بهذا الخادم، لذا لا يمكنه التأكد من كيفية تشغيل المجدول.'
+                ENVIRONMENT_MISMATCH: 'آخر تشغيل للمجدول كان تحت بيئة **{last}**، ولكن هذا الموقع يستخدم **{current}**، التي تمتلك إعداداتها الخاصة في user/env/{current}/config. المهام المخصصة والإعدادات المعرفة هناك فقط لن تعمل من هذا المشغل. قم بتحديث سطر المجدول bin/grav في crontab الخاص بك إلى الأمر الموضح أدناه (فهو يمرر --env={current})، أو قم بتصدير GRAV_ENVIRONMENT={current} قبل تشغيله.'
+                LAST_MANUAL_RUN: 'آخر تشغيل يدوي'
+                LAST_TRIGGERED: 'آخر مرة تم فيها التشغيل'
+                PROCESS_UNAVAILABLE: 'يحتوي هذا المضيف على دالة proc_open الخاصة بـ PHP معطلة، لذا لا يمكن بدء المهام من لوحة الإدارة. ستظل المهام تعمل كلما تم تشغيل المجدول بواسطة cron أو webhook.'
+                STATUS_UNAVAILABLE: 'تعذرت قراءة حالة المجدول على هذا المضيف. تظل مهامك مدرجة أدناه ويمكن تعديلها كالمعتاد.'
             SYSTEM_INFO:
                 FAILED_TO_LOAD_SYSTEM_INFO: 'فشل تحميل معلومات النظام'
                 LOADING_SYSTEM_INFO: 'جارٍ تحميل معلومات النظام...'
@@ -802,6 +889,8 @@ ICU:
                 TRUSTED: 'الأدوار الموثوقة فقط'
                 TRUSTED_DESC: 'المستخدمون المتميزون فقط وحاملو إذن «pages twig» يمكنهم تفعيل Twig في الصفحة.'
             VALIDATION_FAILED_FOR_FIELDS: 'تعذر الحفظ — هذه الحقول غير صالحة: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'فشل تحميل الإعدادات.'
+            SCOPE_NOT_FOUND: 'لم يتم العثور على نطاق إعدادات باسم {scope}.'
         FLEX_OBJECTS:
             SEARCH: بحث...
             PREVIOUS: السابق
@@ -869,6 +958,11 @@ ICU:
             CONTINUE_WITH: 'المتابعة باستخدام {provider}'
             OR_CONTINUE_WITH: 'أو المتابعة باستخدام'
             SSO_FAILED: 'تعذر تسجيل الدخول باستخدام هذا المزود. يرجى المحاولة مجدداً.'
+            CAPTCHA_FAILED_TO_LOAD: 'تعذر تحميل التحدي (CAPTCHA). أعد تحميل الصفحة وحاول مرة أخرى.'
+            CAPTCHA_NOT_COMPLETED: 'يرجى إكمال التحدي للمتابعة'
+            CAPTCHA_VERIFIED: 'تم التحقق من أنك إنسان'
+            CAPTCHA_VERIFYING: 'جاري التحقق من أنك إنسان...'
+            INVALID_AUTHENTICATION_CODE: 'رمز المصادقة غير صالح'
         PLUGIN:
             BACK_TO_DASHBOARD: 'العودة إلى لوحة التحكم'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'لا يوجد محتوى متاح لصفحة هذه الإضافة.'
@@ -1052,6 +1146,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: افتراضي
             EDITOR_KEYMAP_DESC: 'استخدام اختصارات Vim في محررات Markdown والبرمجة. الخيار الافتراضي يحافظ على التحرير القياسي.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'نسخ هذا اللون'
+            CURRENT_COLOR: اللون
+            DARK_SHADE: 'الظل الداكن'
+            DARK_SHADE_DESC: 'مظهر الوضع الداكن. يسري مفعوله فقط عند تفعيل الوضع الداكن.'
+            DARK_SHADE_GRAPHITE: Graphite
+            DARK_SHADE_MIDNIGHT: Midnight
+            DARK_SHADE_ZINC: Onyx
+            DEFAULT_DARK_SHADE_DESC: 'الظل الداكن الافتراضي للمستخدمين الجدد. يسري مفعوله فقط عند تفعيل الوضع الداكن.'
+            DEFAULT_HELP_TEXT_DESC: 'المكان الافتراضي لنص المساعدة الخاص بالحقل للمستخدمين الجدد، أسفل التسمية أو في تلميح.'
+            HELP_MODE_INLINE: 'أسفل التسمية'
+            HELP_MODE_TOOLTIP: 'في تلميح'
+            HELP_TEXT: 'نص المساعدة'
+            HELP_TEXT_DESC: 'أين يظهر الشرح القصير لكل حقل. في حالة التلميح، مرر مؤشر الماوس فوق أيقونة المعلومات بجوار التسمية، أو اضغط عليها على الهاتف لقراءته.'
+            LOGO_HEIGHT_CUSTOM: مخصص
+            LOGO_HEIGHT_DEFAULT: افتراضي
+            SIDEBAR_LOGO_HEIGHT: 'ارتفاع شعار الشريط الجانبي'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'ارتفاع ظهور شعارك في أعلى الشريط الجانبي.'
         CUSTOM: مخصص
         PREVIEW: معاينة
         SETUP:
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'فشل تغيير الحالة للمستخدم {username}: {detail}'
             DEMO_MODE_BLOCKED: 'هذه نسخة تجريبية للقراءة فقط — التغييرات معطلة.'
             USER_ROW_ACTION_FAILED: 'تعذر إكمال الإجراء: {label}'
-        TRANSLATIONS: الترجمات
+        TRANSLATIONS:
+            ACCEPT: قبول
+            ACCEPTED_ALL: '{count, plural, one {# ترجمة تم حفظها} other {# ترجمات تم حفظها}}'
+            ACCEPT_ALL: 'قبول الكل'
+            ALL_SOURCES: 'كل المصادر'
+            CLEAR_ALL_FILTERS: 'مسح عوامل التصفية'
+            DESCRIPTION: 'أعد صياغة أي نص يعرضه هذا الموقع، بأي لغة. يتم تخزين التغييرات كاستبدالات في user/languages ولا يتم المساس بملفات الإضافات أو القوالب الأصلية، مما يضمن عدم ضياعها عند التحديث.'
+            DISCARD: تجاهل
+            DISCARD_ALL: تجاهل
+            EDITED: 'تم التعديل'
+            EDITING_LANGUAGE: 'جارٍ التعديل'
+            EDIT_AS_GRID: 'العودة إلى الشبكة'
+            EDIT_AS_YAML: 'تعديل بصيغة YAML'
+            EDIT_HINT: 'اضغط Enter للحفظ، Escape للإلغاء، وShift+Enter لسطر جديد. امسح النص لإزالة الاستبدال الخاص بك.'
+            FAILED_TO_LOAD: 'فشل في تحميل الترجمات'
+            FAILED_TO_SAVE: 'فشل في حفظ هذا التغيير'
+            FILTERED_BY: 'عرض فقط'
+            FILTER_LANGUAGES: 'تصفية اللغات'
+            IMPORT_ACTION: 'استيراد الاستبدالات'
+            IMPORT_ALREADY_DONE: 'كل {count, plural, one {# استبدال موجود} other {# استبدالات موجودة}} هنا بالفعل'
+            IMPORT_BODY: '{count, plural, one {# استبدال لا يزال مخزناً داخل إضافة Translation Strings. قم باستيراده لإدارته هنا.} other {# استبدالات عبر {languages, plural, one {# لغة} other {# لغات}} لا تزال مخزنة داخل إضافة Translation Strings. قم باستيرادها لإدارتها هنا.}}'
+            IMPORT_COL_ALREADY: 'موجود بالفعل'
+            IMPORT_COL_CONFLICT: متعارض
+            IMPORT_COL_LANGUAGE: اللغة
+            IMPORT_COL_NEW: جديد
+            IMPORT_COL_SHIPPED: 'مطابق للأصل'
+            IMPORT_COL_UNKNOWN: 'غير معروف'
+            IMPORT_CONFLICTS: '{count, plural, one {# مفتاح تم تعيينه} other {# مفاتيح تم تعيينها}} في كلا المكانين بصياغة مختلفة. نسخة الإضافة هي المعتمدة، لأنها هي ما يعرضه موقعك اليوم.'
+            IMPORT_DISABLE_ACTION: 'تعطيل الإضافة'
+            IMPORT_DISABLE_BLOCKED: 'قم باستيراد الاستبدالات أولاً، وإلا ستختفي من الموقع.'
+            IMPORT_DISABLE_FAILED: 'تعذر تعطيل الإضافة'
+            IMPORT_DONE: 'تم استيراد {count, plural, one {# استبدال} other {# استبدالات}}'
+            IMPORT_FAILED: 'فشل الاستيراد'
+            IMPORT_HIDE_DETAIL: 'إخفاء التفاصيل'
+            IMPORT_LEGEND: 'السلاسل النصية المحددة بـ «مطابقة للأصل» تتطابق مع ما توفره الإضافة أو القالب بالفعل، لذا يتم تجاهلها بدلاً من تخزينها كاستبدالات لا فائدة منها.'
+            IMPORT_NO_CONFIG_PERMISSION: 'ليس لديك صلاحية تغيير إعدادات الإضافة، لذا يجب تعطيل الإضافة بواسطة مدير الموقع.'
+            IMPORT_NO_PERMISSION: 'ليس لديك صلاحية كتابة استبدالات الترجمة، لذا فإن الاستيراد غير متاح.'
+            IMPORT_PLUGIN_DISABLED: 'تم تعطيل «سلاسل الترجمة» (Translation Strings). هذا المحرر هو المسؤول الآن.'
+            IMPORT_SHOW_DETAIL: 'عرض ما سيتم استيراده'
+            IMPORT_STILL_ENABLED_BODY: 'إنها تطبق سلاسلها النصية بعد هذا المحرر، لذا فهي لا تزال تتجاوز أي شيء تغيره هنا. تحقق من أن الموقع يعمل بشكل صحيح، ثم قم بتعطيلها لإنهاء عملية التبديل. إعداداتها ستبقى في مكانها، لذا يمكن التراجع عن هذا الإجراء.'
+            IMPORT_STILL_ENABLED_TITLE: 'إضافة Translation Strings لا تزال مفعلة'
+            IMPORT_TITLE: 'استبدالات في انتظار المعالجة في إضافة Translation Strings'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# اسم مفتاح يشير إلى سلسلة نصية لا توفرها أي إضافة أو قالب أو ملف أساسي. تم الاحتفاظ به لتمكينك من مراجعته، لكنه لا يؤدي إلى أي تأثير.} other {# أسماء مفاتيح تشير إلى سلاسل نصية لا توفرها أي إضافة أو قالب أو ملف أساسي. تم الاحتفاظ بها لتمكينك من مراجعتها، لكنها لا تؤدي إلى أي تأثير.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# مفتاح مستورد يشير إلى سلسلة نصية} other {# مفاتيح مستوردة تشير إلى سلاسل نصية}} لا يوفرها هذا الموقع. يمكنك العثور عليها باستخدام عامل التصفية «غير معروف».'
+            INACTIVE: 'غير نشط'
+            INACTIVE_HELP: 'هذه الإضافة معطلة أو أن هذا القالب ليس هو القالب النشط، لذا لا يتم استخدام سلاسلها النصية في الموقع.'
+            KEY: المفتاح
+            KIND_PLUGINS: الإضافات
+            KIND_SYSTEM: النواة
+            KIND_THEMES: القوالب
+            KIND_USER: 'هذا الموقع'
+            LANGUAGES: اللغات
+            LOADING: 'جاري تحميل الترجمات...'
+            NEXT: التالي
+            NOTHING_TO_TRANSLATE: 'لا توجد ترجمات مفقودة في هذه الصفحة.'
+            NO_RESULTS: 'لا توجد سلاسل نصية تطابق عوامل التصفية هذه.'
+            NO_RESULTS_FILTERED: 'أنت تبحث داخل: {filters}'
+            OVERRIDE_REMOVED: 'تمت إزالة التجاوز'
+            PICK_A_TARGET_LANGUAGE: 'أضف عمود لغة أولاً — لا يوجد شيء للترجمة إليه.'
+            PREVIOUS: السابق
+            PROPOSALS_PENDING: '{count, plural, one {# اقتراح للمراجعة} few {# اقتراحات للمراجعة} many {# اقتراحاً للمراجعة} other {# اقتراح للمراجعة}}'
+            REFRESH: تحديث
+            REMOVE_FILTER: 'إزالة عامل التصفية هذا'
+            REVERT: استعادة
+            REVERTED_TO_SHIPPED: 'تمت الاستعادة إلى الصياغة الأصلية'
+            REVERT_HELP: 'قم بإزالة هذا التجاوز والعودة إلى ما توفره الإضافة أو السمة.'
+            SAVE: حفظ
+            SAVED_UNKNOWN_KEY: 'تم الحفظ، ولكن لا يوجد ما يوفر {key} — تحقق من الإملاء'
+            SAVING: 'جارٍ الحفظ...'
+            SCOPED_TO: 'فقط {namespace}'
+            SCOPE_WHOLE_FILE: 'تحرير كل التجاوزات لهذه اللغة'
+            SEARCH_PLACEHOLDER: 'البحث عن نص أو مفتاح...'
+            SHIPPED_VALUE: 'الأصل: {value}'
+            SHOWING: 'عرض {from}–{to} من أصل {total}'
+            SKIPPED_COUNT: '{count, plural, one {# تم تخطيه} few {# تم تخطيها} many {# تم تخطيها} other {# تم تخطيها}}'
+            SKIP_EMPTY: 'لم تُرجع خدمة الترجمة أي نتيجة لهذا النص.'
+            SKIP_ICU: 'تتغير هذه الرسالة حسب رقم أو خيار، وتحتاج كل لغة إلى مجموعة الصيغ الخاصة بها. اكتب هذه يدوياً.'
+            SKIP_NOTHING: 'يتكون هذا النص من عناصر نائبة فقط، لذا لا توجد كلمات للترجمة.'
+            SKIP_NO_SOURCE: 'لا توجد صياغة في اللغة المصدر للترجمة منها.'
+            SKIP_PLACEHOLDERS: 'عادت الترجمة مع تغيير في عناصرها النائبة، لذا تم تجاهلها بدلاً من حفظها.'
+            SOURCE: المصدر
+            SOURCE_LANGUAGE: المصدر
+            STATE_MISSING: مفقود
+            STATE_MISSING_FALLBACK: 'يتم التراجع إلى'
+            STATE_OVERRIDDEN: 'تم تجاوزها'
+            STATUS_ALL: الكل
+            STATUS_MISSING: مفقود
+            STATUS_OVERRIDDEN: 'تم تجاوزها'
+            STATUS_UNKNOWN: 'غير معروف'
+            SUGGESTED: مقترح
+            SUPERSEDED_ACTION: 'فتح الترجمات'
+            SUPERSEDED_BODY: 'يقوم قسم الترجمات بكل ما تقوم به هذه الإضافة، ويضيف ميزة البحث في كل نص على الموقع، وتغطية لكل لغة، والترجمة الآلية، وتقرير عن المفاتيح التي لم تعد مقدمة من أي مصدر. تظل هذه الإضافة مدعومة في Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# تجاوز لا يزال} other {# تجاوزات لا تزال}} مخزنة هنا ويمكن استيرادها.'
+            SUPERSEDED_TITLE: 'مدمج في Grav 2.0'
+            TITLE: الترجمات
+            TRANSLATE_FAILED: 'فشلت الترجمة'
+            TRANSLATE_MISSING: 'ترجمة المفقود'
+            TRANSLATE_ROW: 'اقترح ترجمات لهذا النص بكل لغة معروضة'
+            TRANSLATE_THIS: 'اقترح ترجمة لهذا النص'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'احصل على الإضافة'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'لم يتم إعداد مزود ترجمة لـ AI Translate بعد، لذا فإن الترجمة الآلية غير متاحة.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'إضافة AI Translate مثبتة ولكنها مغلقة، لذا فإن الترجمة الآلية غير متاحة.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'الترجمة المدعومة بالذكاء الاصطناعي للنصوص المفقودة متاحة عبر إضافة AI Translate المميزة.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'افتح إعداداتها'
+            TRANSLATING: 'جاري الترجمة...'
+            UNKNOWN_KEYS_SAVED: 'تم الحفظ، ولكن لا يوجد ما يوفر هذه المفاتيح'
+            UNKNOWN_KEY_HELP: 'لا يوجد أي إضافات أو قوالب أو ملفات أساسية توفر هذا المفتاح. من المحتمل أن يكون هناك خطأ مطبعي، أو بقايا لشيء لم يعد مثبتاً.'
+            YAML_HELP: 'قم بلصق أو تعديل التجاوزات مباشرة. يتم تجاهل القيم التي تطابق ما توفره الإضافة أو القالب بالفعل، بحيث يحتوي الملف فقط على التغييرات الفعلية.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: صياغتك هنا
+            YAML_SAVED: '{count, plural, =0 {لا توجد تجاوزات متبقية في {lang}} one {تم حفظ {count} تجاوز في {lang}} other {تم حفظ {count} تجاوزات في {lang}}}'
         TRANSLATIONS_FALLBACK: 'بديل الترجمات'
         TRANSLATIONS_FALLBACK_HELP: 'الرجوع إلى الترجمات المدعومة إذا لم تكن اللغة النشطة موجودة'
         TWIG_3_COMPATIBILITY: 'توافق Twig 3'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'يمكن تنزيل الملفات الموجودة تحت user/data و user/accounts و user/config مباشرة عبر HTTP — بما في ذلك الشهادات والمفاتيح والرموز وقواعد البيانات. هذا يعني عادةً أن خادم الويب الخاص بك لا يطبق قواعد .htaccess الخاصة بـ Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'كيفية تأمين خادم الويب الخاص بك'
             USER_FOLDER_EXPOSED_TITLE: 'خطر أمني: مجلدات بيانات المستخدم الخاصة بك يمكن الوصول إليها من الويب'
+            COLLAPSE: طي
+            SHOW_DETAILS: 'عرض التفاصيل'
+            SNOOZE: تأجيل
+            SNOOZE_HINT: 'إخفاء هذا التحذير لمدة 24 ساعة. سيعود للظهور مبكراً إذا تم العثور على ملفات مختلفة.'
+            STORAGE_EXPOSED_ALL: 'يمكن تنزيل كل ملف اختبار، مما يعني أن خادم الويب الخاص بك لا يطبق قواعد الوصول الخاصة بـ Grav على الإطلاق. على Apache، تأكد من أن AllowOverride يسمح بتفعيل ملف .htaccess الخاص بالموقع. على nginx أو Caddy أو IIS، أضف قواعد الأمان من مجلد webserver-configs الخاص بـ Grav.'
+            STORAGE_EXPOSED_BODY: 'قام خادم الويب بخدمة ملفات اختبار من أدلة يجب أن تكون خاصة. قد تؤدي أنواع الملفات المدرجة أدناه إلى كشف عمليات الإرسال المخزنة أو النسخ الاحتياطية أو الملفات المؤقتة. اطلب من المستضيف حظر الوصول المباشر، أو انقل التخزين الخاص خارج جذر الويب.'
+            STORAGE_EXPOSED_BY_TYPE: 'تم حظر بعض أنواع الملفات في هذه المجلدات بينما يمكن تنزيل البعض الآخر. هذا يعني عادةً وجود شيء ما قبل قواعد Grav، مثل nginx الذي يقدم ملفات ثابتة قبل Apache، ويستجيب لأنواع الملفات الشائعة مثل .zip قبل التحقق من القواعد. قم بحظر هذه المجلدات في إعدادات تلك الطبقة أيضاً.'
+            STORAGE_EXPOSED_CDN: 'إذا كان الموقع خلف شبكة توزيع محتوى (CDN) مثل Cloudflare، فقم بمسح ذاكرة التخزين المؤقت الخاصة بها بعد إصلاح هذا. النسخ التي خزنها بالفعل تظل قابلة للتنزيل حتى تقوم بذلك.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# نوع ملف} other {# أنواع ملفات}}'
+            STORAGE_EXPOSED_TITLE: 'يمكن تحميل الملفات التي يجب أن تكون خاصة من هذا الموقع'
+            STORAGE_EXPOSED_TMP: 'تمت تجربة تحميل ملفات في المجلد tmp/، بينما تم حظر المجلدات الأخرى. من المحتمل أن قواعد الخادم لديك تعود إلى ما قبل إصدار Grav 2.1.7، والذي أضاف المجلد tmp/ إلى قائمة المجلدات المحظورة. أضف tmp إلى تلك القائمة في ملف .htaccess الخاص بك، أو في إعدادات nginx أو Caddy أو IIS، لتتطابق مع القواعد التي توفرها Grav.'
         CONFIRM: تأكيد
         DEMO:
             BANNER_COUNTDOWN: 'إعادة الضبط القادمة خلال {time}'
@@ -2066,6 +2299,55 @@ ICU:
             STAY: بقاء
             SWITCH_LANGUAGE: تبديل
             SWITCH_LANGUAGE_MESSAGE: 'لديك تغييرات لم يتم حفظها. هل ترغب في تبديل اللغة على أي حال؟'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'تعذر قراءة رد الخادم لأنه ليس بتنسيق JSON صالح. قد يكون هناك شيء ما على الخادم يقوم بطباعة مخرجات إضافية، مثل تحذير PHP، إلى جانب استجابة واجهة برمجة التطبيقات. توجد التفاصيل في وحدة تحكم المتصفح.'
+            INVALID_JSON_TITLE: 'استجابة غير متوقعة من الخادم'
+            UNEXPECTED_RESPONSE_DETAIL: 'رد الخادم ببيانات بتنسيق لا تتوقعه هذه الشاشة. توجد التفاصيل في وحدة تحكم المتصفح.'
+            UNEXPECTED_RESPONSE_TITLE: 'استجابة غير متوقعة من الخادم'
+        CACHE_MODULES: 'مخرجات وحدة التخزين المؤقت'
+        CACHE_MODULES_HELP: 'تخزين المخرجات المعروضة لوحدات هذه الصفحة مؤقتًا. استخدمه فقط عندما تعرض الوحدات نفس المحتوى لكل زائر. الوحدات التي تحتوي على Twig خاص بها أو نموذج، والزوار المسجلون، وعمليات إرسال النماذج يتم عرضها دائمًا بشكل جديد. يتطلب تعديل قالب جزئي فقط مسح ذاكرة التخزين المؤقت.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'تلميحات عرض Flex'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'تضمين كل كائن Flex ومجموعة معروضة في تعليق HTML يحدد هويتها، بحيث يمكن العثور على مصدر الكتلة في ترميز الصفحة. ينطبق فقط على صفحات HTML.'
+        FRONTMATTER_NATIVE_YAML: 'تحليل سريع لبيانات الصفحة (frontmatter)'
+        FRONTMATTER_NATIVE_YAML_HELP: 'قراءة بيانات الصفحة الأمامية باستخدام ملحق libyaml PHP عند تثبيته، مما يجعل إعادة بناء ذاكرة التخزين المؤقت للصفحات أسرع. يقوم هذا الخيار بقراءة بعض القيم بشكل مختلف، لذا يرجى فحص صفحاتك أولاً. التاريخ غير المحاط بعلامات اقتباس يظل نصاً بدلاً من التحول إلى طابع زمني، كما تتحول قيم yes و no و on و off غير المحاطة بعلامات اقتباس إلى true أو false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'سيؤدي هذا إلى ترقية Grav من الإصدار {current} إلى الإصدار {target}. قد يكون الموقع غير متاح لفترة وجيزة أثناء الترقية.'
+            CONFIRM_TITLE: 'هل تريد ترقية نواة Grav؟'
+            FAILED: 'فشلت ترقية Grav: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} الإصدار {version} مصنف كمتوافق مع Grav {compatible}'
+            NO_DETAIL: 'لم يقدم الخادم أي سبب'
+            PREFLIGHT_MESSAGE: 'الفحوصات التي يتم تشغيلها قبل الترقية أوقفت العملية لهذه الأسباب. قم بإصلاحها وحاول مرة أخرى، أو اختر الترقية على أي حال إذا كنت متأكداً من أن هذه الإضافات والقوالب تعمل مع الإصدار الجديد.'
+            PREFLIGHT_TITLE: 'لا يمكن لـ Grav الترقية إلى الإصدار {version} بعد'
+            STILL_BLOCKED: 'ترقية Grav لا تزال محظورة: {detail}'
+            UPGRADE_ANYWAY: 'ترقية على أي حال'
+            UPGRADING: 'جاري ترقية Grav إلى الإصدار {version}…'
+        HELP: مساعدة
+        HELP_FOR_LABEL: 'مساعدة لـ {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'صور JPEG تدريجية (Progressive)'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'حفظ صور JPEG التي تم تغيير حجمها وتخزينها مؤقتاً كصور تدريجية، بحيث تظهر كصورة ضبابية كاملة تزداد وضوحاً بدلاً من تعبئتها من الأعلى. عادة ما تكون أصغر حجماً أيضاً. لا يؤثر هذا على صيغ PNG أو WebP أو AVIF.'
+        MARKDOWN_OUTPUT: 'مخرجات Markdown'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'روابط مطلقة'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'تحويل الروابط والصور النسبية للجذر إلى روابط كاملة، لكي تستمر في العمل بمجرد خروج Markdown من الموقع.'
+        MARKDOWN_OUTPUT_ENABLED: 'عرض الصفحات كـ Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'يمكن جلب أي صفحة بتنسيق Markdown عن طريق إضافة `.md` إلى رابط URL الخاص بها، أو عن طريق إرسال ترويسة طلب `Accept:&nbsp;text/markdown`. تم تصميم هذه الميزة لوكلاء الذكاء الاصطناعي وعملاء النصوص الآخرين. يتم عرض الصفحة من خلال القالب، وتختصر إلى منطقة المحتوى الرئيسي الخاصة بها ثم يتم تحويلها، بحيث تظهر القوائم والمتاجر والصفحات النمطية بالشكل الذي تُعرض به.'
+        MARKDOWN_OUTPUT_FRONTMATTER: 'كتلة الواجهة (Frontmatter)'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'ابدأ الـ Markdown بكتلة YAML تحتوي على العنوان، ورابط URL، والتاريخ، والوصف، والتصنيف.'
+        MARKDOWN_OUTPUT_LINKS: 'روابط التنقل'
+        MARKDOWN_OUTPUT_LINKS_HELP: 'أنهِ الـ Markdown بروابط للصفحة الأصلية والصفحات المجاورة والفرعية، حتى يتمكن الوكيل من تصفح الموقع دون مغادرة تنسيق Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'أكبر عدد من الروابط الفرعية'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'أقصى عدد من الصفحات الفرعية المدرجة في قسم التنقل. القيمة صفر تدرجها جميعاً.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'ترويسة عدد الرموز (Tokens)'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'إرسال ترويسة استجابة `X-Markdown-Tokens` مع تقدير لعدد الرموز، وهي نفس الترويسة التي تستخدمها ميزة Markdown for Agents الخاصة بـ Cloudflare.'
+        NOTICES:
+            HEADING: '{count, plural, one {تنبيه} other {تنبيهات}}'
+            HIDE: 'إخفاء التنبيهات'
+            SHOW: 'إظهار التنبيهات'
+        PAGES_LAZY_INDEX: 'فهرس الصفحات الكسول'
+        PAGES_LAZY_INDEX_HELP: 'تحميل الصفحات والمسارات والتصنيفات عند الطلب من فهرس SQLite لكل صفحة بدلاً من ملف ذاكرة تخزين مؤقت واحد كبير. يتم استخدامه تلقائياً في المواقع التي تحتوي على 1000 صفحة أو أكثر. يعود إلى ذاكرة التخزين المؤقت الكلاسيكية عند عدم توفر محرك قاعدة بيانات.'
+        RETRY: 'إعادة المحاولة'
+        SESSION_LAZY: 'بدء الجلسات فقط عند الحاجة'
+        SESSION_LAZY_HELP: 'الزوار الذين ليس لديهم ملف تعريف ارتباط للجلسة لا يحصلون على جلسة إلا عند تخزين شيء ما فيها، مثل تسجيل الدخول أو نموذج أو رسالة، بحيث يمكن تخزين مشاهدات الصفحة المجهولة مؤقتًا بواسطة وكيل أو شبكة توصيل محتوى (CDN). الإضافات التي تخزن بيانات عند كل مشاهدة للصفحة لا تزال تبدأ واحدة.'
+        UPDATE_CHANGELOG_TITLE: 'التغييرات في الإصدار {version}'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA مُفعَّل'
         2FA_SECRET: 'سرّ 2FA'

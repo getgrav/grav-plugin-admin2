@@ -106,6 +106,8 @@ ICU:
                 TRUSTED: 'Pouze důvěryhodné role'
                 TRUSTED_DESC: 'Pouze superuživatelé a držitelé oprávnění „pages twig“ mohou povolit Twig na stránce.'
             VALIDATION_FAILED_FOR_FIELDS: 'Uložení se nezdařilo — tato pole jsou neplatná: {fields}'
+            FAILED_TO_LOAD_CONFIGURATION: 'Nepodařilo se načíst konfiguraci.'
+            SCOPE_NOT_FOUND: 'Nebyl nalezen žádný konfigurační rozsah s názvem {scope}.'
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Prostředí
             EXPORT_YAML: 'Exportovat YAML'
@@ -226,6 +228,14 @@ ICU:
                 SCHEDULER_STATUS: 'Stav plánovače'
                 STATUS: 'Stav:'
                 WEBHOOK: 'Webhook:'
+                BY_HAND: ručně
+                MANUAL_RUN_HELP: '„Spustit nevyřízené“ provede úlohy, které nestihly svůj poslední naplánovaný čas, což je žádoucí u webů bez nastaveného cronu. Úlohy spuštěné zde jsou zaznamenány jako manuální a nepočítají se do stavu cronu výše.'
+                NEVER: Nikdy
+                PENDING: Nevyřízené
+                PROCESS_UNAVAILABLE: 'Na tomto hostiteli nelze odsud spouštět úlohy, protože je zakázána funkce PHP proc_open. Úlohy se přesto spustí, jakmile bude váš plánovač aktivován pomocí cronu nebo webhooku.'
+                RUN_ALL_HELP: 'Spustit všechny povolené úlohy nyní, bez ohledu na jejich plán.'
+                RUN_NOW: 'Spustit tuto úlohu nyní'
+                RUN_PENDING: 'Spustit nevyřízené'
             CUSTOM_FIELD_WRAPPER:
                 LOADING_CUSTOM_FIELD: 'Načítání vlastního pole...'
             DATE_FORMAT:
@@ -244,6 +254,10 @@ ICU:
                 NO_ICONS_FOUND: 'Žádné ikony nenalezeny'
                 SEARCH_ICONS: 'Hledat ikony...'
                 SHOWING_FIRST_200_RESULTS_TYPE_TO_NARROW: 'Zobrazujem prvních 200 výsledků — zúžit zadáním'
+                FAMILY_ALL: Vše
+                FAMILY_BRANDS: Značky
+                FAMILY_REGULAR: Běžné
+                FAMILY_SOLID: Plné
             NO_TAXONOMY_TYPES: 'Žádné typy taxonomie nejsou nakonfigurovány'
             PAGES:
                 FILTER_PAGES: 'Filtrovat stránky...'
@@ -282,6 +296,17 @@ ICU:
             SELECTIZE_PLACEHOLDER: 'Napište a stiskněte Enter...'
             SELECT_AN_ICON: 'Vybrat ikonu...'
             SELECT_A_PAGE: 'Vybrat stránku...'
+            MEDIA:
+                ADD: 'Přidat média…'
+                CHANGE: Změnit
+                DONE: Hotovo
+                MOVE_EARLIER: 'Posunout dříve'
+                MOVE_LATER: 'Posunout později'
+                REMOVE: Odstranit
+                SELECT: 'Vybrat média…'
+                SELECTED_COUNT: '{count, plural, =0 {Nic nevybráno} one {# vybráno} other {# vybráno}}'
+                TITLE: 'Vybrat média'
+            SET_DATE_NOW: 'Nastavit na teď'
         FLEX_OBJECTS:
             ACTIONS: Akce
             BACK_TO_LIST: 'Zpět na seznam'
@@ -374,6 +399,11 @@ ICU:
             CONTINUE_WITH: 'Pokračovat pomocí {provider}'
             OR_CONTINUE_WITH: 'Nebo pokračovat pomocí'
             SSO_FAILED: 'Nepodařilo se přihlásit pomocí tohoto poskytovatele. Prosím, zkuste to znovu.'
+            CAPTCHA_FAILED_TO_LOAD: 'Výzvu se nepodařilo načíst. Znovu načtěte stránku a zkuste to znovu.'
+            CAPTCHA_NOT_COMPLETED: 'Pro pokračování prosím dokončete výzvu'
+            CAPTCHA_VERIFIED: 'Ověřeno, že jste člověk'
+            CAPTCHA_VERIFYING: 'Ověřování, že jste člověk...'
+            INVALID_AUTHENTICATION_CODE: 'Neplatný ověřovací kód'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nic k náhledu'
             IMAGE_INSERT:
@@ -421,6 +451,17 @@ ICU:
                 LIST_VIEW: 'Zobrazení seznamu'
                 NEW_FOLDER: 'Nová složka'
                 SEARCH_MEDIA: 'Vyhledávání médií...'
+                DELETE_SELECTED: '{count, plural, one {Smazat # soubor} few {Smazat # soubory} other {Smazat # souborů}}'
+                FILTER_ALL: Vše
+                FILTER_AUDIO: Audio
+                FILTER_DOCS: Dokumenty
+                FILTER_IMAGES: Obrázky
+                FILTER_VIDEO: Video
+                SEARCHING_FOR: 'Hledat: „{query}“'
+                SORT_DATE: Datum
+                SORT_NAME: Název
+                SORT_SIZE: Velikost
+                SORT_TYPE: Typ
             PAGE_MEDIA:
                 DRAG_INTO_EDITOR: 'Přetáhnout do editoru'
                 PAGE_MEDIA: 'Média stránky'
@@ -448,6 +489,15 @@ ICU:
                 STORED: 'Uložená metadata'
                 TAGS_PLACEHOLDER: 'Přidat štítek…'
                 TITLE: Metadata
+            FILE_DETAILS:
+                MARKDOWN: Markdown
+                MEDIA_PATH: 'Cesta k médiím'
+                OPEN: Otevřít
+                PATH: Cesta
+                SIZE: Velikost
+                TITLE: 'Podrobnosti o souboru'
+                TYPE: Typ
+                URL: URL
         NAV:
             CONFIGURATION: Konfigurace
             DASHBOARD: Přehled
@@ -460,6 +510,7 @@ ICU:
             TOOLS: Nástroje
             USERS: Uživatelé
             UPDATES_AVAILABLE: 'Je k dispozici {count} aktualizace'
+            TRANSLATIONS: Překlady
         NEWS_FEED_WIDGET:
             NO_FEED_ITEMS: 'Žádné položky informačního kanálu'
         NORMAL_MODE: 'Normální režim'
@@ -508,6 +559,9 @@ ICU:
                 WRITE_YOUR_MARKDOWN_CONTENT_HERE: 'Napište sem svůj obsah v markdownu...'
                 SAVED_BY_PEER: '{user} uložil tuto stránku'
                 SAVED_BY_PEER_ANON: 'Jiný uživatel uložil tuto stránku'
+                FALLBACK_NOTICE_UNRESOLVED: 'Server vrátil {effective} verzi této stránky místo {active} a nenahlásil {active} jako chybějící. Ukládání je zde vypnuto, aby nedošlo k přepsání souboru {effective}. Pokud se to děje u všech stránek, webový server pravděpodobně nepředává řetězce dotazů (query strings) do systému Grav.'
+                PREVIEW_SHOWING_HOST_PAGE: 'zobrazeno v nadřazené stránce'
+                TEMPLATE_MISSING_NOTICE: 'Šablona **{template}** pro tento modul nebyla v motivu nalezena, takže stránka, ke které patří, zobrazuje chybu „šablona nenalezena“. Vyberte šablonu v sekci **Šablona stránky** na kartě Upřesnit, nebo přidejte šablonu do motivu.'
             EDIT_PAGE: 'Upravit stránku'
             FRONTMATTER: Předmluva
             HEADER_MODIFIED: Změněno
@@ -557,6 +611,8 @@ ICU:
                 ROOT: '&lt;root&gt; /'
                 URL_SAFE_FOLDER_NAME_FOR_THIS_PAGE: 'Název složky bezpečný pro URL adresy pro tuto stránku'
                 VISIBLE: Viditelný
+                CHILD_TYPE_HINT: 'Nadřazená stránka navrhuje pro své potomky „{template}“. Stále si však můžete vybrat jinou šablonu.'
+                STATUS_HELP: 'Koncepty jsou uloženy, ale na webu se nezobrazí, dokud je nepublikujete'
             NO_PAGES: 'Žádné stránky nenalezeny'
             NO_SEARCH_RESULTS: 'Žádné stránky neodpovídají vašemu vyhledávání'
             PAGES_GRAV_ADMIN: 'Stránky — Grav Admin'
@@ -626,6 +682,16 @@ ICU:
                 VISIBLE: Viditelné
                 'YES': Ano
             VALIDATION_FAILED_FOR_FIELDS: 'Uložení se nezdařilo — tato pole jsou neplatná: {fields}'
+            COLUMN_EMPTY: Prázdné
+            SEARCH_MATCH_COUNT: '{n, plural, one {# shoda} few {# shody} other {# shod}} napříč všemi stránkami'
+            SEARCH_SHOWING: 'Zobrazuji {shown} z {total} výsledků'
+            SEARCH_SHOW_MORE: 'Zobrazit více'
+            STATUS:
+                EXPIRED: Vypršelo
+                EXPIRED_ON: 'Nepublikováno od {date}'
+                SCHEDULED: Naplánováno
+                SCHEDULED_FOR: 'Naplánováno k publikaci na {date}'
+                TOGGLE_TITLE: '{action} ({status})'
         PASSWORD: Heslo
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Požadavky na heslo'
@@ -681,11 +747,15 @@ ICU:
             LAST_14_DAYS: 'Posledních 14 dní'
             THIS_MONTH: 'Tento měsíc'
             THIS_WEEK: 'Tento týden'
+            CHART_LABEL: 'Zobrazení stránek za den za posledních 14 dní'
+            TODAY: Dnes
+            VIEWS: '{count, plural, one {# zobrazení} few {# zobrazení} other {# zobrazení}}'
         PREMIUM: Premium
         PREVIEW: Náhled
         REAUTH_MODAL:
             PLEASE_RE_ENTER_YOUR_PASSWORD_TO: 'Prosím, znovu zadejte své heslo, abyste mohli pokračovat. Vaše práce byla zachována.'
             SESSION_EXPIRED: 'Relace vypršela'
+            SIGN_IN_AGAIN_TO_CONTINUE: 'Přihlaste se znovu pro pokračování. Vaše rozpracovaná práce byla uložena.'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Zobrazit vše'
         REMOVE: Odebrat
@@ -845,6 +915,23 @@ ICU:
             EDITOR_KEYMAP_DEFAULT: Výchozí
             EDITOR_KEYMAP_DESC: 'Použít klávesové zkratky Vim v editoru Markdownu a kódu. Výchozí nastavení zachovává standardní úpravy.'
             EDITOR_KEYMAP_VIM: Vim
+            COPY_COLOR: 'Zkopírovat tuto barvu'
+            CURRENT_COLOR: Barva
+            DARK_SHADE: 'Tmavý odstín'
+            DARK_SHADE_DESC: 'Jak vypadá tmavý režim. Projeví se pouze tehdy, je-li tmavý režim zapnutý.'
+            DARK_SHADE_GRAPHITE: Grafitová
+            DARK_SHADE_MIDNIGHT: Půlnoční
+            DARK_SHADE_ZINC: Onyxová
+            DEFAULT_DARK_SHADE_DESC: 'Výchozí tmavý odstín pro nové uživatele. Projeví se pouze tehdy, je-li tmavý režim zapnutý.'
+            DEFAULT_HELP_TEXT_DESC: 'Výchozí umístění nápovědy k polím pro nové uživatele, pod popiskem nebo v nápovědě (tooltipu).'
+            HELP_MODE_INLINE: 'Pod popiskem'
+            HELP_MODE_TOOLTIP: 'V nápovědě (tooltipu)'
+            HELP_TEXT: 'Text nápovědy'
+            HELP_TEXT_DESC: 'Kam se umisťuje krátké vysvětlení ke každému poli. V nápovědě (tooltipu) na ikonu informací vedle popisku najeďte myší, nebo na ni na telefonu klepněte, abyste si ji přečetli.'
+            LOGO_HEIGHT_CUSTOM: Vlastní
+            LOGO_HEIGHT_DEFAULT: Výchozí
+            SIDEBAR_LOGO_HEIGHT: 'Výška loga v postranním panelu'
+            SIDEBAR_LOGO_HEIGHT_DESC: 'Jak vysoké se bude vaše logo zobrazovat v horní části postranního panelu.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
@@ -980,6 +1067,10 @@ ICU:
                 REFRESH: Obnovit
                 SEARCH_MESSAGES: 'Hledat zprávy...'
                 WARNING: Varování
+                CLEAR_LOG: 'Vymazat záznamy'
+                CLEAR_LOG_CONFIRM: 'Trvale odstranit každý záznam v {file}? Toto nelze vrátit zpět a veškerý záznam o tom, co se stalo špatně předtím, bude ztracen.'
+                FAILED_TO_CLEAR_LOG: 'Nepodařilo se vymazat záznamy'
+                LOG_CLEARED: 'Soubor {file} vymazán'
             REPORTS:
                 CONTENT_FIELD: 'content: {field}'
                 FAILED_TO_LOAD_REPORTS: 'Nepodařilo se načíst zprávy'
@@ -1016,6 +1107,20 @@ ICU:
                     SCAN_TAGS: 'Blokované značky v obsahu'
                     SECTION_EVENTS: 'Nedávná blokování'
                     SECTION_LEAKS: 'Stránky propouštějící surový Twig'
+                    POLICY_ADDED: '+{count} přidáno'
+                    POLICY_ALL_DEFAULTS: 'Vše výchozí, beze změn'
+                    POLICY_CLASS_COUNT: '{count, plural, one {# třída} few {# třídy} other {# tříd}}'
+                    POLICY_DENIED: '−{count} zamítnuto'
+                    POLICY_EFFECTIVE_COUNT: '{count} efektivních'
+                    POLICY_FAILED: 'Nelze načíst sandbox politiku'
+                    POLICY_FILTERS: Filtry
+                    POLICY_FUNCTIONS: Funkce
+                    POLICY_HIDE: 'Skrýt efektivní politiku'
+                    POLICY_INTRO: 'Základní sandbox je součástí kódu; vaše konfigurace jej pouze rozšiřuje nebo omezuje.'
+                    POLICY_METHODS: Metody
+                    POLICY_PROPERTIES: Vlastnosti
+                    POLICY_TAGS: Tagy
+                    POLICY_VIEW: 'Zobrazit efektivní politiku'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Načítání komponenty zpráv...'
             SCHEDULER:
@@ -1029,6 +1134,12 @@ ICU:
                 SCHEDULER_CONFIGURATION_SAVED: 'Konfigurace scheduleru uložena'
                 SECURITY_WARNING: 'Pouze pokročilí uživatelé by měli konfigurovat vlastní úlohy scheduleru. Nesprávná konfigurace může způsobit problémy s výkonem nebo bezpečnostní problémy.'
                 WEBHOOK_ALTERNATIVE: 'Případně nainstalujte plugin **scheduler-webhook** pro používání webhook-based cronování, které je doporučeno pro cloudová prostředí, kde není dostupný přístup k systémovému crontabu.'
+                CRON_UNDETERMINED: 'Grav nemůže kontrolovat crontab tohoto serveru, takže nemůže potvrdit, jak je plánovač spouštěn.'
+                ENVIRONMENT_MISMATCH: 'Plánovač byl naposledy spuštěn v prostředí **{last}**, ale tento web používá **{current}**, které má vlastní konfiguraci v user/env/{current}/config. Vlastní úlohy a nastavení definované pouze tam se z tohoto spouštěče nikdy nespustí. Aktualizujte řádek plánovače bin/grav ve vašem crontabu na níže uvedený příkaz (předává --env={current}), nebo před spuštěním exportujte GRAV_ENVIRONMENT={current}.'
+                LAST_MANUAL_RUN: 'Naposledy spuštěno ručně'
+                LAST_TRIGGERED: 'Naposledy aktivováno'
+                PROCESS_UNAVAILABLE: 'Tento hostitel má zakázanou funkci PHP proc_open, takže úlohy nelze spouštět z administrace. Stále se však spouštějí, kdykoli je váš plánovač aktivován pomocí cronu nebo webhooku.'
+                STATUS_UNAVAILABLE: 'Stav plánovače nebylo možné na tomto hostiteli přečíst. Vaše úlohy jsou stále uvedeny níže a lze je upravovat jako obvykle.'
             SYSTEM_INFO:
                 DISK_FREE_OF: '{free} volné z {total}'
                 DISK_USAGE: 'Využití disku'
@@ -1951,7 +2062,118 @@ ICU:
             USER_STATE_FAILED: 'Změna stavu pro {username} selhala: {detail}'
             DEMO_MODE_BLOCKED: 'Toto je demo pouze pro čtení — změny jsou zakázány.'
             USER_ROW_ACTION_FAILED: 'Akci se nepodařilo dokončit: {label}'
-        TRANSLATIONS: Překlady
+        TRANSLATIONS:
+            ACCEPT: Přijmout
+            ACCEPTED_ALL: '{count, plural, one {# překlad uložen} few {# překlady uloženy} other {# překladů uloženo}}'
+            ACCEPT_ALL: 'Přijmout vše'
+            ALL_SOURCES: 'Všechny zdroje'
+            CLEAR_ALL_FILTERS: 'Vymazat filtry'
+            DESCRIPTION: 'Přeformulujte jakýkoli řetězec, který tato stránka zobrazuje, v jakémkoli jazyce. Změny jsou uloženy jako přepisy v user/languages a nikdy nezasahují do souborů pluginu nebo šablony, takže je aktualizace nemůže smazat.'
+            DISCARD: Zahodit
+            DISCARD_ALL: Zahodit
+            EDITED: upraveno
+            EDITING_LANGUAGE: Úpravy
+            EDIT_AS_GRID: 'Zpět na mřížku'
+            EDIT_AS_YAML: 'Upravit jako YAML'
+            EDIT_HINT: 'Enter pro uložení, Escape pro zrušení, Shift+Enter pro nový řádek. Vyprázdněte pole pro odstranění přepisu.'
+            FAILED_TO_LOAD: 'Načtení překladů selhalo'
+            FAILED_TO_SAVE: 'Uložení této změny selhalo'
+            FILTERED_BY: 'Zobrazit pouze'
+            FILTER_LANGUAGES: 'Filtrovat jazyky'
+            IMPORT_ACTION: 'Importovat přepisy'
+            IMPORT_ALREADY_DONE: 'Všechny {count, plural, one {# přepis je} few {# přepisy jsou} other {# přepisů je}} již zde jsou'
+            IMPORT_BODY: '{count, plural, one {# přepis je stále uložen v pluginu Translation Strings. Importujte jej pro správu zde.} few {# přepisy napříč {languages, plural, one {# jazykem} few {# jazyky} other {# jazyky}} jsou stále uloženy v pluginu Translation Strings. Importujte je pro správu zde.} other {# přepisů napříč {languages, plural, one {# jazykem} few {# jazyky} other {# jazyky}} je stále uloženo v pluginu Translation Strings. Importujte je pro správu zde.}}'
+            IMPORT_COL_ALREADY: 'Již zde'
+            IMPORT_COL_CONFLICT: Konfliktní
+            IMPORT_COL_LANGUAGE: Jazyk
+            IMPORT_COL_NEW: Nový
+            IMPORT_COL_SHIPPED: 'Stejný jako původní'
+            IMPORT_COL_UNKNOWN: Neznámý
+            IMPORT_CONFLICTS: '{count, plural, one {# klíč je} few {# klíče jsou} other {# klíčů je}} nastaven na obou místech s různým zněním. Verze pluginu má přednost, protože to je to, co váš web dnes zobrazuje.'
+            IMPORT_DISABLE_ACTION: 'Deaktivovat plugin'
+            IMPORT_DISABLE_BLOCKED: 'Nejprve importujte přepisy, jinak ze stránek zmizí.'
+            IMPORT_DISABLE_FAILED: 'Plugin se nepodařilo deaktivovat'
+            IMPORT_DONE: 'Importováno {count, plural, one {# přepsání} few {# přepsání} other {# přepsání}}'
+            IMPORT_FAILED: 'Import selhal'
+            IMPORT_HIDE_DETAIL: 'Skrýt podrobnosti'
+            IMPORT_LEGEND: 'Řetězce označené jako „stejné jako původní“ se shodují s tím, co již plugin nebo šablona obsahuje, takže jsou zahozeny namísto ukládání jako přepsání, která nic nedělají.'
+            IMPORT_NO_CONFIG_PERMISSION: 'Nemáte oprávnění měnit nastavení pluginů, takže plugin musí deaktivovat administrátor.'
+            IMPORT_NO_PERMISSION: 'Nemáte oprávnění zapisovat přepsání překladů, takže import není k dispozici.'
+            IMPORT_PLUGIN_DISABLED: 'Překladové řetězce zakázány. Tento editor má nyní kontrolu.'
+            IMPORT_SHOW_DETAIL: 'Zobrazit, co bude importováno'
+            IMPORT_STILL_ENABLED_BODY: 'Aplikuje své řetězce po tomto editoru, takže stále přepisuje vše, co zde změníte. Zkontrolujte, zda se web zobrazuje správně, poté jej deaktivujte pro dokončení přepnutí. Jeho nastavení zůstávají na místě, takže tento proces je vratný.'
+            IMPORT_STILL_ENABLED_TITLE: 'Plugin Translation Strings je stále povolen'
+            IMPORT_TITLE: 'Přepsání čekající v pluginu Translation Strings'
+            IMPORT_UNKNOWN_NOTE: '{count, plural, one {# klíč označuje řetězec, který žádný plugin, šablona ani soubor jádra neposkytuje. Je zachován, abyste jej mohli zkontrolovat, ale nemá žádný účinek.} few {# klíče označují řetězce, které žádný plugin, šablona ani soubor jádra neposkytuje. Jsou zachovány, abyste je mohli zkontrolovat, ale nemají žádný účinek.} other {# klíčů označuje řetězce, které žádný plugin, šablona ani soubor jádra neposkytuje. Jsou zachovány, abyste je mohli zkontrolovat, ale nemají žádný účinek.}}'
+            IMPORT_UNKNOWN_WARNING: '{count, plural, one {# importovaný klíč označuje řetězec} few {# importované klíče označují řetězce} other {# importovaných klíčů označuje řetězce}}, které tento web nikde nevyužívá. Najdete je pomocí filtru Neznámé.'
+            INACTIVE: neaktivní
+            INACTIVE_HELP: 'Tento plugin je zakázán nebo tato šablona není aktivní, takže její řetězce nejsou na webu použity.'
+            KEY: Klíč
+            KIND_PLUGINS: Pluginy
+            KIND_SYSTEM: Jádro
+            KIND_THEMES: Šablony
+            KIND_USER: 'Tento web'
+            LANGUAGES: Jazyky
+            LOADING: 'Načítání překladů...'
+            NEXT: Další
+            NOTHING_TO_TRANSLATE: 'Na této stránce nechybí žádný překlad.'
+            NO_RESULTS: 'Žádné řetězce neodpovídají těmto filtrům.'
+            NO_RESULTS_FILTERED: 'Prohlížíte: {filters}'
+            OVERRIDE_REMOVED: 'Přepsání bylo odebráno'
+            PICK_A_TARGET_LANGUAGE: 'Nejdříve přidejte jazykový sloupec — není do čeho překládat.'
+            PREVIOUS: Předchozí
+            PROPOSALS_PENDING: '{count, plural, one {# návrh ke kontrole} few {# návrhy ke kontrole} other {# návrhů ke kontrole}}'
+            REFRESH: Obnovit
+            REMOVE_FILTER: 'Odstranit tento filtr'
+            REVERT: 'Vrátit zpět'
+            REVERTED_TO_SHIPPED: 'Vráceno k původnímu znění'
+            REVERT_HELP: 'Odstraňte toto přepsání a vraťte se k verzi, kterou poskytuje plugin nebo šablona.'
+            SAVE: Uložit
+            SAVED_UNKNOWN_KEY: 'Uloženo, ale {key} nikdo neposkytuje — zkontrolujte pravopis'
+            SAVING: Ukládání...
+            SCOPED_TO: 'Pouze {namespace}'
+            SCOPE_WHOLE_FILE: 'Úprava všech přepsání pro tento jazyk'
+            SEARCH_PLACEHOLDER: 'Hledat text nebo klíč...'
+            SHIPPED_VALUE: 'Původně: {value}'
+            SHOWING: 'Zobrazeno {from}–{to} z {total}'
+            SKIPPED_COUNT: '{count, plural, one {# přeskočeno} few {# přeskočeny} other {# přeskočeno}}'
+            SKIP_EMPTY: 'Překladová služba nevrátila pro tento řetězec žádný výsledek.'
+            SKIP_ICU: 'Tato zpráva se mění v závislosti na čísle nebo volbě a každý jazyk potřebuje vlastní sadu tvarů. Napište tento text ručně.'
+            SKIP_NOTHING: 'Tento řetězec obsahuje pouze zástupné symboly, takže zde nejsou žádná slova k překladu.'
+            SKIP_NO_SOURCE: 'Ve zdrojovém jazyce není žádný text k překladu.'
+            SKIP_PLACEHOLDERS: 'Překlad se vrátil s upravenými zástupnými symboly, takže byl místo uložení zahozen.'
+            SOURCE: zdroj
+            SOURCE_LANGUAGE: Zdroj
+            STATE_MISSING: chybí
+            STATE_MISSING_FALLBACK: 'přechod na záložní'
+            STATE_OVERRIDDEN: přepsáno
+            STATUS_ALL: Vše
+            STATUS_MISSING: Chybějící
+            STATUS_OVERRIDDEN: Přepsané
+            STATUS_UNKNOWN: Neznámé
+            SUGGESTED: Navržené
+            SUPERSEDED_ACTION: 'Otevřít překlady'
+            SUPERSEDED_BODY: 'Sekce Překlady (Translations) nabízí vše, co tento plugin, a přidává vyhledávání napříč všemi řetězci na webu, pokrytí podle jazyka, strojový překlad a přehled klíčů, které již nikde nejsou využívány. Tento plugin zůstává podporován v Grav 1.7.'
+            SUPERSEDED_PENDING: '{count, plural, one {# přepis je} other {# přepisů je}} stále uloženo zde a lze je importovat.'
+            SUPERSEDED_TITLE: 'Zabudováno v Grav 2.0'
+            TITLE: Překlady
+            TRANSLATE_FAILED: 'Překlad selhal'
+            TRANSLATE_MISSING: 'Přeložit chybějící'
+            TRANSLATE_ROW: 'Navrhnout překlady pro tento řetězec ve všech zobrazených jazycích'
+            TRANSLATE_THIS: 'Navrhnout překlad pro tento řetězec'
+            TRANSLATE_UNAVAILABLE_FIND_IT: 'Získat plugin'
+            TRANSLATE_UNAVAILABLE_NOT_CONFIGURED: 'AI Translate nemá nastaveného žádného poskytovatele překladů, proto není strojový překlad dostupný.'
+            TRANSLATE_UNAVAILABLE_NOT_ENABLED: 'AI Translate je nainstalován, ale vypnut, proto není strojový překlad dostupný.'
+            TRANSLATE_UNAVAILABLE_NOT_INSTALLED: 'AI překlad chybějících řetězců je dostupný pomocí prémiového pluginu AI Translate.'
+            TRANSLATE_UNAVAILABLE_OPEN_IT: 'Otevřít jeho nastavení'
+            TRANSLATING: Překládání...
+            UNKNOWN_KEYS_SAVED: 'Uloženo, ale tyto klíče již nikde nejsou využívány'
+            UNKNOWN_KEY_HELP: 'Žádný plugin, téma ani soubor jádra neposkytuje tento klíč. Pravděpodobně jde o překlep nebo pozůstatek něčeho, co již není nainstalováno.'
+            YAML_HELP: 'Vložte nebo upravte přepisy přímo. Hodnoty odpovídající těm, které již plugin nebo téma poskytuje, jsou zahozeny, takže soubor vždy obsahuje pouze skutečné změny.'
+            YAML_PLACEHOLDER: |-
+                MY_PLUGIN:
+                  SOME_KEY: Vaše znění zde
+            YAML_SAVED: '{count, plural, =0 {Žádné přepisy v {lang}} one {# přepis uložen v {lang}} few {# přepisy uloženy v {lang}} other {# přepisů uloženo v {lang}}}'
         TRANSLATIONS_FALLBACK: 'Záloha překladů'
         TRANSLATIONS_FALLBACK_HELP: 'Vrátit se na podporované překlady, pokud aktivní jazyk neexistuje'
         TWIG_3_COMPATIBILITY: 'Kompatibilita Twig 3'
@@ -2046,6 +2268,17 @@ ICU:
             USER_FOLDER_EXPOSED_BODY: 'Soubory ve složkách user/data, user/accounts a user/config lze stahovat přímo přes HTTP — včetně certifikátů, klíčů, tokenů a databází. To obvykle znamená, že váš webový server neaplikuje pravidla .htaccess systému Grav.'
             USER_FOLDER_EXPOSED_LEARN_MORE: 'Jak zabezpečit váš webový server'
             USER_FOLDER_EXPOSED_TITLE: 'Bezpečnostní riziko: vaše složky s uživatelskými daty jsou přístupné z webu'
+            COLLAPSE: Sbalit
+            SHOW_DETAILS: 'Zobrazit podrobnosti'
+            SNOOZE: Odložit
+            SNOOZE_HINT: 'Skrýt toto varování na 24 hodin. Pokud budou nalezeny jiné soubory, varování se zobrazí dříve.'
+            STORAGE_EXPOSED_ALL: 'Každý testovací soubor bylo možné stáhnout, což znamená, že váš webový server vůbec neaplikuje přístupová pravidla Grav. Na Apache zkontrolujte, zda AllowOverride umožňuje souboru .htaccess webu nabýt účinnosti. Na nginx, Caddy nebo IIS přidejte bezpečnostní pravidla ze složky webserver-configs v Grav.'
+            STORAGE_EXPOSED_BODY: 'Webový server poskytl testovací soubory ze složek, které by měly být soukromé. Níže uvedené typy souborů mohou odhalit uložené podání, zálohy nebo dočasné soubory. Požádejte svého poskytovatele hostingu o zablokování přímého přístupu nebo přesuňte soukromé úložiště mimo kořenový adresář webu.'
+            STORAGE_EXPOSED_BY_TYPE: 'Některé typy souborů byly v těchto složkách zablokovány, zatímco jiné bylo možné stáhnout. To obvykle znamená, že něco před pravidly Grav, například nginx obsluhující statické soubory před Apache, odpovídá na běžné typy souborů jako .zip dříve, než jsou pravidla zkontrolována. Zablokujte tyto složky také v konfiguraci dané vrstvy.'
+            STORAGE_EXPOSED_CDN: 'Pokud je web za CDN, jako je Cloudflare, po opravě vymažte její mezipaměť. Kopie, které již byly uloženy, zůstanou dostupné ke stažení, dokud tak neučiníte.'
+            STORAGE_EXPOSED_COUNT: '{n, plural, one {# typ souboru} few {# typy souborů} other {# typů souborů}}'
+            STORAGE_EXPOSED_TITLE: 'Soubory, které by měly být soukromé, mohou být z tohoto webu staženy'
+            STORAGE_EXPOSED_TMP: 'Testovací soubory v tmp/ lze stáhnout, zatímco ostatní složky jsou blokovány. Pravidla vašeho serveru pravděpodobně pocházejí z doby před verzí Grav 2.1.7, která přidala tmp/ do seznamu blokovaných složek. Přidejte tmp do tohoto seznamu ve vašem .htaccess, nebo v konfiguraci nginx, Caddy či IIS, aby odpovídala pravidlům, která Grav obsahuje.'
         CONFIRM: Potvrdit
         DEMO:
             BANNER_COUNTDOWN: 'Další reset za {time}'
@@ -2066,3 +2299,52 @@ ICU:
             STAY: Zůstat
             SWITCH_LANGUAGE: Přepnout
             SWITCH_LANGUAGE_MESSAGE: 'Máte neuložené změny. Opravdu chcete přepnout jazyk?'
+        API_CLIENT:
+            INVALID_JSON_DETAIL: 'Odpověď serveru nebylo možné přečíst, protože není platným JSONem. Je možné, že server kromě odpovědi API vypisuje i další výstup, například varování PHP. Podrobnosti naleznete v konzoli prohlížeče.'
+            INVALID_JSON_TITLE: 'Neočekávaná odpověď ze serveru'
+            UNEXPECTED_RESPONSE_DETAIL: 'Server odpověděl daty ve formátu, který tato obrazovka neočekává. Podrobnosti naleznete v konzoli prohlížeče.'
+            UNEXPECTED_RESPONSE_TITLE: 'Neočekávaná odpověď ze serveru'
+        CACHE_MODULES: 'Výstup modulu mezipaměti'
+        CACHE_MODULES_HELP: 'Ukládat vykreslený výstup modulů této stránky do mezipaměti. Používejte pouze tehdy, pokud moduly zobrazují všem návštěvníkům stejný obsah. Moduly s vlastním Twigem nebo formulářem, přihlášení návštěvníci a odeslané formuláře se vždy vykreslují znovu. Úprava dílčí šablony vyžaduje vymazání mezipaměti.'
+        DEBUGGER_FLEX_RENDER_HINTS: 'Rady pro vykreslování Flex'
+        DEBUGGER_FLEX_RENDER_HINTS_HELP: 'Obalit každý vykreslený objekt a kolekci Flex do HTML komentáře s jejich názvem, aby bylo možné v kódu stránky dohledat zdroj bloku. Platí pouze pro HTML stránky.'
+        FRONTMATTER_NATIVE_YAML: 'Rychlé parsování frontmatteru'
+        FRONTMATTER_NATIVE_YAML_HELP: 'Číst frontmatter stránek pomocí PHP rozšíření libyaml, pokud je nainstalováno, což urychluje obnovu cache stránek. Některé hodnoty se načítají odlišně, proto si stránky nejprve zkontrolujte. Neuzavřené datum zůstane textem místo převodu na časovou značku a neuzavřené yes, no, on a off se změní na true nebo false.'
+        GRAV_UPGRADE:
+            CONFIRM_MESSAGE: 'Toto aktualizuje Grav z v{current} na v{target}. Web může být během aktualizace krátce nedostupný.'
+            CONFIRM_TITLE: 'Aktualizovat jádro Grav?'
+            FAILED: 'Aktualizace Grav selhala: {detail}'
+            INCOMPATIBLE_PACKAGE: '{name} {version} je označen jako kompatibilní s Grav {compatible}'
+            NO_DETAIL: 'server neuvedl žádný důvod'
+            PREFLIGHT_MESSAGE: 'Kontroly spuštěné před aktualizací ji zastavily z těchto důvodů. Opravte je a zkuste to znovu, nebo aktualizujte i tak, pokud víte, že tyto pluginy a šablony s novou verzí fungují.'
+            PREFLIGHT_TITLE: 'Grav zatím nelze aktualizovat na v{version}'
+            STILL_BLOCKED: 'Aktualizace Grav je stále blokována: {detail}'
+            UPGRADE_ANYWAY: 'Aktualizovat i tak'
+            UPGRADING: 'Aktualizuji Grav na v{version}…'
+        HELP: Nápověda
+        HELP_FOR_LABEL: 'Nápověda k {label}'
+        IMAGES_PROGRESSIVE_JPEG: 'Progresivní JPEG'
+        IMAGES_PROGRESSIVE_JPEG_HELP: 'Ukládat změněné velikosti a cachované JPEGy jako progresivní, aby se zobrazovaly jako celý rozmazaný obrázek, který se postupně zaostřuje, místo vykreslování shora dolů. Obvykle mají i menší velikost. Neovlivňuje formáty PNG, WebP nebo AVIF.'
+        MARKDOWN_OUTPUT: 'Markdown výstup'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS: 'Absolutní URL'
+        MARKDOWN_OUTPUT_ABSOLUTE_URLS_HELP: 'Změní relativní odkazy a obrázky na kořenové složky na plné URL, aby fungovaly i po exportu Markdownu mimo web.'
+        MARKDOWN_OUTPUT_ENABLED: 'Poskytovat stránky jako Markdown'
+        MARKDOWN_OUTPUT_ENABLED_HELP: 'Jakoukoli stránku lze načíst jako Markdown přidáním `.md` k její URL nebo odesláním hlavičky požadavku `Accept:&nbsp;text/markdown`. Funkce je určena pro agenty AI a další textové klienty. Stránka je vykreslena přes šablonu, zredukována na hlavní oblast obsahu a převedena, takže seznamy, obchody a modulární stránky vypadají tak, jak se zobrazují.'
+        MARKDOWN_OUTPUT_FRONTMATTER: 'Frontmatter blok'
+        MARKDOWN_OUTPUT_FRONTMATTER_HELP: 'Zahájit Markdown blokem YAML obsahujícím titulek, URL, datum, popis a taxonomii.'
+        MARKDOWN_OUTPUT_LINKS: 'Navigační odkazy'
+        MARKDOWN_OUTPUT_LINKS_HELP: 'Ukončit Markdown odkazy na nadřazenou, sousední a podřízené stránky, aby agent mohl procházet web, aniž by opustil Markdown.'
+        MARKDOWN_OUTPUT_MAX_LINKS: 'Maximální počet podřízených odkazů'
+        MARKDOWN_OUTPUT_MAX_LINKS_HELP: 'Nejvyšší počet podřízených stránek uvedených v navigační sekci. Nula znamená všechny.'
+        MARKDOWN_OUTPUT_TOKEN_HEADER: 'Hlavička počtu tokenů'
+        MARKDOWN_OUTPUT_TOKEN_HEADER_HELP: 'Odeslat hlavičku odpovědi `X-Markdown-Tokens` s odhadovaným počtem tokenů, stejná hlavička, jakou používá Cloudflare Markdown for Agents.'
+        NOTICES:
+            HEADING: '{count, plural, one {Upozornění} few {Upozornění} other {Upozornění}}'
+            HIDE: 'Skrýt upozornění'
+            SHOW: 'Zobrazit upozornění'
+        PAGES_LAZY_INDEX: 'Líný index stránek'
+        PAGES_LAZY_INDEX_HELP: 'Načítá stránky, cesty a taxonomii na vyžádání ze SQLite indexu každé stránky namísto jednoho velkého souboru mezipaměti. Funkce Auto ji používá na webech s 1 000 a více stránkami. V případě, že není k dispozici žádný databázový engine, se systém vrací ke klasické mezipaměti.'
+        RETRY: 'Zkusit znovu'
+        SESSION_LAZY: 'Spouštět relace (sessions) pouze v případě potřeby'
+        SESSION_LAZY_HELP: 'Návštěvníci bez souboru cookie relace ji získají pouze tehdy, když je do ní něco uloženo, jako je přihlášení, formulář nebo zpráva, takže anonymní zobrazení stránek mohou být ukládána do mezipaměti proxy serverem nebo CDN. Pluginy, které ukládají data při každém zobrazení stránky, ji stále spustí.'
+        UPDATE_CHANGELOG_TITLE: 'Změny ve verzi {version}'
