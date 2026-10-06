@@ -229,6 +229,7 @@ ICU:
         PAGE_DELETED: Page deleted
         PAGE_COPIED: Page copied
         PAGE_CHANGED_ELSEWHERE_SAVE_TO: Page changed elsewhere — save to overwrite or reload
+        PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: Page was modified elsewhere. Please reload.
         LOADING_PAGE: Loading page...
         FOLDER_NAME: Folder Name
         THE_FOLDER_NAME_ON_DISK_URL_SLUG: The folder name on disk (URL slug)
