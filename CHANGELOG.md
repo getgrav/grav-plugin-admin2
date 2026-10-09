@@ -1,8 +1,11 @@
 # v2.1.29
-## 10/06/2026
+## 10/08/2026
 
 1. [](#bugfix)
     * A custom field in a nested list can read and watch values in its parent row, and a field in any list can read the rest of the form, with `getValue()`. Thanks @Sogl [getgrav/grav-admin-next#29](https://github.com/getgrav/grav-admin-next/issues/29)
+    * The install modal lists every plugin and theme in the GPM repository, including those past the first 500
+    * A number field with `step: any`, such as a latitude, accepts decimal values instead of marking them invalid
+    * Red text is readable in dark mode: field errors, error banners and delete actions use a lighter red, and Delete buttons keep their deep red fill
 
 # v2.1.28
 ## 10/06/2026
