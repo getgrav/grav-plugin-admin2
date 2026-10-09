@@ -6,6 +6,8 @@
     * The install modal lists every plugin and theme in the GPM repository, including those past the first 500
     * A number field with `step: any`, such as a latitude, accepts decimal values instead of marking them invalid
     * Red text is readable in dark mode: field errors, error banners and delete actions use a lighter red, and Delete buttons keep their deep red fill
+    * Buttons, links, tabs and menu items show a focus ring again while you move around with the keyboard (Tab or the arrow keys), and lose it at the next mouse click. Clicking never leaves a ring behind, and shortcut keys such as a screenshot hotkey don't turn the rings on
+    * Confirm dialogs can be answered from the keyboard: focus moves into the dialog when it opens (Cancel for a delete, so Tab then Enter confirms), the focused button has a visible outline so you can see what Enter will do, Tab stays inside it, and focus goes back where it was when it closes
 
 # v2.1.28
 ## 10/06/2026
