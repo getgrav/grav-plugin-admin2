@@ -560,6 +560,9 @@ ICU:
                 SAVED_BY_PEER: '{user} guardó esta página'
                 SAVED_BY_PEER_ANON: 'Otro usuario guardó esta página'
                 PREVIEW_SHOWING_HOST_PAGE: 'mostrada en su página padre'
+                FALLBACK_NOTICE_UNRESOLVED: 'El servidor devolvió la versión {effective} de esta página en lugar de {active}, y no informó que {active} faltara. Guardar está desactivado aquí, así que el archivo {effective} no se sobrescribe. Si todas las páginas hacen esto, probablemente el servidor web no esté pasando las cadenas de consulta a Grav.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'La página ha sido modificada en otro lugar. Por favor, vuelve a cargarla.'
+                TEMPLATE_MISSING_NOTICE: 'La plantilla **{template}** para este módulo no se encontró en el tema, por lo que la página a la que pertenece muestra un error de "plantilla no encontrada". Elige una plantilla en **Plantilla de página** en la pestaña Avanzado, o añade la plantilla al tema.'
             EDIT_PAGE: 'Editar página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
