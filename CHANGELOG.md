@@ -1,5 +1,5 @@
 # v2.1.29
-## 10/08/2026
+## 10/09/2026
 
 1. [](#bugfix)
     * A custom field in a nested list can read and watch values in its parent row, and a field in any list can read the rest of the form, with `getValue()`. Thanks @Sogl [getgrav/grav-admin-next#29](https://github.com/getgrav/grav-admin-next/issues/29)
