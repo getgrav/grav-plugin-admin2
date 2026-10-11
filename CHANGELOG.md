@@ -1,3 +1,9 @@
+# v2.1.30
+## 10/11/2026
+
+1. [](#bugfix)
+    * Creating a translation of a page that only exists in another language keeps the page's template, instead of falling back to the default template. Thanks @fdruide [#193](https://github.com/getgrav/grav-plugin-admin2/issues/193) [getgrav/grav-admin-next#35](https://github.com/getgrav/grav-admin-next/pull/35)
+
 # v2.1.29
 ## 10/09/2026
 
