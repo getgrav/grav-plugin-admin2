@@ -1,3 +1,9 @@
+# v2.1.31
+## 10/13/2026
+
+1. [](#improved)
+    * The page editor's address now carries the content language, like `?lang=fr-fr`. A copied link, or an "Edit this page" link, opens that translation instead of whichever language is remembered in the visitor's browser, as it did in Grav 1.7. Switching language adds a history entry, so Back returns to the previous language. Thanks @fdruide [getgrav/grav-admin-next#37](https://github.com/getgrav/grav-admin-next/pull/37)
+
 # v2.1.30
 ## 10/13/2026
 
