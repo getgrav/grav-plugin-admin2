@@ -1,3 +1,14 @@
+# v2.1.30
+## 10/13/2026
+
+1. [](#bugfix)
+    * Creating a translation of a page that only exists in another language keeps the page's template, instead of falling back to the default template. Thanks @fdruide [#193](https://github.com/getgrav/grav-plugin-admin2/issues/193) [getgrav/grav-admin-next#35](https://github.com/getgrav/grav-admin-next/pull/35)
+    * Moving pages in the Tree and Columns views now works across levels, such as moving a child page up next to its parent. Move mode has drop zones at the start and end of every folder and inside pages that have no children, and it no longer adds order numbers to pages that don't have one. Thanks @Gleydar [getgrav/grav-admin-next#36](https://github.com/getgrav/grav-admin-next/issues/36)
+    * The Pages list view refreshes after a page changes, instead of staying on "Loading pages...", and Move mode is no longer offered there because a flat list can't show where a page moves
+2. [](#improved)
+    * A media file's details dialog shows a dropdown for metadata fields that a plugin defines as a select
+    * Image watermark settings (image, position, scale and watermark all) can be edited under Configuration, Images
+
 # v2.1.29
 ## 10/09/2026
 
