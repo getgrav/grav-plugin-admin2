@@ -1876,6 +1876,22 @@ ICU:
     IMAGES_CLS_AUTO_SIZES_HELP: Automatically add 'width' and 'height' attributes to images to address CLS
     IMAGES_CLS_RETINA_SCALE: Retina Scale Factor
     IMAGES_CLS_RETINA_SCALE_HELP: Will take the calculated size and divide by scale factor to display a higher resolution image at a smaller pixel size for better handling of HiDPI resolutions
+    IMAGES_WATERMARK_TITLE: Watermark
+    IMAGES_WATERMARK_ALL: Watermark all images
+    IMAGES_WATERMARK_ALL_HELP: Automatically stamp the watermark on every image the site serves
+    IMAGES_WATERMARK_IMAGE: Watermark image
+    IMAGES_WATERMARK_IMAGE_HELP: Path to the image used as the watermark, such as system://images/watermark.png
+    IMAGES_WATERMARK_POSITION_Y: Vertical position
+    IMAGES_WATERMARK_POSITION_Y_HELP: Where the watermark sits from top to bottom
+    IMAGES_WATERMARK_POSITION_X: Horizontal position
+    IMAGES_WATERMARK_POSITION_X_HELP: Where the watermark sits from left to right
+    IMAGES_WATERMARK_SCALE: Watermark scale
+    IMAGES_WATERMARK_SCALE_HELP: Size of the watermark as a percentage of the image
+    IMAGES_WATERMARK_TOP: Top
+    IMAGES_WATERMARK_CENTER: Center
+    IMAGES_WATERMARK_BOTTOM: Bottom
+    IMAGES_WATERMARK_LEFT: Left
+    IMAGES_WATERMARK_RIGHT: Right
     IMAGES_CLS_TITLE: Cumulative Layout Shift (CLS)
     IMAGES_DEBUG: Image debug watermark
     IMAGES_DEBUG_HELP: Show an overlay over images indicating the pixel depth of the image when working with retina for example
