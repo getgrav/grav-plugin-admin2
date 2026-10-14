@@ -1,3 +1,9 @@
+# v2.1.32
+## 10/14/2026
+
+1. [](#bugfix)
+    * Requires API plugin 1.0.49, which fixes "Save as <language>" failing with `Invalid input in "Subtitle"` when a modular section's subtitle has more than one paragraph
+
 # v2.1.31
 ## 10/13/2026
 
