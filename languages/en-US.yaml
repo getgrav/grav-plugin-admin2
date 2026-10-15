@@ -1065,6 +1065,32 @@ ICU:
         RESET_MESSAGE: "This removes every override on {scope} and restores the inherited values. This cannot be undone."
         RESET_CONFIRM: Reset
         RESET_DONE: Overrides reset
+      SHADOWED:
+        MARKER_ENV: "Overridden by the {env} environment"
+        MARKER_SERVER: Set by a server environment variable
+        EXPLAIN_ENV: "The {env} environment sets this in its own config file, so what you save here won't apply on this site."
+        EXPLAIN_SERVER: A GRAV_CONFIG server environment variable sets this, so what you save here won't apply.
+        ENABLED_ENV: "Set by the {env} environment"
+        ENABLED_SERVER: Set by a server environment variable
+        ENABLED_EXPLAIN_ENV: "The {env} environment turns this plugin on or off in its own config file, so the switch here won't change what the site does."
+        ENABLED_EXPLAIN_SERVER: A GRAV_CONFIG server environment variable turns this plugin on or off, so the switch here won't change what the site does.
+        SITE_USES: This site uses
+        VALUE_ON: 'on'
+        VALUE_OFF: 'off'
+        REMOVE_OVERRIDE: Remove override
+        SWITCH_TO: "Switch to {env}"
+        REMOVED: "Override removed from the {env} environment"
+        REMOVE_FAILED: Could not remove the override
+        BANNER_ENV: "{count, plural, one {# setting here is} other {# settings here are}} overridden by the {env} environment, so changes to {count, plural, one {it} other {them}} won't take effect."
+        BANNER_SERVER: "{count, plural, one {# setting here is} other {# settings here are}} set by server environment variables, so changes to {count, plural, one {it} other {them}} won't take effect."
+        BANNER_MIXED: "{count, plural, one {# setting here is} other {# settings here are}} overridden by the {env} environment or by server environment variables, so changes to {count, plural, one {it} other {them}} won't take effect."
+        SAVED_ENV: "Saved, but {field} is overridden by the {env} environment, so the site still uses \"{value}\"."
+        SAVED_SERVER: "Saved, but {field} is set by a server environment variable, so the site still uses \"{value}\"."
+        SAVED_MANY_ENV: "Saved, but {count} of these changes are overridden by the {env} environment, so the site won't use them."
+        SAVED_MANY_SERVER: "Saved, but {count} of these changes are set by server environment variables, so the site won't use them."
+        SAVED_MANY_MIXED: "Saved, but {count} of these changes are overridden by the {env} environment or by server environment variables, so the site won't use them."
+        TOGGLE_ENV: "Saved, but the {env} environment keeps {name} {state, select, off {disabled} other {enabled}}."
+        TOGGLE_SERVER: "Saved, but a server environment variable keeps {name} {state, select, off {disabled} other {enabled}}."
     FLEX_OBJECTS:
       ADD: Add
       SEARCH: Search...
@@ -1413,6 +1439,12 @@ ICU:
       FAILED_TO_SAVE_USER: Failed to save user.
       YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: You cannot delete your own account.
       USER_CHANGED_ELSEWHERE_SAVE_TO: User changed elsewhere — save to overwrite or reload
+      EMAIL_CHANGE_WAITING: 'Waiting for confirmation: {email}'
+      EMAIL_CHANGE_RESEND: Resend
+      EMAIL_CHANGE_SENT: 'We sent a confirmation link to {email}. The email address changes once the link is opened.'
+      EMAIL_CHANGE_CANCELLED: Email change cancelled.
+      EMAIL_CHANGE_RESEND_FAILED: Failed to resend the confirmation link.
+      EMAIL_CHANGE_CANCEL_FAILED: Failed to cancel the email change.
       BACK_TO_USERS: Back to Users
       2_FACTOR_AUTHENTICATION: 2-Factor Authentication
       NEW:
