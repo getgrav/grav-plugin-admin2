@@ -1,0 +1,1 @@
+function l(e,n,s,i=""){const t=a(n),r=a(e);if(t===a(s))return r===t;if(r!==t&&!r.startsWith(t+"/"))return!1;const c=new URLSearchParams(n.split("#")[0].split("?")[1]??""),o=new URLSearchParams(i);for(const[u,f]of c)if(o.get(u)!==f)return!1;return!0}function a(e){return e.split(/[?#]/)[0].replace(/\/+$/,"")}export{l as i};

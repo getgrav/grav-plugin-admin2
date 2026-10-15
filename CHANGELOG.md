@@ -1,3 +1,11 @@
+# v2.1.34
+## 10/15/2026
+
+1. [](#new)
+    * A plugin page can now have its own address for each view, such as `/plugin/shop/orders` and `/plugin/shop/customers`, so each view can have its own sidebar entry and bookmarkable link. The plugin's page stays loaded while you move between views and is told which view is showing [#196](https://github.com/getgrav/grav-plugin-admin2/issues/196)
+2. [](#bugfix)
+    * Sidebar links to one plugin page that differ only by a query string, such as `?view=orders` and `?view=customers`, are now highlighted one at a time instead of all at once [#196](https://github.com/getgrav/grav-plugin-admin2/issues/196)
+
 # v2.1.33
 ## 10/14/2026
 
