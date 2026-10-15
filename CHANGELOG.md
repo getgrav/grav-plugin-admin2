@@ -1,7 +1,9 @@
 # v2.1.33
 ## 10/14/2026
 
-1. [](#bugfix)
+1. [](#new)
+    * Settings that the site's environment folder or a server variable overrides are now marked, with a note at the top of the form, so it's clear when a change saved under Default won't take effect. Saving one of them, or switching a plugin on or off when its environment says otherwise, shows a warning with a Remove override button. Requires API plugin 1.0.50 [getgrav/grav-plugin-sync-mercure#1](https://github.com/getgrav/grav-plugin-sync-mercure/issues/1)
+2. [](#bugfix)
     * The Add Plugin dialog no longer gets stuck on a spinner when the plugin directory comes back with a plugin listed twice, and the Install button no longer installs a plugin you never saw [getgrav/grav-admin-next#38](https://github.com/getgrav/grav-admin-next/issues/38)
     * A plugin's sidebar link is no longer highlighted on another plugin's page whose name starts the same way, such as `foo` on `foo-bar` [#195](https://github.com/getgrav/grav-plugin-admin2/issues/195)
     * The scheduler webhook examples under Tools → Scheduler now use the `X-Webhook-Token` header the Scheduler Webhook plugin expects, so copied commands no longer fail with "Invalid authorization token" [getgrav/grav-plugin-scheduler-webhook#8](https://github.com/getgrav/grav-plugin-scheduler-webhook/issues/8)
