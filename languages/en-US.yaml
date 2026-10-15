@@ -1439,6 +1439,12 @@ ICU:
       FAILED_TO_SAVE_USER: Failed to save user.
       YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: You cannot delete your own account.
       USER_CHANGED_ELSEWHERE_SAVE_TO: User changed elsewhere — save to overwrite or reload
+      EMAIL_CHANGE_WAITING: 'Waiting for confirmation: {email}'
+      EMAIL_CHANGE_RESEND: Resend
+      EMAIL_CHANGE_SENT: 'We sent a confirmation link to {email}. The email address changes once the link is opened.'
+      EMAIL_CHANGE_CANCELLED: Email change cancelled.
+      EMAIL_CHANGE_RESEND_FAILED: Failed to resend the confirmation link.
+      EMAIL_CHANGE_CANCEL_FAILED: Failed to cancel the email change.
       BACK_TO_USERS: Back to Users
       2_FACTOR_AUTHENTICATION: 2-Factor Authentication
       NEW:
