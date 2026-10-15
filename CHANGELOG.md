@@ -1,3 +1,9 @@
+# v2.1.34
+## 10/15/2026
+
+1. [](#bugfix)
+    * Sidebar links to one plugin page that differ only by a query string, such as `?view=orders` and `?view=customers`, are now highlighted one at a time instead of all at once [#196](https://github.com/getgrav/grav-plugin-admin2/issues/196)
+
 # v2.1.33
 ## 10/14/2026
 
