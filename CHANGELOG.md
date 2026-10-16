@@ -1,3 +1,9 @@
+# v2.1.35
+## 10/16/2026
+
+1. [](#new)
+    * Label and help text for Grav's new **Remote asset timeout** setting under Configuration → System → Assets
+
 # v2.1.34
 ## 10/15/2026
 
