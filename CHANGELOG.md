@@ -1,3 +1,12 @@
+# v2.1.36
+## 10/17/2026
+
+1. [](#new)
+    * A "Grav was coded with love by Trilby Media" credit at the bottom of the sidebar, which can be turned off under Settings → Branding. Requires API plugin 1.0.52
+2. [](#improved)
+    * The sidebar stays collapsed after a reload once you've collapsed it
+    * The debug button sits beside the sidebar instead of over its footer
+
 # v2.1.35
 ## 10/16/2026
 
