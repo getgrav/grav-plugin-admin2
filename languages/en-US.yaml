@@ -2055,6 +2055,8 @@ ICU:
     PARENT: Parent
     PASSWORD_VALIDATION_MESSAGE: Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters
     PERMISSIONS: Permissions
+    PIPELINE_REMOTE_TIMEOUT: Remote asset timeout
+    PIPELINE_REMOTE_TIMEOUT_HELP: How long to wait for a remote CSS or JS file (a CDN stylesheet, for example) when building a pipeline. If it doesn't arrive in time, the page renders without bundling that group and tries again on the next request
     PLUGIN_STATUS: Plugin status
     PROCESS: Process
     PROCESS_HELP: Control how pages are processed. Can be set per-page rather than globally
