@@ -3,6 +3,9 @@
 
 1. [](#new)
     * Label and help text for Grav's new **Remote asset timeout** setting under Configuration → System → Assets
+2. [](#bugfix)
+    * The Folder Name field on a page's Advanced tab shows the page's folder again instead of its `slug:` override, and moving or renumbering such a page keeps its folder name. Requires API plugin 1.0.51 for moves made from the page tree [getgrav/grav-admin-next#40](https://github.com/getgrav/grav-admin-next/issues/40)
+    * With live collaboration on, reopening a page after reordering it in the page tree no longer offers to save it, and saving it no longer moves it back to its old position [getgrav/grav#4361](https://github.com/getgrav/grav/issues/4361)
 
 # v2.1.34
 ## 10/15/2026
