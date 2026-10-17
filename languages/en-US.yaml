@@ -465,6 +465,8 @@ ICU:
       CLOSE_MENU: Close menu
       GRAV_VERSION: Grav v{version}
       ADMIN_VERSION: Admin v{version}
+      MADE_BY: Grav was {code} with {love} by {company}.
+      MADE_BY_PLAIN: Grav was coded with love by Trilby Media
     NORMAL_MODE: Normal mode
     EXPERT_MODE: Expert mode
     ALLOWED: Allowed
@@ -1356,6 +1358,8 @@ ICU:
       LOGIN_SUBTITLE_DESC: Optional line shown under the sign-in heading.
       SHOW_POWERED_BY: Show "Powered by Grav"
       SHOW_POWERED_BY_DESC: Show the "Powered by Grav CMS" line on the sign-in and setup screens.
+      SHOW_CREDIT: Show Trilby Media credit
+      SHOW_CREDIT_DESC: Show the "Grav was coded with love by Trilby Media" line at the bottom of the sidebar.
       FAVICON: Favicon
       FAVICON_DESC: Custom browser-tab icon (SVG, PNG, WebP, or ICO). Leave blank for the generated icon.
       FAVICON_UPLOADED: Favicon uploaded.
