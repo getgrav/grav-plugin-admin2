@@ -611,6 +611,16 @@ ICU:
     FLOATING_WIDGET_LOADER:
       CLOSE_WIDGETS_MENU: Close widgets menu
     MEDIA:
+      # Images pasted or dropped into a page's content editor (markdown or
+      # Editor Pro) are uploaded to the page media (grav-premium-issues#628).
+      PASTE_UPLOAD:
+        UPLOADING: '{count, plural, one {Uploading image…} other {Uploading # images…}}'
+        UPLOADED: '{count, plural, one {Image added to the page media} other {# images added to the page media}}'
+        FAILED: "Couldn't upload {filename}: {message}"
+        UNSUPPORTED_TYPE: "{filename} can't be added here. Paste or drop a PNG, JPEG, GIF, WebP, AVIF or SVG image."
+        SAVE_PAGE_FIRST: Save the page first, then paste or drop images into it.
+        PAGES_ONLY: Pasting or dropping images works in page content only. Upload the image to the media manager and insert it from there.
+        NO_PERMISSION: You don't have permission to upload media, so the image wasn't added.
       FILE_DETAILS:
         TITLE: File details
         PATH: Path
