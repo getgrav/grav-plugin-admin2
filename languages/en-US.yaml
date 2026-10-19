@@ -439,6 +439,8 @@ ICU:
       INVALID_JSON_DETAIL: "The server's reply could not be read because it is not valid JSON. Something on the server may be printing extra output, such as a PHP warning, alongside the API response. The browser console has the details."
       UNEXPECTED_RESPONSE_TITLE: Unexpected response from the server
       UNEXPECTED_RESPONSE_DETAIL: The server replied with data in a format this screen does not expect. The browser console has the details.
+      SERVER_PAGE_TITLE: Blocked by the web server
+      SERVER_PAGE_DETAIL: "Your web server answered this request itself (HTTP {status}) instead of passing it to Grav. A security filter on the server, such as mod_security or a hosting firewall, may have blocked it. Your host or the server's error log can tell you which rule fired."
     API_KEYS_FIELD:
       REVOKE_KEY: Revoke key
       E_G_MY_CLI_TOOL: e.g. My CLI Tool

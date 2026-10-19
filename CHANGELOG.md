@@ -1,3 +1,11 @@
+# v2.1.37
+## 10/19/2026
+
+1. [](#bugfix)
+    * A Markdown or code (YAML) field now shows its new value when a plugin updates the record and the edit screen refreshes in place, instead of keeping the old text until a page reload. Text typed while a page save is still running is kept in the editor [#198](https://github.com/getgrav/grav-plugin-admin2/issues/198)
+    * Clicking the empty space below the last line of the frontmatter editor in Expert mode now places the cursor there in Firefox and Safari too [#61](https://github.com/getgrav/grav-plugin-admin2/issues/61)
+    * When the web server or a security filter on it (such as mod_security) blocks a save and answers with its own error page, the message now says so instead of only "Request failed with status 418" [getgrav/grav#4362](https://github.com/getgrav/grav/issues/4362)
+
 # v2.1.36
 ## 10/17/2026
 
