@@ -1,5 +1,5 @@
 # v2.1.38
-## 10/21/2026
+## 10/22/2026
 
 1. [](#new)
     * Media metadata fields set up as a number, date or yes/no toggle now get a number box, a date picker or a checkbox, and required fields are marked and checked before saving. Needs API 1.0.55. Thanks @phmg701 [getgrav/grav-admin-next#41](https://github.com/getgrav/grav-admin-next/pull/41)
