@@ -5,6 +5,7 @@
     * Media metadata fields set up as a number, date or yes/no toggle now get a number box, a date picker or a checkbox, and required fields are marked and checked before saving. Needs API 1.0.55. Thanks @phmg701 [getgrav/grav-admin-next#41](https://github.com/getgrav/grav-admin-next/pull/41)
 2. [](#bugfix)
     * Applying metadata to several media files at once no longer shows an error after the files were saved, and Reset works again afterwards
+    * Plugin fields in the page editor can now refresh what they show after the page is saved: Admin2 sends a `grav:invalidate` window event with the API's invalidation tags (such as `pages:update:/<route>`). SEO Magic 7.0.19 uses it to refresh its panels [grav-premium-issues#630](https://github.com/getgrav/grav-premium-issues/issues/630)
 
 # v2.1.37
 ## 10/19/2026
