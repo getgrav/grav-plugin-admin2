@@ -1,3 +1,11 @@
+# v2.1.39
+## 10/22/2026
+
+1. [](#improved)
+    * Live collaborative editing works with Mercure 1.x hubs as well as 0.x, and the hub token now travels in a request header instead of the web address. Thanks @Gleydar [getgrav/grav-plugin-sync-mercure#2](https://github.com/getgrav/grav-plugin-sync-mercure/issues/2)
+1. [](#bugfix)
+    * In the Tree view a folder now opens straight away with a loading indicator, offers Retry if its pages fail to load, and stays closed if you close it before they arrive [#200](https://github.com/getgrav/grav-plugin-admin2/issues/200)
+
 # v2.1.38
 ## 10/22/2026
 

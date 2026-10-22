@@ -142,6 +142,7 @@ ICU:
       CHUNK_SIZE: Chunk
       CHUNK_SIZE_HELP: Rows to fetch per request as you scroll. Larger values load slower the first time but reduce follow-up requests.
       LOADING_CHUNK: Loading rows {from}–{to}…
+      LOAD_CHILDREN_FAILED: Couldn't load the pages in this folder.
       LOADED_OF: '{n, plural, one {# loaded} other {# loaded}} of {total}'
       NO_MATCH: No pages match your search
       SEARCH_MATCH_COUNT: '{n, plural, one {# match} other {# matches}} across all pages'
