@@ -1,3 +1,9 @@
+# v2.1.39
+## 10/22/2026
+
+1. [](#bugfix)
+    * In the Tree view a folder now opens straight away with a loading indicator, offers Retry if its pages fail to load, and stays closed if you close it before they arrive [#200](https://github.com/getgrav/grav-plugin-admin2/issues/200)
+
 # v2.1.38
 ## 10/22/2026
 
