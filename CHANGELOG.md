@@ -4,6 +4,10 @@
 1. [](#new)
     * **Arrange your sidebar**: the pencil at the bottom of the sidebar lets you drag items into the order you want (or move them with the arrow keys), hide the ones you don't use and move the divider. Put KahunaCart right under Dashboard, for example, so it's at the top on a phone. A super admin can save the arrangement for everyone, and anyone can still arrange their own or go back to the site's. Needs API 1.0.58
     * **Sidebar shortcuts**: a plugin can offer some of its own screens as shortcuts, and you can switch on the ones you want under its sidebar item (KahunaCart's Orders or Licenses, for example). None show until you pick them. Needs API 1.0.58
+    * **Password card on a user's page**: changing your own password asks for the current one and the new one twice, and keeps you signed in while every other browser and app signed in to your account is signed out. Needs API 1.1.0
+2. [](#improved)
+    * An admin who manages users sets someone else's password from the same card with just the new one twice, and an account with no password yet (one made by a sign-in service) sets its first without a current one
+    * [security] Your own 2-Factor Authentication card has a Regenerate button that asks for your current code before it makes a new secret. Needs API 1.1.0
 
 # v2.1.40
 ## 10/22/2026

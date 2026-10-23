@@ -516,6 +516,10 @@ ICU:
       LEGEND_OVERRIDE: Overrides a group
       LEGEND_SUPER: Granted by super admin
     TWO_FACTOR_FIELD:
+      REGENERATE: Regenerate
+      ENTER_CODE_TO_REGENERATE: Enter your current 6-digit code to make a new secret. 2FA stays off until you scan the new QR code and verify a code from it.
+      CURRENT_CODE_WRONG: That code is not correct.
+      TOO_MANY_CODES: Too many wrong codes. Try again in a few minutes.
       2FA_QR_CODE: 2FA QR Code
       SCAN_THE_QR_CODE_WITH_YOUR: Scan the QR code with your authenticator app
       FAILED_TO_GENERATE_2FA_SECRET: Failed to generate 2FA secret
@@ -1493,6 +1497,26 @@ ICU:
       EMAIL_CHANGE_CANCEL_FAILED: Failed to cancel the email change.
       BACK_TO_USERS: Back to Users
       2_FACTOR_AUTHENTICATION: 2-Factor Authentication
+      PASSWORD:
+        TITLE: Password
+        OWN_HELP: Enter your current password, then the new one twice. You stay signed in here, and every other browser and app signed in to your account is signed out.
+        NO_PASSWORD_HELP: Your account has no password yet because you sign in through another service. Set one to sign in with your username and password as well.
+        OTHER_HELP: "Set a new password for {name}. They are signed out of every browser and app, and sign in again with the new password."
+        CURRENT: Current password
+        NEW: New password
+        CONFIRM: Confirm new password
+        CHANGE: Change password
+        SET: Set password
+        CURRENT_REQUIRED: Enter your current password.
+        CURRENT_WRONG: Your current password is not correct.
+        NEW_REQUIRED: Enter a new password.
+        POLICY: The new password does not meet the requirements.
+        MISMATCH: The passwords do not match.
+        TOO_MANY: Too many wrong passwords. Try again in a few minutes.
+        NOT_ALLOWED: You don't have permission to change this password.
+        FAILED: Failed to change the password.
+        CHANGED_OWN: Your password has been changed. Other browsers and apps signed in to your account have been signed out.
+        CHANGED_OTHER: "The password for {name} has been changed."
       NEW:
         LOWERCASE_3_64_CHARS: "3-64 chars: letters, numbers, . - _"
         NEW_USER_GRAV_ADMIN: New User — Grav Admin
