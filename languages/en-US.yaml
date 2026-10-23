@@ -273,6 +273,15 @@ ICU:
         ORDERING_HELP_FOLDER: Adds a numeric prefix that sets this folder's position among its siblings.
         ORDERING_NONE: None
         FOLDER_DETAILS: Folder Details
+        PICK_MODULAR_PAGE: Pick a modular page
+        MODULE_NEEDS_PARENT: A module goes inside a modular page, so pick the page it belongs to.
+      MODULES:
+        TITLE: Modules
+        HELP: The parts this page is built from, in the order the page shows them. Drag a module to move it, or focus its handle and press Alt+Up or Alt+Down. Click its status icon to publish or unpublish it.
+        ADD: Add module
+        EMPTY: No modules yet.
+        LOAD_FAILED: The modules could not be loaded.
+        MOVE: Move "{title}"
       PAGE_COUNT: "{n, plural, one{# page} other{# pages}}"
       SUBTITLE: Manage your site content and structure
     FIELDS:
@@ -337,6 +346,7 @@ ICU:
         FAMILY_SOLID: Solid
         FAMILY_REGULAR: Regular
         FAMILY_BRANDS: Brands
+        SET_MISSING: 'No icon set called "{set}" is registered on this site.'
       PAGE_EXISTS:
         CHECKING_PAGE: Checking page...
       PAGE_MEDIA:
