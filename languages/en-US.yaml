@@ -482,15 +482,15 @@ ICU:
       MADE_BY_PLAIN: Grav was coded with love by Trilby Media
     SIDEBAR_EDIT:
       CUSTOMIZE: Customize sidebar
-      HINT: Drag items to reorder them, or focus a handle and use the arrow keys. The eye hides an item or one of a plugin's shortcuts.
+      HINT: Drag items to reorder them, or focus a handle and use the arrow keys. The eye hides an item, and the star picks a plugin's shortcuts to show under it.
       MOVE: Move {label}
       HIDE: Hide {label}
       SHOW: Show {label}
-      FOLD: Collapse {label} shortcuts
-      UNFOLD: Expand {label} shortcuts
+      STAR: Show {label} in the sidebar
+      UNSTAR: Remove {label} from the sidebar
       DIVIDER: Divider
       MOVED: "{label} moved to position {position} of {total}"
-      SUB_ITEMS: "Shortcuts ({count} of {total} shown)"
+      SUB_ITEMS: "Shortcuts ({count} of {total} starred)"
       SAVE_FOR_EVERYONE: Save for everyone
       SAVE_FOR_EVERYONE_HINT: Make this the sidebar for every user who hasn't arranged their own
       SAVE_FOR_EVERYONE_TITLE: Make this everyone's sidebar?

@@ -1,9 +1,9 @@
-# v2.1.41
+# v2.2.0
 ## 10/23/2026
 
 1. [](#new)
-    * **Arrange your sidebar**: the pencil at the bottom of the sidebar lets you drag items into the order you want (or move them with the arrow keys), hide the ones you don't use and move the divider. Put KahunaCart right under Dashboard, for example, so it's at the top on a phone. A super admin can save the arrangement for everyone, and anyone can still arrange their own or go back to the site's. Needs API 1.0.58
-    * **Sidebar shortcuts**: a plugin can list some of its own screens as shortcuts under its sidebar item (KahunaCart's Orders or Licenses, for example). The arrow beside the item folds them away, and your browser remembers which are folded. Hide the ones you don't use when arranging the sidebar. Needs API 1.0.58
+    * **Arrange your sidebar**: the pencil at the bottom of the sidebar lets you drag items into the order you want (or move them with the arrow keys), hide the ones you don't use and move the divider. Put KahunaCart right under Dashboard, for example, so it's at the top on a phone. A super admin can save the arrangement for everyone, and anyone can still arrange their own or go back to the site's. Needs API 1.1.0
+    * **Sidebar shortcuts**: a plugin can offer its own screens as shortcuts under its sidebar item (KahunaCart's Orders or Licenses, for example). Star the ones you want when arranging the sidebar, or from the plugin's own page when it offers stars; until you do, the plugin's picks show. A plugin page stars them through `window.__GRAV_SIDEBAR` and hears about changes from the `grav:sidebar:shortcuts` event. Needs API 1.1.0
     * **Password card on a user's page**: changing your own password asks for the current one and the new one twice, and keeps you signed in while every other browser and app signed in to your account is signed out. Needs API 1.1.0
 2. [](#improved)
     * An admin who manages users sets someone else's password from the same card with just the new one twice, and an account with no password yet (one made by a sign-in service) sets its first without a current one
