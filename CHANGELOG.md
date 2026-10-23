@@ -10,6 +10,9 @@
 3. [](#bugfix)
     * Add Module no longer offers the site root as the parent, where a module would never show: the form starts with no parent and says a module goes inside a modular page. API 1.0.57 also refuses one there
     * A page that uses the `modular` template got the module templates in its own Page Template select when the list had to be fetched separately
+    * A page whose `content.items` is a list (`['@self.modular']`, or a list of selector maps) now counts as a modular page, so its modules panel shows
+    * The modules panel says so, with a Retry button, when the modules could not be loaded, instead of looking like a page with no modules, and keeps the rows it already had when a refresh fails
+    * The icon picker selects on click instead of on mouse press, so Enter or Space on a focused icon picks it (a theme's own set, Font Awesome and the family tabs)
 
 # v2.1.39
 ## 10/22/2026
