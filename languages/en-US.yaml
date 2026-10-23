@@ -482,10 +482,12 @@ ICU:
       MADE_BY_PLAIN: Grav was coded with love by Trilby Media
     SIDEBAR_EDIT:
       CUSTOMIZE: Customize sidebar
-      HINT: Drag items to reorder them, or focus a handle and use the arrow keys. The eye hides an item, and a plugin's shortcuts can go under it.
+      HINT: Drag items to reorder them, or focus a handle and use the arrow keys. The eye hides an item or one of a plugin's shortcuts.
       MOVE: Move {label}
       HIDE: Hide {label}
       SHOW: Show {label}
+      FOLD: Collapse {label} shortcuts
+      UNFOLD: Expand {label} shortcuts
       DIVIDER: Divider
       MOVED: "{label} moved to position {position} of {total}"
       SUB_ITEMS: "Shortcuts ({count} of {total} shown)"
