@@ -1,3 +1,16 @@
+# v2.1.40
+## 10/22/2026
+
+1. [](#new)
+    * **Modules in a modular page's editor**: a modular page now lists its modules above its own form, each with its name, its type, a publish toggle and a link to its editor. Drag a module to reorder it (or focus its handle and press Alt+Up or Alt+Down), the same reordering the Tree and Columns views do. **Add module** opens the new-module form with the page already set as the parent
+    * **Icon sets for the icon picker**: a blueprint's `iconpicker` field can list a theme's or plugin's own icons instead of Font Awesome with `icons: <set>`, and saves the icon's name. The theme registers the set on the API's `onApiIconSets` event. Needs API 1.0.57
+2. [](#improved)
+    * The module type list in Add Module, and a module's Page Template select, show each type's blueprint title instead of its file name. Needs API 1.0.57
+    * A `pagemedia` field's `label` now heads its media box (a module's "Pictures", say) instead of always "Page Media"
+3. [](#bugfix)
+    * Add Module no longer offers the site root as the parent, where a module would never show: the form starts with no parent and says a module goes inside a modular page. API 1.0.57 also refuses one there
+    * A page that uses the `modular` template got the module templates in its own Page Template select when the list had to be fetched separately
+
 # v2.1.39
 ## 10/22/2026
 
