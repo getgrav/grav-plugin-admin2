@@ -480,6 +480,25 @@ ICU:
       ADMIN_VERSION: Admin v{version}
       MADE_BY: Grav was {code} with {love} by {company}.
       MADE_BY_PLAIN: Grav was coded with love by Trilby Media
+    SIDEBAR_EDIT:
+      CUSTOMIZE: Customize sidebar
+      HINT: Drag items to reorder them, or focus a handle and use the arrow keys. The eye hides an item, and a plugin's shortcuts can go under it.
+      MOVE: Move {label}
+      HIDE: Hide {label}
+      SHOW: Show {label}
+      DIVIDER: Divider
+      MOVED: "{label} moved to position {position} of {total}"
+      SUB_ITEMS: "Shortcuts ({count} of {total} shown)"
+      SAVE_FOR_EVERYONE: Save for everyone
+      SAVE_FOR_EVERYONE_HINT: Make this the sidebar for every user who hasn't arranged their own
+      SAVE_FOR_EVERYONE_TITLE: Make this everyone's sidebar?
+      SAVE_FOR_EVERYONE_MESSAGE: Every user who hasn't arranged their own sidebar will see this order. Anyone can still change their own, and hiding an item doesn't change what they're allowed to open.
+      RESTORE_BUILT_IN: Original order
+      USE_SITE_DEFAULT: Use the site's sidebar
+      SAVED: Sidebar saved
+      SITE_SAVED: Sidebar saved for everyone
+      RESET_DONE: Your sidebar follows the site's again
+      SAVE_FAILED: Couldn't save the sidebar
     NORMAL_MODE: Normal mode
     EXPERT_MODE: Expert mode
     ALLOWED: Allowed

@@ -1,3 +1,10 @@
+# v2.1.41
+## 10/23/2026
+
+1. [](#new)
+    * **Arrange your sidebar**: the pencil at the bottom of the sidebar lets you drag items into the order you want (or move them with the arrow keys), hide the ones you don't use and move the divider. Put KahunaCart right under Dashboard, for example, so it's at the top on a phone. A super admin can save the arrangement for everyone, and anyone can still arrange their own or go back to the site's. Needs API 1.0.58
+    * **Sidebar shortcuts**: a plugin can offer some of its own screens as shortcuts, and you can switch on the ones you want under its sidebar item (KahunaCart's Orders or Licenses, for example). None show until you pick them. Needs API 1.0.58
+
 # v2.1.40
 ## 10/22/2026
 
