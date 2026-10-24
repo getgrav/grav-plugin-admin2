@@ -491,6 +491,8 @@ ICU:
       DIVIDER: Divider
       MOVED: "{label} moved to position {position} of {total}"
       SUB_ITEMS: "Shortcuts ({count} of {total} starred)"
+      FOLD: Collapse {label} shortcuts
+      UNFOLD: Expand {label} shortcuts
       SAVE_FOR_EVERYONE: Save for everyone
       SAVE_FOR_EVERYONE_HINT: Make this the sidebar for every user who hasn't arranged their own
       SAVE_FOR_EVERYONE_TITLE: Make this everyone's sidebar?

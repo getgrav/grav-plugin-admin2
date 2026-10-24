@@ -1,3 +1,9 @@
+# v2.2.1
+## 10/24/2026
+
+1. [](#bugfix)
+    * The arrow beside a plugin's sidebar item folds its shortcuts away again, and the sidebar now remembers that for your account rather than just this browser. Needs API 1.1.1
+
 # v2.2.0
 ## 10/23/2026
 
