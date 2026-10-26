@@ -1,5 +1,5 @@
 # v2.2.1
-## 10/24/2026
+## 10/25/2026
 
 1. [](#improved)
     * A `selectize` field with `selectize: create: false` only takes the options it lists, as it did in classic admin. Typing filters the list, Enter picks the best match, and text that isn't an option is dropped rather than saved, so a field like a currency list can't hold a typo
