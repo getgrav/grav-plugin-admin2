@@ -1,7 +1,9 @@
 # v2.2.2
 ## 10/26/2026
 
-1. [](#bugfix)
+1. [](#improved)
+    * On phones the top bar moves plugin buttons, quick links, View site, Clear cache and the dark mode toggle into a single ⋯ menu, so every action stays within reach and the bar no longer runs off the screen
+2. [](#bugfix)
     * The Media toolbar wraps on phones, so the Folder and Upload buttons are no longer pushed off the screen [#202](https://github.com/getgrav/grav-plugin-admin2/issues/202)
 
 # v2.2.1
