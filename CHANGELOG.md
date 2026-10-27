@@ -1,3 +1,9 @@
+# v2.2.2
+## 10/26/2026
+
+1. [](#bugfix)
+    * The Media toolbar wraps on phones, so the Folder and Upload buttons are no longer pushed off the screen [#202](https://github.com/getgrav/grav-plugin-admin2/issues/202)
+
 # v2.2.1
 ## 10/25/2026
 
