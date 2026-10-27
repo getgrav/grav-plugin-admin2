@@ -1,3 +1,9 @@
+# v2.2.3
+## 10/27/2026
+
+1. [](#improved)
+    * With a custom logo set, the sign-in screen no longer prints the admin title as a heading under it, since the logo already names the site. The title is still read out by screen readers and still names the browser tab
+
 # v2.2.2
 ## 10/26/2026
 

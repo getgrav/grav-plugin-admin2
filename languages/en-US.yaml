@@ -1404,7 +1404,7 @@ ICU:
       FAILED_TO_REMOVE_LOGO: Failed to remove logo.
       FAILED_TO_SAVE_BRANDING: Failed to save branding.
       ADMIN_TITLE: Admin title
-      ADMIN_TITLE_DESC: Shown as the sign-in heading and in the browser tab. Leave blank for "Grav Admin".
+      ADMIN_TITLE_DESC: Shown in the browser tab, and as the sign-in heading unless a custom logo is set, since the logo already names the site. Leave blank for "Grav Admin".
       LOGIN_SUBTITLE: Sign-in subtitle
       LOGIN_SUBTITLE_DESC: Optional line shown under the sign-in heading.
       SHOW_POWERED_BY: Show "Powered by Grav"
