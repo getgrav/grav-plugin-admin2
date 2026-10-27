@@ -23,6 +23,7 @@ ICU:
     CONFIRM: Confirm
     CONFIRM_DELETE: Delete "{title}" at {route}?
     DELETE: Delete
+    UNDO: Undo
     DONE: Done
     EDIT: Edit
     HELP: Help
@@ -124,6 +125,17 @@ ICU:
       REORDER_FAILED: Failed to reorder
       DELETED: Deleted "{title}"
       DELETE_FAILED: Failed to delete page
+      DELETE_CANNOT_UNDO: This cannot be undone.
+      DELETE_RECOVERABLE: You can restore it from Trash.
+      DELETE_TRANSLATION_TITLE: Delete Translation
+      DELETE_TRANSLATION_CONFIRM: "Delete the {language} translation of “{title}”? {n, plural, one{The other language is kept.} other{The other # languages are kept.}}"
+      DELETE_LAST_LANGUAGE: This is the page’s only language, so the whole page folder is removed, including its media and any child pages.
+      TRANSLATION_DELETED: "{language} translation deleted"
+      TRANSLATION_DELETED_OF: "Deleted the {language} translation of “{name}”"
+      DELETE_UNDONE: Page restored
+      TRANSLATION_RESTORED: "{language} translation restored"
+      DELETE_UNDONE_NAMED: "Restored “{name}”"
+      DELETE_UNDO_FAILED: "Couldn’t undo the delete: {detail}"
       SAVED: Page saved successfully
       SAVE_FAILED: Failed to save page
       VALIDATION_FAILED_FOR_FIELDS: "Couldn't save — these fields are invalid: {fields}"

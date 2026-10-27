@@ -1,9 +1,13 @@
 # v2.2.3
 ## 10/27/2026
 
-1. [](#improved)
+1. [](#new)
+    * **Undo a delete**: when a plugin keeps deleted pages (Revisions Pro's trash), the toast after deleting a page or one of its translations, from the editor or the Pages list, has an Undo button. From the editor it opens the page again in the language that was deleted; from the list the list refreshes. Needs API 1.1.3
+    * A plugin sidebar item can sit in the sidebar's bottom group, above Settings (`placement: footer`), for site-wide tools like a trash, so it isn't mixed in with the plugins' own screens
+2. [](#improved)
     * With a custom logo set, the sign-in screen no longer prints the admin title as a heading under it, since the logo already names the site. The title is still read out by screen readers and still names the browser tab
-2. [](#bugfix)
+    * Deleting a page on a multi-language site says which language goes and that the others are kept ("Delete the German translation of “Rechenoptionen”? The other 6 languages are kept."), and warns when it is the page's only language that the whole folder goes, with its media and child pages. When a plugin keeps deleted pages, the dialog says the page can be restored from Trash instead of "This cannot be undone."
+3. [](#bugfix)
     * Saving a form now checks the required fields inside list rows, so a scheduler job added with Add item and saved untouched is stopped with a message naming the row and the missing field instead of being stored with no command [getgrav/grav-plugin-scheduler-webhook#10](https://github.com/getgrav/grav-plugin-scheduler-webhook/issues/10)
 
 # v2.2.2
