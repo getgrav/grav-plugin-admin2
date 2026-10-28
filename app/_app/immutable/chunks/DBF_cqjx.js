@@ -1,1 +1,0 @@
-import{b as s}from"./QeOCFU_z.js";import{c as o}from"./BllWQiMB.js";function p(t,n){const a=`${s}/pages/edit${t.startsWith("/")?t:"/"+t}`,e=n===void 0?o.enabled?o.activeLang:"":n;return e?`${a}?lang=${encodeURIComponent(e)}`:a}export{p};

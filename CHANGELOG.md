@@ -8,6 +8,7 @@
     * With a custom logo set, the sign-in screen no longer prints the admin title as a heading under it, since the logo already names the site. The title is still read out by screen readers and still names the browser tab
     * Deleting a page on a multi-language site says which language goes and that the others are kept ("Delete the German translation of “Rechenoptionen”? The other 6 languages are kept."), and warns when it is the page's only language that the whole folder goes, with its media and child pages. When a plugin keeps deleted pages, the dialog says the page can be restored from Trash instead of "This cannot be undone."
 3. [](#bugfix)
+    * A plugin page drawn by its own component (Crosspost, Forms Pro, KahunaCart's settings) now asks before you leave with unsaved changes through the sidebar or another admin link, the same as a blueprint page. Admin2 already got the page's `dirty` state for the Save button but never checked it before leaving
     * Saving a form now checks the required fields inside list rows, so a scheduler job added with Add item and saved untouched is stopped with a message naming the row and the missing field instead of being stored with no command [getgrav/grav-plugin-scheduler-webhook#10](https://github.com/getgrav/grav-plugin-scheduler-webhook/issues/10)
 
 # v2.2.2
