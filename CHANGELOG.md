@@ -1,3 +1,10 @@
+# v2.2.4
+## 10/29/2026
+
+1. [](#bugfix)
+    * With collaboration on, switching to Expert mode while someone else edits the same page in Editor Pro (or back again while they're in Expert mode) now makes your content editor read-only until you switch back, instead of letting the two editors silently overwrite each other's text [getgrav/grav-admin-next#43](https://github.com/getgrav/grav-admin-next/issues/43)
+    * With collaboration on, a change made to a page's file outside the admin (a git pull, a text editor, another API client) now shows in the editor instead of the older text from the editing session, which the next save used to write back over it. When the session also has unsaved changes, those are kept and a warning says that saving replaces the file's version [getgrav/grav-admin-next#43](https://github.com/getgrav/grav-admin-next/issues/43)
+
 # v2.2.3
 ## 10/29/2026
 

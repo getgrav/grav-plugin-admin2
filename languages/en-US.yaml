@@ -245,6 +245,7 @@ ICU:
         PAGE_COPIED: Page copied
         PAGE_CHANGED_ELSEWHERE_SAVE_TO: Page changed elsewhere — save to overwrite or reload
         PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: Page was modified elsewhere. Please reload.
+        COLLAB_UNSAVED_DIFFERS_FROM_FILE: "This page has unsaved changes from a shared editing session that don't match the page file, which may have been edited outside the admin. The editor shows the unsaved changes; saving replaces the file's version."
         LOADING_PAGE: Loading page...
         FOLDER_NAME: Folder Name
         THE_FOLDER_NAME_ON_DISK_URL_SLUG: The folder name on disk (URL slug)
@@ -774,6 +775,7 @@ ICU:
         SWITCH_YOUR_EDITOR_PREFERENCE: switch your editor preference
         TO_COLLABORATE_LIVE: to collaborate live.
         LOCKED: Read-only — {owner} is editing with **{editor}**. Mixed editor types can't co-edit; [switch your editor preference]({href}) to collaborate live.
+        LOCKED_EXPERT: "Read-only: {owner} is editing with **{editor}**, which can't co-edit with Expert mode's markdown editor. Switch back to Normal mode to collaborate live."
         BUILTIN_MARKDOWN_EDITOR: the built-in markdown editor
     DOWNLOAD: Download
     TRANSLATIONS:
