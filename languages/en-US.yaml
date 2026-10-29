@@ -23,6 +23,7 @@ ICU:
     CONFIRM: Confirm
     CONFIRM_DELETE: Delete "{title}" at {route}?
     DELETE: Delete
+    UNDO: Undo
     DONE: Done
     EDIT: Edit
     HELP: Help
@@ -50,6 +51,9 @@ ICU:
     VALIDATION:
       FIELD_REQUIRED: '{label} is required'
       REQUIRED_GENERIC: This field is required
+      LIST_ROW_REQUIRED: 'Item {row}: {label} is required'
+      LIST_KEY_REQUIRED: '{key}: {label} is required'
+      LIST_NEW_ROW_REQUIRED: 'New item: {label} is required'
       FORM_HAS_ERRORS: '{count, plural, one {# field needs your attention} other {# fields need your attention}}'
     SECURITY_CHECK:
       USER_FOLDER_EXPOSED_TITLE: 'Your web server is not applying Grav''s access rules'
@@ -121,6 +125,17 @@ ICU:
       REORDER_FAILED: Failed to reorder
       DELETED: Deleted "{title}"
       DELETE_FAILED: Failed to delete page
+      DELETE_CANNOT_UNDO: This cannot be undone.
+      DELETE_RECOVERABLE: You can restore it from Trash.
+      DELETE_TRANSLATION_TITLE: Delete Translation
+      DELETE_TRANSLATION_CONFIRM: "Delete the {language} translation of “{title}”? {n, plural, one{The other language is kept.} other{The other # languages are kept.}}"
+      DELETE_LAST_LANGUAGE: This is the page’s only language, so the whole page folder is removed, including its media and any child pages.
+      TRANSLATION_DELETED: "{language} translation deleted"
+      TRANSLATION_DELETED_OF: "Deleted the {language} translation of “{name}”"
+      DELETE_UNDONE: Page restored
+      TRANSLATION_RESTORED: "{language} translation restored"
+      DELETE_UNDONE_NAMED: "Restored “{name}”"
+      DELETE_UNDO_FAILED: "Couldn’t undo the delete: {detail}"
       SAVED: Page saved successfully
       SAVE_FAILED: Failed to save page
       VALIDATION_FAILED_FOR_FIELDS: "Couldn't save — these fields are invalid: {fields}"
@@ -1404,7 +1419,7 @@ ICU:
       FAILED_TO_REMOVE_LOGO: Failed to remove logo.
       FAILED_TO_SAVE_BRANDING: Failed to save branding.
       ADMIN_TITLE: Admin title
-      ADMIN_TITLE_DESC: Shown as the sign-in heading and in the browser tab. Leave blank for "Grav Admin".
+      ADMIN_TITLE_DESC: Shown in the browser tab, and as the sign-in heading unless a custom logo is set, since the logo already names the site. Leave blank for "Grav Admin".
       LOGIN_SUBTITLE: Sign-in subtitle
       LOGIN_SUBTITLE_DESC: Optional line shown under the sign-in heading.
       SHOW_POWERED_BY: Show "Powered by Grav"

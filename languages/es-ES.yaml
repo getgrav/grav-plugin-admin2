@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Cerrar menú'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Grav fue {code} con {love} por {company}.'
+            MADE_BY_PLAIN: 'Grav fue programado con cariño por Trilby Media'
+            MORE_ACTIONS: 'Más acciones'
         ARE_YOU_SURE: '¿Estás seguro?'
         AUTHOR: Autor
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'No se pudo guardar: estos campos no son válidos: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'No se pudo cargar la configuración.'
             SCOPE_NOT_FOUND: 'No se encontró ningún ámbito de configuración llamado {scope}.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# ajuste aquí está sobrescrito} other {# ajustes aquí están sobrescritos}} por el entorno {env}, por lo que los cambios en {count, plural, one {él} other {ellos}} no surtirán efecto.'
+                BANNER_MIXED: '{count, plural, one {# ajuste aquí está sobrescrito} other {# ajustes aquí están sobrescritos}} por el entorno {env} o por una variable de entorno del servidor, por lo que los cambios a {count, plural, one {él} other {ellos}} no surtirán efecto.'
+                BANNER_SERVER: '{count, plural, one {# ajuste aquí está establecido} other {# ajustes aquí están establecidos}} por variables de entorno del servidor, por lo que los cambios en {count, plural, one {él} other {ellos}} no surtirán efecto.'
+                ENABLED_ENV: 'Establecido por el entorno {env}'
+                ENABLED_EXPLAIN_ENV: 'El entorno {env} activa o desactiva este plugin en su propio archivo de configuración, por lo que el interruptor de aquí no cambiará el comportamiento del sitio.'
+                ENABLED_EXPLAIN_SERVER: 'Una variable de entorno del servidor llamada GRAV_CONFIG activa o desactiva este plugin, por lo que el interruptor de aquí no cambiará el comportamiento del sitio.'
+                ENABLED_SERVER: 'Establecido por una variable de entorno del servidor'
+                EXPLAIN_ENV: 'El entorno {env} establece esto en su propio archivo de configuración, por lo que lo que guardes aquí no surtirá efecto.'
+                EXPLAIN_SERVER: 'Una variable de entorno del servidor GRAV_CONFIG establece esto, por lo que lo que guardes aquí no surtirá efecto.'
+                MARKER_ENV: 'Sobrescrito por el entorno {env}'
+                MARKER_SERVER: 'Establecido por una variable de entorno del servidor'
+                REMOVED: 'Se ha eliminado la sobrescritura del entorno {env}.'
+                REMOVE_FAILED: 'No se pudo eliminar la sobrescritura'
+                REMOVE_OVERRIDE: 'Eliminar sobrescritura'
+                SAVED_ENV: 'Se ha guardado, pero el entorno {env} sobrescribe {field}, por lo que el sitio sigue utilizando "{value}".'
+                SAVED_MANY_ENV: 'Guardado, pero {count, plural, one {# de estos cambios está sobrescrito} other {# de estos cambios están sobrescritos}} por el entorno {env}, por lo que el sitio sigue usando los valores del entorno.'
+                SAVED_MANY_MIXED: 'Guardado, pero {count, plural, one {# de estos cambios está sobrescrito} other {# de estos cambios están sobrescritos}} por el entorno {env} o por variables de entorno del servidor, por lo que el sitio sigue usando los valores del entorno.'
+                SAVED_MANY_SERVER: 'Guardado, pero {count, plural, one {# de estos cambios está establecido} other {# de estos cambios están establecidos}} por variables de entorno del servidor, por lo que éstos no se aplicarán al sitio.'
+                SAVED_SERVER: 'Guardado, pero {field} está establecido por una variable de entorno del servidor, por lo que el sitio sigue usando " {value} ".'
+                SITE_USES: 'Este sitio usa'
+                SWITCH_TO: 'Cambiar a {env}'
+                TOGGLE_ENV: 'Guardado, pero el entorno {env} mantiene {name} {state, select, off {desactivado} other {activado}}.'
+                TOGGLE_SERVER: 'Guardado, pero una variable de entorno del servidor mantiene {name} {state, select, off {desactivado} other {activado}}.'
+                VALUE_OFF: desactivado
+                VALUE_ON: activado
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Entorno
             EXPORT_YAML: 'Exportar YAML'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: Marcas
                 FAMILY_REGULAR: Regulares
                 FAMILY_SOLID: Sólidos
+                SET_MISSING: 'No hay ningún conjunto de iconos llamado " {set} " registrado en este sitio.'
             NO_TAXONOMY_TYPES: 'No hay tipos de taxonomía configurados'
             PAGES:
                 FILTER_PAGES: 'Filtrar páginas...'
@@ -498,6 +528,14 @@ ICU:
                 TITLE: 'Detalles del archivo'
                 TYPE: Tipo
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'No se ha podido subir {filename}: {message}'
+                NO_PERMISSION: 'No tienes permiso para subir archivos multimedia, por lo que no se ha añadido la imagen.'
+                PAGES_ONLY: 'Pegar o arrastrar imágenes solo funciona en el contenido de las páginas. Sube la imagen al gestor de archivos multimedia e insértala desde allí.'
+                SAVE_PAGE_FIRST: 'Guarda la página primero y luego pega o arrastra imágenes en ella.'
+                UNSUPPORTED_TYPE: 'No se puede añadir {filename} aquí. Pega o arrastra una imagen PNG, JPEG, GIF, WebP, AVIF o SVG.'
+                UPLOADED: '{count, plural, one {Imagen añadida a los archivos multimedia de la página} other {# imágenes añadidas a los archivos multimedia de la página}}'
+                UPLOADING: '{count, plural, one {Subiendo imagen…} other {Subiendo # imágenes…}}'
         NAV:
             CONFIGURATION: Configuración
             DASHBOARD: 'Panel de control'
@@ -614,6 +652,8 @@ ICU:
                 VISIBLE: Visible
                 CHILD_TYPE_HINT: 'La página padre sugiere utilizar la plantilla " {template} " para sus páginas hijas. Aun así, puedes elegir una plantilla diferente.'
                 STATUS_HELP: 'Los borradores se guardan, pero no son visibles en el sitio hasta que los publiques.'
+                MODULE_NEEDS_PARENT: 'Un módulo va dentro de una página modular, así que elige la página a la que pertenece.'
+                PICK_MODULAR_PAGE: 'Elige una página modular'
             NO_PAGES: 'No se encontraron páginas'
             NO_SEARCH_RESULTS: 'Ninguna página coincide con tu búsqueda'
             PAGES_GRAV_ADMIN: 'Páginas — Grav Admin'
@@ -693,6 +733,17 @@ ICU:
                 SCHEDULED: Programado
                 SCHEDULED_FOR: 'Programado para publicarse el {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            DROP_INSIDE: 'Suelta una página aquí para moverla dentro de {title}'
+            LOAD_CHILDREN_FAILED: 'No se pudieron cargar las páginas de esta carpeta.'
+            MODULES:
+                ADD: 'Añadir módulo'
+                EMPTY: 'Todavía no hay módulos.'
+                HELP: 'Los componentes que forman esta página, en el orden en que se muestran. Arrastra un módulo para cambiarlo de posición o selecciona su controlador y pulsa Alt+Arriba o Alt+Abajo. Haz clic en el icono de estado para publicar o despublicar el módulo.'
+                LOAD_FAILED: 'No se pudieron cargar los módulos.'
+                MOVE: 'Mover «{title}»'
+                TITLE: Módulos
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} no tiene número de orden, por lo que permanece ordenado por nombre'
+            SHOW_DROP_INSIDE: 'Mover páginas dentro de {title}'
         PASSWORD: Contraseña
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisitos de contraseña'
@@ -933,6 +984,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Predeterminado
             SIDEBAR_LOGO_HEIGHT: 'Altura del logotipo de la barra lateral'
             SIDEBAR_LOGO_HEIGHT_DESC: 'La altura con la que aparece tu logotipo en la parte superior de la barra lateral.'
+            SHOW_CREDIT: 'Mostrar crédito de Trilby Media'
+            SHOW_CREDIT_DESC: 'Mostrar la línea «Grav was coded with love by Trilby Media» en la parte inferior de la barra lateral.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, guiones, guiones bajos'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Cuenta de administrador creada — bienvenido a Grav'
@@ -1209,6 +1262,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'La autenticación de dos factores está desactivada'
             VERIFICATION_CODE: 'Código de verificación'
             VERIFY_ENABLE: 'Verificar y habilitar'
+            CURRENT_CODE_WRONG: 'El código introducido no es correcto.'
+            ENTER_CODE_TO_REGENERATE: 'Introduce tu código actual de 6 dígitos para generar un nuevo secreto. La autenticación en dos pasos (2FA) permanecerá desactivada hasta que escanees el nuevo código QR y verifiques un código generado a partir de él.'
+            REGENERATE: Regenerar
+            TOO_MANY_CODES: 'Demasiados códigos incorrectos. Vuelve a intentarlo en unos minutos.'
         UNSAVED_CHANGES: 'Cambios sin guardar'
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 'Guardando cambios…'
@@ -1248,6 +1305,32 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'No puedes eliminar tu propia cuenta.'
             CONFIRM_DELETE_USER: '¿Eliminar usuario "{username}"? No se puede deshacer.'
             TITLE: Usuarios
+            EMAIL_CHANGE_CANCELLED: 'Cambio de correo electrónico cancelado.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'No se pudo cancelar el cambio de correo electrónico.'
+            EMAIL_CHANGE_RESEND: Reenviar
+            EMAIL_CHANGE_RESEND_FAILED: 'No se pudo reenviar el enlace de confirmación.'
+            EMAIL_CHANGE_SENT: 'Enviamos un enlace de confirmación a {email}. La dirección de correo electrónico cambiará una vez que se confirme el enlace.'
+            EMAIL_CHANGE_WAITING: 'Esperando confirmación: {email}'
+            PASSWORD:
+                CHANGE: 'Cambiar contraseña'
+                CHANGED_OTHER: 'La contraseña de {name} se ha cambiado.'
+                CHANGED_OWN: 'Tu contraseña se ha cambiado. Se ha cerrado la sesión en otros navegadores y aplicaciones en los que habías iniciado sesión con tu cuenta.'
+                CONFIRM: 'Confirmar la nueva contraseña'
+                CURRENT: 'Contraseña actual'
+                CURRENT_REQUIRED: 'Introduce tu contraseña actual.'
+                CURRENT_WRONG: 'Tu contraseña actual no es correcta.'
+                FAILED: 'No se pudo cambiar la contraseña.'
+                MISMATCH: 'Las contraseñas no coinciden.'
+                NEW: 'Nueva contraseña'
+                NEW_REQUIRED: 'Introduce una nueva contraseña.'
+                NOT_ALLOWED: 'No tienes permiso para cambiar esta contraseña.'
+                NO_PASSWORD_HELP: 'Tu cuenta aún no tiene contraseña porque inicias sesión a través de otro servicio. Establece una para iniciar sesión también con tu nombre de usuario y contraseña.'
+                OTHER_HELP: 'Establece una nueva contraseña para {name}. Se cerrará la sesión en todos los navegadores y aplicaciones, y deberá iniciar sesión de nuevo con la nueva contraseña.'
+                OWN_HELP: 'Introduce tu contraseña actual y luego la nueva dos veces. Aquí seguirás conectado, y se cerrará la sesión en todos los demás navegadores y aplicaciones conectados a tu cuenta.'
+                POLICY: 'La nueva contraseña no cumple los requisitos.'
+                SET: 'Establecer contraseña'
+                TITLE: Contraseña
+                TOO_MANY: 'Demasiadas contraseñas incorrectas. Vuelve a intentarlo en unos minutos.'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar eliminado'
             AVATAR_UPDATED: 'Avatar actualizado'
@@ -2312,6 +2395,8 @@ ICU:
             INVALID_JSON_TITLE: 'Respuesta inesperada del servidor'
             UNEXPECTED_RESPONSE_DETAIL: 'El servidor respondió con datos en un formato que esta pantalla no espera. La consola del navegador tiene los detalles.'
             UNEXPECTED_RESPONSE_TITLE: 'Respuesta inesperada del servidor'
+            SERVER_PAGE_DETAIL: 'El servidor web ha respondido directamente a esta solicitud (HTTP {status}) en lugar de reenviarla a Grav. Es posible que un filtro de seguridad del servidor, como mod_security o un cortafuegos del alojamiento, la haya bloqueado. Tu proveedor de alojamiento o el registro de errores del servidor pueden ayudarte a identificar qué regla se ha activado.'
+            SERVER_PAGE_TITLE: 'Bloqueado por el servidor web'
         CACHE_MODULES: 'Almacenar en caché la salida del módulo'
         CACHE_MODULES_HELP: 'Almacena en caché el contenido renderizado de los módulos de esta página. Úsalo solo cuando los módulos muestren el mismo contenido a todos los visitantes. Los módulos con su propio Twig o un formulario, los visitantes que hayan iniciado sesión y los envíos de formularios siempre se renderizan de nuevo. Si solo editas una plantilla parcial, es necesario borrar la caché.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Sugerencias de renderizado de Flex'
@@ -2356,3 +2441,42 @@ ICU:
         SESSION_LAZY: 'Iniciar sesiones solo cuando sea necesario'
         SESSION_LAZY_HELP: 'Los visitantes sin cookie de sesión obtienen una sesión solo cuando se almacena algo en ella, como un inicio de sesión, un formulario o un mensaje, para que las visitas anónimas a la página puedan ser cacheadas por un proxy o CDN. Los plugins que almacenan datos en cada visita a la página igualmente inician una sesión.'
         UPDATE_CHANGELOG_TITLE: 'Cambios en la v{version}'
+        IMAGES_WATERMARK_ALL: 'Aplicar marca de agua a todas las imágenes'
+        IMAGES_WATERMARK_ALL_HELP: 'Estampar automáticamente la marca de agua en cada imagen que sirve el sitio'
+        IMAGES_WATERMARK_BOTTOM: Abajo
+        IMAGES_WATERMARK_CENTER: Centro
+        IMAGES_WATERMARK_IMAGE: 'Imagen de marca de agua'
+        IMAGES_WATERMARK_IMAGE_HELP: 'Ruta a la imagen utilizada como marca de agua, como system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Izquierda
+        IMAGES_WATERMARK_POSITION_X: 'Posición horizontal'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Dónde se sitúa la marca de agua de izquierda a derecha'
+        IMAGES_WATERMARK_POSITION_Y: 'Posición vertical'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Dónde se sitúa la marca de agua de arriba abajo'
+        IMAGES_WATERMARK_RIGHT: Derecha
+        IMAGES_WATERMARK_SCALE: 'Escala de la marca de agua'
+        IMAGES_WATERMARK_SCALE_HELP: 'Tamaño de la marca de agua como porcentaje de la imagen'
+        IMAGES_WATERMARK_TITLE: 'Marca de agua'
+        IMAGES_WATERMARK_TOP: Arriba
+        PIPELINE_REMOTE_TIMEOUT: 'Tiempo de espera de recursos remotos'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Cuánto tiempo esperar por un archivo CSS o JS remoto (por ejemplo, una hoja de estilos de una CDN) al compilar la canalización antes de darse por vencido.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Personalizar la barra lateral'
+            DIVIDER: Separador
+            HIDE: 'Ocultar {label}'
+            HINT: 'Arrastra los elementos para cambiar su orden o selecciona un controlador y utiliza las teclas de flecha. El icono del ojo oculta un elemento y la estrella permite elegir los accesos directos de un plugin que se mostrarán debajo.'
+            MOVE: 'Mover {label}'
+            MOVED: '{label} se movió a la posición {position} de {total}'
+            RESET_DONE: 'Tu barra lateral vuelve a seguir la del sitio'
+            RESTORE_BUILT_IN: 'Orden original'
+            SAVED: 'Barra lateral guardada'
+            SAVE_FAILED: 'No se pudo guardar la barra lateral'
+            SAVE_FOR_EVERYONE: 'Guardar para todos'
+            SAVE_FOR_EVERYONE_HINT: 'Hacer que ésta sea la barra lateral para todos los usuarios que no hayan organizado la suya'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Todos los usuarios que no hayan organizado su propia barra lateral verán este orden. Cualquiera puede seguir cambiando la suya, y ocultar un elemento no cambia a qué tienen permiso para acceder.'
+            SAVE_FOR_EVERYONE_TITLE: '¿Hacer que ésta sea la barra lateral de todos?'
+            SHOW: 'Mostrar {label}'
+            SITE_SAVED: 'Barra lateral guardada para todos'
+            STAR: 'Mostrar {label} en la barra lateral'
+            SUB_ITEMS: 'Atajos ({count} de {total} marcados con estrella)'
+            UNSTAR: 'Quitar {label} de la barra lateral'
+            USE_SITE_DEFAULT: 'Utiliza la barra lateral del sitio'
