@@ -4,12 +4,15 @@
 1. [](#new)
     * **Undo a delete**: when a plugin keeps deleted pages (Revisions Pro's trash), the toast after deleting a page or one of its translations, from the editor or the Pages list, has an Undo button. From the editor it opens the page again in the language that was deleted; from the list the list refreshes. Needs API 1.1.3
     * A plugin sidebar item can sit in the sidebar's bottom group, above Settings (`placement: footer`), for site-wide tools like a trash, so it isn't mixed in with the plugins' own screens
+    * Page media files can be selected and their details edited together, the same way as in Media. Needs API 1.1.3 [getgrav/grav-admin-next#42](https://github.com/getgrav/grav-admin-next/pull/42)
 2. [](#improved)
     * With a custom logo set, the sign-in screen no longer prints the admin title as a heading under it, since the logo already names the site. The title is still read out by screen readers and still names the browser tab
     * Deleting a page on a multi-language site says which language goes and that the others are kept ("Delete the German translation of “Rechenoptionen”? The other 6 languages are kept."), and warns when it is the page's only language that the whole folder goes, with its media and child pages. When a plugin keeps deleted pages, the dialog says the page can be restored from Trash instead of "This cannot be undone."
 3. [](#bugfix)
     * A plugin page drawn by its own component (Crosspost, Forms Pro, KahunaCart's settings) now asks before you leave with unsaved changes through the sidebar or another admin link, the same as a blueprint page. Admin2 already got the page's `dirty` state for the Save button but never checked it before leaving
     * Saving a form now checks the required fields inside list rows, so a scheduler job added with Add item and saved untouched is stopped with a message naming the row and the missing field instead of being stored with no command [getgrav/grav-plugin-scheduler-webhook#10](https://github.com/getgrav/grav-plugin-scheduler-webhook/issues/10)
+    * With collaboration on, Editor Pro no longer shows old content after the page was edited in Expert mode, and no longer saves that old content over the Expert edit [getgrav/grav-admin-next#43](https://github.com/getgrav/grav-admin-next/issues/43)
+    * A file field's image preview, such as a theme logo, works again when Grav is installed in a subfolder [#203](https://github.com/getgrav/grav-plugin-admin2/issues/203)
 
 # v2.2.2
 ## 10/26/2026
