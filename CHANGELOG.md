@@ -1,5 +1,5 @@
 # v2.2.3
-## 10/27/2026
+## 10/29/2026
 
 1. [](#new)
     * **Undo a delete**: when a plugin keeps deleted pages (Revisions Pro's trash), the toast after deleting a page or one of its translations, from the editor or the Pages list, has an Undo button. From the editor it opens the page again in the language that was deleted; from the list the list refreshes. Needs API 1.1.3
