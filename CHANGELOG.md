@@ -1,5 +1,5 @@
 # v2.2.5
-## 10/29/2026
+## 10/30/2026
 
 1. [](#improved)
     * Needs API 1.1.5, which checks the current password the account screen asks for when you change your own email address, and lets every admin user list environments so the switcher shows the right one
