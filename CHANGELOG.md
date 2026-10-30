@@ -2,7 +2,7 @@
 ## 10/29/2026
 
 1. [](#improved)
-    * Needs API 1.1.4, which checks the current password the account screen asks for when you change your own email address
+    * Needs API 1.1.5, which checks the current password the account screen asks for when you change your own email address, and lets every admin user list environments so the switcher shows the right one
     * The environment switcher in the top bar only shows when the site has an environment, one is selected, or you can write config and so create one, instead of an "Env: Default" badge for everyone [admin-next#44](https://github.com/getgrav/grav-admin-next/pull/44)
 2. [](#bugfix)
     * Signing in no longer starts on a made-up `localhost` environment, which stuck in the top bar for users who can't list environments

@@ -17,7 +17,7 @@ compatibility:
   grav: ["2.0"]
 
 dependencies:
-  - { name: api, version: ">=1.1.4" }
+  - { name: api, version: ">=1.1.5" }
 
 form:
   validation: loose
