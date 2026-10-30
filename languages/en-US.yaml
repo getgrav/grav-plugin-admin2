@@ -1428,6 +1428,10 @@ ICU:
       SHOW_POWERED_BY_DESC: Show the "Powered by Grav CMS" line on the sign-in and setup screens.
       SHOW_CREDIT: Show Trilby Media credit
       SHOW_CREDIT_DESC: Show the "Grav was coded with love by Trilby Media" line at the bottom of the sidebar.
+      ENVIRONMENT_SWITCHER: Environment switcher
+      ENVIRONMENT_SWITCHER_DESC: "When the top bar shows the environment switcher (Env:). Automatic shows it when the site has an environment, and otherwise only to users who can change the configuration, so they can create one. Only with environments hides it from everyone until the site has one: switch back to Automatic to create the first. It always shows while an environment is selected."
+      ENVIRONMENT_SWITCHER_AUTO: Automatic
+      ENVIRONMENT_SWITCHER_WHEN_USED: Only with environments
       FAVICON: Favicon
       FAVICON_DESC: Custom browser-tab icon (SVG, PNG, WebP, or ICO). Leave blank for the generated icon.
       FAVICON_UPLOADED: Favicon uploaded.
