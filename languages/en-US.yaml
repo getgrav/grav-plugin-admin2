@@ -1517,6 +1517,10 @@ ICU:
       EMAIL_CHANGE_CANCELLED: Email change cancelled.
       EMAIL_CHANGE_RESEND_FAILED: Failed to resend the confirmation link.
       EMAIL_CHANGE_CANCEL_FAILED: Failed to cancel the email change.
+      EMAIL_CONFIRM:
+        TITLE: Confirm it's you
+        MESSAGE: "Enter your current password to change your email address to {email}."
+        NOT_SAVED: "Your new email address, {email}, isn't saved yet. Confirm it with your current password."
       BACK_TO_USERS: Back to Users
       2_FACTOR_AUTHENTICATION: 2-Factor Authentication
       PASSWORD:
