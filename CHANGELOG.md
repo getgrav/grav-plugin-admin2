@@ -1,3 +1,13 @@
+# v2.2.4
+## 10/29/2026
+
+1. [](#improved)
+    * [security] Changing your own email address on your account screen asks for your current password first, in a small "Confirm it's you" dialog, so someone using a signed-in browser can't move the account to an address they control. A wrong password is answered in the dialog, Cancel saves nothing and keeps the new address typed, and with auto-save on the dialog opens when you leave the email field. Accounts with no password, and admins changing someone else's address, aren't asked. Needs API 1.1.4
+2. [](#bugfix)
+    * With collaboration on, switching to Expert mode while someone else edits the same page in Editor Pro (or back again while they're in Expert mode) now makes your content editor read-only until you switch back, instead of letting the two editors silently overwrite each other's text [getgrav/grav-admin-next#43](https://github.com/getgrav/grav-admin-next/issues/43)
+    * With collaboration on, a change made to a page's file outside the admin (a git pull, a text editor, another API client) now shows in the editor instead of the older text from the editing session, which the next save used to write back over it. When the session also has unsaved changes, those are kept and a warning says that saving replaces the file's version [getgrav/grav-admin-next#43](https://github.com/getgrav/grav-admin-next/issues/43)
+    * On a site installed in a subfolder, media files no longer show broken previews or wrong Open and copy links (the subfolder was added twice) in the media panels, the page media list, media and file pickers, and the full-size images Editor Pro shows [#203](https://github.com/getgrav/grav-plugin-admin2/issues/203)
+
 # v2.2.3
 ## 10/29/2026
 
