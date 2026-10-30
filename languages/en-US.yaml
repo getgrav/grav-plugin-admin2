@@ -165,6 +165,7 @@ ICU:
       SEARCH_SHOW_MORE: Show more
       COLUMN_EMPTY: Empty
       HEADER_TITLE: Title
+      PAGE_TITLE_HINT: 'Title: {title}'
       HEADER_TEMPLATE: Template
       HEADER_STATUS: Status
       HEADER_MODIFIED: Modified
