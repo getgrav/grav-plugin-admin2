@@ -1,3 +1,12 @@
+# v2.2.6
+## 11/01/2026
+
+1. [](#improved)
+    * Needs Grav 2.2.18 and API 1.1.9. When a page's Twig is blocked inside a theme or plugin template it includes, **Tools → Reports → Twig in Content** names the template and offers **Trust this partial**, which adds it to `security.twig_sandbox.trusted_partials` in one click, instead of allowing what the template uses (such as `raw`) for all page content. The report links to the Learn guide on fixing Twig in content, and its hints no longer suggest turning the sandbox off
+1. [](#bugfix)
+    * Coming back to the admin after more than 30 seconds away no longer looks like a page reload on the Plugins and Groups screens: their lists stay on screen while they refresh, instead of being swapped for a full-page spinner and scrolled back to the top [#206](https://github.com/getgrav/grav-plugin-admin2/issues/206)
+    * Names marked with backticks in field help and descriptions, such as `base_url` in the Absolute URLs help, show as code instead of showing the backticks, and help that names a template like `<template>.<extension>.twig` shows the whole sentence again [#207](https://github.com/getgrav/grav-plugin-admin2/issues/207)
+
 # v2.2.5
 ## 10/30/2026
 
