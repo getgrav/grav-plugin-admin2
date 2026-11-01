@@ -981,6 +981,11 @@ ICU:
           ADD_TO_ALLOWLIST: Add to allowlist
           ADDED_TO_ALLOWLIST: "Added ''{token}'' to {key}"
           ADD_FAILED: Could not update the allowlist
+          IN_PARTIAL: "Blocked inside the included template"
+          TRUST_PARTIAL: Trust this partial
+          TRUSTED_PARTIAL: "Trusted {template}. Pages that include it render it as your theme does."
+          TRUST_FAILED: Could not trust the partial
+          TROUBLESHOOTING_LINK: How to fix Twig in content
           CLEAR_EVENTS: Clear blocks
           CLEARED_EVENTS: Cleared recent blocks
           CLEAR_FAILED: Could not clear blocks
