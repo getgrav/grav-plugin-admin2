@@ -1,3 +1,9 @@
+# v2.2.7
+## 11/02/2026
+
+1. [](#bugfix)
+    * The Groups screen now has page controls for sites with more than 20 groups, and its search finds groups on every page, not just the first one. The group filter on the Users list, the group choices when inviting someone, and the inherited permissions shown when editing a user now include every group too [#45](https://github.com/getgrav/grav-admin-next/issues/45)
+
 # v2.2.6
 ## 11/01/2026
 
