@@ -575,6 +575,13 @@ class Admin2Plugin extends Plugin
             'admin' => [
                 'name' => $this->getBlueprint()->get('name'),
             ],
+            // List only the pages each user can edit (plus the folders leading
+            // to them) on the Pages screen, in search and in recent pages
+            // (admin2#209). A listing preference, not access control: the API
+            // still decides what each user may read and change.
+            'pages' => [
+                'only_editable' => (bool) $this->config->get('plugins.admin2.pages.only_editable', false),
+            ],
         ];
 
         // Site branding + admin language, exposed pre-auth so the sign-in screen

@@ -1,2 +1,4 @@
 enabled: true
 route: /admin
+pages:
+  only_editable: false
