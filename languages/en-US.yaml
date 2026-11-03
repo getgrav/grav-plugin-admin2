@@ -215,6 +215,11 @@ ICU:
         HAS_CHILDREN: Has children
         SUMMARY: Summary
         DROP_HERE: Drop here
+      # A page the user can't read, listed only so the tree can be opened down
+      # to pages inside it that they can (admin2#209).
+      ANCESTOR_ONLY_HINT: You can't open this page. It's listed so you can reach the pages inside it.
+      ANCESTOR_ONLY_LABEL: "{title}: you can't open this page, only pages inside it"
+      ANCESTOR_ONLY_PARENT: You can't open the parent page
       PAGES_TREE_VIEW:
         FAILED_TO_REORGANIZE_PAGES: Failed to reorganize pages
         SEARCHING: Searching…
@@ -226,6 +231,7 @@ ICU:
       ADD_MODULE: Add Module
       ADD_MENU: Add menu
       EDIT:
+        READ_ONLY_NOTICE: You can view this page but not edit it.
         TOGGLE_PAGE_NAVIGATOR: Toggle page navigator
         PREVIEW_PAGE: Preview page
         COPY_PAGE: Copy page
@@ -744,6 +750,8 @@ ICU:
         REORDER_HINT: Drag images to set their order.
         INSERT_AT_CURSOR: Insert at cursor
         INSERTED: Inserted {filename}
+        NOT_ALLOWED: You can't change the media of this page.
+        NO_FILES: No media files
       METADATA:
         TITLE: Metadata
         EDIT: Edit metadata
