@@ -570,6 +570,48 @@ ICU:
       FORCE_DISABLE: Force disable
       CONFIRM_DISABLE: Confirm disable
       FORCE_DISABLE_PROMPT: Force-disable 2FA for **{username}**? Use this only for lost-device recovery.
+    PASSKEYS_FIELD:
+      TITLE: Passkeys
+      HELP: A passkey signs you in with your fingerprint, face or device PIN, from a password manager or a security key. It works on the site and in Admin, and counts as both sign-in steps.
+      HELP_OTHER: Passkeys this account signs in with. Remove one when the device or password manager holding it is lost.
+      PROOF_UNAVAILABLE: Set a password or 2FA on your account first. Passkeys can't be added or removed with a signed-in session alone.
+      NONE: No passkeys yet.
+      NONE_OTHER: This account has no passkeys.
+      ADD: Add a passkey
+      WAITING: Waiting for your passkey…
+      CONTINUE: Continue
+      CURRENT_PASSWORD: Current password
+      CURRENT_CODE: Current 2FA code
+      PROOF_PASSWORD_ADD: Enter your current password to add a passkey.
+      PROOF_CODE_ADD: Enter your current 6-digit 2FA code to add a passkey.
+      PASSWORD_REQUIRED: Enter your current password.
+      CODE_REQUIRED: Enter your current 6-digit code.
+      PASSWORD_WRONG: Your current password is not correct.
+      CODE_WRONG: That code is not correct.
+      TOO_MANY: Too many wrong tries. Try again in a few minutes.
+      ADDED_ON: "Added {date}"
+      LAST_USED: "last used {date}"
+      NEVER_USED: not used yet
+      SYNCED: synced
+      SYNCED_HELP: Kept in a password manager that syncs it across your devices.
+      RENAME: Rename
+      NAME_LABEL: Passkey name
+      NAME_REQUIRED: Give the passkey a name.
+      SAVE: Save
+      REMOVE: Remove
+      REMOVE_CONFIRM: "Remove “{name}”? It will no longer sign you in."
+      REMOVE_CONFIRM_PASSWORD: "Remove “{name}”? It will no longer sign you in. Enter your current password to confirm."
+      REMOVE_CONFIRM_CODE: "Remove “{name}”? It will no longer sign you in. Enter your current 6-digit 2FA code to confirm."
+      REMOVE_CONFIRM_OTHER: "Remove “{name}” from {username}? It will no longer sign them in."
+      ADDED: "Passkey added ({name}). It signs you in on its own from now on."
+      REMOVED: "Passkey removed ({name})."
+      RENAMED: Passkey renamed.
+      CANCELLED: No passkey was added. Try again when you're ready.
+      ALREADY_SAVED: That password manager or device already holds a passkey for this account.
+      UNSUPPORTED: This browser can't use passkeys here.
+      ADD_FAILED: The passkey couldn't be added. Please try again.
+      RENAME_FAILED: The passkey couldn't be renamed.
+      REMOVE_FAILED: The passkey couldn't be removed.
     DISABLE: Disable
     USER_AVATAR_CARD:
       AVATAR_UPDATED: Avatar updated
@@ -1247,6 +1289,17 @@ ICU:
       CAPTCHA_VERIFIED: Verified you're human
       CAPTCHA_NOT_COMPLETED: Please complete the challenge to continue
       CAPTCHA_FAILED_TO_LOAD: The challenge could not be loaded. Reload the page and try again.
+      PASSKEY_SIGN_IN: Sign in with a passkey
+      PASSKEY_OR: or
+      PASSKEY_USE_INSTEAD: Use your passkey instead
+      PASSKEY_WAITING: Waiting for your passkey…
+      PASSKEY_CANCELLED: No passkey was used. Try again when you're ready, or sign in with your password.
+      PASSKEY_CANCELLED_TWO_STEP: No passkey was used. Try again when you're ready, or enter your code.
+      PASSKEY_SIGN_IN_FAILED: That passkey didn't sign you in. If you removed it from your account, sign in with your password.
+      PASSKEY_NOT_THIS_ACCOUNT: That passkey isn't one of this account's. Try another, or enter your code.
+      PASSKEY_TOO_MANY_TRIES: Too many passkey attempts. Wait a few minutes and try again.
+      PASSKEY_OFF: Passkeys are switched off on this site. Sign in with your password.
+      PASSKEY_FAILED: Something went wrong with the passkey. Please try again.
     PLUGIN:
       BACK_TO_DASHBOARD: Back to Dashboard
       NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: No content available for this plugin page.
