@@ -1,0 +1,1 @@
+function n(r,e){const o=window.opener;if(!o||o===window)return!1;try{if(o.location.origin!==window.location.origin)return!1;o.postMessage({type:"grav:sso",code:r??null,error:e},window.location.origin)}catch{return!1}return window.close(),!0}export{n as r};
