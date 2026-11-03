@@ -1,3 +1,16 @@
+# v2.2.7
+## 11/03/2026
+
+1. [](#new)
+    * Pages a user can view but not edit, because of the page's own permissions, now open read-only: every field is disabled, there's no Save button, no autosave and no "unsaved changes" prompt, Cmd/Ctrl+S does nothing, and a notice at the top says "You can view this page but not edit it." Content shows in the plain markdown viewer, Expert mode is read-only too, and the page's media can be opened and its links copied but not uploaded, deleted, reordered or described. A file field shows no upload area on such a page. If the user has the right to change media and the page has no rules of its own, the media panel keeps working there even though the fields are read-only. Delete, copy and the other page actions still follow their own permissions. A media change the API refuses now says "You can't change the media of this page" instead of a generic error [#209](https://github.com/getgrav/grav-plugin-admin2/issues/209)
+    * The Pages tree, list and columns no longer show pages a user can't read. A folder they can't open is still shown, greyed out with a lock, when one of their pages is inside it, so they can expand down to it; it has no link to the editor and no row actions, and its tooltip says why. (With **Only List Editable Pages** on, a folder the user can read but not edit that leads to pages they can edit is a normal row and opens read-only.) In page pickers and the new-page parent picker such a folder opens but can't be chosen, and the page navigator skips it [#209](https://github.com/getgrav/grav-plugin-admin2/issues/209)
+    * New **Only List Editable Pages** setting (`pages.only_editable`, off by default): the Pages screen, page search and the dashboard's recent pages list only the pages each user can edit, plus the folders that lead to them, so an editor who looks after a few pages of a large site gets a short list. It's a listing convenience, not access control [#209](https://github.com/getgrav/grav-plugin-admin2/issues/209)
+    * Needs API 1.1.10, which leaves unreadable pages out of page lists, marks the folders kept to reach readable pages, and adds the `editable` list filter. With an older API, pages still open read-only when the API says the user can't update them, but the lists show every page as before
+    * Passkeys, with Login 3.12 and API 1.1.10 on a site that has `plugins.login.passkeys.enabled` on. The login screen has **Sign in with a passkey** and offers passkeys in the username field's autofill; a passkey counts as both steps, so no authenticator code follows. At the 2FA step an account with a passkey can use it instead of typing the code
+    * A **Passkeys** card on the user page: add, rename and remove your own passkeys (adding or removing asks for your current password), and remove someone else's when their device is lost, if you can edit users
+1. [](#bugfix)
+    * The Groups screen now has page controls for sites with more than 20 groups, and its search finds groups on every page, not just the first one. The group filter on the Users list, the group choices when inviting someone, and the inherited permissions shown when editing a user now include every group too [#45](https://github.com/getgrav/grav-admin-next/issues/45)
+
 # v2.2.6
 ## 11/01/2026
 
