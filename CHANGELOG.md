@@ -1,6 +1,11 @@
 # v2.2.7
 ## 11/02/2026
 
+1. [](#new)
+    * Pages a user can view but not edit, because of the page's own permissions, now open read-only: every field is disabled, there's no Save button, no autosave and no "unsaved changes" prompt, Cmd/Ctrl+S does nothing, and a notice at the top says "You can view this page but not edit it." Content shows in the plain markdown viewer, Expert mode is read-only too, and the page's media can be opened and its links copied but not uploaded, deleted, reordered or described. Delete, copy and the other page actions still follow their own permissions. A media change the API refuses now says "You can't change the media of this page" instead of a generic error [#209](https://github.com/getgrav/grav-plugin-admin2/issues/209)
+    * The Pages tree, list and columns no longer show pages a user can't read. A folder they can't open is still shown, greyed out with a lock, when one of their pages is inside it, so they can expand down to it; it has no link to the editor and no row actions, and its tooltip says why. In page pickers and the new-page parent picker such a folder opens but can't be chosen, and the page navigator skips it [#209](https://github.com/getgrav/grav-plugin-admin2/issues/209)
+    * New **Only List Editable Pages** setting (`pages.only_editable`, off by default): the Pages screen, page search and the dashboard's recent pages list only the pages each user can edit, plus the folders that lead to them, so an editor who looks after a few pages of a large site gets a short list. It's a listing convenience, not access control [#209](https://github.com/getgrav/grav-plugin-admin2/issues/209)
+    * Needs API 1.1.10, which leaves unreadable pages out of page lists, marks the folders kept to reach readable pages, and adds the `editable` list filter. With an older API, pages still open read-only when the API says the user can't update them, but the lists show every page as before
 1. [](#bugfix)
     * The Groups screen now has page controls for sites with more than 20 groups, and its search finds groups on every page, not just the first one. The group filter on the Users list, the group choices when inviting someone, and the inherited permissions shown when editing a user now include every group too [#45](https://github.com/getgrav/grav-admin-next/issues/45)
 
