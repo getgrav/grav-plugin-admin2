@@ -3,6 +3,7 @@
 
 1. [](#bugfix)
     * The Groups screen now has page controls for sites with more than 20 groups, and its search finds groups on every page, not just the first one. The group filter on the Users list, the group choices when inviting someone, and the inherited permissions shown when editing a user now include every group too [#45](https://github.com/getgrav/grav-admin-next/issues/45)
+    * With Flex accounts on a site that serves a public subfolder (`GRAV_WEBROOT`) apart from the private install folder, the check for whether any account exists finds the accounts folder again instead of falling back to counting every account on each request
 
 # v2.2.6
 ## 11/01/2026
