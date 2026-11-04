@@ -49,6 +49,7 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Menü schließen'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY_PLAIN: 'Grav, mit Liebe geschrieben von Trilby Media'
         ARE_YOU_SURE: 'Sind Sie sicher?'
         AUTHOR: Autor
         BACKUPS_WIDGET:
@@ -108,6 +109,9 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Das Speichern war nicht erfolgreich. Die folgenden Felder sind fehlerhaft: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Fehler beim Laden der Konfiguration.'
             SCOPE_NOT_FOUND: 'Es wurde kein Konfigurationsbereich namens {scope} gefunden.'
+            SHADOWED:
+                VALUE_OFF: aus
+                VALUE_ON: ein
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Umgebung
             EXPORT_YAML: 'YAML exportieren'
@@ -2348,3 +2352,16 @@ ICU:
         SESSION_LAZY: 'Sitzungen nur bei Bedarf starten'
         SESSION_LAZY_HELP: 'Besucher ohne Sitzungs-Cookie erhalten erst dann eine Sitzung, wenn darin etwas gespeichert wird, wie etwa ein Login, ein Formular oder eine Nachricht. Dadurch können anonyme Seitenaufrufe von einem Proxy oder CDN zwischengespeichert werden. Plugins, die bei jedem Seitenaufruf Daten speichern, starten weiterhin eine Sitzung.'
         UPDATE_CHANGELOG_TITLE: 'Änderungen in v{version}'
+        CHANGELOG:
+            NEW: Neu
+            SECURITY: Sicherheit
+        IMAGES_WATERMARK_ALL: 'Alle Bilder mit Wasserzeichen versehen'
+        IMAGES_WATERMARK_ALL_HELP: 'Jedes Bild, das von der Webseite ausgeliefert wird, mit einem Wasserzeichen versehen'
+        IMAGES_WATERMARK_IMAGE_HELP: 'Pfad zum Bild, das als Wasserzeichen verwendet wird, zum Beispiel system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Links
+        IMAGES_WATERMARK_POSITION_X: 'Horizontale Position'
+        IMAGES_WATERMARK_POSITION_Y: 'Vertikale Position'
+        IMAGES_WATERMARK_RIGHT: Rechts
+        IMAGES_WATERMARK_SCALE_HELP: 'Grösse des Wasserzeichens als Prozentsatz des Bildes'
+        IMAGES_WATERMARK_TITLE: Wasserzeichen
+        IMAGES_WATERMARK_TOP: Oben
