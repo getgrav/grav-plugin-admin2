@@ -1,3 +1,11 @@
+# v2.2.9
+## 11/04/2026
+
+1. [](#improved)
+    * The permissions editor on a user, a new user and an invitation locks the **Allowed** toggle on any permission you can't grant because your own account doesn't have it, with a short note saying why. A permission the user already has stays switchable, and **Denied** and **Not set** always work. Super admins see no change. Needs API 1.1.12; with an older API every toggle stays open
+1. [](#bugfix)
+    * A user manager who isn't a super admin can save a user again. The save sent the user's groups, which only a super admin may change, so the API refused the whole thing
+
 # v2.2.8
 ## 11/03/2026
 

@@ -543,6 +543,8 @@ ICU:
       LEGEND_INHERITED: Inherited from a group
       LEGEND_OVERRIDE: Overrides a group
       LEGEND_SUPER: Granted by super admin
+      NOT_GRANTABLE: "You can't grant this permission because your own account doesn't have it"
+      LOCKED_NOTE: "You can only grant permissions your own account has. The ones you can't grant have Allow greyed out, but you can still deny them or clear them."
     TWO_FACTOR_FIELD:
       REGENERATE: Regenerate
       ENTER_CODE_TO_REGENERATE: Enter your current 6-digit code to make a new secret. 2FA stays off until you scan the new QR code and verify a code from it.
