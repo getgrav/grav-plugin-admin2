@@ -1529,6 +1529,8 @@ ICU:
       SYSTEM_GRAV_ADMIN: System — Grav Admin
       COMING_SOON: Coming soon
     THEMES:
+      UPDATE_CONFIRM_TITLE: Update theme?
+      UPDATE_CONFIRM_MESSAGE: 'Update {name} to v{version}?'
       SEARCH_THEMES: Search themes...
       SYMLINKED: Symlinked
       FAILED_TO_LOAD_THEMES: Failed to load themes
@@ -1782,6 +1784,16 @@ ICU:
     UPDATE_AVAILABLE_VERSION: "Update available: v{version}"
     UPDATE_CHANGELOG_TITLE: "Changes in v{version}"
     UPDATE_TO_VERSION: Update to v{version}
+    UPDATE_WHATS_NEW: "What's new"
+    UPDATE_CHANGELOG_EMPTY: No changelog entries newer than the installed version.
+    UPDATE_CHANGELOG_FAILED: The changelog could not be loaded.
+    README_NOT_AVAILABLE: README not available.
+    CHANGELOG_NOT_AVAILABLE: Changelog not available.
+    CHANGELOG:
+      NEW: New
+      IMPROVED: Improved
+      BUGFIX: Bugfix
+      SECURITY: Security
     2FA_ENABLED: 2FA Enabled
     2FA_SECRET: 2FA Secret
     2FA_SECRET_HELP: "Scan this QR code into your [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). Also it's a good idea to backup the secret in a safe location, in case you need to reinstall your app. Check the [Grav docs](https://learn.getgrav.org/admin-panel/2fa) for more information "

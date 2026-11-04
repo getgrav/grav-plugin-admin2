@@ -3,6 +3,9 @@
 
 1. [](#new)
     * The login screen and the sign-in-again dialog show only the single sign-on buttons when the site turns off **Show Password Form** in the API plugin (API 1.1.11 or later). With an older API, or while no sign-in provider is offered, the password form shows as before. A refused single sign-on now shows its error on the login screen [admin-next#46](https://github.com/getgrav/grav-admin-next/pull/46)
+    * The dashboard's Updates widget shows a homepage link and a **What's new** button for each package with an update. It opens only the changelog entries newer than the installed version, which also works for Grav itself. Package links from GPM data only open when they're real http(s) links. Thanks @patschi [admin-next#47](https://github.com/getgrav/grav-admin-next/pull/47)
+1. [](#improved)
+    * The update UI reads better: changelogs show each version and its date on one line, with labelled New, Improved and Bugfix badges and a Security tag on security fixes; the Updates widget lines up versions and icon buttons; and the Plugins and Themes screens use one update badge and a **What's new** link everywhere. The update confirm dialogs and **Update All** are translated
 
 # v2.2.7
 ## 11/03/2026
