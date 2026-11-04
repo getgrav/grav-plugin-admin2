@@ -662,7 +662,22 @@ ICU:
     NOTIFICATIONS_WIDGET:
       NO_NOTIFICATIONS: No notifications
     POPULARITY_WIDGET:
+      LAST_7_DAYS: Last 7 days
       LAST_14_DAYS: Last 14 days
+      LAST_30_DAYS: Last 30 days
+      LAST_90_DAYS: Last 90 days
+      LAST_12_MONTHS: Last 12 months
+      SHORT_7D: 7D
+      SHORT_14D: 14D
+      SHORT_30D: 30D
+      SHORT_90D: 90D
+      SHORT_12M: 12M
+      TIME_FRAME: Time frame
+      CHART_RANGE_LABEL: 'Page views, {range}'
+      PREVIOUS_PERIOD: '{count, plural, one {# view} other {# views}} in the previous period'
+      VS_PREVIOUS: compared with the previous period
+      LOAD_FAILED: Couldn't load this time frame
+      SO_FAR: so far
       TODAY: Today
       VIEWS: '{count, plural, one {# view} other {# views}}'
       CHART_LABEL: Page views per day for the last 14 days
