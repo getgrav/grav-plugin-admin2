@@ -1,5 +1,5 @@
 # v2.2.8
-## xx/xx/2026
+## 11/03/2026
 
 1. [](#new)
     * The login screen and the sign-in-again dialog show only the single sign-on buttons when the site turns off **Show Password Form** in the API plugin (API 1.1.11 or later). With an older API, or while no sign-in provider is offered, the password form shows as before. A refused single sign-on now shows its error on the login screen [admin-next#46](https://github.com/getgrav/grav-admin-next/pull/46)
