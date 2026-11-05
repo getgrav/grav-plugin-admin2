@@ -1000,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Barra de ferramentas fixa'
             STICKY_TOOLBAR_DESC: 'Mantenha a barra de ferramentas de formatação e o botão de Pré-visualização visíveis enquanto percorre a página.'
             ADMIN_TITLE: 'Título de administração'
-            ADMIN_TITLE_DESC: 'Apresentado no separador do navegador e como título de início de sessão, a menos que seja definido um logótipo personalizado, uma vez que o logótipo já indica o nome do site. Deixe em branco para «Grav Admin».'
+            ADMIN_TITLE_DESC: 'Apresentado como o título de início de sessão e no separador do navegador. Deixe em branco para "Grav Admin".'
             FAILED_TO_SAVE_BRANDING: 'Falha ao guardar a personalização da marca.'
             FAVICON: Favicon
             FAVICON_DESC: 'Ícone personalizado para o separador do navegador (SVG, PNG, WebP ou ICO). Deixe em branco para utilizar o ícone gerado.'
