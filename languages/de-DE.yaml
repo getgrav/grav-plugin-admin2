@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Menü schließen'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Grav wurde mit {love} von {company} {code}.'
+            MADE_BY_PLAIN: 'Grav, mit Liebe geschrieben von Trilby Media'
+            MORE_ACTIONS: 'Weitere Aktionen'
         ARE_YOU_SURE: 'Sind Sie sicher?'
         AUTHOR: Autor
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Das Speichern war nicht erfolgreich. Die folgenden Felder sind fehlerhaft: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Fehler beim Laden der Konfiguration.'
             SCOPE_NOT_FOUND: 'Es wurde kein Konfigurationsbereich namens {scope} gefunden.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# Einstellung hier wird} other {# Einstellungen hier werden}} durch die Umgebung {env} überschrieben, daher werden Änderungen daran nicht wirksam.'
+                BANNER_MIXED: '{count, plural, one {# Einstellung hier wird} other {# Einstellungen hier werden}} durch die Umgebung {env} oder durch Server-Umgebungsvariablen überschrieben, daher werden Änderungen daran nicht wirksam.'
+                BANNER_SERVER: '{count, plural, one {# Einstellung hier wird} other {# Einstellungen hier werden}} durch Server-Umgebungsvariablen festgelegt, daher werden Änderungen daran nicht wirksam.'
+                ENABLED_ENV: 'Durch die Umgebung {env} festgelegt'
+                ENABLED_EXPLAIN_ENV: 'Die Umgebung {env} aktiviert oder deaktiviert dieses Plugin in ihrer eigenen Konfigurationsdatei, daher wird der Schalter hier keine Auswirkungen auf die Website haben.'
+                ENABLED_EXPLAIN_SERVER: 'Eine GRAV_CONFIG Server-Umgebungsvariable aktiviert oder deaktiviert dieses Plugin, daher wird der Schalter hier keine Auswirkungen auf die Website haben.'
+                ENABLED_SERVER: 'Durch eine Server-Umgebungsvariable festgelegt'
+                EXPLAIN_ENV: 'Die Umgebung {env} legt dies in ihrer eigenen Konfigurationsdatei fest, daher werden Ihre hier gespeicherten Änderungen nicht auf diese Website angewendet.'
+                EXPLAIN_SERVER: 'Eine GRAV_CONFIG Server-Umgebungsvariable legt dies fest, daher werden Ihre hier gespeicherten Änderungen nicht übernommen.'
+                MARKER_ENV: 'Durch die Umgebung {env} überschrieben'
+                MARKER_SERVER: 'Durch eine Server-Umgebungsvariable festgelegt'
+                REMOVED: 'Überschreibung aus der Umgebung {env} entfernt'
+                REMOVE_FAILED: 'Die Überschreibung konnte nicht entfernt werden'
+                REMOVE_OVERRIDE: 'Überschreibung entfernen'
+                SAVED_ENV: 'Gespeichert, aber {field} wird durch die Umgebung {env} überschrieben, daher verwendet die Website weiterhin „{value}“.'
+                SAVED_MANY_ENV: 'Gespeichert, aber {count} dieser Änderungen werden durch die Umgebung {env} überschrieben, daher werden sie von der Website nicht übernommen.'
+                SAVED_MANY_MIXED: 'Gespeichert, aber {count} dieser Änderungen werden durch die Umgebung {env} oder Server-Umgebungsvariablen überschrieben, daher werden sie von der Website nicht übernommen.'
+                SAVED_MANY_SERVER: 'Gespeichert, aber {count} dieser Änderungen sind durch Server-Umgebungsvariablen festgelegt, daher werden sie von der Website nicht übernommen.'
+                SAVED_SERVER: 'Gespeichert, aber {field} ist durch eine Server-Umgebungsvariable festgelegt, daher verwendet die Website weiterhin „{value}“.'
+                SITE_USES: 'Diese Website verwendet'
+                SWITCH_TO: 'Zu {env} wechseln'
+                TOGGLE_ENV: 'Gespeichert, aber die {env}-Umgebung hält {name} {state, select, off {deaktiviert} other {aktiviert}}.'
+                TOGGLE_SERVER: 'Gespeichert, aber eine Server-Umgebungsvariable hält {name} {state, select, off {deaktiviert} other {aktiviert}}.'
+                VALUE_OFF: aus
+                VALUE_ON: ein
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Umgebung
             EXPORT_YAML: 'YAML exportieren'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: Marken
                 FAMILY_REGULAR: Regulär
                 FAMILY_SOLID: Solid
+                SET_MISSING: 'Kein Icon-Set namens „{set}“ ist auf dieser Website registriert.'
             NO_TAXONOMY_TYPES: 'Keine Taxonomie-Typen konfiguriert'
             PAGES:
                 FILTER_PAGES: 'Seiten filtern...'
@@ -404,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Bestätigt, dass Sie ein Mensch sind'
             CAPTCHA_VERIFYING: 'Überprüfung, ob Sie ein Mensch sind...'
             INVALID_AUTHENTICATION_CODE: 'Ungültiger Authentifizierungscode'
+            PASSKEY_CANCELLED: 'Es wurde kein Passkey verwendet. Versuchen Sie es erneut, wenn Sie bereit sind, oder melden Sie sich mit Ihrem Passwort an.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Es wurde kein Passkey verwendet. Versuchen Sie es erneut, wenn Sie bereit sind, oder geben Sie Ihren Code ein.'
+            PASSKEY_FAILED: 'Etwas ist beim Passkey schiefgelaufen. Bitte versuchen Sie es erneut.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Dieser Passkey gehört nicht zu diesem Konto. Versuchen Sie es mit einem anderen oder geben Sie Ihren Code ein.'
+            PASSKEY_OFF: 'Passkeys sind auf dieser Website deaktiviert. Melden Sie sich mit Ihrem Passwort an.'
+            PASSKEY_OR: oder
+            PASSKEY_SIGN_IN: 'Mit einem Passkey anmelden'
+            PASSKEY_SIGN_IN_FAILED: 'Die Anmeldung mit diesem Passkey war nicht möglich. Wenn Sie ihn von Ihrem Konto entfernt haben, melden Sie sich mit Ihrem Passwort an.'
+            PASSKEY_TOO_MANY_TRIES: 'Zu viele Passkey-Versuche. Warten Sie einige Minuten und versuchen Sie es erneut.'
+            PASSKEY_USE_INSTEAD: 'Stattdessen Passkey verwenden'
+            PASSKEY_WAITING: 'Warte auf Ihren Passkey…'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Keine Vorschau verfügbar'
             IMAGE_INSERT:
@@ -474,6 +515,8 @@ ICU:
                 DROP_FILES_HERE: 'Dateien hierher ziehen'
                 DROP_FILES_OR_CLICK_TO_UPLOAD: 'Dateien ziehen oder zum Hochladen klicken'
                 DROP_OR_CLICK_TO_ADD_MORE: 'Ziehen oder klicken, um weitere hinzuzufügen'
+                NOT_ALLOWED: 'Sie können die Medien dieser Seite nicht ändern.'
+                NO_FILES: 'Keine Mediendateien'
             METADATA:
                 APPLY_TO_N: 'Auf {n} Dateien anwenden'
                 BATCH_EDITING: '{n} ausgewählte Dateien editieren - geänderte Felder werden auf alle angewendet.'
@@ -498,6 +541,14 @@ ICU:
                 TITLE: Dateidetails
                 TYPE: Typ
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: '{filename} konnte nicht hochgeladen werden: {message}'
+                NO_PERMISSION: 'Sie haben keine Berechtigung, Medien hochzuladen, daher wurde das Bild nicht hinzugefügt.'
+                PAGES_ONLY: 'Das Einfügen oder Ablegen von Bildern funktioniert nur im Seiteninhalt. Laden Sie das Bild in den Medien-Manager hoch und fügen Sie es von dort aus ein.'
+                SAVE_PAGE_FIRST: 'Speichern Sie die Seite zuerst und fügen Sie dann Bilder ein oder legen Sie diese ab.'
+                UNSUPPORTED_TYPE: '{filename} kann hier nicht hinzugefügt werden. Fügen Sie ein PNG-, JPEG-, GIF-, WebP-, AVIF- oder SVG-Bild ein oder legen Sie es ab.'
+                UPLOADED: '{count, plural, one {Bild zu den Seitenmedien hinzugefügt} other {# Bilder zu den Seitenmedien hinzugefügt}}'
+                UPLOADING: '{count, plural, one {Bild wird hochgeladen…} other {# Bilder werden hochgeladen…}}'
         NAV:
             CONFIGURATION: Konfiguration
             DASHBOARD: Dashboard
@@ -562,6 +613,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'Der Server hat die {effective}-Version dieser Seite anstelle von {active} zurückgegeben und {active} nicht als fehlend gemeldet. Das Speichern ist hier deaktiviert, damit die {effective}-Datei nicht überschrieben wird. Wenn dies bei jeder Seite auftritt, leitet der Webserver wahrscheinlich keine Query-Strings an Grav weiter.'
                 PREVIEW_SHOWING_HOST_PAGE: 'in der übergeordneten Seite angezeigt'
                 TEMPLATE_MISSING_NOTICE: 'Das Template **{template}** für dieses Modul wurde im Theme nicht gefunden, daher zeigt die zugehörige Seite einen Fehler „Template nicht gefunden“ an. Wählen Sie ein Template unter **Seitenvorlage** im Reiter „Erweitert“ oder fügen Sie das Template dem Theme hinzu.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Diese Seite hat ungespeicherte Änderungen aus einer gemeinsamen Bearbeitungssitzung, die nicht mit der Seitendatei übereinstimmen, da diese möglicherweise außerhalb des Admins bearbeitet wurde. Der Editor zeigt die ungespeicherten Änderungen an; beim Speichern wird die Dateiversion ersetzt.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Seite wurde anderweitig geändert. Bitte neu laden.'
+                READ_ONLY_NOTICE: 'Sie können diese Seite ansehen, aber nicht bearbeiten.'
             EDIT_PAGE: 'Seite bearbeiten'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Geändert
@@ -613,6 +667,8 @@ ICU:
                 VISIBLE: Sichtbar
                 CHILD_TYPE_HINT: 'Die übergeordnete Seite schlägt „{template}“ für ihre Unterseiten vor. Sie können dennoch ein anderes Template wählen.'
                 STATUS_HELP: 'Entwürfe werden gespeichert, sind aber erst sichtbar, wenn Sie sie veröffentlichen'
+                MODULE_NEEDS_PARENT: 'Ein Modul gehört in eine modulare Seite, wählen Sie also die Seite aus, zu der es gehört.'
+                PICK_MODULAR_PAGE: 'Wählen Sie eine modulare Seite'
             NO_PAGES: 'Keine Seiten gefunden'
             NO_SEARCH_RESULTS: 'Keine Seiten entsprechen Ihrer Suche'
             PAGES_GRAV_ADMIN: 'Seiten — Grav Admin'
@@ -692,6 +748,32 @@ ICU:
                 SCHEDULED: Geplant
                 SCHEDULED_FOR: 'Veröffentlichung geplant für {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Sie können diese Seite nicht öffnen. Sie ist aufgeführt, damit Sie die darin enthaltenen Seiten erreichen können.'
+            ANCESTOR_ONLY_LABEL: '{title}: Sie können diese Seite nicht öffnen, nur die darin enthaltenen Seiten'
+            ANCESTOR_ONLY_PARENT: 'Sie können die übergeordnete Seite nicht öffnen'
+            DELETE_CANNOT_UNDO: 'Dies kann nicht rückgängig gemacht werden.'
+            DELETE_LAST_LANGUAGE: 'Dies ist die einzige Sprache der Seite, daher wird der gesamte Seitenordner entfernt, einschließlich der Medien und aller Unterseiten.'
+            DELETE_RECOVERABLE: 'Sie können sie aus dem Papierkorb wiederherstellen.'
+            DELETE_TRANSLATION_CONFIRM: 'Die {language}-Übersetzung von „{title}“ löschen? {n, plural, one{Die andere Sprache bleibt erhalten.} other{Die anderen # Sprachen bleiben erhalten.}}'
+            DELETE_TRANSLATION_TITLE: 'Übersetzung löschen'
+            DELETE_UNDONE: 'Seite wiederhergestellt'
+            DELETE_UNDONE_NAMED: '„{name}“ wiederhergestellt'
+            DELETE_UNDO_FAILED: 'Das Löschen konnte nicht rückgängig gemacht werden: {detail}'
+            DROP_INSIDE: 'Legen Sie eine Seite hier ab, um sie in {title} zu verschieben'
+            LOAD_CHILDREN_FAILED: 'Die Seiten in diesem Ordner konnten nicht geladen werden.'
+            MODULES:
+                ADD: 'Modul hinzufügen'
+                EMPTY: 'Noch keine Module vorhanden.'
+                HELP: 'Die Bestandteile, aus denen diese Seite aufgebaut ist, in der Reihenfolge, in der sie auf der Seite angezeigt werden. Ziehen Sie ein Modul, um es zu verschieben, oder fokussieren Sie dessen Griff und drücken Sie Alt+Oben oder Alt+Unten. Klicken Sie auf das Statussymbol, um es zu veröffentlichen oder die Veröffentlichung aufzuheben.'
+                LOAD_FAILED: 'Die Module konnten nicht geladen werden.'
+                MOVE: '„{title}“ verschieben'
+                TITLE: Module
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} hat keine Ordnungsnummer, daher bleibt die Sortierung nach Namen bestehen'
+            PAGE_TITLE_HINT: 'Titel: {title}'
+            SHOW_DROP_INSIDE: 'Seiten innerhalb von {title} verschieben'
+            TRANSLATION_DELETED: '{language}-Übersetzung gelöscht'
+            TRANSLATION_DELETED_OF: 'Die {language}-Übersetzung von „{name}“ wurde gelöscht'
+            TRANSLATION_RESTORED: '{language}-Übersetzung wiederhergestellt'
         PASSWORD: Passwort
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Passwortanforderungen
@@ -709,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 'Überschreibt eine Gruppe'
             LEGEND_SUPER: 'Gewährt durch Super-Admin'
             OVERRIDES_GROUP: 'Ihre direkte Einstellung überschreibt die Gruppe: {groups}'
+            LOCKED_NOTE: 'Du kannst nur Berechtigungen erteilen, die dein eigenes Konto besitzt. Diejenigen, die du nicht erteilen kannst, haben eine ausgegraute „Zulassen“-Option, aber du kannst sie dennoch verweigern oder löschen.'
+            NOT_GRANTABLE: 'Du kannst diese Berechtigung nicht erteilen, da dein eigenes Konto nicht darüber verfügt.'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Zurück zum Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Für diese Plugin-Seite ist kein Inhalt verfügbar.'
@@ -750,6 +834,21 @@ ICU:
             CHART_LABEL: 'Seitenaufrufe pro Tag der letzten 14 Tage'
             TODAY: Heute
             VIEWS: '{count, plural, one {# Aufruf} other {# Aufrufe}}'
+            CHART_RANGE_LABEL: 'Seitenaufrufe, {range}'
+            LAST_12_MONTHS: 'Letzte 12 Monate'
+            LAST_30_DAYS: 'Letzte 30 Tage'
+            LAST_7_DAYS: 'Letzte 7 Tage'
+            LAST_90_DAYS: 'Letzte 90 Tage'
+            LOAD_FAILED: 'Zeitraum konnte nicht geladen werden'
+            PREVIOUS_PERIOD: '{count, plural, one {# Aufruf} other {# Aufrufe}} im vorherigen Zeitraum'
+            SHORT_12M: 12M
+            SHORT_14D: 14T
+            SHORT_30D: 30T
+            SHORT_7D: 7T
+            SHORT_90D: 90T
+            SO_FAR: bisher
+            TIME_FRAME: Zeitraum
+            VS_PREVIOUS: 'im Vergleich zum vorherigen Zeitraum'
         PREMIUM: Premium
         PREVIEW: Vorschau
         REAUTH_MODAL:
@@ -901,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Fixierte Symbolleiste'
             STICKY_TOOLBAR_DESC: 'Behalten Sie die Formatierungs-Symbolleiste und die Vorschau-Schaltfläche beim Scrollen im Blickfeld.'
             ADMIN_TITLE: Admin-Titel
-            ADMIN_TITLE_DESC: 'Wird als Anmeldeüberschrift und im Browser-Tab angezeigt. Leer lassen für „Grav Admin“.'
+            ADMIN_TITLE_DESC: 'Wird im Browser-Tab und als Überschrift bei der Anmeldung angezeigt, sofern kein eigenes Logo festgelegt wurde, da das Logo den Seitennamen bereits enthält. Lassen Sie das Feld leer für „Grav Admin“.'
             FAILED_TO_SAVE_BRANDING: 'Speichern des Brandings fehlgeschlagen.'
             FAVICON: Favicon
             FAVICON_DESC: 'Benutzerdefiniertes Browser-Tab-Symbol (SVG, PNG, WebP oder ICO). Leer lassen für das generierte Symbol.'
@@ -932,6 +1031,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Standard
             SIDEBAR_LOGO_HEIGHT: 'Höhe des Seitenleisten-Logos'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Wie hoch Ihr Logo am oberen Rand der Seitenleiste erscheint.'
+            SHOW_CREDIT: 'Trilby Media-Hinweis anzeigen'
+            SHOW_CREDIT_DESC: 'Zeige die Zeile „Grav was coded with love by Trilby Media“ am unteren Rand der Seitenleiste.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 Zeichen: Buchstaben, Zahlen, Bindestriche, Unterstriche'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto erstellt – willkommen bei Grav'
@@ -964,6 +1065,7 @@ ICU:
                 LOCKED: 'Schreibgeschützt — {owner} bearbeitet mit **{editor}**. Gemischte Editor-Typen können nicht gemeinsam bearbeitet werden; [ändern Sie Ihre Editor-Voreinstellung]({href}), um live zusammenzuarbeiten.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'ändern Sie Ihre Editor-Voreinstellung'
                 TO_COLLABORATE_LIVE: 'um live zusammenzuarbeiten.'
+                LOCKED_EXPERT: 'Schreibgeschützt: {owner} bearbeitet mit **{editor}**, was nicht mit dem Markdown-Editor des Expertenmodus kompatibel ist. Wechsle zurück in den Normalmodus, um live zusammenzuarbeiten.'
         SYSTEM:
             COMING_SOON: 'Bald verfügbar'
             SYSTEM_GRAV_ADMIN: 'System — Grav Admin'
@@ -1015,6 +1117,8 @@ ICU:
             UPDATE_ALL: 'Alle aktualisieren'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# Theme wird aktualisiert:} other{# Themes werden aktualisiert:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'Themes aktualisieren?'
+            UPDATE_CONFIRM_MESSAGE: '{name} auf v{version} aktualisieren?'
+            UPDATE_CONFIRM_TITLE: 'Theme aktualisieren?'
         TIME:
             DAYS_AGO: 'vor {n}T'
             HOURS_AGO: 'vor {n}h'
@@ -1121,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: Eigenschaften
                     POLICY_TAGS: Tags
                     POLICY_VIEW: 'Effektive Richtlinie anzeigen'
+                    IN_PARTIAL: 'Im enthaltenen Template gesperrt'
+                    TROUBLESHOOTING_LINK: 'Wie man Twig in Inhalten korrigiert'
+                    TRUSTED_PARTIAL: 'Vertrauenswürdiges {template}. Seiten, die es enthalten, rendern es so wie Ihr Theme.'
+                    TRUST_FAILED: 'Das Partial konnte nicht als vertrauenswürdig eingestuft werden'
+                    TRUST_PARTIAL: 'Diesem Partial vertrauen'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Berichtskomponente wird geladen...'
             SCHEDULER:
@@ -1208,6 +1317,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Zwei-Faktor-Authentifizierung ist deaktiviert'
             VERIFICATION_CODE: Verifizierungscode
             VERIFY_ENABLE: 'Überprüfen und aktivieren'
+            CURRENT_CODE_WRONG: 'Dieser Code ist nicht korrekt.'
+            ENTER_CODE_TO_REGENERATE: 'Geben Sie Ihren aktuellen 6-stelligen Code ein, um ein neues Geheimnis zu erstellen. 2FA bleibt deaktiviert, bis Sie den neuen QR-Code scannen und einen Code daraus verifizieren.'
+            REGENERATE: 'Neu generieren'
+            TOO_MANY_CODES: 'Zu viele falsche Codes. Versuchen Sie es in wenigen Minuten erneut.'
         UNSAVED_CHANGES: 'Ungespeicherte Änderungen'
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 'Änderungen werden gespeichert…'
@@ -1247,6 +1360,36 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Sie können Ihr eigenes Konto nicht löschen.'
             CONFIRM_DELETE_USER: "Benutzer ''{username}'' löschen? Dies kann nicht rückgängig gemacht werden."
             TITLE: Benutzer
+            EMAIL_CHANGE_CANCELLED: 'E-Mail-Änderung abgebrochen.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Die E-Mail-Änderung konnte nicht abgebrochen werden.'
+            EMAIL_CHANGE_RESEND: 'Erneut senden'
+            EMAIL_CHANGE_RESEND_FAILED: 'Der Bestätigungslink konnte nicht erneut gesendet werden.'
+            EMAIL_CHANGE_SENT: 'Wir haben einen Bestätigungslink an {email} gesendet. Die E-Mail-Adresse wird geändert, sobald der Link geöffnet wurde.'
+            EMAIL_CHANGE_WAITING: 'Warte auf Bestätigung: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Geben Sie Ihr aktuelles Passwort ein, um Ihre E-Mail-Adresse in {email} zu ändern.'
+                NOT_SAVED: 'Ihre neue E-Mail-Adresse, {email}, ist noch nicht gespeichert. Bestätigen Sie diese mit Ihrem aktuellen Passwort.'
+                TITLE: 'Bestätigen Sie, dass Sie es sind'
+            PASSWORD:
+                CHANGE: 'Passwort ändern'
+                CHANGED_OTHER: 'Das Passwort für {name} wurde geändert.'
+                CHANGED_OWN: 'Ihr Passwort wurde geändert. Andere Browser und Apps, die bei Ihrem Konto angemeldet waren, wurden abgemeldet.'
+                CONFIRM: 'Neues Passwort bestätigen'
+                CURRENT: 'Aktuelles Passwort'
+                CURRENT_REQUIRED: 'Geben Sie Ihr aktuelles Passwort ein.'
+                CURRENT_WRONG: 'Ihr aktuelles Passwort ist nicht korrekt.'
+                FAILED: 'Das Passwort konnte nicht geändert werden.'
+                MISMATCH: 'Die Passwörter stimmen nicht überein.'
+                NEW: 'Neues Passwort'
+                NEW_REQUIRED: 'Geben Sie ein neues Passwort ein.'
+                NOT_ALLOWED: 'Sie haben keine Berechtigung, dieses Passwort zu ändern.'
+                NO_PASSWORD_HELP: 'Ihr Konto hat noch kein Passwort, da Sie sich über einen anderen Dienst anmelden. Legen Sie eines fest, um sich auch mit Ihrem Benutzernamen und Passwort anzumelden.'
+                OTHER_HELP: 'Legen Sie ein neues Passwort für {name} fest. Alle Browser- und App-Sitzungen werden beendet und eine erneute Anmeldung mit dem neuen Passwort ist erforderlich.'
+                OWN_HELP: 'Geben Sie Ihr aktuelles Passwort ein und anschließend das neue Passwort zweimal. Sie bleiben hier angemeldet, aber alle anderen Browser und Apps, die in Ihrem Konto angemeldet sind, werden abgemeldet.'
+                POLICY: 'Das neue Passwort erfüllt nicht die Anforderungen.'
+                SET: 'Passwort festlegen'
+                TITLE: Passwort
+                TOO_MANY: 'Zu viele falsche Passworteingaben. Versuchen Sie es in wenigen Minuten erneut.'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar entfernt'
             AVATAR_UPDATED: 'Avatar aktualisiert'
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} ist erforderlich'
             FORM_HAS_ERRORS: '{count, plural, one {# Feld benötigt Ihre Aufmerksamkeit} other {# Felder benötigen Ihre Aufmerksamkeit}}'
             REQUIRED_GENERIC: 'Dieses Feld ist erforderlich'
+            LIST_KEY_REQUIRED: '{key}: {label} ist erforderlich'
+            LIST_NEW_ROW_REQUIRED: 'Neues Element: {label} ist erforderlich'
+            LIST_ROW_REQUIRED: 'Element {row}: {label} ist erforderlich'
         VALID_LINK_ATTRIBUTES: 'Gültige Link-Attribute'
         VALID_LINK_ATTRIBUTES_HELP: 'Attribute, die automatisch zum HTML-Medienelement hinzugefügt werden'
         VARY_ACCEPT_ENCODING: 'Accept-Encoding variieren'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Unerwartete Antwort vom Server'
             UNEXPECTED_RESPONSE_DETAIL: 'Der Server hat Daten in einem Format gesendet, das dieser Bildschirm nicht erwartet. Details dazu finden Sie in der Browser-Konsole.'
             UNEXPECTED_RESPONSE_TITLE: 'Unerwartete Antwort vom Server'
+            SERVER_PAGE_DETAIL: 'Ihr Webserver hat diese Anfrage selbst beantwortet (HTTP {status}), anstatt sie an Grav weiterzuleiten. Ein Sicherheitsfilter auf dem Server, wie etwa mod_security oder eine Hosting-Firewall, könnte den Zugriff blockiert haben. Ihr Hoster oder das Fehlerprotokoll des Servers können Ihnen mitteilen, welche Regel ausgelöst wurde.'
+            SERVER_PAGE_TITLE: 'Vom Webserver blockiert'
         CACHE_MODULES: 'Modulausgabe zwischenspeichern'
         CACHE_MODULES_HELP: 'Speichert die gerenderte Ausgabe der Module dieser Seite zwischen. Nur verwenden, wenn die Module jedem Besucher den gleichen Inhalt anzeigen. Module mit eigenem Twig oder Formularen, eingeloggte Besucher und Formularübermittlungen werden immer frisch gerendert. Bei Änderungen an einem Teil-Template ist ein Cache-Clear erforderlich.'
         DEBUGGER_FLEX_RENDER_HINTS: Flex-Rendering-Hinweise
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Sitzungen nur bei Bedarf starten'
         SESSION_LAZY_HELP: 'Besucher ohne Sitzungs-Cookie erhalten erst dann eine Sitzung, wenn darin etwas gespeichert wird, wie etwa ein Login, ein Formular oder eine Nachricht. Dadurch können anonyme Seitenaufrufe von einem Proxy oder CDN zwischengespeichert werden. Plugins, die bei jedem Seitenaufruf Daten speichern, starten weiterhin eine Sitzung.'
         UPDATE_CHANGELOG_TITLE: 'Änderungen in v{version}'
+        CHANGELOG:
+            BUGFIX: Fehlerbehebung
+            IMPROVED: Verbessert
+            NEW: Neu
+            SECURITY: Sicherheit
+        CHANGELOG_NOT_AVAILABLE: 'Änderungsprotokoll nicht verfügbar.'
+        IMAGES_WATERMARK_ALL: 'Alle Bilder mit Wasserzeichen versehen'
+        IMAGES_WATERMARK_ALL_HELP: 'Jedes Bild, das von der Webseite ausgeliefert wird, mit einem Wasserzeichen versehen'
+        IMAGES_WATERMARK_BOTTOM: Unten
+        IMAGES_WATERMARK_CENTER: Mitte
+        IMAGES_WATERMARK_IMAGE: Wasserzeichen-Bild
+        IMAGES_WATERMARK_IMAGE_HELP: 'Pfad zum Bild, das als Wasserzeichen verwendet wird, zum Beispiel system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Links
+        IMAGES_WATERMARK_POSITION_X: 'Horizontale Position'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Horizontale Position des Wasserzeichens'
+        IMAGES_WATERMARK_POSITION_Y: 'Vertikale Position'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Vertikale Position des Wasserzeichens'
+        IMAGES_WATERMARK_RIGHT: Rechts
+        IMAGES_WATERMARK_SCALE: 'Skalierung des Wasserzeichens'
+        IMAGES_WATERMARK_SCALE_HELP: 'Grösse des Wasserzeichens als Prozentsatz des Bildes'
+        IMAGES_WATERMARK_TITLE: Wasserzeichen
+        IMAGES_WATERMARK_TOP: Oben
+        PASSKEYS_FIELD:
+            ADD: 'Passkey hinzufügen'
+            ADDED: 'Passkey hinzugefügt ({name}). Er meldet Sie ab jetzt automatisch an.'
+            ADDED_ON: 'Hinzugefügt am {date}'
+            ADD_FAILED: 'Der Passkey konnte nicht hinzugefügt werden. Bitte versuchen Sie es erneut.'
+            ALREADY_SAVED: 'Dieser Passwort-Manager oder dieses Gerät enthält bereits einen Passkey für dieses Konto.'
+            CANCELLED: 'Es wurde kein Passkey hinzugefügt. Versuchen Sie es erneut, wenn Sie bereit sind.'
+            CODE_REQUIRED: 'Geben Sie Ihren aktuellen 6-stelligen Code ein.'
+            CODE_WRONG: 'Dieser Code ist nicht korrekt.'
+            CONTINUE: Weiter
+            CURRENT_CODE: 'Aktueller 2FA-Code'
+            CURRENT_PASSWORD: 'Aktuelles Passwort'
+            HELP: 'Ein Passkey meldet Sie mit Ihrem Fingerabdruck, Gesichtsscan oder Geräte-PIN über einen Passwort-Manager oder einen Sicherheitsschlüssel an. Er funktioniert auf der Website sowie im Admin-Bereich und zählt als beide Anmeldeschritte.'
+            HELP_OTHER: 'Passkeys, mit denen sich dieses Konto anmeldet. Entfernen Sie einen, wenn das Gerät oder der Passwort-Manager, auf dem er gespeichert ist, verloren gegangen ist.'
+            LAST_USED: 'zuletzt verwendet am {date}'
+            NAME_LABEL: Passkey-Name
+            NAME_REQUIRED: 'Geben Sie dem Passkey einen Namen.'
+            NEVER_USED: 'noch nicht verwendet'
+            NONE: 'Noch keine Passkeys.'
+            NONE_OTHER: 'Dieses Konto hat keine Passkeys.'
+            PASSWORD_REQUIRED: 'Geben Sie Ihr aktuelles Passwort ein.'
+            PASSWORD_WRONG: 'Ihr aktuelles Passwort ist nicht korrekt.'
+            PROOF_CODE_ADD: 'Geben Sie Ihren aktuellen 6-stelligen 2FA-Code ein, um einen Passkey hinzuzufügen.'
+            PROOF_PASSWORD_ADD: 'Geben Sie Ihr aktuelles Passwort ein, um einen Passkey hinzuzufügen.'
+            PROOF_UNAVAILABLE: 'Richten Sie zuerst ein Passwort oder 2FA für Ihr Konto ein. Passkeys können nicht allein mit einer angemeldeten Sitzung hinzugefügt oder entfernt werden.'
+            REMOVE: Entfernen
+            REMOVED: 'Passkey entfernt ({name}).'
+            REMOVE_CONFIRM: '„{name}“ entfernen? Sie werden sich damit nicht mehr anmelden können.'
+            REMOVE_CONFIRM_CODE: '„{name}“ entfernen? Sie werden sich damit nicht mehr anmelden können. Geben Sie Ihren aktuellen 6-stelligen 2FA-Code ein, um dies zu bestätigen.'
+            REMOVE_CONFIRM_OTHER: '„{name}“ von {username} entfernen? Diese Person wird sich damit nicht mehr anmelden können.'
+            REMOVE_CONFIRM_PASSWORD: '„{name}“ entfernen? Sie werden sich damit nicht mehr anmelden können. Geben Sie Ihr aktuelles Passwort ein, um dies zu bestätigen.'
+            REMOVE_FAILED: 'Der Passkey konnte nicht entfernt werden.'
+            RENAME: Umbenennen
+            RENAMED: 'Passkey umbenannt.'
+            RENAME_FAILED: 'Der Passkey konnte nicht umbenannt werden.'
+            SAVE: Speichern
+            SYNCED: synchronisiert
+            SYNCED_HELP: 'In einem Passwort-Manager gespeichert, der ihn über Ihre Geräte hinweg synchronisiert.'
+            TITLE: Passkeys
+            TOO_MANY: 'Zu viele Fehlversuche. Versuche es in ein paar Minuten erneut.'
+            UNSUPPORTED: 'Dieser Browser kann hier keine Passkeys verwenden.'
+            WAITING: 'Warte auf deinen Passkey…'
+        PIPELINE_REMOTE_TIMEOUT: 'Zeitüberschreitung bei Remote-Asset'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Wie lange beim Erstellen einer Pipeline auf eine Remote-CSS- oder JS-Datei (z. B. ein CDN-Stylesheet) gewartet werden soll. Wenn sie nicht rechtzeitig eintrifft, wird die Seite ohne Bündelung dieser Gruppe gerendert und beim nächsten Request erneut versucht.'
+        README_NOT_AVAILABLE: 'README nicht verfügbar.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Seitenleiste anpassen'
+            DIVIDER: Trennlinie
+            HIDE: '{label} ausblenden'
+            HINT: 'Ziehe Elemente, um sie neu anzuordnen, oder fokussiere einen Griff und verwende die Pfeiltasten. Das Auge blendet ein Element aus, und der Stern wählt die Kurzbefehle eines Plugins aus, die darunter angezeigt werden sollen.'
+            MOVE: '{label} verschieben'
+            MOVED: '{label} an Position {position} von {total} verschoben'
+            RESET_DONE: 'Deine Seitenleiste folgt wieder der des Systems'
+            RESTORE_BUILT_IN: 'Ursprüngliche Reihenfolge'
+            SAVED: 'Seitenleiste gespeichert'
+            SAVE_FAILED: 'Seitenleiste konnte nicht gespeichert werden'
+            SAVE_FOR_EVERYONE: 'Für alle speichern'
+            SAVE_FOR_EVERYONE_HINT: 'Als Standard-Seitenleiste für alle Benutzer festlegen, die ihre eigene noch nicht angepasst haben'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Alle Benutzer, die ihre Seitenleiste noch nicht angepasst haben, sehen diese Reihenfolge. Jeder kann weiterhin seine eigene anpassen, und das Ausblenden eines Elements ändert nichts an den Zugriffsrechten.'
+            SAVE_FOR_EVERYONE_TITLE: 'Diese Seitenleiste für alle übernehmen?'
+            SHOW: '{label} einblenden'
+            SITE_SAVED: 'Seitenleiste für alle gespeichert'
+            STAR: '{label} in der Seitenleiste anzeigen'
+            SUB_ITEMS: 'Kurzbefehle ({count} von {total} markiert)'
+            UNSTAR: '{label} aus der Seitenleiste entfernen'
+            USE_SITE_DEFAULT: 'System-Seitenleiste verwenden'
+        UNDO: Rückgängig
+        UPDATE_CHANGELOG_EMPTY: 'Keine Changelog-Einträge, die neuer als die installierte Version sind.'
+        UPDATE_CHANGELOG_FAILED: 'Das Changelog konnte nicht geladen werden.'
+        UPDATE_WHATS_NEW: 'Was ist neu'
