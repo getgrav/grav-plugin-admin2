@@ -87,6 +87,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Fechar menu'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'O Grav foi {code} com {love} pela {company}.'
+            MADE_BY_PLAIN: 'O Grav foi codificado com amor pela Trilby Media'
+            MORE_ACTIONS: 'Mais ações'
         ARE_YOU_SURE: 'Tem certeza?'
         ASCENDING: Crescente
         ASSETS: Ativos
@@ -212,6 +215,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Não foi possível salvar — estes campos são inválidos: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Falha ao carregar a configuração.'
             SCOPE_NOT_FOUND: 'Nenhum escopo de configuração chamado {scope} foi encontrado.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# configuração aqui está} other {# configurações aqui estão}} substituída(s) pelo ambiente {env}, portanto, as alterações n{count, plural, one {ela} other {elas}} não entrarão em vigor.'
+                BANNER_MIXED: '{count, plural, one {# configuração aqui está} other {# configurações aqui estão}} substituída(s) pelo ambiente {env} ou por variáveis de ambiente do servidor, portanto, as alterações n{count, plural, one {ela} other {elas}} não entrarão em vigor.'
+                BANNER_SERVER: '{count, plural, one {# configuração aqui está} other {# configurações aqui estão}} definida(s) por variáveis de ambiente do servidor, portanto, as alterações n{count, plural, one {ela} other {elas}} não entrarão em vigor.'
+                ENABLED_ENV: 'Definido pelo ambiente {env}'
+                ENABLED_EXPLAIN_ENV: 'O ambiente {env} ativa ou desativa este plugin em seu próprio arquivo de configuração, portanto, a alternância aqui não mudará o comportamento do site.'
+                ENABLED_EXPLAIN_SERVER: 'Uma variável de ambiente de servidor GRAV_CONFIG ativa ou desativa este plugin, portanto, a alternância aqui não mudará o comportamento do site.'
+                ENABLED_SERVER: 'Definido por uma variável de ambiente do servidor'
+                EXPLAIN_ENV: 'O ambiente {env} define isso em seu próprio arquivo de configuração, portanto, o que você salvar aqui não será aplicado neste site.'
+                EXPLAIN_SERVER: 'Uma variável de ambiente de servidor GRAV_CONFIG define isso, portanto, o que você salvar aqui não será aplicado.'
+                MARKER_ENV: 'Substituído pelo ambiente {env}'
+                MARKER_SERVER: 'Definido por uma variável de ambiente do servidor'
+                REMOVED: 'Substituição removida do ambiente {env}'
+                REMOVE_FAILED: 'Não foi possível remover a substituição'
+                REMOVE_OVERRIDE: 'Remover substituição'
+                SAVED_ENV: 'Salvo, mas {field} é substituído pelo ambiente {env}, portanto, o site ainda usa «{value}».'
+                SAVED_MANY_ENV: 'Salvo, mas {count} dessas alterações são sobrescritas pelo ambiente {env}, portanto o site não as utilizará.'
+                SAVED_MANY_MIXED: 'Salvo, mas {count} dessas alterações são sobrescritas pelo ambiente {env} ou por variáveis de ambiente do servidor, portanto o site não as utilizará.'
+                SAVED_MANY_SERVER: 'Salvo, mas {count} dessas alterações são definidas por variáveis de ambiente do servidor, portanto o site não as utilizará.'
+                SAVED_SERVER: 'Salvo, mas {field} está definido por uma variável de ambiente do servidor, portanto o site ainda usa “{value}”.'
+                SITE_USES: 'Este site usa'
+                SWITCH_TO: 'Alternar para {env}'
+                TOGGLE_ENV: 'Salvo, mas o ambiente {env} mantém {name} {state, select, off {desativado} other {ativado}}.'
+                TOGGLE_SERVER: 'Salvo, mas uma variável de ambiente do servidor mantém {name} {state, select, off {desativado} other {ativado}}.'
+                VALUE_OFF: desligado
+                VALUE_ON: ligado
         CONFIGURATION: Configuração
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ambiente
@@ -476,6 +505,7 @@ ICU:
                 FAMILY_BRANDS: Marcas
                 FAMILY_REGULAR: Regular
                 FAMILY_SOLID: Sólido
+                SET_MISSING: 'Nenhum conjunto de ícones chamado “{set}” está registrado neste site.'
             NO_TAXONOMY_TYPES: 'Nenhum tipo de taxonomia configurado'
             PAGES:
                 FILTER_PAGES: 'Filtrar páginas...'
@@ -854,6 +884,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Verificado que você é humano'
             CAPTCHA_VERIFYING: 'Verificando se você é humano...'
             INVALID_AUTHENTICATION_CODE: 'Código de autenticação inválido'
+            PASSKEY_CANCELLED: 'Nenhuma chave de acesso foi usada. Tente novamente quando estiver pronto ou faça login com sua senha.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Nenhuma chave de acesso foi usada. Tente novamente quando estiver pronto ou insira seu código.'
+            PASSKEY_FAILED: 'Algo deu errado com a chave de acesso. Por favor, tente novamente.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Essa chave de acesso não pertence a esta conta. Tente outra ou insira seu código.'
+            PASSKEY_OFF: 'As chaves de acesso estão desativadas neste site. Faça login com sua senha.'
+            PASSKEY_OR: ou
+            PASSKEY_SIGN_IN: 'Entrar com uma chave de acesso'
+            PASSKEY_SIGN_IN_FAILED: 'Essa chave de acesso não realizou seu login. Se você a removeu da sua conta, faça login com sua senha.'
+            PASSKEY_TOO_MANY_TRIES: 'Muitas tentativas com chave de acesso. Aguarde alguns minutos e tente novamente.'
+            PASSKEY_USE_INSTEAD: 'Use sua chave de acesso em vez disso'
+            PASSKEY_WAITING: 'Aguardando sua chave de acesso…'
         LOG_ERRORS: 'Registrar erros'
         LOG_ERRORS_HELP: 'Registrar erros na pasta /logs'
         LOG_HANDLER: 'Manipulador de logs'
@@ -934,6 +975,8 @@ ICU:
                 REORDER_DONE: Concluído
                 REORDER_HINT: 'Arraste as imagens para definir a ordem.'
                 REORDER_MODE: Reordenar
+                NOT_ALLOWED: 'Você não pode alterar a mídia desta página.'
+                NO_FILES: 'Nenhum arquivo de mídia'
             METADATA:
                 APPLY_TO_N: 'Aplicar a {n} arquivos'
                 BATCH_EDITING: 'Editando {n} arquivos selecionados — os campos alterados serão aplicados a todos.'
@@ -958,6 +1001,14 @@ ICU:
                 TITLE: 'Detalhes do arquivo'
                 TYPE: Tipo
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'Não foi possível enviar {filename}: {message}'
+                NO_PERMISSION: 'Você não tem permissão para enviar mídia, portanto, a imagem não foi adicionada.'
+                PAGES_ONLY: 'Colar ou soltar imagens funciona apenas no conteúdo da página. Envie a imagem para o gerenciador de mídia e insira-a a partir de lá.'
+                SAVE_PAGE_FIRST: 'Salve a página primeiro e, em seguida, cole ou solte imagens nela.'
+                UNSUPPORTED_TYPE: '{filename} não pode ser adicionado aqui. Cole ou solte uma imagem PNG, JPEG, GIF, WebP, AVIF ou SVG.'
+                UPLOADED: '{count, plural, one {Imagem adicionada à mídia da página} other {# imagens adicionadas à mídia da página}}'
+                UPLOADING: '{count, plural, one {Enviando imagem…} other {Enviando # imagens…}}'
         MEDIA_TYPES: 'Tipos de Mídia'
         MEMCACHED_PORT: 'Porta do Memcached'
         MEMCACHED_PORT_HELP: 'A porta do servidor Memcached'
@@ -1055,6 +1106,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'O servidor retornou a versão {effective} desta página em vez de {active}, e não relatou que {active} está ausente. O salvamento está desativado aqui para que o arquivo {effective} não seja sobrescrito. Se todas as páginas fizerem isso, o servidor web provavelmente não está passando strings de consulta para o Grav.'
                 PREVIEW_SHOWING_HOST_PAGE: 'exibido em sua página pai'
                 TEMPLATE_MISSING_NOTICE: 'O modelo **{template}** para este módulo não foi encontrado no tema, então a página a que ele pertence exibe um erro de „modelo não encontrado”. Escolha um modelo em **Modelo de Página** na guia Avançado ou adicione o modelo ao tema.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Esta página possui alterações não salvas de uma sessão de edição compartilhada que não correspondem ao arquivo da página, que pode ter sido editado fora do admin. O editor mostra as alterações não salvas; salvar substituirá a versão do arquivo.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'A página foi modificada em outro lugar. Por favor, recarregue.'
+                READ_ONLY_NOTICE: 'Você pode visualizar esta página, mas não editá-la.'
             EDIT_PAGE: 'Editar página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -1108,6 +1162,8 @@ ICU:
                 VISIBLE: Visível
                 CHILD_TYPE_HINT: 'A página pai sugere „{template}” para seus filhos. Você ainda pode escolher um modelo diferente.'
                 STATUS_HELP: 'Rascunhos são salvos, mas não ficam visíveis no site até que você os publique'
+                MODULE_NEEDS_PARENT: 'Um módulo fica dentro de uma página modular, então escolha a página à qual ele pertence.'
+                PICK_MODULAR_PAGE: 'Escolha uma página modular'
             NO_MATCH: 'Nenhuma página corresponde à sua pesquisa'
             NO_PAGES: 'Nenhuma página encontrada'
             NO_SEARCH_RESULTS: 'Nenhuma página corresponde à sua pesquisa'
@@ -1183,6 +1239,32 @@ ICU:
                 SCHEDULED: Agendado
                 SCHEDULED_FOR: 'Agendado para publicação em {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Você não pode abrir esta página. Ela está listada para que você possa acessar as páginas dentro dela.'
+            ANCESTOR_ONLY_LABEL: '{title}: você não pode abrir esta página, apenas as páginas dentro dela'
+            ANCESTOR_ONLY_PARENT: 'Você não pode abrir a página pai'
+            DELETE_CANNOT_UNDO: 'Isso não pode ser desfeito.'
+            DELETE_LAST_LANGUAGE: 'Este é o único idioma da página, portanto toda a pasta da página será removida, incluindo suas mídias e quaisquer páginas filhas.'
+            DELETE_RECOVERABLE: 'Você pode restaurá-la da Lixeira.'
+            DELETE_TRANSLATION_CONFIRM: 'Excluir a tradução em {language} de “{title}”? {n, plural, one{O outro idioma será mantido.} other{Os outros # idiomas serão mantidos.}}'
+            DELETE_TRANSLATION_TITLE: 'Excluir tradução'
+            DELETE_UNDONE: 'Página restaurada'
+            DELETE_UNDONE_NAMED: '“{name}” restaurada'
+            DELETE_UNDO_FAILED: 'Não foi possível desfazer a exclusão: {detail}'
+            DROP_INSIDE: 'Solte uma página aqui para movê-la para dentro de {title}'
+            LOAD_CHILDREN_FAILED: 'Não foi possível carregar as páginas nesta pasta.'
+            MODULES:
+                ADD: 'Adicionar módulo'
+                EMPTY: 'Nenhum módulo ainda.'
+                HELP: 'As partes das quais esta página é composta, na ordem em que a página as exibe. Arraste um módulo para movê-lo, ou foque em sua alça e pressione Alt+Cima ou Alt+Baixo. Clique no ícone de status para publicar ou cancelar a publicação.'
+                LOAD_FAILED: 'Os módulos não puderam ser carregados.'
+                MOVE: 'Mover “{title}”'
+                TITLE: Módulos
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} não tem um número de ordem, então ela permanece classificada pelo nome'
+            PAGE_TITLE_HINT: 'Título: {title}'
+            SHOW_DROP_INSIDE: 'Mover páginas para dentro de {title}'
+            TRANSLATION_DELETED: 'Tradução em {language} excluída'
+            TRANSLATION_DELETED_OF: 'A tradução em {language} de “{name}” foi excluída'
+            TRANSLATION_RESTORED: 'Tradução em {language} restaurada'
         PAGES_CONFIGURATION: 'Configuração de Páginas'
         PAGES_FALLBACK_ONLY: 'Apenas fallback de páginas'
         PAGES_FALLBACK_ONLY_HELP: "Apenas usa 'fallback' para encontrar o conteúdo da página através de idiomas suportados; o comportamento padrão é exibir qualquer idioma encontrado caso o idioma ativo esteja ausente"
@@ -1229,6 +1311,8 @@ ICU:
             LEGEND_OVERRIDE: 'Substitui um grupo'
             LEGEND_SUPER: 'Concedido por super administrador'
             OVERRIDES_GROUP: 'Sua configuração direta substitui o grupo: {groups}'
+            LOCKED_NOTE: 'Você só pode conceder permissões que sua própria conta possui. Aquelas que você não pode conceder estão com a opção Permitir desabilitada, mas você ainda pode negá-las ou removê-las.'
+            NOT_GRANTABLE: 'Você não pode conceder esta permissão porque sua própria conta não a possui'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Voltar ao Painel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Nenhum conteúdo disponível para esta página do plugin.'
@@ -1276,6 +1360,21 @@ ICU:
             CHART_LABEL: 'Visualizações de página por dia nos últimos 14 dias'
             TODAY: Hoje
             VIEWS: '{count, plural, one {# visualização} other {# visualizações}}'
+            CHART_RANGE_LABEL: 'Visualizações de página, {range}'
+            LAST_12_MONTHS: 'Últimos 12 meses'
+            LAST_30_DAYS: 'Últimos 30 dias'
+            LAST_7_DAYS: 'Últimos 7 dias'
+            LAST_90_DAYS: 'Últimos 90 dias'
+            LOAD_FAILED: 'Não foi possível carregar este período'
+            PREVIOUS_PERIOD: '{count, plural, one {# visualização} other {# visualizações}} no período anterior'
+            SHORT_12M: 12M
+            SHORT_14D: 14D
+            SHORT_30D: 30D
+            SHORT_7D: 7D
+            SHORT_90D: 90D
+            SO_FAR: 'até agora'
+            TIME_FRAME: Período
+            VS_PREVIOUS: 'comparado com o período anterior'
         PREMIUM: Premium
         PREVIEW: Visualizar
         PROCESS: Processar
@@ -1575,7 +1674,7 @@ ICU:
             USED_ON_LIGHT_BACKGROUNDS: 'Usado em fundos claros'
             USERS_MAY_OVERRIDE: 'Usuários podem sobrescrever'
             ADMIN_TITLE: 'Título do Admin'
-            ADMIN_TITLE_DESC: 'Exibido como cabeçalho de login e na aba do navegador. Deixe em branco para «Grav Admin».'
+            ADMIN_TITLE_DESC: 'Exibido na aba do navegador e como o título de acesso, a menos que um logotipo personalizado seja definido, já que o logotipo por si só já nomeia o site. Deixe em branco para “Grav Admin”.'
             FAILED_TO_SAVE_BRANDING: 'Falha ao salvar a marca.'
             FAVICON: Favicon
             FAVICON_DESC: 'Ícone personalizado para a aba do navegador (SVG, PNG, WebP ou ICO). Deixe em branco para o ícone gerado.'
@@ -1606,6 +1705,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Padrão
             SIDEBAR_LOGO_HEIGHT: 'Altura do logotipo na barra lateral'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Quão alto seu logotipo aparece no topo da barra lateral.'
+            SHOW_CREDIT: 'Exibir crédito da Trilby Media'
+            SHOW_CREDIT_DESC: 'Exibir a linha «Grav was coded with love by Trilby Media» na parte inferior da barra lateral.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 caracteres: letras, números, hifens, sublinhados'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Conta de administrador criada — bem-vindo ao Grav'
@@ -1671,6 +1772,7 @@ ICU:
                 LOCKED: 'Somente leitura — {owner} está editando com **{editor}**. Tipos de editor mistos não podem coeditar; [altere sua preferência de editor]({href}) para colaborar ao vivo.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'altere sua preferência de editor'
                 TO_COLLABORATE_LIVE: 'para colaborar ao vivo.'
+                LOCKED_EXPERT: 'Somente leitura: {owner} está editando com **{editor}**, que não permite coedição com o editor Markdown do modo Expert. Mude para o modo Normal para colaborar em tempo real.'
         SYSLOG_FACILITY: 'Instalação de Syslog'
         SYSLOG_FACILITY_HELP: 'Instalação de Syslog para saída'
         SYSLOG_TAG: 'Tag de Syslog'
@@ -1731,6 +1833,8 @@ ICU:
             UPDATE_ALL: 'Atualizar tudo'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema será atualizado:} other{# temas serão atualizados:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'Atualizar temas?'
+            UPDATE_CONFIRM_MESSAGE: 'Atualizar {name} para v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Atualizar tema?'
         THEMES_TABLE:
             NO_THEMES: 'Nenhum tema instalado'
         THUMB: Miniatura
@@ -1918,6 +2022,11 @@ ICU:
                     POLICY_PROPERTIES: Propriedades
                     POLICY_TAGS: Tags
                     POLICY_VIEW: 'Ver política efetiva'
+                    IN_PARTIAL: 'Bloqueado dentro do template incluído'
+                    TROUBLESHOOTING_LINK: 'Como corrigir Twig no conteúdo'
+                    TRUSTED_PARTIAL: 'Confiar em {template}. Páginas que o incluem renderizam como o seu tema.'
+                    TRUST_FAILED: 'Não foi possível confiar no partial'
+                    TRUST_PARTIAL: 'Confiar neste partial'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Carregando componente de relatório...'
             SCHEDULER:
@@ -2157,6 +2266,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'A autenticação de dois fatores está desativada'
             VERIFICATION_CODE: 'Código de verificação'
             VERIFY_ENABLE: 'Verificar e Ativar'
+            CURRENT_CODE_WRONG: 'Esse código não está correto.'
+            ENTER_CODE_TO_REGENERATE: 'Insira seu código de 6 dígitos atual para criar um novo segredo. O 2FA permanece desativado até você escanear o novo QR code e verificar um código vindo dele.'
+            REGENERATE: Regenerar
+            TOO_MANY_CODES: 'Muitos códigos incorretos. Tente novamente em alguns minutos.'
         TYPE: Tipo
         UNPUBLISHED_DATE: 'Data de despublicação'
         UNPUBLISHED_DATE_HELP: 'Pode fornecer uma data para disparar automaticamente a despublicação.'
@@ -2206,6 +2319,36 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Usuário alterado em outro lugar — salve para sobrescrever ou recarregue'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'O usuário foi modificado em outro lugar. Por favor, recarregue.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Você não pode excluir sua própria conta.'
+            EMAIL_CHANGE_CANCELLED: 'Alteração de e-mail cancelada.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Falha ao cancelar a alteração de e-mail.'
+            EMAIL_CHANGE_RESEND: Reenviar
+            EMAIL_CHANGE_RESEND_FAILED: 'Falha ao reenviar o link de confirmação.'
+            EMAIL_CHANGE_SENT: 'Enviamos um link de confirmação para {email}. O endereço de e-mail será alterado assim que o link for aberto.'
+            EMAIL_CHANGE_WAITING: 'Aguardando confirmação: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Insira sua senha atual para alterar seu endereço de e-mail para {email}.'
+                NOT_SAVED: 'Seu novo endereço de e-mail, {email}, ainda não foi salvo. Confirme com sua senha atual.'
+                TITLE: 'Confirme que é você'
+            PASSWORD:
+                CHANGE: 'Alterar senha'
+                CHANGED_OTHER: 'A senha para {name} foi alterada.'
+                CHANGED_OWN: 'Sua senha foi alterada. Outros navegadores e aplicativos conectados à sua conta foram desconectados.'
+                CONFIRM: 'Confirmar nova senha'
+                CURRENT: 'Senha atual'
+                CURRENT_REQUIRED: 'Insira sua senha atual.'
+                CURRENT_WRONG: 'Sua senha atual não está correta.'
+                FAILED: 'Falha ao alterar a senha.'
+                MISMATCH: 'As senhas não coincidem.'
+                NEW: 'Nova senha'
+                NEW_REQUIRED: 'Insira uma nova senha.'
+                NOT_ALLOWED: 'Você não tem permissão para alterar esta senha.'
+                NO_PASSWORD_HELP: 'Sua conta ainda não possui uma senha porque você inicia sessão através de outro serviço. Defina uma para também iniciar sessão com seu nome de usuário e senha.'
+                OTHER_HELP: 'Defina uma nova senha para {name}. Eles serão desconectados de todos os navegadores e aplicativos e deverão iniciar sessão novamente com a nova senha.'
+                OWN_HELP: 'Insira sua senha atual e, em seguida, a nova senha duas vezes. Você permanecerá conectado aqui, e todos os outros navegadores e aplicativos conectados à sua conta serão desconectados.'
+                POLICY: 'A nova senha não atende aos requisitos.'
+                SET: 'Definir senha'
+                TITLE: Senha
+                TOO_MANY: 'Muitas tentativas de senha incorretas. Tente novamente em alguns minutos.'
         USERS_FILTER:
             BACKEND_ACCESS: 'Acesso ao backend'
             CLEAR: Limpar
@@ -2252,6 +2395,9 @@ ICU:
             FIELD_REQUIRED: '{label} é obrigatório'
             FORM_HAS_ERRORS: '{count, plural, one {# campo requer sua atenção} other {# campos requerem sua atenção}}'
             REQUIRED_GENERIC: 'Este campo é obrigatório'
+            LIST_KEY_REQUIRED: '{key}: {label} é obrigatório'
+            LIST_NEW_ROW_REQUIRED: 'Novo item: {label} é obrigatório'
+            LIST_ROW_REQUIRED: 'Item {row}: {label} é obrigatório'
         VALID_LINK_ATTRIBUTES: 'Atributos de link válidos'
         VALID_LINK_ATTRIBUTES_HELP: 'Atributos que serão adicionados automaticamente ao elemento HTML de mídia'
         VARY_ACCEPT_ENCODING: 'Vary accept encoding'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Resposta inesperada do servidor'
             UNEXPECTED_RESPONSE_DETAIL: 'O servidor respondeu com dados em um formato que esta tela não espera. O console do navegador contém os detalhes.'
             UNEXPECTED_RESPONSE_TITLE: 'Resposta inesperada do servidor'
+            SERVER_PAGE_DETAIL: 'O seu servidor web respondeu a esta solicitação sozinho (HTTP {status}) em vez de passá-la para o Grav. Um filtro de segurança no servidor, como o mod_security ou um firewall de hospedagem, pode tê-la bloqueado. O seu provedor de hospedagem ou o log de erros do servidor podem informar qual regra foi acionada.'
+            SERVER_PAGE_TITLE: 'Bloqueado pelo servidor web'
         CACHE_MODULES: 'Cache da saída do módulo'
         CACHE_MODULES_HELP: 'Armazene em cache a saída renderizada dos módulos desta página. Use apenas quando os módulos exibirem o mesmo conteúdo para todos os visitantes. Módulos com seu próprio Twig ou formulário, visitantes logados e envios de formulários são sempre renderizados novamente. Editar apenas um modelo parcial requer a limpeza do cache.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Dicas de Renderização Flex'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Iniciar sessões apenas quando necessário'
         SESSION_LAZY_HELP: 'Visitantes sem um cookie de sessão só recebem uma sessão quando algo é armazenado nela, como um login, um formulário ou uma mensagem, permitindo que visualizações de página anônimas sejam armazenadas em cache por um proxy ou CDN. Plugins que armazenam dados em cada visualização de página ainda iniciam uma.'
         UPDATE_CHANGELOG_TITLE: 'Alterações na v{version}'
+        CHANGELOG:
+            BUGFIX: 'Correção de bug'
+            IMPROVED: Melhorado
+            NEW: Novo
+            SECURITY: Segurança
+        CHANGELOG_NOT_AVAILABLE: 'Registro de alterações não disponível.'
+        IMAGES_WATERMARK_ALL: "Colocar marca d'água em todas as imagens"
+        IMAGES_WATERMARK_ALL_HELP: "Adicionar automaticamente a marca d'água em todas as imagens que o site serve"
+        IMAGES_WATERMARK_BOTTOM: Inferior
+        IMAGES_WATERMARK_CENTER: Centro
+        IMAGES_WATERMARK_IMAGE: "Imagem da marca d'água"
+        IMAGES_WATERMARK_IMAGE_HELP: "Caminho para a imagem usada como marca d'água, como system://images/watermark.png"
+        IMAGES_WATERMARK_LEFT: Esquerda
+        IMAGES_WATERMARK_POSITION_X: 'Posição horizontal'
+        IMAGES_WATERMARK_POSITION_X_HELP: "Onde a marca d'água se posiciona da esquerda para a direita"
+        IMAGES_WATERMARK_POSITION_Y: 'Posição vertical'
+        IMAGES_WATERMARK_POSITION_Y_HELP: "Onde a marca d'água se posiciona de cima para baixo"
+        IMAGES_WATERMARK_RIGHT: Direita
+        IMAGES_WATERMARK_SCALE: "Escala da marca d'água"
+        IMAGES_WATERMARK_SCALE_HELP: "Tamanho da marca d'água como uma porcentagem da imagem"
+        IMAGES_WATERMARK_TITLE: "Marca d'água"
+        IMAGES_WATERMARK_TOP: Topo
+        PASSKEYS_FIELD:
+            ADD: 'Adicionar uma chave de acesso'
+            ADDED: 'Chave de acesso adicionada ({name}). Ela fará seu login automaticamente a partir de agora.'
+            ADDED_ON: 'Adicionado em {date}'
+            ADD_FAILED: 'A chave de acesso não pôde ser adicionada. Tente novamente.'
+            ALREADY_SAVED: 'Esse gerenciador de senhas ou dispositivo já possui uma chave de acesso para esta conta.'
+            CANCELLED: 'Nenhuma chave de acesso foi adicionada. Tente novamente quando estiver pronto.'
+            CODE_REQUIRED: 'Insira seu código de 6 dígitos atual.'
+            CODE_WRONG: 'Esse código está incorreto.'
+            CONTINUE: Continuar
+            CURRENT_CODE: 'Código 2FA atual'
+            CURRENT_PASSWORD: 'Senha atual'
+            HELP: 'Uma chave de acesso permite que você faça login com sua impressão digital, reconhecimento facial, PIN do dispositivo, gerenciador de senhas ou chave de segurança. Ela funciona no site e no painel de administração, e conta como as duas etapas de login.'
+            HELP_OTHER: 'Chaves de acesso com as quais esta conta faz login. Remova uma caso o dispositivo ou gerenciador de senhas que a contém seja perdido.'
+            LAST_USED: 'último uso em {date}'
+            NAME_LABEL: 'Nome da chave de acesso'
+            NAME_REQUIRED: 'Dê um nome à chave de acesso.'
+            NEVER_USED: 'ainda não utilizada'
+            NONE: 'Nenhuma chave de acesso ainda.'
+            NONE_OTHER: 'Esta conta não possui chaves de acesso.'
+            PASSWORD_REQUIRED: 'Insira sua senha atual.'
+            PASSWORD_WRONG: 'Sua senha atual está incorreta.'
+            PROOF_CODE_ADD: 'Insira seu código 2FA de 6 dígitos atual para adicionar uma chave de acesso.'
+            PROOF_PASSWORD_ADD: 'Insira sua senha atual para adicionar uma chave de acesso.'
+            PROOF_UNAVAILABLE: 'Defina uma senha ou 2FA em sua conta primeiro. As passkeys não podem ser adicionadas ou removidas apenas com uma sessão conectada.'
+            REMOVE: Remover
+            REMOVED: 'Passkey removida ({name}).'
+            REMOVE_CONFIRM: 'Remover “{name}”? Você não poderá mais usá-la para entrar.'
+            REMOVE_CONFIRM_CODE: 'Remover “{name}”? Você não poderá mais usá-la para entrar. Insira seu código 2FA atual de 6 dígitos para confirmar.'
+            REMOVE_CONFIRM_OTHER: 'Remover “{name}” de {username}? Esta pessoa não poderá mais usá-la para entrar.'
+            REMOVE_CONFIRM_PASSWORD: 'Remover “{name}”? Você não poderá mais usá-la para entrar. Insira sua senha atual para confirmar.'
+            REMOVE_FAILED: 'A passkey não pôde ser removida.'
+            RENAME: Renomear
+            RENAMED: 'Passkey renomeada.'
+            RENAME_FAILED: 'A passkey não pôde ser renomeada.'
+            SAVE: Salvar
+            SYNCED: sincronizado
+            SYNCED_HELP: 'Mantido em um gerenciador de senhas que o sincroniza entre seus dispositivos.'
+            TITLE: Passkeys
+            TOO_MANY: 'Muitas tentativas incorretas. Tente novamente em alguns minutos.'
+            UNSUPPORTED: 'Este navegador não pode usar passkeys aqui.'
+            WAITING: 'Aguardando sua passkey…'
+        PIPELINE_REMOTE_TIMEOUT: 'Tempo limite de recurso remoto'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Quanto tempo esperar por um arquivo CSS ou JS remoto (uma folha de estilo CDN, por exemplo) ao criar um pipeline. Se não chegar a tempo, a página é renderizada sem agrupar esse conjunto e tenta novamente na próxima solicitação'
+        README_NOT_AVAILABLE: 'README não disponível.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Personalizar barra lateral'
+            DIVIDER: Divisor
+            HIDE: 'Ocultar {label}'
+            HINT: 'Arraste os itens para reordená-los ou foque em uma alça e use as teclas de seta. O olho oculta um item e a estrela seleciona os atalhos de um plugin para exibir abaixo dele.'
+            MOVE: 'Mover {label}'
+            MOVED: '{label} movido para a posição {position} de {total}'
+            RESET_DONE: 'Sua barra lateral segue a do site novamente'
+            RESTORE_BUILT_IN: 'Ordem original'
+            SAVED: 'Barra lateral salva'
+            SAVE_FAILED: 'Não foi possível salvar a barra lateral'
+            SAVE_FOR_EVERYONE: 'Salvar para todos'
+            SAVE_FOR_EVERYONE_HINT: 'Definir esta como a barra lateral para todo usuário que não organizou a sua'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Todo usuário que não organizou sua própria barra lateral verá esta ordem. Qualquer um ainda pode alterar a sua própria, e ocultar um item não altera o que eles têm permissão para abrir.'
+            SAVE_FOR_EVERYONE_TITLE: 'Definir esta como a barra lateral de todos?'
+            SHOW: 'Exibir {label}'
+            SITE_SAVED: 'Barra lateral salva para todos'
+            STAR: 'Exibir {label} na barra lateral'
+            SUB_ITEMS: 'Atalhos ({count} de {total} favoritados)'
+            UNSTAR: 'Remover {label} da barra lateral'
+            USE_SITE_DEFAULT: 'Usar a barra lateral do site'
+        UNDO: Desfazer
+        UPDATE_CHANGELOG_EMPTY: 'Nenhuma entrada de changelog mais recente que a versão instalada.'
+        UPDATE_CHANGELOG_FAILED: 'O changelog não pôde ser carregado.'
+        UPDATE_WHATS_NEW: 'O que há de novo'
