@@ -168,6 +168,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'サーバーが {active} の代わりにこのページの {effective} バージョンを返しましたが、{active} が欠落しているという報告はありませんでした。ここで保存を行うと {effective} ファイルが上書きされてしまうため、保存機能は無効になっています。すべてのページでこの現象が発生する場合、Webサーバーがクエリ文字列をGravに渡していない可能性があります。'
                 PREVIEW_SHOWING_HOST_PAGE: 親ページ内に表示
                 TEMPLATE_MISSING_NOTICE: 'このモジュールのテンプレート **{template}** がテーマ内に見つかりません。そのため、このページが属する場所には「テンプレートが見つかりません」というエラーが表示されます。「詳細」タブの **ページテンプレート** からテンプレートを選択するか、テーマにテンプレートを追加してください。'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: このページには、共有編集セッションによる未保存の変更があり、ページファイルと一致していません。管理画面外で編集された可能性があります。エディターには未保存の変更が表示されており、保存するとファイルの内容が置き換わります。
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: ページが他の場所で変更されました。リロードしてください。
+                READ_ONLY_NOTICE: このページは閲覧のみ可能です。編集はできません。
             NEW:
                 MY_NEW_PAGE: 新しいページ
                 FILTER_PAGES: ページを絞り込み...
@@ -195,6 +198,8 @@ ICU:
                 FOLDER_DETAILS: フォルダー詳細
                 CHILD_TYPE_HINT: '親ページは子ページに対して「{template}」を推奨しています。別のテンプレートを選択することも可能です。'
                 STATUS_HELP: 下書きは保存されますが、公開するまでサイトには表示されません
+                MODULE_NEEDS_PARENT: モジュールはモジュラーページ内に配置されるため、所属するページを選択してください。
+                PICK_MODULAR_PAGE: モジュラーページを選択
             PAGE_COUNT: '{n, plural, one{# ページ} other{# ページ}}'
             SUBTITLE: サイトのコンテンツと構造を管理
             PUBLISH: 公開
@@ -227,6 +232,32 @@ ICU:
                 SCHEDULED: 予約済み
                 SCHEDULED_FOR: '{date}に公開予定'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: このページを開くことはできません。これは、その内部にあるページにアクセスできるように一覧表示されています。
+            ANCESTOR_ONLY_LABEL: '{title}: このページを開くことはできません。内部のページのみアクセス可能です'
+            ANCESTOR_ONLY_PARENT: 親ページを開くことはできません
+            DELETE_CANNOT_UNDO: この操作は取り消せません。
+            DELETE_LAST_LANGUAGE: これはこのページの唯一の言語であるため、メディアや子ページを含むページフォルダー全体が削除されます。
+            DELETE_RECOVERABLE: ゴミ箱から復元できます。
+            DELETE_TRANSLATION_CONFIRM: '「{title}」の{language}翻訳を削除しますか？ {n, plural, one{もう一方の言語は保持されます。} other{その他 # つの言語は保持されます。}}'
+            DELETE_TRANSLATION_TITLE: 翻訳を削除
+            DELETE_UNDONE: ページを復元しました
+            DELETE_UNDONE_NAMED: '「{name}」を復元しました'
+            DELETE_UNDO_FAILED: '削除を取り消せませんでした: {detail}'
+            DROP_INSIDE: 'ページをここにドロップして {title} 内に移動'
+            LOAD_CHILDREN_FAILED: このフォルダー内のページを読み込めませんでした。
+            MODULES:
+                ADD: モジュールを追加
+                EMPTY: モジュールはまだありません。
+                HELP: 'このページを構成するパーツです。ページに表示される順序で並んでいます。ドラッグしてモジュールを移動するか、ハンドルにフォーカスして Alt+Up または Alt+Down を押してください。ステータスアイコンをクリックして公開/非公開を切り替えます。'
+                LOAD_FAILED: モジュールを読み込めませんでした。
+                MOVE: '「{title}」を移動'
+                TITLE: モジュール
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} には順序番号がないため、名前順でソートされたままになります'
+            PAGE_TITLE_HINT: 'タイトル: {title}'
+            SHOW_DROP_INSIDE: '{title} 内のページを移動'
+            TRANSLATION_DELETED: '{language} 翻訳を削除しました'
+            TRANSLATION_DELETED_OF: '「{name}」の {language} 版翻訳を削除しました'
+            TRANSLATION_RESTORED: '{language} 版翻訳を復元しました'
         FIELDS:
             CLEAR_DATE: 日付をクリア
             REGENERATE_SLUG: ページタイトルから自動再生成
@@ -284,6 +315,7 @@ ICU:
                 FAMILY_BRANDS: ブランド
                 FAMILY_REGULAR: レギュラー
                 FAMILY_SOLID: ソリッド
+                SET_MISSING: '「{set}」というアイコンセットはこのサイトに登録されていません。'
             PAGE_EXISTS:
                 CHECKING_PAGE: ページを確認中...
             PAGE_MEDIA:
@@ -410,6 +442,9 @@ ICU:
             CLOSE_MENU: メニューを閉じる
             GRAV_VERSION: 'Grav v{version}'
             ADMIN_VERSION: 'Admin v{version}'
+            MADE_BY: 'Gravは{company}によって{love}を込めて{code}されました。'
+            MADE_BY_PLAIN: 'GravはTrilby Mediaによって愛を込めてコーディングされました'
+            MORE_ACTIONS: その他のアクション
         NORMAL_MODE: 通常モード
         EXPERT_MODE: エキスパートモード
         ALLOWED: 許可
@@ -426,6 +461,8 @@ ICU:
             LEGEND_OVERRIDE: グループ設定を上書き
             LEGEND_SUPER: スーパー管理者によって付与
             OVERRIDES_GROUP: '直接設定がグループ設定を上書きしています: {groups}'
+            LOCKED_NOTE: 自分のアカウントが持つ権限のみを付与できます。付与できない権限は「許可」がグレーアウトされていますが、拒否またはクリアすることは可能です。
+            NOT_GRANTABLE: あなた自身のアカウントに権限がないため、この権限を付与することはできません
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: '2FA QR コード'
             SCAN_THE_QR_CODE_WITH_YOUR: '認証アプリで QR コードをスキャンしてください'
@@ -449,6 +486,10 @@ ICU:
             FORCE_DISABLE: 強制無効化
             CONFIRM_DISABLE: 無効化を確認
             FORCE_DISABLE_PROMPT: '**{username}** の 2FA を強制無効化しますか？デバイス紛失時の復旧のみに使用してください。'
+            CURRENT_CODE_WRONG: コードが正しくありません。
+            ENTER_CODE_TO_REGENERATE: '新しいシークレットを作成するには、現在の6桁のコードを入力してください。新しい QR コードをスキャンしてコードを検証するまで、2FA は無効のままです。'
+            REGENERATE: 再生成
+            TOO_MANY_CODES: 誤ったコードが多すぎます。数分後にもう一度試してください。
         DISABLE: 無効化
         USER_AVATAR_CARD:
             AVATAR_UPDATED: アバターを更新しました
@@ -505,6 +546,21 @@ ICU:
             CHART_LABEL: 過去14日間の1日あたりのページビュー数
             TODAY: 今日
             VIEWS: '{count, plural, other {# ビュー}}'
+            CHART_RANGE_LABEL: 'ページビュー, {range}'
+            LAST_12_MONTHS: 過去12ヶ月
+            LAST_30_DAYS: 過去30日間
+            LAST_7_DAYS: 過去7日間
+            LAST_90_DAYS: 過去90日間
+            LOAD_FAILED: この期間を読み込めませんでした
+            PREVIOUS_PERIOD: '前期間と比較して {count} ビュー'
+            SHORT_12M: 12ヶ月
+            SHORT_14D: 14日
+            SHORT_30D: 30日
+            SHORT_7D: 7日
+            SHORT_90D: 90日
+            SO_FAR: 現在まで
+            TIME_FRAME: 期間
+            VS_PREVIOUS: 前期間と比較
         RECENT_PAGES_WIDGET:
             VIEW_ALL: すべて表示
         STATS_WIDGET:
@@ -603,6 +659,8 @@ ICU:
                 REORDER_DONE: 完了
                 REORDER_HINT: 画像をドラッグして順序を設定します。
                 REORDER_MODE: 並べ替え
+                NOT_ALLOWED: このページのメディアは変更できません。
+                NO_FILES: メディアファイルなし
             METADATA:
                 APPLY_TO_N: '{n} 個のファイルに適用'
                 BATCH_EDITING: '{n} 個のファイルを選択して編集中 — 変更されたフィールドはすべてに適用されます。'
@@ -627,6 +685,14 @@ ICU:
                 TITLE: ファイル詳細
                 TYPE: タイプ
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: '{filename} をアップロードできませんでした: {message}'
+                NO_PERMISSION: メディアをアップロードする権限がないため、画像は追加されませんでした。
+                PAGES_ONLY: 画像の貼り付けやドロップは、ページコンテンツ内でのみ可能です。メディアマネージャーに画像をアップロードしてから挿入してください。
+                SAVE_PAGE_FIRST: 先にページを保存してから、画像を貼り付けるかドロップしてください。
+                UNSUPPORTED_TYPE: '{filename} はここに追加できません。PNG、JPEG、GIF、WebP、AVIF、またはSVG画像を貼り付けるかドロップしてください。'
+                UPLOADED: '{count, plural, one {ページメディアに画像を追加しました} other {ページメディアに # 枚の画像を追加しました}}'
+                UPLOADING: '{count, plural, one {画像をアップロード中…} other {# 枚の画像をアップロード中…}}'
         UPLOAD: アップロード
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: キャッシュをクリア
@@ -645,6 +711,7 @@ ICU:
                 TO_COLLABORATE_LIVE: してリアルタイム共同編集を行ってください。
                 LOCKED: '読み取り専用 — {owner} さんが **{editor}** で編集中です。異なる種類のエディターでは共同編集できません。リアルタイム共同編集には [エディター設定を切り替え]({href})てください。'
                 BUILTIN_MARKDOWN_EDITOR: '組み込みの Markdown エディター'
+                LOCKED_EXPERT: '読み取り専用: {owner} が **{editor}** で編集中です。Expert モードの Markdown エディタとは同時編集できません。ライブ共同編集を行うには、通常モードに戻してください。'
         DOWNLOAD: ダウンロード
         TOOLS:
             BACKUPS:
@@ -746,6 +813,11 @@ ICU:
                     POLICY_PROPERTIES: プロパティ
                     POLICY_TAGS: タグ
                     POLICY_VIEW: 有効なポリシーを表示
+                    IN_PARTIAL: インクルードされたテンプレート内ではブロックされています
+                    TROUBLESHOOTING_LINK: 'コンテンツ内の Twig を修正する方法'
+                    TRUSTED_PARTIAL: '信頼された {template}。これをインクルードするページは、テーマの設定に従ってレンダリングされます。'
+                    TRUST_FAILED: パーシャルを信頼できませんでした
+                    TRUST_PARTIAL: このパーシャルを信頼する
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: スケジューラ設定の読み込みに失敗しました。
                 SCHEDULER_CONFIGURATION_SAVED: スケジューラ設定を保存しました
@@ -892,6 +964,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: '保存できませんでした。以下のフィールドが正しくありません: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 設定の読み込みに失敗しました。
             SCOPE_NOT_FOUND: '「{scope}」という名前の設定スコープは見つかりませんでした。'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# つの設定は} other {# つの設定は}}{env}環境によって上書きされているため、{count, plural, one {それ} other {それら}}への変更は反映されません。'
+                BANNER_MIXED: '{count, plural, one {# つの設定は} other {# つの設定は}}{env}環境またはサーバー環境変数によって上書きされているため、{count, plural, one {それ} other {それら}}への変更は反映されません。'
+                BANNER_SERVER: '{count, plural, one {# つの設定は} other {# つの設定は}}サーバー環境変数によって設定されているため、{count, plural, one {それ} other {それら}}への変更は反映されません。'
+                ENABLED_ENV: '{env}環境によって設定されています'
+                ENABLED_EXPLAIN_ENV: '{env}環境が独自の構成ファイルでこのプラグインの有効・無効を制御しているため、ここのスイッチを切り替えてもサイトの動作は変わりません。'
+                ENABLED_EXPLAIN_SERVER: GRAV_CONFIGサーバー環境変数がこのプラグインの有効・無効を制御しているため、ここのスイッチを切り替えてもサイトの動作は変わりません。
+                ENABLED_SERVER: サーバー環境変数によって設定されています
+                EXPLAIN_ENV: '{env}環境が独自の構成ファイルでこれを設定しているため、ここで保存してもこのサイトには適用されません。'
+                EXPLAIN_SERVER: GRAV_CONFIGサーバー環境変数がこれを設定しているため、ここで保存しても適用されません。
+                MARKER_ENV: '{env}環境によって上書きされています'
+                MARKER_SERVER: サーバー環境変数によって設定されています
+                REMOVED: '{env}環境からの上書きを削除しました'
+                REMOVE_FAILED: 上書きを削除できませんでした
+                REMOVE_OVERRIDE: 上書きを削除
+                SAVED_ENV: '保存されましたが、{field}は{env}環境によって上書きされているため、サイトでは引き続き「{value}」が使用されます。'
+                SAVED_MANY_ENV: '保存されましたが、これらの変更のうち {count} 件は {env} 環境によって上書きされるため、サイトには反映されません。'
+                SAVED_MANY_MIXED: '保存されましたが、これらの変更のうち {count} 件は {env} 環境またはサーバー環境変数によって上書きされるため、サイトには反映されません。'
+                SAVED_MANY_SERVER: '保存されましたが、これらの変更のうち {count} 件はサーバー環境変数によって設定されているため、サイトには反映されません。'
+                SAVED_SERVER: '保存されましたが、{field} はサーバー環境変数によって設定されているため、サイトでは引き続き「{value}」が使用されます。'
+                SITE_USES: 'このサイトは以下を使用しています:'
+                SWITCH_TO: '{env} に切り替え'
+                TOGGLE_ENV: '保存されましたが、{env} 環境により {name} は {state, select, off {無効} other {有効}} のままです。'
+                TOGGLE_SERVER: '保存されましたが、サーバー環境変数により {name} は {state, select, off {無効} other {有効}} のままです。'
+                VALUE_OFF: オフ
+                VALUE_ON: オン
         FLEX_OBJECTS:
             SEARCH: 検索...
             PREVIOUS: 前へ
@@ -964,6 +1062,17 @@ ICU:
             CAPTCHA_VERIFIED: 人間であることを確認しました
             CAPTCHA_VERIFYING: 人間であることを確認中...
             INVALID_AUTHENTICATION_CODE: 無効な認証コードです
+            PASSKEY_CANCELLED: パスキーは使用されませんでした。準備ができたら再度試すか、パスワードでサインインしてください。
+            PASSKEY_CANCELLED_TWO_STEP: パスキーは使用されませんでした。準備ができたら再度試すか、コードを入力してください。
+            PASSKEY_FAILED: パスキーで問題が発生しました。再度お試しください。
+            PASSKEY_NOT_THIS_ACCOUNT: そのパスキーはこのアカウントのものではありません。別のものを使用するか、コードを入力してください。
+            PASSKEY_OFF: このサイトではパスキーは無効になっています。パスワードでサインインしてください。
+            PASSKEY_OR: または
+            PASSKEY_SIGN_IN: パスキーでサインイン
+            PASSKEY_SIGN_IN_FAILED: そのパスキーではサインインできませんでした。アカウントから削除済みの場合は、パスワードでサインインしてください。
+            PASSKEY_TOO_MANY_TRIES: パスキーの試行回数が多すぎます。数分待ってから再度お試しください。
+            PASSKEY_USE_INSTEAD: 代わりにパスキーを使用する
+            PASSKEY_WAITING: パスキーを待機中…
         PLUGIN:
             BACK_TO_DASHBOARD: ダッシュボードへ戻る
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: このプラグインページに利用可能なコンテンツはありません。
@@ -1133,7 +1242,7 @@ ICU:
             STICKY_TOOLBAR: スティッキーツールバー
             STICKY_TOOLBAR_DESC: スクロール中もフォーマットツールバーとプレビューボタンを画面上部に固定します。
             ADMIN_TITLE: 管理画面のタイトル
-            ADMIN_TITLE_DESC: 'サインイン画面の見出しおよびブラウザのタブに表示されます。空欄にすると「Grav Admin」になります。'
+            ADMIN_TITLE_DESC: 'ブラウザのタブに表示され、カスタムロゴが設定されていない場合はサインイン時の見出しとしても表示されます（ロゴがすでにサイト名を表しているため）。空欄にすると「Grav Admin」になります。'
             FAILED_TO_SAVE_BRANDING: ブランディングの保存に失敗しました。
             FAVICON: ファビコン
             FAVICON_DESC: 'ブラウザタブ用のカスタムアイコン (SVG, PNG, WebP, ICO)。空欄にするとデフォルトのアイコンが使用されます。'
@@ -1164,6 +1273,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: デフォルト
             SIDEBAR_LOGO_HEIGHT: サイドバーロゴの高さ
             SIDEBAR_LOGO_HEIGHT_DESC: サイドバー上部に表示されるロゴの高さです。
+            SHOW_CREDIT: 'Trilby Mediaのクレジットを表示'
+            SHOW_CREDIT_DESC: 'サイドバーの下部に「Grav was coded with love by Trilby Media」を表示します。'
         CUSTOM: カスタム
         PREVIEW: プレビュー
         SETUP:
@@ -1220,6 +1331,8 @@ ICU:
             UPDATE_ALL: すべて更新
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, other{# 個のテーマが更新されます：}}'
             UPDATE_ALL_CONFIRM_TITLE: テーマを更新しますか？
+            UPDATE_CONFIRM_MESSAGE: '{name} を v{version} にアップデートしますか？'
+            UPDATE_CONFIRM_TITLE: テーマをアップデートしますか？
         ACTIVE: アクティブ
         ACTIVATE: 有効化
         USERS:
@@ -1251,6 +1364,36 @@ ICU:
                 CREATE: 作成
             PAGE_TITLE: '{name} — ユーザー — Grav Admin'
             TITLE: ユーザー
+            EMAIL_CHANGE_CANCELLED: メールアドレスの変更をキャンセルしました。
+            EMAIL_CHANGE_CANCEL_FAILED: メールアドレスの変更をキャンセルできませんでした。
+            EMAIL_CHANGE_RESEND: 再送
+            EMAIL_CHANGE_RESEND_FAILED: 確認リンクを再送できませんでした。
+            EMAIL_CHANGE_SENT: '{email} に確認リンクを送信しました。リンクを開くとメールアドレスが変更されます。'
+            EMAIL_CHANGE_WAITING: '確認待ち: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'メールアドレスを {email} に変更するには、現在のパスワードを入力してください。'
+                NOT_SAVED: '新しいメールアドレス {email} はまだ保存されていません。現在のパスワードで確認してください。'
+                TITLE: 本人確認
+            PASSWORD:
+                CHANGE: パスワードを変更
+                CHANGED_OTHER: '{name} のパスワードが変更されました。'
+                CHANGED_OWN: パスワードが変更されました。他のブラウザやアプリでサインイン中のアカウントからはサインアウトされます。
+                CONFIRM: 新しいパスワードを確認
+                CURRENT: 現在のパスワード
+                CURRENT_REQUIRED: 現在のパスワードを入力してください。
+                CURRENT_WRONG: 現在のパスワードが正しくありません。
+                FAILED: パスワードの変更に失敗しました。
+                MISMATCH: パスワードが一致しません。
+                NEW: 新しいパスワード
+                NEW_REQUIRED: 新しいパスワードを入力してください。
+                NOT_ALLOWED: このパスワードを変更する権限がありません。
+                NO_PASSWORD_HELP: 現在他のサービス経由でサインインしているため、アカウントにパスワードが設定されていません。ユーザー名とパスワードでサインインできるように設定してください。
+                OTHER_HELP: '{name} の新しいパスワードを設定します。設定後、すべてのブラウザとアプリからサインアウトされ、新しいパスワードで再度サインインする必要があります。'
+                OWN_HELP: 現在のパスワードを入力し、新しいパスワードを2回入力してください。現在使用中のブラウザでのサインイン状態は維持されますが、他のブラウザやアプリからはサインアウトされます。
+                POLICY: 新しいパスワードが要件を満たしていません。
+                SET: パスワードを設定
+                TITLE: パスワード
+                TOO_MANY: パスワードの入力ミスが多すぎます。数分後にもう一度試してください。
         USERS_NAV:
             USERS: ユーザー
             GROUPS: グループ
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} は必須です'
             FORM_HAS_ERRORS: '{count, plural, one {# 個のフィールドに注意が必要です} other {# 個のフィールドに注意が必要です}}'
             REQUIRED_GENERIC: このフィールドは必須です
+            LIST_KEY_REQUIRED: '{key}: {label} は必須項目です'
+            LIST_NEW_ROW_REQUIRED: '新規アイテム: {label} は必須項目です'
+            LIST_ROW_REQUIRED: 'アイテム {row}: {label} は必須項目です'
         VALID_LINK_ATTRIBUTES: 有効なリンク属性
         VALID_LINK_ATTRIBUTES_HELP: 'メディア HTML 要素に自動的に追加される属性'
         VARY_ACCEPT_ENCODING: 'Accept Encoding を変更'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: サーバーからの予期せぬ応答
             UNEXPECTED_RESPONSE_DETAIL: この画面が想定していない形式のデータがサーバーから返されました。詳細はブラウザのコンソールを確認してください。
             UNEXPECTED_RESPONSE_TITLE: サーバーからの予期せぬ応答
+            SERVER_PAGE_DETAIL: 'WebサーバーがGravにリクエストを渡す代わりに、サーバー自身がこのリクエストに応答しました（HTTP {status}）。mod_securityやホスティングのファイアウォールなどのサーバー上のセキュリティフィルターによってブロックされた可能性があります。ホスティングプロバイダーやサーバーのエラーログで、どのルールが適用されたかを確認できます。'
+            SERVER_PAGE_TITLE: Webサーバーによってブロックされました
         CACHE_MODULES: キャッシュモジュールの出力
         CACHE_MODULES_HELP: このページのモジュールのレンダリング済み出力をキャッシュします。すべての訪問者に対して同じコンテンツを表示するモジュールでのみ使用してください。独自のTwigを持つモジュールやフォームを含むモジュール、ログイン中の訪問者、フォーム送信は常に最新の状態でレンダリングされます。部分的なテンプレートのみを編集した場合は、キャッシュのクリアが必要です。
         DEBUGGER_FLEX_RENDER_HINTS: Flexレンダリングヒント
@@ -2348,6 +2496,98 @@ ICU:
         SESSION_LAZY: 必要な時のみセッションを開始する
         SESSION_LAZY_HELP: 'セッションクッキーを持たない訪問者は、ログイン、フォーム、メッセージなど、セッションに何かを保存する必要がある場合のみセッションが開始されます。これにより、匿名ユーザーのページビューはプロキシや CDN でキャッシュ可能になります。ページビューごとにデータを保存するプラグインを使用している場合は、引き続きセッションが開始されます。'
         UPDATE_CHANGELOG_TITLE: 'v{version} での変更点'
+        CHANGELOG:
+            BUGFIX: バグ修正
+            IMPROVED: 改善
+            NEW: 新規
+            SECURITY: セキュリティ
+        CHANGELOG_NOT_AVAILABLE: 変更履歴はありません。
+        IMAGES_WATERMARK_ALL: すべての画像にウォーターマークを適用
+        IMAGES_WATERMARK_ALL_HELP: サイトで提供されるすべての画像に自動的にウォーターマークをスタンプします
+        IMAGES_WATERMARK_BOTTOM: 下
+        IMAGES_WATERMARK_CENTER: 中央
+        IMAGES_WATERMARK_IMAGE: ウォーターマーク画像
+        IMAGES_WATERMARK_IMAGE_HELP: 'system://images/watermark.png など、ウォーターマークとして使用する画像へのパス'
+        IMAGES_WATERMARK_LEFT: 左
+        IMAGES_WATERMARK_POSITION_X: 水平位置
+        IMAGES_WATERMARK_POSITION_X_HELP: ウォーターマークの左右の配置位置
+        IMAGES_WATERMARK_POSITION_Y: 垂直位置
+        IMAGES_WATERMARK_POSITION_Y_HELP: ウォーターマークの上下の配置位置
+        IMAGES_WATERMARK_RIGHT: 右
+        IMAGES_WATERMARK_SCALE: ウォーターマークの倍率
+        IMAGES_WATERMARK_SCALE_HELP: 画像に対するウォーターマークのサイズの割合（%）
+        IMAGES_WATERMARK_TITLE: 透かし
+        IMAGES_WATERMARK_TOP: 上部
+        PASSKEYS_FIELD:
+            ADD: パスキーを追加
+            ADDED: 'パスキーを追加しました ({name})。次回以降は自動的にサインインされます。'
+            ADDED_ON: '追加日: {date}'
+            ADD_FAILED: パスキーを追加できませんでした。もう一度試してください。
+            ALREADY_SAVED: そのパスワードマネージャーまたはデバイスには、すでにこのアカウント用のパスキーが登録されています。
+            CANCELLED: パスキーは追加されませんでした。準備ができたら再度試してください。
+            CODE_REQUIRED: 現在使用している6桁のコードを入力してください。
+            CODE_WRONG: コードが正しくありません。
+            CONTINUE: 続行
+            CURRENT_CODE: 現在の2FAコード
+            CURRENT_PASSWORD: 現在のパスワード
+            HELP: パスキーを使うと、指紋、顔認証、デバイスのPIN、パスワードマネージャー、またはセキュリティキーを使用してサインインできます。この機能はサイトおよび管理画面で有効で、サインインの2段階認証の両方を完了したものとみなされます。
+            HELP_OTHER: このアカウントでサインインに使用するパスキーです。デバイスやパスワードマネージャーを紛失した場合は、該当するものを削除してください。
+            LAST_USED: '最終使用日: {date}'
+            NAME_LABEL: パスキー名
+            NAME_REQUIRED: パスキーに名前を付けてください。
+            NEVER_USED: まだ使用されていません
+            NONE: パスキーはまだありません。
+            NONE_OTHER: このアカウントにはパスキーが登録されていません。
+            PASSWORD_REQUIRED: 現在のパスワードを入力してください。
+            PASSWORD_WRONG: 現在のパスワードが正しくありません。
+            PROOF_CODE_ADD: パスキーを追加するには、現在使用している6桁の2FAコードを入力してください。
+            PROOF_PASSWORD_ADD: パスキーを追加するには、現在のパスワードを入力してください。
+            PROOF_UNAVAILABLE: まずアカウントにパスワードまたは2FAを設定してください。サインイン中のセッションのみでパスキーを追加または削除することはできません。
+            REMOVE: 削除
+            REMOVED: 'パスキーを削除しました ({name})。'
+            REMOVE_CONFIRM: '「{name}」を削除しますか？これを使用してサインインできなくなります。'
+            REMOVE_CONFIRM_CODE: '「{name}」を削除しますか？これを使用してサインインできなくなります。確認のため、現在の6桁の2FAコードを入力してください。'
+            REMOVE_CONFIRM_OTHER: '「{name}」を {username} から削除しますか？これを使用してサインインできなくなります。'
+            REMOVE_CONFIRM_PASSWORD: '「{name}」を削除しますか？これを使用してサインインできなくなります。確認のため、現在のパスワードを入力してください。'
+            REMOVE_FAILED: パスキーを削除できませんでした。
+            RENAME: 名前の変更
+            RENAMED: パスキーの名前を変更しました。
+            RENAME_FAILED: パスキーの名前を変更できませんでした。
+            SAVE: 保存
+            SYNCED: 同期済み
+            SYNCED_HELP: デバイス間で同期するパスワードマネージャーに保存されています。
+            TITLE: パスキー
+            TOO_MANY: 試行回数が多すぎます。数分後に再試行してください。
+            UNSUPPORTED: このブラウザではここでパスキーを使用できません。
+            WAITING: パスキーを待機中…
+        PIPELINE_REMOTE_TIMEOUT: リモートアセットのタイムアウト
+        PIPELINE_REMOTE_TIMEOUT_HELP: パイプライン構築時にリモートのCSSまたはJSファイル（CDNスタイルシートなど）を待機する時間。時間内に取得できなかった場合、そのグループをバンドルせずにページをレンダリングし、次のリクエストで再度試行します。
+        README_NOT_AVAILABLE: READMEは利用できません。
+        SIDEBAR_EDIT:
+            CUSTOMIZE: サイドバーのカスタマイズ
+            DIVIDER: 区切り線
+            HIDE: '{label}を非表示'
+            HINT: アイテムをドラッグして並べ替えるか、ハンドルにフォーカスして矢印キーを使用してください。目アイコンはアイテムを非表示にし、星アイコンはサイドバー下に表示するプラグインのショートカットを選択します。
+            MOVE: '{label}を移動'
+            MOVED: '{label}を{total}件中{position}番目の位置に移動しました'
+            RESET_DONE: サイドバーがサイトのデフォルト順に戻りました
+            RESTORE_BUILT_IN: 元の順序
+            SAVED: サイドバーを保存しました
+            SAVE_FAILED: サイドバーを保存できませんでした
+            SAVE_FOR_EVERYONE: 全員用に保存
+            SAVE_FOR_EVERYONE_HINT: 自分自身のサイドバーをカスタマイズしていないすべてのユーザーに対して、これをサイドバーとして適用します
+            SAVE_FOR_EVERYONE_MESSAGE: 自身のサイドバーをカスタマイズしていないすべてのユーザーにこの順序が表示されます。各ユーザーは引き続き自分のサイドバーを変更可能であり、項目を非表示にしても、そのユーザーが開くことを許可されているページには影響しません。
+            SAVE_FOR_EVERYONE_TITLE: これを全員のサイドバーにしますか？
+            SHOW: '{label} を表示'
+            SITE_SAVED: 全員のサイドバーとして保存しました
+            STAR: '{label} をサイドバーに表示'
+            SUB_ITEMS: 'ショートカット ({total} 件中 {count} 件をお気に入り登録済み)'
+            UNSTAR: '{label} をサイドバーから削除'
+            USE_SITE_DEFAULT: サイトのサイドバーを使用する
+        UNDO: 元に戻す
+        UPDATE_CHANGELOG_EMPTY: インストールされているバージョンより新しい変更履歴はありません。
+        UPDATE_CHANGELOG_FAILED: 変更履歴を読み込めませんでした。
+        UPDATE_WHATS_NEW: 新機能
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA 有効'
         2FA_SECRET: '2FA シークレット'
