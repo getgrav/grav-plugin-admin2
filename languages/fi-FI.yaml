@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Sulje valikko'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Gravin on {code} {love} kera {company}.'
+            MADE_BY_PLAIN: 'Gravin on koodannut rakkaudella Trilby Media'
+            MORE_ACTIONS: 'Lisää toimintoja'
         ARE_YOU_SURE: 'Oletko varma?'
         AUTHOR: Tekijä
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Tallennus epäonnistui — seuraavat kentät ovat virheellisiä: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Konfiguraation lataaminen epäonnistui.'
             SCOPE_NOT_FOUND: 'Konfiguraatioskopea nimellä {scope} ei löytynyt.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# asetus täällä on} other {# asetusta täällä ovat}} {env}-ympäristön ylikirjoittamia, joten niihin tehdyt muutokset eivät tule voimaan.'
+                BANNER_MIXED: '{count, plural, one {# asetus täällä on} other {# asetusta täällä ovat}} {env}-ympäristön tai palvelimen ympäristömuuttujien ylikirjoittamia, joten niihin tehdyt muutokset eivät tule voimaan.'
+                BANNER_SERVER: '{count, plural, one {# asetus täällä on} other {# asetusta täällä ovat}} palvelimen ympäristömuuttujien asettamia, joten niihin tehdyt muutokset eivät tule voimaan.'
+                ENABLED_ENV: '{env}-ympäristön asettama'
+                ENABLED_EXPLAIN_ENV: '{env}-ympäristö kytkee tämän liitännäisen päälle tai pois omassa asetustiedostossaan, joten tässä oleva kytkin ei vaikuta sivuston toimintaan.'
+                ENABLED_EXPLAIN_SERVER: 'GRAV_CONFIG-palvelinympäristömuuttuja kytkee tämän liitännäisen päälle tai pois, joten tässä oleva kytkin ei vaikuta sivuston toimintaan.'
+                ENABLED_SERVER: 'Palvelimen ympäristömuuttujan asettama'
+                EXPLAIN_ENV: '{env}-ympäristö määrittää tämän omassa asetustiedostossaan, joten täällä tekemäsi tallennukset eivät koske tätä sivustoa.'
+                EXPLAIN_SERVER: 'GRAV_CONFIG-palvelinympäristömuuttuja määrittää tämän, joten täällä tekemäsi tallennukset eivät tule voimaan.'
+                MARKER_ENV: '{env}-ympäristön ylikirjoittama'
+                MARKER_SERVER: 'Palvelimen ympäristömuuttujan asettama'
+                REMOVED: 'Ylikirjoitus poistettu {env}-ympäristöstä'
+                REMOVE_FAILED: 'Ylikirjoitusta ei voitu poistaa'
+                REMOVE_OVERRIDE: 'Poista ylikirjoitus'
+                SAVED_ENV: 'Tallennettu, mutta {field} on {env}-ympäristön ylikirjoittama, joten sivusto käyttää edelleen arvoa „{value}“.'
+                SAVED_MANY_ENV: 'Tallennettu, mutta {count} näistä muutoksista on {env}-ympäristön ohittamia, joten sivusto ei käytä niitä.'
+                SAVED_MANY_MIXED: 'Tallennettu, mutta {count} näistä muutoksista on {env}-ympäristön tai palvelimen ympäristömuuttujien ohittamia, joten sivusto ei käytä niitä.'
+                SAVED_MANY_SERVER: 'Tallennettu, mutta {count} näistä muutoksista on palvelimen ympäristömuuttujien asettamia, joten sivusto ei käytä niitä.'
+                SAVED_SERVER: 'Tallennettu, mutta {field} on palvelimen ympäristömuuttujan asettama, joten sivusto käyttää edelleen arvoa „{value}“.'
+                SITE_USES: 'Tämä sivusto käyttää'
+                SWITCH_TO: 'Vaihda ympäristöön {env}'
+                TOGGLE_ENV: 'Tallennettu, mutta {env}-ympäristö pitää kohteen {name} tilassa: {state, select, off {pois käytöstä} other {käytössä}}.'
+                TOGGLE_SERVER: 'Tallennettu, mutta palvelimen ympäristömuuttuja pitää kohteen {name} tilassa: {state, select, off {pois käytöstä} other {käytössä}}.'
+                VALUE_OFF: pois
+                VALUE_ON: päällä
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Ympäristö
             EXPORT_YAML: 'Vie YAML'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: Brändit
                 FAMILY_REGULAR: Tavallinen
                 FAMILY_SOLID: Yhtenäinen
+                SET_MISSING: 'Tälle sivustolle ei ole rekisteröity kuvakearjaa nimeltä „{set}“.'
             NO_TAXONOMY_TYPES: 'Taksonomiatyyppejä ei ole määritetty'
             PAGES:
                 FILTER_PAGES: 'Suodata sivuja...'
@@ -404,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Vahvistettu, että olet ihminen'
             CAPTCHA_VERIFYING: 'Tarkistetaan, että olet ihminen...'
             INVALID_AUTHENTICATION_CODE: 'Virheellinen todennuskoodi'
+            PASSKEY_CANCELLED: 'Avainta (passkey) ei käytetty. Yritä uudelleen, kun olet valmis, tai kirjaudu sisään salasanallasi.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Avainta (passkey) ei käytetty. Yritä uudelleen, kun olet valmis, tai syötä koodisi.'
+            PASSKEY_FAILED: 'Jokin meni vikaan avaimen (passkey) kanssa. Yritä uudelleen.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Tämä avain (passkey) ei kuulu tälle tilille. Kokeile toista tai syötä koodisi.'
+            PASSKEY_OFF: 'Avaimet (passkey) on kytketty pois päältä tällä sivustolla. Kirjaudu sisään salasanallasi.'
+            PASSKEY_OR: tai
+            PASSKEY_SIGN_IN: 'Kirjaudu sisään avaimella (passkey)'
+            PASSKEY_SIGN_IN_FAILED: 'Kirjautuminen avaimella (passkey) ei onnistunut. Jos poistit sen tililtäsi, kirjaudu sisään salasanallasi.'
+            PASSKEY_TOO_MANY_TRIES: 'Liian monta avainyritystä. Odota muutama minuutti ja yritä uudelleen.'
+            PASSKEY_USE_INSTEAD: 'Käytä sen sijaan avaintasi (passkey)'
+            PASSKEY_WAITING: 'Odotetaan avaintasi (passkey)…'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Ei mitään esikatseltavaksi'
             IMAGE_INSERT:
@@ -474,6 +515,8 @@ ICU:
                 REORDER_DONE: Valmis
                 REORDER_HINT: 'Järjestä kuvat raahaamalla.'
                 REORDER_MODE: 'Järjestä uudelleen'
+                NOT_ALLOWED: 'Et voi muuttaa tämän sivun mediaa.'
+                NO_FILES: 'Ei mediatiedostoja'
             METADATA:
                 APPLY_TO_N: 'Käytä {n} tiedostoon'
                 BATCH_EDITING: 'Muokataan {n} valittua tiedostoa — muutetut kentät koskevat kaikkia.'
@@ -498,6 +541,14 @@ ICU:
                 TITLE: 'Tiedoston tiedot'
                 TYPE: Tyyppi
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'Tiedostoa {filename} ei voitu ladata: {message}'
+                NO_PERMISSION: 'Sinulla ei ole lupaa ladata mediaa, joten kuvaa ei lisätty.'
+                PAGES_ONLY: 'Kuvien liittäminen tai pudottaminen toimii vain sivun sisällössä. Lataa kuva medienhallintaan ja lisää se sieltä.'
+                SAVE_PAGE_FIRST: 'Tallenna sivu ensin ja liitä tai pudota kuvat sen jälkeen.'
+                UNSUPPORTED_TYPE: '{filename} ei voi lisätä tähän. Liitä tai pudota PNG-, JPEG-, GIF-, WebP-, AVIF- tai SVG-kuva.'
+                UPLOADED: '{count, plural, one {Kuva lisätty sivun mediaan} other {# kuvaa lisätty sivun mediaan}}'
+                UPLOADING: '{count, plural, one {Ladataan kuvaa…} other {Ladataan # kuvaa…}}'
         NAV:
             CONFIGURATION: Kokoonpano
             DASHBOARD: Koontinäyttö
@@ -562,6 +613,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'Palvelin palautti tästä sivusta version {effective} version {active} sijaan, eikä ilmoittanut {active}-versiota puuttuvaksi. Tallennus on tässä pois päältä, jotta {effective}-tiedostoa ei ylikirjoiteta. Jos tämä tapahtuu jokaisen sivun kohdalla, verkkopalvelin ei todennäköisesti välitä kyselymerkkijonoja Graville.'
                 PREVIEW_SHOWING_HOST_PAGE: 'näytetään ylätason sivulla'
                 TEMPLATE_MISSING_NOTICE: 'Tämän moduulin mallia **{template}** ei löytynyt teemasta, joten sivu, johon se kuuluu, näyttää virheen „mallia ei löytynyt“. Valitse malli Lisäasetukset-välilehden kohdasta **Sivun malli**, tai lisää malli teemaan.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Tällä sivulla on tallentamattomia muutoksia jaetusta muokkausistunnosta, jotka eivät vastaa sivutiedostoa, jota on saatettu muokata järjestelmänvalvojan ulkopuolella. Muokkausnäkymä näyttää tallentamattomat muutokset; tallentaminen korvaa tiedoston version.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Sivua on muokattu muualla. Ole hyvä ja päivitä sivu.'
+                READ_ONLY_NOTICE: 'Voit tarkastella tätä sivua, mutta et muokata sitä.'
             EDIT_PAGE: 'Muokkaa sivua'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Muokattu
@@ -613,6 +667,8 @@ ICU:
                 VISIBLE: Näkyvä
                 CHILD_TYPE_HINT: 'Ylätason sivu ehdottaa lapsisivuilleen mallia „{template}“. Voit silti valita toisen mallin.'
                 STATUS_HELP: 'Luonnokset tallennetaan, mutta ne eivät näy sivustolla ennen kuin julkaiset ne'
+                MODULE_NEEDS_PARENT: 'Moduuli sijoitetaan modulaarisen sivun sisään, joten valitse sivu, johon se kuuluu.'
+                PICK_MODULAR_PAGE: 'Valitse modulaarinen sivu'
             NO_PAGES: 'Sivuja ei löytynyt'
             NO_SEARCH_RESULTS: 'Haullasi ei löytynyt sivuja'
             PAGES_GRAV_ADMIN: 'Sivut — Grav Admin'
@@ -692,6 +748,32 @@ ICU:
                 SCHEDULED: Ajastettu
                 SCHEDULED_FOR: 'Ajastettu julkaistavaksi {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Et voi avata tätä sivua. Se on listattu, jotta pääset käsiksi sen sisällä oleviin sivuihin.'
+            ANCESTOR_ONLY_LABEL: '{title}: et voi avata tätä sivua, vain sen sisällä olevia sivuja'
+            ANCESTOR_ONLY_PARENT: 'Et voi avata ylätason sivua'
+            DELETE_CANNOT_UNDO: 'Tätä toimintoa ei voi kumota.'
+            DELETE_LAST_LANGUAGE: 'Tämä on sivun ainoa kieliversio, joten koko sivukansio poistetaan, mukaan lukien sen mediatiedostot ja mahdolliset alasivut.'
+            DELETE_RECOVERABLE: 'Voit palauttaa sen roskakorista.'
+            DELETE_TRANSLATION_CONFIRM: 'Poistetaanko sivun ”{title}” {language}-kieliversio? {n, plural, one{Toinen kieliversio säilyy.} other{Muut # kieliversiota säilyvät.}}'
+            DELETE_TRANSLATION_TITLE: 'Poista kieliversio'
+            DELETE_UNDONE: 'Sivu palautettu'
+            DELETE_UNDONE_NAMED: 'Palautettu ”{name}”'
+            DELETE_UNDO_FAILED: 'Poiston kumoaminen epäonnistui: {detail}'
+            DROP_INSIDE: 'Pudota sivu tähän siirtääksesi sen kohteen {title} sisälle'
+            LOAD_CHILDREN_FAILED: 'Tämän kansion sivujen lataaminen epäonnistui.'
+            MODULES:
+                ADD: 'Lisää moduuli'
+                EMPTY: 'Ei moduuleita vielä.'
+                HELP: 'Osat, joista sivu koostuu, siinä järjestyksessä kuin sivu ne näyttää. Raahaa moduulia siirtääksesi sitä, tai kohdista siihen ja paina Alt+Nuoli ylös tai Alt+Nuoli alas. Klikkaa sen tilaikonia julkaistaksesi tai poistaaksesi sen julkaisusta.'
+                LOAD_FAILED: 'Moduuleita ei voitu ladata.'
+                MOVE: 'Siirrä ”{title}”'
+                TITLE: Moduulit
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: 'Kohteella {title} ei ole järjestysnumeroa, joten se pysyy järjestettynä nimen mukaan'
+            PAGE_TITLE_HINT: 'Otsikko: {title}'
+            SHOW_DROP_INSIDE: 'Siirrä sivuja kohteen {title} sisälle'
+            TRANSLATION_DELETED: '{language}-kieliversio poistettu'
+            TRANSLATION_DELETED_OF: 'Kohteen ”{name}” {language}-kielinen käännös poistettu'
+            TRANSLATION_RESTORED: '{language}-kielinen käännös palautettu'
         PASSWORD: Salasana
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Salasanavaatimukset
@@ -709,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 'Ohittaa ryhmän'
             LEGEND_SUPER: 'Pääkäyttäjän myöntämä'
             OVERRIDES_GROUP: 'Suora asetuksesi ohittaa ryhmän: {groups}'
+            LOCKED_NOTE: 'Voit myöntää vain käyttöoikeuksia, jotka omalla tililläsi on. Niiden kohdalla, joita et voi myöntää, Salli-valinta on harmaana, mutta voit silti estää tai tyhjentää ne.'
+            NOT_GRANTABLE: 'Et voi myöntää tätä käyttöoikeutta, koska omalla tililläsi ei ole sitä'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Takaisin kojelautaan'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Tälle liitännäissivulle ei ole saatavilla sisältöä.'
@@ -750,6 +834,21 @@ ICU:
             CHART_LABEL: 'Sivun katselukerrat päivässä viimeisen 14 päivän ajalta'
             TODAY: Tänään
             VIEWS: '{count, plural, one {# katselukerta} other {# katselukertaa}}'
+            CHART_RANGE_LABEL: 'Sivun katselukerrat, {range}'
+            LAST_12_MONTHS: 'Viimeiset 12 kuukautta'
+            LAST_30_DAYS: 'Viimeiset 30 päivää'
+            LAST_7_DAYS: 'Viimeiset 7 päivää'
+            LAST_90_DAYS: 'Viimeiset 90 päivää'
+            LOAD_FAILED: 'Tämän aikavälin lataaminen epäonnistui'
+            PREVIOUS_PERIOD: '{count, plural, one {# näyttökerta} other {# näyttökertaa}} edellisellä jaksolla'
+            SHORT_12M: '12 kk'
+            SHORT_14D: '14 pv'
+            SHORT_30D: '30 pv'
+            SHORT_7D: '7 pv'
+            SHORT_90D: '90 pv'
+            SO_FAR: 'tähän mennessä'
+            TIME_FRAME: Aikaväli
+            VS_PREVIOUS: 'verrattuna edelliseen jaksoon'
         PREMIUM: Premium
         PREVIEW: Esikatselu
         REAUTH_MODAL:
@@ -901,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Kiinnittyvä työkalupalkki'
             STICKY_TOOLBAR_DESC: 'Pidä muotoilutyökalupalkki ja Esikatselu-painike näkyvissä selaamisen aikana.'
             ADMIN_TITLE: 'Hallinnan otsikko'
-            ADMIN_TITLE_DESC: 'Näytetään kirjautumisotsikkona ja selaimen välilehdessä. Jätä tyhjäksi, jos haluat käyttää nimeä „Grav Admin“.'
+            ADMIN_TITLE_DESC: 'Näytetään selaimen välilehdessä ja kirjautumisen otsikkona, ellei mukautettua logoa ole asetettu, sillä logo kertoo jo sivuston nimen. Jätä tyhjäksi, jos haluat käyttää nimeä ”Grav Admin”.'
             FAILED_TO_SAVE_BRANDING: 'Brändäyksen tallennus epäonnistui.'
             FAVICON: Favicon
             FAVICON_DESC: 'Mukautettu selaimen välilehden kuvake (SVG, PNG, WebP tai ICO). Jätä tyhjäksi, jos haluat käyttää luotua kuvaketta.'
@@ -932,6 +1031,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Oletus
             SIDEBAR_LOGO_HEIGHT: 'Sivupalkin logon korkeus'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Kuinka korkeana logosi näkyy sivupalkin yläreunassa.'
+            SHOW_CREDIT: 'Näytä Trilby Median maininta'
+            SHOW_CREDIT_DESC: 'Näytä ”Grav was coded with love by Trilby Media” -rivi sivupalkin alareunassa.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3–64 merkkiä: kirjaimet, numerot, väliviivat, alaviivat'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Järjestelmänvalvojan tili luotu — tervetuloa Graviin'
@@ -964,6 +1065,7 @@ ICU:
                 LOCKED: 'Vain luku — {owner} muokkaa **{editor}**-editorilla. Sekalaiset editoritypit eivät voi tehdä yhteistyötä; [vaihda editorin asetuksia]({href}) päivitettävän yhteistyön vuoksi.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'vaihda editorin asetuksia'
                 TO_COLLABORATE_LIVE: 'päivitettävän yhteistyön vuoksi.'
+                LOCKED_EXPERT: 'Vain luku: {owner} muokkaa kohteella **{editor}**, joka ei tue yhteismuokkausta Expert-tilan markdown-editorin kanssa. Vaihda takaisin Normal-tilaan, jotta voit tehdä yhteistyötä reaaliajassa.'
         SYSTEM:
             COMING_SOON: 'Tulossa pian'
             SYSTEM_GRAV_ADMIN: 'Järjestelmä — Grav Admin'
@@ -1015,6 +1117,8 @@ ICU:
             UPDATE_ALL: 'Päivitä kaikki'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# teema päivitetään:} other{# teemaa päivitetään:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'Päivitetäänkö teemat?'
+            UPDATE_CONFIRM_MESSAGE: 'Päivitetäänkö {name} versioon v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Päivitetäänkö teema?'
         TIME:
             DAYS_AGO: '{n}pv sitten'
             HOURS_AGO: '{n}h sitten'
@@ -1121,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: Ominaisuudet
                     POLICY_TAGS: Tunnisteet
                     POLICY_VIEW: 'Näytä tehollinen käytäntö'
+                    IN_PARTIAL: 'Estetty sisällytetyssä mallissa'
+                    TROUBLESHOOTING_LINK: 'Twig-koodin korjaaminen sisällössä'
+                    TRUSTED_PARTIAL: 'Luotettu {template}. Sivut, jotka sisällyttävät sen, hahmontelevat sen kuten teemasi.'
+                    TRUST_FAILED: 'Osan luottaminen epäonnistui'
+                    TRUST_PARTIAL: 'Luota tähän osaan'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Ladataan raportin komponenttia...'
             SCHEDULER:
@@ -1208,6 +1317,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Kaksivaiheinen tunnistus on pois päältä'
             VERIFICATION_CODE: Vahvistuskoodi
             VERIFY_ENABLE: 'Vahvista ja ota käyttöön'
+            CURRENT_CODE_WRONG: 'Koodi ei ole oikein.'
+            ENTER_CODE_TO_REGENERATE: 'Syötä nykyinen 6-numeroinen koodisi luodaksesi uuden salaisuuden. 2FA pysyy pois päältä, kunnes skannaat uuden QR-koodin ja vahvistat koodin siitä.'
+            REGENERATE: 'Luo uudelleen'
+            TOO_MANY_CODES: 'Liian monta virheellistä koodia. Yritä uudelleen muutaman minuutin kuluttua.'
         UNSAVED_CHANGES: 'Tallentamattomia muutoksia'
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 'Tallennetaan muutoksia…'
@@ -1247,6 +1360,36 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Et voi poistaa omaa tiliäsi.'
             CONFIRM_DELETE_USER: 'Poistetaanko käyttäjä „{username}"? Tätä ei voi kumota.'
             TITLE: Käyttäjät
+            EMAIL_CHANGE_CANCELLED: 'Sähköpostin vaihto peruttu.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Sähköpostin vaihdon peruuttaminen epäonnistui.'
+            EMAIL_CHANGE_RESEND: 'Lähetä uudelleen'
+            EMAIL_CHANGE_RESEND_FAILED: 'Vahvistuslinkin uudelleenlähetys epäonnistui.'
+            EMAIL_CHANGE_SENT: 'Lähetimme vahvistuslinkin osoitteeseen {email}. Sähköpostiosoite vaihtuu, kun linkki avataan.'
+            EMAIL_CHANGE_WAITING: 'Odottaa vahvistusta: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Kirjoita nykyinen salasanasi vaihtaaksesi sähköpostiosoitteesi osoitteeseen {email}.'
+                NOT_SAVED: 'Uutta sähköpostiosoitettasi {email} ei ole vielä tallennettu. Vahvista se nykyisellä salasanallasi.'
+                TITLE: 'Vahvista henkilöllisyytesi'
+            PASSWORD:
+                CHANGE: 'Vaihda salasana'
+                CHANGED_OTHER: 'Käyttäjän {name} salasana on vaihdettu.'
+                CHANGED_OWN: 'Salasanasi on vaihdettu. Muut tiliisi kirjautuneet selaimet ja sovellukset on kirjattu ulos.'
+                CONFIRM: 'Vahvista uusi salasana'
+                CURRENT: 'Nykyinen salasana'
+                CURRENT_REQUIRED: 'Kirjoita nykyinen salasanasi.'
+                CURRENT_WRONG: 'Nykyinen salasanasi on väärä.'
+                FAILED: 'Salasanan vaihtaminen epäonnistui.'
+                MISMATCH: 'Salasanat eivät täsmää.'
+                NEW: 'Uusi salasana'
+                NEW_REQUIRED: 'Kirjoita uusi salasana.'
+                NOT_ALLOWED: 'Sinulla ei ole oikeutta vaihtaa tätä salasanaa.'
+                NO_PASSWORD_HELP: 'Tililläsi ei ole vielä salasanaa, koska kirjaudut sisään toisen palvelun kautta. Aseta salasana, jotta voit kirjautua sisään myös käyttäjätunnuksellasi ja salasanallasi.'
+                OTHER_HELP: 'Aseta uusi salasana käyttäjälle {name}. Hänet kirjataan ulos kaikista selaimista ja sovelluksista, ja hänen on kirjauduttava sisään uudelleen uudella salasanalla.'
+                OWN_HELP: 'Kirjoita nykyinen salasanasi ja sen jälkeen uusi salasana kahdesti. Pysyt kirjautuneena tähän istuntoon, mutta kaikki muut tiliisi kirjautuneet selaimet ja sovellukset kirjataan ulos.'
+                POLICY: 'Uusi salasana ei täytä vaatimuksia.'
+                SET: 'Aseta salasana'
+                TITLE: Salasana
+                TOO_MANY: 'Liian monta virheellistä salasanaa. Yritä uudelleen muutaman minuutin kuluttua.'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Profiilikuva poistettu'
             AVATAR_UPDATED: 'Profiilikuva päivitetty'
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} on pakollinen'
             FORM_HAS_ERRORS: '{count, plural, one {# kenttä vaatii huomiotasi} other {# kenttää vaatii huomiotasi}}'
             REQUIRED_GENERIC: 'Tämä kenttä on pakollinen'
+            LIST_KEY_REQUIRED: '{key}: {label} vaaditaan'
+            LIST_NEW_ROW_REQUIRED: 'Uusi kohde: {label} vaaditaan'
+            LIST_ROW_REQUIRED: 'Kohde {row}: {label} vaaditaan'
         VALID_LINK_ATTRIBUTES: 'Kelvollisia linkkiattribuutteja'
         VALID_LINK_ATTRIBUTES_HELP: 'Attribuutit, jotka lisätään automaattisesti media-HTML-elementtiin'
         VARY_ACCEPT_ENCODING: 'Vaihtele hyväksymisen koodausta'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Odottamaton vastaus palvelimelta'
             UNEXPECTED_RESPONSE_DETAIL: 'Palvelin vastasi tiedoilla muodossa, jota tämä näyttö ei odota. Selaimen konsoli sisältää lisätiedot.'
             UNEXPECTED_RESPONSE_TITLE: 'Odottamaton vastaus palvelimelta'
+            SERVER_PAGE_DETAIL: 'Verkkopalvelimesi vastasi tähän pyyntöön itse (HTTP {status}) sen sijaan, että se olisi välittänyt sen Graville. Palvelimen tietoturvasuodatin, kuten mod_security tai ylläpidon palomuuri, on saattanut estää sen. Palveluntarjoajasi tai palvelimen virheloki kertoo, mikä sääntö on estänyt pyynnön.'
+            SERVER_PAGE_TITLE: 'Verkkopalvelin esti pyynnön'
         CACHE_MODULES: 'Moduulien välimuistin tuloste'
         CACHE_MODULES_HELP: 'Välimuistita tämän sivun moduulien renderöity tuloste. Käytä tätä vain, kun moduulit näyttävät saman sisällön jokaiselle kävijälle. Moduulit, joilla on oma Twig-tiedosto tai lomake, kirjautuneet kävijät sekä lomakelähetykset renderöidään aina uudelleen. Vain osittaisen mallin muokkaaminen vaatii välimuistin tyhjennystä.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Flex-renderöinnin vihjeet'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Käynnistä istunnot vain tarvittaessa'
         SESSION_LAZY_HELP: 'Kävijät ilman istuntoevästettä saavat istunnon vasta, kun sinne tallennetaan jotain, kuten kirjautuminen, lomake tai viesti, joten välityspalvelin tai CDN voi välimuistittaa anonyymit sivunäkymät. Lisäosat, jotka tallentavat tietoa jokaisella sivun latauksella, käynnistävät istunnon silti.'
         UPDATE_CHANGELOG_TITLE: 'Muutokset versiossa v{version}'
+        CHANGELOG:
+            BUGFIX: Virhekorjaus
+            IMPROVED: Parannettu
+            NEW: Uusi
+            SECURITY: Tietoturva
+        CHANGELOG_NOT_AVAILABLE: 'Muutosloki ei ole saatavilla.'
+        IMAGES_WATERMARK_ALL: 'Lisää vesileima kaikkiin kuviin'
+        IMAGES_WATERMARK_ALL_HELP: 'Lisää vesileima automaattisesti jokaiseen kuvaan, jonka sivusto tarjoilee'
+        IMAGES_WATERMARK_BOTTOM: Ala
+        IMAGES_WATERMARK_CENTER: Keski
+        IMAGES_WATERMARK_IMAGE: Vesileimakuva
+        IMAGES_WATERMARK_IMAGE_HELP: 'Polku vesileimana käytettävään kuvaan, kuten system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Vasen
+        IMAGES_WATERMARK_POSITION_X: 'Vaakasuuntainen sijainti'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Vesileiman sijainti vasemmalta oikealle'
+        IMAGES_WATERMARK_POSITION_Y: 'Pystysuuntainen sijainti'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Vesileiman sijainti ylhäältä alas'
+        IMAGES_WATERMARK_RIGHT: Oikea
+        IMAGES_WATERMARK_SCALE: 'Vesileiman koko'
+        IMAGES_WATERMARK_SCALE_HELP: 'Vesileiman koko prosentteina kuvan koosta'
+        IMAGES_WATERMARK_TITLE: Vesileima
+        IMAGES_WATERMARK_TOP: Yläreuna
+        PASSKEYS_FIELD:
+            ADD: 'Lisää avainavain (passkey)'
+            ADDED: 'Avainavain lisätty ({name}). Se kirjauttaa sinut tästä eteenpäin sisään automaattisesti.'
+            ADDED_ON: 'Lisätty {date}'
+            ADD_FAILED: 'Avainavainta ei voitu lisätä. Yritä uudelleen.'
+            ALREADY_SAVED: 'Tämä salasananhallintaohjelma tai laite sisältää jo avainavaimen tälle tilille.'
+            CANCELLED: 'Avainavainta ei lisätty. Yritä uudelleen, kun olet valmis.'
+            CODE_REQUIRED: 'Syötä nykyinen 6-numeroinen koodisi.'
+            CODE_WRONG: 'Koodi ei ole oikein.'
+            CONTINUE: Jatka
+            CURRENT_CODE: 'Nykyinen 2FA-koodi'
+            CURRENT_PASSWORD: 'Nykyinen salasana'
+            HELP: 'Avainavain (passkey) kirjauttaa sinut sisään sormenjäljellä, kasvojentunnistuksella tai laitteen PIN-koodilla salasananhallintaohjelmasta tai turva-avaimesta. Se toimii sivustolla ja ylläpidossa, ja se lasketaan molemmiksi kirjautumisvaiheiksi.'
+            HELP_OTHER: 'Avainavaimet, joilla tämä tili kirjautuu sisään. Poista avain, jos laite tai salasananhallintaohjelma, jossa se on, katoaa.'
+            LAST_USED: 'käytetty viimeksi {date}'
+            NAME_LABEL: 'Avainavaimen nimi'
+            NAME_REQUIRED: 'Anna avainavaimelle nimi.'
+            NEVER_USED: 'ei vielä käytetty'
+            NONE: 'Ei vielä avainavaimia.'
+            NONE_OTHER: 'Tällä tilillä ei ole avainavaimia.'
+            PASSWORD_REQUIRED: 'Syötä nykyinen salasanasi.'
+            PASSWORD_WRONG: 'Nykyinen salasanasi ei ole oikein.'
+            PROOF_CODE_ADD: 'Syötä nykyinen 6-numeroinen 2FA-koodisi lisätäksesi avainavaimen.'
+            PROOF_PASSWORD_ADD: 'Syötä nykyinen salasanasi lisätäksesi avainavaimen.'
+            PROOF_UNAVAILABLE: 'Aseta ensin tilillesi salasana tai 2FA-tunnistautuminen. Avainavaimia (passkeys) ei voi lisätä tai poistaa pelkästään kirjautuneena istuntona.'
+            REMOVE: Poista
+            REMOVED: 'Avainavain ({name}) poistettu.'
+            REMOVE_CONFIRM: 'Poistetaanko ”{name}”? Sillä ei voi enää kirjautua sisään.'
+            REMOVE_CONFIRM_CODE: 'Poistetaanko ”{name}”? Sillä ei voi enää kirjautua sisään. Vahvista syöttämällä nykyinen 6-numeroinen 2FA-koodisi.'
+            REMOVE_CONFIRM_OTHER: 'Poistetaanko ”{name}” käyttäjältä {username}? Sillä ei voi enää kirjautua sisään.'
+            REMOVE_CONFIRM_PASSWORD: 'Poistetaanko ”{name}”? Sillä ei voi enää kirjautua sisään. Vahvista syöttämällä nykyinen salasanasi.'
+            REMOVE_FAILED: 'Avainavainta ei voitu poistaa.'
+            RENAME: 'Nimeä uudelleen'
+            RENAMED: 'Avainavain nimetty uudelleen.'
+            RENAME_FAILED: 'Avainavainta ei voitu nimetä uudelleen.'
+            SAVE: Tallenna
+            SYNCED: synkronoitu
+            SYNCED_HELP: 'Säilytetään salasananhallintaohjelmassa, joka synkronoi sen laitteidesi välillä.'
+            TITLE: Avainavaimet
+            TOO_MANY: 'Liian monta virheellistä yritystä. Yritä uudelleen muutaman minuutin kuluttua.'
+            UNSUPPORTED: 'Tämä selain ei voi käyttää avainavaimia tässä.'
+            WAITING: 'Odotetaan avainavainta…'
+        PIPELINE_REMOTE_TIMEOUT: 'Etäresurssin aikakatkaisu'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Kuinka kauan etätiedostoa (kuten CSS- tai JS-tiedostoa, esim. CDN-tyylisivua) odotetaan putkea muodostettaessa. Jos tiedosto ei saavu ajoissa, sivu hahmonnetaan ilman kyseisen ryhmän niputtamista ja yritetään uudelleen seuraavan pyynnön yhteydessä.'
+        README_NOT_AVAILABLE: 'README ei ole saatavilla.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Muokkaa sivupalkkia'
+            DIVIDER: Erotin
+            HIDE: 'Piilota {label}'
+            HINT: 'Raahaa kohteita järjestyksen muuttamiseksi tai valitse kahva ja käytä nuolinäppäimiä. Silmä-kuvake piilottaa kohteen ja tähti-kuvake valitsee laajennuksen pikakuvakkeet näytettäväksi sen alla.'
+            MOVE: 'Siirrä {label}'
+            MOVED: '{label} siirretty kohtaan {position} yhteensä {total} kohteesta'
+            RESET_DONE: 'Sivupalkkisi seuraa jälleen sivuston oletusasetuksia'
+            RESTORE_BUILT_IN: 'Alkuperäinen järjestys'
+            SAVED: 'Sivupalkki tallennettu'
+            SAVE_FAILED: 'Sivupalkin tallennus epäonnistui'
+            SAVE_FOR_EVERYONE: 'Tallenna kaikille'
+            SAVE_FOR_EVERYONE_HINT: 'Aseta tämä sivupalkiksi jokaiselle käyttäjälle, joka ei ole järjestänyt omaansa'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Jokainen käyttäjä, joka ei ole järjestänyt omaa sivupalkkiaan, näkee tämän järjestyksen. Kuka tahansa voi silti muuttaa omaansa, eikä kohteen piilottaminen muuta sitä, mitä heillä on lupa avata.'
+            SAVE_FOR_EVERYONE_TITLE: 'Asetetaanko tämä kaikkien sivupalkiksi?'
+            SHOW: 'Näytä {label}'
+            SITE_SAVED: 'Sivupalkki tallennettu kaikille'
+            STAR: 'Näytä {label} sivupalkissa'
+            SUB_ITEMS: 'Pikavalinnat ({count} / {total} tähdellä merkittyä)'
+            UNSTAR: 'Poista {label} sivupalkista'
+            USE_SITE_DEFAULT: 'Käytä sivuston sivupalkkia'
+        UNDO: Kumoa
+        UPDATE_CHANGELOG_EMPTY: 'Ei asennettua versiota uudempia muutoslokimerkintöjä.'
+        UPDATE_CHANGELOG_FAILED: 'Muutoslokia ei voitu ladata.'
+        UPDATE_WHATS_NEW: 'Mitä uutta'
