@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Menu sluiten'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Grav werd {code} met {love} door {company}.'
+            MADE_BY_PLAIN: 'Grav werd met liefde geprogrammeerd door Trilby Media'
+            MORE_ACTIONS: 'Meer acties'
         ARE_YOU_SURE: 'Weet je het zeker?'
         AUTHOR: Auteur
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Opslaan mislukt — deze velden zijn ongeldig: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Configuratie laden mislukt.'
             SCOPE_NOT_FOUND: 'Geen configuratiebereik genaamd {scope} gevonden.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# instelling hier wordt} other {# instellingen hier worden}} overschreven door de {env}-omgeving, dus wijzigingen aan {count, plural, one {deze} other {deze}} zullen niet van kracht zijn.'
+                BANNER_MIXED: '{count, plural, one {# instelling hier wordt} other {# instellingen hier worden}} overschreven door de {env}-omgeving of door server-omgevingsvariabelen, dus wijzigingen aan {count, plural, one {deze} other {deze}} zullen niet van kracht zijn.'
+                BANNER_SERVER: '{count, plural, one {# instelling hier wordt} other {# instellingen hier worden}} ingesteld door server-omgevingsvariabelen, dus wijzigingen aan {count, plural, one {deze} other {deze}} zullen niet van kracht zijn.'
+                ENABLED_ENV: 'Ingesteld door de {env}-omgeving'
+                ENABLED_EXPLAIN_ENV: 'De {env}-omgeving schakelt deze plugin in of uit in zijn eigen configuratiebestand, dus de schakelaar hier zal niets veranderen aan de werking van de site.'
+                ENABLED_EXPLAIN_SERVER: 'Een GRAV_CONFIG server-omgevingsvariabele schakelt deze plugin in of uit, dus de schakelaar hier zal niets veranderen aan de werking van de site.'
+                ENABLED_SERVER: 'Ingesteld door een server-omgevingsvariabele'
+                EXPLAIN_ENV: 'De {env}-omgeving stelt dit in in zijn eigen configuratiebestand, dus wat je hier opslaat, is niet van toepassing op deze site.'
+                EXPLAIN_SERVER: 'Een GRAV_CONFIG server-omgevingsvariabele stelt dit in, dus wat je hier opslaat, is niet van toepassing.'
+                MARKER_ENV: 'Overschreven door de {env}-omgeving'
+                MARKER_SERVER: 'Ingesteld door een server-omgevingsvariabele'
+                REMOVED: 'Overschrijving verwijderd uit de {env}-omgeving'
+                REMOVE_FAILED: 'Kon de overschrijving niet verwijderen'
+                REMOVE_OVERRIDE: 'Overschrijving verwijderen'
+                SAVED_ENV: 'Opgeslagen, maar {field} wordt overschreven door de {env}-omgeving, dus de site gebruikt nog steeds „{value}”.'
+                SAVED_MANY_ENV: 'Opgeslagen, maar {count} van deze wijzigingen worden overschreven door de {env}-omgeving, dus de site zal ze niet gebruiken.'
+                SAVED_MANY_MIXED: 'Opgeslagen, maar {count} van deze wijzigingen worden overschreven door de {env}-omgeving of door server-omgevingsvariabelen, dus de site zal ze niet gebruiken.'
+                SAVED_MANY_SERVER: 'Opgeslagen, maar {count} van deze wijzigingen zijn ingesteld door server-omgevingsvariabelen, dus de site zal ze niet gebruiken.'
+                SAVED_SERVER: 'Opgeslagen, maar {field} is ingesteld door een server-omgevingsvariabele, dus de site gebruikt nog steeds „{value}”.'
+                SITE_USES: 'Deze site gebruikt'
+                SWITCH_TO: 'Schakel over naar {env}'
+                TOGGLE_ENV: 'Opgeslagen, maar de {env}-omgeving houdt {name} {state, select, off {uitgeschakeld} other {ingeschakeld}}.'
+                TOGGLE_SERVER: 'Opgeslagen, maar een server-omgevingsvariabele houdt {name} {state, select, off {uitgeschakeld} other {ingeschakeld}}.'
+                VALUE_OFF: uit
+                VALUE_ON: aan
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Omgeving
             EXPORT_YAML: 'YAML exporteren'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: Merken
                 FAMILY_REGULAR: Regulier
                 FAMILY_SOLID: Solid
+                SET_MISSING: 'Er is geen pictogrammenset genaamd „{set}” geregistreerd op deze site.'
             NO_TAXONOMY_TYPES: 'Geen taxonomietypen geconfigureerd'
             PAGES:
                 FILTER_PAGES: "Pagina's filteren..."
@@ -404,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Geverifieerd dat je een mens bent'
             CAPTCHA_VERIFYING: 'Controleren of je een mens bent...'
             INVALID_AUTHENTICATION_CODE: 'Ongeldige authenticatiecode'
+            PASSKEY_CANCELLED: 'Er is geen passkey gebruikt. Probeer het opnieuw wanneer je er klaar voor bent, of meld je aan met je wachtwoord.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Er is geen passkey gebruikt. Probeer het opnieuw wanneer je er klaar voor bent, of voer je code in.'
+            PASSKEY_FAILED: 'Er is iets misgegaan met de passkey. Probeer het alsjeblieft opnieuw.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Deze passkey hoort niet bij dit account. Probeer een andere, of voer je code in.'
+            PASSKEY_OFF: 'Passkeys zijn uitgeschakeld op deze site. Meld je aan met je wachtwoord.'
+            PASSKEY_OR: of
+            PASSKEY_SIGN_IN: 'Aanmelden met een passkey'
+            PASSKEY_SIGN_IN_FAILED: 'Die passkey heeft je niet aangemeld. Als je deze van je account hebt verwijderd, meld je dan aan met je wachtwoord.'
+            PASSKEY_TOO_MANY_TRIES: 'Te veel passkey-pogingen. Wacht een paar minuten en probeer het opnieuw.'
+            PASSKEY_USE_INSTEAD: 'Gebruik in plaats daarvan je passkey'
+            PASSKEY_WAITING: 'Wachten op je passkey…'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Niets om voor te bekijken'
             IMAGE_INSERT:
@@ -474,6 +515,8 @@ ICU:
                 REORDER_DONE: Klaar
                 REORDER_HINT: 'Sleep afbeeldingen om de volgorde te bepalen.'
                 REORDER_MODE: Herordenen
+                NOT_ALLOWED: 'Je kunt de media van deze pagina niet wijzigen.'
+                NO_FILES: 'Geen mediabestanden'
             METADATA:
                 APPLY_TO_N: 'Toepassen op {n} bestanden'
                 BATCH_EDITING: '{n} geselecteerde bestanden bewerken — gewijzigde velden worden op alle bestanden toegepast.'
@@ -498,6 +541,14 @@ ICU:
                 TITLE: Bestandsdetails
                 TYPE: Type
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'Kon {filename} niet uploaden: {message}'
+                NO_PERMISSION: 'Je hebt geen toestemming om media te uploaden, dus de afbeelding is niet toegevoegd.'
+                PAGES_ONLY: 'Plakken of slepen van afbeeldingen werkt alleen in paginacontent. Upload de afbeelding naar de mediabeheerder en voeg hem vanaf daar in.'
+                SAVE_PAGE_FIRST: 'Sla de pagina eerst op, en plak of sleep daarna afbeeldingen in de pagina.'
+                UNSUPPORTED_TYPE: '{filename} kan hier niet worden toegevoegd. Plak of sleep een PNG, JPEG, GIF, WebP, AVIF of SVG afbeelding.'
+                UPLOADED: '{count, plural, one {Afbeelding toegevoegd aan de paginamedia} other {# afbeeldingen toegevoegd aan de paginamedia}}'
+                UPLOADING: '{count, plural, one {Afbeelding uploaden…} other {# afbeeldingen uploaden…}}'
         NAV:
             CONFIGURATION: Configuratie
             DASHBOARD: Dashboard
@@ -562,6 +613,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'De server gaf de {effective} versie van deze pagina terug in plaats van {active}, en gaf niet aan dat {active} ontbreekt. Opslaan is hier uitgeschakeld zodat het {effective} bestand niet wordt overschreven. Als dit bij elke pagina gebeurt, geeft de webserver waarschijnlijk geen query-strings door aan Grav.'
                 PREVIEW_SHOWING_HOST_PAGE: 'getoond in de bovenliggende pagina'
                 TEMPLATE_MISSING_NOTICE: 'Het template **{template}** voor deze module is niet gevonden in het thema, waardoor de pagina waar deze bij hoort een „template not found” foutmelding geeft. Kies een template onder **Pagina-template** op het tabblad Geavanceerd, of voeg het template toe aan het thema.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Deze pagina heeft onopgeslagen wijzigingen van een gedeelde bewerksessie die niet overeenkomen met het paginabestand, dat wellicht buiten de admin om is bewerkt. De editor toont de onopgeslagen wijzigingen; opslaan vervangt de versie in het bestand.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Pagina is elders aangepast. Gelieve te herladen.'
+                READ_ONLY_NOTICE: 'Je kunt deze pagina bekijken maar niet bewerken.'
             EDIT_PAGE: 'Pagina bewerken'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Gewijzigd
@@ -613,6 +667,8 @@ ICU:
                 VISIBLE: Zichtbaar
                 CHILD_TYPE_HINT: 'De bovenliggende pagina suggereert „{template}” voor zijn kinderen. Je kunt nog steeds een ander template kiezen.'
                 STATUS_HELP: 'Concepten worden opgeslagen maar zijn niet zichtbaar op de site totdat je ze publiceert'
+                MODULE_NEEDS_PARENT: 'Een module hoort in een modulaire pagina, kies dus de pagina waar deze bij hoort.'
+                PICK_MODULAR_PAGE: 'Kies een modulaire pagina'
             NO_PAGES: "Geen pagina's gevonden"
             NO_SEARCH_RESULTS: "Geen pagina's komen overeen met uw zoekopdracht"
             PAGES_GRAV_ADMIN: "Pagina's — Grav Admin"
@@ -692,6 +748,32 @@ ICU:
                 SCHEDULED: Gepland
                 SCHEDULED_FOR: 'Publicatie gepland op {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: "Je kunt deze pagina niet openen. Hij staat in de lijst zodat je de pagina's erin kunt bereiken."
+            ANCESTOR_ONLY_LABEL: "{title}: je kunt deze pagina niet openen, alleen de pagina's erin"
+            ANCESTOR_ONLY_PARENT: 'Je kunt de bovenliggende pagina niet openen'
+            DELETE_CANNOT_UNDO: 'Dit kan niet ongedaan worden gemaakt.'
+            DELETE_LAST_LANGUAGE: "Dit is de enige taal van de pagina, dus de volledige paginamap wordt verwijderd, inclusief de media en eventuele onderliggende pagina's."
+            DELETE_RECOVERABLE: 'Je kunt het herstellen vanuit de Prullenbak.'
+            DELETE_TRANSLATION_CONFIRM: 'De {language} vertaling van „{title}” verwijderen? {n, plural, one{De andere taal blijft behouden.} other{De andere # talen blijven behouden.}}'
+            DELETE_TRANSLATION_TITLE: 'Vertaling verwijderen'
+            DELETE_UNDONE: 'Pagina hersteld'
+            DELETE_UNDONE_NAMED: '„{name}” hersteld'
+            DELETE_UNDO_FAILED: 'Kon het verwijderen niet ongedaan maken: {detail}'
+            DROP_INSIDE: 'Sleep een pagina hierheen om deze naar {title} te verplaatsen'
+            LOAD_CHILDREN_FAILED: "Kon de pagina's in deze map niet laden."
+            MODULES:
+                ADD: 'Module toevoegen'
+                EMPTY: 'Nog geen modules.'
+                HELP: 'De onderdelen waaruit deze pagina is opgebouwd, in de volgorde waarin de pagina ze toont. Sleep een module om deze te verplaatsen, of focus de hendel en druk op Alt+Omhoog of Alt+Omlaag. Klik op het statusicoon om de module te publiceren of de publicatie ongedaan te maken.'
+                LOAD_FAILED: 'De modules konden niet worden geladen.'
+                MOVE: 'Verplaats „{title}”'
+                TITLE: Modules
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} heeft geen volgnummer, dus blijft gesorteerd op naam'
+            PAGE_TITLE_HINT: 'Titel: {title}'
+            SHOW_DROP_INSIDE: "Pagina's verplaatsen naar {title}"
+            TRANSLATION_DELETED: '{language} vertaling verwijderd'
+            TRANSLATION_DELETED_OF: '{language}-vertaling van „{name}” verwijderd'
+            TRANSLATION_RESTORED: '{language}-vertaling hersteld'
         PASSWORD: Wachtwoord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Wachtwoordvereisten
@@ -709,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 'Overschrijft een groep'
             LEGEND_SUPER: 'Verleend door super admin'
             OVERRIDES_GROUP: 'Uw directe instelling overschrijft de groep: {groups}'
+            LOCKED_NOTE: "Je kunt alleen machtigingen verlenen die je eigen account heeft. De machtigingen die je niet kunt verlenen, hebben een grijs 'Toestaan'-selectievakje, maar je kunt ze nog steeds weigeren of wissen."
+            NOT_GRANTABLE: 'Je kunt deze machtiging niet verlenen omdat je eigen account deze niet heeft'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Terug naar Dashboard'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Geen inhoud beschikbaar voor deze pluginpagina.'
@@ -750,6 +834,21 @@ ICU:
             CHART_LABEL: 'Paginaweergaven per dag voor de laatste 14 dagen'
             TODAY: Vandaag
             VIEWS: '{count, plural, one {# weergave} other {# weergaven}}'
+            CHART_RANGE_LABEL: 'Paginaweergaven, {range}'
+            LAST_12_MONTHS: 'Laatste 12 maanden'
+            LAST_30_DAYS: 'Laatste 30 dagen'
+            LAST_7_DAYS: 'Laatste 7 dagen'
+            LAST_90_DAYS: 'Laatste 90 dagen'
+            LOAD_FAILED: 'Kon dit tijdsbestek niet laden'
+            PREVIOUS_PERIOD: '{count, plural, one {# weergave} other {# weergaven}} in de vorige periode'
+            SHORT_12M: 12M
+            SHORT_14D: 14D
+            SHORT_30D: 30D
+            SHORT_7D: 7D
+            SHORT_90D: 90D
+            SO_FAR: 'tot nu toe'
+            TIME_FRAME: Tijdsbestek
+            VS_PREVIOUS: 'vergeleken met de vorige periode'
         PREMIUM: Premium
         PREVIEW: Voorbeeld
         REAUTH_MODAL:
@@ -901,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Vaste werkbalk'
             STICKY_TOOLBAR_DESC: 'Houd de werkbalk voor opmaak en de knop Voorbeeld in beeld terwijl je scrolt.'
             ADMIN_TITLE: 'Admin titel'
-            ADMIN_TITLE_DESC: 'Wordt getoond als de koptekst bij het inloggen en in het browsertabblad. Laat leeg voor „Grav Admin”.'
+            ADMIN_TITLE_DESC: 'Wordt getoond in het browsertabblad en als de aanmeldingskop, tenzij er een aangepast logo is ingesteld (aangezien het logo de site al benoemt). Laat leeg voor „Grav Admin”.'
             FAILED_TO_SAVE_BRANDING: 'Opslaan van branding mislukt.'
             FAVICON: Favicon
             FAVICON_DESC: 'Aangepast icoon voor browsertabbladen (SVG, PNG, WebP of ICO). Laat leeg voor het gegenereerde icoon.'
@@ -932,6 +1031,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Standaard
             SIDEBAR_LOGO_HEIGHT: 'Hoogte zijbalklogo'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Hoe groot je logo wordt weergegeven bovenaan de zijbalk.'
+            SHOW_CREDIT: 'Toon Trilby Media credit'
+            SHOW_CREDIT_DESC: 'Toon de regel „Grav was coded with love by Trilby Media” onderaan de zijbalk.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tekens: letters, nummers, koppeltekens, underscores'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Beheerdersaccount aangemaakt — welkom bij Grav'
@@ -964,6 +1065,7 @@ ICU:
                 LOCKED: 'Alleen-lezen — {owner} bewerkt met **{editor}**. Gemengde editortypen kunnen niet samen bewerken; [wijzig uw editorvoorkeur]({href}) om live samen te werken.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'wijzig uw editorvoorkeur'
                 TO_COLLABORATE_LIVE: 'om live samen te werken.'
+                LOCKED_EXPERT: 'Alleen-lezen: {owner} bewerkt met **{editor}**, wat niet kan samenwerken met de markdown-editor in de Expert-modus. Schakel terug naar de Normale modus om live samen te werken.'
         SYSTEM:
             COMING_SOON: 'Binnenkort beschikbaar'
             SYSTEM_GRAV_ADMIN: 'Systeem — Grav Admin'
@@ -1015,6 +1117,8 @@ ICU:
             UPDATE_ALL: 'Alles bijwerken'
             UPDATE_ALL_CONFIRM_MESSAGE: "{n, plural, one{# thema wordt bijgewerkt:} other{# thema's worden bijgewerkt:}}"
             UPDATE_ALL_CONFIRM_TITLE: "Thema's bijwerken?"
+            UPDATE_CONFIRM_MESSAGE: '{name} bijwerken naar v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Thema bijwerken?'
         TIME:
             DAYS_AGO: '{n}d geleden'
             HOURS_AGO: '{n}u geleden'
@@ -1121,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: Eigenschappen
                     POLICY_TAGS: Tags
                     POLICY_VIEW: 'Toon effectief beleid'
+                    IN_PARTIAL: 'Geblokkeerd binnen het ingesloten sjabloon'
+                    TROUBLESHOOTING_LINK: 'Hoe Twig in inhoud te herstellen'
+                    TRUSTED_PARTIAL: "Vertrouwde {template}. Pagina's die dit bevatten, renderen het zoals jouw thema dat doet."
+                    TRUST_FAILED: 'Kon het gedeeltelijke bestand niet vertrouwen'
+                    TRUST_PARTIAL: 'Vertrouw dit gedeeltelijke bestand'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Rapportcomponent laden...'
             SCHEDULER:
@@ -1208,6 +1317,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Twee-factor authenticatie is uit'
             VERIFICATION_CODE: Verificatiecode
             VERIFY_ENABLE: 'Verifiëren & Inschakelen'
+            CURRENT_CODE_WRONG: 'Die code is niet correct.'
+            ENTER_CODE_TO_REGENERATE: 'Voer je huidige 6-cijferige code in om een nieuw geheim aan te maken. 2FA blijft uitgeschakeld totdat je de nieuwe QR-code scant en een code daarvan verifieert.'
+            REGENERATE: 'Opnieuw genereren'
+            TOO_MANY_CODES: 'Te veel verkeerde codes. Probeer het over een paar minuten opnieuw.'
         UNSAVED_CHANGES: 'Niet-opgeslagen wijzigingen'
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 'Wijzigingen opslaan…'
@@ -1247,6 +1360,36 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'U kunt uw eigen account niet verwijderen.'
             CONFIRM_DELETE_USER: "Gebruiker ''{username}'' verwijderen? Dit kan niet ongedaan worden gemaakt."
             TITLE: Gebruikers
+            EMAIL_CHANGE_CANCELLED: 'E-mailwijziging geannuleerd.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Het annuleren van de e-mailwijziging is mislukt.'
+            EMAIL_CHANGE_RESEND: 'Opnieuw verzenden'
+            EMAIL_CHANGE_RESEND_FAILED: 'Het opnieuw verzenden van de bevestigingslink is mislukt.'
+            EMAIL_CHANGE_SENT: 'We hebben een bevestigingslink gestuurd naar {email}. Het e-mailadres wordt gewijzigd zodra de link is geopend.'
+            EMAIL_CHANGE_WAITING: 'Wachten op bevestiging: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Voer je huidige wachtwoord in om je e-mailadres te wijzigen naar {email}.'
+                NOT_SAVED: 'Je nieuwe e-mailadres, {email}, is nog niet opgeslagen. Bevestig het met je huidige wachtwoord.'
+                TITLE: 'Bevestig dat jij het bent'
+            PASSWORD:
+                CHANGE: 'Wachtwoord wijzigen'
+                CHANGED_OTHER: 'Het wachtwoord voor {name} is gewijzigd.'
+                CHANGED_OWN: 'Je wachtwoord is gewijzigd. Andere browsers en apps die zijn ingelogd op je account zijn uitgelogd.'
+                CONFIRM: 'Bevestig nieuw wachtwoord'
+                CURRENT: 'Huidig wachtwoord'
+                CURRENT_REQUIRED: 'Voer je huidige wachtwoord in.'
+                CURRENT_WRONG: 'Je huidige wachtwoord is niet correct.'
+                FAILED: 'Het wijzigen van het wachtwoord is mislukt.'
+                MISMATCH: 'De wachtwoorden komen niet overeen.'
+                NEW: 'Nieuw wachtwoord'
+                NEW_REQUIRED: 'Voer een nieuw wachtwoord in.'
+                NOT_ALLOWED: 'Je hebt geen toestemming om dit wachtwoord te wijzigen.'
+                NO_PASSWORD_HELP: 'Je account heeft nog geen wachtwoord omdat je inlogt via een andere dienst. Stel er een in om ook met je gebruikersnaam en wachtwoord in te kunnen loggen.'
+                OTHER_HELP: 'Stel een nieuw wachtwoord in voor {name}. Zij worden uitgelogd bij elke browser en app, en loggen opnieuw in met het nieuwe wachtwoord.'
+                OWN_HELP: 'Voer je huidige wachtwoord in en daarna twee keer het nieuwe. Je blijft hier ingelogd, en elke andere browser en app die op je account is ingelogd, wordt uitgelogd.'
+                POLICY: 'Het nieuwe wachtwoord voldoet niet aan de vereisten.'
+                SET: 'Wachtwoord instellen'
+                TITLE: Wachtwoord
+                TOO_MANY: 'Te veel foutieve wachtwoorden. Probeer het over een paar minuten opnieuw.'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar verwijderd'
             AVATAR_UPDATED: 'Avatar bijgewerkt'
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} is verplicht'
             FORM_HAS_ERRORS: '{count, plural, one {# veld vereist uw aandacht} other {# velden vereisen uw aandacht}}'
             REQUIRED_GENERIC: 'Dit veld is verplicht'
+            LIST_KEY_REQUIRED: '{key}: {label} is verplicht'
+            LIST_NEW_ROW_REQUIRED: 'Nieuw item: {label} is verplicht'
+            LIST_ROW_REQUIRED: 'Item {row}: {label} is verplicht'
         VALID_LINK_ATTRIBUTES: 'Geldige linkattributen'
         VALID_LINK_ATTRIBUTES_HELP: 'Attributen die automatisch aan het media-HTML-element worden toegevoegd'
         VARY_ACCEPT_ENCODING: 'Accept-encoding variëren'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Onverwachte reactie van de server'
             UNEXPECTED_RESPONSE_DETAIL: 'De server antwoordde met gegevens in een formaat dat dit scherm niet verwacht. De browserconsole bevat de details.'
             UNEXPECTED_RESPONSE_TITLE: 'Onverwachte reactie van de server'
+            SERVER_PAGE_DETAIL: 'Je webserver heeft dit verzoek zelf beantwoord (HTTP {status}) in plaats van het door te sturen naar Grav. Een beveiligingsfilter op de server, zoals mod_security of een hosting-firewall, heeft dit mogelijk geblokkeerd. Je host of het foutenlogboek van de server kan vertellen welke regel is geactiveerd.'
+            SERVER_PAGE_TITLE: 'Geblokkeerd door de webserver'
         CACHE_MODULES: 'Cache module-output'
         CACHE_MODULES_HELP: 'Cache de gerenderde output van de modules op deze pagina. Gebruik dit alleen wanneer de modules aan iedere bezoeker dezelfde inhoud tonen. Modules met eigen Twig of een formulier, ingelogde bezoekers en formulierinzendingen worden altijd vers gerenderd. Bij het bewerken van slechts een gedeeltelijke template is een cache-opschoning nodig.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Flex Render-hints'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Start sessies alleen indien nodig'
         SESSION_LAZY_HELP: 'Bezoekers zonder sessie-cookie krijgen pas een sessie als er iets in wordt opgeslagen, zoals een aanmelding, een formulier of een bericht. Hierdoor kunnen anonieme paginaweergaven worden gecached door een proxy of CDN. Plugins die gegevens opslaan bij elke paginaweergave starten nog steeds een sessie.'
         UPDATE_CHANGELOG_TITLE: 'Wijzigingen in v{version}'
+        CHANGELOG:
+            BUGFIX: Bugfix
+            IMPROVED: Verbeterd
+            NEW: Nieuw
+            SECURITY: Beveiliging
+        CHANGELOG_NOT_AVAILABLE: 'Changelog niet beschikbaar.'
+        IMAGES_WATERMARK_ALL: 'Alle afbeeldingen van watermerk voorzien'
+        IMAGES_WATERMARK_ALL_HELP: 'Automatisch een watermerk plaatsen op elke afbeelding die de site serveert'
+        IMAGES_WATERMARK_BOTTOM: Onder
+        IMAGES_WATERMARK_CENTER: Midden
+        IMAGES_WATERMARK_IMAGE: Watermerkafbeelding
+        IMAGES_WATERMARK_IMAGE_HELP: 'Pad naar de afbeelding die als watermerk wordt gebruikt, zoals system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Links
+        IMAGES_WATERMARK_POSITION_X: 'Horizontale positie'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Waar het watermerk van links naar rechts wordt geplaatst'
+        IMAGES_WATERMARK_POSITION_Y: 'Verticale positie'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Waar het watermerk van boven naar beneden wordt geplaatst'
+        IMAGES_WATERMARK_RIGHT: Rechts
+        IMAGES_WATERMARK_SCALE: Watermarkschaal
+        IMAGES_WATERMARK_SCALE_HELP: 'Grootte van het watermerk als percentage van de afbeelding'
+        IMAGES_WATERMARK_TITLE: Watermerk
+        IMAGES_WATERMARK_TOP: Boven
+        PASSKEYS_FIELD:
+            ADD: 'Een passkey toevoegen'
+            ADDED: 'Passkey toegevoegd ({name}). Hiermee log je vanaf nu automatisch in.'
+            ADDED_ON: 'Toegevoegd op {date}'
+            ADD_FAILED: 'De passkey kon niet worden toegevoegd. Probeer het opnieuw.'
+            ALREADY_SAVED: 'Die wachtwoordbeheerder of dat apparaat bevat al een passkey voor dit account.'
+            CANCELLED: 'Er is geen passkey toegevoegd. Probeer het opnieuw wanneer je er klaar voor bent.'
+            CODE_REQUIRED: 'Voer je huidige 6-cijferige code in.'
+            CODE_WRONG: 'Die code is onjuist.'
+            CONTINUE: Doorgaan
+            CURRENT_CODE: 'Huidige 2FA-code'
+            CURRENT_PASSWORD: 'Huidig wachtwoord'
+            HELP: 'Een passkey laat je inloggen met je vingerafdruk, gezicht of apparaat-pincode, via een wachtwoordbeheerder of een beveiligingssleutel. Het werkt op de site en in Admin, en telt als beide inlogstappen.'
+            HELP_OTHER: 'Passkeys waarmee dit account inlogt. Verwijder er een als het apparaat of de wachtwoordbeheerder die de passkey bevat verloren is geraakt.'
+            LAST_USED: 'laatst gebruikt op {date}'
+            NAME_LABEL: 'Naam van passkey'
+            NAME_REQUIRED: 'Geef de passkey een naam.'
+            NEVER_USED: 'nog niet gebruikt'
+            NONE: 'Nog geen passkeys.'
+            NONE_OTHER: 'Dit account heeft geen passkeys.'
+            PASSWORD_REQUIRED: 'Voer je huidige wachtwoord in.'
+            PASSWORD_WRONG: 'Je huidige wachtwoord is onjuist.'
+            PROOF_CODE_ADD: 'Voer je huidige 6-cijferige 2FA-code in om een passkey toe te voegen.'
+            PROOF_PASSWORD_ADD: 'Voer je huidige wachtwoord in om een passkey toe te voegen.'
+            PROOF_UNAVAILABLE: 'Stel eerst een wachtwoord of 2FA in op je account. Passkeys kunnen niet worden toegevoegd of verwijderd met alleen een ingelogde sessie.'
+            REMOVE: Verwijderen
+            REMOVED: 'Passkey verwijderd ({name}).'
+            REMOVE_CONFIRM: '“{name}” verwijderen? Je kunt hiermee dan niet meer inloggen.'
+            REMOVE_CONFIRM_CODE: '“{name}” verwijderen? Je kunt hiermee dan niet meer inloggen. Voer je huidige 6-cijferige 2FA-code in om te bevestigen.'
+            REMOVE_CONFIRM_OTHER: '“{name}” verwijderen van {username}? Zij kunnen hiermee dan niet meer inloggen.'
+            REMOVE_CONFIRM_PASSWORD: '“{name}” verwijderen? Je kunt hiermee dan niet meer inloggen. Voer je huidige wachtwoord in om te bevestigen.'
+            REMOVE_FAILED: 'De passkey kon niet worden verwijderd.'
+            RENAME: Hernoemen
+            RENAMED: 'Passkey hernoemd.'
+            RENAME_FAILED: 'De passkey kon niet worden hernoemd.'
+            SAVE: Opslaan
+            SYNCED: gesynchroniseerd
+            SYNCED_HELP: 'Bewaard in een wachtwoordmanager die het synchroniseert over al je apparaten.'
+            TITLE: Passkeys
+            TOO_MANY: 'Te veel mislukte pogingen. Probeer het over een paar minuten opnieuw.'
+            UNSUPPORTED: 'Deze browser kan hier geen passkeys gebruiken.'
+            WAITING: 'Wachten op je passkey…'
+        PIPELINE_REMOTE_TIMEOUT: 'Time-out extern asset'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Hoe lang er gewacht moet worden op een extern CSS- of JS-bestand (bijvoorbeeld een CDN-stylesheet) bij het bouwen van een pipeline. Als het niet op tijd binnenkomt, wordt de pagina gerenderd zonder die groep te bundelen en wordt het bij het volgende verzoek opnieuw geprobeerd'
+        README_NOT_AVAILABLE: 'README niet beschikbaar.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Zijbalk aanpassen'
+            DIVIDER: Scheidingslijn
+            HIDE: 'Verberg {label}'
+            HINT: 'Sleep items om ze te verplaatsen, of focus op een hendel en gebruik de pijltjestoetsen. Het oog verbergt een item en de ster kiest de snelkoppelingen van een plugin die eronder getoond worden.'
+            MOVE: 'Verplaats {label}'
+            MOVED: '{label} verplaatst naar positie {position} van {total}'
+            RESET_DONE: 'Je zijbalk volgt weer die van de site'
+            RESTORE_BUILT_IN: 'Originele volgorde'
+            SAVED: 'Zijbalk opgeslagen'
+            SAVE_FAILED: 'Kon de zijbalk niet opslaan'
+            SAVE_FOR_EVERYONE: 'Opslaan voor iedereen'
+            SAVE_FOR_EVERYONE_HINT: 'Maak dit de zijbalk voor elke gebruiker die deze nog niet zelf heeft ingedeeld'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Elke gebruiker die zijn eigen zijbalk nog niet heeft ingedeeld, zal deze volgorde zien. Iedereen kan zijn eigen zijbalk nog steeds aanpassen en het verbergen van een item verandert niets aan waar men toegang toe heeft.'
+            SAVE_FOR_EVERYONE_TITLE: 'Dit de zijbalk voor iedereen maken?'
+            SHOW: 'Toon {label}'
+            SITE_SAVED: 'Zijbalk opgeslagen voor iedereen'
+            STAR: 'Toon {label} in de zijbalk'
+            SUB_ITEMS: 'Snelkoppelingen ({count} van {total} met ster)'
+            UNSTAR: 'Verwijder {label} uit de zijbalk'
+            USE_SITE_DEFAULT: 'Gebruik de zijbalk van de site'
+        UNDO: 'Ongedaan maken'
+        UPDATE_CHANGELOG_EMPTY: 'Geen changelog-vermeldingen nieuwer dan de geïnstalleerde versie.'
+        UPDATE_CHANGELOG_FAILED: 'De changelog kon niet worden geladen.'
+        UPDATE_WHATS_NEW: 'Wat is er nieuw'
