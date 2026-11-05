@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Zavřít nabídku'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Systém Grav byl {code} s {love} vytvořen společností {company}.'
+            MADE_BY_PLAIN: 'Systém Grav byl s láskou vytvořen společností Trilby Media'
+            MORE_ACTIONS: 'Další akce'
         ARE_YOU_SURE: 'Jste si jisti?'
         AUTHOR: Autor
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Uložení se nezdařilo — tato pole jsou neplatná: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Nepodařilo se načíst konfiguraci.'
             SCOPE_NOT_FOUND: 'Nebyl nalezen žádný konfigurační rozsah s názvem {scope}.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# nastavení je zde} few {# nastavení jsou zde} other {# nastavení je zde}} přepsáno prostředím {env}, takže změny {count, plural, one {jeho hodnoty} few {jejich hodnot} other {jejich hodnot}} se neprojeví.'
+                BANNER_MIXED: '{count, plural, one {# nastavení je zde} few {# nastavení jsou zde} other {# nastavení je zde}} přepsáno prostředím {env} nebo systémovými proměnnými prostředí, takže změny {count, plural, one {jeho hodnoty} few {jejich hodnot} other {jejich hodnot}} se neprojeví.'
+                BANNER_SERVER: '{count, plural, one {# nastavení je zde} few {# nastavení jsou zde} other {# nastavení je zde}} nastaveno pomocí systémových proměnných prostředí, takže změny {count, plural, one {jeho hodnoty} few {jejich hodnot} other {jejich hodnot}} se neprojeví.'
+                ENABLED_ENV: 'Nastaveno prostředím {env}'
+                ENABLED_EXPLAIN_ENV: 'Prostředí {env} zapíná nebo vypíná tento plugin ve svém vlastním konfiguračním souboru, takže přepínač zde nemá na fungování webu vliv.'
+                ENABLED_EXPLAIN_SERVER: 'Proměnná prostředí serveru GRAV_CONFIG zapíná nebo vypíná tento plugin, takže přepínač zde nemá na fungování webu vliv.'
+                ENABLED_SERVER: 'Nastaveno systémovou proměnnou prostředí'
+                EXPLAIN_ENV: 'Prostředí {env} nastavuje tuto hodnotu ve svém vlastním konfiguračním souboru, takže to, co zde uložíte, se na tomto webu neprojeví.'
+                EXPLAIN_SERVER: 'Tato hodnota je nastavena systémovou proměnnou prostředí GRAV_CONFIG, takže to, co zde uložíte, nebude mít žádný účinek.'
+                MARKER_ENV: 'Přepsáno prostředím {env}'
+                MARKER_SERVER: 'Nastaveno systémovou proměnnou prostředí'
+                REMOVED: 'Přepsání z prostředí {env} bylo odstraněno'
+                REMOVE_FAILED: 'Přepsání se nepodařilo odstranit'
+                REMOVE_OVERRIDE: 'Odstranit přepsání'
+                SAVED_ENV: 'Uloženo, ale pole {field} je přepsáno prostředím {env}, takže web stále používá hodnotu „{value}“.'
+                SAVED_MANY_ENV: 'Uloženo, ale {count} z těchto změn je přepsáno prostředím {env}, takže je web nepoužije.'
+                SAVED_MANY_MIXED: 'Uloženo, ale {count} z těchto změn je přepsáno prostředím {env} nebo systémovými proměnnými prostředí, takže je web nepoužije.'
+                SAVED_MANY_SERVER: 'Uloženo, ale {count} z těchto změn je určeno systémovými proměnnými prostředí, takže je web nepoužije.'
+                SAVED_SERVER: 'Uloženo, ale pole {field} je určeno systémovou proměnnou prostředí, takže web stále používá „{value}“.'
+                SITE_USES: 'Tento web používá'
+                SWITCH_TO: 'Přepnout na {env}'
+                TOGGLE_ENV: 'Uloženo, ale prostředí {env} udržuje {name} {state, select, off {zakázané} other {povolené}}.'
+                TOGGLE_SERVER: 'Uloženo, ale systémová proměnná prostředí udržuje {name} {state, select, off {zakázané} other {povolené}}.'
+                VALUE_OFF: vypnuto
+                VALUE_ON: zapnuto
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Prostředí
             EXPORT_YAML: 'Exportovat YAML'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: Značky
                 FAMILY_REGULAR: Běžné
                 FAMILY_SOLID: Plné
+                SET_MISSING: 'Na tomto webu není zaregistrována žádná sada ikon s názvem „{set}“.'
             NO_TAXONOMY_TYPES: 'Žádné typy taxonomie nejsou nakonfigurovány'
             PAGES:
                 FILTER_PAGES: 'Filtrovat stránky...'
@@ -404,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Ověřeno, že jste člověk'
             CAPTCHA_VERIFYING: 'Ověřování, že jste člověk...'
             INVALID_AUTHENTICATION_CODE: 'Neplatný ověřovací kód'
+            PASSKEY_CANCELLED: 'Nebyl použit žádný přístupový klíč. Zkuste to znovu, až budete připraveni, nebo se přihlaste heslem.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Nebyl použit žádný přístupový klíč. Zkuste to znovu, až budete připraveni, nebo zadejte svůj kód.'
+            PASSKEY_FAILED: 'Při použití přístupového klíče došlo k chybě. Zkuste to prosím znovu.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Tento přístupový klíč k tomuto účtu nepatří. Zkuste jiný, nebo zadejte svůj kód.'
+            PASSKEY_OFF: 'Přístupové klíče jsou na tomto webu vypnuty. Přihlaste se heslem.'
+            PASSKEY_OR: nebo
+            PASSKEY_SIGN_IN: 'Přihlásit se pomocí přístupového klíče'
+            PASSKEY_SIGN_IN_FAILED: 'Pomocí tohoto přístupového klíče se nebylo možné přihlásit. Pokud jste jej z účtu odstranili, přihlaste se heslem.'
+            PASSKEY_TOO_MANY_TRIES: 'Příliš mnoho pokusů o použití přístupového klíče. Počkejte několik minut a zkuste to znovu.'
+            PASSKEY_USE_INSTEAD: 'Místo toho použijte svůj přístupový klíč'
+            PASSKEY_WAITING: 'Čeká se na váš přístupový klíč…'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nic k náhledu'
             IMAGE_INSERT:
@@ -474,6 +515,8 @@ ICU:
                 REORDER_DONE: Hotovo
                 REORDER_HINT: 'Přetažením obrázků změníte jejich pořadí.'
                 REORDER_MODE: 'Změnit pořadí'
+                NOT_ALLOWED: 'Média této stránky nemůžete změnit.'
+                NO_FILES: 'Žádné mediální soubory'
             METADATA:
                 APPLY_TO_N: 'Použít pro {n} souborů'
                 BATCH_EDITING: 'Úprava {n} vybraných souborů — změněná pole se použijí na všechny.'
@@ -498,6 +541,14 @@ ICU:
                 TITLE: 'Podrobnosti o souboru'
                 TYPE: Typ
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'Nepodařilo se nahrát {filename}: {message}'
+                NO_PERMISSION: 'Nemáte oprávnění k nahrávání médií, proto nebyl obrázek přidán.'
+                PAGES_ONLY: 'Vkládání nebo přetahování obrázků funguje pouze v obsahu stránky. Nahrajte obrázek do správce médií a vložte jej odtud.'
+                SAVE_PAGE_FIRST: 'Nejprve stránku uložte, poté do ní vložte obrázky nebo je přetáhněte.'
+                UNSUPPORTED_TYPE: '{filename} zde nelze přidat. Vložte nebo přetáhněte obrázek typu PNG, JPEG, GIF, WebP, AVIF nebo SVG.'
+                UPLOADED: '{count, plural, one {Obrázek přidán k médiím stránky} few {# obrázky přidány k médiím stránky} other {# obrázků přidáno k médiím stránky}}'
+                UPLOADING: '{count, plural, one {Nahrávám obrázek…} few {Nahrávám # obrázky…} other {Nahrávám # obrázků…}}'
         NAV:
             CONFIGURATION: Konfigurace
             DASHBOARD: Přehled
@@ -562,6 +613,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'Server vrátil {effective} verzi této stránky místo {active} a nenahlásil {active} jako chybějící. Ukládání je zde vypnuto, aby nedošlo k přepsání souboru {effective}. Pokud se to děje u všech stránek, webový server pravděpodobně nepředává řetězce dotazů (query strings) do systému Grav.'
                 PREVIEW_SHOWING_HOST_PAGE: 'zobrazeno v nadřazené stránce'
                 TEMPLATE_MISSING_NOTICE: 'Šablona **{template}** pro tento modul nebyla v motivu nalezena, takže stránka, ke které patří, zobrazuje chybu „šablona nenalezena“. Vyberte šablonu v sekci **Šablona stránky** na kartě Upřesnit, nebo přidejte šablonu do motivu.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Tato stránka obsahuje neuložené změny ze sdílené relace úprav, které neodpovídají souboru stránky, jenž mohl být upraven mimo administraci. Editor zobrazuje neuložené změny; uložením přepíšete verzi v souboru.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Stránka byla upravena jinde. Prosím, obnovte stránku.'
+                READ_ONLY_NOTICE: 'Tuto stránku můžete zobrazit, ale nemůžete ji upravovat.'
             EDIT_PAGE: 'Upravit stránku'
             FRONTMATTER: Předmluva
             HEADER_MODIFIED: Změněno
@@ -613,6 +667,8 @@ ICU:
                 VISIBLE: Viditelný
                 CHILD_TYPE_HINT: 'Nadřazená stránka navrhuje pro své potomky „{template}“. Stále si však můžete vybrat jinou šablonu.'
                 STATUS_HELP: 'Koncepty jsou uloženy, ale na webu se nezobrazí, dokud je nepublikujete'
+                MODULE_NEEDS_PARENT: 'Modul patří do modulární stránky, proto vyberte stránku, ke které náleží.'
+                PICK_MODULAR_PAGE: 'Vybrat modulární stránku'
             NO_PAGES: 'Žádné stránky nenalezeny'
             NO_SEARCH_RESULTS: 'Žádné stránky neodpovídají vašemu vyhledávání'
             PAGES_GRAV_ADMIN: 'Stránky — Grav Admin'
@@ -692,6 +748,32 @@ ICU:
                 SCHEDULED: Naplánováno
                 SCHEDULED_FOR: 'Naplánováno k publikaci na {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Tuto stránku nelze otevřít. Je zde uvedena pouze proto, abyste se dostali ke stránkám v ní obsaženým.'
+            ANCESTOR_ONLY_LABEL: '{title}: tuto stránku nelze otevřít, pouze stránky v ní obsažené'
+            ANCESTOR_ONLY_PARENT: 'Nadřazenou stránku nelze otevřít'
+            DELETE_CANNOT_UNDO: 'Tuto akci nelze vrátit zpět.'
+            DELETE_LAST_LANGUAGE: 'Toto je jediný jazyk této stránky, takže bude odstraněna celá složka stránky, včetně médií a všech podstránek.'
+            DELETE_RECOVERABLE: 'Můžete ji obnovit z koše.'
+            DELETE_TRANSLATION_CONFIRM: 'Odstranit překlad „{title}“ v jazyce {language}? {n, plural, one{Druhý jazyk bude zachován.} few{Ostatní # jazyky budou zachovány.} other{Ostatních # jazyků bude zachováno.}}'
+            DELETE_TRANSLATION_TITLE: 'Odstranit překlad'
+            DELETE_UNDONE: 'Stránka obnovena'
+            DELETE_UNDONE_NAMED: 'Obnoveno „{name}“'
+            DELETE_UNDO_FAILED: 'Odstranění se nepodařilo vrátit zpět: {detail}'
+            DROP_INSIDE: 'Přetáhněte stránku sem pro její přesun do {title}'
+            LOAD_CHILDREN_FAILED: 'Stránky v této složce se nepodařilo načíst.'
+            MODULES:
+                ADD: 'Přidat modul'
+                EMPTY: 'Zatím žádné moduly.'
+                HELP: 'Části, ze kterých je tato stránka postavena, v pořadí, v jakém je zobrazuje. Modul přesuňte přetažením, nebo na něj přesuňte fokus a stiskněte Alt+Šipka nahoru nebo Alt+Šipka dolů. Kliknutím na ikonu stavu jej můžete publikovat nebo zrušit publikaci.'
+                LOAD_FAILED: 'Moduly se nepodařilo načíst.'
+                MOVE: 'Přesunout „{title}“'
+                TITLE: Moduly
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} nemá žádné pořadové číslo, takže zůstává řazena podle názvu'
+            PAGE_TITLE_HINT: 'Název: {title}'
+            SHOW_DROP_INSIDE: 'Přesunout stránky do {title}'
+            TRANSLATION_DELETED: 'Překlad v jazyce {language} byl odstraněn'
+            TRANSLATION_DELETED_OF: 'Byl smazán {language} překlad „{name}“'
+            TRANSLATION_RESTORED: '{language} překlad obnoven'
         PASSWORD: Heslo
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Požadavky na heslo'
@@ -709,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 'Přepisuje skupinu'
             LEGEND_SUPER: 'Uděleno super administrátorem'
             OVERRIDES_GROUP: 'Vaše přímé nastavení přepisuje skupinu: {groups}'
+            LOCKED_NOTE: 'Můžete udělit pouze taková oprávnění, která má váš vlastní účet. Ta, která udělit nemůžete, mají možnost Povolit zašedlou, ale stále je můžete zakázat nebo vymazat.'
+            NOT_GRANTABLE: 'Toto oprávnění nemůžete udělit, protože ho váš vlastní účet nemá'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Zpět na Řídicí panel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Žádný obsah není dostupný pro tuto stránku modulu plug-in.'
@@ -750,6 +834,21 @@ ICU:
             CHART_LABEL: 'Zobrazení stránek za den za posledních 14 dní'
             TODAY: Dnes
             VIEWS: '{count, plural, one {# zobrazení} few {# zobrazení} other {# zobrazení}}'
+            CHART_RANGE_LABEL: 'Zobrazení stránek, {range}'
+            LAST_12_MONTHS: 'Posledních 12 měsíců'
+            LAST_30_DAYS: 'Posledních 30 dní'
+            LAST_7_DAYS: 'Posledních 7 dní'
+            LAST_90_DAYS: 'Posledních 90 dní'
+            LOAD_FAILED: 'Nepodařilo se načíst toto časové období'
+            PREVIOUS_PERIOD: '{count, plural, one {# zobrazení} few {# zobrazení} many {# zobrazení} other {# zobrazení}} v předchozím období'
+            SHORT_12M: '12 M'
+            SHORT_14D: '14 D'
+            SHORT_30D: '30 D'
+            SHORT_7D: '7 D'
+            SHORT_90D: '90 D'
+            SO_FAR: zatím
+            TIME_FRAME: 'Časové období'
+            VS_PREVIOUS: 've srovnání s předchozím obdobím'
         PREMIUM: Premium
         PREVIEW: Náhled
         REAUTH_MODAL:
@@ -901,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Ukotvený panel nástrojů'
             STICKY_TOOLBAR_DESC: 'Ponechat panel nástrojů formátování a tlačítko Náhled viditelné při posouvání stránky.'
             ADMIN_TITLE: 'Název administrace'
-            ADMIN_TITLE_DESC: 'Zobrazeno jako nadpis při přihlášení a na kartě prohlížeče. Ponechte prázdné pro „Grav Admin“.'
+            ADMIN_TITLE_DESC: 'Zobrazuje se na kartě prohlížeče a jako nadpis přihlášení, pokud není nastaveno vlastní logo, protože logo již název webu obsahuje. Nechte prázdné pro „Grav Admin“.'
             FAILED_TO_SAVE_BRANDING: 'Uložení brandingu se nezdařilo.'
             FAVICON: Favicon
             FAVICON_DESC: 'Vlastní ikona pro kartu prohlížeče (SVG, PNG, WebP nebo ICO). Ponechte prázdné pro generovanou ikonu.'
@@ -932,6 +1031,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Výchozí
             SIDEBAR_LOGO_HEIGHT: 'Výška loga v postranním panelu'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Jak vysoké se bude vaše logo zobrazovat v horní části postranního panelu.'
+            SHOW_CREDIT: 'Zobrazit kredit Trilby Media'
+            SHOW_CREDIT_DESC: 'Zobrazit řádek „Grav was coded with love by Trilby Media“ v dolní části postranního panelu.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 znaků: písmena, čísla, pomlčky, podtržítka'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Účet správce vytvořen — vítejte v Gravu'
@@ -964,6 +1065,7 @@ ICU:
                 LOCKED: 'Pouze čtení — uživatel {owner} upravuje s pomocí **{editor}**. Smíšené typy editorů nelze editovat společně; [změňte své předvolby editoru]({href}) pro živou spolupráci.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'změňte své předvolby editoru'
                 TO_COLLABORATE_LIVE: 'pro živou spolupráci.'
+                LOCKED_EXPERT: 'Jen pro čtení: {owner} provádí úpravy pomocí **{editor}**, který nelze používat zároveň s markdown editorem v expertním režimu. Chcete-li spolupracovat v reálném čase, přepněte zpět do normálního režimu.'
         SYSTEM:
             COMING_SOON: 'Již brzy'
             SYSTEM_GRAV_ADMIN: 'Systém — Grav Admin'
@@ -1015,6 +1117,8 @@ ICU:
             UPDATE_ALL: 'Aktualizovat vše'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# šablona bude aktualizována:} few{# šablony budou aktualizovány:} other{# šablon bude aktualizováno:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'Aktualizovat šablony?'
+            UPDATE_CONFIRM_MESSAGE: 'Aktualizovat {name} na verzi {version}?'
+            UPDATE_CONFIRM_TITLE: 'Aktualizovat šablonu?'
         TIME:
             DAYS_AGO: 'před {n} dny'
             HOURS_AGO: 'před {n} hodinami'
@@ -1121,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: Vlastnosti
                     POLICY_TAGS: Tagy
                     POLICY_VIEW: 'Zobrazit efektivní politiku'
+                    IN_PARTIAL: 'Blokováno uvnitř zahrnuté šablony'
+                    TROUBLESHOOTING_LINK: 'Jak opravit Twig v obsahu'
+                    TRUSTED_PARTIAL: 'Důvěřovat {template}. Stránky, které ji obsahují, ji vykreslí tak, jak to dělá vaše šablona.'
+                    TRUST_FAILED: 'Partial nelze označit jako důvěryhodný'
+                    TRUST_PARTIAL: 'Důvěřovat tomuto partialu'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Načítání komponenty zpráv...'
             SCHEDULER:
@@ -1208,6 +1317,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Dvojfaktorová autentizace je vypnutá'
             VERIFICATION_CODE: 'Ověřovací kód'
             VERIFY_ENABLE: 'Ověřit a povolit'
+            CURRENT_CODE_WRONG: 'Tento kód není správný.'
+            ENTER_CODE_TO_REGENERATE: 'Zadejte svůj aktuální šestimístný kód pro vytvoření nového tajného klíče. Dvoufaktorové ověření (2FA) zůstane vypnuté, dokud nenaskenujete nový QR kód a neověříte kód z něj.'
+            REGENERATE: 'Znovu vygenerovat'
+            TOO_MANY_CODES: 'Příliš mnoho chybných kódů. Zkuste to znovu za několik minut.'
         UNSAVED_CHANGES: 'Neuložené změny'
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 'Ukládání změn…'
@@ -1247,6 +1360,36 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Nemůžete smazat svůj vlastní účet.'
             CONFIRM_DELETE_USER: 'Smazat uživatele „{username}"? Toto nelze vzít zpět.'
             TITLE: Uživatelé
+            EMAIL_CHANGE_CANCELLED: 'Změna e-mailu byla zrušena.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Změnu e-mailu se nepodařilo zrušit.'
+            EMAIL_CHANGE_RESEND: 'Znovu odeslat'
+            EMAIL_CHANGE_RESEND_FAILED: 'Potvrzovací odkaz se nepodařilo znovu odeslat.'
+            EMAIL_CHANGE_SENT: 'Odeslali jsme potvrzovací odkaz na adresu {email}. E-mailová adresa se změní, jakmile odkaz otevřete.'
+            EMAIL_CHANGE_WAITING: 'Čeká se na potvrzení: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Zadejte své aktuální heslo pro změnu e-mailové adresy na {email}.'
+                NOT_SAVED: 'Vaše nová e-mailová adresa {email} ještě není uložena. Potvrďte ji svým aktuálním heslem.'
+                TITLE: 'Potvrďte, že jste to vy'
+            PASSWORD:
+                CHANGE: 'Změnit heslo'
+                CHANGED_OTHER: 'Heslo pro uživatele {name} bylo změněno.'
+                CHANGED_OWN: 'Vaše heslo bylo změněno. Ostatní prohlížeče a aplikace přihlášené k vašemu účtu byly odhlášeny.'
+                CONFIRM: 'Potvrdit nové heslo'
+                CURRENT: 'Aktuální heslo'
+                CURRENT_REQUIRED: 'Zadejte své aktuální heslo.'
+                CURRENT_WRONG: 'Vaše aktuální heslo není správné.'
+                FAILED: 'Změna hesla se nezdařila.'
+                MISMATCH: 'Hesla se neshodují.'
+                NEW: 'Nové heslo'
+                NEW_REQUIRED: 'Zadejte nové heslo.'
+                NOT_ALLOWED: 'Nemáte oprávnění ke změně tohoto hesla.'
+                NO_PASSWORD_HELP: 'Váš účet zatím nemá heslo, protože se přihlašujete prostřednictvím jiné služby. Nastavte si ho, abyste se mohli přihlašovat také pomocí svého uživatelského jména a hesla.'
+                OTHER_HELP: 'Nastavte nové heslo pro uživatele {name}. Budou odhlášeni ze všech prohlížečů a aplikací a budou se muset znovu přihlásit novým heslem.'
+                OWN_HELP: 'Zadejte své aktuální heslo a poté dvakrát nové heslo. Zůstanete zde přihlášeni a všechny ostatní prohlížeče a aplikace přihlášené k vašemu účtu budou odhlášeny.'
+                POLICY: 'Nové heslo nesplňuje požadavky.'
+                SET: 'Nastavit heslo'
+                TITLE: Heslo
+                TOO_MANY: 'Příliš mnoho chybných hesel. Zkuste to znovu za několik minut.'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar odstraněn'
             AVATAR_UPDATED: 'Avatar aktualizován'
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} je povinné'
             FORM_HAS_ERRORS: '{count, plural, one {# pole vyžaduje vaši pozornost} other {# polí vyžaduje vaši pozornost}}'
             REQUIRED_GENERIC: 'Toto pole je povinné'
+            LIST_KEY_REQUIRED: '{key}: {label} je vyžadováno'
+            LIST_NEW_ROW_REQUIRED: 'Nová položka: {label} je vyžadována'
+            LIST_ROW_REQUIRED: 'Položka {row}: {label} je vyžadována'
         VALID_LINK_ATTRIBUTES: 'Platné atributy odkazu'
         VALID_LINK_ATTRIBUTES_HELP: 'Atributy, které budou automaticky přidány do HTML elementu média'
         VARY_ACCEPT_ENCODING: 'Měnit accept encoding'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Neočekávaná odpověď ze serveru'
             UNEXPECTED_RESPONSE_DETAIL: 'Server odpověděl daty ve formátu, který tato obrazovka neočekává. Podrobnosti naleznete v konzoli prohlížeče.'
             UNEXPECTED_RESPONSE_TITLE: 'Neočekávaná odpověď ze serveru'
+            SERVER_PAGE_DETAIL: 'Váš webový server odpověděl na tento požadavek sám (HTTP {status}) místo toho, aby jej předal systému Grav. Pravděpodobně jej zablokoval bezpečnostní filtr na serveru, jako je mod_security nebo firewall hostingu. Váš poskytovatel hostingu nebo chybový protokol serveru vám prozradí, které pravidlo bylo aktivováno.'
+            SERVER_PAGE_TITLE: 'Zablokováno webovým serverem'
         CACHE_MODULES: 'Výstup modulu mezipaměti'
         CACHE_MODULES_HELP: 'Ukládat vykreslený výstup modulů této stránky do mezipaměti. Používejte pouze tehdy, pokud moduly zobrazují všem návštěvníkům stejný obsah. Moduly s vlastním Twigem nebo formulářem, přihlášení návštěvníci a odeslané formuláře se vždy vykreslují znovu. Úprava dílčí šablony vyžaduje vymazání mezipaměti.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Rady pro vykreslování Flex'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Spouštět relace (sessions) pouze v případě potřeby'
         SESSION_LAZY_HELP: 'Návštěvníci bez souboru cookie relace ji získají pouze tehdy, když je do ní něco uloženo, jako je přihlášení, formulář nebo zpráva, takže anonymní zobrazení stránek mohou být ukládána do mezipaměti proxy serverem nebo CDN. Pluginy, které ukládají data při každém zobrazení stránky, ji stále spustí.'
         UPDATE_CHANGELOG_TITLE: 'Změny ve verzi {version}'
+        CHANGELOG:
+            BUGFIX: 'Oprava chyby'
+            IMPROVED: Vylepšeno
+            NEW: Nové
+            SECURITY: Zabezpečení
+        CHANGELOG_NOT_AVAILABLE: 'Seznam změn není k dispozici.'
+        IMAGES_WATERMARK_ALL: 'Vložit vodoznak do všech obrázků'
+        IMAGES_WATERMARK_ALL_HELP: 'Automaticky vložit vodoznak do každého obrázku, který web poskytuje'
+        IMAGES_WATERMARK_BOTTOM: Dole
+        IMAGES_WATERMARK_CENTER: 'Na střed'
+        IMAGES_WATERMARK_IMAGE: 'Obrázek vodoznaku'
+        IMAGES_WATERMARK_IMAGE_HELP: 'Cesta k obrázku použitému jako vodoznak, například system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Vlevo
+        IMAGES_WATERMARK_POSITION_X: 'Horizontální pozice'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Umístění vodoznaku zleva doprava'
+        IMAGES_WATERMARK_POSITION_Y: 'Vertikální pozice'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Umístění vodoznaku shora dolů'
+        IMAGES_WATERMARK_RIGHT: Vpravo
+        IMAGES_WATERMARK_SCALE: 'Měřítko vodoznaku'
+        IMAGES_WATERMARK_SCALE_HELP: 'Velikost vodoznaku jako procento obrázku'
+        IMAGES_WATERMARK_TITLE: Vodoznak
+        IMAGES_WATERMARK_TOP: Nahoru
+        PASSKEYS_FIELD:
+            ADD: 'Přidat přístupový klíč'
+            ADDED: 'Přístupový klíč ({name}) byl přidán. Odteď vás bude přihlašovat automaticky.'
+            ADDED_ON: 'Přidáno {date}'
+            ADD_FAILED: 'Přístupový klíč se nepodařilo přidat. Zkuste to prosím znovu.'
+            ALREADY_SAVED: 'Tento správce hesel nebo zařízení již pro tento účet přístupový klíč obsahuje.'
+            CANCELLED: 'Žádný přístupový klíč nebyl přidán. Zkuste to znovu, až budete připraveni.'
+            CODE_REQUIRED: 'Zadejte svůj aktuální 6místný kód.'
+            CODE_WRONG: 'Tento kód není správný.'
+            CONTINUE: Pokračovat
+            CURRENT_CODE: 'Aktuální 2FA kód'
+            CURRENT_PASSWORD: 'Aktuální heslo'
+            HELP: 'Přístupový klíč vás přihlásí pomocí otisku prstu, obličeje, PINu zařízení, správce hesel nebo bezpečnostního klíče. Funguje na webu i v administraci a započítává se jako oba kroky přihlášení.'
+            HELP_OTHER: 'Přístupové klíče, kterými se tento účet přihlašuje. Odeberte klíč, pokud dojde ke ztrátě zařízení nebo správce hesel, ve kterém je uložen.'
+            LAST_USED: 'naposledy použito {date}'
+            NAME_LABEL: 'Název přístupového klíče'
+            NAME_REQUIRED: 'Pojmenujte přístupový klíč.'
+            NEVER_USED: 'zatím nepoužito'
+            NONE: 'Zatím žádné přístupové klíče.'
+            NONE_OTHER: 'Tento účet nemá žádné přístupové klíče.'
+            PASSWORD_REQUIRED: 'Zadejte své aktuální heslo.'
+            PASSWORD_WRONG: 'Vaše aktuální heslo není správné.'
+            PROOF_CODE_ADD: 'Pro přidání přístupového klíče zadejte svůj aktuální 6místný 2FA kód.'
+            PROOF_PASSWORD_ADD: 'Pro přidání přístupového klíče zadejte své aktuální heslo.'
+            PROOF_UNAVAILABLE: 'Nejprve si nastavte heslo nebo 2FA pro svůj účet. Přístupové klíče nelze přidat ani odebrat pouze s přihlášenou relací.'
+            REMOVE: Odebrat
+            REMOVED: 'Přístupový klíč odebrán ({name}).'
+            REMOVE_CONFIRM: 'Odebrat „{name}“? Již vás nebude moci přihlásit.'
+            REMOVE_CONFIRM_CODE: 'Odebrat „{name}“? Již vás nebude moci přihlásit. Pro potvrzení zadejte svůj aktuální 6místný 2FA kód.'
+            REMOVE_CONFIRM_OTHER: 'Odebrat „{name}“ z účtu {username}? Již je nebude moci přihlásit.'
+            REMOVE_CONFIRM_PASSWORD: 'Odebrat „{name}“? Již vás nebude moci přihlásit. Pro potvrzení zadejte své aktuální heslo.'
+            REMOVE_FAILED: 'Přístupový klíč se nepodařilo odebrat.'
+            RENAME: Přejmenovat
+            RENAMED: 'Přístupový klíč přejmenován.'
+            RENAME_FAILED: 'Přístupový klíč se nepodařilo přejmenovat.'
+            SAVE: Uložit
+            SYNCED: synchronizováno
+            SYNCED_HELP: 'Uloženo ve správci hesel, který jej synchronizuje napříč vašimi zařízeními.'
+            TITLE: 'Přístupové klíče'
+            TOO_MANY: 'Příliš mnoho chybných pokusů. Zkuste to znovu za pár minut.'
+            UNSUPPORTED: 'Tento prohlížeč zde nemůže používat přístupové klíče.'
+            WAITING: 'Čekám na váš přístupový klíč…'
+        PIPELINE_REMOTE_TIMEOUT: 'Časový limit vzdáleného prostředku'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Jak dlouho čekat na vzdálený soubor CSS nebo JS (například stylopis z CDN) při sestavování pipeline. Pokud nedorazí včas, stránka se vykreslí bez seskupení tohoto zdroje a zkusí to znovu při dalším požadavku'
+        README_NOT_AVAILABLE: 'README není k dispozici.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Přizpůsobit postranní panel'
+            DIVIDER: Oddělovač
+            HIDE: 'Skrýt {label}'
+            HINT: 'Přetáhněte položky pro změnu jejich pořadí, nebo zaměřte úchyt a použijte klávesy se šipkami. Oko položku skryje a hvězdička vybere zkratky pluginu, které se pod ním zobrazí.'
+            MOVE: 'Přesunout {label}'
+            MOVED: '{label} přesunuto na pozici {position} z {total}'
+            RESET_DONE: 'Váš postranní panel opět následuje nastavení webu'
+            RESTORE_BUILT_IN: 'Původní pořadí'
+            SAVED: 'Postranní panel byl uložen'
+            SAVE_FAILED: 'Nepodařilo se uložit postranní panel'
+            SAVE_FOR_EVERYONE: 'Uložit pro všechny'
+            SAVE_FOR_EVERYONE_HINT: 'Nastavit jako boční panel pro všechny uživatele, kteří si jej ještě neupravili'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Každý uživatel, který si neupravil vlastní boční panel, uvidí toto pořadí. Kdo chce, může si jej stále změnit, a skrytí položky nijak neovlivňuje to, co smí uživatel otevřít.'
+            SAVE_FOR_EVERYONE_TITLE: 'Nastavit toto jako boční panel pro všechny?'
+            SHOW: 'Zobrazit {label}'
+            SITE_SAVED: 'Boční panel uložen pro všechny'
+            STAR: 'Zobrazit {label} v bočním panelu'
+            SUB_ITEMS: 'Zkratky ({count} z {total} označených)'
+            UNSTAR: 'Odebrat {label} z bočního panelu'
+            USE_SITE_DEFAULT: 'Použít boční panel webu'
+        UNDO: Zpět
+        UPDATE_CHANGELOG_EMPTY: 'Žádné záznamy v seznamu změn novější než nainstalovaná verze.'
+        UPDATE_CHANGELOG_FAILED: 'Seznam změn se nepodařilo načíst.'
+        UPDATE_WHATS_NEW: 'Co je nového'

@@ -154,6 +154,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'השרת החזיר את הגרסה ה-{effective} של דף זה במקום את ה-{active}, ולא דיווח על כך ש-{active} חסר. השמירה כבויה כאן כדי שקובץ ה-{effective} לא יידרס. אם זה קורה בכל דף, ייתכן ששרת האינטרנט לא מעביר מחרוזות שאילתה ל-Grav.'
                 PREVIEW_SHOWING_HOST_PAGE: 'מוצג בדף ההורה שלו'
                 TEMPLATE_MISSING_NOTICE: "התבנית **{template}** עבור מודול זה לא נמצאה בערכת העיצוב, לכן הדף אליו הוא שייך מציג שגיאת „תבנית לא נמצאה”. יש לבחור תבנית תחת **תבנית דף** בלשונית 'מתקדם', או להוסיף את התבנית לערכת העיצוב."
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'לדף זה יש שינויים שלא נשמרו מהפעלה משותפת של עריכה שאינם תואמים לקובץ הדף, ייתכן שנערך מחוץ לממשק הניהול. העורך מציג את השינויים שלא נשמרו; שמירה תחליף את גרסת הקובץ.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'הדף שונה במקום אחר. נא לרענן.'
+                READ_ONLY_NOTICE: 'באפשרותך לצפות בדף זה אך לא לערוך אותו.'
             NEW:
                 MY_NEW_PAGE: 'העמוד החדש שלי'
                 FILTER_PAGES: 'סנן עמודים...'
@@ -181,6 +184,8 @@ ICU:
                 FOLDER_DETAILS: 'פרטי תיקייה'
                 CHILD_TYPE_HINT: 'דף האב מציע את „{template}” עבור הדפים הבנים שלו. עדיין ניתן לבחור תבנית אחרת.'
                 STATUS_HELP: 'טיוטות נשמרות אך אינן גלויות באתר עד לפרסומן'
+                MODULE_NEEDS_PARENT: 'מודול נכנס לתוך דף מודולרי, לכן יש לבחור את הדף אליו הוא שייך.'
+                PICK_MODULAR_PAGE: 'בחירת דף מודולרי'
             PAGE_COUNT: '{n, plural, one{עמוד אחד} two{שני עמודים} many{# עמודים} other{# עמודים}}'
             SUBTITLE: 'נהל את התוכן והמבנה של האתר שלך'
             CHUNK_SIZE: Chunk
@@ -226,6 +231,32 @@ ICU:
                 SCHEDULED: מתוזמן
                 SCHEDULED_FOR: 'מתוזמן לפרסום ב-{date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'אינך יכול לפתוח דף זה. הוא מופיע ברשימה כדי שתוכל להגיע לדפים שבתוכו.'
+            ANCESTOR_ONLY_LABEL: '{title}: לא ניתן לפתוח דף זה, רק דפים שבתוכו'
+            ANCESTOR_ONLY_PARENT: 'אינך יכול לפתוח את דף האב'
+            DELETE_CANNOT_UNDO: 'לא ניתן לבטל פעולה זו.'
+            DELETE_LAST_LANGUAGE: 'זוהי השפה היחידה של הדף, לכן כל תיקיית הדף תוסר, כולל המדיה וכל דפי המשנה שלו.'
+            DELETE_RECOVERABLE: 'ניתן לשחזר אותו מהאשפה.'
+            DELETE_TRANSLATION_CONFIRM: 'למחוק את התרגום ב-{language} של „{title}”? {n, plural, one{השפה האחרת תישמר.} other{שאר {n} השפות יישמרו.}}'
+            DELETE_TRANSLATION_TITLE: 'מחיקת תרגום'
+            DELETE_UNDONE: 'הדף שוחזר'
+            DELETE_UNDONE_NAMED: 'הדף „{name}” שוחזר'
+            DELETE_UNDO_FAILED: 'לא ניתן היה לבטל את המחיקה: {detail}'
+            DROP_INSIDE: 'גרור דף לכאן כדי להעביר אותו לתוך {title}'
+            LOAD_CHILDREN_FAILED: 'לא ניתן היה לטעון את הדפים בתיקייה זו.'
+            MODULES:
+                ADD: 'הוספת מודול'
+                EMPTY: 'אין עדיין מודולים.'
+                HELP: 'החלקים מהם בנוי דף זה, לפי הסדר שבו הם מוצגים בדף. גרור מודול כדי להזיז אותו, או התמקד בידית שלו ולחץ על Alt+Up או Alt+Down. לחץ על סמל הסטטוס שלו כדי לפרסם או לבטל את פרסומו.'
+                LOAD_FAILED: 'לא ניתן היה לטעון את המודולים.'
+                MOVE: 'העברת „{title}”'
+                TITLE: מודולים
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: 'ל-{title} אין מספר סידורי, לכן הוא נשאר ממוין לפי שם'
+            PAGE_TITLE_HINT: 'כותרת: {title}'
+            SHOW_DROP_INSIDE: 'העברת דפים לתוך {title}'
+            TRANSLATION_DELETED: 'התרגום ב-{language} נמחק'
+            TRANSLATION_DELETED_OF: 'התרגום ל-{language} עבור "{name}" נמחק'
+            TRANSLATION_RESTORED: 'התרגום ל-{language} שוחזר'
         FIELDS:
             CLEAR_DATE: 'נקה תאריך'
             REGENERATE_SLUG: 'צור מחדש אוטומטית מכותרת העמוד'
@@ -283,6 +314,7 @@ ICU:
                 FAMILY_BRANDS: מותגים
                 FAMILY_REGULAR: רגיל
                 FAMILY_SOLID: מלא
+                SET_MISSING: 'אין ערכת אייקונים בשם 「{set}」 הרשומה באתר זה.'
             PAGE_EXISTS:
                 CHECKING_PAGE: 'בודק עמוד...'
             PAGE_MEDIA:
@@ -409,6 +441,9 @@ ICU:
             CLOSE_MENU: 'סגור תפריט'
             GRAV_VERSION: 'Grav v{version}'
             ADMIN_VERSION: 'ניהול v{version}'
+            MADE_BY: 'Grav נכתבה {code} עם {love} על ידי {company}.'
+            MADE_BY_PLAIN: 'Grav נכתבה עם אהבה על ידי Trilby Media'
+            MORE_ACTIONS: 'פעולות נוספות'
         NORMAL_MODE: 'מצב רגיל'
         EXPERT_MODE: 'מצב מומחה'
         ALLOWED: מותר
@@ -425,6 +460,8 @@ ICU:
             LEGEND_OVERRIDE: 'עוקף קבוצה'
             LEGEND_SUPER: 'ניתן על ידי מנהל על (Super Admin)'
             OVERRIDES_GROUP: 'ההגדרה הישירה שלך עוקפת את הקבוצה: {groups}'
+            LOCKED_NOTE: "באפשרותך להעניק רק הרשאות שקיימות בחשבונך. הרשאות שלא ניתן להעניק מופיעות באפור תחת 'אפשר', אך עדיין ניתן לשלול או לנקות אותן."
+            NOT_GRANTABLE: 'לא ניתן להעניק הרשאה זו מכיוון שחשבונך אינו כולל אותה'
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: 'קוד QR ל-2FA'
             SCAN_THE_QR_CODE_WITH_YOUR: 'סרוק את קוד ה-QR עם אפליקציית האימות שלך'
@@ -448,6 +485,10 @@ ICU:
             FORCE_DISABLE: 'כפה השבתה'
             CONFIRM_DISABLE: 'אשר השבתה'
             FORCE_DISABLE_PROMPT: 'כפה השבתת 2FA עבור **{username}**? השתמש בזה רק לשחזור מכשיר שאבד.'
+            CURRENT_CODE_WRONG: 'הקוד הזה אינו נכון.'
+            ENTER_CODE_TO_REGENERATE: 'הזן את קוד 6 הספרות הנוכחי שלך כדי ליצור סוד חדש. אימות דו-שלבי (2FA) יישאר כבוי עד שתסרוק את קוד ה-QR החדש ותאמת קוד ממנו.'
+            REGENERATE: 'צור מחדש'
+            TOO_MANY_CODES: 'יותר מדי קודים שגויים. נסה שוב בעוד מספר דקות.'
         DISABLE: השבת
         USER_AVATAR_CARD:
             AVATAR_UPDATED: 'האווטר עודכן'
@@ -504,6 +545,21 @@ ICU:
             CHART_LABEL: 'צפיות בדף ליום עבור 14 הימים האחרונים'
             TODAY: היום
             VIEWS: '{count, plural, one {# צפייה} other {# צפיות}}'
+            CHART_RANGE_LABEL: 'צפיות בדף, {range}'
+            LAST_12_MONTHS: '12 החודשים האחרונים'
+            LAST_30_DAYS: '30 הימים האחרונים'
+            LAST_7_DAYS: '7 הימים האחרונים'
+            LAST_90_DAYS: '90 הימים האחרונים'
+            LOAD_FAILED: 'לא ניתן היה לטעון טווח זמן זה'
+            PREVIOUS_PERIOD: '{count, plural, one {# צפייה} other {# צפיות}} בתקופה הקודמת'
+            SHORT_12M: '12 חודשים'
+            SHORT_14D: '14 ימים'
+            SHORT_30D: '30 ימים'
+            SHORT_7D: '7 ימים'
+            SHORT_90D: '90 ימים'
+            SO_FAR: 'עד כה'
+            TIME_FRAME: 'טווח זמן'
+            VS_PREVIOUS: 'בהשוואה לתקופה הקודמת'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'הצג הכל'
         STATS_WIDGET:
@@ -602,6 +658,8 @@ ICU:
                 REORDER_DONE: בוצע
                 REORDER_HINT: 'גרור תמונות כדי לקבוע את סדרן.'
                 REORDER_MODE: 'שינוי סדר'
+                NOT_ALLOWED: 'אינך יכול לשנות את המדיה של דף זה.'
+                NO_FILES: 'אין קבצי מדיה'
             METADATA:
                 APPLY_TO_N: 'החל על {n} קבצים'
                 BATCH_EDITING: 'עריכת {n} קבצים שנבחרו — השדות ששונו יחולו על כולם.'
@@ -626,6 +684,14 @@ ICU:
                 TITLE: 'פרטי קובץ'
                 TYPE: סוג
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'לא ניתן היה להעלות את {filename}: {message}'
+                NO_PERMISSION: 'אין לך הרשאה להעלות מדיה, לכן התמונה לא נוספה.'
+                PAGES_ONLY: 'הדבקה או גרירה של תמונות עובדות רק בתוכן הדף. העלה את התמונה למנהל המדיה והוסף אותה משם.'
+                SAVE_PAGE_FIRST: 'שמור את הדף תחילה, ולאחר מכן הדבק או גרור אליו תמונות.'
+                UNSUPPORTED_TYPE: 'לא ניתן להוסיף את {filename} כאן. הדבק או גרור תמונת PNG, JPEG, GIF, WebP, AVIF או SVG.'
+                UPLOADED: '{count, plural, one {תמונה נוספה למדיה של הדף} other {# תמונות נוספו למדיה של הדף}}'
+                UPLOADING: '{count, plural, one {מעלה תמונה…} other {מעלה # תמונות…}}'
         UPLOAD: העלאה
         CACHE_CLEAR_BUTTON:
             CLEAR_CACHE: 'נקה מטמון'
@@ -644,6 +710,7 @@ ICU:
                 TO_COLLABORATE_LIVE: 'כדי לשתף פעולה בזמן אמת.'
                 LOCKED: 'לקריאה בלבד — {owner} עורך עם **{editor}**. סוגי עורך מעורבים לא יכולים לערוך יחד; [החלף את העדפת העורך שלך]({href}) כדי לשתף פעולה בזמן אמת.'
                 BUILTIN_MARKDOWN_EDITOR: 'עורך ה-Markdown המובנה'
+                LOCKED_EXPERT: 'לקריאה בלבד: {owner} עורך כעת באמצעות **{editor}**, שלא ניתן לערוך איתו במקביל במצב עריכת ה-Markdown של מצב מומחה. חזור למצב רגיל כדי לעבוד יחד בזמן אמת.'
         DOWNLOAD: הורד
         TOOLS:
             BACKUPS:
@@ -745,6 +812,11 @@ ICU:
                     POLICY_PROPERTIES: מאפיינים
                     POLICY_TAGS: תגיות
                     POLICY_VIEW: 'צפה במדיניות בפועל'
+                    IN_PARTIAL: 'חסום בתוך התבנית הכלולה'
+                    TROUBLESHOOTING_LINK: 'כיצד לתקן Twig בתוכן'
+                    TRUSTED_PARTIAL: 'הגדר {template} כמהימן. דפים שכוללים אותו ירנדרו אותו כפי שהערכה שלך עושה.'
+                    TRUST_FAILED: 'לא ניתן היה להגדיר את החלק ככזה שיש לסמוך עליו'
+                    TRUST_PARTIAL: 'סמוך על חלק זה'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'נכשל בטעינת הגדרות המתזמן.'
                 SCHEDULER_CONFIGURATION_SAVED: 'הגדרות המתזמן נשמרו'
@@ -891,6 +963,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'לא ניתן לשמור — השדות הבאים אינם תקינים: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'טעינת ההגדרה נכשלה.'
             SCOPE_NOT_FOUND: 'לא נמצא טווח הגדרות בשם {scope}.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# הגדרה כאן} other {# הגדרות כאן}} מוחלפת על ידי סביבת ה-{env}, לכן שינויים {count, plural, one {בה} other {בהן}} לא ייכנסו לתוקף.'
+                BANNER_MIXED: '{count, plural, one {# הגדרה כאן} other {# הגדרות כאן}} מוחלפת על ידי סביבת ה-{env} או על ידי משתני סביבת שרת, לכן שינויים {count, plural, one {בה} other {בהן}} לא ייכנסו לתוקף.'
+                BANNER_SERVER: '{count, plural, one {# הגדרה כאן} other {# הגדרות כאן}} מוגדרת על ידי משתני סביבת שרת, לכן שינויים {count, plural, one {בה} other {בהן}} לא ייכנסו לתוקף.'
+                ENABLED_ENV: 'מוגדר על ידי סביבת ה-{env}'
+                ENABLED_EXPLAIN_ENV: 'סביבת ה-{env} מפעילה או מכבה תוסף זה בקובץ הגדרות משלה, לכן המתג כאן לא ישנה את התנהגות האתר.'
+                ENABLED_EXPLAIN_SERVER: 'משתנה סביבת שרת GRAV_CONFIG מפעיל או מכבה תוסף זה, לכן המתג כאן לא ישנה את התנהגות האתר.'
+                ENABLED_SERVER: 'מוגדר על ידי משתנה סביבת שרת'
+                EXPLAIN_ENV: 'סביבת ה-{env} מגדירה זאת בקובץ הגדרות משלה, לכן מה שתשמור כאן לא יחול על אתר זה.'
+                EXPLAIN_SERVER: 'משתנה סביבת שרת GRAV_CONFIG מגדיר זאת, לכן מה שתשמור כאן לא יחול.'
+                MARKER_ENV: 'מוחלף על ידי סביבת ה-{env}'
+                MARKER_SERVER: 'מוגדר על ידי משתנה סביבת שרת'
+                REMOVED: 'ההחלפה הוסרה מסביבת ה-{env}'
+                REMOVE_FAILED: 'לא ניתן היה להסיר את ההחלפה'
+                REMOVE_OVERRIDE: 'הסר החלפה'
+                SAVED_ENV: 'נשמר, אך {field} מוחלף על ידי סביבת ה-{env}, לכן האתר עדיין משתמש ב-「{value}」.'
+                SAVED_MANY_ENV: 'נשמר, אך {count} מהשינויים הללו מבוטלים על ידי סביבת ה-{env}, לכן האתר לא ישתמש בהם.'
+                SAVED_MANY_MIXED: 'נשמר, אך {count} מהשינויים הללו מבוטלים על ידי סביבת ה-{env} או על ידי משתני סביבת שרת, לכן האתר לא ישתמש בהם.'
+                SAVED_MANY_SERVER: 'נשמר, אך {count} מהשינויים הללו מוגדרים על ידי משתני סביבת שרת, לכן האתר לא ישתמש בהם.'
+                SAVED_SERVER: 'נשמר, אך {field} מוגדר על ידי משתנה סביבת שרת, לכן האתר עדיין משתמש ב-「{value}」.'
+                SITE_USES: 'אתר זה משתמש ב-'
+                SWITCH_TO: 'עבור ל-{env}'
+                TOGGLE_ENV: 'נשמר, אך סביבת ה-{env} שומרת על {name} {state, select, off {מושבת} other {מופעל}}.'
+                TOGGLE_SERVER: 'נשמר, אך משתנה סביבת שרת שומר על {name} {state, select, off {מושבת} other {מופעל}}.'
+                VALUE_OFF: כבוי
+                VALUE_ON: פעיל
         FLEX_OBJECTS:
             SEARCH: חיפוש...
             PREVIOUS: הקודם
@@ -963,6 +1061,17 @@ ICU:
             CAPTCHA_VERIFIED: 'אימות שאתה אנושי'
             CAPTCHA_VERIFYING: 'בודק אם אתה אנושי...'
             INVALID_AUTHENTICATION_CODE: 'קוד אימות לא תקין'
+            PASSKEY_CANCELLED: 'לא נעשה שימוש במפתח גישה (Passkey). נסה שוב כשאתה מוכן, או התחבר עם הסיסמה שלך.'
+            PASSKEY_CANCELLED_TWO_STEP: 'לא נעשה שימוש במפתח גישה (Passkey). נסה שוב כשאתה מוכן, או הזן את הקוד שלך.'
+            PASSKEY_FAILED: 'משהו השתבש עם מפתח הגישה. אנא נסה שוב.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'מפתח גישה זה אינו שייך לחשבון זה. נסה מפתח אחר, או הזן את הקוד שלך.'
+            PASSKEY_OFF: 'מפתחות גישה כבויים באתר זה. התחבר עם הסיסמה שלך.'
+            PASSKEY_OR: או
+            PASSKEY_SIGN_IN: 'התחבר באמצעות מפתח גישה'
+            PASSKEY_SIGN_IN_FAILED: 'מפתח הגישה לא הצליח לחבר אותך. אם הסרת אותו מהחשבון שלך, התחבר עם הסיסמה שלך.'
+            PASSKEY_TOO_MANY_TRIES: 'יותר מדי ניסיונות מפתח גישה. המתן מספר דקות ונסה שוב.'
+            PASSKEY_USE_INSTEAD: 'השתמש במקום זאת במפתח הגישה שלך'
+            PASSKEY_WAITING: 'ממתין למפתח הגישה שלך…'
         PLUGIN:
             BACK_TO_DASHBOARD: 'חזור ללוח הבקרה'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'אין תוכן זמין עבור עמוד התוסף הזה.'
@@ -1132,7 +1241,7 @@ ICU:
             STICKY_TOOLBAR: 'סרגל כלים דביק'
             STICKY_TOOLBAR_DESC: 'השאר את סרגל כלי העיצוב וכפתור התצוגה המקדימה מקובעים בתצוגה בזמן הגלילה.'
             ADMIN_TITLE: 'כותרת ה-Admin'
-            ADMIN_TITLE_DESC: 'מוצג ככותרת ההתחברות ובלשונית הדפדפן. השאר ריק עבור "Grav Admin".'
+            ADMIN_TITLE_DESC: 'מוצג בכרטיסיית הדפדפן, וככותרת ההתחברות אלא אם הוגדר לוגו מותאם אישית, שכן הלוגו כבר מציין את שם האתר. השאר ריק עבור „Grav Admin“.'
             FAILED_TO_SAVE_BRANDING: 'שמירת המיתוג נכשלה.'
             FAVICON: Favicon
             FAVICON_DESC: 'אייקון מותאם אישית ללשונית הדפדפן (SVG, PNG, WebP, או ICO). השאר ריק עבור האייקון שנוצר כברירת מחדל.'
@@ -1163,6 +1272,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: 'ברירת מחדל'
             SIDEBAR_LOGO_HEIGHT: 'גובה לוגו בסרגל הצד'
             SIDEBAR_LOGO_HEIGHT_DESC: 'מה הגובה שבו הלוגו שלך מופיע בראש סרגל הצד.'
+            SHOW_CREDIT: 'הצגת קרדיט ל-Trilby Media'
+            SHOW_CREDIT_DESC: 'הצגת השורה „Grav was coded with love by Trilby Media” בתחתית סרגל הצד.'
         CUSTOM: 'מותאם אישית'
         PREVIEW: 'תצוגה מקדימה'
         SETUP:
@@ -1219,6 +1330,8 @@ ICU:
             UPDATE_ALL: 'עדכן הכל'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{ערכת עיצוב # תעודכן:} other{# ערכות עיצוב יעודכנו:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'לעדכן את ערכות העיצוב?'
+            UPDATE_CONFIRM_MESSAGE: 'לעדכן את {name} לגרסה {version}?'
+            UPDATE_CONFIRM_TITLE: 'לעדכן את הערכת העיצוב?'
         ACTIVE: פעיל
         ACTIVATE: הפעל
         USERS:
@@ -1250,6 +1363,36 @@ ICU:
             PAGE_TITLE: '{name} — משתמשים — Grav Admin'
             CONFIRM_DELETE_USER: 'למחוק את המשתמש „{username}"? לא ניתן לבטל זאת.'
             TITLE: משתמשים
+            EMAIL_CHANGE_CANCELLED: 'שינוי כתובת האימייל בוטל.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'נכשל ביטול שינוי כתובת האימייל.'
+            EMAIL_CHANGE_RESEND: 'שלח שוב'
+            EMAIL_CHANGE_RESEND_FAILED: 'נכשל שליחת קישור האימות מחדש.'
+            EMAIL_CHANGE_SENT: 'שלחנו קישור אימות ל-{email}. כתובת האימייל תשתנה ברגע שהקישור ייפתח.'
+            EMAIL_CHANGE_WAITING: 'ממתין לאישור: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'הזן את הסיסמה הנוכחית שלך כדי לשנות את כתובת האימייל שלך ל-{email}.'
+                NOT_SAVED: 'כתובת האימייל החדשה שלך, {email}, טרם נשמרה. אשר אותה באמצעות הסיסמה הנוכחית שלך.'
+                TITLE: 'אשר שזה אתה'
+            PASSWORD:
+                CHANGE: 'שינוי סיסמה'
+                CHANGED_OTHER: 'הסיסמה עבור {name} שונתה.'
+                CHANGED_OWN: 'הסיסמה שלך שונתה. דפדפנים ואפליקציות אחרים המחוברים לחשבונך נותקו.'
+                CONFIRM: 'אשר סיסמה חדשה'
+                CURRENT: 'סיסמה נוכחית'
+                CURRENT_REQUIRED: 'הזן את הסיסמה הנוכחית שלך.'
+                CURRENT_WRONG: 'הסיסמה הנוכחית שלך אינה נכונה.'
+                FAILED: 'נכשל שינוי הסיסמה.'
+                MISMATCH: 'הסיסמאות אינן תואמות.'
+                NEW: 'סיסמה חדשה'
+                NEW_REQUIRED: 'הזן סיסמה חדשה.'
+                NOT_ALLOWED: 'אין לך הרשאה לשנות סיסמה זו.'
+                NO_PASSWORD_HELP: 'לחשבונך עדיין אין סיסמה מכיוון שאתה מתחבר דרך שירות אחר. הגדר אחת כדי להתחבר גם עם שם המשתמש והסיסמה שלך.'
+                OTHER_HELP: 'הגדר סיסמה חדשה עבור {name}. המשתמש ינותק מכל דפדפן ואפליקציה, ויידרש להתחבר שוב עם הסיסמה החדשה.'
+                OWN_HELP: 'הזן את הסיסמה הנוכחית שלך, ולאחר מכן את החדשה פעמיים. אתה תישאר מחובר כאן, וכל דפדפן ואפליקציה אחרים המחוברים לחשבונך ינותקו.'
+                POLICY: 'הסיסמה החדשה אינה עומדת בדרישות.'
+                SET: 'הגדר סיסמה'
+                TITLE: סיסמה
+                TOO_MANY: 'יותר מדי ניסיונות סיסמה שגויים. נסה שוב בעוד מספר דקות.'
         INFO: מידע
         INSTALL: התקן
         COPY_BUTTON:
@@ -2258,6 +2401,9 @@ ICU:
             FIELD_REQUIRED: '{label} הוא שדה חובה'
             FORM_HAS_ERRORS: '{count, plural, one {שדה # דורש את תשומת לבך} other {# שדות דורשים את תשומת לבך}}'
             REQUIRED_GENERIC: 'שדה זה הוא חובה'
+            LIST_KEY_REQUIRED: '{key}: {label} הוא שדה חובה'
+            LIST_NEW_ROW_REQUIRED: 'פריט חדש: {label} הוא שדה חובה'
+            LIST_ROW_REQUIRED: 'פריט {row}: {label} הוא שדה חובה'
         VALID_LINK_ATTRIBUTES: 'מאפייני קישור תקפים'
         VALID_LINK_ATTRIBUTES_HELP: 'מאפיינים שיתווספו אוטומטית לרכיב ה-HTML של המדיה'
         VARY_ACCEPT_ENCODING: 'Vary accept encoding'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'תשובה בלתי צפויה מהשרת'
             UNEXPECTED_RESPONSE_DETAIL: 'השרת השיב בנתונים בפורמט שהמסך הזה אינו מצפה לו. פרטים נוספים ניתן למצוא במסוף הדפדפן.'
             UNEXPECTED_RESPONSE_TITLE: 'תשובה בלתי צפויה מהשרת'
+            SERVER_PAGE_DETAIL: 'שרת האינטרנט שלך ענה לבקשה זו בעצמו (HTTP {status}) במקום להעביר אותה ל-Grav. ייתכן שמסנן אבטחה בשרת, כגון mod_security או חומת אש של חברת האחסון, חסם אותה. חברת האחסון שלך או יומן השגיאות של השרת יוכלו להגיד לך איזה חוק הופעל.'
+            SERVER_PAGE_TITLE: 'נחסם על ידי שרת האינטרנט'
         CACHE_MODULES: 'פלט מודול מטמון'
         CACHE_MODULES_HELP: 'שמירה במטמון של פלט המודולים המרונדרים של דף זה. השתמש באפשרות זו רק כאשר המודולים מציגים תוכן זהה לכל המבקרים. מודולים עם Twig משלהם או טופס, מבקרים מחוברים והגשות טפסים תמיד מרונדרים מחדש. עריכת תבנית חלקית בלבד דורשת ניקוי מטמון.'
         DEBUGGER_FLEX_RENDER_HINTS: 'רמזי רינדור Flex'
@@ -2348,6 +2496,98 @@ ICU:
         SESSION_LAZY: 'התחל סשנים רק בעת הצורך'
         SESSION_LAZY_HELP: 'מבקרים ללא עוגיית סשן יקבלו סשן רק כאשר משהו מאוחסן בו, כגון התחברות, טופס או הודעה, כך שניתן לשמור במטמון צפיות בדפים אנונימיים על ידי פרוקסי או CDN. תוספים ששומרים נתונים בכל צפייה בדף עדיין יתחילו סשן.'
         UPDATE_CHANGELOG_TITLE: 'שינויים ב-v{version}'
+        CHANGELOG:
+            BUGFIX: 'תיקון באג'
+            IMPROVED: שיפור
+            NEW: חדש
+            SECURITY: אבטחה
+        CHANGELOG_NOT_AVAILABLE: 'יומן השינויים אינו זמין.'
+        IMAGES_WATERMARK_ALL: 'הוסף סימן מים לכל התמונות'
+        IMAGES_WATERMARK_ALL_HELP: 'הטבע סימן מים באופן אוטומטי על כל תמונה שהאתר מגיש'
+        IMAGES_WATERMARK_BOTTOM: למטה
+        IMAGES_WATERMARK_CENTER: מרכז
+        IMAGES_WATERMARK_IMAGE: 'תמונת סימן מים'
+        IMAGES_WATERMARK_IMAGE_HELP: 'נתיב לתמונה המשמשת כסימן מים, כגון system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: שמאל
+        IMAGES_WATERMARK_POSITION_X: 'מיקום אופקי'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'היכן ימוקם סימן המים משמאל לימין'
+        IMAGES_WATERMARK_POSITION_Y: 'מיקום אנכי'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'היכן ימוקם סימן המים מלמעלה למטה'
+        IMAGES_WATERMARK_RIGHT: ימין
+        IMAGES_WATERMARK_SCALE: 'קנה מידה של סימן המים'
+        IMAGES_WATERMARK_SCALE_HELP: 'גודל סימן המים כאחוז מהתמונה'
+        IMAGES_WATERMARK_TITLE: 'סימן מים'
+        IMAGES_WATERMARK_TOP: למעלה
+        PASSKEYS_FIELD:
+            ADD: 'הוספת מפתח גישה (passkey)'
+            ADDED: 'מפתח הגישה ({name}) נוסף. מעתה הוא יבצע עבורך כניסה באופן אוטומטי.'
+            ADDED_ON: 'נוסף ב-{date}'
+            ADD_FAILED: 'לא ניתן היה להוסיף את מפתח הגישה. נא לנסות שוב.'
+            ALREADY_SAVED: 'מנהל הסיסמאות או המכשיר הזה כבר מחזיקים מפתח גישה עבור חשבון זה.'
+            CANCELLED: 'לא נוסף מפתח גישה. ניתן לנסות שוב כשאתה מוכן.'
+            CODE_REQUIRED: 'הזן את הקוד הנוכחי שלך בעל 6 הספרות.'
+            CODE_WRONG: 'הקוד אינו תקין.'
+            CONTINUE: המשך
+            CURRENT_CODE: 'קוד 2FA נוכחי'
+            CURRENT_PASSWORD: 'סיסמה נוכחית'
+            HELP: 'מפתח גישה (Passkey) מאפשר לך להיכנס באמצעות טביעת אצבע, פנים או קוד PIN של המכשיר, מתוך מנהל סיסמאות או מפתח אבטחה. הוא עובד באתר ובממשק הניהול (Admin), ונחשב כשני שלבי הכניסה יחד.'
+            HELP_OTHER: 'מפתחות גישה שבאמצעותם חשבון זה נכנס למערכת. יש להסיר מפתח אם המכשיר או מנהל הסיסמאות שמחזיקים בו אבדו.'
+            LAST_USED: 'שימוש אחרון ב-{date}'
+            NAME_LABEL: 'שם מפתח הגישה'
+            NAME_REQUIRED: 'תן שם למפתח הגישה.'
+            NEVER_USED: 'טרם נעשה בו שימוש'
+            NONE: 'אין עדיין מפתחות גישה.'
+            NONE_OTHER: 'לחשבון זה אין מפתחות גישה.'
+            PASSWORD_REQUIRED: 'הזן את הסיסמה הנוכחית שלך.'
+            PASSWORD_WRONG: 'הסיסמה הנוכחית שלך אינה נכונה.'
+            PROOF_CODE_ADD: 'הזן את קוד ה-2FA הנוכחי שלך (6 ספרות) כדי להוסיף מפתח גישה.'
+            PROOF_PASSWORD_ADD: 'הזן את הסיסמה הנוכחית שלך כדי להוסיף מפתח גישה.'
+            PROOF_UNAVAILABLE: 'עליך להגדיר תחילה סיסמה או אימות דו-שלבי (2FA) לחשבונך. לא ניתן להוסיף או להסיר מפתחות גישה (Passkeys) באמצעות הפעלה מחוברת בלבד.'
+            REMOVE: הסר
+            REMOVED: 'מפתח הגישה ({name}) הוסר.'
+            REMOVE_CONFIRM: 'להסיר את „{name}”? הוא לא ישמש אותך יותר לכניסה למערכת.'
+            REMOVE_CONFIRM_CODE: 'להסיר את „{name}”? הוא לא ישמש אותך יותר לכניסה למערכת. הזן את קוד ה-2FA בן 6 הספרות הנוכחי שלך כדי לאשר.'
+            REMOVE_CONFIRM_OTHER: 'להסיר את „{name}” מהחשבון {username}? הוא לא ישמש אותו יותר לכניסה למערכת.'
+            REMOVE_CONFIRM_PASSWORD: 'להסיר את „{name}”? הוא לא ישמש אותך יותר לכניסה למערכת. הזן את הסיסמה הנוכחית שלך כדי לאשר.'
+            REMOVE_FAILED: 'לא ניתן היה להסיר את מפתח הגישה.'
+            RENAME: 'שנה שם'
+            RENAMED: 'שם מפתח הגישה שונה.'
+            RENAME_FAILED: 'לא ניתן היה לשנות את שם מפתח הגישה.'
+            SAVE: שמור
+            SYNCED: מסונכרן
+            SYNCED_HELP: 'נשמר במנהל סיסמאות שמסנכרן אותו בין המכשירים שלך.'
+            TITLE: 'מפתחות גישה'
+            TOO_MANY: 'יותר מדי ניסיונות שגויים. נסה שוב בעוד כמה דקות.'
+            UNSUPPORTED: 'דפדפן זה אינו יכול להשתמש במפתחות גישה כאן.'
+            WAITING: 'ממתין למפתח הגישה שלך...'
+        PIPELINE_REMOTE_TIMEOUT: 'זמן קצוב לנכס מרוחק'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'כמה זמן להמתין לקובץ CSS או JS מרוחק (למשל, גיליון סגנונות מ-CDN) בעת בניית ה-pipeline. אם הוא לא מתקבל בזמן, הדף יוצג ללא איגוד הקבוצה ההיא והתהליך ינסה שוב בבקשה הבאה'
+        README_NOT_AVAILABLE: 'קובץ ה-README אינו זמין.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'התאמה אישית של סרגל הצד'
+            DIVIDER: מפריד
+            HIDE: 'הסתרת {label}'
+            HINT: 'גרור פריטים כדי לסדר אותם מחדש, או התמקד בידית והשתמש במקשי החצים. העין מסתירה פריט, והכוכב בוחר קיצורי דרך של תוסף שיוצגו תחתיו.'
+            MOVE: 'הזזת {label}'
+            MOVED: '{label} הועבר למיקום {position} מתוך {total}'
+            RESET_DONE: 'סרגל הצד שלך חזר לעקוב אחר זה של האתר'
+            RESTORE_BUILT_IN: 'סדר מקורי'
+            SAVED: 'סרגל הצד נשמר'
+            SAVE_FAILED: 'לא ניתן היה לשמור את סרגל הצד'
+            SAVE_FOR_EVERYONE: 'שמור עבור כולם'
+            SAVE_FOR_EVERYONE_HINT: 'הפוך את זה לסרגל הצד עבור כל משתמש שטרם סידר את שלו'
+            SAVE_FOR_EVERYONE_MESSAGE: 'כל משתמש שטרם סידר את סרגל הצד שלו יראה את הסדר הזה. כל אחד עדיין יכול לשנות את סרגל הצד שלו, והסתרה של פריט אינה משנה את מה שמותר לו לפתוח.'
+            SAVE_FOR_EVERYONE_TITLE: 'להפוך את זה לסרגל הצד של כולם?'
+            SHOW: 'הצג את {label}'
+            SITE_SAVED: 'סרגל הצד נשמר עבור כולם'
+            STAR: 'הצג את {label} בסרגל הצד'
+            SUB_ITEMS: 'קיצורי דרך ({count} מתוך {total} מסומנים)'
+            UNSTAR: 'הסר את {label} מסרגל הצד'
+            USE_SITE_DEFAULT: 'השתמש בסרגל הצד של האתר'
+        UNDO: בטל
+        UPDATE_CHANGELOG_EMPTY: 'אין רשומות יומן שינויים חדשות יותר מהגרסה המותקנת.'
+        UPDATE_CHANGELOG_FAILED: 'לא ניתן היה לטעון את יומן השינויים.'
+        UPDATE_WHATS_NEW: 'מה חדש'
     PLUGIN_ADMIN:
         2FA_ENABLED: '2FA מופעל'
         2FA_SECRET: 'סוד 2FA'

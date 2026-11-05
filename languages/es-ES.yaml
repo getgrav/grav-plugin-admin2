@@ -434,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Se ha verificado que eres una persona'
             CAPTCHA_VERIFYING: 'Comprobando que eres una persona…'
             INVALID_AUTHENTICATION_CODE: 'Código de autenticación no válido'
+            PASSKEY_CANCELLED: 'No se utilizó ninguna llave de acceso (passkey). Inténtelo de nuevo cuando esté listo o inicie sesión con su contraseña.'
+            PASSKEY_CANCELLED_TWO_STEP: 'No se utilizó ninguna llave de acceso (passkey). Inténtelo de nuevo cuando esté listo o introduzca su código.'
+            PASSKEY_FAILED: 'Algo salió mal con la llave de acceso (passkey). Por favor, inténtelo de nuevo.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Esa llave de acceso (passkey) no pertenece a esta cuenta. Pruebe con otra o introduzca su código.'
+            PASSKEY_OFF: 'Las llaves de acceso (passkeys) están desactivadas en este sitio. Inicie sesión con su contraseña.'
+            PASSKEY_OR: o
+            PASSKEY_SIGN_IN: 'Iniciar sesión con una llave de acceso (passkey)'
+            PASSKEY_SIGN_IN_FAILED: 'Esa llave de acceso (passkey) no ha permitido iniciar sesión. Si la eliminó de su cuenta, inicie sesión con su contraseña.'
+            PASSKEY_TOO_MANY_TRIES: 'Demasiados intentos con la llave de acceso (passkey). Espere unos minutos e inténtelo de nuevo.'
+            PASSKEY_USE_INSTEAD: 'Usar su llave de acceso (passkey) en su lugar'
+            PASSKEY_WAITING: 'Esperando su llave de acceso (passkey)…'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Nada que previsualizar'
             IMAGE_INSERT:
@@ -504,6 +515,8 @@ ICU:
                 DROP_FILES_HERE: 'Arrastre los archivos aquí'
                 DROP_FILES_OR_CLICK_TO_UPLOAD: 'Arrastre los archivos o haga clic para subir'
                 DROP_OR_CLICK_TO_ADD_MORE: 'Arrastre o haga clic para añadir más'
+                NOT_ALLOWED: 'No puede cambiar el contenido multimedia de esta página.'
+                NO_FILES: 'No hay archivos multimedia'
             METADATA:
                 APPLY_TO_N: 'Aplicar a {n} archivos'
                 BATCH_EDITING: 'Editando {n} archivos seleccionados: los cambios en los campos se aplicarán a todos.'
@@ -601,6 +614,8 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'El servidor devolvió la versión {effective} de esta página en lugar de {active}, y no informó que {active} faltara. Guardar está desactivado aquí, así que el archivo {effective} no se sobrescribe. Si todas las páginas hacen esto, probablemente el servidor web no esté pasando las cadenas de consulta a Grav.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'La página ha sido modificada en otro lugar. Por favor, vuelve a cargarla.'
                 TEMPLATE_MISSING_NOTICE: 'La plantilla **{template}** para este módulo no se encontró en el tema, por lo que la página a la que pertenece muestra un error de "plantilla no encontrada". Elige una plantilla en **Plantilla de página** en la pestaña Avanzado, o añade la plantilla al tema.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Esta página tiene cambios sin guardar de una sesión de edición compartida que no coinciden con el archivo de la página, lo cual podría deberse a que se editó fuera del administrador. El editor muestra los cambios sin guardar; al guardar, se reemplazará la versión del archivo.'
+                READ_ONLY_NOTICE: 'Puede ver esta página pero no editarla.'
             EDIT_PAGE: 'Editar página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -744,6 +759,21 @@ ICU:
                 TITLE: Módulos
             MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} no tiene número de orden, por lo que permanece ordenado por nombre'
             SHOW_DROP_INSIDE: 'Mover páginas dentro de {title}'
+            ANCESTOR_ONLY_HINT: 'No puede abrir esta página. Aparece listada para que pueda acceder a las páginas que contiene.'
+            ANCESTOR_ONLY_LABEL: '{title}: no puede abrir esta página, solo las páginas que contiene'
+            ANCESTOR_ONLY_PARENT: 'No puede abrir la página principal'
+            DELETE_CANNOT_UNDO: 'Esto no se puede deshacer.'
+            DELETE_LAST_LANGUAGE: 'Este es el único idioma de la página, por lo que se eliminará toda la carpeta de la página, incluyendo sus archivos multimedia y cualquier página hija.'
+            DELETE_RECOVERABLE: 'Puede restaurarla desde la Papelera.'
+            DELETE_TRANSLATION_CONFIRM: 'Eliminar la traducción en {language} de “{title}”? {n, plural, one{Se conservará el otro idioma.} other{Se conservarán los otros # idiomas.}}'
+            DELETE_TRANSLATION_TITLE: 'Eliminar traducción'
+            DELETE_UNDONE: 'Página restaurada'
+            DELETE_UNDONE_NAMED: '«{name}» restaurado'
+            DELETE_UNDO_FAILED: 'No se pudo deshacer la eliminación: {detail}'
+            PAGE_TITLE_HINT: 'Título: {title}'
+            TRANSLATION_DELETED: 'Traducción al {language} eliminada'
+            TRANSLATION_DELETED_OF: 'Se ha eliminado la traducción al {language} de «{name}»'
+            TRANSLATION_RESTORED: 'Traducción al {language} restaurada'
         PASSWORD: Contraseña
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 'Requisitos de contraseña'
@@ -761,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 'Anula un grupo'
             LEGEND_SUPER: 'Concedido por superadministrador'
             OVERRIDES_GROUP: 'Su configuración directa anula el grupo: {groups}'
+            LOCKED_NOTE: 'Solo puedes conceder permisos que tu propia cuenta tenga. Aquellos que no puedes conceder tienen la opción «Permitir» en gris, pero aún puedes denegarlos o borrarlos.'
+            NOT_GRANTABLE: 'No puedes conceder este permiso porque tu propia cuenta no lo tiene'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Volver al Panel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'No hay contenido disponible para esta página de plugin.'
@@ -802,6 +834,21 @@ ICU:
             CHART_LABEL: 'Visualizaciones de la página por día durante los últimos 14 días'
             TODAY: Hoy
             VIEWS: '{count, plural, one {# visualización} other {# visualizaciones}}'
+            CHART_RANGE_LABEL: 'Vistas de página, {range}'
+            LAST_12_MONTHS: 'Últimos 12 meses'
+            LAST_30_DAYS: 'Últimos 30 días'
+            LAST_7_DAYS: 'Últimos 7 días'
+            LAST_90_DAYS: 'Últimos 90 días'
+            LOAD_FAILED: 'No se pudo cargar este marco temporal'
+            PREVIOUS_PERIOD: '{count, plural, one {# vista} other {# vistas}} en el periodo anterior'
+            SHORT_12M: 12M
+            SHORT_14D: 14D
+            SHORT_30D: 30D
+            SHORT_7D: 7D
+            SHORT_90D: 90D
+            SO_FAR: 'hasta ahora'
+            TIME_FRAME: 'Marco temporal'
+            VS_PREVIOUS: 'en comparación con el periodo anterior'
         PREMIUM: Premium
         PREVIEW: 'Vista previa'
         REAUTH_MODAL:
@@ -953,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Barra de herramientas fija'
             STICKY_TOOLBAR_DESC: 'Mantén la barra de herramientas de formato y el botón de vista previa fijos a la vista mientras te desplazas.'
             ADMIN_TITLE: 'Título de administración'
-            ADMIN_TITLE_DESC: 'Se muestra como encabezado de inicio de sesión y en la pestaña del navegador. Déjelo en blanco para «Grav Admin».'
+            ADMIN_TITLE_DESC: 'Se muestra en la pestaña del navegador y como encabezado de inicio de sesión a menos que se establezca un logotipo personalizado, ya que el logotipo identifica el sitio. Déjelo en blanco para «Grav Admin».'
             FAILED_TO_SAVE_BRANDING: 'No se pudo guardar la personalización de marca.'
             FAVICON: Favicon
             FAVICON_DESC: 'Icono personalizado para la pestaña del navegador (SVG, PNG, WebP o ICO). Déjelo en blanco para el icono generado automáticamente.'
@@ -1018,6 +1065,7 @@ ICU:
                 LOCKED: 'Solo lectura — {owner} está editando con **{editor}**. Los tipos de editor mixtos no pueden coeditarse; [cambia tu preferencia de editor]({href}) para colaborar en tiempo real.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'cambia tu preferencia de editor'
                 TO_COLLABORATE_LIVE: 'para colaborar en tiempo real.'
+                LOCKED_EXPERT: 'Solo lectura: {owner} está editando con **{editor}**, que no puede coeditar con el editor de Markdown del modo Experto. Vuelve al modo Normal para colaborar en tiempo real.'
         SYSTEM:
             COMING_SOON: Próximamente
             SYSTEM_GRAV_ADMIN: 'Sistema — Grav Admin'
@@ -1069,6 +1117,8 @@ ICU:
             UPDATE_ALL: 'Actualizar todo'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema será actualizado:} other{# temas serán actualizados:}}'
             UPDATE_ALL_CONFIRM_TITLE: '¿Actualizar temas?'
+            UPDATE_CONFIRM_MESSAGE: '¿Actualizar {name} a la v{version}?'
+            UPDATE_CONFIRM_TITLE: '¿Actualizar tema?'
         TIME:
             DAYS_AGO: 'hace {n}d'
             HOURS_AGO: 'hace {n}h'
@@ -1175,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: Propiedades
                     POLICY_TAGS: Etiquetas
                     POLICY_VIEW: 'Ver política efectiva'
+                    IN_PARTIAL: 'Bloqueado dentro de la plantilla incluida'
+                    TROUBLESHOOTING_LINK: 'Cómo arreglar Twig en el contenido'
+                    TRUSTED_PARTIAL: '{template} de confianza. Las páginas que la incluyen la renderizan como lo hace tu tema.'
+                    TRUST_FAILED: 'No se pudo confiar en el parcial'
+                    TRUST_PARTIAL: 'Confiar en este parcial'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Cargando componente de informe...'
             SCHEDULER:
@@ -1331,6 +1386,10 @@ ICU:
                 SET: 'Establecer contraseña'
                 TITLE: Contraseña
                 TOO_MANY: 'Demasiadas contraseñas incorrectas. Vuelve a intentarlo en unos minutos.'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Introduzca su contraseña actual para cambiar su dirección de correo electrónico a {email}.'
+                NOT_SAVED: 'Su nueva dirección de correo electrónico, {email}, aún no se ha guardado. Confírmela con su contraseña actual.'
+                TITLE: 'Confirme que es usted'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar eliminado'
             AVATAR_UPDATED: 'Avatar actualizado'
@@ -2334,6 +2393,9 @@ ICU:
             FIELD_REQUIRED: '{label} es obligatorio'
             FORM_HAS_ERRORS: '{count, plural, one {# campo necesita su atención} other {# campos necesitan su atención}}'
             REQUIRED_GENERIC: 'Este campo es obligatorio'
+            LIST_KEY_REQUIRED: '{key}: {label} es obligatorio'
+            LIST_NEW_ROW_REQUIRED: 'Nuevo elemento: {label} es obligatorio'
+            LIST_ROW_REQUIRED: 'Elemento {row}: {label} es obligatorio'
         VALID_LINK_ATTRIBUTES: 'Atributos de enlace válidos'
         VALID_LINK_ATTRIBUTES_HELP: 'Atributos que se añadirán automáticamente al elemento HTML del multimedia'
         VARY_ACCEPT_ENCODING: 'Variar codificación de aceptación'
@@ -2480,3 +2542,56 @@ ICU:
             SUB_ITEMS: 'Atajos ({count} de {total} marcados con estrella)'
             UNSTAR: 'Quitar {label} de la barra lateral'
             USE_SITE_DEFAULT: 'Utiliza la barra lateral del sitio'
+        CHANGELOG:
+            BUGFIX: 'Corrección de errores'
+            IMPROVED: Mejorado
+            NEW: Nuevo
+            SECURITY: Seguridad
+        CHANGELOG_NOT_AVAILABLE: 'Registro de cambios no disponible.'
+        PASSKEYS_FIELD:
+            ADD: 'Añadir una passkey'
+            ADDED: 'Passkey añadida ({name}). A partir de ahora, le permitirá iniciar sesión automáticamente.'
+            ADDED_ON: 'Añadida el {date}'
+            ADD_FAILED: 'No se pudo añadir la passkey. Por favor, inténtelo de nuevo.'
+            ALREADY_SAVED: 'Ese gestor de contraseñas o dispositivo ya contiene una passkey para esta cuenta.'
+            CANCELLED: 'No se añadió ninguna passkey. Inténtelo de nuevo cuando esté listo.'
+            CODE_REQUIRED: 'Introduzca su código actual de 6 dígitos.'
+            CODE_WRONG: 'Ese código no es correcto.'
+            CONTINUE: Continuar
+            CURRENT_CODE: 'Código 2FA actual'
+            CURRENT_PASSWORD: 'Contraseña actual'
+            HELP: 'Una passkey le permite iniciar sesión mediante su huella dactilar, rostro o PIN del dispositivo, a través de un gestor de contraseñas o una llave de seguridad. Funciona tanto en el sitio como en el panel de administración, y cuenta como ambos pasos de inicio de sesión.'
+            HELP_OTHER: 'Passkeys con las que inicia sesión esta cuenta. Elimine una si se pierde el dispositivo o el gestor de contraseñas que la contiene.'
+            LAST_USED: 'último uso el {date}'
+            NAME_LABEL: 'Nombre de la passkey'
+            NAME_REQUIRED: 'Dale un nombre a la passkey.'
+            NEVER_USED: 'aún no se ha utilizado'
+            NONE: 'Aún no hay passkeys.'
+            NONE_OTHER: 'Esta cuenta no tiene ninguna passkey.'
+            PASSWORD_REQUIRED: 'Introduce tu contraseña actual.'
+            PASSWORD_WRONG: 'Tu contraseña actual no es correcta.'
+            PROOF_CODE_ADD: 'Introduce tu código 2FA de 6 dígitos actual para añadir una passkey.'
+            PROOF_PASSWORD_ADD: 'Introduce tu contraseña actual para añadir una passkey.'
+            PROOF_UNAVAILABLE: 'Primero configura una contraseña o 2FA en tu cuenta. Las passkeys no pueden añadirse o eliminarse solo con una sesión iniciada.'
+            REMOVE: Eliminar
+            REMOVED: 'Passkey eliminada ({name}).'
+            REMOVE_CONFIRM: '¿Eliminar «{name}»? Ya no podrás iniciar sesión con ella.'
+            REMOVE_CONFIRM_CODE: '¿Eliminar «{name}»? Ya no podrás iniciar sesión con ella. Introduce tu código 2FA de 6 dígitos actual para confirmar.'
+            REMOVE_CONFIRM_OTHER: '¿Eliminar «{name}» de {username}? Ya no podrán iniciar sesión con ella.'
+            REMOVE_CONFIRM_PASSWORD: '¿Eliminar «{name}»? Ya no podrás iniciar sesión con ella. Introduce tu contraseña actual para confirmar.'
+            REMOVE_FAILED: 'No se ha podido eliminar la passkey.'
+            RENAME: Renombrar
+            RENAMED: 'Passkey renombrada.'
+            RENAME_FAILED: 'No se ha podido renombrar la passkey.'
+            SAVE: Guardar
+            SYNCED: sincronizado
+            SYNCED_HELP: 'Guardada en un gestor de contraseñas que la sincroniza en todos tus dispositivos.'
+            TITLE: Passkeys
+            TOO_MANY: 'Demasiados intentos incorrectos. Inténtalo de nuevo en unos minutos.'
+            UNSUPPORTED: 'Este navegador no puede usar passkeys aquí.'
+            WAITING: 'Esperando tu passkey…'
+        README_NOT_AVAILABLE: 'README no disponible.'
+        UNDO: Deshacer
+        UPDATE_CHANGELOG_EMPTY: 'No hay entradas en el registro de cambios más recientes que la versión instalada.'
+        UPDATE_CHANGELOG_FAILED: 'No se pudo cargar el registro de cambios.'
+        UPDATE_WHATS_NEW: Novedades

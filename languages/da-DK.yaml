@@ -87,6 +87,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Luk menu'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Grav blev {code} med {love} af {company}.'
+            MADE_BY_PLAIN: 'Grav blev kodet med kærlighed af Trilby Media'
+            MORE_ACTIONS: 'Flere handlinger'
         ARE_YOU_SURE: 'Er du sikker?'
         ASCENDING: Stigende
         ASSETS: Aktiver
@@ -212,6 +215,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Kunne ikke gemme — disse felter er ugyldige: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Kunne ikke indlæse konfiguration.'
             SCOPE_NOT_FOUND: 'Intet konfigurationsområde ved navn {scope} blev fundet.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# indstilling her er} other {# indstillinger her er}} overstyret af {env}-miljøet, så ændringer til {count, plural, one {den} other {dem}} vil ikke træde i kraft.'
+                BANNER_MIXED: '{count, plural, one {# indstilling her er} other {# indstillinger her er}} overstyret af {env}-miljøet eller af serverens miljøvariabler, så ændringer til {count, plural, one {den} other {dem}} vil ikke træde i kraft.'
+                BANNER_SERVER: '{count, plural, one {# indstilling her er} other {# indstillinger her er}} angivet af serverens miljøvariabler, så ændringer til {count, plural, one {den} other {dem}} vil ikke træde i kraft.'
+                ENABLED_ENV: 'Indstillet af {env}-miljøet'
+                ENABLED_EXPLAIN_ENV: '{env}-miljøet slår dette plugin til eller fra i sin egen konfigurationsfil, så kontakten her vil ikke ændre, hvad sitet gør.'
+                ENABLED_EXPLAIN_SERVER: 'En GRAV_CONFIG-servermiljøvariabel slår dette plugin til eller fra, så kontakten her vil ikke ændre, hvad sitet gør.'
+                ENABLED_SERVER: 'Indstillet af en servermiljøvariabel'
+                EXPLAIN_ENV: '{env}-miljøet indstiller dette i sin egen konfigurationsfil, så det du gemmer her vil ikke blive anvendt på dette site.'
+                EXPLAIN_SERVER: 'En GRAV_CONFIG-servermiljøvariabel indstiller dette, så det du gemmer her vil ikke blive anvendt.'
+                MARKER_ENV: 'Overstyret af {env}-miljøet'
+                MARKER_SERVER: 'Indstillet af en servermiljøvariabel'
+                REMOVED: 'Overstyring fjernet fra {env}-miljøet'
+                REMOVE_FAILED: 'Kunne ikke fjerne overstyringen'
+                REMOVE_OVERRIDE: 'Fjern overstyring'
+                SAVED_ENV: 'Gemt, men {field} er overstyret af {env}-miljøet, så sitet bruger stadig "{value}".'
+                SAVED_MANY_ENV: 'Gemt, men {count} af disse ændringer tilsidesættes af {env}-miljøet, så websitet vil ikke bruge dem.'
+                SAVED_MANY_MIXED: 'Gemt, men {count} af disse ændringer tilsidesættes af {env}-miljøet eller af servermiljøvariabler, så websitet vil ikke bruge dem.'
+                SAVED_MANY_SERVER: 'Gemt, men {count} af disse ændringer er sat via servermiljøvariabler, så websitet vil ikke bruge dem.'
+                SAVED_SERVER: 'Gemt, men {field} er sat via en servermiljøvariabel, så websitet bruger stadig „{value}“.'
+                SITE_USES: 'Dette website bruger'
+                SWITCH_TO: 'Skift til {env}'
+                TOGGLE_ENV: 'Gemt, men {env}-miljøet holder {name} {state, select, off {deaktiveret} other {aktiveret}}.'
+                TOGGLE_SERVER: 'Gemt, men en servermiljøvariabel holder {name} {state, select, off {deaktiveret} other {aktiveret}}.'
+                VALUE_OFF: fra
+                VALUE_ON: til
         CONFIGURATION: Konfiguration
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljø
@@ -478,6 +507,7 @@ ICU:
                 FAMILY_BRANDS: Brands
                 FAMILY_REGULAR: Regular
                 FAMILY_SOLID: Solid
+                SET_MISSING: 'Intet ikonsæt kaldet „{set}“ er registreret på dette website.'
             NO_TAXONOMY_TYPES: 'Ingen taksonomityper konfigureret'
             PAGES:
                 FILTER_PAGES: 'Filtrer sider...'
@@ -854,6 +884,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Bekræftet at du er et menneske'
             CAPTCHA_VERIFYING: 'Tjekker om du er et menneske...'
             INVALID_AUTHENTICATION_CODE: 'Ugyldig godkendelseskode'
+            PASSKEY_CANCELLED: 'Ingen passkey blev brugt. Prøv igen når du er klar, eller log ind med din adgangskode.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Ingen passkey blev brugt. Prøv igen når du er klar, eller indtast din kode.'
+            PASSKEY_FAILED: 'Noget gik galt med passkey-godkendelsen. Prøv venligst igen.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Denne passkey tilhører ikke denne konto. Prøv en anden, eller indtast din kode.'
+            PASSKEY_OFF: 'Passkeys er deaktiveret på dette websted. Log ind med din adgangskode.'
+            PASSKEY_OR: eller
+            PASSKEY_SIGN_IN: 'Log ind med en passkey'
+            PASSKEY_SIGN_IN_FAILED: 'Denne passkey kunne ikke logge dig ind. Hvis du har fjernet den fra din konto, så log ind med din adgangskode.'
+            PASSKEY_TOO_MANY_TRIES: 'For mange forsøg med passkey. Vent et par minutter og prøv igen.'
+            PASSKEY_USE_INSTEAD: 'Brug din passkey i stedet'
+            PASSKEY_WAITING: 'Venter på din passkey…'
         LOG_ERRORS: 'Log fejl'
         LOG_ERRORS_HELP: 'Log fejl til /logs mappen'
         LOG_HANDLER: Log-håndtering
@@ -934,6 +975,8 @@ ICU:
                 REORDER_DONE: Færdig
                 REORDER_HINT: 'Træk billeder for at angive deres rækkefølge.'
                 REORDER_MODE: Omarranger
+                NOT_ALLOWED: 'Du kan ikke ændre mediestien for denne side.'
+                NO_FILES: 'Ingen mediefiler'
             METADATA:
                 APPLY_TO_N: 'Anvend på {n} filer'
                 BATCH_EDITING: 'Redigerer {n} valgte filer — ændrede felter gælder for alle.'
@@ -958,6 +1001,14 @@ ICU:
                 TITLE: Fildetaljer
                 TYPE: Type
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'Kunne ikke uploade {filename}: {message}'
+                NO_PERMISSION: 'Du har ikke tilladelse til at uploade medier, så billedet blev ikke tilføjet.'
+                PAGES_ONLY: 'Indsætning eller slip af billeder virker kun i sideindhold. Upload billedet til medieoversigten og indsæt det derfra.'
+                SAVE_PAGE_FIRST: 'Gem siden først, og indsæt eller slip derefter billeder i den.'
+                UNSUPPORTED_TYPE: '{filename} kan ikke tilføjes her. Indsæt eller slip et PNG, JPEG, GIF, WebP, AVIF eller SVG-billede.'
+                UPLOADED: '{count, plural, one {Billede tilføjet til sidens medier} other {# billeder tilføjet til sidens medier}}'
+                UPLOADING: '{count, plural, one {Uploader billede…} other {Uploader # billeder…}}'
         MEDIA_TYPES: Medietyper
         MEMCACHED_PORT: Memcached-port
         MEMCACHED_PORT_HELP: Memcached-serverporten
@@ -1055,6 +1106,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'Serveren returnerede den {effective} version af denne side i stedet for {active}, og rapporterede ikke {active} som manglende. Lagring er deaktiveret her, så den {effective} fil ikke overskrives. Hvis alle sider gør dette, sender webserveren sandsynligvis ikke forespørgselsstrenge videre til Grav.'
                 PREVIEW_SHOWING_HOST_PAGE: 'vist på dens forældreside'
                 TEMPLATE_MISSING_NOTICE: 'Skabelonen **{template}** til dette modul blev ikke fundet i temaet, så siden den tilhører viser en "skabelon ikke fundet"-fejl. Vælg en skabelon under **Sideskabelon** på fanen Avanceret, eller tilføj skabelonen til temaet.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Denne side har ikke-gemte ændringer fra en delt redigeringssession, som ikke stemmer overens med sidefilen, hvilket kan skyldes redigering uden for admin. Editoren viser de ikke-gemte ændringer; hvis du gemmer, erstattes filens version.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Siden er blevet ændret et andet sted. Genindlæs venligst.'
+                READ_ONLY_NOTICE: 'Du kan se denne side, men ikke redigere den.'
             EDIT_PAGE: 'Rediger side'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ændret
@@ -1108,6 +1162,8 @@ ICU:
                 VISIBLE: Synlig
                 CHILD_TYPE_HINT: 'Forældresiden foreslår 「{template}」 for dens underliggende sider. Du kan stadig vælge en anden skabelon.'
                 STATUS_HELP: 'Kladder gemmes, men er ikke synlige på siden, før du publicerer dem'
+                MODULE_NEEDS_PARENT: 'Et modul placeres inde i en modulær side, så vælg den side, det tilhører.'
+                PICK_MODULAR_PAGE: 'Vælg en modulær side'
             NO_MATCH: 'Ingen sider matcher din søgning'
             NO_PAGES: 'Ingen sider fundet'
             NO_SEARCH_RESULTS: 'Ingen sider matcher din søgning'
@@ -1183,6 +1239,32 @@ ICU:
                 SCHEDULED: Planlagt
                 SCHEDULED_FOR: 'Planlagt til udgivelse den {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Du kan ikke åbne denne side. Den er angivet, så du kan nå siderne indeni.'
+            ANCESTOR_ONLY_LABEL: '{title}: du kan ikke åbne denne side, kun sider indeni den'
+            ANCESTOR_ONLY_PARENT: 'Du kan ikke åbne overordnede side'
+            DELETE_CANNOT_UNDO: 'Dette kan ikke fortrydes.'
+            DELETE_LAST_LANGUAGE: 'Dette er sidens eneste sprog, så hele sidemappen fjernes, inklusive dens medier og eventuelle undersider.'
+            DELETE_RECOVERABLE: 'Du kan gendanne den fra papirkurven.'
+            DELETE_TRANSLATION_CONFIRM: 'Slet {language}-oversættelsen af „{title}“? {n, plural, one{Det andet sprog bevares.} other{De andre # sprog bevares.}}'
+            DELETE_TRANSLATION_TITLE: 'Slet oversættelse'
+            DELETE_UNDONE: 'Side gendannet'
+            DELETE_UNDONE_NAMED: 'Gendannede „{name}“'
+            DELETE_UNDO_FAILED: 'Kunne ikke fortryde sletningen: {detail}'
+            DROP_INSIDE: 'Slip en side her for at flytte den ind i {title}'
+            LOAD_CHILDREN_FAILED: 'Kunne ikke indlæse siderne i denne mappe.'
+            MODULES:
+                ADD: 'Tilføj modul'
+                EMPTY: 'Ingen moduler endnu.'
+                HELP: 'De dele, som denne side er bygget af, i den rækkefølge siden viser dem. Træk et modul for at flytte det, eller fokuser på dets håndtag og tryk Alt+Op eller Alt+Ned. Klik på dets statusikon for at udgive eller afpublicere det.'
+                LOAD_FAILED: 'Modulerne kunne ikke indlæses.'
+                MOVE: 'Flyt „{title}“'
+                TITLE: Moduler
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} har ikke et ordrenummer, så den forbliver sorteret efter navn'
+            PAGE_TITLE_HINT: 'Titel: {title}'
+            SHOW_DROP_INSIDE: 'Flyt sider ind i {title}'
+            TRANSLATION_DELETED: '{language}-oversættelse slettet'
+            TRANSLATION_DELETED_OF: 'Slettede den {language}-sprogede oversættelse af “{name}”'
+            TRANSLATION_RESTORED: '{language}-sproget oversættelse gendannet'
         PAGES_CONFIGURATION: Sidekonfiguration
         PAGES_FALLBACK_ONLY: 'Kun fallback for sider'
         PAGES_FALLBACK_ONLY_HELP: "Kun 'fallback' for at finde sideindhold gennem understøttede sprog. Standardadfærd er at vise ethvert fundet sprog, hvis det aktive sprog mangler"
@@ -1229,6 +1311,8 @@ ICU:
             LEGEND_OVERRIDE: 'Overskriver en gruppe'
             LEGEND_SUPER: 'Tildelt af super-administrator'
             OVERRIDES_GROUP: 'Din direkte indstilling overskriver gruppen: {groups}'
+            LOCKED_NOTE: "Du kan kun give tilladelser, som din egen konto har. Dem, du ikke kan tildele, har 'Tillad' gråtonet, men du kan stadig nægte dem eller fjerne dem."
+            NOT_GRANTABLE: 'Du kan ikke give denne tilladelse, fordi din egen konto ikke har den'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Tilbage til kontrolpanel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Intet indhold tilgængeligt for denne pluginside.'
@@ -1276,6 +1360,21 @@ ICU:
             CHART_LABEL: 'Sidevisninger per dag de sidste 14 dage'
             TODAY: 'I dag'
             VIEWS: '{count, plural, one {# visning} other {# visninger}}'
+            CHART_RANGE_LABEL: 'Sidevisninger, {range}'
+            LAST_12_MONTHS: 'Sidste 12 måneder'
+            LAST_30_DAYS: 'Sidste 30 dage'
+            LAST_7_DAYS: 'Sidste 7 dage'
+            LAST_90_DAYS: 'Sidste 90 dage'
+            LOAD_FAILED: 'Kunne ikke indlæse denne tidsperiode'
+            PREVIOUS_PERIOD: '{count, plural, one {# visning} other {# visninger}} i den forrige periode'
+            SHORT_12M: 12M
+            SHORT_14D: 14D
+            SHORT_30D: 30D
+            SHORT_7D: 7D
+            SHORT_90D: 90D
+            SO_FAR: 'indtil videre'
+            TIME_FRAME: Tidsperiode
+            VS_PREVIOUS: 'sammenlignet med den forrige periode'
         PREMIUM: Premium
         PREVIEW: Forhåndsvisning
         PROCESS: Behandling
@@ -1575,7 +1674,7 @@ ICU:
             USED_ON_LIGHT_BACKGROUNDS: 'Anvendes på lyse baggrunde'
             USERS_MAY_OVERRIDE: 'Brugere må tilsidesætte'
             ADMIN_TITLE: Admin-titel
-            ADMIN_TITLE_DESC: 'Vises som overskrift ved log-ind og i browserfanen. Efterlad tom for «Grav Admin».'
+            ADMIN_TITLE_DESC: 'Vises i browserfanen og som overskrift ved login, medmindre et brugerdefineret logo er angivet, da logoet allerede navngiver webstedet. Lad feltet stå tomt for „Grav Admin“.'
             FAILED_TO_SAVE_BRANDING: 'Kunne ikke gemme branding.'
             FAVICON: Favicon
             FAVICON_DESC: 'Brugerdefineret browserfane-ikon (SVG, PNG, WebP eller ICO). Efterlad tom for det genererede ikon.'
@@ -1606,6 +1705,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Standard
             SIDEBAR_LOGO_HEIGHT: 'Sidebars-logoets højde'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Hvor højt dit logo vises øverst i sidebaren.'
+            SHOW_CREDIT: 'Vis Trilby Media-kreditering'
+            SHOW_CREDIT_DESC: 'Vis linjen »Grav was coded with love by Trilby Media« i bunden af sidepanelet.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tegn: bogstaver, tal, bindestreger, understregninger'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratorkonto oprettet — velkommen til Grav'
@@ -1671,6 +1772,7 @@ ICU:
                 LOCKED: 'Skrivebeskyttet — {owner} redigerer med **{editor}**. Blandede editortyper kan ikke redigere samtidigt; [skift din editor-præference]({href}) for at samarbejde live.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'skift din editor-præference'
                 TO_COLLABORATE_LIVE: 'for at samarbejde live.'
+                LOCKED_EXPERT: 'Skrivebeskyttet: {owner} redigerer med **{editor}**, som ikke kan sambearbejde med Ekspert-tilstandens markdown-editor. Skift tilbage til Normal tilstand for at samarbejde live.'
         SYSLOG_FACILITY: Syslog-facilitet
         SYSLOG_FACILITY_HELP: 'Syslog-facilitet til output'
         SYSLOG_TAG: Syslog-tag
@@ -1731,6 +1833,8 @@ ICU:
             UPDATE_ALL: 'Opdatér alle'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema bliver opdateret:} other{# temaer bliver opdateret:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'Opdatér temaer?'
+            UPDATE_CONFIRM_MESSAGE: 'Opdater {name} til v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Opdater tema?'
         THEMES_TABLE:
             NO_THEMES: 'Ingen temaer installeret'
         THUMB: Miniature
@@ -1918,6 +2022,11 @@ ICU:
                     POLICY_PROPERTIES: Egenskaber
                     POLICY_TAGS: Tags
                     POLICY_VIEW: 'Vis effektiv politik'
+                    IN_PARTIAL: 'Blokeret i den inkluderede skabelon'
+                    TROUBLESHOOTING_LINK: 'Sådan rettes Twig i indhold'
+                    TRUSTED_PARTIAL: 'Betroet {template}. Sider, der inkluderer den, gengiver den, som dit tema gør.'
+                    TRUST_FAILED: 'Kunne ikke betro partial-filen'
+                    TRUST_PARTIAL: 'Betro denne partial'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Indlæser rapportkomponent...'
             SCHEDULER:
@@ -2157,6 +2266,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'To-faktor-godkendelse er slået fra'
             VERIFICATION_CODE: Verificeringskode
             VERIFY_ENABLE: 'Verificer & Aktiver'
+            CURRENT_CODE_WRONG: 'Den kode er ikke korrekt.'
+            ENTER_CODE_TO_REGENERATE: 'Indtast din nuværende 6-cifrede kode for at oprette en ny hemmelighed. 2FA forbliver slået fra, indtil du har scannet den nye QR-kode og verificeret en kode fra den.'
+            REGENERATE: 'Generer igen'
+            TOO_MANY_CODES: 'For mange forkerte koder. Prøv igen om et par minutter.'
         TYPE: Type
         UNPUBLISHED_DATE: Upubliceringsdato
         UNPUBLISHED_DATE_HELP: 'Kan angive en dato for automatisk at udløse upublicering.'
@@ -2206,6 +2319,36 @@ ICU:
             USER_CHANGED_ELSEWHERE_SAVE_TO: 'Brugeren er ændret et andet sted – gem for at overskrive eller genindlæs'
             USER_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Brugeren blev ændret et andet sted. Venligst genindlæs.'
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Du kan ikke slette din egen konto.'
+            EMAIL_CHANGE_CANCELLED: 'E-mailændring annulleret.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Kunne ikke annullere e-mailændringen.'
+            EMAIL_CHANGE_RESEND: 'Send igen'
+            EMAIL_CHANGE_RESEND_FAILED: 'Kunne ikke sende bekræftelseslinket igen.'
+            EMAIL_CHANGE_SENT: 'Vi har sendt et bekræftelseslink til {email}. E-mailadressen ændres, når linket åbnes.'
+            EMAIL_CHANGE_WAITING: 'Venter på bekræftelse: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Indtast din nuværende adgangskode for at ændre din e-mailadresse til {email}.'
+                NOT_SAVED: 'Din nye e-mailadresse, {email}, er endnu ikke gemt. Bekræft den med din nuværende adgangskode.'
+                TITLE: 'Bekræft at det er dig'
+            PASSWORD:
+                CHANGE: 'Skift adgangskode'
+                CHANGED_OTHER: 'Adgangskoden for {name} er blevet ændret.'
+                CHANGED_OWN: 'Din adgangskode er blevet ændret. Andre browsere og apps, der er logget ind på din konto, er blevet logget ud.'
+                CONFIRM: 'Bekræft ny adgangskode'
+                CURRENT: 'Nuværende adgangskode'
+                CURRENT_REQUIRED: 'Indtast din nuværende adgangskode.'
+                CURRENT_WRONG: 'Din nuværende adgangskode er ikke korrekt.'
+                FAILED: 'Kunne ikke ændre adgangskoden.'
+                MISMATCH: 'Adgangskoderne stemmer ikke overens.'
+                NEW: 'Ny adgangskode'
+                NEW_REQUIRED: 'Indtast en ny adgangskode.'
+                NOT_ALLOWED: 'Du har ikke tilladelse til at ændre denne adgangskode.'
+                NO_PASSWORD_HELP: 'Din konto har endnu ingen adgangskode, fordi du logger ind via en anden tjeneste. Opret en for også at kunne logge ind med dit brugernavn og din adgangskode.'
+                OTHER_HELP: 'Opret en ny adgangskode til {name}. Vedkommende logges ud af alle browsere og apps og skal logge ind igen med den nye adgangskode.'
+                OWN_HELP: 'Indtast din nuværende adgangskode, og derefter den nye adgangskode to gange. Du forbliver logget ind her, men alle andre browsere og apps, der er logget ind på din konto, logges ud.'
+                POLICY: 'Den nye adgangskode opfylder ikke kravene.'
+                SET: 'Angiv adgangskode'
+                TITLE: Adgangskode
+                TOO_MANY: 'For mange forkerte adgangskoder. Prøv igen om et par minutter.'
         USERS_FILTER:
             BACKEND_ACCESS: Backend-adgang
             CLEAR: Ryd
@@ -2252,6 +2395,9 @@ ICU:
             FIELD_REQUIRED: '{label} er påkrævet'
             FORM_HAS_ERRORS: '{count, plural, one {# felt kræver din opmærksomhed} other {# felter kræver din opmærksomhed}}'
             REQUIRED_GENERIC: 'Dette felt er påkrævet'
+            LIST_KEY_REQUIRED: '{key}: {label} er påkrævet'
+            LIST_NEW_ROW_REQUIRED: 'Nyt element: {label} er påkrævet'
+            LIST_ROW_REQUIRED: 'Element {row}: {label} er påkrævet'
         VALID_LINK_ATTRIBUTES: 'Gyldige link-attributter'
         VALID_LINK_ATTRIBUTES_HELP: 'Attributter der automatisk tilføjes til medie-HTML-elementet'
         VARY_ACCEPT_ENCODING: 'Variér accept-encoding'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Uventet svar fra serveren'
             UNEXPECTED_RESPONSE_DETAIL: 'Serveren svarede med data i et format, som denne skærm ikke forventer. Browserkonsollen indeholder detaljerne.'
             UNEXPECTED_RESPONSE_TITLE: 'Uventet svar fra serveren'
+            SERVER_PAGE_DETAIL: 'Din webserver besvarede selv denne anmodning (HTTP {status}) i stedet for at sende den videre til Grav. Et sikkerhedsfilter på serveren, såsom mod_security eller en hosting-firewall, kan have blokeret den. Din host eller serverens fejllog kan fortælle dig, hvilken regel der blev udløst.'
+            SERVER_PAGE_TITLE: 'Blokeret af webserveren'
         CACHE_MODULES: 'Cache modul-output'
         CACHE_MODULES_HELP: 'Cache det renderede output fra denne sides moduler. Brug det kun, når modulerne viser det samme indhold til alle besøgende. Moduler med deres egen Twig eller en formular, besøgende der er logget ind, samt formularindsendelser bliver altid renderet friskt. Redigering af kun en del af en skabelon kræver en rydning af cachen.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Flex Render Hints'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Start kun sessioner ved behov'
         SESSION_LAZY_HELP: 'Besøgende uden en sessions-cookie får kun en session, når noget gemmes i den, såsom et login, en formular eller en besked, så anonyme sidevisninger kan caches af en proxy eller et CDN. Plugins, der gemmer data ved hver sidevisning, starter stadig en.'
         UPDATE_CHANGELOG_TITLE: 'Ændringer i v{version}'
+        CHANGELOG:
+            BUGFIX: Fejlrettelse
+            IMPROVED: Forbedret
+            NEW: Ny
+            SECURITY: Sikkerhed
+        CHANGELOG_NOT_AVAILABLE: 'Ændringslog er ikke tilgængelig.'
+        IMAGES_WATERMARK_ALL: 'Vandmærk alle billeder'
+        IMAGES_WATERMARK_ALL_HELP: 'Stempl automatisk vandmærket på alle billeder, som websitet serverer'
+        IMAGES_WATERMARK_BOTTOM: Bund
+        IMAGES_WATERMARK_CENTER: Center
+        IMAGES_WATERMARK_IMAGE: Vandmærkebillede
+        IMAGES_WATERMARK_IMAGE_HELP: 'Sti til billedet, der bruges som vandmærke, f.eks. system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Venstre
+        IMAGES_WATERMARK_POSITION_X: 'Horisontal position'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Hvor vandmærket placeres fra venstre mod højre'
+        IMAGES_WATERMARK_POSITION_Y: 'Vertikal position'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Hvor vandmærket placeres fra top til bund'
+        IMAGES_WATERMARK_RIGHT: Højre
+        IMAGES_WATERMARK_SCALE: Vandmærkeskalering
+        IMAGES_WATERMARK_SCALE_HELP: 'Størrelsen på vandmærket som en procentdel af billedet'
+        IMAGES_WATERMARK_TITLE: Vandmærke
+        IMAGES_WATERMARK_TOP: Top
+        PASSKEYS_FIELD:
+            ADD: 'Tilføj en passkey'
+            ADDED: 'Passkey tilføjet ({name}). Den logger dig automatisk ind fra nu af.'
+            ADDED_ON: 'Tilføjet {date}'
+            ADD_FAILED: 'Passkey kunne ikke tilføjes. Prøv venligst igen.'
+            ALREADY_SAVED: 'Den adgangskodeadministrator eller enhed indeholder allerede en passkey til denne konto.'
+            CANCELLED: 'Ingen passkey blev tilføjet. Prøv igen, når du er klar.'
+            CODE_REQUIRED: 'Indtast din nuværende 6-cifrede kode.'
+            CODE_WRONG: 'Denne kode er ikke korrekt.'
+            CONTINUE: Fortsæt
+            CURRENT_CODE: 'Nuværende 2FA-kode'
+            CURRENT_PASSWORD: 'Nuværende adgangskode'
+            HELP: 'En passkey logger dig ind med dit fingeraftryk, ansigt eller enheds-PIN fra en adgangskodeadministrator eller en sikkerhedsnøgle. Den virker på websitet og i Admin, og tæller som begge log-ind-trin.'
+            HELP_OTHER: 'Passkeys som denne konto logger ind med. Fjern en, hvis enheden eller adgangskodeadministratoren, der indeholder den, er gået tabt.'
+            LAST_USED: 'sidst brugt {date}'
+            NAME_LABEL: Passkey-navn
+            NAME_REQUIRED: 'Giv din passkey et navn.'
+            NEVER_USED: 'ikke brugt endnu'
+            NONE: 'Ingen passkeys endnu.'
+            NONE_OTHER: 'Denne konto har ingen passkeys.'
+            PASSWORD_REQUIRED: 'Indtast din nuværende adgangskode.'
+            PASSWORD_WRONG: 'Din nuværende adgangskode er ikke korrekt.'
+            PROOF_CODE_ADD: 'Indtast din nuværende 6-cifrede 2FA-kode for at tilføje en passkey.'
+            PROOF_PASSWORD_ADD: 'Indtast din nuværende adgangskode for at tilføje en passkey.'
+            PROOF_UNAVAILABLE: 'Angiv først en adgangskode eller 2FA på din konto. Passkeys kan ikke tilføjes eller fjernes alene med en igangværende session.'
+            REMOVE: Fjern
+            REMOVED: 'Passkey fjernet ({name}).'
+            REMOVE_CONFIRM: 'Fjern “{name}”? Den vil ikke længere kunne logge dig ind.'
+            REMOVE_CONFIRM_CODE: 'Fjern “{name}”? Den vil ikke længere kunne logge dig ind. Indtast din nuværende 6-cifrede 2FA-kode for at bekræfte.'
+            REMOVE_CONFIRM_OTHER: 'Fjern “{name}” fra {username}? Den vil ikke længere kunne logge dem ind.'
+            REMOVE_CONFIRM_PASSWORD: 'Fjern “{name}”? Den vil ikke længere kunne logge dig ind. Indtast din nuværende adgangskode for at bekræfte.'
+            REMOVE_FAILED: 'Passkey kunne ikke fjernes.'
+            RENAME: Omdøb
+            RENAMED: 'Passkey omdøbt.'
+            RENAME_FAILED: 'Passkey kunne ikke omdøbes.'
+            SAVE: Gem
+            SYNCED: synkroniseret
+            SYNCED_HELP: 'Gemt i en adgangskodehåndtering, der synkroniserer den på tværs af dine enheder.'
+            TITLE: Passkeys
+            TOO_MANY: 'For mange forkerte forsøg. Prøv igen om et par minutter.'
+            UNSUPPORTED: 'Denne browser kan ikke bruge passkeys her.'
+            WAITING: 'Venter på din passkey…'
+        PIPELINE_REMOTE_TIMEOUT: 'Timeout for eksternt aktiv'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Hvor længe der skal ventes på en ekstern CSS- eller JS-fil (f.eks. et CDN-stylesheet), når der bygges en pipeline. Hvis den ikke ankommer i tide, gengives siden uden at samle den gruppe, og den prøver igen ved næste anmodning'
+        README_NOT_AVAILABLE: 'README ikke tilgængelig.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Tilpas sidepanel'
+            DIVIDER: Skillevæg
+            HIDE: 'Skjul {label}'
+            HINT: 'Træk elementer for at ændre rækkefølgen, eller fokuser et håndtag og brug piletasterne. Øjet skjuler et element, og stjernen vælger et plugins genveje, der skal vises under det.'
+            MOVE: 'Flyt {label}'
+            MOVED: '{label} flyttet til position {position} af {total}'
+            RESET_DONE: 'Dit sidepanel følger igen sidens'
+            RESTORE_BUILT_IN: 'Oprindelig rækkefølge'
+            SAVED: 'Sidepanel gemt'
+            SAVE_FAILED: 'Kunne ikke gemme sidepanelet'
+            SAVE_FOR_EVERYONE: 'Gem for alle'
+            SAVE_FOR_EVERYONE_HINT: 'Gør dette til sidepanelet for alle brugere, der ikke har konfigureret deres eget'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Alle brugere, der ikke har konfigureret deres eget sidepanel, vil se denne rækkefølge. Enhver kan stadig ændre sit eget, og det at skjule et punkt ændrer ikke på, hvad de har tilladelse til at åbne.'
+            SAVE_FOR_EVERYONE_TITLE: 'Gør dette til alles sidepanel?'
+            SHOW: 'Vis {label}'
+            SITE_SAVED: 'Sidepanel gemt for alle'
+            STAR: 'Vis {label} i sidepanelet'
+            SUB_ITEMS: 'Genveje ({count} af {total} markerede)'
+            UNSTAR: 'Fjern {label} fra sidepanelet'
+            USE_SITE_DEFAULT: 'Brug sidens sidepanel'
+        UNDO: Fortryd
+        UPDATE_CHANGELOG_EMPTY: 'Ingen changelog-poster nyere end den installerede version.'
+        UPDATE_CHANGELOG_FAILED: 'Changeloggen kunne ikke indlæses.'
+        UPDATE_WHATS_NEW: 'Hvad er nyt'

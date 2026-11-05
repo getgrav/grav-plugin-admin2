@@ -30,6 +30,9 @@ ICU:
             FIELD_REQUIRED: '{label} alanı zorunludur'
             REQUIRED_GENERIC: 'Bu alan zorunludur'
             FORM_HAS_ERRORS: '{count, plural, one {# alanın dikkatinize ihtiyacı var} other {# alanın dikkatinize ihtiyacı var}}'
+            LIST_KEY_REQUIRED: '{key}: {label} zorunludur'
+            LIST_NEW_ROW_REQUIRED: 'Yeni öğe: {label} zorunludur'
+            LIST_ROW_REQUIRED: 'Öğe {row}: {label} zorunludur'
         SECURITY_CHECK:
             USER_FOLDER_EXPOSED_TITLE: "Web sunucunuz Grav'ın erişim kurallarını uygulamıyor"
             USER_FOLDER_EXPOSED_BODY: "Web sunucunuz Grav'ın önerilen erişim kurallarını uygulamıyor, bu nedenle user/ içindeki dosyalara doğrudan web üzerinden erişilebilir. Bazı eklentiler verileri burada depoladığı için bu durumu düzeltmeniz önerilir."
@@ -214,6 +217,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: "Sunucu bu sayfanın {active} yerine {effective} sürümünü döndürdü ve {active} sürümünün eksik olduğunu bildirmedi. {effective} dosyasının üzerine yazılmaması için kaydetme özelliği burada devre dışı bırakılmıştır. Eğer tüm sayfalar bu şekilde davranıyorsa, web sunucusu muhtemelen sorgu dizelerini Grav'a iletmiyordur."
                 PREVIEW_SHOWING_HOST_PAGE: 'üst sayfasında gösterilir'
                 TEMPLATE_MISSING_NOTICE: 'Bu modül için **{template}** şablonu temada bulunamadı, bu yüzden ait olduğu sayfa bir „şablon bulunamadı“ hatası gösteriyor. Gelişmiş sekmesindeki **Sayfa Şablonu** altından bir şablon seçin veya şablonu temaya ekleyin.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Bu sayfa, paylaşımlı bir düzenleme oturumundan kalan ve yönetici paneli dışında düzenlenmiş olabilecek sayfa dosyasıyla eşleşmeyen kaydedilmemiş değişikliklere sahip. Düzenleyici kaydedilmemiş değişiklikleri gösterir; kaydetmek dosyanın mevcut sürümünün üzerine yazar.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Sayfa başka bir yerde değiştirildi. Lütfen yeniden yükleyin.'
+                READ_ONLY_NOTICE: 'Bu sayfayı görüntüleyebilirsiniz ancak düzenleyemezsiniz.'
             NEW:
                 MY_NEW_PAGE: 'Yeni Sayfam'
                 FILTER_PAGES: 'Sayfaları filtrele...'
@@ -241,6 +247,8 @@ ICU:
                 FOLDER_DETAILS: 'Klasör Ayrıntıları'
                 CHILD_TYPE_HINT: 'Üst sayfa alt öğeleri için „{template}“ öneriyor. Yine de farklı bir şablon seçebilirsiniz.'
                 STATUS_HELP: 'Taslaklar kaydedilir ancak yayınlayana kadar sitede görünmezler'
+                MODULE_NEEDS_PARENT: 'Bir modül modüler bir sayfanın içine yerleştirilir, bu yüzden ait olduğu sayfayı seçin.'
+                PICK_MODULAR_PAGE: 'Modüler bir sayfa seçin'
             PAGE_COUNT: '{n, plural, one{# sayfa} other{# sayfa}}'
             SUBTITLE: 'Site içeriğinizi ve yapınızı yönetin'
             COLUMN_EMPTY: Boş
@@ -253,6 +261,32 @@ ICU:
                 SCHEDULED: Zamanlanmış
                 SCHEDULED_FOR: '{date} tarihinde yayınlanmak üzere zamanlandı'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Bu sayfayı açamazsınız. İçindeki sayfalara ulaşabilmeniz için listelenmiştir.'
+            ANCESTOR_ONLY_LABEL: '{title}: bu sayfayı açamazsınız, sadece içindeki sayfaları açabilirsiniz'
+            ANCESTOR_ONLY_PARENT: 'Üst sayfayı açamazsınız'
+            DELETE_CANNOT_UNDO: 'Bu işlem geri alınamaz.'
+            DELETE_LAST_LANGUAGE: 'Bu sayfanın tek dili budur, bu nedenle medya dosyaları ve alt sayfalar dahil olmak üzere tüm sayfa klasörü silinecektir.'
+            DELETE_RECOVERABLE: "Çöp Kutusu'ndan geri yükleyebilirsiniz."
+            DELETE_TRANSLATION_CONFIRM: '“{title}” sayfasının {language} çevirisini silmek istiyor musunuz? {n, plural, one{Diğer dil korunacaktır.} other{Diğer # dil korunacaktır.}}'
+            DELETE_TRANSLATION_TITLE: 'Çeviriyi Sil'
+            DELETE_UNDONE: 'Sayfa geri yüklendi'
+            DELETE_UNDONE_NAMED: '“{name}” geri yüklendi'
+            DELETE_UNDO_FAILED: 'Silme işlemi geri alınamadı: {detail}'
+            DROP_INSIDE: 'Bir sayfayı {title} içine taşımak için buraya sürükleyin'
+            LOAD_CHILDREN_FAILED: 'Bu klasördeki sayfalar yüklenemedi.'
+            MODULES:
+                ADD: 'Modül ekle'
+                EMPTY: 'Henüz modül yok.'
+                HELP: 'Bu sayfanın oluşturulduğu parçalar, sayfada göründükleri sırayla. Bir modülü taşımak için sürükleyin veya tutamacına odaklanıp Alt+Yukarı veya Alt+Aşağı tuşlarına basın. Yayınlamak veya yayından kaldırmak için durum simgesine tıklayın.'
+                LOAD_FAILED: 'Modüller yüklenemedi.'
+                MOVE: '“{title}” ögesini taşı'
+                TITLE: Modüller
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} bir sıra numarasına sahip değil, bu nedenle ada göre sıralanmaya devam eder'
+            PAGE_TITLE_HINT: 'Başlık: {title}'
+            SHOW_DROP_INSIDE: 'Sayfaları {title} içine taşı'
+            TRANSLATION_DELETED: '{language} çevirisi silindi'
+            TRANSLATION_DELETED_OF: '{name} öğesinin {language} çevirisi silindi'
+            TRANSLATION_RESTORED: '{language} çevirisi geri yüklendi'
         FIELDS:
             CLEAR_DATE: 'Tarihi temizle'
             REGENERATE_SLUG: 'Sayfa başlığından otomatik oluştur'
@@ -314,6 +348,7 @@ ICU:
                 FAMILY_BRANDS: Markalar
                 FAMILY_REGULAR: Normal
                 FAMILY_SOLID: Dolu
+                SET_MISSING: 'Bu sitede "{set}" adında kayıtlı bir simge seti bulunmuyor.'
             PAGE_EXISTS:
                 CHECKING_PAGE: 'Sayfa kontrol ediliyor...'
             PAGE_MEDIA:
@@ -439,6 +474,9 @@ ICU:
             CLOSE_MENU: 'Menüyü kapat'
             GRAV_VERSION: 'Grav v{version}'
             ADMIN_VERSION: 'Yönetim v{version}'
+            MADE_BY: 'Grav, {company} tarafından {love} ile {code} olarak kodlanmıştır.'
+            MADE_BY_PLAIN: 'Grav, Trilby Media tarafından sevgiyle kodlanmıştır'
+            MORE_ACTIONS: 'Daha fazla eylem'
         NORMAL_MODE: 'Normal mod'
         EXPERT_MODE: 'Uzman modu'
         ALLOWED: 'İzin Verildi'
@@ -455,6 +493,8 @@ ICU:
             LEGEND_INHERITED: 'Bir gruptan devralınan'
             LEGEND_OVERRIDE: 'Bir grubu geçersiz kılan (ezen)'
             LEGEND_SUPER: 'Süper yönetici tarafından verilen'
+            LOCKED_NOTE: 'Yalnızca kendi hesabınızın sahip olduğu izinleri verebilirsiniz. Veremeyeceğiniz izinlerin "İzin Ver" seçeneği gri renktedir, ancak yine de bunları reddedebilir veya temizleyebilirsiniz.'
+            NOT_GRANTABLE: 'Kendi hesabınız bu izne sahip olmadığı için bu izni veremezsiniz'
         TWO_FACTOR_FIELD:
             2FA_QR_CODE: '2FA QR Kodu'
             SCAN_THE_QR_CODE_WITH_YOUR: 'Doğrulama (Authenticator) uygulamanızla QR kodunu tarayın'
@@ -478,6 +518,10 @@ ICU:
             FORCE_DISABLE: 'Zorla devre dışı bırak'
             CONFIRM_DISABLE: 'Devre dışı bırakmayı onayla'
             FORCE_DISABLE_PROMPT: '**{username}** için 2FA zorla devre dışı bırakılsın mı? Bunu yalnızca cihaz kaybolduğunda kurtarma amacıyla kullanın.'
+            CURRENT_CODE_WRONG: 'Kod doğru değil.'
+            ENTER_CODE_TO_REGENERATE: 'Yeni bir gizli anahtar oluşturmak için mevcut 6 haneli kodunuzu girin. Yeni QR kodunu tarayıp bir kod ile doğrulayana kadar 2FA kapalı kalacaktır.'
+            REGENERATE: 'Yeniden oluştur'
+            TOO_MANY_CODES: 'Çok fazla hatalı kod girildi. Birkaç dakika sonra tekrar deneyin.'
         DISABLE: 'Devre Dışı Bırak'
         USER_AVATAR_CARD:
             AVATAR_UPDATED: 'Avatar güncellendi'
@@ -534,6 +578,21 @@ ICU:
             CHART_LABEL: 'Son 14 gün için günlük sayfa görüntüleme sayısı'
             TODAY: Bugün
             VIEWS: '{count, plural, one {# görüntüleme} other {# görüntüleme}}'
+            CHART_RANGE_LABEL: 'Sayfa görüntülemeleri, {range}'
+            LAST_12_MONTHS: 'Son 12 ay'
+            LAST_30_DAYS: 'Son 30 gün'
+            LAST_7_DAYS: 'Son 7 gün'
+            LAST_90_DAYS: 'Son 90 gün'
+            LOAD_FAILED: 'Bu zaman aralığı yüklenemedi'
+            PREVIOUS_PERIOD: 'Önceki dönemde {count, plural, one {# görüntülenme} other {# görüntülenme}}'
+            SHORT_12M: 12A
+            SHORT_14D: 14G
+            SHORT_30D: 30G
+            SHORT_7D: 7G
+            SHORT_90D: 90G
+            SO_FAR: 'şimdiye kadar'
+            TIME_FRAME: 'Zaman aralığı'
+            VS_PREVIOUS: 'önceki dönem ile karşılaştırıldığında'
         RECENT_PAGES_WIDGET:
             VIEW_ALL: 'Tümünü Görüntüle'
         STATS_WIDGET:
@@ -637,6 +696,8 @@ ICU:
                 REORDER_HINT: 'Sıralamayı ayarlamak için görselleri sürükleyin.'
                 INSERT_AT_CURSOR: 'İmlecin bulunduğu yere ekle'
                 INSERTED: '{filename} eklendi'
+                NOT_ALLOWED: 'Bu sayfanın medya öğelerini değiştiremezsiniz.'
+                NO_FILES: 'Medya dosyası yok'
             METADATA:
                 TITLE: 'Meta Verileri (Metadata)'
                 EDIT: 'Meta verilerini düzenle'
@@ -661,6 +722,14 @@ ICU:
                 TITLE: 'Dosya detayları'
                 TYPE: Tür
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: '{filename} yüklenemedi: {message}'
+                NO_PERMISSION: 'Medya yükleme izniniz yok, bu nedenle görsel eklenmedi.'
+                PAGES_ONLY: 'Görselleri yapıştırmak veya sürükleyip bırakmak sadece sayfa içeriğinde çalışır. Görseli medya yöneticisine yükleyin ve oradan ekleyin.'
+                SAVE_PAGE_FIRST: 'Önce sayfayı kaydedin, ardından görselleri içine yapıştırın veya sürükleyip bırakın.'
+                UNSUPPORTED_TYPE: '{filename} buraya eklenemez. PNG, JPEG, GIF, WebP, AVIF veya SVG formatında bir görsel yapıştırın veya sürükleyip bırakın.'
+                UPLOADED: '{count, plural, one {Görsel sayfa medyasına eklendi} other {# görsel sayfa medyasına eklendi}}'
+                UPLOADING: '{count, plural, one {Görsel yükleniyor…} other {# görsel yükleniyor…}}'
         UPLOAD: Yükle
         CACHE_CLEAR_BUTTON:
             LABEL: Önbellek
@@ -679,6 +748,7 @@ ICU:
                 TO_COLLABORATE_LIVE: 've canlı işbirliği yapın.'
                 LOCKED: 'Salt okunur — {owner}, **{editor}** kullanarak düzenliyor. Farklı editör türleri birlikte düzenleme yapamaz; canlı işbirliği yapmak için [editör tercihinizi değiştirin]({href}).'
                 BUILTIN_MARKDOWN_EDITOR: 'yerleşik markdown editörü'
+                LOCKED_EXPERT: 'Salt okunur: {owner}, Expert modunun markdown düzenleyicisi ile birlikte düzenlenemeyen **{editor}** kullanıyor. Canlı iş birliği yapmak için Normal moda geri dönün.'
         DOWNLOAD: İndir
         TRANSLATIONS:
             TITLE: Çeviriler
@@ -916,6 +986,11 @@ ICU:
                     POLICY_ALL_DEFAULTS: 'Tüm varsayılanlar, değiştirilmedi'
                     GLOBAL_REQUEST_GATED: 'system.pages.process.twig açık, ancak Twig site genelinde devre dışı bırakılmış, bu nedenle bu sayfalar ham metin olarak işlenir. Etkinleştirmek için yukarıdan bir profil seçin veya genel işareti kaldırın.'
                     FRONTMATTER_REQUEST_GATED: "Ön Bölüm (Frontmatter) Twig'i istendi (pages.frontmatter.process_twig), ancak içerikte Twig site genelinde devre dışı, bu yüzden çalışmayacak. Etkinleştirmek için yukarıdan bir profil seçin."
+                    IN_PARTIAL: 'Dahil edilen şablonun içinde engellendi'
+                    TROUBLESHOOTING_LINK: 'İçerikteki Twig hataları nasıl düzeltilir'
+                    TRUSTED_PARTIAL: '{template} güvenilir olarak işaretlendi. Onu içeren sayfalar, temanızın yaptığı gibi işlenir.'
+                    TRUST_FAILED: 'Kısmi şablona güvenilemedi'
+                    TRUST_PARTIAL: 'Bu kısmi şablona güven'
             SCHEDULER:
                 FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: 'Zamanlayıcı yapılandırması yüklenemedi.'
                 STATUS_UNAVAILABLE: 'Zamanlayıcı durumu bu sunucudan okunamadı. İşleriniz aşağıda listelenmiştir ve her zamanki gibi düzenlenebilir.'
@@ -1038,6 +1113,32 @@ ICU:
                 RESET_DONE: 'Geçersiz kılmalar (Overrides) sıfırlandı'
             FAILED_TO_LOAD_CONFIGURATION: 'Yapılandırma yüklenemedi.'
             SCOPE_NOT_FOUND: '{scope} adında bir yapılandırma kapsamı bulunamadı.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {Buradaki # ayar} other {Buradaki # ayar}} {env} ortamı tarafından geçersiz kılındığı için, {count, plural, one {bunda} other {bunlarda}} yapılan değişiklikler etkili olmayacaktır.'
+                BANNER_MIXED: '{count, plural, one {Buradaki # ayar} other {Buradaki # ayar}} {env} ortamı veya sunucu ortam değişkenleri tarafından geçersiz kılındığı için, {count, plural, one {bunda} other {bunlarda}} yapılan değişiklikler etkili olmayacaktır.'
+                BANNER_SERVER: '{count, plural, one {Buradaki # ayar} other {Buradaki # ayar}} sunucu ortam değişkenleri tarafından belirlendiği için, {count, plural, one {bunda} other {bunlarda}} yapılan değişiklikler etkili olmayacaktır.'
+                ENABLED_ENV: '{env} ortamı tarafından belirlendi'
+                ENABLED_EXPLAIN_ENV: '{env} ortamı, kendi yapılandırma dosyasında bu eklentiyi açıp kapattığı için, buradaki anahtar site üzerinde bir değişikliğe yol açmayacaktır.'
+                ENABLED_EXPLAIN_SERVER: 'Bir GRAV_CONFIG sunucu ortam değişkeni bu eklentiyi açıp kapattığı için, buradaki anahtar site üzerinde bir değişikliğe yol açmayacaktır.'
+                ENABLED_SERVER: 'Bir sunucu ortam değişkeni tarafından belirlendi'
+                EXPLAIN_ENV: '{env} ortamı bunu kendi yapılandırma dosyasında belirlediği için, burada kaydettikleriniz bu sitede uygulanmayacaktır.'
+                EXPLAIN_SERVER: 'Bir GRAV_CONFIG sunucu ortam değişkeni bunu belirlediği için, burada kaydettikleriniz uygulanmayacaktır.'
+                MARKER_ENV: '{env} ortamı tarafından geçersiz kılındı'
+                MARKER_SERVER: 'Bir sunucu ortam değişkeni tarafından belirlendi'
+                REMOVED: '{env} ortamından geçersiz kılma kaldırıldı'
+                REMOVE_FAILED: 'Geçersiz kılma kaldırılamadı'
+                REMOVE_OVERRIDE: 'Geçersiz kılmayı kaldır'
+                SAVED_ENV: 'Kaydedildi ancak {field}, {env} ortamı tarafından geçersiz kılındığı için site hala "{value}" değerini kullanmaktadır.'
+                SAVED_MANY_ENV: 'Kaydedildi, ancak bu değişikliklerin {count} tanesi {env} ortamı tarafından geçersiz kılındığı için site bunları kullanmayacaktır.'
+                SAVED_MANY_MIXED: 'Kaydedildi, ancak bu değişikliklerin {count} tanesi {env} ortamı veya sunucu ortam değişkenleri tarafından geçersiz kılındığı için site bunları kullanmayacaktır.'
+                SAVED_MANY_SERVER: 'Kaydedildi, ancak bu değişikliklerin {count} tanesi sunucu ortam değişkenleri tarafından ayarlandığı için site bunları kullanmayacaktır.'
+                SAVED_SERVER: 'Kaydedildi, ancak {field} bir sunucu ortam değişkeni tarafından ayarlandığı için site hâlâ "{value}" değerini kullanıyor.'
+                SITE_USES: 'Bu site şunu kullanıyor:'
+                SWITCH_TO: '{env} ortamına geç'
+                TOGGLE_ENV: 'Kaydedildi, ancak {env} ortamı {name} öğesini {state, select, off {devre dışı} other {etkin}} tutuyor.'
+                TOGGLE_SERVER: 'Kaydedildi, ancak bir sunucu ortam değişkeni {name} öğesini {state, select, off {devre dışı} other {etkin}} tutuyor.'
+                VALUE_OFF: kapalı
+                VALUE_ON: açık
         FLEX_OBJECTS:
             ADD: Ekle
             SEARCH: Ara...
@@ -1110,6 +1211,17 @@ ICU:
             CAPTCHA_VERIFIED: 'İnsan olduğunuz doğrulandı'
             CAPTCHA_VERIFYING: 'İnsan olduğunuzu doğruluyoruz...'
             INVALID_AUTHENTICATION_CODE: 'Geçersiz kimlik doğrulama kodu'
+            PASSKEY_CANCELLED: 'Geçiş anahtarı kullanılmadı. Hazır olduğunuzda tekrar deneyin veya parolanızla giriş yapın.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Geçiş anahtarı kullanılmadı. Hazır olduğunuzda tekrar deneyin veya kodunuzu girin.'
+            PASSKEY_FAILED: 'Geçiş anahtarı ile ilgili bir sorun oluştu. Lütfen tekrar deneyin.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Bu geçiş anahtarı bu hesaba ait değil. Başka bir tane deneyin veya kodunuzu girin.'
+            PASSKEY_OFF: 'Bu sitede geçiş anahtarları kapalıdır. Parolanızla giriş yapın.'
+            PASSKEY_OR: veya
+            PASSKEY_SIGN_IN: 'Geçiş anahtarı ile giriş yap'
+            PASSKEY_SIGN_IN_FAILED: 'Bu geçiş anahtarı sizi giriş yaptırmadı. Eğer hesabınızdan kaldırdıysanız, parolanızla giriş yapın.'
+            PASSKEY_TOO_MANY_TRIES: 'Çok fazla geçiş anahtarı denemesi yapıldı. Birkaç dakika bekleyip tekrar deneyin.'
+            PASSKEY_USE_INSTEAD: 'Bunun yerine geçiş anahtarınızı kullanın'
+            PASSKEY_WAITING: 'Geçiş anahtarınız bekleniyor…'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Gösterge Paneline Geri Dön'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Bu eklenti sayfası için içerik bulunmuyor.'
@@ -1281,7 +1393,7 @@ ICU:
             FAILED_TO_REMOVE_LOGO: 'Logo kaldırılamadı.'
             FAILED_TO_SAVE_BRANDING: 'Markalama (branding) kaydedilemedi.'
             ADMIN_TITLE: 'Yönetim Paneli Başlığı'
-            ADMIN_TITLE_DESC: 'Giriş ekranı başlığı ve tarayıcı sekmesinde gösterilir. "Grav Yönetim" (Grav Admin) için boş bırakın.'
+            ADMIN_TITLE_DESC: 'Tarayıcı sekmesinde ve özel bir logo ayarlanmadığı sürece oturum açma başlığı olarak gösterilir, çünkü logo zaten site adını içermektedir. "Grav Admin" olarak kalması için boş bırakın.'
             LOGIN_SUBTITLE: 'Giriş ekranı alt başlığı'
             LOGIN_SUBTITLE_DESC: 'Giriş başlığının altında gösterilen isteğe bağlı satır.'
             SHOW_POWERED_BY: '"Powered by Grav" göster'
@@ -1310,6 +1422,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Varsayılan
             SIDEBAR_LOGO_HEIGHT: 'Kenar Çubuğu Logo Yüksekliği'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Logonuzun kenar çubuğunun en üstünde ne kadar uzun görüneceği.'
+            SHOW_CREDIT: 'Trilby Media katkısını göster'
+            SHOW_CREDIT_DESC: 'Kenar çubuğunun alt kısmındaki „Grav was coded with love by Trilby Media“ satırını göster.'
         CUSTOM: Özel
         PREVIEW: Önizleme
         SETUP:
@@ -1366,6 +1480,8 @@ ICU:
             UPDATE_ALL: 'Tümünü Güncelle'
             REMOVE_ACTIVE_CONFIRM_MESSAGE: '{name} şu anda aktif olan tema. Bu temayı kaldırmak, başka bir tema etkinleştirilene kadar siteyi temasız bırakacaktır. Devam edilsin mi?'
             DELETE_ACTIVE_WARNING: 'Şu anda aktif. Silmeden önce farklı bir temaya geçilmesi önerilir.'
+            UPDATE_CONFIRM_MESSAGE: '{name} öğesini v{version} sürümüne güncellensin mi?'
+            UPDATE_CONFIRM_TITLE: 'Tema güncellensin mi?'
         ACTIVE: Aktif
         ACTIVATE: Etkinleştir
         USERS:
@@ -1397,6 +1513,36 @@ ICU:
                 PERMISSIONS: İzinler
                 CREATE: Oluştur
             PAGE_TITLE: '{name} — Kullanıcılar — Grav Yönetim'
+            EMAIL_CHANGE_CANCELLED: 'E-posta değişikliği iptal edildi.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'E-posta değişikliği iptal edilemedi.'
+            EMAIL_CHANGE_RESEND: 'Yeniden gönder'
+            EMAIL_CHANGE_RESEND_FAILED: 'Doğrulama bağlantısı yeniden gönderilemedi.'
+            EMAIL_CHANGE_SENT: '{email} adresine bir doğrulama bağlantısı gönderdik. E-posta adresi, bağlantı açıldığında değişecektir.'
+            EMAIL_CHANGE_WAITING: 'Doğrulama bekleniyor: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'E-posta adresinizi {email} olarak değiştirmek için mevcut parolanızı girin.'
+                NOT_SAVED: 'Yeni e-posta adresiniz {email} henüz kaydedilmedi. Mevcut parolanızla onaylayın.'
+                TITLE: 'Siz olduğunuzu onaylayın'
+            PASSWORD:
+                CHANGE: 'Parolayı değiştir'
+                CHANGED_OTHER: '{name} için parola değiştirildi.'
+                CHANGED_OWN: 'Parolanız değiştirildi. Hesabınızda oturumu açık olan diğer tarayıcılar ve uygulamalardan çıkış yapıldı.'
+                CONFIRM: 'Yeni parolayı onayla'
+                CURRENT: 'Mevcut parola'
+                CURRENT_REQUIRED: 'Mevcut parolanızı girin.'
+                CURRENT_WRONG: 'Mevcut parolanız doğru değil.'
+                FAILED: 'Parola değiştirilemedi.'
+                MISMATCH: 'Parolalar eşleşmiyor.'
+                NEW: 'Yeni parola'
+                NEW_REQUIRED: 'Yeni bir parola girin.'
+                NOT_ALLOWED: 'Bu parolayı değiştirme izniniz yok.'
+                NO_PASSWORD_HELP: 'Başka bir hizmet aracılığıyla giriş yaptığınız için hesabınızın henüz bir parolası yok. Kullanıcı adınız ve parolanızla giriş yapabilmek için bir parola belirleyin.'
+                OTHER_HELP: '{name} için yeni bir parola belirleyin. Tüm tarayıcılardan ve uygulamalardan çıkış yapacaklar ve yeni parolayla tekrar giriş yapacaklar.'
+                OWN_HELP: 'Mevcut parolanızı ve ardından yeni parolayı iki kez girin. Burada oturumunuz açık kalacak, hesabınıza bağlı diğer tüm tarayıcı ve uygulamalardan ise çıkış yapılacaktır.'
+                POLICY: 'Yeni şifre gereksinimleri karşılamıyor.'
+                SET: 'Şifre belirle'
+                TITLE: Şifre
+                TOO_MANY: 'Çok fazla hatalı şifre denemesi yapıldı. Birkaç dakika sonra tekrar deneyin.'
         USERS_NAV:
             USERS: Kullanıcılar
             GROUPS: Gruplar
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Sunucudan beklenmedik yanıt'
             UNEXPECTED_RESPONSE_DETAIL: 'Sunucu, bu ekranın beklemediği bir formatta veri ile yanıt verdi. Tarayıcı konsolunda detaylar mevcuttur.'
             UNEXPECTED_RESPONSE_TITLE: 'Sunucudan beklenmedik yanıt'
+            SERVER_PAGE_DETAIL: "Web sunucunuz bu isteği Grav'a iletmek yerine doğrudan kendisi yanıtladı (HTTP {status}). Sunucudaki mod_security veya bir barındırma güvenlik duvarı gibi bir güvenlik filtresi bunu engellemiş olabilir. Hangi kuralın tetiklendiğini öğrenmek için barındırma sağlayıcınızla görüşebilir veya sunucunun hata günlüklerini kontrol edebilirsiniz."
+            SERVER_PAGE_TITLE: 'Web sunucusu tarafından engellendi'
         CACHE_MODULES: 'Önbellek modülü çıktısı'
         CACHE_MODULES_HELP: 'Bu sayfa modüllerinin oluşturulmuş çıktısını önbelleğe alır. Sadece modüller her ziyaretçiye aynı içeriği gösterdiğinde kullanın. Kendi Twig dosyasına veya formuna sahip modüller, giriş yapmış ziyaretçiler ve form gönderimleri her zaman yeniden oluşturulur. Sadece kısmi bir şablonu düzenlemek önbelleğin temizlenmesini gerektirir.'
         DEBUGGER_FLEX_RENDER_HINTS: 'Flex İşleme İpuçları'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Oturumları sadece gerektiğinde başlat'
         SESSION_LAZY_HELP: 'Oturum çerezi olmayan ziyaretçiler, yalnızca oturum açma, form veya mesaj gibi bir şey saklandığında oturum sahibi olur; böylece anonim sayfa görünümleri bir vekil sunucu veya CDN tarafından önbelleğe alınabilir. Her sayfa görünümünde veri saklayan eklentiler yine de bir oturum başlatır.'
         UPDATE_CHANGELOG_TITLE: 'v{version} sürümündeki değişiklikler'
+        CHANGELOG:
+            BUGFIX: 'Hata düzeltme'
+            IMPROVED: İyileştirme
+            NEW: Yeni
+            SECURITY: Güvenlik
+        CHANGELOG_NOT_AVAILABLE: 'Değişiklik günlüğü mevcut değil.'
+        IMAGES_WATERMARK_ALL: 'Tüm görsellere filigran ekle'
+        IMAGES_WATERMARK_ALL_HELP: 'Sitenin sunduğu her görsele otomatik olarak filigran damgası bas'
+        IMAGES_WATERMARK_BOTTOM: Alt
+        IMAGES_WATERMARK_CENTER: Orta
+        IMAGES_WATERMARK_IMAGE: 'Filigran görseli'
+        IMAGES_WATERMARK_IMAGE_HELP: 'Filigran olarak kullanılacak görselin yolu, örneğin system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Sol
+        IMAGES_WATERMARK_POSITION_X: 'Yatay konum'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Filigranın soldan sağa doğru nerede duracağı'
+        IMAGES_WATERMARK_POSITION_Y: 'Dikey konum'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Filigranın yukarıdan aşağıya doğru nerede duracağı'
+        IMAGES_WATERMARK_RIGHT: Sağ
+        IMAGES_WATERMARK_SCALE: 'Filigran ölçeği'
+        IMAGES_WATERMARK_SCALE_HELP: 'Görselin yüzdesi olarak filigran boyutu'
+        IMAGES_WATERMARK_TITLE: Filigran
+        IMAGES_WATERMARK_TOP: Üst
+        PASSKEYS_FIELD:
+            ADD: 'Bir geçiş anahtarı ekle'
+            ADDED: 'Geçiş anahtarı eklendi ({name}). Bundan böyle sizi otomatik olarak oturum açtıracaktır.'
+            ADDED_ON: '{date} tarihinde eklendi'
+            ADD_FAILED: 'Geçiş anahtarı eklenemedi. Lütfen tekrar deneyin.'
+            ALREADY_SAVED: 'Bu parola yöneticisi veya cihazda zaten bu hesap için bir geçiş anahtarı bulunuyor.'
+            CANCELLED: 'Hiçbir geçiş anahtarı eklenmedi. Hazır olduğunuzda tekrar deneyin.'
+            CODE_REQUIRED: 'Mevcut 6 haneli kodunuzu girin.'
+            CODE_WRONG: 'Bu kod doğru değil.'
+            CONTINUE: 'Devam et'
+            CURRENT_CODE: 'Mevcut 2FA kodu'
+            CURRENT_PASSWORD: 'Mevcut parola'
+            HELP: "Bir geçiş anahtarı; parmak iziniz, yüzünüz veya cihaz PIN'iniz ile, bir parola yöneticisinden veya güvenlik anahtarından oturum açmanızı sağlar. Sitede ve Yönetici panelinde çalışır ve her iki oturum açma adımı yerine de geçer."
+            HELP_OTHER: 'Bu hesabın oturum açmak için kullandığı geçiş anahtarları. İçinde barındıran cihaz veya parola yöneticisi kaybolduğunda birini kaldırın.'
+            LAST_USED: 'son kullanım {date}'
+            NAME_LABEL: 'Geçiş anahtarı adı'
+            NAME_REQUIRED: 'Geçiş anahtarına bir ad verin.'
+            NEVER_USED: 'henüz kullanılmadı'
+            NONE: 'Henüz geçiş anahtarı yok.'
+            NONE_OTHER: 'Bu hesabın geçiş anahtarı bulunmuyor.'
+            PASSWORD_REQUIRED: 'Mevcut parolanızı girin.'
+            PASSWORD_WRONG: 'Mevcut parolanız doğru değil.'
+            PROOF_CODE_ADD: 'Bir geçiş anahtarı eklemek için mevcut 6 haneli 2FA kodunuzu girin.'
+            PROOF_PASSWORD_ADD: 'Bir geçiş anahtarı eklemek için mevcut parolanızı girin.'
+            PROOF_UNAVAILABLE: 'Önce hesabınıza bir parola veya 2FA tanımlayın. Geçiş anahtarları (passkeys), yalnızca oturum açılmış bir oturumla eklenemez veya kaldırılamaz.'
+            REMOVE: Kaldır
+            REMOVED: 'Geçiş anahtarı kaldırıldı ({name}).'
+            REMOVE_CONFIRM: '“{name}” kaldırılsın mı? Artık giriş yapmanızı sağlamayacak.'
+            REMOVE_CONFIRM_CODE: '“{name}” kaldırılsın mı? Artık giriş yapmanızı sağlamayacak. Onaylamak için mevcut 6 haneli 2FA kodunuzu girin.'
+            REMOVE_CONFIRM_OTHER: '“{name}”, {username} kullanıcısından kaldırılsın mı? Artık onun giriş yapmasını sağlamayacak.'
+            REMOVE_CONFIRM_PASSWORD: '“{name}” kaldırılsın mı? Artık giriş yapmanızı sağlamayacak. Onaylamak için mevcut parolanızı girin.'
+            REMOVE_FAILED: 'Geçiş anahtarı kaldırılamadı.'
+            RENAME: 'Yeniden Adlandır'
+            RENAMED: 'Geçiş anahtarı yeniden adlandırıldı.'
+            RENAME_FAILED: 'Geçiş anahtarı yeniden adlandırılamadı.'
+            SAVE: Kaydet
+            SYNCED: eşlendi
+            SYNCED_HELP: 'Cihazlarınız arasında eşleme yapan bir parola yöneticisinde tutulur.'
+            TITLE: 'Geçiş anahtarları'
+            TOO_MANY: 'Çok fazla yanlış deneme. Birkaç dakika sonra tekrar deneyin.'
+            UNSUPPORTED: 'Bu tarayıcı burada geçiş anahtarlarını kullanamıyor.'
+            WAITING: 'Geçiş anahtarınız bekleniyor…'
+        PIPELINE_REMOTE_TIMEOUT: 'Uzak varlık zaman aşımı'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Bir işlem hattı oluşturulurken uzak bir CSS veya JS dosyasının (örneğin bir CDN stil sayfası) gelmesi için beklenecek süre. Zamanında ulaşmazsa, sayfa o grubu paketlemeden oluşturulur ve bir sonraki istekte tekrar denenir'
+        README_NOT_AVAILABLE: 'README mevcut değil.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Kenar çubuğunu özelleştir'
+            DIVIDER: Ayırıcı
+            HIDE: '{label} öğesini gizle'
+            HINT: 'Öğeleri yeniden sıralamak için sürükleyin veya bir tutamağa odaklanıp ok tuşlarını kullanın. Göz simgesi bir öğeyi gizler, yıldız simgesi ise bir eklentinin kısayollarını altında göstermek üzere seçer.'
+            MOVE: '{label} öğesini taşı'
+            MOVED: '{label}, {total} üzerinden {position}. konuma taşındı'
+            RESET_DONE: 'Kenar çubuğunuz tekrar siteninkini takip ediyor'
+            RESTORE_BUILT_IN: 'Orijinal sıralama'
+            SAVED: 'Kenar çubuğu kaydedildi'
+            SAVE_FAILED: 'Kenar çubuğu kaydedilemedi'
+            SAVE_FOR_EVERYONE: 'Herkes için kaydet'
+            SAVE_FOR_EVERYONE_HINT: 'Bunu kendi kenar çubuğunu düzenlememiş her kullanıcı için varsayılan kenar çubuğu yap'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Kendi kenar çubuğunu düzenlememiş her kullanıcı bu sıralamayı görecektir. Herkes kendi kenar çubuğunu değiştirebilir ve bir öğeyi gizlemek, açmaya yetkili oldukları şeyleri değiştirmez.'
+            SAVE_FOR_EVERYONE_TITLE: 'Bunu herkesin kenar çubuğu yap?'
+            SHOW: '{label} öğesini göster'
+            SITE_SAVED: 'Kenar çubuğu herkes için kaydedildi'
+            STAR: '{label} öğesini kenar çubuğunda göster'
+            SUB_ITEMS: 'Kısayollar ({total} yıldızlı öğeden {count} tanesi)'
+            UNSTAR: '{label} öğesini kenar çubuğundan kaldır'
+            USE_SITE_DEFAULT: 'Sitenin kenar çubuğunu kullan'
+        UNDO: 'Geri al'
+        UPDATE_CHANGELOG_EMPTY: 'Yüklü sürümden daha yeni bir değişiklik günlüğü girişi bulunmuyor.'
+        UPDATE_CHANGELOG_FAILED: 'Değişiklik günlüğü yüklenemedi.'
+        UPDATE_WHATS_NEW: Yenilikler

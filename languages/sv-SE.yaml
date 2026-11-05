@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: 'Admin v{version}'
             CLOSE_MENU: 'Stäng meny'
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Grav kodades {code} med {love} av {company}.'
+            MADE_BY_PLAIN: 'Grav kodades med kärlek av Trilby Media'
+            MORE_ACTIONS: 'Fler åtgärder'
         ARE_YOU_SURE: 'Är du säker?'
         AUTHOR: Författare
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: 'Kunde inte spara — dessa fält är ogiltiga: {fields}'
             FAILED_TO_LOAD_CONFIGURATION: 'Det gick inte att läsa in konfigurationen.'
             SCOPE_NOT_FOUND: 'Ingen konfigurationsomfattning med namnet {scope} hittades.'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {# inställning här är} other {# inställningar här är}} åsidosatt av miljön {env}, så ändringar av {count, plural, one {den} other {dem}} kommer inte att träda i kraft.'
+                BANNER_MIXED: '{count, plural, one {# inställning här är} other {# inställningar här är}} åsidosatt av miljön {env} eller av miljövariabler på servern, så ändringar av {count, plural, one {den} other {dem}} kommer inte att träda i kraft.'
+                BANNER_SERVER: '{count, plural, one {# inställning här är} other {# inställningar här är}} satt via miljövariabler på servern, så ändringar av {count, plural, one {den} other {dem}} kommer inte att träda i kraft.'
+                ENABLED_ENV: 'Satt av miljön {env}'
+                ENABLED_EXPLAIN_ENV: 'Miljön {env} slår på eller av detta plugin i sin egen konfigurationsfil, så reglaget här kommer inte att ändra vad webbplatsen gör.'
+                ENABLED_EXPLAIN_SERVER: 'En GRAV_CONFIG-miljövariabel på servern slår på eller av detta plugin, så reglaget här kommer inte att ändra vad webbplatsen gör.'
+                ENABLED_SERVER: 'Satt av en miljövariabel på servern'
+                EXPLAIN_ENV: 'Miljön {env} ställer in detta i sin egen konfigurationsfil, så det du sparar här kommer inte att gälla på denna webbplats.'
+                EXPLAIN_SERVER: 'En GRAV_CONFIG-miljövariabel på servern ställer in detta, så det du sparar här kommer inte att gälla.'
+                MARKER_ENV: 'Åsidosatt av miljön {env}'
+                MARKER_SERVER: 'Satt av en miljövariabel på servern'
+                REMOVED: 'Åsidosättning borttagen från miljön {env}'
+                REMOVE_FAILED: 'Kunde inte ta bort åsidosättningen'
+                REMOVE_OVERRIDE: 'Ta bort åsidosättning'
+                SAVED_ENV: 'Sparat, men {field} är åsidosatt av miljön {env}, så webbplatsen använder fortfarande ”{value}”.'
+                SAVED_MANY_ENV: 'Sparat, men {count} av dessa ändringar åsidosätts av miljön {env}, så webbplatsen kommer inte att använda dem.'
+                SAVED_MANY_MIXED: 'Sparat, men {count} av dessa ändringar åsidosätts av miljön {env} eller av miljövariabler på servern, så webbplatsen kommer inte att använda dem.'
+                SAVED_MANY_SERVER: 'Sparat, men {count} av dessa ändringar är inställda av miljövariabler på servern, så webbplatsen kommer inte att använda dem.'
+                SAVED_SERVER: 'Sparat, men {field} är inställt av en miljövariabel på servern, så webbplatsen använder fortfarande ”{value}”.'
+                SITE_USES: 'Den här webbplatsen använder'
+                SWITCH_TO: 'Växla till {env}'
+                TOGGLE_ENV: 'Sparat, men miljön {env} håller {name} {state, select, off {inaktiverad} other {aktiverad}}.'
+                TOGGLE_SERVER: 'Sparat, men en miljövariabel på servern håller {name} {state, select, off {inaktiverad} other {aktiverad}}.'
+                VALUE_OFF: av
+                VALUE_ON: på
         CONFIG_INFO_PAGE:
             ENVIRONMENT: Miljö
             EXPORT_YAML: 'Exportera YAML'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: Varumärken
                 FAMILY_REGULAR: Vanlig
                 FAMILY_SOLID: Solid
+                SET_MISSING: 'Ingen ikonuppsättning kallad ”{set}” är registrerad på den här webbplatsen.'
             NO_TAXONOMY_TYPES: 'Inga taxonomityper konfigurerade'
             PAGES:
                 FILTER_PAGES: 'Filtrera sidor...'
@@ -404,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 'Bekräftad att du är människa'
             CAPTCHA_VERIFYING: 'Kontrollerar att du är människa...'
             INVALID_AUTHENTICATION_CODE: 'Ogiltig autentiseringskod'
+            PASSKEY_CANCELLED: 'Ingen lösenordsnyckel användes. Försök igen när du är redo, eller logga in med ditt lösenord.'
+            PASSKEY_CANCELLED_TWO_STEP: 'Ingen lösenordsnyckel användes. Försök igen när du är redo, eller ange din kod.'
+            PASSKEY_FAILED: 'Något gick fel med lösenordsnyckeln. Vänligen försök igen.'
+            PASSKEY_NOT_THIS_ACCOUNT: 'Den lösenordsnyckeln tillhör inte detta konto. Prova en annan, eller ange din kod.'
+            PASSKEY_OFF: 'Lösenordsnycklar är avstängda på denna webbplats. Logga in med ditt lösenord.'
+            PASSKEY_OR: eller
+            PASSKEY_SIGN_IN: 'Logga in med en lösenordsnyckel'
+            PASSKEY_SIGN_IN_FAILED: 'Den lösenordsnyckeln loggade inte in dig. Om du har tagit bort den från ditt konto, logga in med ditt lösenord.'
+            PASSKEY_TOO_MANY_TRIES: 'För många försök med lösenordsnyckeln. Vänta några minuter och försök igen.'
+            PASSKEY_USE_INSTEAD: 'Använd din lösenordsnyckel istället'
+            PASSKEY_WAITING: 'Väntar på din lösenordsnyckel…'
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 'Inget att förhandsgranska'
             IMAGE_INSERT:
@@ -474,6 +515,8 @@ ICU:
                 REORDER_DONE: Klar
                 REORDER_HINT: 'Dra bilder för att ändra ordning.'
                 REORDER_MODE: 'Ändra ordning'
+                NOT_ALLOWED: 'Du kan inte ändra media för denna sida.'
+                NO_FILES: 'Inga mediafiler'
             METADATA:
                 APPLY_TO_N: 'Applicera på {n} filer'
                 BATCH_EDITING: 'Redigerar {n} valda filer — ändrade fält appliceras på alla.'
@@ -498,6 +541,14 @@ ICU:
                 TITLE: Fildetaljer
                 TYPE: Typ
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: 'Kunde inte ladda upp {filename}: {message}'
+                NO_PERMISSION: 'Du har inte behörighet att ladda upp media, så bilden lades inte till.'
+                PAGES_ONLY: 'Att klistra in eller släppa bilder fungerar endast i sidinnehåll. Ladda upp bilden till mediehanteraren och infoga den därifrån.'
+                SAVE_PAGE_FIRST: 'Spara sidan först, klistra sedan in eller släpp bilder i den.'
+                UNSUPPORTED_TYPE: '{filename} kan inte läggas till här. Klistra in eller släpp en PNG-, JPEG-, GIF-, WebP-, AVIF- eller SVG-bild.'
+                UPLOADED: '{count, plural, one {Bild tillagd till sidmedia} other {# bilder tillagda till sidmedia}}'
+                UPLOADING: '{count, plural, one {Laddar upp bild…} other {Laddar upp # bilder…}}'
         NAV:
             CONFIGURATION: Konfiguration
             DASHBOARD: Instrumentpanel
@@ -562,6 +613,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: 'Servern returnerade versionen {effective} av den här sidan istället för {active}, och rapporterade inte {active} som saknad. Sparande är inaktiverat här så att filen {effective} inte skrivs över. Om varje sida gör detta skickar webbservern förmodligen inte vidare frågesträngar till Grav.'
                 PREVIEW_SHOWING_HOST_PAGE: 'visas på sin föräldrasida'
                 TEMPLATE_MISSING_NOTICE: 'Mallen **{template}** för denna modul hittades inte i temat, så sidan den tillhör visar felet ”mall saknas”. Välj en mall under **Sidmall** på fliken Avancerat, eller lägg till mallen i temat.'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Denna sida har osparade ändringar från en delad redigeringssession som inte matchar sidfilen, vilken kan ha redigerats utanför administratören. Redigeringsverktyget visar de osparade ändringarna; att spara ersätter filens version.'
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Sidan ändrades på annan plats. Vänligen ladda om.'
+                READ_ONLY_NOTICE: 'Du kan se denna sida men inte redigera den.'
             EDIT_PAGE: 'Redigera sida'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ändrad
@@ -613,6 +667,8 @@ ICU:
                 VISIBLE: Synlig
                 CHILD_TYPE_HINT: 'Föräldrasidan föreslår ”{template}” för sina underordnade sidor. Du kan fortfarande välja en annan mall.'
                 STATUS_HELP: 'Utkast sparas men syns inte på webbplatsen förrän du publicerar dem'
+                MODULE_NEEDS_PARENT: 'En modul hamnar inuti en modulär sida, så välj den sida den tillhör.'
+                PICK_MODULAR_PAGE: 'Välj en modulär sida'
             NO_PAGES: 'Inga sidor hittades'
             NO_SEARCH_RESULTS: 'Inga sidor matchar din sökning'
             PAGES_GRAV_ADMIN: 'Sidor — Grav Admin'
@@ -692,6 +748,32 @@ ICU:
                 SCHEDULED: Schemalagd
                 SCHEDULED_FOR: 'Schemalagd att publiceras {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 'Du kan inte öppna den här sidan. Den är listad så att du kan nå sidorna inuti den.'
+            ANCESTOR_ONLY_LABEL: '{title}: du kan inte öppna den här sidan, bara sidor inuti den'
+            ANCESTOR_ONLY_PARENT: 'Du kan inte öppna föräldrasidan'
+            DELETE_CANNOT_UNDO: 'Detta kan inte ångras.'
+            DELETE_LAST_LANGUAGE: 'Detta är sidans enda språk, så hela sidmappen tas bort, inklusive dess media och eventuella undersidor.'
+            DELETE_RECOVERABLE: 'Du kan återställa den från papperskorgen.'
+            DELETE_TRANSLATION_CONFIRM: 'Ta bort {language}-översättningen av ”{title}”? {n, plural, one{Det andra språket behålls.} other{De övriga # språken behålls.}}'
+            DELETE_TRANSLATION_TITLE: 'Ta bort översättning'
+            DELETE_UNDONE: 'Sidan har återställts'
+            DELETE_UNDONE_NAMED: 'Återställde ”{name}”'
+            DELETE_UNDO_FAILED: 'Kunde inte ångra borttagningen: {detail}'
+            DROP_INSIDE: 'Släpp en sida här för att flytta den inuti {title}'
+            LOAD_CHILDREN_FAILED: 'Kunde inte ladda sidorna i denna mapp.'
+            MODULES:
+                ADD: 'Lägg till modul'
+                EMPTY: 'Inga moduler än.'
+                HELP: 'De delar som denna sida är uppbyggd av, i den ordning sidan visar dem. Dra en modul för att flytta den, eller fokusera dess handtag och tryck på Alt+Upp eller Alt+Ner. Klicka på dess statusikon för att publicera eller avpublicera den.'
+                LOAD_FAILED: 'Modulerna kunde inte laddas.'
+                MOVE: 'Flytta ”{title}”'
+                TITLE: Moduler
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} har inget ordningsnummer, så den sorteras fortfarande efter namn'
+            PAGE_TITLE_HINT: 'Titel: {title}'
+            SHOW_DROP_INSIDE: 'Flytta sidor inuti {title}'
+            TRANSLATION_DELETED: '{language}-översättning borttagen'
+            TRANSLATION_DELETED_OF: 'Tog bort {language}-översättningen av ”{name}”'
+            TRANSLATION_RESTORED: '{language}-översättning återställd'
         PASSWORD: Lösenord
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: Lösenordskrav
@@ -709,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 'Åsidosätter en grupp'
             LEGEND_SUPER: 'Beviljad av superadministratör'
             OVERRIDES_GROUP: 'Din direkta inställning åsidosätter gruppen: {groups}'
+            LOCKED_NOTE: 'Du kan endast ge behörigheter som ditt eget konto har. De du inte kan ge har Tillåt gråmarkerat, men du kan fortfarande neka eller rensa dem.'
+            NOT_GRANTABLE: 'Du kan inte ge denna behörighet eftersom ditt eget konto inte har den'
         PLUGIN:
             BACK_TO_DASHBOARD: 'Tillbaka till instrumentpanel'
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 'Inget innehål tillgängligt för denna plugin-sida.'
@@ -750,6 +834,21 @@ ICU:
             CHART_LABEL: 'Sidvisningar per dag under de senaste 14 dagarna'
             TODAY: Idag
             VIEWS: '{count, plural, one {# visning} other {# visningar}}'
+            CHART_RANGE_LABEL: 'Sidvisningar, {range}'
+            LAST_12_MONTHS: 'Senaste 12 månaderna'
+            LAST_30_DAYS: 'Senaste 30 dagarna'
+            LAST_7_DAYS: 'Senaste 7 dagarna'
+            LAST_90_DAYS: 'Senaste 90 dagarna'
+            LOAD_FAILED: 'Kunde inte ladda denna tidsperiod'
+            PREVIOUS_PERIOD: '{count, plural, one {# visning} other {# visningar}} under föregående period'
+            SHORT_12M: 12M
+            SHORT_14D: 14D
+            SHORT_30D: 30D
+            SHORT_7D: 7D
+            SHORT_90D: 90D
+            SO_FAR: hittills
+            TIME_FRAME: Tidsperiod
+            VS_PREVIOUS: 'jämfört med föregående period'
         PREMIUM: Premium
         PREVIEW: Förhandsvisning
         REAUTH_MODAL:
@@ -901,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 'Fäst verktygsfält'
             STICKY_TOOLBAR_DESC: 'Behåll formateringsverktygsfältet och förhandsgranskningsknappen synliga när du rullar.'
             ADMIN_TITLE: Admin-titel
-            ADMIN_TITLE_DESC: 'Visas som rubrik vid inloggning och på webbläsarfliken. Lämna tomt för „Grav Admin“.'
+            ADMIN_TITLE_DESC: 'Visas i webbläsarfliken och som rubrik vid inloggning om inte en anpassad logotyp har valts, eftersom logotypen redan namnger webbplatsen. Lämna tomt för ”Grav Admin”.'
             FAILED_TO_SAVE_BRANDING: 'Kunde inte spara varumärkesprofilering.'
             FAVICON: Favicon
             FAVICON_DESC: 'Anpassad ikon för webbläsarfliken (SVG, PNG, WebP eller ICO). Lämna tomt för den genererade ikonen.'
@@ -932,6 +1031,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: Standard
             SIDEBAR_LOGO_HEIGHT: 'Höjd på logotyp i sidomeny'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Hur hög din logotyp visas högst upp i sidomenyn.'
+            SHOW_CREDIT: 'Visa Trilby Media-kreditering'
+            SHOW_CREDIT_DESC: 'Visa raden ”Grav was coded with love by Trilby Media” längst ner i sidomenyn.'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 tecken: bokstäver, siffror, bindestreck, understreck'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: 'Administratörkonto skapat — välkommen till Grav'
@@ -964,6 +1065,7 @@ ICU:
                 LOCKED: 'Skrivskyddad — {owner} redigerar med **{editor}**. Blandade redigerartyper kan inte samarbeta; [byt dina redigerarinställningar]({href}) för att samarbeta live.'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 'byt dina redigerarinställningar'
                 TO_COLLABORATE_LIVE: 'för att samarbeta live.'
+                LOCKED_EXPERT: 'Skrivskyddat: {owner} redigerar med **{editor}**, vilket inte kan samredigera med Expertlägets markdown-redigerare. Växla tillbaka till Normalläget för att samarbeta i realtid.'
         SYSTEM:
             COMING_SOON: 'Kommer snart'
             SYSTEM_GRAV_ADMIN: 'System — Grav Admin'
@@ -1015,6 +1117,8 @@ ICU:
             UPDATE_ALL: 'Uppdatera alla'
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# tema kommer att uppdateras:} other{# teman kommer att uppdateras:}}'
             UPDATE_ALL_CONFIRM_TITLE: 'Uppdatera teman?'
+            UPDATE_CONFIRM_MESSAGE: 'Uppdatera {name} till v{version}?'
+            UPDATE_CONFIRM_TITLE: 'Uppdatera tema?'
         TIME:
             DAYS_AGO: 'för {n}d sedan'
             HOURS_AGO: 'för {n}h sedan'
@@ -1121,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: Egenskaper
                     POLICY_TAGS: Taggar
                     POLICY_VIEW: 'Visa effektiv policy'
+                    IN_PARTIAL: 'Blockerad inuti den inkluderade mallen'
+                    TROUBLESHOOTING_LINK: 'Så här åtgärdar du Twig i innehåll'
+                    TRUSTED_PARTIAL: 'Betrodd {template}. Sidor som inkluderar den renderar den som ditt tema gör.'
+                    TRUST_FAILED: 'Kunde inte betro delmallen'
+                    TRUST_PARTIAL: 'Betro denna delmall'
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 'Laddar rapportkomponent...'
             SCHEDULER:
@@ -1208,6 +1317,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 'Tvåfaktorsautentisering är inaktiverad'
             VERIFICATION_CODE: Verifieringskod
             VERIFY_ENABLE: 'Verifiera och aktivera'
+            CURRENT_CODE_WRONG: 'Den koden är inte korrekt.'
+            ENTER_CODE_TO_REGENERATE: 'Ange din nuvarande 6-siffriga kod för att skapa en ny hemlighet. 2FA förblir avstängt tills du skannar den nya QR-koden och verifierar en kod från den.'
+            REGENERATE: Återskapa
+            TOO_MANY_CODES: 'För många felaktiga koder. Försök igen om några minuter.'
         UNSAVED_CHANGES: 'Osparade ändringar'
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 'Sparar ändringar…'
@@ -1247,6 +1360,36 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 'Du kan inte ta bort ditt eget konto.'
             CONFIRM_DELETE_USER: 'Ta bort användare „{username}"? Detta kan inte ångras.'
             TITLE: Användare
+            EMAIL_CHANGE_CANCELLED: 'E-poständring avbruten.'
+            EMAIL_CHANGE_CANCEL_FAILED: 'Det gick inte att avbryta e-poständringen.'
+            EMAIL_CHANGE_RESEND: 'Skicka igen'
+            EMAIL_CHANGE_RESEND_FAILED: 'Det gick inte att skicka bekräftelselänken igen.'
+            EMAIL_CHANGE_SENT: 'Vi har skickat en bekräftelselänk till {email}. E-postadressen ändras när länken har öppnats.'
+            EMAIL_CHANGE_WAITING: 'Väntar på bekräftelse: {email}'
+            EMAIL_CONFIRM:
+                MESSAGE: 'Ange ditt nuvarande lösenord för att ändra din e-postadress till {email}.'
+                NOT_SAVED: 'Din nya e-postadress, {email}, är inte sparad ännu. Bekräfta den med ditt nuvarande lösenord.'
+                TITLE: 'Bekräfta att det är du'
+            PASSWORD:
+                CHANGE: 'Ändra lösenord'
+                CHANGED_OTHER: 'Lösenordet för {name} har ändrats.'
+                CHANGED_OWN: 'Ditt lösenord har ändrats. Andra webbläsare och appar som är inloggade på ditt konto har loggats ut.'
+                CONFIRM: 'Bekräfta nytt lösenord'
+                CURRENT: 'Nuvarande lösenord'
+                CURRENT_REQUIRED: 'Ange ditt nuvarande lösenord.'
+                CURRENT_WRONG: 'Ditt nuvarande lösenord är inte korrekt.'
+                FAILED: 'Det gick inte att ändra lösenordet.'
+                MISMATCH: 'Lösenorden matchar inte.'
+                NEW: 'Nytt lösenord'
+                NEW_REQUIRED: 'Ange ett nytt lösenord.'
+                NOT_ALLOWED: 'Du har inte behörighet att ändra detta lösenord.'
+                NO_PASSWORD_HELP: 'Ditt konto har inget lösenord ännu eftersom du loggar in via en annan tjänst. Ställ in ett för att även kunna logga in med ditt användarnamn och lösenord.'
+                OTHER_HELP: 'Ställ in ett nytt lösenord för {name}. De loggas ut från alla webbläsare och appar, och loggar in igen med det nya lösenordet.'
+                OWN_HELP: 'Ange ditt nuvarande lösenord och därefter det nya två gånger. Du förblir inloggad här, men alla andra webbläsare och appar som är inloggade på ditt konto loggas ut.'
+                POLICY: 'Det nya lösenordet uppfyller inte kraven.'
+                SET: 'Ställ in lösenord'
+                TITLE: Lösenord
+                TOO_MANY: 'För många felaktiga lösenordsförsök. Försök igen om några minuter.'
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 'Avatar borttagen'
             AVATAR_UPDATED: 'Avatar uppdaterad'
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} är obligatorisk'
             FORM_HAS_ERRORS: '{count, plural, one {# fält behöver din uppmärksamhet} other {# fält behöver din uppmärksamhet}}'
             REQUIRED_GENERIC: 'Det här fältet är obligatoriskt'
+            LIST_KEY_REQUIRED: '{key}: {label} krävs'
+            LIST_NEW_ROW_REQUIRED: 'Nytt objekt: {label} krävs'
+            LIST_ROW_REQUIRED: 'Objekt {row}: {label} krävs'
         VALID_LINK_ATTRIBUTES: 'Giltiga länkattribut'
         VALID_LINK_ATTRIBUTES_HELP: 'Attribut som automatiskt läggs till HTML-elementet för media'
         VARY_ACCEPT_ENCODING: 'Variera accept encoding'
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 'Oväntat svar från servern'
             UNEXPECTED_RESPONSE_DETAIL: 'Servern svarade med data i ett format som den här vyn inte förväntar sig. Webbläsarens konsol innehåller detaljerna.'
             UNEXPECTED_RESPONSE_TITLE: 'Oväntat svar från servern'
+            SERVER_PAGE_DETAIL: 'Din webbserver besvarade denna förfrågan själv (HTTP {status}) istället för att skicka den vidare till Grav. Ett säkerhetsfilter på servern, såsom mod_security eller en brandvägg hos webbhotellet, kan ha blockerat den. Din värd eller serverns fellogg kan tala om vilken regel som utlöstes.'
+            SERVER_PAGE_TITLE: 'Blockerad av webbservern'
         CACHE_MODULES: 'Cache för modulutdata'
         CACHE_MODULES_HELP: 'Cacha den renderade utdatan för sidans moduler. Använd endast när modulerna visar samma innehåll för alla besökare. Moduler med egen Twig eller formulär, inloggade besökare och formulärinlämningar renderas alltid på nytt. Om du redigerar en partiell mall krävs en tömning av cachen.'
         DEBUGGER_FLEX_RENDER_HINTS: Flex-renderingsledtrådar
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 'Starta endast sessioner vid behov'
         SESSION_LAZY_HELP: 'Besökare utan sessionscookie får en session först när något lagras i den, som t.ex. en inloggning, ett formulär eller ett meddelande, vilket gör att anonyma sidvisningar kan cachelagras av en proxy eller ett CDN. Insticksprogram som lagrar data vid varje sidvisning startar fortfarande en.'
         UPDATE_CHANGELOG_TITLE: 'Ändringar i v{version}'
+        CHANGELOG:
+            BUGFIX: Bugfix
+            IMPROVED: Förbättrad
+            NEW: Ny
+            SECURITY: Säkerhet
+        CHANGELOG_NOT_AVAILABLE: 'Ändringslogg ej tillgänglig.'
+        IMAGES_WATERMARK_ALL: 'Vattenmärk alla bilder'
+        IMAGES_WATERMARK_ALL_HELP: 'Stämpla automatiskt vattenstämpeln på varje bild som webbplatsen visar'
+        IMAGES_WATERMARK_BOTTOM: Nederkant
+        IMAGES_WATERMARK_CENTER: Centrerad
+        IMAGES_WATERMARK_IMAGE: Vattenstämpelbild
+        IMAGES_WATERMARK_IMAGE_HELP: 'Sökväg till bilden som används som vattenstämpel, till exempel system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: Vänster
+        IMAGES_WATERMARK_POSITION_X: 'Horisontell position'
+        IMAGES_WATERMARK_POSITION_X_HELP: 'Var vattenstämpeln placeras från vänster till höger'
+        IMAGES_WATERMARK_POSITION_Y: 'Vertikal position'
+        IMAGES_WATERMARK_POSITION_Y_HELP: 'Var vattenstämpeln placeras från topp till botten'
+        IMAGES_WATERMARK_RIGHT: Höger
+        IMAGES_WATERMARK_SCALE: Vattenstämpelskala
+        IMAGES_WATERMARK_SCALE_HELP: 'Storlek på vattenstämpeln som en procentandel av bilden'
+        IMAGES_WATERMARK_TITLE: Vattenstämpel
+        IMAGES_WATERMARK_TOP: Topp
+        PASSKEYS_FIELD:
+            ADD: 'Lägg till en lösenordsnyckel'
+            ADDED: 'Lösenordsnyckel tillagd ({name}). Den loggar in dig automatiskt från och med nu.'
+            ADDED_ON: 'Tillagd {date}'
+            ADD_FAILED: 'Lösenordsnyckeln kunde inte läggas till. Vänligen försök igen.'
+            ALREADY_SAVED: 'Den lösenordshanteraren eller enheten har redan en lösenordsnyckel för detta konto.'
+            CANCELLED: 'Ingen lösenordsnyckel lades till. Försök igen när du är redo.'
+            CODE_REQUIRED: 'Ange din nuvarande 6-siffriga kod.'
+            CODE_WRONG: 'Den koden är inte korrekt.'
+            CONTINUE: Fortsätt
+            CURRENT_CODE: 'Nuvarande 2FA-kod'
+            CURRENT_PASSWORD: 'Nuvarande lösenord'
+            HELP: 'En lösenordsnyckel loggar in dig med ditt fingeravtryck, ansikte eller enhetens PIN-kod, från en lösenordshanterare eller en säkerhetsnyckel. Den fungerar på webbplatsen och i Admin, och räknas som båda inloggningsstegen.'
+            HELP_OTHER: 'Lösenordsnycklar som detta konto loggar in med. Ta bort en om enheten eller lösenordshanteraren som håller den går förlorad.'
+            LAST_USED: 'senast använd {date}'
+            NAME_LABEL: 'Namn på lösenordsnyckel'
+            NAME_REQUIRED: 'Ge lösenordsnyckeln ett namn.'
+            NEVER_USED: 'ännu ej använd'
+            NONE: 'Inga lösenordsnycklar ännu.'
+            NONE_OTHER: 'Detta konto har inga lösenordsnycklar.'
+            PASSWORD_REQUIRED: 'Ange ditt nuvarande lösenord.'
+            PASSWORD_WRONG: 'Ditt nuvarande lösenord är inte korrekt.'
+            PROOF_CODE_ADD: 'Ange din nuvarande 6-siffriga 2FA-kod för att lägga till en lösenordsnyckel.'
+            PROOF_PASSWORD_ADD: 'Ange ditt nuvarande lösenord för att lägga till en lösenordsnyckel.'
+            PROOF_UNAVAILABLE: 'Ställ in ett lösenord eller 2FA på ditt konto först. Passkeys kan inte läggas till eller tas bort enbart med en inloggad session.'
+            REMOVE: 'Ta bort'
+            REMOVED: 'Passkey borttagen ({name}).'
+            REMOVE_CONFIRM: 'Ta bort ”{name}”? Den kommer inte längre att logga in dig.'
+            REMOVE_CONFIRM_CODE: 'Ta bort ”{name}”? Den kommer inte längre att logga in dig. Ange din nuvarande 6-siffriga 2FA-kod för att bekräfta.'
+            REMOVE_CONFIRM_OTHER: 'Ta bort ”{name}” från {username}? Den kommer inte längre att logga in dem.'
+            REMOVE_CONFIRM_PASSWORD: 'Ta bort ”{name}”? Den kommer inte längre att logga in dig. Ange ditt nuvarande lösenord för att bekräfta.'
+            REMOVE_FAILED: 'Passkey kunde inte tas bort.'
+            RENAME: 'Byt namn'
+            RENAMED: 'Passkey har bytt namn.'
+            RENAME_FAILED: 'Passkey kunde inte byta namn.'
+            SAVE: Spara
+            SYNCED: synkroniserad
+            SYNCED_HELP: 'Sparad i en lösenordshanterare som synkroniserar den över dina enheter.'
+            TITLE: Passkeys
+            TOO_MANY: 'För många felaktiga försök. Försök igen om några minuter.'
+            UNSUPPORTED: 'Den här webbläsaren kan inte använda passkeys här.'
+            WAITING: 'Väntar på din passkey…'
+        PIPELINE_REMOTE_TIMEOUT: 'Timeout för extern resurs'
+        PIPELINE_REMOTE_TIMEOUT_HELP: 'Hur länge systemet ska vänta på en extern CSS- eller JS-fil (t.ex. en CDN-stylesheet) vid bygge av en pipeline. Om den inte tas emot i tid renderas sidan utan att bunta ihop den gruppen och försöker igen vid nästa förfrågan'
+        README_NOT_AVAILABLE: 'README ej tillgänglig.'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 'Anpassa sidomeny'
+            DIVIDER: Avdelare
+            HIDE: 'Dölj {label}'
+            HINT: 'Dra objekt för att sortera om dem, eller fokusera på ett handtag och använd piltangenterna. Ögat döljer ett objekt, och stjärnan väljer ett tilläggs genvägar att visa under det.'
+            MOVE: 'Flytta {label}'
+            MOVED: '{label} flyttad till position {position} av {total}'
+            RESET_DONE: 'Din sidomeny följer webbplatsens igen'
+            RESTORE_BUILT_IN: 'Ursprunglig ordning'
+            SAVED: 'Sidomeny sparad'
+            SAVE_FAILED: 'Kunde inte spara sidomenyn'
+            SAVE_FOR_EVERYONE: 'Spara för alla'
+            SAVE_FOR_EVERYONE_HINT: 'Gör detta till sidofältet för alla användare som inte har anpassat sitt eget'
+            SAVE_FOR_EVERYONE_MESSAGE: 'Varje användare som inte har anpassat sitt eget sidofält kommer att se denna ordning. Vem som helst kan fortfarande ändra sitt eget, och att dölja ett objekt ändrar inte vad de har behörighet att öppna.'
+            SAVE_FOR_EVERYONE_TITLE: 'Gör detta till allas sidofält?'
+            SHOW: 'Visa {label}'
+            SITE_SAVED: 'Sidofältet sparades för alla'
+            STAR: 'Visa {label} i sidofältet'
+            SUB_ITEMS: 'Genvägar ({count} av {total} stjärnmarkerade)'
+            UNSTAR: 'Ta bort {label} från sidofältet'
+            USE_SITE_DEFAULT: 'Använd webbplatsens sidofält'
+        UNDO: Ångra
+        UPDATE_CHANGELOG_EMPTY: 'Inga ändringsloggsposter nyare än den installerade versionen.'
+        UPDATE_CHANGELOG_FAILED: 'Ändringsloggen kunde inte läsas in.'
+        UPDATE_WHATS_NEW: 'Vad är nytt'
