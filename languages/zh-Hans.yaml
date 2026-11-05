@@ -49,6 +49,9 @@ ICU:
             ADMIN_VERSION: '管理员 v{version}'
             CLOSE_MENU: 关闭菜单
             GRAV_VERSION: 'Grav v{version}'
+            MADE_BY: 'Grav 由 {company} {love} 编码 {code}。'
+            MADE_BY_PLAIN: 'Grav 由 Trilby Media 用心编码'
+            MORE_ACTIONS: 更多操作
         ARE_YOU_SURE: 您确定吗？
         AUTHOR: 作者
         BACKUPS_WIDGET:
@@ -108,6 +111,32 @@ ICU:
             VALIDATION_FAILED_FOR_FIELDS: '无法保存 — 以下字段无效：{fields}'
             FAILED_TO_LOAD_CONFIGURATION: 配置加载失败。
             SCOPE_NOT_FOUND: '未找到名为 {scope} 的配置范围。'
+            SHADOWED:
+                BANNER_ENV: '{count, plural, one {此处有 # 个设置} other {此处有 # 个设置}} 被 {env} 环境覆盖，因此对 {count, plural, one {它} other {它们}} 所做的更改将不会生效。'
+                BANNER_MIXED: '{count, plural, one {此处有 # 个设置} other {此处有 # 个设置}} 被 {env} 环境或服务器环境变量覆盖，因此对 {count, plural, one {它} other {它们}} 所做的更改将不会生效。'
+                BANNER_SERVER: '{count, plural, one {此处有 # 个设置} other {此处有 # 个设置}} 由服务器环境变量设置，因此对 {count, plural, one {它} other {它们}} 所做的更改将不会生效。'
+                ENABLED_ENV: '由 {env} 环境设置'
+                ENABLED_EXPLAIN_ENV: '{env} 环境在其自身的配置文件中开启或关闭此插件，因此此处的开关不会改变站点的实际运行状态。'
+                ENABLED_EXPLAIN_SERVER: 'GRAV_CONFIG 服务器环境变量会开启或关闭此插件，因此此处的开关不会改变站点的实际运行状态。'
+                ENABLED_SERVER: 由服务器环境变量设置
+                EXPLAIN_ENV: '{env} 环境在其自身的配置文件中设置了此项，因此您在此处保存的内容将不会应用于本站点。'
+                EXPLAIN_SERVER: 'GRAV_CONFIG 服务器环境变量设置了此项，因此您在此处保存的内容将不会生效。'
+                MARKER_ENV: '被 {env} 环境覆盖'
+                MARKER_SERVER: 由服务器环境变量设置
+                REMOVED: '已从 {env} 环境中移除覆盖'
+                REMOVE_FAILED: 无法移除覆盖
+                REMOVE_OVERRIDE: 移除覆盖
+                SAVED_ENV: '已保存，但 {field} 被 {env} 环境覆盖，因此站点仍使用「{value}」。'
+                SAVED_MANY_ENV: '已保存，但其中 {count} 处更改被 {env} 环境覆盖，因此站点将不会使用它们。'
+                SAVED_MANY_MIXED: '已保存，但其中 {count} 处更改被 {env} 环境或服务器环境变量覆盖，因此站点将不会使用它们。'
+                SAVED_MANY_SERVER: '已保存，但其中 {count} 处更改由服务器环境变量设置，因此站点将不会使用它们。'
+                SAVED_SERVER: '已保存，但 {field} 由服务器环境变量设置，因此站点仍在使用「{value}」。'
+                SITE_USES: 此站点使用
+                SWITCH_TO: '切换至 {env}'
+                TOGGLE_ENV: '已保存，但 {env} 环境保持 {name} 为 {state, select, off {禁用} other {启用}} 状态。'
+                TOGGLE_SERVER: '已保存，但服务器环境变量保持 {name} 为 {state, select, off {禁用} other {启用}} 状态。'
+                VALUE_OFF: 关闭
+                VALUE_ON: 开启
         CONFIG_INFO_PAGE:
             ENVIRONMENT: 环境
             EXPORT_YAML: '导出 YAML'
@@ -258,6 +287,7 @@ ICU:
                 FAMILY_BRANDS: 品牌图标
                 FAMILY_REGULAR: 常规
                 FAMILY_SOLID: 实心
+                SET_MISSING: '此站点未注册名为「{set}」的图标集。'
             NO_TAXONOMY_TYPES: 未配置分类类型
             PAGES:
                 FILTER_PAGES: 筛选页面...
@@ -404,6 +434,17 @@ ICU:
             CAPTCHA_VERIFIED: 已验证您是人类
             CAPTCHA_VERIFYING: 正在验证您是否为人类……
             INVALID_AUTHENTICATION_CODE: 身份验证码无效
+            PASSKEY_CANCELLED: 未使用密钥。请在准备好后重试，或使用密码登录。
+            PASSKEY_CANCELLED_TWO_STEP: 未使用密钥。请在准备好后重试，或输入您的验证码。
+            PASSKEY_FAILED: 密钥出现故障。请重试。
+            PASSKEY_NOT_THIS_ACCOUNT: 该密钥不属于此账户。请尝试其他密钥，或输入您的验证码。
+            PASSKEY_OFF: 本站点已关闭密钥功能。请使用密码登录。
+            PASSKEY_OR: 或
+            PASSKEY_SIGN_IN: 使用密钥登录
+            PASSKEY_SIGN_IN_FAILED: 该密钥无法登录。如果您已将其从账户中移除，请使用密码登录。
+            PASSKEY_TOO_MANY_TRIES: 密钥尝试次数过多。请稍候几分钟后再试。
+            PASSKEY_USE_INSTEAD: 改用您的密钥
+            PASSKEY_WAITING: 等待您的密钥…
         MARKDOWN_EDITOR:
             NOTHING_TO_PREVIEW: 没有可预览的内容
             IMAGE_INSERT:
@@ -474,6 +515,8 @@ ICU:
                 REORDER_DONE: 完成
                 REORDER_HINT: 拖动图像以设置其顺序。
                 REORDER_MODE: 重新排序
+                NOT_ALLOWED: 您无法更改此页面的媒体。
+                NO_FILES: 无媒体文件
             METADATA:
                 APPLY_TO_N: '应用于 {n} 个文件'
                 BATCH_EDITING: '正在编辑 {n} 个选定文件 —— 所做更改将应用于所有文件。'
@@ -498,6 +541,14 @@ ICU:
                 TITLE: 文件详情
                 TYPE: 类型
                 URL: URL
+            PASTE_UPLOAD:
+                FAILED: '无法上传 {filename}：{message}'
+                NO_PERMISSION: 您没有上传媒体的权限，因此未添加图像。
+                PAGES_ONLY: 粘贴或拖放图像仅适用于页面内容。请将图像上传至媒体管理器并从那里插入。
+                SAVE_PAGE_FIRST: 请先保存页面，然后再将图像粘贴或拖放到其中。
+                UNSUPPORTED_TYPE: '无法在此处添加 {filename}。请粘贴或拖放 PNG、JPEG、GIF、WebP、AVIF 或 SVG 格式的图像。'
+                UPLOADED: '{count, plural, one {已将图像添加到页面媒体} other {已将 # 张图像添加到页面媒体}}'
+                UPLOADING: '{count, plural, one {正在上传图像…} other {正在上传 # 张图像…}}'
         NAV:
             CONFIGURATION: 配置
             DASHBOARD: 仪表板
@@ -562,6 +613,9 @@ ICU:
                 FALLBACK_NOTICE_UNRESOLVED: '服务器返回了此页面的 {effective} 版本而非 {active} 版本，且未报告 {active} 缺失。此处已关闭保存功能，以防覆盖 {effective} 文件。如果所有页面均出现此情况，则说明 Web 服务器可能未将查询字符串传递给 Grav。'
                 PREVIEW_SHOWING_HOST_PAGE: 显示在父页面中
                 TEMPLATE_MISSING_NOTICE: '在主题中未找到该模块的 **{template}** 模板，因此其所属页面会显示“未找到模板”错误。请在“高级”选项卡下的 **页面模板** 中选择一个模板，或将该模板添加到主题中。'
+                COLLAB_UNSAVED_DIFFERS_FROM_FILE: 此页面有来自共享编辑会话且未保存的更改，这些更改与页面文件不匹配，页面文件可能已在后台被修改。编辑器当前显示的是未保存的更改；保存将覆盖文件中的版本。
+                PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 页面在其他地方被修改过。请刷新页面。
+                READ_ONLY_NOTICE: 你可以查看此页面，但无法对其进行编辑。
             EDIT_PAGE: 编辑页面
             FRONTMATTER: 前置元数据
             HEADER_MODIFIED: 修改时间
@@ -613,6 +667,8 @@ ICU:
                 VISIBLE: 可见
                 CHILD_TYPE_HINT: '父页面为子页面建议使用“{template}”。你仍然可以选择其他模板。'
                 STATUS_HELP: 草稿已保存，但在发布之前不会在网站上显示
+                MODULE_NEEDS_PARENT: 模块属于模块化页面，请选择它所属的页面。
+                PICK_MODULAR_PAGE: 选择一个模块化页面
             NO_PAGES: 未找到页面
             NO_SEARCH_RESULTS: 没有页面与您的搜索相符
             PAGES_GRAV_ADMIN: '页面 — Grav Admin'
@@ -692,6 +748,32 @@ ICU:
                 SCHEDULED: 已预约
                 SCHEDULED_FOR: '计划于 {date} 发布'
                 TOGGLE_TITLE: '{action} ({status})'
+            ANCESTOR_ONLY_HINT: 您无法打开此页面。列出该页面仅是为了让您可以访问其中的子页面。
+            ANCESTOR_ONLY_LABEL: '{title}：您无法打开此页面，仅能打开其中的子页面'
+            ANCESTOR_ONLY_PARENT: 您无法打开父页面
+            DELETE_CANNOT_UNDO: 此操作无法撤销。
+            DELETE_LAST_LANGUAGE: 这是该页面的唯一语言版本，因此整个页面文件夹（包括其媒体文件和所有子页面）都将被删除。
+            DELETE_RECOVERABLE: 你可以从回收站中恢复它。
+            DELETE_TRANSLATION_CONFIRM: '确定要删除「{title}」的 {language} 翻译吗？{n, plural, one{其他语言版本将被保留。} other{其他 # 种语言版本将被保留。}}'
+            DELETE_TRANSLATION_TITLE: 删除翻译
+            DELETE_UNDONE: 页面已恢复
+            DELETE_UNDONE_NAMED: '已恢复「{name}」'
+            DELETE_UNDO_FAILED: '无法撤销删除操作：{detail}'
+            DROP_INSIDE: '将页面拖放到此处以将其移动到 {title} 内'
+            LOAD_CHILDREN_FAILED: 无法加载此文件夹中的页面。
+            MODULES:
+                ADD: 添加模块
+                EMPTY: 暂无模块。
+                HELP: '构建此页面的各个部分，按页面显示顺序排列。拖动模块以移动它，或聚焦其手柄并按 Alt+Up 或 Alt+Down。点击其状态图标以发布或取消发布。'
+                LOAD_FAILED: 无法加载模块。
+                MOVE: '移动「{title}」'
+                TITLE: 模块
+            MOVE_UNNUMBERED_KEEPS_NAME_ORDER: '{title} 没有序号，因此它将按名称排序'
+            PAGE_TITLE_HINT: '标题：{title}'
+            SHOW_DROP_INSIDE: '将页面移动到 {title} 内'
+            TRANSLATION_DELETED: '{language} 翻译已删除'
+            TRANSLATION_DELETED_OF: '已删除“{name}”的 {language} 翻译'
+            TRANSLATION_RESTORED: '已恢复 {language} 翻译'
         PASSWORD: 密码
         PASSWORD_FIELD:
             PASSWORD_REQUIREMENTS: 密码要求
@@ -709,6 +791,8 @@ ICU:
             LEGEND_OVERRIDE: 覆盖组权限
             LEGEND_SUPER: 由超级管理员授予
             OVERRIDES_GROUP: '您的直接设置覆盖了组：{groups}'
+            LOCKED_NOTE: 您只能授予您自己账户拥有的权限。无法授予的权限其「允许」选项会变为灰色，但您仍可以拒绝或清除这些权限。
+            NOT_GRANTABLE: 您无法授予此权限，因为您自己的账户不具备该权限
         PLUGIN:
             BACK_TO_DASHBOARD: 返回仪表板
             NO_CONTENT_AVAILABLE_FOR_THIS_PLUGIN: 此插件页面没有可用内容。
@@ -750,6 +834,21 @@ ICU:
             CHART_LABEL: '过去 14 天的每日页面浏览量'
             TODAY: 今天
             VIEWS: '{count, plural, one {# 次浏览} other {# 次浏览}}'
+            CHART_RANGE_LABEL: '页面浏览量，{range}'
+            LAST_12_MONTHS: '过去 12 个月'
+            LAST_30_DAYS: '过去 30 天'
+            LAST_7_DAYS: '过去 7 天'
+            LAST_90_DAYS: '过去 90 天'
+            LOAD_FAILED: 无法加载此时间范围
+            PREVIOUS_PERIOD: '上个周期 {count, plural, one {# 次浏览} other {# 次浏览}}'
+            SHORT_12M: '12 个月'
+            SHORT_14D: '14 天'
+            SHORT_30D: '30 天'
+            SHORT_7D: '7 天'
+            SHORT_90D: '90 天'
+            SO_FAR: 至今
+            TIME_FRAME: 时间范围
+            VS_PREVIOUS: 与上一周期相比
         PREMIUM: 高级
         PREVIEW: 预览
         REAUTH_MODAL:
@@ -901,7 +1000,7 @@ ICU:
             STICKY_TOOLBAR: 粘性工具栏
             STICKY_TOOLBAR_DESC: 在滚动时将格式工具栏和“预览”按钮固定在视图中。
             ADMIN_TITLE: 管理后台标题
-            ADMIN_TITLE_DESC: '显示在登录页标题和浏览器标签页中。留空则显示为「Grav Admin」。'
+            ADMIN_TITLE_DESC: '显示在浏览器标签页中，也是登录页面的标题（除非设置了自定义 Logo，因为 Logo 本身已包含站点名称）。留空则显示为「Grav Admin」。'
             FAILED_TO_SAVE_BRANDING: 保存品牌设置失败。
             FAVICON: '网站图标 (Favicon)'
             FAVICON_DESC: '自定义浏览器标签页图标（SVG、PNG、WebP 或 ICO）。留空则使用默认生成的图标。'
@@ -932,6 +1031,8 @@ ICU:
             LOGO_HEIGHT_DEFAULT: 默认
             SIDEBAR_LOGO_HEIGHT: '侧边栏 Logo 高度'
             SIDEBAR_LOGO_HEIGHT_DESC: 'Logo 在侧边栏顶部显示的垂直高度。'
+            SHOW_CREDIT: '显示 Trilby Media 版权信息'
+            SHOW_CREDIT_DESC: '在侧边栏底部显示「Grav was coded with love by Trilby Media」字样。'
         SETUP:
             3_64_CHARACTERS_LETTERS_NUMBERS_HYPHENS: '3-64 个字符：字母、数字、连字符、下划线'
             ADMINISTRATOR_ACCOUNT_CREATED_WELCOME: '管理员账户已创建 — 欢迎使用 Grav'
@@ -964,6 +1065,7 @@ ICU:
                 LOCKED: '只读 — {owner}正在使用**{editor}**编辑。混合编辑器类型无法协同编辑；[切换你的编辑器偏好]({href})以实时协作。'
                 SWITCH_YOUR_EDITOR_PREFERENCE: 切换你的编辑器偏好
                 TO_COLLABORATE_LIVE: 以实时协作。
+                LOCKED_EXPERT: '只读：{owner} 正在使用 **{editor}** 进行编辑，该编辑器无法与专家模式的 Markdown 编辑器协作。请切换回普通模式以进行实时协作。'
         SYSTEM:
             COMING_SOON: 即将推出
             SYSTEM_GRAV_ADMIN: '系统 — Grav Admin'
@@ -1015,6 +1117,8 @@ ICU:
             UPDATE_ALL: 全部更新
             UPDATE_ALL_CONFIRM_MESSAGE: '{n, plural, one{# 个主题将被更新：} other{# 个主题将被更新：}}'
             UPDATE_ALL_CONFIRM_TITLE: 更新主题？
+            UPDATE_CONFIRM_MESSAGE: '将 {name} 更新至 v{version}？'
+            UPDATE_CONFIRM_TITLE: 更新主题？
         TIME:
             DAYS_AGO: '{n}天前'
             HOURS_AGO: '{n}小时前'
@@ -1121,6 +1225,11 @@ ICU:
                     POLICY_PROPERTIES: 属性
                     POLICY_TAGS: 标签
                     POLICY_VIEW: 查看生效策略
+                    IN_PARTIAL: 在包含的模板内被阻止
+                    TROUBLESHOOTING_LINK: '如何修复内容中的 Twig'
+                    TRUSTED_PARTIAL: '已信任 {template}。包含它的页面将按照您主题的方式进行渲染。'
+                    TRUST_FAILED: 无法信任该局部模板
+                    TRUST_PARTIAL: 信任此局部模板
             REPORT_COMPONENT_WRAPPER:
                 LOADING_REPORT_COMPONENT: 加载报告组件中...
             SCHEDULER:
@@ -1208,6 +1317,10 @@ ICU:
             TWO_FACTOR_AUTHENTICATION_IS_OFF: 双因素认证已关闭
             VERIFICATION_CODE: 验证码
             VERIFY_ENABLE: 验证并启用
+            CURRENT_CODE_WRONG: 代码不正确。
+            ENTER_CODE_TO_REGENERATE: '输入您当前的 6 位数代码以生成新的密钥。在您扫描新的二维码并验证代码之前，双重身份验证（2FA）将保持关闭状态。'
+            REGENERATE: 重新生成
+            TOO_MANY_CODES: 错误代码次数过多。请稍后再试。
         UNSAVED_CHANGES: 未保存的更改
         UNSAVED_INDICATOR:
             SAVING_CHANGES: 正在保存更改…
@@ -1247,6 +1360,36 @@ ICU:
             YOU_CANNOT_DELETE_YOUR_OWN_ACCOUNT: 您无法删除自己的账户。
             CONFIRM_DELETE_USER: '删除用户 „{username}"？此操作无法撤销。'
             TITLE: 用户
+            EMAIL_CHANGE_CANCELLED: 邮箱变更已取消。
+            EMAIL_CHANGE_CANCEL_FAILED: 无法取消邮箱变更。
+            EMAIL_CHANGE_RESEND: 重新发送
+            EMAIL_CHANGE_RESEND_FAILED: 无法重新发送确认链接。
+            EMAIL_CHANGE_SENT: '我们已向 {email} 发送了确认链接。点击该链接后，电子邮箱地址才会完成变更。'
+            EMAIL_CHANGE_WAITING: '等待确认中：{email}'
+            EMAIL_CONFIRM:
+                MESSAGE: '请输入您当前的密码，以便将您的电子邮箱地址变更为 {email}。'
+                NOT_SAVED: '您的新电子邮箱地址 {email} 尚未保存。请使用当前密码进行确认。'
+                TITLE: 身份确认
+            PASSWORD:
+                CHANGE: 修改密码
+                CHANGED_OTHER: '{name} 的密码已修改。'
+                CHANGED_OWN: 您的密码已修改。其他已登录您账户的浏览器和应用现已被强制登出。
+                CONFIRM: 确认新密码
+                CURRENT: 当前密码
+                CURRENT_REQUIRED: 请输入您当前的密码。
+                CURRENT_WRONG: 您当前的密码不正确。
+                FAILED: 修改密码失败。
+                MISMATCH: 密码不匹配。
+                NEW: 新密码
+                NEW_REQUIRED: 请输入新密码。
+                NOT_ALLOWED: 您没有权限修改此密码。
+                NO_PASSWORD_HELP: 由于您是通过第三方服务登录，您的账户尚未设置密码。您可以设置一个密码，以便使用用户名和密码进行登录。
+                OTHER_HELP: '为 {name} 设置新密码。他们将从所有浏览器和应用中被强制登出，并需要使用新密码重新登录。'
+                OWN_HELP: 请输入当前密码，然后输入两次新密码。此操作将保持您当前登录状态，但其他所有已登录您账户的浏览器和应用将被强制登出。
+                POLICY: 新密码不符合要求。
+                SET: 设置密码
+                TITLE: 密码
+                TOO_MANY: 密码错误次数过多。请几分钟后再试。
         USER_AVATAR_CARD:
             AVATAR_REMOVED: 头像已移除
             AVATAR_UPDATED: 头像已更新
@@ -2243,6 +2386,9 @@ ICU:
             FIELD_REQUIRED: '{label} 是必需的'
             FORM_HAS_ERRORS: '{count, plural, one {# 个字段需要您的关注} other {# 个字段需要您的关注}}'
             REQUIRED_GENERIC: 此字段是必需的
+            LIST_KEY_REQUIRED: '{key}：必须填写 {label}'
+            LIST_NEW_ROW_REQUIRED: '新项目：必须填写 {label}'
+            LIST_ROW_REQUIRED: '第 {row} 行：必须填写 {label}'
         VALID_LINK_ATTRIBUTES: 有效的链接属性
         VALID_LINK_ATTRIBUTES_HELP: '将自动添加到媒体 HTML 元素的属性'
         VARY_ACCEPT_ENCODING: 改变接受编码
@@ -2304,6 +2450,8 @@ ICU:
             INVALID_JSON_TITLE: 服务器响应异常
             UNEXPECTED_RESPONSE_DETAIL: 服务器返回的数据格式非当前屏幕预期。浏览器控制台中有详细信息。
             UNEXPECTED_RESPONSE_TITLE: 服务器响应异常
+            SERVER_PAGE_DETAIL: '您的 Web 服务器自行响应了此请求（HTTP {status}），而不是将其传递给 Grav。服务器上的安全过滤器（例如 mod_security 或托管防火墙）可能阻止了该请求。您可以咨询您的主机服务商或查看服务器错误日志，以确定是哪条规则拦截了请求。'
+            SERVER_PAGE_TITLE: '被 Web 服务器阻止'
         CACHE_MODULES: 缓存模块输出
         CACHE_MODULES_HELP: '缓存此页面模块的渲染输出。仅当模块向所有访问者展示相同内容时使用。包含自定义 Twig 或表单的模块、已登录的访问者以及表单提交始终会重新渲染。仅编辑部分模板时需要清除缓存。'
         DEBUGGER_FLEX_RENDER_HINTS: 'Flex 渲染提示'
@@ -2348,3 +2496,95 @@ ICU:
         SESSION_LAZY: 仅在需要时开启会话
         SESSION_LAZY_HELP: '没有会话 Cookie 的访客仅在向会话中存储内容（如登录、表单或消息）时才会开启会话，因此匿名页面浏览可以被代理或 CDN 缓存。在每次页面浏览时都会存储数据的插件仍会开启一个会话。'
         UPDATE_CHANGELOG_TITLE: 'v{version} 中的更改'
+        CHANGELOG:
+            BUGFIX: 错误修复
+            IMPROVED: 改进
+            NEW: 新增
+            SECURITY: 安全
+        CHANGELOG_NOT_AVAILABLE: 更新日志不可用。
+        IMAGES_WATERMARK_ALL: 为所有图片添加水印
+        IMAGES_WATERMARK_ALL_HELP: 自动为站点提供的每张图片添加水印
+        IMAGES_WATERMARK_BOTTOM: 底部
+        IMAGES_WATERMARK_CENTER: 居中
+        IMAGES_WATERMARK_IMAGE: 水印图片
+        IMAGES_WATERMARK_IMAGE_HELP: '用作水印的图片路径，例如 system://images/watermark.png'
+        IMAGES_WATERMARK_LEFT: 左侧
+        IMAGES_WATERMARK_POSITION_X: 水平位置
+        IMAGES_WATERMARK_POSITION_X_HELP: 水印从左到右的放置位置
+        IMAGES_WATERMARK_POSITION_Y: 垂直位置
+        IMAGES_WATERMARK_POSITION_Y_HELP: 水印从上到下的放置位置
+        IMAGES_WATERMARK_RIGHT: 右侧
+        IMAGES_WATERMARK_SCALE: 水印缩放比例
+        IMAGES_WATERMARK_SCALE_HELP: 水印相对于图片大小的百分比
+        IMAGES_WATERMARK_TITLE: 水印
+        IMAGES_WATERMARK_TOP: 顶部
+        PASSKEYS_FIELD:
+            ADD: '添加通行密钥 (passkey)'
+            ADDED: '已添加通行密钥（{name}）。此后它将自动为您登录。'
+            ADDED_ON: '添加于 {date}'
+            ADD_FAILED: 无法添加通行密钥。请重试。
+            ALREADY_SAVED: 该密码管理器或设备已拥有此账户的通行密钥。
+            CANCELLED: 未添加通行密钥。准备好后请重试。
+            CODE_REQUIRED: '输入您当前的 6 位代码。'
+            CODE_WRONG: 该代码不正确。
+            CONTINUE: 继续
+            CURRENT_CODE: '当前 2FA 代码'
+            CURRENT_PASSWORD: 当前密码
+            HELP: '通行密钥可通过您的指纹、面部识别、设备 PIN 码、密码管理器或安全密钥为您登录。它适用于本站点及管理后台，并同时满足两个登录步骤。'
+            HELP_OTHER: 用于此账户登录的通行密钥。如果存放密钥的设备或密码管理器丢失，请将其移除。
+            LAST_USED: '上次使用于 {date}'
+            NAME_LABEL: 通行密钥名称
+            NAME_REQUIRED: 为通行密钥命名。
+            NEVER_USED: 尚未使用
+            NONE: 暂无通行密钥。
+            NONE_OTHER: 此账户尚无通行密钥。
+            PASSWORD_REQUIRED: 输入您当前的密码。
+            PASSWORD_WRONG: 您当前的密码不正确。
+            PROOF_CODE_ADD: '请输入当前的 6 位 2FA 代码以添加通行密钥。'
+            PROOF_PASSWORD_ADD: 请输入当前密码以添加通行密钥。
+            PROOF_UNAVAILABLE: 请先为您的账户设置密码或双重验证（2FA）。仅凭当前的登录会话无法添加或删除通行密钥（Passkeys）。
+            REMOVE: 移除
+            REMOVED: '已移除通行密钥（{name}）。'
+            REMOVE_CONFIRM: '确定要移除「{name}」吗？它将无法再用于登录。'
+            REMOVE_CONFIRM_CODE: '确定要移除「{name}」吗？它将无法再用于登录。请输入当前的 6 位 2FA 代码以确认。'
+            REMOVE_CONFIRM_OTHER: '确定要从「{username}」中移除「{name}」吗？该通行密钥将无法再用于他们的登录。'
+            REMOVE_CONFIRM_PASSWORD: '确定要移除「{name}」吗？它将无法再用于登录。请输入当前密码以确认。'
+            REMOVE_FAILED: 无法移除该通行密钥。
+            RENAME: 重命名
+            RENAMED: 通行密钥已重命名。
+            RENAME_FAILED: 无法重命名该通行密钥。
+            SAVE: 保存
+            SYNCED: 已同步
+            SYNCED_HELP: 保存在密码管理器中，可在您的各个设备间同步。
+            TITLE: 通行密钥
+            TOO_MANY: 错误尝试次数过多。请几分钟后再试。
+            UNSUPPORTED: 当前浏览器在此处无法使用通行密钥。
+            WAITING: 正在等待您的通行密钥…
+        PIPELINE_REMOTE_TIMEOUT: 远程资源超时
+        PIPELINE_REMOTE_TIMEOUT_HELP: '在构建管道时等待远程 CSS 或 JS 文件（例如 CDN 样式表）的时间。如果在规定时间内未到达，页面将在不打包该组的情况下进行渲染，并尝试在下一次请求时再次加载'
+        README_NOT_AVAILABLE: 'README 不可用。'
+        SIDEBAR_EDIT:
+            CUSTOMIZE: 自定义侧边栏
+            DIVIDER: 分割线
+            HIDE: '隐藏 {label}'
+            HINT: 拖动项目以重新排序，或聚焦句柄并使用箭头键。眼睛图标用于隐藏项目，星号图标用于选择要在插件下方显示的快捷方式。
+            MOVE: '移动 {label}'
+            MOVED: '{label} 已移动到第 {position} 位（共 {total} 位）'
+            RESET_DONE: 您的侧边栏已恢复为跟随站点默认设置
+            RESTORE_BUILT_IN: 原始顺序
+            SAVED: 侧边栏已保存
+            SAVE_FAILED: 无法保存侧边栏
+            SAVE_FOR_EVERYONE: 为所有人保存
+            SAVE_FOR_EVERYONE_HINT: 将此设为所有尚未自定义侧边栏的用户的侧边栏
+            SAVE_FOR_EVERYONE_MESSAGE: 所有未自定义过侧边栏的用户都将看到此顺序。任何人仍可以更改自己的设置，隐藏某项也不会改变其可访问的权限。
+            SAVE_FOR_EVERYONE_TITLE: 确定要将此设为所有人的侧边栏吗？
+            SHOW: '显示 {label}'
+            SITE_SAVED: 已为所有人保存侧边栏
+            STAR: '在侧边栏中显示 {label}'
+            SUB_ITEMS: '快捷方式（已加星标 {count}/{total} 个）'
+            UNSTAR: '从侧边栏移除 {label}'
+            USE_SITE_DEFAULT: 使用站点的侧边栏
+        UNDO: 撤销
+        UPDATE_CHANGELOG_EMPTY: 没有比当前安装版本更新的更新日志条目。
+        UPDATE_CHANGELOG_FAILED: 无法加载更新日志。
+        UPDATE_WHATS_NEW: 更新内容
