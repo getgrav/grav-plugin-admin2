@@ -838,6 +838,12 @@ ICU:
       VIEW_SITE: View site
     PLUGIN_PAGE_COMPONENT:
       LOADING_PLUGIN_PAGE: Loading plugin page...
+    CSP:
+      TITLE: Content Security Policy
+      ENABLED: Strict Content Security Policy
+      ENABLED_HELP: "Send a strict <code>Content-Security-Policy</code> header with the admin page, so the browser only runs the scripts the page itself carries and the scripts they load. A script injected into the page, for example through a field that wasn't escaped, is blocked. Plugin pages, fields and widgets built for Admin2 keep working. A plugin that runs code from text (<code>eval</code>) needs <code>script-src 'unsafe-eval'</code> under Extra Policy Sources. Needs API 1.1.14 or later."
+      EXTRA: Extra Policy Sources
+      EXTRA_HELP: "Sources to add to the policy, one directive per line, such as <code>connect-src https://hub.example.com</code> for a Mercure hub on another host or <code>img-src https://cdn.example.com</code>. A directive the policy already has gets these sources added; any other directive is added as written. Only used while the policy is on."
     SYNC:
       EDITOR_LOCK_NOTICE:
         SWITCH_YOUR_EDITOR_PREFERENCE: switch your editor preference

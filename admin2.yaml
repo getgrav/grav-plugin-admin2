@@ -2,3 +2,8 @@ enabled: true
 route: /admin
 pages:
   only_editable: false
+# Send a strict Content-Security-Policy with the admin page (admin2#212).
+# `extra` adds sources, one directive per line, e.g. `connect-src https://hub.example.com`.
+csp:
+  enabled: false
+  extra: ''

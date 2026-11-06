@@ -1,7 +1,7 @@
 name: Admin2
 slug: admin2
 type: plugin
-version: 2.2.9
+version: 2.2.10
 description: Modern administration panel for Grav CMS. A redesigned admin experience.
 icon: black-tie
 author:
@@ -18,7 +18,7 @@ compatibility:
 
 dependencies:
   - { name: grav, version: ">=2.2.18" }
-  - { name: api, version: ">=1.1.10" }
+  - { name: api, version: ">=1.1.14" }
 
 form:
   validation: loose
@@ -52,3 +52,27 @@ form:
         0: Disabled
       validate:
         type: bool
+
+    csp_section:
+      type: section
+      title: ADMIN_NEXT.CSP.TITLE
+      underline: true
+
+    csp.enabled:
+      type: toggle
+      label: ADMIN_NEXT.CSP.ENABLED
+      help: ADMIN_NEXT.CSP.ENABLED_HELP
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    csp.extra:
+      type: textarea
+      label: ADMIN_NEXT.CSP.EXTRA
+      help: ADMIN_NEXT.CSP.EXTRA_HELP
+      placeholder: "connect-src https://hub.example.com"
+      rows: 4

@@ -634,12 +634,140 @@ class Admin2Plugin extends Plugin
         // so the SPA still sees exactly what the operator typed.
         $config = json_encode($config, JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
 
-        $configScript = "<script>window.__GRAV_CONFIG__ = {$config};</script>";
-        $html = str_replace('<head>', '<head>' . "\n    " . $configScript, $html);
+        // A fresh nonce on every inline and module script in the shell, so a
+        // Content-Security-Policy can allow exactly those (admin2#212). SvelteKit
+        // can't add one itself: its nonce mode doesn't work with the prerendered
+        // fallback page this bundle is. The nonce goes on even with the policy
+        // off; it changes nothing then. base64 only uses [A-Za-z0-9+/=], so it is
+        // safe in an attribute and a JS string as is.
+        $nonce = base64_encode(random_bytes(16));
+        $html = $this->addScriptNonces($html, $nonce);
+
+        // `csp-nonce` is where Vite's preload helper looks for the nonce to put
+        // on the modulepreload links it adds. __GRAV_CSP_NONCE__ is for code
+        // that adds <script> elements (the login captcha, plugins).
+        $head = '<meta property="csp-nonce" nonce="' . $nonce . '">' . "\n    "
+            . '<script nonce="' . $nonce . '">window.__GRAV_CONFIG__ = ' . $config . ';'
+            . 'window.__GRAV_CSP_NONCE__ = "' . $nonce . '";</script>';
+        $html = str_replace('<head>', '<head>' . "\n    " . $head, $html);
 
         header('Content-Type: text/html; charset=UTF-8');
+        if ($this->config->get('plugins.admin2.csp.enabled', false)) {
+            header('Content-Security-Policy: ' . $this->contentSecurityPolicy($nonce));
+            // A nonce must never be served twice, so keep the shell out of
+            // every cache (the session usually says so already).
+            header('Cache-Control: no-store, private');
+        }
         echo $html;
         exit;
+    }
+
+    /**
+     * Put `nonce="…"` on every `<script>` and `<link rel="modulepreload">` tag
+     * of the built shell. The modulepreload links need it too: under
+     * 'strict-dynamic' a preload the parser finds is only fetched with a nonce.
+     */
+    private function addScriptNonces(string $html, string $nonce): string
+    {
+        $attr = ' nonce="' . $nonce . '"';
+        $html = (string) preg_replace('/<script(?=[\s>])/i', '<script' . $attr, $html);
+
+        return (string) preg_replace('/<link(?=[^>]*\brel=["\']?modulepreload\b)/i', '<link' . $attr, $html);
+    }
+
+    /**
+     * The Content-Security-Policy for the shell when `csp.enabled` is on.
+     *
+     * The base policy covers what Admin2 itself loads:
+     *   - scripts: the nonce'd shell scripts and whatever they load
+     *     ('strict-dynamic'), which includes the bundle's chunks, plugin web
+     *     components imported from /api/v1/admin-next/modules/ and scripts a
+     *     plugin adds with document.createElement('script'). 'self' is only the
+     *     fallback for browsers without 'strict-dynamic'.
+     *   - styles: the bundle's CSS plus inline styles, which Svelte, Tailwind
+     *     transitions and plugin web components all use.
+     *   - images: the site itself, data: and blob: (previews before upload) and
+     *     any https: image, since page content shown in the editor can point
+     *     anywhere and theme screenshots come from getgrav.org.
+     *   - fonts: self-hosted, some inlined as data: URIs.
+     *   - connect: the API, which is always same-origin (serverUrl is a path).
+     *   - frames: the frontend preview, which is the site itself.
+     * The configured login captcha adds what it needs (Cap: a blob: worker and
+     * WebAssembly; Turnstile and reCAPTCHA: their frames). `csp.extra` adds
+     * anything else, such as a Mercure hub on another host for live editing.
+     */
+    private function contentSecurityPolicy(string $nonce): string
+    {
+        $directives = [
+            'default-src' => ["'self'"],
+            'script-src' => ["'self'", "'nonce-{$nonce}'", "'strict-dynamic'"],
+            'style-src' => ["'self'", "'unsafe-inline'"],
+            'img-src' => ["'self'", 'data:', 'blob:', 'https:'],
+            'font-src' => ["'self'", 'data:'],
+            'connect-src' => ["'self'"],
+            'media-src' => ["'self'", 'data:', 'blob:'],
+            'worker-src' => ["'self'"],
+            'frame-src' => ["'self'"],
+            'object-src' => ["'none'"],
+            'base-uri' => ["'self'"],
+            'form-action' => ["'self'"],
+            'frame-ancestors' => ["'self'"],
+        ];
+
+        if ($this->config->get('plugins.api.captcha.enabled', false)) {
+            switch ($this->config->get('plugins.api.captcha.provider', 'cap')) {
+                case 'cap':
+                    // The proof-of-work runs in a blob: worker on WebAssembly.
+                    $directives['worker-src'][] = 'blob:';
+                    $directives['script-src'][] = "'wasm-unsafe-eval'";
+                    break;
+                case 'turnstile':
+                    $directives['frame-src'][] = 'https://challenges.cloudflare.com';
+                    break;
+                case 'recaptcha':
+                    $directives['frame-src'][] = 'https://www.google.com/recaptcha/';
+                    $directives['frame-src'][] = 'https://recaptcha.google.com/recaptcha/';
+                    $directives['connect-src'][] = 'https://www.google.com/recaptcha/';
+                    break;
+            }
+        }
+
+        foreach ($this->parseExtraCsp((string) $this->config->get('plugins.admin2.csp.extra', '')) as $name => $sources) {
+            $directives[$name] = array_values(array_unique(array_merge($directives[$name] ?? [], $sources)));
+        }
+
+        $parts = [];
+        foreach ($directives as $name => $sources) {
+            $parts[] = trim($name . ' ' . implode(' ', $sources));
+        }
+
+        return implode('; ', $parts);
+    }
+
+    /**
+     * Parse `csp.extra`: one directive per line (or separated by `;`), each a
+     * directive name followed by the sources to add, e.g.
+     * `connect-src https://hub.example.com`. Sources are added to the base
+     * policy's own directive of that name, or make a new directive. Anything
+     * that could break out of the header (line breaks, commas, a malformed
+     * name) is dropped.
+     *
+     * @return array<string, list<string>>
+     */
+    private function parseExtraCsp(string $extra): array
+    {
+        $result = [];
+        foreach (preg_split('/[;\r\n]+/', $extra) ?: [] as $line) {
+            $tokens = preg_split('/\s+/', trim($line), -1, PREG_SPLIT_NO_EMPTY) ?: [];
+            $name = strtolower((string) array_shift($tokens));
+            if ($name === '' || !preg_match('/^[a-z][a-z-]*$/', $name)) {
+                continue;
+            }
+            $sources = array_values(array_filter($tokens, static fn (string $t): bool => !preg_match('/[,\x00-\x1f\x7f]/', $t)));
+            $result[$name] = array_values(array_unique(array_merge($result[$name] ?? [], $sources)));
+        }
+
+        return $result;
     }
 
     /**

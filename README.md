@@ -72,6 +72,8 @@ enabled: true
 route: /admin2
 ```
 
+To send a strict `Content-Security-Policy` header with the admin page, turn on **Strict Content Security Policy** in the plugin's settings (or set `csp.enabled: true`). Admin2 puts a fresh nonce on every script it serves and loads plugin web components as same-origin modules, so everything built for Admin2 keeps working. Add sources the base policy doesn't cover, one directive per line, under **Extra Policy Sources** (`csp.extra`), for example `connect-src https://hub.example.com` for a Mercure hub on another host, or `script-src 'unsafe-eval'` for a plugin that runs code from text. Needs API 1.1.14 or later.
+
 Override the route to anything you like (e.g. set route to `/manager`) in the `user/config/plugins/admin2.yaml` file, the PHP wrapper and the pre-built SPA must agree on the base path. If you change the route, you must rebuild the SPA with a matching `ADMIN2_BASE` (see **Building from source** below) so the SvelteKit asset paths resolve correctly.
 
 ## Accessing Admin2
