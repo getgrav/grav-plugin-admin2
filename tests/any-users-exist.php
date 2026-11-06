@@ -46,12 +46,17 @@ if ($autoloader === null) {
     fwrite(STDERR, "Grav core not found. Set GRAV_ROOT=/path/to/grav.\n");
     exit(2);
 }
-// Grav resolves account:// relative to GRAV_ROOT, as on a real site
-// (user/accounts), so root it in a throwaway folder before core loads.
-$tmpRoot = sys_get_temp_dir() . '/admin2-any-users-' . bin2hex(random_bytes(4));
-mkdir($tmpRoot, 0777, true);
-$tmpRoot = realpath($tmpRoot);
-define('GRAV_ROOT', $tmpRoot);
+// Grav resolves account:// relative to GRAV_WEBROOT, as on a real site
+// (user/accounts), so root it in a throwaway folder before core loads. The
+// webroot is a public/ subfolder of GRAV_ROOT, the split layout, so a path
+// built from GRAV_ROOT instead of GRAV_WEBROOT fails here; in the usual
+// single-folder layout the two constants are the same folder.
+$installRoot = sys_get_temp_dir() . '/admin2-any-users-' . bin2hex(random_bytes(4));
+mkdir($installRoot . '/public', 0777, true);
+$installRoot = realpath($installRoot);
+$tmpRoot = $installRoot . '/public';
+define('GRAV_ROOT', $installRoot);
+define('GRAV_WEBROOT', $tmpRoot);
 define('GRAV_DOTENV_DISABLE', true);
 require $autoloader;
 require_once __DIR__ . '/../admin2.php';
@@ -115,7 +120,7 @@ $setup = static function (string $name, array $files, string $type, $accounts, ?
         file_put_contents("{$dir}/{$path}", $contents);
     }
 
-    $locator = new UniformResourceLocator(GRAV_ROOT);
+    $locator = new UniformResourceLocator(GRAV_WEBROOT);
     $locator->addPath('account', '', "{$name}/accounts");
     $locator->addPath('elsewhere', '', $name);
 
@@ -237,7 +242,7 @@ try {
     $plugin = $setup('broken-none', [], 'flex', $throws, $folderStorage);
     $assert('falls back to the YAML scan (false)', $check($plugin) === false);
 } finally {
-    exec('rm -rf ' . escapeshellarg($tmpRoot));
+    exec('rm -rf ' . escapeshellarg($installRoot));
 }
 
 echo $failures === 0 ? "\nAll passed.\n" : "\n{$failures} failed.\n";
