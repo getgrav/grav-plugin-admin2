@@ -652,6 +652,10 @@ ICU:
     TOP_BANNER:
       SITE_NOTIFICATION: Site notification
       PREVIOUS: Previous
+    PROMO_BANNER:
+      LABEL: Announcements
+      NEXT: Next
+      SHOW_SLIDE: "Show slide {n}"
     DISMISS: Dismiss
     BACKUPS_WIDGET:
       CREATE_A_NEW_BACKUP_NOW: Create a new backup now

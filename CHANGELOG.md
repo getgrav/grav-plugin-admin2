@@ -1,3 +1,11 @@
+# v2.2.11
+## 11/06/2026
+
+1. [](#new)
+    * The dashboard has a slim announcement banner under the stats row that slides through a few promos from getgrav.org, pausing while you hover it. Closing it hides it for a few days
+1. [](#improved)
+    * The dashboard's Notifications widget is a plain list of news again, now that the promos have moved to the banner
+
 # v2.2.10
 ## 11/05/2026
 
