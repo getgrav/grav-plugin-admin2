@@ -1,5 +1,5 @@
 # v2.2.10
-## 11/06/2026
+## 11/05/2026
 
 1. [](#new)
     * New **Strict Content Security Policy** setting (off by default) sends a strict `Content-Security-Policy` header with the admin and puts a fresh nonce on every script, with **Extra Policy Sources** for anything else your site needs. Plugin pages, fields, widgets, panels, modals and reports now load as same-origin modules instead of `blob:` URLs, so they keep working under it. Needs API 1.1.14 [#212](https://github.com/getgrav/grav-plugin-admin2/issues/212)
