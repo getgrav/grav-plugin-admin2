@@ -1,6 +1,8 @@
 # v2.2.13
 ## 11/07/2026
 
+1. [](#new)
+    * Labels for Grav 2.2.29's log rotation settings (Configuration → System → Error handler)
 1. [](#improved)
     * The dashboard's announcement banner shuffles its slides each time the dashboard loads, so a different promo leads each visit
 
