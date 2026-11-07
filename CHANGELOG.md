@@ -5,6 +5,8 @@
     * The dashboard has a slim announcement banner under the stats row that slides through a few promos from getgrav.org, pausing while you hover it. Closing it hides it for a few days
 1. [](#improved)
     * The dashboard's Notifications widget is a plain list of news again, now that the promos have moved to the banner
+1. [](#bugfix)
+    * Copying or inserting a link to a media file with `#`, `?` or `%` in its name now writes those characters percent-encoded, so the link points at the file (needs Grav 2.2.27) [admin-next#48](https://github.com/getgrav/grav-admin-next/issues/48)
 
 # v2.2.10
 ## 11/05/2026
