@@ -1,3 +1,11 @@
+# v2.2.12
+## 11/07/2026
+
+1. [](#new)
+    * A user's page and the Users panel now have a "Sign out everywhere" button (with Login 3.13.0) [admin-next#49](https://github.com/getgrav/grav-admin-next/pull/49)
+1. [](#improved)
+    * When a plugin refuses a settings save, the reason now shows next to the field it's about [admin-next#49](https://github.com/getgrav/grav-admin-next/pull/49)
+
 # v2.2.11
 ## 11/06/2026
 
