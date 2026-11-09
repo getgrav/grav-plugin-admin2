@@ -5,6 +5,8 @@
     * Labels for Grav 2.2.29's log rotation settings (Configuration → System → Error handler)
 1. [](#improved)
     * The dashboard's announcement banner shuffles its slides each time the dashboard loads, so a different promo leads each visit
+1. [](#bugfix)
+    * Scheduler jobs can be switched on and off again under Tools → Scheduler. The Enabled/Disabled control in each job's row was only a label, so a job disabled in `user/config/scheduler.yaml` could not be turned back on from the admin
 
 # v2.2.12
 ## 11/07/2026
