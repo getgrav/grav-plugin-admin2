@@ -7,6 +7,7 @@
     * The dashboard's announcement banner shuffles its slides each time the dashboard loads, so a different promo leads each visit
 1. [](#bugfix)
     * A page whose folder is named `languages`, `media`, `compare` or `neighbors` opens, saves and deletes in the page editor again instead of loading forever (needs API 1.1.18) [#213](https://github.com/getgrav/grav-plugin-admin2/issues/213)
+    * A row removed from a key/value list in the page editor, such as Page Groups on the Security tab, stays removed after saving instead of coming back [grav-plugin-api#79](https://github.com/getgrav/grav-plugin-api/pull/79)
     * Scheduler jobs can be switched on and off again under Tools → Scheduler. The Enabled/Disabled control in each job's row was only a label, so a job disabled in `user/config/scheduler.yaml` could not be turned back on from the admin
 
 # v2.2.12
