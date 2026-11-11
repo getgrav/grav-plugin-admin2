@@ -1,0 +1,1 @@
+function e(){if(typeof window<`u`)return window.__GRAV_CONFIG__}function t(){return e()?.pages?.only_editable===!0}export{t};

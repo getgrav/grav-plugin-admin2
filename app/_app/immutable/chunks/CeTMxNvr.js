@@ -1,0 +1,1 @@
+import{$r as e,bi as t,vi as n}from"./I8XquEjI.js";var r=t(null),i=t(null),a={get presence(){return e(r)},get modeToggle(){return e(i)},setPresence(e){n(r,e,!0)},setModeToggle(e){n(i,e,!0)}};export{a as t};

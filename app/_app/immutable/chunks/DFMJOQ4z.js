@@ -1,0 +1,1 @@
+function e(e){let t=e.get(`etag`);if(!t)return``;let n=t.trim();return n.startsWith(`W/`)&&(n=n.slice(2)),n=n.replace(/^"|"$/g,``),n=n.replace(/[-;](?:gzip|br|deflate)$/i,``),n}export{e as t};

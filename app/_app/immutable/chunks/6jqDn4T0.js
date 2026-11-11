@@ -1,0 +1,1 @@
+import{Hr as e,Vr as t,kr as n,pi as r}from"./I8XquEjI.js";function i(i,a){var o=e(),s=r(o);n(s,()=>a.children),t(i,o)}export{i as t};

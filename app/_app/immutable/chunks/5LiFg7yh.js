@@ -1,0 +1,1 @@
+import{$r as e,bi as t,vi as n}from"./I8XquEjI.js";var r=t(null),i={get open_(){return e(r)!==null},open(){return new Promise(t=>{e(r)&&e(r).resolve(null),n(r,{resolve:t},!0)})},pick(t){if(!e(r))return;let i=e(r).resolve;n(r,null),i(t)},cancel(){if(!e(r))return;let t=e(r).resolve;n(r,null),t(null)}};export{i as t};

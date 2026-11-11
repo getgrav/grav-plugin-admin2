@@ -1,0 +1,1 @@
+function e(e){return e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey}function t(t){return n=>{e(n)||(n.preventDefault(),t())}}export{t as n,e as t};

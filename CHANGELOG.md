@@ -1,3 +1,11 @@
+# v2.2.14
+## 11/11/2026
+
+1. [](#improved)
+    * Updated to Svelte 5.57, SvelteKit 2.70 and Vite 8, picking up four months of framework fixes, along with a smaller download
+1. [](#bugfix)
+    * Updated DOMPurify and js-yaml to pick up their latest security fixes
+
 # v2.2.13
 ## 11/10/2026
 
