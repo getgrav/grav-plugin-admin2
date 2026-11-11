@@ -179,6 +179,9 @@ ICU:
         SCHEDULED_FOR: 'Scheduled to publish on {date}'
         EXPIRED_ON: 'Unpublished since {date}'
         TOGGLE_TITLE: '{action} ({status})'
+        HIDDEN: Hidden
+        HIDDEN_BY: 'Hidden: {parent} is unpublished and hides the pages below it'
+        ALSO_HIDDEN_BY: '{status}, and hidden by {parent}'
       SORT_ORDER: Order
       SORT_TITLE_AZ: Title A-Z
       SORT_TITLE_ZA: Title Z-A
@@ -266,6 +269,8 @@ ICU:
         FALLBACK_NOTICE: No {active} translation exists. Viewing {effective} fallback. Use "Save as {active}" to create a translation you can edit.
         FALLBACK_NOTICE_UNRESOLVED: The server returned the {effective} version of this page instead of {active}, and did not report {active} as missing. Saving is off here so the {effective} file is not overwritten. If every page does this, the web server is probably not passing query strings on to Grav.
         TEMPLATE_MISSING_NOTICE: The template **{template}** for this module wasn't found in the theme, so the page it belongs to shows a "template not found" error. Pick a template under **Page Template** on the Advanced tab, or add the template to the theme.
+        HIDDEN_BY_PARENT_NOTICE: "This page isn't live: **{parent}** is unpublished, and it hides every page below it. This page keeps its own Published setting, which applies again once **{parent}** is published."
+        OPEN_PARENT_PAGE: Open parent page
         PUBLISH_ON: Publish on
         UNPUBLISH_ON: Unpublish on
         RESET_FROM: Reset from {language}
@@ -1906,6 +1911,10 @@ ICU:
     CACHE_PURGE_JOB_HELP: With the scheduler you can periodically clear out old Doctrine file cache folders with this job
     CACHING: Caching
     CACHING_HELP: Global ON/OFF switch to enable/disable Grav caching
+    CASCADE_UNPUBLISH: "Unpublish child pages too"
+    CASCADE_UNPUBLISH_HELP: "When this page is unpublished, by its Published setting or by its dates, every page below it is unpublished as well. Each child page keeps its own Published setting, so it is back as it was when this page is published again. Leave it unset to use the site default under Configuration → System → Content"
+    CASCADE_UNPUBLISH_DEFAULT: "Unpublish child pages with their parent"
+    CASCADE_UNPUBLISH_DEFAULT_HELP: "When a page is unpublished, by its Published setting or by its dates, every page below it is unpublished as well. This is the default for every page, and a page can turn it on or off with 'Unpublish child pages too' in its Options tab"
     CHARACTERS: characters
     CLEAR_IMAGES_BY_DEFAULT: Clear image cache by default
     CLEAR_IMAGES_BY_DEFAULT_HELP: By default processed images are cleared for all cache clears, this can be disabled
@@ -1962,6 +1971,8 @@ ICU:
     DEBUGGER_HELP: Enable Grav debugger and following settings
     DEBUGGER_PROVIDER: Debugger Provider
     DEBUGGER_PROVIDER_HELP: Default is PHP Debug Bar, but Clockwork browser extension provides for a less intrusive approach
+    DEBUGGER_TOKEN: Debugger Token
+    DEBUGGER_TOKEN_HELP: "Clockwork Provider ONLY: the shared secret the Clockwork browser extension sends as `X-Clockwork-Auth` to read profiler data from `/__clockwork/`. While it's empty, profiler data can't be read at all, even from the local machine"
     DEFAULT: Default
     DEFAULT_AUTHOR: Default Author
     DEFAULT_AUTHOR_HELP: A default author name, often used in themes or page content
@@ -2025,6 +2036,7 @@ ICU:
     EXPIRES_HELP: Sets the expires header. The value is in seconds.
     EXTERNAL: External Page
     EXTERNAL_URL: External URL
+    EXTERNAL_URL_HELP: "Point this page's URL at an external address. When set, the page's menu link and `page.url()` resolve to this URL instead of the page's own route. e.g. `https://getgrav.org`"
     EXTRA_ARGUMENTS: Extra Arguments
     FALLBACK_TYPES: Allowed fallback types
     FALLBACK_TYPES_HELP: Allowed file types that can be found if accessed via Page route. Defaults to any supported media type.
@@ -2197,6 +2209,24 @@ ICU:
     LONG_DATE_FORMAT_HELP: Set the long date format that can be used by themes
     MARKDOWN: Markdown
     MARKDOWN_EXTRA_HELP: Enable default support for Markdown Extra - https://michelf.ca/projects/php-markdown/extra/
+    GFM_TASK_LISTS: "GFM Task Lists"
+    GFM_TASK_LISTS_HELP: "Render `- [ ]` and `- [x]` list items as checkboxes."
+    GFM_MARKS: "GFM Highlight / Sub / Superscript"
+    GFM_MARKS_HELP: "Enable `==highlight==`, `~subscript~`, and `^superscript^` inline syntax."
+    GFM_TAGFILTER: "GFM Tag Filter"
+    GFM_TAGFILTER_HELP: "Escape disallowed raw HTML tags (script, iframe, style, and similar) in output."
+    GFM_AUTOLINKS: "GFM Autolinks"
+    GFM_AUTOLINKS_HELP: "Autolink bare www. URLs and email addresses (bare http(s):// links use Automatic HTML Links above)."
+    TABLE_COLSPAN: "Table Cell Colspan"
+    TABLE_COLSPAN_HELP: "Non-standard: an empty table cell merges into the cell on its left (colspan)."
+    TABLE_HEADERLESS: "Header-less Tables"
+    TABLE_HEADERLESS_HELP: "Non-standard: a table may start with the divider row, with no header row above it."
+    TABLE_CAPTIONS: "Table Captions"
+    TABLE_CAPTIONS_HELP: "Non-standard: a `[Caption]` line immediately after a table becomes a `<caption>` element."
+    TABLE_ATTRIBUTES: "Table Attributes"
+    TABLE_ATTRIBUTES_HELP: "Non-standard: a `{.class #id}` (or `{:.class}`) line immediately after a table sets the class and id on the table element."
+    TABLE_MULTILINE: "Multi-line Table Cells"
+    TABLE_MULTILINE_HELP: "Non-standard: a table row ending in a backslash continues onto the next line, joining cells with a line break."
     MEDIA_TYPES: Media Types
     MEMCACHED_PORT: Memcached port
     MEMCACHED_PORT_HELP: The Memcached server port
@@ -2237,6 +2267,8 @@ ICU:
     PAGE_GROUPS_HELP: Members of Page Groups have special access to this page.
     PAGE_INHERIT_PERMISSIONS: Inherit Permissions
     PAGE_INHERIT_PERMISSIONS_HELP: Inherit ACL from parent page.
+    PAGE_IDS: "Page IDs"
+    PAGE_IDS_HELP: "Give each page folder a hidden .page-id file with a permanent id when the page is saved, so plugins can follow a page however its folder is renamed or moved. Off by default; plugins that need ids turn them on themselves."
     PAGE_MEDIA: Page Media
     PAGE_SUMMARY: Page Summary
     MARKDOWN_OUTPUT: Markdown Output

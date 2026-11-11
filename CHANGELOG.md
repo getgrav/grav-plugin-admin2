@@ -3,12 +3,18 @@
 
 1. [](#new)
     * Labels for Grav 2.2.29's log rotation settings (Configuration → System → Error handler)
+    * Labels for Grav 2.2.29's "Unpublish child pages too" page option and its site default (Configuration → System → Content)
+    * Labels for the Page IDs option and the GFM and table Markdown options in Configuration → System, which Grav 2.2.29 now gives translation keys
+    * Pages hidden by a parent show as "Hidden" with their own icon in the tree, list and column views, with the parent named in the tooltip and in the column view's preview. A parent hides them when it is unpublished and set to "Unpublish child pages too" (Grav 2.2.29). Opening such a page shows a notice naming the parent, with a link to it, and Page Info reads "Hidden" instead of a green "Yes". A page that is a draft, scheduled or expired on its own keeps that status, with "and hidden by" the parent in its tooltip
 1. [](#improved)
     * The dashboard's announcement banner shuffles its slides each time the dashboard loads, so a different promo leads each visit
 1. [](#bugfix)
+    * A backup job's Enabled/Disabled switch under Tools → Scheduler is the same setting as Scheduled Backup on its backup profile, and keeps showing the new state after saving [grav#4397](https://github.com/getgrav/grav/issues/4397)
     * A page whose folder is named `languages`, `media`, `compare` or `neighbors` opens, saves and deletes in the page editor again instead of loading forever (needs API 1.1.18) [#213](https://github.com/getgrav/grav-plugin-admin2/issues/213)
     * A row removed from a key/value list in the page editor, such as Page Groups on the Security tab, stays removed after saving instead of coming back [grav-plugin-api#79](https://github.com/getgrav/grav-plugin-api/pull/79)
     * Scheduler jobs can be switched on and off again under Tools → Scheduler. The Enabled/Disabled control in each job's row was only a label, so a job disabled in `user/config/scheduler.yaml` could not be turned back on from the admin
+    * The External URL field on a page's Advanced tab shows its help text, and the Debugger Token field (Configuration → System → Debugger) has a proper label and help text instead of a label made up from its key
+    * Arabic, Hebrew and Japanese show the current translations of the admin's shared labels. An old copy of about 670 strings was left in those three language files and took priority over the current ones
 
 # v2.2.12
 ## 11/07/2026
