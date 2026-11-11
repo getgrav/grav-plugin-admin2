@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * Updated to Svelte 5.57, SvelteKit 2.70 and Vite 8, picking up four months of framework fixes, along with a smaller download
+    * The admin loads faster: the code and styles it needs before the first screen are about a fifth smaller, the sidebar and menus fill in sooner, and on a slower connection the dashboard is ready about 15% sooner
 1. [](#bugfix)
     * Updated DOMPurify and js-yaml to pick up their latest security fixes
 
