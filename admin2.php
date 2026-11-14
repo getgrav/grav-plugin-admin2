@@ -469,8 +469,10 @@ class Admin2Plugin extends Plugin
         if ($folder === '') {
             return false;
         }
-        if (!str_starts_with($folder, '/') && \defined('GRAV_ROOT')) {
-            $folder = \GRAV_ROOT . '/' . $folder;
+        // A stream folder is stored relative to the locator base, which is
+        // GRAV_WEBROOT (where user/ lives), not GRAV_ROOT.
+        if (!str_starts_with($folder, '/') && \defined('GRAV_WEBROOT')) {
+            $folder = \GRAV_WEBROOT . '/' . $folder;
         }
 
         $folder = realpath($folder);
