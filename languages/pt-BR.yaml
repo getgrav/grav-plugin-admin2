@@ -1109,6 +1109,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Esta página possui alterações não salvas de uma sessão de edição compartilhada que não correspondem ao arquivo da página, que pode ter sido editado fora do admin. O editor mostra as alterações não salvas; salvar substituirá a versão do arquivo.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'A página foi modificada em outro lugar. Por favor, recarregue.'
                 READ_ONLY_NOTICE: 'Você pode visualizar esta página, mas não editá-la.'
+                HIDDEN_BY_PARENT_NOTICE: 'Esta página não está ativa: **{parent}** não foi publicada e oculta todas as páginas abaixo dela. Esta página mantém sua própria configuração de Publicada, que é aplicada novamente assim que **{parent}** for publicada.'
+                OPEN_PARENT_PAGE: 'Abrir página pai'
             EDIT_PAGE: 'Editar página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -1239,6 +1241,9 @@ ICU:
                 SCHEDULED: Agendado
                 SCHEDULED_FOR: 'Agendado para publicação em {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, e oculta por {parent}'
+                HIDDEN: Oculta
+                HIDDEN_BY: 'Oculta: {parent} não foi publicada e oculta as páginas abaixo dela'
             ANCESTOR_ONLY_HINT: 'Você não pode abrir esta página. Ela está listada para que você possa acessar as páginas dentro dela.'
             ANCESTOR_ONLY_LABEL: '{title}: você não pode abrir esta página, apenas as páginas dentro dela'
             ANCESTOR_ONLY_PARENT: 'Você não pode abrir a página pai'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Nenhuma entrada de changelog mais recente que a versão instalada.'
         UPDATE_CHANGELOG_FAILED: 'O changelog não pôde ser carregado.'
         UPDATE_WHATS_NEW: 'O que há de novo'
+        CASCADE_UNPUBLISH: 'Despublicar páginas filhas também'
+        CASCADE_UNPUBLISH_DEFAULT: 'Despublicar páginas filhas junto com seu pai'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "Quando uma página é despublicada, por sua configuração de Publicação ou por suas datas, todas as páginas abaixo dela também são despublicadas. Este é o padrão para todas as páginas, e uma página pode ativar ou desativar isso com 'Despublicar páginas filhas também' na aba Opções"
+        CASCADE_UNPUBLISH_HELP: 'Quando esta página é despublicada, por sua configuração de Publicação ou por suas datas, todas as páginas abaixo dela também são despublicadas. Cada página filha mantém sua própria configuração de Publicação, portanto ela volta a como estava quando esta página é publicada novamente. Deixe não definido para usar o padrão do site em Configuração → Sistema → Conteúdo'
+        CSP:
+            ENABLED: 'Política de Segurança de Conteúdo (CSP) Estrita'
+            ENABLED_HELP: "Envie um cabeçalho <code>Content-Security-Policy</code> estrito com a página de administração, para que o navegador execute apenas os scripts que a própria página carrega e os scripts que eles carregam. Um script injetado na página, por exemplo através de um campo que não foi escapado, é bloqueado. Páginas, campos e widgets de plugins criados para o Admin2 continuam funcionando. Um plugin que executa código a partir de texto (<code>eval</code>) precisa de <code>script-src 'unsafe-eval'</code> em Fontes de Política Adicionais. Requer API 1.1.14 ou posterior."
+            EXTRA: 'Fontes de Política Adicionais'
+            EXTRA_HELP: 'Fontes para adicionar à política, uma diretiva por linha, como <code>connect-src https://hub.example.com</code> para um hub Mercure em outro host ou <code>img-src https://cdn.example.com</code>. Uma diretiva que a política já possui recebe essas fontes adicionadas; qualquer outra diretiva é adicionada como escrita. Usado apenas enquanto a política está ativada.'
+            TITLE: 'Política de Segurança de Conteúdo'
+        DEBUGGER_TOKEN: 'Token do Depurador'
+        DEBUGGER_TOKEN_HELP: 'APENAS para Provedor Clockwork: o segredo compartilhado que a extensão do navegador Clockwork envia como `X-Clockwork-Auth` para ler os dados do profiler de `/__clockwork/`. Enquanto estiver vazio, os dados do profiler não podem ser lidos de forma alguma, nem mesmo da máquina local'
+        EXTERNAL_URL_HELP: 'Aponte a URL desta página para um endereço externo. Quando definido, o link do menu da página e `page.url()` resolvem para esta URL em vez da rota própria da página. ex: `https://getgrav.org`'
+        GFM_AUTOLINKS: 'Autolinks GFM'
+        GFM_AUTOLINKS_HELP: 'Criar autolink para URLs www. e endereços de e-mail simples (links http(s):// simples usam os Links HTML Automáticos acima).'
+        GFM_MARKS: 'Destaque / Subscrito / Sobrescrito GFM'
+        GFM_MARKS_HELP: 'Habilitar sintaxe inline `==destaque==`, `~subscrito~` e `^sobrescrito^`.'
+        GFM_TAGFILTER: 'Filtro de Tags GFM'
+        GFM_TAGFILTER_HELP: 'Escapar tags HTML não permitidas (script, iframe, style e similares) na saída.'
+        GFM_TASK_LISTS: 'Listas de Tarefas GFM'
+        GFM_TASK_LISTS_HELP: 'Renderizar itens de lista `- [ ]` e `- [x]` como caixas de seleção.'
+        LOG_ROTATE: 'Rotacionar arquivos de log'
+        LOG_ROTATE_COMPRESS: 'Compactar arquivos rotacionados'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzipar cópias antigas (grav.log.2.gz em diante) para economizar espaço em disco. A cópia mais recente, grav.log.1, permanece como texto simples'
+        LOG_ROTATE_HELP: 'Quando um arquivo de log em /logs atinge o tamanho máximo, renomeá-lo (grav.log torna-se grav.log.1) e iniciar um novo, para que os arquivos de log não cresçam indefinidamente'
+        LOG_ROTATE_MAX_FILES: 'Arquivos rotacionados para manter'
+        LOG_ROTATE_MAX_FILES_HELP: 'Quantas cópias antigas de cada log manter. A mais antiga é excluída quando uma nova é criada.'
+        LOG_ROTATE_MAX_SIZE: 'Rotacionar por tamanho'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Tamanho no qual um arquivo de log é rotacionado, por exemplo 10M ou 500K'
+        PAGE_IDS: 'IDs de página'
+        PAGE_IDS_HELP: 'Dê a cada pasta de página um arquivo oculto .page-id com um identificador permanente quando a página for salva, para que os plugins possam seguir uma página independentemente de sua pasta ser renomeada ou movida. Desativado por padrão; plugins que precisam de IDs os ativam por conta própria.'
+        PROMO_BANNER:
+            LABEL: Anúncios
+            NEXT: Próximo
+            SHOW_SLIDE: 'Exibir slide {n}'
+        TABLE_ATTRIBUTES: 'Atributos de tabela'
+        TABLE_ATTRIBUTES_HELP: 'Não padrão: uma linha `{.class #id}` (ou `{:.class}`) imediatamente após uma tabela define a classe e o ID no elemento da tabela.'
+        TABLE_CAPTIONS: 'Legendas de tabela'
+        TABLE_CAPTIONS_HELP: 'Não padrão: uma linha `[Caption]` imediatamente após uma tabela torna-se um elemento `<caption>`.'
+        TABLE_COLSPAN: 'Colspan de célula de tabela'
+        TABLE_COLSPAN_HELP: 'Não padrão: uma célula de tabela vazia funde-se com a célula à sua esquerda (colspan).'
+        TABLE_HEADERLESS: 'Tabelas sem cabeçalho'
+        TABLE_HEADERLESS_HELP: 'Não padrão: uma tabela pode começar com a linha divisória, sem uma linha de cabeçalho acima dela.'
+        TABLE_MULTILINE: 'Células de tabela com várias linhas'
+        TABLE_MULTILINE_HELP: 'Não padrão: uma linha de tabela que termina em uma barra invertida continua na próxima linha, unindo células com uma quebra de linha.'
