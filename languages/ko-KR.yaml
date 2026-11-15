@@ -1109,6 +1109,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: '이 페이지에는 관리자 외부에서 편집되었을 수 있는 페이지 파일과 일치하지 않는 공유 편집 세션의 저장되지 않은 변경 사항이 있습니다. 편집기에는 저장되지 않은 변경 사항이 표시되며, 저장 시 파일 버전이 대체됩니다.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: '다른 곳에서 페이지가 수정되었습니다. 새로고침해 주세요.'
                 READ_ONLY_NOTICE: '이 페이지는 볼 수 있지만 편집할 수는 없습니다.'
+                HIDDEN_BY_PARENT_NOTICE: '이 페이지는 현재 게시되지 않았습니다: **{parent}**가 게시되지 않았으며, 그 하위의 모든 페이지를 숨깁니다. 이 페이지 자체의 게시 설정은 유지되며, **{parent}**가 게시되면 다시 적용됩니다.'
+                OPEN_PARENT_PAGE: '상위 페이지 열기'
             EDIT_PAGE: '페이지 편집'
             FRONTMATTER: 프런트매터
             HEADER_MODIFIED: 수정됨
@@ -1239,6 +1241,9 @@ ICU:
                 SCHEDULED: 예약됨
                 SCHEDULED_FOR: '{date}에 게시 예정'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, {parent}에 의해 숨김'
+                HIDDEN: 숨김
+                HIDDEN_BY: '숨김: {parent}가 게시되지 않아 하위 페이지를 숨기고 있습니다'
             ANCESTOR_ONLY_HINT: '이 페이지는 열 수 없습니다. 내부 페이지에 접근할 수 있도록 나열된 상태입니다.'
             ANCESTOR_ONLY_LABEL: '{title}: 이 페이지는 열 수 없으며, 내부 페이지만 접근 가능합니다.'
             ANCESTOR_ONLY_PARENT: '상위 페이지를 열 수 없습니다'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: '설치된 버전보다 최신인 변경 로그 항목이 없습니다.'
         UPDATE_CHANGELOG_FAILED: '변경 로그를 불러올 수 없습니다.'
         UPDATE_WHATS_NEW: '새로운 기능'
+        CASCADE_UNPUBLISH: '하위 페이지도 게시 취소'
+        CASCADE_UNPUBLISH_DEFAULT: '부모 페이지와 함께 하위 페이지 게시 취소'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "페이지가 '게시됨' 설정 또는 날짜 설정에 의해 게시 취소되면, 그 아래의 모든 페이지도 함께 게시 취소됩니다. 이는 모든 페이지의 기본 설정이며, 페이지의 '옵션' 탭에서 '하위 페이지도 게시 취소' 옵션을 통해 켜거나 끌 수 있습니다."
+        CASCADE_UNPUBLISH_HELP: "이 페이지가 '게시됨' 설정 또는 날짜 설정에 의해 게시 취소되면, 그 아래의 모든 페이지도 함께 게시 취소됩니다. 각 하위 페이지는 고유의 '게시됨' 설정을 유지하므로, 이 페이지가 다시 게시되면 원래 상태로 돌아갑니다. 사이트 기본 설정을 사용하려면 (설정 → 시스템 → 콘텐츠) 비워두세요."
+        CSP:
+            ENABLED: '엄격한 콘텐츠 보안 정책 (Strict CSP)'
+            ENABLED_HELP: "관리자 페이지와 함께 엄격한 <code>Content-Security-Policy</code> 헤더를 전송하여, 브라우저가 페이지 자체에 포함된 스크립트와 해당 스크립트가 로드하는 스크립트만 실행하도록 합니다. 예를 들어, 이스케이프 처리되지 않은 필드를 통해 페이지에 삽입된 스크립트는 차단됩니다. Admin2용으로 빌드된 플러그인 페이지, 필드, 위젯은 계속 작동합니다. 텍스트에서 코드를 실행하는 플러그인(<code>eval</code>)은 '추가 정책 소스'에 <code>script-src 'unsafe-eval'</code>이 필요합니다. API 1.1.14 이상이 필요합니다."
+            EXTRA: '추가 정책 소스'
+            EXTRA_HELP: '정책에 추가할 소스입니다. 줄당 하나의 지시문을 입력하세요. 예: 다른 호스트의 Mercure 허브를 위한 <code>connect-src https://hub.example.com</code> 또는 <code>img-src https://cdn.example.com</code>. 정책에 이미 존재하는 지시문에는 해당 소스가 추가되며, 다른 지시문은 작성된 대로 추가됩니다. 정책이 켜져 있을 때만 사용됩니다.'
+            TITLE: '콘텐츠 보안 정책'
+        DEBUGGER_TOKEN: '디버거 토큰'
+        DEBUGGER_TOKEN_HELP: 'Clockwork 공급자 전용: Clockwork 브라우저 확장 프로그램이 <code>/__clockwork/</code>에서 프로파일러 데이터를 읽기 위해 <code>X-Clockwork-Auth</code>로 전송하는 공유 비밀키입니다. 이 값이 비어 있으면 로컬 시스템에서도 프로파일러 데이터를 전혀 읽을 수 없습니다.'
+        EXTERNAL_URL_HELP: '이 페이지의 URL을 외부 주소로 지정합니다. 설정하면, 페이지의 메뉴 링크와 <code>page.url()</code>은 페이지 자체 경로 대신 이 URL로 연결됩니다. 예: <code>https://getgrav.org</code>'
+        GFM_AUTOLINKS: 'GFM 자동 링크'
+        GFM_AUTOLINKS_HELP: "일반 www. URL 및 이메일 주소를 자동으로 링크합니다. (일반 http(s):// 링크는 위의 '자동 HTML 링크' 기능을 사용합니다.)"
+        GFM_MARKS: 'GFM 강조 / 아래첨자 / 위첨자'
+        GFM_MARKS_HELP: '<code>==강조==</code>, <code>~아래첨자~</code>, <code>^위첨자^</code> 인라인 구문을 활성화합니다.'
+        GFM_TAGFILTER: 'GFM 태그 필터'
+        GFM_TAGFILTER_HELP: '출력물에서 허용되지 않는 원시 HTML 태그(script, iframe, style 등)를 이스케이프 처리합니다.'
+        GFM_TASK_LISTS: 'GFM 작업 목록'
+        GFM_TASK_LISTS_HELP: '<code>- [ ]</code> 및 <code>- [x]</code> 목록 항목을 체크박스로 렌더링합니다.'
+        LOG_ROTATE: '로그 파일 회전'
+        LOG_ROTATE_COMPRESS: '회전된 파일 압축'
+        LOG_ROTATE_COMPRESS_HELP: '디스크 공간을 절약하기 위해 오래된 복사본(grav.log.2.gz부터)을 Gzip으로 압축합니다. 최신 복사본인 grav.log.1은 일반 텍스트로 유지됩니다.'
+        LOG_ROTATE_HELP: '/logs에 있는 로그 파일이 최대 크기에 도달하면 이름을 변경(grav.log를 grav.log.1로 변경)하고 새 파일을 시작하여 로그 파일이 무한정 커지는 것을 방지합니다.'
+        LOG_ROTATE_MAX_FILES: '유지할 회전된 파일 수'
+        LOG_ROTATE_MAX_FILES_HELP: '각 로그의 이전 복사본을 몇 개까지 유지할지 설정합니다. 새 로그가 생성될 때 가장 오래된 로그가 삭제됩니다.'
+        LOG_ROTATE_MAX_SIZE: '크기별 로테이션'
+        LOG_ROTATE_MAX_SIZE_HELP: '로그 파일을 로테이션할 크기입니다(예: 10M 또는 500K).'
+        PAGE_IDS: '페이지 ID'
+        PAGE_IDS_HELP: '페이지 저장 시 각 페이지 폴더에 영구 ID가 포함된 숨김 .page-id 파일을 생성하여, 폴더 이름이 변경되거나 이동되어도 플러그인이 페이지를 추적할 수 있도록 합니다. 기본값은 꺼짐입니다. ID가 필요한 플러그인이 직접 활성화합니다.'
+        PROMO_BANNER:
+            LABEL: 공지사항
+            NEXT: 다음
+            SHOW_SLIDE: '슬라이드 {n} 보기'
+        TABLE_ATTRIBUTES: '테이블 속성'
+        TABLE_ATTRIBUTES_HELP: '비표준: 테이블 바로 뒤에 `{.class #id}`(또는 `{:.class}`) 라인을 추가하면 테이블 요소에 클래스와 ID가 설정됩니다.'
+        TABLE_CAPTIONS: '테이블 캡션'
+        TABLE_CAPTIONS_HELP: '비표준: 테이블 바로 뒤에 `[Caption]` 라인을 추가하면 `<caption>` 요소가 됩니다.'
+        TABLE_COLSPAN: '테이블 셀 Colspan'
+        TABLE_COLSPAN_HELP: '비표준: 빈 테이블 셀은 왼쪽 셀과 병합(colspan)됩니다.'
+        TABLE_HEADERLESS: '헤더 없는 테이블'
+        TABLE_HEADERLESS_HELP: '비표준: 테이블은 헤더 행 없이 구분 기호 행으로 시작할 수 있습니다.'
+        TABLE_MULTILINE: '여러 줄 테이블 셀'
+        TABLE_MULTILINE_HELP: '비표준: 백슬래시로 끝나는 테이블 행은 다음 줄로 이어지며, 줄 바꿈으로 셀을 결합합니다.'
