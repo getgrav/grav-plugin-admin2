@@ -220,6 +220,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Bu sayfa, paylaşımlı bir düzenleme oturumundan kalan ve yönetici paneli dışında düzenlenmiş olabilecek sayfa dosyasıyla eşleşmeyen kaydedilmemiş değişikliklere sahip. Düzenleyici kaydedilmemiş değişiklikleri gösterir; kaydetmek dosyanın mevcut sürümünün üzerine yazar.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Sayfa başka bir yerde değiştirildi. Lütfen yeniden yükleyin.'
                 READ_ONLY_NOTICE: 'Bu sayfayı görüntüleyebilirsiniz ancak düzenleyemezsiniz.'
+                HIDDEN_BY_PARENT_NOTICE: 'Bu sayfa yayında değil: **{parent}** yayınlanmamış durumda ve altındaki tüm sayfaları gizliyor. Bu sayfa kendi Yayınlandı ayarını korur ve bu ayar **{parent}** yayınlandığında tekrar geçerli olur.'
+                OPEN_PARENT_PAGE: 'Üst sayfayı aç'
             NEW:
                 MY_NEW_PAGE: 'Yeni Sayfam'
                 FILTER_PAGES: 'Sayfaları filtrele...'
@@ -261,6 +263,9 @@ ICU:
                 SCHEDULED: Zamanlanmış
                 SCHEDULED_FOR: '{date} tarihinde yayınlanmak üzere zamanlandı'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status} ve {parent} tarafından gizlenmiş'
+                HIDDEN: Gizli
+                HIDDEN_BY: 'Gizli: {parent} yayınlanmamış ve altındaki sayfaları gizliyor'
             ANCESTOR_ONLY_HINT: 'Bu sayfayı açamazsınız. İçindeki sayfalara ulaşabilmeniz için listelenmiştir.'
             ANCESTOR_ONLY_LABEL: '{title}: bu sayfayı açamazsınız, sadece içindeki sayfaları açabilirsiniz'
             ANCESTOR_ONLY_PARENT: 'Üst sayfayı açamazsınız'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Yüklü sürümden daha yeni bir değişiklik günlüğü girişi bulunmuyor.'
         UPDATE_CHANGELOG_FAILED: 'Değişiklik günlüğü yüklenemedi.'
         UPDATE_WHATS_NEW: Yenilikler
+        CASCADE_UNPUBLISH: 'Alt sayfaları da yayından kaldır'
+        CASCADE_UNPUBLISH_DEFAULT: 'Alt sayfaları ebeveynleriyle birlikte yayından kaldır'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "Bir sayfa, Yayınlanma ayarı veya tarihleri nedeniyle yayından kaldırıldığında, altındaki her sayfa da yayından kaldırılır. Bu her sayfa için varsayılan davranıştır ve Seçenekler sekmesindeki 'Alt sayfaları da yayından kaldır' seçeneği ile bu özellik açılıp kapatılabilir."
+        CASCADE_UNPUBLISH_HELP: 'Bu sayfa, Yayınlanma ayarı veya tarihleri nedeniyle yayından kaldırıldığında, altındaki her sayfa da yayından kaldırılır. Her alt sayfa kendi Yayınlanma ayarını korur, böylece bu sayfa tekrar yayınlandığında eski durumuna döner. Site genelindeki varsayılanı (Yapılandırma → Sistem → İçerik altındaki) kullanmak için ayarı boş bırakın.'
+        CSP:
+            ENABLED: 'Sıkı İçerik Güvenlik Politikası (CSP)'
+            ENABLED_HELP: "Yönetici sayfasıyla birlikte sıkı bir <code>Content-Security-Policy</code> başlığı gönderir, böylece tarayıcı yalnızca sayfanın kendi içerdiği ve yüklediği betikleri çalıştırır. Örneğin, kaçış karakterleri kullanılmamış bir alan aracılığıyla sayfaya enjekte edilen bir betik engellenir. Admin2 için oluşturulan eklenti sayfaları, alanlar ve araçlar çalışmaya devam eder. Metin üzerinden kod çalıştıran (<code>eval</code>) bir eklenti, Ek Politika Kaynakları altında <code>script-src 'unsafe-eval'</code> gerektirir. API 1.1.14 veya üzerini gerektirir."
+            EXTRA: 'Ek Politika Kaynakları'
+            EXTRA_HELP: 'Politikaya eklenecek kaynaklar; satır başına bir direktif olacak şekilde, örneğin başka bir ana bilgisayardaki Mercure merkezi için <code>connect-src https://hub.example.com</code> veya <code>img-src https://cdn.example.com</code> şeklinde yazılmalıdır. Politikada zaten bulunan bir direktife bu kaynaklar eklenir; başka herhangi bir direktif ise yazıldığı gibi eklenir. Sadece politika etkinken kullanılır.'
+            TITLE: 'İçerik Güvenlik Politikası'
+        DEBUGGER_TOKEN: 'Hata Ayıklayıcı (Debugger) Belirteci'
+        DEBUGGER_TOKEN_HELP: 'Sadece Clockwork Sağlayıcısı için: Clockwork tarayıcı eklentisinin <code>/__clockwork/</code> dizininden profiler verilerini okumak için <code>X-Clockwork-Auth</code> olarak gönderdiği paylaşılan gizli anahtar. Boş bırakıldığında, yerel makineden dahi profiler verileri okunamaz.'
+        EXTERNAL_URL_HELP: "Bu sayfanın URL'sini harici bir adrese yönlendirir. Ayarlandığında, sayfanın menü bağlantısı ve <code>page.url()</code> değeri sayfanın kendi rotası yerine bu URL'ye çözümlenir. Örn: <code>https://getgrav.org</code>"
+        GFM_AUTOLINKS: 'GFM Otomatik Bağlantılar'
+        GFM_AUTOLINKS_HELP: "Ham www. URL'lerini ve e-posta adreslerini otomatik bağla (ham http(s):// bağlantıları yukarıdaki Otomatik HTML Bağlantıları ayarını kullanır)."
+        GFM_MARKS: 'GFM Vurgulama / Alt Simge / Üst Simge'
+        GFM_MARKS_HELP: '<code>==vurgulama==</code>, <code>~alt simge~</code> ve <code>^üst simge^</code> satır içi sözdizimini etkinleştir.'
+        GFM_TAGFILTER: 'GFM Etiket Filtresi'
+        GFM_TAGFILTER_HELP: 'Çıktıdaki izin verilmeyen ham HTML etiketlerini (script, iframe, style ve benzeri) kaçış karakteriyle koru.'
+        GFM_TASK_LISTS: 'GFM Görev Listeleri'
+        GFM_TASK_LISTS_HELP: '<code>- [ ]</code> ve <code>- [x]</code> liste öğelerini onay kutusu olarak işle.'
+        LOG_ROTATE: 'Günlük (log) dosyalarını döndür'
+        LOG_ROTATE_COMPRESS: 'Döndürülen dosyaları sıkıştır'
+        LOG_ROTATE_COMPRESS_HELP: 'Disk alanından tasarruf etmek için eski kopyaları (grav.log.2.gz ve sonrası) Gzip ile sıkıştır. En yeni kopya olan grav.log.1 düz metin olarak kalır.'
+        LOG_ROTATE_HELP: ' /logs dizinindeki bir günlük dosyası maksimum boyuta ulaştığında, onu yeniden adlandır (grav.log, grav.log.1 olur) ve yeni bir tane başlat; böylece günlük dosyaları sınırsızca büyümez.'
+        LOG_ROTATE_MAX_FILES: 'Tutulacak döndürülmüş dosya sayısı'
+        LOG_ROTATE_MAX_FILES_HELP: 'Her günlüğün kaç eski kopyasının saklanacağı. Yenisi oluşturulduğunda en eskisi silinir.'
+        LOG_ROTATE_MAX_SIZE: 'Boyuta göre döndür'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Bir günlük dosyasının döndürüleceği boyut, örneğin 10M veya 500K'
+        PAGE_IDS: 'Sayfa Kimlikleri (IDs)'
+        PAGE_IDS_HELP: 'Sayfa kaydedildiğinde her sayfa klasörüne kalıcı bir kimliğe sahip gizli bir .page-id dosyası verin; böylece eklentiler, klasörü yeniden adlandırılsa veya taşınsa bile sayfayı takip edebilir. Varsayılan olarak kapalıdır; kimliğe ihtiyaç duyan eklentiler bunu kendileri açar.'
+        PROMO_BANNER:
+            LABEL: Duyurular
+            NEXT: İleri
+            SHOW_SLIDE: '{n}. slaytı göster'
+        TABLE_ATTRIBUTES: 'Tablo Öznitelikleri'
+        TABLE_ATTRIBUTES_HELP: 'Standart dışı: tablodan hemen sonra gelen bir `{.class #id}` (veya `{:.class}`) satırı, tablo öğesine sınıf ve kimlik atar.'
+        TABLE_CAPTIONS: 'Tablo Başlıkları (Caption)'
+        TABLE_CAPTIONS_HELP: 'Standart dışı: tablodan hemen sonra gelen bir `[Caption]` satırı, `<caption>` öğesine dönüşür.'
+        TABLE_COLSPAN: 'Tablo Hücresi Sütun Birleştirme (Colspan)'
+        TABLE_COLSPAN_HELP: 'Standart dışı: boş bir tablo hücresi, solundaki hücre ile birleşir (colspan).'
+        TABLE_HEADERLESS: 'Başlıksız Tablolar'
+        TABLE_HEADERLESS_HELP: 'Standart dışı: bir tablo, üzerinde başlık satırı olmaksızın ayırıcı satırla başlayabilir.'
+        TABLE_MULTILINE: 'Çok Satırlı Tablo Hücreleri'
+        TABLE_MULTILINE_HELP: 'Standart dışı: ters eğik çizgi ile biten bir tablo satırı sonraki satırla birleşerek hücreleri bir satır sonu ile birleştirir.'
