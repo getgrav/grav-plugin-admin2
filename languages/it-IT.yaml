@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: "Questa pagina presenta modifiche non salvate provenienti da una sessione di editing condivisa che non corrispondono al file della pagina, che potrebbe essere stato modificato al di fuori dell'amministrazione. L'editor mostra le modifiche non salvate; il salvataggio sostituirà la versione del file."
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'La pagina è stata modificata altrove. Si prega di ricaricare.'
                 READ_ONLY_NOTICE: 'Puoi visualizzare questa pagina ma non modificarla.'
+                HIDDEN_BY_PARENT_NOTICE: 'Questa pagina non è attiva: **{parent}** non è pubblicata e nasconde tutte le pagine sottostanti. Questa pagina mantiene la propria impostazione di pubblicazione, che verrà riapplicata una volta che **{parent}** sarà pubblicata.'
+                OPEN_PARENT_PAGE: 'Apri pagina genitore'
             EDIT_PAGE: 'Modifica Pagina'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificato
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Pianificato
                 SCHEDULED_FOR: 'Pianificato per la pubblicazione il {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, e nascosta da {parent}'
+                HIDDEN: Nascosta
+                HIDDEN_BY: 'Nascosta: {parent} non è pubblicata e nasconde le pagine sottostanti'
             ANCESTOR_ONLY_HINT: 'Non puoi aprire questa pagina. È elencata in modo che tu possa raggiungere le pagine al suo interno.'
             ANCESTOR_ONLY_LABEL: '{title}: non puoi aprire questa pagina, solo le pagine al suo interno'
             ANCESTOR_ONLY_PARENT: 'Non puoi aprire la pagina genitore'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Nessuna voce nel changelog più recente della versione installata.'
         UPDATE_CHANGELOG_FAILED: 'Non è stato possibile caricare il changelog.'
         UPDATE_WHATS_NEW: Novità
+        CASCADE_UNPUBLISH: 'Annulla anche la pubblicazione delle pagine figlio'
+        CASCADE_UNPUBLISH_DEFAULT: 'Annulla la pubblicazione delle pagine figlio insieme alla pagina genitore'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "Quando una pagina viene resa non pubblicata, tramite la sua impostazione Pubblicato o tramite le sue date, ogni pagina sottostante viene a sua volta resa non pubblicata. Questa è l'impostazione predefinita per ogni pagina, e una pagina può attivarla o disattivarla con 「Annulla anche la pubblicazione delle pagine figlio」 nella sua scheda Opzioni"
+        CASCADE_UNPUBLISH_HELP: "Quando questa pagina viene resa non pubblicata, tramite la sua impostazione Pubblicato o tramite le sue date, ogni pagina sottostante viene a sua volta resa non pubblicata. Ogni pagina figlio mantiene la propria impostazione Pubblicato, quindi tornerà come era in precedenza quando questa pagina verrà pubblicata di nuovo. Lasciare non impostato per utilizzare l'impostazione predefinita del sito in Configurazione → Sistema → Contenuto"
+        CSP:
+            ENABLED: 'Content Security Policy rigorosa'
+            ENABLED_HELP: "Invia un header <code>Content-Security-Policy</code> rigoroso con la pagina di amministrazione, in modo che il browser esegua solo gli script contenuti nella pagina stessa e quelli da essa caricati. Uno script iniettato nella pagina, ad esempio attraverso un campo non sottoposto a escape, viene bloccato. Le pagine, i campi e i widget dei plugin creati per Admin2 continuano a funzionare. Un plugin che esegue codice da testo (<code>eval</code>) necessita di <code>script-src 'unsafe-eval'</code> sotto Fonti di policy extra. Richiede API 1.1.14 o successiva."
+            EXTRA: 'Fonti di policy extra'
+            EXTRA_HELP: 'Fonti da aggiungere alla policy, una direttiva per riga, come <code>connect-src https://hub.example.com</code> per un hub Mercure su un altro host o <code>img-src https://cdn.example.com</code>. Una direttiva già presente nella policy riceverà queste fonti aggiunte; qualsiasi altra direttiva viene aggiunta così come scritta. Utilizzato solo mentre la policy è attiva.'
+            TITLE: 'Content Security Policy'
+        DEBUGGER_TOKEN: 'Token del debugger'
+        DEBUGGER_TOKEN_HELP: "SOLO per il provider Clockwork: il segreto condiviso che l'estensione del browser Clockwork invia come `X-Clockwork-Auth` per leggere i dati del profiler da `/__clockwork/`. Finché è vuoto, i dati del profiler non possono essere letti affatto, nemmeno dalla macchina locale"
+        EXTERNAL_URL_HELP: "Indirizza l'URL di questa pagina verso un indirizzo esterno. Quando impostato, il link del menu della pagina e `page.url()` risolvono a questo URL invece che al percorso della pagina. es. `https://getgrav.org`"
+        GFM_AUTOLINKS: 'Autolink GFM'
+        GFM_AUTOLINKS_HELP: 'Crea automaticamente link per URL www. e indirizzi email (i link http(s):// nudi utilizzano i Link HTML automatici qui sopra).'
+        GFM_MARKS: 'Evidenziazione / Pedice / Apice GFM'
+        GFM_MARKS_HELP: 'Abilita la sintassi inline `==evidenziato==`, `~pedice~` e `^apice^`.'
+        GFM_TAGFILTER: 'Filtro tag GFM'
+        GFM_TAGFILTER_HELP: "Esegui l'escape dei tag HTML grezzi non consentiti (script, iframe, style e simili) nell'output."
+        GFM_TASK_LISTS: 'Elenchi di attività GFM'
+        GFM_TASK_LISTS_HELP: "Renderizza gli elementi dell'elenco `- [ ]` e `- [x]` come caselle di controllo."
+        LOG_ROTATE: 'Ruota i file di log'
+        LOG_ROTATE_COMPRESS: 'Comprimi i file ruotati'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzippa le copie più vecchie (da grav.log.2.gz in poi) per risparmiare spazio su disco. La copia più recente, grav.log.1, rimane in testo semplice'
+        LOG_ROTATE_HELP: 'Quando un file di log in /logs raggiunge la dimensione massima, rinominalo (grav.log diventa grav.log.1) e iniziane uno nuovo, in modo che i file di log non crescano indefinitamente'
+        LOG_ROTATE_MAX_FILES: 'File ruotati da conservare'
+        LOG_ROTATE_MAX_FILES_HELP: 'Quante vecchie copie di ogni log mantenere. La più vecchia viene eliminata quando ne viene creata una nuova.'
+        LOG_ROTATE_MAX_SIZE: 'Ruota in base alla dimensione'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Dimensione alla quale un file di log viene ruotato, ad esempio 10M o 500K'
+        PAGE_IDS: 'ID pagina'
+        PAGE_IDS_HELP: 'Assegna a ogni cartella di pagina un file nascosto .page-id con un ID permanente quando la pagina viene salvata, in modo che i plugin possano seguire una pagina anche se la sua cartella viene rinominata o spostata. Disattivato per impostazione predefinita; i plugin che necessitano di ID li attivano autonomamente.'
+        PROMO_BANNER:
+            LABEL: Annunci
+            NEXT: Avanti
+            SHOW_SLIDE: 'Mostra diapositiva {n}'
+        TABLE_ATTRIBUTES: 'Attributi tabella'
+        TABLE_ATTRIBUTES_HELP: "Non standard: una riga `{.class #id}` (o `{:.class}`) subito dopo una tabella imposta la classe e l'id sull'elemento tabella."
+        TABLE_CAPTIONS: 'Didascalie tabella'
+        TABLE_CAPTIONS_HELP: 'Non standard: una riga `[Caption]` subito dopo una tabella diventa un elemento `<caption>`.'
+        TABLE_COLSPAN: 'Colspan celle tabella'
+        TABLE_COLSPAN_HELP: 'Non standard: una cella di tabella vuota si unisce alla cella a sinistra (colspan).'
+        TABLE_HEADERLESS: 'Tabelle senza intestazione'
+        TABLE_HEADERLESS_HELP: 'Non standard: una tabella può iniziare con la riga divisoria, senza una riga di intestazione sopra.'
+        TABLE_MULTILINE: 'Celle di tabella multilinea'
+        TABLE_MULTILINE_HELP: "Non standard: una riga di tabella che termina con una barra rovesciata (backslash) continua sulla riga successiva, unendo le celle con un'interruzione di riga."
