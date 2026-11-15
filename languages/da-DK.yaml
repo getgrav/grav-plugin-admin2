@@ -1109,6 +1109,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Denne side har ikke-gemte ændringer fra en delt redigeringssession, som ikke stemmer overens med sidefilen, hvilket kan skyldes redigering uden for admin. Editoren viser de ikke-gemte ændringer; hvis du gemmer, erstattes filens version.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Siden er blevet ændret et andet sted. Genindlæs venligst.'
                 READ_ONLY_NOTICE: 'Du kan se denne side, men ikke redigere den.'
+                HIDDEN_BY_PARENT_NOTICE: 'Denne side er ikke live: **{parent}** er upubliceret, hvilket skjuler alle undersider. Denne side bevarer sin egen udgivelsesindstilling, som træder i kraft igen, når **{parent}** publiceres.'
+                OPEN_PARENT_PAGE: 'Åbn forældreside'
             EDIT_PAGE: 'Rediger side'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ændret
@@ -1239,6 +1241,9 @@ ICU:
                 SCHEDULED: Planlagt
                 SCHEDULED_FOR: 'Planlagt til udgivelse den {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, og skjult af {parent}'
+                HIDDEN: Skjult
+                HIDDEN_BY: 'Skjult: {parent} er upubliceret og skjuler siderne nedenunder'
             ANCESTOR_ONLY_HINT: 'Du kan ikke åbne denne side. Den er angivet, så du kan nå siderne indeni.'
             ANCESTOR_ONLY_LABEL: '{title}: du kan ikke åbne denne side, kun sider indeni den'
             ANCESTOR_ONLY_PARENT: 'Du kan ikke åbne overordnede side'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Ingen changelog-poster nyere end den installerede version.'
         UPDATE_CHANGELOG_FAILED: 'Changeloggen kunne ikke indlæses.'
         UPDATE_WHATS_NEW: 'Hvad er nyt'
+        CASCADE_UNPUBLISH: 'Afpublicér også undersider'
+        CASCADE_UNPUBLISH_DEFAULT: 'Afpublicér undersider sammen med deres forælder'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "Når en side afpubliceres, enten via dens publiceringsindstilling eller dens datoer, bliver hver side under den også afpubliceret. Dette er standarden for enhver side, og en side kan slå det til eller fra via 'Afpublicér også undersider' i dens indstillingsfane"
+        CASCADE_UNPUBLISH_HELP: 'Når denne side afpubliceres, enten via dens publiceringsindstilling eller dens datoer, bliver hver side under den også afpubliceret. Hver underside beholder sin egen publiceringsindstilling, så den vender tilbage til sin oprindelige tilstand, når denne side publiceres igen. Lad den være uindstillet for at bruge webstedets standard under Konfiguration → System → Indhold'
+        CSP:
+            ENABLED: 'Streng Content Security Policy'
+            ENABLED_HELP: "Send en streng <code>Content-Security-Policy</code>-header med adminsiden, så browseren kun kører de scripts, som selve siden indeholder, samt de scripts, de indlæser. Et script, der injiceres på siden, for eksempel via et felt der ikke blev escapet, blokeres. Pluginsider, felter og widgets bygget til Admin2 fortsætter med at fungere. Et plugin, der kører kode fra tekst (<code>eval</code>), kræver <code>script-src 'unsafe-eval'</code> under Ekstra politik-kilder. Kræver API 1.1.14 eller nyere."
+            EXTRA: 'Ekstra politik-kilder'
+            EXTRA_HELP: 'Kilder der skal føjes til politikken, ét direktiv per linje, såsom <code>connect-src https://hub.example.com</code> til en Mercure-hub på en anden vært eller <code>img-src https://cdn.example.com</code>. Et direktiv, som politikken allerede har, får disse kilder tilføjet; ethvert andet direktiv tilføjes som skrevet. Bruges kun mens politikken er slået til.'
+            TITLE: 'Content Security Policy'
+        DEBUGGER_TOKEN: Debugger-token
+        DEBUGGER_TOKEN_HELP: 'KUN Clockwork-udbyder: den delte hemmelighed som Clockwork-browserudvidelsen sender som `X-Clockwork-Auth` for at læse profilerdata fra `/__clockwork/`. Mens den er tom, kan profilerdata slet ikke læses, selv ikke fra den lokale maskine'
+        EXTERNAL_URL_HELP: 'Peg denne sides URL mod en ekstern adresse. Når denne er indstillet, refererer sidens menulink og `page.url()` til denne URL i stedet for sidens egen rute. f.eks. `https://getgrav.org`'
+        GFM_AUTOLINKS: 'GFM Autolinks'
+        GFM_AUTOLINKS_HELP: "Autolink rå www.-URL'er og e-mailadresser (rå http(s):// links bruger Automatiske HTML-links ovenfor)."
+        GFM_MARKS: 'GFM Fremhævning / Sænket skrift / Hævet skrift'
+        GFM_MARKS_HELP: 'Aktivér inline-syntaks for `==fremhævning==`, `~sænket skrift~` og `^hævet skrift^`.'
+        GFM_TAGFILTER: 'GFM Tag-filter'
+        GFM_TAGFILTER_HELP: 'Escape ikke-tilladte rå HTML-tags (script, iframe, style og lignende) i output.'
+        GFM_TASK_LISTS: 'GFM opgavelister'
+        GFM_TASK_LISTS_HELP: 'Gengiv `- [ ]` og `- [x]` listeelementer som afkrydsningsfelter.'
+        LOG_ROTATE: 'Rotér logfiler'
+        LOG_ROTATE_COMPRESS: 'Komprimér roterede filer'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzip ældre kopier (grav.log.2.gz og fremefter) for at spare diskplads. Den nyeste kopi, grav.log.1, forbliver almindelig tekst'
+        LOG_ROTATE_HELP: 'Når en logfil i /logs når den maksimale størrelse, omdøbes den (grav.log bliver til grav.log.1) og en ny startes, så logfiler ikke kan vokse uendeligt'
+        LOG_ROTATE_MAX_FILES: 'Antal roterede filer der skal gemmes'
+        LOG_ROTATE_MAX_FILES_HELP: 'Hvor mange gamle kopier af hver logfil, der skal gemmes. Den ældste slettes, når en ny oprettes.'
+        LOG_ROTATE_MAX_SIZE: 'Roter ved størrelse'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Størrelse, hvorved en logfil roteres, for eksempel 10M eller 500K'
+        PAGE_IDS: "Side-id'er"
+        PAGE_IDS_HELP: "Giv hver sidemappe en skjult .page-id-fil med et permanent id, når siden gemmes, så plugins kan følge en side, uanset hvordan dens mappe omdøbes eller flyttes. Deaktiveret som standard; plugins, der har brug for id'er, aktiverer dem selv."
+        PROMO_BANNER:
+            LABEL: Meddelelser
+            NEXT: Næste
+            SHOW_SLIDE: 'Vis slide {n}'
+        TABLE_ATTRIBUTES: Tabelattributter
+        TABLE_ATTRIBUTES_HELP: 'Ikke-standard: en `{.class #id}` (eller `{:.class}`) linje umiddelbart efter en tabel indstiller klasse og id for tabelelementet.'
+        TABLE_CAPTIONS: Tabeltekster
+        TABLE_CAPTIONS_HELP: 'Ikke-standard: en `[Caption]` linje umiddelbart efter en tabel bliver til et `<caption>` element.'
+        TABLE_COLSPAN: Tabelcelle-colspan
+        TABLE_COLSPAN_HELP: 'Ikke-standard: en tom tabelcelle flettes sammen med cellen til venstre for den (colspan).'
+        TABLE_HEADERLESS: 'Tabeller uden overskrift'
+        TABLE_HEADERLESS_HELP: 'Ikke-standard: en tabel kan starte med divider-rækken uden en overskriftsrække ovenfor.'
+        TABLE_MULTILINE: 'Tabelceller med flere linjer'
+        TABLE_MULTILINE_HELP: 'Ikke-standard: en tabelrække, der slutter med en backslash, fortsætter på næste linje og samler celler med et linjeskift.'
