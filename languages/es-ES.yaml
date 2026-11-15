@@ -2595,3 +2595,21 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'No hay entradas en el registro de cambios más recientes que la versión instalada.'
         UPDATE_CHANGELOG_FAILED: 'No se pudo cargar el registro de cambios.'
         UPDATE_WHATS_NEW: Novedades
+        CSP:
+            ENABLED: 'Política de seguridad de contenido estricta'
+            ENABLED_HELP: "Envía un encabezado <code>Content-Security-Policy</code> estricto con la página de administración, para que el navegador solo ejecute los scripts que la propia página incluye y los scripts que estos cargan. Un script inyectado en la página, por ejemplo mediante un campo que no se escapó, queda bloqueado. Las páginas de plugins, los campos y los widgets creados para Admin2 siguen funcionando. Un plugin que ejecuta código desde texto (<code>eval</code>) necesita <code>script-src 'unsafe-eval'</code> en Fuentes de política adicionales. Requiere API 1.1.14 o posterior."
+            EXTRA: 'Fuentes adicionales de la política'
+            EXTRA_HELP: 'Orígenes que se añadirán a la política, uno por línea. Por ejemplo, `<code>connect-src https://hub.example.com</code>` para un servidor Mercure alojado en otro dominio o `<code>img-src https://cdn.example.com</code>`. Si la política ya incluye una directiva, se añadirán estos orígenes a ella; cualquier otra directiva se añadirá tal como está escrita. Solo se utiliza cuando la política está activada.'
+            TITLE: 'Política de seguridad de contenidos (CSP)'
+        LOG_ROTATE: 'Rotar los archivos de registro'
+        LOG_ROTATE_COMPRESS: 'Comprimir los archivos rotados'
+        LOG_ROTATE_COMPRESS_HELP: 'Comprimir con Gzip las copias más antiguas (`grav.log.2.gz` en adelante) para ahorrar espacio en disco. La copia más reciente, `grav.log.1`, se mantiene en texto sin comprimir.'
+        LOG_ROTATE_HELP: 'Cuando un archivo de registro de `/logs` alcanza el tamaño máximo, se renombra (por ejemplo, `grav.log` pasa a llamarse `grav.log.1`) y se crea uno nuevo para evitar que los archivos de registro crezcan indefinidamente.'
+        LOG_ROTATE_MAX_FILES: 'Archivos rotados que se conservarán'
+        LOG_ROTATE_MAX_FILES_HELP: 'Cuántas copias antiguas de cada registro conservar. La más antigua se elimina cuando se crea una nueva'
+        LOG_ROTATE_MAX_SIZE: 'Rotar al alcanzar el tamaño'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Tamaño a partir del cual se rota el archivo de registro, por ejemplo, 10M o 500K'
+        PROMO_BANNER:
+            LABEL: Anuncios
+            NEXT: Siguiente
+            SHOW_SLIDE: 'Mostrar diapositiva {n}'
