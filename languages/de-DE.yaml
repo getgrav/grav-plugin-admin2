@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Diese Seite hat ungespeicherte Änderungen aus einer gemeinsamen Bearbeitungssitzung, die nicht mit der Seitendatei übereinstimmen, da diese möglicherweise außerhalb des Admins bearbeitet wurde. Der Editor zeigt die ungespeicherten Änderungen an; beim Speichern wird die Dateiversion ersetzt.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Seite wurde anderweitig geändert. Bitte neu laden.'
                 READ_ONLY_NOTICE: 'Sie können diese Seite ansehen, aber nicht bearbeiten.'
+                HIDDEN_BY_PARENT_NOTICE: 'Diese Seite ist nicht live: **{parent}** ist unveröffentlicht, wodurch alle darunter liegenden Seiten verborgen werden. Diese Seite behält ihre eigene „Veröffentlicht“-Einstellung, die wieder wirksam wird, sobald **{parent}** veröffentlicht wurde.'
+                OPEN_PARENT_PAGE: 'Übergeordnete Seite öffnen'
             EDIT_PAGE: 'Seite bearbeiten'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Geändert
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Geplant
                 SCHEDULED_FOR: 'Veröffentlichung geplant für {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, und ausgeblendet durch {parent}'
+                HIDDEN: Ausgeblendet
+                HIDDEN_BY: 'Ausgeblendet: {parent} ist unveröffentlicht und verbirgt die darunter liegenden Seiten'
             ANCESTOR_ONLY_HINT: 'Sie können diese Seite nicht öffnen. Sie ist aufgeführt, damit Sie die darin enthaltenen Seiten erreichen können.'
             ANCESTOR_ONLY_LABEL: '{title}: Sie können diese Seite nicht öffnen, nur die darin enthaltenen Seiten'
             ANCESTOR_ONLY_PARENT: 'Sie können die übergeordnete Seite nicht öffnen'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Keine Changelog-Einträge, die neuer als die installierte Version sind.'
         UPDATE_CHANGELOG_FAILED: 'Das Changelog konnte nicht geladen werden.'
         UPDATE_WHATS_NEW: 'Was ist neu'
+        CASCADE_UNPUBLISH: 'Unterseiten ebenfalls unveröffentlichen'
+        CASCADE_UNPUBLISH_DEFAULT: 'Unterseiten mit ihrem Elternteil unveröffentlichen'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: 'Wenn eine Seite über ihre Einstellung „Veröffentlicht“ oder ihre Daten unveröffentlicht wird, wird jede darunter liegende Seite ebenfalls unveröffentlicht. Dies ist die Standardeinstellung für jede Seite. Eine Seite kann dies im Reiter „Optionen“ über „Unterseiten ebenfalls unveröffentlichen“ ein- oder ausschalten.'
+        CASCADE_UNPUBLISH_HELP: 'Wenn diese Seite über ihre Einstellung „Veröffentlicht“ oder ihre Daten unveröffentlicht wird, wird jede darunter liegende Seite ebenfalls unveröffentlicht. Jede Unterseite behält ihre eigene Einstellung „Veröffentlicht“ bei, sodass sie wieder so eingestellt ist wie zuvor, wenn diese Seite erneut veröffentlicht wird. Unverändert lassen, um die Standardeinstellung der Website unter Konfiguration → System → Inhalt zu verwenden.'
+        CSP:
+            ENABLED: 'Strenge Content-Security-Policy'
+            ENABLED_HELP: "Sendet einen strengen <code>Content-Security-Policy</code>-Header mit der Admin-Seite, sodass der Browser nur die Skripte ausführt, die die Seite selbst enthält und die von diesen geladen werden. Ein in die Seite injiziertes Skript, zum Beispiel durch ein Feld, das nicht escaped wurde, wird blockiert. Plugin-Seiten, Felder und Widgets, die für Admin2 erstellt wurden, funktionieren weiterhin. Ein Plugin, das Code aus Text ausführt (<code>eval</code>), benötigt <code>script-src 'unsafe-eval'</code> unter „Zusätzliche Policy-Quellen“. Erfordert API 1.1.14 oder neuer."
+            EXTRA: 'Zusätzliche Policy-Quellen'
+            EXTRA_HELP: 'Quellen, die der Policy hinzugefügt werden sollen, eine Direktive pro Zeile, wie z. B. <code>connect-src https://hub.example.com</code> für einen Mercure-Hub auf einem anderen Host oder <code>img-src https://cdn.example.com</code>. Eine Direktive, die bereits in der Policy vorhanden ist, erhält diese zusätzlichen Quellen; jede andere Direktive wird wie geschrieben hinzugefügt. Wird nur verwendet, wenn die Policy eingeschaltet ist.'
+            TITLE: Content-Security-Policy
+        DEBUGGER_TOKEN: Debugger-Token
+        DEBUGGER_TOKEN_HELP: 'NUR Clockwork-Provider: das geteilte Geheimnis (Shared Secret), das die Clockwork-Browser-Erweiterung als `X-Clockwork-Auth` sendet, um Profiler-Daten von `/__clockwork/` zu lesen. Solange es leer ist, können Profiler-Daten überhaupt nicht gelesen werden, auch nicht vom lokalen Computer aus.'
+        EXTERNAL_URL_HELP: 'Leitet die URL dieser Seite auf eine externe Adresse um. Wenn diese Option gesetzt ist, lösen der Menülink der Seite und `page.url()` zu dieser URL auf anstatt zur eigenen Route der Seite. Bsp.: `https://getgrav.org`'
+        GFM_AUTOLINKS: 'GFM Autolinks'
+        GFM_AUTOLINKS_HELP: 'Autolink für nackte www.-URLs und E-Mail-Adressen (nackte http(s)://-Links verwenden die oben genannten „Automatischen HTML-Links“).'
+        GFM_MARKS: 'GFM Highlight / Sub / Superscript'
+        GFM_MARKS_HELP: 'Aktiviert die Inline-Syntax `==highlight==`, `~subscript~` und `^superscript^`.'
+        GFM_TAGFILTER: 'GFM Tag-Filter'
+        GFM_TAGFILTER_HELP: 'Maskiert nicht zulässige rohe HTML-Tags (script, iframe, style und ähnliche) in der Ausgabe.'
+        GFM_TASK_LISTS: 'GFM Aufgabenlisten'
+        GFM_TASK_LISTS_HELP: 'Stellt `- [ ]` und `- [x]` Listenelemente als Checkboxen dar.'
+        LOG_ROTATE: 'Logdateien rotieren'
+        LOG_ROTATE_COMPRESS: 'Rotierte Dateien komprimieren'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzip-Komprimierung für ältere Kopien (grav.log.2.gz und folgende), um Speicherplatz zu sparen. Die neueste Kopie, grav.log.1, bleibt im Klartext.'
+        LOG_ROTATE_HELP: 'Wenn eine Logdatei in /logs die maximale Größe erreicht, wird sie umbenannt (grav.log wird zu grav.log.1) und eine neue gestartet, damit Logdateien nicht unendlich groß werden.'
+        LOG_ROTATE_MAX_FILES: 'Anzahl der zu behaltenden rotierten Dateien'
+        LOG_ROTATE_MAX_FILES_HELP: 'Wie viele alte Kopien jedes Protokolls behalten werden sollen. Die älteste wird gelöscht, wenn eine neue erstellt wird.'
+        LOG_ROTATE_MAX_SIZE: Rotationsgröße
+        LOG_ROTATE_MAX_SIZE_HELP: 'Größe, bei der eine Protokolldatei rotiert wird, zum Beispiel 10M oder 500K'
+        PAGE_IDS: Seiten-IDs
+        PAGE_IDS_HELP: 'Geben Sie jedem Seitenordner beim Speichern eine versteckte .page-id-Datei mit einer permanenten ID, damit Plugins einer Seite folgen können, auch wenn ihr Ordner umbenannt oder verschoben wird. Standardmäßig aus; Plugins, die IDs benötigen, aktivieren diese selbst.'
+        PROMO_BANNER:
+            LABEL: Ankündigungen
+            NEXT: Weiter
+            SHOW_SLIDE: 'Folie {n} anzeigen'
+        TABLE_ATTRIBUTES: Tabellenattribute
+        TABLE_ATTRIBUTES_HELP: 'Nicht standardmäßig: Eine `{.class #id}` (oder `{:.class}`) Zeile direkt nach einer Tabelle setzt die Klasse und ID für das Tabellenelement.'
+        TABLE_CAPTIONS: Tabellenbeschriftungen
+        TABLE_CAPTIONS_HELP: 'Nicht standardmäßig: Eine `[Caption]` Zeile direkt nach einer Tabelle wird zu einem `<caption>` Element.'
+        TABLE_COLSPAN: Tabellenzellen-Colspan
+        TABLE_COLSPAN_HELP: 'Nicht standardmäßig: Eine leere Tabellenzelle verschmilzt mit der Zelle links davon (colspan).'
+        TABLE_HEADERLESS: 'Tabellen ohne Kopfzeile'
+        TABLE_HEADERLESS_HELP: 'Nicht standardmäßig: Eine Tabelle kann mit der Trennzeile beginnen, ohne Kopfzeile darüber.'
+        TABLE_MULTILINE: 'Mehrzeilige Tabellenzellen'
+        TABLE_MULTILINE_HELP: 'Nicht standardmäßig: Eine Tabellenzeile, die mit einem Backslash endet, wird in der nächsten Zeile fortgesetzt und verbindet Zellen mit einem Zeilenumbruch.'
