@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 此页面有来自共享编辑会话且未保存的更改，这些更改与页面文件不匹配，页面文件可能已在后台被修改。编辑器当前显示的是未保存的更改；保存将覆盖文件中的版本。
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 页面在其他地方被修改过。请刷新页面。
                 READ_ONLY_NOTICE: 你可以查看此页面，但无法对其进行编辑。
+                HIDDEN_BY_PARENT_NOTICE: '此页面未发布：**{parent}** 处于未发布状态，且隐藏了其下方的所有页面。此页面保留其自身的“已发布”设置，一旦 **{parent}** 发布，这些设置将重新生效。'
+                OPEN_PARENT_PAGE: 打开父页面
             EDIT_PAGE: 编辑页面
             FRONTMATTER: 前置元数据
             HEADER_MODIFIED: 修改时间
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: 已预约
                 SCHEDULED_FOR: '计划于 {date} 发布'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}，且被 {parent} 隐藏'
+                HIDDEN: 已隐藏
+                HIDDEN_BY: '已隐藏：{parent} 未发布，并隐藏了其下方的页面'
             ANCESTOR_ONLY_HINT: 您无法打开此页面。列出该页面仅是为了让您可以访问其中的子页面。
             ANCESTOR_ONLY_LABEL: '{title}：您无法打开此页面，仅能打开其中的子页面'
             ANCESTOR_ONLY_PARENT: 您无法打开父页面
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 没有比当前安装版本更新的更新日志条目。
         UPDATE_CHANGELOG_FAILED: 无法加载更新日志。
         UPDATE_WHATS_NEW: 更新内容
+        CASCADE_UNPUBLISH: 同时取消发布子页面
+        CASCADE_UNPUBLISH_DEFAULT: 随父页面一起取消发布子页面
+        CASCADE_UNPUBLISH_DEFAULT_HELP: 当一个页面因“已发布”设置或日期被取消发布时，其下的所有页面也会被取消发布。这是每个页面的默认设置，页面可以通过其“选项”选项卡中的“同时取消发布子页面”选项来开启或关闭此功能。
+        CASCADE_UNPUBLISH_HELP: 当此页面因“已发布”设置或日期被取消发布时，其下的所有页面也会被取消发布。每个子页面都会保留其自己的“已发布”设置，因此当此页面再次发布时，子页面将恢复原状。留空则使用“配置”→“系统”→“内容”下的站点默认设置。
+        CSP:
+            ENABLED: 严格的内容安全策略
+            ENABLED_HELP: "为管理页面发送严格的 <code>Content-Security-Policy</code> 标头，以便浏览器仅运行页面本身携带的脚本及其加载的脚本。注入页面的脚本（例如通过未转义的字段）将被阻止。为 Admin2 构建的插件页面、字段和小部件将保持正常工作。运行文本代码 (<code>eval</code>) 的插件需要在“额外策略源”中添加 <code>script-src 'unsafe-eval'</code>。需要 API 1.1.14 或更高版本。"
+            EXTRA: 额外策略源
+            EXTRA_HELP: '添加到策略中的源，每行一个指令，例如 <code>connect-src https://hub.example.com</code>（用于其他主机上的 Mercure 集线器）或 <code>img-src https://cdn.example.com</code>。策略中已有的指令将会添加这些源；任何其他指令将按原样添加。仅在启用策略时使用。'
+            TITLE: 内容安全策略
+        DEBUGGER_TOKEN: 调试器令牌
+        DEBUGGER_TOKEN_HELP: '仅限 Clockwork 提供程序：Clockwork 浏览器扩展发送作为 `X-Clockwork-Auth` 的共享密钥，用于从 `/__clockwork/` 读取分析器数据。如果为空，则无法读取分析器数据，即使是在本地机器上也无法读取。'
+        EXTERNAL_URL_HELP: '将此页面的 URL 指向外部地址。设置后，页面的菜单链接和 `page.url()` 将解析为此 URL，而不是页面自身的路由。例如 `https://getgrav.org`'
+        GFM_AUTOLINKS: 'GFM 自动链接'
+        GFM_AUTOLINKS_HELP: '自动链接纯 www. URL 和电子邮件地址（纯 http(s):// 链接使用上面的“自动 HTML 链接”）。'
+        GFM_MARKS: 'GFM 高亮 / 下标 / 上标'
+        GFM_MARKS_HELP: '启用 `==highlight==`（高亮）、`~subscript~`（下标）和 `^superscript^`（上标）内联语法。'
+        GFM_TAGFILTER: 'GFM 标签过滤'
+        GFM_TAGFILTER_HELP: '在输出中转义不允许的原始 HTML 标签（script、iframe、style 等）。'
+        GFM_TASK_LISTS: 'GFM 任务列表'
+        GFM_TASK_LISTS_HELP: '将 `- [ ]` 和 `- [x]` 列表项渲染为复选框。'
+        LOG_ROTATE: 轮替日志文件
+        LOG_ROTATE_COMPRESS: 压缩已轮替的文件
+        LOG_ROTATE_COMPRESS_HELP: '使用 Gzip 压缩较旧的副本（grav.log.2.gz 及以后）以节省磁盘空间。最新的副本 grav.log.1 保持为纯文本。'
+        LOG_ROTATE_HELP: '当 /logs 中的日志文件达到最大大小时，重命名它（grav.log 变为 grav.log.1）并开始一个新的日志文件，防止日志文件无限增长。'
+        LOG_ROTATE_MAX_FILES: 保留的轮替文件数
+        LOG_ROTATE_MAX_FILES_HELP: 每个日志保留的旧副本数量。当创建新副本时，最旧的副本将被删除。
+        LOG_ROTATE_MAX_SIZE: 按大小轮转
+        LOG_ROTATE_MAX_SIZE_HELP: '触发日志文件轮转的大小，例如 10M 或 500K'
+        PAGE_IDS: '页面 ID'
+        PAGE_IDS_HELP: '保存页面时，为每个页面文件夹添加一个包含永久 ID 的隐藏 .page-id 文件，以便插件在页面文件夹重命名或移动后仍能追踪到该页面。默认关闭；需要 ID 的插件会自行开启此功能。'
+        PROMO_BANNER:
+            LABEL: 公告
+            NEXT: 下一页
+            SHOW_SLIDE: '显示幻灯片 {n}'
+        TABLE_ATTRIBUTES: 表格属性
+        TABLE_ATTRIBUTES_HELP: '非标准：表格后紧跟的 `{.class #id}`（或 `{:.class}`）行会为表格元素设置 class 和 id。'
+        TABLE_CAPTIONS: 表格标题
+        TABLE_CAPTIONS_HELP: '非标准：表格后紧跟的 `[Caption]` 行会成为 `<caption>` 元素。'
+        TABLE_COLSPAN: '表格单元格跨列 (Colspan)'
+        TABLE_COLSPAN_HELP: 非标准：空的表格单元格会与左侧单元格合并（跨列）。
+        TABLE_HEADERLESS: 无表头表格
+        TABLE_HEADERLESS_HELP: 非标准：表格可以直接以分割行开头，上方无需表头行。
+        TABLE_MULTILINE: 多行表格单元格
+        TABLE_MULTILINE_HELP: 非标准：以反斜杠结尾的表格行会延续到下一行，并通过换行符连接单元格内容。
