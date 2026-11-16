@@ -1,11 +1,14 @@
 # v2.2.14
 ## 11/16/2026
 
+1. [](#new)
+    * Media metadata fields of the new `pages` type get a page picker: search the whole site, pick pages, and their routes are saved with the file, so a download in one folder can be tied to the pages that use it. Set one up under Plugins → API → Editable metadata fields (needs API 1.1.19) [api#80](https://github.com/getgrav/grav-plugin-api/issues/80)
 1. [](#improved)
     * Updated to Svelte 5.57, SvelteKit 2.70 and Vite 8, picking up four months of framework fixes, along with a smaller download
     * The admin loads faster: the code and styles it needs before the first screen are about a fifth smaller, the sidebar and menus fill in sooner, and on a slower connection the dashboard is ready about 15% sooner
     * The dashboard loads with two requests to the server instead of about a dozen, so it opens faster on busy hosts and a few quick reloads no longer run into the API's rate limit. Needs API 1.1.19; with an older API the dashboard loads as before
 1. [](#bugfix)
+    * On hosts with PHP's `proc_open` disabled, the Scheduler's Run buttons work for jobs that call PHP, such as backups, and only command jobs stay disabled, with a note saying why (needs API 1.1.19 and Grav 2.2.30) [grav#4397](https://github.com/getgrav/grav/issues/4397)
     * Updated DOMPurify and js-yaml to pick up their latest security fixes
     * Typing in the filter of a page picker (a blueprint `pages` field such as Parent, and Parent Page on the Add Page screen) searches the whole site, so pages inside folders can be found. It used to find only top-level pages [grav-admin-next#50](https://github.com/getgrav/grav-admin-next/issues/50)
 

@@ -331,6 +331,8 @@ ICU:
       CRON_STATUS:
         FAILED_TO_LOAD_SCHEDULER_STATUS: Failed to load scheduler status
         PROCESS_UNAVAILABLE: "Jobs cannot be run from here on this host, because PHP's proc_open function is disabled. They still run whenever your scheduler is triggered by cron or a webhook."
+        COMMANDS_UNAVAILABLE: "Command jobs can't be run from here on this host, because PHP's proc_open function is disabled. Jobs that call PHP, such as backups, still can, and every job still runs whenever your scheduler is triggered by cron or a webhook."
+        RUN_NEEDS_PROCESS: "This job runs a command, which this host can't start from the admin. It still runs whenever your scheduler is triggered by cron or a webhook."
         SCHEDULER_RUN_COMPLETED: Scheduler run completed
         FAILED_TO_RUN_SCHEDULER: Failed to run scheduler
         LOADING_SCHEDULER_STATUS: Loading scheduler status...
@@ -831,6 +833,7 @@ ICU:
         EMPTY: No editable metadata fields are configured.
         STORED: Stored metadata
         TAGS_PLACEHOLDER: Add tag…
+        PAGES_PLACEHOLDER: Search pages to add…
         BATCH_EDITING: 'Editing {n} selected files — changed fields apply to all.'
         APPLY_TO_N: 'Apply to {n} files'
         BATCH_SAVED: 'Updated {n} files'
@@ -1105,6 +1108,7 @@ ICU:
         FAILED_TO_LOAD_SCHEDULER_CONFIGURATION: Failed to load scheduler configuration.
         STATUS_UNAVAILABLE: Scheduler status could not be read on this host. Your jobs are still listed below and can be edited as usual.
         PROCESS_UNAVAILABLE: "This host has PHP's proc_open function disabled, so jobs cannot be started from the admin. They still run whenever your scheduler is triggered by cron or a webhook."
+        COMMANDS_UNAVAILABLE: "This host has PHP's proc_open function disabled, so command jobs can't be started from the admin. Jobs that call PHP, such as backups, can still be run from the Scheduler, and every job still runs whenever your scheduler is triggered by cron or a webhook."
         CRON_UNDETERMINED: Grav cannot inspect this server's crontab, so it cannot confirm how the scheduler is being triggered.
         LAST_TRIGGERED: Last triggered
         LAST_MANUAL_RUN: Last run by hand
