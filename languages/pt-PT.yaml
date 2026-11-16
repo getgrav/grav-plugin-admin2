@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Esta página tem alterações não guardadas de uma sessão de edição partilhada que não correspondem ao ficheiro da página, que pode ter sido editado fora do admin. O editor mostra as alterações não guardadas; ao guardar, substitui a versão do ficheiro.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'A página foi modificada noutro local. Por favor, recarregue.'
                 READ_ONLY_NOTICE: 'Pode ver esta página, mas não a pode editar.'
+                HIDDEN_BY_PARENT_NOTICE: 'Esta página não está ativa: **{parent}** não está publicada e oculta todas as páginas abaixo dela. Esta página mantém a sua própria definição de Publicado, que será aplicada novamente assim que **{parent}** for publicada.'
+                OPEN_PARENT_PAGE: 'Abrir página ascendente'
             EDIT_PAGE: 'Editar Página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Agendado
                 SCHEDULED_FOR: 'Agendado para publicação em {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, e oculta por {parent}'
+                HIDDEN: Oculta
+                HIDDEN_BY: 'Oculta: {parent} não está publicada e oculta as páginas abaixo dela'
             ANCESTOR_ONLY_HINT: 'Não pode abrir esta página. Está listada para que possa aceder às páginas dentro dela.'
             ANCESTOR_ONLY_LABEL: '{title}: não pode abrir esta página, apenas as páginas dentro dela'
             ANCESTOR_ONLY_PARENT: 'Não pode abrir a página ascendente'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Não existem entradas de registo de alterações mais recentes do que a versão instalada.'
         UPDATE_CHANGELOG_FAILED: 'Não foi possível carregar o registo de alterações.'
         UPDATE_WHATS_NEW: 'O que há de novo'
+        CASCADE_UNPUBLISH: 'Despublicar também páginas filhas'
+        CASCADE_UNPUBLISH_DEFAULT: 'Despublicar páginas filhas com a sua página ascendente'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "Quando uma página é despublicada, através da sua definição de 'Publicado' ou das suas datas, todas as páginas abaixo dela são também despublicadas. Esta é a predefinição para todas as páginas, e uma página pode ativar ou desativar esta opção em 'Despublicar também páginas filhas' no seu separador Opções."
+        CASCADE_UNPUBLISH_HELP: "Quando esta página é despublicada, através da sua definição de 'Publicado' ou das suas datas, todas as páginas abaixo dela são também despublicadas. Cada página filha mantém a sua própria definição de 'Publicado', pelo que voltará ao estado anterior quando esta página for publicada novamente. Deixe por definir para usar a predefinição do site em Configuração → Sistema → Conteúdo."
+        CSP:
+            ENABLED: 'Política de Segurança de Conteúdo (CSP) estrita'
+            ENABLED_HELP: "Enviar um cabeçalho <code>Content-Security-Policy</code> estrito com a página de administração, para que o navegador execute apenas os scripts que a própria página contém e os scripts que estes carregam. Um script injetado na página, por exemplo através de um campo que não foi devidamente protegido (escapado), é bloqueado. Páginas, campos e widgets de plugins criados para o Admin2 continuam a funcionar. Um plugin que execute código a partir de texto (<code>eval</code>) necessita de <code>script-src 'unsafe-eval'</code> em Fontes de Política Adicionais. Requer API 1.1.14 ou posterior."
+            EXTRA: 'Fontes de Política Adicionais'
+            EXTRA_HELP: 'Fontes a adicionar à política, uma diretiva por linha, como <code>connect-src https://hub.example.com</code> para um hub Mercure noutro host ou <code>img-src https://cdn.example.com</code>. Uma diretiva que a política já possua receberá estas fontes adicionadas; qualquer outra diretiva é adicionada conforme escrita. Apenas utilizado enquanto a política está ativa.'
+            TITLE: 'Política de Segurança de Conteúdo'
+        DEBUGGER_TOKEN: 'Token do Depurador'
+        DEBUGGER_TOKEN_HELP: 'APENAS para o Fornecedor Clockwork: o segredo partilhado que a extensão de navegador Clockwork envia como `X-Clockwork-Auth` para ler dados do profiler de `/__clockwork/`. Enquanto estiver vazio, os dados do profiler não podem ser lidos, nem mesmo a partir da máquina local.'
+        EXTERNAL_URL_HELP: 'Aponte o URL desta página para um endereço externo. Quando definido, o link do menu da página e `page.url()` resolvem para este URL em vez da rota própria da página. ex.: `https://getgrav.org`'
+        GFM_AUTOLINKS: 'Autolinks GFM'
+        GFM_AUTOLINKS_HELP: 'Criar links automaticamente para URLs www. e endereços de email (links http(s):// simples usam a opção Ligações HTML Automáticas acima).'
+        GFM_MARKS: 'Destaque / Subscrito / Superscrito GFM'
+        GFM_MARKS_HELP: 'Ativar sintaxe inline `==destaque==`, `~subscrito~` e `^superscrito^`.'
+        GFM_TAGFILTER: 'Filtro de Tags GFM'
+        GFM_TAGFILTER_HELP: 'Remover (escapar) tags HTML raw não permitidas (script, iframe, style e similares) na saída.'
+        GFM_TASK_LISTS: 'Listas de Tarefas GFM'
+        GFM_TASK_LISTS_HELP: 'Renderizar itens de lista `- [ ]` e `- [x]` como caixas de verificação (checkboxes).'
+        LOG_ROTATE: 'Rotacionar ficheiros de registo (logs)'
+        LOG_ROTATE_COMPRESS: 'Comprimir ficheiros rotacionados'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzip para cópias mais antigas (grav.log.2.gz em diante) para poupar espaço em disco. A cópia mais recente, grav.log.1, permanece em texto simples.'
+        LOG_ROTATE_HELP: 'Quando um ficheiro de registo em /logs atinge o tamanho máximo, renomeá-lo (grav.log torna-se grav.log.1) e iniciar um novo, para que os ficheiros de registo não cresçam indefinidamente.'
+        LOG_ROTATE_MAX_FILES: 'Ficheiros rotacionados a manter'
+        LOG_ROTATE_MAX_FILES_HELP: 'Quantas cópias antigas de cada registo manter. A mais antiga é eliminada quando uma nova é criada'
+        LOG_ROTATE_MAX_SIZE: 'Rodar por tamanho'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Tamanho a partir do qual um ficheiro de registo é rodado, por exemplo 10M ou 500K'
+        PAGE_IDS: 'IDs de página'
+        PAGE_IDS_HELP: 'Atribui a cada pasta de página um ficheiro .page-id oculto com um ID permanente quando a página é guardada, para que os plugins possam seguir uma página, independentemente de a sua pasta ser renomeada ou movida. Desativado por predefinição; os plugins que necessitam de IDs ativam-nos por si próprios.'
+        PROMO_BANNER:
+            LABEL: Anúncios
+            NEXT: Seguinte
+            SHOW_SLIDE: 'Mostrar diapositivo {n}'
+        TABLE_ATTRIBUTES: 'Atributos da tabela'
+        TABLE_ATTRIBUTES_HELP: 'Não padrão: uma linha `{.class #id}` (ou `{:.class}`) imediatamente após uma tabela define a classe e o ID no elemento da tabela.'
+        TABLE_CAPTIONS: 'Legendas de tabela'
+        TABLE_CAPTIONS_HELP: 'Não padrão: uma linha `[Caption]` imediatamente após uma tabela torna-se num elemento `<caption>`.'
+        TABLE_COLSPAN: 'Colspan de célula de tabela'
+        TABLE_COLSPAN_HELP: 'Não padrão: uma célula de tabela vazia funde-se com a célula à sua esquerda (colspan).'
+        TABLE_HEADERLESS: 'Tabelas sem cabeçalho'
+        TABLE_HEADERLESS_HELP: 'Não padrão: uma tabela pode começar com a linha divisória, sem uma linha de cabeçalho acima dela.'
+        TABLE_MULTILINE: 'Células de tabela com várias linhas'
+        TABLE_MULTILINE_HELP: 'Não padrão: uma linha de tabela terminada com uma barra invertida continua na linha seguinte, unindo as células com uma quebra de linha.'

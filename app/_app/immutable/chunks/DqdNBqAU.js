@@ -1,0 +1,1 @@
+function e(e,n,r,i=``){let a=t(n),o=t(e);if(a===t(r))return o===a;if(o!==a&&!o.startsWith(a+`/`))return!1;let s=new URLSearchParams(n.split(`#`)[0].split(`?`)[1]??``),c=new URLSearchParams(i);for(let[e,t]of s)if(c.get(e)!==t)return!1;return!0}function t(e){return e.split(/[?#]/)[0].replace(/\/+$/,``)}export{e as t};

@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Deze pagina heeft onopgeslagen wijzigingen van een gedeelde bewerksessie die niet overeenkomen met het paginabestand, dat wellicht buiten de admin om is bewerkt. De editor toont de onopgeslagen wijzigingen; opslaan vervangt de versie in het bestand.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Pagina is elders aangepast. Gelieve te herladen.'
                 READ_ONLY_NOTICE: 'Je kunt deze pagina bekijken maar niet bewerken.'
+                HIDDEN_BY_PARENT_NOTICE: "Deze pagina is niet live: **{parent}** is niet gepubliceerd en verbergt alle pagina's daaronder. Deze pagina behoudt zijn eigen instelling voor publicatie, die weer van kracht wordt zodra **{parent}** wordt gepubliceerd."
+                OPEN_PARENT_PAGE: 'Open bovenliggende pagina'
             EDIT_PAGE: 'Pagina bewerken'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Gewijzigd
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Gepland
                 SCHEDULED_FOR: 'Publicatie gepland op {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, en verborgen door {parent}'
+                HIDDEN: Verborgen
+                HIDDEN_BY: "Verborgen: {parent} is niet gepubliceerd en verbergt de pagina's daaronder."
             ANCESTOR_ONLY_HINT: "Je kunt deze pagina niet openen. Hij staat in de lijst zodat je de pagina's erin kunt bereiken."
             ANCESTOR_ONLY_LABEL: "{title}: je kunt deze pagina niet openen, alleen de pagina's erin"
             ANCESTOR_ONLY_PARENT: 'Je kunt de bovenliggende pagina niet openen'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Geen changelog-vermeldingen nieuwer dan de geïnstalleerde versie.'
         UPDATE_CHANGELOG_FAILED: 'De changelog kon niet worden geladen.'
         UPDATE_WHATS_NEW: 'Wat is er nieuw'
+        CASCADE_UNPUBLISH: "Publiceer onderliggende pagina's ook uit"
+        CASCADE_UNPUBLISH_DEFAULT: "Publiceer onderliggende pagina's uit samen met hun bovenliggende pagina"
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "Wanneer een pagina wordt gedepubliceerd, door de instelling 'Gepubliceerd' of door de datums, wordt elke pagina daaronder ook gedepubliceerd. Dit is de standaard voor elke pagina, en een pagina kan dit in- of uitschakelen met 'Publiceer onderliggende pagina's ook uit' in het tabblad Opties"
+        CASCADE_UNPUBLISH_HELP: "Wanneer deze pagina wordt gedepubliceerd, door de instelling 'Gepubliceerd' of door de datums, wordt elke pagina daaronder ook gedepubliceerd. Elke onderliggende pagina behoudt zijn eigen instelling 'Gepubliceerd', dus het is weer zoals het was wanneer deze pagina opnieuw wordt gepubliceerd. Laat dit leeg om de standaardinstelling van de site te gebruiken onder Configuratie → Systeem → Inhoud"
+        CSP:
+            ENABLED: 'Strippen Content Security Policy'
+            ENABLED_HELP: "Verstuur een strikte <code>Content-Security-Policy</code> header met de beheerpagina, zodat de browser alleen de scripts uitvoert die de pagina zelf bevat en de scripts die ze laden. Een script dat in de pagina wordt geïnjecteerd, bijvoorbeeld via een veld dat niet is ontsnapt, wordt geblokkeerd. Plugin-pagina's, velden en widgets gebouwd voor Admin2 blijven werken. Een plugin die code uitvoert vanuit tekst (<code>eval</code>) heeft <code>script-src 'unsafe-eval'</code> nodig onder Extra Beleidsbronnen. Vereist API 1.1.14 of later."
+            EXTRA: 'Extra Beleidsbronnen'
+            EXTRA_HELP: 'Bronnen om toe te voegen aan het beleid, één richtlijn per regel, zoals <code>connect-src https://hub.example.com</code> voor een Mercure-hub op een andere host of <code>img-src https://cdn.example.com</code>. Een richtlijn die het beleid al heeft, krijgt deze bronnen toegevoegd; elke andere richtlijn wordt toegevoegd zoals geschreven. Alleen gebruikt terwijl het beleid is ingeschakeld.'
+            TITLE: 'Content Security Policy'
+        DEBUGGER_TOKEN: Debugger-token
+        DEBUGGER_TOKEN_HELP: 'ALLEEN Clockwork Provider: het gedeelde geheim dat de Clockwork-browserextensie verstuurt als `X-Clockwork-Auth` om profiler-gegevens te lezen van `/__clockwork/`. Zolang dit leeg is, kunnen profiler-gegevens helemaal niet worden gelezen, zelfs niet vanaf de lokale machine'
+        EXTERNAL_URL_HELP: 'Laat de URL van deze pagina verwijzen naar een extern adres. Wanneer ingesteld, verwijzen de menulink van de pagina en `page.url()` naar deze URL in plaats van naar de eigen route van de pagina. bijv. `https://getgrav.org`'
+        GFM_AUTOLINKS: 'GFM Autolinks'
+        GFM_AUTOLINKS_HELP: "Autolink kale www. URL's en e-mailadressen (kale http(s):// links gebruiken Automatische HTML-links hierboven)."
+        GFM_MARKS: 'GFM Highlight / Sub / Superscript'
+        GFM_MARKS_HELP: 'Schakel `==highlight==`, `~subscript~`, en `^superscript^` inline-syntax in.'
+        GFM_TAGFILTER: 'GFM Tag-filter'
+        GFM_TAGFILTER_HELP: 'Ontsnap niet-toegestane onbewerkte HTML-tags (script, iframe, style, en dergelijke) in de uitvoer.'
+        GFM_TASK_LISTS: 'GFM Takenlijsten'
+        GFM_TASK_LISTS_HELP: 'Render `- [ ]` en `- [x]` lijstitems als selectievakjes.'
+        LOG_ROTATE: 'Logbestanden roteren'
+        LOG_ROTATE_COMPRESS: 'Geroteerde bestanden comprimeren'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzip oudere kopieën (vanaf grav.log.2.gz) om schijfruimte te besparen. De nieuwste kopie, grav.log.1, blijft platte tekst'
+        LOG_ROTATE_HELP: 'Wanneer een logbestand in /logs de maximale grootte bereikt, hernoem het (grav.log wordt grav.log.1) en start een nieuwe, zodat logbestanden niet voor altijd kunnen blijven groeien'
+        LOG_ROTATE_MAX_FILES: 'Aantal te bewaren geroteerde bestanden'
+        LOG_ROTATE_MAX_FILES_HELP: 'Hoeveel oude kopieën van elk logboek moeten worden bewaard. De oudste wordt verwijderd wanneer er een nieuwe wordt aangemaakt.'
+        LOG_ROTATE_MAX_SIZE: 'Roteer bij grootte'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Grootte waarbij een logbestand wordt geroteerd, bijvoorbeeld 10M of 500K.'
+        PAGE_IDS: "Pagina-ID's"
+        PAGE_IDS_HELP: "Geef elke paginamap een verborgen .page-id-bestand met een permanent ID wanneer de pagina wordt opgeslagen, zodat plugins een pagina kunnen blijven volgen, ongeacht hoe de map wordt hernoemd of verplaatst. Standaard uitgeschakeld; plugins die ID's nodig hebben, schakelen deze zelf in."
+        PROMO_BANNER:
+            LABEL: Aankondigingen
+            NEXT: Volgende
+            SHOW_SLIDE: 'Toon dia {n}'
+        TABLE_ATTRIBUTES: Tabelattributen
+        TABLE_ATTRIBUTES_HELP: 'Niet-standaard: een `{.class #id}` (of `{:.class}`) regel direct na een tabel stelt de class en id in op het tabelelement.'
+        TABLE_CAPTIONS: Tabelbijschriften
+        TABLE_CAPTIONS_HELP: 'Niet-standaard: een `[Caption]` regel direct na een tabel wordt een `<caption>` element.'
+        TABLE_COLSPAN: 'Tabelcel Colspan'
+        TABLE_COLSPAN_HELP: 'Niet-standaard: een lege tabelcel voegt samen met de cel aan de linkerkant (colspan).'
+        TABLE_HEADERLESS: 'Tabellen zonder koptekst'
+        TABLE_HEADERLESS_HELP: 'Niet-standaard: een tabel mag beginnen met de scheidingsrij, zonder koptekstrij erboven.'
+        TABLE_MULTILINE: 'Tabelcellen met meerdere regels'
+        TABLE_MULTILINE_HELP: 'Niet-standaard: een tabelrij die eindigt op een backslash gaat door op de volgende regel, waarbij cellen worden samengevoegd met een regeleinde.'

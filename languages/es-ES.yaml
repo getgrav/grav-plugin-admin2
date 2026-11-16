@@ -616,6 +616,8 @@ ICU:
                 TEMPLATE_MISSING_NOTICE: 'La plantilla **{template}** para este módulo no se encontró en el tema, por lo que la página a la que pertenece muestra un error de "plantilla no encontrada". Elige una plantilla en **Plantilla de página** en la pestaña Avanzado, o añade la plantilla al tema.'
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Esta página tiene cambios sin guardar de una sesión de edición compartida que no coinciden con el archivo de la página, lo cual podría deberse a que se editó fuera del administrador. El editor muestra los cambios sin guardar; al guardar, se reemplazará la versión del archivo.'
                 READ_ONLY_NOTICE: 'Puede ver esta página pero no editarla.'
+                HIDDEN_BY_PARENT_NOTICE: 'Esta página no está activa: **{parent}** no está publicada y oculta todas las páginas que hay debajo. Esta página mantiene su propia configuración de publicación, que volverá a aplicarse una vez que **{parent}** se publique.'
+                OPEN_PARENT_PAGE: 'Abrir página padre'
             EDIT_PAGE: 'Editar página'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Modificado
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Programado
                 SCHEDULED_FOR: 'Programado para publicarse el {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, y oculta por {parent}'
+                HIDDEN: Oculto
+                HIDDEN_BY: 'Oculto: {parent} no está publicada y oculta las páginas que hay debajo'
             DROP_INSIDE: 'Suelta una página aquí para moverla dentro de {title}'
             LOAD_CHILDREN_FAILED: 'No se pudieron cargar las páginas de esta carpeta.'
             MODULES:
@@ -2595,3 +2600,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'No hay entradas en el registro de cambios más recientes que la versión instalada.'
         UPDATE_CHANGELOG_FAILED: 'No se pudo cargar el registro de cambios.'
         UPDATE_WHATS_NEW: Novedades
+        CSP:
+            ENABLED: 'Política de seguridad de contenido estricta'
+            ENABLED_HELP: "Envía un encabezado <code>Content-Security-Policy</code> estricto con la página de administración, para que el navegador solo ejecute los scripts que la propia página incluye y los scripts que estos cargan. Un script inyectado en la página, por ejemplo mediante un campo que no se escapó, queda bloqueado. Las páginas de plugins, los campos y los widgets creados para Admin2 siguen funcionando. Un plugin que ejecuta código desde texto (<code>eval</code>) necesita <code>script-src 'unsafe-eval'</code> en Fuentes de política adicionales. Requiere API 1.1.14 o posterior."
+            EXTRA: 'Fuentes adicionales de la política'
+            EXTRA_HELP: 'Orígenes que se añadirán a la política, uno por línea. Por ejemplo, `<code>connect-src https://hub.example.com</code>` para un servidor Mercure alojado en otro dominio o `<code>img-src https://cdn.example.com</code>`. Si la política ya incluye una directiva, se añadirán estos orígenes a ella; cualquier otra directiva se añadirá tal como está escrita. Solo se utiliza cuando la política está activada.'
+            TITLE: 'Política de seguridad de contenidos (CSP)'
+        LOG_ROTATE: 'Rotar los archivos de registro'
+        LOG_ROTATE_COMPRESS: 'Comprimir los archivos rotados'
+        LOG_ROTATE_COMPRESS_HELP: 'Comprimir con Gzip las copias más antiguas (`grav.log.2.gz` en adelante) para ahorrar espacio en disco. La copia más reciente, `grav.log.1`, se mantiene en texto sin comprimir.'
+        LOG_ROTATE_HELP: 'Cuando un archivo de registro de `/logs` alcanza el tamaño máximo, se renombra (por ejemplo, `grav.log` pasa a llamarse `grav.log.1`) y se crea uno nuevo para evitar que los archivos de registro crezcan indefinidamente.'
+        LOG_ROTATE_MAX_FILES: 'Archivos rotados que se conservarán'
+        LOG_ROTATE_MAX_FILES_HELP: 'Cuántas copias antiguas de cada registro conservar. La más antigua se elimina cuando se crea una nueva'
+        LOG_ROTATE_MAX_SIZE: 'Rotar al alcanzar el tamaño'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Tamaño a partir del cual se rota el archivo de registro, por ejemplo, 10M o 500K'
+        PROMO_BANNER:
+            LABEL: Anuncios
+            NEXT: Siguiente
+            SHOW_SLIDE: 'Mostrar diapositiva {n}'
+        CASCADE_UNPUBLISH: 'Despublicar también las páginas hijas'
+        CASCADE_UNPUBLISH_DEFAULT: 'Despublicar las páginas hijas junto con su padre'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: 'Cuando una página se despublica, ya sea por su ajuste de publicación o por sus fechas, todas las páginas que contiene también se despublican. Este es el comportamiento predeterminado para cada página, y puede activarse o desactivarse en cada una mediante la opción «Despublicar también las páginas hijas» en su pestaña de Opciones'
+        CASCADE_UNPUBLISH_HELP: 'Cuando esta página se despublica, ya sea por su ajuste de publicación o por sus fechas, todas las páginas que contiene también se despublican. Cada página hija mantiene su propia configuración de publicación, por lo que volverá a su estado anterior cuando esta página se vuelva a publicar. Déjelo sin establecer para usar el valor predeterminado del sitio en Configuración → Sistema → Contenido'
+        DEBUGGER_TOKEN: 'Token del depurador'
+        DEBUGGER_TOKEN_HELP: 'SOLO para el proveedor Clockwork: el secreto compartido que la extensión de navegador Clockwork envía como `X-Clockwork-Auth` para leer los datos del generador de perfiles desde `/__clockwork/`. Mientras esté vacío, no se podrán leer los datos del generador de perfiles, ni siquiera desde la máquina local'
+        EXTERNAL_URL_HELP: 'Apunte la URL de esta página a una dirección externa. Cuando se establece, el enlace del menú de la página y `page.url()` se resuelven a esta URL en lugar de a la ruta propia de la página. Ej.: `https://getgrav.org`'
+        GFM_AUTOLINKS: 'Enlaces automáticos GFM'
+        GFM_AUTOLINKS_HELP: 'Crear enlaces automáticos para URLs que empiezan por www. y direcciones de correo electrónico (los enlaces directos http(s):// usan la opción Enlaces HTML automáticos de arriba).'
+        GFM_MARKS: 'Resaltado / Subíndice / Superíndice GFM'
+        GFM_MARKS_HELP: 'Habilitar la sintaxis en línea `==resaltado==`, `~subíndice~` y `^superíndice^`.'
+        GFM_TAGFILTER: 'Filtro de etiquetas GFM'
+        GFM_TAGFILTER_HELP: 'Escapar etiquetas HTML no permitidas (script, iframe, style y similares) en la salida.'
+        GFM_TASK_LISTS: 'Listas de tareas GFM'
+        GFM_TASK_LISTS_HELP: 'Renderizar los elementos de lista `- [ ]` y `- [x]` como casillas de verificación.'
+        PAGE_IDS: 'IDs de página'
+        PAGE_IDS_HELP: 'Asignar a cada carpeta de página un archivo oculto .page-id con un identificador permanente al guardar la página, para que los plugins puedan realizar un seguimiento de la página aunque su carpeta sea renombrada o movida. Desactivado por defecto; los plugins que necesiten IDs los activarán por sí mismos.'
+        TABLE_ATTRIBUTES: 'Atributos de tabla'
+        TABLE_ATTRIBUTES_HELP: 'No estándar: una línea `{.clase #id}` (o `{:.clase}`) inmediatamente después de una tabla establece la clase y el id en el elemento de la tabla.'
+        TABLE_CAPTIONS: 'Títulos de tabla'
+        TABLE_CAPTIONS_HELP: 'No estándar: una línea `[Caption]` inmediatamente después de una tabla se convierte en un elemento `<caption>`.'
+        TABLE_COLSPAN: 'Colspan de celda de tabla'
+        TABLE_COLSPAN_HELP: 'No estándar: una celda de tabla vacía se fusiona con la celda a su izquierda (colspan).'
+        TABLE_HEADERLESS: 'Tablas sin encabezado'
+        TABLE_HEADERLESS_HELP: 'No estándar: una tabla puede comenzar con la fila divisoria, sin una fila de encabezado encima.'
+        TABLE_MULTILINE: 'Celdas de tabla multilínea'
+        TABLE_MULTILINE_HELP: 'No estándar: una fila de tabla que termina en una barra invertida continúa en la siguiente línea, uniendo las celdas con un salto de línea.'

@@ -171,6 +171,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: このページには、共有編集セッションによる未保存の変更があり、ページファイルと一致していません。管理画面外で編集された可能性があります。エディターには未保存の変更が表示されており、保存するとファイルの内容が置き換わります。
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: ページが他の場所で変更されました。リロードしてください。
                 READ_ONLY_NOTICE: このページは閲覧のみ可能です。編集はできません。
+                HIDDEN_BY_PARENT_NOTICE: 'このページは公開されていません: **{parent}** が未公開のため、その配下のすべてのページが非表示になっています。このページ自体の公開設定は保持されており、**{parent}** が公開されると再び有効になります。'
+                OPEN_PARENT_PAGE: 親ページを開く
             NEW:
                 MY_NEW_PAGE: 新しいページ
                 FILTER_PAGES: ページを絞り込み...
@@ -232,6 +234,9 @@ ICU:
                 SCHEDULED: 予約済み
                 SCHEDULED_FOR: '{date}に公開予定'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}（{parent} によって非表示）'
+                HIDDEN: 非表示
+                HIDDEN_BY: '非表示: {parent} が未公開のため、配下のページが非表示になっています'
             ANCESTOR_ONLY_HINT: このページを開くことはできません。これは、その内部にあるページにアクセスできるように一覧表示されています。
             ANCESTOR_ONLY_LABEL: '{title}: このページを開くことはできません。内部のページのみアクセス可能です'
             ANCESTOR_ONLY_PARENT: 親ページを開くことはできません
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: インストールされているバージョンより新しい変更履歴はありません。
         UPDATE_CHANGELOG_FAILED: 変更履歴を読み込めませんでした。
         UPDATE_WHATS_NEW: 新機能
+        CASCADE_UNPUBLISH: 子ページも公開停止にする
+        CASCADE_UNPUBLISH_DEFAULT: 親ページと一緒に子ページも公開停止にする
+        CASCADE_UNPUBLISH_DEFAULT_HELP: ページがその「公開」設定または日付設定によって公開停止になると、その配下のすべてのページも公開停止になります。これはすべてのページのデフォルト動作ですが、各ページの「オプション」タブにある「子ページも公開停止にする」設定でオン／オフを切り替えることができます。
+        CASCADE_UNPUBLISH_HELP: このページがその「公開」設定または日付設定によって公開停止になると、その配下のすべてのページも公開停止になります。各子ページは独自の「公開」設定を保持するため、このページが再度公開されると元の状態に戻ります。設定しない場合は、「設定」→「システム」→「コンテンツ」のサイトデフォルト設定が適用されます。
+        CSP:
+            ENABLED: '厳格なコンテンツセキュリティポリシー (CSP)'
+            ENABLED_HELP: "管理ページで厳格な <code>Content-Security-Policy</code> ヘッダーを送信し、ブラウザがページ自体に含まれるスクリプトとそれらが読み込むスクリプトのみを実行するように制限します。エスケープされていないフィールドなどを通じてページに挿入されたスクリプトはブロックされます。Admin2 用に作成されたプラグインページ、フィールド、ウィジェットは引き続き動作します。テキストからコードを実行するプラグイン（<code>eval</code> を使用するもの）には、「追加ポリシーソース」で <code>script-src 'unsafe-eval'</code> が必要です。API 1.1.14 以降が必要です。"
+            EXTRA: 追加ポリシーソース
+            EXTRA_HELP: 'ポリシーに追加するソース。1行につき1つのディレクティブを指定します（例: 別ホストの Mercure ハブ用の <code>connect-src https://hub.example.com</code> や <code>img-src https://cdn.example.com</code>）。既存のポリシーにあるディレクティブに対してはソースが追加され、それ以外のディレクティブは記述通りに追加されます。ポリシーが有効な間のみ使用されます。'
+            TITLE: コンテンツセキュリティポリシー
+        DEBUGGER_TOKEN: デバッガトークン
+        DEBUGGER_TOKEN_HELP: 'Clockwork プロバイダーのみ：Clockwork ブラウザ拡張機能が <code>/__clockwork/</code> からプロファイラーデータを読み取る際に <code>X-Clockwork-Auth</code> として送信する共有シークレット。これが空の間は、ローカルマシンからであってもプロファイラーデータを読み取ることはできません。'
+        EXTERNAL_URL_HELP: 'このページの URL を外部アドレスに向けます。設定すると、ページのメニューリンクおよび <code>page.url()</code> は、ページ自身のルートではなく、この URL に解決されます（例: <code>https://getgrav.org</code>）。'
+        GFM_AUTOLINKS: 'GFM 自動リンク'
+        GFM_AUTOLINKS_HELP: 'プレーンな www. URL とメールアドレスを自動リンクします（プレーンな http(s):// リンクについては上記の「自動 HTML リンク」を使用してください）。'
+        GFM_MARKS: 'GFM ハイライト / 下付き / 上付き文字'
+        GFM_MARKS_HELP: 'インライン構文 <code>==ハイライト==</code>、<code>~下付き文字~</code>、<code>^上付き文字^</code> を有効にします。'
+        GFM_TAGFILTER: 'GFM タグフィルター'
+        GFM_TAGFILTER_HELP: '許可されていない生の HTML タグ（script、iframe、style など）を出力時にエスケープします。'
+        GFM_TASK_LISTS: 'GFM タスクリスト'
+        GFM_TASK_LISTS_HELP: '<code>- [ ]</code> および <code>- [x]</code> リスト項目をチェックボックスとしてレンダリングします。'
+        LOG_ROTATE: ログファイルのローテーション
+        LOG_ROTATE_COMPRESS: ローテーションされたファイルを圧縮
+        LOG_ROTATE_COMPRESS_HELP: '古いコピー（grav.log.2.gz 以降）を Gzip 圧縮してディスク容量を節約します。最新のコピーである grav.log.1 はプレーンテキストのまま保持されます。'
+        LOG_ROTATE_HELP: '/logs 内のログファイルが最大サイズに達したときに名前を変更し（grav.log が grav.log.1 になります）、新しいファイルを開始することで、ログファイルが際限なく肥大化するのを防ぎます。'
+        LOG_ROTATE_MAX_FILES: 保持するローテーションファイル数
+        LOG_ROTATE_MAX_FILES_HELP: 各ログの古いコピーを何個保持するか。新しいログが作成されると、最も古いログが削除されます。
+        LOG_ROTATE_MAX_SIZE: ローテーションサイズ
+        LOG_ROTATE_MAX_SIZE_HELP: 'ログファイルをローテーションするサイズ（例: 10M または 500K）'
+        PAGE_IDS: ページID
+        PAGE_IDS_HELP: 'ページ保存時に各ページフォルダーへ永続的なIDを持つ隠しファイル .page-id を付与します。これにより、フォルダー名が変更されたり移動されたりしてもプラグインがページを追跡できるようになります。デフォルトではオフになっています。IDが必要なプラグインは自動的に有効化します。'
+        PROMO_BANNER:
+            LABEL: お知らせ
+            NEXT: 次へ
+            SHOW_SLIDE: 'スライド {n} を表示'
+        TABLE_ATTRIBUTES: テーブル属性
+        TABLE_ATTRIBUTES_HELP: '非標準: テーブルの直後に `{.class #id}` (または `{:.class}`) の行を記述すると、テーブル要素にクラスとIDを設定できます。'
+        TABLE_CAPTIONS: テーブルキャプション
+        TABLE_CAPTIONS_HELP: '非標準: テーブルの直後に `[Caption]` の行を記述すると `<caption>` 要素になります。'
+        TABLE_COLSPAN: テーブルセルのColspan
+        TABLE_COLSPAN_HELP: '非標準: 空のテーブルセルは左側のセルと結合（colspan）されます。'
+        TABLE_HEADERLESS: ヘッダーなしテーブル
+        TABLE_HEADERLESS_HELP: '非標準: テーブルの先頭にヘッダー行を置かず、区切り行から開始できます。'
+        TABLE_MULTILINE: 複数行テーブルセル
+        TABLE_MULTILINE_HELP: '非標準: バックスラッシュで終わるテーブル行は次の行に継続され、改行を含めてセルが結合されます。'

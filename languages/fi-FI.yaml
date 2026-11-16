@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Tällä sivulla on tallentamattomia muutoksia jaetusta muokkausistunnosta, jotka eivät vastaa sivutiedostoa, jota on saatettu muokata järjestelmänvalvojan ulkopuolella. Muokkausnäkymä näyttää tallentamattomat muutokset; tallentaminen korvaa tiedoston version.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Sivua on muokattu muualla. Ole hyvä ja päivitä sivu.'
                 READ_ONLY_NOTICE: 'Voit tarkastella tätä sivua, mutta et muokata sitä.'
+                HIDDEN_BY_PARENT_NOTICE: 'Tämä sivu ei ole julkinen: **{parent}** on julkaisematon, ja se piilottaa kaikki sen alla olevat sivut. Tämä sivu säilyttää oman Julkaistu-asetuksensa, joka astuu uudelleen voimaan heti, kun **{parent}** julkaistaan.'
+                OPEN_PARENT_PAGE: 'Avaa ylätason sivu'
             EDIT_PAGE: 'Muokkaa sivua'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Muokattu
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Ajastettu
                 SCHEDULED_FOR: 'Ajastettu julkaistavaksi {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status} ja piilotettu sivun {parent} toimesta'
+                HIDDEN: Piilotettu
+                HIDDEN_BY: 'Piilotettu: {parent} on julkaisematon ja piilottaa kaikki sen alapuolella olevat sivut'
             ANCESTOR_ONLY_HINT: 'Et voi avata tätä sivua. Se on listattu, jotta pääset käsiksi sen sisällä oleviin sivuihin.'
             ANCESTOR_ONLY_LABEL: '{title}: et voi avata tätä sivua, vain sen sisällä olevia sivuja'
             ANCESTOR_ONLY_PARENT: 'Et voi avata ylätason sivua'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Ei asennettua versiota uudempia muutoslokimerkintöjä.'
         UPDATE_CHANGELOG_FAILED: 'Muutoslokia ei voitu ladata.'
         UPDATE_WHATS_NEW: 'Mitä uutta'
+        CASCADE_UNPUBLISH: 'Julkaise myös alasivut'
+        CASCADE_UNPUBLISH_DEFAULT: 'Poista alasivujen julkaisu yläsivun mukana'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: 'Kun sivu poistetaan julkaisusta joko Julkaistu-asetuksella tai päivämäärillä, myös kaikki sen alapuolella olevat sivut poistetaan julkaisusta. Tämä on jokaisen sivun oletusasetus, ja sivukohtaisesti sen voi ottaa käyttöön tai poistaa käytöstä sivun Asetukset-välilehden kohdasta ”Julkaise myös alasivut”.'
+        CASCADE_UNPUBLISH_HELP: 'Kun tämä sivu poistetaan julkaisusta Julkaistu-asetuksella tai päivämäärillä, myös kaikki sen alapuolella olevat sivut poistetaan julkaisusta. Jokainen alasivu säilyttää oman Julkaistu-asetuksensa, joten ne palautuvat ennalleen, kun tämä sivu julkaistaan uudelleen. Jätä tyhjäksi, jos haluat käyttää sivuston oletusasetusta kohdassa Konfigurointi → Järjestelmä → Sisältö.'
+        CSP:
+            ENABLED: 'Tiukka sisällön tietoturvakäytäntö (Content Security Policy)'
+            ENABLED_HELP: "Lähetä tiukka <code>Content-Security-Policy</code>-otsake hallintasivun mukana, jolloin selain suorittaa vain sivun omat skriptit sekä niiden lataamat skriptit. Sivulle injektoidut skriptit, esimerkiksi suojaamattoman kentän kautta, estetään. Admin2-hallintapaneelille rakennetut laajennussivut, kentät ja widgetit toimivat edelleen. Laajennus, joka suorittaa koodia tekstistä (<code>eval</code>), tarvitsee <code>script-src 'unsafe-eval'</code> -asetuksen kohdassa Muut käytäntölähteet. Vaatii API-version 1.1.14 tai uudemman."
+            EXTRA: 'Muut käytäntölähteet'
+            EXTRA_HELP: 'Käytäntöön lisättävät lähteet, yksi direktiivi per rivi, kuten <code>connect-src https://hub.example.com</code> Mercure-keskittimelle toisella isäntäkoneella tai <code>img-src https://cdn.example.com</code>. Jos käytännössä on jo jokin direktiivi, nämä lähteet lisätään siihen; kaikki muut direktiivit lisätään sellaisenaan. Käytössä vain, kun käytäntö on päällä.'
+            TITLE: 'Sisällön tietoturvakäytäntö (Content Security Policy)'
+        DEBUGGER_TOKEN: 'Debuggerin tunnus'
+        DEBUGGER_TOKEN_HELP: 'VAIN Clockwork-palveluntarjoaja: jaettu salaisuus, jonka Clockwork-selainlaajennus lähettää otsakkeella `X-Clockwork-Auth` lukeakseen profilointitietoja osoitteesta `/__clockwork/`. Kun tämä on tyhjä, profilointitietoja ei voi lukea lainkaan, ei edes paikalliselta koneelta.'
+        EXTERNAL_URL_HELP: 'Ohjaa tämän sivun URL ulkoiseen osoitteeseen. Kun tämä on asetettu, sivun valikkolinkki ja `page.url()` osoittavat tähän URL-osoitteeseen sivun oman reitin sijaan. Esim. `https://getgrav.org`'
+        GFM_AUTOLINKS: 'GFM Automaattiset linkit'
+        GFM_AUTOLINKS_HELP: 'Muuta pelkät www.-URL-osoitteet ja sähköpostiosoitteet linkeiksi (pelkät http(s)://-linkit käyttävät yllä olevaa automaattista HTML-linkitystä).'
+        GFM_MARKS: 'GFM Korostus / Alaindeksi / Yläindeksi'
+        GFM_MARKS_HELP: 'Ota käyttöön `==korostus==`, `~alaindeksi~` ja `^yläindeksi^` -sisäkkäinen syntaksi.'
+        GFM_TAGFILTER: 'GFM Tagien suodatus'
+        GFM_TAGFILTER_HELP: "Poista (escape) kielletyt raa'at HTML-tagit (script, iframe, style ja vastaavat) tulosteesta."
+        GFM_TASK_LISTS: 'GFM Tehtävälistat'
+        GFM_TASK_LISTS_HELP: 'Renderöi `- [ ]` ja `- [x]` -listakohteet valintaruutuina.'
+        LOG_ROTATE: 'Kierrätä lokitiedostot'
+        LOG_ROTATE_COMPRESS: 'Pakkaa kierrätetyt tiedostot'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzip-pakkaa vanhemmat kopiot (grav.log.2.gz eteenpäin) levytilan säästämiseksi. Uusin kopio, grav.log.1, säilyy tavallisena tekstinä.'
+        LOG_ROTATE_HELP: 'Kun /logs-kansiossa oleva lokitiedosto saavuttaa enimmäiskoon, nimeä se uudelleen (grav.logista tulee grav.log.1) ja aloita uusi, jotta lokitiedostot eivät kasva rajattomasti.'
+        LOG_ROTATE_MAX_FILES: 'Säilytettävien kierrätettyjen tiedostojen määrä'
+        LOG_ROTATE_MAX_FILES_HELP: 'Kuinka monta vanhaa kopiota kustakin lokista säilytetään. Vanhin poistetaan, kun uusi luodaan.'
+        LOG_ROTATE_MAX_SIZE: Kierrätyskoko
+        LOG_ROTATE_MAX_SIZE_HELP: 'Koko, jonka jälkeen lokitiedosto kierrätetään, esimerkiksi 10M tai 500K.'
+        PAGE_IDS: Sivutunnisteet
+        PAGE_IDS_HELP: 'Lisää jokaiseen sivukansioon piilotettu .page-id-tiedosto pysyvällä tunnisteella, kun sivu tallennetaan. Tämän avulla lisäosat voivat seurata sivua, vaikka sen kansiota nimettäisiin uudelleen tai siirrettäisiin. Pois päältä oletuksena; lisäosat, jotka tarvitsevat tunnisteita, aktivoivat ne itse.'
+        PROMO_BANNER:
+            LABEL: Ilmoitukset
+            NEXT: Seuraava
+            SHOW_SLIDE: 'Näytä dia {n}'
+        TABLE_ATTRIBUTES: 'Taulukon attribuutit'
+        TABLE_ATTRIBUTES_HELP: 'Standardin ulkopuolinen: `{.class #id}` (tai `{:.class}`) -rivi heti taulukon jälkeen määrittää luokan ja tunnisteen taulukkoelementille.'
+        TABLE_CAPTIONS: 'Taulukon kuvatekstit'
+        TABLE_CAPTIONS_HELP: 'Standardin ulkopuolinen: `[Caption]` -rivi heti taulukon jälkeen muuttuu `<caption>` -elementiksi.'
+        TABLE_COLSPAN: 'Taulukon solujen sarakkeiden yhdistäminen (colspan)'
+        TABLE_COLSPAN_HELP: 'Standardin ulkopuolinen: Tyhjä taulukon solu yhdistyy vasemmalla puolellaan olevaan soluun (colspan).'
+        TABLE_HEADERLESS: 'Taulukot ilman otsikkoa'
+        TABLE_HEADERLESS_HELP: 'Standardin ulkopuolinen: taulukko voi alkaa jakajarivillä ilman yläpuolella olevaa otsikkoriviä.'
+        TABLE_MULTILINE: 'Moniriviset taulukon solut'
+        TABLE_MULTILINE_HELP: 'Standardin ulkopuolinen: Kenoviivalla päättyvä taulukon rivi jatkuu seuraavalle riville yhdistäen solut rivinvaihdolla.'

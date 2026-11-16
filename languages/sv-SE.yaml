@@ -616,6 +616,8 @@ ICU:
                 COLLAB_UNSAVED_DIFFERS_FROM_FILE: 'Denna sida har osparade ändringar från en delad redigeringssession som inte matchar sidfilen, vilken kan ha redigerats utanför administratören. Redigeringsverktyget visar de osparade ändringarna; att spara ersätter filens version.'
                 PAGE_WAS_MODIFIED_ELSEWHERE_PLEASE: 'Sidan ändrades på annan plats. Vänligen ladda om.'
                 READ_ONLY_NOTICE: 'Du kan se denna sida men inte redigera den.'
+                HIDDEN_BY_PARENT_NOTICE: 'Denna sida är inte publicerad: **{parent}** är opublicerad och döljer alla sidor under den. Denna sida behåller sin egen inställning för Publicerad, vilken gäller igen när **{parent}** publiceras.'
+                OPEN_PARENT_PAGE: 'Öppna föräldrasida'
             EDIT_PAGE: 'Redigera sida'
             FRONTMATTER: Frontmatter
             HEADER_MODIFIED: Ändrad
@@ -748,6 +750,9 @@ ICU:
                 SCHEDULED: Schemalagd
                 SCHEDULED_FOR: 'Schemalagd att publiceras {date}'
                 TOGGLE_TITLE: '{action} ({status})'
+                ALSO_HIDDEN_BY: '{status}, och dold av {parent}'
+                HIDDEN: Dold
+                HIDDEN_BY: 'Dold: {parent} är opublicerad och döljer sidorna under den'
             ANCESTOR_ONLY_HINT: 'Du kan inte öppna den här sidan. Den är listad så att du kan nå sidorna inuti den.'
             ANCESTOR_ONLY_LABEL: '{title}: du kan inte öppna den här sidan, bara sidor inuti den'
             ANCESTOR_ONLY_PARENT: 'Du kan inte öppna föräldrasidan'
@@ -2588,3 +2593,48 @@ ICU:
         UPDATE_CHANGELOG_EMPTY: 'Inga ändringsloggsposter nyare än den installerade versionen.'
         UPDATE_CHANGELOG_FAILED: 'Ändringsloggen kunde inte läsas in.'
         UPDATE_WHATS_NEW: 'Vad är nytt'
+        CASCADE_UNPUBLISH: 'Avpublicera även undersidor'
+        CASCADE_UNPUBLISH_DEFAULT: 'Avpublicera undersidor tillsammans med dess förälder'
+        CASCADE_UNPUBLISH_DEFAULT_HELP: "När en sida avpubliceras, genom dess Publicerad-inställning eller dess datum, avpubliceras även varje sida under den. Detta är standard för varje sida, och en sida kan aktivera eller inaktivera detta med 'Avpublicera även undersidor' under fliken Alternativ."
+        CASCADE_UNPUBLISH_HELP: 'När denna sida avpubliceras, genom dess Publicerad-inställning eller dess datum, avpubliceras även varje sida under den. Varje undersida behåller sin egen Publicerad-inställning, så att den återgår till hur den var när denna sida publiceras igen. Lämna omarkerad för att använda webbplatsens standardinställning under Konfiguration → System → Innehåll.'
+        CSP:
+            ENABLED: 'Strikt Content Security Policy'
+            ENABLED_HELP: "Skicka en strikt <code>Content-Security-Policy</code>-header med adminsidan, så att webbläsaren endast kör de skript som sidan själv innehåller och de skript de laddar. Ett skript som injiceras i sidan, till exempel genom ett fält som inte undantogs, blockeras. Pluginsidor, fält och widgets byggda för Admin2 fortsätter att fungera. Ett plugin som kör kod från text (<code>eval</code>) behöver <code>script-src 'unsafe-eval'</code> under Extra policykällor. Kräver API 1.1.14 eller senare."
+            EXTRA: 'Extra policykällor'
+            EXTRA_HELP: 'Källor att lägga till i policyn, ett direktiv per rad, till exempel <code>connect-src https://hub.example.com</code> för en Mercure-hub på en annan värd eller <code>img-src https://cdn.example.com</code>. Ett direktiv som policyn redan har får dessa källor tillagda; alla andra direktiv läggs till som skrivet. Används endast när policyn är aktiverad.'
+            TITLE: 'Content Security Policy'
+        DEBUGGER_TOKEN: Debugger-token
+        DEBUGGER_TOKEN_HELP: 'Endast Clockwork-leverantör: den delade hemlighet som Clockwork-webbläsartillägget skickar som `X-Clockwork-Auth` för att läsa profilerardata från `/__clockwork/`. Medan den är tom kan profilerardata inte läsas alls, inte ens från den lokala datorn.'
+        EXTERNAL_URL_HELP: 'Peka denna sidas URL till en extern adress. När inställd kommer sidans menylänk och `page.url()` att peka på denna URL istället för sidans egen rutt, t.ex. `https://getgrav.org`.'
+        GFM_AUTOLINKS: 'GFM Autolänkar'
+        GFM_AUTOLINKS_HELP: 'Skapa autolänkar för nakna www.-URL:er och e-postadresser (nakna http(s)://-länkar använder Automatiska HTML-länkar ovan).'
+        GFM_MARKS: 'GFM Markera / Sub / Superscript'
+        GFM_MARKS_HELP: 'Aktivera `==markering==`, `~nedsänkt~`, och `^upphöjd^` inline-syntax.'
+        GFM_TAGFILTER: 'GFM Tag-filter'
+        GFM_TAGFILTER_HELP: 'Undanta otillåtna råa HTML-taggar (script, iframe, style och liknande) i utdata.'
+        GFM_TASK_LISTS: 'GFM Att göra-listor'
+        GFM_TASK_LISTS_HELP: 'Rendera `- [ ]` och `- [x]` listobjekt som kryssrutor.'
+        LOG_ROTATE: 'Rotera loggfiler'
+        LOG_ROTATE_COMPRESS: 'Komprimera roterade filer'
+        LOG_ROTATE_COMPRESS_HELP: 'Gzip äldre kopior (grav.log.2.gz och framåt) för att spara diskutrymme. Den nyaste kopian, grav.log.1, förblir klartext.'
+        LOG_ROTATE_HELP: 'När en loggfil i /logs når maxstorlek, döp om den (grav.log blir grav.log.1) och starta en ny, så att loggfiler inte kan växa för evigt.'
+        LOG_ROTATE_MAX_FILES: 'Antal roterade filer att behålla'
+        LOG_ROTATE_MAX_FILES_HELP: 'Hur många gamla kopior av varje logg som ska behållas. Den äldsta tas bort när en ny skapas.'
+        LOG_ROTATE_MAX_SIZE: 'Rotera vid storlek'
+        LOG_ROTATE_MAX_SIZE_HELP: 'Storlek vid vilken en loggfil roteras, till exempel 10M eller 500K'
+        PAGE_IDS: 'Sid-ID:n'
+        PAGE_IDS_HELP: 'Ge varje sidmapp en dold .page-id-fil med ett permanent id när sidan sparas, så att insticksprogram kan spåra en sida oavsett hur dess mapp döps om eller flyttas. Avstängd som standard; insticksprogram som behöver id:n aktiverar dem själva.'
+        PROMO_BANNER:
+            LABEL: Meddelanden
+            NEXT: Nästa
+            SHOW_SLIDE: 'Visa bild {n}'
+        TABLE_ATTRIBUTES: Tabellattribut
+        TABLE_ATTRIBUTES_HELP: 'Icke-standard: en `{.class #id}` (eller `{:.class}`) rad direkt efter en tabell sätter klass och id på tabellelementet.'
+        TABLE_CAPTIONS: Tabellrubriker
+        TABLE_CAPTIONS_HELP: 'Icke-standard: en `[Caption]` rad direkt efter en tabell blir ett `<caption>` element.'
+        TABLE_COLSPAN: 'Tabellcell Colspan'
+        TABLE_COLSPAN_HELP: 'Icke-standard: en tom tabellcell slås samman med cellen till vänster (colspan).'
+        TABLE_HEADERLESS: 'Tabeller utan rubrikrad'
+        TABLE_HEADERLESS_HELP: 'Icke-standard: en tabell kan börja med avgränsarraden utan en rubrikrad ovanför.'
+        TABLE_MULTILINE: 'Flerradiga tabellceller'
+        TABLE_MULTILINE_HELP: 'Icke-standard: en tabellrad som slutar med ett omvänt snedstreck fortsätter på nästa rad och slår samman celler med ett radbryt.'
