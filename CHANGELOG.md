@@ -1,3 +1,9 @@
+# v2.2.15
+## 11/18/2026
+
+1. [](#bugfix)
+    * An `array` field without `value_only` showed no entries when its saved value was a plain YAML list, and adding an entry then replaced the hidden ones. Lists now show as rows keyed 0, 1, 2 like the classic admin, and a `value_only` field also reads a saved value with gaps in its keys [#218](https://github.com/getgrav/grav-plugin-admin2/issues/218)
+
 # v2.2.14
 ## 11/16/2026
 
