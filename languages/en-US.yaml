@@ -1344,6 +1344,7 @@ ICU:
     PLUGINS:
       SEARCH_PLUGINS: Search plugins...
       SYMLINKED: Symlinked
+      OPEN_ADMIN_PAGE: 'Open {title}'
       FAILED_TO_LOAD_PLUGINS: Failed to load plugins
       FAILED_TO_CHECK_FOR_UPDATES: Failed to check for updates
       PLUGINS_GRAV_ADMIN: Plugins — Grav Admin
