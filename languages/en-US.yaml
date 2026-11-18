@@ -722,6 +722,8 @@ ICU:
       PACKAGES_OUTDATED: "{n, plural, one{# package outdated} other{# packages outdated}}"
       MORE_COUNT: "+ {n} more…"
       CACHE: Cache
+      CACHE_AUTO: (auto)
+      CACHE_FALLBACK: "{configured} is set but unavailable, so Grav is using the {driver} cache. Details are in logs/grav.log."
       DISK: Disk
       BYTES_USED: "{size} used"
       BYTES_FREE: "{size} free"

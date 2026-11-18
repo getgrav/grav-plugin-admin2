@@ -1,6 +1,8 @@
 # v2.2.15
 ## 11/18/2026
 
+1. [](#improved)
+    * The dashboard's System Health widget shows the cache driver Grav is actually using, such as `apcu (auto)`, and warns in amber when the configured driver (Redis, Memcached, APCu) is unavailable and Grav fell back to the file cache. Needs API 1.1.21; with an older API it shows the setting as before [#217](https://github.com/getgrav/grav-plugin-admin2/issues/217)
 1. [](#bugfix)
     * An `array` field without `value_only` showed no entries when its saved value was a plain YAML list, and adding an entry then replaced the hidden ones. Lists now show as rows keyed 0, 1, 2 like the classic admin, and a `value_only` field also reads a saved value with gaps in its keys [#218](https://github.com/getgrav/grav-plugin-admin2/issues/218)
 
