@@ -722,6 +722,8 @@ ICU:
       PACKAGES_OUTDATED: "{n, plural, one{# package outdated} other{# packages outdated}}"
       MORE_COUNT: "+ {n} more…"
       CACHE: Cache
+      CACHE_AUTO: (auto)
+      CACHE_FALLBACK: "{configured} is set but unavailable, so Grav is using the {driver} cache. Details are in logs/grav.log."
       DISK: Disk
       BYTES_USED: "{size} used"
       BYTES_FREE: "{size} free"
@@ -1342,6 +1344,7 @@ ICU:
     PLUGINS:
       SEARCH_PLUGINS: Search plugins...
       SYMLINKED: Symlinked
+      OPEN_ADMIN_PAGE: 'Open {title}'
       FAILED_TO_LOAD_PLUGINS: Failed to load plugins
       FAILED_TO_CHECK_FOR_UPDATES: Failed to check for updates
       PLUGINS_GRAV_ADMIN: Plugins — Grav Admin
