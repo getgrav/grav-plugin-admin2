@@ -1,3 +1,9 @@
+# v2.2.16
+## 11/19/2026
+
+1. [](#bugfix)
+    * A page media upload stopped by a firewall in front of the site, such as a Cloudflare challenge or mod_security, said "You can't change the media of this page", which sent people looking at their permissions. Only the API's own refusal says that now. A firewall or web server page gets the "Your web server answered this request itself" explanation instead, in the page media panel and when deleting a page's media, and the Media manager and file fields show it in place of a generic network error
+
 # v2.2.15
 ## 11/18/2026
 
