@@ -1,6 +1,8 @@
 # v2.2.16
 ## 11/20/2026
 
+1. [](#improved)
+    * Images that have `@2x`/`@3x` retina versions show a small `@2x @3x` badge in the Media manager (grid and list) and in a page's media, and the file details list them. The Media manager now shows such a set as one image, like page media, and deleting it deletes its retina files. Needs API 1.1.23 [#222](https://github.com/getgrav/grav-plugin-admin2/issues/222)
 1. [](#bugfix)
     * Typing the year into a date and time field that already held a date changed the day: half-way through the year the field saved something like `20-06-26`, which read back as day 20. The year is now stored with four digits and read back exactly, and a date saved without a time no longer shows as the day before for anyone west of UTC [#221](https://github.com/getgrav/grav-plugin-admin2/issues/221)
     * Deleting a page media file, or saving its alt and title, reloaded the whole page editor and jumped back to the top, and with unsaved edits it warned that the page had changed elsewhere. The editor now stays where it is, so several files can be deleted in a row [#220](https://github.com/getgrav/grav-plugin-admin2/issues/220)

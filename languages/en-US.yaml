@@ -764,6 +764,10 @@ ICU:
         MEDIA_PATH: Media path
         MARKDOWN: Markdown
         OPEN: Open
+        # `@2x`/`@3x` files saved next to an image, which Grav serves to
+        # high-density screens through the image's srcset (admin2#222).
+        RETINA: Retina versions
+        RETINA_HINT: 'Retina versions for high-density screens: {scales}'
       MEDIA_INSPECTOR:
         PREVIOUS_FILE: Previous file
         NEXT_FILE: Next file
