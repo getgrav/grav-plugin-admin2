@@ -1,3 +1,14 @@
+# v2.2.16
+## 11/20/2026
+
+1. [](#improved)
+    * Images that have `@2x`/`@3x` retina versions show a small `@2x @3x` badge in the Media manager (grid and list) and in a page's media, and the file details list them. The Media manager now shows such a set as one image, like page media, and deleting it deletes its retina files. Needs API 1.1.23 [#222](https://github.com/getgrav/grav-plugin-admin2/issues/222)
+1. [](#bugfix)
+    * Typing the year into a date and time field that already held a date changed the day: half-way through the year the field saved something like `20-06-26`, which read back as day 20. The year is now stored with four digits and read back exactly, and a date saved without a time no longer shows as the day before for anyone west of UTC [#221](https://github.com/getgrav/grav-plugin-admin2/issues/221)
+    * Deleting a page media file, or saving its alt and title, reloaded the whole page editor and jumped back to the top, and with unsaved edits it warned that the page had changed elsewhere. The editor now stays where it is, so several files can be deleted in a row [#220](https://github.com/getgrav/grav-plugin-admin2/issues/220)
+    * Saving a plugin's or theme's settings when a firewall in front of the site (such as OVH's or Cloudflare's) blocked the request only said "Failed to save configuration." It now gives the same explanation as the system configuration page, or the API's own reason when there is one. A message could also show a raw `{status}` placeholder for languages set with an underscore code such as `pt_BR` [#219](https://github.com/getgrav/grav-plugin-admin2/issues/219)
+    * A page media upload stopped by a firewall in front of the site, such as a Cloudflare challenge or mod_security, said "You can't change the media of this page", which sent people looking at their permissions. Only the API's own refusal says that now. A firewall or web server page gets an explanation that something in front of Grav, such as Cloudflare or another WAF, or a security filter on the web server, blocked the request, in the page media panel and when deleting a page's media, and the Media manager and file fields show it in place of a generic network error
+
 # v2.2.15
 ## 11/18/2026
 
