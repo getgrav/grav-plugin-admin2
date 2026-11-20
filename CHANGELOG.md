@@ -1,7 +1,9 @@
 # v2.2.16
-## 11/19/2026
+## 11/20/2026
 
 1. [](#bugfix)
+    * Typing the year into a date and time field that already held a date changed the day: half-way through the year the field saved something like `20-06-26`, which read back as day 20. The year is now stored with four digits and read back exactly, and a date saved without a time no longer shows as the day before for anyone west of UTC [#221](https://github.com/getgrav/grav-plugin-admin2/issues/221)
+    * Deleting a page media file, or saving its alt and title, reloaded the whole page editor and jumped back to the top, and with unsaved edits it warned that the page had changed elsewhere. The editor now stays where it is, so several files can be deleted in a row [#220](https://github.com/getgrav/grav-plugin-admin2/issues/220)
     * A page media upload stopped by a firewall in front of the site, such as a Cloudflare challenge or mod_security, said "You can't change the media of this page", which sent people looking at their permissions. Only the API's own refusal says that now. A firewall or web server page gets an explanation that something in front of Grav, such as Cloudflare or another WAF, or a security filter on the web server, blocked the request, in the page media panel and when deleting a page's media, and the Media manager and file fields show it in place of a generic network error
 
 # v2.2.15
