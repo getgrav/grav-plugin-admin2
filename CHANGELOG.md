@@ -1,3 +1,9 @@
+# v2.2.17
+## 11/22/2026
+
+1. [](#bugfix)
+    * Clicking a toggleable field's label turns the field's override on or off again, as it did in the classic admin, instead of only the small checkbox. The help icon still just opens its tooltip [#224](https://github.com/getgrav/grav-plugin-admin2/issues/224)
+
 # v2.2.16
 ## 11/20/2026
 
