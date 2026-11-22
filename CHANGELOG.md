@@ -3,6 +3,7 @@
 
 1. [](#bugfix)
     * Clicking a toggleable field's label turns the field's override on or off again, as it did in the classic admin, instead of only the small checkbox. The help icon still just opens its tooltip [#224](https://github.com/getgrav/grav-plugin-admin2/issues/224)
+    * Saving settings, clearing the cache and other changes failed on hosts that refuse PATCH and DELETE requests with their own 403 page, as some OVH shared hosting does, while plugin updates worked. Admin2 now resends such a request in a form those hosts accept and keeps using it for the rest of the session [#219](https://github.com/getgrav/grav-plugin-admin2/issues/219)
 
 # v2.2.16
 ## 11/20/2026
