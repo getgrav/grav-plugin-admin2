@@ -1,3 +1,9 @@
+# v2.2.18
+## 11/23/2026
+
+1. [](#bugfix)
+    * A list field's `controls: top` or `controls: both` puts the add, expand and collapse buttons above the items as well as (or instead of) below them, and `placement` decides whether a new item goes first or last, as in the classic admin [#225](https://github.com/getgrav/grav-plugin-admin2/issues/225)
+
 # v2.2.17
 ## 11/22/2026
 
