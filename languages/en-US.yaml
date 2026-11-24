@@ -658,6 +658,7 @@ ICU:
       WIDGET_FAILED_TO_LOAD: Widget failed to load
     TOP_BANNER:
       SITE_NOTIFICATION: Site notification
+      ACTION_FAILED: "Couldn't apply that change"
       PREVIOUS: Previous
     PROMO_BANNER:
       LABEL: Announcements

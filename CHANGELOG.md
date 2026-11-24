@@ -1,3 +1,15 @@
+# v2.2.19
+## 11/24/2026
+
+1. [](#new)
+    * Plugins can add actions to the page editor's Translations panel through `window.__GRAV_TRANSLATION_ACTIONS.register()`, and read or edit the open page through `window.__GRAV_PAGE_EDITOR` (`getData()` and `applyChanges()`). Changes made that way behave like typing in the form: they show as unsaved, go on the undo stack and follow the auto-save setting. AI Translate uses both for whole-page translation
+    * Saving a page as a new language now fires a `grav:page:translation-created` window event, so plugins can offer to do something with the new page
+    * Dashboard top-banner notices can carry buttons that open an admin page or save a setting in one click, so the trusted-host warning can now set Site Host to the address you're using
+2. [](#bugfix)
+    * Content inserted or replaced by a plugin (an AI chat widget, say) now always goes into the page's main content editor, not into the first Editor Pro field on the page when the page has more than one
+    * Page picker fields now follow `start_route`, `show_all`, `show_fullpath` and `limit_levels` like classic admin, so a picker limited to one part of the site (such as Module Reuse's "Start in" setting) lists only those pages [grav#4425](https://github.com/getgrav/grav/issues/4425)
+    * Page picker fields support `multiple: true` (the chosen pages show as removable chips and the picker stays open to pick several) and `options` (extra choices listed above the pages), as classic admin did, and show saved pages by title as soon as the page opens rather than by route
+
 # v2.2.18
 ## 11/23/2026
 
