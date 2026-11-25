@@ -302,6 +302,7 @@ ICU:
         ORDERING_NONE: None
         FOLDER_DETAILS: Folder Details
         PICK_MODULAR_PAGE: Pick a modular page
+        PICK_PARENT_PAGE: Pick a parent page
         MODULE_NEEDS_PARENT: A module goes inside a modular page, so pick the page it belongs to.
       MODULES:
         TITLE: Modules
