@@ -1,3 +1,9 @@
+# v2.2.20
+## 11/24/2026
+
+1. [](#bugfix)
+    * The permission editor shows and keeps a rule that overrides the one above it, such as a denied backup under allowed system access, so saving a group or account no longer drops it
+
 # v2.2.19
 ## 11/24/2026
 
