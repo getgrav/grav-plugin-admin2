@@ -1266,6 +1266,16 @@ ICU:
       SEARCH: Search...
       PREVIOUS: Previous
       DELETE_OBJECT: Delete Object
+      FIRST: First
+      NEXT: Next
+      LAST: Last
+      ITEM_COUNT: '{count, plural, one {# item} other {# items}}'
+      DISPLAYING_RECORDS: Displaying {from} to {to} out of {total} records
+      NO_ITEMS_FOUND: No items found
+      NO_ITEMS_MATCH: No items match your search
+      DELETE_CONFIRM: Are you sure you want to delete this object? This action cannot be undone.
+      DELETING: Deleting...
+      FAILED_TO_CREATE: Failed to create object
       FAILED_TO_LOAD_DIRECTORY: Failed to load directory
       FAILED_TO_LOAD_OBJECTS: Failed to load objects
       OBJECT_DELETED: Object deleted
