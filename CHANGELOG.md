@@ -1,3 +1,10 @@
+# v2.2.21
+## 11/27/2026
+
+1. [](#bugfix)
+    * Add Page is offered to accounts without site-wide page write access when a page-level create grant lets them add pages under some page. The parent picker only lets them choose those pages, and the site root stays reserved for site-wide write access [#226](https://github.com/getgrav/grav-plugin-admin2/issues/226)
+    * The Flex Objects list's row edit button, pagination, record counts, empty message and delete confirmation, and the object editor's Save, Undo and Create buttons, are translated instead of always showing English [#228](https://github.com/getgrav/grav-plugin-admin2/issues/228)
+
 # v2.2.20
 ## 11/24/2026
 
