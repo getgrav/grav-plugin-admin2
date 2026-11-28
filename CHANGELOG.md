@@ -1,7 +1,12 @@
 # v2.2.22
 ## 11/28/2026
 
-1. [](#bugfix)
+1. [](#new)
+    * Site Defaults in Settings has a Reset to Admin2 defaults button that puts every site default back to how Admin2 ships. Branding and each user's own preferences are kept
+2. [](#improved)
+    * Reset to site defaults for your own preferences sits at the top of Settings, so it no longer hides at the bottom of the page
+3. [](#bugfix)
+    * Reset to site defaults sticks: your colour mode, accent and dark shade were written straight back as personal preferences, and the reset only showed after a reload
     * The accent colour stays readable for every hue: links and buttons are made just light or dark enough to reach WCAG AA contrast on the background they sit on, and button labels switch between white and near-black, whichever reads better. Accents that already passed look the same, and the default Grav purple no longer fails in dark mode [#229](https://github.com/getgrav/grav-plugin-admin2/issues/229)
 
 # v2.2.21

@@ -1557,6 +1557,13 @@ ICU:
       SITE_DEFAULTS_SAVED: Site defaults saved. All users will see these on next reload.
       FAILED_TO_SAVE_SITE_DEFAULTS: Failed to save site defaults.
       FAILED_TO_RESET_PREFERENCES: Failed to reset preferences.
+      RESET_TO_SITE_DEFAULTS_SHORT: Reset to site defaults
+      PREFERENCES_RESET: Your preferences now follow the site defaults.
+      RESET_TO_ADMIN2_DEFAULTS: Reset to Admin2 defaults
+      RESET_SITE_DEFAULTS: Reset site defaults
+      RESET_SITE_DEFAULTS_MSG: Put every site default back to how Admin2 ships, including the menu bar links and auto-save settings? Branding stays as it is, and so does anything people have changed in their own preferences.
+      SITE_DEFAULTS_RESET: Site defaults reset to the Admin2 defaults.
+      FAILED_TO_RESET_SITE_DEFAULTS: Failed to reset site defaults.
     CUSTOM: Custom
     PREVIEW: Preview
     SETUP:
