@@ -1,3 +1,9 @@
+# v2.2.22
+## 11/28/2026
+
+1. [](#bugfix)
+    * The accent colour stays readable for every hue: links and buttons are made just light or dark enough to reach WCAG AA contrast on the background they sit on, and button labels switch between white and near-black, whichever reads better. Accents that already passed look the same, and the default Grav purple no longer fails in dark mode [#229](https://github.com/getgrav/grav-plugin-admin2/issues/229)
+
 # v2.2.21
 ## 11/27/2026
 
